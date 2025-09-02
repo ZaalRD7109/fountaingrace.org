@@ -8,12 +8,20 @@ const description = "Sundays 9:00–11:00 • 323 B Danie Theron Street, Pretori
   <section class="hero grid grid-2">
     <!-- Left: message + CTAs -->
     <div class="card">
-      <h1 style="font-size:clamp(28px,3.6vw,44px); margin:0 0 10px;">A place to encounter Jesus and be restored.</h1>
-      <p style="color:var(--muted); font-size:18px;">Join us this Sunday. We gather to worship, learn the Word, and love our city.</p>
+      <h1 style="font-size:clamp(28px,3.6vw,44px); margin:0 0 10px;">
+        A place to encounter Jesus and be restored.
+      </h1>
+      <p style="color:var(--muted); font-size:18px;">
+        Join us this Sunday. We gather to worship, learn the Word, and love our city.
+      </p>
       <ul style="line-height:1.9; margin-top:10px">
         <li><strong>Service:</strong> Sundays 9:00–11:00</li>
         <li><strong>Address:</strong> 323 B Danie Theron Street, Pretoria North</li>
-        <li><strong>Contact:</strong> <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a> · <a href="https://wa.me/27752592555" target="_blank" rel="noopener">WhatsApp us</a></li>
+        <li>
+          <strong>Contact:</strong>
+          <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a> ·
+          <a href="https://wa.me/27752592555" target="_blank" rel="noopener">WhatsApp us</a>
+        </li>
       </ul>
 
       <!-- Primary soul-winning CTAs -->
@@ -24,7 +32,8 @@ const description = "Sundays 9:00–11:00 • 323 B Danie Theron Street, Pretori
         <a href="/blog" class="btn" style="background:#2dd4bf; color:#063;">Read Messages</a>
       </div>
       <p style="margin-top:12px; color:var(--muted); font-size:14px;">
-        Our mission is simple: <em>make fishers of men</em> (Matthew 4:19). Every button above is a next step toward Jesus.
+        Our mission is simple: <em>make fishers of men</em> (Matthew 4:19).
+        Every button above is a next step toward Jesus.
       </p>
     </div>
 
@@ -38,7 +47,8 @@ const description = "Sundays 9:00–11:00 • 323 B Danie Theron Street, Pretori
           loading="lazy" allowfullscreen></iframe>
       </div>
       <div style="margin-top:10px; font-size:14px;">
-        <a href="https://www.google.com/maps/dir/?api=1&destination=323%20B%20Danie%20Theron%20Street%2C%20Pretoria%20North" target="_blank" rel="noopener">Get Directions</a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=323%20B%20Danie%20Theron%20Street%2C%20Pretoria%20North"
+           target="_blank" rel="noopener">Get Directions</a>
       </div>
     </div>
   </section>
@@ -57,8 +67,7 @@ const description = "Sundays 9:00–11:00 • 323 B Danie Theron Street, Pretori
       <div class="dots" id="dots"></div>
     </div>
 
-    <script is:inline>
-      // simple, dependency-free slider
+    <script>
       const slides = document.getElementById('slides');
       const imgs = [...slides.querySelectorAll('img')];
       const dotsWrap = document.getElementById('dots');
