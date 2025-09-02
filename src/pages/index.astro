@@ -1,0 +1,37 @@
+---
+import Base from "../layouts/Base.astro";
+const title = "Fountain of Grace International • Pretoria North";
+const description = "Sundays 9:00–11:00 • 323 B Danie Theron Street, Pretoria North • You're welcome here.";
+---
+<Base {title} {description} canonical="https://fountaingrace.org/">
+  <section class="hero grid grid-2">
+    <div class="card">
+      <h1 style="font-size:clamp(28px,3.6vw,44px); margin:0 0 10px;">A place to encounter Jesus and be restored.</h1>
+      <p style="color:var(--muted); font-size:18px;">Join us this Sunday. We gather to worship, learn the Word, and love our city.</p>
+      <ul style="line-height:1.9; margin-top:10px">
+        <li><strong>Service:</strong> Sundays 9:00–11:00</li>
+        <li><strong>Address:</strong> 323 B Danie Theron Street, Pretoria North</li>
+        <li><strong>Contact:</strong> <a href="mailto:fountaingraceinternational@gmail.com">fountaingraceinternational@gmail.com</a> · <a href="https://wa.me/27752592555" target="_blank" rel="noopener">WhatsApp us</a></li>
+      </ul>
+      <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;">
+        <a href="/give" class="btn">Give Online</a>
+        <a href="/prayer" class="btn" style="background:#1e90ff; color:white;">Request Prayer</a>
+      </div>
+    </div>
+    <div class="card">
+      <div style="position:relative; padding-top:56.25%; border-radius:12px; overflow:hidden;">
+        <iframe
+          title="Map"
+          src="https://www.google.com/maps?q=323%20B%20Danie%20Theron%20Street,%20Pretoria%20North&output=embed"
+          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
+          loading="lazy" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <section class="grid grid-3" style="margin-top:18px;">
+    <div class="card"><h3>Teaching</h3><p>Spirit-filled preaching grounded in the Word, with practical application.</p></div>
+    <div class="card"><h3>Community</h3><p>We’re family. Small, real, growing. There’s a seat for you.</p></div>
+    <div class="card"><h3>Mission</h3><p>We exist to restore dignity and hope in Pretoria and beyond.</p></div>
+  </section>
+</Base>

@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fountaingrace.org/sitemap-index.xml
