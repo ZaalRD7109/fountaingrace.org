@@ -84,5 +84,20 @@ import Base from "../layouts/Base.astro";
       p{font-size:1rem}
       .slides img{height:auto}
     }
+.carousel img {
+  width: 100%;
+  height: auto;        /* keeps the right proportions */
+  max-height: 70vh;    /* don’t let photos get taller than 70% of screen */
+  object-fit: cover;   /* fills the box without squashing */
+  border-radius: 12px; /* makes edges smooth */
+}
+
+/* For phones */
+@media (max-width: 768px) {
+  .carousel img {
+    max-height: 45vh;  /* smaller carousel on mobile */
+  }
+}
+
   </style>
 </Base>
