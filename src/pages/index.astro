@@ -1,112 +1,151 @@
 ---
 import Base from '../layouts/Base.astro';
-
-const title = "Fountain of Grace International | Pretoria North";
-const description = "A place to encounter Jesus, be restored, and become fishers of men. Join us at Fountain of Grace International every Sunday.";
 ---
 
-<Base {title} {description} canonical="https://fountaingrace.org/">
-
-  <section class="hero grid grid-2">
-    <!-- Left: Welcome -->
-    <div class="card">
-      <img src="/Fountain of Grace International Logo 2.webp" alt="Fountain of Grace International Logo" style="max-width:180px; margin-bottom:1rem;" />
-
-      <h1 style="font-size:clamp(28px,3.6vw,44px); margin:0 0 10px; color:#003366;">
-        A Place to Encounter Jesus and Be Restored
-      </h1>
-      <p style="font-size:18px; color:#444; line-height:1.6;">
-        We gather to worship, learn the Word, and love our city.
-      </p>
-
-      <ul style="line-height:1.8; margin-top:15px;">
+<Base title="Fountain of Grace International" description="A place to encounter Jesus and be restored in Pretoria North. Join us for worship, the Word, and fellowship.">
+  <section class="hero">
+    <div class="content">
+      <img src="/Fountain of Grace International Logo 2.webp" alt="Fountain of Grace International Logo" class="logo" />
+      <h1>A Place to Encounter Jesus and Be Restored</h1>
+      <p class="subtitle">We gather to worship, learn the Word, and love our city.</p>
+      <ul class="info">
         <li><strong>Service:</strong> Sundays 9:00–11:00</li>
         <li><strong>Address:</strong> 323 B Danie Theron Street, Pretoria North</li>
         <li><strong>Contact:</strong> <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a> · <a href="https://wa.me/27752592555" target="_blank" rel="noopener">WhatsApp us</a></li>
       </ul>
-
-      <!-- Strong CTAs -->
-      <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
-        <a href="/give" class="btn" style="background:#ff7a00; color:white;">Give Online</a>
-        <a href="/prayer" class="btn" style="background:#0066cc; color:white;">Request Prayer</a>
-        <a href="/contact" class="btn" style="background:#28a745; color:white;">Plan a Visit</a>
-        <a href="/blog" class="btn" style="background:#333; color:white;">Read Messages</a>
+      <div class="cta-buttons">
+        <a href="/give" class="btn gold">Give Online</a>
+        <a href="/prayer" class="btn blue">Request Prayer</a>
+        <a href="/visit" class="btn green">Plan a Visit</a>
+        <a href="/messages" class="btn dark">Read Messages</a>
       </div>
-
-      <p style="margin-top:14px; font-size:15px; color:#666;">
-        Our mission is simple: <em>make fishers of men</em> (Matthew 4:19).
-      </p>
     </div>
-
-    <!-- Right: Auto slideshow -->
-    <div class="slideshow card">
-      <div class="slides">
-        <img src="/FatherandSon.webp" alt="Father and Son" />
-        <img src="/First lady.webp" alt="First Lady" />
-        <img src="/Worship.webp" alt="Worship at FGI" />
-        <img src="/ZaalKids.webp" alt="Children Ministry" />
-      </div>
+    <div class="carousel">
+      <img src="/FatherandSon.webp" alt="Father and Son" />
+      <img src="/First lady.webp" alt="First Lady" />
+      <img src="/Worship.webp" alt="Worship service" />
+      <img src="/ZaalKids.webp" alt="Kids ministry" />
     </div>
   </section>
 
-  <!-- Bottom: Map -->
-  <section style="margin-top:40px;">
-    <h2 style="text-align:center; color:#003366;">Visit Us</h2>
-    <div style="margin-top:15px; display:flex; justify-content:center;">
-      <iframe
-        title="Map"
-        src="https://www.google.com/maps?q=323%20B%20Danie%20Theron%20Street,%20Pretoria%20North&output=embed"
-        width="100%"
-        height="300"
-        style="border:0; border-radius:12px; max-width:800px;"
-        allowfullscreen=""
-        loading="lazy">
-      </iframe>
+  <footer>
+    <p>© {new Date().getFullYear()} Fountain of Grace International · Pretoria North</p>
+    <div class="social">
+      <a href="https://facebook.com/Fountainofgraceministries" target="_blank" aria-label="Facebook">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook" />
+      </a>
+      <a href="https://youtube.com/@fountainofgraceptanorth?si=Jk7sWYQj-kJyHen_" target="_blank" aria-label="YouTube">
+        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" alt="YouTube" />
+      </a>
     </div>
-  </section>
+  </footer>
 
   <style>
+    /* Layout */
     .hero {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 30px;
+      gap: 2rem;
       align-items: center;
+      padding: 2rem;
     }
-    .card {
-      background: #fff;
-      padding: 25px;
-      border-radius: 16px;
-      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    .content {
+      max-width: 500px;
+    }
+    .logo {
+      max-width: 200px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: clamp(1.8rem, 2.5vw, 2.8rem);
+      margin-bottom: 0.5rem;
+      color: #2A5C8F; /* Navy */
+    }
+    .subtitle {
+      font-size: 1.2rem;
+      color: #333;
+      margin-bottom: 1.5rem;
+    }
+    .info {
+      list-style: none;
+      margin: 0 0 1.5rem 0;
+      padding: 0;
+      color: #444;
+      font-size: 1rem;
+    }
+    .info li {
+      margin-bottom: 0.5rem;
+    }
+
+    /* Buttons */
+    .cta-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
     }
     .btn {
-      padding: 10px 18px;
+      padding: 0.75rem 1.25rem;
       border-radius: 8px;
+      font-weight: 600;
       text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s;
+      display: inline-block;
+      transition: background 0.3s ease;
+      color: white;
     }
-    .btn:hover {
-      opacity: 0.9;
+    .btn.gold { background: #B38B6A; }
+    .btn.gold:hover { background: #966d50; }
+    .btn.blue { background: #2A5C8F; }
+    .btn.blue:hover { background: #20486f; }
+    .btn.green { background: #2e7d32; }
+    .btn.green:hover { background: #205723; }
+    .btn.dark { background: #333; }
+    .btn.dark:hover { background: #111; }
+
+    /* Carousel */
+    .carousel {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
     }
-    .slideshow {
-      position: relative;
-      overflow: hidden;
-    }
-    .slides {
-      display: flex;
-      width: 400%;
-      animation: slide 16s infinite;
-    }
-    .slides img {
+    .carousel img {
       width: 100%;
+      height: 300px;
+      object-fit: cover;
       border-radius: 12px;
     }
-    @keyframes slide {
-      0%, 20%   { transform: translateX(0); }
-      25%, 45%  { transform: translateX(-100%); }
-      50%, 70%  { transform: translateX(-200%); }
-      75%, 95%  { transform: translateX(-300%); }
-      100%      { transform: translateX(0); }
+
+    /* Footer */
+    footer {
+      margin-top: 2rem;
+      padding: 1.5rem;
+      text-align: center;
+      background: #f8f8f8;
+      color: #444;
+    }
+    .social {
+      margin-top: 0.5rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .social img {
+      width: 28px;
+      height: 28px;
+      fill: #2A5C8F;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+      }
+      .carousel img {
+        height: 200px;
+      }
+      .cta-buttons {
+        flex-direction: column;
+        align-items: stretch;
+      }
     }
   </style>
 </Base>
