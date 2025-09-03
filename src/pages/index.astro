@@ -1,115 +1,112 @@
 ---
-import Base from "../layouts/Base.astro";
-const title = "Fountain of Grace International • Pretoria North";
-const description = "Sundays 9:00–11:00 • 323 B Danie Theron Street, Pretoria North • You're welcome here.";
+import Base from '../layouts/Base.astro';
+
+const title = "Fountain of Grace International | Pretoria North";
+const description = "A place to encounter Jesus, be restored, and become fishers of men. Join us at Fountain of Grace International every Sunday.";
 ---
 
 <Base {title} {description} canonical="https://fountaingrace.org/">
+
   <section class="hero grid grid-2">
-    <!-- Left: message + CTAs -->
+    <!-- Left: Welcome -->
     <div class="card">
-      <h1 style="font-size:clamp(28px,3.6vw,44px); margin:0 0 10px;">
-        A place to encounter Jesus and be restored.
+      <img src="/Fountain of Grace International Logo 2.webp" alt="Fountain of Grace International Logo" style="max-width:180px; margin-bottom:1rem;" />
+
+      <h1 style="font-size:clamp(28px,3.6vw,44px); margin:0 0 10px; color:#003366;">
+        A Place to Encounter Jesus and Be Restored
       </h1>
-      <p style="color:var(--muted); font-size:18px;">
-        Join us this Sunday. We gather to worship, learn the Word, and love our city.
+      <p style="font-size:18px; color:#444; line-height:1.6;">
+        We gather to worship, learn the Word, and love our city.
       </p>
-      <ul style="line-height:1.9; margin-top:10px">
+
+      <ul style="line-height:1.8; margin-top:15px;">
         <li><strong>Service:</strong> Sundays 9:00–11:00</li>
         <li><strong>Address:</strong> 323 B Danie Theron Street, Pretoria North</li>
-        <li>
-          <strong>Contact:</strong>
-          <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a> ·
-          <a href="https://wa.me/27752592555" target="_blank" rel="noopener">WhatsApp us</a>
-        </li>
+        <li><strong>Contact:</strong> <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a> · <a href="https://wa.me/27752592555" target="_blank" rel="noopener">WhatsApp us</a></li>
       </ul>
 
-      <!-- Primary soul-winning CTAs -->
-      <div style="margin-top:18px; display:flex; gap:12px; flex-wrap:wrap;">
-        <a href="/prayer" class="btn" style="background:#1e90ff; color:white;">Request Prayer</a>
-        <a href="/contact" class="btn">Plan a Visit</a>
-        <a href="/give" class="btn" style="background:#ffd166; color:#222;">Give Online</a>
-        <a href="/blog" class="btn" style="background:#2dd4bf; color:#063;">Read Messages</a>
+      <!-- Strong CTAs -->
+      <div style="margin-top:20px; display:flex; gap:12px; flex-wrap:wrap;">
+        <a href="/give" class="btn" style="background:#ff7a00; color:white;">Give Online</a>
+        <a href="/prayer" class="btn" style="background:#0066cc; color:white;">Request Prayer</a>
+        <a href="/contact" class="btn" style="background:#28a745; color:white;">Plan a Visit</a>
+        <a href="/blog" class="btn" style="background:#333; color:white;">Read Messages</a>
       </div>
-      <p style="margin-top:12px; color:var(--muted); font-size:14px;">
+
+      <p style="margin-top:14px; font-size:15px; color:#666;">
         Our mission is simple: <em>make fishers of men</em> (Matthew 4:19).
-        Every button above is a next step toward Jesus.
       </p>
     </div>
 
-    <!-- Right: smaller map so message stays central -->
-    <div class="card">
-      <div style="position:relative; height:300px; border-radius:12px; overflow:hidden;">
-        <iframe
-          title="Map"
-          src="https://www.google.com/maps?q=323%20B%20Danie%20Theron%20Street,%20Pretoria%20North&output=embed"
-          style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;"
-          loading="lazy" allowfullscreen></iframe>
-      </div>
-      <div style="margin-top:10px; font-size:14px;">
-        <a href="https://www.google.com/maps/dir/?api=1&destination=323%20B%20Danie%20Theron%20Street%2C%20Pretoria%20North"
-           target="_blank" rel="noopener">Get Directions</a>
+    <!-- Right: Auto slideshow -->
+    <div class="slideshow card">
+      <div class="slides">
+        <img src="/FatherandSon.webp" alt="Father and Son" />
+        <img src="/First lady.webp" alt="First Lady" />
+        <img src="/Worship.webp" alt="Worship at FGI" />
+        <img src="/ZaalKids.webp" alt="Children Ministry" />
       </div>
     </div>
   </section>
 
-  <!-- Auto-sliding photo gallery -->
-  <section style="margin-top:18px;">
-    <div class="gallery card">
-      <div class="slides" id="slides">
-        <img src="/FatherandSon.jpg" alt="Father and Son at FGI" />
-        <img src="/First%20lady.jpg" alt="First Lady at FGI" />
-        <img src="/Worship.jpg" alt="Worship at FGI" />
-        <img src="/ZaalKids.jpg" alt="Zaal Kids at FGI" />
-      </div>
-      <button class="arrow left" id="prev" aria-label="Previous slide">‹</button>
-      <button class="arrow right" id="next" aria-label="Next slide">›</button>
-      <div class="dots" id="dots"></div>
+  <!-- Bottom: Map -->
+  <section style="margin-top:40px;">
+    <h2 style="text-align:center; color:#003366;">Visit Us</h2>
+    <div style="margin-top:15px; display:flex; justify-content:center;">
+      <iframe
+        title="Map"
+        src="https://www.google.com/maps?q=323%20B%20Danie%20Theron%20Street,%20Pretoria%20North&output=embed"
+        width="100%"
+        height="300"
+        style="border:0; border-radius:12px; max-width:800px;"
+        allowfullscreen=""
+        loading="lazy">
+      </iframe>
     </div>
-
-    <script>
-      const slides = document.getElementById('slides');
-      const imgs = [...slides.querySelectorAll('img')];
-      const dotsWrap = document.getElementById('dots');
-      let i = 0, timer;
-
-      // build dots
-      imgs.forEach((_, idx) => {
-        const d = document.createElement('div');
-        d.className = 'dot' + (idx===0 ? ' active' : '');
-        d.addEventListener('click', () => go(idx, true));
-        dotsWrap.appendChild(d);
-      });
-
-      const dots = [...dotsWrap.children];
-
-      function render() {
-        slides.style.transform = `translateX(-${i * 100}%)`;
-        dots.forEach((d, idx) => d.classList.toggle('active', idx === i));
-      }
-      function go(n, user=false) {
-        i = (n + imgs.length) % imgs.length;
-        render();
-        if (user) reset();
-      }
-      function next(){ go(i+1); }
-      function prev(){ go(i-1); }
-      function reset(){ clearInterval(timer); timer = setInterval(next, 5000); }
-
-      document.getElementById('next').addEventListener('click', () => go(i+1, true));
-      document.getElementById('prev').addEventListener('click', () => go(i-1, true));
-
-      // init
-      slides.style.width = `${imgs.length * 100}%`;
-      imgs.forEach(img => img.style.width = `${100 / imgs.length}%`);
-      render();
-      reset();
-    </script>
   </section>
 
-  <section class="grid grid-3" style="margin-top:18px;">
-    <div class="card"><h3>Teaching</h3><p>Spirit-filled preaching grounded in the Word, with practical application.</p></div>
-    <div class="card"><h3>Community</h3><p>We’re family. Small, real, growing. There’s a seat for you.</p></div>
-    <div class="card"><h3>Mission</h3><p>We exist to restore dignity and hope in Pretoria and beyond.</p></div>
-  </section>
+  <style>
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+    }
+    .card {
+      background: #fff;
+      padding: 25px;
+      border-radius: 16px;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    }
+    .btn {
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      opacity: 0.9;
+    }
+    .slideshow {
+      position: relative;
+      overflow: hidden;
+    }
+    .slides {
+      display: flex;
+      width: 400%;
+      animation: slide 16s infinite;
+    }
+    .slides img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    @keyframes slide {
+      0%, 20%   { transform: translateX(0); }
+      25%, 45%  { transform: translateX(-100%); }
+      50%, 70%  { transform: translateX(-200%); }
+      75%, 95%  { transform: translateX(-300%); }
+      100%      { transform: translateX(0); }
+    }
+  </style>
 </Base>
