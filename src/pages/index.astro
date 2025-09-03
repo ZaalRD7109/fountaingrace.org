@@ -3,15 +3,16 @@ import Base from "../layouts/Base.astro";
 ---
 
 <Base title="Fountain of Grace International">
+  <!-- Hero Section -->
   <section style="text-align:center; margin-bottom:2.5rem;">
-    <h1 style="font-size:2.2rem; font-weight:800; color:var(--fg-blue-800); margin:0 0 1rem;">
+    <h1 style="font-size:2.2rem; font-weight:800; color:#2A5C8F; margin:0 0 1rem;">
       A Place to Encounter Jesus and Be Restored
     </h1>
-    <p style="max-width:600px;margin:0 auto 1.5rem;color:var(--muted);font-size:1.1rem;">
+    <p style="max-width:600px;margin:0 auto 1.5rem;color:#444;font-size:1.1rem;">
       We gather to worship, learn the Word, and love our city.
     </p>
 
-    <p style="margin:.5rem 0;color:var(--muted);font-size:.95rem;">
+    <p style="margin:.5rem 0;color:#555;font-size:.95rem;">
       <strong>Service:</strong> Sundays 9:00–11:00<br/>
       <strong>Address:</strong> 323 B Danie Theron Street, Pretoria North<br/>
       <strong>Contact:</strong>
@@ -27,66 +28,80 @@ import Base from "../layouts/Base.astro";
     </div>
   </section>
 
-  <!-- Carousel -->
-  <section class="carousel-container">
-    <div class="carousel">
-      <div class="slides">
-        <img src="/FatherandSon.webp" alt="Father and Son">
-        <img src="/First lady.webp" alt="First Lady">
-        <img src="/Worship.webp" alt="Worship">
-        <img src="/ZaalKids.webp" alt="Kids Ministry">
-      </div>
-    </div>
+  <!-- Placeholder for Photos (to add later) -->
+  <section style="text-align:center; margin:3rem 0;">
+    <h2 style="font-size:1.6rem; color:#2A5C8F;">Our Family in Action</h2>
+    <p style="color:#666; font-size:1rem;">Photos coming soon...</p>
   </section>
 
+  <!-- Floating Social Icons -->
+  <div class="floating-social">
+    <a href="https://facebook.com/YourChurchPage" target="_blank" rel="noopener" class="icon fb">F</a>
+    <a href="https://youtube.com/YourChannel" target="_blank" rel="noopener" class="icon yt">▶</a>
+  </div>
+
   <style>
-    /* Carousel wrapper */
-    .carousel-container {
-      position: relative;
-      max-width: 900px;
-      margin: 0 auto 3rem;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    .btn {
+      padding: 10px 18px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+    .btn--brand {
+      background: #2A5C8F; /* navy */
+      color: #fff;
+    }
+    .btn--brand:hover { background: #244a72; }
+    .btn--ghost {
+      background: transparent;
+      border: 2px solid #2A5C8F;
+      color: #2A5C8F;
+    }
+    .btn--ghost:hover {
+      background: #2A5C8F;
+      color: #fff;
     }
 
-    .carousel {
-      width: 100%;
-      overflow: hidden;
-    }
-
-    /* Slides row */
-    .slides {
+    /* Floating Social Icons */
+    .floating-social {
+      position: fixed;
+      top: 40%;
+      right: 20px;
       display: flex;
-      width: 400%; /* 4 images = 400% */
-      animation: slide 20s infinite;
+      flex-direction: column;
+      gap: 12px;
+      z-index: 1000;
     }
-
-    /* Images */
-    .slides img {
-      width: 100%;
-      flex-shrink: 0;
-      height: auto;
-      max-height: 70vh;
-      object-fit: cover;
+    .floating-social .icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #fff;
+      text-decoration: none;
+      box-shadow: 0 0 15px rgba(0,0,0,0.4);
+      transition: all 0.3s ease;
     }
-
-    /* Animation */
-    @keyframes slide {
-      0%, 20%   { transform: translateX(0); }
-      25%, 45%  { transform: translateX(-100%); }
-      50%, 70%  { transform: translateX(-200%); }
-      75%, 95%  { transform: translateX(-300%); }
-      100%      { transform: translateX(0); }
+    .floating-social .fb {
+      background: #1877F2;
+      box-shadow: 0 0 15px #1877F2;
     }
-
-    /* Responsive text + carousel */
-    @media(max-width:600px){
-      h1 { font-size:1.7rem; }
-      p  { font-size:1rem; }
-      .slides img {
-        max-height: 45vh; /* shorter images on phones */
-      }
+    .floating-social .fb:hover {
+      box-shadow: 0 0 25px #1877F2;
+      transform: scale(1.1);
+    }
+    .floating-social .yt {
+      background: #FF0000;
+      box-shadow: 0 0 15px #FF0000;
+    }
+    .floating-social .yt:hover {
+      box-shadow: 0 0 25px #FF0000;
+      transform: scale(1.1);
     }
   </style>
 </Base>
