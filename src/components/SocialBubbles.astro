@@ -1,69 +1,62 @@
 ---
-// SocialBubbles.astro
 ---
+<div class="social-bubbles">
+  <a href="https://facebook.com/Fountainofgraceministries" class="bubble fb" target="_blank" aria-label="Facebook"></a>
+  <a href="https://youtube.com/@fountainofgraceptanorth?si=Jk7sWYQj-kJyHen_" class="bubble yt" target="_blank" aria-label="YouTube"></a>
+  <a href="https://www.tiktok.com/@ricardodzaal?is_from_webapp=1&sender_device=pc" class="bubble tk" target="_blank" aria-label="TikTok"></a>
+</div>
 
 <style>
-.social-bubbles {
-  position: fixed;
-  top: 50%;
-  right: 20px;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  z-index: 1000;
-}
-
-.social-bubbles a {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 22px;
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-/* Hover Glow */
-.social-bubbles a:hover {
-  transform: scale(1.2);
-}
-
-/* Brand colors + glow */
-.fb { background-color: #1877F2; }
-.fb:hover { box-shadow: 0 0 15px #1877F2; }
-
-.yt { background-color: #FF0000; }
-.yt:hover { box-shadow: 0 0 15px #FF0000; }
-
-.tk { background: linear-gradient(135deg, #000000 40%, #FF0050 60%, #00F2EA 100%); }
-.tk:hover { box-shadow: 0 0 15px #FF0050, 0 0 25px #00F2EA; }
-
-/* Mobile adjustments */
-@media (max-width: 768px) {
   .social-bubbles {
-    right: 12px;
-    gap: 10px;
+    position: fixed;
+    top: 40%;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 9999;
   }
-  .social-bubbles a {
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-  }
-}
-</style>
 
-<div class="social-bubbles">
-  <a href="https://facebook.com/Fountainofgraceministries" target="_blank" class="fb" aria-label="Facebook">
-    <i class="fab fa-facebook-f"></i>
-  </a>
-  <a href="https://youtube.com/@fountainofgraceptanorth?si=Jk7sWYQj-kJyHen_" target="_blank" class="yt" aria-label="YouTube">
-    <i class="fab fa-youtube"></i>
-  </a>
-  <a href="https://www.tiktok.com/@ricardodzaal?is_from_webapp=1&sender_device=pc" target="_blank" class="tk" aria-label="TikTok">
-    <i class="fab fa-tiktok"></i>
-  </a>
-</div>
+  .bubble {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    animation: float 3s ease-in-out infinite;
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Facebook */
+  .fb {
+    background-color: #1877f2;
+    background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg');
+    filter: invert(1);
+  }
+
+  /* YouTube */
+  .yt {
+    background-color: #ff0000;
+    background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg');
+    filter: invert(1);
+  }
+
+  /* TikTok */
+  .tk {
+    background-color: #000000;
+    background-image: url('https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg');
+    filter: invert(1);
+  }
+
+  /* Floating animation */
+  @keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+  }
+</style>
