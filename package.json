@@ -1,19 +1,13 @@
 {
-  "name": "fountaingrace.org",
+  "name": "fountaingrace",
   "version": "1.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
     "dev": "astro dev",
     "build": "astro build",
-    "preview": "astro preview",
-    "format": "prettier --write ."
+    "preview": "astro preview"
   },
   "dependencies": {
-    "astro": "^4.14.0"
-  },
-  "devDependencies": {
-    "prettier": "^3.3.3",
-    "prettier-plugin-astro": "^0.14.1"
+    "astro": "^4.0.0"
   }
 }
