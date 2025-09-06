@@ -4,7 +4,7 @@ import Base from "../layouts/Base.astro";
 
 <Base title="Fountain of Grace International">
   <!-- Hero Section -->
-  <section style="text-align:center; margin:2rem auto; max-width:700px;">
+  <section style="text-align:center; margin:3rem auto; max-width:700px;">
     <h1 style="font-size:2.2rem; font-weight:800; color:#2A5C8F; margin-bottom:1rem;">
       A Place to Encounter Jesus and Be Restored
     </h1>
@@ -12,7 +12,7 @@ import Base from "../layouts/Base.astro";
       We gather to worship, learn the Word, and love our city.
     </p>
 
-    <p style="margin:.5rem 0;color:#555;font-size:.95rem;">
+    <p style="margin:.5rem 0; color:#333; font-size:1rem;">
       <strong>Service:</strong> Sundays 9:00–11:00<br/>
       <strong>Address:</strong> 323 B Danie Theron Street, Pretoria North<br/>
       <strong>Contact:</strong>
@@ -24,91 +24,77 @@ import Base from "../layouts/Base.astro";
       <a href="/give/" class="btn btn--brand">Give Online</a>
       <a href="/prayer/" class="btn btn--ghost">Request Prayer</a>
       <a href="/plan-a-visit/" class="btn btn--ghost">Plan a Visit</a>
-      <a href="/blog/" class="btn btn--ghost">Read Messages</a>
+      <a href="/messages/" class="btn btn--ghost">Read Messages</a>
     </div>
   </section>
 
   <!-- Floating Social Icons -->
   <div class="floating-social">
-    <!-- Facebook -->
     <a href="https://facebook.com" target="_blank" class="icon fb" aria-label="Facebook">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 320 512" width="20" height="20">
-        <path d="M279.14 288l14.22-92.66h-88.91V129.77c0-25.35 
-        12.42-50.06 52.24-50.06H293V6.26S259.5 0 225.36 0c-73.21 
-        0-121.36 44.38-121.36 124.72V195.3H22.89V288h81.11v224h100.17V288z"/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="white" d="M279.14 288l14.22-92.66h-88.91V127.41c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S293.3 0 268.1 0c-73.66 0-121.9 44.38-121.9 124.72V195.3H86.41V288h59.79v224h92.66V288z"/></svg>
     </a>
-
-    <!-- YouTube -->
     <a href="https://youtube.com" target="_blank" class="icon yt" aria-label="YouTube">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 576 512" width="20" height="20">
-        <path d="M549.7 124.1c-6.3-23.7-24.9-42.3-48.6-48.6C465.1 
-        64 288 64 288 64S110.9 64 74.9 75.5c-23.7 
-        6.3-42.3 24.9-48.6 48.6C15.8 160.1 15.8 
-        256 15.8 256s0 95.9 10.5 131.9c6.3 23.7 
-        24.9 42.3 48.6 48.6C110.9 448 288 448 288 
-        448s177.1 0 213.1-11.5c23.7-6.3 42.3-24.9 
-        48.6-48.6 10.5-36 10.5-131.9 10.5-131.9s0-95.9-10.5-131.9zM232 
-        338.5V173.5l142.8 82.5L232 338.5z"/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="white" d="M549.65 124.08a68.84 68.84 0 0 0-48.52-48.58C458.81 64 288 64 288 64S117.19 64 74.87 75.5a68.84 68.84 0 0 0-48.52 48.58C16 166.4 16 256 16 256s0 89.6 10.35 131.92a68.84 68.84 0 0 0 48.52 48.58C117.19 448 288 448 288 448s170.81 0 213.13-11.5a68.84 68.84 0 0 0 48.52-48.58C560 345.6 560 256 560 256s0-89.6-10.35-131.92zM232 338.88V173.12L374.63 256 232 338.88z"/></svg>
     </a>
-
-    <!-- TikTok -->
     <a href="https://tiktok.com" target="_blank" class="icon tt" aria-label="TikTok">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 448 512" width="20" height="20">
-        <path d="M448,209.9v125.2c0,97.2-78.8,176-176,176S96,432.3,96,335.1V209.9H0V96.1h96V32h96v64.1h96v113.8
-        H192v125.2c0,44.2,35.8,80,80,80s80-35.8,80-80V209.9H448z"/>
-      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="white" d="M448,209.9a210.1,210.1,0,0,1-122.6-39.2V349.4A162.6,162.6,0,1,1,185.4,188.7V264a87.9,87.9,0,1,0,61.2,83.3V0h79.4a130.9,130.9,0,0,0,0,25.7,130.4,130.4,0,0,0,63.9,109A130.6,130.6,0,0,0,448,155.1Z"/></svg>
     </a>
   </div>
 
   <style>
-    /* Floating social base styles */
-    .floating-social {
-      position: fixed;
-      display: flex;
-      gap: 12px;
-      z-index: 1000;
-    }
-
-    .icon {
-      width: 45px;
-      height: 45px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      color: white;
-      font-weight: bold;
+    .btn {
+      padding: .6rem 1.2rem;
+      border-radius: 6px;
       text-decoration: none;
-      box-shadow: 0 0 15px rgba(0,0,0,0.4);
-      transition: all 0.3s ease;
+      font-weight: 600;
+      transition: all .3s ease;
+    }
+    .btn--brand {
+      background:#2A5C8F; color:white;
+    }
+    .btn--brand:hover { background:#20476b; }
+    .btn--ghost {
+      border:2px solid #2A5C8F; color:#2A5C8F;
+    }
+    .btn--ghost:hover {
+      background:#2A5C8F; color:white;
     }
 
-    .icon:hover {
-      transform: scale(1.1);
+    /* Floating Social Icons */
+    .floating-social {
+      position:fixed;
+      z-index:999;
+      display:flex;
+      gap:.6rem;
     }
+    .icon {
+      width:42px; height:42px;
+      border-radius:50%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transition:all .3s ease;
+    }
+    .fb { background:#1877F2; }
+    .yt { background:#FF0000; }
+    .tt { background:#000; }
+    .icon:hover { transform:scale(1.15); box-shadow:0 0 12px rgba(0,0,0,.4); }
 
-    .fb { background:#1877f2; box-shadow:0 0 15px #1877f2; }
-    .yt { background:#FF0000; box-shadow:0 0 15px #FF0000; }
-    .tt { background:#000; box-shadow:0 0 15px #25F4EE; }
-
-    /* Position on laptop/desktop (side right middle) */
-    @media (min-width: 769px) {
-      .floating-social {
-        flex-direction: column;
-        right: 20px;
-        top: 40%;
+    /* Desktop (side right) */
+    @media(min-width:769px){
+      .floating-social{
+        flex-direction:column;
+        right:20px;
+        top:40%;
       }
     }
-
-    /* Position on mobile (bottom center) */
-    @media (max-width: 768px) {
-      .floating-social {
-        flex-direction: row;
-        bottom: 15px;
-        left: 50%;
-        transform: translateX(-50%);
+    /* Mobile (bottom center) */
+    @media(max-width:768px){
+      .floating-social{
+        flex-direction:row;
+        bottom:15px;
+        left:50%;
+        transform:translateX(-50%);
       }
     }
   </style>
