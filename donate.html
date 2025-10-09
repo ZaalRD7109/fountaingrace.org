@@ -5,35 +5,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Donate | Fountain of Grace International Church Pretoria</title>
   <meta name="description" content="Support Fountain of Grace International (NPO 316-193) — your donation helps restore dignity and hope through the Gospel in Pretoria North and beyond.">
-  <meta name="keywords" content="Donate Fountain of Grace, Christian giving Pretoria, NPO 316-193, PayFast, PayPal, church donation South Africa, tithe online, faith giving">
+  <meta name="keywords" content="Donate Fountain of Grace, Christian giving Pretoria, NPO 316-193, PayFast, PayPal, EFT donation, church donation South Africa, tithe online, faith giving">
   <link rel="canonical" href="https://www.fountaingrace.org/donate.html">
   <link rel="icon" href="/favicon.ico">
   <meta name="theme-color" content="#2196F3">
   <link rel="stylesheet" href="/css/styles.css">
 
   <style>
-  body{font-family:"Poppins",Arial,sans-serif;margin:0;background:#fafafa;color:#222}
-  .site-header{background:linear-gradient(135deg,#001f54 0%,#00796B 100%);border-bottom-left-radius:50px;border-bottom-right-radius:50px;padding:20px 5%;display:flex;align-items:center;justify-content:space-between;box-shadow:0 3px 10px rgba(0,0,0,0.1)}
-  .logo{height:60px;filter:drop-shadow(0 0 4px rgba(255,255,255,.7))}
-  .menu{list-style:none;margin:0;padding:0;display:flex;gap:1.5rem}
-  .menu a{color:#fff;text-decoration:none;font-weight:500;transition:color .3s}
-  .menu a:hover,.menu a[aria-current="page"]{color:#FFD600}
-  .btn-gold{background:#FFD600;color:#000;padding:8px 16px;border-radius:8px;text-decoration:none;font-weight:600}
-  main{max-width:900px;margin:3rem auto;padding:0 1.5rem}
-  h1{text-align:center;color:#004d99;margin-bottom:1rem}
-  h2{color:#00796B;margin-top:2rem}
-  .lead{text-align:center;font-size:1.1rem;line-height:1.8}
-  .card{background:#fff;border-radius:20px;box-shadow:0 4px 20px rgba(0,0,0,0.05);padding:2rem;margin-top:2rem}
-  label{font-weight:600}
-  input[type=number]{width:100%;padding:10px;border-radius:8px;border:1px solid #ccc;font-size:1rem;margin:.5rem 0 1rem}
-  .btn-primary{background:#2196F3;color:#fff;border:none;padding:12px 18px;border-radius:8px;cursor:pointer;font-weight:600;transition:all .3s}
-  .btn-primary:hover{background:#00796B}
-  .btn-secondary{background:#FFD600;color:#000;padding:10px 18px;border-radius:8px;text-decoration:none;font-weight:600;display:inline-block;margin-top:1rem}
-  .btn-secondary:hover{background:#FFEA00}
-  footer{background:#001f54;color:#fff;text-align:center;padding:1.5rem;font-size:.9rem;margin-top:3rem}
-  .fade-in{opacity:0;transform:translateY(20px);animation:fadeInUp .8s ease-out forwards}
-  @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
-  .muted{font-size:.9rem;color:#555}
+  body {
+    font-family: "Poppins", Arial, sans-serif;
+    margin: 0;
+    background: #fafafa;
+    color: #222;
+  }
+
+  .site-header {
+    background: linear-gradient(135deg, #001f54 0%, #00796B 100%);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    padding: 20px 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+  }
+
+  .logo {
+    height: 60px;
+    filter: drop-shadow(0 0 4px rgba(255,255,255,0.7));
+  }
+
+  .menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  .menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .menu a:hover,
+  .menu a[aria-current="page"] {
+    color: #FFD600;
+  }
+
+  .btn-gold {
+    background: #FFD600;
+    color: #000;
+    padding: 8px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  main {
+    max-width: 900px;
+    margin: 3rem auto;
+    padding: 0 1.5rem;
+  }
+
+  h1 {
+    text-align: center;
+    color: #004d99;
+    margin-bottom: 1rem;
+  }
+
+  h2 {
+    color: #00796B;
+    margin-top: 2rem;
+  }
+
+  .lead {
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+  }
+
+  .card {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    padding: 2rem;
+    margin-top: 2rem;
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  input[type=number] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin: .5rem 0 1rem;
+  }
+
+  .btn-primary {
+    background: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all .3s;
+  }
+
+  .btn-primary:hover {
+    background: #00796B;
+  }
+
+  .btn-secondary {
+    background: #FFD600;
+    color: #000;
+    padding: 10px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  .btn-secondary:hover {
+    background: #FFEA00;
+  }
+
+  footer {
+    background: #001f54;
+    color: #fff;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+  }
+
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease-out forwards;
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .muted {
+    font-size: 0.9rem;
+    color: #555;
+  }
   </style>
 </head>
 
@@ -62,6 +190,7 @@
     <p class="lead">Your generosity fuels both practical help and the Gospel of Jesus Christ.  
     Every gift enables food relief, recovery programs, and discipleship across Pretoria North.</p>
 
+    <!-- Amount Selector -->
     <div class="card">
       <label for="amount">Choose an amount (ZAR)</label>
       <input id="amount" type="number" min="10" step="10" value="300" aria-describedby="amtHelp">
@@ -70,6 +199,7 @@
       </div>
     </div>
 
+    <!-- PayFast -->
     <div class="card">
       <h2>Give via PayFast (South Africa)</h2>
       <form id="payfastForm" action="https://www.payfast.co.za/eng/process" method="post">
@@ -83,16 +213,35 @@
         <input type="hidden" name="email_address" value="info@fountaingrace.org">
         <button class="btn-primary" type="submit">Donate with PayFast</button>
       </form>
+      <p class="muted">PayFast supports credit/debit cards, Instant EFT, SnapScan, and more.</p>
     </div>
 
+    <!-- PayPal -->
     <div class="card">
       <h2>Give via PayPal (International)</h2>
       <a class="btn-secondary" href="https://paypal.me/FGIPretoria?locale.x=en_US&country.x=ZA" rel="noopener">Donate with PayPal</a>
     </div>
 
+    <!-- EFT -->
+    <div class="card">
+      <h2>Direct EFT Giving (South Africa)</h2>
+      <p>
+        <strong>Account Name:</strong> Fountain of Grace International<br>
+        <strong>Bank:</strong> FNB<br>
+        <strong>Account Type:</strong> Cheque / Current<br>
+        <strong>Account Number:</strong> 620XXXXXXX<br>
+        <strong>Branch Code:</strong> 250655<br>
+        <strong>Reference:</strong> Your Name / Donation
+      </p>
+      <p class="muted">
+        For verification or tax receipt, please email proof of payment to  
+        <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a>.
+      </p>
+    </div>
+
     <p class="muted" style="margin-top:1.5rem;">
-      Receipts and acknowledgements are emailed automatically.  
-      For queries, please contact <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a>.
+      All donations are handled with full transparency and integrity.  
+      Registered NPO 316-193 under the Department of Social Development, South Africa.
     </p>
   </main>
 
@@ -101,7 +250,6 @@
 
   <script>
     document.getElementById("year").textContent = new Date().getFullYear();
-    // sync numeric input to hidden PayFast amount
     const amt=document.getElementById('amount'),pf=document.getElementById('pf_amount');
     amt.addEventListener('input',()=>pf.value=amt.value);
   </script>
