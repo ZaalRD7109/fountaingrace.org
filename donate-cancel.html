@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Donation Cancelled | Fountain of Grace International Church</title>
+  <meta name="description" content="It seems your donation wasn’t completed. You can safely retry or contact Fountain of Grace International (NPO 316-193) for assistance.">
+  <link rel="canonical" href="https://www.fountaingrace.org/donate-cancel.html">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="theme-color" content="#2196F3">
+
+  <style>
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #001f54 0%, #00796B 100%);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.08);
+      border-radius: 20px;
+      padding: 2.5rem;
+      max-width: 650px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+
+    h1 {
+      color: #FFD600;
+      font-size: 1.9rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.7;
+      font-size: 1.1rem;
+      color: #f0f0f0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 1.5rem;
+      background: #FFD600;
+      color: #000;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #FFEA00;
+      transform: translateY(-2px);
+    }
+
+    .secondary {
+      background: #fff;
+      color: #004d99;
+      margin-left: 0.8rem;
+    }
+
+    footer {
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.8);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <img src="/img/fgi-logo.svg" alt="Fountain of Grace International logo" width="130" height="50" style="margin-bottom:1rem;">
+    <h1>Donation Not Completed</h1>
+    <p>It looks like you didn’t finish your donation. That’s okay — no payment was processed.</p>
+    <p>If you’d like to try again, you can safely return to the donation page below or reach out to us directly for assistance.</p>
+    <div>
+      <a href="/donate.html" class="btn">Try Again</a>
+      <a href="/contact.html" class="btn secondary">Contact Us</a>
+    </div>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Fountain of Grace International (NPO 316-193)
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Donation Cancelled",
+    "description": "Donation process cancelled for Fountain of Grace International Church.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Fountain of Grace International",
+      "url": "https://www.fountaingrace.org/"
+    }
+  }
+  </script>
+</body>
+</html>
