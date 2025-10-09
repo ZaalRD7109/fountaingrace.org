@@ -43,6 +43,16 @@
  "contactPoint":[{"@type":"ContactPoint","telephone":"+27-75-259-2555","contactType":"customer service"}]
 }
 </script>
+<style>
+/* Quick inline safety fix for click areas */
+.btn-primary, .btn-outline {
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+}
+</style>
 </head>
 
 <body>
@@ -55,7 +65,7 @@
 
   <nav class="main-nav">
     <div class="nav-container">
-      <a href="/" class="brand" aria-label="Fountain of Grace home">
+      <a href="/index.html" class="brand" aria-label="Fountain of Grace home">
         <img src="/img/fgi-logo.svg" alt="Fountain of Grace International logo" class="logo" width="140" height="40" loading="eager">
       </a>
       <ul class="menu">
@@ -77,28 +87,12 @@
       <h1>Restore Dignity.<br>Build Hope.<br>Follow Jesus.</h1>
       <p>Fountain of Grace International (NPO 316-193) is a Christ-centered church in Pretoria, helping families overcome poverty, addiction and despair through practical care and the Gospel.</p>
 
-      <!-- ✅ Perfected CTA Buttons -->
+      <!-- ✅ Fixed working CTAs -->
       <div class="btn-group">
-        <a 
-          class="btn-primary" 
-          href="/donate.html" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          aria-label="Donate securely to Fountain of Grace International"
-          onclick="gtag('event','donate_click',{event_category:'CTA',event_label:'Hero Donate'});">
-          Donate Now
-        </a>
-        <a 
-          class="btn-outline" 
-          href="/get-involved.html" 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          aria-label="Volunteer or join prayer groups at Fountain of Grace International"
-          onclick="gtag('event','volunteer_click',{event_category:'CTA',event_label:'Hero Volunteer'});">
-          Volunteer &amp; Pray
-        </a>
+        <a class="btn-primary" href="donate.html" aria-label="Go to donation page">Donate Now</a>
+        <a class="btn-outline" href="get-involved.html" aria-label="Go to get involved page">Volunteer &amp; Pray</a>
       </div>
-      <!-- ✅ End Fixed -->
+      <!-- ✅ End fix -->
     </div>
   </section>
 
@@ -123,11 +117,6 @@
 
 <script>
 document.getElementById('year').textContent = new Date().getFullYear();
-
-// open in new tab only on mobile for better user flow
-if (/Mobi|Android/i.test(navigator.userAgent)) {
-  document.querySelectorAll('.btn-group a').forEach(btn => btn.setAttribute('target', '_blank'));
-}
 </script>
 </body>
 </html>
