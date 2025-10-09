@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-ZA"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Donate | Secure Giving via PayFast & PayPal | FGI</title>
+<meta name="description" content="Give securely to Fountain of Grace International (NPO 316-193) via PayFast (ZAR) or PayPal (international). Every gift helps families in Pretoria North.">
+<link rel="canonical" href="https://www.fountaingrace.org/donate.html">
+<meta property="og:type" content="website"><meta property="og:title" content="Donate to Fountain of Grace International">
+<meta property="og:description" content="Secure giving via PayFast & PayPal.">
+<meta property="og:url" content="https://www.fountaingrace.org/donate.html">
+<meta property="og:image" content="https://www.fountaingrace.org/assets/img/og-image.jpg">
+<link rel="stylesheet" href="/assets/css/styles.css"></head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<header class="site-header" role="banner"><div class="container flex between center">
+<a class="brand" href="/" aria-label="Fountain of Grace International home"><img src="/assets/img/logo.svg" width="140" height="40" alt="Fountain of Grace International logo"></a>
+<button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav id="nav" class="nav" role="navigation" aria-label="Primary"><ul>
+<li><a href="/about.html">About</a></li><li><a href="/programs.html">Programs</a></li><li><a href="/get-involved.html">Get Involved</a></li><li><a href="/blog/">Blog</a></li><li><a href="/contact.html">Contact</a></li><li><a aria-current="page" class="btn btn-primary" href="/donate.html">Donate</a></li>
+</ul></nav></div></header>
+<main id="main" class="section"><div class="container narrow">
+<h1>Donate</h1>
+<p class="lead">Your generosity fuels practical help and the Gospel in Pretoria North. Thank you for giving.</p>
+<div class="donate-widget">
+<label for="amount">Choose an amount (ZAR)</label>
+<input id="amount" type="number" min="10" step="10" value="200" aria-describedby="amtHelp">
+<div id="amtHelp" class="muted">R350 feeds a family for a week • R600 supports recovery & prayer • R1000 equips youth mentorship</div>
+</div>
+<div class="grid2">
+<section class="card">
+<h2>Give via PayFast (South Africa)</h2>
+<form id="payfastForm" action="https://www.payfast.co.za/eng/process" method="post">
+<input type="hidden" name="merchant_id" value="YOUR_MERCHANT_ID">
+<input type="hidden" name="merchant_key" value="YOUR_MERCHANT_KEY">
+<input type="hidden" name="return_url" value="https://www.fountaingrace.org/donate.html?status=success">
+<input type="hidden" name="cancel_url" value="https://www.fountaingrace.org/donate.html?status=cancel">
+<input type="hidden" name="notify_url" value="https://www.fountaingrace.org/ipn/payfast">
+<input type="hidden" name="amount" id="pf_amount" value="200">
+<input type="hidden" name="item_name" value="Donation to Fountain of Grace International">
+<input type="hidden" name="email_address" value="info@fountaingrace.org">
+<button class="btn btn-primary" type="submit">Donate with PayFast</button>
+</form>
+</section>
+<section class="card">
+<h2>Give via PayPal (International)</h2>
+<a class="btn btn-secondary" id="paypalBtn" href="https://www.paypal.com/donate?business=info%40fountaingrace.org&currency_code=ZAR&amount=200" rel="noopener">Donate with PayPal</a>
+</section>
+</div>
+<p class="muted">We email acknowledgements for gifts. For any queries, contact <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a>.</p>
+</div></main>
+<footer class="site-footer"><div class="container">© <span id="year"></span> Fountain of Grace International.</div></footer>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"DonateAction","name":"Donate to Fountain of Grace International","target":"https://www.fountaingrace.org/donate.html","recipient":{"@type":"NonprofitOrganization","name":"Fountain of Grace International","url":"https://www.fountaingrace.org/"}}
+</script>
+<script src="/assets/js/main.js" defer></script>
+</body></html>
