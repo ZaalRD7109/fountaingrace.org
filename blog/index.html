@@ -1,10 +1,15 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-ZA">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blog & Resources | Fountain of Grace International</title>
-  <meta name="description" content="Faith-based stories, teachings, and practical guides to help you grow spiritually and live purposefully.">
+  <meta name="description" content="Faith-based stories, teachings, and practical guides from Fountain of Grace International to help you grow spiritually and live purposefully.">
+  <meta name="keywords" content="Fountain of Grace International, Christian Church Pretoria, faith blog, NPO 316-193, spiritual growth, Ricardo Zaal sermons">
+  <link rel="canonical" href="https://www.fountaingrace.org/blog/">
+  <meta name="theme-color" content="#2196F3">
+
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
   <link rel="stylesheet" href="/css/styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
@@ -14,115 +19,150 @@
       background: #fafafa;
       color: #222;
       margin: 0;
-    }
-
-    header, footer {
-      text-align: center;
-      padding: 2rem 1rem;
-    }
-
-    h1 {
-      font-size: 2rem;
-      color: #0A2540;
-      margin-top: 2rem;
-    }
-
-    .intro {
-      color: #555;
-      max-width: 700px;
-      margin: 0 auto 2rem;
       line-height: 1.6;
     }
 
-    .blog-list {
-      display: grid;
-      gap: 2rem;
-      max-width: 800px;
-      margin: 0 auto 4rem;
+    main.section {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1rem 4rem;
     }
 
-    .post {
+    .blog-header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .blog-header h1 {
+      font-size: 2rem;
+      color: #0A2540;
+      margin-bottom: 0.5rem;
+    }
+
+    .blog-header p {
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    #search-input {
+      width: 100%;
+      padding: 0.75rem 1rem;
+      border: 2px solid #2196F3;
+      border-radius: 8px;
+      margin: 1.5rem 0 2rem;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    #search-input:focus {
+      border-color: #00796B;
+    }
+
+    .post-item {
       background: #fff;
       border-radius: 1rem;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-      padding: 1.5rem;
-      transition: transform 0.3s ease;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+      padding: 1.5rem 1.75rem;
+      margin-bottom: 1.5rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .post:hover {
+    .post-item:hover {
       transform: translateY(-5px);
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
     }
 
-    .post h2 {
+    .post-item h2 {
+      font-size: 1.25rem;
       margin: 0 0 0.5rem;
+      line-height: 1.4;
     }
 
-    .post a {
+    .post-item a {
       text-decoration: none;
-      color: #1FA2FF;
+      color: #2196F3;
       font-weight: 600;
     }
 
-    .post a:hover {
+    .post-item a:hover {
       text-decoration: underline;
     }
 
-    footer {
+    .post-item p.muted {
+      color: #555;
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    footer.site-footer {
       background: #0A2540;
       color: #fff;
+      text-align: center;
+      padding: 1.5rem 1rem;
       font-size: 0.9rem;
+    }
+
+    footer.site-footer a {
+      color: #FFD600;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer.site-footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .post-item {
+        padding: 1.25rem;
+      }
+      .post-item h2 {
+        font-size: 1.1rem;
+      }
     }
   </style>
 </head>
+
 <body>
+  <!-- HEADER automatically loads from /partials/header.html -->
+  <main id="main" class="section">
+    <header class="blog-header">
+      <h1>Blog & Resources</h1>
+      <p>Faith-based stories, teachings, and practical guides to help you grow spiritually and live purposefully.</p>
+      <input type="search" id="search-input" placeholder="Search sermons, topics, or scriptures...">
+    </header>
 
-  <header>
-    <h1>Blog & Resources</h1>
-    <p class="intro">
-      Faith-based stories, teachings, and practical guides to help you grow spiritually and live purposefully.
-    </p>
-  </header>
+    <div id="blog-list">
+      <!-- BLOG CARDS -->
+      <article class="post-item" data-published="2025-10-10">
+        <h2><a href="/blog/overnight-success-long-obedience.html">The Danger of Overnight Success &amp; the Power of Long Obedience</a></h2>
+        <p class="muted">Why God builds in seasons, not speed. Learn how long obedience grows roots that last when quick fame fades.</p>
+      </article>
 
-  <main class="blog-list">
-    <article class="post">
-      <h2><a href="/blog/overnight-success-long-obedience.html">The Danger of Overnight Success & the Power of Long Obedience</a></h2>
-      <p>Why God builds in seasons, not speed. Learn how long obedience grows roots that last when quick fame fades.</p>
-    </article>
+      <article class="post-item" data-published="2025-10-10">
+        <h2><a href="/blog/how-to-give-safely-in-south-africa.html">How to Give Safely to a Nonprofit in South Africa</a></h2>
+        <p class="muted">A quick guide to verifying charities and giving with confidence.</p>
+      </article>
 
-    <article class="post">
-      <h2><a href="/blog/how-to-give-safely-in-south-africa.html">How to Give Safely to a Nonprofit in South Africa</a></h2>
-      <p>A quick guide to verifying charities and giving with confidence.</p>
-    </article>
+      <article class="post-item" data-published="2025-10-10">
+        <h2><a href="/blog/restoring-dignity-through-faith.html">Restoring Dignity Through Faith</a></h2>
+        <p class="muted">Discover how faith and community can rebuild lives through hope and service.</p>
+      </article>
 
-    <article class="post">
-      <h2><a href="/blog/restoring-dignity-through-faith.html">Restoring Dignity Through Faith</a></h2>
-      <p>Discover how faith and community can rebuild lives through hope and service.</p>
-    </article>
+      <article class="post-item" data-published="2025-10-10">
+        <h2><a href="/blog/why-volunteering-changes-you.html">Why Volunteering Changes You</a></h2>
+        <p class="muted">How serving others transforms your heart and your perspective on life.</p>
+      </article>
 
-    <article class="post">
-      <h2><a href="/blog/why-volunteering-changes-you.html">Why Volunteering Changes You</a></h2>
-      <p>How serving others transforms your heart and your perspective on life.</p>
-    </article>
+      <article class="post-item" data-published="2025-10-10">
+        <h2><a href="/blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20.html">Fix the Router: Faith for Heaven’s Supply</a></h2>
+        <p class="muted">Faith is the “router” that connects us to God’s always-on promises. Learn how to renew your mind, forgive freely, and trust like a child to see God’s Yes in your everyday.</p>
+      </article>
+    </div>
   </main>
 
-  <footer>
-    © <span id="y"></span> Fountain of Grace International • NPO 316-193 • South Africa
-  </footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
-
+  <!-- FOOTER automatically loads from /partials/footer.html -->
+  <script src="/js/main.js" defer></script>
 </body>
 </html>
-<section class="container">
-  <h1>Fountain of Grace Blog</h1>
-  <p>Spirit-filled insights and sermons from Pastor Ricardo Zaal — rooted in faith, wisdom, and practical obedience.</p>
-
-  <!-- 🔍 Search bar -->
-  <input type="search" id="search-input" placeholder="Search sermons, topics, or scriptures..." style="width:100%;padding:10px;margin:15px 0;border:2px solid #2196F3;border-radius:8px;font-size:1rem;">
-
-  <!-- Blog List -->
-  <div id="blog-list" class="grid"></div>
-</section>
-<article class="post-item" data-published="2025-10-10">
-  <h2><a href="/blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20.html">Fix the Router: Faith for Heaven’s Supply</a></h2>
-  <p class="muted">Faith is the “router” that connects us to God’s always-on promises. Learn how to renew your mind, forgive freely, and trust like a child to see God’s Yes in your everyday.</p>
-</article>
