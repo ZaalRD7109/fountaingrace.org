@@ -16,3 +16,21 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .catch(err => console.error("Footer load error:", err));
 });
+// --- Auto-load header & footer across all pages ---
+document.addEventListener("DOMContentLoaded", () => {
+  // Load header
+  fetch("/partials/header.html")
+    .then(response => response.text())
+    .then(html => {
+      document.body.insertAdjacentHTML("afterbegin", html);
+    })
+    .catch(err => console.error("Header load error:", err));
+
+  // Load footer
+  fetch("/partials/footer.html")
+    .then(response => response.text())
+    .then(html => {
+      document.body.insertAdjacentHTML("beforeend", html);
+    })
+    .catch(err => console.error("Footer load error:", err));
+});
