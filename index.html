@@ -43,8 +43,9 @@
  "contactPoint":[{"@type":"ContactPoint","telephone":"+27-75-259-2555","contactType":"customer service"}]
 }
 </script>
+
 <style>
-/* Quick inline safety fix for click areas */
+/* Keep buttons clickable and layout consistent */
 .btn-primary, .btn-outline {
   display: inline-block;
   text-decoration: none;
@@ -56,29 +57,7 @@
 </head>
 
 <body>
-<header class="site-header">
-  <div class="top-bar">
-    <div class="container">
-      <span>📞 Call us: </span><a href="tel:+27752592555">+27 75 259 2555</a>
-    </div>
-  </div>
-
-  <nav class="main-nav">
-    <div class="nav-container">
-      <a href="/index.html" class="brand" aria-label="Fountain of Grace home">
-        <img src="/img/fgi-logo.svg" alt="Fountain of Grace International logo" class="logo" width="140" height="40" loading="eager">
-      </a>
-      <ul class="menu">
-        <li><a href="/index.html" class="active">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/programs.html">Programs</a></li>
-        <li><a href="/get-involved.html">Get Involved</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact.html" class="btn-gold">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+<!-- Header and Footer now load dynamically via /partials/header.html + /partials/footer.html -->
 
 <main id="main">
   <section class="hero">
@@ -87,12 +66,10 @@
       <h1>Restore Dignity.<br>Build Hope.<br>Follow Jesus.</h1>
       <p>Fountain of Grace International (NPO 316-193) is a Christ-centered church in Pretoria, helping families overcome poverty, addiction and despair through practical care and the Gospel.</p>
 
-      <!-- ✅ Fixed working CTAs -->
       <div class="btn-group">
         <a class="btn-primary" href="donate.html" aria-label="Go to donation page">Donate Now</a>
         <a class="btn-outline" href="get-involved.html" aria-label="Go to get involved page">Volunteer &amp; Pray</a>
       </div>
-      <!-- ✅ End fix -->
     </div>
   </section>
 
@@ -109,14 +86,7 @@
   </section>
 </main>
 
-<footer class="footer">
-  <div class="container">
-    <p>© <span id="year"></span> Fountain of Grace International · NPO 316-193 · Pretoria North, South Africa</p>
-  </div>
-</footer>
-
-<script>
-document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+<!-- JS (loads header, footer, and cookie notice dynamically) -->
+<script src="/assets/js/main.js" defer></script>
 </body>
 </html>
