@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-ZA">
 <head>
   <meta charset="utf-8">
@@ -7,158 +7,104 @@
   <meta name="description" content="God builds in seasons, not speed. Discover the power of long obedience, deep roots, and steady faith at Fountain of Grace International (NPO 316-193).">
   <meta name="keywords" content="Fountain of Grace International, Christian Church Pretoria, NPO 316-193, long obedience, overnight success, God’s timing, spiritual growth, identity in Christ">
   <link rel="canonical" href="https://www.fountaingrace.org/blog/overnight-success-long-obedience.html">
-  <link rel="icon" href="/favicon.ico">
+  <meta name="theme-color" content="#2196F3">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts & Global Styles -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
 
   <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-      color: #1a1a1a;
-      margin: 0;
-      background: #fff;
-      line-height: 1.6;
-    }
+  /* ===== BLOG POST STYLES ===== */
+  body {
+    font-family: "Poppins", sans-serif;
+    color: #1a1a1a;
+    margin: 0;
+    background: #fff;
+    line-height: 1.7;
+  }
 
-    header {
-      background: linear-gradient(135deg, #001f54, #2196F3);
-      color: #fff;
-      padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
+  main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
 
-    header a.logo {
-      font-weight: 700;
-      color: #fff;
-      text-decoration: none;
-      font-size: 1.2rem;
-    }
+  article h1 {
+    color: #004d99;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
 
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 1.2rem;
-      font-weight: 500;
-    }
+  article h2 {
+    margin-top: 2rem;
+    color: #00796B;
+    font-size: 1.3rem;
+  }
 
-    nav a:hover {
-      text-decoration: underline;
-    }
+  .verse {
+    background: #f4f7fb;
+    border-left: 4px solid #2196F3;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-style: italic;
+    color: #0f3057;
+  }
 
-    .container {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-      gap: 2rem;
-      max-width: 1100px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-    }
+  .cta-card {
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
 
-    article h1 {
-      color: #0A2540;
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
+  .cta-card h3 {
+    color: #0A2540;
+    margin-top: 0;
+  }
 
-    article h2 {
-      margin-top: 2rem;
-      color: #0A2540;
-      font-size: 1.3rem;
-    }
+  .cta-card p {
+    font-size: 0.95rem;
+    color: #333;
+  }
 
-    .verse {
-      background: #f4f7fb;
-      border-left: 4px solid #2196F3;
-      padding: 1rem;
-      border-radius: 8px;
-      margin: 1rem 0;
-      font-style: italic;
-      color: #0f3057;
-    }
+  .btn {
+    display: inline-block;
+    background: #2196F3;
+    color: #fff;
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.2s;
+  }
 
-    .cta-card {
-      background: #f8fafc;
-      border: 1px solid #e5e7eb;
-      border-radius: 12px;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    }
+  .btn:hover { background: #1976D2; }
+  .btn.secondary { background: #0A2540; }
 
-    .cta-card h3 {
-      color: #0A2540;
-      margin-top: 0;
-    }
-
-    .cta-card p {
-      font-size: 0.95rem;
-      color: #333;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #2196F3;
-      color: #fff;
-      padding: 0.6rem 1.2rem;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.2s;
-    }
-
-    .btn:hover {
-      background: #1976D2;
-    }
-
-    .btn.secondary {
-      background: #0A2540;
-    }
-
-    footer {
-      background: #0A2540;
-      color: #fff;
-      text-align: center;
-      padding: 1.5rem 1rem;
-      margin-top: 3rem;
-      font-size: 0.9rem;
-    }
-
-    footer a {
-      color: #FFD600;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 900px) {
-      .container {
-        grid-template-columns: 1fr;
-      }
-    }
+  @media (max-width: 900px) {
+    main { grid-template-columns: 1fr; }
+    article h1 { font-size: 1.6rem; }
+  }
   </style>
 </head>
 
 <body>
-  <header>
-    <a href="https://www.fountaingrace.org/" class="logo">Fountain of Grace International</a>
-    <nav>
-      <a href="https://www.fountaingrace.org/">Home</a>
-      <a href="https://www.fountaingrace.org/about.html">About</a>
-      <a href="https://www.fountaingrace.org/programs.html">Programs</a>
-      <a href="https://www.fountaingrace.org/contact.html">Contact</a>
-      <a href="https://www.fountaingrace.org/blog/">Blog</a>
-      <a href="https://www.fountaingrace.org/donate.html">Give</a>
-    </nav>
-  </header>
-
-  <main class="container">
+  <!-- Header auto-loads from /partials/header.html -->
+  <main id="main">
     <article>
-      <h1>The Danger of Overnight Success & the Power of Long Obedience</h1>
+      <h1>The Danger of Overnight Success &amp; the Power of Long Obedience</h1>
       <p>We live in an “instant coffee” world, but <strong>heaven moves in seasons</strong>. God grows roots long before He raises branches. If you feel hidden, delayed, or overlooked—this word is for you.</p>
 
       <h2>1) God Builds in <em>Seasons</em>, Not Speed</h2>
@@ -204,35 +150,50 @@
       <div class="cta-card">
         <h3>Plan Your Visit</h3>
         <p>Experience the word, worship, and community. Bring your whole family—there’s a seat for you.</p>
-        <a class="btn" href="https://www.fountaingrace.org/contact.html">Plan Your Visit</a>
+        <a class="btn" href="/contact.html">Plan Your Visit</a>
       </div>
 
       <div class="cta-card">
         <h3>Send a Prayer Request</h3>
         <p>Our prayer team will stand with you in faith for healing, provision, and breakthrough.</p>
-        <a class="btn secondary" href="https://www.fountaingrace.org/contact.html">Submit a Request</a>
+        <a class="btn secondary" href="/contact.html">Submit a Request</a>
       </div>
 
       <div class="cta-card">
         <h3>Partner With Us</h3>
         <p>Your generosity fuels discipleship, outreach, and hope across South Africa and beyond.</p>
-        <a class="btn" href="https://www.fountaingrace.org/donate.html">Give to FGI</a>
+        <a class="btn" href="/donate.html">Give to FGI</a>
       </div>
 
       <div class="cta-card">
         <h3>Join the Next Service</h3>
         <p>Don’t do life alone. Grow deep roots with a church that loves Jesus and people.</p>
-        <a class="btn secondary" href="https://www.fountaingrace.org/contact.html">See Service Times</a>
+        <a class="btn secondary" href="/contact.html">See Service Times</a>
       </div>
     </aside>
   </main>
 
-  <footer>
-    © <span id="y"></span> Fountain of Grace International • NPO 316-193 • South Africa ·
-    <a href="https://www.fountaingrace.org/contact.html">Contact Us</a> ·
-    <a href="https://www.fountaingrace.org/donate.html">Give</a>
-  </footer>
+  <!-- Footer auto-loads from /partials/footer.html -->
+  <script src="/js/main.js" defer></script>
 
-  <script>document.getElementById('y').textContent=new Date().getFullYear();</script>
+  <!-- SEO Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "The Danger of Overnight Success – The Power of Long Obedience",
+    "url": "https://www.fountaingrace.org/blog/overnight-success-long-obedience.html",
+    "datePublished": "2025-10-10",
+    "description": "God builds in seasons, not speed. Discover the power of long obedience, deep roots, and steady faith at Fountain of Grace International.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Fountain of Grace International",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.fountaingrace.org/img/fgi-logo.svg"
+      }
+    }
+  }
+  </script>
 </body>
 </html>
