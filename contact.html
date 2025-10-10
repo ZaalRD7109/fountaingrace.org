@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="/css/styles.css">
 
   <style>
-  /* --- Page Styling for Contact --- */
   body {
     font-family: "Poppins", Arial, sans-serif;
     margin: 0;
@@ -108,7 +107,8 @@
     <p><strong>Email:</strong> <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a></p>
 
     <h2>Send a Message</h2>
-    <form action="mailto:info@fountaingrace.org" method="post" enctype="text/plain">
+    <!-- ✅ Updated: Redirects to thank-you page -->
+    <form action="/contact-success.html" method="get">
       <label for="name">Your Name</label>
       <input id="name" name="name" type="text" required>
 
