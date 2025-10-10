@@ -65,6 +65,51 @@
     transform: translateY(-2px);
   }
 
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #fff;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    margin-top: 2rem;
+  }
+
+  label {
+    font-weight: 600;
+  }
+
+  input, textarea {
+    font-family: inherit;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  input:focus, textarea:focus {
+    outline: none;
+    border-color: #2196F3;
+    box-shadow: 0 0 3px rgba(33,150,243,0.4);
+  }
+
+  button.btn-primary {
+    background: #2196F3;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+
+  button.btn-primary:hover {
+    background: #00796B;
+  }
+
   .fade-in {
     opacity: 0;
     transform: translateY(20px);
@@ -103,8 +148,18 @@
     <div class="section-card">
       <h2>3️⃣ Partner With Us</h2>
       <p>Businesses, churches, and individuals can partner with Fountain of Grace International to make a lasting impact in South Africa. Sponsorships, skills training, and joint outreach projects are welcome.</p>
-      <p>📧 <strong>Email:</strong> <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a></p>
-      <p>📞 <strong>WhatsApp:</strong> +27 75 259 2555</p>
+      <form action="/contact-success.html" method="get">
+        <label for="name">Full Name</label>
+        <input id="name" name="name" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="message">How would you like to get involved?</label>
+        <textarea id="message" name="message" rows="6" placeholder="E.g., Volunteer, Partner, Sponsor, or Prayer Support" required></textarea>
+
+        <button class="btn-primary" type="submit">Send</button>
+      </form>
     </div>
   </main>
 
