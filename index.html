@@ -38,37 +38,157 @@
  "name":"Fountain of Grace International",
  "identifier":{"@type":"PropertyValue","propertyID":"NPO","value":"316-193"},
  "url":"https://www.fountaingrace.org/",
- "logo":"https://www.fountaingrace.org/img/FGI%20Logo%20.svg",
+ "logo":"https://www.fountaingrace.org/img/fgi-logo.svg",
  "address":{"@type":"PostalAddress","streetAddress":"323 B Danie Theron Street","addressLocality":"Pretoria North","addressRegion":"Gauteng","postalCode":"0182","addressCountry":"ZA"},
  "contactPoint":[{"@type":"ContactPoint","telephone":"+27-75-259-2555","contactType":"customer service"}]
 }
 </script>
 
 <style>
-/* Keep buttons clickable and layout consistent */
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+  background: #001F54;
+  overflow-x: hidden;
+}
+
+.hero {
+  background: linear-gradient(180deg, #0082ca 0%, #00796B 100%);
+  text-align: center;
+  padding: 70px 20px 60px;
+}
+
+.hero-inner {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-img {
+  border-radius: 50%;
+  border: 5px solid #FFD600;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.3;
+  margin-bottom: 1rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+
+.hero p {
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto 1.5rem;
+}
+
+.btn-group {
+  margin-top: 1.5rem;
+}
+
 .btn-primary, .btn-outline {
   display: inline-block;
   text-decoration: none;
-  cursor: pointer;
-  position: relative;
-  z-index: 5;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: #FFD600;
+  color: #000;
+}
+
+.btn-primary:hover {
+  background: #FFEA00;
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  border: 2px solid #FFD600;
+  color: #FFD600;
+  margin-left: 10px;
+}
+
+.btn-outline:hover {
+  background: #FFD600;
+  color: #000;
+}
+
+.section.about {
+  background: #f9f9f9;
+  color: #222;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.section.about h2 {
+  color: #004d99;
+  font-size: 1.8rem;
+}
+
+.section.about p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  line-height: 1.8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.cards article {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.cards h3 {
+  color: #00796B;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+  .hero {
+    padding: 60px 15px 40px;
+  }
+  .hero-img {
+    width: 130px;
+    height: 130px;
+  }
+  .hero p {
+    font-size: 0.95rem;
+  }
 }
 </style>
 </head>
 
 <body>
-<!-- Header and Footer now load dynamically via /partials/header.html + /partials/footer.html -->
-
+<!-- Header and Footer load dynamically -->
 <main id="main">
   <section class="hero">
     <div class="hero-inner">
-      <img src="/img/imgrdzaal-profile.jpeg" alt="Pastor Ricardo Zaal" class="hero-img" width="200" height="200" loading="eager" decoding="async">
+      <img src="/img/imgrdzaal-profile.jpeg" alt="Pastor Ricardo Zaal" class="hero-img" loading="eager" decoding="async">
       <h1>Restore Dignity.<br>Build Hope.<br>Follow Jesus.</h1>
-      <p>Fountain of Grace International (NPO 316-193) is a Christ-centered church in Pretoria, helping families overcome poverty, addiction and despair through practical care and the Gospel.</p>
-
+      <p>Fountain of Grace International (NPO 316-193) is a Christ-centered church in Pretoria, helping families overcome poverty, addiction, and despair through practical care and the Gospel.</p>
       <div class="btn-group">
-        <a class="btn-primary" href="donate.html" aria-label="Go to donation page">Donate Now</a>
-        <a class="btn-outline" href="get-involved.html" aria-label="Go to get involved page">Volunteer &amp; Pray</a>
+        <a class="btn-primary" href="donate.html">Donate Now</a>
+        <a class="btn-outline" href="get-involved.html">Volunteer &amp; Pray</a>
       </div>
     </div>
   </section>
@@ -76,7 +196,7 @@
   <section class="section about">
     <div class="container">
       <h2>What We Do</h2>
-      <p>We serve Pretoria North through programs that meet physical, emotional and spiritual needs while sharing the hope of Christ.</p>
+      <p>We serve Pretoria North through programs that meet physical, emotional, and spiritual needs while sharing the hope of Christ.</p>
       <div class="cards">
         <article><h3>Food &amp; Family Relief</h3><p>Emergency food parcels and support for vulnerable households.</p></article>
         <article><h3>Recovery &amp; Prayer</h3><p>Prayer line and addiction support, connecting people to Jesus.</p></article>
@@ -86,7 +206,6 @@
   </section>
 </main>
 
-<!-- JS (loads header, footer, and cookie notice dynamically) -->
-<script src="/js/main.js" defer></script>
+<script src="/js/main.js"></script>
 </body>
 </html>
