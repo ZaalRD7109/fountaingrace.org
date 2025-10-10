@@ -1,19 +1,19 @@
 (function () {
-  // --- Navigation toggle (mobile menu) ---
+  // --- Mobile navigation toggle ---
   const navToggle = document.querySelector(".nav-toggle");
   const nav = document.getElementById("nav");
   if (navToggle && nav) {
     navToggle.addEventListener("click", () => {
-      const exp = navToggle.getAttribute("aria-expanded") === "true";
-      navToggle.setAttribute("aria-expanded", String(!exp));
+      const expanded = navToggle.getAttribute("aria-expanded") === "true";
+      navToggle.setAttribute("aria-expanded", String(!expanded));
       nav.classList.toggle("open");
     });
   }
 
-  // --- Auto-update year (for copyright) ---
-  const yearElement = document.getElementById("year");
-  if (yearElement) {
-    yearElement.textContent = new Date().getFullYear();
+  // --- Auto-update footer year ---
+  const year = document.getElementById("year");
+  if (year) {
+    year.textContent = new Date().getFullYear();
   }
 
   // --- Donation amount sync (PayFast + PayPal) ---
@@ -42,30 +42,33 @@
   }
 
   // --- Universal Header & Footer Loader ---
-  // Automatically loads the shared header.html and footer.html on every page
   document.addEventListener("DOMContentLoaded", () => {
-    // Load header
-    fetch("/partials/header.html")
-      .then((response) => response.text())
-      .then((html) => {
-        document.body.insertAdjacentHTML("afterbegin", html);
-      })
-      .catch((err) => console.error("Header load error:", err));
+    const base = window.location.origin;
 
-    // Load footer
-    fetch("/partials/footer.html")
-      .then((response) => response.text())
-      .then((html) => {
-        document.body.insertAdjacentHTML("beforeend", html);
-      })
-      .catch((err) => console.error("Footer load error:", err));
+    // Load Header
+    fetch(`${base}/partials/header.html`)
+      .then(res => res.ok ? res.text() : Promise.reject(res))
+      .then(html => document.body.insertAdjacentHTML("afterbegin", html))
+      .catch(err => console.error("Header load error:", err));
+
+    // Load Footer
+    fetch(`${base}/partials/footer.html`)
+      .then(res => res.ok ? res.text() : Promise.reject(res))
+      .then(html => document.body.insertAdjacentHTML("beforeend", html))
+      .catch(err => console.error("Footer load error:", err));
   });
 })();
 
-// Load cookie notice
-fetch("/partials/cookie-notice.html")
-  .then(response => response.text())
-  .then(html => {
-    document.body.insertAdjacentHTML("beforeend", html);
-  })
+// --- Cookie Notice Loader (optional) ---
+fetch(`${window.location.origin}/partials/cookie-notice.html`)
+  .then(res => res.ok ? res.text() : Promise.reject(res))
+  .then(html => document.body.insertAdjacentHTML("beforeend", html))
   .catch(err => console.error("Cookie notice load error:", err));
+
+// --- Fix broken relative images like logo.svg on index page ---
+document.addEventListener("DOMContentLoaded", () => {
+  const logo = document.querySelector("img[src*='logo.svg']");
+  if (logo && !logo.src.startsWith(window.location.origin)) {
+    logo.src = `${window.location.origin}/img/logo.svg`;
+  }
+});
