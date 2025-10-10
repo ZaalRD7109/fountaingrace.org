@@ -1,97 +1,114 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en-ZA">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blog & Resources | Fountain of Grace International</title>
-  <meta name="description" content="Faith-based articles and resources from Fountain of Grace International (NPO 316-193), a Christian Church in Pretoria North, South Africa.">
-  <meta name="keywords" content="Fountain of Grace International, blog, faith resources, Pretoria North church, Christian nonprofit South Africa, NPO 316-193">
-  <link rel="canonical" href="https://www.fountaingrace.org/blog/">
-  <meta name="theme-color" content="#2196F3">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
-
-  <!-- Styles -->
+  <meta name="description" content="Faith-based stories, teachings, and practical guides to help you grow spiritually and live purposefully.">
   <link rel="stylesheet" href="/css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #fafafa;
+      color: #222;
+      margin: 0;
+    }
+
+    header, footer {
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      color: #0A2540;
+      margin-top: 2rem;
+    }
+
+    .intro {
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+      line-height: 1.6;
+    }
+
+    .blog-list {
+      display: grid;
+      gap: 2rem;
+      max-width: 800px;
+      margin: 0 auto 4rem;
+    }
+
+    .post {
+      background: #fff;
+      border-radius: 1rem;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      padding: 1.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .post:hover {
+      transform: translateY(-5px);
+    }
+
+    .post h2 {
+      margin: 0 0 0.5rem;
+    }
+
+    .post a {
+      text-decoration: none;
+      color: #1FA2FF;
+      font-weight: 600;
+    }
+
+    .post a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background: #0A2540;
+      color: #fff;
+      font-size: 0.9rem;
+    }
+  </style>
 </head>
-
 <body>
-  <!-- Header loads dynamically -->
-  <main id="main" class="section">
-    <div class="container narrow">
-      <h1>Blog & Resources</h1>
-      <p class="lead">Faith-based stories, teachings, and practical guides to help you grow spiritually and live purposefully.</p>
-      
-      <article class="post-item">
-        <h2><a href="/blog/how-to-give-safely-in-south-africa.html">How to Give Safely to a Nonprofit in South Africa</a></h2>
-        <p class="muted">A quick guide to verifying charities and giving with confidence.</p>
-      </article>
 
-      <article class="post-item">
-        <h2><a href="/blog/restoring-dignity-through-faith.html">Restoring Dignity Through Faith</a></h2>
-        <p class="muted">Discover how faith and community can rebuild lives through hope and service.</p>
-      </article>
+  <header>
+    <h1>Blog & Resources</h1>
+    <p class="intro">
+      Faith-based stories, teachings, and practical guides to help you grow spiritually and live purposefully.
+    </p>
+  </header>
 
-      <article class="post-item">
-        <h2><a href="/blog/why-volunteering-changes-you.html">Why Volunteering Changes You</a></h2>
-        <p class="muted">How serving others transforms your heart and your perspective on life.</p>
-      </article>
-    </div>
+  <main class="blog-list">
+    <article class="post">
+      <h2><a href="/blog/overnight-success-long-obedience.html">The Danger of Overnight Success & the Power of Long Obedience</a></h2>
+      <p>Why God builds in seasons, not speed. Learn how long obedience grows roots that last when quick fame fades.</p>
+    </article>
+
+    <article class="post">
+      <h2><a href="/blog/how-to-give-safely-in-south-africa.html">How to Give Safely to a Nonprofit in South Africa</a></h2>
+      <p>A quick guide to verifying charities and giving with confidence.</p>
+    </article>
+
+    <article class="post">
+      <h2><a href="/blog/restoring-dignity-through-faith.html">Restoring Dignity Through Faith</a></h2>
+      <p>Discover how faith and community can rebuild lives through hope and service.</p>
+    </article>
+
+    <article class="post">
+      <h2><a href="/blog/why-volunteering-changes-you.html">Why Volunteering Changes You</a></h2>
+      <p>How serving others transforms your heart and your perspective on life.</p>
+    </article>
   </main>
 
-  <!-- Footer loads dynamically -->
+  <footer>
+    © <span id="y"></span> Fountain of Grace International • NPO 316-193 • South Africa
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 
-  <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "Fountain of Grace International Blog",
-    "url": "https://www.fountaingrace.org/blog/",
-    "publisher": {
-      "@type": "Organization",
-      "name": "Fountain of Grace International",
-      "url": "https://www.fountaingrace.org/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.fountaingrace.org/img/fgi-logo.svg"
-      }
-    },
-    "blogPost": [
-      {
-        "@type": "BlogPosting",
-        "headline": "How to Give Safely to a Nonprofit in South Africa",
-        "url": "https://www.fountaingrace.org/blog/how-to-give-safely-in-south-africa.html",
-        "datePublished": "2025-10-10",
-        "description": "A quick guide to verifying charities and giving with confidence."
-      },
-      {
-        "@type": "BlogPosting",
-        "headline": "Restoring Dignity Through Faith",
-        "url": "https://www.fountaingrace.org/blog/restoring-dignity-through-faith.html",
-        "datePublished": "2025-10-10",
-        "description": "Discover how faith and community can rebuild lives through hope and service."
-      },
-      {
-        "@type": "BlogPosting",
-        "headline": "Why Volunteering Changes You",
-        "url": "https://www.fountaingrace.org/blog/why-volunteering-changes-you.html",
-        "datePublished": "2025-10-10",
-        "description": "How serving others transforms your heart and your perspective on life."
-      }
-    ]
-  }
-  </script>
-  <h2><a href="/blog/overnight-success-long-obedience.html">
-The Danger of Overnight Success & the Power of Long Obedience
-</a></h2>
-<p>Why God builds in seasons, not speed. Learn how long obedience grows roots that last when quick fame fades.</p>
-
-
-  <script src="/js/main.js"></script>
 </body>
 </html>
