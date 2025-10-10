@@ -61,3 +61,11 @@
       .catch((err) => console.error("Footer load error:", err));
   });
 })();
+
+// Load cookie notice
+fetch("/partials/cookie-notice.html")
+  .then(response => response.text())
+  .then(html => {
+    document.body.insertAdjacentHTML("beforeend", html);
+  })
+  .catch(err => console.error("Cookie notice load error:", err));
