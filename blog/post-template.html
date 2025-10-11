@@ -3,143 +3,168 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{POST TITLE}} | Fountain of Grace International</title>
-  <meta name="description" content="{{SHORT DESCRIPTION FOR GOOGLE}}">
-  <meta name="keywords" content="Fountain of Grace International, Christian Church Pretoria, NPO 316-193, blog, {{KEYWORD}}">
-  <link rel="canonical" href="https://www.fountaingrace.org/blog/{{FILENAME}}.html">
+  <title>{{POST_TITLE}} | Fountain of Grace International</title>
+  <meta name="description" content="{{META_DESCRIPTION}}">
+  <meta name="keywords" content="Fountain of Grace International, Christian Church Pretoria, NPO 316-193, {{SEO_KEYWORDS}}">
+  <link rel="canonical" href="https://www.fountaingrace.org/blog/{{SLUG}}.html">
   <meta name="theme-color" content="#2196F3">
 
   <!-- Favicons -->
   <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
 
-  <!-- Global Styles -->
+  <!-- Fonts & Global Styles -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 
   <style>
-  /* ====== BLOG PAGE STYLES ====== */
-  body {
-    font-family: "Poppins", Arial, sans-serif;
-    margin: 0;
-    color: #222;
-    background: #fafafa;
-  }
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background: #fff;
+      color: #1a1a1a;
+      line-height: 1.7;
+    }
 
-  /* Header (reused design) */
-  .subpage-header {
-    background: linear-gradient(135deg, #001f54 0%, #00796B 100%);
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    padding: 20px 5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-  }
+    /* Header & Nav */
+    header {
+      background: linear-gradient(135deg, #001f54 0%, #00796B 100%);
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      padding: 25px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-  .logo { height: 60px; filter: drop-shadow(0 0 4px rgba(255,255,255,0.7)); }
-  .menu { list-style: none; display: flex; gap: 1.5rem; margin: 0; padding: 0; }
-  .menu a { color: #fff; text-decoration: none; font-weight: 500; }
-  .menu a:hover, .menu a[aria-current="page"] { color: #FFD600; }
-  .btn-gold { background: #FFD600; color: #000; padding: 8px 16px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+    header img {
+      height: 55px;
+      filter: drop-shadow(0 0 3px rgba(255,255,255,0.6));
+    }
 
-  /* Hero Section */
-  .blog-hero {
-    text-align: center;
-    padding: 4rem 1.5rem 2rem;
-    background: linear-gradient(180deg, #E3F2FD 0%, #E0F2F1 100%);
-  }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
 
-  .blog-hero h1 {
-    font-size: 2rem;
-    color: #004d99;
-    margin-bottom: 0.5rem;
-  }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
 
-  .blog-hero p {
-    max-width: 650px;
-    margin: 0 auto;
-    color: #333;
-  }
+    nav a:hover {
+      color: #FFD600;
+    }
 
-  /* Blog Content */
-  .blog-post {
-    max-width: 750px;
-    margin: 3rem auto;
-    padding: 2rem 1.5rem;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    line-height: 1.8;
-    font-size: 1.05rem;
-  }
+    .btn-gold {
+      background: #FFD600;
+      color: #000;
+      padding: 8px 16px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-  .blog-post h2 {
-    color: #00796B;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-  }
+    /* Layout */
+    main {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+      max-width: 1100px;
+      margin: 3rem auto;
+      padding: 0 1rem;
+    }
 
-  .blog-post strong { color: #004d99; }
+    article h1 {
+      color: #004d99;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
 
-  /* Call-to-Action */
-  .cta-donate {
-    display: inline-block;
-    background: #FFD600;
-    color: #000;
-    font-weight: bold;
-    border-radius: 8px;
-    padding: 12px 22px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin: 2rem 0;
-  }
+    article h2 {
+      color: #00796B;
+      margin-top: 2rem;
+      font-size: 1.3rem;
+    }
 
-  .cta-donate:hover {
-    background: #FFEA00;
-    transform: translateY(-2px);
-  }
+    .verse {
+      background: #f4f7fb;
+      border-left: 4px solid #2196F3;
+      padding: 1rem;
+      border-radius: 8px;
+      margin: 1rem 0;
+      font-style: italic;
+      color: #0f3057;
+    }
 
-  /* Footer */
-  footer {
-    background: #001f54;
-    color: #fff;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 0.9rem;
-    margin-top: 3rem;
-  }
+    .cta-card {
+      background: #f8fafc;
+      border: 1px solid #e5e7eb;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
 
-  /* Animation */
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease-out forwards;
-  }
+    .cta-card h3 {
+      color: #0A2540;
+      margin-top: 0;
+    }
 
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+    .btn {
+      display: inline-block;
+      background: #2196F3;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
 
-  /* Mobile */
-  @media (max-width: 768px) {
-    .blog-hero h1 { font-size: 1.6rem; }
-    .blog-post { margin: 2rem 1rem; padding: 1.5rem; }
-  }
+    .btn:hover { background: #1976D2; }
+    .btn.secondary { background: #0A2540; }
+
+    footer {
+      background: #0A2540;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #FFD600;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 900px) {
+      main { grid-template-columns: 1fr; }
+      article h1 { font-size: 1.6rem; }
+      nav ul { gap: 1rem; flex-wrap: wrap; justify-content: center; }
+    }
   </style>
 </head>
 
 <body>
-  <!-- ====== HEADER ====== -->
-  <header class="site-header subpage-header">
+  <header>
     <a href="/" class="brand">
-      <img src="/img/fgi-logo.svg" alt="Fountain of Grace International logo" class="logo">
+      <img src="/img/fgi-logo.svg" alt="Fountain of Grace International logo">
     </a>
-    <nav class="nav">
-      <ul class="menu">
+    <nav>
+      <ul>
         <li><a href="/index.html">Home</a></li>
         <li><a href="/about.html">About</a></li>
         <li><a href="/programs.html">Programs</a></li>
@@ -150,51 +175,61 @@
     </nav>
   </header>
 
-  <!-- ====== MAIN ====== -->
   <main id="main">
-    <section class="blog-hero fade-in">
-      <h1>{{POST TITLE}}</h1>
-      <p>{{SHORT INTRO}}</p>
-    </section>
-
-    <article class="blog-post fade-in">
-      {{ARTICLE BODY HERE — use <h2>, <p>, <ul>, <strong>, etc.}}
-
-      <p style="text-align:center;">
-        <a href="/donate.html" class="cta-donate">Donate Securely</a>
-      </p>
+    <article>
+      <h1>{{POST_TITLE}}</h1>
+      {{POST_CONTENT}}
     </article>
+
+    <aside>
+      <div class="cta-card">
+        <h3>Plan Your Visit</h3>
+        <p>Experience the Word, worship, and community. There’s a seat for you.</p>
+        <a class="btn" href="/contact.html">Plan Your Visit</a>
+      </div>
+
+      <div class="cta-card">
+        <h3>Send a Prayer Request</h3>
+        <p>Our prayer team will stand with you in faith for healing, provision, and breakthrough.</p>
+        <a class="btn secondary" href="/contact.html">Submit Request</a>
+      </div>
+
+      <div class="cta-card">
+        <h3>Partner With Us</h3>
+        <p>Your generosity fuels discipleship, outreach, and hope across South Africa and beyond.</p>
+        <a class="btn" href="/donate.html">Give to FGI</a>
+      </div>
+
+      <div class="cta-card">
+        <h3>Join the Next Service</h3>
+        <p>Grow deep roots in faith with a church that loves Jesus and people.</p>
+        <a class="btn secondary" href="/contact.html">See Service Times</a>
+      </div>
+    </aside>
   </main>
 
-  <!-- ====== FOOTER ====== -->
   <footer>
-    © <span id="year"></span> Fountain of Grace International — Registered NPO 316-193
+    © <span id="y"></span> Fountain of Grace International • NPO 316-193 • South Africa<br>
+    <a href="/contact.html">Contact Us</a> · <a href="/donate.html">Give</a>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 
-  <!-- ====== SEO SCHEMA ====== -->
+  <!-- JSON-LD Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": "{{POST TITLE}}",
-    "url": "https://www.fountaingrace.org/blog/{{FILENAME}}.html",
+    "headline": "{{POST_TITLE}}",
+    "url": "https://www.fountaingrace.org/blog/{{SLUG}}.html",
     "datePublished": "{{DATE}}",
-    "description": "{{SHORT DESCRIPTION}}",
+    "description": "{{META_DESCRIPTION}}",
     "publisher": {
       "@type": "Organization",
       "name": "Fountain of Grace International",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://www.fountaingrace.org/img/fgi-logo.svg"
-      }
+      "logo": { "@type": "ImageObject", "url": "https://www.fountaingrace.org/img/fgi-logo.svg" }
     }
   }
   </script>
-
-  <script src="/js/main.js"></script>
 </body>
 </html>
