@@ -1,33 +1,15 @@
-<footer class="site-footer" style="
-  background: linear-gradient(135deg, #001F54 0%, #008080 100%);
-  color: #ffffff;
-  text-align: center;
-  padding: 40px 20px;
-  border-top: 3px solid #FFD600;
-  border-radius: 40px 40px 0 0;
-  font-family: 'Montserrat', sans-serif;
-">
-  <div class="container" style="max-width: 900px; margin: 0 auto;">
-    <img src="/img/fgi-logo.svg" alt="Fountain of Grace International logo"
-         style="height: 45px; margin-bottom: 15px;">
-    <p style="margin: 10px 0; font-weight: 500;">
-      Fountain of Grace International (NPO 316-193) · Pretoria North, South Africa
-    </p>
-    <p style="margin: 5px 0;">
-      📍 323 B Danie Theron Street · ☎️ 
-      <a href="tel:+27752592555" style="color:#FFD600; text-decoration:none;">+27 75 259 2555</a> · 
-      ✉️ 
-      <a href="mailto:info@fountaingrace.org" style="color:#FFD600; text-decoration:none;">info@fountaingrace.org</a>
-    </p>
-    <p style="margin-top: 15px; font-size: 0.9em;">
-      © <span id="year"></span> Fountain of Grace International. All rights reserved.<br>
-      <a href="/privacy-policy.html" style="color:#FFD600; text-decoration:none;">Privacy Policy</a> · 
-      <a href="/terms.html" style="color:#FFD600; text-decoration:none;">Terms of Use</a>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img src="/img/fgi-logo.svg" alt="FGI Logo" class="footer-logo">
+    <p>
+      Fountain of Grace International (NPO 316-193) · Pretoria North, South Africa <br>
+      📍 323 B Danie Theron St · ☎️ +27 75 259 2555 · ✉️ <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a>
     </p>
   </div>
+  <div class="footer-bottom">
+    © <span id="year"></span> Fountain of Grace International — All rights reserved.
+    <br>
+    <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Use</a>
+  </div>
 </footer>
-
-<script>
-  // Auto-update copyright year
-  document.getElementById('year').textContent = new Date().getFullYear();
-</script>
+<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
