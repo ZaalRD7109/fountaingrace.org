@@ -10,143 +10,218 @@
   <meta name="theme-color" content="#2196F3">
 
   <!-- Favicons -->
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="manifest" href="/site.webmanifest">
 
+  <!-- Fonts & Global CSS -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/css/styles.css">
 
   <style>
-  /* ====== BLOG PAGE STYLES ====== */
-  body {
-    font-family: "Poppins", Arial, sans-serif;
-    color: #222;
-    margin: 0;
-    background: #fafafa;
-  }
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #222;
+      margin: 0;
+      background: #fafafa;
+      line-height: 1.7;
+    }
 
-  .blog-hero {
-    text-align: center;
-    padding: 4rem 1.5rem 2rem;
-    background: linear-gradient(180deg, #E3F2FD 0%, #E0F2F1 100%);
-  }
+    /* ===== HEADER ===== */
+    header {
+      background: linear-gradient(135deg, #001f54 0%, #00796B 100%);
+      border-bottom-left-radius: 50px;
+      border-bottom-right-radius: 50px;
+      padding: 25px 5%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
 
-  .blog-hero h1 {
-    font-size: 2rem;
-    color: #004d99;
-    margin-bottom: 0.5rem;
-  }
+    header img {
+      height: 55px;
+      filter: drop-shadow(0 0 3px rgba(255,255,255,0.6));
+    }
 
-  .blog-hero p {
-    color: #333;
-    max-width: 650px;
-    margin: 0 auto;
-  }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+      margin: 0;
+      padding: 0;
+    }
 
-  .blog-post {
-    max-width: 750px;
-    margin: 3rem auto;
-    padding: 2rem 1.5rem;
-    font-size: 1.05rem;
-    line-height: 1.8;
-    background: #fff;
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 500;
+      transition: 0.3s;
+    }
 
-  .blog-post h2 {
-    color: #00796B;
-    font-size: 1.5rem;
-    margin-top: 2rem;
-  }
+    nav a:hover { color: #FFD600; }
+    .btn-gold {
+      background: #FFD600;
+      color: #000;
+      padding: 8px 16px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+    }
 
-  .blog-post strong {
-    color: #004d99;
-  }
+    /* ===== HERO ===== */
+    .blog-hero {
+      text-align: center;
+      padding: 4rem 1.5rem 2rem;
+      background: linear-gradient(180deg, #E3F2FD 0%, #E0F2F1 100%);
+      border-bottom: 2px solid #f1f1f1;
+    }
 
-  .cta-donate {
-    display: inline-block;
-    background: #FFD600;
-    color: #000;
-    font-weight: bold;
-    border-radius: 8px;
-    padding: 12px 22px;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    margin: 2rem 0;
-  }
-
-  .cta-donate:hover {
-    background: #FFEA00;
-    transform: translateY(-2px);
-  }
-
-  footer {
-    background: #001f54;
-    color: #fff;
-    text-align: center;
-    padding: 1.5rem;
-    font-size: 0.9rem;
-    margin-top: 3rem;
-  }
-
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease-out forwards;
-  }
-
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
-
-  @media (max-width: 768px) {
     .blog-hero h1 {
-      font-size: 1.6rem;
+      font-size: 2.2rem;
+      color: #0A2540;
+      margin: 0 0 0.8rem;
     }
+
+    .blog-hero p {
+      color: #455a64;
+      max-width: 700px;
+      margin: 0 auto;
+      font-size: 1.05rem;
+    }
+
+    /* ===== ARTICLE ===== */
     .blog-post {
-      margin: 2rem 1rem;
-      padding: 1.5rem;
+      max-width: 750px;
+      margin: 3rem auto;
+      padding: 2rem 1.5rem;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     }
-  }
+
+    .blog-post h2 {
+      color: #00796B;
+      font-size: 1.4rem;
+      margin-top: 2rem;
+    }
+
+    .blog-post p strong {
+      color: #004d99;
+    }
+
+    /* ===== CTA BLOCK ===== */
+    .cta-card {
+      background: #fff8e1;
+      border: 1px solid #ffe082;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin: 2.5rem 0 1rem;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .cta-card h3 {
+      color: #0A2540;
+      margin-top: 0;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #2196F3;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.2s;
+    }
+
+    .btn:hover { background: #1976D2; }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: #0A2540;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+
+    footer a {
+      color: #FFD600;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 768px) {
+      .blog-hero h1 { font-size: 1.7rem; }
+      nav ul { flex-wrap: wrap; justify-content: center; }
+    }
   </style>
 </head>
 
 <body>
-  <!-- Header & Footer auto-load via /partials/header.html + footer.html -->
-  <main id="main">
-    <section class="blog-hero fade-in">
-      <h1>How to Give Safely to a Nonprofit in South Africa</h1>
-      <p>A short guide so your generosity makes the most impact.</p>
-    </section>
 
-    <article class="blog-post fade-in">
-      <h2>1) Check registration</h2>
-      <p>Confirm that the NPO number appears on the charity’s website and receipts. Fountain of Grace International’s number is <strong>NPO 316-193</strong>.</p>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <a href="/"><img src="/img/fgi-logo.svg" alt="Fountain of Grace International logo"></a>
+    <nav>
+      <ul>
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/about.html">About</a></li>
+        <li><a href="/programs.html">Programs</a></li>
+        <li><a href="/get-involved.html">Get Involved</a></li>
+        <li><a href="/blog/" aria-current="page">Blog</a></li>
+        <li><a href="/contact.html" class="btn-gold">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <h2>2) Look for transparency</h2>
-      <p>Clear programs, real stories, and visible contact details build trust. Genuine nonprofits share both impact reports and financial accountability.</p>
+  <!-- ===== HERO ===== -->
+  <section class="blog-hero">
+    <h1>How to Give Safely to a Nonprofit in South Africa</h1>
+    <p>A quick guide so your generosity makes the most impact.</p>
+  </section>
 
-      <h2>3) Give via secure platforms</h2>
-      <p>Use recognised gateways such as <strong>PayFast (ZAR)</strong> and <strong>PayPal (international)</strong> to ensure your donations are encrypted and trackable.</p>
+  <!-- ===== MAIN CONTENT ===== -->
+  <main>
+    <article class="blog-post">
+      <h2>1) Verify Registration</h2>
+      <p>Always confirm that the nonprofit displays its official <strong>NPO number</strong> on the website and receipts. Fountain of Grace International’s registration number is <strong>NPO 316-193</strong>.</p>
 
-      <p style="text-align:center;">
-        <a href="/donate.html" class="cta-donate">Donate Securely</a>
-      </p>
+      <h2>2) Look for Transparency</h2>
+      <p>Trustworthy organisations share stories of impact, financial summaries, and real contact details. Transparency reflects integrity — a hallmark of genuine ministry.</p>
+
+      <h2>3) Give Through Secure Platforms</h2>
+      <p>Use recognised and encrypted payment systems such as <strong>PayFast (ZAR)</strong> and <strong>PayPal (international)</strong>. Avoid direct transfers to private accounts when donating online.</p>
+
+      <div class="cta-card">
+        <h3>Partner With Us</h3>
+        <p>Your generosity helps us restore dignity, spread the Gospel, and serve our communities with compassion.</p>
+        <a class="btn" href="/donate.html">Donate Securely</a>
+      </div>
+
+      <h2>4) Request Feedback</h2>
+      <p>A healthy nonprofit welcomes accountability. After giving, feel free to ask for updates or join their community to see the difference your support makes.</p>
+
+      <h2>5) Pray Over Every Gift</h2>
+      <p>Giving is spiritual before it is financial. Ask God to multiply your seed for Kingdom impact — and to bless the hands that serve with it.</p>
     </article>
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
-    © <span id="year"></span> Fountain of Grace International — Registered NPO 316-193
+    © <span id="y"></span> Fountain of Grace International • NPO 316-193 • South Africa<br>
+    <a href="/contact.html">Contact Us</a> · <a href="/donate.html">Give</a>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="/js/main.js" defer></script>
 
-  <!-- Schema for SEO -->
+  <!-- ===== SEO SCHEMA ===== -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -162,7 +237,5 @@
     }
   }
   </script>
-
-  <script src="/js/main.js"></script>
 </body>
 </html>
