@@ -1,10 +1,12 @@
 <header class="site-header">
   <div class="header-inner">
-    <a href="/" class="logo">
-      <img src="/img/fgi-logo.svg" alt="Fountain of Grace International Logo">
+    <!-- LOGO -->
+    <a href="/" class="logo" aria-label="Fountain of Grace International Home">
+      <img src="/img/fgi-logo.svg" alt="Fountain of Grace International Logo" loading="lazy">
     </a>
 
-    <nav class="desktop-nav">
+    <!-- DESKTOP NAVIGATION -->
+    <nav class="desktop-nav" id="nav">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/about.html">About</a></li>
@@ -15,17 +17,25 @@
       </ul>
     </nav>
 
-    <!-- Floating mobile bubble -->
-    <div class="menu-bubble" id="menuBubble">
-      <div class="hamburger" id="hamburger"></div>
-      <div class="bubble-menu" id="bubbleMenu">
-        <a href="/">Home</a>
-        <a href="/about.html">About</a>
-        <a href="/programs.html">Programs</a>
-        <a href="/get-involved.html">Get Involved</a>
-        <a href="/blog/">Blog</a>
-        <a href="/contact.html" class="gold">Contact Us</a>
-      </div>
-    </div>
+    <!-- MOBILE BUBBLE MENU -->
+    <button
+      class="menu-bubble"
+      id="menuBubble"
+      aria-label="Toggle menu"
+      aria-expanded="false"
+      aria-controls="bubbleMenu"
+    >
+      <span class="hamburger" id="hamburger" aria-hidden="true"></span>
+    </button>
+
+    <!-- MOBILE MENU LINKS -->
+    <nav class="bubble-menu" id="bubbleMenu" aria-hidden="true">
+      <a href="/">Home</a>
+      <a href="/about.html">About</a>
+      <a href="/programs.html">Programs</a>
+      <a href="/get-involved.html">Get Involved</a>
+      <a href="/blog/">Blog</a>
+      <a href="/contact.html" class="gold">Contact Us</a>
+    </nav>
   </div>
 </header>
