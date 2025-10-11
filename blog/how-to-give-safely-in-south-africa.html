@@ -26,48 +26,6 @@
       line-height: 1.7;
     }
 
-    /* ===== HEADER ===== */
-    header {
-      background: linear-gradient(135deg, #001f54 0%, #00796B 100%);
-      border-bottom-left-radius: 50px;
-      border-bottom-right-radius: 50px;
-      padding: 25px 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    header img {
-      height: 55px;
-      filter: drop-shadow(0 0 3px rgba(255,255,255,0.6));
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-    }
-
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    nav a:hover { color: #FFD600; }
-    .btn-gold {
-      background: #FFD600;
-      color: #000;
-      padding: 8px 16px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
     /* ===== HERO ===== */
     .blog-hero {
       text-align: center;
@@ -75,13 +33,11 @@
       background: linear-gradient(180deg, #E3F2FD 0%, #E0F2F1 100%);
       border-bottom: 2px solid #f1f1f1;
     }
-
     .blog-hero h1 {
       font-size: 2.2rem;
       color: #0A2540;
       margin: 0 0 0.8rem;
     }
-
     .blog-hero p {
       color: #455a64;
       max-width: 700px;
@@ -98,13 +54,11 @@
       border-radius: 20px;
       box-shadow: 0 4px 20px rgba(0,0,0,0.05);
     }
-
     .blog-post h2 {
       color: #00796B;
       font-size: 1.4rem;
       margin-top: 2rem;
     }
-
     .blog-post p strong {
       color: #004d99;
     }
@@ -119,12 +73,7 @@
       text-align: center;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
-
-    .cta-card h3 {
-      color: #0A2540;
-      margin-top: 0;
-    }
-
+    .cta-card h3 { color: #0A2540; margin-top: 0; }
     .btn {
       display: inline-block;
       background: #2196F3;
@@ -135,67 +84,31 @@
       font-weight: 600;
       transition: 0.2s;
     }
-
     .btn:hover { background: #1976D2; }
-
-    /* ===== FOOTER ===== */
-    footer {
-      background: #0A2540;
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      margin-top: 3rem;
-    }
-
-    footer a {
-      color: #FFD600;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    footer a:hover { text-decoration: underline; }
 
     @media (max-width: 768px) {
       .blog-hero h1 { font-size: 1.7rem; }
-      nav ul { flex-wrap: wrap; justify-content: center; }
     }
   </style>
 </head>
 
 <body>
+  <!-- Header & Footer auto-load via /partials/header.html + /partials/footer.html (handled by /js/main.js) -->
 
-  <!-- ===== HEADER ===== -->
-  <header>
-    <a href="/"><img src="/img/fgi-logo.svg" alt="Fountain of Grace International logo"></a>
-    <nav>
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/programs.html">Programs</a></li>
-        <li><a href="/get-involved.html">Get Involved</a></li>
-        <li><a href="/blog/" aria-current="page">Blog</a></li>
-        <li><a href="/contact.html" class="btn-gold">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+  <main id="main">
+    <section class="blog-hero">
+      <h1>How to Give Safely to a Nonprofit in South Africa</h1>
+      <p>A quick guide so your generosity makes the most impact.</p>
+    </section>
 
-  <!-- ===== HERO ===== -->
-  <section class="blog-hero">
-    <h1>How to Give Safely to a Nonprofit in South Africa</h1>
-    <p>A quick guide so your generosity makes the most impact.</p>
-  </section>
-
-  <!-- ===== MAIN CONTENT ===== -->
-  <main>
     <article class="blog-post">
-      <h2>1) Verify Registration</h2>
+      <h2>1) Verify registration</h2>
       <p>Always confirm that the nonprofit displays its official <strong>NPO number</strong> on the website and receipts. Fountain of Grace International’s registration number is <strong>NPO 316-193</strong>.</p>
 
-      <h2>2) Look for Transparency</h2>
+      <h2>2) Look for transparency</h2>
       <p>Trustworthy organisations share stories of impact, financial summaries, and real contact details. Transparency reflects integrity — a hallmark of genuine ministry.</p>
 
-      <h2>3) Give Through Secure Platforms</h2>
+      <h2>3) Give through secure platforms</h2>
       <p>Use recognised and encrypted payment systems such as <strong>PayFast (ZAR)</strong> and <strong>PayPal (international)</strong>. Avoid direct transfers to private accounts when donating online.</p>
 
       <div class="cta-card">
@@ -204,24 +117,18 @@
         <a class="btn" href="/donate.html">Donate Securely</a>
       </div>
 
-      <h2>4) Request Feedback</h2>
-      <p>A healthy nonprofit welcomes accountability. After giving, feel free to ask for updates or join their community to see the difference your support makes.</p>
+      <h2>4) Request feedback</h2>
+      <p>A healthy nonprofit welcomes accountability. After giving, feel free to ask for updates or join the community to see your impact.</p>
 
-      <h2>5) Pray Over Every Gift</h2>
+      <h2>5) Pray over every gift</h2>
       <p>Giving is spiritual before it is financial. Ask God to multiply your seed for Kingdom impact — and to bless the hands that serve with it.</p>
     </article>
   </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer>
-    © <span id="y"></span> Fountain of Grace International • NPO 316-193 • South Africa<br>
-    <a href="/contact.html">Contact Us</a> · <a href="/donate.html">Give</a>
-  </footer>
-
-  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <!-- Global loader for header/footer & any page hooks -->
   <script src="/js/main.js" defer></script>
 
-  <!-- ===== SEO SCHEMA ===== -->
+  <!-- SEO Schema -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
