@@ -1,95 +1,160 @@
-(function () {
-  // --- Mobile navigation toggle ---
-  const navToggle = document.querySelector(".nav-toggle");
-  const nav = document.getElementById("nav");
-  if (navToggle && nav) {
+(() => {
+  "use strict";
+
+  // ---------- UTIL: safe query ----------
+  const $ = (s, ctx = document) => ctx.querySelector(s);
+
+  // ---------- YEAR ----------
+  const setYear = () => {
+    const y = $("#year");
+    if (y) y.textContent = new Date().getFullYear();
+  };
+
+  // ---------- DONATION: Sync amount across PayFast / PayPal ----------
+  const initDonationSync = () => {
+    const amt   = $("#amount");
+    const pfAmt = $("#pf_amount");
+    const ppBtn = $("#paypalBtn");
+
+    if (!amt) return;
+
+    const sync = () => {
+      const value = Math.max(10, parseFloat(amt.value || 0) || 0).toFixed(2);
+      if (pfAmt) pfAmt.value = value;
+      if (ppBtn && ppBtn.href) {
+        try {
+          const url = new URL(ppBtn.href);
+          url.searchParams.set("amount", value);
+          ppBtn.href = url.toString();
+        } catch (e) {
+          console.warn("PayPal link update error:", e);
+        }
+      }
+    };
+
+    amt.addEventListener("input", sync);
+    sync();
+  };
+
+  // ---------- PARTIAL LOADER ----------
+  const loadPartial = async (url, where = "afterbegin") => {
+    const container = document.createElement("div");
+    container.dataset.partial = url;
+
+    // Avoid duplicate insertions if main.js runs twice
+    if ([...document.querySelectorAll("[data-partial]")].some(el => el.dataset.partial === url)) {
+      return null;
+    }
+
+    document.body.insertAdjacentElement(where, container);
+    try {
+      const res = await fetch(url, { cache: "no-cache" });
+      if (!res.ok) throw new Error(`${res.status} ${res.statusText}`);
+      const html = await res.text();
+      container.innerHTML = html;
+      return container;
+    } catch (e) {
+      console.error(`Failed to load ${url}:`, e);
+      container.remove();
+      return null;
+    }
+  };
+
+  // ---------- NAV TOGGLE (desktop collapsible if present) ----------
+  const initNavToggle = () => {
+    const navToggle = $(".nav-toggle");
+    const nav = $("#nav");
+    if (!navToggle || !nav) return;
+
     navToggle.addEventListener("click", () => {
       const expanded = navToggle.getAttribute("aria-expanded") === "true";
       navToggle.setAttribute("aria-expanded", String(!expanded));
       nav.classList.toggle("open");
     });
-  }
+  };
 
-  // --- Auto-update footer year ---
-  const year = document.getElementById("year");
-  if (year) {
-    year.textContent = new Date().getFullYear();
-  }
+  // ---------- MOBILE BUBBLE MENU (<= 900px) ----------
+  const initBubbleMenu = () => {
+    const mm = window.matchMedia("(max-width: 900px)");
+    const bubble = $("#menuBubble");
+    const menu   = $("#bubbleMenu");
 
-  // --- Donation amount sync (PayFast + PayPal) ---
-  const amt = document.getElementById("amount");
-  const pfAmt = document.getElementById("pf_amount");
-  const ppBtn = document.getElementById("paypalBtn");
+    // Only wire up if bubble menu exists in header partial
+    if (!bubble || !menu) return;
 
-  function syncDonationAmount() {
-    if (!amt) return;
-    const value = Math.max(10, parseFloat(amt.value || 0) || 0).toFixed(2);
-    if (pfAmt) pfAmt.value = value;
-    if (ppBtn) {
-      try {
-        const url = new URL(ppBtn.href);
-        url.searchParams.set("amount", value);
-        ppBtn.href = url.toString();
-      } catch (err) {
-        console.error("PayPal link update error:", err);
+    const close = () => {
+      bubble.classList.remove("open");
+      menu.classList.remove("show");
+      bubble.setAttribute("aria-expanded", "false");
+    };
+
+    const toggle = (e) => {
+      e?.stopPropagation();
+      const opening = !bubble.classList.contains("open");
+      bubble.classList.toggle("open", opening);
+      menu.classList.toggle("show", opening);
+      bubble.setAttribute("aria-expanded", String(opening));
+    };
+
+    // Enable bubble only on mobile widths
+    const applyMode = () => {
+      if (mm.matches) {
+        bubble.style.display = "";
+      } else {
+        close();
+        bubble.style.display = "none";
       }
+    };
+
+    bubble.addEventListener("click", toggle);
+    document.addEventListener("click", (e) => {
+      if (!mm.matches) return;                // ignore on desktop
+      if (menu.contains(e.target) || bubble.contains(e.target)) return;
+      close();
+    });
+
+    mm.addEventListener("change", applyMode);
+    applyMode();
+  };
+
+  // ---------- OPTIONAL: Cookie Notice ----------
+  const loadCookieNotice = async () => {
+    try {
+      const res = await fetch("/partials/cookie-notice.html", { cache: "no-cache" });
+      if (!res.ok) return;
+      const html = await res.text();
+      document.body.insertAdjacentHTML("beforeend", html);
+    } catch (e) {
+      console.warn("Cookie notice load error:", e);
     }
-  }
+  };
 
-  if (amt) {
-    amt.addEventListener("input", syncDonationAmount);
-    syncDonationAmount();
-  }
+  // ---------- OPTIONAL: Keep logo path robust (only if ever broken) ----------
+  const fixLooseLogo = () => {
+    const logo = document.querySelector("img[src*='logo.svg']");
+    if (logo && !logo.src.startsWith(location.origin)) {
+      logo.src = `${location.origin}/img/logo.svg`;
+    }
+  };
 
-  // --- Universal Header & Footer Loader ---
-  document.addEventListener("DOMContentLoaded", () => {
-    const base = window.location.origin;
+  // ---------- BOOT ----------
+  document.addEventListener("DOMContentLoaded", async () => {
+    // 1) Load header (then wire up nav + bubble)
+    const header = await loadPartial("/partials/header.html", "afterbegin");
+    if (header) {
+      initNavToggle();
+      initBubbleMenu();
+    }
 
-    // Load Header
-    fetch(`${base}/partials/header.html`)
-      .then(res => res.ok ? res.text() : Promise.reject(res))
-      .then(html => document.body.insertAdjacentHTML("afterbegin", html))
-      .catch(err => console.error("Header load error:", err));
+    // 2) Load footer at end of body
+    await loadPartial("/partials/footer.html", "beforeend");
 
-    // Load Footer
-    fetch(`${base}/partials/footer.html`)
-      .then(res => res.ok ? res.text() : Promise.reject(res))
-      .then(html => document.body.insertAdjacentHTML("beforeend", html))
-      .catch(err => console.error("Footer load error:", err));
+    // 3) Core utilities
+    setYear();
+    initDonationSync();
+    fixLooseLogo();
+
+    // 4) Optional cookie banner
+    loadCookieNotice();
   });
 })();
-
-// --- Cookie Notice Loader (optional) ---
-fetch(`${window.location.origin}/partials/cookie-notice.html`)
-  .then(res => res.ok ? res.text() : Promise.reject(res))
-  .then(html => document.body.insertAdjacentHTML("beforeend", html))
-  .catch(err => console.error("Cookie notice load error:", err));
-
-// --- Fix broken relative images like logo.svg on index page ---
-document.addEventListener("DOMContentLoaded", () => {
-  const logo = document.querySelector("img[src*='logo.svg']");
-  if (logo && !logo.src.startsWith(window.location.origin)) {
-    logo.src = `${window.location.origin}/img/logo.svg`;
-  }
-});
-// ===== MOBILE MENU BUBBLE =====
-document.addEventListener("DOMContentLoaded", () => {
-  const bubble = document.getElementById("menuBubble");
-  const menu = document.getElementById("bubbleMenu");
-  const icon = document.getElementById("hamburger");
-
-  if (bubble) {
-    bubble.addEventListener("click", (e) => {
-      e.stopPropagation();
-      bubble.classList.toggle("open");
-      menu.classList.toggle("show");
-    });
-  }
-
-  document.addEventListener("click", (e) => {
-    if (menu && !menu.contains(e.target) && !bubble.contains(e.target)) {
-      menu.classList.remove("show");
-      bubble.classList.remove("open");
-    }
-  });
-});
