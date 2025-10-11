@@ -72,3 +72,24 @@ document.addEventListener("DOMContentLoaded", () => {
     logo.src = `${window.location.origin}/img/logo.svg`;
   }
 });
+// ===== MOBILE MENU BUBBLE =====
+document.addEventListener("DOMContentLoaded", () => {
+  const bubble = document.getElementById("menuBubble");
+  const menu = document.getElementById("bubbleMenu");
+  const icon = document.getElementById("hamburger");
+
+  if (bubble) {
+    bubble.addEventListener("click", (e) => {
+      e.stopPropagation();
+      bubble.classList.toggle("open");
+      menu.classList.toggle("show");
+    });
+  }
+
+  document.addEventListener("click", (e) => {
+    if (menu && !menu.contains(e.target) && !bubble.contains(e.target)) {
+      menu.classList.remove("show");
+      bubble.classList.remove("open");
+    }
+  });
+});
