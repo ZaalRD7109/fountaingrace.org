@@ -1,61 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset 
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Pages -->
-  <url>
-    <loc>https://www.fountaingrace.org/</loc>
-    <lastmod>2025-10-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.fountaingrace.org/about.html</loc>
-    <lastmod>2025-10-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.fountaingrace.org/programs.html</loc>
-    <lastmod>2025-10-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.fountaingrace.org/get-involved.html</loc>
-    <lastmod>2025-10-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.fountaingrace.org/contact.html</loc>
-    <lastmod>2025-10-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.fountaingrace.org/donate.html</loc>
-    <lastmod>2025-10-10</lastmod>
-  </url>
+  <url><loc>https://www.fountaingrace.org/</loc></url>
+  <url><loc>https://www.fountaingrace.org/about.html</loc></url>
+  <url><loc>https://www.fountaingrace.org/programs.html</loc></url>
+  <url><loc>https://www.fountaingrace.org/get-involved.html</loc></url>
+  <url><loc>https://www.fountaingrace.org/contact.html</loc></url>
+  <url><loc>https://www.fountaingrace.org/donate.html</loc></url>
 
-  <!-- Legal Pages -->
-  <url>
-    <loc>https://www.fountaingrace.org/privacy-policy.html</loc>
-    <lastmod>2025-10-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.fountaingrace.org/terms.html</loc>
-    <lastmod>2025-10-10</lastmod>
-  </url>
+  <!-- Blog index -->
+  <url><loc>https://www.fountaingrace.org/blog/</loc></url>
 
-  <!-- Success / Confirmation Pages -->
-  <url>
-    <loc>https://www.fountaingrace.org/donate-success.html</loc>
-    <lastmod>2025-10-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.fountaingrace.org/contact-success.html</loc>
-    <lastmod>2025-10-10</lastmod>
-  </url>
+  <!-- Blog posts (only URLs that return 200 OK) -->
+  <url><loc>https://www.fountaingrace.org/blog/overnight-success-long-obedience.html</loc></url>
+  <url><loc>https://www.fountaingrace.org/blog/how-to-give-safely-in-south-africa.html</loc></url>
+  <url><loc>https://www.fountaingrace.org/blog/restoring-dignity-through-faith.html</loc></url>
+  <url><loc>https://www.fountaingrace.org/blog/why-volunteering-changes-you.html</loc></url>
 
-  <!-- Blog Pages -->
-  <url>
-    <loc>https://www.fountaingrace.org/blog/</loc>
-    <lastmod>2025-10-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.fountaingrace.org/blog/how-to-give-safely-in-south-africa.html</loc>
-    <lastmod>2025-10-10</lastmod>
-  </url>
+  <!-- Do NOT include pages that redirect or don’t exist.
+       Removed: https://www.fountaingrace.org/plan-a-visit/ -->
 </urlset>
