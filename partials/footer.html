@@ -1,15 +1,83 @@
+<!-- ====== FOOTER (Fountain of Grace International) ====== -->
 <footer class="site-footer">
   <div class="footer-inner">
-    <img src="/img/fgi-logo.svg" alt="FGI Logo" class="footer-logo">
-    <p>
-      Fountain of Grace International (NPO 316-193) · Pretoria North, South Africa <br>
-      📍 323 B Danie Theron St · ☎️ +27 75 259 2555 · ✉️ <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a>
-    </p>
-  </div>
-  <div class="footer-bottom">
-    © <span id="year"></span> Fountain of Grace International — All rights reserved.
-    <br>
-    <a href="/privacy.html">Privacy Policy</a> · <a href="/terms.html">Terms of Use</a>
+    <div class="footer-brand">
+      <img src="/img/fgi-logo.svg" alt="Fountain of Grace International Logo" loading="lazy">
+      <p>© <span id="year"></span> Fountain of Grace International · NPO 316-193 · South Africa</p>
+    </div>
+
+    <nav class="footer-links">
+      <a href="/contact.html">Contact Us</a>
+      <a href="/donate.html">Give</a>
+      <a href="/blog/">Blog</a>
+    </nav>
   </div>
 </footer>
-<script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+
+<!-- ====== FOOTER STYLES ====== -->
+<style>
+  .site-footer {
+    background: linear-gradient(135deg, #001f54 0%, #00796B 100%);
+    color: #fff;
+    padding: 0.8rem 5%;
+    font-size: 0.9rem;
+    box-shadow: 0 -3px 8px rgba(0,0,0,0.15);
+  }
+
+  .footer-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+  }
+
+  .footer-brand img {
+    height: 30px;
+    width: auto;
+  }
+
+  .footer-brand p {
+    margin: 0;
+    color: #fff;
+    font-weight: 400;
+  }
+
+  .footer-links {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .footer-links a {
+    color: #FFD600;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.2s ease;
+  }
+
+  .footer-links a:hover {
+    color: #fff;
+  }
+
+  /* ====== MOBILE ====== */
+  @media (max-width: 900px) {
+    .footer-inner {
+      flex-direction: column;
+      text-align: center;
+      gap: 0.5rem;
+    }
+    .footer-links {
+      justify-content: center;
+    }
+  }
+</style>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
