@@ -14,8 +14,6 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
   <style>
-    /* ===== GLOBAL PAGE LAYOUT ===== */
-    <script src="/js/main.js" defer></script>
     body {
       font-family: "Poppins", sans-serif;
       background: #fafafa;
@@ -24,55 +22,6 @@
       line-height: 1.6;
     }
 
-    /* ===== HEADER (matches Programs page) ===== */
-    .subpage-header {
-      background: linear-gradient(135deg, #001f54 0%, #00796B 100%);
-      border-bottom-left-radius: 50px;
-      border-bottom-right-radius: 50px;
-      padding: 25px 5%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    }
-
-    .brand img {
-      height: 60px;
-      filter: drop-shadow(0 0 3px rgba(255,255,255,0.6));
-    }
-
-    .nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.5rem;
-      margin: 0;
-      padding: 0;
-      flex-wrap: wrap;
-    }
-
-    .nav a {
-      color: #fff;
-      text-decoration: none;
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    .nav a:hover,
-    .nav a[aria-current="page"] {
-      color: #FFD600;
-    }
-
-    .btn-gold {
-      background: #FFD600;
-      color: #000;
-      padding: 8px 16px;
-      border-radius: 25px;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    /* ===== HERO SECTION ===== */
     .blog-hero {
       text-align: center;
       padding: 4rem 1.5rem 2rem;
@@ -92,7 +41,6 @@
       margin: 0 auto;
     }
 
-    /* ===== SEARCH BAR ===== */
     #search-input {
       width: 100%;
       max-width: 700px;
@@ -111,7 +59,6 @@
       box-shadow: 0 0 5px rgba(0, 121, 107, 0.4);
     }
 
-    /* ===== BLOG CARDS ===== */
     .blog-list {
       display: grid;
       gap: 2rem;
@@ -155,99 +102,39 @@
       font-size: 0.95rem;
     }
 
-    /* ===== FOOTER ===== */
-    .site-footer {
-      background: #0A2540;
-      color: #fff;
-      text-align: center;
-      padding: 2rem 1rem;
-      font-size: 0.9rem;
-      margin-top: 4rem;
-    }
-
-    .site-footer a {
-      color: #FFD600;
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    .site-footer a:hover {
-      text-decoration: underline;
-    }
-
     @media (max-width: 600px) {
-      .nav ul {
-        gap: 1rem;
-        justify-content: center;
-      }
-      .post-item {
-        padding: 1.25rem;
-      }
+      .post-item { padding: 1.25rem; }
     }
   </style>
 </head>
 
 <body>
-  <!-- ===== HEADER ===== -->
-  <header class="subpage-header">
-    <a href="/" class="brand">
-      <img src="/img/fgi-logo.svg" alt="Fountain of Grace International logo">
-    </a>
-    <nav class="nav">
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/programs.html">Programs</a></li>
-        <li><a href="/get-involved.html">Get Involved</a></li>
-        <li><a href="/blog/" aria-current="page">Blog</a></li>
-        <li><a href="/contact.html" class="btn-gold">Contact Us</a></li>
-      </ul>
-    </nav>
-  </header>
+  <!-- Header and Footer load automatically via /partials/ -->
+  <main id="main">
+    <section class="blog-hero">
+      <h1>Blog & Resources</h1>
+      <p>Faith-based stories, teachings, and practical guides to help you grow spiritually and live purposefully.</p>
+      <input type="search" id="search-input" placeholder="Search sermons, topics, or scriptures...">
+    </section>
 
-  <!-- ===== HERO ===== -->
-  <section class="blog-hero">
-    <h1>Blog & Resources</h1>
-    <p>Faith-based stories, teachings, and practical guides to help you grow spiritually and live purposefully.</p>
-    <input type="search" id="search-input" placeholder="Search sermons, topics, or scriptures...">
-  </section>
+    <section class="blog-list" id="blog-list">
+      <article class="post-item" data-published="2025-10-10">
+        <h2><a href="/blog/overnight-success-long-obedience.html">The Danger of Overnight Success &amp; the Power of Long Obedience</a></h2>
+        <p class="muted">Why God builds in seasons, not speed. Learn how long obedience grows roots that last when quick fame fades.</p>
+      </article>
 
-  <!-- ===== BLOG LIST ===== -->
-  <main class="blog-list" id="blog-list">
-    <article class="post-item" data-published="2025-10-10">
-      <h2><a href="/blog/overnight-success-long-obedience.html">The Danger of Overnight Success &amp; the Power of Long Obedience</a></h2>
-      <p class="muted">Why God builds in seasons, not speed. Learn how long obedience grows roots that last when quick fame fades.</p>
-    </article>
+      <article class="post-item" data-published="2025-10-10">
+        <h2><a href="/blog/how-to-give-safely-in-south-africa.html">How to Give Safely to a Nonprofit in South Africa</a></h2>
+        <p class="muted">A quick guide to verifying charities and giving with confidence.</p>
+      </article>
 
-    <article class="post-item" data-published="2025-10-10">
-      <h2><a href="/blog/how-to-give-safely-in-south-africa.html">How to Give Safely to a Nonprofit in South Africa</a></h2>
-      <p class="muted">A quick guide to verifying charities and giving with confidence.</p>
-    </article>
-
-    <article class="post-item" data-published="2025-10-10">
-      <h2><a href="/blog/restoring-dignity-through-faith.html">Restoring Dignity Through Faith</a></h2>
-      <p class="muted">Discover how faith and community can rebuild lives through hope and service.</p>
-    </article>
-
-    <article class="post-item" data-published="2025-10-10">
-      <h2><a href="/blog/why-volunteering-changes-you.html">Why Volunteering Changes You</a></h2>
-      <p class="muted">How serving others transforms your heart and your perspective on life.</p>
-    </article>
-
-    <article class="post-item" data-published="2025-10-10">
-      <h2><a href="/blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20.html">Fix the Router: Faith for Heaven’s Supply</a></h2>
-      <p class="muted">Faith is the “router” that connects us to God’s always-on promises. Learn how to renew your mind, forgive freely, and trust like a child to see God’s Yes in your everyday.</p>
-    </article>
+      <article class="post-item" data-published="2025-10-10">
+        <h2><a href="/blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20.html">Fix the Router: Faith for Heaven’s Supply</a></h2>
+        <p class="muted">Faith is the “router” that connects us to God’s always-on promises. Learn how to renew your mind, forgive freely, and trust like a child to see God’s Yes in your everyday.</p>
+      </article>
+    </section>
   </main>
 
-  <!-- ===== FOOTER ===== -->
-  <footer class="site-footer">
-    © <span id="y"></span> Fountain of Grace International • NPO 316-193 • South Africa<br>
-    <a href="/contact.html">Contact Us</a> · <a href="/donate.html">Give</a>
-  </footer>
-
-  <script>
-    document.getElementById('y').textContent = new Date().getFullYear();
-  </script>
+  <script src="/js/main.js" defer></script>
 </body>
 </html>
