@@ -6,10 +6,12 @@
   <title>How to Give Safely to a Nonprofit in South Africa | Fountain of Grace International</title>
   <meta name="description" content="A short guide from Fountain of Grace International (NPO 316-193) to help you give safely, transparently, and securely to registered nonprofits in South Africa.">
   <meta name="keywords" content="Fountain of Grace International, nonprofit giving South Africa, NPO 316-193, PayFast, PayPal, Christian charity, Pretoria North Church">
-  <link rel="canonical" href="https://www.fountaingrace.org/blog/how-to-give-safely-in-south-africa.html">
-  <meta name="theme-color" content="#2196F3">
 
-  <!-- Favicons -->
+  <!-- ✅ Canonical Tag -->
+  <link rel="canonical" href="https://www.fountaingrace.org/blog/how-to-give-safely-in-south-africa.html">
+
+  <!-- Theme + Favicons -->
+  <meta name="theme-color" content="#2196F3">
   <link rel="icon" type="image/png" href="/favicon-96x96.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 
@@ -26,7 +28,6 @@
       line-height: 1.7;
     }
 
-    /* ===== HERO ===== */
     .blog-hero {
       text-align: center;
       padding: 4rem 1.5rem 2rem;
@@ -45,7 +46,6 @@
       font-size: 1.05rem;
     }
 
-    /* ===== ARTICLE ===== */
     .blog-post {
       max-width: 750px;
       margin: 3rem auto;
@@ -63,7 +63,6 @@
       color: #004d99;
     }
 
-    /* ===== CTA BLOCK ===== */
     .cta-card {
       background: #fff8e1;
       border: 1px solid #ffe082;
@@ -93,7 +92,7 @@
 </head>
 
 <body>
-  <!-- Header & Footer auto-load via /partials/header.html + /partials/footer.html (handled by /js/main.js) -->
+  <!-- Header & Footer auto-load via /partials/header.html + /partials/footer.html -->
 
   <main id="main">
     <section class="blog-hero">
@@ -101,7 +100,13 @@
       <p>A quick guide so your generosity makes the most impact.</p>
     </section>
 
-    <article class="blog-post">
+    <article class="blog-post" itemscope itemtype="https://schema.org/BlogPosting">
+      <meta itemprop="headline" content="How to Give Safely to a Nonprofit in South Africa">
+      <meta itemprop="author" content="Pastor Ricardo Zaal">
+      <meta itemprop="datePublished" content="2025-10-10">
+      <meta itemprop="dateModified" content="2025-10-10">
+      <meta itemprop="mainEntityOfPage" content="https://www.fountaingrace.org/blog/how-to-give-safely-in-south-africa.html">
+
       <h2>1) Verify registration</h2>
       <p>Always confirm that the nonprofit displays its official <strong>NPO number</strong> on the website and receipts. Fountain of Grace International’s registration number is <strong>NPO 316-193</strong>.</p>
 
@@ -125,25 +130,40 @@
     </article>
   </main>
 
-  <!-- Global loader for header/footer & any page hooks -->
+  <footer style="text-align:center; padding:2rem; font-size:0.9rem; background:#0A2540; color:#fff;">
+    © <span id="y"></span> Fountain of Grace International • NPO 316-193 • South Africa |
+    <a href="/contact.html" style="color:#FFD600; text-decoration:none;">Contact</a> ·
+    <a href="/donate.html" style="color:#FFD600; text-decoration:none;">Give</a>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
   <script src="/js/main.js" defer></script>
 
-  <!-- SEO Schema -->
+  <!-- ✅ SEO Schema for Google Indexing -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "headline": "How to Give Safely to a Nonprofit in South Africa",
+    "description": "A short guide from Fountain of Grace International (NPO 316-193) to help you give safely, transparently, and securely to registered nonprofits in South Africa.",
+    "image": "https://www.fountaingrace.org/img/fgi-logo.svg",
     "url": "https://www.fountaingrace.org/blog/how-to-give-safely-in-south-africa.html",
-    "datePublished": "2025-10-10",
-    "description": "A short guide to verify charities and give safely via PayFast or PayPal.",
+    "author": {
+      "@type": "Person",
+      "name": "Pastor Ricardo Zaal"
+    },
     "publisher": {
       "@type": "Organization",
       "name": "Fountain of Grace International",
-      "logo": { "@type": "ImageObject", "url": "https://www.fountaingrace.org/img/fgi-logo.svg" }
-    }
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.fountaingrace.org/img/fgi-logo.svg"
+      }
+    },
+    "datePublished": "2025-10-10",
+    "dateModified": "2025-10-10",
+    "mainEntityOfPage": "https://www.fountaingrace.org/blog/how-to-give-safely-in-south-africa.html"
   }
   </script>
 </body>
 </html>
-<script src="/js/main.js" defer></script>
