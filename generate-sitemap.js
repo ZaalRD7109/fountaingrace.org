@@ -4,14 +4,14 @@ import path from "path";
 
 const domain = "https://www.fountaingrace.org";
 const blogDir = path.resolve("./blog");
-const publicDir = path.resolve("./public");
+const publicDir = path.resolve("./");
 const sitemapPath = path.join(publicDir, "sitemap.xml");
 
 function formatDate(date) {
   return date.toISOString().split("T")[0];
 }
 
-// --- Static pages you want included ---
+// --- Static pages to always include ---
 const staticPages = [
   { loc: "/", changefreq: "weekly", priority: "1.0" },
   { loc: "/about.html", changefreq: "monthly", priority: "0.9" },
@@ -22,11 +22,10 @@ const staticPages = [
   { loc: "/blog/", changefreq: "weekly", priority: "0.9" },
 ];
 
-// --- Auto-detect all blog posts ---
+// --- Auto-detect all blog posts in /blog ---
 const blogFiles = fs.readdirSync(blogDir).filter(f => f.endsWith(".html"));
 const blogPages = blogFiles.map(filename => {
-  const fullPath = path.join(blogDir, filename);
-  const stats = fs.statSync(fullPath);
+  const stats = fs.statSync(path.join(blogDir, filename));
   return {
     loc: `/blog/${filename}`,
     lastmod: formatDate(stats.mtime),
@@ -35,31 +34,19 @@ const blogPages = blogFiles.map(filename => {
   };
 });
 
-// --- Merge all pages ---
 const urls = [...staticPages, ...blogPages];
 
-// --- Build XML ---
+// --- Build XML sitemap ---
 const xml = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-                      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-
-${urls
-  .map(
-    u => `  <url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${urls.map(u => `
+  <url>
     <loc>${domain}${u.loc}</loc>
     <lastmod>${u.lastmod || formatDate(new Date())}</lastmod>
     <changefreq>${u.changefreq}</changefreq>
     <priority>${u.priority}</priority>
-  </url>`
-  )
-  .join("\n\n")}
+  </url>`).join("")}
+</urlset>`;
 
-</urlset>
-`;
-
-fs.mkdirSync(publicDir, { recursive: true });
-fs.writeFileSync(sitemapPath, xml, "utf8");
-console.log("✅ Sitemap generated:", sitemapPath);
+fs.writeFileSync(sitemapPath, xml);
+console.log("✅ Sitemap generated successfully:", sitemapPath);
