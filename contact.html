@@ -6,95 +6,101 @@
   <title>Contact Us | Fountain of Grace International</title>
   <meta name="description" content="Contact Fountain of Grace International (NPO 316-193) — a Christian Church in Pretoria North, South Africa. Join us Sundays or send a message to connect.">
   <meta name="keywords" content="Contact Fountain of Grace, Fountain of Grace International, NPO 316-193, Church Pretoria North, Sunday Service, Christian Nonprofit">
+
+  <!-- ✅ Canonical Tag -->
   <link rel="canonical" href="https://www.fountaingrace.org/contact.html">
-  <link rel="icon" href="/favicon.ico">
+
+  <!-- Theme + Favicon -->
   <meta name="theme-color" content="#2196F3">
+  <link rel="icon" href="/favicon.ico">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="/css/styles.css">
 
   <style>
-  body {
-    font-family: "Poppins", Arial, sans-serif;
-    margin: 0;
-    background: #fafafa;
-    color: #222;
-  }
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      margin: 0;
+      background: #fafafa;
+      color: #222;
+    }
 
-  main {
-    max-width: 800px;
-    margin: 3rem auto;
-    padding: 0 1.5rem;
-  }
+    main {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
 
-  h1 {
-    text-align: center;
-    color: #004d99;
-    margin-bottom: 1rem;
-  }
+    h1 {
+      text-align: center;
+      color: #004d99;
+      margin-bottom: 1rem;
+    }
 
-  h2 {
-    color: #00796B;
-    margin-top: 2rem;
-  }
+    h2 {
+      color: #00796B;
+      margin-top: 2rem;
+    }
 
-  form {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background: #fff;
-    padding: 2rem;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-  }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    }
 
-  label {
-    font-weight: 600;
-  }
+    label {
+      font-weight: 600;
+    }
 
-  input, textarea {
-    font-family: inherit;
-    padding: 10px;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
-    width: 100%;
-  }
+    input, textarea {
+      font-family: inherit;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+      width: 100%;
+    }
 
-  input:focus, textarea:focus {
-    outline: none;
-    border-color: #2196F3;
-    box-shadow: 0 0 3px rgba(33,150,243,0.4);
-  }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #2196F3;
+      box-shadow: 0 0 3px rgba(33,150,243,0.4);
+    }
 
-  button.btn-primary {
-    background: #2196F3;
-    color: #fff;
-    border: none;
-    padding: 12px 18px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s ease;
-  }
+    button.btn-primary {
+      background: #2196F3;
+      color: #fff;
+      border: none;
+      padding: 12px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
 
-  button.btn-primary:hover {
-    background: #00796B;
-  }
+    button.btn-primary:hover {
+      background: #00796B;
+    }
 
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.8s ease-out forwards;
-  }
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
 
-  @keyframes fadeInUp {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
-  }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 
 <body>
-  <!-- Header & Footer are dynamically loaded from /partials/header.html and /partials/footer.html -->
+  <!-- Header & Footer dynamically loaded from /partials/header.html and /partials/footer.html -->
 
   <main id="main" class="fade-in">
     <h1>Contact Us</h1>
@@ -107,7 +113,6 @@
     <p><strong>Email:</strong> <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a></p>
 
     <h2>Send a Message</h2>
-    <!-- ✅ Updated: Redirects to thank-you page -->
     <form action="/contact-success.html" method="get">
       <label for="name">Your Name</label>
       <input id="name" name="name" type="text" required>
@@ -122,21 +127,38 @@
     </form>
   </main>
 
+  <!-- Auto Year Script -->
   <script>
     document.getElementById("year")?.textContent = new Date().getFullYear();
   </script>
 
+  <!-- ✅ Structured Data for Indexing -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
+    "@type": "ContactPage",
     "url": "https://www.fountaingrace.org/contact.html",
     "name": "Contact Us | Fountain of Grace International",
-    "description": "Contact Fountain of Grace International Church, NPO 316-193 in Pretoria North.",
+    "description": "Contact Fountain of Grace International (NPO 316-193) — a Christian Church in Pretoria North, South Africa.",
     "publisher": {
       "@type": "Organization",
       "name": "Fountain of Grace International",
-      "logo": { "@type": "ImageObject", "url": "https://www.fountaingrace.org/img/fgi-logo.svg" }
+      "identifier": {"@type":"PropertyValue","propertyID":"NPO","value":"316-193"},
+      "logo": { "@type": "ImageObject", "url": "https://www.fountaingrace.org/img/fgi-logo.svg" },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "323 B Danie Theron Street",
+        "addressLocality": "Pretoria North",
+        "addressRegion": "Gauteng",
+        "postalCode": "0182",
+        "addressCountry": "ZA"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+27-75-259-2555",
+        "contactType": "customer service",
+        "email": "info@fountaingrace.org"
+      }
     }
   }
   </script>
