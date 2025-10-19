@@ -1,20 +1,124 @@
-<!-- ====== FOOTER (Fountain of Grace International) ====== -->
-<footer class="site-footer">
+<!-- ====== GLOBAL FOOTER (Fountain of Grace International) ====== -->
+<footer class="site-footer" itemscope itemtype="https://schema.org/Organization">
   <div class="footer-inner">
+    <!-- Logo + Info -->
     <div class="footer-brand">
-      <img src="/img/fgi-logo.svg" alt="Fountain of Grace International Logo" loading="lazy">
-      <p>© <span id="year"></span> Fountain of Grace International · NPO 316-193 · South Africa</p>
+      <img src="/img/fgi-logo.svg" alt="Fountain of Grace International Logo" loading="lazy" itemprop="logo">
+      <p>
+        © <span id="year"></span>
+        <span itemprop="name">Fountain of Grace International</span> ·
+        <span itemprop="identifier">NPO 316-193</span> ·
+        <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+          <span itemprop="addressLocality">Pretoria North</span>,
+          <span itemprop="addressCountry">South Africa</span>
+        </span>
+      </p>
     </div>
 
+    <!-- Footer Links -->
     <nav class="footer-links">
-      <a href="/contact.html">Contact Us</a>
+      <a href="/contact.html" itemprop="contactPoint" itemscope itemtype="https://schema.org/ContactPoint">
+        <span itemprop="contactType">Contact Us</span>
+      </a>
       <a href="/donate.html">Give</a>
       <a href="/blog/">Blog</a>
     </nav>
+
+    <!-- Social Icons -->
+    <div class="social-links">
+      <a href="https://www.facebook.com/FGIPta/" target="_blank" rel="noopener" aria-label="Facebook">
+        <img src="/img/icon-facebook.svg" alt="Facebook" loading="lazy">
+      </a>
+      <a href="https://youtube.com/@fgipta?si=oV90AAPfTt17Ds19" target="_blank" rel="noopener" aria-label="YouTube">
+        <img src="/img/icon-youtube.svg" alt="YouTube" loading="lazy">
+      </a>
+      <a href="https://www.tiktok.com/@fountainofgraceintl?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener" aria-label="TikTok">
+        <img src="/img/icon-tiktok.svg" alt="TikTok" loading="lazy">
+      </a>
+    </div>
   </div>
 </footer>
 
+<!-- ====== FOOTER STYLES ====== -->
+<style>
+  .site-footer {
+    background: #0A2540;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .footer-inner {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .footer-links {
+    margin-top: 0.8rem;
+  }
+
+  .footer-links a {
+    color: #FFD600;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 0 0.5rem;
+    transition: 0.3s;
+  }
+
+  .footer-links a:hover {
+    color: #FFEB3B;
+  }
+
+  .social-links {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .social-links img {
+    width: 22px;
+    height: 22px;
+    filter: brightness(0) invert(1);
+    transition: 0.3s;
+  }
+
+  .social-links img:hover {
+    filter: brightness(1) invert(0);
+  }
+
+  .footer-brand img {
+    height: 45px;
+    margin-bottom: 0.5rem;
+  }
+</style>
+
+<!-- ====== AUTO YEAR ====== -->
 <script>
-  // Auto-update copyright year
   document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<!-- ====== STRUCTURED DATA ====== -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Fountain of Grace International",
+  "alternateName": "FGI",
+  "url": "https://www.fountaingrace.org",
+  "logo": "https://www.fountaingrace.org/img/fgi-logo.svg",
+  "email": "info@fountaingrace.org",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Pretoria North",
+    "addressCountry": "ZA"
+  },
+  "sameAs": [
+    "https://www.facebook.com/FGIPta/",
+    "https://youtube.com/@fgipta?si=oV90AAPfTt17Ds19",
+    "https://www.tiktok.com/@fountainofgraceintl?is_from_webapp=1&sender_device=pc"
+  ]
+}
 </script>
