@@ -1,79 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-                      http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-  <!-- ===== MAIN PAGES ===== -->
   <url>
     <loc>https://www.fountaingrace.org/</loc>
-    <lastmod>2025-10-18</lastmod>
+    <lastmod>2025-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
   <url>
     <loc>https://www.fountaingrace.org/about.html</loc>
-    <lastmod>2025-10-18</lastmod>
+    <lastmod>2025-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://www.fountaingrace.org/programs.html</loc>
-    <lastmod>2025-10-18</lastmod>
+    <lastmod>2025-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://www.fountaingrace.org/get-involved.html</loc>
-    <lastmod>2025-10-18</lastmod>
+    <lastmod>2025-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
-
   <url>
     <loc>https://www.fountaingrace.org/contact.html</loc>
-    <lastmod>2025-10-18</lastmod>
+    <lastmod>2025-10-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
-
   <url>
     <loc>https://www.fountaingrace.org/donate.html</loc>
-    <lastmod>2025-10-18</lastmod>
+    <lastmod>2025-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
-
-  <!-- ===== BLOG INDEX ===== -->
   <url>
     <loc>https://www.fountaingrace.org/blog/</loc>
-    <lastmod>2025-10-18</lastmod>
+    <lastmod>2025-10-19</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
-
-  <!-- ===== BLOG POSTS ===== -->
-  <url>
-    <loc>https://www.fountaingrace.org/blog/overnight-success-long-obedience.html</loc>
-    <lastmod>2025-10-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
-    <loc>https://www.fountaingrace.org/blog/how-to-give-safely-in-south-africa.html</loc>
-    <lastmod>2025-10-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
   <url>
     <loc>https://www.fountaingrace.org/blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20.html</loc>
-    <lastmod>2025-10-10</lastmod>
+    <lastmod>2025-10-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

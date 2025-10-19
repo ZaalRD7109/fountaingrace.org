@@ -1,0 +1,21 @@
+{
+  "name": "fountaingrace.org",
+  "version": "1.0.0",
+  "description": "1. Create a **public repo** and add all files from this project.\r 2. In Vercel, **New Project → Import** the repo.\r 3. Framework preset: **Other**; Output directory: **/** (root). No build step needed.\r 4. Add your domain: **fountaingrace.org** → set **www** → redirect non‑www to **www** or vice versa (match canonical).",
+  "main": "generate-sitemap.js",
+ "scripts": {
+  "test": "echo \"Error: no test specified\" && exit 1",
+  "build:sitemap": "node generate-sitemap.js"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZaalRD7109/fountaingrace.org.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZaalRD7109/fountaingrace.org/issues"
+  },
+  "homepage": "https://github.com/ZaalRD7109/fountaingrace.org#readme"
+}
