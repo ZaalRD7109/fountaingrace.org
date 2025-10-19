@@ -1,4 +1,19 @@
-<!-- ====== HEADER (Fountain of Grace International) ====== -->
+<!-- ====== GLOBAL HEADER (Fountain of Grace International) ====== -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <link rel="canonical" href="https://www.fountaingrace.org/">
+  <meta name="theme-color" content="#2196F3">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="preload" href="/img/fgi-logo.svg" as="image">
+</head>
+
+<!-- ====== SITE HEADER ====== -->
 <header class="site-header">
   <div class="header-inner">
     <!-- LOGO -->
@@ -19,14 +34,7 @@
     </nav>
 
     <!-- MOBILE FLOATING MENU BUBBLE -->
-    <button
-      class="menu-bubble"
-      id="menuBubble"
-      type="button"
-      aria-label="Toggle menu"
-      aria-expanded="false"
-      aria-controls="bubbleMenu"
-    >
+    <button class="menu-bubble" id="menuBubble" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="bubbleMenu">
       <span class="hamburger" id="hamburger" aria-hidden="true"></span>
       <span class="bubble-label">Menu</span>
     </button>
@@ -106,7 +114,7 @@
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #2196F3;
+    background: #008080;
     border: none;
     border-radius: 50%;
     width: 55px;
@@ -143,19 +151,9 @@
   .hamburger::before { top: -7px; }
   .hamburger::after { top: 7px; }
 
-  .menu-bubble.open .hamburger {
-    background: transparent;
-  }
-
-  .menu-bubble.open .hamburger::before {
-    transform: rotate(45deg);
-    top: 0;
-  }
-
-  .menu-bubble.open .hamburger::after {
-    transform: rotate(-45deg);
-    top: 0;
-  }
+  .menu-bubble.open .hamburger { background: transparent; }
+  .menu-bubble.open .hamburger::before { transform: rotate(45deg); top: 0; }
+  .menu-bubble.open .hamburger::after { transform: rotate(-45deg); top: 0; }
 
   /* ===== "MENU" LABEL NEXT TO ICON ===== */
   .bubble-label {
