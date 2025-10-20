@@ -1,0 +1,55 @@
+name: 🔁 Auto-Update Redirects for New Pages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**/*.html'
+      - 'sitemap.xml'
+  workflow_dispatch:
+
+jobs:
+  update-redirects:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Generate redirect rules automatically
+        run: |
+          echo "# ===== AUTO-GENERATED REDIRECT RULES =====" > _redirects
+          echo "" >> _redirects
+          # Loop through all HTML files (excluding partials)
+          find . -type f -name "*.html" ! -path "./partials/*" ! -path "./node_modules/*" | while read FILE; do
+            CLEAN=$(echo "$FILE" | sed 's|^\./||')
+            BASE=$(basename "$CLEAN" .html)
+            DIR=$(dirname "$CLEAN")
+            if [ "$DIR" = "." ]; then
+              echo "/$BASE /$CLEAN 301" >> _redirects
+            else
+              echo "/$DIR/$BASE /$CLEAN 301" >> _redirects
+            fi
+          done
+
+          # Add special shortlinks
+          cat <<EOF >> _redirects
+
+# ===== CUSTOM SHORTLINKS =====
+/give /donate.html 301
+/give-now /donate.html 301
+/volunteer /get-involved.html 301
+/visit /contact.html 301
+/watch https://youtube.com/@fgipta?si=oV90AAPfTt17Ds19 301
+/facebook https://facebook.com/FGIPta/ 301
+/tiktok https://www.tiktok.com/@fountainofgraceintl?is_from_webapp=1&sender_device=pc 301
+
+EOF
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "FGI Auto-Bot"
+          git config user.email "info@fountaingrace.org"
+          git add _redirects
+          git commit -m "🔁 Auto-update redirects for new pages" || echo "No changes to commit"
+          git push origin main
