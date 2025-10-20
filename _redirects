@@ -1,0 +1,30 @@
+# ====== MAIN SITE REDIRECTS (Fountain of Grace International) ======
+
+# Allow extensionless access to all key pages
+/                 /index.html            301
+/about            /about.html            301
+/programs         /programs.html         301
+/get-involved     /get-involved.html     301
+/contact          /contact.html          301
+/donate           /donate.html           301
+/give             /donate.html           301
+/privacy          /privacy.html          301
+/cookie-policy    /cookie-policy.html    301
+
+# ====== BLOG REDIRECTS ======
+/blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20   /blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20.html   301
+/blog/how-to-give-safely-in-south-africa                                /blog/how-to-give-safely-in-south-africa.html                                301
+/blog/overnight-success-long-obedience                                  /blog/overnight-success-long-obedience.html                                  301
+/blog/the-prophetic-reset                                               /blog/the-prophetic-reset.html                                               301
+
+# ====== AUTO CATCH-ALL RULE ======
+# If a user requests a .html-less version of any page that exists, redirect to the .html file
+/*      /:splat.html   301
+
+# ====== LEGACY OR CUSTOM SHORT LINKS ======
+/give-now         /donate.html          301
+/volunteer        /get-involved.html    301
+/visit            /contact.html         301
+/watch            https://youtube.com/@fgipta?si=oV90AAPfTt17Ds19       301
+/facebook         https://facebook.com/FGIPta/                           301
+/tiktok           https://www.tiktok.com/@fountainofgraceintl?is_from_webapp=1&sender_device=pc 301
