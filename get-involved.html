@@ -151,22 +151,160 @@
       </p>
     </div>
 
-    <div class="section-card">
-      <h2>3️⃣ Partner With Us</h2>
-      <p>Businesses, churches, and individuals can partner with Fountain of Grace International to make a lasting impact in South Africa. Sponsorships, skills training, and joint outreach projects are welcome.</p>
-      <form action="/contact-success.html" method="get">
-        <label for="name">Full Name</label>
-        <input id="name" name="name" type="text" required>
+<!-- ✨ HEAVENCLASS FORM — Fountain of Grace International -->
+<section id="get-involved" style="margin-top:3rem;">
+  <div class="heaven-card fade-in">
+    <h2 class="heaven-title">Be the Hands of Grace 🤝</h2>
+    <p class="heaven-subtitle">
+      Join a move of compassion. Volunteer, give, or partner with <strong>Fountain of Grace International</strong> — where faith meets action and love transforms lives.
+    </p>
 
-        <label for="email">Email</label>
-        <input id="email" name="email" type="email" required>
+    <form action="https://formsubmit.co/info@fountaingrace.org" method="POST" class="heaven-form">
+      <!-- Hidden success redirect -->
+      <input type="hidden" name="_next" value="https://www.fountaingrace.org/contact-success.html">
+      <input type="hidden" name="_captcha" value="false">
 
-        <label for="message">How would you like to get involved?</label>
-        <textarea id="message" name="message" rows="6" placeholder="E.g., Volunteer, Partner, Sponsor, or Prayer Support" required></textarea>
+      <div class="form-grid">
+        <div>
+          <label for="name">Full Name</label>
+          <input id="name" name="name" type="text" placeholder="John / Mary / Family Name" required>
+        </div>
 
-        <button class="btn-primary" type="submit">Send</button>
-      </form>
-    </div>
+        <div>
+          <label for="email">Email Address</label>
+          <input id="email" name="email" type="email" placeholder="your@email.com" required>
+        </div>
+
+        <div class="full">
+          <label for="message">How would you like to get involved?</label>
+          <textarea id="message" name="message" rows="5" placeholder="E.g. Volunteer, Sponsor, or Prayer Partner" required></textarea>
+        </div>
+
+        <div class="full consent">
+          <label>
+            <input type="checkbox" name="consent" required>
+            I agree to the <a href="/privacy.html" target="_blank">Privacy Policy</a> and POPIA compliance.
+          </label>
+        </div>
+
+        <div class="full center">
+          <button type="submit" class="heaven-btn">✨ Send My Message</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<!-- 🌈 HEAVENCLASS STYLES -->
+<style>
+  .heaven-card {
+    max-width: 800px;
+    margin: auto;
+    background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(255,255,255,0.85));
+    border-radius: 24px;
+    box-shadow: 0 0 40px rgba(0, 153, 255, 0.15), inset 0 0 10px rgba(255,255,255,0.3);
+    padding: 3rem 2.5rem;
+    text-align: center;
+    backdrop-filter: blur(6px);
+  }
+
+  .heaven-title {
+    font-size: 2rem;
+    background: linear-gradient(90deg, #2196F3, #FFD600, #00796B);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5rem;
+  }
+
+  .heaven-subtitle {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 2rem;
+    line-height: 1.7;
+  }
+
+  .heaven-form {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.2rem 1.5rem;
+  }
+
+  label {
+    display: block;
+    font-weight: 600;
+    color: #004d99;
+    margin-bottom: 0.3rem;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid rgba(0,0,0,0.15);
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: rgba(255,255,255,0.85);
+  }
+
+  input:focus, textarea:focus {
+    border-color: #2196F3;
+    box-shadow: 0 0 15px rgba(33,150,243,0.3);
+    background: #fff;
+    outline: none;
+  }
+
+  .full { grid-column: 1 / -1; }
+  .center { text-align: center; }
+
+  .consent {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
+  .consent a {
+    color: #2196F3;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  .heaven-btn {
+    background: linear-gradient(90deg, #00796B, #2196F3, #FFD600);
+    background-size: 300% 300%;
+    animation: glowFlow 5s ease infinite;
+    color: #fff;
+    font-weight: 700;
+    padding: 14px 36px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    box-shadow: 0 0 25px rgba(0, 150, 255, 0.3);
+    transition: all 0.3s ease;
+  }
+
+  .heaven-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 35px rgba(255, 214, 0, 0.6);
+  }
+
+  @keyframes glowFlow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(25px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .fade-in {
+    opacity: 0;
+    animation: fadeInUp 1s ease-out forwards;
+  }
+</style>
+
   </main>
 
   <!-- Auto Year Fix -->
