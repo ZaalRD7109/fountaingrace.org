@@ -1,7 +1,7 @@
 # ====== MAIN SITE REDIRECTS (Fountain of Grace International) ======
 
 # Allow extensionless access to all key pages
-/*      /:splat.html   301
+/*                /:splat.html           301
 /                 /index.html            301
 /about            /about.html            301
 /programs         /programs.html         301
