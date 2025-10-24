@@ -11,6 +11,13 @@
 /privacy          /privacy.html          301
 /cookie-policy    /cookie-policy.html    301
 
+# ===== AUTO REDIRECTS =====
+/give /donate.html 301
+/give-now /donate.html 301
+/facebook https://www.facebook.com/FGIPta/ 301
+/youtube https://youtube.com/@fgipta?si=oV90AAPfTt17Ds19 301
+/tiktok https://www.tiktok.com/@fountainofgraceintl?is_from_webapp=1&sender_device=pc 301
+
 # ====== BLOG REDIRECTS ======
 /blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20   /blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20.html   301
 /blog/how-to-give-safely-in-south-africa                                /blog/how-to-give-safely-in-south-africa.html                                301
