@@ -4,121 +4,176 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blog & Resources | Fountain of Grace International</title>
-  <meta name="description" content="Faith-based teachings, prophetic insights, and practical guides from Fountain of Grace International (NPO 316-193) — helping you grow spiritually and live purposefully.">
-  <meta name="keywords" content="Fountain of Grace International, Ricardo Zaal, Christian Church Pretoria, prophetic teaching, faith blog, South Africa ministry, NPO 316-193">
+  <meta name="description" content="Prophetic insights, faith-based teachings, and Kingdom wisdom from Fountain of Grace International in Pretoria North.">
+  <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.fountaingrace.org/blog/">
   <meta name="theme-color" content="#2196F3">
+  <link rel="icon" href="/favicon.ico">
 
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Social Meta -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fountain of Grace International">
+  <meta property="og:title" content="Blog & Resources | Fountain of Grace International">
+  <meta property="og:description" content="Faith-filled teachings and prophetic insights from Fountain of Grace International, Pretoria North.">
+  <meta property="og:image" content="https://www.fountaingrace.org/img/fgi-logo.svg">
+  <meta name="twitter:card" content="summary_large_image">
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
 
   <style>
     body {
       font-family: "Poppins", sans-serif;
-      background: #fafafa;
-      color: #222;
       margin: 0;
-      line-height: 1.6;
+      background: #f9fafb;
+      color: #222;
+      line-height: 1.7;
     }
 
-    .blog-hero {
+    main {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+    }
+
+    h1 {
       text-align: center;
-      padding: 4rem 1.5rem 2rem;
-      background: linear-gradient(180deg, #E3F2FD 0%, #E0F2F1 100%);
-      margin-bottom: 2rem;
-    }
-
-    .blog-hero h1 {
-      font-size: 2rem;
       color: #0A2540;
       margin-bottom: 0.5rem;
     }
 
-    .blog-hero p {
+    p.sub {
+      text-align: center;
       color: #555;
-      max-width: 700px;
-      margin: 0 auto;
+      margin-bottom: 3rem;
     }
 
-    .blog-list {
-      display: grid;
-      gap: 2rem;
-      max-width: 900px;
-      margin: 0 auto 4rem;
-      padding: 0 1rem;
-    }
-
-    .post-item {
+    .post-card {
       background: #fff;
-      border-radius: 1rem;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-      padding: 1.5rem 1.75rem;
-      transition: all 0.3s ease;
+      border-radius: 16px;
+      padding: 1.8rem;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+      margin-bottom: 1.8rem;
+      transition: transform 0.2s;
     }
 
-    .post-item:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    .post-card:hover {
+      transform: translateY(-4px);
     }
 
-    .post-item h2 {
+    .post-title {
+      color: #004d99;
       font-size: 1.25rem;
-      margin: 0 0 0.5rem;
-      color: #00796B;
-    }
-
-    .post-item a {
+      margin-bottom: 0.4rem;
       text-decoration: none;
+    }
+
+    .post-title:hover {
       color: #2196F3;
-      font-weight: 600;
     }
 
-    .post-item a:hover { text-decoration: underline; }
-
-    .post-item p.muted {
+    .post-excerpt {
       color: #555;
+      font-size: 1rem;
       margin: 0;
-      font-size: 0.95rem;
     }
 
-    @media (max-width: 600px) {
-      .post-item { padding: 1.25rem; }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background: #0A2540;
+      color: #fff;
+    }
+
+    footer a {
+      color: #FFD600;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #FFEB3B;
     }
   </style>
 </head>
 
 <body>
-  <!-- Header auto-loads -->
-  <main id="main">
-    <section class="blog-hero">
-      <h1>Blog & Resources</h1>
-      <p>Prophetic insights, faith-based teachings, and Kingdom wisdom to help you grow in grace and purpose.</p>
-    </section>
+  <!-- Header auto-loads from /partials/header.html -->
 
-    <section class="blog-list" id="blog-list">
-      <article class="post-item" data-published="2025-10-18">
-        <h2><a href="/blog/the-prophetic-reset.html">The Prophetic Reset — Hearing, Seeing, and Speaking Heaven Again</a></h2>
-        <p class="muted">Discover how God resets prophets and believers to align with His timing, clarity, and voice in a noisy world.</p>
-      </article>
+  <main>
+    <h1>Blog & Resources</h1>
+    <p class="sub">Prophetic insights, faith-based teachings, and Kingdom wisdom to help you grow in grace and purpose.</p>
 
-      <article class="post-item" data-published="2025-10-10">
-        <h2><a href="/blog/overnight-success-long-obedience.html">The Danger of Overnight Success &amp; the Power of Long Obedience</a></h2>
-        <p class="muted">Why God builds in seasons, not speed. Learn how long obedience grows roots that last when quick fame fades.</p>
-      </article>
+    <!-- 🔹 NEW POST: Finding Your Church Home in Pretoria North -->
+    <article class="post-card">
+      <h2><a class="post-title" href="/blog/finding-your-church-home-pretoria-north.html">
+        Finding Your Church Home in Pretoria North (A Real, No-Hype Guide)
+      </a></h2>
+      <p class="post-excerpt">
+        A simple, honest guide for anyone seeking a small, Christ-centered church family in Pretoria North — no stage lights, just real faith and belonging.
+      </p>
+    </article>
 
-      <article class="post-item" data-published="2025-10-10">
-        <h2><a href="/blog/how-to-give-safely-in-south-africa.html">How to Give Safely to a Nonprofit in South Africa</a></h2>
-        <p class="muted">A quick guide to verifying charities and giving with confidence.</p>
-      </article>
+    <!-- Existing Posts -->
+    <article class="post-card">
+      <h2><a class="post-title" href="/blog/the-prophetic-reset.html">
+        The Prophetic Reset – Hearing, Seeing, and Speaking Heaven Again
+      </a></h2>
+      <p class="post-excerpt">Discover how God resets prophets and believers to align with His timing, clarity, and voice in a noisy world.</p>
+    </article>
 
-      <article class="post-item" data-published="2025-10-10">
-        <h2><a href="/blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20.html">Fix the Router: Faith That Connects to Heaven’s Supply</a></h2>
-        <p class="muted">Faith is the “router” that connects us to God’s always-on promises. Learn how to renew your mind, forgive freely, and trust like a child.</p>
-      </article>
-    </section>
+    <article class="post-card">
+      <h2><a class="post-title" href="/blog/overnight-success-long-obedience.html">
+        The Danger of Overnight Success & the Power of Long Obedience
+      </a></h2>
+      <p class="post-excerpt">Why God builds in seasons, not speed — learning how long obedience grows roots that last when quick fame fades.</p>
+    </article>
+
+    <article class="post-card">
+      <h2><a class="post-title" href="/blog/how-to-give-safely-in-south-africa.html">
+        How to Give Safely to a Nonprofit in South Africa
+      </a></h2>
+      <p class="post-excerpt">A quick guide to verifying charities and giving with confidence.</p>
+    </article>
+
+    <article class="post-card">
+      <h2><a class="post-title" href="/blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20.html">
+        Fix the Router: Faith That Connects to Heaven’s Supply
+      </a></h2>
+      <p class="post-excerpt">Faith is the “router” that connects us to God’s always-on promises. Learn how to renew your mind, forgive freely, and trust like a child.</p>
+    </article>
   </main>
 
+  <!-- Footer auto-loads -->
   <script src="/js/main.js" defer></script>
+
+  <!-- Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Blog & Resources | Fountain of Grace International",
+    "description": "Faith-based teachings, prophetic insights, and Kingdom growth resources from Fountain of Grace International, Pretoria North.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Fountain of Grace International",
+      "url": "https://www.fountaingrace.org",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.fountaingrace.org/img/fgi-logo.svg"
+      }
+    },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "url": "https://www.fountaingrace.org/blog/finding-your-church-home-pretoria-north.html" },
+        { "@type": "ListItem", "position": 2, "url": "https://www.fountaingrace.org/blog/the-prophetic-reset.html" },
+        { "@type": "ListItem", "position": 3, "url": "https://www.fountaingrace.org/blog/overnight-success-long-obedience.html" },
+        { "@type": "ListItem", "position": 4, "url": "https://www.fountaingrace.org/blog/how-to-give-safely-in-south-africa.html" },
+        { "@type": "ListItem", "position": 5, "url": "https://www.fountaingrace.org/blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20.html" }
+      ]
+    }
+  }
+  </script>
 </body>
 </html>
