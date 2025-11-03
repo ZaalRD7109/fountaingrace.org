@@ -1,0 +1,41 @@
+name: 🌍 SEO Maintenance — Sitemap Auto-Update
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  seo-maintenance:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate Sitemap Automatically
+        run: |
+          echo '<?xml version="1.0" encoding="UTF-8"?>' > sitemap.xml
+          echo '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">' >> sitemap.xml
+          echo "" >> sitemap.xml
+          find . -type f -name "*.html" ! -path "./partials/*" ! -path "./node_modules/*" | while read FILE; do
+            CLEAN=$(echo "$FILE" | sed 's|^\./||')
+            URL="https://www.fountaingrace.org/${CLEAN}"
+            DATE=$(date +"%Y-%m-%d")
+            echo "  <url>" >> sitemap.xml
+            echo "    <loc>$URL</loc>" >> sitemap.xml
+            echo "    <lastmod>$DATE</lastmod>" >> sitemap.xml
+            echo "    <changefreq>monthly</changefreq>" >> sitemap.xml
+            echo "    <priority>0.8</priority>" >> sitemap.xml
+            echo "  </url>" >> sitemap.xml
+          done
+          echo "</urlset>" >> sitemap.xml
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "FGI Auto-Bot"
+          git config --global user.email "info@fountaingrace.org"
+          git add sitemap.xml
+          git diff --quiet && echo "No changes" || (git commit -m "✅ Auto-update sitemap" && git push)
