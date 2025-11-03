@@ -81,5 +81,12 @@
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
+  
+    <url>
+    <loc>https://www.fountaingrace.org/blog/finding-your-church-home-pretoria-north.html</loc>
+    <lastmod>2025-10-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
 
 </urlset>
