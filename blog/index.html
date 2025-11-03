@@ -19,7 +19,7 @@
       margin: 0;
     }
 
-    /* ===== HEADER GRADIENT SECTION ===== */
+    /* ===== GRADIENT HERO SECTION ===== */
     .hero-section {
       background: linear-gradient(135deg, #001f54 0%, #00796B 100%);
       color: #fff;
@@ -54,7 +54,7 @@
       border-radius: 14px;
       padding: 1.8rem;
       box-shadow: 0 3px 12px rgba(0,0,0,0.05);
-      border: 1px solid rgba(0,0,0,0.08); /* subtle outline */
+      border: 1px solid rgba(0,0,0,0.08);
       margin-bottom: 1.8rem;
       transition: all 0.3s ease;
     }
@@ -104,16 +104,18 @@
 </head>
 
 <body>
-  <!-- Header auto-loads -->
-  
-  <!-- ===== GRADIENT HERO SECTION ===== -->
+
+  <!-- ===== LOAD GLOBAL HEADER ===== -->
+  <div id="header"></div>
+
+  <!-- ===== HERO SECTION ===== -->
   <section class="hero-section">
     <h1>Blog & Resources</h1>
     <p>Prophetic insights, faith-based teachings, and Kingdom wisdom to help you grow in grace and purpose.</p>
   </section>
 
   <main>
-    <!-- ✅ New Post -->
+    <!-- ✅ New Blog -->
     <article class="post-card">
       <h2><a href="/blog/finding-your-church-home-pretoria-north.html">Finding Your Church Home in Pretoria North (A Real, No-Hype Guide)</a></h2>
       <p>A heartfelt, simple guide for those seeking a small, Christ-centered church family in Pretoria North — no lights, no stage, just real faith and belonging.</p>
@@ -146,6 +148,19 @@
     </article>
   </main>
 
-  <!-- Footer auto-loads -->
+  <!-- ===== LOAD GLOBAL FOOTER ===== -->
+  <div id="footer"></div>
+
+  <!-- ===== JS to insert partials ===== -->
+  <script>
+    // Load header & footer partials once
+    fetch("/partials/header.html").then(res => res.text()).then(data => {
+      document.getElementById("header").innerHTML = data;
+    });
+    fetch("/partials/footer.html").then(res => res.text()).then(data => {
+      document.getElementById("footer").innerHTML = data;
+    });
+  </script>
+
 </body>
 </html>
