@@ -1,17 +1,4 @@
-# ================================
-# Fountain of Grace International
-# robots.txt — SEO & Google Indexing Settings
-# Last updated: 2025-10-18
-# ================================
-
-# Allow all search engines to crawl the entire site
 User-agent: *
-Disallow:
+Allow: /
 
-# (Optional) If you ever add private files, list them here:
-# Disallow: /admin/
-# Disallow: /drafts/
-# Disallow: /backup/
-
-# Sitemap location for Google & Bing
-Sitemap: https://www.fountaingrace.org/sitemap.xml
+Sitemap: https://fountaingrace.org/sitemap.xml
