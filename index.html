@@ -1,208 +1,142 @@
 <!doctype html>
 <html lang="en-ZA">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
 
   <title>Fountain of Grace International | Christian Church in Pretoria, South Africa</title>
-  <meta name="description" content="Fountain of Grace International (NPO 316-193) is a Christ-centered Church in Pretoria, South Africa, dedicated to restoring dignity, building hope, and empowering families through the Gospel of Jesus Christ." />
-  <meta name="keywords" content="Christian Church Pretoria, Fountain of Grace International, NPO 316-193, Church in Pretoria North, Faith-based organization South Africa, Jesus, family restoration, outreach ministry, donations, volunteer church Pretoria" />
-  <meta name="robots" content="index,follow" />
 
-  <link rel="canonical" href="https://www.fountaingrace.org/" />
-  <meta name="theme-color" content="#2196F3" />
+  <meta name="description" content="Fountain of Grace International (NPO 316-193) is a Christ-centered church in Pretoria, helping families overcome poverty, addiction and despair through practical care and the Gospel.">
+  <meta name="keywords" content="Christian Church Pretoria, Fountain of Grace International, NPO 316-193, Church in Pretoria North, Faith-based NPO South Africa, Jesus, family restoration, outreach ministry, donations, volunteer">
+
+  <link rel="canonical" href="https://www.fountaingrace.org/">
+  <meta name="theme-color" content="#001F54">
 
   <!-- Favicons -->
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-  <meta name="apple-mobile-web-app-title" content="Fountain of Grace Intl" />
-  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="/css/styles.css">
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="Fountain of Grace International" />
-  <meta property="og:title" content="Fountain of Grace International — Christian Church in Pretoria, South Africa" />
-  <meta property="og:description" content="Registered NPO 316-193. Give, volunteer, and pray with us to restore dignity and hope in Pretoria North." />
-  <meta property="og:url" content="https://www.fountaingrace.org/" />
-  <meta property="og:image" content="https://www.fountaingrace.org/assets/img/og-image.jpg" />
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fountain of Grace International">
+  <meta property="og:title" content="Fountain of Grace International — Christian Church in Pretoria, South Africa">
+  <meta property="og:description" content="Registered NPO 316-193. Give, volunteer and pray with us to restore dignity and hope in Pretoria North.">
+  <meta property="og:url" content="https://www.fountaingrace.org/">
+  <meta property="og:image" content="/img/og-image.jpg">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Fountain of Grace International — Christian Church in Pretoria, South Africa" />
-  <meta name="twitter:description" content="Registered NPO 316-193. Give, volunteer, and pray with us to restore dignity and hope in Pretoria North." />
-  <meta name="twitter:image" content="https://www.fountaingrace.org/assets/img/og-image.jpg" />
-
-  <!-- Performance -->
-  <link rel="preload" href="/assets/img/hero.webp" as="image" imagesrcset="/assets/img/hero.webp 1900w" imagesizes="100vw" />
-
-  <!-- Site CSS -->
-  <link rel="stylesheet" href="/css/styles.css" />
-
-  <!-- FAQ Schema -->
+  <!-- JSON-LD -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Is Fountain of Grace International a registered nonprofit?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes, Fountain of Grace International is a registered nonprofit (NPO 316-193) recognized in South Africa."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Where is Fountain of Grace International located?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Fountain of Grace International is based in Pretoria North, South Africa."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How can I get involved?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "You can volunteer, donate, or join our prayer team through the Get Involved page on our website."
-        }
-      }
+    "@context":"https://schema.org",
+    "@type":"NonprofitOrganization",
+    "name":"Fountain of Grace International",
+    "identifier":{"@type":"PropertyValue","propertyID":"NPO","value":"316-193"},
+    "url":"https://www.fountaingrace.org/",
+    "logo":"https://www.fountaingrace.org/img/fgi-logo.svg",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"323 B Danie Theron Street",
+      "addressLocality":"Pretoria North",
+      "addressRegion":"Gauteng",
+      "postalCode":"0182",
+      "addressCountry":"ZA"
+    },
+    "contactPoint":[
+      {"@type":"ContactPoint","telephone":"+27-75-259-2555","contactType":"customer service"}
     ]
   }
   </script>
+
+  <style>
+    /* keep CTAs clickable */
+    .btn-primary, .btn-outline { display:inline-block; text-decoration:none; cursor:pointer; position:relative; z-index:5; }
+  </style>
 </head>
 
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="top-bar">
+      <div class="container">
+        <span>Call us: </span><a href="tel:+27752592555">+27 75 259 2555</a>
+      </div>
+    </div>
 
-  <header class="site-header" role="banner">
-    <div class="container flex between center">
-      <a class="brand" href="/" aria-label="Fountain of Grace International home">
-        <img src="/img/fgi-logo.svg" width="140" height="40" alt="Fountain of Grace International logo" />
-      </a>
+    <nav class="main-nav">
+      <div class="nav-container">
+        <a href="/index.html" class="brand" aria-label="Fountain of Grace home">
+          <img src="/img/fgi-logo.svg" alt="Fountain of Grace International logo" class="logo" width="140" height="40" loading="eager">
+        </a>
 
-      <button class="nav-toggle" aria-expanded="false" aria-controls="nav">Menu</button>
-
-      <nav id="nav" class="nav" role="navigation" aria-label="Primary">
-        <ul>
+        <ul class="menu">
+          <li><a href="/index.html" class="active">Home</a></li>
           <li><a href="/about.html">About</a></li>
           <li><a href="/programs.html">Programs</a></li>
           <li><a href="/get-involved.html">Get Involved</a></li>
           <li><a href="/blog/">Blog</a></li>
-          <li><a href="/contact.html">Contact</a></li>
-          <li><a class="btn btn-primary" href="/donate.html">Donate</a></li>
+          <li><a href="/contact.html" class="btn-gold">Contact Us</a></li>
         </ul>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
   <main id="main">
     <section class="hero">
-      <div class="container grid2">
-        <div>
-          <h1>Restore Dignity. Build Hope. Follow Jesus.</h1>
+      <div class="hero-inner">
+        <img src="/img/imgrdzaal-profile.jpeg" alt="Pastor Ricardo Zaal" class="hero-img" width="200" height="200" loading="eager" decoding="async">
 
-          <p class="lead">
-            Fountain of Grace International (NPO 316-193) is a <strong>Christian Church in Pretoria, South Africa</strong>
-            helping families overcome poverty, addiction, and despair through practical care and the Gospel.
-          </p>
+        <h1>Restore Dignity.<br>Build Hope.<br>Follow Jesus.</h1>
 
-          <div class="cta-row">
-            <a class="btn btn-primary" href="/donate.html">Donate Now</a>
-            <a class="btn btn-outline" href="/get-involved.html">Volunteer &amp; Pray</a>
-          </div>
+        <p>Fountain of Grace International (NPO 316-193) is a Christ-centered church in Pretoria, helping families overcome poverty, addiction and despair through practical care and the Gospel.</p>
 
-          <p class="muted">
-            Pretoria North • NPO 316-193
-          </p>
-        </div>
-
-        <div class="hero-media">
-          <img
-            src="/img/imgrdzaal-profile.jpeg"
-            alt="Pastor Ricardo Zaal"
-            width="420"
-            height="420"
-            loading="eager"
-            decoding="async"
-          />
+        <div class="btn-group">
+          <a class="btn-primary" href="/donate.html" aria-label="Go to donation page">Donate Now</a>
+          <a class="btn-outline" href="/get-involved.html" aria-label="Go to get involved page">Volunteer &amp; Pray</a>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="section about">
       <div class="container">
         <h2>What We Do</h2>
-        <p class="lead">
-          We serve Pretoria North through programs that meet physical, emotional, and spiritual needs while sharing the hope of Christ.
-        </p>
+        <p>We serve Pretoria North through programs that meet physical, emotional and spiritual needs while sharing the hope of Christ.</p>
 
         <div class="cards">
-          <article class="card">
+          <article>
             <h3>Food &amp; Family Relief</h3>
             <p>Emergency food parcels and support for vulnerable households.</p>
           </article>
 
-          <article class="card">
+          <article>
             <h3>Recovery &amp; Prayer</h3>
-            <p>Prayer support and recovery care, connecting people to Jesus.</p>
+            <p>Prayer line and addiction support, connecting people to Jesus.</p>
           </article>
 
-          <article class="card">
+          <article>
             <h3>Entrepreneurship</h3>
             <p><strong>Impact Seed</strong> training to rebuild dignity through work.</p>
           </article>
         </div>
       </div>
     </section>
-
-    <section class="section alt">
-      <div class="container grid2">
-        <div>
-          <h2>Plan Your Visit</h2>
-          <p>
-            New to FGI? Plan your visit in under a minute so we can welcome you properly.
-          </p>
-          <a class="btn btn-primary" href="/plan-your-visit.html">Plan Your Visit</a>
-        </div>
-
-        <div>
-          <h2>Need Prayer</h2>
-          <p>
-            You do not have to carry it alone. Send your prayer request and we will pray with you.
-          </p>
-          <a class="btn btn-outline" href="/contact.html">Send a Prayer Request</a>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer class="site-footer">
+  <footer class="footer">
     <div class="container">
       <p>© <span id="year"></span> Fountain of Grace International · NPO 316-193 · Pretoria North, South Africa</p>
     </div>
   </footer>
 
   <script>
-    // Footer year
     document.getElementById("year").textContent = new Date().getFullYear();
-
-    // Mobile nav toggle
-    (function () {
-      const btn = document.querySelector(".nav-toggle");
-      const nav = document.getElementById("nav");
-      if (!btn || !nav) return;
-
-      btn.addEventListener("click", function () {
-        const expanded = btn.getAttribute("aria-expanded") === "true";
-        btn.setAttribute("aria-expanded", String(!expanded));
-        nav.classList.toggle("open");
-      });
-    })();
   </script>
 </body>
 </html>
-
