@@ -1,234 +1,479 @@
+<!-- SAVE AS: index.html  (root) -->
 <!doctype html>
 <html lang="en-ZA">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="theme-color" content="#2196F3" />
 
-  <title>Fountain of Grace International | Christian Church in Pretoria North</title>
+  <title>Fountain of Grace International (FGI) | Christian Church in Pretoria North</title>
+  <meta name="description" content="Fountain of Grace International (FGI) in Pretoria North. Plan your visit in 30 seconds so we can welcome you at the gate. Registered NPO 316-193." />
+  <link rel="canonical" href="https://fountaingrace.org/" />
 
-  <meta name="description" content="Fountain of Grace International (NPO 316-193) is a Christian Church in Pretoria North, South Africa. Plan your visit, join a service, and grow in grace and purpose.">
-  <meta name="keywords" content="Christian Church Pretoria North, Fountain of Grace International, NPO 316-193, church Pretoria, plan your visit, Sunday service Pretoria North, Jesus, discipleship, prayer">
-  <meta name="robots" content="index, follow">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Fountain of Grace International (FGI) | Pretoria North" />
+  <meta property="og:description" content="Plan your visit in 30 seconds. A welcoming Christian church in Pretoria North. Registered NPO 316-193." />
+  <meta property="og:url" content="https://fountaingrace.org/" />
+  <meta property="og:image" content="https://fountaingrace.org/assets/og-fgi.jpg" />
 
-  <link rel="canonical" href="https://www.fountaingrace.org/">
-  <meta name="theme-color" content="#2196F3">
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Fountain of Grace International (FGI) | Pretoria North" />
+  <meta name="twitter:description" content="Plan your visit in 30 seconds. A welcoming Christian church in Pretoria North. Registered NPO 316-193." />
+  <meta name="twitter:image" content="https://fountaingrace.org/assets/og-fgi.jpg" />
 
-  <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Fountain of Grace International">
-  <meta property="og:title" content="Fountain of Grace International | Christian Church in Pretoria North">
-  <meta property="og:description" content="Plan your visit. We will welcome you at the gate. Registered NPO 316-193.">
-  <meta property="og:url" content="https://www.fountaingrace.org/">
-  <meta property="og:image" content="https://www.fountaingrace.org/assets/img/og-image.jpg">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Fountain of Grace International | Christian Church in Pretoria North">
-  <meta name="twitter:description" content="Plan your visit. We will welcome you at the gate. Registered NPO 316-193.">
-  <meta name="twitter:image" content="https://www.fountaingrace.org/assets/img/og-image.jpg">
-
-  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Favicons -->
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
   <style>
-    /* Keep this light so your main /css/styles.css stays in control */
-    .home-wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
-
-    .hero {
-      padding: 4.5rem 0 3rem;
-      background: linear-gradient(135deg, #2196F3 0%, #00796B 100%);
-      color: #fff;
-      border-bottom: 4px solid #FFD600;
+    :root{
+      --blue:#2196F3;
+      --yellow:#FFD600;
+      --teal:#00796B;
+      --grey:#757575;
+      --white:#FFFFFF;
+      --ink:#0b1220;
+      --card:#ffffff;
+      --line:rgba(11,18,32,.12);
+      --shadow:0 18px 45px rgba(11,18,32,.14);
+      --radius:16px;
+      --max:1120px;
     }
 
-    .hero-top {
-      display: flex;
-      gap: 1.25rem;
-      align-items: center;
-      flex-wrap: wrap;
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(900px 500px at 10% 0%, rgba(33,150,243,.18), transparent 60%),
+        radial-gradient(800px 500px at 95% 10%, rgba(0,121,107,.14), transparent 55%),
+        #f7fafc;
     }
 
-    .pastor-photo {
-      width: 96px;
-      height: 96px;
-      border-radius: 999px;
-      border: 4px solid #FFD600;
-      object-fit: cover;
-      background: rgba(255,255,255,.15);
-      flex: 0 0 auto;
+    a{color:inherit}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+
+    /* Header */
+    header{
+      position:sticky; top:0; z-index:50;
+      backdrop-filter:saturate(150%) blur(10px);
+      background:rgba(247,250,252,.75);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:14px 0;
+      gap:14px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:12px;
+      text-decoration:none;
+      min-width:220px;
+    }
+    .brand img{
+      width:44px; height:44px; border-radius:12px;
+      object-fit:contain;
+      background:#fff;
+      border:1px solid var(--line);
+    }
+    .brand b{display:block; font-size:14px; line-height:1.1}
+    .brand span{display:block; font-size:12px; color:var(--grey); line-height:1.2}
+
+    .navlinks{
+      display:flex; gap:14px; align-items:center;
+      font-size:14px;
+    }
+    .navlinks a{
+      text-decoration:none;
+      padding:10px 10px;
+      border-radius:12px;
+      color:rgba(11,18,32,.78);
+    }
+    .navlinks a:focus-visible{outline:3px solid rgba(255,214,0,.55); outline-offset:2px}
+    .navlinks a:hover{background:rgba(33,150,243,.08)}
+
+    .navcta{
+      display:flex; gap:10px; align-items:center;
+    }
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      gap:10px;
+      padding:12px 14px;
+      border-radius:14px;
+      border:1px solid transparent;
+      text-decoration:none;
+      font-weight:700;
+      font-size:14px;
+      cursor:pointer;
+      user-select:none;
+      transition:transform .15s ease, box-shadow .15s ease, background .15s ease;
+      white-space:nowrap;
+    }
+    .btn:active{transform:translateY(1px)}
+    .btn-primary{
+      background:linear-gradient(135deg,var(--yellow),#ffe55b);
+      color:#111;
+      box-shadow:0 10px 22px rgba(255,214,0,.28);
+      border-color:rgba(255,214,0,.35);
+    }
+    .btn-primary:hover{box-shadow:0 14px 28px rgba(255,214,0,.35)}
+    .btn-ghost{
+      background:rgba(255,255,255,.75);
+      border-color:var(--line);
+      color:#111;
+    }
+    .btn-ghost:hover{background:#fff}
+
+    /* Hero */
+    main{padding:26px 0 70px}
+    .hero{
+      display:grid;
+      grid-template-columns:1fr;
+      gap:22px;
+      align-items:start;
+      margin-top:10px;
+    }
+    .hero-card{
+      background:rgba(255,255,255,.9);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:26px;
+      overflow:hidden;
+      position:relative;
     }
 
-    .hero h1 { margin: 0 0 0.75rem; font-size: 2.6rem; line-height: 1.1; }
-    .hero p { margin: 0; max-width: 720px; color: #E3F2FD; line-height: 1.7; }
-
-    .badge-row { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.25rem; }
-    .badge {
-      background: rgba(255,255,255,.12);
-      border: 1px solid rgba(255,255,255,.22);
-      padding: .55rem .85rem;
-      border-radius: 999px;
-      font-size: .95rem;
+    .hero-head{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      flex-wrap:wrap;
     }
 
-    .section { padding: 2.5rem 0; }
-    .grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 1.5rem; align-items: start; }
-    @media (max-width: 900px) {
-      .grid { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 2.1rem; }
-      .pastor-photo { width: 84px; height: 84px; }
+    .profile{
+      display:flex;
+      align-items:center;
+      gap:14px;
+      min-width:240px;
+      justify-content:flex-end;
+    }
+    .profile-ring{
+      width:92px;
+      height:92px;
+      border-radius:999px;
+      border:4px solid var(--yellow);
+      overflow:hidden;
+      background:rgba(33,150,243,.08);
+      flex:0 0 auto;
+      box-shadow:0 10px 22px rgba(255,214,0,.18);
+    }
+    .profile-ring img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .profile-meta b{
+      display:block;
+      font-size:13px;
+      line-height:1.2;
+    }
+    .profile-meta span{
+      display:block;
+      font-size:12px;
+      color:rgba(11,18,32,.68);
+      line-height:1.2;
+      margin-top:2px;
     }
 
-    .card {
-      background: #fff;
-      border-radius: 18px;
-      padding: 1.25rem;
-      box-shadow: 0 6px 24px rgba(0,0,0,.06);
-      border: 1px solid rgba(0,0,0,.06);
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:8px 12px;
+      border-radius:999px;
+      background:rgba(33,150,243,.08);
+      border:1px solid rgba(33,150,243,.16);
+      color:rgba(11,18,32,.85);
+      font-size:12px;
+      font-weight:700;
+      margin-top:14px;
     }
-    .card h2 { margin: 0 0 .75rem; font-size: 1.35rem; color: #0b1b33; }
-    .muted { color: #5f6368; }
-
-    .btn-row { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.25rem; }
-    .btn-main {
-      display: inline-block;
-      background: #FFD600;
-      color: #0b1b33;
-      font-weight: 700;
-      padding: 12px 18px;
-      border-radius: 999px;
-      text-decoration: none;
-      border: 0;
+    .kdot{
+      width:10px;height:10px;border-radius:50%;
+      background:var(--teal);
+      box-shadow:0 0 0 6px rgba(0,121,107,.12);
     }
-    .btn-ghost {
-      display: inline-block;
-      background: transparent;
-      color: #fff;
-      font-weight: 700;
-      padding: 12px 18px;
-      border-radius: 999px;
-      text-decoration: none;
-      border: 1px solid rgba(255,255,255,.45);
+    h1{
+      margin:14px 0 10px;
+      font-size:42px;
+      line-height:1.05;
+      letter-spacing:-.03em;
     }
-
-    .btn-outline {
-      display: inline-block;
-      background: transparent;
-      color: #0b1b33;
-      font-weight: 700;
-      padding: 12px 18px;
-      border-radius: 999px;
-      text-decoration: none;
-      border: 1px solid rgba(0,0,0,.14);
+    .sub{
+      margin:0;
+      color:rgba(11,18,32,.72);
+      font-size:16px;
+      line-height:1.55;
+      max-width:62ch;
+    }
+    .hero-actions{
+      display:flex; gap:12px; flex-wrap:wrap;
+      margin-top:18px;
     }
 
-    .small { font-size: .92rem; }
-    .line { height: 1px; background: rgba(0,0,0,.08); margin: 1rem 0; }
+    .trustrow{
+      display:flex; flex-wrap:wrap;
+      gap:10px 16px;
+      margin-top:18px;
+      padding-top:14px;
+      border-top:1px dashed rgba(11,18,32,.18);
+      color:rgba(11,18,32,.7);
+      font-size:13px;
+    }
+    .trustrow b{color:rgba(11,18,32,.88)}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px;
+      border-radius:999px;
+      background:rgba(0,121,107,.08);
+      border:1px solid rgba(0,121,107,.14);
+    }
+    .pill i{font-style:normal; color:var(--teal); font-weight:900}
 
-    .list-tight { margin: .75rem 0 0; padding-left: 1.1rem; }
-    .list-tight li { margin: .35rem 0; }
+    /* Sections */
+    .section{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns:1fr 1fr 1fr;
+      gap:14px;
+    }
+    .card{
+      background:rgba(255,255,255,.92);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      padding:16px;
+      box-shadow:0 10px 24px rgba(11,18,32,.08);
+    }
+    .card h3{margin:0 0 6px; font-size:15px}
+    .card p{margin:0; color:rgba(11,18,32,.72); font-size:13px; line-height:1.5}
+
+    /* Footer */
+    footer{
+      margin-top:40px;
+      padding:22px 0;
+      border-top:1px solid var(--line);
+      color:rgba(11,18,32,.7);
+      font-size:13px;
+    }
+    .foot{
+      display:flex; flex-wrap:wrap; gap:10px 18px; align-items:center; justify-content:space-between;
+    }
+    .foot a{color:rgba(11,18,32,.8)}
+    .foot small{color:rgba(11,18,32,.62)}
+
+    /* Sticky Plan Your Visit button for mobile (one-direction) */
+    .sticky-visit{
+      position:fixed;
+      left:12px; right:12px;
+      bottom:12px;
+      z-index:60;
+      display:none;
+    }
+    .sticky-visit a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      padding:14px 16px;
+      border-radius:18px;
+      background:linear-gradient(135deg,var(--yellow),#ffe55b);
+      color:#111;
+      text-decoration:none;
+      font-weight:900;
+      box-shadow:0 18px 40px rgba(255,214,0,.32);
+      border:1px solid rgba(255,214,0,.38);
+    }
+
+    /* Responsive */
+    @media (max-width: 980px){
+      h1{font-size:36px}
+      .section{grid-template-columns:1fr}
+      .profile{justify-content:flex-start}
+    }
+    @media (max-width: 720px){
+      .navlinks{display:none}
+      .sticky-visit{display:block}
+      main{padding-bottom:110px}
+      .profile-ring{width:80px;height:80px}
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      html{scroll-behavior:auto}
+      .btn{transition:none}
+    }
   </style>
-</head>
-
-<body>
-  <!-- Header loads dynamically from /partials/header.html -->
-
-  <header class="hero">
-    <div class="home-wrap">
-      <div class="hero-top">
-        <img
-          src="/img/imgrdzaal-profile.jpeg"
-          alt="Pastor Ricardo Zaal"
-          class="pastor-photo"
-          width="96"
-          height="96"
-          loading="eager"
-          decoding="async"
-        >
-
-        <div>
-          <h1>Plan your visit. We will welcome you at the gate.</h1>
-          <p>
-            Fountain of Grace International (<strong>NPO 316-193</strong>) is a <strong>Christian Church</strong> in Pretoria North.
-            If this is your first time, plan your visit in under 30 seconds so you arrive with confidence.
-          </p>
-        </div>
-      </div>
-
-      <div class="badge-row">
-        <div class="badge">Christian Church in Pretoria North</div>
-        <div class="badge">Registered NPO 316-193</div>
-        <div class="badge">Family friendly</div>
-      </div>
-
-      <div class="btn-row">
-        <a class="btn-main" href="/plan-your-visit.html">Plan Your Visit</a>
-        <a class="btn-ghost" href="/contact.html">Ask a Question</a>
-      </div>
-    </div>
-  </header>
-
-  <main class="section">
-    <div class="home-wrap grid">
-
-      <section class="card">
-        <h2>What to expect</h2>
-        <p class="muted">
-          A clear welcome. Worship and prayer. Bible-based teaching.
-          Come as you are.
-        </p>
-
-        <div class="line"></div>
-
-        <p class="small">
-          <strong>Service:</strong> Sunday 09:00–11:00<br>
-          <strong>Address:</strong> 323 B Danie Theron Street, Pretoria North, 0182
-        </p>
-
-        <ul class="list-tight small muted">
-          <li>Parking help when you arrive</li>
-          <li>Kids and families welcome</li>
-          <li>Prayer available after the service</li>
-        </ul>
-      </section>
-
-      <section class="card" aria-label="Plan your visit">
-        <h2>Plan your visit</h2>
-        <p class="muted small">
-          Click below to fill in the short form. We will confirm and welcome you.
-        </p>
-
-        <div class="btn-row">
-          <a class="btn-main" href="/plan-your-visit.html">Plan Your Visit</a>
-          <a class="btn-outline" href="/about.html">Who we are</a>
-        </div>
-
-        <div class="line"></div>
-
-        <p class="small muted">
-          Need prayer, accessibility help, or visiting with kids.
-          Tell us on the form.
-        </p>
-      </section>
-
-    </div>
-  </main>
-
-  <!-- Footer loads dynamically -->
-  <script src="/js/main.js" defer></script>
 
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
-    "@type":"Church",
-    "name":"Fountain of Grace International",
-    "url":"https://www.fountaingrace.org/",
-    "identifier":{"@type":"PropertyValue","propertyID":"NPO","value":"316-193"},
-    "address":{
-      "@type":"PostalAddress",
-      "streetAddress":"323 B Danie Theron Street",
-      "addressLocality":"Pretoria North",
-      "addressRegion":"Gauteng",
-      "postalCode":"0182",
-      "addressCountry":"ZA"
-    }
+    "@graph":[
+      {
+        "@type":"Organization",
+        "@id":"https://fountaingrace.org/#org",
+        "name":"Fountain of Grace International (FGI)",
+        "legalName":"Fountain of Grace International",
+        "url":"https://fountaingrace.org/",
+        "email":"info@fountaingrace.org",
+        "foundingLocation":"Pretoria North, South Africa",
+        "identifier":"NPO 316-193",
+        "description":"Christian church in Pretoria North serving through discipleship, outreach, and practical compassion.",
+        "logo":{"@type":"ImageObject","url":"https://fountaingrace.org/assets/fgi-logo.png"},
+        "address":{
+          "@type":"PostalAddress",
+          "streetAddress":"323 B Danie Theron Street",
+          "addressLocality":"Pretoria North",
+          "addressRegion":"Gauteng",
+          "addressCountry":"ZA"
+        },
+        "contactPoint":[{"@type":"ContactPoint","contactType":"Plan a Visit","email":"info@fountaingrace.org","availableLanguage":["English"]}]
+      },
+      {
+        "@type":"WebSite",
+        "@id":"https://fountaingrace.org/#website",
+        "url":"https://fountaingrace.org/",
+        "name":"Fountain of Grace International (FGI)",
+        "publisher":{"@id":"https://fountaingrace.org/#org"},
+        "inLanguage":"en-ZA"
+      }
+    ]
   }
   </script>
+</head>
+
+<body>
+<header>
+  <div class="wrap">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="/" aria-label="Fountain of Grace International">
+        <img src="/assets/fgi-logo.png" alt="Fountain of Grace International logo" width="44" height="44" loading="eager" decoding="async" />
+        <div>
+          <b>Fountain of Grace International</b>
+          <span>Registered NPO 316-193 • Pretoria North</span>
+        </div>
+      </a>
+
+      <div class="navlinks">
+        <a href="#expect">What to Expect</a>
+        <a href="#about">About</a>
+        <a href="/plan-your-visit.html">Plan Your Visit</a>
+      </div>
+
+      <div class="navcta">
+        <a class="btn btn-ghost" href="mailto:info@fountaingrace.org">Email</a>
+        <a class="btn btn-primary" href="/plan-your-visit.html">Plan Your Visit</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section class="hero" aria-label="Fountain of Grace International home">
+    <div class="hero-card">
+
+      <div class="hero-head">
+        <div>
+          <div class="kicker"><span class="kdot" aria-hidden="true"></span> Christian church in Pretoria North • New visitors welcome</div>
+        </div>
+
+        <div class="profile" aria-label="Pastor profile">
+          <div class="profile-meta">
+            <b>Pastor</b>
+            <span>Ricardo Zaal</span>
+          </div>
+          <div class="profile-ring">
+            <img src="/img/imgrdzaal-profile.jpeg" alt="Pastor Ricardo Zaal" width="92" height="92" loading="eager" decoding="async">
+          </div>
+        </div>
+      </div>
+
+      <h1>Plan your visit.<br>We will welcome you at the gate.</h1>
+
+      <p class="sub">
+        Fountain of Grace International (FGI) is a Christian church in Pretoria North.
+        If this is your first time, plan your visit in under 30 seconds so you arrive with confidence.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="/plan-your-visit.html">Plan Your Visit</a>
+        <a class="btn btn-ghost" href="mailto:info@fountaingrace.org?subject=FGI%20Visit%20Question">Ask a Question</a>
+      </div>
+
+      <div class="trustrow">
+        <span class="pill"><i aria-hidden="true">✓</i> Clear welcome</span>
+        <span class="pill"><i aria-hidden="true">✓</i> Family-friendly</span>
+        <span class="pill"><i aria-hidden="true">✓</i> Registered NPO 316-193</span>
+        <span><b>Service:</b> Sunday 09:00–11:00</span>
+        <span><b>Address:</b> 323 B Danie Theron Street, Pretoria North</span>
+      </div>
+
+      <section id="expect" class="section" aria-label="What to expect at Fountain of Grace International">
+        <div class="card">
+          <h3>When you arrive</h3>
+          <p>Someone will greet you, help you find parking, and guide you in. You won’t feel lost.</p>
+        </div>
+        <div class="card">
+          <h3>What the service feels like</h3>
+          <p>Worship, clear teaching, and prayer. You can come as you are. No pressure.</p>
+        </div>
+        <div class="card">
+          <h3>Kids and families</h3>
+          <p>Families are welcome. If you have kids, tell us on the plan-your-visit page so we can assist.</p>
+        </div>
+      </section>
+
+      <section id="about" class="section" aria-label="About Fountain of Grace International">
+        <div class="card">
+          <h3>Who we are</h3>
+          <p>FGI exists to make disciples, serve our community, and help people rebuild life through faith and support.</p>
+        </div>
+        <div class="card">
+          <h3>Integrity and transparency</h3>
+          <p>We handle people and resources with care. We communicate clearly and respect your privacy.</p>
+        </div>
+        <div class="card">
+          <h3>Registered nonprofit</h3>
+          <p>Registered NPO 316-193 (South Africa Department of Social Development).</p>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- Home page form removed on purpose.
+         Plan Your Visit is now a button to /plan-your-visit.html -->
+  </section>
+
+  <footer>
+    <div class="wrap foot">
+      <div>
+        <b>Fountain of Grace International (FGI)</b><br>
+        <small>Registered NPO 316-193 (South Africa Department of Social Development).</small>
+      </div>
+      <div>
+        <a href="mailto:info@fountaingrace.org">info@fountaingrace.org</a><br>
+        <small>323 B Danie Theron Street, Pretoria North, Gauteng</small>
+      </div>
+    </div>
+  </footer>
+</main>
+
+<div class="sticky-visit" aria-label="Sticky plan your visit button">
+  <a href="/plan-your-visit.html">Plan Your Visit</a>
+</div>
+
 </body>
 </html>
