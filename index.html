@@ -1,109 +1,234 @@
 <!doctype html>
 <html lang="en-ZA">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Fountain of Grace International | Christian Church in Pretoria, South Africa</title>
-<meta name="description" content="Fountain of Grace International (NPO 316-193) is a Christ-centered Church in Pretoria, South Africa, restoring dignity and hope through the Gospel of Jesus Christ.">
-<meta name="keywords" content="Christian Church Pretoria, Fountain of Grace International, NPO 316-193, Church in Pretoria North, Faith-based NPO South Africa, Jesus, family restoration, outreach ministry, donations, volunteer">
-<link rel="canonical" href="https://www.fountaingrace.org/">
-<meta name="theme-color" content="#001F54">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<!-- Favicon set -->
-<link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
+  <title>Fountain of Grace International | Christian Church in Pretoria North</title>
 
-<!-- Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <meta name="description" content="Fountain of Grace International (NPO 316-193) is a Christian Church in Pretoria North, South Africa. Plan your visit, join a service, and grow in grace and purpose.">
+  <meta name="keywords" content="Christian Church Pretoria North, Fountain of Grace International, NPO 316-193, church Pretoria, plan your visit, Sunday service Pretoria North, Jesus, discipleship, prayer">
+  <meta name="robots" content="index, follow">
 
-<!-- Styles -->
-<link rel="stylesheet" href="/css/styles.css">
+  <link rel="canonical" href="https://www.fountaingrace.org/">
+  <meta name="theme-color" content="#2196F3">
 
-<!-- Open Graph -->
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Fountain of Grace International">
-<meta property="og:title" content="Fountain of Grace International — Christian Church in Pretoria, South Africa">
-<meta property="og:description" content="Registered NPO 316-193. Give, volunteer and pray with us to restore dignity and hope in Pretoria North.">
-<meta property="og:url" content="https://www.fountaingrace.org/">
-<meta property="og:image" content="/img/og-image.jpg">
-<meta name="twitter:card" content="summary_large_image">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Fountain of Grace International">
+  <meta property="og:title" content="Fountain of Grace International | Christian Church in Pretoria North">
+  <meta property="og:description" content="Plan your visit. We will welcome you at the gate. Registered NPO 316-193.">
+  <meta property="og:url" content="https://www.fountaingrace.org/">
+  <meta property="og:image" content="https://www.fountaingrace.org/assets/img/og-image.jpg">
 
-<!-- JSON-LD (organization + FAQ) -->
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"NonprofitOrganization",
- "name":"Fountain of Grace International",
- "identifier":{"@type":"PropertyValue","propertyID":"NPO","value":"316-193"},
- "url":"https://www.fountaingrace.org/",
- "logo":"https://www.fountaingrace.org/img/FGI%20Logo%20.svg",
- "address":{"@type":"PostalAddress","streetAddress":"323 B Danie Theron Street","addressLocality":"Pretoria North","addressRegion":"Gauteng","postalCode":"0182","addressCountry":"ZA"},
- "contactPoint":[{"@type":"ContactPoint","telephone":"+27-75-259-2555","contactType":"customer service"}]
-}
-</script>
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Fountain of Grace International | Christian Church in Pretoria North">
+  <meta name="twitter:description" content="Plan your visit. We will welcome you at the gate. Registered NPO 316-193.">
+  <meta name="twitter:image" content="https://www.fountaingrace.org/assets/img/og-image.jpg">
+
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <style>
+    /* Keep this light so your main /css/styles.css stays in control */
+    .home-wrap { max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
+
+    .hero {
+      padding: 4.5rem 0 3rem;
+      background: linear-gradient(135deg, #2196F3 0%, #00796B 100%);
+      color: #fff;
+      border-bottom: 4px solid #FFD600;
+    }
+
+    .hero-top {
+      display: flex;
+      gap: 1.25rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .pastor-photo {
+      width: 96px;
+      height: 96px;
+      border-radius: 999px;
+      border: 4px solid #FFD600;
+      object-fit: cover;
+      background: rgba(255,255,255,.15);
+      flex: 0 0 auto;
+    }
+
+    .hero h1 { margin: 0 0 0.75rem; font-size: 2.6rem; line-height: 1.1; }
+    .hero p { margin: 0; max-width: 720px; color: #E3F2FD; line-height: 1.7; }
+
+    .badge-row { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.25rem; }
+    .badge {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.22);
+      padding: .55rem .85rem;
+      border-radius: 999px;
+      font-size: .95rem;
+    }
+
+    .section { padding: 2.5rem 0; }
+    .grid { display: grid; grid-template-columns: 1.25fr 1fr; gap: 1.5rem; align-items: start; }
+    @media (max-width: 900px) {
+      .grid { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 2.1rem; }
+      .pastor-photo { width: 84px; height: 84px; }
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 18px;
+      padding: 1.25rem;
+      box-shadow: 0 6px 24px rgba(0,0,0,.06);
+      border: 1px solid rgba(0,0,0,.06);
+    }
+    .card h2 { margin: 0 0 .75rem; font-size: 1.35rem; color: #0b1b33; }
+    .muted { color: #5f6368; }
+
+    .btn-row { display: flex; gap: .75rem; flex-wrap: wrap; margin-top: 1.25rem; }
+    .btn-main {
+      display: inline-block;
+      background: #FFD600;
+      color: #0b1b33;
+      font-weight: 700;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 0;
+    }
+    .btn-ghost {
+      display: inline-block;
+      background: transparent;
+      color: #fff;
+      font-weight: 700;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 1px solid rgba(255,255,255,.45);
+    }
+
+    .btn-outline {
+      display: inline-block;
+      background: transparent;
+      color: #0b1b33;
+      font-weight: 700;
+      padding: 12px 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      border: 1px solid rgba(0,0,0,.14);
+    }
+
+    .small { font-size: .92rem; }
+    .line { height: 1px; background: rgba(0,0,0,.08); margin: 1rem 0; }
+
+    .list-tight { margin: .75rem 0 0; padding-left: 1.1rem; }
+    .list-tight li { margin: .35rem 0; }
+  </style>
 </head>
 
 <body>
-<header class="site-header">
-  <div class="top-bar">
-    <div class="container">
-      <span>📞 Call us: </span><a href="tel:+27752592555">+27 75 259 2555</a>
-    </div>
-  </div>
+  <!-- Header loads dynamically from /partials/header.html -->
 
-  <nav class="main-nav">
-    <div class="nav-container">
-      <a href="/" class="brand" aria-label="Fountain of Grace home">
-      <img src="/img/fgi-logo.svg" alt="Fountain of Grace International logo" class="logo">
-      </a>
-      <ul class="menu">
-        <li><a href="/index.html" class="active">Home</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/programs.html">Programs</a></li>
-        <li><a href="/get-involved.html">Get Involved</a></li>
-        <li><a href="/blog/">Blog</a></li>
-        <li><a href="/contact.html" class="btn-gold">Contact Us</a></li>
-      </ul>
-    </div>
-  </nav>
-</header>
+  <header class="hero">
+    <div class="home-wrap">
+      <div class="hero-top">
+        <img
+          src="/img/imgrdzaal-profile.jpeg"
+          alt="Pastor Ricardo Zaal"
+          class="pastor-photo"
+          width="96"
+          height="96"
+          loading="eager"
+          decoding="async"
+        >
 
-<main id="main">
-  <section class="hero">
-    <div class="hero-inner">
-      <img src="/img/imgrdzaal-profile.jpeg" alt="Pastor Ricardo Zaal" class="hero-img" width="200" height="200">
-      <h1>Restore Dignity.<br>Build Hope.<br>Follow Jesus.</h1>
-      <p>Fountain of Grace International (NPO 316-193) is a Christ-centered church in Pretoria, helping families overcome poverty, addiction and despair through practical care and the Gospel.</p>
-      <div class="btn-group">
-        <a class="btn-primary" href="/donate.html">Donate Now</a>
-        <a class="btn-outline" href="/get-involved.html">Volunteer &amp; Pray</a>
+        <div>
+          <h1>Plan your visit. We will welcome you at the gate.</h1>
+          <p>
+            Fountain of Grace International (<strong>NPO 316-193</strong>) is a <strong>Christian Church</strong> in Pretoria North.
+            If this is your first time, plan your visit in under 30 seconds so you arrive with confidence.
+          </p>
+        </div>
+      </div>
+
+      <div class="badge-row">
+        <div class="badge">Christian Church in Pretoria North</div>
+        <div class="badge">Registered NPO 316-193</div>
+        <div class="badge">Family friendly</div>
+      </div>
+
+      <div class="btn-row">
+        <a class="btn-main" href="/plan-your-visit.html">Plan Your Visit</a>
+        <a class="btn-ghost" href="/contact.html">Ask a Question</a>
       </div>
     </div>
-  </section>
+  </header>
 
-  <section class="section about">
-    <div class="container">
-      <h2>What We Do</h2>
-      <p>We serve Pretoria North through programs that meet physical, emotional and spiritual needs while sharing the hope of Christ.</p>
-      <div class="cards">
-        <article><h3>Food &amp; Family Relief</h3><p>Emergency food parcels and support for vulnerable households.</p></article>
-        <article><h3>Recovery &amp; Prayer</h3><p>Prayer line and addiction support, connecting people to Jesus.</p></article>
-        <article><h3>Entrepreneurship</h3><p><strong>Impact Seed</strong> training to rebuild dignity through work.</p></article>
-      </div>
+  <main class="section">
+    <div class="home-wrap grid">
+
+      <section class="card">
+        <h2>What to expect</h2>
+        <p class="muted">
+          A clear welcome. Worship and prayer. Bible-based teaching.
+          Come as you are.
+        </p>
+
+        <div class="line"></div>
+
+        <p class="small">
+          <strong>Service:</strong> Sunday 09:00–11:00<br>
+          <strong>Address:</strong> 323 B Danie Theron Street, Pretoria North, 0182
+        </p>
+
+        <ul class="list-tight small muted">
+          <li>Parking help when you arrive</li>
+          <li>Kids and families welcome</li>
+          <li>Prayer available after the service</li>
+        </ul>
+      </section>
+
+      <section class="card" aria-label="Plan your visit">
+        <h2>Plan your visit</h2>
+        <p class="muted small">
+          Click below to fill in the short form. We will confirm and welcome you.
+        </p>
+
+        <div class="btn-row">
+          <a class="btn-main" href="/plan-your-visit.html">Plan Your Visit</a>
+          <a class="btn-outline" href="/about.html">Who we are</a>
+        </div>
+
+        <div class="line"></div>
+
+        <p class="small muted">
+          Need prayer, accessibility help, or visiting with kids.
+          Tell us on the form.
+        </p>
+      </section>
+
     </div>
-  </section>
-</main>
+  </main>
 
-<footer class="footer">
-  <div class="container">
-    <p>© <span id="year"></span> Fountain of Grace International · NPO 316-193 · Pretoria North, South Africa</p>
-  </div>
-</footer>
+  <!-- Footer loads dynamically -->
+  <script src="/js/main.js" defer></script>
 
-<script>
-document.getElementById('year').textContent=new Date().getFullYear();
-</script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Church",
+    "name":"Fountain of Grace International",
+    "url":"https://www.fountaingrace.org/",
+    "identifier":{"@type":"PropertyValue","propertyID":"NPO","value":"316-193"},
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"323 B Danie Theron Street",
+      "addressLocality":"Pretoria North",
+      "addressRegion":"Gauteng",
+      "postalCode":"0182",
+      "addressCountry":"ZA"
+    }
+  }
+  </script>
 </body>
 </html>
