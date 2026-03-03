@@ -1,6 +1,0 @@
-{
-  "redirects": [
-    { "source": "/", "destination": "/index.html", "permanent": true },
-    { "source": "/give/", "destination": "/give", "permanent": true }
-  ]
-}
