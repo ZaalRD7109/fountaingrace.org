@@ -1,0 +1,54 @@
+# Core pages — .html → clean URL
+/index.html /  301
+/about.html /about  301
+/contact.html /contact  301
+/contact-success.html /contact  301
+/programs.html /programs  301
+/plan-your-visit.html /plan-your-visit  301
+/what-to-expect.html /what-to-expect  301
+/what-to-expect /plan-your-visit  301
+/sermons.html /sermons  301
+/community-impact.html /community-impact  301
+
+# Donate
+/donate.html /donate  301
+/donate-success.html /donate  301
+/donate-cancel.html /donate  301
+/give.html /donate  301
+/give /donate  301
+/give-now /donate  301
+
+# Get involved → Community Impact
+/get-involved.html /community-impact  301
+/get-involved /community-impact  301
+/volunteer.html /community-impact  301
+/volunteer /community-impact  301
+
+# Legal
+/privacy-policy.html /privacy-policy  301
+/privacy.html /privacy-policy  301
+/privacy /privacy-policy  301
+/cookie-policy.html /cookie-policy  301
+/terms.html /terms  301
+
+# Blog → Sermons (specific slugs)
+/blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20 /sermons  301
+/blog/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20.html /sermons  301
+/blog/how-to-give-safely-in-south-africa /sermons  301
+/blog/how-to-give-safely-in-south-africa.html /sermons  301
+/blog/overnight-success-long-obedience /sermons  301
+/blog/overnight-success-long-obedience.html /sermons  301
+/blog/the-prophetic-reset /sermons  301
+/blog/the-prophetic-reset.html /sermons  301
+/blog/finding-your-church-home-pretoria-north /sermons  301
+/blog/finding-your-church-home-pretoria-north.html /sermons  301
+/fix-the-router-faith-that-connects-to-heavens-supply-2-cor-1-20 /sermons  301
+/blog /sermons  301
+/blog/* /sermons  301
+
+# Short links
+/visit /plan-your-visit  301
+/facebook https://www.facebook.com/FGIPta/  301
+/youtube https://www.youtube.com/@fgipta  301
+/tiktok https://www.tiktok.com/@fountainofgraceintl  301
+/watch https://www.youtube.com/@fgipta  301

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Programs | Fountain of Grace International — Pretoria North NPO</title>
+  <meta name="description" content="Fountain of Grace International (NPO 316-193) runs community care, poverty relief, education, and family support programs in Pretoria North, Gauteng. Find out how to get help or support our work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    /* ─── Reset & Base ─────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --teal:   #008080;
+      --teal-light: #e6f4f4;
+      --teal-mid: #b2d8d8;
+      --blue:   #2A9DF4;
+      --gold:   #FFD700;
+      --gold-dark: #c9a900;
+      --text:   #333333;
+      --text-light: #5a5a5a;
+      --bg:     #fafaf8;
+      --white:  #ffffff;
+      --border: #e4e4e0;
+      --radius: 10px;
+    }
+
+    html { scroll-behavior: smooth; font-size: 16px; }
+
+    body {
+      font-family: 'Source Sans 3', sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+      line-height: 1.25;
+      color: var(--text);
+    }
+
+    a { color: var(--teal); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* ─── Layout Utilities ──────────────────────────────────── */
+    .container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* ─── Header ───────────────────────────────────────────── */
+    header {
+      background: var(--white);
+      border-bottom: 3px solid var(--teal);
+      padding: 18px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .org-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--teal);
+      font-weight: 700;
+    }
+
+    .org-name span {
+      display: block;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.75rem;
+      font-weight: 500;
+      color: var(--text-light);
+      margin-top: 1px;
+    }
+
+    .header-cta {
+      display: inline-block;
+      background: var(--gold);
+      color: #1a1a00;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 10px 22px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      white-space: nowrap;
+    }
+    .header-cta:hover { background: var(--gold-dark); transform: translateY(-1px); text-decoration: none; }
+
+    /* ─── Hero / Intro ─────────────────────────────────────── */
+    .hero {
+      padding: 64px 0 56px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .hero-inner {
+      max-width: 760px;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      background: var(--teal-light);
+      color: var(--teal);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .hero h1 {
+      font-size: clamp(1.85rem, 4vw, 2.85rem);
+      margin-bottom: 22px;
+      color: #1a2e2e;
+    }
+
+    .hero p {
+      font-size: 1.05rem;
+      color: var(--text-light);
+      max-width: 680px;
+      margin-bottom: 14px;
+    }
+
+    .hero p:last-child { margin-bottom: 0; }
+
+    /* ─── Programs Section ─────────────────────────────────── */
+    .programs-section {
+      padding: 64px 0;
+    }
+
+    .section-heading {
+      font-size: clamp(1.4rem, 3vw, 1.9rem);
+      margin-bottom: 8px;
+    }
+
+    .section-sub {
+      font-size: 0.95rem;
+      color: var(--text-light);
+      margin-bottom: 44px;
+    }
+
+    .programs-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 28px;
+    }
+
+    @media (min-width: 680px) {
+      .programs-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* ─── Program Card ─────────────────────────────────────── */
+    .card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-top: 4px solid var(--teal);
+      border-radius: var(--radius);
+      padding: 30px 28px 26px;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+      /* scroll animation start state */
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.5s ease, transform 0.5s ease, box-shadow 0.2s;
+    }
+
+    .card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .card:hover {
+      box-shadow: 0 6px 24px rgba(0,128,128,0.1);
+    }
+
+    .card-badge {
+      display: inline-block;
+      background: var(--teal-light);
+      color: var(--teal);
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 4px 11px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+      align-self: flex-start;
+    }
+
+    .card h3 {
+      font-size: 1.15rem;
+      color: #1a2e2e;
+      margin-bottom: 20px;
+    }
+
+    .card-fields {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      flex: 1;
+      margin-bottom: 24px;
+    }
+
+    .field-block {}
+
+    .field-label {
+      display: block;
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.07em;
+      color: var(--teal);
+      margin-bottom: 3px;
+    }
+
+    .field-text {
+      font-size: 0.93rem;
+      color: var(--text-light);
+      line-height: 1.6;
+    }
+
+    .outcome-text {
+      font-size: 0.93rem;
+      color: var(--text);
+      font-weight: 600;
+      line-height: 1.6;
+    }
+
+    .card-divider {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 4px 0 20px;
+    }
+
+    /* ─── Donate Button ────────────────────────────────────── */
+    .btn-donate {
+      display: block;
+      width: 100%;
+      background: var(--gold);
+      color: #1a1a00;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 0.92rem;
+      text-align: center;
+      padding: 13px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 3px 10px rgba(255,215,0,0.35);
+      letter-spacing: 0.02em;
+      margin-top: auto;
+    }
+
+    .btn-donate:hover {
+      background: var(--gold-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 18px rgba(255,215,0,0.5);
+      text-decoration: none;
+      color: #1a1a00;
+    }
+
+    /* ─── Donation Section ─────────────────────────────────── */
+    #donate {
+      background: var(--teal-light);
+      border-top: 1px solid var(--teal-mid);
+      border-bottom: 1px solid var(--teal-mid);
+      padding: 68px 0;
+    }
+
+    .donate-inner {
+      max-width: 640px;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .donate-inner h2 {
+      font-size: clamp(1.5rem, 3.5vw, 2.1rem);
+      color: #1a2e2e;
+      margin-bottom: 18px;
+    }
+
+    .donate-inner p {
+      font-size: 1rem;
+      color: var(--text-light);
+      margin-bottom: 14px;
+    }
+
+    .donate-inner p:last-of-type {
+      margin-bottom: 34px;
+    }
+
+    .donate-inner .npo-note {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--teal);
+      margin-bottom: 34px;
+    }
+
+    .donate-buttons {
+      display: flex;
+      gap: 14px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary-lg {
+      display: inline-block;
+      background: var(--gold);
+      color: #1a1a00;
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 14px 32px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
+      box-shadow: 0 4px 14px rgba(255,215,0,0.4);
+    }
+    .btn-primary-lg:hover {
+      background: var(--gold-dark);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(255,215,0,0.55);
+      text-decoration: none;
+      color: #1a1a00;
+    }
+
+    .btn-secondary-lg {
+      display: inline-block;
+      background: transparent;
+      color: var(--teal);
+      font-family: 'Source Sans 3', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 13px 30px;
+      border-radius: 6px;
+      border: 2px solid var(--teal);
+      text-decoration: none;
+      transition: background 0.2s, color 0.2s, transform 0.15s;
+    }
+    .btn-secondary-lg:hover {
+      background: var(--teal);
+      color: var(--white);
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+
+    /* ─── Footer ───────────────────────────────────────────── */
+    #contact {
+      background: #1a2e2e;
+      color: rgba(255,255,255,0.75);
+      padding: 44px 0 32px;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .footer-org {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: var(--white);
+      margin-bottom: 4px;
+    }
+
+    .footer-detail {
+      font-size: 0.88rem;
+      line-height: 1.65;
+    }
+
+    .footer-legal {
+      margin-top: 20px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(255,255,255,0.12);
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.4);
+    }
+
+    /* ─── Stagger delays for cards ─────────────────────────── */
+    .card:nth-child(1) { transition-delay: 0s; }
+    .card:nth-child(2) { transition-delay: 0.07s; }
+    .card:nth-child(3) { transition-delay: 0.14s; }
+    .card:nth-child(4) { transition-delay: 0.07s; }
+    .card:nth-child(5) { transition-delay: 0.14s; }
+    .card:nth-child(6) { transition-delay: 0.21s; }
+
+    /* ─── Responsive tweaks ────────────────────────────────── */
+    @media (max-width: 479px) {
+      .card { padding: 24px 20px 22px; }
+      .donate-buttons { flex-direction: column; align-items: stretch; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══════════════════════════════════════════ -->
+  <header>
+    <div class="container header-inner">
+      <div class="org-name">
+        Fountain of Grace International
+        <span>NPO 316-193 · Pretoria North</span>
+      </div>
+      <a href="#donate" class="header-cta">Donate Now</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══ HERO ══════════════════════════════════════════════ -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <span class="hero-eyebrow">Community Programs · Pretoria North</span>
+          <h1>What We Do and Who We Serve</h1>
+          <p>Fountain of Grace International is a registered NPO based in Pretoria North, Gauteng (NPO 316-193). We run structured programs that address real challenges in our community — from emotional distress and family breakdown to poverty and social isolation.</p>
+          <p>We serve individuals and families across Pretoria North, Akasia, Orchards, Shosanguve, Montana, Wonderboom, Suiderberg, Amandasig, Rosslyn, and surrounding areas. Every program is built around a specific problem, a clear support structure, and a measurable outcome.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ PROGRAMS ══════════════════════════════════════════ -->
+    <section class="programs-section">
+      <div class="container">
+        <h2 class="section-heading">Our Programs</h2>
+        <p class="section-sub">Six active programs. Each designed around a specific problem and a measurable outcome.</p>
+
+        <div class="programs-grid">
+
+          <!-- Card 1 -->
+          <article class="card">
+            <span class="card-badge">Mental health support / psychosocial services</span>
+            <h3>Community Care and Emotional Support</h3>
+            <div class="card-fields">
+              <div class="field-block">
+                <span class="field-label">Who we serve</span>
+                <p class="field-text">Individuals in Pretoria North and surrounding communities facing emotional stress, trauma, or personal crisis.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">The problem</span>
+                <p class="field-text">Many people carry emotional burdens without any structured support. Without access to counseling or pastoral care, this often leads to long-term instability, family breakdown, and withdrawal from community.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">What we provide</span>
+                <p class="field-text">One-on-one pastoral counseling, structured prayer support, crisis response care, and ongoing emotional check-ins through a trained care team.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">Outcome</span>
+                <p class="outcome-text">Individuals experience greater emotional stability, improved decision-making, and restored connection to community.</p>
+              </div>
+            </div>
+            <hr class="card-divider" />
+            <a href="#donate" class="btn-donate">Support this program</a>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="card">
+            <span class="card-badge">Education / youth and adult development</span>
+            <h3>Education and Personal Development</h3>
+            <div class="card-fields">
+              <div class="field-block">
+                <span class="field-label">Who we serve</span>
+                <p class="field-text">Youth and adults in Pretoria North and surrounding areas who lack structured learning environments or life direction.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">The problem</span>
+                <p class="field-text">Without access to mentorship and practical teaching, many individuals remain stuck in patterns that limit their personal and professional growth.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">What we provide</span>
+                <p class="field-text">Weekly teaching sessions, structured discipleship programs, leadership development, and life skills training.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">Outcome</span>
+                <p class="outcome-text">Participants gain practical knowledge, develop leadership capacity, and improve their long-term life direction.</p>
+              </div>
+            </div>
+            <hr class="card-divider" />
+            <a href="#donate" class="btn-donate">Support this program</a>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="card">
+            <span class="card-badge">Community development / social cohesion</span>
+            <h3>Community Building and Social Support</h3>
+            <div class="card-fields">
+              <div class="field-block">
+                <span class="field-label">Who we serve</span>
+                <p class="field-text">Individuals and families across Pretoria North and surrounding communities experiencing isolation or a lack of social connection.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">The problem</span>
+                <p class="field-text">Social isolation is a driver of mental health decline, substance abuse, and community breakdown. Many people in our area have no consistent community to belong to.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">What we provide</span>
+                <p class="field-text">Weekly community gatherings, small group connections, community events, and structured volunteer engagement.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">Outcome</span>
+                <p class="outcome-text">Stronger social bonds, reduced isolation, and increased participation in positive community structures.</p>
+              </div>
+            </div>
+            <hr class="card-divider" />
+            <a href="#donate" class="btn-donate">Support this program</a>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="card">
+            <span class="card-badge">Poverty relief / humanitarian aid</span>
+            <h3>Poverty Relief and Humanitarian Support</h3>
+            <div class="card-fields">
+              <div class="field-block">
+                <span class="field-label">Who we serve</span>
+                <p class="field-text">Individuals and families in Pretoria North, Akasia, Shosanguve, and surrounding communities facing immediate material need.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">The problem</span>
+                <p class="field-text">Poverty is not only a financial condition. It limits access to food, healthcare, education, and safety. Without direct intervention, families in crisis cannot stabilize.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">What we provide</span>
+                <p class="field-text">Food assistance, basic needs support, emergency relief, and community outreach to identify and assist those in need.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">Outcome</span>
+                <p class="outcome-text">Reduced immediate hardship and improved access to basic necessities for vulnerable families.</p>
+              </div>
+            </div>
+            <hr class="card-divider" />
+            <a href="#donate" class="btn-donate">Support this program</a>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="card">
+            <span class="card-badge">Family support services</span>
+            <h3>Family and Life Guidance Services</h3>
+            <div class="card-fields">
+              <div class="field-block">
+                <span class="field-label">Who we serve</span>
+                <p class="field-text">Individuals and families in Pretoria North and surrounding areas navigating relationship breakdown, parenting challenges, or behavioral struggles.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">The problem</span>
+                <p class="field-text">Without structured guidance, families in crisis often have nowhere to turn. Relationship breakdown, poor parenting support, and untreated behavioral patterns affect entire households and communities.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">What we provide</span>
+                <p class="field-text">Marriage and relationship guidance, parenting support, mentorship programs, and structured behavioral support for addiction and life challenges.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">Outcome</span>
+                <p class="outcome-text">Stronger family units, improved decision-making, and healthier patterns of behavior across households.</p>
+              </div>
+            </div>
+            <hr class="card-divider" />
+            <a href="#donate" class="btn-donate">Support this program</a>
+          </article>
+
+          <!-- Card 6 -->
+          <article class="card">
+            <span class="card-badge">Social inclusion / community integration</span>
+            <h3>Community Integration and Belonging</h3>
+            <div class="card-fields">
+              <div class="field-block">
+                <span class="field-label">Who we serve</span>
+                <p class="field-text">New visitors, first-time attendees, and individuals at risk of disengaging from community.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">The problem</span>
+                <p class="field-text">Many people attend a community once and never return — not because they were unwelcome, but because no one followed up. Without structured integration, people fall through the gaps.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">What we provide</span>
+                <p class="field-text">First-time visitor follow-up, structured integration pathways, volunteer placement, and long-term community engagement tracking.</p>
+              </div>
+              <div class="field-block">
+                <span class="field-label">Outcome</span>
+                <p class="outcome-text">Increased sense of belonging, stronger long-term engagement, and measurable growth in community participation.</p>
+              </div>
+            </div>
+            <hr class="card-divider" />
+            <a href="#donate" class="btn-donate">Support this program</a>
+          </article>
+
+        </div><!-- /programs-grid -->
+      </div>
+    </section>
+
+    <!-- ═══ DONATE ═════════════════════════════════════════════ -->
+    <section id="donate">
+      <div class="container">
+        <div class="donate-inner">
+          <h2>Support the Work</h2>
+          <p>Every program on this page runs because people choose to support it. If you want to see fewer families in crisis and more people connected to stable support structures, your donation makes that possible.</p>
+          <p class="npo-note">FGI is a registered NPO (316-193 NPO). All donations are used to fund the programs listed on this page.</p>
+          <div class="donate-buttons">
+            <a href="#donate" class="btn-primary-lg">Donate Now</a>
+            <a href="#contact" class="btn-secondary-lg">Partner With Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ════════════════════════════════════════════ -->
+  <footer id="contact">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-org">Fountain of Grace International</p>
+        <p class="footer-detail">NPO 316-193 NPO</p>
+        <p class="footer-detail">323 B Danie Theron Street, Pretoria North, 0116</p>
+        <p class="footer-detail">Registered under the Non-Profit Organisations Act, 1997 (Act 71 of 1997)</p>
+      </div>
+      <p class="footer-legal">© 2025 Fountain of Grace International. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ═══ SCROLL ANIMATION ══════════════════════════════════ -->
+  <script>
+    (function () {
+      var cards = document.querySelectorAll('.card');
+      if (!('IntersectionObserver' in window)) {
+        // Fallback: just show all cards if browser doesn't support IO
+        cards.forEach(function (card) { card.classList.add('visible'); });
+        return;
+      }
+      var observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.12 });
+      cards.forEach(function (card) { observer.observe(card); });
+    })();
+  </script>
+
+</body>
+</html>
