@@ -119,28 +119,20 @@ export default function AboutPage() {
       />
 
       {/* HERO */}
-      <section className="bg-[#008080] text-white pt-16 pb-14 px-4 sm:px-6">
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-teal-200 font-semibold text-sm uppercase tracking-wider mb-4">
+      <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
+        <div className="max-w-xl mx-auto text-center">
+          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
             About FGI · Pretoria North
           </p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-6">
+          <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             The people behind Fountain of Grace International.
           </h1>
-          <p className="text-teal-100 text-lg leading-relaxed mb-8">
-            A small church in Pretoria North led by real people who live in your community and
-            built it because they knew what it felt like to need one.
+          <p className="text-teal-100 text-base leading-relaxed mb-5">
+            A small church in Pretoria North led by real people who live in your community.
           </p>
-          <div className="inline-block bg-white text-[#008080] rounded-xl px-8 py-5 shadow-sm text-left">
-            <p className="font-extrabold text-lg">Pastor Ricardo Zaal</p>
-            <p className="text-sm font-medium text-[#7d7d7d] mt-1">Founder &amp; Lead Pastor</p>
-            <p className="text-xs text-gray-400 mt-1">In ministry since 10 February 2000</p>
-            <div className="mt-4">
-              <Link href="/pastors" className="text-[#008080] font-semibold text-sm hover:underline">
-                Read full biography →
-              </Link>
-            </div>
-          </div>
+          <Link href="/pastors" className="inline-block border-2 border-white text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-white hover:text-[#008080] transition-colors text-sm">
+            Meet the Pastors
+          </Link>
         </div>
       </section>
 

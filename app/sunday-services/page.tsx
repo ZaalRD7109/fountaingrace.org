@@ -77,19 +77,19 @@ export default function SundayServicesPage() {
       />
 
       {/* HERO */}
-      <section className="bg-[#008080] text-white pt-16 pb-14 px-4 sm:px-6">
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="text-teal-200 font-semibold text-sm uppercase tracking-wider mb-4">
+      <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
+        <div className="max-w-xl mx-auto text-center">
+          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
             Every Sunday · Pretoria North
           </p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-5">
+          <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             Sunday services in Pretoria North
           </h1>
-          <p className="text-teal-100 text-lg leading-relaxed mb-8">
+          <p className="text-teal-100 text-base leading-relaxed mb-5">
             Fountain of Grace International holds a Sunday service every week at 09:00.
             323 B Danie Theron Street, Pretoria North. Open to anyone.
           </p>
-          <Link href="/plan-your-visit" className="btn-primary">
+          <Link href="/plan-your-visit" className="btn-primary text-sm">
             Plan Your Visit
           </Link>
         </div>

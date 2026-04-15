@@ -50,29 +50,27 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
 
-      {/* HERO — gradient matches live site: linear-gradient(145deg, #2a9df4 0%, #008080 100%) */}
-      <section
-        className="pt-20 pb-24 px-4 sm:px-6 text-white"
-        style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
-      >
-        <div className="max-w-3xl mx-auto text-center">
-          <p className="text-[#FFD600] font-semibold text-sm uppercase tracking-wider mb-4">
+      {/* HERO */}
+      <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
+        <div className="max-w-xl mx-auto text-center">
+          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
             Pretoria North · Every Sunday at 09:00
           </p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-6 text-white">
-            Church in Pretoria North
+          <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
+            A church in Pretoria North built for real people.
           </h1>
-          <p className="text-xl text-white/90 leading-relaxed mb-4">
-            You are not falling apart. But you are tired of holding everything together alone.
+          <p className="text-teal-100 text-base leading-relaxed mb-6">
+            Fountain of Grace International is a Christian church in Pretoria North where you are personally
+            welcomed, genuinely followed up with, and taught things that connect to your life right now.
           </p>
-          <p className="text-lg text-white/75 leading-relaxed mb-10 max-w-2xl mx-auto">
-            Fountain of Grace International is a church in Pretoria North where you are personally
-            welcomed, genuinely followed up with, and taught things that connect to the life you are
-            actually living right now.
-          </p>
-          <Link href="/plan-your-visit" className="btn-primary text-base">
-            Plan Your Visit
-          </Link>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <Link href="/plan-your-visit" className="btn-primary text-sm">
+              Plan Your Visit
+            </Link>
+            <Link href="/sunday-services" className="inline-block border-2 border-white text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-white hover:text-[#008080] transition-colors text-sm">
+              Sunday Services
+            </Link>
+          </div>
         </div>
       </section>
 

@@ -93,18 +93,20 @@ export default function PastorsPage() {
       />
 
       {/* HERO */}
-      <section className="bg-white pt-16 pb-12 px-4 sm:px-6">
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#008080] font-semibold text-sm uppercase tracking-wider mb-4">
+      <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
+        <div className="max-w-xl mx-auto text-center">
+          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
             Meet the Pastors · Pretoria North
           </p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-5">
+          <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             The people who lead Fountain of Grace International.
           </h1>
-          <p className="text-lg text-[#7d7d7d] leading-relaxed">
-            Real people, living in Pretoria North, available to the people they lead.
-            Not behind an appointment wall.
+          <p className="text-teal-100 text-base leading-relaxed mb-5">
+            Real people, living in Pretoria North, available to the people they lead. Not behind an appointment wall.
           </p>
+          <Link href="/plan-your-visit" className="btn-primary text-sm">
+            Come This Sunday
+          </Link>
         </div>
       </section>
 

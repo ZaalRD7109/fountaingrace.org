@@ -97,21 +97,22 @@ export default function SermonsPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {/* HERO */}
-      <section className="bg-white pt-16 pb-12 px-4 sm:px-6">
-        <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#008080] font-semibold text-sm uppercase tracking-wider mb-4">
+      <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
+        <div className="max-w-xl mx-auto text-center">
+          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
             Sunday Teaching · Pretoria North
           </p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-900 leading-tight mb-5">
-            Practical teaching for real life — Pretoria North
+          <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
+            Practical Bible teaching for real life.
           </h1>
-          <p className="text-lg text-[#7d7d7d] leading-relaxed">
+          <p className="text-teal-100 text-base leading-relaxed mb-5">
             Every message at{' '}
-            <Link href="/about" className="text-[#008080] font-semibold hover:underline">Fountain of Grace International</Link>{' '}
-            in Pretoria North is built around a problem people are actually living with. Not theory. Not performance. Things that
-            connect to your week. Want to come in person?{' '}
-            <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">Plan your visit</Link>.
+            <Link href="/about" className="text-white font-semibold underline hover:text-teal-200">Fountain of Grace International</Link>{' '}
+            is built around a problem people are actually living with. Not theory. Things that connect to your week.
           </p>
+          <Link href="/plan-your-visit" className="btn-primary text-sm">
+            Come in Person
+          </Link>
         </div>
       </section>
 
