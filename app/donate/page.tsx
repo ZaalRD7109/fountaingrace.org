@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import DonateClient from '@/components/DonateClient'
 
 export const metadata: Metadata = {
-  title: 'Donate | Support FGI — Verified NPO 316-193 in Pretoria North',
+  title: 'Donate | Support FGI - Verified NPO 316-193 in Pretoria North',
   description:
     'Support a verified NPO in Pretoria North. Your donation funds food relief, family support, and community programs. Give via PayPal or EFT. NPO No: 316-193.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/donate',
   },
   openGraph: {
-    title: 'Donate | Support FGI — Verified NPO 316-193 in Pretoria North',
+    title: 'Donate | Support FGI - Verified NPO 316-193 in Pretoria North',
     description:
       'Support a verified NPO in Pretoria North. Your donation funds food relief, family support, and community programs. Give via PayPal or EFT. NPO No: 316-193.',
     type: 'website',

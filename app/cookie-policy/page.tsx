@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy | Fountain of Grace International — Pretoria North',
+  title: 'Cookie Policy | Fountain of Grace International - Pretoria North',
   description:
     'How Fountain of Grace International (NPO 316-193) uses cookies on its website and how you can manage them.',
   robots: 'index, follow',

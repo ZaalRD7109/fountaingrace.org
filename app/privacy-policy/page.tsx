@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Fountain of Grace International — Pretoria North',
+  title: 'Privacy Policy | Fountain of Grace International - Pretoria North',
   description:
     'How Fountain of Grace International (NPO 316-193) collects, uses, and protects your personal information under POPIA.',
   robots: 'index, follow',
