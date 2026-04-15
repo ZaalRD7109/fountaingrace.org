@@ -100,23 +100,20 @@ export default function DonateClient() {
     <main>
 
       {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section
-        className="pt-20 pb-16 px-4 sm:px-6 text-white text-center"
-        style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
-      >
-        <div className="max-w-2xl mx-auto">
-          <p className="text-[#FFD600] font-semibold text-sm uppercase tracking-wider mb-4">
+      <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6 text-center">
+        <div className="max-w-xl mx-auto">
+          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
             Support the work · Pretoria North
           </p>
-          <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight mb-5">
-            Your Giving Changes Lives in Pretoria North
+          <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
+            Your giving changes lives in Pretoria North.
           </h1>
-          <p className="text-white/80 text-lg leading-relaxed mb-6">
+          <p className="text-teal-100 text-base leading-relaxed mb-5">
             Every rand you give goes directly to real people in our community — food for
             families, support for recovery, training for those rebuilding their lives.
           </p>
-          <span className="inline-block bg-[rgba(255,214,0,0.15)] border border-[rgba(255,214,0,0.4)] text-[#FFD600] px-5 py-2 rounded-full text-sm font-semibold tracking-wide">
-            Registered NPO 316-193 · Department of Social Development, South Africa
+          <span className="inline-block bg-white/10 border border-white/20 text-white px-5 py-2 rounded-full text-sm font-semibold tracking-wide">
+            Registered NPO 316-193 · Dept of Social Development, South Africa
           </span>
         </div>
       </section>
