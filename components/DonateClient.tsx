@@ -53,7 +53,7 @@ const PROGRAMS = [
 
 const FUND_SLICES = [
   { pct: 58, start: 0,  color: '#FFD600', label: 'Food & Basic Aid' },
-  { pct: 14, start: 58, color: '#ffffff', label: 'Programme Materials & Logistics' },
+  { pct: 14, start: 58, color: '#ff8c42', label: 'Programme Materials & Logistics' },
   { pct: 28, start: 72, color: '#4FC3F7', label: 'Operational Costs' },
 ]
 
