@@ -283,6 +283,64 @@ export default function DonateClient() {
         </div>
       </section>
 
+      {/* ── HOW WE SPEND ─────────────────────────────────────────── */}
+      {(() => {
+        const r = 70
+        const C = 2 * Math.PI * r
+        return (
+          <section className="bg-[#008080] py-12 px-4 sm:px-6 text-white">
+            <div className="max-w-3xl mx-auto">
+              <p className="text-teal-200 font-semibold text-xs uppercase tracking-widest mb-6 text-center">
+                Every rand accounted for
+              </p>
+              <div className="flex flex-col sm:flex-row items-center gap-8 bg-white/[0.07] border border-white/10 rounded-2xl p-7">
+                {/* Donut chart */}
+                <div className="shrink-0 flex flex-col items-center">
+                  <p className="text-[#FFD600] font-semibold text-xs uppercase tracking-widest mb-4 text-center">
+                    How We Spend
+                  </p>
+                  <svg viewBox="0 0 200 200" width="160" height="160" aria-hidden="true">
+                    <g transform="rotate(-90 100 100)">
+                      {FUND_SLICES.map((seg) => (
+                        <circle
+                          key={seg.label}
+                          cx="100" cy="100" r={r}
+                          fill="none"
+                          stroke={seg.color}
+                          strokeWidth="40"
+                          strokeDasharray={`${(seg.pct / 100 * C) - 3} ${C}`}
+                          strokeDashoffset={C * (1 - seg.start / 100)}
+                        />
+                      ))}
+                    </g>
+                    <text x="100" y="96" textAnchor="middle" fill="white" fontSize="15" fontWeight="800">FGI</text>
+                    <text x="100" y="112" textAnchor="middle" fill="rgba(255,255,255,0.45)" fontSize="10">2025</text>
+                  </svg>
+                </div>
+                {/* Legend + bars */}
+                <div className="flex flex-col gap-5 flex-1 w-full">
+                  {FUND_SLICES.map((seg) => (
+                    <div key={seg.label}>
+                      <div className="flex items-center justify-between mb-1.5">
+                        <div className="flex items-center gap-2">
+                          <span className="w-2.5 h-2.5 rounded-sm shrink-0" style={{ backgroundColor: seg.color }} aria-hidden="true" />
+                          <span className="text-white/80 text-sm">{seg.label}</span>
+                        </div>
+                        <span className="text-sm font-bold" style={{ color: seg.color }}>{seg.pct}%</span>
+                      </div>
+                      <div className="h-2 bg-white/10 rounded-full overflow-hidden">
+                        <div className="h-full rounded-full" style={{ width: `${seg.pct}%`, backgroundColor: seg.color }} />
+                      </div>
+                    </div>
+                  ))}
+                  <p className="text-white/40 text-xs mt-1">Based on 2025 operational figures.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        )
+      })()}
+
       {/* ── TRANSPARENCY / TRUST ─────────────────────────────────── */}
       <section className="bg-[#008080] py-16 px-4 sm:px-6 text-white">
         <div className="max-w-5xl mx-auto">
@@ -301,76 +359,13 @@ export default function DonateClient() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
             {TRUST_CARDS.map((card) => (
-              <div
-                key={card.title}
-                className="bg-white/[0.06] border border-white/10 rounded-2xl p-5"
-              >
+              <div key={card.title} className="bg-white/[0.06] border border-white/10 rounded-2xl p-5">
                 <span className="text-2xl mb-3 block" aria-hidden="true">{card.icon}</span>
                 <h3 className="text-[#FFD600] font-bold text-sm mb-1">{card.title}</h3>
                 <p className="text-white/70 text-sm leading-relaxed">{card.desc}</p>
               </div>
             ))}
           </div>
-
-          {/* ── FUND ALLOCATION CHART ─────────────────────────────── */}
-          {(() => {
-            const r = 70
-            const C = 2 * Math.PI * r   // ≈ 439.82
-            return (
-              <div className="flex flex-col sm:flex-row items-center gap-8 bg-white/[0.05] border border-white/10 rounded-2xl p-7 mb-8">
-                {/* Donut chart */}
-                <div className="shrink-0 flex flex-col items-center">
-                  <p className="text-[#FFD600] font-semibold text-xs uppercase tracking-widest mb-4 text-center">
-                    How We Spend
-                  </p>
-                  <svg viewBox="0 0 200 200" width="170" height="170" aria-hidden="true">
-                    <g transform="rotate(-90 100 100)">
-                      {FUND_SLICES.map((seg) => (
-                        <circle
-                          key={seg.label}
-                          cx="100"
-                          cy="100"
-                          r={r}
-                          fill="none"
-                          stroke={seg.color}
-                          strokeWidth="40"
-                          strokeDasharray={`${(seg.pct / 100 * C) - 3} ${C}`}
-                          strokeDashoffset={C * (1 - seg.start / 100)}
-                        />
-                      ))}
-                    </g>
-                    <text x="100" y="96" textAnchor="middle" fill="white" fontSize="15" fontWeight="800">FGI</text>
-                    <text x="100" y="112" textAnchor="middle" fill="rgba(255,255,255,0.45)" fontSize="10">2025</text>
-                  </svg>
-                </div>
-                {/* Legend + progress bars */}
-                <div className="flex flex-col gap-5 flex-1 w-full">
-                  {FUND_SLICES.map((seg) => (
-                    <div key={seg.label}>
-                      <div className="flex items-center justify-between mb-1.5">
-                        <div className="flex items-center gap-2">
-                          <span
-                            className="w-2.5 h-2.5 rounded-sm shrink-0"
-                            style={{ backgroundColor: seg.color }}
-                            aria-hidden="true"
-                          />
-                          <span className="text-white/80 text-sm">{seg.label}</span>
-                        </div>
-                        <span className="text-sm font-bold" style={{ color: seg.color }}>{seg.pct}%</span>
-                      </div>
-                      <div className="h-2 bg-white/10 rounded-full overflow-hidden">
-                        <div
-                          className="h-full rounded-full"
-                          style={{ width: `${seg.pct}%`, backgroundColor: seg.color }}
-                        />
-                      </div>
-                    </div>
-                  ))}
-                  <p className="text-white/35 text-xs mt-1">Based on 2025 operational figures.</p>
-                </div>
-              </div>
-            )
-          })()}
 
           {/* NPO details block */}
           <div className="bg-[rgba(255,214,0,0.08)] border border-[rgba(255,214,0,0.2)] rounded-2xl p-7 text-sm leading-loose">
