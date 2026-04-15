@@ -3,17 +3,17 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Meet the Pastors | Fountain of Grace International — Pretoria North',
+  title: 'Meet Pastor Ricardo Zaal | Fountain of Grace International Pretoria North',
   description:
-    'Meet Pastor Ricardo Zaal — founder and lead pastor of Fountain of Grace International in Pretoria North. In ministry since 2000. Founder of FGI in June 2020.',
+    'Meet Pastor Ricardo Zaal — founder of Fountain of Grace International in Pretoria North. In ministry since 2000. Practical teaching, accessible leadership. Come this Sunday.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/pastors',
   },
   openGraph: {
-    title: 'Meet the Pastors | Fountain of Grace International — Pretoria North',
+    title: 'Meet Pastor Ricardo Zaal | Fountain of Grace International Pretoria North',
     description:
-      'Pastor Ricardo Zaal founded Fountain of Grace International in Pretoria North in June 2020. Over two decades in ministry. Practical. Accessible. Based in Pretoria North.',
+      'Meet Pastor Ricardo Zaal — founder of Fountain of Grace International in Pretoria North. In ministry since 2000. Practical teaching, accessible leadership. Come this Sunday.',
     type: 'website',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/pastors',

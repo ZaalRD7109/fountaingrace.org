@@ -2,17 +2,17 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Sermons | Fountain of Grace International — Pretoria North',
+  title: 'Sermons & Bible Teaching | Fountain of Grace International Pretoria North',
   description:
-    'Practical teaching for real life from Fountain of Grace International in Pretoria North. Each message addresses a problem you are actually living with.',
+    'Practical Bible teaching from a Christian church in Pretoria North. Every Sunday message addresses a real problem you are facing. Listen online or come in person.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/sermons',
   },
   openGraph: {
-    title: 'Sermons | Fountain of Grace International — Pretoria North',
+    title: 'Sermons & Bible Teaching | Fountain of Grace International Pretoria North',
     description:
-      'Practical teaching for real life from Fountain of Grace International in Pretoria North. Each message addresses a problem you are actually living with.',
+      'Practical Bible teaching from a Christian church in Pretoria North. Every Sunday message addresses a real problem you are facing. Listen online or come in person.',
     type: 'website',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/sermons',

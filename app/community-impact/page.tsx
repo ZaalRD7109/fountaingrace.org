@@ -2,17 +2,17 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Community Impact & Programs | Fountain of Grace International — Pretoria North NPO',
+  title: 'Community Programs | NPO 316-193 | Fountain of Grace International Pretoria',
   description:
-    'Fountain of Grace International (NPO 316-193) runs 6 structured community programs in Pretoria North — emotional support, education, poverty relief, family guidance, and more. Donate or volunteer.',
+    'NPO 316-193 in Pretoria North. We run 6 community programs — food relief, emotional support, and family guidance. Donate, volunteer, or partner with us today.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/community-impact',
   },
   openGraph: {
-    title: 'Community Impact & Programs | Fountain of Grace International — Pretoria North NPO',
+    title: 'Community Programs | NPO 316-193 | Fountain of Grace International Pretoria',
     description:
-      'Fountain of Grace International (NPO 316-193) runs 6 structured community programs in Pretoria North. Donate, volunteer, or partner with us.',
+      'NPO 316-193 in Pretoria North. We run 6 community programs — food relief, emotional support, and family guidance. Donate, volunteer, or partner with us today.',
     type: 'website',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/community-impact',

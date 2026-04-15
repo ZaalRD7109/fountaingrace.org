@@ -2,17 +2,17 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Sunday Services in Pretoria North | Fountain of Grace International',
+  title: 'Sunday Church Service Pretoria North | Fountain of Grace International',
   description:
-    'Sunday services at Fountain of Grace International in Pretoria North start at 09:00. Every week. Practical teaching, worship, and a real community. Everyone is welcome.',
+    'Sunday service every week at 09:00 in Pretoria North. Practical Bible teaching, worship, and real community at Fountain of Grace International. Everyone is welcome.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/sunday-services',
   },
   openGraph: {
-    title: 'Sunday Services in Pretoria North | Fountain of Grace International',
+    title: 'Sunday Church Service Pretoria North | Fountain of Grace International',
     description:
-      'Sunday services at Fountain of Grace International in Pretoria North. Every Sunday at 09:00. 323 B Danie Theron Street, Pretoria North.',
+      'Sunday service every week at 09:00 in Pretoria North. Practical Bible teaching, worship, and real community at Fountain of Grace International. Everyone is welcome.',
     type: 'website',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/sunday-services',

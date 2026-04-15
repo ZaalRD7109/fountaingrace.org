@@ -2,17 +2,17 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'What to Expect | Fountain of Grace International — Pretoria North',
+  title: 'What to Expect at Church in Pretoria North | Fountain of Grace International',
   description:
-    'Find out exactly what happens at a Sunday service at Fountain of Grace International in Pretoria North. No surprises, no pressure.',
+    'New to church in Pretoria North? Know exactly what a Sunday service looks like before you arrive. No pressure, no surprises. Come as you are — everyone is welcome.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/what-to-expect',
   },
   openGraph: {
-    title: 'What to Expect | Fountain of Grace International — Pretoria North',
+    title: 'What to Expect at Church in Pretoria North | Fountain of Grace International',
     description:
-      'Find out exactly what happens at a Sunday service at Fountain of Grace International in Pretoria North. No surprises, no pressure.',
+      'New to church in Pretoria North? Know exactly what a Sunday service looks like before you arrive. No pressure, no surprises. Come as you are — everyone is welcome.',
     type: 'website',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/what-to-expect',

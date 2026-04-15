@@ -2,17 +2,17 @@ import type { Metadata } from 'next'
 import DonateClient from '@/components/DonateClient'
 
 export const metadata: Metadata = {
-  title: 'Donate | Fountain of Grace International — Support Our Work in Pretoria North',
+  title: 'Donate | Support FGI — Verified NPO 316-193 in Pretoria North',
   description:
-    'Support Fountain of Grace International (NPO 316-193). Donate via PayPal or direct EFT to fund community programs in Pretoria North, Gauteng.',
+    'Support a verified NPO in Pretoria North. Your donation funds food relief, family support, and community programs. Give via PayPal or EFT. NPO No: 316-193.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/donate',
   },
   openGraph: {
-    title: 'Donate | Fountain of Grace International — Pretoria North NPO',
+    title: 'Donate | Support FGI — Verified NPO 316-193 in Pretoria North',
     description:
-      'Support Fountain of Grace International (NPO 316-193). Give via PayPal or direct EFT. Every donation funds community programs in Pretoria North.',
+      'Support a verified NPO in Pretoria North. Your donation funds food relief, family support, and community programs. Give via PayPal or EFT. NPO No: 316-193.',
     type: 'website',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/donate',

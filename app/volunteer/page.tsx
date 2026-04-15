@@ -2,17 +2,17 @@ import type { Metadata } from 'next'
 import TallyEmbed from '@/components/TallyEmbed'
 
 export const metadata: Metadata = {
-  title: 'Volunteer | Fountain of Grace International — Pretoria North',
+  title: 'Volunteer in Pretoria North | Fountain of Grace International NPO',
   description:
-    'Volunteer with Fountain of Grace International in Pretoria North. Help with food programmes, events, administration, and more. Apply here.',
+    'Volunteer with a registered NPO in Pretoria North. No experience needed. Food programs, admin, events and more. Fill in the form — we reach out with next steps.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/volunteer',
   },
   openGraph: {
-    title: 'Volunteer | Fountain of Grace International — Pretoria North',
+    title: 'Volunteer in Pretoria North | Fountain of Grace International NPO',
     description:
-      'Volunteer with Fountain of Grace International in Pretoria North. Help with food programmes, events, administration, and more.',
+      'Volunteer with a registered NPO in Pretoria North. No experience needed. Food programs, admin, events and more. Fill in the form — we reach out with next steps.',
     type: 'website',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/volunteer',

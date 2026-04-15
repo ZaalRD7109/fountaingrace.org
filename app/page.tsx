@@ -3,17 +3,17 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Church in Pretoria North | Fountain of Grace International',
+  title: 'Christian Church in Pretoria North | Fountain of Grace International',
   description:
-    'Looking for a church in Pretoria North? Fountain of Grace International welcomes you personally. Plan your visit today.',
+    'Looking for a welcoming Christian church in Pretoria North? Sunday services every week at 09:00. Practical Bible teaching, real community. Everyone is welcome.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org',
   },
   openGraph: {
-    title: 'Church in Pretoria North | Fountain of Grace International',
+    title: 'Christian Church in Pretoria North | Fountain of Grace International',
     description:
-      'Looking for a church in Pretoria North? Fountain of Grace International welcomes you personally. Plan your visit today.',
+      'Looking for a welcoming Christian church in Pretoria North? Sunday services every week at 09:00. Practical Bible teaching, real community. Everyone is welcome.',
     type: 'website',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org',

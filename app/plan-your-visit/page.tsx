@@ -3,17 +3,17 @@ import Link from 'next/link'
 import TallyEmbed from '@/components/TallyEmbed'
 
 export const metadata: Metadata = {
-  title: 'Plan Your Visit | Fountain of Grace International — Pretoria North',
+  title: 'Plan Your Visit to Church in Pretoria North | Fountain of Grace International',
   description:
-    'Plan your first visit to Fountain of Grace International in Pretoria North. Get parking info, service times, and a WhatsApp message before you arrive.',
+    'Planning your first visit to a Christian church in Pretoria North? Fill in the form — we reach out before Sunday so you know exactly where to go and what to expect.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/plan-your-visit',
   },
   openGraph: {
-    title: 'Plan Your Visit | Fountain of Grace International — Pretoria North',
+    title: 'Plan Your Visit to Church in Pretoria North | Fountain of Grace International',
     description:
-      'Plan your first visit to Fountain of Grace International in Pretoria North. Get parking info, service times, and a WhatsApp message before you arrive.',
+      'Planning your first visit to a Christian church in Pretoria North? Fill in the form — we reach out before Sunday so you know exactly where to go and what to expect.',
     type: 'website',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/plan-your-visit',
