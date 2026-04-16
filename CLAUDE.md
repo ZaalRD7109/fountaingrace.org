@@ -23,14 +23,19 @@ Ricardo (zaalricardo@gmail.com). Managing Fountain of Grace International's webs
 ## Active Project
 | Name | What |
 |------|------|
-| **Website migration** | Static HTML → Next.js App Router. Folder: `/mnt/fgi-website`. Real current site: `/mnt/fountaingrace.org` |
+| **Website migration** | Next.js App Router site at `/mnt/fgi-website`. Deployed to Cloudflare Pages. Static HTML version is deprecated and no longer maintained. |
 → Details: memory/projects/website-migration.md
+
+## Analytics
+| Tool | ID |
+|------|------|
+| **Google Analytics 4** | G-15FK8BTR4B |
+| **Microsoft Clarity** | wcq3d0ed7r |
 
 ## Terms
 | Term | Meaning |
 |------|---------|
-| **old site** | `/mnt/fountaingrace.org` — live static HTML site |
-| **new site** | `/mnt/fgi-website` — Next.js migration in progress |
+| **the site** | `/mnt/fgi-website` — Next.js App Router, only active codebase |
 | **FGI** | Fountain of Grace International |
 | **NPO** | Non-Profit Organisation (South African legal entity) |
 | **POPIA** | Protection of Personal Information Act (SA privacy law) |

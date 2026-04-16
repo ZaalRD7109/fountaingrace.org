@@ -5,15 +5,15 @@
 ## Folders
 | Folder | What |
 |--------|------|
-| `/mnt/fgi-website` | New Next.js site (work here) |
-| `/mnt/fountaingrace.org` | Real live static HTML site (read-only reference) |
-| `/mnt/fountaingrace.org-main` | Old reference copy — IGNORE, not the real live site |
+| `/mnt/fgi-website` | Next.js site — only active codebase |
+
+Static HTML version (`/mnt/fountaingrace.org`) is deprecated as of April 2026. Do not edit.
 
 ## Tech Stack
-- Next.js 13+ App Router (`app/` directory)
+- Next.js 14 App Router, static export (`output: 'export'` in next.config.js)
 - TypeScript + React
 - Tailwind CSS
-- Deployed target: Vercel
+- Deployed: Cloudflare Pages (connected to GitHub repo ZaalRD7109/fountaingrace.org, branch clean-main)
 
 ## What Has Been Done
 
@@ -55,7 +55,7 @@
 
 2. **Forms backend** — Contact and volunteer forms use `action="#"` — need Formspree or similar
 
-3. **Google Analytics GA4** — Not installed yet in app/layout.tsx — needed for Ad Grants
+3. ~~**Google Analytics GA4**~~ — DONE. G-15FK8BTR4B installed in app/layout.tsx. Microsoft Clarity (wcq3d0ed7r) also installed.
 
 4. **Google Ads conversion tracking** — Needed on donate and contact success pages
 
@@ -72,8 +72,9 @@
 - [x] No placeholder text (except [X]% fund table)
 - [ ] Fund % placeholders filled
 - [ ] Forms backend connected
-- [ ] GA4 installed
-- [ ] Domain pointed to Vercel
+- [x] GA4 installed
+- [x] Microsoft Clarity installed (wcq3d0ed7r)
+- [x] Cloudflare Pages deployed (connected to clean-main, auto-deploys on push)
 - [ ] Google Search Console: submit sitemap
 - [ ] Google Business Profile claimed
 - [ ] Google Ad Grants applied
