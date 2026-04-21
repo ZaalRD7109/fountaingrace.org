@@ -41,8 +41,27 @@ Ricardo (zaalricardo@gmail.com). Managing Fountain of Grace International's webs
 | **POPIA** | Protection of Personal Information Act (SA privacy law) |
 | **Impact Seed** | FGI entrepreneurship/skills training programme |
 | **Section 18A** | SA tax-deductible donation cert — FGI does not have yet |
-| **PayFast** | Removed from site (verification issues, Google Ad Grants risk) |
+| **PayFast** | Removed from site (verification issues, Google Ad Grants risk) — DO NOT integrate |
 | **Ad Grants** | Google Ad Grants — $10k/month free ads for NPOs, goal post-launch |
+
+## PayPal Integration (Donation → Supabase)
+- Supabase Edge Function deployed: `paypal-ipn`
+- URL: `https://rdhtphruegorbeigyhto.supabase.co/functions/v1/paypal-ipn`
+- Flow: PayPal payment → IPN webhook → verify with PayPal → upsert donor_profiles → insert journal_entries
+- DonateClient.tsx updated to use PayPal form with notify_url pointing to Edge Function
+- PayPal business email used: `info@fountaingrace.org` — confirm this is the correct PayPal account email
+- Also set IPN URL in PayPal account: Profile → Selling Tools → Instant Payment Notifications
+
+## Finance OS Integration
+- Supabase project: rdhtphruegorbeigyhto
+- Finance OS live at: https://finance.fountaingrace.org
+- Settings page: banking + Section 18A + CIPC + VAT fields all restored
+- Migration 013 applied: added bank_name, account_number, branch_code, account_type, section_18a, cipc_number to organisations table
+- Cloudflare CI/CD fixed: deploy command updated to `npx opennextjs-cloudflare build && npx wrangler deploy`
+
+## Old paths — DO NOT USE
+- `C:\Users\User\FGI_Website\fountaingrace.org` — old static HTML site, deprecated
+- `fountaingrace.org` mounted folder — same old site, do not read from it
 
 ## Preferences
 - Keep writing simple, concise, no bullets in prose responses
