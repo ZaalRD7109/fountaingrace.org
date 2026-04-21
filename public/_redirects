@@ -52,3 +52,9 @@
 /youtube https://www.youtube.com/@fgipta  301
 /tiktok https://www.tiktok.com/@fountainofgraceintl  301
 /watch https://www.youtube.com/@fgipta  301
+
+# Bio links from our own social profiles (inbound, with UTM tracking)
+/yt /?utm_source=youtube&utm_medium=social&utm_campaign=bio_link  302
+/fb /?utm_source=facebook&utm_medium=social&utm_campaign=bio_link  302
+/ig /?utm_source=instagram&utm_medium=social&utm_campaign=bio_link  302
+/tt /?utm_source=tiktok&utm_medium=social&utm_campaign=bio_link  302

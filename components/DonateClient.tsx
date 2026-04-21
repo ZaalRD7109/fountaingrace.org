@@ -219,14 +219,27 @@ export default function DonateClient() {
                 For international donors — give securely in your own currency from anywhere
                 in the world.
               </p>
-              <a
-                href={`https://paypal.me/FGIPretoria/${amount}`}
+              <form
+                action="https://www.paypal.com/cgi-bin/webscr"
+                method="post"
                 target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary w-full text-center block"
               >
-                Give R{amount} with PayPal →
-              </a>
+                <input type="hidden" name="cmd" value="_donations" />
+                <input type="hidden" name="business" value="info@fountaingrace.org" />
+                <input type="hidden" name="item_name" value="Donation to Fountain of Grace International — NPO 316-193" />
+                <input type="hidden" name="currency_code" value="ZAR" />
+                <input type="hidden" name="amount" value={amount} />
+                <input type="hidden" name="notify_url" value="https://rdhtphruegorbeigyhto.supabase.co/functions/v1/paypal-ipn" />
+                <input type="hidden" name="return" value="https://www.fountaingrace.org/donate" />
+                <input type="hidden" name="cancel_return" value="https://www.fountaingrace.org/donate" />
+                <input type="hidden" name="no_shipping" value="1" />
+                <button
+                  type="submit"
+                  className="btn-primary w-full text-center block"
+                >
+                  Give R{amount} with PayPal →
+                </button>
+              </form>
             </div>
 
             {/* EFT */}
