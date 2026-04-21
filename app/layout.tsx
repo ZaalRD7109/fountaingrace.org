@@ -65,6 +65,27 @@ export default function RootLayout({
             gtag('config', 'G-15FK8BTR4B');
           `}
         </Script>
+        {/* Microsoft Clarity */}
+        <Script id="ms-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "wcq3d0ed7r");
+          `}
+        </Script>
+        {/* Clean UTM params from URL after analytics capture */}
+        <Script id="clean-utm" strategy="afterInteractive">
+          {`
+            setTimeout(function(){
+              if (window.location.search.indexOf('utm_') !== -1) {
+                var cleanUrl = window.location.origin + window.location.pathname + window.location.hash;
+                window.history.replaceState({}, document.title, cleanUrl);
+              }
+            }, 1500);
+          `}
+        </Script>
       </body>
     </html>
   )
