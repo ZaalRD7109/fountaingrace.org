@@ -4,7 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'About Us | Christian Church in Pretoria North | Fountain of Grace International',
+  title: 'About Fountain of Grace International | Pretoria North',
   description:
     'Fountain of Grace International is a Christian church and registered NPO in Pretoria North. Founded in 2020 by Pastor Ricardo Zaal. Real people, practical faith.',
   robots: 'index, follow',
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/about',
   },
   openGraph: {
-    title: 'About Us | Christian Church in Pretoria North | Fountain of Grace International',
+    title: 'About Fountain of Grace International | Pretoria North',
     description:
       'Fountain of Grace International is a Christian church and registered NPO in Pretoria North. Founded in 2020 by Pastor Ricardo Zaal. Real people, practical faith.',
     type: 'website',

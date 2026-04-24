@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Sunday Church Service Pretoria North | Fountain of Grace International',
+  title: 'Sunday Services | Church in Pretoria North | FGI',
   description:
     'Sunday service every week at 09:00 in Pretoria North. Practical Bible teaching, worship, and real community at Fountain of Grace International. Everyone is welcome.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sunday-services',
   },
   openGraph: {
-    title: 'Sunday Church Service Pretoria North | Fountain of Grace International',
+    title: 'Sunday Services | Church in Pretoria North | FGI',
     description:
       'Sunday service every week at 09:00 in Pretoria North. Practical Bible teaching, worship, and real community at Fountain of Grace International. Everyone is welcome.',
     type: 'website',

@@ -1,12 +1,20 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Cookie Policy | Fountain of Grace International - Pretoria North',
+  title: 'Cookie Policy | Fountain of Grace International',
   description:
     'How Fountain of Grace International (NPO 316-193) uses cookies on its website and how you can manage them.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/cookie-policy',
+  },
+  openGraph: {
+    title: 'Cookie Policy | Fountain of Grace International',
+    description:
+      'How Fountain of Grace International (NPO 316-193) uses cookies on its website and how you can manage them.',
+    type: 'website',
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    url: 'https://www.fountaingrace.org/cookie-policy',
   },
 }
 

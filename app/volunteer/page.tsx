@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import TallyEmbed from '@/components/TallyEmbed'
 
 export const metadata: Metadata = {
-  title: 'Volunteer in Pretoria North | Fountain of Grace International NPO',
+  title: 'Volunteer with FGI | NPO in Pretoria North',
   description:
     'Volunteer with a registered NPO in Pretoria North. No experience needed. Food programs, admin, events and more. Fill in the form — we reach out with next steps.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/volunteer',
   },
   openGraph: {
-    title: 'Volunteer in Pretoria North | Fountain of Grace International NPO',
+    title: 'Volunteer with FGI | NPO in Pretoria North',
     description:
       'Volunteer with a registered NPO in Pretoria North. No experience needed. Food programs, admin, events and more. Fill in the form — we reach out with next steps.',
     type: 'website',

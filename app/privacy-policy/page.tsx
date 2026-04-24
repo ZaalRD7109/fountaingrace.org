@@ -1,12 +1,20 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Fountain of Grace International - Pretoria North',
+  title: 'Privacy Policy | Fountain of Grace International',
   description:
     'How Fountain of Grace International (NPO 316-193) collects, uses, and protects your personal information under POPIA.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/privacy-policy',
+  },
+  openGraph: {
+    title: 'Privacy Policy | Fountain of Grace International',
+    description:
+      'How Fountain of Grace International (NPO 316-193) collects, uses, and protects your personal information under POPIA.',
+    type: 'website',
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    url: 'https://www.fountaingrace.org/privacy-policy',
   },
 }
 

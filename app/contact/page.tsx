@@ -3,7 +3,7 @@ import Link from 'next/link'
 import TallyEmbed from '@/components/TallyEmbed'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Christian Church in Pretoria North | Fountain of Grace International',
+  title: 'Contact Us | Fountain of Grace International | Pretoria North',
   description:
     'Get in touch with Fountain of Grace International in Pretoria North. WhatsApp +27 75 259 2555, email, or fill in the contact form. We respond quickly.',
   robots: 'index, follow',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/contact',
   },
   openGraph: {
-    title: 'Contact Us | Christian Church in Pretoria North | Fountain of Grace International',
+    title: 'Contact Us | Fountain of Grace International | Pretoria North',
     description:
       'Get in touch with Fountain of Grace International in Pretoria North. WhatsApp +27 75 259 2555, email, or fill in the contact form. We respond quickly.',
     type: 'website',
