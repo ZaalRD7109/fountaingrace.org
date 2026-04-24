@@ -1,12 +1,20 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Terms of Use | Fountain of Grace International — Pretoria North',
+  title: 'Terms of Use | Fountain of Grace International',
   description:
     'Terms of use for the Fountain of Grace International (NPO 316-193) website. Governed by the laws of the Republic of South Africa.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/terms',
+  },
+  openGraph: {
+    title: 'Terms of Use | Fountain of Grace International',
+    description:
+      'Terms of use for the Fountain of Grace International (NPO 316-193) website. Governed by the laws of the Republic of South Africa.',
+    type: 'website',
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    url: 'https://www.fountaingrace.org/terms',
   },
 }
 

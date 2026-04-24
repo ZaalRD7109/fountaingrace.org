@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Sermons & Bible Teaching | Fountain of Grace International Pretoria North',
+  title: 'Sermons | Bible Teaching | Fountain of Grace International',
   description:
     'Practical Bible teaching from a Christian church in Pretoria North. Every Sunday message addresses a real problem you are facing. Listen online or come in person.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons',
   },
   openGraph: {
-    title: 'Sermons & Bible Teaching | Fountain of Grace International Pretoria North',
+    title: 'Sermons | Bible Teaching | Fountain of Grace International',
     description:
       'Practical Bible teaching from a Christian church in Pretoria North. Every Sunday message addresses a real problem you are facing. Listen online or come in person.',
     type: 'website',

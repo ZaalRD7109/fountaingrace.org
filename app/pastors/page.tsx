@@ -3,7 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Meet Pastor Ricardo Zaal | Fountain of Grace International Pretoria North',
+  title: 'Pastor Ricardo Zaal | Fountain of Grace International',
   description:
     'Meet Pastor Ricardo Zaal — founder of Fountain of Grace International in Pretoria North. In ministry since 2000. Practical teaching, accessible leadership. Come this Sunday.',
   robots: 'index, follow',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/pastors',
   },
   openGraph: {
-    title: 'Meet Pastor Ricardo Zaal | Fountain of Grace International Pretoria North',
+    title: 'Pastor Ricardo Zaal | Fountain of Grace International',
     description:
       'Meet Pastor Ricardo Zaal — founder of Fountain of Grace International in Pretoria North. In ministry since 2000. Practical teaching, accessible leadership. Come this Sunday.',
     type: 'website',
