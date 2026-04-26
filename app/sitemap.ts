@@ -41,6 +41,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/sermons/no-more-waiting-rooms-god-is-live-now`, lastModified: new Date('2025-09-28'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/the-silent-assassin-of-destiny`, lastModified: new Date('2025-08-31'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/the-anointing-that-makes-hell-fear-you`, lastModified: new Date('2025-08-24'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/faith-is-the-router-that-connects-you-to-gods-supply`, lastModified: new Date('2025-06-08'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/hosting-the-presence-of-god`, lastModified: new Date('2025-06-22'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/the-danger-of-overnight-success`, lastModified: new Date('2025-05-18'), changeFrequency: 'monthly', priority: 0.6 },
     // Legal
     { url: `${base}/privacy-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${base}/cookie-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },

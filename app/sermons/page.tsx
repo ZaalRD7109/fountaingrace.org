@@ -180,6 +180,30 @@ const sermonPosts = [
     intro:
       'Isaiah 10:27 — the yoke shall be destroyed because of the anointing. Not loosened. Rendered useless. This message explains what the anointing actually is, what it does, and why hell fears the person who carries it.',
   },
+  {
+    slug: 'faith-is-the-router-that-connects-you-to-gods-supply',
+    title: "Faith Is the Router That Connects You to God's Supply",
+    date: '2025-06-08',
+    dateDisplay: '8 June 2025',
+    intro:
+      'The Wi-Fi subscription is paid. The signal is available. But if your router is broken, you receive nothing — not because the supply stopped, but because the connection failed. Faith is your router. Based on 2 Corinthians 1:20 and Proverbs 3:5.',
+  },
+  {
+    slug: 'hosting-the-presence-of-god',
+    title: 'Hosting the Presence of God',
+    date: '2025-06-22',
+    dateDisplay: '22 June 2025',
+    intro:
+      "Psalm 27:8 — seek my face, require my presence. Obed-Edom's house overflowed in three months. Samson lost his strength without noticing. The difference between them was not effort — it was how each one treated the presence of God.",
+  },
+  {
+    slug: 'the-danger-of-overnight-success',
+    title: 'The Danger of Overnight Success and the Power of Long Obedience',
+    date: '2025-05-18',
+    dateDisplay: '18 May 2025',
+    intro:
+      'You can\'t cheat growth — you can only delay maturity. Based on Ecclesiastes 3:1 and Song of Solomon 2:15, this message shows why heaven builds in seasons, why little compromises become great falls, and why preparation is heaven\'s proof of trust.',
+  },
 ]
 
 const jsonLd = [
