@@ -92,7 +92,7 @@ export default function SundayServicesPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Every Sunday · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -158,7 +158,7 @@ export default function SundayServicesPage() {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-1">{item.title}</h3>
-                  <p className="text-[#7d7d7d] leading-relaxed">
+                  <p className="text-[#595959] leading-relaxed">
                     {item.body}
                     {item.link && (
                       <>
@@ -181,7 +181,7 @@ export default function SundayServicesPage() {
       <section className="bg-white py-16 px-4 sm:px-6">
         <div className="section-container max-w-3xl">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Who leads the service</h2>
-          <p className="text-[#7d7d7d] leading-relaxed text-lg mb-6">
+          <p className="text-[#595959] leading-relaxed text-lg mb-6">
             Sunday services at Fountain of Grace International are led by{' '}
             <Link href="/pastors" className="text-[#008080] font-semibold hover:underline">
               Pastor Ricardo Zaal
@@ -230,7 +230,7 @@ export default function SundayServicesPage() {
             ].map((item) => (
               <div key={item.q} className="faq-block">
                 <dt className="font-semibold text-gray-900 mb-2">{item.q}</dt>
-                <dd className="text-[#7d7d7d] leading-relaxed">{item.a}</dd>
+                <dd className="text-[#595959] leading-relaxed">{item.a}</dd>
               </div>
             ))}
           </dl>
@@ -255,7 +255,7 @@ export default function SundayServicesPage() {
               href="https://wa.me/27752592555"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#25d366] text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-[#1ebe5d] transition-colors"
+              className="inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-7 py-3.5 rounded-lg hover:bg-[#1ebe5d] transition-colors"
             >
               WhatsApp Us
             </a>

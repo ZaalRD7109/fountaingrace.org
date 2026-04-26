@@ -65,7 +65,7 @@ export default function PlanYourVisitPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Your First Sunday · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -83,7 +83,7 @@ export default function PlanYourVisitPage() {
       <section className="bg-white py-6 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
           <TallyEmbed formId="aQDZeZ" />
-          <p className="text-xs text-[#7d7d7d] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
+          <p className="text-xs text-[#595959] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
             Your information is collected by Fountain of Grace International (NPO 316-193) and used
             only to prepare for your visit and follow up with you before Sunday. We do not share or sell your data. See our{' '}
             <Link href="/privacy-policy" className="text-[#008080] hover:underline font-medium">
@@ -100,17 +100,17 @@ export default function PlanYourVisitPage() {
           <div className="bg-white rounded-xl p-4 border border-gray-100">
             <p className="text-[#008080] font-bold text-sm mb-1">Service time</p>
             <p className="text-sm text-gray-700">Every Sunday at 09:00</p>
-            <p className="text-xs text-[#7d7d7d] mt-1">Approx 90 minutes</p>
+            <p className="text-xs text-[#595959] mt-1">Approx 90 minutes</p>
           </div>
           <div className="bg-white rounded-xl p-4 border border-gray-100">
             <p className="text-[#008080] font-bold text-sm mb-1">What to wear</p>
             <p className="text-sm text-gray-700">Come exactly as you are.</p>
-            <p className="text-xs text-[#7d7d7d] mt-1">Jeans, casual — no one will care.</p>
+            <p className="text-xs text-[#595959] mt-1">Jeans, casual — no one will care.</p>
           </div>
           <div className="bg-white rounded-xl p-4 border border-gray-100">
             <p className="text-[#008080] font-bold text-sm mb-1">Arrive early</p>
             <p className="text-sm text-gray-700">10–15 min before 09:00.</p>
-            <p className="text-xs text-[#7d7d7d] mt-1">Someone will meet you at the door.</p>
+            <p className="text-xs text-[#595959] mt-1">Someone will meet you at the door.</p>
           </div>
         </div>
       </section>
@@ -146,7 +146,7 @@ export default function PlanYourVisitPage() {
             ].map((item) => (
               <div key={item.q} className="faq-block">
                 <dt className="font-semibold text-gray-900 mb-2">{item.q}</dt>
-                <dd className="text-[#7d7d7d] leading-relaxed">{item.a}</dd>
+                <dd className="text-[#595959] leading-relaxed">{item.a}</dd>
               </div>
             ))}
           </dl>

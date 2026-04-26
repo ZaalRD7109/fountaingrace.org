@@ -61,7 +61,7 @@ export default function CookiePolicyPage() {
           <h1 className="text-4xl font-extrabold text-gray-900 leading-tight mb-4">
             Cookie Policy
           </h1>
-          <p className="text-sm text-[#7d7d7d]">
+          <p className="text-sm text-[#595959]">
             Fountain of Grace International (NPO 316-193) · Last updated: April 2026
           </p>
         </div>
@@ -103,14 +103,14 @@ export default function CookiePolicyPage() {
                   <h3 className="font-bold text-gray-900">Cookie Consent</h3>
                   <span className="text-xs font-semibold bg-green-100 text-green-700 px-2 py-1 rounded-full flex-shrink-0">Essential</span>
                 </div>
-                <p className="text-sm text-[#7d7d7d] mb-2">
+                <p className="text-sm text-[#595959] mb-2">
                   <strong>Name:</strong> FGI_cookieConsent
                 </p>
-                <p className="text-sm text-[#7d7d7d] mb-2">
+                <p className="text-sm text-[#595959] mb-2">
                   <strong>Purpose:</strong> Remembers whether you have accepted or declined our
                   cookie notice so we do not ask you every time you visit.
                 </p>
-                <p className="text-sm text-[#7d7d7d]">
+                <p className="text-sm text-[#595959]">
                   <strong>Expires:</strong> 12 months · <strong>Set by:</strong> fountaingrace.org
                 </p>
               </div>
@@ -120,16 +120,16 @@ export default function CookiePolicyPage() {
                   <h3 className="font-bold text-gray-900">Google Analytics</h3>
                   <span className="text-xs font-semibold bg-blue-100 text-blue-700 px-2 py-1 rounded-full flex-shrink-0">Analytics</span>
                 </div>
-                <p className="text-sm text-[#7d7d7d] mb-2">
+                <p className="text-sm text-[#595959] mb-2">
                   <strong>Names:</strong> _ga, _ga_XXXXXXXX
                 </p>
-                <p className="text-sm text-[#7d7d7d] mb-2">
+                <p className="text-sm text-[#595959] mb-2">
                   <strong>Purpose:</strong> Counts how many people visit our site, which pages
                   are most useful, and where visitors come from. All data is anonymous — no
                   personal information is collected. IP addresses are anonymised before
                   storage. These cookies only load after you accept the cookie notice.
                 </p>
-                <p className="text-sm text-[#7d7d7d]">
+                <p className="text-sm text-[#595959]">
                   <strong>Expires:</strong> Up to 2 years · <strong>Set by:</strong> Google (google.com)
                 </p>
               </div>
@@ -139,12 +139,12 @@ export default function CookiePolicyPage() {
                   <h3 className="font-bold text-gray-900">Google Fonts</h3>
                   <span className="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded-full flex-shrink-0">Functional</span>
                 </div>
-                <p className="text-sm text-[#7d7d7d] mb-2">
+                <p className="text-sm text-[#595959] mb-2">
                   <strong>Purpose:</strong> We load the Poppins font from Google's servers to
                   ensure consistent text display across all devices. Google may set cookies
                   or log your IP address as part of this request.
                 </p>
-                <p className="text-sm text-[#7d7d7d]">
+                <p className="text-sm text-[#595959]">
                   <strong>Set by:</strong> Google (fonts.googleapis.com) ·{' '}
                   <a
                     href="https://policies.google.com/privacy"
@@ -162,12 +162,12 @@ export default function CookiePolicyPage() {
                   <h3 className="font-bold text-gray-900">Google Maps</h3>
                   <span className="text-xs font-semibold bg-gray-100 text-gray-600 px-2 py-1 rounded-full flex-shrink-0">Functional</span>
                 </div>
-                <p className="text-sm text-[#7d7d7d] mb-2">
+                <p className="text-sm text-[#595959] mb-2">
                   <strong>Purpose:</strong> The embedded map on our Contact page is served by
                   Google Maps. Google may set cookies to personalise the map and measure
                   interactions.
                 </p>
-                <p className="text-sm text-[#7d7d7d]">
+                <p className="text-sm text-[#595959]">
                   <strong>Set by:</strong> Google (google.com) ·{' '}
                   <a
                     href="https://policies.google.com/privacy"
@@ -234,7 +234,7 @@ export default function CookiePolicyPage() {
 
           <div className="bg-white border border-gray-100 rounded-xl p-6">
             <h2 className="text-lg font-bold text-gray-900 mb-3">Questions About Cookies</h2>
-            <p className="text-sm text-[#7d7d7d] mb-3">
+            <p className="text-sm text-[#595959] mb-3">
               Contact us if you have any questions about how we use cookies.
             </p>
             <address className="not-italic text-sm space-y-1">

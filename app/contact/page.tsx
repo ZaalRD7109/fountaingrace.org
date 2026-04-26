@@ -74,7 +74,7 @@ export default function ContactPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Find Us · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -185,7 +185,7 @@ export default function ContactPage() {
                   title="Fountain of Grace International — 323 B Danie Theron Street, Pretoria North"
                 />
               </div>
-              <p className="text-xs text-[#7d7d7d] mt-2">
+              <p className="text-xs text-[#595959] mt-2">
                 323 B Danie Theron Street, Pretoria North, Gauteng, 0182
               </p>
             </div>
@@ -198,7 +198,7 @@ export default function ContactPage() {
                   <h3 className="font-semibold text-gray-800 mb-2 flex gap-2 items-center">
                     <span aria-hidden="true">🚗</span> Parking
                   </h3>
-                  <p className="text-sm text-[#7d7d7d] leading-relaxed">
+                  <p className="text-sm text-[#595959] leading-relaxed">
                     Not sure where to park? WhatsApp us before you come and we will send you
                     exact directions to make it easy.{' '}
                     <a
@@ -215,7 +215,7 @@ export default function ContactPage() {
                   <h3 className="font-semibold text-gray-800 mb-2 flex gap-2 items-center">
                     <span aria-hidden="true">🚌</span> Public Transport
                   </h3>
-                  <p className="text-sm text-[#7d7d7d] leading-relaxed">
+                  <p className="text-sm text-[#595959] leading-relaxed">
                     We are close to major public transport routes via Gerrit Maritz Street.
                     If you need specific route guidance, WhatsApp us and we will help you
                     plan your trip.
@@ -225,7 +225,7 @@ export default function ContactPage() {
                   <h3 className="font-semibold text-gray-800 mb-2 flex gap-2 items-center">
                     <span aria-hidden="true">💬</span> Need directions?
                   </h3>
-                  <p className="text-sm text-[#7d7d7d] leading-relaxed">
+                  <p className="text-sm text-[#595959] leading-relaxed">
                     The fastest way to get directions is to message us directly. We will
                     reply with exactly what you need.{' '}
                     <a
@@ -248,7 +248,7 @@ export default function ContactPage() {
       <section className="bg-white py-8 px-4 sm:px-6">
         <div className="section-container max-w-2xl">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Send us a message</h2>
-          <p className="text-[#7d7d7d] mb-4 text-sm leading-relaxed">
+          <p className="text-[#595959] mb-4 text-sm leading-relaxed">
             For your first visit use the{' '}
             <Link href="/plan-your-visit" className="text-[#008080] hover:underline font-medium">
               Plan Your Visit
@@ -256,7 +256,7 @@ export default function ContactPage() {
             form so we can prepare specifically for you.
           </p>
           <TallyEmbed formId="WOMeYP" />
-          <p className="text-xs text-[#7d7d7d] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
+          <p className="text-xs text-[#595959] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
             Your information is collected by Fountain of Grace International (NPO 316-193) and used
             only to respond to your message. We do not share or sell your data. See our{' '}
             <Link href="/privacy-policy" className="text-[#008080] hover:underline font-medium">
@@ -272,7 +272,7 @@ export default function ContactPage() {
         <div className="section-container max-w-2xl">
           <div className="bg-white border border-gray-100 rounded-xl p-7 shadow-sm">
             <h2 className="font-bold text-gray-900 text-lg mb-4">Fountain of Grace International</h2>
-            <address className="not-italic space-y-1 text-sm text-[#7d7d7d]">
+            <address className="not-italic space-y-1 text-sm text-[#595959]">
               <p>323 B Danie Theron Street, Pretoria North, Gauteng</p>
               <p>
                 Tel:{' '}
@@ -301,7 +301,7 @@ export default function ContactPage() {
                 href="https://wa.me/27752592555"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#25d366] text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
+                className="inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-5 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
               >
                 WhatsApp Us
               </a>

@@ -69,7 +69,7 @@ export default function TermsPage() {
           <h1 className="text-4xl font-extrabold text-gray-900 leading-tight mb-4">
             Terms of Use
           </h1>
-          <p className="text-sm text-[#7d7d7d]">
+          <p className="text-sm text-[#595959]">
             Fountain of Grace International (NPO 316-193) · Last updated: April 2026
           </p>
         </div>
@@ -187,7 +187,7 @@ export default function TermsPage() {
 
           <div className="bg-white border border-gray-100 rounded-xl p-6">
             <h2 className="text-lg font-bold text-gray-900 mb-3">Contact Us</h2>
-            <p className="text-sm text-[#7d7d7d] mb-3">
+            <p className="text-sm text-[#595959] mb-3">
               For any questions about these Terms of Use:
             </p>
             <address className="not-italic text-sm space-y-1">

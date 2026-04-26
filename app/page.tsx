@@ -103,7 +103,7 @@ export default function HomePage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Pretoria North · Every Sunday at 09:00
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -124,7 +124,7 @@ export default function HomePage() {
               href="https://wa.me/27752592555"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#25d366] text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm"
+              className="inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-6 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm"
             >
               WhatsApp Us
             </a>
@@ -154,7 +154,7 @@ export default function HomePage() {
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-5">
                 What Your First Sunday Actually Feels Like
               </h2>
-              <div className="space-y-4 text-[#7d7d7d] leading-relaxed">
+              <div className="space-y-4 text-[#595959] leading-relaxed">
                 <p>
                   You arrive. Someone meets you at the door — not a greeter handing out a bulletin,
                   an actual person who is expecting you. You sit where you are comfortable. No one
@@ -214,7 +214,7 @@ export default function HomePage() {
               >
                 <div className="text-3xl mb-3" aria-hidden="true">{card.icon}</div>
                 <h3 className="font-bold text-gray-900 mb-2">{card.title}</h3>
-                <p className="text-[#7d7d7d] text-sm leading-relaxed">{card.body}</p>
+                <p className="text-[#595959] text-sm leading-relaxed">{card.body}</p>
               </div>
             ))}
           </div>
@@ -232,7 +232,7 @@ export default function HomePage() {
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-5">
                 Meet the Pastors
               </h2>
-              <div className="space-y-4 text-[#7d7d7d] leading-relaxed">
+              <div className="space-y-4 text-[#595959] leading-relaxed">
                 <p>
                   <strong className="text-gray-800">Pastor Ricardo Zaal</strong> founded Fountain
                   of Grace International in June 2020 because he knew what it felt like to need a
@@ -273,7 +273,7 @@ export default function HomePage() {
       {/* NPO CALLOUT */}
       <section className="bg-[#008080] text-white py-14 px-4 sm:px-6">
         <div className="section-container text-center">
-          <p className="text-[#1a1a1a] font-semibold text-sm uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-sm uppercase tracking-wider mb-3">
             Registered NPO · Pretoria North
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold mb-5">
@@ -304,7 +304,7 @@ export default function HomePage() {
               <dt className="font-semibold text-gray-900 mb-2 text-base">
                 What church is in Pretoria North?
               </dt>
-              <dd className="text-[#7d7d7d] leading-relaxed">
+              <dd className="text-[#595959] leading-relaxed">
                 Fountain of Grace International is a church in Pretoria North, South Africa. It
                 holds weekly Sunday services focused on practical teaching connected to everyday
                 challenges. Anyone is welcome to attend — no prior church experience required.
@@ -314,7 +314,7 @@ export default function HomePage() {
               <dt className="font-semibold text-gray-900 mb-2 text-base">
                 Is there a welcoming church in Pretoria North for first-timers?
               </dt>
-              <dd className="text-[#7d7d7d] leading-relaxed">
+              <dd className="text-[#595959] leading-relaxed">
                 Fountain of Grace International in Pretoria North is designed for people attending
                 church for the first time. Visitors are met at the door by name, never singled out
                 publicly, and followed up with personally after their visit.

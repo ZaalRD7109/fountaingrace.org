@@ -116,7 +116,7 @@ export default function SermonsPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Sunday Teaching · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -151,7 +151,7 @@ export default function SermonsPage() {
                 <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-2 mb-4 leading-snug">
                   {post.title}
                 </h2>
-                <p className="text-[#7d7d7d] leading-relaxed mb-6">{post.intro}</p>
+                <p className="text-[#595959] leading-relaxed mb-6">{post.intro}</p>
                 <Link
                   href={`/sermons/${post.slug}`}
                   className="text-[#008080] font-semibold text-sm hover:underline"

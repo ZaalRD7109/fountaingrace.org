@@ -51,7 +51,7 @@ export default function NextSundayDateInput() {
         className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#FFD600] focus:border-transparent"
       />
       {display && (
-        <p className="text-xs text-[#7d7d7d] mt-1">Next Sunday: {display}</p>
+        <p className="text-xs text-[#595959] mt-1">Next Sunday: {display}</p>
       )}
     </div>
   )

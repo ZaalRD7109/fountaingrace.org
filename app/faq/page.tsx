@@ -155,7 +155,7 @@ export default function FAQPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Frequently Asked Questions · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -179,7 +179,7 @@ export default function FAQPage() {
                 {cat.items.map((item) => (
                   <div key={item.q}>
                     <dt className="font-semibold text-gray-900 mb-2">{item.q}</dt>
-                    <dd className="text-[#7d7d7d] leading-relaxed text-sm">{item.a}</dd>
+                    <dd className="text-[#595959] leading-relaxed text-sm">{item.a}</dd>
                   </div>
                 ))}
               </dl>
@@ -192,7 +192,7 @@ export default function FAQPage() {
       <section className="bg-gray-50 py-12 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
           <h2 className="text-xl font-bold text-gray-900 mb-3">Still have a question?</h2>
-          <p className="text-[#7d7d7d] text-sm leading-relaxed mb-6">
+          <p className="text-[#595959] text-sm leading-relaxed mb-6">
             WhatsApp or email us and we will answer directly.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -200,7 +200,7 @@ export default function FAQPage() {
               href="https://wa.me/27752592555"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#25d366] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm"
+              className="inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-6 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm"
             >
               WhatsApp Us
             </a>
