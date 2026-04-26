@@ -153,6 +153,12 @@ export default function ContactPage() {
                 >
                   <span aria-hidden="true">✉️</span> Email us
                 </a>
+                <Link
+                  href="/prayer"
+                  className="flex items-center gap-2 text-blue-100 hover:text-white text-sm transition-colors"
+                >
+                  <span aria-hidden="true">🙏</span> Submit a prayer request
+                </Link>
               </div>
             </div>
           </div>
