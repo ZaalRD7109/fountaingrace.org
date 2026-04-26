@@ -19,13 +19,14 @@ export const metadata: Metadata = {
   },
 }
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: 'Part 2: Right Action — The Principles That Move People Forward Faster',
-  description: 'Part 2 of the principles series from Fountain of Grace International, Pretoria North. Focuses on right action, moving past planning into execution, and the biblical and practical foundations of momentum.',
-  author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
-  publisher: {
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Part 2: Right Action — The Principles That Move People Forward Faster',
+    description: 'Part 2 of the principles series from Fountain of Grace International, Pretoria North. Focuses on right action, moving past planning into execution, and the biblical and practical foundations of momentum.',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
     '@type': 'Church',
     name: 'Fountain of Grace International',
     address: {
@@ -36,9 +37,19 @@ const jsonLd = {
       addressCountry: 'ZA',
     },
   },
-  datePublished: '2025-03-15',
-  url: 'https://www.fountaingrace.org/sermons/right-action-principles-that-move-people-forward-faster',
-}
+    datePublished: '2025-03-15',
+    url: 'https://www.fountaingrace.org/sermons/right-action-principles-that-move-people-forward-faster',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+      { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
+      { '@type': 'ListItem', position: 3, name: "Part 2: Right Action — The Principles That Move People Forward Faster", item: 'https://www.fountaingrace.org/sermons/right-action-principles-that-move-people-forward-faster' },
+    ],
+  },
+]
 
 export default function SermonPage() {
   return (

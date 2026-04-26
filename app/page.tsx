@@ -20,27 +20,77 @@ export const metadata: Metadata = {
   },
 }
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': ['Church', 'Organization', 'LocalBusiness'],
-  name: 'Fountain of Grace International',
-  description: 'A church and registered NPO in Pretoria North, South Africa.',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '323 B Danie Theron Street',
-    addressLocality: 'Pretoria North',
-    addressRegion: 'Gauteng',
-    addressCountry: 'ZA',
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': ['Church', 'Organization', 'NGO'],
+    name: 'Fountain of Grace International',
+    description: 'A Christian church and registered NPO in Pretoria North, South Africa.',
+    nonprofitStatus: 'RegisteredNonprofit',
+    identifier: { '@type': 'PropertyValue', propertyID: 'NPO', value: '316-193' },
+    foundingDate: '2020-06',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '323 B Danie Theron Street',
+      addressLocality: 'Pretoria North',
+      addressRegion: 'Gauteng',
+      postalCode: '0182',
+      addressCountry: 'ZA',
+    },
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: -25.672286342520497,
+      longitude: 28.172968674468688,
+    },
+    telephone: '+27752592555',
+    email: 'info@fountaingrace.org',
+    url: 'https://www.fountaingrace.org',
+    openingHours: 'Su 09:00',
+    logo: 'https://www.fountaingrace.org/logo-square.png',
+    image: 'https://www.fountaingrace.org/og-image.jpg',
+    sameAs: [
+      'https://www.facebook.com/FGIPta/',
+      'https://www.youtube.com/@fgipta',
+      'https://www.tiktok.com/@fountainofgraceintl',
+    ],
   },
-  telephone: '+27 75 259 2555',
-  url: 'https://www.fountaingrace.org',
-  openingHours: 'Su 09:00',
-  sameAs: [
-    'https://www.facebook.com/FGIPta/',
-    'https://www.youtube.com/@fgipta',
-    'https://www.tiktok.com/@fountainofgraceintl',
-  ],
-}
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: 'Fountain of Grace International',
+    url: 'https://www.fountaingrace.org',
+    description: 'A Christian church and registered NPO in Pretoria North, South Africa.',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What church is in Pretoria North?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Fountain of Grace International is a church in Pretoria North, South Africa. It holds weekly Sunday services focused on practical teaching connected to everyday challenges. Anyone is welcome to attend — no prior church experience required.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Is there a welcoming church in Pretoria North for first-timers?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Fountain of Grace International in Pretoria North is designed for people attending church for the first time. Visitors are met at the door by name, never singled out publicly, and followed up with personally after their visit.',
+        },
+      },
+    ],
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+    ],
+  },
+]
 
 export default function HomePage() {
   return (

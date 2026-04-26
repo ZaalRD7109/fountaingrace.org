@@ -19,13 +19,14 @@ export const metadata: Metadata = {
   },
 }
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: 'Follow Your Inner Voice — Discover Your Destiny',
-  description: "Based on Jeremiah 1:5 — God knew you before you were formed. This message challenges the listener to stop listening to voices that told them to stop and start moving in the direction God placed inside them.",
-  author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
-  publisher: {
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Follow Your Inner Voice — Discover Your Destiny',
+    description: 'Based on Jeremiah 1:5 — God knew you before you were formed. This message challenges the listener to stop listening to voices that told them to stop and start moving in the direction God placed inside them.',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
     '@type': 'Church',
     name: 'Fountain of Grace International',
     address: {
@@ -36,9 +37,19 @@ const jsonLd = {
       addressCountry: 'ZA',
     },
   },
-  datePublished: '2025-02-24',
-  url: 'https://www.fountaingrace.org/sermons/follow-your-inner-voice-discover-your-destiny',
-}
+    datePublished: '2025-02-24',
+    url: 'https://www.fountaingrace.org/sermons/follow-your-inner-voice-discover-your-destiny',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+      { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
+      { '@type': 'ListItem', position: 3, name: "Follow Your Inner Voice — Discover Your Destiny", item: 'https://www.fountaingrace.org/sermons/follow-your-inner-voice-discover-your-destiny' },
+    ],
+  },
+]
 
 export default function SermonPage() {
   return (

@@ -20,30 +20,48 @@ export const metadata: Metadata = {
   },
 }
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Fountain of Grace International',
-  description: 'A church and registered NPO in Pretoria North, South Africa.',
-  address: {
-    '@type': 'PostalAddress',
-    streetAddress: '323 B Danie Theron Street',
-    addressLocality: 'Pretoria North',
-    addressRegion: 'Gauteng',
-    postalCode: '0182',
-    addressCountry: 'ZA',
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Church',
+    name: 'Fountain of Grace International',
+    description: 'A Christian church and registered NPO in Pretoria North, South Africa.',
+    address: {
+      '@type': 'PostalAddress',
+      streetAddress: '323 B Danie Theron Street',
+      addressLocality: 'Pretoria North',
+      addressRegion: 'Gauteng',
+      postalCode: '0182',
+      addressCountry: 'ZA',
+    },
+    telephone: '+27752592555',
+    email: 'info@fountaingrace.org',
+    url: 'https://www.fountaingrace.org',
+    openingHours: 'Su 09:00',
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: -25.672286342520497,
+      longitude: 28.172968674468688,
+    },
+    hasMap: 'https://www.google.com/maps?q=323+B+Danie+Theron+Street+Pretoria+North',
+    sameAs: ['https://www.facebook.com/FGIPta/'],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      telephone: '+27752592555',
+      email: 'info@fountaingrace.org',
+      contactType: 'customer support',
+      availableLanguage: ['English', 'Afrikaans'],
+    },
   },
-  telephone: '+27 75 259 2555',
-  url: 'https://www.fountaingrace.org',
-  openingHours: 'Su 09:00',
-  geo: {
-    '@type': 'GeoCoordinates',
-    latitude: -25.672286342520497,
-    longitude: 28.172968674468688,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+      { '@type': 'ListItem', position: 2, name: 'Contact', item: 'https://www.fountaingrace.org/contact' },
+    ],
   },
-  hasMap: 'https://www.google.com/maps?q=323+B+Danie+Theron+Street+Pretoria+North',
-  sameAs: ['https://www.facebook.com/FGIPta/'],
-}
+]
 
 export default function ContactPage() {
   return (

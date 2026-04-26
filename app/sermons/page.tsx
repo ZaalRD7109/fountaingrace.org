@@ -70,24 +70,41 @@ const sermonPosts = [
   },
 ]
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Blog',
-  name: 'Sermons — Fountain of Grace International',
-  description: 'Practical teaching for real life from Fountain of Grace International in Pretoria North.',
-  url: 'https://www.fountaingrace.org/sermons',
-  publisher: {
-    '@type': 'Church',
-    name: 'Fountain of Grace International',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '323 B Danie Theron Street',
-      addressLocality: 'Pretoria North',
-      addressRegion: 'Gauteng',
-      addressCountry: 'ZA',
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Blog',
+    name: 'Sermons — Fountain of Grace International',
+    description: 'Practical teaching for real life from Fountain of Grace International in Pretoria North.',
+    url: 'https://www.fountaingrace.org/sermons',
+    publisher: {
+      '@type': 'Church',
+      name: 'Fountain of Grace International',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '323 B Danie Theron Street',
+        addressLocality: 'Pretoria North',
+        addressRegion: 'Gauteng',
+        addressCountry: 'ZA',
+      },
     },
+    blogPost: sermonPosts.map((s) => ({
+      '@type': 'BlogPosting',
+      headline: s.title,
+      datePublished: s.date,
+      url: `https://www.fountaingrace.org/sermons/${s.slug}`,
+      author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    })),
   },
-}
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+      { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
+    ],
+  },
+]
 
 export default function SermonsPage() {
   return (

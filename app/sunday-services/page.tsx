@@ -57,6 +57,15 @@ const jsonLd = {
   },
 }
 
+const breadcrumbLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+      { '@type': 'ListItem', position: 2, name: 'Sunday Services', item: 'https://www.fountaingrace.org/sunday-services' },
+  ],
+}
+
 const serviceDetails = [
   { label: 'Day', value: 'Every Sunday' },
   { label: 'Time', value: '09:00 (arrive 10–15 min early)' },
@@ -74,6 +83,10 @@ export default function SundayServicesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
 
       {/* HERO */}
@@ -270,3 +283,4 @@ export default function SundayServicesPage() {
     </>
   )
 }
+                                            
