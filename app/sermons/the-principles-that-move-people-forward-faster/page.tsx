@@ -51,6 +51,69 @@ const jsonLd = [
   },
 ]
 
+const principles = [
+  {
+    n: 1,
+    title: 'Obedience',
+    scripture: 'Luke 5:4-6',
+    body: 'Simon fished all night and caught nothing. One act of obedience — casting the net on the other side — produced a net-breaking result. Obedience to a specific instruction unlocks what effort alone cannot.',
+  },
+  {
+    n: 2,
+    title: 'Positioning',
+    scripture: 'Ruth 2:2-3',
+    body: 'Ruth placed herself in the right field. Position determines what you are exposed to. Being in the wrong environment — even with the right effort — limits what God can connect you to.',
+  },
+  {
+    n: 3,
+    title: 'Wisdom',
+    scripture: 'Ecclesiastes 10:10',
+    body: 'A blunt axe requires more strength. Wisdom sharpens the blade. Working harder in the wrong direction produces less. The right method multiplies output without multiplying effort.',
+  },
+  {
+    n: 4,
+    title: 'Strategy',
+    scripture: 'Proverbs 20:18',
+    body: 'Plans are established by counsel. A goal without a plan is just a wish. God gave Nehemiah a vision and a strategy. Strategy converts faith into action with direction.',
+  },
+  {
+    n: 5,
+    title: 'Stewardship',
+    scripture: 'Matthew 25:21',
+    body: 'You were faithful with little — I will give you more. God does not increase what we are not managing well. Stewardship of current resources is the condition for greater ones.',
+  },
+  {
+    n: 6,
+    title: 'Relationships',
+    scripture: 'Proverbs 13:20',
+    body: 'Walk with the wise and become wise. The people around you shape your direction. One relationship with the right person can advance you further than years of solo effort.',
+  },
+  {
+    n: 7,
+    title: 'Preparation',
+    scripture: 'Proverbs 24:27',
+    body: 'Prepare your work outside — then build your house. Opportunity rarely announces itself. Preparation is what separates those who capitalise on a moment from those who watch it pass.',
+  },
+  {
+    n: 8,
+    title: 'Faith with Action',
+    scripture: 'James 2:17',
+    body: 'Faith without works is dead. Believing God is not passive. Action is the proof of faith. Waiting without movement is not faith — it is avoidance dressed in spiritual language.',
+  },
+  {
+    n: 9,
+    title: 'Sowing Seed',
+    scripture: 'Galatians 6:7',
+    body: 'You reap what you sow. The harvest you want is determined by the seed you plant. Generosity, time, skill, and service are all seeds. Nothing comes from nothing.',
+  },
+  {
+    n: 10,
+    title: 'Focused Attention',
+    scripture: 'Luke 10:41-42',
+    body: 'Martha was distracted by many things — Mary chose the one thing that mattered. Scattered attention produces scattered results. The highest achievers do fewer things with greater focus.',
+  },
+]
+
 export default function SermonPage() {
   return (
     <>
