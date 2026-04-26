@@ -39,6 +39,7 @@ export default function RootLayout({
     <html lang="en-ZA">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="tj2UtOjgKmGsrYwOwYPKH929JoEN3dpDpJZx-h9F0dE" />
         {/* Favicon served automatically from app/icon.png and app/apple-icon.png */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
