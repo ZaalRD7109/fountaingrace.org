@@ -74,13 +74,13 @@ export default function ContactPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
             Find Us · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             We are easy to find and easy to reach.
           </h1>
-          <p className="text-teal-100 text-base leading-relaxed">
+          <p className="text-white text-base leading-relaxed">
             Service times, address, parking, phone and WhatsApp — all in one place.
           </p>
         </div>
@@ -92,7 +92,7 @@ export default function ContactPage() {
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-white text-center sm:text-left">
             <div>
               <h2 className="text-white font-bold text-lg mb-3">Fountain of Grace International</h2>
-              <address className="not-italic text-blue-100 text-sm leading-relaxed">
+              <address className="not-italic text-white text-sm leading-relaxed">
                 <p>323 B Danie Theron Street</p>
                 <p>Pretoria North, Gauteng</p>
                 <p className="mt-2">
@@ -117,8 +117,8 @@ export default function ContactPage() {
             </div>
             <div>
               <h2 className="text-white font-bold text-lg mb-3">Service Times</h2>
-              <p className="text-blue-100 text-sm">Sunday: 09:00</p>
-              <p className="text-blue-100 text-sm mt-1">
+              <p className="text-white text-sm">Sunday: 09:00</p>
+              <p className="text-white text-sm mt-1">
                 Arrive 10–15 minutes early
               </p>
               <div className="mt-4">
@@ -135,7 +135,7 @@ export default function ContactPage() {
               <div className="space-y-3">
                 <a
                   href="tel:+27752592555"
-                  className="flex items-center gap-2 text-blue-100 hover:text-white text-sm transition-colors"
+                  className="flex items-center gap-2 text-white hover:text-white text-sm transition-colors"
                 >
                   <span aria-hidden="true">📞</span> Call us
                 </a>
@@ -143,19 +143,19 @@ export default function ContactPage() {
                   href="https://wa.me/27752592555"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-2 text-blue-100 hover:text-white text-sm transition-colors"
+                  className="flex items-center gap-2 text-white hover:text-white text-sm transition-colors"
                 >
                   <span aria-hidden="true">💬</span> WhatsApp us
                 </a>
                 <a
                   href="mailto:info@fountaingrace.org"
-                  className="flex items-center gap-2 text-blue-100 hover:text-white text-sm transition-colors"
+                  className="flex items-center gap-2 text-white hover:text-white text-sm transition-colors"
                 >
                   <span aria-hidden="true">✉️</span> Email us
                 </a>
                 <Link
                   href="/prayer"
-                  className="flex items-center gap-2 text-blue-100 hover:text-white text-sm transition-colors"
+                  className="flex items-center gap-2 text-white hover:text-white text-sm transition-colors"
                 >
                   <span aria-hidden="true">🙏</span> Submit a prayer request
                 </Link>

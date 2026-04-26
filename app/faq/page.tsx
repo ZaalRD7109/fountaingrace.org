@@ -155,13 +155,13 @@ export default function FAQPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
             Frequently Asked Questions · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             Questions about Fountain of Grace International
           </h1>
-          <p className="text-teal-100 text-base leading-relaxed">
+          <p className="text-white text-base leading-relaxed">
             Answers about visiting, giving, prayer, volunteering, and the church in Pretoria North.
           </p>
         </div>
@@ -217,7 +217,7 @@ export default function FAQPage() {
           <h2 className="text-xl font-bold text-white mb-3">
             Ready to come and see for yourself?
           </h2>
-          <p className="text-teal-100 text-sm mb-6 max-w-md mx-auto">
+          <p className="text-white text-sm mb-6 max-w-md mx-auto">
             Sunday services at Fountain of Grace International in Pretoria North are open to everyone. No registration needed.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">

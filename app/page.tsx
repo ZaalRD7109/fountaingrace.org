@@ -103,13 +103,13 @@ export default function HomePage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
             Pretoria North · Every Sunday at 09:00
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             A church in Pretoria North built for real people.
           </h1>
-          <p className="text-teal-100 text-base leading-relaxed mb-6">
+          <p className="text-white text-base leading-relaxed mb-6">
             Fountain of Grace International is a Christian church in Pretoria North where you are personally
             welcomed, genuinely followed up with, and taught things that connect to your life right now.
           </p>
@@ -129,7 +129,7 @@ export default function HomePage() {
               WhatsApp Us
             </a>
           </div>
-          <p className="text-teal-300 text-xs mt-5">
+          <p className="text-white text-xs mt-5">
             323 B Danie Theron Street, Pretoria North · +27 75 259 2555
           </p>
         </div>
@@ -273,13 +273,13 @@ export default function HomePage() {
       {/* NPO CALLOUT */}
       <section className="bg-[#008080] text-white py-14 px-4 sm:px-6">
         <div className="section-container text-center">
-          <p className="text-teal-200 font-semibold text-sm uppercase tracking-wider mb-3">
+          <p className="text-[#1a1a1a] font-semibold text-sm uppercase tracking-wider mb-3">
             Registered NPO · Pretoria North
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold mb-5">
             We Are Also a Registered NPO
           </h2>
-          <p className="text-teal-100 text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+          <p className="text-white text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
             Fountain of Grace International holds NPO registration 316-193. We run community
             programs in Pretoria North that put practical support directly into the hands of people
             who need it.
@@ -330,7 +330,7 @@ export default function HomePage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Ready to come on Sunday?
           </h2>
-          <p className="text-blue-100 text-lg mb-8 max-w-xl mx-auto">
+          <p className="text-white text-lg mb-8 max-w-xl mx-auto">
             Plan your visit — we will send you a WhatsApp message before you arrive so you know
             exactly what to expect.
           </p>

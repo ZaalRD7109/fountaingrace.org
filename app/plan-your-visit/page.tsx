@@ -65,16 +65,16 @@ export default function PlanYourVisitPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
             Your First Sunday · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             Everything you need to know before Sunday.
           </h1>
-          <p className="text-teal-100 text-base leading-relaxed">
+          <p className="text-white text-base leading-relaxed">
             Fill in the form below and we will reach out before you arrive.{' '}
             Want to know what Sunday looks like first?{' '}
-            <Link href="/what-to-expect" className="text-white font-semibold underline hover:text-teal-200">See what to expect</Link>.
+            <Link href="/what-to-expect" className="text-white font-semibold underline hover:text-[#1a1a1a]">See what to expect</Link>.
           </p>
         </div>
       </section>

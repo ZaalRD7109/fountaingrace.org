@@ -4,7 +4,7 @@ git config user.email "zaalricardo@gmail.com"
 git config user.name "Ricardo"
 if exist ".git\index.lock" del ".git\index.lock"
 git add -A
-git commit -m "Perf: footer logo 257KB->15KB (webp), image delivery improvements"
+git commit -m "A11y: fix contrast — teal text on teal bg replaced with black/white across all pages"
 git push origin clean-main:main
 echo.
 echo Done. Check Cloudflare for the build result.

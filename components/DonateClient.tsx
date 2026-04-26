@@ -102,13 +102,13 @@ export default function DonateClient() {
       {/* ── HERO ─────────────────────────────────────────────────── */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6 text-center">
         <div className="max-w-xl mx-auto">
-          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
             Support the work · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             Your giving changes lives in Pretoria North.
           </h1>
-          <p className="text-teal-100 text-base leading-relaxed mb-5">
+          <p className="text-white text-base leading-relaxed mb-5">
             Every rand you give goes directly to real people in our community — food for
             families, support for recovery, training for those rebuilding their lives.
           </p>
@@ -303,7 +303,7 @@ export default function DonateClient() {
         return (
           <section className="bg-[#008080] py-12 px-4 sm:px-6 text-white">
             <div className="max-w-3xl mx-auto">
-              <p className="text-teal-200 font-semibold text-xs uppercase tracking-widest mb-6 text-center">
+              <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-widest mb-6 text-center">
                 Every rand accounted for
               </p>
               <div className="flex flex-col sm:flex-row items-center gap-8 bg-white/[0.07] border border-white/10 rounded-2xl p-7">
@@ -409,7 +409,7 @@ export default function DonateClient() {
       <section className="bg-[#008080] py-14 px-4 sm:px-6 text-white">
         <div className="max-w-xl mx-auto text-center">
           <h2 className="text-2xl font-extrabold mb-3">Want to do more than donate?</h2>
-          <p className="text-teal-100 mb-8 leading-relaxed">
+          <p className="text-white mb-8 leading-relaxed">
             Volunteer with us, bring your organisation on board, or come and see the
             community in person on a Sunday.
           </p>

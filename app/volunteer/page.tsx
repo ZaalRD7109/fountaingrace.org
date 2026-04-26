@@ -59,13 +59,13 @@ export default function VolunteerPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
             Get Involved · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             Volunteer with Fountain of Grace International
           </h1>
-          <p className="text-teal-100 text-base leading-relaxed">
+          <p className="text-white text-base leading-relaxed">
             Every programme we run depends on people who show up. Fill in the form and we will be in touch.
           </p>
         </div>

@@ -116,15 +116,15 @@ export default function SermonsPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
             Sunday Teaching · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             Practical Bible teaching for real life.
           </h1>
-          <p className="text-teal-100 text-base leading-relaxed mb-5">
+          <p className="text-white text-base leading-relaxed mb-5">
             Every message at{' '}
-            <Link href="/about" className="text-white font-semibold underline hover:text-teal-200">Fountain of Grace International</Link>{' '}
+            <Link href="/about" className="text-white font-semibold underline hover:text-[#1a1a1a]">Fountain of Grace International</Link>{' '}
             is built around a problem people are actually living with. Not theory. Things that connect to your week.
           </p>
           <Link href="/plan-your-visit" className="btn-primary text-sm">
