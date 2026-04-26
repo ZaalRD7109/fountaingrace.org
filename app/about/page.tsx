@@ -168,6 +168,10 @@ export default function AboutPage() {
                   <p className="text-gray-900 font-bold">June 2020</p>
                 </div>
                 <div>
+                  <p className="text-xs text-[#7d7d7d] uppercase tracking-wider font-semibold">NPO registered</p>
+                  <p className="text-gray-900 font-bold">16 December 2024</p>
+                </div>
+                <div>
                   <p className="text-xs text-[#7d7d7d] uppercase tracking-wider font-semibold">Based in</p>
                   <p className="text-gray-900 font-bold">Pretoria North</p>
                 </div>
@@ -261,8 +265,10 @@ export default function AboutPage() {
           <div className="mt-8">
             <p className="text-sm text-[#7d7d7d]">
               Fountain of Grace International is a registered NPO (No: 316-193) under the
-              Nonprofit Organisations Act, 71 of 1997, and operates community programs in
-              Pretoria North alongside its church ministry.
+              Nonprofit Organisations Act, 71 of 1997, registered on 16 December 2024. It
+              operates community programs in Pretoria North alongside its church ministry,
+              serving families across Pretoria North, Karenpark, Akasia, Dorandia,
+              Wonderboom, and surrounding Gauteng communities.
             </p>
             <div className="mt-4">
               <Link href="/community-impact" className="btn-teal text-sm">

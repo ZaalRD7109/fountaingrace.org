@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/pastors`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/volunteer`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/prayer`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${base}/sermons/right-action-principles-that-move-people-forward-faster`, lastModified: new Date('2025-03-15'), changeFrequency: 'monthly', priority: 0.6 },
