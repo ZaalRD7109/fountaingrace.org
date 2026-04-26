@@ -5,6 +5,7 @@ import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 import WhatsAppButton from '@/components/WhatsAppButton'
 import CookieBanner from '@/components/CookieBanner'
+import AnalyticsLoader from '@/components/AnalyticsLoader'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.fountaingrace.org'),
@@ -39,6 +40,8 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Favicon served automatically from app/icon.png and app/apple-icon.png */}
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.clarity.ms" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link
@@ -52,29 +55,7 @@ export default function RootLayout({
         <Footer />
         <WhatsAppButton />
         <CookieBanner />
-        {/* Google Analytics GA4 */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-15FK8BTR4B"
-          strategy="afterInteractive"
-        />
-        <Script id="ga4-init" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-15FK8BTR4B');
-          `}
-        </Script>
-        {/* Microsoft Clarity */}
-        <Script id="ms-clarity" strategy="afterInteractive">
-          {`
-            (function(c,l,a,r,i,t,y){
-              c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-              t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-              y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-            })(window, document, "clarity", "script", "wcq3d0ed7r");
-          `}
-        </Script>
+        <AnalyticsLoader />
         {/* Clean UTM params from URL after analytics capture */}
         <Script id="clean-utm" strategy="afterInteractive">
           {`

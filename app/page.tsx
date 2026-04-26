@@ -144,6 +144,7 @@ export default function HomePage() {
                 src="/sunday-service.jpg"
                 alt="Sunday service at Fountain of Grace International, Pretoria North"
                 fill
+                priority
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
