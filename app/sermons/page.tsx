@@ -148,6 +148,38 @@ const sermonPosts = [
     intro:
       'Most people are not stuck because of a lack of information. They are stuck because of four specific patterns that disguise themselves as wisdom. This message names them and breaks them.',
   },
+  {
+    slug: 'pruning-for-progress',
+    title: 'Pruning for Progress: From Bare Branch to Bountiful Blessing',
+    date: '2025-11-02',
+    dateDisplay: '2 November 2025',
+    intro:
+      'John 15:1-8 — God prunes every branch that bears fruit so it bears more. The cutting is not punishment. It is preparation. The season of pruning is the season closest to breakthrough.',
+  },
+  {
+    slug: 'no-more-waiting-rooms-god-is-live-now',
+    title: 'No More Waiting Rooms — God Is Live Now',
+    date: '2025-09-28',
+    dateDisplay: '28 September 2025',
+    intro:
+      'You are not stuck in a waiting room. God is not buffering. Isaiah 43:19 says the new thing is already springing forth. The question is not when He will move — it is whether you are tuned in to where He already is.',
+  },
+  {
+    slug: 'the-silent-assassin-of-destiny',
+    title: 'The Silent Assassin of Destiny: Overthinking',
+    date: '2025-08-31',
+    dateDisplay: '31 August 2025',
+    intro:
+      'Overthinking kills destiny before you start. The enemy cannot touch you unless you allow him to — and his entry point is your mind. Based on 2 Corinthians 10:4-5, this message names the pattern and shows how to break it.',
+  },
+  {
+    slug: 'the-anointing-that-makes-hell-fear-you',
+    title: 'The Anointing That Makes Hell Fear You',
+    date: '2025-08-24',
+    dateDisplay: '24 August 2025',
+    intro:
+      'Isaiah 10:27 — the yoke shall be destroyed because of the anointing. Not loosened. Rendered useless. This message explains what the anointing actually is, what it does, and why hell fears the person who carries it.',
+  },
 ]
 
 const jsonLd = [

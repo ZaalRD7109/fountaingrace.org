@@ -37,6 +37,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/sermons/what-if-someone-else-finishes-what-was-meant-for-you`, lastModified: new Date('2026-02-22'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/follow-your-inner-voice-discover-your-destiny`, lastModified: new Date('2026-02-24'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/be-a-doer-of-gods-word-not-just-a-hearer`, lastModified: new Date('2026-02-16'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/pruning-for-progress`, lastModified: new Date('2025-11-02'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/no-more-waiting-rooms-god-is-live-now`, lastModified: new Date('2025-09-28'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/the-silent-assassin-of-destiny`, lastModified: new Date('2025-08-31'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/the-anointing-that-makes-hell-fear-you`, lastModified: new Date('2025-08-24'), changeFrequency: 'monthly', priority: 0.6 },
     // Legal
     { url: `${base}/privacy-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${base}/cookie-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
