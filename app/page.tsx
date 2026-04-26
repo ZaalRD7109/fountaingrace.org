@@ -120,7 +120,18 @@ export default function HomePage() {
             <Link href="/sunday-services" className="inline-block border-2 border-white text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-white hover:text-[#008080] transition-colors text-sm">
               Sunday Services
             </Link>
+            <a
+              href="https://wa.me/27752592555"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#25d366] text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm"
+            >
+              WhatsApp Us
+            </a>
           </div>
+          <p className="text-teal-300 text-xs mt-5">
+            323 B Danie Theron Street, Pretoria North · +27 75 259 2555
+          </p>
         </div>
       </section>
 
