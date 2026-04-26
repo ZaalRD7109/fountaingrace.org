@@ -11,7 +11,7 @@ export default function Footer() {
           <div>
             <Link href="/" className="block mb-4">
               <Image
-                src="/logo-square.png"
+                src="/logo-square.webp"
                 alt="Fountain of Grace International logo"
                 width={80}
                 height={80}

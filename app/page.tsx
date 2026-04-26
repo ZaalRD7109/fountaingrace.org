@@ -141,7 +141,7 @@ export default function HomePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div className="relative w-full h-64 md:h-80 rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/sunday-service.jpg"
+                src="/sunday-service.webp"
                 alt="Sunday service at Fountain of Grace International, Pretoria North"
                 fill
                 priority
@@ -259,7 +259,7 @@ export default function HomePage() {
 
             <div className="relative w-full h-72 rounded-xl overflow-hidden shadow-md">
               <Image
-                src="/pastor-ricardo.jpg"
+                src="/pastor-ricardo.webp"
                 alt="Pastor Ricardo Zaal, founder and lead pastor of Fountain of Grace International, Pretoria North"
                 fill
                 className="object-cover"
