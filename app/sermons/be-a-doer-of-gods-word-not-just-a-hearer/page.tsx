@@ -19,13 +19,14 @@ export const metadata: Metadata = {
   },
 }
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: "Be a Doer of God's Word, Not Just a Hearer",
-  description: 'Based on James 1:21-25. Pastor Ricardo Zaal teaches on the difference between passive hearing and active doing of God\'s word — and the blessing that comes to those who act.',
-  author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
-  publisher: {
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Be a Doer of God\'s Word, Not Just a Hearer',
+    description: 'Based on James 1:21-25. Pastor Ricardo Zaal teaches on the difference between passive hearing and active doing of God\'s word — and the blessing that comes to those who act.',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
     '@type': 'Church',
     name: 'Fountain of Grace International',
     address: {
@@ -36,9 +37,19 @@ const jsonLd = {
       addressCountry: 'ZA',
     },
   },
-  datePublished: '2025-02-16',
-  url: "https://www.fountaingrace.org/sermons/be-a-doer-of-gods-word-not-just-a-hearer",
-}
+    datePublished: '2025-02-16',
+    url: 'https://www.fountaingrace.org/sermons/be-a-doer-of-gods-word-not-just-a-hearer',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+      { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
+      { '@type': 'ListItem', position: 3, name: "Be a Doer of God's Word, Not Just a Hearer", item: 'https://www.fountaingrace.org/sermons/be-a-doer-of-gods-word-not-just-a-hearer' },
+    ],
+  },
+]
 
 export default function SermonPage() {
   return (

@@ -19,16 +19,14 @@ export const metadata: Metadata = {
   },
 }
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: "Why You're Not Moving Forward — And How to Break It",
-  description: "Pastor Ricardo Zaal unpacks the 4 root causes of being stuck and the biblical framework for finally moving forward. Matthew 14:28, James 1:6-8, Proverbs 3:5-6.",
-  author: {
-    '@type': 'Person',
-    name: 'Pastor Ricardo Zaal',
-  },
-  publisher: {
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'Why You\'re Not Moving Forward — And How to Break It',
+    description: 'Pastor Ricardo Zaal unpacks the 4 root causes of being stuck and the biblical framework for finally moving forward. Matthew 14:28, James 1:6-8, Proverbs 3:5-6.',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
     '@type': 'Church',
     name: 'Fountain of Grace International',
     address: {
@@ -39,9 +37,19 @@ const jsonLd = {
       addressCountry: 'ZA',
     },
   },
-  datePublished: '2025-03-01',
-  url: 'https://www.fountaingrace.org/sermons/why-youre-not-moving-forward-and-how-to-break-it',
-}
+    datePublished: '2025-03-01',
+    url: 'https://www.fountaingrace.org/sermons/why-youre-not-moving-forward-and-how-to-break-it',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+      { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
+      { '@type': 'ListItem', position: 3, name: "Why You're Not Moving Forward — And How to Break It", item: 'https://www.fountaingrace.org/sermons/why-youre-not-moving-forward-and-how-to-break-it' },
+    ],
+  },
+]
 
 export default function SermonPage() {
   return (

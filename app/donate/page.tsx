@@ -19,34 +19,45 @@ export const metadata: Metadata = {
   },
 }
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'DonateAction',
-  name: 'Donate to Fountain of Grace International',
-  target: 'https://www.fountaingrace.org/donate',
-  description:
-    'Support Fountain of Grace International (NPO 316-193) — a nonprofit in Pretoria North serving families and communities through practical programs.',
-  recipient: {
-    '@type': 'NGO',
-    name: 'Fountain of Grace International',
-    identifier: { '@type': 'PropertyValue', propertyID: 'NPO', value: '316-193' },
-    url: 'https://www.fountaingrace.org',
-    address: {
-      '@type': 'PostalAddress',
-      streetAddress: '323 B Danie Theron Street',
-      addressLocality: 'Pretoria North',
-      addressRegion: 'Gauteng',
-      postalCode: '0116',
-      addressCountry: 'ZA',
-    },
-    contactPoint: {
-      '@type': 'ContactPoint',
-      telephone: '+27-75-259-2555',
-      email: 'info@fountaingrace.org',
-      contactType: 'donor support',
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'DonateAction',
+    name: 'Donate to Fountain of Grace International',
+    target: 'https://www.fountaingrace.org/donate',
+    description:
+      'Support Fountain of Grace International (NPO 316-193) — a nonprofit in Pretoria North serving families and communities through practical programs.',
+    recipient: {
+      '@type': 'NGO',
+      name: 'Fountain of Grace International',
+      nonprofitStatus: 'RegisteredNonprofit',
+      identifier: { '@type': 'PropertyValue', propertyID: 'NPO', value: '316-193' },
+      url: 'https://www.fountaingrace.org',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '323 B Danie Theron Street',
+        addressLocality: 'Pretoria North',
+        addressRegion: 'Gauteng',
+        postalCode: '0182',
+        addressCountry: 'ZA',
+      },
+      contactPoint: {
+        '@type': 'ContactPoint',
+        telephone: '+27752592555',
+        email: 'info@fountaingrace.org',
+        contactType: 'donor support',
+      },
     },
   },
-}
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+      { '@type': 'ListItem', position: 2, name: 'Donate', item: 'https://www.fountaingrace.org/donate' },
+    ],
+  },
+]
 
 export default function DonatePage() {
   return (

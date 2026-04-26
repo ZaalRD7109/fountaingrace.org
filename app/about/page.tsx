@@ -42,7 +42,7 @@ const jsonLd = [
     '@context': 'https://schema.org',
     '@type': 'Person',
     name: 'Ricardo Zaal',
-    jobTitle: 'Lead Pastor',
+    jobTitle: 'Founder and Lead Pastor',
     worksFor: {
       '@type': 'Organization',
       name: 'Fountain of Grace International',
@@ -52,6 +52,14 @@ const jsonLd = [
       addressLocality: 'Pretoria North',
       addressCountry: 'ZA',
     },
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+      { '@type': 'ListItem', position: 2, name: 'About', item: 'https://www.fountaingrace.org/about' },
+    ],
   },
 ]
 

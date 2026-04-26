@@ -74,6 +74,14 @@ const jsonLd = [
       name: 'Ricardo Zaal',
     },
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+      { '@type': 'ListItem', position: 2, name: 'Our Pastors', item: 'https://www.fountaingrace.org/pastors' },
+    ],
+  },
 ]
 
 const timeline = [
@@ -299,3 +307,4 @@ export default function PastorsPage() {
     </>
   )
 }
+                                        

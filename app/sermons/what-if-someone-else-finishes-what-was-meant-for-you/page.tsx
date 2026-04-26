@@ -19,13 +19,14 @@ export const metadata: Metadata = {
   },
 }
 
-const jsonLd = {
-  '@context': 'https://schema.org',
-  '@type': 'Article',
-  headline: 'What If Someone Else Finishes What Was Meant for You?',
-  description: 'Pastor Ricardo Zaal explores the difference between substitution and replacement, using Jonah, Saul, Esther, and the book of Revelation to challenge the listener to act before their window closes.',
-  author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
-  publisher: {
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: 'What If Someone Else Finishes What Was Meant for You?',
+    description: 'Pastor Ricardo Zaal explores the difference between substitution and replacement, using Jonah, Saul, Esther, and the book of Revelation to challenge the listener to act before their window closes.',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
     '@type': 'Church',
     name: 'Fountain of Grace International',
     address: {
@@ -36,9 +37,19 @@ const jsonLd = {
       addressCountry: 'ZA',
     },
   },
-  datePublished: '2025-02-22',
-  url: 'https://www.fountaingrace.org/sermons/what-if-someone-else-finishes-what-was-meant-for-you',
-}
+    datePublished: '2025-02-22',
+    url: 'https://www.fountaingrace.org/sermons/what-if-someone-else-finishes-what-was-meant-for-you',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+      { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
+      { '@type': 'ListItem', position: 3, name: "What If Someone Else Finishes What Was Meant for You?", item: 'https://www.fountaingrace.org/sermons/what-if-someone-else-finishes-what-was-meant-for-you' },
+    ],
+  },
+]
 
 export default function SermonPage() {
   return (
