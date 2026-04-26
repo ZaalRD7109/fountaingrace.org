@@ -10,6 +10,9 @@ import AnalyticsLoader from '@/components/AnalyticsLoader'
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.fountaingrace.org'),
   robots: 'index, follow',
+  verification: {
+    google: 'tj2UtOjgKmGsrYwOwYPKH929JoEN3dpDpJZx-h9F0dE',
+  },
   // Global fallback OG image — override per-page by adding openGraph.images in each page's metadata
   openGraph: {
     siteName: 'Fountain of Grace International',
@@ -39,7 +42,6 @@ export default function RootLayout({
     <html lang="en-ZA">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="google-site-verification" content="tj2UtOjgKmGsrYwOwYPKH929JoEN3dpDpJZx-h9F0dE" />
         {/* Favicon served automatically from app/icon.png and app/apple-icon.png */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
