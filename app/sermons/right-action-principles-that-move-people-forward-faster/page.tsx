@@ -37,7 +37,7 @@ const jsonLd = [
       addressCountry: 'ZA',
     },
   },
-    datePublished: '2025-03-15',
+    datePublished: '2026-03-15',
     url: 'https://www.fountaingrace.org/sermons/right-action-principles-that-move-people-forward-faster',
   },
   {
@@ -75,10 +75,24 @@ export default function SermonPage() {
               James 2:17 — faith without works is dead. Part 1 gave you the principles. Part 2 asks the harder question: why do you still know, but not act? What separates the person who plans from the person who moves?
             </p>
             <p className="text-white/60 text-sm">
-              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 15 March 2025
+              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 15 March 2026
             </p>
           </div>
         </header>
+
+        <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src="https://www.youtube.com/embed/pM8THfQE3MU"
+                title="Part 2: Right Action — The Principles That Move People Forward Faster"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
 
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto space-y-6">

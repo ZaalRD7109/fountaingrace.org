@@ -37,7 +37,7 @@ const jsonLd = [
       addressCountry: 'ZA',
     },
   },
-    datePublished: '2025-02-16',
+    datePublished: '2026-02-16',
     url: 'https://www.fountaingrace.org/sermons/be-a-doer-of-gods-word-not-just-a-hearer',
   },
   {
@@ -72,7 +72,7 @@ export default function SermonPage() {
               James 1:21-25. The person who only hears and does not act is like someone who looks in a mirror, sees what they look like, and immediately forgets. The one who acts — this one will be blessed in what they do.
             </p>
             <p className="text-white/60 text-sm">
-              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 16 February 2025
+              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 16 February 2026
             </p>
           </div>
         </header>

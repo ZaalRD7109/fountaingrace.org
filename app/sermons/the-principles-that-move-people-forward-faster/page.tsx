@@ -37,7 +37,7 @@ const jsonLd = [
       addressCountry: 'ZA',
     },
   },
-    datePublished: '2025-03-08',
+    datePublished: '2026-03-08',
     url: 'https://www.fountaingrace.org/sermons/the-principles-that-move-people-forward-faster',
   },
   {
@@ -135,10 +135,24 @@ export default function SermonPage() {
               You have been praying. You have been trying. Nothing has changed. This message is for the person who feels stuck, financially trapped, or circling the same spot. God often changes results through principles — not only through waiting.
             </p>
             <p className="text-white/60 text-sm">
-              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 8 March 2025
+              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 8 March 2026
             </p>
           </div>
         </header>
+
+        <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src="https://www.youtube.com/embed/hmBthWSxN6g"
+                title="The Principles That Move People Forward Faster"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
 
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">

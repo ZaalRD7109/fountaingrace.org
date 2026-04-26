@@ -37,7 +37,7 @@ const jsonLd = [
       addressCountry: 'ZA',
     },
   },
-    datePublished: '2025-02-22',
+    datePublished: '2026-02-22',
     url: 'https://www.fountaingrace.org/sermons/what-if-someone-else-finishes-what-was-meant-for-you',
   },
   {
@@ -72,10 +72,24 @@ export default function SermonPage() {
               This message is not about religion. It is about life. You know you are capable of more. You keep postponing. What if the window closes?
             </p>
             <p className="text-white/60 text-sm">
-              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 22 February 2025
+              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 22 February 2026
             </p>
           </div>
         </header>
+
+        <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src="https://www.youtube.com/embed/jwUGYb3uuQI"
+                title="What If Someone Else Finishes What Was Meant for You?"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
 
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">

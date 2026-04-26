@@ -21,50 +21,130 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'the-principle-that-activates-everything',
+    title: 'The Principle That Activates Everything: Right Action',
+    date: '2026-04-26',
+    dateDisplay: '26 April 2026',
+    intro:
+      'You have prayed. You have believed. But something is still not activating. Right action — obedient, timely movement in the right direction — is the principle that turns faith into results. James 2:17.',
+  },
+  {
+    slug: 'why-some-problems-wont-leave-until-you-understand-this',
+    title: "Why Some Problems Won't Leave Until You Understand This",
+    date: '2026-04-19',
+    dateDisplay: '19 April 2026',
+    intro:
+      'The blood of Jesus has five specific functions that most believers have never applied. Problems that keep returning do so until you understand what Revelation 12:11 actually means by "they overcame."',
+  },
+  {
+    slug: 'you-love-god-but-are-you-in-the-game',
+    title: 'You Love God — But Are You Actually in the Game?',
+    date: '2026-04-05',
+    dateDisplay: '5 April 2026',
+    intro:
+      'The crowd cheered Jesus and then crucified Him. The donkey carried Him in silence and made history. Based on Matthew 21 and Luke 19, this message asks which one describes your relationship with God right now.',
+  },
+  {
+    slug: 'when-knowing-is-the-problem',
+    title: 'When Knowing Is the Problem',
+    date: '2026-02-15',
+    dateDisplay: '15 February 2026',
+    intro:
+      'James 1:22 — the hearer who does not act is like a man who looks in a mirror and walks away forgetting his face. You already know what to do. That is exactly the problem this message addresses.',
+  },
+  {
+    slug: 'when-good-things-block-god-things',
+    title: 'When Good Things Block God Things',
+    date: '2026-02-08',
+    dateDisplay: '8 February 2026',
+    intro:
+      'You can be climbing a ladder leaned against the wrong wall. Good intentions and genuine busyness — but misaligned with God\'s appointed season. The Martha pattern is more common than most people admit.',
+  },
+  {
+    slug: 'your-resolution-didnt-fail-you-quit-acting',
+    title: "Your Resolution Didn't Fail — You Quit Acting",
+    date: '2026-01-25',
+    dateDisplay: '25 January 2026',
+    intro:
+      'The resolution was not the problem. Your habits did not hear the declaration. You are not lazy — you are tired of failing. This message explains the gap between motivation and consistent action.',
+  },
+  {
+    slug: 'the-system-youre-praying-against-without-knowing-it',
+    title: "The System You're Praying Against Without Knowing It",
+    date: '2026-01-18',
+    dateDisplay: '18 January 2026',
+    intro:
+      'God already opened the door. The system is already set. But disobedience, ingratitude, and praying for what is already provided — without walking through it — is unknowingly working against your own breakthrough.',
+  },
+  {
+    slug: 'why-does-your-life-keep-collapsing',
+    title: 'Why Does Your Life Keep Collapsing If God Is For You?',
+    date: '2026-01-11',
+    dateDisplay: '11 January 2026',
+    intro:
+      'Living 70 years but repeating the same one. Collapsing in the same places. Storms do not create what spills out — they reveal what was already there. This message names the root, not just the symptom.',
+  },
+  {
+    slug: 'why-some-things-refuse-to-move',
+    title: 'Why Some Things Refuse to Move',
+    date: '2026-01-04',
+    dateDisplay: '4 January 2026',
+    intro:
+      'The name of Jesus is not a religious formula to end prayers. It is a legal claim that requires relationship and order. Philippians 2:9-10 and Matthew 7:22-23 explain why some things still will not move.',
+  },
+  {
+    slug: 'why-your-prayers-are-not-changing-your-life',
+    title: 'Why Your Prayers Are Not Changing Your Life',
+    date: '2026-01-04',
+    dateDisplay: '4 January 2026',
+    intro:
+      'A prophetic word only activates when faith meets the right action step. Most regrets are not about what you did wrong — they are about what you never did at all. The foundation was laid. Nobody ever added the bricks.',
+  },
+  {
     slug: 'right-action-principles-that-move-people-forward-faster',
     title: 'Part 2: Right Action — The Principles That Move People Forward Faster',
-    date: '2025-03-15',
-    dateDisplay: '15 March 2025',
+    date: '2026-03-15',
+    dateDisplay: '15 March 2026',
     intro:
       'Knowing the principles is not the same as applying them. Part 2 asks the harder question: why do you still know, but not act? What separates the person who plans from the person who moves?',
   },
   {
     slug: 'the-principles-that-move-people-forward-faster',
     title: 'The Principles That Move People Forward Faster',
-    date: '2025-03-08',
-    dateDisplay: '8 March 2025',
+    date: '2026-03-08',
+    dateDisplay: '8 March 2026',
     intro:
       'You have been praying. You have been trying. Nothing has changed. This message gives 10 biblical principles — obedience, positioning, wisdom, strategy, stewardship, relationships, and more.',
   },
   {
     slug: 'what-if-someone-else-finishes-what-was-meant-for-you',
     title: 'What If Someone Else Finishes What Was Meant for You?',
-    date: '2025-02-22',
-    dateDisplay: '22 February 2025',
+    date: '2026-02-22',
+    dateDisplay: '22 February 2026',
     intro:
       'You know your potential. You keep postponing. Based on Esther 4:14, this message asks the uncomfortable question: what if your window closes and someone else steps into your assignment?',
   },
   {
     slug: 'follow-your-inner-voice-discover-your-destiny',
     title: 'Follow Your Inner Voice — Discover Your Destiny',
-    date: '2025-02-24',
-    dateDisplay: '24 February 2025',
+    date: '2026-02-24',
+    dateDisplay: '24 February 2026',
     intro:
       'Before you were born, God already set you apart. This message challenges you to stop listening to the voices that told you to stop running — and start moving in the direction God placed inside you.',
   },
   {
     slug: 'be-a-doer-of-gods-word-not-just-a-hearer',
     title: "Be a Doer of God's Word, Not Just a Hearer",
-    date: '2025-02-16',
-    dateDisplay: '16 February 2025',
+    date: '2026-02-16',
+    dateDisplay: '16 February 2026',
     intro:
       'James 1:21-25 — the person who hears and forgets is like a man who looks in a mirror and walks away. The blessing is attached to the doing, not the hearing.',
   },
   {
     slug: 'why-youre-not-moving-forward-and-how-to-break-it',
     title: "Why You're Not Moving Forward — And How to Break It",
-    date: '2025-03-01',
-    dateDisplay: '1 March 2025',
+    date: '2026-03-01',
+    dateDisplay: '1 March 2026',
     intro:
       'Most people are not stuck because of a lack of information. They are stuck because of four specific patterns that disguise themselves as wisdom. This message names them and breaks them.',
   },

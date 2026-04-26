@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
 import { Poppins } from 'next/font/google'
 import './globals.css'
@@ -14,6 +14,11 @@ const poppins = Poppins({
   display: 'swap',
   variable: '--font-poppins',
 })
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+}
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.fountaingrace.org'),
@@ -49,7 +54,6 @@ export default function RootLayout({
   return (
     <html lang="en-ZA" className={poppins.variable}>
       <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
         {/* Favicon served automatically from app/icon.png and app/apple-icon.png */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />

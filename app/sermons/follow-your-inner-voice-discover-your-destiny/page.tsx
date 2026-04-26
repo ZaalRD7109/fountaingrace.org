@@ -37,7 +37,7 @@ const jsonLd = [
       addressCountry: 'ZA',
     },
   },
-    datePublished: '2025-02-24',
+    datePublished: '2026-02-24',
     url: 'https://www.fountaingrace.org/sermons/follow-your-inner-voice-discover-your-destiny',
   },
   {
@@ -72,7 +72,7 @@ export default function SermonPage() {
               Before you were born, God already set you apart. He did not research you on Google. He formed you, made you, and wrote what your life would look like. This message is for the person whose inner voice keeps saying &quot;go&quot; — while other voices keep saying &quot;stop.&quot;
             </p>
             <p className="text-white/60 text-sm">
-              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 24 February 2025
+              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 24 February 2026
             </p>
           </div>
         </header>

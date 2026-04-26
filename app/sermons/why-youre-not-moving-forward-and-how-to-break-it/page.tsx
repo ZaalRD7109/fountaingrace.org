@@ -37,7 +37,7 @@ const jsonLd = [
       addressCountry: 'ZA',
     },
   },
-    datePublished: '2025-03-01',
+    datePublished: '2026-03-01',
     url: 'https://www.fountaingrace.org/sermons/why-youre-not-moving-forward-and-how-to-break-it',
   },
   {
@@ -73,10 +73,24 @@ export default function SermonPage() {
               You know exactly what to do. But you are not doing it. The problem is not a lack of knowledge — it is something deeper.
             </p>
             <p className="text-white/60 text-sm">
-              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 1 March 2025
+              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 1 March 2026
             </p>
           </div>
         </header>
+
+        <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src="https://www.youtube.com/embed/fI9G4-OvxnA"
+                title="Why You're Not Moving Forward — And How to Break It"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
 
         {/* BODY */}
         <section className="bg-white py-14 px-4 sm:px-6">
