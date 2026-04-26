@@ -17,6 +17,7 @@ export default function CookieBanner() {
   function accept() {
     localStorage.setItem('FGI_cookieConsent', 'accepted')
     setVisible(false)
+    window.dispatchEvent(new Event('fgi:consent-accepted'))
   }
 
   function decline() {

@@ -154,6 +154,7 @@ export default function AboutPage() {
                   src="/pastor-bio.jpg"
                   alt="Pastor Ricardo Zaal — founder and lead pastor of Fountain of Grace International, Pretoria North"
                   fill
+                  priority
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 40vw"
                 />
