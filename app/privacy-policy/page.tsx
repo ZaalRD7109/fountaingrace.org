@@ -231,7 +231,11 @@ export default function PrivacyPolicyPage() {
             <ul className="space-y-2 pl-4">
               <li className="flex gap-2">
                 <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
-                <span><strong>Google Analytics</strong> — anonymous website usage tracking. IP addresses are anonymised. You can opt out at <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">tools.google.com/dlpage/gaoptout</a>.</span>
+                <span><strong>Google Analytics 4</strong> — anonymous website usage tracking. IP addresses are anonymised. Only loads after you accept cookies. You can opt out at <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">tools.google.com/dlpage/gaoptout</a>.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span><strong>Microsoft Clarity</strong> — anonymous session recording and heatmapping to understand how people use our site. Only loads after you accept cookies. See <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">Microsoft's Privacy Policy</a>.</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-[#008080] mt-1 flex-shrink-0">·</span>

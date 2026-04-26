@@ -256,6 +256,14 @@ export default function ContactPage() {
             form so we can prepare specifically for you.
           </p>
           <TallyEmbed formId="WOMeYP" />
+          <p className="text-xs text-[#7d7d7d] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
+            Your information is collected by Fountain of Grace International (NPO 316-193) and used
+            only to respond to your message. We do not share or sell your data. See our{' '}
+            <Link href="/privacy-policy" className="text-[#008080] hover:underline font-medium">
+              Privacy Policy
+            </Link>{' '}
+            for full details. POPIA compliant.
+          </p>
         </div>
       </section>
 

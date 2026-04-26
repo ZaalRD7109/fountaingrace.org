@@ -55,6 +55,7 @@ export default function Footer() {
                 { href: '/donate', label: 'Donate' },
                 { href: '/prayer', label: 'Prayer Request' },
                 { href: '/volunteer', label: 'Volunteer' },
+                { href: '/faq', label: 'FAQ' },
                 { href: '/sermons', label: 'Sermons' },
                 { href: '/contact', label: 'Contact' },
               ].map((link) => (
