@@ -306,7 +306,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold text-white mb-4">
             Come and meet them this Sunday in Pretoria North.
           </h2>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
             <Link
               href="/plan-your-visit"
               className="inline-block bg-white text-[#008080] font-bold px-7 py-3.5 rounded-lg hover:bg-blue-50 transition-colors"
@@ -314,10 +314,16 @@ export default function AboutPage() {
               Plan Your Visit
             </Link>
             <Link
-              href="/contact"
+              href="/donate"
+              className="inline-block bg-[#FFD600] text-[#1a1a1a] font-bold px-7 py-3.5 rounded-lg hover:bg-[#e6c200] transition-colors"
+            >
+              Support FGI
+            </Link>
+            <Link
+              href="/prayer"
               className="inline-block border-2 border-white text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-white hover:text-[#008080] transition-colors"
             >
-              Contact Us
+              Prayer Request
             </Link>
           </div>
         </div>

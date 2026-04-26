@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import TallyEmbed from '@/components/TallyEmbed'
 
 export const metadata: Metadata = {
   title: 'Community Programs | FGI NPO 316-193 | Pretoria North',
@@ -318,69 +319,10 @@ export default function CommunityImpactPage() {
       <section id="volunteer-form" className="bg-white py-16 px-4 sm:px-6">
         <div className="section-container max-w-xl">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Volunteer Application</h2>
-          <p className="text-[#7d7d7d] mb-8 leading-relaxed">
+          <p className="text-[#7d7d7d] mb-6 leading-relaxed">
             No experience needed. Fill in your details and we will reach out with next steps.
           </p>
-          <form action="#" method="POST" className="space-y-5" aria-label="Volunteer application form">
-            <div>
-              <label htmlFor="vol-name" className="block text-sm font-medium text-gray-700 mb-1">
-                Full Name <span className="text-red-500" aria-hidden="true">*</span>
-              </label>
-              <input
-                id="vol-name" name="name" type="text" required autoComplete="name"
-                placeholder="First and last name"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#008080]"
-              />
-            </div>
-            <div>
-              <label htmlFor="vol-phone" className="block text-sm font-medium text-gray-700 mb-1">
-                Phone Number <span className="text-red-500" aria-hidden="true">*</span>
-              </label>
-              <input
-                id="vol-phone" name="phone" type="tel" required autoComplete="tel"
-                placeholder="+27 82 000 0000"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#008080]"
-              />
-            </div>
-            <div>
-              <label htmlFor="vol-whatsapp" className="block text-sm font-medium text-gray-700 mb-1">
-                WhatsApp Number
-              </label>
-              <input
-                id="vol-whatsapp" name="whatsapp" type="tel" autoComplete="tel"
-                placeholder="If different from above"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#008080]"
-              />
-            </div>
-            <div>
-              <label htmlFor="vol-availability" className="block text-sm font-medium text-gray-700 mb-1">
-                Availability
-              </label>
-              <input
-                id="vol-availability" name="availability" type="text"
-                placeholder="e.g. Weekends, Saturday mornings"
-                className="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-[#008080]"
-              />
-            </div>
-            <fieldset>
-              <legend className="block text-sm font-medium text-gray-700 mb-2">Areas of interest</legend>
-              <div className="space-y-2">
-                {['Food programs', 'Administration', 'Events', 'Other'].map((area) => (
-                  <label key={area} className="flex items-center gap-3 text-sm text-gray-700 cursor-pointer">
-                    <input
-                      type="checkbox" name="areas"
-                      value={area.toLowerCase().replace(' ', '_')}
-                      className="w-4 h-4 accent-[#008080] rounded"
-                    />
-                    {area}
-                  </label>
-                ))}
-              </div>
-            </fieldset>
-            <button type="submit" className="w-full btn-teal py-4 text-base">
-              Submit Volunteer Application
-            </button>
-          </form>
+          <TallyEmbed formId="ODJjJA" />
         </div>
       </section>
 

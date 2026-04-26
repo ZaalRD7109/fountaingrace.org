@@ -53,6 +53,8 @@ export default function Footer() {
                 { href: '/about', label: 'About Us' },
                 { href: '/community-impact', label: 'Community Impact' },
                 { href: '/donate', label: 'Donate' },
+                { href: '/prayer', label: 'Prayer Request' },
+                { href: '/volunteer', label: 'Volunteer' },
                 { href: '/sermons', label: 'Sermons' },
                 { href: '/contact', label: 'Contact' },
               ].map((link) => (
