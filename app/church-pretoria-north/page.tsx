@@ -78,13 +78,13 @@ export default function ChurchPretoriaPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
             Pretoria North · Every Sunday at 09:00
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             A church in Pretoria North for real people.
           </h1>
-          <p className="text-teal-100 text-base leading-relaxed mb-6">
+          <p className="text-white text-base leading-relaxed mb-6">
             Fountain of Grace International is a Christian church in Pretoria North that meets every Sunday at 09:00.
             Practical teaching. Real community. Everyone is welcome — no experience needed.
           </p>
@@ -101,7 +101,7 @@ export default function ChurchPretoriaPage() {
               WhatsApp Us
             </a>
           </div>
-          <p className="text-teal-300 text-xs mt-5">
+          <p className="text-white text-xs mt-5">
             323 B Danie Theron Street, Pretoria North · +27 75 259 2555
           </p>
         </div>
@@ -209,7 +209,7 @@ export default function ChurchPretoriaPage() {
           <h2 className="text-xl font-bold text-white mb-3">
             Come and see this Sunday.
           </h2>
-          <p className="text-teal-100 text-sm mb-6 max-w-md mx-auto">
+          <p className="text-white text-sm mb-6 max-w-md mx-auto">
             You do not have to have it together to walk through the door. Sunday at 09:00,
             323 B Danie Theron Street, Pretoria North.
           </p>

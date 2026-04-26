@@ -59,13 +59,13 @@ export default function PrayerPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
             Prayer · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             We will pray with you.
           </h1>
-          <p className="text-teal-100 text-base leading-relaxed">
+          <p className="text-white text-base leading-relaxed">
             Submit your request below. The pastoral team at Fountain of Grace International
             receives every request personally — nothing is shared publicly.
           </p>
@@ -175,7 +175,7 @@ export default function PrayerPage() {
           <h2 className="text-xl font-bold text-white mb-3">
             Want to connect in person?
           </h2>
-          <p className="text-teal-100 text-sm mb-6 max-w-md mx-auto">
+          <p className="text-white text-sm mb-6 max-w-md mx-auto">
             Sunday services at Fountain of Grace International are open to anyone going
             through anything. You do not have to have it together to walk through the door.
           </p>

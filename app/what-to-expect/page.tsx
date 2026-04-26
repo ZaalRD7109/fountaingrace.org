@@ -107,13 +107,13 @@ export default function WhatToExpectPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
             No surprises · No pressure · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             Here is what Sunday looks like — from the moment you arrive.
           </h1>
-          <p className="text-teal-100 text-base leading-relaxed">
+          <p className="text-white text-base leading-relaxed">
             Every unknown removed. Every question answered before you have to ask it.
           </p>
         </div>
@@ -131,7 +131,7 @@ export default function WhatToExpectPage() {
             ].map((fact) => (
               <div key={fact.label}>
                 <p className="text-2xl font-extrabold">{fact.value}</p>
-                <p className="text-blue-100 text-sm mt-1">{fact.label}</p>
+                <p className="text-white text-sm mt-1">{fact.label}</p>
               </div>
             ))}
           </div>
@@ -256,7 +256,7 @@ export default function WhatToExpectPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
             Ready to come this Sunday?
           </h2>
-          <p className="text-blue-100 mb-8 text-lg max-w-lg mx-auto">
+          <p className="text-white mb-8 text-lg max-w-lg mx-auto">
             Fill in your details and we will send you a WhatsApp message before you arrive.
           </p>
           <Link

@@ -129,13 +129,13 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
             About FGI · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             The people behind Fountain of Grace International.
           </h1>
-          <p className="text-teal-100 text-base leading-relaxed mb-5">
+          <p className="text-white text-base leading-relaxed mb-5">
             A small church in Pretoria North led by real people who live in your community.
           </p>
           <Link href="/pastors" className="inline-block border-2 border-white text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-white hover:text-[#008080] transition-colors text-sm">

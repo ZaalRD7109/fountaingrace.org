@@ -103,13 +103,13 @@ export default function PastorsPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-teal-200 font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
             Meet the Pastors · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             The people who lead Fountain of Grace International.
           </h1>
-          <p className="text-teal-100 text-base leading-relaxed mb-5">
+          <p className="text-white text-base leading-relaxed mb-5">
             Real people, living in Pretoria North, available to the people they lead. Not behind an appointment wall.
           </p>
           <Link href="/plan-your-visit" className="btn-primary text-sm">
@@ -275,7 +275,7 @@ export default function PastorsPage() {
           <h2 className="text-2xl font-bold text-white mb-4">
             Come and meet him this Sunday in Pretoria North.
           </h2>
-          <p className="text-teal-100 mb-8 max-w-xl mx-auto">
+          <p className="text-white mb-8 max-w-xl mx-auto">
             Every Sunday at 09:00. 323 B Danie Theron Street, Pretoria North.
             Fill in the form and we will reach out before you arrive.
           </p>
