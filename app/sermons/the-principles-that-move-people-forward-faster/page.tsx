@@ -180,4 +180,27 @@ export default function SermonPage() {
 
         <section className="bg-[#f0fafa] py-14 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto">
-            <h2 cl
+            <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Join Us This Sunday</h2>
+            <p className="text-[#555] leading-relaxed mb-6">
+              Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.
+            </p>
+            <div className="flex flex-wrap gap-4">
+              <Link
+                href="/plan-your-visit"
+                className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors"
+              >
+                Plan Your Visit
+              </Link>
+              <Link
+                href="/prayer"
+                className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
+              >
+                Send a Prayer Request
+              </Link>
+            </div>
+          </div>
+        </section>
+      </article>
+    </>
+  )
+}
