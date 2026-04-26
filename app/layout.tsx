@@ -72,11 +72,4 @@ export default function RootLayout({
               if (window.location.search.indexOf('utm_') !== -1) {
                 var cleanUrl = window.location.origin + window.location.pathname + window.location.hash;
                 window.history.replaceState({}, document.title, cleanUrl);
-              }
-            }, 1500);
-          `}
-        </Script>
-      </body>
-    </html>
-  )
-}
+             

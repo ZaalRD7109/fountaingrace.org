@@ -3,17 +3,17 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Church in Pretoria North | Fountain of Grace International',
+  title: 'Church in Pretoria North | Sunday Service 09:00 | Fountain of Grace',
   description:
-    'A welcoming Christian church in Pretoria North. Sunday services at 09:00. Practical Bible teaching, real community, personal follow-up. Everyone is welcome.',
+    'Looking for a welcoming church in Pretoria North? Join Fountain of Grace every Sunday at 09:00 for practical Bible teaching, real community, and personal support.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org',
   },
   openGraph: {
-    title: 'Church in Pretoria North | Fountain of Grace International',
+    title: 'Church in Pretoria North | Sunday Service 09:00 | Fountain of Grace',
     description:
-      'A welcoming Christian church in Pretoria North. Sunday services at 09:00. Practical Bible teaching, real community, personal follow-up. Everyone is welcome.',
+      'Looking for a welcoming church in Pretoria North? Join Fountain of Grace every Sunday at 09:00 for practical Bible teaching, real community, and personal support.',
     type: 'website',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org',
@@ -89,7 +89,48 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Event',
+    name: 'Sunday Service — Fountain of Grace International',
+    description: 'Weekly Sunday church service at Fountain of Grace International in Pretoria North. Practical Bible teaching, worship, and community. Everyone is welcome.',
+    startDate: 'T09:00:00+02:00',
+    endDate: 'T10:30:00+02:00',
+    eventSchedule: {
+      '@type': 'Schedule',
+      repeatFrequency: 'P1W',
+      byDay: 'https://schema.org/Sunday',
+      startTime: '09:00',
+      endTime: '10:30',
+    },
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    location: {
+      '@type': 'Place',
+      name: 'Fountain of Grace International',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '323 B Danie Theron Street',
+        addressLocality: 'Pretoria North',
+        addressRegion: 'Gauteng',
+        postalCode: '0182',
+        addressCountry: 'ZA',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: -25.672286342520497,
+        longitude: 28.172968674468688,
+      },
+    },
+    organizer: {
+      '@type': 'Church',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+    isAccessibleForFree: true,
+    url: 'https://www.fountaingrace.org/sunday-services',
+  }
 ]
 
 export default function HomePage() {
@@ -107,7 +148,7 @@ export default function HomePage() {
             Pretoria North · Every Sunday at 09:00
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
-            A church in Pretoria North built for real people.
+            A Christian Church in Pretoria North Built for Real People
           </h1>
           <p className="text-white text-base leading-relaxed mb-6">
             Fountain of Grace International is a Christian church in Pretoria North where you are personally
@@ -358,6 +399,4 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-    </>
-  )
-}
+  
