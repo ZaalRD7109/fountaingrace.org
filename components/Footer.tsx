@@ -18,8 +18,8 @@ export default function Footer() {
                 className="rounded-lg"
               />
             </Link>
-            <h3 className="text-[#1a1a1a] font-bold text-lg mb-3">Fountain of Grace International</h3>
-            <address className="not-italic text-sm leading-relaxed text-[#1a1a1a]">
+            <h3 className="text-white font-bold text-lg mb-3">Fountain of Grace International</h3>
+            <address className="not-italic text-sm leading-relaxed text-white">
               <p>323 B Danie Theron Street</p>
               <p>Pretoria North, Gauteng</p>
               <p className="mt-2">
@@ -39,13 +39,13 @@ export default function Footer() {
                   +27 75 259 2555
                 </a>
               </p>
-              <p className="mt-2 text-xs text-[#1a1a1a]">NPO No: 316-193</p>
+              <p className="mt-2 text-xs text-white">NPO No: 316-193</p>
             </address>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h3 className="text-[#1a1a1a] font-bold mb-3">Quick Links</h3>
+            <h3 className="text-white font-bold mb-3">Quick Links</h3>
             <ul className="space-y-2 text-sm">
               {[
                 { href: '/plan-your-visit', label: 'Plan Your Visit' },
@@ -62,7 +62,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-[#1a1a1a] font-medium hover:underline transition-colors"
+                    className="text-white font-medium hover:underline transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -73,9 +73,9 @@ export default function Footer() {
 
           {/* Service Info */}
           <div>
-            <h3 className="text-[#1a1a1a] font-bold mb-3">Sunday Services</h3>
-            <p className="text-sm text-[#1a1a1a] font-medium">Every Sunday at 09:00</p>
-            <p className="text-sm text-[#1a1a1a] mt-1">323 B Danie Theron Street, Pretoria North</p>
+            <h3 className="text-white font-bold mb-3">Sunday Services</h3>
+            <p className="text-sm text-white font-medium">Every Sunday at 09:00</p>
+            <p className="text-sm text-white mt-1">323 B Danie Theron Street, Pretoria North</p>
             <div className="mt-4">
               <Link
                 href="/plan-your-visit"
@@ -86,17 +86,17 @@ export default function Footer() {
             </div>
             <div className="mt-4 flex flex-wrap gap-3">
               <a href="https://www.facebook.com/FGIPta/" target="_blank" rel="noopener noreferrer"
-                className="text-[#1a1a1a] font-medium hover:underline text-sm"
+                className="text-white font-medium hover:underline text-sm"
                 aria-label="Fountain of Grace International on Facebook">
                 Facebook
               </a>
               <a href="https://www.youtube.com/@fgipta" target="_blank" rel="noopener noreferrer"
-                className="text-[#1a1a1a] font-medium hover:underline text-sm"
+                className="text-white font-medium hover:underline text-sm"
                 aria-label="Fountain of Grace International on YouTube">
                 YouTube
               </a>
               <a href="https://www.tiktok.com/@fountainofgraceintl" target="_blank" rel="noopener noreferrer"
-                className="text-[#1a1a1a] font-medium hover:underline text-sm"
+                className="text-white font-medium hover:underline text-sm"
                 aria-label="Fountain of Grace International on TikTok">
                 TikTok
               </a>
@@ -104,7 +104,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#006666] mt-10 pt-6 text-xs text-[#1a1a1a] flex flex-col sm:flex-row justify-between gap-3">
+        <div className="border-t border-white/20 mt-10 pt-6 text-xs text-white flex flex-col sm:flex-row justify-between gap-3">
           <p>© {new Date().getFullYear()} Fountain of Grace International. Registered NPO No: 316-193. Pretoria North, South Africa.</p>
           <nav aria-label="Legal links" className="flex flex-wrap gap-x-4 gap-y-1">
             <Link href="/privacy-policy" className="font-medium hover:underline transition-colors">Privacy Policy</Link>

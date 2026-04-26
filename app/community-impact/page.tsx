@@ -141,7 +141,7 @@ export default function CommunityImpactPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Community Impact · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -153,7 +153,7 @@ export default function CommunityImpactPage() {
           </p>
           <div className="inline-block bg-white text-[#008080] rounded-lg px-6 py-4 shadow-sm text-left">
             <p className="font-extrabold">NPO Registration Number: 316-193</p>
-            <p className="text-sm font-medium text-[#7d7d7d] mt-1">
+            <p className="text-sm font-medium text-[#595959] mt-1">
               Registered under the Nonprofit Organisations Act, 71 of 1997
             </p>
           </div>
@@ -164,7 +164,7 @@ export default function CommunityImpactPage() {
       <section className="bg-white py-16 px-4 sm:px-6">
         <div className="section-container max-w-3xl">
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">What We Do</h2>
-          <div className="space-y-4 text-[#7d7d7d] leading-relaxed text-lg">
+          <div className="space-y-4 text-[#595959] leading-relaxed text-lg">
             <p>
               We serve individuals and families across Pretoria North, Akasia, Orchards, Shosanguve, Montana,
               Wonderboom, Suiderberg, Amandasig, Rosslyn, and surrounding areas. Every program is built around a
@@ -183,7 +183,7 @@ export default function CommunityImpactPage() {
       <section className="bg-[#f0fafa] py-16 px-4 sm:px-6">
         <div className="section-container max-w-5xl">
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Our Programs</h2>
-          <p className="text-[#7d7d7d] mb-10">
+          <p className="text-[#595959] mb-10">
             Six active programs. Each built around a specific problem and a measurable outcome.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
@@ -228,7 +228,7 @@ export default function CommunityImpactPage() {
       <section className="bg-white py-16 px-4 sm:px-6">
         <div className="section-container max-w-3xl">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">How Your Support Reaches People</h2>
-          <p className="text-[#7d7d7d] mb-8 leading-relaxed">
+          <p className="text-[#595959] mb-8 leading-relaxed">
             We publish a transparent breakdown of how funds are used. Every donation is a vote of trust — this is how
             we honour it.
           </p>
@@ -240,7 +240,7 @@ export default function CommunityImpactPage() {
                   <th className="text-left py-3 font-semibold text-gray-700">Allocation (%)</th>
                 </tr>
               </thead>
-              <tbody className="text-[#7d7d7d]">
+              <tbody className="text-[#595959]">
                 {[
                   { cat: 'Food and basic aid', pct: '58%' },
                   { cat: 'Program materials and logistics', pct: '14%' },
@@ -256,7 +256,7 @@ export default function CommunityImpactPage() {
           </div>
           <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
             <h3 className="font-bold text-gray-900 mb-3">Donation Transparency Statement</h3>
-            <div className="space-y-3 text-sm text-[#7d7d7d] leading-relaxed">
+            <div className="space-y-3 text-sm text-[#595959] leading-relaxed">
               <p>
                 Fountain of Grace International is registered under the Nonprofit Organisations Act, 71 of 1997 (NPO
                 No: 316-193). All donations received are used exclusively for the programs and operational costs of
@@ -284,7 +284,7 @@ export default function CommunityImpactPage() {
             <div className="bg-white rounded-xl border border-gray-100 p-6 text-center hover:shadow-sm transition-shadow">
               <div className="text-4xl mb-3" aria-hidden="true">💳</div>
               <h3 className="font-bold text-gray-900 mb-2">Donate</h3>
-              <p className="text-sm text-[#7d7d7d] leading-relaxed mb-5">
+              <p className="text-sm text-[#595959] leading-relaxed mb-5">
                 Your donation goes directly into programs that serve people in Pretoria North. Every amount counts.
               </p>
               <Link href="/donate" className="btn-teal text-sm w-full block">
@@ -294,7 +294,7 @@ export default function CommunityImpactPage() {
             <div className="bg-white rounded-xl border border-gray-100 p-6 text-center hover:shadow-sm transition-shadow">
               <div className="text-4xl mb-3" aria-hidden="true">🙌</div>
               <h3 className="font-bold text-gray-900 mb-2">Volunteer With Us</h3>
-              <p className="text-sm text-[#7d7d7d] leading-relaxed mb-5">
+              <p className="text-sm text-[#595959] leading-relaxed mb-5">
                 No prior experience required. Fill in the form below — we will show you exactly what to do.
               </p>
               <Link href="/volunteer" className="btn-teal text-sm w-full block">
@@ -304,7 +304,7 @@ export default function CommunityImpactPage() {
             <div className="bg-white rounded-xl border border-gray-100 p-6 text-center hover:shadow-sm transition-shadow">
               <div className="text-4xl mb-3" aria-hidden="true">🤝</div>
               <h3 className="font-bold text-gray-900 mb-2">Partner With Us</h3>
-              <p className="text-sm text-[#7d7d7d] leading-relaxed mb-5">
+              <p className="text-sm text-[#595959] leading-relaxed mb-5">
                 Organisations looking to partner with a verified NPO in Pretoria North — we welcome the conversation.
               </p>
               <Link href="/contact" className="btn-teal text-sm w-full block">
@@ -319,11 +319,11 @@ export default function CommunityImpactPage() {
       <section id="volunteer-form" className="bg-white py-16 px-4 sm:px-6">
         <div className="section-container max-w-xl">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Volunteer Application</h2>
-          <p className="text-[#7d7d7d] mb-6 leading-relaxed">
+          <p className="text-[#595959] mb-6 leading-relaxed">
             No experience needed. Fill in your details and we will reach out with next steps.
           </p>
           <TallyEmbed formId="ODJjJA" />
-          <p className="text-xs text-[#7d7d7d] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
+          <p className="text-xs text-[#595959] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
             Your information is collected by Fountain of Grace International (NPO 316-193) and used
             only to process your volunteer application and contact you with next steps. We do not share or sell your data. See our{' '}
             <Link href="/privacy-policy" className="text-[#008080] hover:underline font-medium">
@@ -343,7 +343,7 @@ export default function CommunityImpactPage() {
               <dt className="font-semibold text-gray-900 mb-2">
                 Is Fountain of Grace International a registered NPO in South Africa?
               </dt>
-              <dd className="text-[#7d7d7d] leading-relaxed">
+              <dd className="text-[#595959] leading-relaxed">
                 Yes. Fountain of Grace International is registered under the Nonprofit Organisations Act, 71 of 1997,
                 with NPO Number 316-193. The organisation is based in Pretoria North and runs community programs
                 serving vulnerable individuals and families.
@@ -353,7 +353,7 @@ export default function CommunityImpactPage() {
               <dt className="font-semibold text-gray-900 mb-2">
                 How do I volunteer with an NPO in Pretoria North?
               </dt>
-              <dd className="text-[#7d7d7d] leading-relaxed">
+              <dd className="text-[#595959] leading-relaxed">
                 To volunteer with Fountain of Grace International in Pretoria North, complete the{' '}
                 <Link href="/volunteer" className="text-[#008080] font-semibold hover:underline">volunteer form here</Link>{' '}
                 or send a WhatsApp to +27 75 259 2555. No prior experience is required.

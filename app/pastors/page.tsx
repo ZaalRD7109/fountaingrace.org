@@ -103,7 +103,7 @@ export default function PastorsPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Meet the Pastors · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -143,7 +143,7 @@ export default function PastorsPage() {
                   { label: 'NPO registration', value: '316-193' },
                 ].map((stat) => (
                   <div key={stat.label}>
-                    <p className="text-xs text-[#7d7d7d] uppercase tracking-wider font-semibold">{stat.label}</p>
+                    <p className="text-xs text-[#595959] uppercase tracking-wider font-semibold">{stat.label}</p>
                     <p className="text-gray-900 font-bold">{stat.value}</p>
                   </div>
                 ))}
@@ -153,7 +153,7 @@ export default function PastorsPage() {
                   href="https://wa.me/27752592555"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-[#25d366] text-white font-semibold px-5 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
+                  className="inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-5 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
                 >
                   WhatsApp Pastor Ricardo
                 </a>
@@ -169,7 +169,7 @@ export default function PastorsPage() {
                 Founder &amp; Lead Pastor
               </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-6">Pastor Ricardo Zaal</h2>
-              <div className="space-y-4 text-[#7d7d7d] leading-relaxed">
+              <div className="space-y-4 text-[#595959] leading-relaxed">
                 <p>
                   Pastor Ricardo Zaal is the founder and lead pastor of Fountain of Grace
                   International in Pretoria North. He has been in ministry since 10 February 2000 —
@@ -225,7 +225,7 @@ export default function PastorsPage() {
                   </div>
                   <div className="pt-1.5 pb-2">
                     <p className="text-xs font-bold uppercase tracking-wider text-[#008080] mb-1">{item.year}</p>
-                    <p className="text-[#7d7d7d] leading-relaxed">{item.event}</p>
+                    <p className="text-[#595959] leading-relaxed">{item.event}</p>
                   </div>
                 </div>
               ))}
@@ -262,7 +262,7 @@ export default function PastorsPage() {
                 className="bg-white rounded-xl border border-gray-100 p-5 hover:shadow-sm transition-shadow"
               >
                 <h3 className="font-bold text-gray-900 mb-2">{val.title}</h3>
-                <p className="text-sm text-[#7d7d7d] leading-relaxed">{val.body}</p>
+                <p className="text-sm text-[#595959] leading-relaxed">{val.body}</p>
               </div>
             ))}
           </div>

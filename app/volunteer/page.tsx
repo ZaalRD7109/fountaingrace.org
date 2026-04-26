@@ -59,7 +59,7 @@ export default function VolunteerPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Get Involved · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -75,7 +75,7 @@ export default function VolunteerPage() {
       <section className="bg-white py-6 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
           <TallyEmbed formId="ODJjJA" />
-          <p className="text-xs text-[#7d7d7d] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
+          <p className="text-xs text-[#595959] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
             Your information is collected by Fountain of Grace International (NPO 316-193) and used
             only to process your volunteer application and contact you with next steps. We do not share or sell your data. See our{' '}
             <Link href="/privacy-policy" className="text-[#008080] hover:underline font-medium">

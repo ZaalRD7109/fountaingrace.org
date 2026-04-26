@@ -78,7 +78,7 @@ export default function ChurchPretoriaPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Pretoria North · Every Sunday at 09:00
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -96,7 +96,7 @@ export default function ChurchPretoriaPage() {
               href="https://wa.me/27752592555"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#25d366] text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm"
+              className="inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-6 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm"
             >
               WhatsApp Us
             </a>
@@ -111,7 +111,7 @@ export default function ChurchPretoriaPage() {
       <section className="bg-white py-14 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">What this church in Pretoria North is like</h2>
-          <div className="space-y-5 text-[#7d7d7d] leading-relaxed">
+          <div className="space-y-5 text-[#595959] leading-relaxed">
             <p>
               Fountain of Grace International is not built for people who already have it together. It is built for
               people who are dealing with something real — a difficult season, unanswered questions, or a need for
@@ -157,7 +157,7 @@ export default function ChurchPretoriaPage() {
       <section className="bg-white py-14 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-2xl font-bold text-gray-900 mb-5">More than a church</h2>
-          <div className="space-y-4 text-[#7d7d7d] leading-relaxed">
+          <div className="space-y-4 text-[#595959] leading-relaxed">
             <p>
               Fountain of Grace International is also a registered Non-Profit Organisation (NPO 316-193), operating
               six community programs in Pretoria North. These programs address food insecurity, emotional distress,
@@ -187,14 +187,14 @@ export default function ChurchPretoriaPage() {
       <section className="bg-gray-50 py-12 px-4 sm:px-6">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-xl font-bold text-gray-900 mb-4">Areas we serve</h2>
-          <p className="text-[#7d7d7d] text-sm leading-relaxed mb-5">
+          <p className="text-[#595959] text-sm leading-relaxed mb-5">
             People attend Fountain of Grace International from across the Pretoria North area:
           </p>
           <div className="flex flex-wrap gap-2">
             {serviceAreas.map((area) => (
               <span
                 key={area}
-                className="bg-white border border-gray-200 text-[#7d7d7d] text-sm rounded-full px-4 py-1.5 font-medium"
+                className="bg-white border border-gray-200 text-[#595959] text-sm rounded-full px-4 py-1.5 font-medium"
               >
                 {area}
               </span>

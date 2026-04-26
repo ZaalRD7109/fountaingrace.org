@@ -102,7 +102,7 @@ export default function DonateClient() {
       {/* ── HERO ─────────────────────────────────────────────────── */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6 text-center">
         <div className="max-w-xl mx-auto">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Support the work · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -130,7 +130,7 @@ export default function DonateClient() {
           ].map((item) => (
             <div key={item.label}>
               <p className="font-bold text-[#2a9df4] text-sm">{item.value}</p>
-              <p className="text-[#7d7d7d] text-xs">{item.label}</p>
+              <p className="text-[#595959] text-xs">{item.label}</p>
             </div>
           ))}
         </div>
@@ -146,7 +146,7 @@ export default function DonateClient() {
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2a9df4] mb-3">
               Where Your Money Goes — Specifically
             </h2>
-            <p className="text-[#7d7d7d] max-w-xl mx-auto leading-relaxed">
+            <p className="text-[#595959] max-w-xl mx-auto leading-relaxed">
               No vague promises. Here are the named programmes your donation funds directly.
             </p>
           </div>
@@ -215,7 +215,7 @@ export default function DonateClient() {
             {/* PayPal */}
             <div className="bg-white rounded-2xl border border-gray-100 shadow-[0_2px_12px_rgba(42,157,244,0.06)] p-7">
               <h3 className="text-lg font-bold text-gray-900 mb-1">Give via PayPal</h3>
-              <p className="text-sm text-[#7d7d7d] mb-5">
+              <p className="text-sm text-[#595959] mb-5">
                 For international donors — give securely in your own currency from anywhere
                 in the world.
               </p>
@@ -245,7 +245,7 @@ export default function DonateClient() {
             {/* EFT */}
             <div className="bg-white rounded-2xl border border-gray-100 shadow-[0_2px_12px_rgba(42,157,244,0.06)] p-7">
               <h3 className="text-lg font-bold text-gray-900 mb-1">Direct EFT (Bank Transfer)</h3>
-              <p className="text-sm text-[#7d7d7d] mb-5">
+              <p className="text-sm text-[#595959] mb-5">
                 Transfer directly to our FNB account using your banking app or internet
                 banking. Use your name as the reference.
               </p>
@@ -264,7 +264,7 @@ export default function DonateClient() {
                   </p>
                 ))}
               </div>
-              <p className="text-xs text-[#7d7d7d] mt-4">
+              <p className="text-xs text-[#595959] mt-4">
                 For a receipt, email proof of payment to{' '}
                 <a
                   href="mailto:info@fountaingrace.org"
@@ -278,7 +278,7 @@ export default function DonateClient() {
             {/* WhatsApp to give */}
             <div className="bg-white rounded-2xl border border-gray-100 shadow-[0_2px_12px_rgba(42,157,244,0.06)] p-7">
               <h3 className="text-lg font-bold text-gray-900 mb-1">Give via WhatsApp</h3>
-              <p className="text-sm text-[#7d7d7d] mb-5">
+              <p className="text-sm text-[#595959] mb-5">
                 Not sure which method to use? Message us directly and we will help you give
                 in the way that works best for you.
               </p>
@@ -286,7 +286,7 @@ export default function DonateClient() {
                 href="https://wa.me/27752592555?text=Hi%2C%20I%20would%20like%20to%20make%20a%20donation%20to%20Fountain%20of%20Grace%20International"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block w-full text-center bg-[#25d366] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors"
+                className="inline-block w-full text-center bg-[#25d366] text-[#1a1a1a] font-bold px-6 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors"
               >
                 WhatsApp Us →
               </a>

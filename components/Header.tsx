@@ -40,7 +40,7 @@ export default function Header() {
               <Link
                 key={link.href}
                 href={link.href}
-                className="text-sm text-[#7d7d7d] hover:text-gray-900 font-medium transition-colors duration-150"
+                className="text-sm text-[#595959] hover:text-gray-900 font-medium transition-colors duration-150"
               >
                 {link.label}
               </Link>
@@ -83,7 +83,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-sm text-[#7d7d7d] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors"
+                className="text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors"
               >
                 {link.label}
               </Link>

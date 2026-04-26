@@ -107,7 +107,7 @@ export default function WhatToExpectPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             No surprises · No pressure · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -158,7 +158,7 @@ export default function WhatToExpectPage() {
                   <h2 className="text-xl font-bold text-gray-900 mb-4">{phase.title}</h2>
                   <ul className="space-y-3">
                     {phase.items.map((item, i) => (
-                      <li key={i} className="flex gap-3 text-[#7d7d7d] leading-relaxed">
+                      <li key={i} className="flex gap-3 text-[#595959] leading-relaxed">
                         <span className="text-[#008080] mt-1 flex-shrink-0" aria-hidden="true">✓</span>
                         <span>{item}</span>
                       </li>
@@ -191,7 +191,7 @@ export default function WhatToExpectPage() {
                 className="flex gap-3 items-start bg-white border border-gray-100 rounded-lg p-4"
               >
                 <span className="text-[#008080] mt-0.5 flex-shrink-0 font-bold" aria-hidden="true">✗</span>
-                <p className="text-sm text-[#7d7d7d] leading-relaxed">{item}</p>
+                <p className="text-sm text-[#595959] leading-relaxed">{item}</p>
               </div>
             ))}
           </div>
@@ -209,7 +209,7 @@ export default function WhatToExpectPage() {
               <dt className="font-semibold text-gray-900 mb-2">
                 What happens at a church service in Pretoria North?
               </dt>
-              <dd className="text-[#7d7d7d] leading-relaxed">
+              <dd className="text-[#595959] leading-relaxed">
                 A church service at Fountain of Grace International in Pretoria North runs
                 approximately 90 minutes and includes worship music, a{' '}
                 <Link href="/sermons" className="text-[#008080] font-semibold hover:underline">practical teaching</Link>,
@@ -222,7 +222,7 @@ export default function WhatToExpectPage() {
               <dt className="font-semibold text-gray-900 mb-2">
                 Do I need to know anything about church before attending?
               </dt>
-              <dd className="text-[#7d7d7d] leading-relaxed">
+              <dd className="text-[#595959] leading-relaxed">
                 No. Fountain of Grace International in Pretoria North regularly welcomes people
                 who have never attended a church service before. There is no assumed knowledge
                 and nothing you are expected to know or do.{' '}
@@ -233,7 +233,7 @@ export default function WhatToExpectPage() {
               <dt className="font-semibold text-gray-900 mb-2">
                 Can I bring my children to the Sunday service?
               </dt>
-              <dd className="text-[#7d7d7d] leading-relaxed">
+              <dd className="text-[#595959] leading-relaxed">
                 Yes, children are welcome. For details about what is available for your child
                 on Sunday, WhatsApp us before you come so we can prepare properly.{' '}
                 <a

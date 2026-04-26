@@ -69,7 +69,7 @@ export default function PrivacyPolicyPage() {
           <h1 className="text-4xl font-extrabold text-gray-900 leading-tight mb-4">
             Privacy Policy
           </h1>
-          <p className="text-sm text-[#7d7d7d]">
+          <p className="text-sm text-[#595959]">
             Fountain of Grace International (NPO 316-193) · Last updated: April 2026
           </p>
         </div>

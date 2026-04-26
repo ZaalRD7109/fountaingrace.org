@@ -59,7 +59,7 @@ export default function PrayerPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Prayer · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -74,7 +74,7 @@ export default function PrayerPage() {
 
       {/* INTRO */}
       <section className="bg-white py-12 px-4 sm:px-6">
-        <div className="max-w-2xl mx-auto space-y-5 text-[#7d7d7d] leading-relaxed">
+        <div className="max-w-2xl mx-auto space-y-5 text-[#595959] leading-relaxed">
           <p>
             If you are going through something difficult — a health crisis, a broken
             relationship, financial pressure, grief, or something you cannot put into words
@@ -105,7 +105,7 @@ export default function PrayerPage() {
         <div className="max-w-2xl mx-auto">
           <h2 className="text-xl font-bold text-gray-900 mb-6">Submit a prayer request</h2>
           <TallyEmbed formId="pb00PZ" />
-          <p className="text-xs text-[#7d7d7d] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
+          <p className="text-xs text-[#595959] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
             Your information is collected by Fountain of Grace International (NPO 316-193) and used
             only to respond to your prayer request. We do not share or sell your data. See our{' '}
             <Link href="/privacy-policy" className="text-[#008080] hover:underline font-medium">
@@ -122,7 +122,7 @@ export default function PrayerPage() {
           <div className="bg-[#f0fafa] border border-teal-100 rounded-xl p-6 flex flex-col sm:flex-row gap-5 items-start sm:items-center">
             <div className="flex-1">
               <h2 className="text-base font-bold text-gray-900 mb-1">Need someone right now?</h2>
-              <p className="text-sm text-[#7d7d7d] leading-relaxed">
+              <p className="text-sm text-[#595959] leading-relaxed">
                 For urgent needs — a crisis, a medical situation, a moment you cannot carry
                 alone — WhatsApp Pastor Ricardo directly. He responds personally.
               </p>
@@ -131,7 +131,7 @@ export default function PrayerPage() {
               href="https://wa.me/27752592555?text=Hi%2C%20I%20need%20prayer%20for%20something%20urgent"
               target="_blank"
               rel="noopener noreferrer"
-              className="shrink-0 inline-block bg-[#25d366] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
+              className="shrink-0 inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-6 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
             >
               WhatsApp Now
             </a>
@@ -162,7 +162,7 @@ export default function PrayerPage() {
                 <div className="flex-shrink-0 w-9 h-9 rounded-full bg-[#008080] text-white flex items-center justify-center text-xs font-bold">
                   {item.step}
                 </div>
-                <p className="text-sm text-[#7d7d7d] leading-relaxed pt-1">{item.text}</p>
+                <p className="text-sm text-[#595959] leading-relaxed pt-1">{item.text}</p>
               </div>
             ))}
           </div>

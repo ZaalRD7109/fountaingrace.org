@@ -129,7 +129,7 @@ export default function AboutPage() {
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             About FGI · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -161,19 +161,19 @@ export default function AboutPage() {
               </div>
               <div className="mt-5 bg-white rounded-xl border border-gray-100 p-5 space-y-3">
                 <div>
-                  <p className="text-xs text-[#7d7d7d] uppercase tracking-wider font-semibold">In ministry since</p>
+                  <p className="text-xs text-[#595959] uppercase tracking-wider font-semibold">In ministry since</p>
                   <p className="text-gray-900 font-bold">10 February 2000</p>
                 </div>
                 <div>
-                  <p className="text-xs text-[#7d7d7d] uppercase tracking-wider font-semibold">FGI founded</p>
+                  <p className="text-xs text-[#595959] uppercase tracking-wider font-semibold">FGI founded</p>
                   <p className="text-gray-900 font-bold">June 2020</p>
                 </div>
                 <div>
-                  <p className="text-xs text-[#7d7d7d] uppercase tracking-wider font-semibold">NPO registered</p>
+                  <p className="text-xs text-[#595959] uppercase tracking-wider font-semibold">NPO registered</p>
                   <p className="text-gray-900 font-bold">16 December 2024</p>
                 </div>
                 <div>
-                  <p className="text-xs text-[#7d7d7d] uppercase tracking-wider font-semibold">Based in</p>
+                  <p className="text-xs text-[#595959] uppercase tracking-wider font-semibold">Based in</p>
                   <p className="text-gray-900 font-bold">Pretoria North</p>
                 </div>
               </div>
@@ -188,7 +188,7 @@ export default function AboutPage() {
                   Pastor Ricardo Zaal
                 </Link>
               </h2>
-              <div className="space-y-4 text-[#7d7d7d] leading-relaxed">
+              <div className="space-y-4 text-[#595959] leading-relaxed">
                 <p>
                   Pastor Ricardo Zaal is the founder and lead pastor of Fountain of Grace
                   International in Pretoria North, South Africa. He has been serving in ministry
@@ -228,7 +228,7 @@ export default function AboutPage() {
                   href="https://wa.me/27752592555"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block bg-[#25d366] text-white font-semibold px-5 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
+                  className="inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-5 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
                 >
                   WhatsApp Pastor Ricardo
                 </a>
@@ -247,7 +247,7 @@ export default function AboutPage() {
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">
             Why Fountain of Grace International exists
           </h2>
-          <div className="space-y-5 text-[#7d7d7d] leading-relaxed text-lg">
+          <div className="space-y-5 text-[#595959] leading-relaxed text-lg">
             <p>
               Most churches in Pretoria North are not bad. But many of them are set up for people
               who already know how church works. People who know the songs, know the culture, know
@@ -264,7 +264,7 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="mt-8">
-            <p className="text-sm text-[#7d7d7d]">
+            <p className="text-sm text-[#595959]">
               Fountain of Grace International is a registered NPO (No: 316-193) under the
               Nonprofit Organisations Act, 71 of 1997, registered on 16 December 2024. It
               operates community programs in Pretoria North alongside its church ministry,
@@ -293,7 +293,7 @@ export default function AboutPage() {
                 className="bg-white rounded-xl border border-gray-100 p-5 hover:shadow-sm transition-shadow"
               >
                 <h3 className="font-bold text-gray-900 mb-2">{val.title}</h3>
-                <p className="text-sm text-[#7d7d7d] leading-relaxed">{val.body}</p>
+                <p className="text-sm text-[#595959] leading-relaxed">{val.body}</p>
               </div>
             ))}
           </div>
