@@ -212,9 +212,58 @@ export default function DonateClient() {
 
           <div className="space-y-5">
 
-            {/* PayPal */}
+            {/* Monthly Recurring */}
+            <div className="bg-white rounded-2xl border-2 border-[#FFD600] shadow-[0_2px_12px_rgba(255,214,0,0.15)] p-7">
+              <div className="flex items-center gap-2 mb-1">
+                <h3 className="text-lg font-bold text-gray-900">Give Monthly</h3>
+                <span className="text-xs font-bold bg-[#FFD600] text-[#1a1a1a] px-2 py-0.5 rounded-full uppercase tracking-wide">Recommended</span>
+              </div>
+              <p className="text-sm text-[#595959] mb-5">
+                A monthly gift — even a small one — is the most powerful way to support FGI.
+                It funds our community programmes reliably, month after month.
+              </p>
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
+                {[
+                  { amount: '150', label: 'R150 / month', note: 'Outreach transport' },
+                  { amount: '350', label: 'R350 / month', note: 'Family food parcel' },
+                  { amount: '600', label: 'R600 / month', note: 'Recovery support' },
+                  { amount: '1000', label: 'R1 000 / month', note: 'Impact Seed training' },
+                ].map((opt) => (
+                  <form
+                    key={opt.amount}
+                    action="https://www.paypal.com/cgi-bin/webscr"
+                    method="post"
+                    target="_blank"
+                  >
+                    <input type="hidden" name="cmd" value="_xclick-subscriptions" />
+                    <input type="hidden" name="business" value="info@fountaingrace.org" />
+                    <input type="hidden" name="item_name" value={`Monthly Gift to FGI — NPO 316-193 — R${opt.amount}/month`} />
+                    <input type="hidden" name="currency_code" value="ZAR" />
+                    <input type="hidden" name="a3" value={opt.amount} />
+                    <input type="hidden" name="p3" value="1" />
+                    <input type="hidden" name="t3" value="M" />
+                    <input type="hidden" name="src" value="1" />
+                    <input type="hidden" name="no_shipping" value="1" />
+                    <input type="hidden" name="return" value="https://www.fountaingrace.org/donate" />
+                    <input type="hidden" name="cancel_return" value="https://www.fountaingrace.org/donate" />
+                    <button
+                      type="submit"
+                      className="w-full text-center rounded-xl border-2 border-[#e0f0ff] hover:border-[#FFD600] hover:bg-[#fffbe6] transition-all p-3 group"
+                    >
+                      <p className="font-bold text-[#2a9df4] text-sm group-hover:text-[#1a1a1a]">{opt.label}</p>
+                      <p className="text-xs text-[#595959] mt-0.5">{opt.note}</p>
+                    </button>
+                  </form>
+                ))}
+              </div>
+              <p className="text-xs text-[#595959] text-center">
+                Processed securely by PayPal. Cancel any time from your PayPal account.
+              </p>
+            </div>
+
+            {/* PayPal One-Time */}
             <div className="bg-white rounded-2xl border border-gray-100 shadow-[0_2px_12px_rgba(42,157,244,0.06)] p-7">
-              <h3 className="text-lg font-bold text-gray-900 mb-1">Give via PayPal</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-1">One-Time Gift via PayPal</h3>
               <p className="text-sm text-[#595959] mb-5">
                 For international donors — give securely in your own currency from anywhere
                 in the world.
@@ -327,7 +376,7 @@ export default function DonateClient() {
                       ))}
                     </g>
                     <text x="100" y="96" textAnchor="middle" fill="white" fontSize="15" fontWeight="800">FGI</text>
-                    <text x="100" y="112" textAnchor="middle" fill="rgba(255,255,255,0.45)" fontSize="10">2025</text>
+                    <text x="100" y="112" textAnchor="middle" fill="rgba(255,255,255,0.45)" fontSize="10">2026</text>
                   </svg>
                 </div>
                 {/* Legend + bars */}

@@ -301,6 +301,34 @@ export default function SermonsPage() {
         </div>
       </section>
 
+      {/* DEVOTIONAL SIGNUP */}
+      <section className="bg-[#f0fafa] py-14 px-4 sm:px-6 border-t border-[#e0f4f4]">
+        <div className="section-container max-w-xl text-center">
+          <p className="text-[#008080] font-semibold text-xs uppercase tracking-widest mb-3">
+            Every week · Free
+          </p>
+          <h2 className="text-2xl font-bold text-gray-900 mb-4">
+            Get the weekly message in your inbox
+          </h2>
+          <p className="text-[#595959] leading-relaxed mb-7">
+            Each week Pastor Ricardo sends a short devotional based on the Sunday message —
+            practical, direct, and connected to what you are actually going through.
+            WhatsApp us to be added to the list.
+          </p>
+          <a
+            href="https://wa.me/27752592555?text=Hi%2C%20please%20add%20me%20to%20the%20weekly%20devotional%20list."
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#25d366] text-[#1a1a1a] font-bold px-7 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors"
+          >
+            Subscribe via WhatsApp →
+          </a>
+          <p className="text-xs text-[#7d7d7d] mt-4">
+            Your number is never shared. Unsubscribe any time by replying STOP.
+          </p>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="bg-[#008080] py-14 px-4 sm:px-6">
         <div className="section-container text-center">

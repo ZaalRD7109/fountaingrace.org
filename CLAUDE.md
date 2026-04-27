@@ -26,6 +26,20 @@ Ricardo (zaalricardo@gmail.com). Managing Fountain of Grace International's webs
 | **Website migration** | Next.js App Router site at `/mnt/fgi-website`. Deployed to Cloudflare Pages. Static HTML version is deprecated and no longer maintained. |
 → Details: memory/projects/website-migration.md
 
+## Brand (locked — do not guess)
+| Hex | Use |
+|-----|-----|
+| `#ffffff` | White — backgrounds |
+| `#2a9df4` | FGI Blue — primary, logo, CTAs |
+| `#ffd700` | FGI Gold — accent, highlights |
+| `#008080` | FGI Teal — secondary, NPO context |
+| `#7d7d7d` | FGI Grey — body text |
+
+Logo files: `public/logo.webp` (horizontal, 255x134), `public/logo-square.webp` (square, 512x512), `public/favicon.jpg` (40x40).
+Typography: Poppins.
+DO NOT use Ricardo's personal book brand (#00ced1) or the navy in tailwind.config.ts — those are wrong.
+→ Full spec: memory/context/brand.md
+
 ## Analytics
 | Tool | ID |
 |------|------|
