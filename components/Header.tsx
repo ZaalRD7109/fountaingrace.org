@@ -5,11 +5,11 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 const navLinks = [
-  { href: '/', label: 'Home' },
   { href: '/sunday-services', label: 'Sunday Services' },
-  { href: '/about', label: 'About' },
   { href: '/sermons', label: 'Sermons' },
   { href: '/resources', label: 'Resources' },
+  { href: '/devotional', label: 'Devotional' },
+  { href: '/stories', label: 'Stories' },
   { href: '/community-impact', label: 'Community' },
   { href: '/donate', label: 'Donate' },
   { href: '/contact', label: 'Contact' },
@@ -35,7 +35,7 @@ export default function Header() {
           </Link>
 
           {/* Desktop nav */}
-          <nav className="hidden lg:flex items-center gap-6" aria-label="Main navigation">
+          <nav className="hidden lg:flex items-center gap-4" aria-label="Main navigation">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
