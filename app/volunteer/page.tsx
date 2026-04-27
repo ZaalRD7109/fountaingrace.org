@@ -5,7 +5,7 @@ import TallyEmbed from '@/components/TallyEmbed'
 export const metadata: Metadata = {
   title: 'Volunteer with FGI | NPO in Pretoria North',
   description:
-    'Volunteer with a registered NPO in Pretoria North. No experience needed. Food programs, admin, events and more. Fill in the form — we reach out with next steps.',
+    'Volunteer with a registered NPO in Pretoria North. No experience needed. Food programs, admin, events and more. Fill in the form - we reach out with next steps.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/volunteer',
@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Volunteer with FGI | NPO in Pretoria North',
     description:
-      'Volunteer with a registered NPO in Pretoria North. No experience needed. Food programs, admin, events and more. Fill in the form — we reach out with next steps.',
+      'Volunteer with a registered NPO in Pretoria North. No experience needed. Food programs, admin, events and more. Fill in the form - we reach out with next steps.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/volunteer',
   },
 }
@@ -71,7 +71,7 @@ export default function VolunteerPage() {
         </div>
       </section>
 
-      {/* FORM — full width */}
+      {/* FORM - full width */}
       <section className="bg-white py-6 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
           <TallyEmbed formId="ODJjJA" />
@@ -86,7 +86,7 @@ export default function VolunteerPage() {
         </div>
       </section>
 
-      {/* AREAS — compact 4-col strip below form */}
+      {/* AREAS - compact 4-col strip below form */}
       <section className="bg-gray-50 py-8 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
           <p className="text-sm font-semibold text-gray-700 mb-4">Ways to get involved</p>

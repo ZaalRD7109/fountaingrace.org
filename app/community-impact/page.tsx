@@ -5,7 +5,7 @@ import TallyEmbed from '@/components/TallyEmbed'
 export const metadata: Metadata = {
   title: 'Community Programs | FGI NPO 316-193 | Pretoria North',
   description:
-    'NPO 316-193 in Pretoria North. We run 6 community programs — food relief, emotional support, and family guidance. Donate, volunteer, or partner with us today.',
+    'NPO 316-193 in Pretoria North. We run 6 community programs - food relief, emotional support, and family guidance. Donate, volunteer, or partner with us today.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/community-impact',
@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Community Programs | FGI NPO 316-193 | Pretoria North',
     description:
-      'NPO 316-193 in Pretoria North. We run 6 community programs — food relief, emotional support, and family guidance. Donate, volunteer, or partner with us today.',
+      'NPO 316-193 in Pretoria North. We run 6 community programs - food relief, emotional support, and family guidance. Donate, volunteer, or partner with us today.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/community-impact',
   },
 }
@@ -118,7 +118,7 @@ const programs = [
     title: 'Community Integration and Belonging',
     who: 'New visitors, first-time attendees, and individuals at risk of disengaging from community.',
     problem:
-      'Many people attend a community once and never return — not because they were unwelcome, but because no one followed up. Without structured integration, people fall through the gaps.',
+      'Many people attend a community once and never return - not because they were unwelcome, but because no one followed up. Without structured integration, people fall through the gaps.',
     provides:
       'First-time visitor follow-up, structured integration pathways, volunteer placement, and long-term community engagement tracking.',
     outcome:
@@ -149,7 +149,7 @@ export default function CommunityImpactPage() {
           </h1>
           <p className="text-white text-base leading-relaxed mb-5">
             Fountain of Grace International is a registered NPO (316-193) in Pretoria North, running structured
-            programs that address real challenges — from emotional distress and family breakdown to poverty and social isolation.
+            programs that address real challenges - from emotional distress and family breakdown to poverty and social isolation.
           </p>
           <div className="inline-block bg-white text-[#008080] rounded-lg px-6 py-4 shadow-sm text-left">
             <p className="font-extrabold">NPO Registration Number: 316-193</p>
@@ -229,7 +229,7 @@ export default function CommunityImpactPage() {
         <div className="section-container max-w-3xl">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">How Your Support Reaches People</h2>
           <p className="text-[#595959] mb-8 leading-relaxed">
-            We publish a transparent breakdown of how funds are used. Every donation is a vote of trust — this is how
+            We publish a transparent breakdown of how funds are used. Every donation is a vote of trust - this is how
             we honour it.
           </p>
           <div className="overflow-x-auto mb-10">
@@ -279,7 +279,7 @@ export default function CommunityImpactPage() {
       {/* THREE CTA PATHS */}
       <section className="bg-[#f0fafa] py-16 px-4 sm:px-6">
         <div className="section-container max-w-4xl">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">Get involved — three ways</h2>
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">Get involved - three ways</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl border border-gray-100 p-6 text-center hover:shadow-sm transition-shadow">
               <div className="text-4xl mb-3" aria-hidden="true">💳</div>
@@ -295,7 +295,7 @@ export default function CommunityImpactPage() {
               <div className="text-4xl mb-3" aria-hidden="true">🙌</div>
               <h3 className="font-bold text-gray-900 mb-2">Volunteer With Us</h3>
               <p className="text-sm text-[#595959] leading-relaxed mb-5">
-                No prior experience required. Fill in the form below — we will show you exactly what to do.
+                No prior experience required. Fill in the form below - we will show you exactly what to do.
               </p>
               <Link href="/volunteer" className="btn-teal text-sm w-full block">
                 Volunteer With Us
@@ -305,7 +305,7 @@ export default function CommunityImpactPage() {
               <div className="text-4xl mb-3" aria-hidden="true">🤝</div>
               <h3 className="font-bold text-gray-900 mb-2">Partner With Us</h3>
               <p className="text-sm text-[#595959] leading-relaxed mb-5">
-                Organisations looking to partner with a verified NPO in Pretoria North — we welcome the conversation.
+                Organisations looking to partner with a verified NPO in Pretoria North - we welcome the conversation.
               </p>
               <Link href="/contact" className="btn-teal text-sm w-full block">
                 Contact Us to Partner

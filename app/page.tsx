@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       'Looking for a welcoming church in Pretoria North? Join Fountain of Grace every Sunday at 09:00 for practical Bible teaching, real community, and personal support.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org',
   },
 }
@@ -70,7 +70,7 @@ const jsonLd = [
         name: 'What church is in Pretoria North?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Fountain of Grace International is a church in Pretoria North, South Africa. It holds weekly Sunday services focused on practical teaching connected to everyday challenges. Anyone is welcome to attend — no prior church experience required.',
+          text: 'Fountain of Grace International is a church in Pretoria North, South Africa. It holds weekly Sunday services focused on practical teaching connected to everyday challenges. Anyone is welcome to attend - no prior church experience required.',
         },
       },
       {
@@ -93,7 +93,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Event',
-    name: 'Sunday Service — Fountain of Grace International',
+    name: 'Sunday Service - Fountain of Grace International',
     description: 'Weekly Sunday church service at Fountain of Grace International in Pretoria North. Practical Bible teaching, worship, and community. Everyone is welcome.',
     startDate: 'T09:00:00+02:00',
     endDate: 'T10:30:00+02:00',
@@ -197,7 +197,7 @@ export default function HomePage() {
               </h2>
               <div className="space-y-4 text-[#595959] leading-relaxed">
                 <p>
-                  You arrive. Someone meets you at the door — not a greeter handing out a bulletin,
+                  You arrive. Someone meets you at the door - not a greeter handing out a bulletin,
                   an actual person who is expecting you. You sit where you are comfortable. No one
                   calls you to the front. No one makes you introduce yourself to the room.
                 </p>
@@ -240,7 +240,7 @@ export default function HomePage() {
               },
               {
                 icon: '📞',
-                title: 'We follow up — personally',
+                title: 'We follow up - personally',
                 body: 'After your first visit, someone reaches out. Not an automated email. An actual person who noticed you were there and wants to know if you are coming back.',
               },
               {
@@ -277,14 +277,14 @@ export default function HomePage() {
                 <p>
                   <strong className="text-gray-800">Pastor Ricardo Zaal</strong> founded Fountain
                   of Grace International in June 2020 because he knew what it felt like to need a
-                  community and not find one. With over two decades in ministry — starting in
-                  Postmasburg, then Johannesburg, then Pretoria North — he built FGI for the people
+                  community and not find one. With over two decades in ministry - starting in
+                  Postmasburg, then Johannesburg, then Pretoria North - he built FGI for the people
                   who are still looking.
                 </p>
                 <p>
                   His ministry is grounded in practical teaching, personal responsibility, and
                   equipping people to lead in their own lives. He is a husband and father. He is
-                  accessible — not behind an appointment wall.
+                  accessible - not behind an appointment wall.
                 </p>
                 <p>
                   Fountain of Grace International holds NPO registration 316-193, and the
@@ -348,7 +348,7 @@ export default function HomePage() {
               <dd className="text-[#595959] leading-relaxed">
                 Fountain of Grace International is a church in Pretoria North, South Africa. It
                 holds weekly Sunday services focused on practical teaching connected to everyday
-                challenges. Anyone is welcome to attend — no prior church experience required.
+                challenges. Anyone is welcome to attend - no prior church experience required.
               </dd>
             </div>
             <div className="faq-block">
@@ -375,7 +375,7 @@ export default function HomePage() {
             Get the weekly devotional
           </h2>
           <p className="text-[#595959] leading-relaxed mb-7">
-            Each week Pastor Ricardo sends a short devotional based on the Sunday message —
+            Each week Pastor Ricardo sends a short devotional based on the Sunday message -
             practical, direct, and connected to real life. Choose how you want to receive it.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
@@ -408,7 +408,7 @@ export default function HomePage() {
             Ready to come on Sunday?
           </h2>
           <p className="text-white text-lg mb-8 max-w-xl mx-auto">
-            Plan your visit — we will send you a WhatsApp message before you arrive so you know
+            Plan your visit - we will send you a WhatsApp message before you arrive so you know
             exactly what to expect.
           </p>
           <Link

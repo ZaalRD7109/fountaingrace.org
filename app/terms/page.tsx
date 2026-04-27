@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       'Terms of use for the Fountain of Grace International (NPO 316-193) website. Governed by the laws of the Republic of South Africa.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/terms',
   },
 }
@@ -100,7 +100,7 @@ export default function TermsPage() {
           <div>
             <h2 className="text-xl font-bold text-gray-900 mb-3">2. Use of This Website</h2>
             <p className="mb-3">
-              All content on this website — including text, images, logos, and design — is the
+              All content on this website - including text, images, logos, and design - is the
               property of Fountain of Grace International unless otherwise stated. You may not
               copy, reproduce, distribute, or republish any content without prior written
               permission.
@@ -116,7 +116,7 @@ export default function TermsPage() {
             <p className="mb-3">
               All donations made through this website or via our banking details are voluntary.
               Donations are non-refundable once processed, except in cases where a payment was
-              made in error — in which case, contact us within 7 days at{' '}
+              made in error - in which case, contact us within 7 days at{' '}
               <a href="mailto:info@fountaingrace.org" className="fgi-link">
                 info@fountaingrace.org
               </a>.
@@ -149,8 +149,8 @@ export default function TermsPage() {
           <div>
             <h2 className="text-xl font-bold text-gray-900 mb-3">5. External Links</h2>
             <p>
-              This website may contain links to external websites — including social media
-              platforms and payment providers — for your convenience. We are not responsible
+              This website may contain links to external websites - including social media
+              platforms and payment providers - for your convenience. We are not responsible
               for the content, accuracy, privacy practices, or security of those third-party
               websites. Visiting external links is at your own risk.
             </p>
@@ -160,7 +160,7 @@ export default function TermsPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-3">6. Limitation of Liability</h2>
             <p>
               Fountain of Grace International provides this website on an as-is basis. We make
-              no warranties — express or implied — about the accuracy, completeness, or
+              no warranties - express or implied - about the accuracy, completeness, or
               suitability of the content for any purpose. To the extent permitted by South
               African law, we are not liable for any direct, indirect, incidental, or
               consequential damages arising from your use of or inability to use this website.

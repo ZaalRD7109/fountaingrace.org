@@ -26,7 +26,7 @@ export default function Header() {
           <Link href="/" className="flex-shrink-0">
             <Image
               src="/logo.jpg"
-              alt="Fountain of Grace International — Church in Pretoria North"
+              alt="Fountain of Grace International - Church in Pretoria North"
               width={160}
               height={56}
               className="h-10 w-auto object-contain"

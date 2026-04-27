@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       'How Fountain of Grace International (NPO 316-193) uses cookies on its website and how you can manage them.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/cookie-policy',
   },
 }
@@ -84,8 +84,8 @@ export default function CookiePolicyPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-3">1. What Are Cookies</h2>
             <p>
               Cookies are small text files stored on your device when you visit a website. They
-              help websites remember information about your visit — such as whether you have
-              accepted the cookie notice — so your next visit can be smoother. Cookies cannot
+              help websites remember information about your visit - such as whether you have
+              accepted the cookie notice - so your next visit can be smoother. Cookies cannot
               run programmes or deliver viruses to your device.
             </p>
           </div>
@@ -125,7 +125,7 @@ export default function CookiePolicyPage() {
                 </p>
                 <p className="text-sm text-[#595959] mb-2">
                   <strong>Purpose:</strong> Counts how many people visit our site, which pages
-                  are most useful, and where visitors come from. All data is anonymous — no
+                  are most useful, and where visitors come from. All data is anonymous - no
                   personal information is collected. IP addresses are anonymised before
                   storage. These cookies only load after you accept the cookie notice.
                 </p>

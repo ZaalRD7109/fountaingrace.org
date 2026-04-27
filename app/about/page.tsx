@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     description:
       'Fountain of Grace International is a Christian church and registered NPO in Pretoria North. Founded in 2020 by Pastor Ricardo Zaal. Real people, practical faith.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/about',
   },
 }
@@ -77,7 +77,7 @@ const values: Value[] = [
         <Link href="/plan-your-visit" className="fgi-link">
           first visit
         </Link>
-        , someone contacts you personally — not an email sequence, not a form letter. A real person.
+        , someone contacts you personally - not an email sequence, not a form letter. A real person.
       </>
     ),
   },
@@ -110,7 +110,7 @@ const values: Value[] = [
   },
   {
     title: 'No performance culture',
-    body: 'You will never be made to feel guilty for where you are in life. Come as you are — that is not a slogan here.',
+    body: 'You will never be made to feel guilty for where you are in life. Come as you are - that is not a slogan here.',
   },
   {
     title: 'Available leadership',
@@ -152,7 +152,7 @@ export default function AboutPage() {
               <div className="relative w-full h-72 rounded-xl overflow-hidden shadow-md">
                 <Image
                   src="/pastor-bio.webp"
-                  alt="Pastor Ricardo Zaal — founder and lead pastor of Fountain of Grace International, Pretoria North"
+                  alt="Pastor Ricardo Zaal - founder and lead pastor of Fountain of Grace International, Pretoria North"
                   fill
                   priority
                   className="object-cover"
@@ -192,26 +192,26 @@ export default function AboutPage() {
                 <p>
                   Pastor Ricardo Zaal is the founder and lead pastor of Fountain of Grace
                   International in Pretoria North, South Africa. He has been serving in ministry
-                  since 10 February 2000 — giving him over two decades of consistent leadership,
+                  since 10 February 2000 - giving him over two decades of consistent leadership,
                   discipleship, and pastoral experience.
                 </p>
                 <p>
                   He began his ministry journey in Postmasburg, where he gave his life fully to
                   Christ and committed to a life of faith and discipline. He later served at
-                  Bread of Life Ministries in Riverlea, Johannesburg — working closely with
-                  leadership as the youth leader&apos;s right hand, and eventually as an elder —
+                  Bread of Life Ministries in Riverlea, Johannesburg - working closely with
+                  leadership as the youth leader&apos;s right hand, and eventually as an elder -
                   where he developed a deep foundation in ministry and people development.
                 </p>
                 <p>
                   After relocating to Pretoria North, he continued in ministry and served as a
                   pastor at Rehoboth Chapel International until 2018. In June 2020, during the
-                  Covid-19 season, he founded Fountain of Grace International — a ministry focused
+                  Covid-19 season, he founded Fountain of Grace International - a ministry focused
                   on discipleship, restoration, and equipping individuals and families to build
                   stable, purpose-driven lives through faith.
                 </p>
                 <p>
                   He is a husband and father, committed to building strong families, strong faith,
-                  and a lasting legacy. He lives in Pretoria North and is available directly — not
+                  and a lasting legacy. He lives in Pretoria North and is available directly - not
                   behind an appointment wall. You can reach him via WhatsApp or through the{' '}
                   <Link href="/contact" className="fgi-link">
                     contact form on this site
@@ -255,7 +255,7 @@ export default function AboutPage() {
             </p>
             <p>
               Fountain of Grace International was built for the people who do not already know. And
-              for the people who used to know — but got tired, or hurt, or just stopped finding it
+              for the people who used to know - but got tired, or hurt, or just stopped finding it
               relevant to what they were actually dealing with.
             </p>
             <p>

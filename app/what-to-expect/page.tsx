@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'What to Expect | Church in Pretoria North | FGI',
   description:
-    'New to church in Pretoria North? Know exactly what a Sunday service looks like before you arrive. No pressure, no surprises. Come as you are — everyone is welcome.',
+    'New to church in Pretoria North? Know exactly what a Sunday service looks like before you arrive. No pressure, no surprises. Come as you are - everyone is welcome.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/what-to-expect',
@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'What to Expect | Church in Pretoria North | FGI',
     description:
-      'New to church in Pretoria North? Know exactly what a Sunday service looks like before you arrive. No pressure, no surprises. Come as you are — everyone is welcome.',
+      'New to church in Pretoria North? Know exactly what a Sunday service looks like before you arrive. No pressure, no surprises. Come as you are - everyone is welcome.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/what-to-expect',
   },
 }
@@ -51,7 +51,7 @@ const timeline = [
     color: 'bg-[#FFD600]',
     items: [
       'Arrive 10–15 minutes before 09:00. If you are unsure about parking, WhatsApp us before you come and we will send you exact directions.',
-      "Someone is stationed at the door. They are expecting first-time visitors. When you arrive, they will greet you — no script, no name badge forced on you.",
+      "Someone is stationed at the door. They are expecting first-time visitors. When you arrive, they will greet you - no script, no name badge forced on you.",
       'You choose where you sit. There is no special visitor section. Sit wherever you are comfortable.',
       'You will not be handed a stack of materials and left to figure things out. If you have a question, the person at the door will help you.',
     ],
@@ -64,7 +64,7 @@ const timeline = [
     items: [
       'The service begins at 09:00 and runs approximately 90 minutes total.',
       'It starts with worship music. You are welcome to participate or simply listen. Nobody is watching you.',
-      'There is a practical teaching — a message built around a real problem people face. Not performance. Not a lecture. Something that connects.',
+      'There is a practical teaching - a message built around a real problem people face. Not performance. Not a lecture. Something that connects.',
       'At no point are visitors asked to stand up, introduce themselves, respond publicly, or come to the front. None of that happens here.',
       'There is no collection plate passed around at your seat. If you want to give, there is a place to do that. Nobody tracks whether you do or do not.',
     ],
@@ -75,7 +75,7 @@ const timeline = [
     color: 'bg-[#008080]',
     items: [
       'The service ends. People stay. That is a feature, not an accident.',
-      'Someone from the pastoral team will find you — not to recruit you or sign you up for anything, but to introduce themselves and answer any questions you have.',
+      'Someone from the pastoral team will find you - not to recruit you or sign you up for anything, but to introduce themselves and answer any questions you have.',
       'You are welcome to leave immediately if you need to. Nobody will make you feel obligated to stay.',
       'Within a day or two, someone will reach out via WhatsApp. Not an automated message. An actual person checking in and asking if you have any questions.',
     ],
@@ -86,8 +86,8 @@ const timeline = [
     color: 'bg-gray-800',
     items: [
       "Week 1: You come. You sit. You decide how you feel about it. There is no pressure to make any commitments.",
-      "Week 2: Someone will have reached out by now. If you are coming back, let us know — someone will be watching for you.",
-      "Week 3: By now you will have a rough sense of whether this church fits your life. If it does, we would love to talk about what more involvement might look like — on your terms, at your pace.",
+      "Week 2: Someone will have reached out by now. If you are coming back, let us know - someone will be watching for you.",
+      "Week 3: By now you will have a rough sense of whether this church fits your life. If it does, we would love to talk about what more involvement might look like - on your terms, at your pace.",
     ],
   },
 ]
@@ -111,7 +111,7 @@ export default function WhatToExpectPage() {
             No surprises · No pressure · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
-            Here is what Sunday looks like — from the moment you arrive.
+            Here is what Sunday looks like - from the moment you arrive.
           </h1>
           <p className="text-white text-base leading-relaxed">
             Every unknown removed. Every question answered before you have to ask it.

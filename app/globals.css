@@ -21,7 +21,7 @@
 
   /* === BUTTONS === */
   .btn-primary {
-    /* Gold button — dark text for legibility on all screen sizes */
+    /* Gold button - dark text for legibility on all screen sizes */
     @apply relative inline-block overflow-hidden bg-[#FFD600] text-[#1a1a1a] font-extrabold
            px-8 py-4 rounded-[30px] text-center
            shadow-[0_4px_14px_rgba(255,214,0,0.45)]

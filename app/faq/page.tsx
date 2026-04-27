@@ -5,7 +5,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: 'FAQ | Fountain of Grace International | Pretoria North',
   description:
-    'Answers to common questions about Fountain of Grace International in Pretoria North — service times, what to expect, how to donate, prayer requests, and more.',
+    'Answers to common questions about Fountain of Grace International in Pretoria North - service times, what to expect, how to donate, prayer requests, and more.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/faq',
@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'FAQ | Fountain of Grace International | Pretoria North',
     description:
-      'Answers to common questions about Fountain of Grace International in Pretoria North — service times, what to expect, how to donate, prayer requests, and more.',
+      'Answers to common questions about Fountain of Grace International in Pretoria North - service times, what to expect, how to donate, prayer requests, and more.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/faq',
   },
 }
@@ -47,7 +47,7 @@ const faqs: FaqCategory[] = [
       },
       {
         q: 'Do I need to register before coming?',
-        a: <>No. You can walk in. There is no registration, no reservation, and no obligation. If you want us to know you are coming so we can meet you at the door, <Link href="/plan-your-visit" className="fgi-link">fill in the Plan Your Visit form</Link> — it takes 30 seconds.</>,
+        a: <>No. You can walk in. There is no registration, no reservation, and no obligation. If you want us to know you are coming so we can meet you at the door, <Link href="/plan-your-visit" className="fgi-link">fill in the Plan Your Visit form</Link> - it takes 30 seconds.</>,
         aText: 'No. You can walk in. There is no registration, no reservation, and no obligation. Just come.',
       },
       {
@@ -77,8 +77,8 @@ const faqs: FaqCategory[] = [
       },
       {
         q: 'What kind of teaching happens on Sundays?',
-        a: <>Practical Bible teaching. Every message is built around a problem people are actually living with — not abstract theology. The goal is that you leave with something you can apply that week. <Link href="/sermons" className="fgi-link">Read past messages in the sermons archive</Link>.</>,
-        aText: 'Practical Bible teaching. Every message is built around a problem people are actually living with — not abstract theology. The goal is that you leave with something you can apply that week.',
+        a: <>Practical Bible teaching. Every message is built around a problem people are actually living with - not abstract theology. The goal is that you leave with something you can apply that week. <Link href="/sermons" className="fgi-link">Read past messages in the sermons archive</Link>.</>,
+        aText: 'Practical Bible teaching. Every message is built around a problem people are actually living with - not abstract theology. The goal is that you leave with something you can apply that week.',
       },
       {
         q: 'What languages are services held in?',
@@ -97,8 +97,8 @@ const faqs: FaqCategory[] = [
     items: [
       {
         q: 'Can I submit a prayer request without attending the church?',
-        a: <>Yes. Anyone can submit a prayer request — you do not need to be a member or attendee. <Link href="/prayer" className="fgi-link">Use the prayer request form here</Link> and the pastoral team will pray over your request personally.</>,
-        aText: 'Yes. Anyone can submit a prayer request — you do not need to be a member or attendee. Use the prayer request form at fountaingrace.org/prayer.',
+        a: <>Yes. Anyone can submit a prayer request - you do not need to be a member or attendee. <Link href="/prayer" className="fgi-link">Use the prayer request form here</Link> and the pastoral team will pray over your request personally.</>,
+        aText: 'Yes. Anyone can submit a prayer request - you do not need to be a member or attendee. Use the prayer request form at fountaingrace.org/prayer.',
       },
       {
         q: 'Is my prayer request kept private?',
@@ -117,13 +117,13 @@ const faqs: FaqCategory[] = [
     items: [
       {
         q: 'How can I donate to Fountain of Grace International?',
-        a: <>Visit the <Link href="/donate" className="fgi-link">Donate page</Link> to give via PayPal or direct EFT to FNB account 63132764499, branch 250655. Monthly giving options are also available — they are the most effective way to support the work long term.</>,
+        a: <>Visit the <Link href="/donate" className="fgi-link">Donate page</Link> to give via PayPal or direct EFT to FNB account 63132764499, branch 250655. Monthly giving options are also available - they are the most effective way to support the work long term.</>,
         aText: 'You can give via PayPal or by EFT to FNB account 63132764499, branch 250655, account name: Fountain of Grace International. Visit the Donate page for full details.',
       },
       {
         q: 'Is my donation tax-deductible?',
-        a: <>FGI is registered as a Non-Profit Organisation (NPO 316-193). We do not yet hold Section 18A tax-deductibility status — so donations are not currently tax-deductible. We will update the <Link href="/donate" className="fgi-link">Donate page</Link> as soon as that changes.</>,
-        aText: 'FGI is registered as a Non-Profit Organisation (NPO 316-193). We do not yet hold Section 18A tax-deductibility status — so donations are not currently tax-deductible.',
+        a: <>FGI is registered as a Non-Profit Organisation (NPO 316-193). We do not yet hold Section 18A tax-deductibility status - so donations are not currently tax-deductible. We will update the <Link href="/donate" className="fgi-link">Donate page</Link> as soon as that changes.</>,
+        aText: 'FGI is registered as a Non-Profit Organisation (NPO 316-193). We do not yet hold Section 18A tax-deductibility status - so donations are not currently tax-deductible.',
       },
       {
         q: 'How are donations used?',

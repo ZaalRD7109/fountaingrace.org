@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   verification: {
     google: 'tj2UtOjgKmGsrYwOwYPKH929JoEN3dpDpJZx-h9F0dE',
   },
-  // Global fallback OG image — override per-page by adding openGraph.images in each page's metadata
+  // Global fallback OG image - override per-page by adding openGraph.images in each page's metadata
   openGraph: {
     siteName: 'Fountain of Grace International',
     locale: 'en_ZA',
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Fountain of Grace International — Church in Pretoria North, South Africa',
+        alt: 'Fountain of Grace International - Church in Pretoria North, South Africa',
       },
     ],
   },

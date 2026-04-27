@@ -38,7 +38,7 @@ export default function CookieBanner() {
         style={{ background: 'linear-gradient(135deg, #2a9df4 0%, #008080 100%)' }}
       >
         <p className="mb-4">
-          We use cookies to understand how people use our site. Anonymous analytics only —
+          We use cookies to understand how people use our site. Anonymous analytics only -
           no personal data is sold or shared. Read our{' '}
           <Link
             href="/cookie-policy"

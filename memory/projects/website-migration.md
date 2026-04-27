@@ -5,7 +5,7 @@
 ## Folders
 | Folder | What |
 |--------|------|
-| `/mnt/fgi-website` | Next.js site — only active codebase |
+| `/mnt/fgi-website` | Next.js site - only active codebase |
 
 Static HTML version (`/mnt/fountaingrace.org`) is deprecated as of April 2026. Do not edit.
 
@@ -36,32 +36,32 @@ Static HTML version (`/mnt/fountaingrace.org`) is deprecated as of April 2026. D
 - PayFast REMOVED entirely
 
 ### Legal Pages (all new)
-- `app/privacy-policy/page.tsx` — POPIA-compliant, Information Officer, retention periods, POPIA rights
-- `app/cookie-policy/page.tsx` — Cookie table: FGI_cookieConsent, GA4, Google Fonts, Maps
-- `app/terms/page.tsx` — Site use, donations (non-refundable, 7-day error window), SA law
+- `app/privacy-policy/page.tsx` - POPIA-compliant, Information Officer, retention periods, POPIA rights
+- `app/cookie-policy/page.tsx` - Cookie table: FGI_cookieConsent, GA4, Google Fonts, Maps
+- `app/terms/page.tsx` - Site use, donations (non-refundable, 7-day error window), SA law
 
 ### Infrastructure
-- `components/CookieBanner.tsx` — Bottom-right banner, localStorage key 'FGI_cookieConsent', accept/decline
-- `components/Footer.tsx` — Added privacy policy, cookie policy, terms links in bottom bar
-- `app/layout.tsx` — CookieBanner imported and added after WhatsAppButton
-- `next.config.js` — 39 redirects (all old .html URLs, /give → /donate, /blog/:slug → /sermons, etc.)
-- `app/sitemap.ts` — Legal pages and /programs added
-- `public/og-image.jpg` — Copied from /mnt/fountaingrace.org/img/og-image.jpg (fixes social sharing)
+- `components/CookieBanner.tsx` - Bottom-right banner, localStorage key 'FGI_cookieConsent', accept/decline
+- `components/Footer.tsx` - Added privacy policy, cookie policy, terms links in bottom bar
+- `app/layout.tsx` - CookieBanner imported and added after WhatsAppButton
+- `next.config.js` - 39 redirects (all old .html URLs, /give → /donate, /blog/:slug → /sermons, etc.)
+- `app/sitemap.ts` - Legal pages and /programs added
+- `public/og-image.jpg` - Copied from /mnt/fountaingrace.org/img/og-image.jpg (fixes social sharing)
 
-## Pending — Needs Ricardo's Input
-1. ~~**Fund allocation %**~~ — DONE. 58% food, 14% programme materials, 28% operational.
+## Pending - Needs Ricardo's Input
+1. ~~**Fund allocation %**~~ - DONE. 58% food, 14% programme materials, 28% operational.
    - community-impact/page.tsx lines 233-235 filled
    - DonateClient.tsx: donut chart + progress bars added (FUND_SLICES constant at top of file)
 
-2. **Forms backend** — Contact and volunteer forms use `action="#"` — need Formspree or similar
+2. **Forms backend** - Contact and volunteer forms use `action="#"` - need Formspree or similar
 
-3. ~~**Google Analytics GA4**~~ — DONE. G-15FK8BTR4B installed in app/layout.tsx. Microsoft Clarity (wcq3d0ed7r) also installed.
+3. ~~**Google Analytics GA4**~~ - DONE. G-15FK8BTR4B installed in app/layout.tsx. Microsoft Clarity (wcq3d0ed7r) also installed.
 
-4. **Google Ads conversion tracking** — Needed on donate and contact success pages
+4. **Google Ads conversion tracking** - Needed on donate and contact success pages
 
-5. **Google Business Profile** — Claim, verify, then add URL to sameAs in app/page.tsx and app/contact/page.tsx
+5. **Google Business Profile** - Claim, verify, then add URL to sameAs in app/page.tsx and app/contact/page.tsx
 
-6. **PayFast** — Add back when verification resolved
+6. **PayFast** - Add back when verification resolved
 
 ## Go-Live Checklist
 - [x] Legal pages live

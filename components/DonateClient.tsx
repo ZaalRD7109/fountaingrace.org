@@ -22,7 +22,7 @@ const PROGRAMS = [
   {
     icon: '🙏',
     title: 'Prayer Line & Recovery Support',
-    desc: 'A dedicated prayer and support line for people dealing with addiction, grief, and personal crisis — connecting people to real help.',
+    desc: 'A dedicated prayer and support line for people dealing with addiction, grief, and personal crisis - connecting people to real help.',
     example: 'R600 = one month of recovery support',
   },
   {
@@ -34,7 +34,7 @@ const PROGRAMS = [
   {
     icon: '👨‍👩‍👧',
     title: 'Family Restoration',
-    desc: 'Counselling, support groups, and community care for families under pressure — marriages, parenting, and crisis support.',
+    desc: 'Counselling, support groups, and community care for families under pressure - marriages, parenting, and crisis support.',
     example: 'R500 = supports a family for one month',
   },
   {
@@ -46,7 +46,7 @@ const PROGRAMS = [
   {
     icon: '🌱',
     title: 'Youth & Next Generation',
-    desc: 'Resources for young people — mentorship, spiritual development, and practical life skills for Pretoria North\'s youth.',
+    desc: 'Resources for young people - mentorship, spiritual development, and practical life skills for Pretoria North\'s youth.',
     example: 'R400 = youth programme resources',
   },
 ]
@@ -81,7 +81,7 @@ const TRUST_CARDS = [
   {
     icon: '🔒',
     title: 'Secure Payments',
-    desc: 'Online payments are processed by PayPal — a secure, trusted payment platform.',
+    desc: 'Online payments are processed by PayPal - a secure, trusted payment platform.',
   },
   {
     icon: '🌍',
@@ -109,7 +109,7 @@ export default function DonateClient() {
             Your giving changes lives in Pretoria North.
           </h1>
           <p className="text-white text-base leading-relaxed mb-5">
-            Every rand you give goes directly to real people in our community — food for
+            Every rand you give goes directly to real people in our community - food for
             families, support for recovery, training for those rebuilding their lives.
           </p>
           <span className="inline-block bg-white/10 border border-white/20 text-white px-5 py-2 rounded-full text-sm font-semibold tracking-wide">
@@ -144,7 +144,7 @@ export default function DonateClient() {
               100% Transparency
             </p>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2a9df4] mb-3">
-              Where Your Money Goes — Specifically
+              Where Your Money Goes - Specifically
             </h2>
             <p className="text-[#595959] max-w-xl mx-auto leading-relaxed">
               No vague promises. Here are the named programmes your donation funds directly.
@@ -219,7 +219,7 @@ export default function DonateClient() {
                 <span className="text-xs font-bold bg-[#FFD600] text-[#1a1a1a] px-2 py-0.5 rounded-full uppercase tracking-wide">Recommended</span>
               </div>
               <p className="text-sm text-[#595959] mb-5">
-                A monthly gift — even a small one — is the most powerful way to support FGI.
+                A monthly gift - even a small one - is the most powerful way to support FGI.
                 It funds our community programmes reliably, month after month.
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
@@ -237,7 +237,7 @@ export default function DonateClient() {
                   >
                     <input type="hidden" name="cmd" value="_xclick-subscriptions" />
                     <input type="hidden" name="business" value="info@fountaingrace.org" />
-                    <input type="hidden" name="item_name" value={`Monthly Gift to FGI — NPO 316-193 — R${opt.amount}/month`} />
+                    <input type="hidden" name="item_name" value={`Monthly Gift to FGI - NPO 316-193 - R${opt.amount}/month`} />
                     <input type="hidden" name="currency_code" value="ZAR" />
                     <input type="hidden" name="a3" value={opt.amount} />
                     <input type="hidden" name="p3" value="1" />
@@ -265,7 +265,7 @@ export default function DonateClient() {
             <div className="bg-white rounded-2xl border border-gray-100 shadow-[0_2px_12px_rgba(42,157,244,0.06)] p-7">
               <h3 className="text-lg font-bold text-gray-900 mb-1">One-Time Gift via PayPal</h3>
               <p className="text-sm text-[#595959] mb-5">
-                For international donors — give securely in your own currency from anywhere
+                For international donors - give securely in your own currency from anywhere
                 in the world.
               </p>
               <form
@@ -275,7 +275,7 @@ export default function DonateClient() {
               >
                 <input type="hidden" name="cmd" value="_donations" />
                 <input type="hidden" name="business" value="info@fountaingrace.org" />
-                <input type="hidden" name="item_name" value="Donation to Fountain of Grace International — NPO 316-193" />
+                <input type="hidden" name="item_name" value="Donation to Fountain of Grace International - NPO 316-193" />
                 <input type="hidden" name="currency_code" value="ZAR" />
                 <input type="hidden" name="amount" value={amount} />
                 <input type="hidden" name="notify_url" value="https://rdhtphruegorbeigyhto.supabase.co/functions/v1/paypal-ipn" />
@@ -414,7 +414,7 @@ export default function DonateClient() {
               Your Money Is Safe. Here Is How We Are Accountable.
             </h2>
             <p className="text-white/70 max-w-xl mx-auto leading-relaxed">
-              We do not have Section 18A tax certificates yet — but we operate with full
+              We do not have Section 18A tax certificates yet - but we operate with full
               integrity and transparency. Here is what that means in practice.
             </p>
           </div>

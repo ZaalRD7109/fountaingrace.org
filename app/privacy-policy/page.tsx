@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     description:
       'How Fountain of Grace International (NPO 316-193) collects, uses, and protects your personal information under POPIA.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/privacy-policy',
   },
 }
@@ -119,7 +119,7 @@ export default function PrivacyPolicyPage() {
               </li>
               <li className="flex gap-2">
                 <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
-                <span>Cookies and browser data — see our <a href="/cookie-policy" className="fgi-link">Cookie Policy</a> for full details.</span>
+                <span>Cookies and browser data - see our <a href="/cookie-policy" className="fgi-link">Cookie Policy</a> for full details.</span>
               </li>
             </ul>
           </div>
@@ -155,7 +155,7 @@ export default function PrivacyPolicyPage() {
             <h2 className="text-xl font-bold text-gray-900 mb-3">4. How We Store and Protect It</h2>
             <p className="mb-3">
               Personal information submitted through our forms is received directly by our pastoral
-              team and stored securely. We do not store payment card details — all donations via
+              team and stored securely. We do not store payment card details - all donations via
               PayPal are processed entirely by those platforms and subject to their own privacy
               policies.
             </p>
@@ -171,7 +171,7 @@ export default function PrivacyPolicyPage() {
               We keep contact and visit enquiry information for as long as it is needed to serve
               you, and no longer than 3 years after your last interaction with us. Donation records
               are kept for 5 years for financial accountability and compliance purposes. You may
-              request earlier deletion at any time — see Section 6 below.
+              request earlier deletion at any time - see Section 6 below.
             </p>
           </div>
 
@@ -231,23 +231,23 @@ export default function PrivacyPolicyPage() {
             <ul className="space-y-2 pl-4">
               <li className="flex gap-2">
                 <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
-                <span><strong>Google Analytics 4</strong> — anonymous website usage tracking. IP addresses are anonymised. Only loads after you accept cookies. You can opt out at <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">tools.google.com/dlpage/gaoptout</a>.</span>
+                <span><strong>Google Analytics 4</strong> - anonymous website usage tracking. IP addresses are anonymised. Only loads after you accept cookies. You can opt out at <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">tools.google.com/dlpage/gaoptout</a>.</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
-                <span><strong>Microsoft Clarity</strong> — anonymous session recording and heatmapping to understand how people use our site. Only loads after you accept cookies. See <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">Microsoft's Privacy Policy</a>.</span>
+                <span><strong>Microsoft Clarity</strong> - anonymous session recording and heatmapping to understand how people use our site. Only loads after you accept cookies. See <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">Microsoft's Privacy Policy</a>.</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
-                <span><strong>Google Fonts</strong> — fonts loaded from Google servers. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">Google's Privacy Policy</a>.</span>
+                <span><strong>Google Fonts</strong> - fonts loaded from Google servers. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">Google's Privacy Policy</a>.</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
-                <span><strong>Google Maps</strong> — the embedded map on our contact page is served by Google. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">Google's Privacy Policy</a>.</span>
+                <span><strong>Google Maps</strong> - the embedded map on our contact page is served by Google. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">Google's Privacy Policy</a>.</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
-                <span><strong>PayPal</strong> — donation processing. Subject to <a href="https://www.paypal.com/za/legalhub/privacy-full" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">PayPal's Privacy Policy</a>.</span>
+                <span><strong>PayPal</strong> - donation processing. Subject to <a href="https://www.paypal.com/za/legalhub/privacy-full" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">PayPal's Privacy Policy</a>.</span>
               </li>
             </ul>
           </div>

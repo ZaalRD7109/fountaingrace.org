@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'The Principle That Activates Everything: Right Action',
     description:
-      'The harvest belongs to the workers. Part 2 of the Principles series — why the right action at the right time changes everything. Fountain of Grace International, Pretoria North.',
+      'The harvest belongs to the workers. Part 2 of the Principles series - why the right action at the right time changes everything. Fountain of Grace International, Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/sermons/the-principle-that-activates-everything',
   },
 }
@@ -58,7 +58,7 @@ const jsonLd = [
         name: 'Why doesn\'t prayer alone produce results?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'James 2:17 says faith without works is dead. Prayer is the starting point — but God designed the system so that faith requires a corresponding action. A prophetic word only becomes real when you take the step that aligns with it. Praying for a job while sending no CVs is faith without the right action.',
+          text: 'James 2:17 says faith without works is dead. Prayer is the starting point - but God designed the system so that faith requires a corresponding action. A prophetic word only becomes real when you take the step that aligns with it. Praying for a job while sending no CVs is faith without the right action.',
         },
       },
       {
@@ -66,7 +66,7 @@ const jsonLd = [
         name: 'What is right action according to the Bible?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Right action is obedient, timely movement toward what God has said. It means acting immediately when opportunity comes (Proverbs 6:6-9 — the ant gathers in summer, not winter). It means obeying without negotiating, like Abraham in Genesis 12 who simply departed when God spoke. And it means aligning your effort with the correct goal — not working hard in the wrong direction.',
+          text: 'Right action is obedient, timely movement toward what God has said. It means acting immediately when opportunity comes (Proverbs 6:6-9 - the ant gathers in summer, not winter). It means obeying without negotiating, like Abraham in Genesis 12 who simply departed when God spoke. And it means aligning your effort with the correct goal - not working hard in the wrong direction.',
         },
       },
     ],
@@ -78,7 +78,7 @@ const principles = [
     n: 1,
     title: 'Faith Requires Correct Action',
     scripture: 'James 2:17',
-    body: '"Faith by itself, if it does not have works, is dead." Believing that God will help you is not the same as doing the right thing that creates the help God will send. Noah believed the flood was coming — and built the ark. That is the pattern. Belief activates movement, and movement activates provision.',
+    body: '"Faith by itself, if it does not have works, is dead." Believing that God will help you is not the same as doing the right thing that creates the help God will send. Noah believed the flood was coming - and built the ark. That is the pattern. Belief activates movement, and movement activates provision.',
   },
   {
     n: 2,
@@ -90,7 +90,7 @@ const principles = [
     n: 3,
     title: 'Right Obedience in the Right Place',
     scripture: 'Genesis 12:1–4',
-    body: 'God told Abraham to leave his country, his family, and his father\'s house — and go to a land He would show him. God was still speaking when Abraham made his decision. He did not negotiate. He did not ask for more information. "So Abram departed, as the LORD had spoken unto him." Obedience to the call — even before you know all the details — is the condition for the promise.',
+    body: 'God told Abraham to leave his country, his family, and his father\'s house - and go to a land He would show him. God was still speaking when Abraham made his decision. He did not negotiate. He did not ask for more information. "So Abram departed, as the LORD had spoken unto him." Obedience to the call - even before you know all the details - is the condition for the promise.',
   },
   {
     n: 4,
@@ -102,13 +102,13 @@ const principles = [
     n: 5,
     title: 'Laziness Blocks Progress',
     scripture: 'Proverbs 13:4',
-    body: '"The soul of the sluggard craves, and gets nothing, while the soul of the diligent is richly supplied." Desire is not enough. Craving the result without doing the work produces nothing. God honours the diligent. He can give you a Lamborghini — but if you have no income, the rates on it will take it back. Right action creates the context for what God provides to remain.',
+    body: '"The soul of the sluggard craves, and gets nothing, while the soul of the diligent is richly supplied." Desire is not enough. Craving the result without doing the work produces nothing. God honours the diligent. He can give you a Lamborghini - but if you have no income, the rates on it will take it back. Right action creates the context for what God provides to remain.',
   },
   {
     n: 6,
     title: 'Immediate Right Action Multiplies Impact',
     scripture: 'Luke 5:4–6',
-    body: 'When Jesus told Simon to let down the nets, Simon did not plan it or schedule it. He did it immediately — and the catch broke the nets. Delayed right action reduces impact. When God says lower the net, the time to act is now. The immediacy of obedience is what triggers the multiplication.',
+    body: 'When Jesus told Simon to let down the nets, Simon did not plan it or schedule it. He did it immediately - and the catch broke the nets. Delayed right action reduces impact. When God says lower the net, the time to act is now. The immediacy of obedience is what triggers the multiplication.',
   },
 ]
 
@@ -141,12 +141,12 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <p className="text-[#555] leading-relaxed text-lg mb-4">
-              Many people say, &quot;I have done everything.&quot; But when you ask what their everything was, it often turns out to be effort in the wrong direction, or the right action taken too late, or faith without the corresponding work. James 2:17 is not complicated: &quot;Faith by itself, if it does not have works, is dead.&quot; Right action is not optional — it is the activating mechanism.
+              Many people say, &quot;I have done everything.&quot; But when you ask what their everything was, it often turns out to be effort in the wrong direction, or the right action taken too late, or faith without the corresponding work. James 2:17 is not complicated: &quot;Faith by itself, if it does not have works, is dead.&quot; Right action is not optional - it is the activating mechanism.
             </p>
             <p className="text-[#555] leading-relaxed mb-10">
               This message builds on{' '}
               <Link href="/sermons/the-principles-that-move-people-forward-faster" className="fgi-link">
-                Part 1 — The Principles That Move People Forward Faster
+                Part 1 - The Principles That Move People Forward Faster
               </Link>
               . Where Part 1 gave 10 principles of advancement, Part 2 asks the harder question: why are people still stuck even when they know the principles? The answer is almost always the same: right knowledge without right action.
             </p>
@@ -168,17 +168,17 @@ export default function SermonPage() {
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
               <p className="text-[#2a9df4] font-semibold text-lg italic">
-                &quot;God told you to do certain things. He has spoken to you. Why have you not done it? That answer — when you find it honestly — is where your breakthrough is waiting.&quot;
+                &quot;God told you to do certain things. He has spoken to you. Why have you not done it? That answer - when you find it honestly - is where your breakthrough is waiting.&quot;
               </p>
-              <cite className="text-[#555] text-sm not-italic mt-2 block">— Pastor Ricardo Zaal</cite>
+              <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
 
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Four Things That Make Right Action Effective</h2>
             <ol className="list-decimal list-inside space-y-3 text-[#555] leading-relaxed mb-6">
-              <li><strong>Prayer first.</strong> &quot;Except the LORD build the house, they labour in vain that build it&quot; — Psalm 127:1. Direction comes from God. Start there.</li>
+              <li><strong>Prayer first.</strong> &quot;Except the LORD build the house, they labour in vain that build it&quot; - Psalm 127:1. Direction comes from God. Start there.</li>
               <li><strong>Seek wisdom.</strong> Wisdom tells you what the correct action is. Without it, you work hard in the wrong direction.</li>
               <li><strong>Position yourself correctly.</strong> If you want to be a doctor, do not go to an engineering school. Right action requires right positioning.</li>
-              <li><strong>Move immediately.</strong> When all four align — prayer, wisdom, positioning, and immediate action — things change.</li>
+              <li><strong>Move immediately.</strong> When all four align - prayer, wisdom, positioning, and immediate action - things change.</li>
             </ol>
 
             <p className="text-[#555] leading-relaxed">
@@ -186,7 +186,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}
-              — these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
+              - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
             </p>
           </div>
         </section>
@@ -197,11 +197,11 @@ export default function SermonPage() {
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-[#1a1a1a] mb-2">Why doesn&apos;t prayer alone produce results?</h3>
-                <p className="text-[#555] leading-relaxed text-sm">James 2:17 says faith without works is dead. Prayer is the starting point — but faith requires a corresponding action. Praying for a job while sending no CVs is faith without right action. God designed the system so that human obedience cooperates with divine provision.</p>
+                <p className="text-[#555] leading-relaxed text-sm">James 2:17 says faith without works is dead. Prayer is the starting point - but faith requires a corresponding action. Praying for a job while sending no CVs is faith without right action. God designed the system so that human obedience cooperates with divine provision.</p>
               </div>
               <div>
                 <h3 className="font-semibold text-[#1a1a1a] mb-2">Can the right action still fail if the timing is wrong?</h3>
-                <p className="text-[#555] leading-relaxed text-sm">Yes. Proverbs 6:6–9 uses the ant as the example: she gathers in summer, not winter. Right action in the wrong season — or right action delayed until the opportunity window closes — still produces poor results. Timing is part of obedience.</p>
+                <p className="text-[#555] leading-relaxed text-sm">Yes. Proverbs 6:6–9 uses the ant as the example: she gathers in summer, not winter. Right action in the wrong season - or right action delayed until the opportunity window closes - still produces poor results. Timing is part of obedience.</p>
               </div>
             </div>
           </div>

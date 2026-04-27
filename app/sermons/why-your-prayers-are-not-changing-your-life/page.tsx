@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'You had the idea. Somebody else took it. You had the word from God. Nothing happened. This message explains the missing piece between prayer and result. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/sermons/why-your-prayers-are-not-changing-your-life',
   },
 }
@@ -24,7 +24,7 @@ const jsonLd = [
     '@context': 'https://schema.org',
     '@type': 'Article',
     headline: 'Why Your Prayers Are Not Changing Your Life',
-    description: 'A prophetic word only becomes reality when faith and corresponding action steps are present. Most regrets are not about wrong actions — they are about inaction. The building with the foundation but no bricks is still just an idea.',
+    description: 'A prophetic word only becomes reality when faith and corresponding action steps are present. Most regrets are not about wrong actions - they are about inaction. The building with the foundation but no bricks is still just an idea.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
       '@type': 'Church',
@@ -58,7 +58,7 @@ const jsonLd = [
         name: 'Does prayer alone produce results?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Prayer is essential — but a prophetic word or answered prayer only becomes real when faith is combined with a corresponding action step. James 2:17 says faith without works is dead. If you pray for a job and send no CVs, the prayer is faith without action. God designed prayer to be the starting point, not the complete circuit.',
+          text: 'Prayer is essential - but a prophetic word or answered prayer only becomes real when faith is combined with a corresponding action step. James 2:17 says faith without works is dead. If you pray for a job and send no CVs, the prayer is faith without action. God designed prayer to be the starting point, not the complete circuit.',
         },
       },
       {
@@ -121,12 +121,12 @@ export default function SermonPage() {
               If you could ask someone who has died what they most regret, the answer almost never involves something they did wrong. It is almost always something they did not do. The idea they did not pursue. The step they did not take. The word they received but sat on while someone else moved on it.
             </p>
             <p className="text-[#555] leading-relaxed mb-8">
-              You had the idea. You had the prompting. Then you hesitated — and watched someone else step into what you knew was meant for you. Not because they were more talented. Not because God favoured them more. Because they acted when you delayed. The opportunity was not about who deserved it. It was about who moved.
+              You had the idea. You had the prompting. Then you hesitated - and watched someone else step into what you knew was meant for you. Not because they were more talented. Not because God favoured them more. Because they acted when you delayed. The opportunity was not about who deserved it. It was about who moved.
             </p>
 
             <h2 className="text-xl font-bold text-[#2a9df4] mb-3">A Prophetic Word Only Activates With Action</h2>
             <p className="text-[#555] leading-relaxed mb-4">
-              A prophetic word only becomes real when two things are present: faith and a corresponding action step. The word alone is a seed in your hand. Faith alone, without movement, does not plant it. James 2:17 — &quot;Faith by itself, if it does not have works, is dead.&quot;
+              A prophetic word only becomes real when two things are present: faith and a corresponding action step. The word alone is a seed in your hand. Faith alone, without movement, does not plant it. James 2:17 - &quot;Faith by itself, if it does not have works, is dead.&quot;
             </p>
             <p className="text-[#555] leading-relaxed mb-4">
               The image that makes this clear: you have the foundation. You have the bricks. You have the mortar. You even have the building plans. But if you never move a single brick to the mortar, the building remains an idea. Years pass. The foundation is still there. The vision is still there. But it is still just a foundation. The action is what builds.
@@ -137,20 +137,20 @@ export default function SermonPage() {
 
             <h2 className="text-xl font-bold text-[#2a9df4] mb-3">What Changes When You Add the Action Step</h2>
             <p className="text-[#555] leading-relaxed mb-4">
-              The moment you identify what God has been prompting you toward and attach a specific, immediate action step to it — the system changes. Not because you earned something. Because you aligned yourself with how God designed the system to work.
+              The moment you identify what God has been prompting you toward and attach a specific, immediate action step to it - the system changes. Not because you earned something. Because you aligned yourself with how God designed the system to work.
             </p>
             <p className="text-[#555] leading-relaxed mb-4">
-              He said &quot;lower your net&quot; — and Simon did. Immediately. The catch broke the nets. The action did not create the fish. The fish were already there. The action created the context for what was already provided to be received.
+              He said &quot;lower your net&quot; - and Simon did. Immediately. The catch broke the nets. The action did not create the fish. The fish were already there. The action created the context for what was already provided to be received.
             </p>
             <p className="text-[#555] leading-relaxed mb-8">
-              God told you to do something. Not five things. One thing. You know what it is. It keeps coming up — in prayer, in sermons, in quiet moments. Write it down. Take one specific step toward it this week. That is what changes the circuit from prayer to result.
+              God told you to do something. Not five things. One thing. You know what it is. It keeps coming up - in prayer, in sermons, in quiet moments. Write it down. Take one specific step toward it this week. That is what changes the circuit from prayer to result.
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
               <p className="text-[#2a9df4] font-semibold text-lg italic">
-                &quot;Most regrets are not about what you did. They are about what you did not do. The moment has passed — but you are still standing at the building site with unbaked bricks and unused mortar.&quot;
+                &quot;Most regrets are not about what you did. They are about what you did not do. The moment has passed - but you are still standing at the building site with unbaked bricks and unused mortar.&quot;
               </p>
-              <cite className="text-[#555] text-sm not-italic mt-2 block">— Pastor Ricardo Zaal</cite>
+              <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
 
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">One Question to Answer Before This Week Ends</h2>
@@ -163,7 +163,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}
-              — these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
+              - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
             </p>
           </div>
         </section>
@@ -174,11 +174,11 @@ export default function SermonPage() {
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-[#1a1a1a] mb-2">Does prayer alone produce results?</h3>
-                <p className="text-[#555] leading-relaxed text-sm">Prayer is essential — but a prophetic word only becomes real when faith is combined with a corresponding action step. James 2:17 says faith without works is dead. If you pray for a job and send no CVs, the prayer is incomplete. God designed prayer as the starting point, not the complete circuit.</p>
+                <p className="text-[#555] leading-relaxed text-sm">Prayer is essential - but a prophetic word only becomes real when faith is combined with a corresponding action step. James 2:17 says faith without works is dead. If you pray for a job and send no CVs, the prayer is incomplete. God designed prayer as the starting point, not the complete circuit.</p>
               </div>
               <div>
                 <h3 className="font-semibold text-[#1a1a1a] mb-2">What is the first step when God gives you a direction?</h3>
-                <p className="text-[#555] leading-relaxed text-sm">Identify the smallest concrete action that aligns with the direction and do it immediately. Not the full plan — the first step. Abraham did not negotiate with God about the details before moving (Genesis 12:4). He departed as the Lord had spoken. Immediate obedience creates the context for the full provision to follow.</p>
+                <p className="text-[#555] leading-relaxed text-sm">Identify the smallest concrete action that aligns with the direction and do it immediately. Not the full plan - the first step. Abraham did not negotiate with God about the details before moving (Genesis 12:4). He departed as the Lord had spoken. Immediate obedience creates the context for the full provision to follow.</p>
               </div>
             </div>
           </div>

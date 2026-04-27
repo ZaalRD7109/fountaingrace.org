@@ -5,7 +5,7 @@ import TallyEmbed from '@/components/TallyEmbed'
 export const metadata: Metadata = {
   title: 'Prayer Request | Fountain of Grace International | Pretoria North',
   description:
-    'Submit a prayer request to Fountain of Grace International in Pretoria North. Your request is received by the pastoral team — not shared publicly. We pray with you.',
+    'Submit a prayer request to Fountain of Grace International in Pretoria North. Your request is received by the pastoral team - not shared publicly. We pray with you.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/prayer',
@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Prayer Request | Fountain of Grace International | Pretoria North',
     description:
-      'Submit a prayer request to Fountain of Grace International in Pretoria North. Your request is received by the pastoral team — not shared publicly. We pray with you.',
+      'Submit a prayer request to Fountain of Grace International in Pretoria North. Your request is received by the pastoral team - not shared publicly. We pray with you.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/prayer',
   },
 }
@@ -67,7 +67,7 @@ export default function PrayerPage() {
           </h1>
           <p className="text-white text-base leading-relaxed">
             Submit your request below. The pastoral team at Fountain of Grace International
-            receives every request personally — nothing is shared publicly.
+            receives every request personally - nothing is shared publicly.
           </p>
         </div>
       </section>
@@ -76,9 +76,9 @@ export default function PrayerPage() {
       <section className="bg-white py-12 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto space-y-5 text-[#595959] leading-relaxed">
           <p>
-            If you are going through something difficult — a health crisis, a broken
+            If you are going through something difficult - a health crisis, a broken
             relationship, financial pressure, grief, or something you cannot put into words
-            yet — you are not alone in it.
+            yet - you are not alone in it.
           </p>
           <p>
             The pastoral team at Fountain of Grace International takes prayer seriously. Your
@@ -116,15 +116,15 @@ export default function PrayerPage() {
         </div>
       </section>
 
-      {/* URGENT — WHATSAPP */}
+      {/* URGENT - WHATSAPP */}
       <section className="bg-white py-10 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
           <div className="bg-[#f0fafa] border border-teal-100 rounded-xl p-6 flex flex-col sm:flex-row gap-5 items-start sm:items-center">
             <div className="flex-1">
               <h2 className="text-base font-bold text-gray-900 mb-1">Need someone right now?</h2>
               <p className="text-sm text-[#595959] leading-relaxed">
-                For urgent needs — a crisis, a medical situation, a moment you cannot carry
-                alone — WhatsApp Pastor Ricardo directly. He responds personally.
+                For urgent needs - a crisis, a medical situation, a moment you cannot carry
+                alone - WhatsApp Pastor Ricardo directly. He responds personally.
               </p>
             </div>
             <a
@@ -151,7 +151,7 @@ export default function PrayerPage() {
               },
               {
                 step: '02',
-                text: 'It is prayed over — not forwarded to a committee, not posted anywhere. Kept between you and the pastoral team.',
+                text: 'It is prayed over - not forwarded to a committee, not posted anywhere. Kept between you and the pastoral team.',
               },
               {
                 step: '03',

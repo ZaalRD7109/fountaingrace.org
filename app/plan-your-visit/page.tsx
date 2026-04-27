@@ -5,7 +5,7 @@ import TallyEmbed from '@/components/TallyEmbed'
 export const metadata: Metadata = {
   title: 'Plan Your Visit | Church in Pretoria North | FGI',
   description:
-    'Planning your first visit to a Christian church in Pretoria North? Fill in the form — we reach out before Sunday so you know exactly where to go and what to expect.',
+    'Planning your first visit to a Christian church in Pretoria North? Fill in the form - we reach out before Sunday so you know exactly where to go and what to expect.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/plan-your-visit',
@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Plan Your Visit | Church in Pretoria North | FGI',
     description:
-      'Planning your first visit to a Christian church in Pretoria North? Fill in the form — we reach out before Sunday so you know exactly where to go and what to expect.',
+      'Planning your first visit to a Christian church in Pretoria North? Fill in the form - we reach out before Sunday so you know exactly where to go and what to expect.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/plan-your-visit',
   },
 }
@@ -33,7 +33,7 @@ export default function PlanYourVisitPage() {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'Event',
-    name: 'Sunday Service — Fountain of Grace International',
+    name: 'Sunday Service - Fountain of Grace International',
     eventSchedule: {
       '@type': 'Schedule',
       byDay: 'https://schema.org/Sunday',
@@ -79,7 +79,7 @@ export default function PlanYourVisitPage() {
         </div>
       </section>
 
-      {/* FORM — full width */}
+      {/* FORM - full width */}
       <section className="bg-white py-6 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
           <TallyEmbed formId="aQDZeZ" />
@@ -94,7 +94,7 @@ export default function PlanYourVisitPage() {
         </div>
       </section>
 
-      {/* SERVICE INFO — compact 3-col strip below form */}
+      {/* SERVICE INFO - compact 3-col strip below form */}
       <section className="bg-gray-50 py-8 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="bg-white rounded-xl p-4 border border-gray-100">
@@ -105,7 +105,7 @@ export default function PlanYourVisitPage() {
           <div className="bg-white rounded-xl p-4 border border-gray-100">
             <p className="text-[#008080] font-bold text-sm mb-1">What to wear</p>
             <p className="text-sm text-gray-700">Come exactly as you are.</p>
-            <p className="text-xs text-[#595959] mt-1">Jeans, casual — no one will care.</p>
+            <p className="text-xs text-[#595959] mt-1">Jeans, casual - no one will care.</p>
           </div>
           <div className="bg-white rounded-xl p-4 border border-gray-100">
             <p className="text-[#008080] font-bold text-sm mb-1">Arrive early</p>
@@ -125,11 +125,11 @@ export default function PlanYourVisitPage() {
             {[
               {
                 q: 'What do I wear to church in Pretoria North?',
-                a: 'Wear whatever makes you comfortable — jeans, casual clothes, whatever you have on. At Fountain of Grace International in Pretoria North, no one will notice or care. Come dressed exactly as you are.',
+                a: 'Wear whatever makes you comfortable - jeans, casual clothes, whatever you have on. At Fountain of Grace International in Pretoria North, no one will notice or care. Come dressed exactly as you are.',
               },
               {
                 q: 'Where do I park at Fountain of Grace International?',
-                a: 'The easiest way to get parking directions is to WhatsApp us before you come — we will send you exactly where to go. Message us on +27 75 259 2555 and we will sort it out.',
+                a: 'The easiest way to get parking directions is to WhatsApp us before you come - we will send you exactly where to go. Message us on +27 75 259 2555 and we will sort it out.',
               },
               {
                 q: 'What happens during a Sunday service at Fountain of Grace?',

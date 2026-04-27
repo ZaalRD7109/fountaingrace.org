@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Looking for a church in Pretoria North? Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street. Everyone is welcome.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/church-pretoria-north',
   },
 }
@@ -86,7 +86,7 @@ export default function ChurchPretoriaPage() {
           </h1>
           <p className="text-white text-base leading-relaxed mb-6">
             Fountain of Grace International is a Christian church in Pretoria North that meets every Sunday at 09:00.
-            Practical teaching. Real community. Everyone is welcome — no experience needed.
+            Practical teaching. Real community. Everyone is welcome - no experience needed.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/plan-your-visit" className="btn-primary text-sm">
@@ -114,12 +114,12 @@ export default function ChurchPretoriaPage() {
           <div className="space-y-5 text-[#595959] leading-relaxed">
             <p>
               Fountain of Grace International is not built for people who already have it together. It is built for
-              people who are dealing with something real — a difficult season, unanswered questions, or a need for
+              people who are dealing with something real - a difficult season, unanswered questions, or a need for
               community that actually shows up.
             </p>
             <p>
               Every Sunday message is practical and connected to everyday life. The teaching is Bible-based but
-              addressed to the problems you are actually facing — not abstract theology for its own sake.
+              addressed to the problems you are actually facing - not abstract theology for its own sake.
             </p>
             <p>
               When you walk in, someone will greet you. You will not be singled out or made to stand up in front of
@@ -136,11 +136,11 @@ export default function ChurchPretoriaPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {[
               { label: 'Day', value: 'Every Sunday' },
-              { label: 'Time', value: '09:00 — arrive 10–15 min early' },
+              { label: 'Time', value: '09:00 - arrive 10–15 min early' },
               { label: 'Duration', value: 'Approximately 90 minutes' },
               { label: 'Address', value: '323 B Danie Theron Street, Pretoria North' },
               { label: 'Languages', value: 'English and Afrikaans' },
-              { label: 'Dress code', value: 'Casual — come as you are' },
+              { label: 'Dress code', value: 'Casual - come as you are' },
               { label: 'Children', value: 'Welcome in the service' },
               { label: 'Cost', value: 'Free. No obligation.' },
             ].map((row) => (
@@ -164,7 +164,7 @@ export default function ChurchPretoriaPage() {
               family breakdown, youth development, and social isolation.
             </p>
             <p>
-              The church and the NPO work together — the Sunday community is the same community that runs the
+              The church and the NPO work together - the Sunday community is the same community that runs the
               programs. If you want to get involved in the practical side of the work, the{' '}
               <Link href="/community-impact" className="fgi-link">
                 Community Impact page

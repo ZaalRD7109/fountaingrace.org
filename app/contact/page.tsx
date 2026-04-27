@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     description:
       'Get in touch with Fountain of Grace International in Pretoria North. WhatsApp +27 75 259 2555, email, or fill in the contact form. We respond quickly.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/contact',
   },
 }
@@ -81,7 +81,7 @@ export default function ContactPage() {
             We are easy to find and easy to reach.
           </h1>
           <p className="text-white text-base leading-relaxed">
-            Service times, address, parking, phone and WhatsApp — all in one place.
+            Service times, address, parking, phone and WhatsApp - all in one place.
           </p>
         </div>
       </section>
@@ -182,7 +182,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Fountain of Grace International — 323 B Danie Theron Street, Pretoria North"
+                  title="Fountain of Grace International - 323 B Danie Theron Street, Pretoria North"
                 />
               </div>
               <p className="text-xs text-[#595959] mt-2">
@@ -267,7 +267,7 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* NAP BLOCK — styled, prominent, mandatory on every page footer area */}
+      {/* NAP BLOCK - styled, prominent, mandatory on every page footer area */}
       <section className="bg-gray-50 py-12 px-4 sm:px-6">
         <div className="section-container max-w-2xl">
           <div className="bg-white border border-gray-100 rounded-xl p-7 shadow-sm">

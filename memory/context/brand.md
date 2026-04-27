@@ -1,8 +1,8 @@
-# FGI Brand — Source of Truth
+# FGI Brand - Source of Truth
 
 This is the single authoritative reference for FGI brand colors, logo, and visual identity.
-Do NOT guess. Do NOT use Ricardo's personal book brand (#00ced1 etc) — that is a different brand.
-Do NOT trust the colors in `tailwind.config.ts` if they differ — that file is outdated.
+Do NOT guess. Do NOT use Ricardo's personal book brand (#00ced1 etc) - that is a different brand.
+Do NOT trust the colors in `tailwind.config.ts` if they differ - that file is outdated.
 
 ## Color palette (locked)
 
@@ -33,7 +33,7 @@ The wordmark "FOUNTAIN OF GRACE INTERNATIONAL" curves below in FGI Blue.
 ### Logo usage rules
 - Square logo on dark backgrounds (the source asset is on black)
 - Horizontal logo for header lockups on white backgrounds
-- Never recolor the logo — it is the brand mark
+- Never recolor the logo - it is the brand mark
 - Always pair with FGI Blue when used as a wordmark accent
 
 ## Typography
@@ -50,10 +50,10 @@ Primary typeface: **Poppins** (system fallback: -apple-system, BlinkMacSystemFon
 
 ## What NOT to use
 
-- `#00ced1` and Ricardo's personal book palette — that is Ricardo Zaal's author brand, not FGI
-- Navy `#001F54` — appears in tailwind.config.ts but does not match the actual FGI brand
+- `#00ced1` and Ricardo's personal book palette - that is Ricardo Zaal's author brand, not FGI
+- Navy `#001F54` - appears in tailwind.config.ts but does not match the actual FGI brand
 - Burgundy, purple, or any color outside the five hex codes above
 - Generic "ministry" or "church" stock palettes
 
 ## Last updated
-2026-04-26 — confirmed by Ricardo from the public asset folder and the FGI brand reference image.
+2026-04-26 - confirmed by Ricardo from the public asset folder and the FGI brand reference image.

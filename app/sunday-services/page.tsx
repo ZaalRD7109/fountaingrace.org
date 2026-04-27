@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Sunday service every week at 09:00 in Pretoria North. Practical Bible teaching, worship, and real community at Fountain of Grace International. Everyone is welcome.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/sunday-services',
   },
 }
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Event',
-  name: 'Sunday Service — Fountain of Grace International',
+  name: 'Sunday Service - Fountain of Grace International',
   description:
     'Weekly Sunday service at Fountain of Grace International in Pretoria North. Practical teaching, worship, and community. Open to everyone.',
   eventSchedule: {
@@ -53,7 +53,7 @@ const jsonLd = {
   isAccessibleForFree: true,
   audience: {
     '@type': 'Audience',
-    audienceType: 'Everyone — no prior church experience required',
+    audienceType: 'Everyone - no prior church experience required',
   },
 }
 
@@ -71,9 +71,9 @@ const serviceDetails = [
   { label: 'Time', value: '09:00 (arrive 10–15 min early)' },
   { label: 'Duration', value: 'Approximately 90 minutes' },
   { label: 'Address', value: '323 B Danie Theron Street, Pretoria North' },
-  { label: 'Dress code', value: 'Casual — come as you are' },
+  { label: 'Dress code', value: 'Casual - come as you are' },
   { label: 'Kids', value: 'Children are welcome' },
-  { label: 'Cost', value: 'Free — no obligation' },
+  { label: 'Cost', value: 'Free - no obligation' },
   { label: 'Language', value: 'English and Afrikaans' },
 ]
 
@@ -137,7 +137,7 @@ export default function SundayServicesPage() {
               {
                 step: '01',
                 title: 'Worship',
-                body: 'The service opens with worship music. You are not required to sing or stand — come in, find a seat, and settle.',
+                body: 'The service opens with worship music. You are not required to sing or stand - come in, find a seat, and settle.',
               },
               {
                 step: '02',
@@ -270,7 +270,7 @@ export default function SundayServicesPage() {
             <p>
               Fountain of Grace International holds Sunday services in Pretoria North every week
               starting at 09:00. The church is located at 323 B Danie Theron Street, Pretoria North,
-              Gauteng, 0182. Services are open to everyone — no prior church experience required.
+              Gauteng, 0182. Services are open to everyone - no prior church experience required.
               Serving Pretoria North, Akasia, Orchards, Shosanguve, Montana, Wonderboom, Suiderberg,
               Amandasig, and surrounding areas. Contact us on{' '}
               <a href="tel:+27752592555" className="text-[#008080] font-semibold">+27 75 259 2555</a>{' '}

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Support a verified NPO in Pretoria North. Your donation funds food relief, family support, and community programs. Give via PayPal or EFT. NPO No: 316-193.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/donate',
   },
 }
@@ -26,7 +26,7 @@ const jsonLd = [
     name: 'Donate to Fountain of Grace International',
     target: 'https://www.fountaingrace.org/donate',
     description:
-      'Support Fountain of Grace International (NPO 316-193) — a nonprofit in Pretoria North serving families and communities through practical programs.',
+      'Support Fountain of Grace International (NPO 316-193) - a nonprofit in Pretoria North serving families and communities through practical programs.',
     recipient: {
       '@type': 'NGO',
       name: 'Fountain of Grace International',

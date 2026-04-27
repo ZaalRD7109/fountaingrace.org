@@ -5,7 +5,7 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'Pastor Ricardo Zaal | Fountain of Grace International',
   description:
-    'Meet Pastor Ricardo Zaal — founder of Fountain of Grace International in Pretoria North. In ministry since 2000. Practical teaching, accessible leadership. Come this Sunday.',
+    'Meet Pastor Ricardo Zaal - founder of Fountain of Grace International in Pretoria North. In ministry since 2000. Practical teaching, accessible leadership. Come this Sunday.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/pastors',
@@ -13,9 +13,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Pastor Ricardo Zaal | Fountain of Grace International',
     description:
-      'Meet Pastor Ricardo Zaal — founder of Fountain of Grace International in Pretoria North. In ministry since 2000. Practical teaching, accessible leadership. Come this Sunday.',
+      'Meet Pastor Ricardo Zaal - founder of Fountain of Grace International in Pretoria North. In ministry since 2000. Practical teaching, accessible leadership. Come this Sunday.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/pastors',
   },
 }
@@ -85,8 +85,8 @@ const jsonLd = [
 ]
 
 const timeline = [
-  { year: '2000', event: 'Began ministry in Postmasburg — gave his life fully to Christ and committed to a life of faith and discipline.' },
-  { year: '2000s', event: 'Served at Bread of Life Ministries in Riverlea, Johannesburg — youth leader right hand, then elder. Deep foundation in ministry and people development.' },
+  { year: '2000', event: 'Began ministry in Postmasburg - gave his life fully to Christ and committed to a life of faith and discipline.' },
+  { year: '2000s', event: 'Served at Bread of Life Ministries in Riverlea, Johannesburg - youth leader right hand, then elder. Deep foundation in ministry and people development.' },
   { year: '2018', event: 'Relocated to Pretoria North. Continued in ministry as a pastor at Rehoboth Chapel International.' },
   { year: '2020', event: 'Founded Fountain of Grace International in June 2020 during the Covid-19 season. Ministry focused on discipleship, restoration, and equipping individuals and families.' },
   { year: 'Today', event: 'Leading FGI as a registered NPO (316-193) in Pretoria North. Sunday services every week at 09:00. Husband, father, and available to his community.' },
@@ -128,7 +128,7 @@ export default function PastorsPage() {
               <div className="relative w-full h-80 rounded-xl overflow-hidden shadow-md">
                 <Image
                   src="/pastor-bio.webp"
-                  alt="Pastor Ricardo Zaal — founder and lead pastor of Fountain of Grace International, Pretoria North"
+                  alt="Pastor Ricardo Zaal - founder and lead pastor of Fountain of Grace International, Pretoria North"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 40vw"
@@ -172,20 +172,20 @@ export default function PastorsPage() {
               <div className="space-y-4 text-[#595959] leading-relaxed">
                 <p>
                   Pastor Ricardo Zaal is the founder and lead pastor of Fountain of Grace
-                  International in Pretoria North. He has been in ministry since 10 February 2000 —
+                  International in Pretoria North. He has been in ministry since 10 February 2000 -
                   over two decades of consistent leadership, discipleship, and pastoral experience.
                 </p>
                 <p>
                   He began his ministry journey in Postmasburg, where he gave his life fully to
                   Christ and committed to a life of faith and discipline. He later served at
-                  Bread of Life Ministries in Riverlea, Johannesburg — working as the youth
-                  leader&apos;s right hand, and eventually as an elder — building a deep foundation
+                  Bread of Life Ministries in Riverlea, Johannesburg - working as the youth
+                  leader&apos;s right hand, and eventually as an elder - building a deep foundation
                   in ministry and people development.
                 </p>
                 <p>
                   After relocating to Pretoria North, he continued as a pastor at Rehoboth Chapel
                   International until 2018. In June 2020, during the Covid-19 season, he founded
-                  Fountain of Grace International — a ministry focused on discipleship, restoration,
+                  Fountain of Grace International - a ministry focused on discipleship, restoration,
                   and equipping individuals and families to build stable, purpose-driven lives through
                   faith.
                 </p>
@@ -195,7 +195,7 @@ export default function PastorsPage() {
                   <Link href="/sunday-services" className="fgi-link">
                     Sunday services
                   </Link>{' '}
-                  every week at 09:00 and is available to his community directly — not behind an
+                  every week at 09:00 and is available to his community directly - not behind an
                   appointment wall.
                 </p>
                 <p>
@@ -242,11 +242,11 @@ export default function PastorsPage() {
             {[
               {
                 title: 'Practical over performative',
-                body: 'Every message is built around a real problem — something people are actually dealing with in their week. Not theory. Not a show.',
+                body: 'Every message is built around a real problem - something people are actually dealing with in their week. Not theory. Not a show.',
               },
               {
                 title: 'Available to people',
-                body: 'He is not behind an appointment system. If you need to talk, you can reach him directly via WhatsApp. That is not a slogan — it is how he operates.',
+                body: 'He is not behind an appointment system. If you need to talk, you can reach him directly via WhatsApp. That is not a slogan - it is how he operates.',
               },
               {
                 title: 'Accountability without guilt',
@@ -254,7 +254,7 @@ export default function PastorsPage() {
               },
               {
                 title: 'Family and community first',
-                body: 'He is a husband and father. He understands what it means to lead a family in Pretoria North in 2025 — and he teaches from that reality.',
+                body: 'He is a husband and father. He understands what it means to lead a family in Pretoria North in 2025 - and he teaches from that reality.',
               },
             ].map((val) => (
               <div

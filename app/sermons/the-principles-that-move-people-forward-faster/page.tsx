@@ -4,7 +4,7 @@ import Link from 'next/link'
 export const metadata: Metadata = {
   title: "The Principles That Move People Forward Faster | Fountain of Grace International Pretoria North",
   description:
-    "You have been praying. Nothing has changed. This message gives 10 biblical principles — obedience, positioning, wisdom, strategy, stewardship, relationships, and more. Pretoria North.",
+    "You have been praying. Nothing has changed. This message gives 10 biblical principles - obedience, positioning, wisdom, strategy, stewardship, relationships, and more. Pretoria North.",
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/sermons/the-principles-that-move-people-forward-faster',
@@ -12,9 +12,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "The Principles That Move People Forward Faster",
     description:
-      "10 biblical principles that accelerate progress — for the person who feels stuck, financially trapped, or moving in circles. Fountain of Grace International, Pretoria North.",
+      "10 biblical principles that accelerate progress - for the person who feels stuck, financially trapped, or moving in circles. Fountain of Grace International, Pretoria North.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/sermons/the-principles-that-move-people-forward-faster',
   },
 }
@@ -56,13 +56,13 @@ const principles = [
     n: 1,
     title: 'Obedience',
     scripture: 'Luke 5:4-6',
-    body: 'Simon fished all night and caught nothing. One act of obedience — casting the net on the other side — produced a net-breaking result. Obedience to a specific instruction unlocks what effort alone cannot.',
+    body: 'Simon fished all night and caught nothing. One act of obedience - casting the net on the other side - produced a net-breaking result. Obedience to a specific instruction unlocks what effort alone cannot.',
   },
   {
     n: 2,
     title: 'Positioning',
     scripture: 'Ruth 2:2-3',
-    body: 'Ruth placed herself in the right field. Position determines what you are exposed to. Being in the wrong environment — even with the right effort — limits what God can connect you to.',
+    body: 'Ruth placed herself in the right field. Position determines what you are exposed to. Being in the wrong environment - even with the right effort - limits what God can connect you to.',
   },
   {
     n: 3,
@@ -80,7 +80,7 @@ const principles = [
     n: 5,
     title: 'Stewardship',
     scripture: 'Matthew 25:21',
-    body: 'You were faithful with little — I will give you more. God does not increase what we are not managing well. Stewardship of current resources is the condition for greater ones.',
+    body: 'You were faithful with little - I will give you more. God does not increase what we are not managing well. Stewardship of current resources is the condition for greater ones.',
   },
   {
     n: 6,
@@ -92,13 +92,13 @@ const principles = [
     n: 7,
     title: 'Preparation',
     scripture: 'Proverbs 24:27',
-    body: 'Prepare your work outside — then build your house. Opportunity rarely announces itself. Preparation is what separates those who capitalise on a moment from those who watch it pass.',
+    body: 'Prepare your work outside - then build your house. Opportunity rarely announces itself. Preparation is what separates those who capitalise on a moment from those who watch it pass.',
   },
   {
     n: 8,
     title: 'Faith with Action',
     scripture: 'James 2:17',
-    body: 'Faith without works is dead. Believing God is not passive. Action is the proof of faith. Waiting without movement is not faith — it is avoidance dressed in spiritual language.',
+    body: 'Faith without works is dead. Believing God is not passive. Action is the proof of faith. Waiting without movement is not faith - it is avoidance dressed in spiritual language.',
   },
   {
     n: 9,
@@ -110,7 +110,7 @@ const principles = [
     n: 10,
     title: 'Focused Attention',
     scripture: 'Luke 10:41-42',
-    body: 'Martha was distracted by many things — Mary chose the one thing that mattered. Scattered attention produces scattered results. The highest achievers do fewer things with greater focus.',
+    body: 'Martha was distracted by many things - Mary chose the one thing that mattered. Scattered attention produces scattered results. The highest achievers do fewer things with greater focus.',
   },
 ]
 
@@ -132,7 +132,7 @@ export default function SermonPage() {
               The Principles That Move People Forward Faster
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
-              You have been praying. You have been trying. Nothing has changed. This message is for the person who feels stuck, financially trapped, or circling the same spot. God often changes results through principles — not only through waiting.
+              You have been praying. You have been trying. Nothing has changed. This message is for the person who feels stuck, financially trapped, or circling the same spot. God often changes results through principles - not only through waiting.
             </p>
             <p className="text-white/60 text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 8 March 2026
@@ -157,7 +157,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <p className="text-[#555] leading-relaxed text-lg mb-10">
-              God moves through principles. Awaiting is necessary — but if you have been resting for too long, you are over-rested. It is time to put these principles in place.
+              God moves through principles. Awaiting is necessary - but if you have been resting for too long, you are over-rested. It is time to put these principles in place.
             </p>
 
             <div className="space-y-10">
@@ -177,9 +177,9 @@ export default function SermonPage() {
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
               <p className="text-[#2a9df4] font-semibold text-lg italic">
-                &quot;God often changes lives through one moment of alignment. Years can go slowly — but that one moment changes everything. The key is to live in a way that is ready for that moment.&quot;
+                &quot;God often changes lives through one moment of alignment. Years can go slowly - but that one moment changes everything. The key is to live in a way that is ready for that moment.&quot;
               </p>
-              <cite className="text-[#555] text-sm not-italic mt-2 block">— Pastor Ricardo Zaal</cite>
+              <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
 
             <p className="text-[#555] leading-relaxed">
@@ -187,7 +187,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}
-              — these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
+              - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
             </p>
           </div>
         </section>

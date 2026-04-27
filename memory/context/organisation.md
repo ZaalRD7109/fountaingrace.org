@@ -4,7 +4,7 @@
 **Type:** Non-Profit Organisation (NPO)
 **NPO Number:** 316-193
 **Registered under:** Department of Social Development, South Africa
-**Section 18A:** Not yet — working toward it
+**Section 18A:** Not yet - working toward it
 
 ## Contact
 | Field | Value |

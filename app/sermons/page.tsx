@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Practical Bible teaching from a Christian church in Pretoria North. Every Sunday message addresses a real problem you are facing. Listen online or come in person.',
     type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International — Church in Pretoria North' }],
+    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/sermons',
   },
 }
@@ -26,7 +26,7 @@ const sermonPosts = [
     date: '2026-04-26',
     dateDisplay: '26 April 2026',
     intro:
-      'You have prayed. You have believed. But something is still not activating. Right action — obedient, timely movement in the right direction — is the principle that turns faith into results. James 2:17.',
+      'You have prayed. You have believed. But something is still not activating. Right action - obedient, timely movement in the right direction - is the principle that turns faith into results. James 2:17.',
   },
   {
     slug: 'why-some-problems-wont-leave-until-you-understand-this',
@@ -38,7 +38,7 @@ const sermonPosts = [
   },
   {
     slug: 'you-love-god-but-are-you-in-the-game',
-    title: 'You Love God — But Are You Actually in the Game?',
+    title: 'You Love God - But Are You Actually in the Game?',
     date: '2026-04-05',
     dateDisplay: '5 April 2026',
     intro:
@@ -50,7 +50,7 @@ const sermonPosts = [
     date: '2026-02-15',
     dateDisplay: '15 February 2026',
     intro:
-      'James 1:22 — the hearer who does not act is like a man who looks in a mirror and walks away forgetting his face. You already know what to do. That is exactly the problem this message addresses.',
+      'James 1:22 - the hearer who does not act is like a man who looks in a mirror and walks away forgetting his face. You already know what to do. That is exactly the problem this message addresses.',
   },
   {
     slug: 'when-good-things-block-god-things',
@@ -58,15 +58,15 @@ const sermonPosts = [
     date: '2026-02-08',
     dateDisplay: '8 February 2026',
     intro:
-      'You can be climbing a ladder leaned against the wrong wall. Good intentions and genuine busyness — but misaligned with God\'s appointed season. The Martha pattern is more common than most people admit.',
+      'You can be climbing a ladder leaned against the wrong wall. Good intentions and genuine busyness - but misaligned with God\'s appointed season. The Martha pattern is more common than most people admit.',
   },
   {
     slug: 'your-resolution-didnt-fail-you-quit-acting',
-    title: "Your Resolution Didn't Fail — You Quit Acting",
+    title: "Your Resolution Didn't Fail - You Quit Acting",
     date: '2026-01-25',
     dateDisplay: '25 January 2026',
     intro:
-      'The resolution was not the problem. Your habits did not hear the declaration. You are not lazy — you are tired of failing. This message explains the gap between motivation and consistent action.',
+      'The resolution was not the problem. Your habits did not hear the declaration. You are not lazy - you are tired of failing. This message explains the gap between motivation and consistent action.',
   },
   {
     slug: 'the-system-youre-praying-against-without-knowing-it',
@@ -74,7 +74,7 @@ const sermonPosts = [
     date: '2026-01-18',
     dateDisplay: '18 January 2026',
     intro:
-      'God already opened the door. The system is already set. But disobedience, ingratitude, and praying for what is already provided — without walking through it — is unknowingly working against your own breakthrough.',
+      'God already opened the door. The system is already set. But disobedience, ingratitude, and praying for what is already provided - without walking through it - is unknowingly working against your own breakthrough.',
   },
   {
     slug: 'why-does-your-life-keep-collapsing',
@@ -82,7 +82,7 @@ const sermonPosts = [
     date: '2026-01-11',
     dateDisplay: '11 January 2026',
     intro:
-      'Living 70 years but repeating the same one. Collapsing in the same places. Storms do not create what spills out — they reveal what was already there. This message names the root, not just the symptom.',
+      'Living 70 years but repeating the same one. Collapsing in the same places. Storms do not create what spills out - they reveal what was already there. This message names the root, not just the symptom.',
   },
   {
     slug: 'why-some-things-refuse-to-move',
@@ -98,11 +98,11 @@ const sermonPosts = [
     date: '2026-01-04',
     dateDisplay: '4 January 2026',
     intro:
-      'A prophetic word only activates when faith meets the right action step. Most regrets are not about what you did wrong — they are about what you never did at all. The foundation was laid. Nobody ever added the bricks.',
+      'A prophetic word only activates when faith meets the right action step. Most regrets are not about what you did wrong - they are about what you never did at all. The foundation was laid. Nobody ever added the bricks.',
   },
   {
     slug: 'right-action-principles-that-move-people-forward-faster',
-    title: 'Part 2: Right Action — The Principles That Move People Forward Faster',
+    title: 'Part 2: Right Action - The Principles That Move People Forward Faster',
     date: '2026-03-15',
     dateDisplay: '15 March 2026',
     intro:
@@ -114,7 +114,7 @@ const sermonPosts = [
     date: '2026-03-08',
     dateDisplay: '8 March 2026',
     intro:
-      'You have been praying. You have been trying. Nothing has changed. This message gives 10 biblical principles — obedience, positioning, wisdom, strategy, stewardship, relationships, and more.',
+      'You have been praying. You have been trying. Nothing has changed. This message gives 10 biblical principles - obedience, positioning, wisdom, strategy, stewardship, relationships, and more.',
   },
   {
     slug: 'what-if-someone-else-finishes-what-was-meant-for-you',
@@ -126,11 +126,11 @@ const sermonPosts = [
   },
   {
     slug: 'follow-your-inner-voice-discover-your-destiny',
-    title: 'Follow Your Inner Voice — Discover Your Destiny',
+    title: 'Follow Your Inner Voice - Discover Your Destiny',
     date: '2026-02-24',
     dateDisplay: '24 February 2026',
     intro:
-      'Before you were born, God already set you apart. This message challenges you to stop listening to the voices that told you to stop running — and start moving in the direction God placed inside you.',
+      'Before you were born, God already set you apart. This message challenges you to stop listening to the voices that told you to stop running - and start moving in the direction God placed inside you.',
   },
   {
     slug: 'be-a-doer-of-gods-word-not-just-a-hearer',
@@ -138,11 +138,11 @@ const sermonPosts = [
     date: '2026-02-16',
     dateDisplay: '16 February 2026',
     intro:
-      'James 1:21-25 — the person who hears and forgets is like a man who looks in a mirror and walks away. The blessing is attached to the doing, not the hearing.',
+      'James 1:21-25 - the person who hears and forgets is like a man who looks in a mirror and walks away. The blessing is attached to the doing, not the hearing.',
   },
   {
     slug: 'why-youre-not-moving-forward-and-how-to-break-it',
-    title: "Why You're Not Moving Forward — And How to Break It",
+    title: "Why You're Not Moving Forward - And How to Break It",
     date: '2026-03-01',
     dateDisplay: '1 March 2026',
     intro:
@@ -154,15 +154,15 @@ const sermonPosts = [
     date: '2025-11-02',
     dateDisplay: '2 November 2025',
     intro:
-      'John 15:1-8 — God prunes every branch that bears fruit so it bears more. The cutting is not punishment. It is preparation. The season of pruning is the season closest to breakthrough.',
+      'John 15:1-8 - God prunes every branch that bears fruit so it bears more. The cutting is not punishment. It is preparation. The season of pruning is the season closest to breakthrough.',
   },
   {
     slug: 'no-more-waiting-rooms-god-is-live-now',
-    title: 'No More Waiting Rooms — God Is Live Now',
+    title: 'No More Waiting Rooms - God Is Live Now',
     date: '2025-09-28',
     dateDisplay: '28 September 2025',
     intro:
-      'You are not stuck in a waiting room. God is not buffering. Isaiah 43:19 says the new thing is already springing forth. The question is not when He will move — it is whether you are tuned in to where He already is.',
+      'You are not stuck in a waiting room. God is not buffering. Isaiah 43:19 says the new thing is already springing forth. The question is not when He will move - it is whether you are tuned in to where He already is.',
   },
   {
     slug: 'the-silent-assassin-of-destiny',
@@ -170,7 +170,7 @@ const sermonPosts = [
     date: '2025-08-31',
     dateDisplay: '31 August 2025',
     intro:
-      'Overthinking kills destiny before you start. The enemy cannot touch you unless you allow him to — and his entry point is your mind. Based on 2 Corinthians 10:4-5, this message names the pattern and shows how to break it.',
+      'Overthinking kills destiny before you start. The enemy cannot touch you unless you allow him to - and his entry point is your mind. Based on 2 Corinthians 10:4-5, this message names the pattern and shows how to break it.',
   },
   {
     slug: 'the-anointing-that-makes-hell-fear-you',
@@ -178,7 +178,7 @@ const sermonPosts = [
     date: '2025-08-24',
     dateDisplay: '24 August 2025',
     intro:
-      'Isaiah 10:27 — the yoke shall be destroyed because of the anointing. Not loosened. Rendered useless. This message explains what the anointing actually is, what it does, and why hell fears the person who carries it.',
+      'Isaiah 10:27 - the yoke shall be destroyed because of the anointing. Not loosened. Rendered useless. This message explains what the anointing actually is, what it does, and why hell fears the person who carries it.',
   },
   {
     slug: 'faith-is-the-router-that-connects-you-to-gods-supply',
@@ -186,7 +186,7 @@ const sermonPosts = [
     date: '2025-06-08',
     dateDisplay: '8 June 2025',
     intro:
-      'The Wi-Fi subscription is paid. The signal is available. But if your router is broken, you receive nothing — not because the supply stopped, but because the connection failed. Faith is your router. Based on 2 Corinthians 1:20 and Proverbs 3:5.',
+      'The Wi-Fi subscription is paid. The signal is available. But if your router is broken, you receive nothing - not because the supply stopped, but because the connection failed. Faith is your router. Based on 2 Corinthians 1:20 and Proverbs 3:5.',
   },
   {
     slug: 'hosting-the-presence-of-god',
@@ -194,7 +194,7 @@ const sermonPosts = [
     date: '2025-06-22',
     dateDisplay: '22 June 2025',
     intro:
-      "Psalm 27:8 — seek my face, require my presence. Obed-Edom's house overflowed in three months. Samson lost his strength without noticing. The difference between them was not effort — it was how each one treated the presence of God.",
+      "Psalm 27:8 - seek my face, require my presence. Obed-Edom's house overflowed in three months. Samson lost his strength without noticing. The difference between them was not effort - it was how each one treated the presence of God.",
   },
   {
     slug: 'the-danger-of-overnight-success',
@@ -202,7 +202,7 @@ const sermonPosts = [
     date: '2025-05-18',
     dateDisplay: '18 May 2025',
     intro:
-      'You can\'t cheat growth — you can only delay maturity. Based on Ecclesiastes 3:1 and Song of Solomon 2:15, this message shows why heaven builds in seasons, why little compromises become great falls, and why preparation is heaven\'s proof of trust.',
+      'You can\'t cheat growth - you can only delay maturity. Based on Ecclesiastes 3:1 and Song of Solomon 2:15, this message shows why heaven builds in seasons, why little compromises become great falls, and why preparation is heaven\'s proof of trust.',
   },
 ]
 
@@ -210,7 +210,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Blog',
-    name: 'Sermons — Fountain of Grace International',
+    name: 'Sermons - Fountain of Grace International',
     description: 'Practical teaching for real life from Fountain of Grace International in Pretoria North.',
     url: 'https://www.fountaingrace.org/sermons',
     publisher: {
@@ -311,7 +311,7 @@ export default function SermonsPage() {
             Get the weekly message delivered to you
           </h2>
           <p className="text-[#595959] leading-relaxed mb-7">
-            Each week Pastor Ricardo sends a short devotional based on the Sunday message —
+            Each week Pastor Ricardo sends a short devotional based on the Sunday message -
             practical, direct, and connected to what you are actually going through.
             Choose how you want to receive it.
           </p>
@@ -342,7 +342,7 @@ export default function SermonsPage() {
       <section className="bg-[#008080] py-14 px-4 sm:px-6">
         <div className="section-container text-center">
           <h2 className="text-2xl font-bold text-white mb-4">
-            Come and hear this in person — Pretoria North
+            Come and hear this in person - Pretoria North
           </h2>
           <p className="text-white/70 mb-8 max-w-xl mx-auto">
             Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.
