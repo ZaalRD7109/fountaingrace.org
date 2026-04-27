@@ -143,6 +143,39 @@
            text-[#555] text-sm font-medium rounded-xl;
   }
 
+  /* === INLINE CONTENT LINKS === */
+  /* Sliding underline grows left→right on hover. Pure CSS, no JS, GPU-accelerated. */
+  .fgi-link {
+    color: #008080;
+    font-weight: 600;
+    text-decoration: none;
+    background-image: linear-gradient(#008080, #008080);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.25s ease, color 0.15s ease;
+    border-radius: 1px;
+  }
+  .fgi-link:hover {
+    background-size: 100% 2px;
+    color: #006060;
+  }
+  /* Variant for links on dark/teal backgrounds */
+  .fgi-link-light {
+    color: #ffffff;
+    font-weight: 600;
+    text-decoration: none;
+    background-image: linear-gradient(#FFD600, #FFD600);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 0.25s ease, color 0.15s ease;
+  }
+  .fgi-link-light:hover {
+    background-size: 100% 2px;
+    color: #FFD600;
+  }
+
   /* === FAQ === */
   .faq-block {
     @apply border-b border-gray-100 pb-6 mb-6 last:border-0 last:mb-0;

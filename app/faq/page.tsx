@@ -37,17 +37,17 @@ const faqs: FaqCategory[] = [
     items: [
       {
         q: 'Where is Fountain of Grace International?',
-        a: <>We meet at 323 B Danie Theron Street, Pretoria North, Gauteng, 0182. If you need directions, <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold hover:underline">WhatsApp us at +27 75 259 2555</a> and we will send you a Google Maps pin. You can also find full <Link href="/contact" className="text-[#008080] font-semibold hover:underline">contact details and a map here</Link>.</>,
+        a: <>We meet at 323 B Danie Theron Street, Pretoria North, Gauteng, 0182. If you need directions, <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="fgi-link">WhatsApp us at +27 75 259 2555</a> and we will send you a Google Maps pin. You can also find full <Link href="/contact" className="fgi-link">contact details and a map here</Link>.</>,
         aText: 'We meet at 323 B Danie Theron Street, Pretoria North, Gauteng, 0182. If you need directions, WhatsApp us at +27 75 259 2555 and we will send you a Google Maps pin.',
       },
       {
         q: 'What time are Sunday services?',
-        a: <>Every <Link href="/sunday-services" className="text-[#008080] font-semibold hover:underline">Sunday at 09:00</Link>. Arrive 10–15 minutes early to find a seat and meet someone before the service starts. Services last approximately 90 minutes. See the <Link href="/what-to-expect" className="text-[#008080] font-semibold hover:underline">full what to expect guide</Link>.</>,
+        a: <>Every <Link href="/sunday-services" className="fgi-link">Sunday at 09:00</Link>. Arrive 10–15 minutes early to find a seat and meet someone before the service starts. Services last approximately 90 minutes. See the <Link href="/what-to-expect" className="fgi-link">full what to expect guide</Link>.</>,
         aText: 'Every Sunday at 09:00. Arrive 10–15 minutes early to find a seat and meet someone before the service starts. Services last approximately 90 minutes.',
       },
       {
         q: 'Do I need to register before coming?',
-        a: <>No. You can walk in. There is no registration, no reservation, and no obligation. If you want us to know you are coming so we can meet you at the door, <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">fill in the Plan Your Visit form</Link> — it takes 30 seconds.</>,
+        a: <>No. You can walk in. There is no registration, no reservation, and no obligation. If you want us to know you are coming so we can meet you at the door, <Link href="/plan-your-visit" className="fgi-link">fill in the Plan Your Visit form</Link> — it takes 30 seconds.</>,
         aText: 'No. You can walk in. There is no registration, no reservation, and no obligation. Just come.',
       },
       {
@@ -57,7 +57,7 @@ const faqs: FaqCategory[] = [
       },
       {
         q: 'Is there parking?',
-        a: <>Yes. If you are not sure where to park, <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold hover:underline">WhatsApp us before your visit</a> and we will send you exact directions. You can also <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">plan your visit here</Link> and we will reach out before Sunday.</>,
+        a: <>Yes. If you are not sure where to park, <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="fgi-link">WhatsApp us before your visit</a> and we will send you exact directions. You can also <Link href="/plan-your-visit" className="fgi-link">plan your visit here</Link> and we will reach out before Sunday.</>,
         aText: 'Yes. If you are not sure where to park, WhatsApp us before your visit and we will send you exact directions.',
       },
       {
@@ -72,12 +72,12 @@ const faqs: FaqCategory[] = [
     items: [
       {
         q: 'Who leads Fountain of Grace International?',
-        a: <>The church is founded and led by <Link href="/pastors" className="text-[#008080] font-semibold hover:underline">Pastor Ricardo Zaal</Link>. You can read his full story and background on the <Link href="/about" className="text-[#008080] font-semibold hover:underline">About page</Link> and the <Link href="/pastors" className="text-[#008080] font-semibold hover:underline">Pastors page</Link>.</>,
+        a: <>The church is founded and led by <Link href="/pastors" className="fgi-link">Pastor Ricardo Zaal</Link>. You can read his full story and background on the <Link href="/about" className="fgi-link">About page</Link> and the <Link href="/pastors" className="fgi-link">Pastors page</Link>.</>,
         aText: 'The church is founded and led by Pastor Ricardo Zaal. You can learn more on the About page and the Pastors page.',
       },
       {
         q: 'What kind of teaching happens on Sundays?',
-        a: <>Practical Bible teaching. Every message is built around a problem people are actually living with — not abstract theology. The goal is that you leave with something you can apply that week. <Link href="/sermons" className="text-[#008080] font-semibold hover:underline">Read past messages in the sermons archive</Link>.</>,
+        a: <>Practical Bible teaching. Every message is built around a problem people are actually living with — not abstract theology. The goal is that you leave with something you can apply that week. <Link href="/sermons" className="fgi-link">Read past messages in the sermons archive</Link>.</>,
         aText: 'Practical Bible teaching. Every message is built around a problem people are actually living with — not abstract theology. The goal is that you leave with something you can apply that week.',
       },
       {
@@ -87,7 +87,7 @@ const faqs: FaqCategory[] = [
       },
       {
         q: 'Is Fountain of Grace International a registered organisation?',
-        a: <>Yes. FGI is a registered Non-Profit Organisation (NPO No: 316-193) registered with the South African Department of Social Development on 16 December 2024. You can see how donations are used and what programmes we run on the <Link href="/community-impact" className="text-[#008080] font-semibold hover:underline">Community Impact page</Link>.</>,
+        a: <>Yes. FGI is a registered Non-Profit Organisation (NPO No: 316-193) registered with the South African Department of Social Development on 16 December 2024. You can see how donations are used and what programmes we run on the <Link href="/community-impact" className="fgi-link">Community Impact page</Link>.</>,
         aText: 'Yes. FGI is a registered Non-Profit Organisation (NPO No: 316-193) registered with the South African Department of Social Development on 16 December 2024.',
       },
     ],
@@ -97,7 +97,7 @@ const faqs: FaqCategory[] = [
     items: [
       {
         q: 'Can I submit a prayer request without attending the church?',
-        a: <>Yes. Anyone can submit a prayer request — you do not need to be a member or attendee. <Link href="/prayer" className="text-[#008080] font-semibold hover:underline">Use the prayer request form here</Link> and the pastoral team will pray over your request personally.</>,
+        a: <>Yes. Anyone can submit a prayer request — you do not need to be a member or attendee. <Link href="/prayer" className="fgi-link">Use the prayer request form here</Link> and the pastoral team will pray over your request personally.</>,
         aText: 'Yes. Anyone can submit a prayer request — you do not need to be a member or attendee. Use the prayer request form at fountaingrace.org/prayer.',
       },
       {
@@ -107,7 +107,7 @@ const faqs: FaqCategory[] = [
       },
       {
         q: 'What if I need urgent pastoral support?',
-        a: <><a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold hover:underline">WhatsApp Pastor Ricardo directly at +27 75 259 2555</a>. He responds personally. You can also <Link href="/contact" className="text-[#008080] font-semibold hover:underline">reach us through the contact page</Link>.</>,
+        a: <><a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="fgi-link">WhatsApp Pastor Ricardo directly at +27 75 259 2555</a>. He responds personally. You can also <Link href="/contact" className="fgi-link">reach us through the contact page</Link>.</>,
         aText: 'WhatsApp Pastor Ricardo directly at +27 75 259 2555. He responds personally.',
       },
     ],
@@ -117,17 +117,17 @@ const faqs: FaqCategory[] = [
     items: [
       {
         q: 'How can I donate to Fountain of Grace International?',
-        a: <>Visit the <Link href="/donate" className="text-[#008080] font-semibold hover:underline">Donate page</Link> to give via PayPal or direct EFT to FNB account 63132764499, branch 250655. Monthly giving options are also available — they are the most effective way to support the work long term.</>,
+        a: <>Visit the <Link href="/donate" className="fgi-link">Donate page</Link> to give via PayPal or direct EFT to FNB account 63132764499, branch 250655. Monthly giving options are also available — they are the most effective way to support the work long term.</>,
         aText: 'You can give via PayPal or by EFT to FNB account 63132764499, branch 250655, account name: Fountain of Grace International. Visit the Donate page for full details.',
       },
       {
         q: 'Is my donation tax-deductible?',
-        a: <>FGI is registered as a Non-Profit Organisation (NPO 316-193). We do not yet hold Section 18A tax-deductibility status — so donations are not currently tax-deductible. We will update the <Link href="/donate" className="text-[#008080] font-semibold hover:underline">Donate page</Link> as soon as that changes.</>,
+        a: <>FGI is registered as a Non-Profit Organisation (NPO 316-193). We do not yet hold Section 18A tax-deductibility status — so donations are not currently tax-deductible. We will update the <Link href="/donate" className="fgi-link">Donate page</Link> as soon as that changes.</>,
         aText: 'FGI is registered as a Non-Profit Organisation (NPO 316-193). We do not yet hold Section 18A tax-deductibility status — so donations are not currently tax-deductible.',
       },
       {
         q: 'How are donations used?',
-        a: <>58% goes to food and basic aid programs. 14% covers program materials and logistics. 28% covers operational costs including admin and compliance. See the <Link href="/community-impact" className="text-[#008080] font-semibold hover:underline">Community Impact page</Link> for a full breakdown of every programme your giving supports.</>,
+        a: <>58% goes to food and basic aid programs. 14% covers program materials and logistics. 28% covers operational costs including admin and compliance. See the <Link href="/community-impact" className="fgi-link">Community Impact page</Link> for a full breakdown of every programme your giving supports.</>,
         aText: '58% goes to food and basic aid programs. 14% covers program materials and logistics. 28% covers operational costs including admin and compliance.',
       },
     ],
@@ -137,12 +137,12 @@ const faqs: FaqCategory[] = [
     items: [
       {
         q: 'Can I volunteer with FGI?',
-        a: <>Yes. No prior experience is needed. <Link href="/volunteer" className="text-[#008080] font-semibold hover:underline">Fill in the volunteer form here</Link> and we will reach out with next steps. You can also read about the <Link href="/community-impact" className="text-[#008080] font-semibold hover:underline">programmes you would be joining</Link>.</>,
+        a: <>Yes. No prior experience is needed. <Link href="/volunteer" className="fgi-link">Fill in the volunteer form here</Link> and we will reach out with next steps. You can also read about the <Link href="/community-impact" className="fgi-link">programmes you would be joining</Link>.</>,
         aText: 'Yes. No prior experience is needed. Fill in the volunteer form at fountaingrace.org/volunteer and we will reach out with next steps.',
       },
       {
         q: 'What volunteer roles are available?',
-        a: <>Food programs, administration, events, outreach, and more. Tell us your availability on the <Link href="/volunteer" className="text-[#008080] font-semibold hover:underline">volunteer page</Link> and we will match you to something practical. See the full list of <Link href="/community-impact" className="text-[#008080] font-semibold hover:underline">community programmes here</Link>.</>,
+        a: <>Food programs, administration, events, outreach, and more. Tell us your availability on the <Link href="/volunteer" className="fgi-link">volunteer page</Link> and we will match you to something practical. See the full list of <Link href="/community-impact" className="fgi-link">community programmes here</Link>.</>,
         aText: 'Food programs, administration, events, outreach, and more. Tell us your availability and we will match you to something practical.',
       },
     ],
