@@ -54,7 +54,40 @@
 /watch https://www.youtube.com/@fgipta  301
 
 # Bio links from our own social profiles (inbound, with UTM tracking)
+# Use these clean URLs in your bios - they redirect to homepage with full UTM data
 /yt /?utm_source=youtube&utm_medium=social&utm_campaign=bio_link  302
 /fb /?utm_source=facebook&utm_medium=social&utm_campaign=bio_link  302
 /ig /?utm_source=instagram&utm_medium=social&utm_campaign=bio_link  302
 /tt /?utm_source=tiktok&utm_medium=social&utm_campaign=bio_link  302
+
+# YouTube sermon description links
+# Paste these exact URLs into the description of each YouTube video
+# GA4 will show you: source=youtube, content=<sermon-slug>, campaign=sermon_description
+/s/right-action /sermons/right-action-principles-that-move-people-forward-faster?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=right-action-principles  302
+/s/the-principles /sermons/the-principles-that-move-people-forward-faster?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=the-principles-move-forward  302
+/s/the-system /sermons/the-system-youre-praying-against-without-knowing-it?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=the-system-praying-against  302
+/s/what-if-someone-else /sermons/what-if-someone-else-finishes-what-was-meant-for-you?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=what-if-someone-else-finishes  302
+/s/when-good-things /sermons/when-good-things-block-god-things?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=when-good-things-block-god  302
+/s/when-knowing /sermons/when-knowing-is-the-problem?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=when-knowing-is-the-problem  302
+/s/why-collapsing /sermons/why-does-your-life-keep-collapsing?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=why-life-keep-collapsing  302
+/s/why-some-problems /sermons/why-some-problems-wont-leave-until-you-understand-this?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=why-some-problems-wont-leave  302
+/s/why-some-things /sermons/why-some-things-refuse-to-move?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=why-some-things-refuse-to-move  302
+/s/not-moving-forward /sermons/why-youre-not-moving-forward-and-how-to-break-it?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=not-moving-forward-how-to-break  302
+/s/prayers-not-changing /sermons/why-your-prayers-are-not-changing-your-life?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=prayers-not-changing-your-life  302
+/s/in-the-game /sermons/you-love-god-but-are-you-in-the-game?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=you-love-god-in-the-game  302
+/s/resolution /sermons/your-resolution-didnt-fail-you-quit-acting?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=resolution-didnt-fail-quit-acting  302
+
+# Google Ads inbound - paid traffic tracking
+# Format: /ga/<campaign-name> - create a new line per campaign
+# Example: /ga/awareness-pretoria -> homepage with Google Ads UTM
+/ga/awareness /?utm_source=google&utm_medium=cpc&utm_campaign=awareness&utm_content=pretoria-north  302
+/ga/sermon-retarget /sermons?utm_source=google&utm_medium=cpc&utm_campaign=sermon_retarget  302
+/ga/give /donate?utm_source=google&utm_medium=cpc&utm_campaign=giving_appeal  302
+/ga/visit /plan-your-visit?utm_source=google&utm_medium=cpc&utm_campaign=visit_intent  302
+
+# Facebook/Instagram Ads inbound - paid traffic tracking
+# Format: /fa/<campaign-name> - create a new line per ad set
+/fa/awareness /?utm_source=facebook&utm_medium=cpc&utm_campaign=awareness&utm_content=pretoria-north  302
+/fa/sermon-video /sermons?utm_source=facebook&utm_medium=cpc&utm_campaign=sermon_video  302
+/fa/give /donate?utm_source=facebook&utm_medium=cpc&utm_campaign=giving_appeal  302
+/fa/visit /plan-your-visit?utm_source=facebook&utm_medium=cpc&utm_campaign=visit_intent  302
