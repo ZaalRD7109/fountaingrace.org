@@ -331,8 +331,9 @@ export default function SermonsPage() {
               Subscribe via Email →
             </a>
           </div>
-          <p className="text-xs text-[#7d7d7d] mt-4">
-            Your details are never shared. Unsubscribe any time by replying STOP or UNSUBSCRIBE.
+          <p className="text-xs text-[#7d7d7d] mt-4 max-w-md mx-auto leading-relaxed">
+            By subscribing you consent to Fountain of Grace International (NPO 316-193) sending you a weekly devotional. Your details are used only for this purpose and are never sold or shared. Unsubscribe any time by replying STOP or UNSUBSCRIBE. See our{' '}
+            <a href="/privacy-policy" className="underline hover:text-[#008080]">Privacy Policy</a>.
           </p>
         </div>
       </section>
