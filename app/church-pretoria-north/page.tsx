@@ -166,7 +166,7 @@ export default function ChurchPretoriaPage() {
             <p>
               The church and the NPO work together — the Sunday community is the same community that runs the
               programs. If you want to get involved in the practical side of the work, the{' '}
-              <Link href="/community-impact" className="text-[#008080] font-semibold hover:underline">
+              <Link href="/community-impact" className="fgi-link">
                 Community Impact page
               </Link>{' '}
               has the full breakdown.

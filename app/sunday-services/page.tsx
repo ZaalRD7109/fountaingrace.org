@@ -163,7 +163,7 @@ export default function SundayServicesPage() {
                     {item.link && (
                       <>
                         {' '}
-                        <Link href={item.link} className="text-[#008080] font-semibold hover:underline">
+                        <Link href={item.link} className="fgi-link">
                           {item.linkLabel}
                         </Link>
                         .
@@ -183,7 +183,7 @@ export default function SundayServicesPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-4">Who leads the service</h2>
           <p className="text-[#595959] leading-relaxed text-lg mb-6">
             Sunday services at Fountain of Grace International are led by{' '}
-            <Link href="/pastors" className="text-[#008080] font-semibold hover:underline">
+            <Link href="/pastors" className="fgi-link">
               Pastor Ricardo Zaal
             </Link>
             , who founded the church in June 2020 and has been in ministry since 2000.

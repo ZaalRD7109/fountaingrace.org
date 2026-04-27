@@ -205,7 +205,7 @@ export default function ContactPage() {
                       href="https://wa.me/27752592555?text=Hi%2C%20I%20need%20parking%20directions%20for%20Sunday"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#008080] font-semibold hover:underline"
+                      className="fgi-link"
                     >
                       WhatsApp us here
                     </a>.
@@ -232,7 +232,7 @@ export default function ContactPage() {
                       href="https://wa.me/27752592555?text=Hi%2C%20I%20need%20directions%20to%20Fountain%20of%20Grace%20International"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-[#008080] font-semibold hover:underline"
+                      className="fgi-link"
                     >
                       Send us a WhatsApp
                     </a>.

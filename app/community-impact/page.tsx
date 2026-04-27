@@ -355,7 +355,7 @@ export default function CommunityImpactPage() {
               </dt>
               <dd className="text-[#595959] leading-relaxed">
                 To volunteer with Fountain of Grace International in Pretoria North, complete the{' '}
-                <Link href="/volunteer" className="text-[#008080] font-semibold hover:underline">volunteer form here</Link>{' '}
+                <Link href="/volunteer" className="fgi-link">volunteer form here</Link>{' '}
                 or send a WhatsApp to +27 75 259 2555. No prior experience is required.
               </dd>
             </div>

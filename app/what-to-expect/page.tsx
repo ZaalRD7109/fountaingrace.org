@@ -212,9 +212,9 @@ export default function WhatToExpectPage() {
               <dd className="text-[#595959] leading-relaxed">
                 A church service at Fountain of Grace International in Pretoria North runs
                 approximately 90 minutes and includes worship music, a{' '}
-                <Link href="/sermons" className="text-[#008080] font-semibold hover:underline">practical teaching</Link>,
+                <Link href="/sermons" className="fgi-link">practical teaching</Link>,
                 {' '}and time to connect with people afterward. You are not asked to do anything publicly.{' '}
-                <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">Anyone is welcome to attend</Link>{' '}
+                <Link href="/plan-your-visit" className="fgi-link">Anyone is welcome to attend</Link>{' '}
                 without any prior church experience.
               </dd>
             </div>
@@ -226,7 +226,7 @@ export default function WhatToExpectPage() {
                 No. Fountain of Grace International in Pretoria North regularly welcomes people
                 who have never attended a church service before. There is no assumed knowledge
                 and nothing you are expected to know or do.{' '}
-                <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">Plan your visit here</Link>.
+                <Link href="/plan-your-visit" className="fgi-link">Plan your visit here</Link>.
               </dd>
             </div>
             <div className="faq-block">
@@ -240,7 +240,7 @@ export default function WhatToExpectPage() {
                   href="https://wa.me/27752592555?text=Hi%2C%20I%20have%20a%20question%20about%20children%20at%20the%20Sunday%20service"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#008080] font-semibold hover:underline"
+                  className="fgi-link"
                 >
                   Message us on WhatsApp
                 </a>.

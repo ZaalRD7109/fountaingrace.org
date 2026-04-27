@@ -110,7 +110,7 @@ export default function SermonPage() {
 
             <p className="text-[#555] leading-relaxed">
               If you are in Pretoria North and something in this message is stirring you,{' '}
-              <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
+              <Link href="/plan-your-visit" className="fgi-link">
                 come to Fountain of Grace International on Sunday
               </Link>
               . These messages are preached live every week at 09:00, 323 B Danie Theron Street, Pretoria North.

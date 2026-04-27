@@ -145,7 +145,7 @@ export default function SermonPage() {
             </p>
             <p className="text-[#555] leading-relaxed mb-10">
               This message builds on{' '}
-              <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#008080] font-semibold hover:underline">
+              <Link href="/sermons/the-principles-that-move-people-forward-faster" className="fgi-link">
                 Part 1 — The Principles That Move People Forward Faster
               </Link>
               . Where Part 1 gave 10 principles of advancement, Part 2 asks the harder question: why are people still stuck even when they know the principles? The answer is almost always the same: right knowledge without right action.
@@ -183,7 +183,7 @@ export default function SermonPage() {
 
             <p className="text-[#555] leading-relaxed">
               If you are in Pretoria North,{' '}
-              <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
+              <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}
               — these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.

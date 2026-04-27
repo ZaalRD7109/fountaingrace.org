@@ -192,7 +192,7 @@ export default function PastorsPage() {
                 <p>
                   His ministry is grounded in practical teaching, personal responsibility, and raising
                   people who are equipped to lead in their own lives. He leads{' '}
-                  <Link href="/sunday-services" className="text-[#008080] font-semibold hover:underline">
+                  <Link href="/sunday-services" className="fgi-link">
                     Sunday services
                   </Link>{' '}
                   every week at 09:00 and is available to his community directly — not behind an
@@ -201,7 +201,7 @@ export default function PastorsPage() {
                 <p>
                   He is a husband and father, living in Pretoria North. You can reach him via
                   WhatsApp or through the{' '}
-                  <Link href="/contact" className="text-[#008080] font-semibold hover:underline">
+                  <Link href="/contact" className="fgi-link">
                     contact form
                   </Link>.
                 </p>

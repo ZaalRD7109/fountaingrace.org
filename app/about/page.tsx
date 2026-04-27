@@ -74,7 +74,7 @@ const values: Value[] = [
     body: (
       <>
         After your{' '}
-        <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
+        <Link href="/plan-your-visit" className="fgi-link">
           first visit
         </Link>
         , someone contacts you personally — not an email sequence, not a form letter. A real person.
@@ -86,7 +86,7 @@ const values: Value[] = [
     body: (
       <>
         Every{' '}
-        <Link href="/sermons" className="text-[#008080] font-semibold hover:underline">
+        <Link href="/sermons" className="fgi-link">
           Sunday message
         </Link>{' '}
         is built around a problem people are actually facing. Not theory. Things you can use in your week.
@@ -101,7 +101,7 @@ const values: Value[] = [
     title: 'NPO registered',
     body: (
       <>
-        <Link href="/community-impact" className="text-[#008080] font-semibold hover:underline">
+        <Link href="/community-impact" className="fgi-link">
           Fountain of Grace International runs community programs
         </Link>{' '}
         in Pretoria North under NPO registration 316-193. Service extends beyond Sunday.
@@ -213,7 +213,7 @@ export default function AboutPage() {
                   He is a husband and father, committed to building strong families, strong faith,
                   and a lasting legacy. He lives in Pretoria North and is available directly — not
                   behind an appointment wall. You can reach him via WhatsApp or through the{' '}
-                  <Link href="/contact" className="text-[#008080] font-semibold hover:underline">
+                  <Link href="/contact" className="fgi-link">
                     contact form on this site
                   </Link>.
                 </p>

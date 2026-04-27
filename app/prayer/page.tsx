@@ -91,7 +91,7 @@ export default function PrayerPage() {
               href="https://wa.me/27752592555?text=Hi%2C%20I%20need%20prayer%20for%20something%20urgent"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#008080] font-semibold hover:underline"
+              className="fgi-link"
             >
               +27 75 259 2555
             </a>

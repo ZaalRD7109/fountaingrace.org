@@ -151,7 +151,7 @@ export default function SermonPage() {
             </blockquote>
 
             <p className="text-[#555] leading-relaxed">
-              If you are reading this in Pretoria North and something in this message connected with where you are, <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and hear it in person</Link>. Services are every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North.
+              If you are reading this in Pretoria North and something in this message connected with where you are, <Link href="/plan-your-visit" className="fgi-link">come and hear it in person</Link>. Services are every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North.
             </p>
           </div>
         </section>

@@ -82,7 +82,7 @@ export default function TermsPage() {
             <p>
               Welcome to the official website of Fountain of Grace International (NPO 316-193).
               By accessing or using this site, you agree to these Terms of Use and our{' '}
-              <a href="/privacy-policy" className="text-[#008080] font-semibold hover:underline">
+              <a href="/privacy-policy" className="fgi-link">
                 Privacy Policy
               </a>. If you do not agree, please do not use this website.
             </p>
@@ -117,7 +117,7 @@ export default function TermsPage() {
               All donations made through this website or via our banking details are voluntary.
               Donations are non-refundable once processed, except in cases where a payment was
               made in error — in which case, contact us within 7 days at{' '}
-              <a href="mailto:info@fountaingrace.org" className="text-[#008080] font-semibold hover:underline">
+              <a href="mailto:info@fountaingrace.org" className="fgi-link">
                 info@fountaingrace.org
               </a>.
             </p>
@@ -139,7 +139,7 @@ export default function TermsPage() {
               Information submitted through our contact and visit planning forms is used solely
               to respond to your enquiry or prepare for your visit. We do not use this
               information for any other purpose without your consent. See our{' '}
-              <a href="/privacy-policy" className="text-[#008080] font-semibold hover:underline">
+              <a href="/privacy-policy" className="fgi-link">
                 Privacy Policy
               </a>{' '}
               for full details.
@@ -195,13 +195,13 @@ export default function TermsPage() {
               <p>323 B Danie Theron Street, Pretoria North, Gauteng, 0182</p>
               <p>
                 Email:{' '}
-                <a href="mailto:info@fountaingrace.org" className="text-[#008080] font-semibold hover:underline">
+                <a href="mailto:info@fountaingrace.org" className="fgi-link">
                   info@fountaingrace.org
                 </a>
               </p>
               <p>
                 WhatsApp:{' '}
-                <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold hover:underline">
+                <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="fgi-link">
                   +27 75 259 2555
                 </a>
               </p>

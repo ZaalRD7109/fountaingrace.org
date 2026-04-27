@@ -145,7 +145,7 @@ export default function SermonPage() {
 
             <p className="text-[#555] leading-relaxed">
               This message was preached at Fountain of Grace International in Pretoria North. If you are in Pretoria North and these questions are sitting with you,{' '}
-              <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
+              <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}
               and hear it in person. 09:00, every Sunday.

@@ -118,7 +118,7 @@ export default function SermonPage() {
 
             <p className="text-[#555] leading-relaxed">
               If you are in Pretoria North and you are ready to hear something that challenges you to actually move,{' '}
-              <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
+              <Link href="/plan-your-visit" className="fgi-link">
                 plan your visit to Fountain of Grace International
               </Link>
               . Services are every Sunday at 09:00.

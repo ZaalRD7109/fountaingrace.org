@@ -74,7 +74,7 @@ export default function CookiePolicyPage() {
             <p>
               This Cookie Policy explains what cookies are, which cookies this website uses, why
               we use them, and how you can control them. It should be read alongside our{' '}
-              <a href="/privacy-policy" className="text-[#008080] font-semibold hover:underline">
+              <a href="/privacy-policy" className="fgi-link">
                 Privacy Policy
               </a>.
             </p>
@@ -241,13 +241,13 @@ export default function CookiePolicyPage() {
               <p className="font-semibold text-gray-800">Fountain of Grace International (NPO 316-193)</p>
               <p>
                 Email:{' '}
-                <a href="mailto:info@fountaingrace.org" className="text-[#008080] font-semibold hover:underline">
+                <a href="mailto:info@fountaingrace.org" className="fgi-link">
                   info@fountaingrace.org
                 </a>
               </p>
               <p>
                 WhatsApp:{' '}
-                <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold hover:underline">
+                <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="fgi-link">
                   +27 75 259 2555
                 </a>
               </p>

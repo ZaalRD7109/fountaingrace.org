@@ -93,7 +93,7 @@ export default function PrivacyPolicyPage() {
               Our designated Information Officer is responsible for overseeing how personal
               information is handled within Fountain of Grace International. For all privacy-related
               queries or requests, contact us at{' '}
-              <a href="mailto:info@fountaingrace.org" className="text-[#008080] font-semibold hover:underline">
+              <a href="mailto:info@fountaingrace.org" className="fgi-link">
                 info@fountaingrace.org
               </a>.
             </p>
@@ -119,7 +119,7 @@ export default function PrivacyPolicyPage() {
               </li>
               <li className="flex gap-2">
                 <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
-                <span>Cookies and browser data — see our <a href="/cookie-policy" className="text-[#008080] font-semibold hover:underline">Cookie Policy</a> for full details.</span>
+                <span>Cookies and browser data — see our <a href="/cookie-policy" className="fgi-link">Cookie Policy</a> for full details.</span>
               </li>
             </ul>
           </div>
@@ -211,11 +211,11 @@ export default function PrivacyPolicyPage() {
             </ul>
             <p className="mt-4">
               To exercise any of these rights, email us at{' '}
-              <a href="mailto:info@fountaingrace.org" className="text-[#008080] font-semibold hover:underline">
+              <a href="mailto:info@fountaingrace.org" className="fgi-link">
                 info@fountaingrace.org
               </a>{' '}
               or WhatsApp us on{' '}
-              <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold hover:underline">
+              <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="fgi-link">
                 +27 75 259 2555
               </a>.
               We will respond within 10 business days.
@@ -257,7 +257,7 @@ export default function PrivacyPolicyPage() {
             <p>
               We use cookies to improve your experience and understand how our website is used.
               For full details, see our{' '}
-              <a href="/cookie-policy" className="text-[#008080] font-semibold hover:underline">
+              <a href="/cookie-policy" className="fgi-link">
                 Cookie Policy
               </a>.
             </p>
@@ -279,13 +279,13 @@ export default function PrivacyPolicyPage() {
               <p>323 B Danie Theron Street, Pretoria North, Gauteng, 0182</p>
               <p>
                 Email:{' '}
-                <a href="mailto:info@fountaingrace.org" className="text-[#008080] font-semibold hover:underline">
+                <a href="mailto:info@fountaingrace.org" className="fgi-link">
                   info@fountaingrace.org
                 </a>
               </p>
               <p>
                 WhatsApp:{' '}
-                <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold hover:underline">
+                <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="fgi-link">
                   +27 75 259 2555
                 </a>
               </p>

@@ -202,7 +202,7 @@ export default function HomePage() {
                   calls you to the front. No one makes you introduce yourself to the room.
                 </p>
                 <p>
-                  The service runs about <Link href="/what-to-expect" className="text-[#008080] font-semibold hover:underline">90 minutes</Link>. The <Link href="/sermons" className="text-[#008080] font-semibold hover:underline">teaching connects to real problems</Link>. After
+                  The service runs about <Link href="/what-to-expect" className="fgi-link">90 minutes</Link>. The <Link href="/sermons" className="fgi-link">teaching connects to real problems</Link>. After
                   the service, people talk to you. Because this church is small enough that
                   everyone matters.
                 </p>

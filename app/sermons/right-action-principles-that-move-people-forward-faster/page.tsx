@@ -100,7 +100,7 @@ export default function SermonPage() {
             <div className="bg-[#f0fafa] border border-[#2a9df4]/10 rounded-xl p-5">
               <p className="text-sm text-[#555]">
                 <strong className="text-[#2a9df4]">Part 1</strong> of this series covered 10 biblical principles for momentum: obedience, positioning, wisdom, strategy, stewardship, relationships, preparation, faith with action, sowing seed, and focused attention.{' '}
-                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#008080] font-semibold hover:underline">
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="fgi-link">
                   Read Part 1 here.
                 </Link>
               </p>
@@ -153,7 +153,7 @@ export default function SermonPage() {
 
             <p className="text-[#555] leading-relaxed">
               If you have been circling the same place for too long,{' '}
-              <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
+              <Link href="/plan-your-visit" className="fgi-link">
                 come to Fountain of Grace International in Pretoria North
               </Link>{' '}
               on a Sunday. Services are at 09:00. These messages are designed to move you — not just inform you.
