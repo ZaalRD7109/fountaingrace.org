@@ -30,6 +30,7 @@ Ricardo (zaalricardo@gmail.com). Managing Fountain of Grace International's webs
 | Hex | Use |
 |-----|-----|
 | `#ffffff` | White — backgrounds |
+| `#000000` | FGI Black — logo bg, dark sections |
 | `#2a9df4` | FGI Blue — primary, logo, CTAs |
 | `#ffd700` | FGI Gold — accent, highlights |
 | `#008080` | FGI Teal — secondary, NPO context |

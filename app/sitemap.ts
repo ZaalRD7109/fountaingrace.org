@@ -44,6 +44,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/sermons/faith-is-the-router-that-connects-you-to-gods-supply`, lastModified: new Date('2025-06-08'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/hosting-the-presence-of-god`, lastModified: new Date('2025-06-22'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/the-danger-of-overnight-success`, lastModified: new Date('2025-05-18'), changeFrequency: 'monthly', priority: 0.6 },
+    // Resources (Tier 1 - broad audience, problem-first SEO content)
+    { url: `${base}/resources`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${base}/resources/why-does-my-life-feel-empty`, lastModified: new Date('2026-04-27'), changeFrequency: 'monthly', priority: 0.7 },
+    // Devotional (Tier 2 - existing community, Saturday prep)
+    { url: `${base}/devotional`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/devotional/prepare-your-heart-before-you-walk-in`, lastModified: new Date('2026-04-27'), changeFrequency: 'monthly', priority: 0.6 },
+    // Stories (Tier 3 - donor-targeted impact content)
+    { url: `${base}/stories`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/stories/what-your-giving-does-in-pretoria-north`, lastModified: new Date('2026-04-27'), changeFrequency: 'monthly', priority: 0.7 },
     // Legal
     { url: `${base}/privacy-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${base}/cookie-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },

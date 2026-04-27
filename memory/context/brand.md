@@ -9,6 +9,7 @@ Do NOT trust the colors in `tailwind.config.ts` if they differ - that file is ou
 | Hex | Name | Use |
 |-----|------|-----|
 | `#ffffff` | White | Backgrounds, surfaces |
+| `#000000` | FGI Black | Logo background, dark hero sections, strong contrast |
 | `#2a9df4` | FGI Blue | Primary brand color, logo, headings, links, primary CTAs |
 | `#ffd700` | FGI Gold | Accent, highlights, secondary CTAs, the "spark" rays |
 | `#008080` | FGI Teal | Secondary, supporting sections, NPO/charity context |
