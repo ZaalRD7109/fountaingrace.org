@@ -376,18 +376,26 @@ export default function HomePage() {
           </h2>
           <p className="text-[#595959] leading-relaxed mb-7">
             Each week Pastor Ricardo sends a short devotional based on the Sunday message —
-            practical, direct, and connected to real life. WhatsApp us to be added to the list.
+            practical, direct, and connected to real life. Choose how you want to receive it.
           </p>
-          <a
-            href="https://wa.me/27752592555?text=Hi%2C%20please%20add%20me%20to%20the%20weekly%20devotional%20list."
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block bg-[#25d366] text-[#1a1a1a] font-bold px-7 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors"
-          >
-            Subscribe via WhatsApp →
-          </a>
+          <div className="flex flex-col sm:flex-row gap-3 justify-center">
+            <a
+              href="https://wa.me/27752592555?text=Hi%2C%20please%20add%20me%20to%20the%20weekly%20devotional%20list."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#25d366] text-[#1a1a1a] font-bold px-7 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors"
+            >
+              Subscribe via WhatsApp →
+            </a>
+            <a
+              href="mailto:info@fountaingrace.org?subject=Weekly%20Devotional%20Signup&body=Hi%2C%20please%20add%20me%20to%20the%20weekly%20devotional%20email%20list.%0A%0AMy%20name%20is%3A%20"
+              className="inline-block bg-[#2a9df4] text-white font-bold px-7 py-3 rounded-lg hover:bg-[#1a8de4] transition-colors"
+            >
+              Subscribe via Email →
+            </a>
+          </div>
           <p className="text-xs text-[#7d7d7d] mt-4">
-            Your number is never shared. Unsubscribe any time by replying STOP.
+            Your details are never shared. Unsubscribe any time by replying STOP or UNSUBSCRIBE.
           </p>
         </div>
       </section>
