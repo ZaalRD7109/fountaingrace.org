@@ -221,6 +221,30 @@ const sermonPosts = [
       '1 Corinthians 14:3 - prophecy is to edify, exhort, and comfort. You are always prophesying over your life whether you know it or not. The question is whether your words are building faith or destroying it.',
   },
   {
+    slug: 'the-prophetic-encounter',
+    title: 'The Prophetic Encounter: Stir Up the Gift in You',
+    date: '2025-02-23',
+    dateDisplay: '23 February 2025',
+    intro:
+      '2 Timothy 1:6 - stir up the gift of God which is in thee. The gift is already there. Isaiah 42:3 says a bruised reed shall he not break. You are not broken. You are bruised. Fear is the only thing keeping the gift from coming out.',
+  },
+  {
+    slug: 'the-language-of-the-spirit-interpreting-what-you-hear',
+    title: 'The Language of the Spirit: Interpreting What You Hear',
+    date: '2025-02-09',
+    dateDisplay: '9 February 2025',
+    intro:
+      'Numbers 12:6 - God speaks in visions and dreams. The problem is not that He has gone silent. The problem is translation. This message teaches you to read the grammar of the Spirit and interpret what He is saying correctly.',
+  },
+  {
+    slug: 'the-inheritance-test',
+    title: 'The Inheritance Test: Will It Reach Three Generations?',
+    date: '2024-09-08',
+    dateDisplay: '8 September 2024',
+    intro:
+      "Proverbs 13:22 - a good man leaves an inheritance to his children's children. Joseph's coat was taken twice. His character was never taken once. The coat is money. The character is the system. Only one of them can be stolen.",
+  },
+  {
     slug: 'you-are-not-lazy-you-are-a-lot-more',
     title: 'You Are Not Lazy - You Are a Lot More',
     date: '2024-01-28',

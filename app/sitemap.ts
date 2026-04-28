@@ -46,6 +46,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/sermons/hosting-the-presence-of-god`, lastModified: new Date('2025-06-22'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/the-danger-of-overnight-success`, lastModified: new Date('2025-05-18'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/speak-prophetic-into-your-life`, lastModified: new Date('2025-04-06'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/the-prophetic-encounter`, lastModified: new Date('2025-02-23'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/the-language-of-the-spirit-interpreting-what-you-hear`, lastModified: new Date('2025-02-09'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/the-inheritance-test`, lastModified: new Date('2024-09-08'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/you-are-not-lazy-you-are-a-lot-more`, lastModified: new Date('2024-01-28'), changeFrequency: 'monthly', priority: 0.6 },
     // Resources (Tier 1 - broad audience, problem-first SEO content)
     { url: `${base}/resources`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
