@@ -181,6 +181,14 @@ const sermonPosts = [
       'Isaiah 10:27 - the yoke shall be destroyed because of the anointing. Not loosened. Rendered useless. This message explains what the anointing actually is, what it does, and why hell fears the person who carries it.',
   },
   {
+    slug: 'releasing-his-presence',
+    title: 'Releasing His Presence: From Container to Conduit',
+    date: '2025-06-29',
+    dateDisplay: '29 June 2025',
+    intro:
+      "You sense God's presence in church - but it stays there. Luke 24:32 says the disciples' hearts burned while Jesus walked with them, then they immediately went and told others. This message is about moving from containing the presence to releasing it.",
+  },
+  {
     slug: 'faith-is-the-router-that-connects-you-to-gods-supply',
     title: "Faith Is the Router That Connects You to God's Supply",
     date: '2025-06-08',
@@ -203,6 +211,22 @@ const sermonPosts = [
     dateDisplay: '18 May 2025',
     intro:
       'You can\'t cheat growth - you can only delay maturity. Based on Ecclesiastes 3:1 and Song of Solomon 2:15, this message shows why heaven builds in seasons, why little compromises become great falls, and why preparation is heaven\'s proof of trust.',
+  },
+  {
+    slug: 'speak-prophetic-into-your-life',
+    title: 'Speak Prophetic Into Your Life',
+    date: '2025-04-06',
+    dateDisplay: '6 April 2025',
+    intro:
+      '1 Corinthians 14:3 - prophecy is to edify, exhort, and comfort. You are always prophesying over your life whether you know it or not. The question is whether your words are building faith or destroying it.',
+  },
+  {
+    slug: 'you-are-not-lazy-you-are-a-lot-more',
+    title: 'You Are Not Lazy - You Are a Lot More',
+    date: '2024-01-28',
+    dateDisplay: '28 January 2024',
+    intro:
+      'Proverbs 6:6-8 - the ant needs no commander, yet it prepares diligently for harvest. Joel 3:10 - let the weak say I am strong. You are not lazy. You have been confessing the wrong thing.',
   },
 ]
 
