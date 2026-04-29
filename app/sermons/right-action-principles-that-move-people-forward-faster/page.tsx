@@ -49,6 +49,32 @@ const jsonLd = [
       { '@type': 'ListItem', position: 3, name: "Part 2: Right Action - The Principles That Move People Forward Faster", item: 'https://www.fountaingrace.org/sermons/right-action-principles-that-move-people-forward-faster' },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Why do I keep planning but never taking action?',
+        acceptedAnswer: { '@type': 'Answer', text: "Planning feels like progress because it keeps you busy without exposing you to the risk of failure. Pastor Ricardo Zaal at Fountain of Grace International in Pretoria North teaches that this is a form of fear - and that the only way through it is to identify the first specific step and take it before the emotion catches up." },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does James 2:17 mean by faith without works is dead?',
+        acceptedAnswer: { '@type': 'Answer', text: "James 2:17 means that faith which never produces action is not functional faith - it is merely information. Every biblical example of faith involves movement: Noah building, Moses lifting the rod, Peter stepping out of the boat. The miracle follows the first step, not the plan. This is the central point of Part 2 of this series from Fountain of Grace International, Pretoria North." },
+      },
+      {
+        '@type': 'Question',
+        name: 'How is Peter walking on water an example of faith in action?',
+        acceptedAnswer: { '@type': 'Answer', text: "In Matthew 14:28-29 Peter did not wait until the water was calm or Jesus had explained the physics. He said 'Lord, if it be thou, bid me come' - and then he got out of the boat. The miracle of walking on water happened the moment he moved, not the moment he prayed. Pastor Ricardo Zaal uses this throughout Part 2 of this series to show that God confirms movement, not preparation." },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the gap between knowledge and action and how do I close it?',
+        acceptedAnswer: { '@type': 'Answer', text: "The gap between knowing and doing is closed by identifying one specific next action - not the full plan, just the first step - and taking it immediately. Pastor Ricardo Zaal taught at Fountain of Grace International that if you know what God has been telling you to do, stop adding steps before you start. The first step is always simpler than the planning has made it look." },
+      },
+    ],
+  },
 ]
 
 export default function SermonPage() {
@@ -173,6 +199,14 @@ export default function SermonPage() {
                 {
                   q: 'What does James 2:17 mean by faith without works is dead?',
                   a: "James 2:17 means that faith which never produces action is not functional faith - it is merely information. Every biblical example of faith involves movement: Noah building, Moses lifting the rod, Peter stepping out of the boat. The miracle follows the first step, not the plan. This is the central point of Part 2 of this series from Fountain of Grace International, Pretoria North.",
+                },
+                {
+                  q: 'How is Peter walking on water an example of faith in action?',
+                  a: "In Matthew 14:28-29 Peter did not wait until the water was calm or Jesus had explained the physics. He said 'Lord, if it be thou, bid me come' - and then he got out of the boat. The miracle of walking on water happened the moment he moved, not the moment he prayed. Pastor Ricardo Zaal uses this throughout Part 2 of this series to show that God confirms movement, not preparation.",
+                },
+                {
+                  q: 'What is the gap between knowledge and action and how do I close it?',
+                  a: "The gap between knowing and doing is closed by identifying one specific next action - not the full plan, just the first step - and taking it immediately. Pastor Ricardo Zaal taught at Fountain of Grace International that if you know what God has been telling you to do, stop adding steps before you start. The first step is always simpler than the planning has made it look.",
                 },
               ].map((item) => (
                 <div key={item.q} className="faq-block">

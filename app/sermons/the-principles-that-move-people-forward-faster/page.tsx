@@ -49,6 +49,32 @@ const jsonLd = [
       { '@type': 'ListItem', position: 3, name: "The Principles That Move People Forward Faster", item: 'https://www.fountaingrace.org/sermons/the-principles-that-move-people-forward-faster' },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What does Ecclesiastes 10:10 mean by sharpening the axe?',
+        acceptedAnswer: { '@type': 'Answer', text: "Ecclesiastes 10:10 says if the iron is blunt and you do not sharpen the edge, then you must use more strength. Wisdom sharpens the blade. Working harder in the wrong direction produces less result. Pastor Ricardo Zaal at Fountain of Grace International teaches this as the principle of wisdom - getting the right method multiplies your output without multiplying your effort." },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why do I feel stuck even though I am praying and trying hard?',
+        acceptedAnswer: { '@type': 'Answer', text: "Feeling stuck despite effort often means one or more of these 10 principles is missing: you may be in the wrong position (Principle 2 - Positioning), or managing current resources poorly (Principle 5 - Stewardship), or working without a clear strategy (Principle 4 - Proverbs 20:18). Pastor Ricardo Zaal at Fountain of Grace International, Pretoria North, teaches that God often changes results through principles - not just through waiting." },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does Matthew 25:21 say about stewardship and being given more?',
+        acceptedAnswer: { '@type': 'Answer', text: "Matthew 25:21 says 'thou hast been faithful over a few things, I will make thee ruler over many things.' God does not increase what you are not managing well. Stewardship of your current resources - time, money, relationships, skills - is the qualification for greater. This is Principle 5 in this message from Fountain of Grace International, Pretoria North." },
+      },
+      {
+        '@type': 'Question',
+        name: 'How does Proverbs 13:20 connect to getting ahead in life?',
+        acceptedAnswer: { '@type': 'Answer', text: "Proverbs 13:20 says he that walketh with wise men shall be wise. The people around you shape your direction. One relationship with the right person can advance you further than years of solo effort. Pastor Ricardo Zaal teaches at Fountain of Grace International that positioning yourself near wise and moving people is itself a spiritual and practical principle for progress." },
+      },
+    ],
+  },
 ]
 
 const principles = [
@@ -189,6 +215,30 @@ export default function SermonPage() {
               </Link>{' '}
               - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
             </p>
+          </div>
+        </section>
+
+        <section className="bg-gray-50 py-12 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+              <div>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">What does Ecclesiastes 10:10 mean by sharpening the axe?</h3>
+                <p className="text-[#555] leading-relaxed text-sm">Ecclesiastes 10:10 says if the iron is blunt and you do not sharpen the edge, then you must use more strength. Wisdom sharpens the blade. Working harder in the wrong direction produces less result. Pastor Ricardo Zaal at Fountain of Grace International teaches this as the principle of wisdom - getting the right method multiplies your output without multiplying your effort.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">Why do I feel stuck even though I am praying and trying hard?</h3>
+                <p className="text-[#555] leading-relaxed text-sm">Feeling stuck despite effort often means one or more of these 10 principles is missing: you may be in the wrong position (Principle 2 - Positioning), or managing current resources poorly (Principle 5 - Stewardship), or working without a clear strategy (Principle 4 - Proverbs 20:18). God often changes results through principles - not just through waiting.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">What does Matthew 25:21 say about stewardship and being given more?</h3>
+                <p className="text-[#555] leading-relaxed text-sm">Matthew 25:21 says thou hast been faithful over a few things, I will make thee ruler over many things. God does not increase what you are not managing well. Stewardship of your current resources - time, money, relationships, skills - is the qualification for greater. This is Principle 5 in this message from Fountain of Grace International, Pretoria North.</p>
+              </div>
+              <div>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">How does Proverbs 13:20 connect to getting ahead in life?</h3>
+                <p className="text-[#555] leading-relaxed text-sm">Proverbs 13:20 says he that walketh with wise men shall be wise. The people around you shape your direction. One relationship with the right person can advance you further than years of solo effort. Positioning yourself near wise and moving people is itself a spiritual and practical principle for progress - taught at Fountain of Grace International in Pretoria North.</p>
+              </div>
+            </div>
           </div>
         </section>
 

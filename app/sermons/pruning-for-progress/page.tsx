@@ -99,6 +99,20 @@ export default function SermonPage() {
           </div>
         </header>
 
+        <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src="https://www.youtube.com/embed/o8eS8xBJlLs"
+                title="Pruning for Progress: From Bare Branch to Bountiful Blessing"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
+
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 

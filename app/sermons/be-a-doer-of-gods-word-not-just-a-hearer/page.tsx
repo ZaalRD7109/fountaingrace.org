@@ -49,6 +49,32 @@ const jsonLd = [
       { '@type': 'ListItem', position: 3, name: "Be a Doer of God's Word, Not Just a Hearer", item: 'https://www.fountaingrace.org/sermons/be-a-doer-of-gods-word-not-just-a-hearer' },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: "What is James 1:22 talking about when it says 'doers of the word'?",
+        acceptedAnswer: { '@type': 'Answer', text: "James 1:22 says to be doers of the word and not hearers only, warning that those who only hear are deceiving themselves. Pastor Ricardo Zaal at Fountain of Grace International, Pretoria North, teaches that the blessing in James 1:25 is attached to doing - not to merely receiving information." },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the difference between hearing the word and receiving the word?',
+        acceptedAnswer: { '@type': 'Answer', text: "Hearing is passive - it happens without any change to behaviour. Receiving with meekness, as James 1:21 describes, is an active posture of laying aside what is already in you, being teachable, and continuing under what you receive. The message from Fountain of Grace International in Pretoria North draws this distinction clearly." },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does the mirror illustration in James 1:23-24 mean?',
+        acceptedAnswer: { '@type': 'Answer', text: "James 1:23-24 compares a hearer who does not act to a man who looks in a mirror, sees what he looks like, and immediately forgets. The mirror represents the word of God. Walking away unchanged means the word had no lasting effect. The blessing James describes is reserved for the person who looks into the word and continues in it - who acts on what they see." },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why does the Bible say a hearer only is deceiving themselves?',
+        acceptedAnswer: { '@type': 'Answer', text: "James 1:22 uses the word 'deceived' deliberately. A person who hears truth and does not act has convinced themselves that hearing is enough. But knowledge without obedience creates a false sense of spiritual progress. Pastor Ricardo Zaal at Fountain of Grace International teaches that self-deception in this context is not ignorance - it is an active misreading of where you actually stand." },
+      },
+    ],
+  },
 ]
 
 export default function SermonPage() {
@@ -76,6 +102,20 @@ export default function SermonPage() {
             </p>
           </div>
         </header>
+
+        <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src="https://www.youtube.com/embed/FvFiyCxnGhA"
+                title="Be a Doer of God's Word, Not Just a Hearer"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
 
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto space-y-6">
@@ -138,6 +178,14 @@ export default function SermonPage() {
                 {
                   q: 'What is the difference between hearing the word and receiving the word?',
                   a: "Hearing is passive - it happens without any change to behaviour. Receiving with meekness, as James 1:21 describes, is an active posture of laying aside what is already in you, being teachable, and continuing under what you receive. The message from Fountain of Grace International in Pretoria North draws this distinction clearly.",
+                },
+                {
+                  q: 'What does the mirror illustration in James 1:23-24 mean?',
+                  a: "James 1:23-24 compares a hearer who does not act to a man who looks in a mirror, sees what he looks like, and immediately forgets. The mirror represents the word of God. Walking away unchanged means the word had no lasting effect. The blessing James describes is reserved for the person who looks into the word and continues in it - who acts on what they see.",
+                },
+                {
+                  q: 'Why does the Bible say a hearer only is deceiving themselves?',
+                  a: "James 1:22 uses the word 'deceived' deliberately. A person who hears truth and does not act has convinced themselves that hearing is enough. But knowledge without obedience creates a false sense of spiritual progress. Pastor Ricardo Zaal at Fountain of Grace International teaches that self-deception in this context is not ignorance - it is an active misreading of where you actually stand.",
                 },
               ].map((item) => (
                 <div key={item.q} className="faq-block">

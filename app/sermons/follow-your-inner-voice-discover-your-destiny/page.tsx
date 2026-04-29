@@ -49,6 +49,32 @@ const jsonLd = [
       { '@type': 'ListItem', position: 3, name: "Follow Your Inner Voice - Discover Your Destiny", item: 'https://www.fountaingrace.org/sermons/follow-your-inner-voice-discover-your-destiny' },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What does it mean that God knew me before I was born - Jeremiah 1:5?',
+        acceptedAnswer: { '@type': 'Answer', text: "The Hebrew word used in Jeremiah 1:5 is yada - an intimate, purposeful knowing. It means God did not discover you. He formed you intentionally, with a specific purpose in mind. Pastor Ricardo Zaal at Fountain of Grace International in Pretoria North teaches this as the foundation for following your inner voice." },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I know if the voice I am following is God or just my own thoughts?',
+        acceptedAnswer: { '@type': 'Answer', text: "The message from Fountain of Grace International addresses this through 1 John 4:4 - greater is he that is within you than he that is in the world. The voice that is consistent with scripture, that calls you to build and serve rather than destroy, and that does not go away under pressure - that voice is worth following." },
+      },
+      {
+        '@type': 'Question',
+        name: 'Why do other people\'s voices feel louder than my own sense of calling?',
+        acceptedAnswer: { '@type': 'Answer', text: "Pastor Ricardo Zaal explains that many voices saying 'stop' or 'don't run, you will fall' were spoken by people who meant well - parents, teachers, friends trying to protect you. The problem is that when those voices are repeated long enough, they become indistinguishable from your own inner voice. Jeremiah 1:5 is God's counter-declaration: he formed you with intention. That overrides what anyone else said." },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does 1 John 4:4 mean for someone who feels held back?',
+        acceptedAnswer: { '@type': 'Answer', text: "1 John 4:4 says greater is he that is in you than he that is in the world. This means the God who formed your purpose and lives inside you is greater than every external voice, circumstance, or setback telling you to stop. The message preached at Fountain of Grace International in Pretoria North uses this verse to show that your inner knowing is backed by the same God who set you apart before birth." },
+      },
+    ],
+  },
 ]
 
 export default function SermonPage() {
@@ -76,6 +102,20 @@ export default function SermonPage() {
             </p>
           </div>
         </header>
+
+        <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src="https://www.youtube.com/embed/9cRjCOqvilg"
+                title="Follow Your Inner Voice - Discover Your Destiny"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
 
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto space-y-6">
@@ -130,6 +170,14 @@ export default function SermonPage() {
                 {
                   q: 'How do I know if the voice I am following is God or just my own thoughts?',
                   a: "The message from Fountain of Grace International addresses this through 1 John 4:4 - greater is he that is within you than he that is in the world. The voice that is consistent with scripture, that calls you to build and serve rather than destroy, and that does not go away under pressure - that voice is worth following.",
+                },
+                {
+                  q: "Why do other people's voices feel louder than my own sense of calling?",
+                  a: "Pastor Ricardo Zaal explains that many voices saying 'stop' or 'don't run, you will fall' were spoken by people who meant well - parents, teachers, friends trying to protect you. The problem is that when those voices are repeated long enough, they become indistinguishable from your own inner voice. Jeremiah 1:5 is God's counter-declaration: he formed you with intention. That overrides what anyone else said.",
+                },
+                {
+                  q: 'What does 1 John 4:4 mean for someone who feels held back?',
+                  a: "1 John 4:4 says greater is he that is in you than he that is in the world. This means the God who formed your purpose and lives inside you is greater than every external voice, circumstance, or setback telling you to stop. The message preached at Fountain of Grace International in Pretoria North uses this verse to show that your inner knowing is backed by the same God who set you apart before birth.",
                 },
               ].map((item) => (
                 <div key={item.q} className="faq-block">

@@ -49,6 +49,32 @@ const jsonLd = [
       { '@type': 'ListItem', position: 3, name: "What If Someone Else Finishes What Was Meant for You?", item: 'https://www.fountaingrace.org/sermons/what-if-someone-else-finishes-what-was-meant-for-you' },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'What is the difference between substitution and replacement in the Bible?',
+        acceptedAnswer: { '@type': 'Answer', text: "Substitution is a correction - your position remains and God is still working on you, as with Jonah. Replacement is the permanent transfer of your assignment to another person, as with Saul in 1 Samuel 15. Pastor Ricardo Zaal explains both at Fountain of Grace International, Pretoria North." },
+      },
+      {
+        '@type': 'Question',
+        name: "What does Esther 4:14 actually mean - the full verse, not just 'such a time as this'?",
+        acceptedAnswer: { '@type': 'Answer', text: "The full verse says if you remain silent, deliverance will come from another place - and you and your house will be destroyed. The opportunity is real. But so is the consequence of not taking it. This is the core of this message from Fountain of Grace International." },
+      },
+      {
+        '@type': 'Question',
+        name: 'Was Jonah replaced or substituted when he ran from God?',
+        acceptedAnswer: { '@type': 'Answer', text: "Jonah was substituted, not replaced. God did not give the Nineveh assignment to someone else. He sent a fish - a correction, not a removal. Jonah 3:1 says the word of the Lord came to Jonah a second time. His position was still there. Pastor Ricardo Zaal uses this contrast at Fountain of Grace International to show that God gives second chances before replacement becomes necessary." },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I know if I am being corrected by God or permanently replaced?',
+        acceptedAnswer: { '@type': 'Answer', text: "Correction comes with conviction - a sense of pressure to return, improve, and obey. Replacement comes with silence - no more correction, no more stirring. Saul in 1 Samuel 15 experienced replacement: the Spirit of God departed and his authority transferred to David even while Saul still sat on the throne. If you still feel the pull to act on what God spoke, you are likely being corrected, not replaced. Act now." },
+      },
+    ],
+  },
 ]
 
 export default function SermonPage() {
@@ -165,6 +191,14 @@ export default function SermonPage() {
                 {
                   q: 'What does Esther 4:14 actually mean - the full verse, not just "such a time as this"?',
                   a: 'The full verse says if you remain silent, deliverance will come from another place - and you and your house will be destroyed. The opportunity is real. But so is the consequence of not taking it. This is the core of this message from Fountain of Grace International.',
+                },
+                {
+                  q: 'Was Jonah replaced or substituted when he ran from God?',
+                  a: "Jonah was substituted, not replaced. God did not give the Nineveh assignment to someone else. He sent a fish - a correction, not a removal. Jonah 3:1 says the word of the Lord came to Jonah a second time. His position was still there. Pastor Ricardo Zaal uses this contrast at Fountain of Grace International to show that God gives second chances before replacement becomes necessary.",
+                },
+                {
+                  q: 'How do I know if I am being corrected by God or permanently replaced?',
+                  a: "Correction comes with conviction - a sense of pressure to return, improve, and obey. Replacement comes with silence - no more correction, no more stirring. Saul in 1 Samuel 15 experienced replacement: the Spirit of God departed and his authority transferred to David even while Saul still sat on the throne. If you still feel the pull to act on what God spoke, you are likely being corrected, not replaced. Act now.",
                 },
               ].map((item) => (
                 <div key={item.q} className="faq-block">

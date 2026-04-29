@@ -49,6 +49,32 @@ const jsonLd = [
       { '@type': 'ListItem', position: 3, name: "Why You're Not Moving Forward - And How to Break It", item: 'https://www.fountaingrace.org/sermons/why-youre-not-moving-forward-and-how-to-break-it' },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'Why do I keep procrastinating even when I know what I need to do?',
+        acceptedAnswer: { '@type': 'Answer', text: "According to Pastor Ricardo Zaal at Fountain of Grace International in Pretoria North, procrastination is usually not laziness - it is unclear tasks, double-minded thinking, or fear disguised as wisdom. The solution is getting specific clarity on what the next one action actually is." },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does the Bible say about being stuck and not moving forward?',
+        acceptedAnswer: { '@type': 'Answer', text: "Matthew 14:28 (Peter walking on water), James 1:6-8 (the double-minded man), Proverbs 3:5-6 (trusting God rather than your own logic), and Ecclesiastes 11:4 (not waiting for perfect conditions) are the key scriptures Pastor Ricardo used in this message at Fountain of Grace International, Pretoria North." },
+      },
+      {
+        '@type': 'Question',
+        name: 'How do I break the pattern of planning without executing?',
+        acceptedAnswer: { '@type': 'Answer', text: "Pastor Ricardo's framework: capture your ideas, define only the next action (not the final outcome), separate projects from tasks, review weekly, and apply the two-minute rule - if it takes less than two minutes, do it immediately." },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does 2 Timothy 1:7 say about fear and why we stay stuck?',
+        acceptedAnswer: { '@type': 'Answer', text: "2 Timothy 1:7 says God hath not given us the spirit of fear; but of power, and of love, and of a sound mind. The Greek word for fear used here is delia - cowardice, the spirit of shrinking back. Pastor Ricardo Zaal at Fountain of Grace International teaches that what many people call wisdom or caution is often this spirit of shrinking operating beneath the surface. The antidote is movement - dynamis, the spirit of power in action." },
+      },
+    ],
+  },
 ]
 
 export default function SermonPage() {
@@ -173,6 +199,10 @@ export default function SermonPage() {
                 {
                   q: 'How do I break the pattern of planning without executing?',
                   a: "Pastor Ricardo's framework: capture your ideas, define only the next action (not the final outcome), separate projects from tasks, review weekly, and apply the two-minute rule - if it takes less than two minutes, do it immediately.",
+                },
+                {
+                  q: 'What does 2 Timothy 1:7 say about fear and why we stay stuck?',
+                  a: "2 Timothy 1:7 says God hath not given us the spirit of fear; but of power, and of love, and of a sound mind. The Greek word for fear used here is delia - cowardice, the spirit of shrinking back. Pastor Ricardo Zaal at Fountain of Grace International teaches that what many people call wisdom or caution is often this spirit of shrinking operating beneath the surface. The antidote is movement - dynamis, the spirit of power in action.",
                 },
               ].map((item) => (
                 <div key={item.q} className="faq-block">
