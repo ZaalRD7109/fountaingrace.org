@@ -69,6 +69,22 @@ const jsonLd = [
           text: 'Right action is obedient, timely movement toward what God has said. It means acting immediately when opportunity comes (Proverbs 6:6-9 - the ant gathers in summer, not winter). It means obeying without negotiating, like Abraham in Genesis 12 who simply departed when God spoke. And it means aligning your effort with the correct goal - not working hard in the wrong direction.',
         },
       },
+      {
+        '@type': 'Question',
+        name: 'Why do some believers work hard but still see no results?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'The problem is usually not the effort - it is the direction. Proverbs 13:4 says the soul of the sluggard craves and gets nothing, while the diligent is richly supplied. But even diligent effort in the wrong direction produces nothing. Matthew 9:37-38 says the harvest is plenteous but the labourers are few - meaning the harvest is always available, but workers must be positioned correctly to access it. Pastor Ricardo Zaal at Fountain of Grace International teaches that right action requires four things: prayer first, wisdom to identify the correct direction, positioning yourself correctly, and then moving immediately.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What does James 2:17 mean by faith without works is dead?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: "James 2:17 says faith by itself, if it does not have works, is dead. This does not mean you earn God's provision. It means faith was never designed to operate without a corresponding action. Noah believed the flood was coming - and built the ark. The belief and the building worked together. The ark without the belief is just wood. The belief without the ark is just a feeling. Right action is not works-based salvation - it is the activation mechanism that faith requires to produce results in the physical world.",
+        },
+      },
     ],
   },
 ]
@@ -191,19 +207,34 @@ export default function SermonPage() {
           </div>
         </section>
 
-        <section className="bg-gray-50 py-12 px-4 sm:px-6">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#1a1a1a] mb-6">Frequently Asked Questions</h2>
-            <div className="space-y-6">
-              <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">Why doesn&apos;t prayer alone produce results?</h3>
-                <p className="text-[#555] leading-relaxed text-sm">James 2:17 says faith without works is dead. Prayer is the starting point - but faith requires a corresponding action. Praying for a job while sending no CVs is faith without right action. God designed the system so that human obedience cooperates with divine provision.</p>
-              </div>
-              <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">Can the right action still fail if the timing is wrong?</h3>
-                <p className="text-[#555] leading-relaxed text-sm">Yes. Proverbs 6:6–9 uses the ant as the example: she gathers in summer, not winter. Right action in the wrong season - or right action delayed until the opportunity window closes - still produces poor results. Timing is part of obedience.</p>
-              </div>
-            </div>
+        <section className="bg-[#f0fafa] py-14 px-4 sm:px-6">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-2xl font-bold text-[#2a9df4] mb-8">Questions this message answers</h2>
+            <dl className="space-y-0">
+              {[
+                {
+                  q: "Why doesn't prayer alone produce results?",
+                  a: "James 2:17 says faith without works is dead. Prayer is the starting point - but God designed the system so that faith requires a corresponding action. A prophetic word only becomes real when you take the step that aligns with it. Praying for a job while sending no CVs is faith without the right action. Noah believed the flood was coming - and built the ark. Belief without the building is just a feeling.",
+                },
+                {
+                  q: "Can the right action still fail if the timing is wrong?",
+                  a: "Yes. Proverbs 6:6-9 uses the ant as the example: she gathers in summer, not winter. Right action in the wrong season - or right action delayed until the opportunity window closes - still produces poor results. The interview is at 10. Arriving at 11 means the next candidate already has the position. Timing is part of obedience.",
+                },
+                {
+                  q: "Why do some believers work hard but still see no results?",
+                  a: "The problem is usually not the effort - it is the direction. Diligent effort in the wrong direction produces nothing. Matthew 9:37-38 says the harvest is plenteous but the labourers are few - meaning the harvest is always available, but you must be positioned correctly to access it. Right action requires four things: prayer first to get God's direction, wisdom to identify the correct action, correct positioning, and then immediate movement.",
+                },
+                {
+                  q: "What does James 2:17 mean by faith without works is dead?",
+                  a: "James 2:17 does not mean you earn God's provision. It means faith was never designed to operate without a corresponding action. Right action is the activation mechanism that faith requires to produce results in the physical world. The principle that activates everything is not effort alone - it is the right action, taken at the right time, in the right direction.",
+                },
+              ].map((item) => (
+                <div key={item.q} className="faq-block">
+                  <dt className="font-semibold text-[#2a9df4] mb-2">{item.q}</dt>
+                  <dd className="text-[#555] leading-relaxed">{item.a}</dd>
+                </div>
+              ))}
+            </dl>
           </div>
         </section>
 

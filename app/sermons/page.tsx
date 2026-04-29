@@ -157,6 +157,22 @@ const sermonPosts = [
       'John 15:1-8 - God prunes every branch that bears fruit so it bears more. The cutting is not punishment. It is preparation. The season of pruning is the season closest to breakthrough.',
   },
   {
+    slug: 'the-spiritual-weapon-declaration',
+    title: 'The Spiritual Weapon - Declaration Session (Part 2)',
+    date: '2025-10-26',
+    dateDisplay: '26 October 2025',
+    intro:
+      'This is not a passive message - it is an activation. Jeremiah 22:29: O earth, earth, earth, hear the word of the LORD. Genesis 1:26 gave you dominion. John 14:12 says greater works. Open your mouth and speak.',
+  },
+  {
+    slug: 'the-spiritual-weapon-no-one-speaks-about',
+    title: 'The Spiritual Weapon No One Speaks About (But Everyone Needs)',
+    date: '2025-10-19',
+    dateDisplay: '19 October 2025',
+    intro:
+      'John 8:6 - Jesus stooped and wrote on the ground. Every accuser left. That was a weapon. Genesis 1:11 shows God spoke to the earth before He spoke to man. Creation is programmed to respond to spoken authority. So are your cycles.',
+  },
+  {
     slug: 'no-more-waiting-rooms-god-is-live-now',
     title: 'No More Waiting Rooms - God Is Live Now',
     date: '2025-09-28',
