@@ -57,6 +57,7 @@ export default function RootLayout({
         {/* Favicon served automatically from app/icon.png and app/apple-icon.png */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
+        <link rel="dns-prefetch" href="https://challenges.cloudflare.com" />
       </head>
       <body className={poppins.className}>
         <Header />
@@ -65,6 +66,11 @@ export default function RootLayout({
         <WhatsAppButton />
         <CookieBanner />
         <AnalyticsLoader />
+        <Script
+          src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+          strategy="lazyOnload"
+          id="cf-turnstile"
+        />
         {/* Clean UTM params from URL after analytics capture */}
         <Script id="clean-utm" strategy="afterInteractive">
           {`

@@ -1,0 +1,1325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eval Review</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&family=Lora:wght@400;500&display=swap" rel="stylesheet">
+  <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js" integrity="sha384-EnyY0/GSHQGSxSgMwaIPzSESbqoOLSexfnSMN2AP+39Ckmn92stwABZynq1JyzdT" crossorigin="anonymous"></script>
+  <style>
+    :root {
+      --bg: #faf9f5;
+      --surface: #ffffff;
+      --border: #e8e6dc;
+      --text: #141413;
+      --text-muted: #b0aea5;
+      --accent: #d97757;
+      --accent-hover: #c4613f;
+      --green: #788c5d;
+      --green-bg: #eef2e8;
+      --red: #c44;
+      --red-bg: #fceaea;
+      --header-bg: #141413;
+      --header-text: #faf9f5;
+      --radius: 6px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Lora', Georgia, serif;
+      background: var(--bg);
+      color: var(--text);
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ---- Header ---- */
+    .header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-shrink: 0;
+    }
+    .header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+    }
+    .header .instructions {
+      font-size: 0.8rem;
+      opacity: 0.7;
+      margin-top: 0.25rem;
+    }
+    .header .progress {
+      font-size: 0.875rem;
+      opacity: 0.8;
+      text-align: right;
+    }
+
+    /* ---- Main content ---- */
+    .main {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    /* ---- Sections ---- */
+    .section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      flex-shrink: 0;
+    }
+    .section-header {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.75rem 1rem;
+      font-size: 0.75rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      border-bottom: 1px solid var(--border);
+      background: var(--bg);
+    }
+    .section-body {
+      padding: 1rem;
+    }
+
+    /* ---- Config badge ---- */
+    .config-badge {
+      display: inline-block;
+      padding: 0.2rem 0.625rem;
+      border-radius: 9999px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin-left: 0.75rem;
+      vertical-align: middle;
+    }
+    .config-badge.config-primary {
+      background: rgba(33, 150, 243, 0.12);
+      color: #1976d2;
+    }
+    .config-badge.config-baseline {
+      background: rgba(255, 193, 7, 0.15);
+      color: #f57f17;
+    }
+
+    /* ---- Prompt ---- */
+    .prompt-text {
+      white-space: pre-wrap;
+      font-size: 0.9375rem;
+      line-height: 1.6;
+    }
+
+    /* ---- Outputs ---- */
+    .output-file {
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .output-file + .output-file {
+      margin-top: 1rem;
+    }
+    .output-file-header {
+      padding: 0.5rem 0.75rem;
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .output-file-header .dl-btn {
+      font-size: 0.7rem;
+      color: var(--accent);
+      text-decoration: none;
+      cursor: pointer;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      font-weight: 500;
+      opacity: 0.8;
+    }
+    .output-file-header .dl-btn:hover {
+      opacity: 1;
+      text-decoration: underline;
+    }
+    .output-file-content {
+      padding: 0.75rem;
+      overflow-x: auto;
+    }
+    .output-file-content pre {
+      font-size: 0.8125rem;
+      line-height: 1.5;
+      white-space: pre-wrap;
+      word-break: break-word;
+      font-family: 'SF Mono', SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+    }
+    .output-file-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 4px;
+    }
+    .output-file-content iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    .output-file-content table {
+      border-collapse: collapse;
+      font-size: 0.8125rem;
+      width: 100%;
+    }
+    .output-file-content table td,
+    .output-file-content table th {
+      border: 1px solid var(--border);
+      padding: 0.375rem 0.5rem;
+      text-align: left;
+    }
+    .output-file-content table th {
+      background: var(--bg);
+      font-weight: 600;
+    }
+    .output-file-content .download-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 1rem;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.875rem;
+      cursor: pointer;
+    }
+    .output-file-content .download-link:hover {
+      background: var(--border);
+    }
+    .empty-state {
+      color: var(--text-muted);
+      font-style: italic;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    /* ---- Feedback ---- */
+    .prev-feedback {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      padding: 0.625rem 0.75rem;
+      margin-top: 0.75rem;
+      font-size: 0.8125rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .prev-feedback-label {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-bottom: 0.25rem;
+      color: var(--text-muted);
+    }
+    .feedback-textarea {
+      width: 100%;
+      min-height: 100px;
+      padding: 0.75rem;
+      border: 1px solid var(--border);
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.9375rem;
+      line-height: 1.5;
+      resize: vertical;
+      color: var(--text);
+    }
+    .feedback-textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+    }
+    .feedback-status {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      margin-top: 0.5rem;
+      min-height: 1.1em;
+    }
+
+    /* ---- Grades (collapsible) ---- */
+    .grades-toggle {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+    .grades-toggle:hover {
+      color: var(--accent);
+    }
+    .grades-toggle .arrow {
+      margin-right: 0.5rem;
+      transition: transform 0.15s;
+      font-size: 0.75rem;
+    }
+    .grades-toggle .arrow.open {
+      transform: rotate(90deg);
+    }
+    .grades-content {
+      display: none;
+      margin-top: 0.75rem;
+    }
+    .grades-content.open {
+      display: block;
+    }
+    .grades-summary {
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .grade-badge {
+      display: inline-block;
+      padding: 0.125rem 0.5rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+    .grade-pass { background: var(--green-bg); color: var(--green); }
+    .grade-fail { background: var(--red-bg); color: var(--red); }
+    .assertion-list {
+      list-style: none;
+    }
+    .assertion-item {
+      padding: 0.625rem 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.8125rem;
+    }
+    .assertion-item:last-child { border-bottom: none; }
+    .assertion-status {
+      font-weight: 600;
+      margin-right: 0.5rem;
+    }
+    .assertion-status.pass { color: var(--green); }
+    .assertion-status.fail { color: var(--red); }
+    .assertion-evidence {
+      color: var(--text-muted);
+      font-size: 0.75rem;
+      margin-top: 0.25rem;
+      padding-left: 1.5rem;
+    }
+
+    /* ---- View tabs ---- */
+    .view-tabs {
+      display: flex;
+      gap: 0;
+      padding: 0 2rem;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+    .view-tab {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.625rem 1.25rem;
+      font-size: 0.8125rem;
+      font-weight: 500;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: var(--text-muted);
+      border-bottom: 2px solid transparent;
+      transition: all 0.15s;
+    }
+    .view-tab:hover { color: var(--text); }
+    .view-tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+    .view-panel { display: none; }
+    .view-panel.active { display: flex; flex-direction: column; flex: 1; overflow: hidden; }
+
+    /* ---- Benchmark view ---- */
+    .benchmark-view {
+      padding: 1.5rem 2rem;
+      overflow-y: auto;
+      flex: 1;
+    }
+    .benchmark-table {
+      border-collapse: collapse;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      font-size: 0.8125rem;
+      width: 100%;
+      margin-bottom: 1.5rem;
+    }
+    .benchmark-table th, .benchmark-table td {
+      padding: 0.625rem 0.75rem;
+      text-align: left;
+      border: 1px solid var(--border);
+    }
+    .benchmark-table th {
+      font-family: 'Poppins', sans-serif;
+      background: var(--header-bg);
+      color: var(--header-text);
+      font-weight: 500;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .benchmark-table tr:hover { background: var(--bg); }
+    .benchmark-table tr.benchmark-row-with { background: rgba(33, 150, 243, 0.06); }
+    .benchmark-table tr.benchmark-row-without { background: rgba(255, 193, 7, 0.06); }
+    .benchmark-table tr.benchmark-row-with:hover { background: rgba(33, 150, 243, 0.12); }
+    .benchmark-table tr.benchmark-row-without:hover { background: rgba(255, 193, 7, 0.12); }
+    .benchmark-table tr.benchmark-row-avg { font-weight: 600; border-top: 2px solid var(--border); }
+    .benchmark-table tr.benchmark-row-avg.benchmark-row-with { background: rgba(33, 150, 243, 0.12); }
+    .benchmark-table tr.benchmark-row-avg.benchmark-row-without { background: rgba(255, 193, 7, 0.12); }
+    .benchmark-delta-positive { color: var(--green); font-weight: 600; }
+    .benchmark-delta-negative { color: var(--red); font-weight: 600; }
+    .benchmark-notes {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1rem;
+    }
+    .benchmark-notes h3 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+    }
+    .benchmark-notes ul {
+      list-style: disc;
+      padding-left: 1.25rem;
+    }
+    .benchmark-notes li {
+      font-size: 0.8125rem;
+      line-height: 1.6;
+      margin-bottom: 0.375rem;
+    }
+    .benchmark-empty {
+      color: var(--text-muted);
+      font-style: italic;
+      text-align: center;
+      padding: 3rem;
+    }
+
+    /* ---- Navigation ---- */
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      flex-shrink: 0;
+    }
+    .nav-btn {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: var(--text);
+      transition: all 0.15s;
+    }
+    .nav-btn:hover:not(:disabled) {
+      background: var(--bg);
+      border-color: var(--text-muted);
+    }
+    .nav-btn:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+    }
+    .done-btn {
+      font-family: 'Poppins', sans-serif;
+      padding: 0.5rem 1.5rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      color: var(--text);
+      cursor: pointer;
+      font-size: 0.875rem;
+      font-weight: 500;
+      transition: all 0.15s;
+    }
+    .done-btn:hover {
+      background: var(--bg);
+      border-color: var(--text-muted);
+    }
+    .done-btn.ready {
+      border: none;
+      background: var(--accent);
+      color: white;
+      font-weight: 600;
+    }
+    .done-btn.ready:hover {
+      background: var(--accent-hover);
+    }
+    /* ---- Done overlay ---- */
+    .done-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 100;
+      justify-content: center;
+      align-items: center;
+    }
+    .done-overlay.visible {
+      display: flex;
+    }
+    .done-card {
+      background: var(--surface);
+      border-radius: 12px;
+      padding: 2rem 3rem;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      max-width: 500px;
+    }
+    .done-card h2 {
+      font-size: 1.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .done-card p {
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      line-height: 1.5;
+    }
+    .done-card .btn-row {
+      display: flex;
+      gap: 0.5rem;
+      justify-content: center;
+    }
+    .done-card button {
+      padding: 0.5rem 1.25rem;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+      cursor: pointer;
+      font-size: 0.875rem;
+    }
+    .done-card button:hover {
+      background: var(--bg);
+    }
+    /* ---- Toast ---- */
+    .toast {
+      position: fixed;
+      bottom: 5rem;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 0.625rem 1.25rem;
+      border-radius: var(--radius);
+      font-size: 0.875rem;
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+      z-index: 200;
+    }
+    .toast.visible {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <div id="app" style="height:100vh; display:flex; flex-direction:column;">
+    <div class="header">
+      <div>
+        <h1>Eval Review: <span id="skill-name"></span></h1>
+        <div class="instructions">Review each output and leave feedback below. Navigate with arrow keys or buttons. When done, copy feedback and paste into Claude Code.</div>
+      </div>
+      <div class="progress" id="progress"></div>
+    </div>
+
+    <!-- View tabs (only shown when benchmark data exists) -->
+    <div class="view-tabs" id="view-tabs" style="display:none;">
+      <button class="view-tab active" onclick="switchView('outputs')">Outputs</button>
+      <button class="view-tab" onclick="switchView('benchmark')">Benchmark</button>
+    </div>
+
+    <!-- Outputs panel (qualitative review) -->
+    <div class="view-panel active" id="panel-outputs">
+    <div class="main">
+      <!-- Prompt -->
+      <div class="section">
+        <div class="section-header">Prompt <span class="config-badge" id="config-badge" style="display:none;"></span></div>
+        <div class="section-body">
+          <div class="prompt-text" id="prompt-text"></div>
+        </div>
+      </div>
+
+      <!-- Outputs -->
+      <div class="section">
+        <div class="section-header">Output</div>
+        <div class="section-body" id="outputs-body">
+          <div class="empty-state">No output files found</div>
+        </div>
+      </div>
+
+      <!-- Previous Output (collapsible) -->
+      <div class="section" id="prev-outputs-section" style="display:none;">
+        <div class="section-header">
+          <div class="grades-toggle" onclick="togglePrevOutputs()">
+            <span class="arrow" id="prev-outputs-arrow">&#9654;</span>
+            Previous Output
+          </div>
+        </div>
+        <div class="grades-content" id="prev-outputs-content"></div>
+      </div>
+
+      <!-- Grades (collapsible) -->
+      <div class="section" id="grades-section" style="display:none;">
+        <div class="section-header">
+          <div class="grades-toggle" onclick="toggleGrades()">
+            <span class="arrow" id="grades-arrow">&#9654;</span>
+            Formal Grades
+          </div>
+        </div>
+        <div class="grades-content" id="grades-content"></div>
+      </div>
+
+      <!-- Feedback -->
+      <div class="section">
+        <div class="section-header">Your Feedback</div>
+        <div class="section-body">
+          <textarea
+            class="feedback-textarea"
+            id="feedback"
+            placeholder="What do you think of this output? Any issues, suggestions, or things that look great?"
+          ></textarea>
+          <div class="feedback-status" id="feedback-status"></div>
+          <div class="prev-feedback" id="prev-feedback" style="display:none;">
+            <div class="prev-feedback-label">Previous feedback</div>
+            <div id="prev-feedback-text"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nav" id="outputs-nav">
+      <button class="nav-btn" id="prev-btn" onclick="navigate(-1)">&#8592; Previous</button>
+      <button class="done-btn" id="done-btn" onclick="showDoneDialog()">Submit All Reviews</button>
+      <button class="nav-btn" id="next-btn" onclick="navigate(1)">Next &#8594;</button>
+    </div>
+    </div><!-- end panel-outputs -->
+
+    <!-- Benchmark panel (quantitative stats) -->
+    <div class="view-panel" id="panel-benchmark">
+      <div class="benchmark-view" id="benchmark-content">
+        <div class="benchmark-empty">No benchmark data available. Run a benchmark to see quantitative results here.</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Done overlay -->
+  <div class="done-overlay" id="done-overlay">
+    <div class="done-card">
+      <h2>Review Complete</h2>
+      <p>Your feedback has been saved. Go back to your Claude Code session and tell Claude you're done reviewing.</p>
+      <div class="btn-row">
+        <button onclick="closeDoneDialog()">OK</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // ---- Embedded data (injected by generate_review.py) ----
+    const EMBEDDED_DATA = {"skill_name": "fgi-digital-growth", "runs": [{"id": "eval-1-session-a-with_skill", "prompt": "Run Module 0, Session A. The site is www.fountaingrace.org and it is a custom HTML/CSS site on Cloudflare Pages. We need the foundation files: robots.txt, sitemap.xml, Cloudflare _headers file, and meta tags with Open Graph for the homepage.", "eval_id": 1, "outputs": [{"name": "response.md", "type": "text", "content": "# Module 0 \u2014 Session A: Foundation Files and Meta Tags\n# Site: www.fountaingrace.org \u2014 Custom HTML/CSS on Cloudflare Pages\n\n---\n\n## WHAT THIS SESSION DELIVERS\n\nSession A builds the invisible foundation every page depends on:\n- Search engines know what the site is and where to find it\n- Browsers and security scanners see correct headers\n- Social sharing shows the right title, description, and image\n- Crawlers are guided \u2014 never blocked by accident\n\nDeploy after completing this session before starting Session B.\n\n---\n\n## FILE 1 \u2014 robots.txt\n\n**Place at:** site root \u2192 `robots.txt`\n**URL when live:** `https://www.fountaingrace.org/robots.txt`\n\n```\nUser-agent: *\nAllow: /\n\n# Allow all key pages explicitly\nAllow: /index.html\nAllow: /about.html\nAllow: /contact.html\nAllow: /sermons.html\nAllow: /events.html\nAllow: /donate.html\nAllow: /faq.html\nAllow: /plan-your-visit.html\nAllow: /prayer.html\n\n# Block admin, staging, or private paths (add your own if needed)\nDisallow: /admin/\nDisallow: /private/\nDisallow: /.git/\n\n# Sitemap location\nSitemap: https://www.fountaingrace.org/sitemap.xml\n```\n\n---\n\n## FILE 2 \u2014 sitemap.xml\n\n**Place at:** site root \u2192 `sitemap.xml`\n**URL when live:** `https://www.fountaingrace.org/sitemap.xml`\n\nAfter deploying, submit this URL in Google Search Console under Sitemaps.\n\n```xml\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n\n  <url>\n    <loc>https://www.fountaingrace.org/</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>\n\n  <url>\n    <loc>https://www.fountaingrace.org/about.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.9</priority>\n  </url>\n\n  <url>\n    <loc>https://www.fountaingrace.org/plan-your-visit.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.9</priority>\n  </url>\n\n  <url>\n    <loc>https://www.fountaingrace.org/donate.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.9</priority>\n  </url>\n\n  <url>\n    <loc>https://www.fountaingrace.org/sermons.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n\n  <url>\n    <loc>https://www.fountaingrace.org/events.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n\n  <url>\n    <loc>https://www.fountaingrace.org/prayer.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>\n\n  <url>\n    <loc>https://www.fountaingrace.org/contact.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>\n\n  <url>\n    <loc>https://www.fountaingrace.org/faq.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>\n\n</urlset>\n```\n\n**Maintenance rule:** Every time you add a new page, add a new `<url>` block here and update the `<lastmod>` date. Update `<lastmod>` on any page you significantly rewrite.\n\n---\n\n## FILE 3 \u2014 Cloudflare _headers\n\n**Place at:** site root \u2192 `_headers`\n**URL when live:** Not public-facing \u2014 Cloudflare reads this automatically on deploy.\n\nThis file sets security headers on every page. No plugin needed \u2014 Cloudflare Pages reads it natively.\n\n```\nhttps://www.fountaingrace.org/*\n  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms https://cdn.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com https://www.clarity.ms; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.clarity.ms https://dc.services.visualstudio.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests\n  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload\n  X-Frame-Options: DENY\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n\nhttps://fountaingrace.org/*\n  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.clarity.ms https://cdn.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com https://www.clarity.ms; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.clarity.ms https://dc.services.visualstudio.com; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self'; upgrade-insecure-requests\n  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload\n  X-Frame-Options: DENY\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=()\n```\n\n**Important CSP note:** If you add any new external service (e.g. an embed, a payment widget, a map), you must add its domain to the relevant CSP directive. If a resource gets blocked after adding a new tool, the CSP is why. Check browser Console for errors starting with \"Content Security Policy\".\n\n**Verify after deploy:** Go to https://securityheaders.com and enter `https://www.fountaingrace.org`. You should see a grade of A or B. If any header is missing, check that the `_headers` file is in your site root (same folder as `index.html`).\n\n---\n\n## FILE 4 \u2014 Cloudflare _redirects\n\n**Place at:** site root \u2192 `_redirects`\n**URL when live:** Not public-facing \u2014 Cloudflare reads this automatically on deploy.\n\nThis ensures visitors always land on `www.fountaingrace.org` with no redirect chains.\n\n```\n# Force www \u2014 redirect bare domain to www\nhttps://fountaingrace.org/* https://www.fountaingrace.org/:splat 301\n\n# Clean URL aliases (optional \u2014 add as you create pages)\n/home                 /                          301\n/give                 /donate.html               301\n/visit                /plan-your-visit.html      301\n/sermons              /sermons.html              301\n/events               /events.html               301\n/prayer               /prayer.html               301\n/faq                  /faq.html                  301\n/contact              /contact.html              301\n/about                /about.html                301\n\n# 404 fallback\n/*                    /404.html                  404\n```\n\n**Note on the 404 line:** Only include `/404.html` if that file exists. If you don't have a 404 page yet, remove that last line \u2014 Cloudflare will show its own default 404 until you build one in Session C.\n\n---\n\n## FILE 5 \u2014 manifest.json (Web App Manifest)\n\n**Place at:** site root \u2192 `manifest.json`\n**URL when live:** `https://www.fountaingrace.org/manifest.json`\n\nThis allows the site to be added to a phone's home screen as an app-like shortcut.\n\n```json\n{\n  \"name\": \"Fountain of Grace International\",\n  \"short_name\": \"FGI\",\n  \"description\": \"A Christian church and registered NPO in Pretoria North, South Africa. Worship, prayer, community, and hope.\",\n  \"start_url\": \"/\",\n  \"display\": \"standalone\",\n  \"background_color\": \"#FFFFFF\",\n  \"theme_color\": \"#2a9df4\",\n  \"orientation\": \"any\",\n  \"lang\": \"en-ZA\",\n  \"icons\": [\n    {\n      \"src\": \"/images/icons/icon-192.png\",\n      \"sizes\": \"192x192\",\n      \"type\": \"image/png\",\n      \"purpose\": \"any maskable\"\n    },\n    {\n      \"src\": \"/images/icons/icon-512.png\",\n      \"sizes\": \"512x512\",\n      \"type\": \"image/png\",\n      \"purpose\": \"any maskable\"\n    }\n  ]\n}\n```\n\n**Action needed:** Create two icon files:\n- `/images/icons/icon-192.png` \u2014 192\u00d7192px PNG of the FGI logo\n- `/images/icons/icon-512.png` \u2014 512\u00d7512px PNG of the FGI logo\n\nIf these images don't exist yet, remove the `\"icons\"` array from the manifest temporarily so it doesn't break. Add them once the images are ready.\n\n---\n\n## FILE 6 \u2014 Meta Tags and Open Graph: All Pages\n\nPaste these `<head>` blocks into the corresponding HTML files.\nReplace the existing `<title>` and any existing `<meta>` tags in `<head>`.\n\nEvery page needs:\n1. A unique `<title>` under 60 characters\n2. A unique `<meta name=\"description\">` under 160 characters\n3. A `<link rel=\"canonical\">` pointing to the page's own URL\n4. Open Graph tags for social sharing\n5. The manifest link and theme-color\n6. The favicon link (add your own favicon path)\n\n---\n\n### Homepage \u2014 index.html\n\n```html\n<!-- =============================================\n     PASTE THIS BLOCK INSIDE <head> ON index.html\n     Replace any existing title/meta/og tags\n     ============================================= -->\n\n<!-- Primary meta -->\n<title>Fountain of Grace International | Church in Pretoria North</title>\n<meta name=\"description\" content=\"Fountain of Grace International is a Christian church and registered NPO in Pretoria North, South Africa. Join us for worship, prayer, and community.\">\n<link rel=\"canonical\" href=\"https://www.fountaingrace.org/\">\n\n<!-- Open Graph \u2014 controls how the page looks when shared on WhatsApp, Facebook, etc. -->\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:url\" content=\"https://www.fountaingrace.org/\">\n<meta property=\"og:title\" content=\"Fountain of Grace International | Church in Pretoria North\">\n<meta property=\"og:description\" content=\"A Christian church and registered NPO in Pretoria North. Join us for worship, prayer, and community support.\">\n<meta property=\"og:image\" content=\"https://www.fountaingrace.org/images/og/og-home.jpg\">\n<meta property=\"og:image:width\" content=\"1200\">\n<meta property=\"og:image:height\" content=\"630\">\n<meta property=\"og:image:alt\" content=\"Fountain of Grace International \u2014 Church in Pretoria North\">\n<meta property=\"og:site_name\" content=\"Fountain of Grace International\">\n<meta property=\"og:locale\" content=\"en_ZA\">\n\n<!-- Twitter/X card (also used by LinkedIn, Slack, etc.) -->\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Fountain of Grace International | Church in Pretoria North\">\n<meta name=\"twitter:description\" content=\"A Christian church and registered NPO in Pretoria North. Worship, prayer, and community support.\">\n<meta name=\"twitter:image\" content=\"https://www.fountaingrace.org/images/og/og-home.jpg\">\n\n<!-- Geographic meta \u2014 helps local search -->\n<meta name=\"geo.region\" content=\"ZA-GP\">\n<meta name=\"geo.placename\" content=\"Pretoria North\">\n\n<!-- Web app manifest -->\n<link rel=\"manifest\" href=\"/manifest.json\">\n<meta name=\"theme-color\" content=\"#2a9df4\">\n\n<!-- Favicon (update path to match your actual favicon file) -->\n<link rel=\"icon\" type=\"image/png\" href=\"/images/favicon.png\">\n<link rel=\"apple-touch-icon\" href=\"/images/icons/icon-192.png\">\n```\n\n---\n\n### About \u2014 about.html\n\n```html\n<!-- =============================================\n     PASTE THIS BLOCK INSIDE <head> ON about.html\n     ============================================= -->\n\n<title>About Us | Fountain of Grace International</title>\n<meta name=\"description\" content=\"Learn about Fountain of Grace International \u2014 a registered Christian NPO (316-193 NPO) in Pretoria North, led by Founder and Pastor Ricardo Zaal.\">\n<link rel=\"canonical\" href=\"https://www.fountaingrace.org/about.html\">\n\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:url\" content=\"https://www.fountaingrace.org/about.html\">\n<meta property=\"og:title\" content=\"About Us | Fountain of Grace International\">\n<meta property=\"og:description\" content=\"Fountain of Grace International is a registered Christian NPO in Pretoria North, led by Founder and Pastor Ricardo Zaal. NPO 316-193.\">\n<meta property=\"og:image\" content=\"https://www.fountaingrace.org/images/og/og-about.jpg\">\n<meta property=\"og:image:width\" content=\"1200\">\n<meta property=\"og:image:height\" content=\"630\">\n<meta property=\"og:image:alt\" content=\"About Fountain of Grace International\">\n<meta property=\"og:site_name\" content=\"Fountain of Grace International\">\n<meta property=\"og:locale\" content=\"en_ZA\">\n\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"About Us | Fountain of Grace International\">\n<meta name=\"twitter:description\" content=\"Registered Christian NPO in Pretoria North, led by Founder and Pastor Ricardo Zaal. NPO 316-193.\">\n<meta name=\"twitter:image\" content=\"https://www.fountaingrace.org/images/og/og-about.jpg\">\n\n<meta name=\"geo.region\" content=\"ZA-GP\">\n<meta name=\"geo.placename\" content=\"Pretoria North\">\n\n<link rel=\"manifest\" href=\"/manifest.json\">\n<meta name=\"theme-color\" content=\"#2a9df4\">\n<link rel=\"icon\" type=\"image/png\" href=\"/images/favicon.png\">\n<link rel=\"apple-touch-icon\" href=\"/images/icons/icon-192.png\">\n```\n\n---\n\n### Plan Your Visit \u2014 plan-your-visit.html\n\n```html\n<!-- ===================================================\n     PASTE THIS BLOCK INSIDE <head> ON plan-your-visit.html\n     =================================================== -->\n\n<title>Plan Your Visit | Fountain of Grace International</title>\n<meta name=\"description\" content=\"Visiting Fountain of Grace International for the first time? Here's what to expect \u2014 service times, address, parking, and children's programme in Pretoria North.\">\n<link rel=\"canonical\" href=\"https://www.fountaingrace.org/plan-your-visit.html\">\n\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:url\" content=\"https://www.fountaingrace.org/plan-your-visit.html\">\n<meta property=\"og:title\" content=\"Plan Your Visit | Fountain of Grace International\">\n<meta property=\"og:description\" content=\"First time at FGI? Service times, address in Pretoria North, parking, and what to expect. You are welcome here.\">\n<meta property=\"og:image\" content=\"https://www.fountaingrace.org/images/og/og-visit.jpg\">\n<meta property=\"og:image:width\" content=\"1200\">\n<meta property=\"og:image:height\" content=\"630\">\n<meta property=\"og:image:alt\" content=\"Plan Your Visit to Fountain of Grace International in Pretoria North\">\n<meta property=\"og:site_name\" content=\"Fountain of Grace International\">\n<meta property=\"og:locale\" content=\"en_ZA\">\n\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Plan Your Visit | Fountain of Grace International\">\n<meta name=\"twitter:description\" content=\"Service times, address, parking, and what to expect at FGI in Pretoria North.\">\n<meta name=\"twitter:image\" content=\"https://www.fountaingrace.org/images/og/og-visit.jpg\">\n\n<meta name=\"geo.region\" content=\"ZA-GP\">\n<meta name=\"geo.placename\" content=\"Pretoria North\">\n\n<link rel=\"manifest\" href=\"/manifest.json\">\n<meta name=\"theme-color\" content=\"#2a9df4\">\n<link rel=\"icon\" type=\"image/png\" href=\"/images/favicon.png\">\n<link rel=\"apple-touch-icon\" href=\"/images/icons/icon-192.png\">\n```\n\n---\n\n### Donate \u2014 donate.html\n\n```html\n<!-- =============================================\n     PASTE THIS BLOCK INSIDE <head> ON donate.html\n     ============================================= -->\n\n<title>Donate | Fountain of Grace International</title>\n<meta name=\"description\" content=\"Support Fountain of Grace International \u2014 a registered NPO (316-193) in Pretoria North. Your donation funds community care, youth programmes, and food support.\">\n<link rel=\"canonical\" href=\"https://www.fountaingrace.org/donate.html\">\n\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:url\" content=\"https://www.fountaingrace.org/donate.html\">\n<meta property=\"og:title\" content=\"Donate | Fountain of Grace International\">\n<meta property=\"og:description\" content=\"Support FGI's community work in Pretoria North. Registered NPO 316-193. Your donation helps real people.\">\n<meta property=\"og:image\" content=\"https://www.fountaingrace.org/images/og/og-donate.jpg\">\n<meta property=\"og:image:width\" content=\"1200\">\n<meta property=\"og:image:height\" content=\"630\">\n<meta property=\"og:image:alt\" content=\"Donate to Fountain of Grace International\">\n<meta property=\"og:site_name\" content=\"Fountain of Grace International\">\n<meta property=\"og:locale\" content=\"en_ZA\">\n\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Donate | Fountain of Grace International\">\n<meta name=\"twitter:description\" content=\"Support FGI's community work in Pretoria North. Registered NPO 316-193.\">\n<meta name=\"twitter:image\" content=\"https://www.fountaingrace.org/images/og/og-donate.jpg\">\n\n<meta name=\"geo.region\" content=\"ZA-GP\">\n<meta name=\"geo.placename\" content=\"Pretoria North\">\n\n<link rel=\"manifest\" href=\"/manifest.json\">\n<meta name=\"theme-color\" content=\"#2a9df4\">\n<link rel=\"icon\" type=\"image/png\" href=\"/images/favicon.png\">\n<link rel=\"apple-touch-icon\" href=\"/images/icons/icon-192.png\">\n```\n\n---\n\n### Sermons \u2014 sermons.html\n\n```html\n<!-- ================================================\n     PASTE THIS BLOCK INSIDE <head> ON sermons.html\n     ================================================ -->\n\n<title>Sermons | Fountain of Grace International</title>\n<meta name=\"description\" content=\"Watch and listen to sermons from Fountain of Grace International in Pretoria North. Biblical teaching for everyday life.\">\n<link rel=\"canonical\" href=\"https://www.fountaingrace.org/sermons.html\">\n\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:url\" content=\"https://www.fountaingrace.org/sermons.html\">\n<meta property=\"og:title\" content=\"Sermons | Fountain of Grace International\">\n<meta property=\"og:description\" content=\"Watch and listen to sermons from FGI Pretoria North. Biblical teaching for everyday life.\">\n<meta property=\"og:image\" content=\"https://www.fountaingrace.org/images/og/og-sermons.jpg\">\n<meta property=\"og:image:width\" content=\"1200\">\n<meta property=\"og:image:height\" content=\"630\">\n<meta property=\"og:image:alt\" content=\"Sermons from Fountain of Grace International\">\n<meta property=\"og:site_name\" content=\"Fountain of Grace International\">\n<meta property=\"og:locale\" content=\"en_ZA\">\n\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Sermons | Fountain of Grace International\">\n<meta name=\"twitter:description\" content=\"Biblical teaching from FGI Pretoria North. Watch and listen online.\">\n<meta name=\"twitter:image\" content=\"https://www.fountaingrace.org/images/og/og-sermons.jpg\">\n\n<meta name=\"geo.region\" content=\"ZA-GP\">\n<meta name=\"geo.placename\" content=\"Pretoria North\">\n\n<link rel=\"manifest\" href=\"/manifest.json\">\n<meta name=\"theme-color\" content=\"#2a9df4\">\n<link rel=\"icon\" type=\"image/png\" href=\"/images/favicon.png\">\n<link rel=\"apple-touch-icon\" href=\"/images/icons/icon-192.png\">\n```\n\n---\n\n### Events \u2014 events.html\n\n```html\n<!-- ===============================================\n     PASTE THIS BLOCK INSIDE <head> ON events.html\n     =============================================== -->\n\n<title>Events | Fountain of Grace International</title>\n<meta name=\"description\" content=\"Upcoming events at Fountain of Grace International in Pretoria North. Worship nights, community outreach, youth events, and more.\">\n<link rel=\"canonical\" href=\"https://www.fountaingrace.org/events.html\">\n\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:url\" content=\"https://www.fountaingrace.org/events.html\">\n<meta property=\"og:title\" content=\"Events | Fountain of Grace International\">\n<meta property=\"og:description\" content=\"Upcoming events at FGI Pretoria North \u2014 worship nights, community outreach, youth events, and more.\">\n<meta property=\"og:image\" content=\"https://www.fountaingrace.org/images/og/og-events.jpg\">\n<meta property=\"og:image:width\" content=\"1200\">\n<meta property=\"og:image:height\" content=\"630\">\n<meta property=\"og:image:alt\" content=\"Events at Fountain of Grace International\">\n<meta property=\"og:site_name\" content=\"Fountain of Grace International\">\n<meta property=\"og:locale\" content=\"en_ZA\">\n\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Events | Fountain of Grace International\">\n<meta name=\"twitter:description\" content=\"Upcoming events at FGI Pretoria North.\">\n<meta name=\"twitter:image\" content=\"https://www.fountaingrace.org/images/og/og-events.jpg\">\n\n<meta name=\"geo.region\" content=\"ZA-GP\">\n<meta name=\"geo.placename\" content=\"Pretoria North\">\n\n<link rel=\"manifest\" href=\"/manifest.json\">\n<meta name=\"theme-color\" content=\"#2a9df4\">\n<link rel=\"icon\" type=\"image/png\" href=\"/images/favicon.png\">\n<link rel=\"apple-touch-icon\" href=\"/images/icons/icon-192.png\">\n```\n\n---\n\n### Prayer \u2014 prayer.html\n\n```html\n<!-- ===============================================\n     PASTE THIS BLOCK INSIDE <head> ON prayer.html\n     =============================================== -->\n\n<title>Prayer Requests | Fountain of Grace International</title>\n<meta name=\"description\" content=\"Submit a prayer request to Fountain of Grace International. We pray for every request personally. You are not alone.\">\n<link rel=\"canonical\" href=\"https://www.fountaingrace.org/prayer.html\">\n\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:url\" content=\"https://www.fountaingrace.org/prayer.html\">\n<meta property=\"og:title\" content=\"Prayer Requests | Fountain of Grace International\">\n<meta property=\"og:description\" content=\"Submit a prayer request to FGI. We pray for every request personally. You are not alone.\">\n<meta property=\"og:image\" content=\"https://www.fountaingrace.org/images/og/og-prayer.jpg\">\n<meta property=\"og:image:width\" content=\"1200\">\n<meta property=\"og:image:height\" content=\"630\">\n<meta property=\"og:image:alt\" content=\"Prayer Requests \u2014 Fountain of Grace International\">\n<meta property=\"og:site_name\" content=\"Fountain of Grace International\">\n<meta property=\"og:locale\" content=\"en_ZA\">\n\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Prayer Requests | Fountain of Grace International\">\n<meta name=\"twitter:description\" content=\"Submit a prayer request to FGI. We pray for every request personally.\">\n<meta name=\"twitter:image\" content=\"https://www.fountaingrace.org/images/og/og-prayer.jpg\">\n\n<meta name=\"geo.region\" content=\"ZA-GP\">\n<meta name=\"geo.placename\" content=\"Pretoria North\">\n\n<link rel=\"manifest\" href=\"/manifest.json\">\n<meta name=\"theme-color\" content=\"#2a9df4\">\n<link rel=\"icon\" type=\"image/png\" href=\"/images/favicon.png\">\n<link rel=\"apple-touch-icon\" href=\"/images/icons/icon-192.png\">\n```\n\n---\n\n### Contact \u2014 contact.html\n\n```html\n<!-- ================================================\n     PASTE THIS BLOCK INSIDE <head> ON contact.html\n     ================================================ -->\n\n<title>Contact Us | Fountain of Grace International</title>\n<meta name=\"description\" content=\"Contact Fountain of Grace International in Pretoria North. 323 B Danie Theron Street, Pretoria North, 0116. We would love to hear from you.\">\n<link rel=\"canonical\" href=\"https://www.fountaingrace.org/contact.html\">\n\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:url\" content=\"https://www.fountaingrace.org/contact.html\">\n<meta property=\"og:title\" content=\"Contact Us | Fountain of Grace International\">\n<meta property=\"og:description\" content=\"Get in touch with FGI Pretoria North. 323 B Danie Theron Street, Pretoria North, 0116.\">\n<meta property=\"og:image\" content=\"https://www.fountaingrace.org/images/og/og-contact.jpg\">\n<meta property=\"og:image:width\" content=\"1200\">\n<meta property=\"og:image:height\" content=\"630\">\n<meta property=\"og:image:alt\" content=\"Contact Fountain of Grace International\">\n<meta property=\"og:site_name\" content=\"Fountain of Grace International\">\n<meta property=\"og:locale\" content=\"en_ZA\">\n\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"Contact Us | Fountain of Grace International\">\n<meta name=\"twitter:description\" content=\"Contact FGI Pretoria North \u2014 323 B Danie Theron Street, Pretoria North, 0116.\">\n<meta name=\"twitter:image\" content=\"https://www.fountaingrace.org/images/og/og-contact.jpg\">\n\n<meta name=\"geo.region\" content=\"ZA-GP\">\n<meta name=\"geo.placename\" content=\"Pretoria North\">\n\n<link rel=\"manifest\" href=\"/manifest.json\">\n<meta name=\"theme-color\" content=\"#2a9df4\">\n<link rel=\"icon\" type=\"image/png\" href=\"/images/favicon.png\">\n<link rel=\"apple-touch-icon\" href=\"/images/icons/icon-192.png\">\n```\n\n---\n\n### FAQ \u2014 faq.html\n\n```html\n<!-- ==============================================\n     PASTE THIS BLOCK INSIDE <head> ON faq.html\n     ============================================== -->\n\n<title>Frequently Asked Questions | Fountain of Grace International</title>\n<meta name=\"description\" content=\"Answers to common questions about Fountain of Grace International \u2014 service times, location, beliefs, giving, and how to get involved in Pretoria North.\">\n<link rel=\"canonical\" href=\"https://www.fountaingrace.org/faq.html\">\n\n<meta property=\"og:type\" content=\"website\">\n<meta property=\"og:url\" content=\"https://www.fountaingrace.org/faq.html\">\n<meta property=\"og:title\" content=\"Frequently Asked Questions | Fountain of Grace International\">\n<meta property=\"og:description\" content=\"Common questions about FGI Pretoria North \u2014 service times, beliefs, giving, and how to get involved.\">\n<meta property=\"og:image\" content=\"https://www.fountaingrace.org/images/og/og-faq.jpg\">\n<meta property=\"og:image:width\" content=\"1200\">\n<meta property=\"og:image:height\" content=\"630\">\n<meta property=\"og:image:alt\" content=\"FAQ \u2014 Fountain of Grace International\">\n<meta property=\"og:site_name\" content=\"Fountain of Grace International\">\n<meta property=\"og:locale\" content=\"en_ZA\">\n\n<meta name=\"twitter:card\" content=\"summary_large_image\">\n<meta name=\"twitter:title\" content=\"FAQ | Fountain of Grace International\">\n<meta name=\"twitter:description\" content=\"Common questions about FGI Pretoria North answered.\">\n<meta name=\"twitter:image\" content=\"https://www.fountaingrace.org/images/og/og-faq.jpg\">\n\n<meta name=\"geo.region\" content=\"ZA-GP\">\n<meta name=\"geo.placename\" content=\"Pretoria North\">\n\n<link rel=\"manifest\" href=\"/manifest.json\">\n<meta name=\"theme-color\" content=\"#2a9df4\">\n<link rel=\"icon\" type=\"image/png\" href=\"/images/favicon.png\">\n<link rel=\"apple-touch-icon\" href=\"/images/icons/icon-192.png\">\n```\n\n---\n\n## OG IMAGE GUIDE\n\nEach page references an OG image in `/images/og/`. These are the images that appear when someone shares a page link on WhatsApp, Facebook, or LinkedIn.\n\n**Required files:**\n```\n/images/og/og-home.jpg       \u2014 Homepage\n/images/og/og-about.jpg      \u2014 About\n/images/og/og-visit.jpg      \u2014 Plan Your Visit\n/images/og/og-donate.jpg     \u2014 Donate\n/images/og/og-sermons.jpg    \u2014 Sermons\n/images/og/og-events.jpg     \u2014 Events\n/images/og/og-prayer.jpg     \u2014 Prayer\n/images/og/og-contact.jpg    \u2014 Contact\n/images/og/og-faq.jpg        \u2014 FAQ\n```\n\n**Spec for every OG image:**\n- Size: 1200 \u00d7 630 pixels (required \u2014 do not use other sizes)\n- Format: JPG (smaller file than PNG for photos)\n- Content: FGI logo + page title text + background that matches brand colors\n- You can create all 9 in Canva using the \"Facebook Post (1200\u00d7630)\" template\n\n**Fastest path if you don't have custom images yet:** Create one generic image (`og-home.jpg`) with the FGI logo and the text \"Fountain of Grace International \u2014 Pretoria North\", and temporarily point all 9 pages to that same file. Replace with unique images later.\n\n---\n\n## DEPLOY INSTRUCTIONS\n\nFollow these steps in order:\n\n1. Add the four root files to your site root folder (same level as `index.html`):\n   - `robots.txt`\n   - `sitemap.xml`\n   - `_headers`\n   - `_redirects`\n   - `manifest.json`\n\n2. Open each HTML file and paste the matching `<head>` block from Section 6.\n   Remove any existing `<title>` tag and any existing `<meta property=\"og:...\">` tags first.\n\n3. Create the `/images/og/` folder and add your OG images.\n   At minimum, add one generic image for now \u2014 see OG Image Guide above.\n\n4. Deploy:\n   ```\n   git add .\n   git commit -m \"Session A: foundation files, meta tags, Open Graph\"\n   git push origin clean-main:main\n   ```\n\n5. Wait 2\u20133 minutes for Cloudflare to deploy. Then run the tests below.\n\n---\n\n## TEST \u2014 CONFIRM SESSION A WORKED\n\nRun these five checks after deploying. Each takes under 2 minutes.\n\n| Test | How to do it | What to look for |\n|------|-------------|-----------------|\n| robots.txt live | Go to `https://www.fountaingrace.org/robots.txt` | Should show the file contents \u2014 not a 404 |\n| sitemap.xml live | Go to `https://www.fountaingrace.org/sitemap.xml` | Should show the XML \u2014 not a 404 |\n| Security headers | Go to https://securityheaders.com \u2014 enter your URL | Grade A or B |\n| Open Graph preview | Go to https://www.opengraph.xyz \u2014 enter your homepage URL | Should show title, description, and your OG image |\n| Redirect working | Go to `http://fountaingrace.org` (no www, http) | Should land on `https://www.fountaingrace.org` |\n\nIf all five pass: Session A is complete. Proceed to Session B (JSON-LD schema).\n\n---\n\n## DECISION MATRIX \u2014 WHY THIS SESSION FIRST\n\n| Field | Answer |\n|-------|--------|\n| What it does | Tells search engines, browsers, and social platforms the basic facts about the site |\n| Why now | Without robots.txt and a sitemap, Google cannot efficiently crawl and index the site. Without headers, the site fails security scans. Without Open Graph, shared links look broken. |\n| If ignored | Pages may not be indexed. Security tools flag the site. WhatsApp/Facebook shares show blank previews. |\n| Time to implement | 2\u20133 hours total |\n| Technical risk | Low \u2014 these are static files, no code logic |\n| Estimated upside | Google can index all pages. Site passes security scans. Shared links look professional. |\n| Worth doing? | Yes \u2014 Now. This is the prerequisite for everything else. |\n\n"}], "grading": {"eval_name": "eval-1-session-a", "variant": "with_skill", "passed": 9, "total": 9, "pass_rate": 1.0, "expectations": [{"text": "Delivers complete robots.txt file", "passed": true, "evidence": "auto-graded"}, {"text": "Delivers complete sitemap.xml with 5+ FGI pages", "passed": true, "evidence": "auto-graded"}, {"text": "Delivers _headers with CSP, HSTS, X-Frame-Options", "passed": true, "evidence": "auto-graded"}, {"text": "Delivers Open Graph tags og:title, og:description, og:image, og:url", "passed": true, "evidence": "auto-graded"}, {"text": "Uses 'Pretoria North' \u2014 never 'Akasia'", "passed": true, "evidence": "auto-graded"}, {"text": "NPO number 316-193 appears", "passed": true, "evidence": "auto-graded"}, {"text": "Includes Decision Matrix", "passed": true, "evidence": "auto-graded"}, {"text": "No unfilled placeholders", "passed": true, "evidence": "auto-graded"}, {"text": "States which file each deliverable belongs in", "passed": true, "evidence": "auto-graded"}]}}, {"id": "eval-1-session-a-without_skill", "prompt": "Run Module 0, Session A. The site is www.fountaingrace.org and it is a custom HTML/CSS site on Cloudflare Pages. We need the foundation files: robots.txt, sitemap.xml, Cloudflare _headers file, and meta tags with Open Graph for the homepage.", "eval_id": 1, "outputs": [{"name": "response.md", "type": "text", "content": "# FGI Website Foundation Files \u2014 Production Ready\n\n**Site:** www.fountaingrace.org\n**Organisation:** Fountain of Grace International \u2014 NPO 316-193\n**Platform:** Cloudflare Pages\n**Date produced:** 2026-04-26\n\n---\n\n## File 1 \u2014 `robots.txt`\n\nPlace in the site root.\n\n```\n# robots.txt \u2014 fountaingrace.org\n# Fountain of Grace International | NPO 316-193\n\nUser-agent: *\nAllow: /\n\n# Block admin or any future CMS paths\nDisallow: /admin/\nDisallow: /private/\n\n# Crawl delay (polite suggestion; not all crawlers honour it)\nCrawl-delay: 10\n\n# Sitemap location\nSitemap: https://www.fountaingrace.org/sitemap.xml\n```\n\n---\n\n## File 2 \u2014 `sitemap.xml`\n\nPlace in the site root. Update `<lastmod>` whenever pages change. Add new `<url>` blocks as pages are added.\n\n```xml\n<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">\n\n  <!-- Homepage -->\n  <url>\n    <loc>https://www.fountaingrace.org/</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>1.0</priority>\n  </url>\n\n  <!-- About -->\n  <url>\n    <loc>https://www.fountaingrace.org/about.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>\n\n  <!-- Sermons / Messages -->\n  <url>\n    <loc>https://www.fountaingrace.org/sermons.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.8</priority>\n  </url>\n\n  <!-- Events -->\n  <url>\n    <loc>https://www.fountaingrace.org/events.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>0.7</priority>\n  </url>\n\n  <!-- Connect / Get Involved -->\n  <url>\n    <loc>https://www.fountaingrace.org/connect.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>\n\n  <!-- Give / Donate -->\n  <url>\n    <loc>https://www.fountaingrace.org/give.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.7</priority>\n  </url>\n\n  <!-- Contact -->\n  <url>\n    <loc>https://www.fountaingrace.org/contact.html</loc>\n    <lastmod>2026-04-26</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.6</priority>\n  </url>\n\n</urlset>\n```\n\n> **Note:** Remove any page entries that do not yet exist on the live site. Google will crawl and find 404s, which harms SEO. Only list URLs that return HTTP 200.\n\n---\n\n## File 3 \u2014 Cloudflare `_headers`\n\nPlace in the site root (Cloudflare Pages picks it up automatically at build time). This file sets security and caching headers for all routes.\n\n```\n# _headers \u2014 fountaingrace.org\n# Cloudflare Pages static headers file\n\n/*\n  # Security headers\n  X-Frame-Options: SAMEORIGIN\n  X-Content-Type-Options: nosniff\n  X-XSS-Protection: 1; mode=block\n  Referrer-Policy: strict-origin-when-cross-origin\n  Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=()\n  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://www.googletagmanager.com https://www.google-analytics.com https://clarity.ms https://www.clarity.ms; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://www.google-analytics.com https://www.googletagmanager.com https://clarity.ms; connect-src 'self' https://www.google-analytics.com https://analytics.google.com https://www.clarity.ms https://clarity.ms; frame-src 'self' https://www.youtube.com https://www.google.com; object-src 'none'; base-uri 'self'; form-action 'self'\n\n  # Cache HTML pages \u2014 short TTL so updates go live quickly\n  Cache-Control: public, max-age=0, must-revalidate\n\n/*.css\n  Cache-Control: public, max-age=31536000, immutable\n\n/*.js\n  Cache-Control: public, max-age=31536000, immutable\n\n/*.woff2\n  Cache-Control: public, max-age=31536000, immutable\n\n/*.woff\n  Cache-Control: public, max-age=31536000, immutable\n\n/images/*\n  Cache-Control: public, max-age=2592000\n\n# Redirect www to non-www is handled in Cloudflare DNS / Page Rules.\n# This file handles headers only.\n```\n\n---\n\n## File 4 \u2014 Homepage `<head>` Meta Tags (Open Graph + SEO)\n\nPaste the entire block inside the `<head>` element of `index.html`, replacing any existing partial meta tags. Replace placeholder values (marked with `<!-- REPLACE: \u2026 -->`) before going live.\n\n```html\n<!-- =============================================\n     SEO & Open Graph \u2014 fountaingrace.org\n     Fountain of Grace International | NPO 316-193\n     Last updated: 2026-04-26\n     ============================================= -->\n\n<!-- Character set and viewport (mobile-first) -->\n<meta charset=\"UTF-8\" />\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />\n\n<!-- Canonical URL \u2014 always the www version -->\n<link rel=\"canonical\" href=\"https://www.fountaingrace.org/\" />\n\n<!-- Primary SEO meta -->\n<title>Fountain of Grace International | Church in Pretoria North</title>\n<meta name=\"description\" content=\"Fountain of Grace International is a Spirit-filled Christian church in Pretoria North, South Africa. Join us for Sunday services, life groups, and community outreach. NPO 316-193.\" />\n<meta name=\"keywords\" content=\"church Pretoria North, Christian church Pretoria, Fountain of Grace, FGI, Spirit-filled church South Africa, NPO 316-193\" />\n<meta name=\"author\" content=\"Fountain of Grace International\" />\n<meta name=\"robots\" content=\"index, follow\" />\n\n<!-- Geo tags (helps local search) -->\n<meta name=\"geo.region\" content=\"ZA-GP\" />\n<meta name=\"geo.placename\" content=\"Pretoria North, Gauteng, South Africa\" />\n<meta name=\"geo.position\" content=\"-25.6745;28.1859\" />\n<meta name=\"ICBM\" content=\"-25.6745, 28.1859\" />\n\n<!-- Language -->\n<meta http-equiv=\"content-language\" content=\"en-ZA\" />\n<meta name=\"language\" content=\"English\" />\n\n<!-- Open Graph \u2014 controls how the link looks when shared on Facebook, WhatsApp, LinkedIn, etc. -->\n<meta property=\"og:type\" content=\"website\" />\n<meta property=\"og:site_name\" content=\"Fountain of Grace International\" />\n<meta property=\"og:title\" content=\"Fountain of Grace International | Church in Pretoria North\" />\n<meta property=\"og:description\" content=\"A Spirit-filled Christian church in Pretoria North, South Africa. Experience God's grace through worship, community, and life-changing ministry. All are welcome.\" />\n<meta property=\"og:url\" content=\"https://www.fountaingrace.org/\" />\n<meta property=\"og:image\" content=\"https://www.fountaingrace.org/images/og-image.jpg\" /><!-- REPLACE: use a 1200\u00d7630 px image \u2014 church exterior, logo on brand background, or a worship service photo -->\n<meta property=\"og:image:width\" content=\"1200\" />\n<meta property=\"og:image:height\" content=\"630\" />\n<meta property=\"og:image:alt\" content=\"Fountain of Grace International \u2014 Church in Pretoria North, South Africa\" />\n<meta property=\"og:locale\" content=\"en_ZA\" />\n\n<!-- Twitter / X Card -->\n<meta name=\"twitter:card\" content=\"summary_large_image\" />\n<meta name=\"twitter:title\" content=\"Fountain of Grace International | Church in Pretoria North\" />\n<meta name=\"twitter:description\" content=\"A Spirit-filled Christian church in Pretoria North, South Africa. All are welcome.\" />\n<meta name=\"twitter:image\" content=\"https://www.fountaingrace.org/images/og-image.jpg\" /><!-- REPLACE: same image as og:image -->\n<meta name=\"twitter:image:alt\" content=\"Fountain of Grace International \u2014 Church in Pretoria North\" />\n\n<!-- Favicon set -->\n<link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"32x32\" href=\"/favicon-32x32.png\" />\n<link rel=\"icon\" type=\"image/png\" sizes=\"16x16\" href=\"/favicon-16x16.png\" />\n<link rel=\"apple-touch-icon\" sizes=\"180x180\" href=\"/apple-touch-icon.png\" />\n<link rel=\"manifest\" href=\"/site.webmanifest\" />\n<meta name=\"theme-color\" content=\"#1a3c5e\" /><!-- REPLACE: use the FGI brand primary colour hex -->\n\n<!-- Structured data \u2014 LocalBusiness / Church (JSON-LD) -->\n<script type=\"application/ld+json\">\n{\n  \"@context\": \"https://schema.org\",\n  \"@type\": \"Church\",\n  \"name\": \"Fountain of Grace International\",\n  \"alternateName\": \"FGI\",\n  \"url\": \"https://www.fountaingrace.org\",\n  \"logo\": \"https://www.fountaingrace.org/images/fgi-logo.png\",\n  \"image\": \"https://www.fountaingrace.org/images/og-image.jpg\",\n  \"description\": \"Fountain of Grace International is a Spirit-filled Christian church and registered NPO (316-193) based in Pretoria North, South Africa.\",\n  \"address\": {\n    \"@type\": \"PostalAddress\",\n    \"streetAddress\": \"<!-- REPLACE: street address -->\",\n    \"addressLocality\": \"Pretoria North\",\n    \"addressRegion\": \"Gauteng\",\n    \"postalCode\": \"<!-- REPLACE: postal code -->\",\n    \"addressCountry\": \"ZA\"\n  },\n  \"geo\": {\n    \"@type\": \"GeoCoordinates\",\n    \"latitude\": -25.6745,\n    \"longitude\": 28.1859\n  },\n  \"telephone\": \"<!-- REPLACE: +27XXXXXXXXX -->\",\n  \"email\": \"<!-- REPLACE: info@fountaingrace.org or correct address -->\",\n  \"openingHoursSpecification\": [\n    {\n      \"@type\": \"OpeningHoursSpecification\",\n      \"dayOfWeek\": \"Sunday\",\n      \"opens\": \"<!-- REPLACE: e.g. 09:00 -->\",\n      \"closes\": \"<!-- REPLACE: e.g. 12:00 -->\"\n    }\n  ],\n  \"sameAs\": [\n    \"<!-- REPLACE: https://www.facebook.com/FountainOfGraceIntl -->\",\n    \"<!-- REPLACE: https://www.youtube.com/FountainOfGraceIntl -->\"\n  ],\n  \"identifier\": {\n    \"@type\": \"PropertyValue\",\n    \"name\": \"NPO Number\",\n    \"value\": \"316-193\"\n  }\n}\n</script>\n\n<!-- Google Analytics 4 \u2014 GA4 tag (G-15FK8BTR4B) -->\n<script async src=\"https://www.googletagmanager.com/gtag/js?id=G-15FK8BTR4B\"></script>\n<script>\n  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n  gtag('config', 'G-15FK8BTR4B');\n</script>\n\n<!-- Microsoft Clarity (wcq3d0ed7r) -->\n<script type=\"text/javascript\">\n  (function(c,l,a,r,i,t,y){\n    c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};\n    t=l.createElement(r);t.async=1;t.src=\"https://www.clarity.ms/tag/\"+i;\n    y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);\n  })(window, document, \"clarity\", \"script\", \"wcq3d0ed7r\");\n</script>\n<!-- =============================================\n     End SEO & Open Graph block\n     ============================================= -->\n```\n\n---\n\n## Deployment Checklist\n\nBefore pushing to `main` (which triggers the Cloudflare Pages deploy):\n\n- [ ] Replace all `<!-- REPLACE: \u2026 -->` placeholders in the JSON-LD block with real values (street address, phone, email, service times, social URLs).\n- [ ] Create and upload `/images/og-image.jpg` \u2014 1200 \u00d7 630 px, under 300 KB, brand colours, shows the church name clearly.\n- [ ] Generate a favicon set (use [realfavicongenerator.net](https://realfavicongenerator.net)) and place `favicon.ico`, `favicon-32x32.png`, `favicon-16x16.png`, `apple-touch-icon.png`, and `site.webmanifest` in the site root.\n- [ ] Confirm `theme-color` hex matches the FGI brand primary colour.\n- [ ] Review the `sitemap.xml` and remove entries for pages that do not yet exist live.\n- [ ] After deploy, submit `https://www.fountaingrace.org/sitemap.xml` in Google Search Console.\n- [ ] Test Open Graph output at [opengraph.xyz](https://www.opengraph.xyz) and [developers.facebook.com/tools/debug](https://developers.facebook.com/tools/debug/).\n- [ ] Verify `_headers` is working via `curl -I https://www.fountaingrace.org` \u2014 look for `X-Frame-Options`, `X-Content-Type-Options`, and `Content-Security-Policy` in the response.\n\n---\n\n## POPIA Compliance Note\n\nEvery form on the site must include a POPIA disclosure stating: what personal information is collected, why it is collected, that it will not be shared with third parties without consent, how long it is retained, and that the user may request deletion. Reference NPO 316-193 as the responsible party. This applies to contact forms, prayer request forms, connect cards, and any giving forms.\n"}], "grading": {"eval_name": "eval-1-session-a", "variant": "without_skill", "passed": 7, "total": 9, "pass_rate": 0.78, "expectations": [{"text": "Delivers complete robots.txt file", "passed": true, "evidence": "auto-graded"}, {"text": "Delivers complete sitemap.xml with 5+ FGI pages", "passed": true, "evidence": "auto-graded"}, {"text": "Delivers _headers with CSP, HSTS, X-Frame-Options", "passed": false, "evidence": "auto-graded"}, {"text": "Delivers Open Graph tags og:title, og:description, og:image, og:url", "passed": true, "evidence": "auto-graded"}, {"text": "Uses 'Pretoria North' \u2014 never 'Akasia'", "passed": true, "evidence": "auto-graded"}, {"text": "NPO number 316-193 appears", "passed": true, "evidence": "auto-graded"}, {"text": "Includes Decision Matrix", "passed": false, "evidence": "auto-graded"}, {"text": "No unfilled placeholders", "passed": true, "evidence": "auto-graded"}, {"text": "States which file each deliverable belongs in", "passed": true, "evidence": "auto-graded"}]}}, {"id": "eval-2-donate-headline-with_skill", "prompt": "Run Module 2. Task: the donate page headline is weak and nobody is clicking the donate button. Rewrite the donate page headline and intro paragraph to improve conversions.", "eval_id": 2, "outputs": [{"name": "response.md", "type": "text", "content": "# Module 2 \u2014 Quick Win Session\n## Task: Rewrite the Donate Page Headline and Intro Paragraph to Improve Conversions\n\n---\n\n**TASK:** The donate page headline is weak and nobody is clicking the donate button. Rewrite the donate page headline and intro paragraph.\n\n---\n\n**DECISION MATRIX:**\n\n| Field             | Answer |\n|-------------------|--------|\n| What it does      | Replaces a vague, passive headline with a specific, emotionally grounded one that names the real outcome and creates urgency to act |\n| Why now           | The donate button is not converting \u2014 the current headline (\"Your giving changes lives in Pretoria North.\") is generic and asks for faith before giving a reason; visitors leave before reading far enough to feel compelled |\n| If ignored        | Donations stay flat; people who would have given do not, because nothing in the first two seconds made them stop scrolling |\n| Time to implement | 15 minutes \u2014 one text change in DonateClient.tsx |\n| Technical risk    | Low \u2014 copy-only change, no structural or code changes |\n| Estimated upside  | Meaningful lift in donate button clicks; stronger first impression for first-time visitors who land on this page from search or social |\n| Worth doing?      | Yes \u2014 Now |\n\n---\n\n**DIAGNOSIS \u2014 WHY THE CURRENT HEADLINE IS WEAK:**\n\nCurrent headline:\n> \"Your giving changes lives in Pretoria North.\"\n\nProblems:\n1. It is generic \u2014 every charity says some version of this.\n2. It makes a claim before the visitor has any reason to believe it.\n3. \"Your giving\" puts the burden on the visitor immediately, before building any desire.\n4. The eyebrow label above it (\"Support the work \u00b7 Pretoria North\") is dry and forgettable.\n5. The intro paragraph buries specific proof (\"food for families, support for recovery, training...\") in a long sentence after the emotion has already been lost.\n\nA high-converting donation headline does one or more of these things:\n- Names a specific, concrete outcome\n- Creates an emotional image\n- Signals that the gift is achievable (not overwhelming)\n- Establishes trust fast (NPO number, real programmes)\n- Uses \"you\" to centre the donor as the agent of change\n\n---\n\n**DELIVERABLE:**\n\n### Replacement Hero Copy\n\n**Eyebrow label (above the headline):**\n```\nPretoria North \u00b7 NPO 316-193\n```\n\n**Headline (H1):**\n```\nOne gift. A family fed. A life changed.\n```\n\n**Intro paragraph:**\n```\nRight now, families in Pretoria North are running out of food. People in crisis are reaching out with nowhere to go. Your donation \u2014 however large or small \u2014 goes directly into our programmes: food parcels, recovery support, skills training, and family care. Fountain of Grace International is a registered NPO (316-193). Every rand is accountable.\n```\n\n**NPO badge (unchanged \u2014 keep as-is below the paragraph):**\n```\nRegistered NPO 316-193 \u00b7 Dept of Social Development, South Africa\n```\n\n---\n\n### Why Each Element Works\n\n**Eyebrow \u2014 \"Pretoria North \u00b7 NPO 316-193\"**\n- Leads with location (trust signal for local donors; confirms relevance)\n- Puts the NPO number up top before anything else \u2014 so skeptical visitors see it in the first glance\n\n**Headline \u2014 \"One gift. A family fed. A life changed.\"**\n- Three short punchy sentences create rhythm and stop the scroll\n- \"One gift\" removes the scale barrier \u2014 this feels achievable\n- \"A family fed\" is concrete and visual \u2014 the reader sees a family, not an abstract cause\n- \"A life changed\" is the emotional payoff \u2014 sequenced last so it lands after proof\n- No passive voice; each sentence is active and clear\n\n**Intro paragraph**\n- Opens with present tense urgency: \"Right now\" \u2014 creates immediacy without manipulation\n- Names the problem first (families running out of food, people in crisis) \u2014 makes the need real before asking for anything\n- \"However large or small\" removes the amount anxiety that stops hesitant donors\n- Lists actual programmes by name (food parcels, recovery support, skills training, family care) \u2014 turns a vague claim into proof\n- Ends with the accountability line (\"registered NPO 316-193 \u00b7 Every rand is accountable\") \u2014 closes the trust loop before they reach the donate button\n\n---\n\n**FILE TO UPDATE:**\n\nFile: `/components/DonateClient.tsx`\n\nLocate the HERO section (starts with the comment `{/* -- HERO */}`).\n\nReplace this block:\n\n```tsx\n<p className=\"text-white font-semibold text-xs uppercase tracking-wider mb-3\">\n  Support the work \u00b7 Pretoria North\n</p>\n<h1 className=\"text-3xl sm:text-4xl font-extrabold leading-tight mb-4\">\n  Your giving changes lives in Pretoria North.\n</h1>\n<p className=\"text-white text-base leading-relaxed mb-5\">\n  Every rand you give goes directly to real people in our community \u2014 food for\n  families, support for recovery, training for those rebuilding their lives.\n</p>\n```\n\nWith this block:\n\n```tsx\n<p className=\"text-white font-semibold text-xs uppercase tracking-wider mb-3\">\n  Pretoria North \u00b7 NPO 316-193\n</p>\n<h1 className=\"text-3xl sm:text-4xl font-extrabold leading-tight mb-4\">\n  One gift. A family fed. A life changed.\n</h1>\n<p className=\"text-white text-base leading-relaxed mb-5\">\n  Right now, families in Pretoria North are running out of food. People in crisis\n  are reaching out with nowhere to go. Your donation \u2014 however large or small \u2014\n  goes directly into our programmes: food parcels, recovery support, skills\n  training, and family care. Fountain of Grace International is a registered NPO\n  (316-193). Every rand is accountable.\n</p>\n```\n\nNo other changes needed. All other sections, code, and styling remain exactly as they are.\n\n---\n\n**HOW TO TEST:**\n\n1. After deploying (`git push origin clean-main:main`), open `https://www.fountaingrace.org/donate` on your phone (mobile view, 375px).\n2. Confirm that the new headline \"One gift. A family fed. A life changed.\" appears in the teal hero section, the eyebrow label shows \"Pretoria North \u00b7 NPO 316-193\", and the new paragraph is visible before any scrolling is needed.\n\n---\n\n**NEXT STEP:**\n\nDeploy the change, then check Microsoft Clarity in 7 days: look at the heatmap on the donate page and compare click rate on the PayPal and EFT donate buttons before vs. after. That will tell you whether the headline change moved the needle.\n\n---\n\nModule 2 \u2014 Quick Win Session complete.\nBrand facts applied: NPO 316-193, Pretoria North base, Fountain of Grace International, no Section 18A claim.\nPOPIA: no compliance impact \u2014 copy only.\nPriority stack: CONVERSIONS and DONATIONS advanced.\n"}], "grading": {"eval_name": "eval-2-donate-headline", "variant": "with_skill", "passed": 9, "total": 9, "pass_rate": 1.0, "expectations": [{"text": "Provides specific new headline", "passed": true, "evidence": "auto-graded"}, {"text": "Provides rewritten intro paragraph", "passed": true, "evidence": "auto-graded"}, {"text": "Decision Matrix with 7 fields filled", "passed": true, "evidence": "auto-graded"}, {"text": "References FGI brand facts (NPO, Pretoria North, or Section 18A)", "passed": true, "evidence": "auto-graded"}, {"text": "States which file to update", "passed": true, "evidence": "auto-graded"}, {"text": "Includes a test step", "passed": true, "evidence": "auto-graded"}, {"text": "Ends with one next step", "passed": true, "evidence": "auto-graded"}, {"text": "No fabricated statistics", "passed": true, "evidence": "auto-graded"}, {"text": "CEO Priority Stack visible", "passed": true, "evidence": "auto-graded"}]}}, {"id": "eval-2-donate-headline-without_skill", "prompt": "Run Module 2. Task: the donate page headline is weak and nobody is clicking the donate button. Rewrite the donate page headline and intro paragraph to improve conversions.", "eval_id": 2, "outputs": [{"name": "response.md", "type": "text", "content": "# Donate Page Headline & Intro Rewrite \u2014 Fountain of Grace International\n\n## Diagnosis: What Is Weak and Why\n\n**Current headline:**\n> \"Your giving changes lives in Pretoria North.\"\n\n**Current intro paragraph:**\n> \"Every rand you give goes directly to real people in our community \u2014 food for families, support for recovery, training for those rebuilding their lives.\"\n\n**Current donate button label (PayPal):**\n> \"Give R350 with PayPal \u2192\"\n\n### Why conversion is suffering\n\n1. **The headline is donor-passive, not donor-active.** \"Your giving changes lives\" frames the visitor as a passive instrument. It does not invite action \u2014 it describes an outcome they haven't yet caused. There is no urgency, no emotional hook, and no specificity.\n\n2. **The eyebrow label above the headline is wasted.** \"Support the work \u00b7 Pretoria North\" is generic and administrative. It burns the first thing a visitor reads on pure category identification \u2014 zero motivational value.\n\n3. **The intro paragraph lists categories instead of telling a story.** \"food for families, support for recovery, training for those rebuilding their lives\" reads like a programme summary, not a human moment. It does not trigger empathy or urgency. The visitor does not picture a real person.\n\n4. **The donate button is transactional, not transformational.** \"Give R350 with PayPal \u2192\" names the payment method before the purpose. It centres the mechanism, not the meaning. For a church/NPO audience, the emotional cue should come first.\n\n5. **The page does not lead with a specific, concrete, visual image.** The strongest donate pages open with one real, precise, human moment \u2014 not a list of programmes. Precision beats generality every time in conversion copy.\n\n---\n\n## Rewritten Elements\n\n### Eyebrow label (above H1)\n\n**Current:**\n> Support the work \u00b7 Pretoria North\n\n**Rewrite:**\n> Pretoria North families are waiting \u00b7 Give today\n\n**Why:** Shifts from describing FGI to addressing the donor. Creates mild urgency and anchors to geography, which builds local identity and trust.\n\n---\n\n### H1 Headline\n\n**Current:**\n> Your giving changes lives in Pretoria North.\n\n**Rewrite \u2014 Option A (recommended \u2014 specific, visual, urgent):**\n> One family in Pretoria North is eating tonight because someone gave R350.\n\n**Why it works:**\n- Opens with a complete, visual, specific human story \u2014 not a generalisation\n- The number (R350) is already the default donation amount on the page, creating immediate continuity with the amount selector below\n- \"Tonight\" creates temporal urgency without being manipulative\n- \"Someone gave\" subtly activates social proof \u2014 others are already doing this\n- It is 100% true and verifiable against the existing programme copy on the page\n\n**Rewrite \u2014 Option B (faith-forward, warmer):**\n> Your R350 feeds a Pretoria North family for a week. Give now \u2014 it takes 60 seconds.\n\n**Why it works:**\n- Opens with the donor's specific action and its specific outcome \u2014 no vagueness\n- The time cue (\"60 seconds\") removes friction by making the ask feel small and fast\n- Works well for a faith-based audience who already want to give but need permission to act\n\n**Rewrite \u2014 Option C (aspirational + community-rooted):**\n> Be the reason a family in Pretoria North has food this week.\n\n**Why it works:**\n- Pure second-person imperative \u2014 the donor is the hero\n- \"Be the reason\" is agency-granting language, not guilt-based\n- Specific (food, family, Pretoria North, this week) without being heavy\n\n**Primary recommendation: Option A.** It is the most concrete, the most visual, and it ties the headline directly to the price point already selected on the page \u2014 creating a seamless funnel from first impression to button click.\n\n---\n\n### Intro paragraph\n\n**Current:**\n> Every rand you give goes directly to real people in our community \u2014 food for families, support for recovery, training for those rebuilding their lives.\n\n**Rewrite:**\n> At Fountain of Grace International, we do not collect donations for programmes on paper. We deliver food parcels to real families on real streets in Pretoria North \u2014 the kind of families who run out of everything by the 15th of the month. Your gift goes directly to them. No middlemen. No vague reporting. Registered NPO 316-193, accountable to the Department of Social Development.\n\n**Why it works:**\n- Opens with a bold differentiation claim that pre-empts donor scepticism (\"not programmes on paper\")\n- Uses one specific, relatable detail (\"run out of everything by the 15th\") \u2014 the 15th of the month is a universal reference point for financial hardship in South Africa, instantly recognisable\n- \"Real families on real streets\" is concrete and humanising\n- The trust signals (NPO number, government registration) are embedded naturally at the end as proof \u2014 not front-loaded as defensive bureaucracy\n- Short sentence rhythm (\"No middlemen. No vague reporting.\") is punchy and mobile-friendly\n\n---\n\n### Donate button label\n\n**Current:**\n> Give R350 with PayPal \u2192\n\n**Rewrite:**\n> Feed a family \u2014 Give R350 \u2192\n\n**Why it works:**\n- Purpose comes before mechanism\n- \"Feed a family\" is the emotional reason to click; \"Give R350\" is the action; \"PayPal\" (still in the card heading above) is the how \u2014 in that order\n- The em dash acts as a visual beat that separates emotion from action\n\n---\n\n## Summary of All Changes\n\n| Element | Current | Rewritten |\n|---|---|---|\n| Eyebrow label | \"Support the work \u00b7 Pretoria North\" | \"Pretoria North families are waiting \u00b7 Give today\" |\n| H1 headline | \"Your giving changes lives in Pretoria North.\" | \"One family in Pretoria North is eating tonight because someone gave R350.\" |\n| Intro paragraph | Generic programme list | Specific, human, trust-anchored narrative (see above) |\n| PayPal button | \"Give R350 with PayPal \u2192\" | \"Feed a family \u2014 Give R350 \u2192\" |\n\n---\n\n## Implementation Notes\n\nAll changes are confined to `components/DonateClient.tsx`. No structural or layout changes are needed.\n\n- **Eyebrow label:** Line 106 \u2014 `<p className=\"text-white font-semibold text-xs uppercase tracking-wider mb-3\">`\n- **H1:** Lines 108\u2013110 \u2014 `<h1 className=\"text-3xl sm:text-4xl font-extrabold leading-tight mb-4\">`\n- **Intro paragraph:** Lines 111\u2013114 \u2014 `<p className=\"text-white text-base leading-relaxed mb-5\">`\n- **PayPal button:** Lines 236\u2013241 \u2014 `<button type=\"submit\" className=\"btn-primary w-full text-center block\">`\n\nThe rewritten intro paragraph is longer than the current one. If line length on mobile is a concern (per the mobile-first rule), the paragraph can be split into two shorter `<p>` elements with `mb-3` spacing between them.\n\n---\n\n## POPIA Note\n\nThe donate page does not collect personal data directly (PayPal handles collection on their side; EFT uses the donor's own banking app). No POPIA disclosure is required on the donate page itself. If a contact form or email capture is ever added to this page, POPIA disclosure will be required per standing policy (NPO 316-193).\n"}], "grading": {"eval_name": "eval-2-donate-headline", "variant": "without_skill", "passed": 6, "total": 9, "pass_rate": 0.67, "expectations": [{"text": "Provides specific new headline", "passed": true, "evidence": "auto-graded"}, {"text": "Provides rewritten intro paragraph", "passed": true, "evidence": "auto-graded"}, {"text": "Decision Matrix with 7 fields filled", "passed": false, "evidence": "auto-graded"}, {"text": "References FGI brand facts (NPO, Pretoria North, or Section 18A)", "passed": true, "evidence": "auto-graded"}, {"text": "States which file to update", "passed": true, "evidence": "auto-graded"}, {"text": "Includes a test step", "passed": false, "evidence": "auto-graded"}, {"text": "Ends with one next step", "passed": false, "evidence": "auto-graded"}, {"text": "No fabricated statistics", "passed": true, "evidence": "auto-graded"}, {"text": "CEO Priority Stack visible", "passed": true, "evidence": "auto-graded"}]}}, {"id": "eval-3-google-reviews-with_skill", "prompt": "Run Module 5. Focus: we have zero Google reviews on our Google Business Profile and Ricardo never responds to the few comments we get. Help us fix this.", "eval_id": 3, "outputs": [{"name": "response.md", "type": "text", "content": "# MODULE 5 \u2014 REPUTATION AND TRUST BUILD\n## Focus: Zero Google Reviews + No Response Habit\n\n---\n\n## CURRENT STATE ASSESSMENT\n\n**Google Business Profile status:**\n- Zero reviews = zero social proof on the most-visited local trust signal in South Africa\n- No response habit = even if reviews arrive, they go unanswered, which signals to Google and to searchers that FGI is not actively managed\n- A church with 0 reviews ranks lower in the local \"map pack\" than a competitor with 10+ reviews, even if FGI's website is better\n- First-time visitors almost always check Google reviews before deciding to attend a new church \u2014 zero reviews creates doubt, not neutrality\n\n**Why this matters right now:**\nSomeone searches \"church in Pretoria North\" or \"church near me\" on a Sunday morning. Google shows three results with photos, stars, and review snippets. FGI shows nothing. They click one of the other three. That visitor was reachable \u2014 and FGI lost them before they read a single word of its website.\n\n**If ignored:**\n- FGI stays invisible in the local map pack\n- Trust gap widens as competing churches accumulate reviews\n- Donor discovery via Google drops \u2014 donors look at reviews before giving\n- The GBP profile signals inactivity to Google's local ranking algorithm\n\n---\n\n## DECISION MATRIX\n\n| Field | Answer |\n|---|---|\n| What it does | Builds Google review count and response habit to win local search trust |\n| Why now | Zero reviews is the single biggest local trust gap right now |\n| If ignored | FGI stays buried in local search; first-time visitors and donors choose elsewhere |\n| Time to implement | 30 minutes to set up; 2 minutes per review response ongoing |\n| Technical risk | Low \u2014 no code, no deployments |\n| Estimated upside | 10+ reviews can move FGI into the local map pack for \"church Pretoria North\" searches |\n| Worth doing? | Yes \u2014 Now |\n\n---\n\n## STEP 1 \u2014 HOW TO GET YOUR GOOGLE REVIEW LINK\n\nBefore asking anyone for a review, Ricardo needs the direct review link.\n\n**How to get it (5 minutes):**\n1. Go to https://business.google.com and sign in\n2. Find the Fountain of Grace International listing\n3. Click \"Ask for reviews\" or \"Share review form\"\n4. Copy the short link Google gives you (it starts with g.page/... or maps.app.goo.gl/...)\n5. Save it \u2014 this is the link you will share with every member\n\n**Shortcut test:** Search \"Fountain of Grace International Pretoria North\" on Google. On the right-hand panel, scroll down and click \"Write a review.\" Copy the URL from the browser \u2014 that is your review link.\n\n---\n\n## STEP 2 \u2014 REVIEW REQUEST TEMPLATES\n\nUse these word-for-word. Do not rewrite them. They are plain, warm, and not pushy.\n\n---\n\n### TEMPLATE A \u2014 WhatsApp message to a member you know personally\n\n> Hi [Name], hope you're well. I have a small favour to ask. Fountain of Grace International has no Google reviews yet, and it makes it harder for new people to find us when they search for a church in Pretoria North.\n>\n> If you have two minutes and feel comfortable, would you be willing to leave us a Google review? You don't need to write much \u2014 even a sentence about what FGI means to you helps a lot.\n>\n> Here is the direct link: [PASTE YOUR REVIEW LINK]\n>\n> Thank you so much \u2014 it genuinely makes a difference.\n> \u2014 Ricardo\n\n---\n\n### TEMPLATE B \u2014 WhatsApp group announcement (church WhatsApp group)\n\n> Good morning, FGI family. Quick request from me personally.\n>\n> When someone in Pretoria North searches for a church on Google, they see reviews before they see anything else. Right now, Fountain of Grace International has no Google reviews \u2014 which makes it hard for first-time visitors to trust us before they arrive.\n>\n> If you have found a home here and feel comfortable saying so publicly, I would be grateful if you left a short Google review. It takes about two minutes.\n>\n> Direct link: [PASTE YOUR REVIEW LINK]\n>\n> No pressure at all \u2014 only if it feels right. Thank you, family.\n> \u2014 Pastor Ricardo\n\n---\n\n### TEMPLATE C \u2014 In-person ask (after a Sunday service)\n\nSay this naturally after announcements or at the door:\n\n> \"One small thing \u2014 if Google reviews are something you use, we have none right now, and it's making it harder for new people to find us. If you're willing to leave one, even just a line, I'll send you the link on WhatsApp. It genuinely helps.\"\n\n---\n\n### TEMPLATE D \u2014 Email version (if FGI has a mailing list)\n\n**Subject:** A small favour from Pastor Ricardo\n\n> Dear [First Name],\n>\n> I want to ask for something small but meaningful.\n>\n> When someone searches for a church in Pretoria North, Google shows them reviews before they see anything else. Fountain of Grace International currently has no Google reviews, which makes it harder for first-time visitors and donors to trust us before they arrive.\n>\n> If you feel FGI has meant something to you, I would be genuinely grateful if you took two minutes to leave a Google review. You do not need to write much \u2014 a sentence is enough.\n>\n> Leave a review here: [PASTE YOUR REVIEW LINK]\n>\n> Thank you for being part of this community.\n>\n> In grace,\n> Pastor Ricardo Zaal\n> Fountain of Grace International\n> 323B Danie Theron Street, Pretoria North\n> NPO 316-193\n\n---\n\n## STEP 3 \u2014 HOW TO RESPOND TO REVIEWS\n\nRicardo must respond to every review within 48 hours. This is not optional \u2014 Google uses response behaviour as a local ranking signal, and unanswered reviews signal neglect to new visitors.\n\n**The rule:** Open Google Business Profile once a week (pick a day \u2014 Sunday evening works). Check for new reviews. Respond to each one before closing the tab.\n\n---\n\n### RESPONDING TO POSITIVE REVIEWS\n\n**Template \u2014 short positive review (1\u20132 stars of text, warm tone):**\n\n> Thank you so much, [First Name] \u2014 this genuinely means a lot to us. We are blessed to have you as part of the Fountain of Grace family. If you ever want to bring a friend along or join one of our community programmes, the door is always open. God bless you.\n> \u2014 Pastor Ricardo Zaal, Fountain of Grace International\n\n---\n\n**Template \u2014 detailed positive review (someone wrote a paragraph):**\n\n> [First Name], thank you for taking the time to share this \u2014 it is deeply encouraging. What you described is exactly what we are working towards at Fountain of Grace International: a community where people feel genuinely welcomed and supported. We are grateful to have you with us in Pretoria North. See you Sunday.\n> \u2014 Pastor Ricardo Zaal, Fountain of Grace International\n\n---\n\n**Template \u2014 review with no text, just stars:**\n\n> Thank you for the rating \u2014 we appreciate every member of our community. If there is ever anything we can do better, please let us know directly. God bless.\n> \u2014 Fountain of Grace International, Pretoria North\n\n---\n\n### RESPONDING TO NEGATIVE REVIEWS\n\nStay calm. Never argue. Never get defensive. Acknowledge, invite a private conversation, and close warmly. Google and future readers are watching.\n\n**Template \u2014 critical review (complaint about something specific):**\n\n> Thank you for sharing this, [First Name or \"you\"]. I am sorry to hear your experience did not reflect what we aim to offer at Fountain of Grace International. I take this seriously and would like to understand what happened. Please reach out to me directly at zaalricardo@gmail.com so we can talk. I want to make this right.\n> \u2014 Pastor Ricardo Zaal, Founder, Fountain of Grace International\n\n---\n\n**Template \u2014 vague or unclear negative review:**\n\n> Thank you for the feedback. I am sorry your experience fell short of what we aim for. If you are willing to share more detail, please contact me directly at zaalricardo@gmail.com \u2014 I would like to understand and address this properly.\n> \u2014 Pastor Ricardo Zaal, Fountain of Grace International\n\n---\n\n**Template \u2014 review that appears to be spam or a mistake (wrong business):**\n\n> Thank you for leaving a review. We want to make sure we understand your experience \u2014 this review may have been intended for a different listing. If you did visit Fountain of Grace International at 323B Danie Theron Street, Pretoria North, we would love to hear more. Feel free to reach us at zaalricardo@gmail.com.\n> \u2014 Fountain of Grace International\n\n---\n\n## STEP 4 \u2014 FIVE Q&A SEEDS FOR THE GBP PROFILE\n\nGoogle allows businesses to post their own questions and answer them. These help searchers and help Google understand what FGI is about. Post all five \u2014 they take under ten minutes.\n\nRicardo posts these by going to his GBP listing, clicking \"Q&A,\" and clicking \"Ask a question.\" Then he signs in with a personal Google account (not the business account) to post the question, then switches to the business account to answer it.\n\n---\n\n**Q1:**\n> **Q:** What time are Sunday services at Fountain of Grace International?\n> **A:** Our Sunday service begins at [INSERT TIME]. We are located at 323B Danie Theron Street, Pretoria North, 0116. First-time visitors are warmly welcome \u2014 no appointment needed. Visit https://www.fountaingrace.org for more information or to plan your visit.\n\n---\n\n**Q2:**\n> **Q:** Is Fountain of Grace International a registered NPO?\n> **A:** Yes. Fountain of Grace International is a registered non-profit organisation in South Africa. Our NPO number is 316-193. We operate as a Christian church and community organisation serving Pretoria North and surrounding areas including Orchards, Montana, Wonderboom, Soshanguve, and Rosslyn.\n\n---\n\n**Q3:**\n> **Q:** Do I need to be a member to attend or get help?\n> **A:** Not at all. You are welcome to attend a service, ask for prayer, or reach out for community support without being a member or making any commitment. Fountain of Grace International is an open community. Come as you are.\n\n---\n\n**Q4:**\n> **Q:** Does Fountain of Grace International offer community support or outreach programmes?\n> **A:** Yes. FGI serves the local Pretoria North community through outreach, prayer support, and community programmes. If you or someone you know needs support, please visit https://www.fountaingrace.org or contact us directly. We are here to help.\n\n---\n\n**Q5:**\n> **Q:** How do I donate to Fountain of Grace International?\n> **A:** You can donate online via our website at https://www.fountaingrace.org/donate. Fountain of Grace International is a registered NPO (316-193). Please note that Section 18A tax-exempt status has not yet been approved \u2014 we will update our community when that changes. Every gift goes directly to supporting our church and community work.\n\n---\n\n## STEP 5 \u2014 RICARDO'S WEEKLY REVIEW HABIT (2 MINUTES)\n\nSet a phone reminder for every Sunday evening at 8pm with the label: \"GBP check.\"\n\nWhen the reminder fires:\n1. Open Google Maps or https://business.google.com\n2. Check for new reviews \u2014 respond to each one using the templates above\n3. Check for new Q&A questions \u2014 answer any new ones\n4. Done. Close the app.\n\nThis is the full habit. Two minutes. Once a week. This is what separates churches that grow in local search from ones that do not.\n\n---\n\n## ROLLOUT ORDER\n\nDo these in order. Do not skip ahead.\n\n| Step | Action | Time | When |\n|---|---|---|---|\n| 1 | Get the Google review link from GBP | 5 min | Today |\n| 2 | Send Template A to 5 people you trust most in the congregation | 10 min | Today |\n| 3 | Send Template B to the church WhatsApp group | 2 min | This Sunday |\n| 4 | Post all 5 Q&A seeds on GBP | 10 min | This week |\n| 5 | Set the Sunday evening phone reminder | 1 min | Today |\n| 6 | Respond to every review that comes in within 48 hours | 2 min each | Ongoing |\n\n**Target:** 5 genuine reviews within 30 days. 10+ reviews within 60 days.\n\n---\n\n## WHAT NOT TO DO\n\n- Do not offer gifts, incentives, or discounts in exchange for reviews \u2014 Google will remove those reviews and may penalise the profile\n- Do not ask multiple people to review from the same location at the same time \u2014 Google may filter them as suspicious\n- Do not write or post any fake reviews \u2014 this violates Google policy and contradicts FGI's commitment to honesty\n- Do not copy-paste the same response to every review \u2014 Google notices, and it reads as robotic to real people\n- Do not ignore a negative review, even a vague one \u2014 silence looks like guilt\n\n---\n\n## ONE SIMPLE TEST\n\nAfter sending the first review requests, search \"Fountain of Grace International Pretoria North\" on Google. When the first review appears on the listing, that confirms the GBP is live and accepting reviews. When Ricardo's response appears under that review, the habit is confirmed.\n\n---\n\n*Module 5 complete. All copy uses verified FGI brand facts. No statistics or testimonials were invented. POPIA not applicable to this output (no data collection forms). Governance rules maintained throughout.*\n"}], "grading": {"eval_name": "eval-3-google-reviews", "variant": "with_skill", "passed": 9, "total": 9, "pass_rate": 1.0, "expectations": [{"text": "Complete review request template provided", "passed": true, "evidence": "auto-graded"}, {"text": "Positive review response template", "passed": true, "evidence": "auto-graded"}, {"text": "Negative review response template", "passed": true, "evidence": "auto-graded"}, {"text": "At least 3 GBP Q&A seeds", "passed": true, "evidence": "auto-graded"}, {"text": "No fake reviews suggested", "passed": true, "evidence": "corrected \u2014 text warns against fake reviews, assertion regex false-positive"}, {"text": "Section 18A honest if mentioned", "passed": true, "evidence": "auto-graded"}, {"text": "Templates reference FGI and Pretoria North", "passed": true, "evidence": "auto-graded"}, {"text": "Church/NPO specific \u2014 not generic advice", "passed": true, "evidence": "auto-graded"}, {"text": "Includes action sequence", "passed": true, "evidence": "auto-graded"}]}}, {"id": "eval-3-google-reviews-without_skill", "prompt": "Run Module 5. Focus: we have zero Google reviews on our Google Business Profile and Ricardo never responds to the few comments we get. Help us fix this.", "eval_id": 3, "outputs": [{"name": "response.md", "type": "text", "content": "# Google Business Profile Growth Plan \u2014 Fountain of Grace International\n\n**Church:** Fountain of Grace International (FGI)\n**Website:** www.fountaingrace.org\n**Location:** Pretoria North, South Africa\n**Pastor:** Ricardo Zaal\n**NPO No.:** 316-193\n\n---\n\n## Part 1: How to Get Your Google Review Link\n\nBefore using any templates below, get your direct review link:\n\n1. Go to [Google Business Profile](https://business.google.com) and sign in.\n2. Select the Fountain of Grace International listing.\n3. Click **Ask for reviews** (or go to **Home > Get more reviews**).\n4. Copy the short link Google provides (it looks like `g.page/r/...`).\n5. Paste that link everywhere in the templates below wherever you see `[YOUR REVIEW LINK]`.\n\n---\n\n## Part 2: Review Request Templates\n\nThese are ready-to-use messages Ricardo or any leader can send. Use natural language \u2014 these are not formal letters, they are warm nudges.\n\n---\n\n### 2.1 WhatsApp / SMS \u2014 After Sunday Service (Short)\n\n> Hi [Name], it was so good having you at FGI today! If you've been blessed by our community and want to help others find us, would you mind leaving us a quick Google review? It only takes a minute and means a lot to us. Here's the link: [YOUR REVIEW LINK]\n> God bless you! \u2014 Pastor Ricardo\n\n---\n\n### 2.2 WhatsApp / SMS \u2014 After a Special Event (Prayer Night, Outreach, etc.)\n\n> Hi [Name], thank you for being part of [event name] last night \u2014 what a night! If you feel led, we'd love it if you left us a Google review. It helps people in Pretoria North find a church home. Here's the link: [YOUR REVIEW LINK]\n> No pressure at all \u2014 just grateful for you!\n\n---\n\n### 2.3 WhatsApp Broadcast (Congregation-Wide \u2014 Use Sparingly, Max Once a Quarter)\n\n> Good morning FGI family! We have a small favour to ask.\n>\n> We want to reach more families in Pretoria North who are searching for a church home, and one of the simplest ways we can do that is through Google reviews.\n>\n> If FGI has meant something to you \u2014 a place of healing, community, growth, or just belonging \u2014 would you take 2 minutes to share that with the world?\n>\n> Leave a review here: [YOUR REVIEW LINK]\n>\n> Thank you and God bless you! \u2014 Pastor Ricardo & the FGI team\n\n---\n\n### 2.4 Email (For Members on the Mailing List)\n\n**Subject:** A small favour that helps more people find FGI\n\n> Hi [First Name],\n>\n> We're on a mission to reach every family in Pretoria North that is searching for a church \u2014 and we need your help.\n>\n> One of the most powerful things you can do (that costs you nothing but 2 minutes) is leave Fountain of Grace International a Google review. When people search for a church nearby, reviews help them take that first step through the door.\n>\n> If FGI has been a place of growth, community, or answered prayer for you, would you share a little of that story here?\n>\n> **Leave a review:** [YOUR REVIEW LINK]\n>\n> No need to write an essay \u2014 even a sentence or two is a blessing.\n>\n> With gratitude,\n> Pastor Ricardo Zaal\n> Fountain of Grace International\n> www.fountaingrace.org\n\n---\n\n### 2.5 In-Service Verbal Announcement (Pastor or MC to Read Aloud)\n\n> Before we close today, I want to ask a small favour from our FGI family. We're working to help more people in Pretoria North find a church home, and one of the ways we do that is through Google reviews. If God has used this church in your life, please take two minutes this week to leave us a review \u2014 we'll put the link in the WhatsApp group. It genuinely helps seekers find us. Thank you, and God bless you.\n\n---\n\n### 2.6 Instagram / Facebook Story Caption\n\n> If FGI has been your home, your refuge, or your community \u2014 help someone else find it. Leave us a Google review (link in bio / DM us for the link). It takes 2 minutes and changes everything for the next family searching for a church in Pretoria North. #FountainOfGrace #PretoriaNorth #Church\n\n---\n\n## Part 3: Responding to Reviews \u2014 Templates for Ricardo\n\nThese templates cover the main scenarios. Personalise them slightly each time \u2014 Google can detect identical copy-paste responses and it looks robotic.\n\n**General rules:**\n- Respond to every review within 48 hours, even short ones.\n- Use the reviewer's first name when possible.\n- Never argue with a negative review publicly.\n- Keep responses warm but brief \u2014 3 to 6 sentences is ideal.\n\n---\n\n### 3.1 Responding to a 5-Star Review (No Text)\n\n> Thank you so much, [Name]! We're so grateful you took the time to leave a review \u2014 it means the world to us. We hope to keep being a place where you feel at home. See you Sunday! \u2014 Pastor Ricardo\n\n---\n\n### 3.2 Responding to a 5-Star Review With a Heartfelt Comment\n\n> [Name], thank you for these beautiful words \u2014 they genuinely moved us. It's moments like these that remind us why we do what we do. You are a valued part of the FGI family, and we pray God continues to work in your life. See you at church! \u2014 Pastor Ricardo & the FGI team\n\n---\n\n### 3.3 Responding to a 4-Star Review (Positive With a Small Concern)\n\n> [Name], thank you for the kind words and for sharing your experience honestly. We take your feedback seriously and are always looking for ways to improve. Please feel free to reach out to us directly at info@fountaingrace.org \u2014 we'd love to hear more. Grateful to have you with us! \u2014 Pastor Ricardo\n\n---\n\n### 3.4 Responding to a Neutral 3-Star Review\n\n> [Name], thank you for taking the time to share your experience with us. We'd love to understand how we can do better \u2014 please reach out to us directly at info@fountaingrace.org or speak to one of our team on Sunday. Every voice matters to us, and we're always growing. \u2014 Pastor Ricardo\n\n---\n\n### 3.5 Responding to a Negative Review (1-2 Stars)\n\n> Thank you for your feedback, [Name]. We're genuinely sorry that your experience did not reflect the warmth and care we strive to show every person who walks through our doors. We would like the opportunity to make this right \u2014 please reach out to us at info@fountaingrace.org so we can speak directly. We value you as a person and take this seriously. \u2014 Pastor Ricardo\n\n---\n\n### 3.6 Responding to a Fake or Irrelevant Review (Before Reporting It)\n\n> We don't recognise this experience as one associated with Fountain of Grace International. If there has been a misunderstanding, we warmly invite you to contact us at info@fountaingrace.org so we can assist. We take every concern seriously. \u2014 The FGI team\n\n*(Also flag the review for removal in your Google Business Profile dashboard under \"Flag as inappropriate.\")*\n\n---\n\n## Part 4: Seeding the GBP Q&A Section\n\nThe Google Business Profile Q&A section lets anyone ask questions about your business. If you don't seed it yourself, random people will ask odd questions and you may not see them.\n\n**How to seed Q&A:**\n1. Go to your GBP listing on Google Maps (search \"Fountain of Grace International\" while logged in to your Google account linked to GBP).\n2. Scroll to the \"Questions & Answers\" section.\n3. Click \"Ask a question\" \u2014 you can post questions AS A VISITOR (from a different Google account, or ask a church member to post), then log back into your GBP account and answer as the business.\n\n---\n\n### Recommended Q&A Seeds (Post These as Members, Answer as FGI)\n\n---\n\n**Q: What time are Sunday services at Fountain of Grace International?**\n\nA: Our Sunday morning service starts at 10:00 AM at our Pretoria North location. Doors open from 9:30 AM and everyone is welcome \u2014 whether it's your first time or your hundredth. Find our full schedule and directions at www.fountaingrace.org.\n\n---\n\n**Q: Is Fountain of Grace International welcoming to first-time visitors?**\n\nA: Absolutely! We love welcoming new faces. Our team will greet you at the door, help you find a seat, and make sure you feel at home. There's no pressure \u2014 come as you are. We'd love to meet you!\n\n---\n\n**Q: Do you have children's ministry or a kids' church at FGI?**\n\nA: Yes, we have ministry for children during our services so the whole family can be catered for. Children are always welcome, and our team is passionate about raising the next generation in faith.\n\n---\n\n**Q: Where exactly is Fountain of Grace International located in Pretoria North?**\n\nA: We are located in Pretoria North, Pretoria, Gauteng, South Africa. For the most up-to-date address and directions, please visit www.fountaingrace.org or call us directly \u2014 our contact details are on the website.\n\n---\n\n**Q: Is Fountain of Grace International an NPO?**\n\nA: Yes, Fountain of Grace International is a registered South African Non-Profit Organisation (NPO No. 316-193). We are committed to serving our community beyond Sunday services through outreach and community upliftment programmes.\n\n---\n\n**Q: How can I get in touch with Pastor Ricardo Zaal?**\n\nA: You can reach our church through the contact form at www.fountaingrace.org. You're also welcome to come speak to Pastor Ricardo in person after Sunday service \u2014 he makes a point of greeting everyone.\n\n---\n\n**Q: Does FGI offer online services or livestreams?**\n\nA: We regularly share content online. Visit www.fountaingrace.org or follow us on our social media pages for updates on livestreams and recordings.\n\n---\n\n**Q: What denomination is Fountain of Grace International?**\n\nA: We are a Spirit-filled, Bible-believing Christian church with a heart for worship, community, and reaching the lost. We welcome people from all backgrounds and walks of life.\n\n---\n\n**Q: Is there parking available at Fountain of Grace International?**\n\nA: Yes, parking is available at our venue. If you need specific parking information or have accessibility needs, please contact us ahead of time via www.fountaingrace.org and we'll be happy to assist.\n\n---\n\n**Q: How can I donate or support FGI's community outreach work?**\n\nA: Thank you for your generosity! You can support FGI through our website at www.fountaingrace.org. Your giving helps us reach families in Pretoria North and beyond.\n\n---\n\n## Part 5: Action Plan Summary\n\n| Priority | Action | Who | When |\n|---|---|---|---|\n| 1 | Get the Google review short link from GBP dashboard | Ricardo | This week |\n| 2 | Send WhatsApp message to 10-15 close congregants personally | Ricardo | This week |\n| 3 | Seed the Q&A section with the 10 questions above | Ricardo or an admin | This week |\n| 4 | Make verbal announcement at next Sunday service | Ricardo / MC | This Sunday |\n| 5 | Share on Instagram and Facebook story | Social media admin | This week |\n| 6 | Add review link to website footer and contact page | Web admin | Within 2 weeks |\n| 7 | Send congregation-wide WhatsApp broadcast | Ricardo | Once per quarter |\n| 8 | Respond to every new review within 48 hours | Ricardo | Ongoing |\n\n---\n\n## Part 6: Notes on Google's Policies\n\n- **Do not offer gifts, discounts, or incentives** in exchange for reviews \u2014 this violates Google's policy and can get reviews removed or the listing penalised.\n- **Do not write reviews for your own church** from accounts linked to the church.\n- **Do not ask people to write a specific star rating** \u2014 just ask them to share their honest experience.\n- Members sharing genuine personal experiences is fully allowed and encouraged.\n\n---\n\n*Prepared for Fountain of Grace International \u2014 April 2026*\n"}], "grading": {"eval_name": "eval-3-google-reviews", "variant": "without_skill", "passed": 9, "total": 9, "pass_rate": 1.0, "expectations": [{"text": "Complete review request template provided", "passed": true, "evidence": "auto-graded"}, {"text": "Positive review response template", "passed": true, "evidence": "auto-graded"}, {"text": "Negative review response template", "passed": true, "evidence": "auto-graded"}, {"text": "At least 3 GBP Q&A seeds", "passed": true, "evidence": "auto-graded"}, {"text": "No fake reviews suggested", "passed": true, "evidence": "auto-graded"}, {"text": "Section 18A honest if mentioned", "passed": true, "evidence": "auto-graded"}, {"text": "Templates reference FGI and Pretoria North", "passed": true, "evidence": "auto-graded"}, {"text": "Church/NPO specific \u2014 not generic advice", "passed": true, "evidence": "auto-graded"}, {"text": "Includes action sequence", "passed": true, "evidence": "auto-graded"}]}}], "previous_feedback": {}, "previous_outputs": {}, "benchmark": {"skill_name": "fgi-digital-growth", "iteration": 1, "results": [{"eval_name": "Module 0 Session A \u2014 Foundation Files", "variant": "with_skill", "pass_rate": 1.0, "passed": 9, "total": 9, "expectations": [{"text": "Delivers complete robots.txt file", "passed": true, "evidence": "auto-graded"}, {"text": "Delivers complete sitemap.xml with 5+ FGI pages", "passed": true, "evidence": "auto-graded"}, {"text": "Delivers _headers with CSP, HSTS, X-Frame-Options", "passed": true, "evidence": "auto-graded"}, {"text": "Delivers Open Graph tags og:title, og:description, og:image, og:url", "passed": true, "evidence": "auto-graded"}, {"text": "Uses 'Pretoria North' \u2014 never 'Akasia'", "passed": true, "evidence": "auto-graded"}, {"text": "NPO number 316-193 appears", "passed": true, "evidence": "auto-graded"}, {"text": "Includes Decision Matrix", "passed": true, "evidence": "auto-graded"}, {"text": "No unfilled placeholders", "passed": true, "evidence": "auto-graded"}, {"text": "States which file each deliverable belongs in", "passed": true, "evidence": "auto-graded"}]}, {"eval_name": "Module 0 Session A \u2014 Foundation Files", "variant": "without_skill", "pass_rate": 0.78, "passed": 7, "total": 9, "expectations": [{"text": "Delivers complete robots.txt file", "passed": true, "evidence": "auto-graded"}, {"text": "Delivers complete sitemap.xml with 5+ FGI pages", "passed": true, "evidence": "auto-graded"}, {"text": "Delivers _headers with CSP, HSTS, X-Frame-Options", "passed": false, "evidence": "auto-graded"}, {"text": "Delivers Open Graph tags og:title, og:description, og:image, og:url", "passed": true, "evidence": "auto-graded"}, {"text": "Uses 'Pretoria North' \u2014 never 'Akasia'", "passed": true, "evidence": "auto-graded"}, {"text": "NPO number 316-193 appears", "passed": true, "evidence": "auto-graded"}, {"text": "Includes Decision Matrix", "passed": false, "evidence": "auto-graded"}, {"text": "No unfilled placeholders", "passed": true, "evidence": "auto-graded"}, {"text": "States which file each deliverable belongs in", "passed": true, "evidence": "auto-graded"}]}, {"eval_name": "Module 2 \u2014 Donate Page Headline", "variant": "with_skill", "pass_rate": 1.0, "passed": 9, "total": 9, "expectations": [{"text": "Provides specific new headline", "passed": true, "evidence": "auto-graded"}, {"text": "Provides rewritten intro paragraph", "passed": true, "evidence": "auto-graded"}, {"text": "Decision Matrix with 7 fields filled", "passed": true, "evidence": "auto-graded"}, {"text": "References FGI brand facts (NPO, Pretoria North, or Section 18A)", "passed": true, "evidence": "auto-graded"}, {"text": "States which file to update", "passed": true, "evidence": "auto-graded"}, {"text": "Includes a test step", "passed": true, "evidence": "auto-graded"}, {"text": "Ends with one next step", "passed": true, "evidence": "auto-graded"}, {"text": "No fabricated statistics", "passed": true, "evidence": "auto-graded"}, {"text": "CEO Priority Stack visible", "passed": true, "evidence": "auto-graded"}]}, {"eval_name": "Module 2 \u2014 Donate Page Headline", "variant": "without_skill", "pass_rate": 0.67, "passed": 6, "total": 9, "expectations": [{"text": "Provides specific new headline", "passed": true, "evidence": "auto-graded"}, {"text": "Provides rewritten intro paragraph", "passed": true, "evidence": "auto-graded"}, {"text": "Decision Matrix with 7 fields filled", "passed": false, "evidence": "auto-graded"}, {"text": "References FGI brand facts (NPO, Pretoria North, or Section 18A)", "passed": true, "evidence": "auto-graded"}, {"text": "States which file to update", "passed": true, "evidence": "auto-graded"}, {"text": "Includes a test step", "passed": false, "evidence": "auto-graded"}, {"text": "Ends with one next step", "passed": false, "evidence": "auto-graded"}, {"text": "No fabricated statistics", "passed": true, "evidence": "auto-graded"}, {"text": "CEO Priority Stack visible", "passed": true, "evidence": "auto-graded"}]}, {"eval_name": "Module 5 \u2014 Google Reviews", "variant": "with_skill", "pass_rate": 1.0, "passed": 9, "total": 9, "expectations": [{"text": "Complete review request template provided", "passed": true, "evidence": "auto-graded"}, {"text": "Positive review response template", "passed": true, "evidence": "auto-graded"}, {"text": "Negative review response template", "passed": true, "evidence": "auto-graded"}, {"text": "At least 3 GBP Q&A seeds", "passed": true, "evidence": "auto-graded"}, {"text": "No fake reviews suggested", "passed": true, "evidence": "corrected \u2014 text warns against fake reviews, assertion regex false-positive"}, {"text": "Section 18A honest if mentioned", "passed": true, "evidence": "auto-graded"}, {"text": "Templates reference FGI and Pretoria North", "passed": true, "evidence": "auto-graded"}, {"text": "Church/NPO specific \u2014 not generic advice", "passed": true, "evidence": "auto-graded"}, {"text": "Includes action sequence", "passed": true, "evidence": "auto-graded"}]}, {"eval_name": "Module 5 \u2014 Google Reviews", "variant": "without_skill", "pass_rate": 1.0, "passed": 9, "total": 9, "expectations": [{"text": "Complete review request template provided", "passed": true, "evidence": "auto-graded"}, {"text": "Positive review response template", "passed": true, "evidence": "auto-graded"}, {"text": "Negative review response template", "passed": true, "evidence": "auto-graded"}, {"text": "At least 3 GBP Q&A seeds", "passed": true, "evidence": "auto-graded"}, {"text": "No fake reviews suggested", "passed": true, "evidence": "auto-graded"}, {"text": "Section 18A honest if mentioned", "passed": true, "evidence": "auto-graded"}, {"text": "Templates reference FGI and Pretoria North", "passed": true, "evidence": "auto-graded"}, {"text": "Church/NPO specific \u2014 not generic advice", "passed": true, "evidence": "auto-graded"}, {"text": "Includes action sequence", "passed": true, "evidence": "auto-graded"}]}]}};
+
+    // ---- State ----
+    let feedbackMap = {};  // run_id -> feedback text
+    let currentIndex = 0;
+    let visitedRuns = new Set();
+
+    // ---- Init ----
+    async function init() {
+      // Load saved feedback from server — but only if this isn't a fresh
+      // iteration (indicated by previous_feedback being present). When
+      // previous feedback exists, the feedback.json on disk is stale from
+      // the prior iteration and should not pre-fill the textareas.
+      const hasPrevious = Object.keys(EMBEDDED_DATA.previous_feedback || {}).length > 0
+        || Object.keys(EMBEDDED_DATA.previous_outputs || {}).length > 0;
+      if (!hasPrevious) {
+        try {
+          const resp = await fetch("/api/feedback");
+          const data = await resp.json();
+          if (data.reviews) {
+            for (const r of data.reviews) feedbackMap[r.run_id] = r.feedback;
+          }
+        } catch { /* first run, no feedback yet */ }
+      }
+
+      document.getElementById("skill-name").textContent = EMBEDDED_DATA.skill_name;
+      showRun(0);
+
+      // Wire up feedback auto-save
+      const textarea = document.getElementById("feedback");
+      let saveTimeout = null;
+      textarea.addEventListener("input", () => {
+        clearTimeout(saveTimeout);
+        document.getElementById("feedback-status").textContent = "";
+        saveTimeout = setTimeout(() => saveCurrentFeedback(), 800);
+      });
+    }
+
+    // ---- Navigation ----
+    function navigate(delta) {
+      const newIndex = currentIndex + delta;
+      if (newIndex >= 0 && newIndex < EMBEDDED_DATA.runs.length) {
+        saveCurrentFeedback();
+        showRun(newIndex);
+      }
+    }
+
+    function updateNavButtons() {
+      document.getElementById("prev-btn").disabled = currentIndex === 0;
+      document.getElementById("next-btn").disabled =
+        currentIndex === EMBEDDED_DATA.runs.length - 1;
+    }
+
+    // ---- Show a run ----
+    function showRun(index) {
+      currentIndex = index;
+      const run = EMBEDDED_DATA.runs[index];
+
+      // Progress
+      document.getElementById("progress").textContent =
+        `${index + 1} of ${EMBEDDED_DATA.runs.length}`;
+
+      // Prompt
+      document.getElementById("prompt-text").textContent = run.prompt;
+
+      // Config badge
+      const badge = document.getElementById("config-badge");
+      const configMatch = run.id.match(/(with_skill|without_skill|new_skill|old_skill)/);
+      if (configMatch) {
+        const config = configMatch[1];
+        const isBaseline = config === "without_skill" || config === "old_skill";
+        badge.textContent = config.replace(/_/g, " ");
+        badge.className = "config-badge " + (isBaseline ? "config-baseline" : "config-primary");
+        badge.style.display = "inline-block";
+      } else {
+        badge.style.display = "none";
+      }
+
+      // Outputs
+      renderOutputs(run);
+
+      // Previous outputs
+      renderPrevOutputs(run);
+
+      // Grades
+      renderGrades(run);
+
+      // Previous feedback
+      const prevFb = (EMBEDDED_DATA.previous_feedback || {})[run.id];
+      const prevEl = document.getElementById("prev-feedback");
+      if (prevFb) {
+        document.getElementById("prev-feedback-text").textContent = prevFb;
+        prevEl.style.display = "block";
+      } else {
+        prevEl.style.display = "none";
+      }
+
+      // Feedback
+      document.getElementById("feedback").value = feedbackMap[run.id] || "";
+      document.getElementById("feedback-status").textContent = "";
+
+      updateNavButtons();
+
+      // Track visited runs and promote done button when all visited
+      visitedRuns.add(index);
+      const doneBtn = document.getElementById("done-btn");
+      if (visitedRuns.size >= EMBEDDED_DATA.runs.length) {
+        doneBtn.classList.add("ready");
+      }
+
+      // Scroll main content to top
+      document.querySelector(".main").scrollTop = 0;
+    }
+
+    // ---- Render outputs ----
+    function renderOutputs(run) {
+      const container = document.getElementById("outputs-body");
+      container.innerHTML = "";
+
+      const outputs = run.outputs || [];
+      if (outputs.length === 0) {
+        container.innerHTML = '<div class="empty-state">No output files</div>';
+        return;
+      }
+
+      for (const file of outputs) {
+        const fileDiv = document.createElement("div");
+        fileDiv.className = "output-file";
+
+        // Always show file header with download link
+        const header = document.createElement("div");
+        header.className = "output-file-header";
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = file.name;
+        header.appendChild(nameSpan);
+        const dlBtn = document.createElement("a");
+        dlBtn.className = "dl-btn";
+        dlBtn.textContent = "Download";
+        dlBtn.download = file.name;
+        dlBtn.href = getDownloadUri(file);
+        header.appendChild(dlBtn);
+        fileDiv.appendChild(header);
+
+        const content = document.createElement("div");
+        content.className = "output-file-content";
+
+        if (file.type === "text") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          content.appendChild(pre);
+        } else if (file.type === "image") {
+          const img = document.createElement("img");
+          img.src = file.data_uri;
+          img.alt = file.name;
+          content.appendChild(img);
+        } else if (file.type === "pdf") {
+          const iframe = document.createElement("iframe");
+          iframe.src = file.data_uri;
+          content.appendChild(iframe);
+        } else if (file.type === "xlsx") {
+          renderXlsx(content, file.data_b64);
+        } else if (file.type === "binary") {
+          const a = document.createElement("a");
+          a.className = "download-link";
+          a.href = file.data_uri;
+          a.download = file.name;
+          a.textContent = "Download " + file.name;
+          content.appendChild(a);
+        } else if (file.type === "error") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          pre.style.color = "var(--red)";
+          content.appendChild(pre);
+        }
+
+        fileDiv.appendChild(content);
+        container.appendChild(fileDiv);
+      }
+    }
+
+    // ---- XLSX rendering via SheetJS ----
+    function renderXlsx(container, b64Data) {
+      try {
+        const raw = Uint8Array.from(atob(b64Data), c => c.charCodeAt(0));
+        const wb = XLSX.read(raw, { type: "array" });
+
+        for (let i = 0; i < wb.SheetNames.length; i++) {
+          const sheetName = wb.SheetNames[i];
+          const ws = wb.Sheets[sheetName];
+
+          if (wb.SheetNames.length > 1) {
+            const sheetLabel = document.createElement("div");
+            sheetLabel.style.cssText =
+              "font-weight:600; font-size:0.8rem; color:#b0aea5; margin-top:0.5rem; margin-bottom:0.25rem;";
+            sheetLabel.textContent = "Sheet: " + sheetName;
+            container.appendChild(sheetLabel);
+          }
+
+          const htmlStr = XLSX.utils.sheet_to_html(ws, { editable: false });
+          const wrapper = document.createElement("div");
+          wrapper.innerHTML = htmlStr;
+          container.appendChild(wrapper);
+        }
+      } catch (err) {
+        container.textContent = "Error rendering spreadsheet: " + err.message;
+      }
+    }
+
+    // ---- Grades ----
+    function renderGrades(run) {
+      const section = document.getElementById("grades-section");
+      const content = document.getElementById("grades-content");
+
+      if (!run.grading) {
+        section.style.display = "none";
+        return;
+      }
+
+      const grading = run.grading;
+      section.style.display = "block";
+      // Reset to collapsed
+      content.classList.remove("open");
+      document.getElementById("grades-arrow").classList.remove("open");
+
+      const summary = grading.summary || {};
+      const expectations = grading.expectations || [];
+
+      let html = '<div style="padding: 1rem;">';
+
+      // Summary line
+      const passRate = summary.pass_rate != null
+        ? Math.round(summary.pass_rate * 100) + "%"
+        : "?";
+      const badgeClass = summary.pass_rate >= 0.8 ? "grade-pass" : summary.pass_rate >= 0.5 ? "" : "grade-fail";
+      html += '<div class="grades-summary">';
+      html += '<span class="grade-badge ' + badgeClass + '">' + passRate + '</span>';
+      html += '<span>' + (summary.passed || 0) + ' passed, ' + (summary.failed || 0) + ' failed of ' + (summary.total || 0) + '</span>';
+      html += '</div>';
+
+      // Assertions list
+      html += '<ul class="assertion-list">';
+      for (const exp of expectations) {
+        const statusClass = exp.passed ? "pass" : "fail";
+        const statusIcon = exp.passed ? "\u2713" : "\u2717";
+        html += '<li class="assertion-item">';
+        html += '<span class="assertion-status ' + statusClass + '">' + statusIcon + '</span>';
+        html += '<span>' + escapeHtml(exp.text) + '</span>';
+        if (exp.evidence) {
+          html += '<div class="assertion-evidence">' + escapeHtml(exp.evidence) + '</div>';
+        }
+        html += '</li>';
+      }
+      html += '</ul>';
+
+      html += '</div>';
+      content.innerHTML = html;
+    }
+
+    function toggleGrades() {
+      const content = document.getElementById("grades-content");
+      const arrow = document.getElementById("grades-arrow");
+      content.classList.toggle("open");
+      arrow.classList.toggle("open");
+    }
+
+    // ---- Previous outputs (collapsible) ----
+    function renderPrevOutputs(run) {
+      const section = document.getElementById("prev-outputs-section");
+      const content = document.getElementById("prev-outputs-content");
+      const prevOutputs = (EMBEDDED_DATA.previous_outputs || {})[run.id];
+
+      if (!prevOutputs || prevOutputs.length === 0) {
+        section.style.display = "none";
+        return;
+      }
+
+      section.style.display = "block";
+      // Reset to collapsed
+      content.classList.remove("open");
+      document.getElementById("prev-outputs-arrow").classList.remove("open");
+
+      // Render the files into the content area
+      content.innerHTML = "";
+      const wrapper = document.createElement("div");
+      wrapper.style.padding = "1rem";
+
+      for (const file of prevOutputs) {
+        const fileDiv = document.createElement("div");
+        fileDiv.className = "output-file";
+
+        const header = document.createElement("div");
+        header.className = "output-file-header";
+        const nameSpan = document.createElement("span");
+        nameSpan.textContent = file.name;
+        header.appendChild(nameSpan);
+        const dlBtn = document.createElement("a");
+        dlBtn.className = "dl-btn";
+        dlBtn.textContent = "Download";
+        dlBtn.download = file.name;
+        dlBtn.href = getDownloadUri(file);
+        header.appendChild(dlBtn);
+        fileDiv.appendChild(header);
+
+        const fc = document.createElement("div");
+        fc.className = "output-file-content";
+
+        if (file.type === "text") {
+          const pre = document.createElement("pre");
+          pre.textContent = file.content;
+          fc.appendChild(pre);
+        } else if (file.type === "image") {
+          const img = document.createElement("img");
+          img.src = file.data_uri;
+          img.alt = file.name;
+          fc.appendChild(img);
+        } else if (file.type === "pdf") {
+          const iframe = document.createElement("iframe");
+          iframe.src = file.data_uri;
+          fc.appendChild(iframe);
+        } else if (file.type === "xlsx") {
+          renderXlsx(fc, file.data_b64);
+        } else if (file.type === "binary") {
+          const a = document.createElement("a");
+          a.className = "download-link";
+          a.href = file.data_uri;
+          a.download = file.name;
+          a.textContent = "Download " + file.name;
+          fc.appendChild(a);
+        }
+
+        fileDiv.appendChild(fc);
+        wrapper.appendChild(fileDiv);
+      }
+
+      content.appendChild(wrapper);
+    }
+
+    function togglePrevOutputs() {
+      const content = document.getElementById("prev-outputs-content");
+      const arrow = document.getElementById("prev-outputs-arrow");
+      content.classList.toggle("open");
+      arrow.classList.toggle("open");
+    }
+
+    // ---- Feedback (saved to server -> feedback.json) ----
+    function saveCurrentFeedback() {
+      const run = EMBEDDED_DATA.runs[currentIndex];
+      const text = document.getElementById("feedback").value;
+
+      if (text.trim() === "") {
+        delete feedbackMap[run.id];
+      } else {
+        feedbackMap[run.id] = text;
+      }
+
+      // Build reviews array from map
+      const reviews = [];
+      for (const [run_id, feedback] of Object.entries(feedbackMap)) {
+        if (feedback.trim()) {
+          reviews.push({ run_id, feedback, timestamp: new Date().toISOString() });
+        }
+      }
+
+      fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ reviews, status: "in_progress" }),
+      }).then(() => {
+        document.getElementById("feedback-status").textContent = "Saved";
+      }).catch(() => {
+        // Static mode or server unavailable — no-op on auto-save,
+        // feedback will be downloaded on final submit
+        document.getElementById("feedback-status").textContent = "Will download on submit";
+      });
+    }
+
+    // ---- Done ----
+    function showDoneDialog() {
+      // Save current textarea to feedbackMap (but don't POST yet)
+      const run = EMBEDDED_DATA.runs[currentIndex];
+      const text = document.getElementById("feedback").value;
+      if (text.trim() === "") {
+        delete feedbackMap[run.id];
+      } else {
+        feedbackMap[run.id] = text;
+      }
+
+      // POST once with status: complete — include ALL runs so the model
+      // can distinguish "no feedback" (looks good) from "not reviewed"
+      const reviews = [];
+      const ts = new Date().toISOString();
+      for (const r of EMBEDDED_DATA.runs) {
+        reviews.push({ run_id: r.id, feedback: feedbackMap[r.id] || "", timestamp: ts });
+      }
+      const payload = JSON.stringify({ reviews, status: "complete" }, null, 2);
+      fetch("/api/feedback", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: payload,
+      }).then(() => {
+        document.getElementById("done-overlay").classList.add("visible");
+      }).catch(() => {
+        // Server not available (static mode) — download as file
+        const blob = new Blob([payload], { type: "application/json" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "feedback.json";
+        a.click();
+        URL.revokeObjectURL(url);
+        document.getElementById("done-overlay").classList.add("visible");
+      });
+    }
+
+    function closeDoneDialog() {
+      // Reset status back to in_progress
+      saveCurrentFeedback();
+      document.getElementById("done-overlay").classList.remove("visible");
+    }
+
+    // ---- Toast ----
+    function showToast(message) {
+      const toast = document.getElementById("toast");
+      toast.textContent = message;
+      toast.classList.add("visible");
+      setTimeout(() => toast.classList.remove("visible"), 2000);
+    }
+
+    // ---- Keyboard nav ----
+    document.addEventListener("keydown", (e) => {
+      // Don't capture when typing in textarea
+      if (e.target.tagName === "TEXTAREA") return;
+
+      if (e.key === "ArrowLeft" || e.key === "ArrowUp") {
+        e.preventDefault();
+        navigate(-1);
+      } else if (e.key === "ArrowRight" || e.key === "ArrowDown") {
+        e.preventDefault();
+        navigate(1);
+      }
+    });
+
+    // ---- Util ----
+    function getDownloadUri(file) {
+      if (file.data_uri) return file.data_uri;
+      if (file.data_b64) return "data:application/octet-stream;base64," + file.data_b64;
+      if (file.type === "text") return "data:text/plain;charset=utf-8," + encodeURIComponent(file.content);
+      return "#";
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement("div");
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // ---- View switching ----
+    function switchView(view) {
+      document.querySelectorAll(".view-tab").forEach(t => t.classList.remove("active"));
+      document.querySelectorAll(".view-panel").forEach(p => p.classList.remove("active"));
+      document.querySelector(`[onclick="switchView('${view}')"]`).classList.add("active");
+      document.getElementById("panel-" + view).classList.add("active");
+    }
+
+    // ---- Benchmark rendering ----
+    function renderBenchmark() {
+      const data = EMBEDDED_DATA.benchmark;
+      if (!data) return;
+
+      // Show the tabs
+      document.getElementById("view-tabs").style.display = "flex";
+
+      const container = document.getElementById("benchmark-content");
+      const summary = data.run_summary || {};
+      const metadata = data.metadata || {};
+      const notes = data.notes || [];
+
+      let html = "";
+
+      // Header
+      html += "<h2 style='font-family: Poppins, sans-serif; margin-bottom: 0.5rem;'>Benchmark Results</h2>";
+      html += "<p style='color: var(--text-muted); font-size: 0.875rem; margin-bottom: 1.25rem;'>";
+      if (metadata.skill_name) html += "<strong>" + escapeHtml(metadata.skill_name) + "</strong> &mdash; ";
+      if (metadata.timestamp) html += metadata.timestamp + " &mdash; ";
+      if (metadata.evals_run) html += "Evals: " + metadata.evals_run.join(", ") + " &mdash; ";
+      html += (metadata.runs_per_configuration || "?") + " runs per configuration";
+      html += "</p>";
+
+      // Summary table
+      html += '<table class="benchmark-table">';
+
+      function fmtStat(stat, pct) {
+        if (!stat) return "—";
+        const suffix = pct ? "%" : "";
+        const m = pct ? (stat.mean * 100).toFixed(0) : stat.mean.toFixed(1);
+        const s = pct ? (stat.stddev * 100).toFixed(0) : stat.stddev.toFixed(1);
+        return m + suffix + " ± " + s + suffix;
+      }
+
+      function deltaClass(val) {
+        if (!val) return "";
+        const n = parseFloat(val);
+        if (n > 0) return "benchmark-delta-positive";
+        if (n < 0) return "benchmark-delta-negative";
+        return "";
+      }
+
+      // Discover config names dynamically (everything except "delta")
+      const configs = Object.keys(summary).filter(k => k !== "delta");
+      const configA = configs[0] || "config_a";
+      const configB = configs[1] || "config_b";
+      const labelA = configA.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      const labelB = configB.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+      const a = summary[configA] || {};
+      const b = summary[configB] || {};
+      const delta = summary.delta || {};
+
+      html += "<thead><tr><th>Metric</th><th>" + escapeHtml(labelA) + "</th><th>" + escapeHtml(labelB) + "</th><th>Delta</th></tr></thead>";
+      html += "<tbody>";
+
+      html += "<tr><td><strong>Pass Rate</strong></td>";
+      html += "<td>" + fmtStat(a.pass_rate, true) + "</td>";
+      html += "<td>" + fmtStat(b.pass_rate, true) + "</td>";
+      html += '<td class="' + deltaClass(delta.pass_rate) + '">' + (delta.pass_rate || "—") + "</td></tr>";
+
+      // Time (only show row if data exists)
+      if (a.time_seconds || b.time_seconds) {
+        html += "<tr><td><strong>Time (s)</strong></td>";
+        html += "<td>" + fmtStat(a.time_seconds, false) + "</td>";
+        html += "<td>" + fmtStat(b.time_seconds, false) + "</td>";
+        html += '<td class="' + deltaClass(delta.time_seconds) + '">' + (delta.time_seconds ? delta.time_seconds + "s" : "—") + "</td></tr>";
+      }
+
+      // Tokens (only show row if data exists)
+      if (a.tokens || b.tokens) {
+        html += "<tr><td><strong>Tokens</strong></td>";
+        html += "<td>" + fmtStat(a.tokens, false) + "</td>";
+        html += "<td>" + fmtStat(b.tokens, false) + "</td>";
+        html += '<td class="' + deltaClass(delta.tokens) + '">' + (delta.tokens || "—") + "</td></tr>";
+      }
+
+      html += "</tbody></table>";
+
+      // Per-eval breakdown (if runs data available)
+      const runs = data.runs || [];
+      if (runs.length > 0) {
+        const evalIds = [...new Set(runs.map(r => r.eval_id))].sort((a, b) => a - b);
+
+        html += "<h3 style='font-family: Poppins, sans-serif; margin-bottom: 0.75rem;'>Per-Eval Breakdown</h3>";
+
+        const hasTime = runs.some(r => r.result && r.result.time_seconds != null);
+        const hasErrors = runs.some(r => r.result && r.result.errors > 0);
+
+        for (const evalId of evalIds) {
+          const evalRuns = runs.filter(r => r.eval_id === evalId);
+          const evalName = evalRuns[0] && evalRuns[0].eval_name ? evalRuns[0].eval_name : "Eval " + evalId;
+
+          html += "<h4 style='font-family: Poppins, sans-serif; margin: 1rem 0 0.5rem; color: var(--text);'>" + escapeHtml(evalName) + "</h4>";
+          html += '<table class="benchmark-table">';
+          html += "<thead><tr><th>Config</th><th>Run</th><th>Pass Rate</th>";
+          if (hasTime) html += "<th>Time (s)</th>";
+          if (hasErrors) html += "<th>Crashes During Execution</th>";
+          html += "</tr></thead>";
+          html += "<tbody>";
+
+          // Group by config and render with average rows
+          const configGroups = [...new Set(evalRuns.map(r => r.configuration))];
+          for (let ci = 0; ci < configGroups.length; ci++) {
+            const config = configGroups[ci];
+            const configRuns = evalRuns.filter(r => r.configuration === config);
+            if (configRuns.length === 0) continue;
+
+            const rowClass = ci === 0 ? "benchmark-row-with" : "benchmark-row-without";
+            const configLabel = config.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+
+            for (const run of configRuns) {
+              const r = run.result || {};
+              const prClass = r.pass_rate >= 0.8 ? "benchmark-delta-positive" : r.pass_rate < 0.5 ? "benchmark-delta-negative" : "";
+              html += '<tr class="' + rowClass + '">';
+              html += "<td>" + configLabel + "</td>";
+              html += "<td>" + run.run_number + "</td>";
+              html += '<td class="' + prClass + '">' + ((r.pass_rate || 0) * 100).toFixed(0) + "% (" + (r.passed || 0) + "/" + (r.total || 0) + ")</td>";
+              if (hasTime) html += "<td>" + (r.time_seconds != null ? r.time_seconds.toFixed(1) : "—") + "</td>";
+              if (hasErrors) html += "<td>" + (r.errors || 0) + "</td>";
+              html += "</tr>";
+            }
+
+            // Average row
+            const rates = configRuns.map(r => (r.result || {}).pass_rate || 0);
+            const avgRate = rates.reduce((a, b) => a + b, 0) / rates.length;
+            const avgPrClass = avgRate >= 0.8 ? "benchmark-delta-positive" : avgRate < 0.5 ? "benchmark-delta-negative" : "";
+            html += '<tr class="benchmark-row-avg ' + rowClass + '">';
+            html += "<td>" + configLabel + "</td>";
+            html += "<td>Avg</td>";
+            html += '<td class="' + avgPrClass + '">' + (avgRate * 100).toFixed(0) + "%</td>";
+            if (hasTime) {
+              const times = configRuns.map(r => (r.result || {}).time_seconds).filter(t => t != null);
+              html += "<td>" + (times.length ? (times.reduce((a, b) => a + b, 0) / times.length).toFixed(1) : "—") + "</td>";
+            }
+            if (hasErrors) html += "<td></td>";
+            html += "</tr>";
+          }
+          html += "</tbody></table>";
+
+          // Per-assertion detail for this eval
+          const runsWithExpectations = {};
+          for (const config of configGroups) {
+            runsWithExpectations[config] = evalRuns.filter(r => r.configuration === config && r.expectations && r.expectations.length > 0);
+          }
+          const hasAnyExpectations = Object.values(runsWithExpectations).some(runs => runs.length > 0);
+          if (hasAnyExpectations) {
+            // Collect all unique assertion texts across all configs
+            const allAssertions = [];
+            const seen = new Set();
+            for (const config of configGroups) {
+              for (const run of runsWithExpectations[config]) {
+                for (const exp of (run.expectations || [])) {
+                  if (!seen.has(exp.text)) {
+                    seen.add(exp.text);
+                    allAssertions.push(exp.text);
+                  }
+                }
+              }
+            }
+
+            html += '<table class="benchmark-table" style="margin-top: 0.5rem;">';
+            html += "<thead><tr><th>Assertion</th>";
+            for (const config of configGroups) {
+              const label = config.replace(/_/g, " ").replace(/\b\w/g, c => c.toUpperCase());
+              html += "<th>" + escapeHtml(label) + "</th>";
+            }
+            html += "</tr></thead><tbody>";
+
+            for (const assertionText of allAssertions) {
+              html += "<tr><td>" + escapeHtml(assertionText) + "</td>";
+
+              for (const config of configGroups) {
+                html += "<td>";
+                for (const run of runsWithExpectations[config]) {
+                  const exp = (run.expectations || []).find(e => e.text === assertionText);
+                  if (exp) {
+                    const cls = exp.passed ? "benchmark-delta-positive" : "benchmark-delta-negative";
+                    const icon = exp.passed ? "\u2713" : "\u2717";
+                    html += '<span class="' + cls + '" title="Run ' + run.run_number + ': ' + escapeHtml(exp.evidence || "") + '">' + icon + "</span> ";
+                  } else {
+                    html += "— ";
+                  }
+                }
+                html += "</td>";
+              }
+              html += "</tr>";
+            }
+            html += "</tbody></table>";
+          }
+        }
+      }
+
+      // Notes
+      if (notes.length > 0) {
+        html += '<div class="benchmark-notes">';
+        html += "<h3>Analysis Notes</h3>";
+        html += "<ul>";
+        for (const note of notes) {
+          html += "<li>" + escapeHtml(note) + "</li>";
+        }
+        html += "</ul></div>";
+      }
+
+      container.innerHTML = html;
+    }
+
+    // ---- Start ----
+    init();
+    renderBenchmark();
+  </script>
+</body>
+</html>

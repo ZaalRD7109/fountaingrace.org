@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import TallyEmbed from '@/components/TallyEmbed'
+import ContactForm from '@/components/ContactForm'
 
 export const metadata: Metadata = {
   title: 'Contact Us | Fountain of Grace International | Pretoria North',
@@ -255,15 +255,7 @@ export default function ContactPage() {
             </Link>{' '}
             form so we can prepare specifically for you.
           </p>
-          <TallyEmbed formId="WOMeYP" />
-          <p className="text-xs text-[#595959] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
-            Your information is collected by Fountain of Grace International (NPO 316-193) and used
-            only to respond to your message. We do not share or sell your data. See our{' '}
-            <Link href="/privacy-policy" className="text-[#008080] hover:underline font-medium">
-              Privacy Policy
-            </Link>{' '}
-            for full details. POPIA compliant.
-          </p>
+          <ContactForm />
         </div>
       </section>
 

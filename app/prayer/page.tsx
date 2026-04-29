@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import TallyEmbed from '@/components/TallyEmbed'
+import PrayerForm from '@/components/PrayerForm'
 
 export const metadata: Metadata = {
   title: 'Prayer Request | Fountain of Grace International | Pretoria North',
@@ -104,15 +104,7 @@ export default function PrayerPage() {
       <section className="bg-gray-50 py-10 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-xl font-bold text-gray-900 mb-6">Submit a prayer request</h2>
-          <TallyEmbed formId="pb00PZ" />
-          <p className="text-xs text-[#595959] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
-            Your information is collected by Fountain of Grace International (NPO 316-193) and used
-            only to respond to your prayer request. We do not share or sell your data. See our{' '}
-            <Link href="/privacy-policy" className="text-[#008080] hover:underline font-medium">
-              Privacy Policy
-            </Link>{' '}
-            for full details. POPIA compliant.
-          </p>
+          <PrayerForm />
         </div>
       </section>
 

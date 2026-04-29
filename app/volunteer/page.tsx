@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import TallyEmbed from '@/components/TallyEmbed'
+import VolunteerForm from '@/components/VolunteerForm'
 
 export const metadata: Metadata = {
   title: 'Volunteer with FGI | NPO in Pretoria North',
@@ -74,15 +74,7 @@ export default function VolunteerPage() {
       {/* FORM - full width */}
       <section className="bg-white py-6 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
-          <TallyEmbed formId="ODJjJA" />
-          <p className="text-xs text-[#595959] leading-relaxed border border-gray-100 rounded-lg bg-white px-4 py-3 mt-4">
-            Your information is collected by Fountain of Grace International (NPO 316-193) and used
-            only to process your volunteer application and contact you with next steps. We do not share or sell your data. See our{' '}
-            <Link href="/privacy-policy" className="text-[#008080] hover:underline font-medium">
-              Privacy Policy
-            </Link>{' '}
-            for full details. POPIA compliant.
-          </p>
+          <VolunteerForm />
         </div>
       </section>
 
