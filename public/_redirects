@@ -60,6 +60,32 @@
 /ig /?utm_source=instagram&utm_medium=social&utm_campaign=bio_link  302
 /tt /?utm_source=tiktok&utm_medium=social&utm_campaign=bio_link  302
 
+# General website link in YouTube video descriptions (not the sermon - the homepage link)
+# Paste fountaingrace.org/yt-video as the website link in every YouTube description
+# GA4 + Clarity will show: source=youtube, medium=video_description, campaign=channel_link
+/yt-video /?utm_source=youtube&utm_medium=video_description&utm_campaign=channel_link  302
+
+# Organic social post links (paste these when posting on each platform)
+# Use these whenever you share a link to the website in a post or story
+/fb-post /?utm_source=facebook&utm_medium=social&utm_campaign=organic_post  302
+/ig-post /?utm_source=instagram&utm_medium=social&utm_campaign=organic_post  302
+/tt-post /?utm_source=tiktok&utm_medium=social&utm_campaign=organic_post  302
+
+# Organic social - plan your visit (use when inviting people to church in posts)
+/fb-visit /plan-your-visit?utm_source=facebook&utm_medium=social&utm_campaign=organic_post&utm_content=visit  302
+/ig-visit /plan-your-visit?utm_source=instagram&utm_medium=social&utm_campaign=organic_post&utm_content=visit  302
+/tt-visit /plan-your-visit?utm_source=tiktok&utm_medium=social&utm_campaign=organic_post&utm_content=visit  302
+
+# Organic social - sermons index (use when promoting sermon content in posts)
+/fb-sermons /sermons?utm_source=facebook&utm_medium=social&utm_campaign=organic_post&utm_content=sermons  302
+/ig-sermons /sermons?utm_source=instagram&utm_medium=social&utm_campaign=organic_post&utm_content=sermons  302
+/tt-sermons /sermons?utm_source=tiktok&utm_medium=social&utm_campaign=organic_post&utm_content=sermons  302
+
+# Organic social - donate (use when sharing giving links in posts)
+/fb-give /donate?utm_source=facebook&utm_medium=social&utm_campaign=organic_post&utm_content=give  302
+/ig-give /donate?utm_source=instagram&utm_medium=social&utm_campaign=organic_post&utm_content=give  302
+/tt-give /donate?utm_source=tiktok&utm_medium=social&utm_campaign=organic_post&utm_content=give  302
+
 # YouTube sermon description links
 # Paste these exact URLs into the description of each YouTube video
 # GA4 will show you: source=youtube, content=<sermon-slug>, campaign=sermon_description
