@@ -95,6 +95,11 @@ export default function Footer() {
                 aria-label="Fountain of Grace International on YouTube">
                 YouTube
               </a>
+              <a href="https://www.instagram.com/fgiptanorth/" target="_blank" rel="noopener noreferrer"
+                className="text-white font-medium hover:underline text-sm"
+                aria-label="Fountain of Grace International on Instagram">
+                Instagram
+              </a>
               <a href="https://www.tiktok.com/@fountainofgraceintl" target="_blank" rel="noopener noreferrer"
                 className="text-white font-medium hover:underline text-sm"
                 aria-label="Fountain of Grace International on TikTok">
