@@ -20,6 +20,19 @@ export const metadata: Metadata = {
   },
 }
 
+// Compute next Sunday date at build time (static export runs this once per deploy)
+const nextSundayDate = (() => {
+  const now = new Date()
+  const day = now.getDay() // 0 = Sunday
+  const daysUntilSunday = day === 0 ? 7 : 7 - day
+  const d = new Date(now)
+  d.setDate(now.getDate() + daysUntilSunday)
+  const y = d.getFullYear()
+  const m = String(d.getMonth() + 1).padStart(2, '0')
+  const dd = String(d.getDate()).padStart(2, '0')
+  return `${y}-${m}-${dd}`
+})()
+
 const jsonLd = [
   {
     '@context': 'https://schema.org',
@@ -95,8 +108,8 @@ const jsonLd = [
     '@type': 'Event',
     name: 'Sunday Service - Fountain of Grace International',
     description: 'Weekly Sunday church service at Fountain of Grace International in Pretoria North. Practical Bible teaching, worship, and community. Everyone is welcome.',
-    startDate: 'T09:00:00+02:00',
-    endDate: 'T10:30:00+02:00',
+    startDate: `${nextSundayDate}T09:00:00+02:00`,
+    endDate: `${nextSundayDate}T10:30:00+02:00`,
     eventSchedule: {
       '@type': 'Schedule',
       repeatFrequency: 'P1W',
