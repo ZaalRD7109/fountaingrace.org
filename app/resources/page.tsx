@@ -22,6 +22,30 @@ const articles = [
     intro: 'You can have the job, the house, the relationship - and still feel hollow. This is one of the most common feelings people carry silently. Here is what is actually happening and what genuinely changes it.',
     category: 'Purpose',
   },
+  {
+    slug: 'how-to-forgive-someone-who-is-not-sorry',
+    title: 'How to Forgive Someone Who Is Not Sorry',
+    intro: 'Forgiving someone who has not apologised feels wrong. But holding onto it is costing you more than them. Here is how forgiveness actually works - and why it is for you, not them.',
+    category: 'Relationships',
+  },
+  {
+    slug: 'what-to-do-when-you-feel-stuck',
+    title: 'What to Do When You Feel Stuck and Cannot Move Forward',
+    intro: 'Feeling stuck is not a sign that something is wrong with you. It is a signal that something specific needs to change. Here is how to identify what it is and start moving again.',
+    category: 'Growth',
+  },
+  {
+    slug: 'why-do-good-people-suffer',
+    title: 'Why Do Good People Suffer - An Honest Answer',
+    intro: 'If God is good, why do good people suffer? This question has broken more faith than almost anything else. Here is an honest, Biblical answer that does not dismiss the pain.',
+    category: 'Faith and Doubt',
+  },
+  {
+    slug: 'how-to-start-over',
+    title: 'How to Start Over When Everything Has Fallen Apart',
+    intro: 'When your life collapses - the marriage, the business, the career, the plan - what do you actually do next? A practical, honest guide to starting over without losing what matters.',
+    category: 'Starting Over',
+  },
 ]
 
 export default function ResourcesPage() {

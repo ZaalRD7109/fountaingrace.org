@@ -22,6 +22,30 @@ const devotionals = [
     intro: 'Most people prepare what they wear on Sunday. Very few prepare what they carry inside. Five minutes before Sunday changes everything about what you receive when you get there.',
     category: 'Sunday Prep',
   },
+  {
+    slug: 'when-god-seems-silent',
+    title: 'When God Seems Silent - What to Do in the Waiting',
+    intro: 'You prayed. You waited. Nothing came. The silence is not the answer you expected - but it is not the end of the story either. Here is what to hold onto and what to do.',
+    category: 'Faith',
+  },
+  {
+    slug: 'one-question-before-sunday',
+    title: 'One Question That Will Change How You Experience Church',
+    intro: 'Most people sit through church asking the wrong question. One small shift in what you bring through the door changes everything about what you take home.',
+    category: 'Sunday Prep',
+  },
+  {
+    slug: 'what-sunday-is-not',
+    title: 'What Sunday Is Not - Clearing Up the Biggest Misunderstanding About Church',
+    intro: 'Most people who walk away from church leave because they had the wrong idea of what it was supposed to be. Let us clear that up before it costs you something real.',
+    category: 'Church Life',
+  },
+  {
+    slug: 'the-week-did-not-go-as-planned',
+    title: 'The Week Did Not Go as Planned - Come Anyway',
+    intro: 'The week was hard. Things did not work out. You are not in the mood for Sunday. That is exactly the right time to come - and here is why it matters more than you think.',
+    category: 'Sunday Prep',
+  },
 ]
 
 export default function DevotionalPage() {

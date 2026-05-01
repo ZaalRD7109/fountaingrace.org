@@ -11,14 +11,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/community-impact`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/donate`, lastModified: now, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/about`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${base}/sunday-services`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/what-to-expect`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/contact`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/pastors`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/volunteer`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/prayer`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/faq`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${base}/church-pretoria-north`, lastModified: now, changeFrequency: 'monthly', priority: 0.8 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${base}/sermons/the-principle-that-activates-everything`, lastModified: new Date('2026-04-26'), changeFrequency: 'monthly', priority: 0.6 },
@@ -55,9 +53,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Resources (Tier 1 - broad audience, problem-first SEO content)
     { url: `${base}/resources`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${base}/resources/why-does-my-life-feel-empty`, lastModified: new Date('2026-04-27'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/resources/how-to-forgive-someone-who-is-not-sorry`, lastModified: new Date('2026-04-28'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/resources/what-to-do-when-you-feel-stuck`, lastModified: new Date('2026-04-28'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/resources/why-do-good-people-suffer`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - existing community, Saturday prep)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${base}/devotional/prepare-your-heart-before-you-walk-in`, lastModified: new Date('2026-04-27'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/devotional/when-god-seems-silent`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/devotional/one-question-before-sunday`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/devotional/what-sunday-is-not`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/devotional/the-week-did-not-go-as-planned`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.6 },
     // Stories (Tier 3 - donor-targeted impact content)
     { url: `${base}/stories`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/stories/what-your-giving-does-in-pretoria-north`, lastModified: new Date('2026-04-27'), changeFrequency: 'monthly', priority: 0.7 },
