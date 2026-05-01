@@ -141,7 +141,7 @@ export default function TheWeekDidNotGoAsPlannedPage() {
           </p>
 
           <p className="text-[#595959] text-base leading-relaxed mb-8">
-            <Link href="/sunday-services" className="fgi-link">Fountain of Grace International</Link> is at
+            <Link href="/plan-your-visit" className="fgi-link">Fountain of Grace International</Link> is at
             323 B Danie Theron Street, Pretoria North. Services begin at 09:00.
             You can come exactly as the week left you. That is what the place is for.
             Also read{' '}

@@ -192,7 +192,7 @@ export default function PastorsPage() {
                 <p>
                   His ministry is grounded in practical teaching, personal responsibility, and raising
                   people who are equipped to lead in their own lives. He leads{' '}
-                  <Link href="/sunday-services" className="fgi-link">
+                  <Link href="/plan-your-visit" className="fgi-link">
                     Sunday services
                   </Link>{' '}
                   every week at 09:00 and is available to his community directly - not behind an
@@ -283,8 +283,8 @@ export default function PastorsPage() {
             <Link href="/plan-your-visit" className="btn-primary">
               Plan Your Visit
             </Link>
-            <Link href="/sunday-services" className="inline-block border-2 border-white text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-white hover:text-[#008080] transition-colors">
-              Sunday Services Info
+            <Link href="/plan-your-visit" className="inline-block border-2 border-white text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-white hover:text-[#008080] transition-colors">
+              Plan Your Visit
             </Link>
           </div>
         </div>

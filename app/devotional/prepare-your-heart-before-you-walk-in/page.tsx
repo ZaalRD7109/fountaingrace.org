@@ -124,7 +124,7 @@ export default function PrepareYourHeartPage() {
           <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4">This Sunday at FGI</h2>
 
           <p className="text-[#595959] text-base leading-relaxed mb-6">
-            <Link href="/sunday-services" className="fgi-link">Sunday services at Fountain of Grace International</Link> begin
+            <Link href="/plan-your-visit" className="fgi-link">Sunday services at Fountain of Grace International</Link> begin
             at 09:00. Come 10 minutes early and someone will meet you at the door.
             323 B Danie Theron Street, Pretoria North.
           </p>

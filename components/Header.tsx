@@ -10,7 +10,7 @@ type NavItem =
   | { href?: string; label: string; children: NavChild[] }
 
 const navItems: NavItem[] = [
-  { href: '/sunday-services', label: 'Sunday Services' },
+  { href: '/plan-your-visit', label: 'Plan Your Visit' },
   { href: '/sermons', label: 'Sermons' },
   {
     label: 'Resources',

@@ -110,8 +110,8 @@ export default function DevotionalPage() {
             >
               Subscribe on WhatsApp
             </a>
-            <Link href="/sunday-services" className="inline-block border-2 border-[#008080] text-[#008080] font-semibold px-6 py-3 rounded-lg hover:bg-[#008080] hover:text-white transition-colors text-sm">
-              Sunday Services Info
+            <Link href="/plan-your-visit" className="inline-block border-2 border-[#008080] text-[#008080] font-semibold px-6 py-3 rounded-lg hover:bg-[#008080] hover:text-white transition-colors text-sm">
+              Plan Your Visit
             </Link>
           </div>
           <p className="text-xs text-[#888] mt-4 max-w-sm mx-auto">

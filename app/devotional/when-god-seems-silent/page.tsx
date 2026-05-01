@@ -137,7 +137,7 @@ export default function WhenGodSeemsSilentPage() {
           </p>
 
           <p className="text-[#595959] text-base leading-relaxed mb-8">
-            This Sunday at <Link href="/sunday-services" className="fgi-link">Fountain of Grace International</Link>, bring the silence with you.
+            This Sunday at <Link href="/plan-your-visit" className="fgi-link">Fountain of Grace International</Link>, bring the silence with you.
             You do not need to resolve it before you walk in. You also may want to read{' '}
             <Link href="/devotional/prepare-your-heart-before-you-walk-in" className="fgi-link">how to prepare your heart before Sunday</Link>.
           </p>
