@@ -4,6 +4,7 @@ import { useState, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import TurnstileWidget from '@/components/TurnstileWidget'
+import { EDGE_BASE } from '@/lib/edgeBase'
 
 export default function VolunteerForm() {
   const router = useRouter()
@@ -28,7 +29,7 @@ export default function VolunteerForm() {
     setError('')
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_SUPABASE_EDGE_BASE}/handle-volunteer-form`,
+        `${EDGE_BASE}/handle-volunteer-form`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

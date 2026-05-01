@@ -4,6 +4,7 @@ import { useState, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import TurnstileWidget from '@/components/TurnstileWidget'
+import { EDGE_BASE } from '@/lib/edgeBase'
 
 export default function PrayerForm() {
   const router = useRouter()
@@ -27,7 +28,7 @@ export default function PrayerForm() {
     setError('')
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_SUPABASE_EDGE_BASE}/handle-prayer-form`,
+        `${EDGE_BASE}/handle-prayer-form`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },

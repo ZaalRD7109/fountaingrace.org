@@ -4,6 +4,7 @@ import { useState, useCallback } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import TurnstileWidget from '@/components/TurnstileWidget'
+import { EDGE_BASE } from '@/lib/edgeBase'
 import { getNextSundayISO } from '@/lib/nextSunday'
 
 export default function VisitForm() {
@@ -30,7 +31,7 @@ export default function VisitForm() {
     setError('')
     try {
       const res = await fetch(
-        `${process.env.NEXT_PUBLIC_SUPABASE_EDGE_BASE}/handle-visit-form`,
+        `${EDGE_BASE}/handle-visit-form`,
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
