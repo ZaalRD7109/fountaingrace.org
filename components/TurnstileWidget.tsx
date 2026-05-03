@@ -23,8 +23,7 @@ export default function TurnstileWidget({ onVerify, onExpire, onError }: Props) 
   const widgetId = useRef<string | null>(null)
 
   useEffect(() => {
-    // Use real key from env, or Cloudflare's official "always passes" test key as fallback
-    const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '1x00000000000000000000AA'
+    const siteKey = process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || '0x4AAAAAADISxaCUIm1wYMw0'
 
     function renderWidget() {
       if (!containerRef.current || widgetId.current) return
