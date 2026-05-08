@@ -20,6 +20,19 @@ export const metadata: Metadata = {
   },
 }
 
+// Compute next Sunday at build time (static export)
+const nextSundayDate = (() => {
+  const now = new Date()
+  const day = now.getDay()
+  const daysUntilSunday = day === 0 ? 7 : 7 - day
+  const d = new Date(now)
+  d.setDate(now.getDate() + daysUntilSunday)
+  const y = d.getFullYear()
+  const m = String(d.getMonth() + 1).padStart(2, '0')
+  const dd = String(d.getDate()).padStart(2, '0')
+  return `${y}-${m}-${dd}`
+})()
+
 const breadcrumbLd = {
   '@context': 'https://schema.org',
   '@type': 'BreadcrumbList',
@@ -34,8 +47,17 @@ export default function PlanYourVisitPage() {
     '@context': 'https://schema.org',
     '@type': 'Event',
     name: 'Sunday Service - Fountain of Grace International',
+    description: 'Weekly Sunday church service at Fountain of Grace International in Pretoria North. Practical Bible teaching, worship, and community. First-time visitors are welcomed personally. Everyone is welcome.',
+    startDate: `${nextSundayDate}T09:00:00+02:00`,
+    endDate: `${nextSundayDate}T10:30:00+02:00`,
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    image: 'https://www.fountaingrace.org/og-image.jpg',
+    url: 'https://www.fountaingrace.org/plan-your-visit',
+    isAccessibleForFree: true,
     eventSchedule: {
       '@type': 'Schedule',
+      repeatFrequency: 'P1W',
       byDay: 'https://schema.org/Sunday',
       startTime: '09:00',
       endTime: '10:30',
@@ -43,11 +65,28 @@ export default function PlanYourVisitPage() {
     location: {
       '@type': 'Place',
       name: 'Fountain of Grace International',
-      address: '323 B Danie Theron Street, Pretoria North',
+      address: {
+        '@type': 'PostalAddress',
+        streetAddress: '323 B Danie Theron Street',
+        addressLocality: 'Pretoria North',
+        addressRegion: 'Gauteng',
+        postalCode: '0182',
+        addressCountry: 'ZA',
+      },
+      geo: {
+        '@type': 'GeoCoordinates',
+        latitude: -25.672286342520497,
+        longitude: 28.172968674468688,
+      },
     },
     organizer: {
-      '@type': 'Organization',
+      '@type': 'Church',
       name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+    performer: {
+      '@type': 'Person',
+      name: 'Pastor Ricardo Zaal',
     },
   }
 
