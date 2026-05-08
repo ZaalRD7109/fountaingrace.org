@@ -255,7 +255,7 @@ export default function PastorsPage() {
               },
               {
                 title: 'Family and community first',
-                body: 'He is a husband and father. He understands what it means to lead a family in Pretoria North in 2025 - and he teaches from that reality.',
+                body: 'He is a husband and father. He understands what it means to lead a family in Pretoria North in 2026 - and he teaches from that reality.',
               },
             ].map((val) => (
               <div
