@@ -267,6 +267,61 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* SERMON PREVIEWS - trust-building before the CTA ask */}
+      <section className="bg-gray-50 py-16 px-4 sm:px-6">
+        <div className="section-container">
+          <p className="text-[#008080] font-semibold text-sm uppercase tracking-wider text-center mb-3">
+            Hear Before You Come
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-4">
+            Listen to a Recent Message
+          </h2>
+          <p className="text-[#595959] text-center text-base max-w-xl mx-auto mb-10">
+            These messages are built around real problems people are living right now. Listen before Sunday so you already know what to expect.
+          </p>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+            {[
+              {
+                href: '/sermons/why-does-your-life-keep-collapsing',
+                title: 'Why Does Your Life Keep Collapsing?',
+                tag: 'Identity',
+              },
+              {
+                href: '/sermons/when-good-things-block-god-things',
+                title: 'When Good Things Block God Things',
+                tag: 'Purpose',
+              },
+              {
+                href: '/sermons/why-your-prayers-are-not-changing-your-life',
+                title: 'Why Your Prayers Are Not Changing Your Life',
+                tag: 'Faith',
+              },
+            ].map((sermon) => (
+              <Link
+                key={sermon.href}
+                href={sermon.href}
+                className="group block bg-white border border-gray-100 rounded-xl px-6 py-5 hover:shadow-md hover:border-[#008080] transition-all duration-200"
+              >
+                <span className="inline-block text-xs font-semibold text-[#008080] uppercase tracking-wider mb-3">
+                  {sermon.tag}
+                </span>
+                <p className="text-gray-900 font-bold text-base leading-snug group-hover:text-[#008080] transition-colors">
+                  {sermon.title}
+                </p>
+                <span className="inline-block mt-3 text-sm text-[#008080] font-semibold">
+                  Listen →
+                </span>
+              </Link>
+            ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/sermons" className="fgi-link text-sm font-semibold">
+              Browse all sermons →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* MID-PAGE PLAN YOUR VISIT CTA */}
       <section className="bg-[#008080] py-10 px-4 sm:px-6">
         <div className="section-container text-center">

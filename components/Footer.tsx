@@ -5,11 +5,11 @@ export default function Footer() {
   return (
     <footer className="bg-[#008080] mt-20">
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
 
           {/* NAP Block */}
           <div>
-            <Link href="/" className="block mb-4">
+            <Link href="/" className="block mb-4" title="Go to Homepage" aria-label="Fountain of Grace International - Go to Homepage">
               <Image
                 src="/logo-square.webp"
                 alt="Fountain of Grace International logo"
@@ -43,21 +43,44 @@ export default function Footer() {
             </address>
           </div>
 
-          {/* Quick Links */}
+          {/* First Visit Links */}
           <div>
-            <h3 className="text-white font-bold mb-3">Quick Links</h3>
+            <h3 className="text-white font-bold mb-3">Your Visit</h3>
             <ul className="space-y-2 text-sm">
               {[
                 { href: '/plan-your-visit', label: 'Plan Your Visit' },
                 { href: '/what-to-expect', label: 'What to Expect' },
-                { href: '/about', label: 'About Us' },
-                { href: '/community-impact', label: 'Community Impact' },
-                { href: '/donate', label: 'Donate' },
-                { href: '/prayer', label: 'Prayer Request' },
-                { href: '/volunteer', label: 'Volunteer' },
                 { href: '/faq', label: 'FAQ' },
+                { href: '/pastors', label: 'Pastors' },
+                { href: '/about', label: 'About Us' },
                 { href: '/sermons', label: 'Sermons' },
                 { href: '/contact', label: 'Contact' },
+              ].map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-white font-medium hover:underline transition-colors"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* More Pages */}
+          <div>
+            <h3 className="text-white font-bold mb-3">More</h3>
+            <ul className="space-y-2 text-sm">
+              {[
+                { href: '/resources', label: 'Articles' },
+                { href: '/devotional', label: 'Devotionals' },
+                { href: '/community-impact', label: 'Community Impact' },
+                { href: '/stories', label: 'Stories' },
+                { href: '/volunteer', label: 'Volunteer' },
+                { href: '/programs', label: 'Programs' },
+                { href: '/prayer', label: 'Prayer Request' },
+                { href: '/donate', label: 'Donate' },
               ].map((link) => (
                 <li key={link.href}>
                   <Link
