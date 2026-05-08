@@ -30,15 +30,15 @@ export default function Header() {
             />
           </Link>
 
-          {/* Desktop nav - two items only: Sermons + Plan Your Visit */}
-          <nav className="hidden lg:flex items-center gap-1" aria-label="Main navigation">
+          {/* Desktop nav - two pill buttons only: Sermons (outline) + Plan Your Visit (solid gold) */}
+          <nav className="hidden lg:flex items-center gap-3" aria-label="Main navigation">
             <Link
               href="/sermons"
-              className="text-sm text-[#595959] hover:text-gray-900 font-medium transition-colors duration-150 px-3 py-2 rounded-md hover:bg-gray-50"
+              className="inline-block border-2 border-[#008080] text-[#008080] font-bold px-5 py-2.5 rounded-[30px] text-sm hover:bg-[#008080] hover:text-white transition-all duration-300 tracking-wide"
             >
               Sermons
             </Link>
-            <Link href="/plan-your-visit" className="btn-primary text-sm px-5 py-2.5 ml-2">
+            <Link href="/plan-your-visit" className="btn-primary text-sm px-5 py-2.5">
               Plan Your Visit
             </Link>
           </nav>
