@@ -204,7 +204,7 @@ export default function AboutPage() {
                 </p>
                 <p>
                   After relocating to Pretoria North, he continued in ministry and served as a
-                  pastor at Rehoboth Chapel International until 2018. In June 2020, during the
+                  pastor at Rehoboth Chapel International until 2008. In June 2020, during the
                   Covid-19 season, he founded Fountain of Grace International - a ministry focused
                   on discipleship, restoration, and equipping individuals and families to build
                   stable, purpose-driven lives through faith.

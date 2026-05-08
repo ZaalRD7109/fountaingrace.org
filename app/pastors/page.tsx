@@ -87,7 +87,7 @@ const jsonLd = [
 const timeline = [
   { year: '2000', event: 'Began ministry in Postmasburg - gave his life fully to Christ and committed to a life of faith and discipline.' },
   { year: '2000s', event: 'Served at Bread of Life Ministries in Riverlea, Johannesburg - youth leader right hand, then elder. Deep foundation in ministry and people development.' },
-  { year: '2018', event: 'Relocated to Pretoria North. Continued in ministry as a pastor at Rehoboth Chapel International.' },
+  { year: '2008', event: 'Relocated to Pretoria North. Continued in ministry as a pastor at Rehoboth Chapel International.' },
   { year: '2020', event: 'Founded Fountain of Grace International in June 2020 during the Covid-19 season. Ministry focused on discipleship, restoration, and equipping individuals and families.' },
   { year: 'Today', event: 'Leading FGI as a registered NPO (316-193) in Pretoria North. Sunday services every week at 09:00. Husband, father, and available to his community.' },
 ]
@@ -184,7 +184,7 @@ export default function PastorsPage() {
                 </p>
                 <p>
                   After relocating to Pretoria North, he continued as a pastor at Rehoboth Chapel
-                  International until 2018. In June 2020, during the Covid-19 season, he founded
+                  International until 2008. In June 2020, during the Covid-19 season, he founded
                   Fountain of Grace International - a ministry focused on discipleship, restoration,
                   and equipping individuals and families to build stable, purpose-driven lives through
                   faith.
