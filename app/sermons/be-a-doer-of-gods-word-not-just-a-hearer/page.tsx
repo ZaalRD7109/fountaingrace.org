@@ -74,8 +74,7 @@ const jsonLd = [
         acceptedAnswer: { '@type': 'Answer', text: "James 1:22 uses the word 'deceived' deliberately. A person who hears truth and does not act has convinced themselves that hearing is enough. But knowledge without obedience creates a false sense of spiritual progress. Pastor Ricardo Zaal at Fountain of Grace International teaches that self-deception in this context is not ignorance - it is an active misreading of where you actually stand." },
       },
     ],
-  },
-]
+  },]
 
 export default function SermonPage() {
   return (

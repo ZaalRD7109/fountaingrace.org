@@ -70,7 +70,23 @@ const jsonLd = [
         },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Why Does Your Life Keep Collapsing If God Is For You?',
+    description: 'Why Does Your Life Keep Collapsing If God Is For You?',
+    thumbnailUrl: 'https://img.youtube.com/vi/vorvFFUxyRE/maxresdefault.jpg',
+    uploadDate: '2026-01-11',
+    embedUrl: 'https://www.youtube.com/embed/vorvFFUxyRE',
+    url: 'https://www.fountaingrace.org/sermons/why-does-your-life-keep-collapsing',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

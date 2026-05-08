@@ -70,7 +70,23 @@ const jsonLd = [
         },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'The Silent Assassin of Destiny: Overthinking',
+    description: 'The Silent Assassin of Destiny: Overthinking',
+    thumbnailUrl: 'https://img.youtube.com/vi/lkp4t5OemVQ/maxresdefault.jpg',
+    uploadDate: '2025-08-31',
+    embedUrl: 'https://www.youtube.com/embed/lkp4t5OemVQ',
+    url: 'https://www.fountaingrace.org/sermons/the-silent-assassin-of-destiny',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

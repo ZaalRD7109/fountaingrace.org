@@ -70,7 +70,23 @@ const jsonLd = [
         },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Why Some Things Refuse to Move',
+    description: 'Why Some Things Refuse to Move',
+    thumbnailUrl: 'https://img.youtube.com/vi/Hdrz2Qh2hkM/maxresdefault.jpg',
+    uploadDate: '2026-01-04',
+    embedUrl: 'https://www.youtube.com/embed/Hdrz2Qh2hkM',
+    url: 'https://www.fountaingrace.org/sermons/why-some-things-refuse-to-move',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

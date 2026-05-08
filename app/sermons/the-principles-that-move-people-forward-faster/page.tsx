@@ -74,7 +74,23 @@ const jsonLd = [
         acceptedAnswer: { '@type': 'Answer', text: "Proverbs 13:20 says he that walketh with wise men shall be wise. The people around you shape your direction. One relationship with the right person can advance you further than years of solo effort. Pastor Ricardo Zaal teaches at Fountain of Grace International that positioning yourself near wise and moving people is itself a spiritual and practical principle for progress." },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'The Principles That Move People Forward Faster',
+    description: 'The Principles That Move People Forward Faster',
+    thumbnailUrl: 'https://img.youtube.com/vi/hmBthWSxN6g/maxresdefault.jpg',
+    uploadDate: '2026-03-08',
+    embedUrl: 'https://www.youtube.com/embed/hmBthWSxN6g',
+    url: 'https://www.fountaingrace.org/sermons/the-principles-that-move-people-forward-faster',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 const principles = [

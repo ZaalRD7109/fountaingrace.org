@@ -70,8 +70,7 @@ const jsonLd = [
         },
       },
     ],
-  },
-]
+  },]
 
 export default function SermonPage() {
   return (

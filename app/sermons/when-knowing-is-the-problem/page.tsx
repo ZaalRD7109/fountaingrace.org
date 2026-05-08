@@ -70,7 +70,23 @@ const jsonLd = [
         },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'When Knowing Is the Problem',
+    description: 'When Knowing Is the Problem',
+    thumbnailUrl: 'https://img.youtube.com/vi/JdeSa5ag41w/maxresdefault.jpg',
+    uploadDate: '2026-02-15',
+    embedUrl: 'https://www.youtube.com/embed/JdeSa5ag41w',
+    url: 'https://www.fountaingrace.org/sermons/when-knowing-is-the-problem',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

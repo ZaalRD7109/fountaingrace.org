@@ -74,7 +74,23 @@ const jsonLd = [
         acceptedAnswer: { '@type': 'Answer', text: "The gap between knowing and doing is closed by identifying one specific next action - not the full plan, just the first step - and taking it immediately. Pastor Ricardo Zaal taught at Fountain of Grace International that if you know what God has been telling you to do, stop adding steps before you start. The first step is always simpler than the planning has made it look." },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Part 2: Right Action - The Principles That Move People Forward Faster',
+    description: 'Part 2: Right Action - The Principles That Move People Forward Faster',
+    thumbnailUrl: 'https://img.youtube.com/vi/pM8THfQE3MU/maxresdefault.jpg',
+    uploadDate: '2026-03-15',
+    embedUrl: 'https://www.youtube.com/embed/pM8THfQE3MU',
+    url: 'https://www.fountaingrace.org/sermons/right-action-principles-that-move-people-forward-faster',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

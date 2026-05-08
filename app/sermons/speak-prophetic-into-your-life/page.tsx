@@ -71,6 +71,22 @@ const jsonLd = [
       },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Speak Prophetic Into Your Life',
+    description: 'Speak Prophetic Into Your Life',
+    thumbnailUrl: 'https://img.youtube.com/vi/FuHfZ89YcOM/maxresdefault.jpg',
+    uploadDate: '2025-04-06',
+    embedUrl: 'https://www.youtube.com/embed/FuHfZ89YcOM',
+    url: 'https://www.fountaingrace.org/sermons/speak-prophetic-into-your-life',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

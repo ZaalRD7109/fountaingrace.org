@@ -70,7 +70,23 @@ const jsonLd = [
         },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Hosting the Presence of God',
+    description: 'Hosting the Presence of God',
+    thumbnailUrl: 'https://img.youtube.com/vi/FoJYMiC19yY/maxresdefault.jpg',
+    uploadDate: '2025-06-22',
+    embedUrl: 'https://www.youtube.com/embed/FoJYMiC19yY',
+    url: 'https://www.fountaingrace.org/sermons/hosting-the-presence-of-god',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

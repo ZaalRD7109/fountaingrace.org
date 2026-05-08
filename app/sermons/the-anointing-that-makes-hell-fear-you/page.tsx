@@ -70,7 +70,23 @@ const jsonLd = [
         },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'The Anointing That Makes Hell Fear You',
+    description: 'The Anointing That Makes Hell Fear You',
+    thumbnailUrl: 'https://img.youtube.com/vi/J8AX_0vYDLs/maxresdefault.jpg',
+    uploadDate: '2025-08-24',
+    embedUrl: 'https://www.youtube.com/embed/J8AX_0vYDLs',
+    url: 'https://www.fountaingrace.org/sermons/the-anointing-that-makes-hell-fear-you',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

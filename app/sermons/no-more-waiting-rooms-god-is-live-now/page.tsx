@@ -70,7 +70,23 @@ const jsonLd = [
         },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'No More Waiting Rooms - God Is Live Now',
+    description: 'No More Waiting Rooms - God Is Live Now',
+    thumbnailUrl: 'https://img.youtube.com/vi/0AnCGvq3cDc/maxresdefault.jpg',
+    uploadDate: '2025-09-28',
+    embedUrl: 'https://www.youtube.com/embed/0AnCGvq3cDc',
+    url: 'https://www.fountaingrace.org/sermons/no-more-waiting-rooms-god-is-live-now',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

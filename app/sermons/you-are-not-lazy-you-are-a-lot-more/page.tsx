@@ -71,6 +71,22 @@ const jsonLd = [
       },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'You Are Not Lazy - You Are a Lot More',
+    description: 'You Are Not Lazy - You Are a Lot More',
+    thumbnailUrl: 'https://img.youtube.com/vi/Aq0r8tRWP-Y/maxresdefault.jpg',
+    uploadDate: '2024-01-28',
+    embedUrl: 'https://www.youtube.com/embed/Aq0r8tRWP-Y',
+    url: 'https://www.fountaingrace.org/sermons/you-are-not-lazy-you-are-a-lot-more',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

@@ -70,7 +70,23 @@ const jsonLd = [
         },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Pruning for Progress: From Bare Branch to Bountiful Blessing',
+    description: 'Pruning for Progress: From Bare Branch to Bountiful Blessing',
+    thumbnailUrl: 'https://img.youtube.com/vi/o8eS8xBJlLs/maxresdefault.jpg',
+    uploadDate: '2025-11-02',
+    embedUrl: 'https://www.youtube.com/embed/o8eS8xBJlLs',
+    url: 'https://www.fountaingrace.org/sermons/pruning-for-progress',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

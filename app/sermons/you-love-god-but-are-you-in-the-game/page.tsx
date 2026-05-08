@@ -70,7 +70,23 @@ const jsonLd = [
         },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'You Love God - But Are You Actually in the Game?',
+    description: 'You Love God - But Are You Actually in the Game?',
+    thumbnailUrl: 'https://img.youtube.com/vi/C-wXZBOBE40/maxresdefault.jpg',
+    uploadDate: '2026-04-05',
+    embedUrl: 'https://www.youtube.com/embed/C-wXZBOBE40',
+    url: 'https://www.fountaingrace.org/sermons/you-love-god-but-are-you-in-the-game',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

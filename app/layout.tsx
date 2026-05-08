@@ -44,6 +44,10 @@ export const metadata: Metadata = {
     site: '@FGIPta',
     images: ['/og-image.jpg'],
   },
+  other: {
+    // IndexNow key for Bing/Yandex instant indexing
+    'indexnow-key': 'fgi-indexnow-7f4a2b9c',
+  },
 }
 
 export default function RootLayout({
@@ -60,8 +64,15 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://challenges.cloudflare.com" />
       </head>
       <body className={poppins.className}>
+        {/* Skip to main content - accessibility for keyboard and screen reader users */}
+        <a
+          href="#main-content"
+          className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:top-4 focus:left-4 focus:bg-white focus:text-[#008080] focus:font-bold focus:px-4 focus:py-2 focus:rounded-lg focus:shadow-lg focus:outline-none"
+        >
+          Skip to main content
+        </a>
         <Header />
-        <main>{children}</main>
+        <main id="main-content">{children}</main>
         <Footer />
         <WhatsAppButton />
         <CookieBanner />

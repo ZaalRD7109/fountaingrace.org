@@ -74,7 +74,23 @@ const jsonLd = [
         acceptedAnswer: { '@type': 'Answer', text: "Correction comes with conviction - a sense of pressure to return, improve, and obey. Replacement comes with silence - no more correction, no more stirring. Saul in 1 Samuel 15 experienced replacement: the Spirit of God departed and his authority transferred to David even while Saul still sat on the throne. If you still feel the pull to act on what God spoke, you are likely being corrected, not replaced. Act now." },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'What If Someone Else Finishes What Was Meant for You?',
+    description: 'What If Someone Else Finishes What Was Meant for You?',
+    thumbnailUrl: 'https://img.youtube.com/vi/jwUGYb3uuQI/maxresdefault.jpg',
+    uploadDate: '2026-02-22',
+    embedUrl: 'https://www.youtube.com/embed/jwUGYb3uuQI',
+    url: 'https://www.fountaingrace.org/sermons/what-if-someone-else-finishes-what-was-meant-for-you',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

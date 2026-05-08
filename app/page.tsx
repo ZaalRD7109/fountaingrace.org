@@ -73,6 +73,14 @@ const jsonLd = [
     name: 'Fountain of Grace International',
     url: 'https://www.fountaingrace.org',
     description: 'A Christian church and registered NPO in Pretoria North, South Africa.',
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: 'https://www.fountaingrace.org/sermons?q={search_term_string}',
+      },
+      'query-input': 'required name=search_term_string',
+    },
   },
   {
     '@context': 'https://schema.org',

@@ -71,6 +71,22 @@ const jsonLd = [
       },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'The Inheritance Test: Will It Reach Three Generations?',
+    description: 'The Inheritance Test: Will It Reach Three Generations?',
+    thumbnailUrl: 'https://img.youtube.com/vi/rIrP5Hly3uU/maxresdefault.jpg',
+    uploadDate: '2024-09-08',
+    embedUrl: 'https://www.youtube.com/embed/rIrP5Hly3uU',
+    url: 'https://www.fountaingrace.org/sermons/the-inheritance-test',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

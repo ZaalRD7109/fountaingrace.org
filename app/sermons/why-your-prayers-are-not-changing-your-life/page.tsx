@@ -70,7 +70,23 @@ const jsonLd = [
         },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Why Your Prayers Are Not Changing Your Life',
+    description: 'Why Your Prayers Are Not Changing Your Life',
+    thumbnailUrl: 'https://img.youtube.com/vi/r9Cqow1ffcE/maxresdefault.jpg',
+    uploadDate: '2026-01-04',
+    embedUrl: 'https://www.youtube.com/embed/r9Cqow1ffcE',
+    url: 'https://www.fountaingrace.org/sermons/why-your-prayers-are-not-changing-your-life',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

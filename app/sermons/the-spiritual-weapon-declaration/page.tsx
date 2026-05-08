@@ -87,6 +87,22 @@ const jsonLd = [
       },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'The Spiritual Weapon - Declaration Session (Part 2)',
+    description: 'The Spiritual Weapon - Declaration Session (Part 2)',
+    thumbnailUrl: 'https://img.youtube.com/vi/Ep0FhC0yhyw/maxresdefault.jpg',
+    uploadDate: '2025-10-26',
+    embedUrl: 'https://www.youtube.com/embed/Ep0FhC0yhyw',
+    url: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-declaration',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

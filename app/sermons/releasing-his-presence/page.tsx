@@ -71,6 +71,22 @@ const jsonLd = [
       },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Releasing His Presence - From Container to Conduit',
+    description: 'Releasing His Presence - From Container to Conduit',
+    thumbnailUrl: 'https://img.youtube.com/vi/yDYWamwrys4/maxresdefault.jpg',
+    uploadDate: '2025-06-29',
+    embedUrl: 'https://www.youtube.com/embed/yDYWamwrys4',
+    url: 'https://www.fountaingrace.org/sermons/releasing-his-presence',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

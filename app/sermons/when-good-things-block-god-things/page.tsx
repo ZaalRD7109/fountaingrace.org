@@ -70,7 +70,23 @@ const jsonLd = [
         },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'When Good Things Block God Things',
+    description: 'When Good Things Block God Things',
+    thumbnailUrl: 'https://img.youtube.com/vi/RvGYWIJ6XQo/maxresdefault.jpg',
+    uploadDate: '2026-02-08',
+    embedUrl: 'https://www.youtube.com/embed/RvGYWIJ6XQo',
+    url: 'https://www.fountaingrace.org/sermons/when-good-things-block-god-things',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

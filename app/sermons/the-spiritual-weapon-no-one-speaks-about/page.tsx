@@ -87,6 +87,22 @@ const jsonLd = [
       },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'The Spiritual Weapon No One Speaks About',
+    description: 'The Spiritual Weapon No One Speaks About',
+    thumbnailUrl: 'https://img.youtube.com/vi/nun01KlLnVE/maxresdefault.jpg',
+    uploadDate: '2025-10-19',
+    embedUrl: 'https://www.youtube.com/embed/nun01KlLnVE',
+    url: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-no-one-speaks-about',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

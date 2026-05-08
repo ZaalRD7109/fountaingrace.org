@@ -26,6 +26,41 @@
 
 ## Commit History (newest first)
 
+### 2026-05-01 - f38b94a
+**Replace Turnstile test key with real site key - "For testing only" red text gone**
+- Cloudflare Turnstile widget created for fountaingrace.org (via API)
+- Site key `0x4AAAAAADISxaCUIm1wYMw0` hardcoded as fallback in TurnstileWidget.tsx
+- Secret key added to Supabase Edge Function secrets as `TURNSTILE_SECRET_KEY`
+- Real spam protection now active on all 4 forms - no more red test warning
+
+### 2026-05-01 - DNS/Resend (no code commit)
+**Add Resend DNS records to Cloudflare - email notifications active pending propagation**
+- DKIM TXT (resend._domainkey), SPF CNAME (send), SPF TXT (send), DMARC TXT (_dmarc) added to Cloudflare DNS
+- Resend domain fountaingrace.org status: pending verification
+- Cloudflare is authoritative - propagation expected within minutes
+- Once verified: all 4 form Edge Functions will send email to info@fountaingrace.org on every submission
+- Sender: noreply@fountaingrace.org (Resend) | Recipient: info@fountaingrace.org
+
+### 2026-05-01 - 30dfacc
+**Deploy Supabase Edge Functions and wire up all 4 forms end-to-end**
+- 4 Edge Functions deployed and ACTIVE on Supabase project rmurdihrhcxevtzkrbmx:
+  - `handle-contact-form` - saves to contact_submissions table
+  - `handle-visit-form` - saves to visitor_submissions table
+  - `handle-prayer-form` - saves to prayer_requests table
+  - `handle-volunteer-form` - saves to volunteer_submissions table
+- Each function: validates input, verifies Turnstile (skips if `TURNSTILE_SECRET_KEY` not set), saves to DB, sends Resend email (skips if `RESEND_API_KEY` not set)
+- `lib/edgeBase.ts`: hardcodes Supabase URL as fallback - forms work even without env vars set in Cloudflare Pages
+- `TurnstileWidget.tsx`: falls back to Cloudflare official test key `1x00000000000000000000AA` - widget renders on live site immediately
+- Forms are now FULLY FUNCTIONAL. Submissions land in Supabase DB. Email notifications pending Resend setup.
+
+### 2026-05-01 - 3078631
+**Add 6 new content pages: Resources and Devotional now at 5 articles each**
+- Resources: added `why-do-good-people-suffer` and `how-to-start-over`
+- Devotional: added `when-god-seems-silent`, `one-question-before-sunday`, `what-sunday-is-not`, `the-week-did-not-go-as-planned`
+- Updated `app/resources/page.tsx` index array - all 5 articles now showing
+- Updated `app/devotional/page.tsx` index array - all 5 devotionals now showing
+- Updated `app/sitemap.ts` with all new article URLs (4 Resources + 5 Devotional entries)
+
 ### 2026-04-27 - b11d871
 **Add sermon UTM links and ad tracking redirects**
 - Added 13 short sermon links (`/s/<slug>`) in `public/_redirects` for YouTube video descriptions
@@ -113,22 +148,29 @@
 
 ## Pending - Needs Ricardo's Input
 
-1. **YouTube Studio updates** - Paste sermon short links into each video description manually:
-   - fountaingrace.org/s/right-action
-   - fountaingrace.org/s/the-principles
-   - fountaingrace.org/s/the-system
-   - fountaingrace.org/s/what-if-someone-else
-   - fountaingrace.org/s/when-good-things
-   - fountaingrace.org/s/when-knowing
-   - fountaingrace.org/s/why-collapsing
-   - fountaingrace.org/s/why-some-problems
-   - fountaingrace.org/s/why-some-things
-   - fountaingrace.org/s/not-moving-forward
-   - fountaingrace.org/s/prayers-not-changing
-   - fountaingrace.org/s/in-the-game
-   - fountaingrace.org/s/resolution
+1. **YouTube Studio updates** - Claude did the first 13 sermon tracking links via browser automation. Still need tracking links added for these 6 older sermons (redirects already in _redirects):
+   - fountaingrace.org/s/releasing-his-presence
+   - fountaingrace.org/s/speak-prophetic
+   - fountaingrace.org/s/not-lazy
+   - fountaingrace.org/s/inheritance-test
+   - fountaingrace.org/s/language-of-spirit
+   - fountaingrace.org/s/prophetic-encounter
 
-2. **Forms backend** - Contact and volunteer forms use `action="#"` - need Formspree or Supabase connected
+2. **Email notifications - Resend DNS PENDING VERIFICATION** (2026-05-01):
+   - RESEND_API_KEY: added to Supabase Edge Function secrets - DONE
+   - DNS records added to Cloudflare manually - DONE (2026-05-01):
+     - TXT resend._domainkey - DKIM key added
+     - CNAME send -> feedback-smtp.eu-west-1.amazonses.com - SPF bounce
+     - TXT send -> v=spf1 include:amazonses.com ~all - SPF
+     - TXT _dmarc -> v=DMARC1; p=none; - DMARC (optional)
+   - Resend domain status: PENDING (verification running, Cloudflare propagates in minutes)
+   - Sender: noreply@fountaingrace.org | Recipient: info@fountaingrace.org
+   - Once verified: every form submission emails info@fountaingrace.org instantly
+
+3. **Real spam protection - Cloudflare Turnstile** - DONE (2026-05-01)
+   - Widget created for fountaingrace.org. Site key hardcoded in TurnstileWidget.tsx.
+   - TURNSTILE_SECRET_KEY saved to Supabase Edge Function secrets.
+   - All 4 forms now have real spam protection. Red "For testing only" text gone.
 
 3. **Google Ads conversion tracking** - Needs to fire on donate and contact success pages
 
@@ -149,6 +191,8 @@
 6. **Google Search Console** - Submit sitemap at https://www.fountaingrace.org/sitemap.xml
 
 7. **PageSpeed Insights** - Run audit and fix any issues above Core Web Vitals threshold
+
+8. **Daily schema monitor** - Scheduled task `fgi-schema-daily-check` created to run at 08:00 daily. Checks Event schema dates and alerts if invalid datetime found (the startDate/endDate bug from Google Search Console error email).
 
 ---
 

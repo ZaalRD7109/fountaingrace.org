@@ -74,7 +74,23 @@ const jsonLd = [
         acceptedAnswer: { '@type': 'Answer', text: "1 John 4:4 says greater is he that is in you than he that is in the world. This means the God who formed your purpose and lives inside you is greater than every external voice, circumstance, or setback telling you to stop. The message preached at Fountain of Grace International in Pretoria North uses this verse to show that your inner knowing is backed by the same God who set you apart before birth." },
       },
     ],
-  },
+  },,
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'Follow Your Inner Voice - Discover Your Destiny',
+    description: 'Follow Your Inner Voice - Discover Your Destiny',
+    thumbnailUrl: 'https://img.youtube.com/vi/9cRjCOqvilg/maxresdefault.jpg',
+    uploadDate: '2026-02-24',
+    embedUrl: 'https://www.youtube.com/embed/9cRjCOqvilg',
+    url: 'https://www.fountaingrace.org/sermons/follow-your-inner-voice-discover-your-destiny',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

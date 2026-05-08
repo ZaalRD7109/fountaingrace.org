@@ -71,6 +71,22 @@ const jsonLd = [
       },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'The Prophetic Encounter: Stir Up the Gift in You',
+    description: 'The Prophetic Encounter: Stir Up the Gift in You',
+    thumbnailUrl: 'https://img.youtube.com/vi/syeKz7bhxn4/maxresdefault.jpg',
+    uploadDate: '2025-02-23',
+    embedUrl: 'https://www.youtube.com/embed/syeKz7bhxn4',
+    url: 'https://www.fountaingrace.org/sermons/the-prophetic-encounter',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {

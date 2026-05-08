@@ -70,8 +70,7 @@ const jsonLd = [
         },
       },
     ],
-  },
-]
+  },]
 
 const points = [
   {
@@ -103,7 +102,23 @@ const points = [
     title: 'The Blood Gives Direct Access to God',
     scripture: 'Hebrews 10:19',
     body: '"Having therefore, brethren, boldness to enter into the holiest by the blood of Jesus." You do not need to fix yourself before coming to God. You do not need to earn the right. The blood already paid for your access. Coming to God as you are is not boldness - it is the correct response to what the blood purchased.',
-  },
+  },,
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "Why Some Problems Won't Leave Until You Understand This",
+    "description": "Why Some Problems Won't Leave Until You Understand This",
+    "thumbnailUrl": "https://img.youtube.com/vi/N1_YYrEGtto/maxresdefault.jpg",
+    "uploadDate": "2026-04-19",
+    "embedUrl": "https://www.youtube.com/embed/N1_YYrEGtto",
+    "url": "https://www.fountaingrace.org/sermons/why-some-problems-wont-leave-until-you-understand-this",
+    "author": { "@type": "Person", "name": "Pastor Ricardo Zaal" },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Fountain of Grace International",
+      "url": "https://www.fountaingrace.org"
+    }
+  }
 ]
 
 export default function SermonPage() {
@@ -156,8 +171,8 @@ export default function SermonPage() {
             </p>
 
             <div className="space-y-10">
-              {points.map((p) => (
-                <div key={p.n} className="flex gap-6 items-start">
+              {points.map((p, i) => p && (
+                <div key={p.n ?? i} className="flex gap-6 items-start">
                   <div className="bg-[#FFD600] text-[#1a1a1a] font-extrabold w-10 h-10 rounded-full flex items-center justify-center flex-shrink-0 text-sm">
                     {p.n}
                   </div>

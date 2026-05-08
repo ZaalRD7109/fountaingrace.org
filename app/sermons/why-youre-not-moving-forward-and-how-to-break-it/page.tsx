@@ -74,8 +74,7 @@ const jsonLd = [
         acceptedAnswer: { '@type': 'Answer', text: "2 Timothy 1:7 says God hath not given us the spirit of fear; but of power, and of love, and of a sound mind. The Greek word for fear used here is delia - cowardice, the spirit of shrinking back. Pastor Ricardo Zaal at Fountain of Grace International teaches that what many people call wisdom or caution is often this spirit of shrinking operating beneath the surface. The antidote is movement - dynamis, the spirit of power in action." },
       },
     ],
-  },
-]
+  },]
 
 export default function SermonPage() {
   return (

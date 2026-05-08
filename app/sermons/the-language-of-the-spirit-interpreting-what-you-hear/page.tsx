@@ -71,6 +71,22 @@ const jsonLd = [
       },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'The Language of the Spirit: Interpreting What You Hear',
+    description: 'The Language of the Spirit: Interpreting What You Hear',
+    thumbnailUrl: 'https://img.youtube.com/vi/NJNUWw-HC0A/maxresdefault.jpg',
+    uploadDate: '2025-02-09',
+    embedUrl: 'https://www.youtube.com/embed/NJNUWw-HC0A',
+    url: 'https://www.fountaingrace.org/sermons/the-language-of-the-spirit-interpreting-what-you-hear',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  }
 ]
 
 export default function SermonPage() {
