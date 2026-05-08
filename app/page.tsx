@@ -174,14 +174,6 @@ export default function HomePage() {
             <Link href="/sermons" className="inline-block border-2 border-white text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-white hover:text-[#008080] transition-colors text-sm">
               Watch a Sermon
             </Link>
-            <a
-              href="https://wa.me/27752592555"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-6 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm"
-            >
-              WhatsApp Us
-            </a>
           </div>
           <p className="text-white text-xs mt-5">
             323 B Danie Theron Street, Pretoria North · +27 75 259 2555
@@ -275,6 +267,21 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* MID-PAGE PLAN YOUR VISIT CTA */}
+      <section className="bg-[#008080] py-10 px-4 sm:px-6">
+        <div className="section-container text-center">
+          <p className="text-white text-lg font-semibold mb-4">
+            You will not walk in alone. We are expecting you.
+          </p>
+          <Link
+            href="/plan-your-visit"
+            className="inline-block bg-white text-[#008080] font-bold px-8 py-4 rounded-lg hover:bg-teal-50 transition-colors shadow-sm text-base"
+          >
+            Plan Your Visit
+          </Link>
+        </div>
+      </section>
+
       {/* MEET THE PASTORS */}
       <section className="bg-gray-50 py-16 px-4 sm:px-6">
         <div className="section-container">
@@ -305,8 +312,8 @@ export default function HomePage() {
                 </p>
               </div>
               <div className="mt-6">
-                <Link href="/about" className="btn-outline text-sm">
-                  Read Their Full Story
+                <Link href="/about" className="fgi-link text-sm font-semibold">
+                  Read Their Full Story →
                 </Link>
               </div>
             </div>
@@ -340,7 +347,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/community-impact"
-            className="inline-block bg-white text-[#008080] font-semibold px-7 py-3 rounded-lg hover:bg-teal-50 transition-colors"
+            className="text-white underline text-sm opacity-80 hover:opacity-100 transition-opacity"
           >
             Learn About Our Community Work →
           </Link>
@@ -375,42 +382,6 @@ export default function HomePage() {
               </dd>
             </div>
           </dl>
-        </div>
-      </section>
-
-      {/* DEVOTIONAL SIGNUP */}
-      <section className="bg-[#f0fafa] py-14 px-4 sm:px-6 border-t border-[#e0f4f4]">
-        <div className="section-container max-w-xl text-center">
-          <p className="text-[#008080] font-semibold text-xs uppercase tracking-widest mb-3">
-            Every week · Free
-          </p>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Get the weekly devotional
-          </h2>
-          <p className="text-[#595959] leading-relaxed mb-7">
-            Each week Pastor Ricardo sends a short devotional based on the Sunday message -
-            practical, direct, and connected to real life. Choose how you want to receive it.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a
-              href="https://wa.me/27752592555?text=Hi%2C%20please%20add%20me%20to%20the%20weekly%20devotional%20list."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#25d366] text-[#1a1a1a] font-bold px-7 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors"
-            >
-              Subscribe via WhatsApp →
-            </a>
-            <a
-              href="mailto:info@fountaingrace.org?subject=Weekly%20Devotional%20Signup&body=Hi%2C%20please%20add%20me%20to%20the%20weekly%20devotional%20email%20list.%0A%0AMy%20name%20is%3A%20"
-              className="inline-block bg-[#2a9df4] text-white font-bold px-7 py-3 rounded-lg hover:bg-[#1a8de4] transition-colors"
-            >
-              Subscribe via Email →
-            </a>
-          </div>
-          <p className="text-xs text-[#7d7d7d] mt-4 max-w-md mx-auto leading-relaxed">
-            By subscribing you consent to Fountain of Grace International (NPO 316-193) sending you a weekly devotional. Your details are used only for this purpose and are never sold or shared. Unsubscribe any time by replying STOP or UNSUBSCRIBE. See our{' '}
-            <a href="/privacy-policy" className="underline hover:text-[#008080]">Privacy Policy</a>.
-          </p>
         </div>
       </section>
 
