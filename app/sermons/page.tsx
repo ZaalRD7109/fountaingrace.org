@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'god-will-finish-what-he-started-in-you-battle',
+    title: "God Will Finish What He Started in You | Philippians 1:6 Sermon",
+    date: "2025-11-09",
+    dateDisplay: "9 November 2025",
+    intro:
+      "When life feels like one long uphill battle - when circumstances, people, and your own exhaustion seem to be working against every promise you have believed for - this message is for you. Pastor Ricardo Zaal opens the Word to show that the God who started something good in your life has never stopped working on it. You are not fighting alone, and the outcome was never in your enemies' hands.",
+  },
+  {
     slug: 'experiencing-gods-presence-direct-divine-communication',
     title: "Experiencing God's Presence: Direct Divine Communication | Ps Ricardo Zaal",
     date: "2025-09-14",
