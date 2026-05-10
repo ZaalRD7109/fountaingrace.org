@@ -90,9 +90,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: "Experiencing God's Presence: Direct Divine Communication | Ps Ricardo Zaal",
     description: "Experiencing God's Presence: Direct Divine Communication | Ps Ricardo Zaal",
-    thumbnailUrl: 'https://img.youtube.com/vi/PENDING/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/ViHsAzbBhRU/maxresdefault.jpg',
     uploadDate: '2025-09-14',
-    embedUrl: 'https://www.youtube.com/embed/PENDING',
+    embedUrl: 'https://www.youtube.com/embed/ViHsAzbBhRU',
     url: 'https://www.fountaingrace.org/sermons/experiencing-gods-presence-direct-divine-communication',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -190,7 +190,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/PENDING"
+                src="https://www.youtube.com/embed/ViHsAzbBhRU"
                 title={sd.headline}
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
