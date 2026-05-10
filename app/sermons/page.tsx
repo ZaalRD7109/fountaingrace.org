@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'experiencing-gods-presence-direct-divine-communication',
+    title: "Experiencing God's Presence: Direct Divine Communication | Ps Ricardo Zaal",
+    date: "2025-09-14",
+    dateDisplay: "14 September 2025",
+    intro:
+      "Many people find it hard to believe that God would actually speak to them personally - that kind of closeness can feel like it belongs only to pastors or Bible heroes. In this message, Pastor Ricardo Zaal of Fountain of Grace International in Pretoria North confronts that doubt head-on and opens up the possibility of a real, living encounter with God. If you have ever sat in church wondering whether God's voice is something you could ever truly hear, this sermon is for you.",
+  },
+  {
     slug: 'prophetic-reset-hearing-seeing-speaking-heaven-john-10-27',
     title: "The Prophetic Reset: Hearing, Seeing and Speaking Heaven Again | John 10:27",
     date: "2025-10-12",
