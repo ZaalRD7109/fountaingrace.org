@@ -90,9 +90,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: "The Prophetic Reset: Hearing, Seeing and Speaking Heaven Again | John 10:27",
     description: "The Prophetic Reset: Hearing, Seeing and Speaking Heaven Again | John 10:27",
-    thumbnailUrl: 'https://img.youtube.com/vi/PENDING/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/Q1ynsfCO2C4/maxresdefault.jpg',
     uploadDate: '2025-10-12',
-    embedUrl: 'https://www.youtube.com/embed/PENDING',
+    embedUrl: 'https://www.youtube.com/embed/Q1ynsfCO2C4',
     url: 'https://www.fountaingrace.org/sermons/prophetic-reset-hearing-seeing-speaking-heaven-john-10-27',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -197,7 +197,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/PENDING"
+                src="https://www.youtube.com/embed/Q1ynsfCO2C4"
                 title={sd.headline}
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
