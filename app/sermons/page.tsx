@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'prophetic-reset-hearing-seeing-speaking-heaven-john-10-27',
+    title: "The Prophetic Reset: Hearing, Seeing and Speaking Heaven Again | John 10:27",
+    date: "2025-10-12",
+    dateDisplay: "12 October 2025",
+    intro:
+      "Have you ever felt like God is speaking but you cannot quite pick up what He is saying? This sermon kicks off a 4-week Prophetic Reset series designed to help ordinary believers - not just special prophets - tune back into the voice of God. Pastor Ricardo Zaal unpacks why hearing God is your inheritance, how He speaks through scripture, His Spirit and creation, and what simple disciplines will open your ears again.",
+  },
+  {
     slug: 'the-principle-that-activates-everything',
     title: 'The Principle That Activates Everything: Right Action',
     date: '2026-04-26',
