@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import SermonsFilter from './_components/SermonsFilter'
 
 export const metadata: Metadata = {
   title: 'Sermons | Bible Teaching | Fountain of Grace International',
@@ -386,6 +387,8 @@ const jsonLd = [
   },
 ]
 
+const sortedSermons = [...sermonPosts].sort((a, b) => b.date.localeCompare(a.date))
+
 export default function SermonsPage() {
   return (
     <>
@@ -413,37 +416,8 @@ export default function SermonsPage() {
         </div>
       </section>
 
-      {/* SERMON CARDS */}
-      <section className="bg-gray-50 py-16 px-4 sm:px-6">
-        <div className="section-container max-w-4xl">
-          <div className="space-y-8">
-            {sermonPosts.map((post) => (
-              <article
-                key={post.slug}
-                className="bg-white rounded-xl border border-gray-100 p-6 sm:p-8 hover:shadow-md transition-shadow"
-              >
-                <time
-                  dateTime={post.date}
-                  className="text-xs font-semibold text-[#008080] uppercase tracking-wider"
-                >
-                  {post.dateDisplay}
-                </time>
-                <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mt-2 mb-4 leading-snug">
-                  {post.title}
-                </h2>
-                <p className="text-[#595959] leading-relaxed mb-6">{post.intro}</p>
-                <Link
-                  href={`/sermons/${post.slug}`}
-                  className="text-[#008080] font-semibold text-sm hover:underline"
-                  aria-label={`Read full message: ${post.title}`}
-                >
-                  Read More →
-                </Link>
-              </article>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* SEARCH + FILTER + SERMON CARDS */}
+      <SermonsFilter sermons={sortedSermons} />
 
       {/* DEVOTIONAL SIGNUP */}
       <section className="bg-[#f0fafa] py-14 px-4 sm:px-6 border-t border-[#e0f4f4]">
