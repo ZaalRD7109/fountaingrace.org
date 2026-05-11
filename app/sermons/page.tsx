@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'dont-pray-the-storm-away-why-you-need-the-storm',
+    title: "Don't Pray the Storm Away - James 1:2-4 | Pastor Ricardo Zaal",
+    date: "2024-01-01",
+    dateDisplay: "1 January 2024",
+    intro:
+      "When life feels like it is falling apart, the first prayer most people pray is 'God, make it stop.' But what if the storm is not your enemy? Pastor Ricardo Zaal opens the Word on New Year's Day to show why the trials you are asking God to remove are often the very things He is using to grow you into who He needs you to be.",
+  },
+  {
     slug: 'birth-of-the-great-christmas-sermon-matthew-1-21',
     title: "The Birth of the Great - Christmas 2022 | Matthew 1:21 | Pastor Ricardo Zaal",
     date: "2022-12-25",

@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/faq`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/dont-pray-the-storm-away-why-you-need-the-storm`, lastModified: new Date('2024-01-01'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/birth-of-the-great-christmas-sermon-matthew-1-21`, lastModified: new Date('2022-12-25'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/from-wifi-to-why-fire-presence-ignite-holy-spirit`, lastModified: new Date('2025-09-07'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/born-original-marked-by-god-identity-purpose`, lastModified: new Date('2025-08-30'), changeFrequency: 'monthly', priority: 0.6 },
