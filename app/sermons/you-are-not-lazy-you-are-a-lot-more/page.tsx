@@ -76,9 +76,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'You Are Not Lazy - You Are a Lot More',
     description: 'You Are Not Lazy - You Are a Lot More',
-    thumbnailUrl: 'https://img.youtube.com/vi/Aq0r8tRWP-Y/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/kaN3Wn6yaD4/maxresdefault.jpg',
     uploadDate: '2024-01-28',
-    embedUrl: 'https://www.youtube.com/embed/Aq0r8tRWP-Y',
+    embedUrl: 'https://www.youtube.com/embed/kaN3Wn6yaD4',
     url: 'https://www.fountaingrace.org/sermons/you-are-not-lazy-you-are-a-lot-more',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -121,7 +121,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/Aq0r8tRWP-Y"
+                src="https://www.youtube.com/embed/kaN3Wn6yaD4"
                 title="You Are Not Lazy - You Are a Lot More"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
