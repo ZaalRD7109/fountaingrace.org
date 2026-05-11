@@ -102,6 +102,22 @@ const sermonPosts = [
       "Have you ever felt like God is speaking but you cannot quite pick up what He is saying? This sermon kicks off a 4-week Prophetic Reset series designed to help ordinary believers - not just special prophets - tune back into the voice of God. Pastor Ricardo Zaal unpacks why hearing God is your inheritance, how He speaks through scripture, His Spirit and creation, and what simple disciplines will open your ears again.",
   },
   {
+    slug: 'why-your-biggest-battle-follows-your-best-decision',
+    title: 'Why Your Biggest Battle Always Follows Your Best Decision',
+    date: '2026-05-10',
+    dateDisplay: '10 May 2026',
+    intro:
+      'You made the right choice - then everything fell apart. That is not a sign you got it wrong. In Scripture, the biggest battles come immediately after the biggest decisions. This message explains why opposition after a breakthrough is confirmation, not contradiction.',
+  },
+  {
+    slug: 'you-dont-know-who-you-are-yet',
+    title: "You Don't Know Who You Are Yet",
+    date: '2026-05-03',
+    dateDisplay: '3 May 2026',
+    intro:
+      "You have been living by an identity built from failure, other people's words, and what life has done to you. God consistently addresses people by who they are becoming, not who they currently appear to be. Gideon was hiding when the angel called him a mighty man of valour.",
+  },
+  {
     slug: 'the-principle-that-activates-everything',
     title: 'The Principle That Activates Everything: Right Action',
     date: '2026-04-26',
@@ -124,6 +140,14 @@ const sermonPosts = [
     dateDisplay: '5 April 2026',
     intro:
       'The crowd cheered Jesus and then crucified Him. The donkey carried Him in silence and made history. Based on Matthew 21 and Luke 19, this message asks which one describes your relationship with God right now.',
+  },
+  {
+    slug: 'dying-right-good-friday-message',
+    title: 'Dying Right - What Jesus Did on the Cross That Most People Miss',
+    date: '2026-04-03',
+    dateDisplay: '3 April 2026',
+    intro:
+      'Good Friday is not a tragedy. Jesus was not a victim - He was a volunteer. Every word He spoke from the cross was deliberate. This message looks at what it means to face an ending the right way, and what tetelestai - paid in full - changes for you today.',
   },
   {
     slug: 'when-knowing-is-the-problem',
