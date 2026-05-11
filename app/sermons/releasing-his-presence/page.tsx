@@ -76,9 +76,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'Why Keeping Everything to Yourself Is the Reason Nothing Flows',
     description: 'Why Keeping Everything to Yourself Is the Reason Nothing Flows',
-    thumbnailUrl: 'https://img.youtube.com/vi/yDYWamwrys4/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/MAkF8V0B1hI/maxresdefault.jpg',
     uploadDate: '2025-06-29',
-    embedUrl: 'https://www.youtube.com/embed/yDYWamwrys4',
+    embedUrl: 'https://www.youtube.com/embed/MAkF8V0B1hI',
     url: 'https://www.fountaingrace.org/sermons/releasing-his-presence',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -121,7 +121,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/yDYWamwrys4"
+                src="https://www.youtube.com/embed/MAkF8V0B1hI"
                 title="Releasing His Presence: From Container to Conduit"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

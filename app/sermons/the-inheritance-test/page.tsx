@@ -76,9 +76,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'The Inheritance Test: Will It Reach Three Generations?',
     description: 'The Inheritance Test: Will It Reach Three Generations?',
-    thumbnailUrl: 'https://img.youtube.com/vi/rIrP5Hly3uU/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/bT4i6UxLjEM/maxresdefault.jpg',
     uploadDate: '2024-09-08',
-    embedUrl: 'https://www.youtube.com/embed/rIrP5Hly3uU',
+    embedUrl: 'https://www.youtube.com/embed/bT4i6UxLjEM',
     url: 'https://www.fountaingrace.org/sermons/the-inheritance-test',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -121,7 +121,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/rIrP5Hly3uU"
+                src="https://www.youtube.com/embed/bT4i6UxLjEM"
                 title="The Inheritance Test: Will It Reach Three Generations?"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

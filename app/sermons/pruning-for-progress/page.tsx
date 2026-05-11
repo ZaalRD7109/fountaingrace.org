@@ -77,9 +77,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'Pruning for Progress: From Bare Branch to Bountiful Blessing',
     description: 'Pruning for Progress: From Bare Branch to Bountiful Blessing',
-    thumbnailUrl: 'https://img.youtube.com/vi/o8eS8xBJlLs/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/RSX7jGdlo6s/maxresdefault.jpg',
     uploadDate: '2025-11-02',
-    embedUrl: 'https://www.youtube.com/embed/o8eS8xBJlLs',
+    embedUrl: 'https://www.youtube.com/embed/RSX7jGdlo6s',
     url: 'https://www.fountaingrace.org/sermons/pruning-for-progress',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -122,7 +122,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/o8eS8xBJlLs"
+                src="https://www.youtube.com/embed/RSX7jGdlo6s"
                 title="Pruning for Progress: From Bare Branch to Bountiful Blessing"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

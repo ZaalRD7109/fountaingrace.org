@@ -109,7 +109,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/FvFiyCxnGhA"
+                src="https://www.youtube.com/embed/L0NMow_4Ni0"
                 title="You Know What to Do. So Why Is Nothing Changing?"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

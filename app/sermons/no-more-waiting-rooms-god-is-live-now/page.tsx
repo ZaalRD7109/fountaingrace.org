@@ -77,9 +77,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'Stop Waiting for Your Real Life to Begin - It Already Started',
     description: 'Stop Waiting for Your Real Life to Begin - It Already Started',
-    thumbnailUrl: 'https://img.youtube.com/vi/0AnCGvq3cDc/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/FwXMY51fZEs/maxresdefault.jpg',
     uploadDate: '2025-09-28',
-    embedUrl: 'https://www.youtube.com/embed/0AnCGvq3cDc',
+    embedUrl: 'https://www.youtube.com/embed/FwXMY51fZEs',
     url: 'https://www.fountaingrace.org/sermons/no-more-waiting-rooms-god-is-live-now',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -122,7 +122,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/0AnCGvq3cDc"
+                src="https://www.youtube.com/embed/FwXMY51fZEs"
                 title="Stop Waiting for Your Real Life to Begin - It Already Started"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

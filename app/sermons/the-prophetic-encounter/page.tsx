@@ -76,9 +76,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'You Were Built for Something Specific - Here Is How to Find It',
     description: 'You Were Built for Something Specific - Here Is How to Find It',
-    thumbnailUrl: 'https://img.youtube.com/vi/syeKz7bhxn4/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/4HYzxlTEb4o/maxresdefault.jpg',
     uploadDate: '2025-02-23',
-    embedUrl: 'https://www.youtube.com/embed/syeKz7bhxn4',
+    embedUrl: 'https://www.youtube.com/embed/4HYzxlTEb4o',
     url: 'https://www.fountaingrace.org/sermons/the-prophetic-encounter',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -121,7 +121,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/syeKz7bhxn4"
+                src="https://www.youtube.com/embed/4HYzxlTEb4o"
                 title="You Were Built for Something Specific - Here Is How to Find It"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

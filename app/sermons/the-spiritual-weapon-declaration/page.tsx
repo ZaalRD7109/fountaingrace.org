@@ -92,9 +92,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'How to Break a Pattern That Has Followed Your Family for Generations',
     description: 'How to Break a Pattern That Has Followed Your Family for Generations',
-    thumbnailUrl: 'https://img.youtube.com/vi/Ep0FhC0yhyw/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/KjkqdhqaiZ0/maxresdefault.jpg',
     uploadDate: '2025-10-26',
-    embedUrl: 'https://www.youtube.com/embed/Ep0FhC0yhyw',
+    embedUrl: 'https://www.youtube.com/embed/KjkqdhqaiZ0',
     url: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-declaration',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -137,7 +137,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/Ep0FhC0yhyw"
+                src="https://www.youtube.com/embed/KjkqdhqaiZ0"
                 title="The Spiritual Weapon - Declaration Session Part 2"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -77,9 +77,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'The Silent Assassin of Destiny: Overthinking',
     description: 'The Silent Assassin of Destiny: Overthinking',
-    thumbnailUrl: 'https://img.youtube.com/vi/lkp4t5OemVQ/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/FZtTcG2gSsE/maxresdefault.jpg',
     uploadDate: '2025-08-31',
-    embedUrl: 'https://www.youtube.com/embed/lkp4t5OemVQ',
+    embedUrl: 'https://www.youtube.com/embed/FZtTcG2gSsE',
     url: 'https://www.fountaingrace.org/sermons/the-silent-assassin-of-destiny',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -122,7 +122,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/lkp4t5OemVQ"
+                src="https://www.youtube.com/embed/FZtTcG2gSsE"
                 title="The Silent Assassin of Destiny: Overthinking"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

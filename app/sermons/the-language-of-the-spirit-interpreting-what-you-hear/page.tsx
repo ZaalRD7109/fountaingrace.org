@@ -76,9 +76,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'Hearing the Right Things and Still Getting Them Wrong - Here Is Why',
     description: 'Hearing the Right Things and Still Getting Them Wrong - Here Is Why',
-    thumbnailUrl: 'https://img.youtube.com/vi/NJNUWw-HC0A/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/G73Ce-8su78/maxresdefault.jpg',
     uploadDate: '2025-02-09',
-    embedUrl: 'https://www.youtube.com/embed/NJNUWw-HC0A',
+    embedUrl: 'https://www.youtube.com/embed/G73Ce-8su78',
     url: 'https://www.fountaingrace.org/sermons/the-language-of-the-spirit-interpreting-what-you-hear',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -121,7 +121,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/NJNUWw-HC0A"
+                src="https://www.youtube.com/embed/G73Ce-8su78"
                 title="Hearing the Right Things and Still Getting Them Wrong - Here Is Why"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

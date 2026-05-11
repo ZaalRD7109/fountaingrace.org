@@ -76,9 +76,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'Every Word You Say About Yourself Is Writing Your Future',
     description: 'Every Word You Say About Yourself Is Writing Your Future',
-    thumbnailUrl: 'https://img.youtube.com/vi/FuHfZ89YcOM/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/3LyJPmCi-v4/maxresdefault.jpg',
     uploadDate: '2025-04-06',
-    embedUrl: 'https://www.youtube.com/embed/FuHfZ89YcOM',
+    embedUrl: 'https://www.youtube.com/embed/3LyJPmCi-v4',
     url: 'https://www.fountaingrace.org/sermons/speak-prophetic-into-your-life',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -121,7 +121,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/FuHfZ89YcOM"
+                src="https://www.youtube.com/embed/3LyJPmCi-v4"
                 title="Every Word You Say About Yourself Is Writing Your Future"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -77,9 +77,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'The Danger of Overnight Success and the Power of Long Obedience',
     description: 'The Danger of Overnight Success and the Power of Long Obedience',
-    thumbnailUrl: 'https://img.youtube.com/vi/hZSt91TpTBo/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/pFksuQqOuL0/maxresdefault.jpg',
     uploadDate: '2025-05-18',
-    embedUrl: 'https://www.youtube.com/embed/hZSt91TpTBo',
+    embedUrl: 'https://www.youtube.com/embed/pFksuQqOuL0',
     url: 'https://www.fountaingrace.org/sermons/the-danger-of-overnight-success',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -122,7 +122,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/hZSt91TpTBo"
+                src="https://www.youtube.com/embed/pFksuQqOuL0"
                 title="The Danger of Overnight Success and the Power of Long Obedience"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

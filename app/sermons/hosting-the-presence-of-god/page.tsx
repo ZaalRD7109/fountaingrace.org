@@ -77,9 +77,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed',
     description: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed',
-    thumbnailUrl: 'https://img.youtube.com/vi/FoJYMiC19yY/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/5SpeluDggbU/maxresdefault.jpg',
     uploadDate: '2025-06-22',
-    embedUrl: 'https://www.youtube.com/embed/FoJYMiC19yY',
+    embedUrl: 'https://www.youtube.com/embed/5SpeluDggbU',
     url: 'https://www.fountaingrace.org/sermons/hosting-the-presence-of-god',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -122,7 +122,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/FoJYMiC19yY"
+                src="https://www.youtube.com/embed/5SpeluDggbU"
                 title="Why Sunday Feels Different and Monday Feels Like Nothing Changed"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

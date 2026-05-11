@@ -105,7 +105,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/QCn0e7ehhcE"
+                src="https://www.youtube.com/embed/PCA8BdDtmUY"
                 title="The Missing Connection Blocking Everything You Need From Getting Through"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

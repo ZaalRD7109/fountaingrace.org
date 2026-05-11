@@ -81,9 +81,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'Follow Your Inner Voice - Discover Your Destiny',
     description: 'Follow Your Inner Voice - Discover Your Destiny',
-    thumbnailUrl: 'https://img.youtube.com/vi/9cRjCOqvilg/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/4Trsd4Q-2fY/maxresdefault.jpg',
     uploadDate: '2026-02-24',
-    embedUrl: 'https://www.youtube.com/embed/9cRjCOqvilg',
+    embedUrl: 'https://www.youtube.com/embed/4Trsd4Q-2fY',
     url: 'https://www.fountaingrace.org/sermons/follow-your-inner-voice-discover-your-destiny',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -126,7 +126,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/9cRjCOqvilg"
+                src="https://www.youtube.com/embed/4Trsd4Q-2fY"
                 title="Follow Your Inner Voice - Discover Your Destiny"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
