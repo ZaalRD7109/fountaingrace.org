@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'victory-battle-the-lords-fight-not-yours',
+    title: "Victory Battle: The Battle Is the Lord's | 1 Samuel 17:47 Sermon",
+    date: "2024-06-01",
+    dateDisplay: "1 June 2024",
+    intro:
+      "Are you exhausted from fighting battles that seem impossible to win? Whether it is sickness, broken relationships, fear, or daily struggles, Pastor Ricardo Zaal brings a word that will shift your perspective completely. The battle is not yours to fight alone - it belongs to God, and that truth alone changes everything.",
+  },
+  {
     slug: 'if-your-church-does-not-change-you-change-your-church',
     title: "If Your Church Does Not Change You, Change Your Church | Joel 2:28",
     date: "2023-07-02",
