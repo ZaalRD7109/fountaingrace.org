@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'birth-of-the-great-christmas-sermon-matthew-1-21',
+    title: "The Birth of the Great - Christmas 2022 | Matthew 1:21 | Pastor Ricardo Zaal",
+    date: "2022-12-25",
+    dateDisplay: "25 December 2022",
+    intro:
+      "Christmas can feel hollow when you are grieving a loss, struggling financially, or sitting alone with no one at the table. Pastor Ricardo Zaal opens the Word on Christmas morning and shows that the birth of Jesus Christ is not a distant historical event but a living force that births new things into the dead places of your life. If something in your world has gone dry, this message is for you.",
+  },
+  {
     slug: 'from-wifi-to-why-fire-presence-ignite-holy-spirit',
     title: "From WiFi to Why Fire: Presence Ignite | Luke 24:32 | Pastor Ricardo Zaal",
     date: "2025-09-07",
