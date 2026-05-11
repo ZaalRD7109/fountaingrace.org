@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'if-your-church-does-not-change-you-change-your-church',
+    title: "If Your Church Does Not Change You, Change Your Church | Joel 2:28",
+    date: "2023-07-02",
+    dateDisplay: "2 July 2023",
+    intro:
+      "Sitting in a church week after week but feeling no different can be one of the most quietly painful experiences a believer faces. Pastor Ricardo Zaal tackles this head-on with a bold statement - if your church does not change you, change your church. This sermon from Fountain of Grace International in Pretoria North is a Spirit-filled call to stop settling for a church experience that leaves you exactly where you started.",
+  },
+  {
     slug: 'dont-pray-the-storm-away-why-you-need-the-storm',
     title: "Don't Pray the Storm Away - James 1:2-4 | Pastor Ricardo Zaal",
     date: "2024-01-01",
