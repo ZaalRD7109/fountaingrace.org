@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'right-action-principles-move-forward-faster-part2',
+    title: "The Right Action Principle: What Moves You Forward Faster | James 2:17",
+    date: "2025-11-16",
+    dateDisplay: "16 November 2025",
+    intro:
+      "You have been to every interview, tried every option, and still nothing is moving. In this message, Pastor Ricardo Zaal explains that the problem is rarely a lack of effort - it is a lack of the right action, taken at the right time. This is Part 2 of a practical, Bible-based series on the principles that move people forward faster in every area of life.",
+  },
+  {
     slug: 'god-will-finish-what-he-started-in-you-battle',
     title: "God Will Finish What He Started in You | Philippians 1:6 Sermon",
     date: "2025-11-09",

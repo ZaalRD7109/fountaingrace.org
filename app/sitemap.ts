@@ -19,6 +19,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/faq`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/right-action-principles-move-forward-faster-part2`, lastModified: new Date('2025-11-16'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/god-will-finish-what-he-started-in-you-battle`, lastModified: new Date('2025-11-09'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/experiencing-gods-presence-direct-divine-communication`, lastModified: new Date('2025-09-14'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/prophetic-reset-hearing-seeing-speaking-heaven-john-10-27`, lastModified: new Date('2025-10-12'), changeFrequency: 'monthly', priority: 0.6 },
