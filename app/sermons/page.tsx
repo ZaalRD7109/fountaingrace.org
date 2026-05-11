@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'from-wifi-to-why-fire-presence-ignite-holy-spirit',
+    title: "From WiFi to Why Fire: Presence Ignite | Luke 24:32 | Pastor Ricardo Zaal",
+    date: "2025-09-07",
+    dateDisplay: "7 September 2025",
+    intro:
+      "Ever felt fired up about God on Sunday, only for that feeling to be completely gone by Monday morning? You are not broken - you are buffering. In this message Pastor Ricardo Zaal uses the everyday frustration of slow WiFi to explain why so many people have access to God's full power but only ever experience a fraction of it. The answer is closer than you think, and it starts with presence.",
+  },
+  {
     slug: 'born-original-marked-by-god-identity-purpose',
     title: "Born Original, Marked by God | Psalm 139:14 | Pastor Ricardo Zaal",
     date: "2025-08-30",
