@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Be a Doer of God's Word, Not Just a Hearer | Fountain of Grace International Pretoria North",
+  title: "You Know What to Do. So Why Is Nothing Changing? | Fountain of Grace International",
   description:
     "James 1:21-25 - the person who hears and forgets is like a man who looks in a mirror and walks away. This message calls for active response to truth. Pretoria North.",
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: "https://www.fountaingrace.org/sermons/be-a-doer-of-gods-word-not-just-a-hearer",
   },
   openGraph: {
-    title: "Be a Doer of God's Word, Not Just a Hearer",
+    title: "You Know What to Do. So Why Is Nothing Changing?",
     description:
       "James 1:21-25. What is the difference between a person who hears and a person who does? Fountain of Grace International, Pretoria North.",
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Be a Doer of God\'s Word, Not Just a Hearer',
+    headline: 'You Know What to Do. So Why Is Nothing Changing?',
     description: 'Based on James 1:21-25. Pastor Ricardo Zaal teaches on the difference between passive hearing and active doing of God\'s word - and the blessing that comes to those who act.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -46,7 +46,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: "Be a Doer of God's Word, Not Just a Hearer", item: 'https://www.fountaingrace.org/sermons/be-a-doer-of-gods-word-not-just-a-hearer' },
+      { '@type': 'ListItem', position: 3, name: "You Know What to Do. So Why Is Nothing Changing?", item: 'https://www.fountaingrace.org/sermons/be-a-doer-of-gods-word-not-just-a-hearer' },
     ],
   },
   {
@@ -74,7 +74,8 @@ const jsonLd = [
         acceptedAnswer: { '@type': 'Answer', text: "James 1:22 uses the word 'deceived' deliberately. A person who hears truth and does not act has convinced themselves that hearing is enough. But knowledge without obedience creates a false sense of spiritual progress. Pastor Ricardo Zaal at Fountain of Grace International teaches that self-deception in this context is not ignorance - it is an active misreading of where you actually stand." },
       },
     ],
-  },]
+  },
+]
 
 export default function SermonPage() {
   return (
@@ -107,7 +108,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/FvFiyCxnGhA"
-                title="Be a Doer of God's Word, Not Just a Hearer"
+                title="You Know What to Do. So Why Is Nothing Changing?"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Speak Prophetic Into Your Life | 1 Corinthians 14:3 | Fountain of Grace International',
+  title: 'Every Word You Say About Yourself Is Writing Your Future | 1 Corinthians 14:3 | Fountain of Grace International',
   description:
     'Whether you know it or not, you are always prophesying over yourself. The question is whether your words are building you up or tearing you down. Based on 1 Corinthians 14:3. Pretoria North.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/speak-prophetic-into-your-life',
   },
   openGraph: {
-    title: 'Speak Prophetic Into Your Life | 1 Corinthians 14:3',
+    title: 'Every Word You Say About Yourself Is Writing Your Future | 1 Corinthians 14:3',
     description:
       'You are always prophesying. Every word you speak over your life is either building faith or destroying it. This message shows you how to change the confession. Pretoria North.',
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Speak Prophetic Into Your Life',
+    headline: 'Every Word You Say About Yourself Is Writing Your Future',
     description: 'Based on 1 Corinthians 14:3, Romans 10:17, and Ezekiel 37, this message challenges believers to replace negative self-talk with the prophetic words of God - because you are always speaking a future into existence, whether you intend to or not.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -46,7 +46,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: 'Speak Prophetic Into Your Life', item: 'https://www.fountaingrace.org/sermons/speak-prophetic-into-your-life' },
+      { '@type': 'ListItem', position: 3, name: 'Every Word You Say About Yourself Is Writing Your Future', item: 'https://www.fountaingrace.org/sermons/speak-prophetic-into-your-life' },
     ],
   },
   {
@@ -74,8 +74,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'Speak Prophetic Into Your Life',
-    description: 'Speak Prophetic Into Your Life',
+    name: 'Every Word You Say About Yourself Is Writing Your Future',
+    description: 'Every Word You Say About Yourself Is Writing Your Future',
     thumbnailUrl: 'https://img.youtube.com/vi/FuHfZ89YcOM/maxresdefault.jpg',
     uploadDate: '2025-04-06',
     embedUrl: 'https://www.youtube.com/embed/FuHfZ89YcOM',
@@ -104,7 +104,7 @@ export default function SermonPage() {
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              Speak Prophetic Into Your Life
+              Every Word You Say About Yourself Is Writing Your Future
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               You are always prophesying. Every time you say &quot;life is hard&quot; or &quot;I can&apos;t do this&quot; or &quot;nothing ever works for me&quot; — you are releasing a prophetic word over your own life. The problem is not that you are not prophesying. The problem is what you are prophesying. This message shows you how to change it.
@@ -120,7 +120,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/FuHfZ89YcOM"
-                title="Speak Prophetic Into Your Life"
+                title="Every Word You Say About Yourself Is Writing Your Future"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

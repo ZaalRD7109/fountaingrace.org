@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'When Good Things Block God Things | Fountain of Grace International',
+  title: 'How Good Opportunities Become the Thing That Stops Your Real Breakthrough | Fountain of Grace International',
   description:
     'You can be climbing a ladder leaned against the wrong wall. Good intentions, constant busyness - but misaligned with God\'s timing. This message names the pattern. Pretoria North.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/when-good-things-block-god-things',
   },
   openGraph: {
-    title: 'When Good Things Block God Things',
+    title: 'How Good Opportunities Become the Thing That Stops Your Real Breakthrough',
     description:
       'Misalignment is not weakness - it is a direction problem. You may be doing right things at the wrong time and not know it. Fountain of Grace International, Pretoria North.',
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'When Good Things Block God Things',
+    headline: 'How Good Opportunities Become the Thing That Stops Your Real Breakthrough',
     description: 'A message about chronos fatigue - doing many good things but in the wrong season. Using the contrast between Mary and Martha (Luke 10:38-42), this message identifies the difference between productive busyness and godly fruitfulness.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -46,7 +46,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: 'When Good Things Block God Things', item: 'https://www.fountaingrace.org/sermons/when-good-things-block-god-things' },
+      { '@type': 'ListItem', position: 3, name: 'How Good Opportunities Become the Thing That Stops Your Real Breakthrough', item: 'https://www.fountaingrace.org/sermons/when-good-things-block-god-things' },
     ],
   },
   {
@@ -70,12 +70,13 @@ const jsonLd = [
         },
       },
     ],
-  },,
+  },
+,
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'When Good Things Block God Things',
-    description: 'When Good Things Block God Things',
+    name: 'How Good Opportunities Become the Thing That Stops Your Real Breakthrough',
+    description: 'How Good Opportunities Become the Thing That Stops Your Real Breakthrough',
     thumbnailUrl: 'https://img.youtube.com/vi/RvGYWIJ6XQo/maxresdefault.jpg',
     uploadDate: '2026-02-08',
     embedUrl: 'https://www.youtube.com/embed/RvGYWIJ6XQo',
@@ -104,7 +105,7 @@ export default function SermonPage() {
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              When Good Things Block God Things
+              How Good Opportunities Become the Thing That Stops Your Real Breakthrough
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               You have real responsibilities. Real pressure. Real results to show. And yet, underneath all of it, something feels off. You are busy but not fruitful. Disciplined but not a disciple. Doing many right things in the wrong direction. This message is for the person who is tired - not because they are lazy, but because they are misaligned.
@@ -120,7 +121,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/RvGYWIJ6XQo"
-                title="When Good Things Block God Things"
+                title="How Good Opportunities Become the Thing That Stops Your Real Breakthrough"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

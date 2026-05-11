@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'The Spiritual Weapon No One Speaks About | Fountain of Grace International Pretoria North',
+  title: 'The One Weapon Nobody Teaches You That Changes Every Fight | Fountain of Grace International Pretoria North',
   description:
     'Jesus stooped and wrote on the ground. Every accuser left. That act was a weapon - and it still works. This message unpacks the authority you carry to break cycles, patterns, and spiritual blockage. Pretoria North.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-no-one-speaks-about',
   },
   openGraph: {
-    title: 'The Spiritual Weapon No One Speaks About',
+    title: 'The One Weapon Nobody Teaches You That Changes Every Fight',
     description:
       'John 8:6 - He wrote on the ground and every accuser left. Genesis 1 shows God spoke to the earth before He spoke to man. Creation is programmed to respond to spoken authority. This message from Fountain of Grace International in Pretoria North shows you how to use the weapon.',
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'The Spiritual Weapon No One Speaks About',
+    headline: 'The One Weapon Nobody Teaches You That Changes Every Fight',
     description: 'John 8:6 - Jesus stooped and wrote on the ground. Every accuser left. Creation responds to spoken and written authority. This message teaches how to break cycles, patterns, and spiritual blockage using the authority God placed in you.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -46,7 +46,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: 'The Spiritual Weapon No One Speaks About', item: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-no-one-speaks-about' },
+      { '@type': 'ListItem', position: 3, name: 'The One Weapon Nobody Teaches You That Changes Every Fight', item: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-no-one-speaks-about' },
     ],
   },
   {
@@ -90,8 +90,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'The Spiritual Weapon No One Speaks About',
-    description: 'The Spiritual Weapon No One Speaks About',
+    name: 'The One Weapon Nobody Teaches You That Changes Every Fight',
+    description: 'The One Weapon Nobody Teaches You That Changes Every Fight',
     thumbnailUrl: 'https://img.youtube.com/vi/nun01KlLnVE/maxresdefault.jpg',
     uploadDate: '2025-10-19',
     embedUrl: 'https://www.youtube.com/embed/nun01KlLnVE',
@@ -120,7 +120,7 @@ export default function SermonPage() {
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              The Spiritual Weapon No One Speaks About
+              The One Weapon Nobody Teaches You That Changes Every Fight
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               If cycles in your family keep repeating - sickness, debt, broken relationships, blocked progress - this message is for you. Jesus stooped and wrote on the ground. Every accuser left. That was not a coincidence. It was a weapon. And it still works.
@@ -136,7 +136,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/nun01KlLnVE"
-                title="The Spiritual Weapon No One Speaks About"
+                title="The One Weapon Nobody Teaches You That Changes Every Fight"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

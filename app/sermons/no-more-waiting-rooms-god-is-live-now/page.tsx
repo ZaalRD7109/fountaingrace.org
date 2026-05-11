@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'No More Waiting Rooms - God Is Live Now | Fountain of Grace International',
+  title: 'Stop Waiting for Your Real Life to Begin - It Already Started | Fountain of Grace International',
   description:
     'You are not stuck in a waiting room. God is not buffering. This message challenges the believer who has been waiting for God to act - while God has already moved. Pretoria North.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/no-more-waiting-rooms-god-is-live-now',
   },
   openGraph: {
-    title: 'No More Waiting Rooms - God Is Live Now',
+    title: 'Stop Waiting for Your Real Life to Begin - It Already Started',
     description:
       'The frustration of a waiting room. The buffering screen. The song that never plays. This message says God is already live - the question is whether you have tuned in. Pretoria North.',
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'No More Waiting Rooms - God Is Live Now',
+    headline: 'Stop Waiting for Your Real Life to Begin - It Already Started',
     description: 'This message addresses the believer stuck in a spiritual waiting room - praying, believing, but not receiving - by showing that God is already active. The waiting is not God\'s delay; it is misalignment with what He has already released.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -46,7 +46,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: 'No More Waiting Rooms - God Is Live Now', item: 'https://www.fountaingrace.org/sermons/no-more-waiting-rooms-god-is-live-now' },
+      { '@type': 'ListItem', position: 3, name: 'Stop Waiting for Your Real Life to Begin - It Already Started', item: 'https://www.fountaingrace.org/sermons/no-more-waiting-rooms-god-is-live-now' },
     ],
   },
   {
@@ -70,12 +70,13 @@ const jsonLd = [
         },
       },
     ],
-  },,
+  },
+,
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'No More Waiting Rooms - God Is Live Now',
-    description: 'No More Waiting Rooms - God Is Live Now',
+    name: 'Stop Waiting for Your Real Life to Begin - It Already Started',
+    description: 'Stop Waiting for Your Real Life to Begin - It Already Started',
     thumbnailUrl: 'https://img.youtube.com/vi/0AnCGvq3cDc/maxresdefault.jpg',
     uploadDate: '2025-09-28',
     embedUrl: 'https://www.youtube.com/embed/0AnCGvq3cDc',
@@ -104,7 +105,7 @@ export default function SermonPage() {
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              No More Waiting Rooms - God Is Live Now
+              Stop Waiting for Your Real Life to Begin - It Already Started
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               Everyone knows the frustration of a waiting room. The buffering screen. The livestream that won&apos;t load. You are hungry for what is on the other side - and the delay is unbearable. This message says God is not buffering. He is already live. The question is whether you have tuned in.
@@ -120,7 +121,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/0AnCGvq3cDc"
-                title="No More Waiting Rooms - God Is Live Now"
+                title="Stop Waiting for Your Real Life to Begin - It Already Started"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

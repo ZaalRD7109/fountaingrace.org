@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Victory Battle: The Battle Is the Lord's | 1 Samuel 17:47 Sermon | Fountain of Grace International",
+  title: "Stop Fighting a Battle That Was Never Yours to Win | Fountain of Grace International",
   description: "Tired of fighting battles alone and losing? Pastor Ricardo Zaal of Fountain of Grace, Pretoria North, shows you why the battle belongs to God - not you.",
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/sermons/victory-battle-the-lords-fight-not-yours',
   },
   openGraph: {
-    title: "Victory Battle: The Battle Is the Lord's | 1 Samuel 17:47 Sermon",
+    title: "Stop Fighting a Battle That Was Never Yours to Win",
     description: "Stop fighting battles alone. Pastor Ricardo Zaal reveals how to win life's hardest battles by surrendering them to God.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
@@ -21,7 +21,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: "Victory Battle: The Battle Is the Lord's | 1 Samuel 17:47 Sermon",
+    headline: "Stop Fighting a Battle That Was Never Yours to Win",
     description: "Pastor Ricardo Zaal of Fountain of Grace International in Pretoria North delivers a powerful sermon on winning life's battles by recognising they belong to God. Drawing from 1 Samuel 17:47 and the story of David and Goliath, this message shows believers how to stop losing in their minds and start walking in victory.",
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -44,7 +44,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: "Victory Battle: The Battle Is the Lord's | 1 Samuel 17:47 Sermon", item: 'https://www.fountaingrace.org/sermons/victory-battle-the-lords-fight-not-yours' },
+      { '@type': 'ListItem', position: 3, name: "Stop Fighting a Battle That Was Never Yours to Win", item: 'https://www.fountaingrace.org/sermons/victory-battle-the-lords-fight-not-yours' },
     ],
   },
   {
@@ -88,8 +88,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: "Victory Battle: The Battle Is the Lord's | 1 Samuel 17:47 Sermon",
-    description: "Victory Battle: The Battle Is the Lord's | 1 Samuel 17:47 Sermon",
+    name: "Stop Fighting a Battle That Was Never Yours to Win",
+    description: "Stop Fighting a Battle That Was Never Yours to Win",
     thumbnailUrl: 'https://img.youtube.com/vi/PENDING/maxresdefault.jpg',
     uploadDate: '2024-06-01',
     embedUrl: 'https://www.youtube.com/embed/PENDING',
@@ -104,7 +104,7 @@ const jsonLd = [
 ]
 
 const sd = {
-  "headline": "Victory Battle: The Battle Is the Lord's | 1 Samuel 17:47 Sermon",
+  "headline": "Stop Fighting a Battle That Was Never Yours to Win",
   "intro": "Are you exhausted from fighting battles that seem impossible to win? Whether it is sickness, broken relationships, fear, or daily struggles, Pastor Ricardo Zaal brings a word that will shift your perspective completely. The battle is not yours to fight alone - it belongs to God, and that truth alone changes everything.",
   "scripture": "1 Samuel 17:47",
   "quote": "The battle is not yours. The moment you know that, you have already won - because it is He, the Lord, who wins the battle, not you.",

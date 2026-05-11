@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "God Will Finish What He Started in You | Philippians 1:6 Sermon | Fountain of Grace International",
+  title: "When Everything Fights Against What You Were Meant to Build | Fountain of Grace International",
   description: "Feeling like life is fighting against everything God promised you? This sermon from Pretoria North shows why no battle can stop what God has started in you.",
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/sermons/god-will-finish-what-he-started-in-you-battle',
   },
   openGraph: {
-    title: "God Will Finish What He Started in You | Philippians 1:6 Sermon",
+    title: "When Everything Fights Against What You Were Meant to Build",
     description: "No person or circumstance can stop what God began in you. Discover why the battle you face cannot cancel God's plan for your life.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
@@ -21,7 +21,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: "God Will Finish What He Started in You | Philippians 1:6 Sermon",
+    headline: "When Everything Fights Against What You Were Meant to Build",
     description: "Pastor Ricardo Zaal of Fountain of Grace International delivers a powerful message on why no opposition can stop the work God has begun in a believer's life. Drawing from Philippians 1:6, 2 Kings 6:16, and Romans 8:31, this sermon anchors believers in the truth that God's strength covers them even in their weakest moments.",
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -44,7 +44,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: "God Will Finish What He Started in You | Philippians 1:6 Sermon", item: 'https://www.fountaingrace.org/sermons/god-will-finish-what-he-started-in-you-battle' },
+      { '@type': 'ListItem', position: 3, name: "When Everything Fights Against What You Were Meant to Build", item: 'https://www.fountaingrace.org/sermons/god-will-finish-what-he-started-in-you-battle' },
     ],
   },
   {
@@ -88,8 +88,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: "God Will Finish What He Started in You | Philippians 1:6 Sermon",
-    description: "God Will Finish What He Started in You | Philippians 1:6 Sermon",
+    name: "When Everything Fights Against What You Were Meant to Build",
+    description: "When Everything Fights Against What You Were Meant to Build",
     thumbnailUrl: 'https://img.youtube.com/vi/q_9iSfTN6IQ/maxresdefault.jpg',
     uploadDate: '2025-11-09',
     embedUrl: 'https://www.youtube.com/embed/q_9iSfTN6IQ',
@@ -104,7 +104,7 @@ const jsonLd = [
 ]
 
 const sd = {
-  "headline": "God Will Finish What He Started in You | Philippians 1:6 Sermon",
+  "headline": "When Everything Fights Against What You Were Meant to Build",
   "intro": "When life feels like one long uphill battle - when circumstances, people, and your own exhaustion seem to be working against every promise you have believed for - this message is for you. Pastor Ricardo Zaal opens the Word to show that the God who started something good in your life has never stopped working on it. You are not fighting alone, and the outcome was never in your enemies' hands.",
   "scripture": "Philippians 1:6",
   "quote": "God is not a starter who walks away. He began something good in you, and no battle on this earth has the authority to stop Him from finishing it.",

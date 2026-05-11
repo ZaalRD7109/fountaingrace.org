@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-declaration',
   },
   openGraph: {
-    title: 'The Spiritual Weapon - Declaration Session (Part 2)',
+    title: 'How to Break a Pattern That Has Followed Your Family for Generations',
     description:
       "Jeremiah 22:29 - O earth, earth, earth, hear the word of the LORD. God called to the earth three times. You have the same authority. Genesis 1:26 gave you dominion. John 14:12 says the works Jesus did, you shall do also. This is your activation session. Fountain of Grace International, Pretoria North.",
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'The Spiritual Weapon - Declaration Session (Part 2)',
+    headline: 'How to Break a Pattern That Has Followed Your Family for Generations',
     description: "Part 2 follows the Spiritual Weapon teaching. Genesis 1:26 gave man dominion. Jeremiah 22:29 - God spoke to the earth three times. John 14:12 - greater works. This session activates the authority you carry through spoken declarations over family cycles, sickness, finances, and spiritual attack.",
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -90,8 +90,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'The Spiritual Weapon - Declaration Session (Part 2)',
-    description: 'The Spiritual Weapon - Declaration Session (Part 2)',
+    name: 'How to Break a Pattern That Has Followed Your Family for Generations',
+    description: 'How to Break a Pattern That Has Followed Your Family for Generations',
     thumbnailUrl: 'https://img.youtube.com/vi/Ep0FhC0yhyw/maxresdefault.jpg',
     uploadDate: '2025-10-26',
     embedUrl: 'https://www.youtube.com/embed/Ep0FhC0yhyw',

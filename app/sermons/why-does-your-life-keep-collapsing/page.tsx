@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Why Does Your Life Keep Collapsing If God Is For You? | Fountain of Grace International',
+  title: 'Why Does Your Life Keep Collapsing No Matter What You Build? | Fountain of Grace International',
   description:
     'You believe in God. But your life keeps breaking in the same places. This message addresses the root of repeated collapse for people who know the Bible but can\'t seem to stand. Pretoria North.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/why-does-your-life-keep-collapsing',
   },
   openGraph: {
-    title: 'Why Does Your Life Keep Collapsing If God Is For You?',
+    title: 'Why Does Your Life Keep Collapsing No Matter What You Build?',
     description:
       'Living the same year on repeat. Collapsing under the same pressure. Knowing scripture but not standing in it. This message names the root cause. Pretoria North.',
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Why Does Your Life Keep Collapsing If God Is For You?',
+    headline: 'Why Does Your Life Keep Collapsing No Matter What You Build?',
     description: 'This message addresses the pattern of repeated collapse in believers - living 70 years but repeating the same one year of growth. The toothpaste illustration shows that pressure exposes what is already inside, not what you appear to be on Sunday.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -70,12 +70,13 @@ const jsonLd = [
         },
       },
     ],
-  },,
+  },
+,
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'Why Does Your Life Keep Collapsing If God Is For You?',
-    description: 'Why Does Your Life Keep Collapsing If God Is For You?',
+    name: 'Why Does Your Life Keep Collapsing No Matter What You Build?',
+    description: 'Why Does Your Life Keep Collapsing No Matter What You Build?',
     thumbnailUrl: 'https://img.youtube.com/vi/vorvFFUxyRE/maxresdefault.jpg',
     uploadDate: '2026-01-11',
     embedUrl: 'https://www.youtube.com/embed/vorvFFUxyRE',
@@ -104,7 +105,7 @@ export default function SermonPage() {
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              Why Does Your Life Keep Collapsing If God Is For You?
+              Why Does Your Life Keep Collapsing No Matter What You Build?
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               You believe in God. You have for years. But your life keeps breaking in the same places - the same financial pressure, the same relationship patterns, the same collapse under the same kind of storm. You walk out of church feeling strong. Life meets you at the door and you fall again. This message names why.
@@ -120,7 +121,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/vorvFFUxyRE"
-                title="Why Does Your Life Keep Collapsing If God Is For You?"
+                title="Why Does Your Life Keep Collapsing No Matter What You Build?"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

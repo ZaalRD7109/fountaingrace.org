@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The Prophetic Reset: Hearing, Seeing and Speaking Heaven Again | John 10:27 | Fountain of Grace International",
+  title: "When You Stop Hearing the Voice That Used to Guide Every Decision | Fountain of Grace International",
   description: "Struggling to hear God clearly? Pastor Ricardo Zaal at Fountain of Grace, Pretoria North, launches a 4-week prophetic reset to help every believer hear, see and speak heaven again.",
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/sermons/prophetic-reset-hearing-seeing-speaking-heaven-john-10-27',
   },
   openGraph: {
-    title: "The Prophetic Reset: Hearing, Seeing and Speaking Heaven Again | John 10:27",
+    title: "When You Stop Hearing the Voice That Used to Guide Every Decision",
     description: "Every believer can hear God's voice. Pastor Ricardo Zaal begins a 4-week prophetic reset to retune your spiritual ears.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
@@ -21,7 +21,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: "The Prophetic Reset: Hearing, Seeing and Speaking Heaven Again | John 10:27",
+    headline: "When You Stop Hearing the Voice That Used to Guide Every Decision",
     description: "Pastor Ricardo Zaal of Fountain of Grace International in Pretoria North launches a 4-week Prophetic Reset series grounded in John 10:27. Week one focuses on breaking spiritual static, dismantling the myth that only elite prophets hear God, and teaching every believer to cultivate a listening heart through scripture, the Holy Spirit and creation.",
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -44,7 +44,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: "The Prophetic Reset: Hearing, Seeing and Speaking Heaven Again | John 10:27", item: 'https://www.fountaingrace.org/sermons/prophetic-reset-hearing-seeing-speaking-heaven-john-10-27' },
+      { '@type': 'ListItem', position: 3, name: "When You Stop Hearing the Voice That Used to Guide Every Decision", item: 'https://www.fountaingrace.org/sermons/prophetic-reset-hearing-seeing-speaking-heaven-john-10-27' },
     ],
   },
   {
@@ -88,8 +88,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: "The Prophetic Reset: Hearing, Seeing and Speaking Heaven Again | John 10:27",
-    description: "The Prophetic Reset: Hearing, Seeing and Speaking Heaven Again | John 10:27",
+    name: "When You Stop Hearing the Voice That Used to Guide Every Decision",
+    description: "When You Stop Hearing the Voice That Used to Guide Every Decision",
     thumbnailUrl: 'https://img.youtube.com/vi/Q1ynsfCO2C4/maxresdefault.jpg',
     uploadDate: '2025-10-12',
     embedUrl: 'https://www.youtube.com/embed/Q1ynsfCO2C4',
@@ -104,7 +104,7 @@ const jsonLd = [
 ]
 
 const sd = {
-  "headline": "The Prophetic Reset: Hearing, Seeing and Speaking Heaven Again | John 10:27",
+  "headline": "When You Stop Hearing the Voice That Used to Guide Every Decision",
   "intro": "Have you ever felt like God is speaking but you cannot quite pick up what He is saying? This sermon kicks off a 4-week Prophetic Reset series designed to help ordinary believers - not just special prophets - tune back into the voice of God. Pastor Ricardo Zaal unpacks why hearing God is your inheritance, how He speaks through scripture, His Spirit and creation, and what simple disciplines will open your ears again.",
   "scripture": "John 10:27",
   "quote": "God is always speaking. Whether we hear or not is where the difference comes in. My sheep hear my voice - that's not a special few, that's every one of you.",

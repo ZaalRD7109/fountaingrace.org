@@ -22,7 +22,7 @@ export const metadata: Metadata = {
 const sermonPosts = [
   {
     slug: 'victory-battle-the-lords-fight-not-yours',
-    title: "Victory Battle: The Battle Is the Lord's | 1 Samuel 17:47 Sermon",
+    title: "Stop Fighting a Battle That Was Never Yours to Win",
     date: "2024-06-01",
     dateDisplay: "1 June 2024",
     intro:
@@ -30,7 +30,7 @@ const sermonPosts = [
   },
   {
     slug: 'if-your-church-does-not-change-you-change-your-church',
-    title: "If Your Church Does Not Change You, Change Your Church | Joel 2:28",
+    title: "Are You Actually Being Transformed or Just Showing Up?",
     date: "2023-07-02",
     dateDisplay: "2 July 2023",
     intro:
@@ -38,7 +38,7 @@ const sermonPosts = [
   },
   {
     slug: 'dont-pray-the-storm-away-why-you-need-the-storm',
-    title: "Don't Pray the Storm Away - James 1:2-4 | Pastor Ricardo Zaal",
+    title: "Stop Trying to Escape Your Problems - Here Is What They Are Actually For",
     date: "2024-01-01",
     dateDisplay: "1 January 2024",
     intro:
@@ -46,7 +46,7 @@ const sermonPosts = [
   },
   {
     slug: 'birth-of-the-great-christmas-sermon-matthew-1-21',
-    title: "The Birth of the Great - Christmas 2022 | Matthew 1:21 | Pastor Ricardo Zaal",
+    title: "Born Into Something Greater Than the Life You Are Currently Living",
     date: "2022-12-25",
     dateDisplay: "25 December 2022",
     intro:
@@ -54,7 +54,7 @@ const sermonPosts = [
   },
   {
     slug: 'from-wifi-to-why-fire-presence-ignite-holy-spirit',
-    title: "From WiFi to Why Fire: Presence Ignite | Luke 24:32 | Pastor Ricardo Zaal",
+    title: "Why Your Drive Burns Out Before the Breakthrough",
     date: "2025-09-07",
     dateDisplay: "7 September 2025",
     intro:
@@ -62,7 +62,7 @@ const sermonPosts = [
   },
   {
     slug: 'born-original-marked-by-god-identity-purpose',
-    title: "Born Original, Marked by God | Psalm 139:14 | Pastor Ricardo Zaal",
+    title: "You Were Not Made to Be a Copy of Someone Else",
     date: "2025-08-30",
     dateDisplay: "30 August 2025",
     intro:
@@ -78,7 +78,7 @@ const sermonPosts = [
   },
   {
     slug: 'god-will-finish-what-he-started-in-you-battle',
-    title: "God Will Finish What He Started in You | Philippians 1:6 Sermon",
+    title: "When Everything Fights Against What You Were Meant to Build",
     date: "2025-11-09",
     dateDisplay: "9 November 2025",
     intro:
@@ -86,7 +86,7 @@ const sermonPosts = [
   },
   {
     slug: 'experiencing-gods-presence-direct-divine-communication',
-    title: "Experiencing God's Presence: Direct Divine Communication | Ps Ricardo Zaal",
+    title: "Can Something Greater Than Yourself Actually Speak Directly to You?",
     date: "2025-09-14",
     dateDisplay: "14 September 2025",
     intro:
@@ -94,7 +94,7 @@ const sermonPosts = [
   },
   {
     slug: 'prophetic-reset-hearing-seeing-speaking-heaven-john-10-27',
-    title: "The Prophetic Reset: Hearing, Seeing and Speaking Heaven Again | John 10:27",
+    title: "When You Stop Hearing the Voice That Used to Guide Every Decision",
     date: "2025-10-12",
     dateDisplay: "12 October 2025",
     intro:
@@ -118,7 +118,7 @@ const sermonPosts = [
   },
   {
     slug: 'you-love-god-but-are-you-in-the-game',
-    title: 'You Love God - But Are You Actually in the Game?',
+    title: 'You Know What You Should Be Doing - So Why Are You Still on the Sidelines?',
     date: '2026-04-05',
     dateDisplay: '5 April 2026',
     intro:
@@ -134,7 +134,7 @@ const sermonPosts = [
   },
   {
     slug: 'when-good-things-block-god-things',
-    title: 'When Good Things Block God Things',
+    title: 'How Good Opportunities Become the Thing That Stops Your Real Breakthrough',
     date: '2026-02-08',
     dateDisplay: '8 February 2026',
     intro:
@@ -150,7 +150,7 @@ const sermonPosts = [
   },
   {
     slug: 'the-system-youre-praying-against-without-knowing-it',
-    title: "The System You're Praying Against Without Knowing It",
+    title: "Why You Keep Losing - You Are Fighting the Wrong Enemy",
     date: '2026-01-18',
     dateDisplay: '18 January 2026',
     intro:
@@ -158,7 +158,7 @@ const sermonPosts = [
   },
   {
     slug: 'why-does-your-life-keep-collapsing',
-    title: 'Why Does Your Life Keep Collapsing If God Is For You?',
+    title: 'Why Does Your Life Keep Collapsing No Matter What You Build?',
     date: '2026-01-11',
     dateDisplay: '11 January 2026',
     intro:
@@ -174,7 +174,7 @@ const sermonPosts = [
   },
   {
     slug: 'why-your-prayers-are-not-changing-your-life',
-    title: 'Why Your Prayers Are Not Changing Your Life',
+    title: 'Why Nothing Changes No Matter How Hard You Try',
     date: '2026-01-04',
     dateDisplay: '4 January 2026',
     intro:
@@ -214,7 +214,7 @@ const sermonPosts = [
   },
   {
     slug: 'be-a-doer-of-gods-word-not-just-a-hearer',
-    title: "Be a Doer of God's Word, Not Just a Hearer",
+    title: "You Know What to Do. So Why Is Nothing Changing?",
     date: '2026-02-16',
     dateDisplay: '16 February 2026',
     intro:
@@ -238,7 +238,7 @@ const sermonPosts = [
   },
   {
     slug: 'the-spiritual-weapon-declaration',
-    title: 'The Spiritual Weapon - Declaration Session (Part 2)',
+    title: 'How to Break a Pattern That Has Followed Your Family for Generations',
     date: '2025-10-26',
     dateDisplay: '26 October 2025',
     intro:
@@ -246,7 +246,7 @@ const sermonPosts = [
   },
   {
     slug: 'the-spiritual-weapon-no-one-speaks-about',
-    title: 'The Spiritual Weapon No One Speaks About (But Everyone Needs)',
+    title: 'The One Weapon Nobody Teaches You That Changes Every Fight (But Everyone Needs)',
     date: '2025-10-19',
     dateDisplay: '19 October 2025',
     intro:
@@ -254,7 +254,7 @@ const sermonPosts = [
   },
   {
     slug: 'no-more-waiting-rooms-god-is-live-now',
-    title: 'No More Waiting Rooms - God Is Live Now',
+    title: 'Stop Waiting for Your Real Life to Begin - It Already Started',
     date: '2025-09-28',
     dateDisplay: '28 September 2025',
     intro:
@@ -270,7 +270,7 @@ const sermonPosts = [
   },
   {
     slug: 'the-anointing-that-makes-hell-fear-you',
-    title: 'The Anointing That Makes Hell Fear You',
+    title: 'Why Some People Are Completely Untouchable No Matter What Life Throws',
     date: '2025-08-24',
     dateDisplay: '24 August 2025',
     intro:
@@ -286,7 +286,7 @@ const sermonPosts = [
   },
   {
     slug: 'faith-is-the-router-that-connects-you-to-gods-supply',
-    title: "Faith Is the Router That Connects You to God's Supply",
+    title: "The Missing Connection Blocking Everything You Need From Getting Through",
     date: '2025-06-08',
     dateDisplay: '8 June 2025',
     intro:
@@ -294,7 +294,7 @@ const sermonPosts = [
   },
   {
     slug: 'hosting-the-presence-of-god',
-    title: 'Hosting the Presence of God',
+    title: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed',
     date: '2025-06-22',
     dateDisplay: '22 June 2025',
     intro:
@@ -310,7 +310,7 @@ const sermonPosts = [
   },
   {
     slug: 'speak-prophetic-into-your-life',
-    title: 'Speak Prophetic Into Your Life',
+    title: 'Every Word You Say About Yourself Is Writing Your Future',
     date: '2025-04-06',
     dateDisplay: '6 April 2025',
     intro:
@@ -318,7 +318,7 @@ const sermonPosts = [
   },
   {
     slug: 'the-prophetic-encounter',
-    title: 'The Prophetic Encounter: Stir Up the Gift in You',
+    title: 'You Were Built for Something Specific - Here Is How to Find It',
     date: '2025-02-23',
     dateDisplay: '23 February 2025',
     intro:
@@ -326,7 +326,7 @@ const sermonPosts = [
   },
   {
     slug: 'the-language-of-the-spirit-interpreting-what-you-hear',
-    title: 'The Language of the Spirit: Interpreting What You Hear',
+    title: 'Hearing the Right Things and Still Getting Them Wrong - Here Is Why',
     date: '2025-02-09',
     dateDisplay: '9 February 2025',
     intro:

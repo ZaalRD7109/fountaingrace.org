@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/the-system-youre-praying-against-without-knowing-it',
   },
   openGraph: {
-    title: 'The System You\'re Praying Against Without Knowing It',
+    title: 'Why You Keep Losing - You Are Fighting the Wrong Enemy',
     description:
       'Something in the system is locked - not because God ignored you, but because a specific biblical mechanism has been misunderstood. Fountain of Grace International, Pretoria North.',
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'The System You\'re Praying Against Without Knowing It',
+    headline: 'Why You Keep Losing - You Are Fighting the Wrong Enemy',
     description: 'God already opened the doors. The system is already set. But disobedience, ingratitude, and praying for what is already provided - while not walking through the open door - is unknowingly working against the system God established.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -70,7 +70,8 @@ const jsonLd = [
         },
       },
     ],
-  },]
+  },
+]
 
 export default function SermonPage() {
   return (
@@ -103,7 +104,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/TLZitG4cpqA"
-                title="The System You're Praying Against Without Knowing It"
+                title="Why You Keep Losing - You Are Fighting the Wrong Enemy"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

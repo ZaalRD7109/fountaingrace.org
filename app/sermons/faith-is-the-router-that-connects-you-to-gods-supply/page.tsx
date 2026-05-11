@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/faith-is-the-router-that-connects-you-to-gods-supply',
   },
   openGraph: {
-    title: 'Faith Is the Router That Connects You to God\'s Supply',
+    title: 'The Missing Connection Blocking Everything You Need From Getting Through',
     description:
       'The Wi-Fi is on. The subscription is paid. But if your router is broken, you get nothing. This message explains why faith - not effort - is the thing that connects you to what God has already released. Pretoria North.',
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Faith Is the Router That Connects You to God\'s Supply',
+    headline: 'The Missing Connection Blocking Everything You Need From Getting Through',
     description: 'Based on 2 Corinthians 1:20, Hebrews 11:6, and Proverbs 3:5, this message explains faith as the spiritual router that connects the believer to heaven\'s supply - and why self-effort, doubt, and an unrenewed mind break the connection.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -70,7 +70,8 @@ const jsonLd = [
         },
       },
     ],
-  },]
+  },
+]
 
 export default function SermonPage() {
   return (
@@ -103,7 +104,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/QCn0e7ehhcE"
-                title="Faith Is the Router That Connects You to God's Supply"
+                title="The Missing Connection Blocking Everything You Need From Getting Through"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

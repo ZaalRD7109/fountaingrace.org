@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "If Your Church Does Not Change You, Change Your Church | Joel 2:28 | Fountain of Grace International",
+  title: "Are You Actually Being Transformed or Just Showing Up? | Fountain of Grace International",
   description: "Feeling stuck spiritually? Pastor Ricardo Zaal of Pretoria North asks the hard question - is your church truly transforming you? A bold word from Joel 2.",
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/sermons/if-your-church-does-not-change-you-change-your-church',
   },
   openGraph: {
-    title: "If Your Church Does Not Change You, Change Your Church | Joel 2:28",
+    title: "Are You Actually Being Transformed or Just Showing Up?",
     description: "If your church is not changing you, something is missing. Pastor Ricardo Zaal delivers a bold, Spirit-led challenge from Joel 2.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
@@ -21,7 +21,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: "If Your Church Does Not Change You, Change Your Church | Joel 2:28",
+    headline: "Are You Actually Being Transformed or Just Showing Up?",
     description: "Pastor Ricardo Zaal of Fountain of Grace International in Pretoria North challenges believers to evaluate whether their church is truly producing spiritual transformation. Drawing from Joel 2:27-28, he makes the case that where the Spirit of God is present, change is inevitable.",
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -44,7 +44,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: "If Your Church Does Not Change You, Change Your Church | Joel 2:28", item: 'https://www.fountaingrace.org/sermons/if-your-church-does-not-change-you-change-your-church' },
+      { '@type': 'ListItem', position: 3, name: "Are You Actually Being Transformed or Just Showing Up?", item: 'https://www.fountaingrace.org/sermons/if-your-church-does-not-change-you-change-your-church' },
     ],
   },
   {
@@ -88,8 +88,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: "If Your Church Does Not Change You, Change Your Church | Joel 2:28",
-    description: "If Your Church Does Not Change You, Change Your Church | Joel 2:28",
+    name: "Are You Actually Being Transformed or Just Showing Up?",
+    description: "Are You Actually Being Transformed or Just Showing Up?",
     thumbnailUrl: 'https://img.youtube.com/vi/PENDING/maxresdefault.jpg',
     uploadDate: '2023-07-02',
     embedUrl: 'https://www.youtube.com/embed/PENDING',
@@ -104,7 +104,7 @@ const jsonLd = [
 ]
 
 const sd = {
-  "headline": "If Your Church Does Not Change You, Change Your Church | Joel 2:28",
+  "headline": "Are You Actually Being Transformed or Just Showing Up?",
   "intro": "Sitting in a church week after week but feeling no different can be one of the most quietly painful experiences a believer faces. Pastor Ricardo Zaal tackles this head-on with a bold statement - if your church does not change you, change your church. This sermon from Fountain of Grace International in Pretoria North is a Spirit-filled call to stop settling for a church experience that leaves you exactly where you started.",
   "scripture": "Joel 2:27-28",
   "quote": "If your church does not change you, change your church - because where Jesus is, change is not optional. He cannot enter a room and leave it the same.",

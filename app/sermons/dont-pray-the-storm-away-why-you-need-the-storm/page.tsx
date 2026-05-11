@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Don't Pray the Storm Away - James 1:2-4 | Pastor Ricardo Zaal | Fountain of Grace International",
+  title: "Stop Trying to Escape Your Problems - Here Is What They Are Actually For | Fountain of Grace International",
   description: "Struggling through pain and trials in Pretoria North? Pastor Ricardo Zaal explains from James 1 why your storm is growing you, not breaking you. Watch now.",
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/sermons/dont-pray-the-storm-away-why-you-need-the-storm',
   },
   openGraph: {
-    title: "Don't Pray the Storm Away - James 1:2-4 | Pastor Ricardo Zaal",
+    title: "Stop Trying to Escape Your Problems - Here Is What They Are Actually For",
     description: "Your storm is not punishment - it is pruning. Pastor Ricardo Zaal unpacks why you should stop praying the trial away.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
@@ -21,7 +21,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: "Don't Pray the Storm Away - James 1:2-4 | Pastor Ricardo Zaal",
+    headline: "Stop Trying to Escape Your Problems - Here Is What They Are Actually For",
     description: "Pastor Ricardo Zaal of Fountain of Grace International in Pretoria North preaches from James 1:2-4 on why believers should not pray their storms away. Using personal stories and practical scripture, he shows that trials produce patience, growth, and spiritual enlargement.",
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -44,7 +44,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: "Don't Pray the Storm Away - James 1:2-4 | Pastor Ricardo Zaal", item: 'https://www.fountaingrace.org/sermons/dont-pray-the-storm-away-why-you-need-the-storm' },
+      { '@type': 'ListItem', position: 3, name: "Stop Trying to Escape Your Problems - Here Is What They Are Actually For", item: 'https://www.fountaingrace.org/sermons/dont-pray-the-storm-away-why-you-need-the-storm' },
     ],
   },
   {
@@ -88,8 +88,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: "Don't Pray the Storm Away - James 1:2-4 | Pastor Ricardo Zaal",
-    description: "Don't Pray the Storm Away - James 1:2-4 | Pastor Ricardo Zaal",
+    name: "Stop Trying to Escape Your Problems - Here Is What They Are Actually For",
+    description: "Stop Trying to Escape Your Problems - Here Is What They Are Actually For",
     thumbnailUrl: 'https://img.youtube.com/vi/PENDING/maxresdefault.jpg',
     uploadDate: '2024-01-01',
     embedUrl: 'https://www.youtube.com/embed/PENDING',
@@ -104,7 +104,7 @@ const jsonLd = [
 ]
 
 const sd = {
-  "headline": "Don't Pray the Storm Away - James 1:2-4 | Pastor Ricardo Zaal",
+  "headline": "Stop Trying to Escape Your Problems - Here Is What They Are Actually For",
   "intro": "When life feels like it is falling apart, the first prayer most people pray is 'God, make it stop.' But what if the storm is not your enemy? Pastor Ricardo Zaal opens the Word on New Year's Day to show why the trials you are asking God to remove are often the very things He is using to grow you into who He needs you to be.",
   "scripture": "James 1:2-4",
   "quote": "The devil isn't bothering you? Maybe it's because you're not bothering him. If nothing is fighting you, ask yourself whose camp you are actually standing in.",

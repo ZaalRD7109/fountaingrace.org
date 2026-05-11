@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Born Original, Marked by God | Psalm 139:14 | Pastor Ricardo Zaal | Fountain of Grace International",
+  title: "You Were Not Made to Be a Copy of Someone Else | Fountain of Grace International",
   description: "Struggling to find your identity? Pastor Ricardo Zaal of Pretoria North unpacks why God crafted you as a one-of-a-kind original with purpose only you can fulfil.",
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/sermons/born-original-marked-by-god-identity-purpose',
   },
   openGraph: {
-    title: "Born Original, Marked by God | Psalm 139:14 | Pastor Ricardo Zaal",
+    title: "You Were Not Made to Be a Copy of Someone Else",
     description: "You were never meant to live in someone else's shadow. Discover your God-given identity with Pastor Ricardo Zaal.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
@@ -21,7 +21,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: "Born Original, Marked by God | Psalm 139:14 | Pastor Ricardo Zaal",
+    headline: "You Were Not Made to Be a Copy of Someone Else",
     description: "In this sermon, Pastor Ricardo Zaal of Fountain of Grace International in Pretoria North explores what it means to be born original and marked by God. Drawing from Psalm 139:14 and Jeremiah 1:5, he unpacks the Hebrew roots of being fearfully and wonderfully made and calls believers to stop imitating others and walk fully in their unique divine design.",
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -44,7 +44,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: "Born Original, Marked by God | Psalm 139:14 | Pastor Ricardo Zaal", item: 'https://www.fountaingrace.org/sermons/born-original-marked-by-god-identity-purpose' },
+      { '@type': 'ListItem', position: 3, name: "You Were Not Made to Be a Copy of Someone Else", item: 'https://www.fountaingrace.org/sermons/born-original-marked-by-god-identity-purpose' },
     ],
   },
   {
@@ -88,8 +88,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: "Born Original, Marked by God | Psalm 139:14 | Pastor Ricardo Zaal",
-    description: "Born Original, Marked by God | Psalm 139:14 | Pastor Ricardo Zaal",
+    name: "You Were Not Made to Be a Copy of Someone Else",
+    description: "You Were Not Made to Be a Copy of Someone Else",
     thumbnailUrl: 'https://img.youtube.com/vi/PENDING/maxresdefault.jpg',
     uploadDate: '2025-08-30',
     embedUrl: 'https://www.youtube.com/embed/PENDING',
@@ -104,7 +104,7 @@ const jsonLd = [
 ]
 
 const sd = {
-  "headline": "Born Original, Marked by God | Psalm 139:14 | Pastor Ricardo Zaal",
+  "headline": "You Were Not Made to Be a Copy of Someone Else",
   "intro": "Do you ever feel like you were born into the wrong story - comparing yourself to others, wishing you looked different, or trying to fit a mould someone else set for you? Pastor Ricardo Zaal tackles that pressure head-on in this message, showing that God did not clone you - He crafted you. From the Hebrew meaning of fearfully and wonderfully made to the intimate knowledge God had of you before birth, this sermon reminds you that your fingerprints, your quirks, and your calling are not accidents.",
   "scripture": "Psalm 139:14",
   "quote": "God didn't clone us - He crafted us. Every one of us carries a distinct imprint of His divine spiritual DNA, formed even before birth, tied to a purpose only we can fulfil.",

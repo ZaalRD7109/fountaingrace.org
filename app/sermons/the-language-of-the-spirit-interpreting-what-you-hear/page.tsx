@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'The Language of the Spirit: Interpreting What You Hear | Numbers 12:6 | Fountain of Grace International',
+  title: 'Hearing the Right Things and Still Getting Them Wrong - Here Is Why | Numbers 12:6 | Fountain of Grace International',
   description:
     'The problem is not God\'s silence - it is our translation. Numbers 12:6 says God speaks in visions and dreams. This message teaches you how to interpret what He is saying. Pretoria North.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/the-language-of-the-spirit-interpreting-what-you-hear',
   },
   openGraph: {
-    title: 'The Language of the Spirit: Interpreting What You Hear',
+    title: 'Hearing the Right Things and Still Getting Them Wrong - Here Is Why',
     description:
       'Numbers 12:6 - God speaks in visions and dreams. The problem is not that He has gone silent. The problem is translation. Learn to read the grammar of the Spirit. Pretoria North.',
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'The Language of the Spirit: Interpreting What You Hear',
+    headline: 'Hearing the Right Things and Still Getting Them Wrong - Here Is Why',
     description: 'Based on Numbers 12:6, Acts 2:17, Habakkuk 2:2-3, and Colossians 3:15, this message teaches believers how to correctly interpret what God communicates through visions, dreams, impressions, peace, and scripture - because the problem is rarely God\'s silence. It is our translation.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -74,8 +74,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'The Language of the Spirit: Interpreting What You Hear',
-    description: 'The Language of the Spirit: Interpreting What You Hear',
+    name: 'Hearing the Right Things and Still Getting Them Wrong - Here Is Why',
+    description: 'Hearing the Right Things and Still Getting Them Wrong - Here Is Why',
     thumbnailUrl: 'https://img.youtube.com/vi/NJNUWw-HC0A/maxresdefault.jpg',
     uploadDate: '2025-02-09',
     embedUrl: 'https://www.youtube.com/embed/NJNUWw-HC0A',
@@ -104,7 +104,7 @@ export default function SermonPage() {
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              The Language of the Spirit: Interpreting What You Hear
+              Hearing the Right Things and Still Getting Them Wrong - Here Is Why
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               The problem is not that God has gone silent. The problem is translation. Numbers 12:6 says God makes himself known through visions and speaks in dreams - but receiving the vision is only half of it. Interpreting it correctly is what changes your life. This message teaches you to read the grammar of the Spirit.
@@ -120,7 +120,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/NJNUWw-HC0A"
-                title="The Language of the Spirit: Interpreting What You Hear"
+                title="Hearing the Right Things and Still Getting Them Wrong - Here Is Why"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

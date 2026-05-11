@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'You Love God - But Are You Actually in the Game? | Fountain of Grace International',
+  title: 'You Know What You Should Be Doing - So Why Are You Still on the Sidelines? | Fountain of Grace International',
   description:
     'The crowd cheered Jesus and then crucified Him. The donkey carried Him in silence. Which one are you? A challenging message on commitment vs excitement. Pretoria North.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/you-love-god-but-are-you-in-the-game',
   },
   openGraph: {
-    title: 'You Love God - But Are You Actually in the Game?',
+    title: 'You Know What You Should Be Doing - So Why Are You Still on the Sidelines?',
     description:
       'Cheering for Jesus is easy. Carrying the weight is the real question. Based on Matthew 21, this message calls you from the crowd into committed action. Pretoria North.',
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'You Love God - But Are You Actually in the Game?',
+    headline: 'You Know What You Should Be Doing - So Why Are You Still on the Sidelines?',
     description: 'The contrast between the crowd (who cheered Jesus then crucified Him) and the donkey (who carried Jesus silently and obediently) reveals two types of believers - those who react with excitement and those who respond with commitment.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -70,12 +70,13 @@ const jsonLd = [
         },
       },
     ],
-  },,
+  },
+,
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'You Love God - But Are You Actually in the Game?',
-    description: 'You Love God - But Are You Actually in the Game?',
+    name: 'You Know What You Should Be Doing - So Why Are You Still on the Sidelines?',
+    description: 'You Know What You Should Be Doing - So Why Are You Still on the Sidelines?',
     thumbnailUrl: 'https://img.youtube.com/vi/C-wXZBOBE40/maxresdefault.jpg',
     uploadDate: '2026-04-05',
     embedUrl: 'https://www.youtube.com/embed/C-wXZBOBE40',
@@ -104,7 +105,7 @@ export default function SermonPage() {
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              You Love God - But Are You Actually in the Game?
+              You Know What You Should Be Doing - So Why Are You Still on the Sidelines?
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               The Sunday before Easter, the crowd cheered Jesus loudly. They threw garments in the road, waved palm branches, and called Him the son of David. A few days later, the same crowd called for His crucifixion. The donkey He rode said nothing. It simply carried Him. That contrast is this message.
@@ -120,7 +121,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/C-wXZBOBE40"
-                title="You Love God - But Are You Actually in the Game?"
+                title="You Know What You Should Be Doing - So Why Are You Still on the Sidelines?"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

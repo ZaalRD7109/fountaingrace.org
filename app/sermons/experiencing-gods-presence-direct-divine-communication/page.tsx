@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Experiencing God's Presence: Direct Divine Communication | Ps Ricardo Zaal | Fountain of Grace International",
+  title: "Can Something Greater Than Yourself Actually Speak Directly to You? | Fountain of Grace International",
   description: "Have you ever wondered if God truly speaks to people today? Pastor Ricardo Zaal at Pretoria North unpacks how to experience God's presence and hear His voice.",
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/sermons/experiencing-gods-presence-direct-divine-communication',
   },
   openGraph: {
-    title: "Experiencing God's Presence: Direct Divine Communication | Ps Ricardo Zaal",
+    title: "Can Something Greater Than Yourself Actually Speak Directly to You?",
     description: "Pastor Ricardo Zaal explores how God speaks directly to His people and how you can experience His presence in a real, personal way.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
@@ -21,7 +21,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: "Experiencing God's Presence: Direct Divine Communication | Ps Ricardo Zaal",
+    headline: "Can Something Greater Than Yourself Actually Speak Directly to You?",
     description: "In this sermon, Pastor Ricardo Zaal of Fountain of Grace International in Pretoria North challenges believers to move beyond second-hand faith into a genuine, first-hand experience of God's presence. He addresses the skepticism many people feel about hearing God's voice and shows from Scripture that direct divine communication is not reserved for a special few.",
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -44,7 +44,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: "Experiencing God's Presence: Direct Divine Communication | Ps Ricardo Zaal", item: 'https://www.fountaingrace.org/sermons/experiencing-gods-presence-direct-divine-communication' },
+      { '@type': 'ListItem', position: 3, name: "Can Something Greater Than Yourself Actually Speak Directly to You?", item: 'https://www.fountaingrace.org/sermons/experiencing-gods-presence-direct-divine-communication' },
     ],
   },
   {
@@ -88,8 +88,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: "Experiencing God's Presence: Direct Divine Communication | Ps Ricardo Zaal",
-    description: "Experiencing God's Presence: Direct Divine Communication | Ps Ricardo Zaal",
+    name: "Can Something Greater Than Yourself Actually Speak Directly to You?",
+    description: "Can Something Greater Than Yourself Actually Speak Directly to You?",
     thumbnailUrl: 'https://img.youtube.com/vi/ViHsAzbBhRU/maxresdefault.jpg',
     uploadDate: '2025-09-14',
     embedUrl: 'https://www.youtube.com/embed/ViHsAzbBhRU',
@@ -104,7 +104,7 @@ const jsonLd = [
 ]
 
 const sd = {
-  "headline": "Experiencing God's Presence: Direct Divine Communication | Ps Ricardo Zaal",
+  "headline": "Can Something Greater Than Yourself Actually Speak Directly to You?",
   "intro": "Many people find it hard to believe that God would actually speak to them personally - that kind of closeness can feel like it belongs only to pastors or Bible heroes. In this message, Pastor Ricardo Zaal of Fountain of Grace International in Pretoria North confronts that doubt head-on and opens up the possibility of a real, living encounter with God. If you have ever sat in church wondering whether God's voice is something you could ever truly hear, this sermon is for you.",
   "scripture": "John 10:27",
   "quote": "I used to question how anyone could say they were in the presence of God and He actually spoke to them - until I stopped doubting long enough to experience it for myself.",

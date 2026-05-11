@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Releasing His Presence - From Container to Conduit',
+    headline: 'Why Keeping Everything to Yourself Is the Reason Nothing Flows',
     description: 'Based on Luke 24:32, Matthew 5:15, and 2 Samuel 6:11, this message addresses believers who experience God\'s presence in church but cannot carry it into their homes, workplaces, and relationships - showing how to move from being a container of the presence to a conduit of it.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -74,8 +74,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'Releasing His Presence - From Container to Conduit',
-    description: 'Releasing His Presence - From Container to Conduit',
+    name: 'Why Keeping Everything to Yourself Is the Reason Nothing Flows',
+    description: 'Why Keeping Everything to Yourself Is the Reason Nothing Flows',
     thumbnailUrl: 'https://img.youtube.com/vi/yDYWamwrys4/maxresdefault.jpg',
     uploadDate: '2025-06-29',
     embedUrl: 'https://www.youtube.com/embed/yDYWamwrys4',

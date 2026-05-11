@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'The Prophetic Encounter: Stir Up the Gift in You | 2 Timothy 1:6 | Fountain of Grace International',
+  title: 'You Were Built for Something Specific - Here Is How to Find It | 2 Timothy 1:6 | Fountain of Grace International',
   description:
     'You are not broken - you are bruised. 2 Timothy 1:6 says stir up the gift of God which is in you. The gift is already there. Fear is the only thing keeping it from coming out. Pretoria North.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/the-prophetic-encounter',
   },
   openGraph: {
-    title: 'The Prophetic Encounter: Stir Up the Gift in You',
+    title: 'You Were Built for Something Specific - Here Is How to Find It',
     description:
       '2 Timothy 1:6 - stir up the gift of God which is in thee. Isaiah 42:3 says a bruised reed shall he not break. You are not broken. You are bruised. Fear is the prison. Walk out. Pretoria North.',
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'The Prophetic Encounter: Stir Up the Gift in You',
+    headline: 'You Were Built for Something Specific - Here Is How to Find It',
     description: 'Based on 2 Timothy 1:6, 1 Corinthians 14:1, Isaiah 42:3, and 2 Timothy 1:7, this message confronts the fear and comparison that keep believers from activating the gift God already placed inside them. You are not broken - you are bruised. The gift is in you. Stir it up.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -74,8 +74,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'The Prophetic Encounter: Stir Up the Gift in You',
-    description: 'The Prophetic Encounter: Stir Up the Gift in You',
+    name: 'You Were Built for Something Specific - Here Is How to Find It',
+    description: 'You Were Built for Something Specific - Here Is How to Find It',
     thumbnailUrl: 'https://img.youtube.com/vi/syeKz7bhxn4/maxresdefault.jpg',
     uploadDate: '2025-02-23',
     embedUrl: 'https://www.youtube.com/embed/syeKz7bhxn4',
@@ -104,7 +104,7 @@ export default function SermonPage() {
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              The Prophetic Encounter: Stir Up the Gift in You
+              You Were Built for Something Specific - Here Is How to Find It
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               2 Timothy 1:6 does not tell you to go find the gift. It tells you to stir up the gift that is already in you. The problem is not that God withheld something. The problem is that fear, comparison, and the wrong season buried what was already there. This message is about getting it back out.
@@ -120,7 +120,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/syeKz7bhxn4"
-                title="The Prophetic Encounter: Stir Up the Gift in You"
+                title="You Were Built for Something Specific - Here Is How to Find It"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

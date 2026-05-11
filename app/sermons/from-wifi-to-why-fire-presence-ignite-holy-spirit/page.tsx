@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "From WiFi to Why Fire: Presence Ignite | Luke 24:32 | Pastor Ricardo Zaal | Fountain of Grace International",
+  title: "Why Your Drive Burns Out Before the Breakthrough | Fountain of Grace International",
   description: "Feeling spiritually dry and disconnected? Pastor Ricardo Zaal of Pretoria North unpacks why presence with God changes everything - Luke 24:32.",
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/sermons/from-wifi-to-why-fire-presence-ignite-holy-spirit',
   },
   openGraph: {
-    title: "From WiFi to Why Fire: Presence Ignite | Luke 24:32 | Pastor Ricardo Zaal",
+    title: "Why Your Drive Burns Out Before the Breakthrough",
     description: "Stop buffering spiritually. Pastor Ricardo Zaal shows why God's presence - not more information - is what ignites lasting fire in your life.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
@@ -21,7 +21,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: "From WiFi to Why Fire: Presence Ignite | Luke 24:32 | Pastor Ricardo Zaal",
+    headline: "Why Your Drive Burns Out Before the Breakthrough",
     description: "Pastor Ricardo Zaal of Fountain of Grace International in Pretoria North explores why so many believers feel spiritually disconnected despite being active in church and online. Drawing from Luke 24:32 and Acts 1:8, he reveals that real transformation only happens through genuine face-to-face presence with God, not just spiritual information.",
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -44,7 +44,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: "From WiFi to Why Fire: Presence Ignite | Luke 24:32 | Pastor Ricardo Zaal", item: 'https://www.fountaingrace.org/sermons/from-wifi-to-why-fire-presence-ignite-holy-spirit' },
+      { '@type': 'ListItem', position: 3, name: "Why Your Drive Burns Out Before the Breakthrough", item: 'https://www.fountaingrace.org/sermons/from-wifi-to-why-fire-presence-ignite-holy-spirit' },
     ],
   },
   {
@@ -88,8 +88,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: "From WiFi to Why Fire: Presence Ignite | Luke 24:32 | Pastor Ricardo Zaal",
-    description: "From WiFi to Why Fire: Presence Ignite | Luke 24:32 | Pastor Ricardo Zaal",
+    name: "Why Your Drive Burns Out Before the Breakthrough",
+    description: "Why Your Drive Burns Out Before the Breakthrough",
     thumbnailUrl: 'https://img.youtube.com/vi/PENDING/maxresdefault.jpg',
     uploadDate: '2025-09-07',
     embedUrl: 'https://www.youtube.com/embed/PENDING',
@@ -104,7 +104,7 @@ const jsonLd = [
 ]
 
 const sd = {
-  "headline": "From WiFi to Why Fire: Presence Ignite | Luke 24:32 | Pastor Ricardo Zaal",
+  "headline": "Why Your Drive Burns Out Before the Breakthrough",
   "intro": "Ever felt fired up about God on Sunday, only for that feeling to be completely gone by Monday morning? You are not broken - you are buffering. In this message Pastor Ricardo Zaal uses the everyday frustration of slow WiFi to explain why so many people have access to God's full power but only ever experience a fraction of it. The answer is closer than you think, and it starts with presence.",
   "scripture": "Luke 24:32",
   "quote": "God has given you 100 megabytes per second, but you keep living on 10 - not because He reduced it, but because you moved away from His presence and started buffering.",

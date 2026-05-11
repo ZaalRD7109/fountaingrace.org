@@ -2,14 +2,14 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The Birth of the Great - Christmas 2022 | Matthew 1:21 | Pastor Ricardo Zaal | Fountain of Grace International",
+  title: "Born Into Something Greater Than the Life You Are Currently Living | Fountain of Grace International",
   description: "Struggling this Christmas season in Pretoria North? Pastor Ricardo Zaal shows how the birth of Jesus Christ births new life into every broken situation you face.",
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/sermons/birth-of-the-great-christmas-sermon-matthew-1-21',
   },
   openGraph: {
-    title: "The Birth of the Great - Christmas 2022 | Matthew 1:21 | Pastor Ricardo Zaal",
+    title: "Born Into Something Greater Than the Life You Are Currently Living",
     description: "The birth of Jesus Christ is not just history - it births greatness into your finances, relationships, and future right now.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
@@ -21,7 +21,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: "The Birth of the Great - Christmas 2022 | Matthew 1:21 | Pastor Ricardo Zaal",
+    headline: "Born Into Something Greater Than the Life You Are Currently Living",
     description: "In this Christmas sermon from Fountain of Grace International in Pretoria North, Pastor Ricardo Zaal preaches from Matthew 1:21 on how the birth of Jesus Christ brings new birth to every dead situation. He declares that the same greatness that came with Christ's arrival is available to every believer facing financial hardship, broken relationships, or loss this Christmas season.",
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -44,7 +44,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: "The Birth of the Great - Christmas 2022 | Matthew 1:21 | Pastor Ricardo Zaal", item: 'https://www.fountaingrace.org/sermons/birth-of-the-great-christmas-sermon-matthew-1-21' },
+      { '@type': 'ListItem', position: 3, name: "Born Into Something Greater Than the Life You Are Currently Living", item: 'https://www.fountaingrace.org/sermons/birth-of-the-great-christmas-sermon-matthew-1-21' },
     ],
   },
   {
@@ -88,8 +88,8 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: "The Birth of the Great - Christmas 2022 | Matthew 1:21 | Pastor Ricardo Zaal",
-    description: "The Birth of the Great - Christmas 2022 | Matthew 1:21 | Pastor Ricardo Zaal",
+    name: "Born Into Something Greater Than the Life You Are Currently Living",
+    description: "Born Into Something Greater Than the Life You Are Currently Living",
     thumbnailUrl: 'https://img.youtube.com/vi/PENDING/maxresdefault.jpg',
     uploadDate: '2022-12-25',
     embedUrl: 'https://www.youtube.com/embed/PENDING',
@@ -104,7 +104,7 @@ const jsonLd = [
 ]
 
 const sd = {
-  "headline": "The Birth of the Great - Christmas 2022 | Matthew 1:21 | Pastor Ricardo Zaal",
+  "headline": "Born Into Something Greater Than the Life You Are Currently Living",
   "intro": "Christmas can feel hollow when you are grieving a loss, struggling financially, or sitting alone with no one at the table. Pastor Ricardo Zaal opens the Word on Christmas morning and shows that the birth of Jesus Christ is not a distant historical event but a living force that births new things into the dead places of your life. If something in your world has gone dry, this message is for you.",
   "scripture": "Matthew 1:21",
   "quote": "The birth of Jesus Christ will birth great things because He said it in His Word - He shall save His people from their sins. Whatever sins, whatever situations, whatever dry places have been keeping you from what you need, the birth of the Great is speaking into that right now.",

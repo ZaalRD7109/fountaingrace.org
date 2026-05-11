@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'The Anointing That Makes Hell Fear You | Isaiah 10:27 | Fountain of Grace International',
+  title: 'Why Some People Are Completely Untouchable No Matter What Life Throws | Isaiah 10:27 | Fountain of Grace International',
   description:
     'The anointing is not eloquence or performance. Isaiah 10:27 says the yoke is destroyed because of it. This message explains what the anointing actually is and why hell fears it. Pretoria North.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/the-anointing-that-makes-hell-fear-you',
   },
   openGraph: {
-    title: 'The Anointing That Makes Hell Fear You | Isaiah 10:27',
+    title: 'Why Some People Are Completely Untouchable No Matter What Life Throws | Isaiah 10:27',
     description:
       'God marks you as His property. The anointing takes you beyond your natural ability, breaks every yoke, and stops spiritual infection. Pretoria North.',
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'The Anointing That Makes Hell Fear You',
+    headline: 'Why Some People Are Completely Untouchable No Matter What Life Throws',
     description: 'Based on Isaiah 10:27, 1 Samuel 16:13, and Exodus 31:3, this message explains the anointing as God\'s mark of ownership - breaking yokes, taking believers beyond natural ability, and stopping spiritual infection.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -46,7 +46,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: 'The Anointing That Makes Hell Fear You', item: 'https://www.fountaingrace.org/sermons/the-anointing-that-makes-hell-fear-you' },
+      { '@type': 'ListItem', position: 3, name: 'Why Some People Are Completely Untouchable No Matter What Life Throws', item: 'https://www.fountaingrace.org/sermons/the-anointing-that-makes-hell-fear-you' },
     ],
   },
   {
@@ -70,12 +70,13 @@ const jsonLd = [
         },
       },
     ],
-  },,
+  },
+,
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'The Anointing That Makes Hell Fear You',
-    description: 'The Anointing That Makes Hell Fear You',
+    name: 'Why Some People Are Completely Untouchable No Matter What Life Throws',
+    description: 'Why Some People Are Completely Untouchable No Matter What Life Throws',
     thumbnailUrl: 'https://img.youtube.com/vi/J8AX_0vYDLs/maxresdefault.jpg',
     uploadDate: '2025-08-24',
     embedUrl: 'https://www.youtube.com/embed/J8AX_0vYDLs',
@@ -104,7 +105,7 @@ export default function SermonPage() {
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              The Anointing That Makes Hell Fear You
+              Why Some People Are Completely Untouchable No Matter What Life Throws
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               The anointing is not eloquent words. It is not a confident stage presence. Isaiah 10:27 says the yoke shall be destroyed because of it - not because of you. This message is about what the anointing actually is, what it does, and why you need it in every area of your life.
@@ -120,7 +121,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/J8AX_0vYDLs"
-                title="The Anointing That Makes Hell Fear You"
+                title="Why Some People Are Completely Untouchable No Matter What Life Throws"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

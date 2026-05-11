@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Why Your Prayers Are Not Changing Your Life | Fountain of Grace International',
+  title: 'Why Nothing Changes No Matter How Hard You Try | Fountain of Grace International',
   description:
     'A prophetic word only activates when you combine faith with the right action step. Most regrets come from what you did not do, not what you did wrong. Pretoria North.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/why-your-prayers-are-not-changing-your-life',
   },
   openGraph: {
-    title: 'Why Your Prayers Are Not Changing Your Life',
+    title: 'Why Nothing Changes No Matter How Hard You Try',
     description:
       'You had the idea. Somebody else took it. You had the word from God. Nothing happened. This message explains the missing piece between prayer and result. Pretoria North.',
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Why Your Prayers Are Not Changing Your Life',
+    headline: 'Why Nothing Changes No Matter How Hard You Try',
     description: 'A prophetic word only becomes reality when faith and corresponding action steps are present. Most regrets are not about wrong actions - they are about inaction. The building with the foundation but no bricks is still just an idea.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -46,7 +46,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: 'Why Your Prayers Are Not Changing Your Life', item: 'https://www.fountaingrace.org/sermons/why-your-prayers-are-not-changing-your-life' },
+      { '@type': 'ListItem', position: 3, name: 'Why Nothing Changes No Matter How Hard You Try', item: 'https://www.fountaingrace.org/sermons/why-your-prayers-are-not-changing-your-life' },
     ],
   },
   {
@@ -70,12 +70,13 @@ const jsonLd = [
         },
       },
     ],
-  },,
+  },
+,
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'Why Your Prayers Are Not Changing Your Life',
-    description: 'Why Your Prayers Are Not Changing Your Life',
+    name: 'Why Nothing Changes No Matter How Hard You Try',
+    description: 'Why Nothing Changes No Matter How Hard You Try',
     thumbnailUrl: 'https://img.youtube.com/vi/r9Cqow1ffcE/maxresdefault.jpg',
     uploadDate: '2026-01-04',
     embedUrl: 'https://www.youtube.com/embed/r9Cqow1ffcE',
@@ -104,7 +105,7 @@ export default function SermonPage() {
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              Why Your Prayers Are Not Changing Your Life
+              Why Nothing Changes No Matter How Hard You Try
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               We have been preaching. Nothing has changed. We have been prophesying. Nothing has changed. We have been praying over you. Nothing has changed. At some point, the honest question has to be asked: what is missing between the prayer and the result?
@@ -120,7 +121,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/r9Cqow1ffcE"
-                title="Why Your Prayers Are Not Changing Your Life | James 1:22"
+                title="Why Nothing Changes No Matter How Hard You Try | James 1:22"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen

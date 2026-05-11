@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Hosting the Presence of God | Psalm 27:8 | Fountain of Grace International',
+  title: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed | Psalm 27:8 | Fountain of Grace International',
   description:
     'Psalm 27:8 - seek my face, require my presence. This message explains the difference between attending church and hosting God\'s presence, and what changes when you carry it daily. Pretoria North.',
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/hosting-the-presence-of-god',
   },
   openGraph: {
-    title: 'Hosting the Presence of God | Psalm 27:8',
+    title: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed | Psalm 27:8',
     description:
       'Samson lost his strength without noticing. Obed-Edom\'s house overflowed in 3 months. The difference was not effort - it was how each one treated the presence. Pretoria North.',
     type: 'article',
@@ -23,7 +23,7 @@ const jsonLd = [
   {
     '@context': 'https://schema.org',
     '@type': 'Article',
-    headline: 'Hosting the Presence of God',
+    headline: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed',
     description: 'Based on Psalm 27:8, 2 Samuel 6:11, 1 Corinthians 6:19-20, and Judges 16:20, this message addresses the difference between attending religious events and hosting God\'s presence as a daily reality - and what Obed-Edom\'s overflowing household shows about what happens when you make room for Him.',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -46,7 +46,7 @@ const jsonLd = [
     itemListElement: [
       { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
       { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-      { '@type': 'ListItem', position: 3, name: 'Hosting the Presence of God', item: 'https://www.fountaingrace.org/sermons/hosting-the-presence-of-god' },
+      { '@type': 'ListItem', position: 3, name: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed', item: 'https://www.fountaingrace.org/sermons/hosting-the-presence-of-god' },
     ],
   },
   {
@@ -70,12 +70,13 @@ const jsonLd = [
         },
       },
     ],
-  },,
+  },
+,
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
-    name: 'Hosting the Presence of God',
-    description: 'Hosting the Presence of God',
+    name: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed',
+    description: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed',
     thumbnailUrl: 'https://img.youtube.com/vi/FoJYMiC19yY/maxresdefault.jpg',
     uploadDate: '2025-06-22',
     embedUrl: 'https://www.youtube.com/embed/FoJYMiC19yY',
@@ -104,7 +105,7 @@ export default function SermonPage() {
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              Hosting the Presence of God
+              Why Sunday Feels Different and Monday Feels Like Nothing Changed
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               We live in a world full of connections but very little communion. People scroll all night and still feel empty. Christians attend services and go home unchanged. The problem is not the absence of God - it is that we have confused performance for presence. This message is about what changes when you stop performing and start hosting.
@@ -120,7 +121,7 @@ export default function SermonPage() {
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/FoJYMiC19yY"
-                title="Hosting the Presence of God"
+                title="Why Sunday Feels Different and Monday Feels Like Nothing Changed"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
