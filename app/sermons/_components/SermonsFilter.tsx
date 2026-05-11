@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo } from 'react'
+import { useState, useMemo, useEffect, useRef } from 'react'
 import Link from 'next/link'
 
 type Sermon = {
@@ -14,6 +14,19 @@ type Sermon = {
 export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
   const [search, setSearch] = useState('')
   const [year, setYear] = useState<number | null>(null)
+  // Full-transcript search index: slug -> keyword string
+  const [index, setIndex] = useState<Record<string, string>>({})
+  const indexLoaded = useRef(false)
+
+  // Lazy-load the transcript keyword index the first time the user types
+  useEffect(() => {
+    if (!search.trim() || indexLoaded.current) return
+    indexLoaded.current = true
+    fetch('/sermon-index.json')
+      .then(r => r.json())
+      .then((data: Record<string, string>) => setIndex(data))
+      .catch(() => { /* silently fall back to title+intro search */ })
+  }, [search])
 
   const years = useMemo(() => {
     const set = new Set(sermons.map(s => parseInt(s.date.slice(0, 4))))
@@ -25,11 +38,17 @@ export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
     return sermons.filter(s => {
       if (year && !s.date.startsWith(String(year))) return false
       if (!q) return true
-      return s.title.toLowerCase().includes(q) || s.intro.toLowerCase().includes(q)
+      // Search title and intro first (instant, always available)
+      if (s.title.toLowerCase().includes(q)) return true
+      if (s.intro.toLowerCase().includes(q)) return true
+      // Then search full transcript keywords (available once index loads)
+      if (index[s.slug] && index[s.slug].includes(q)) return true
+      return false
     })
-  }, [sermons, search, year])
+  }, [sermons, search, year, index])
 
   const isFiltered = search.trim().length > 0 || year !== null
+  const indexReady = Object.keys(index).length > 0
 
   return (
     <>
@@ -51,7 +70,7 @@ export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
               type="text"
               value={search}
               onChange={e => setSearch(e.target.value)}
-              placeholder="Search messages by topic or keyword..."
+              placeholder="Search any word or topic across all sermons..."
               className="w-full pl-9 pr-10 py-2.5 border border-gray-200 rounded-lg text-sm focus:outline-none focus:border-[#2a9df4] focus:ring-1 focus:ring-[#2a9df4]"
             />
             {search && (
@@ -95,6 +114,11 @@ export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
             {isFiltered && (
               <span className="ml-auto text-xs text-[#555]">
                 {filtered.length} of {sermons.length} messages
+                {search.trim() && (
+                  <span className="ml-1 text-gray-400">
+                    {indexReady ? '· full transcript search' : '· loading deep search...'}
+                  </span>
+                )}
               </span>
             )}
           </div>
