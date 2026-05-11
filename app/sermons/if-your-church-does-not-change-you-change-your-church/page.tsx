@@ -90,9 +90,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: "Are You Actually Being Transformed or Just Showing Up?",
     description: "Are You Actually Being Transformed or Just Showing Up?",
-    thumbnailUrl: 'https://img.youtube.com/vi/PENDING/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/Ox1mbbUJoS4/maxresdefault.jpg',
     uploadDate: '2023-07-02',
-    embedUrl: 'https://www.youtube.com/embed/PENDING',
+    embedUrl: 'https://www.youtube.com/embed/Ox1mbbUJoS4',
     url: 'https://www.fountaingrace.org/sermons/if-your-church-does-not-change-you-change-your-church',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -199,7 +199,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/PENDING"
+                src="https://www.youtube.com/embed/Ox1mbbUJoS4"
                 title={sd.headline}
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
