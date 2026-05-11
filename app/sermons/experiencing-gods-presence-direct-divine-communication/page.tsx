@@ -160,6 +160,8 @@ const sd = {
 type Section = { heading: string; paragraphs: string[] }
 type Faq     = { q: string; a: string }
 
+const sermonTranscript = "know what they told me. I remember that there were some years\nyears ago I used to I used to say\nI used to how do you call it yeah I said yes I used to say\nhow can people say I was in the presence of God and then suddenly\nwhen I was in his presence he talked to me he spoke to me he said this he said\nthat\nyeah"
+
 export default function SermonPage() {
   return (
     <>
@@ -270,6 +272,20 @@ export default function SermonPage() {
                 Send a Prayer Request
               </Link>
             </div>
+          </div>
+        </section>
+      
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-3xl mx-auto">
+            <details className="group">
+              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+                <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
+                Read Full Sermon Transcript
+              </summary>
+              <div className="mt-6 text-[#555] text-sm leading-relaxed whitespace-pre-wrap">
+                {sermonTranscript}
+              </div>
+            </details>
           </div>
         </section>
       </article>

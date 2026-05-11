@@ -74,7 +74,8 @@ const jsonLd = [
         acceptedAnswer: { '@type': 'Answer', text: "1 John 4:4 says greater is he that is in you than he that is in the world. This means the God who formed your purpose and lives inside you is greater than every external voice, circumstance, or setback telling you to stop. The message preached at Fountain of Grace International in Pretoria North uses this verse to show that your inner knowing is backed by the same God who set you apart before birth." },
       },
     ],
-  },,
+  },
+,
   {
     '@context': 'https://schema.org',
     '@type': 'VideoObject',
@@ -92,6 +93,8 @@ const jsonLd = [
     },
   }
 ]
+
+const sermonTranscript = "So it means that some of the things\nthat you do in life,\nsometimes you think it's wrong\nbecause of certain things get spoken in your head.\nI can make another example quickly.\nYou've been put from young days.\nDon't run, you will fall.\nDon't run, you will fall.\nDon't run, you will fall.\nIt's been imprinted in your mind,\nbut yet you feel like running.\nYou keep on feeling like running\nand you ended up being Carl Lewis.\nDo you remember Carl Lewis?\nOr what's that guy's name?\nIs it?\nYes, he's the right guy I'm talking about.\nWhen they told you not to run,\nbut in your inner being,\nyou know I'm supposed to run.\nBut your mother and father kept on saying to you,\ndon't run, you will fall.\nYet you stop running.\nYet you stop falling.\nFrederick Carlton Lewis,\nborn 1961,\nis an American track and field athlete\nwho won nine Olympic gold medals.\nNine Olympic gold medals.\nImagine if he would have listened to his mother and father\ntelling him not to run.\nWe wouldn't have even known him today.\nAnd this is what I'm saying to you.\nBefore you were born,\nGod already set you apart.\nYes.\nFor you to know what you've been set apart from\nis to listen to your inner being\nwhere God is saying,\nthe Bible says that,\ngreater is he that is within me\nthat is in the world.\nSo stop listening to what your mother and father\nis telling you.\nIf you know\nyour destiny is different.\nYou know the\nthe Hebrew word for\nfor new\nis yada.\nIt means an intimate\npurposeful\nknowing.\nSo God\nknew\npurposefully\nhe knew you.\nNo, no, no.\nLet me go\none further.\nGod did not\ndo the same thing\nlike I did now.\nI was going on Google\nquickly\nhitting\nCarl Lewis.\nWho is Carl Lewis?\nI typed quickly.\nGod did not\nresearch you\non Google.\nGod\nknew you\nhe\nuttered you\nhe\nmade you\nhe\nformed you\nhe\nwrote\nwhat life would be like.\nSo\nwhere is it\nthat you need to go\nand get\nyour\nwall\nthat you must stand against?\nI\ncan make another\nexample\nquickly.\nLet me make an example\nexample.\nYou've been put\nfrom young days.\nDon't run\nyou will fall.\nDon't run\nyou will fall.\nDon't run\nyou will fall.\nIt's been\nimprinted\nin your mind\nbut yet\nyou feel like\nrunning.\nI\nmay not\nknow\nyou\nthey\ngo\nto\nI\ndo\ncart"
 
 export default function SermonPage() {
   return (
@@ -230,6 +233,20 @@ export default function SermonPage() {
             <Link href="/plan-your-visit" className="btn-primary">
               Plan Your Visit
             </Link>
+          </div>
+        </section>
+      
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-3xl mx-auto">
+            <details className="group">
+              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+                <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
+                Read Full Sermon Transcript
+              </summary>
+              <div className="mt-6 text-[#555] text-sm leading-relaxed whitespace-pre-wrap">
+                {sermonTranscript}
+              </div>
+            </details>
           </div>
         </section>
       </article>

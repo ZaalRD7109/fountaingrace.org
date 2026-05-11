@@ -77,6 +77,8 @@ const jsonLd = [
   },
 ]
 
+const sermonTranscript = "James 1 verse 21. And I'm going to read from the New King James Version. Therefore, lay aside all faultiness and overflow of wickedness, and receive with meekness the implanted word, which is able to save your souls. But be a doers of the word and not hearers only. Deceiving yourself. For if anyone is a hearer of the word and not a doer, he is like a man observing his natural face in a mirror. For he observes himself, goes away, and immediately forgets what kind of man he was. But he who looks into the perfect law of liberty and continues in it, and is not forgetful, hearers but a doer of the word, this one will be blessed in what he does. This one will be blessed in what he does."
+
 export default function SermonPage() {
   return (
     <>
@@ -222,6 +224,20 @@ export default function SermonPage() {
             <Link href="/plan-your-visit" className="btn-primary">
               Plan Your Visit
             </Link>
+          </div>
+        </section>
+      
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-3xl mx-auto">
+            <details className="group">
+              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+                <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
+                Read Full Sermon Transcript
+              </summary>
+              <div className="mt-6 text-[#555] text-sm leading-relaxed whitespace-pre-wrap">
+                {sermonTranscript}
+              </div>
+            </details>
           </div>
         </section>
       </article>

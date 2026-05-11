@@ -160,6 +160,8 @@ const sd = {
 type Section = { heading: string; paragraphs: string[] }
 type Faq     = { q: string; a: string }
 
+const sermonTranscript = "No man or woman walking this earth can stop what God has started in you.\nPhilippians chapter 1 verse 6 says, He who began a good working you will carry it on to completion.\nYou are not alone. 2 Kings 6 verse 16 declares, Do not be afraid. Those who are with us are more\nthan those who are with them. Romans chapter 8 verse 31 asks, If God is for us, who could be\nagainst us? Even when the world around you falls apart, you are covered. Psalm chapter 91 verse 7\nsays, A thousand may fall at your side, ten thousand at your right hand, but it will not\ncome near you. And when your strength ends, his power begins. 2 Corinthians 12 verse 9 promises,\nMy grace is sufficient for you, for my power is made perfect in weakness. So walk boldly.\nGod started the work in you, and he will finish it."
+
 export default function SermonPage() {
   return (
     <>
@@ -270,6 +272,20 @@ export default function SermonPage() {
                 Send a Prayer Request
               </Link>
             </div>
+          </div>
+        </section>
+      
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-3xl mx-auto">
+            <details className="group">
+              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+                <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
+                Read Full Sermon Transcript
+              </summary>
+              <div className="mt-6 text-[#555] text-sm leading-relaxed whitespace-pre-wrap">
+                {sermonTranscript}
+              </div>
+            </details>
           </div>
         </section>
       </article>
