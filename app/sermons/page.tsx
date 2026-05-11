@@ -21,6 +21,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'born-original-marked-by-god-identity-purpose',
+    title: "Born Original, Marked by God | Psalm 139:14 | Pastor Ricardo Zaal",
+    date: "2025-08-30",
+    dateDisplay: "30 August 2025",
+    intro:
+      "Do you ever feel like you were born into the wrong story - comparing yourself to others, wishing you looked different, or trying to fit a mould someone else set for you? Pastor Ricardo Zaal tackles that pressure head-on in this message, showing that God did not clone you - He crafted you. From the Hebrew meaning of fearfully and wonderfully made to the intimate knowledge God had of you before birth, this sermon reminds you that your fingerprints, your quirks, and your calling are not accidents.",
+  },
+  {
     slug: 'right-action-principles-move-forward-faster-part2',
     title: "The Right Action Principle: What Moves You Forward Faster | James 2:17",
     date: "2025-11-16",
