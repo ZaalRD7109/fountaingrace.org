@@ -1,3 +1,6 @@
+# Non-www to www canonical redirect - prevents "Alternate page with proper canonical tag" in Search Console
+https://fountaingrace.org/* https://www.fountaingrace.org/:splat 301
+
 # Canonical consolidation - duplicate pages removed 2026-05-01
 /church-pretoria-north / 301
 /sunday-services /plan-your-visit 301
