@@ -2,7 +2,7 @@
 /church-pretoria-north / 301
 /sunday-services /plan-your-visit 301
 
-# Core pages — .html → clean URL
+# Core pages — .html → clean URL (single hop, no chains)
 /index.html /  301
 /about.html /about  301
 /contact.html /contact  301
@@ -10,7 +10,6 @@
 /programs.html /programs  301
 /plan-your-visit.html /plan-your-visit  301
 /what-to-expect.html /what-to-expect  301
-/what-to-expect /plan-your-visit  301
 /sermons.html /sermons  301
 /community-impact.html /community-impact  301
 
