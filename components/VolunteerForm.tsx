@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import TurnstileWidget from '@/components/TurnstileWidget'
 import { EDGE_BASE } from '@/lib/edgeBase'
+import { useFormStartOnce } from '@/lib/tracking'
 
 export default function VolunteerForm() {
   const router = useRouter()
@@ -16,6 +17,7 @@ export default function VolunteerForm() {
   const [turnstileToken, setTurnstileToken] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const handleFormStart = useFormStartOnce('volunteer')
 
   const handleVerify = useCallback((token: string) => setTurnstileToken(token), [])
 
@@ -56,7 +58,7 @@ export default function VolunteerForm() {
   const labelClass = 'block text-sm font-semibold text-gray-700 mb-1'
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="space-y-5">
+    <form onSubmit={handleSubmit} onFocus={handleFormStart} noValidate className="space-y-5">
       <div>
         <label htmlFor="vol-name" className={labelClass}>
           Full Name <span className="text-red-500">*</span>

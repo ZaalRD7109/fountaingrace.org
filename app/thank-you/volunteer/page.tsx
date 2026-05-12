@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import ThankYouTracker from '@/components/ThankYouTracker'
 
 export const metadata: Metadata = {
   title: 'Application Received | Fountain of Grace International',
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
 export default function VolunteerThankYouPage() {
   return (
     <>
+      <ThankYouTracker formName="volunteer" />
       <section className="bg-[#008080] text-white pt-16 pb-16 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
           <p className="text-[#FFD600] font-semibold text-xs uppercase tracking-wider mb-3">

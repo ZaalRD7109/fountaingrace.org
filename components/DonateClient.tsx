@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
+import { trackDonateInitiated, useFormStartOnce } from '@/lib/tracking'
 
 const PRESETS = ['150', '350', '600', '1000']
 
@@ -92,6 +93,7 @@ const TRUST_CARDS = [
 
 export default function DonateClient() {
   const [amount, setAmount] = useState('350')
+  const handleFormStart = useFormStartOnce('donate')
 
   const impactText =
     IMPACT[amount] ?? `R${parseInt(amount) || 0} goes directly to FGI programmes`
@@ -180,7 +182,10 @@ export default function DonateClient() {
               <button
                 key={p}
                 type="button"
-                onClick={() => setAmount(p)}
+                onClick={() => {
+                  setAmount(p)
+                  handleFormStart()
+                }}
                 className={`px-6 py-2.5 rounded-full text-sm font-bold border-2 transition-all duration-150 ${
                   amount === p
                     ? 'bg-[#FFD600] text-[#1a1a1a] border-[#FFD600] shadow-[0_3px_10px_rgba(255,214,0,0.4)]'
@@ -201,6 +206,7 @@ export default function DonateClient() {
               min="10"
               step="10"
               value={amount}
+              onFocus={handleFormStart}
               onChange={(e) => setAmount(e.target.value)}
               className="flex-1 border-2 border-[#e0f0ff] rounded-xl px-4 py-3 text-lg font-bold text-[#2a9df4] text-center focus:outline-none focus:border-[#008080]"
               aria-label="Custom donation amount in Rand"
@@ -234,6 +240,7 @@ export default function DonateClient() {
                     action="https://www.paypal.com/cgi-bin/webscr"
                     method="post"
                     target="_blank"
+                    onSubmit={() => trackDonateInitiated(parseInt(opt.amount), 'monthly')}
                   >
                     <input type="hidden" name="cmd" value="_xclick-subscriptions" />
                     <input type="hidden" name="business" value="info@fountaingrace.org" />
@@ -272,6 +279,7 @@ export default function DonateClient() {
                 action="https://www.paypal.com/cgi-bin/webscr"
                 method="post"
                 target="_blank"
+                onSubmit={() => trackDonateInitiated(parseInt(amount) || 0, 'one_time')}
               >
                 <input type="hidden" name="cmd" value="_donations" />
                 <input type="hidden" name="business" value="info@fountaingrace.org" />

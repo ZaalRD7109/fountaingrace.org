@@ -5,6 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import TurnstileWidget from '@/components/TurnstileWidget'
 import { EDGE_BASE } from '@/lib/edgeBase'
+import { useFormStartOnce } from '@/lib/tracking'
 
 export default function PrayerForm() {
   const router = useRouter()
@@ -15,6 +16,7 @@ export default function PrayerForm() {
   const [turnstileToken, setTurnstileToken] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
+  const handleFormStart = useFormStartOnce('prayer')
 
   const handleVerify = useCallback((token: string) => setTurnstileToken(token), [])
 
@@ -48,7 +50,7 @@ export default function PrayerForm() {
   const labelClass = 'block text-sm font-semibold text-gray-700 mb-1'
 
   return (
-    <form onSubmit={handleSubmit} noValidate className="space-y-5">
+    <form onSubmit={handleSubmit} onFocus={handleFormStart} noValidate className="space-y-5">
       <div>
         <label htmlFor="prayer-name" className={labelClass}>
           Your Name <span className="text-red-500">*</span>
