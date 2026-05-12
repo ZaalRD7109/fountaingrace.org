@@ -172,7 +172,11 @@
    - TURNSTILE_SECRET_KEY saved to Supabase Edge Function secrets.
    - All 4 forms now have real spam protection. Red "For testing only" text gone.
 
-3. **Google Ads conversion tracking** - Needs to fire on donate and contact success pages
+3. **Conversion tracking + form-abandonment retargeting** - Needs to fire on all success pages
+   - **Success pages already exist** (noindex): `/thank-you/contact`, `/thank-you/prayer`, `/thank-you/visit`, `/thank-you/volunteer`, plus the donate success state on `/donate`. Old static URL `/contact-success.htm` is gone — use the new clean URLs.
+   - **Fire conversion events** on those pages: GA4 (`form_submit_success` event with form name), Google Ads conversion tag, Meta Pixel `Lead` event, Microsoft Clarity custom tag. Each platform needs its own conversion ID/label set up in the ad account first.
+   - **Abandonment retargeting**: build remarketing audiences from "visited form page (contact / prayer / plan-your-visit / volunteer / donate) AND did NOT visit matching /thank-you/* page" in Google Ads and Meta. Run "you filled in the form and did not finish, how can we help?" ads against those audiences. Requires GA4 audiences synced to Google Ads, and Meta Pixel custom audiences with URL inclusion/exclusion rules.
+   - **Form-start event** (optional but improves audience accuracy): fire `form_start` on first field focus so we can build the funnel `form_start → form_submit_success` and measure drop-off rate.
 
 4. **Google Business Profile** - Claim, verify, then add URL to sameAs in app/page.tsx and app/contact/page.tsx
 
