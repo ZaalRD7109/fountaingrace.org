@@ -66,8 +66,8 @@ export default function PrayerPage() {
             We will pray with you.
           </h1>
           <p className="text-white text-base leading-relaxed">
-            Submit your request below. The pastoral team at Fountain of Grace International
-            receives every request personally - nothing is shared publicly.
+            Message us on WhatsApp and receive a prayer back within seconds - any time of day
+            or night. Or submit a written request and the pastoral team will follow up personally.
           </p>
         </div>
       </section>
@@ -86,16 +86,17 @@ export default function PrayerPage() {
             the church to submit a request. Anyone is welcome.
           </p>
           <p>
-            For urgent needs, WhatsApp Pastor Ricardo directly on{' '}
+            Need prayer right now? Message{' '}
             <a
-              href="https://wa.me/27752592555?text=Hi%2C%20I%20need%20prayer%20for%20something%20urgent"
+              href="https://wa.me/27752592555?text=I%20need%20prayer"
               target="_blank"
               rel="noopener noreferrer"
               className="fgi-link"
             >
               +27 75 259 2555
-            </a>
-            . He will respond personally.
+            </a>{' '}
+            on WhatsApp and you will receive a personal prayer within seconds - 24 hours a day,
+            7 days a week. Just tell us what you need prayer for.
           </p>
         </div>
       </section>
@@ -108,25 +109,32 @@ export default function PrayerPage() {
         </div>
       </section>
 
-      {/* URGENT - WHATSAPP */}
+      {/* INSTANT PRAYER - WHATSAPP */}
       <section className="bg-white py-10 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
-          <div className="bg-[#f0fafa] border border-teal-100 rounded-xl p-6 flex flex-col sm:flex-row gap-5 items-start sm:items-center">
-            <div className="flex-1">
-              <h2 className="text-base font-bold text-gray-900 mb-1">Need someone right now?</h2>
+          <div className="bg-[#f0fafa] border border-teal-100 rounded-xl p-6">
+            <div className="mb-4">
+              <h2 className="text-base font-bold text-gray-900 mb-1">Get a prayer right now - any time, day or night</h2>
               <p className="text-sm text-[#595959] leading-relaxed">
-                For urgent needs - a crisis, a medical situation, a moment you cannot carry
-                alone - WhatsApp Pastor Ricardo directly. He responds personally.
+                Message our WhatsApp prayer line and receive a personal prayer within seconds.
+                Share what you are going through - a health crisis, a broken relationship,
+                financial pressure, grief, fear, or something you cannot put into words yet.
+                We will pray with you immediately.
               </p>
             </div>
-            <a
-              href="https://wa.me/27752592555?text=Hi%2C%20I%20need%20prayer%20for%20something%20urgent"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shrink-0 inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-6 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
-            >
-              WhatsApp Now
-            </a>
+            <div className="flex flex-col sm:flex-row gap-3 items-start sm:items-center">
+              <a
+                href="https://wa.me/27752592555?text=I%20need%20prayer"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="shrink-0 inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-6 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
+              >
+                Send a Prayer Request on WhatsApp
+              </a>
+              <p className="text-xs text-[#595959]">
+                Available 24/7 - +27 75 259 2555
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -134,20 +142,20 @@ export default function PrayerPage() {
       {/* WHAT HAPPENS */}
       <section className="bg-gray-50 py-12 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-xl font-bold text-gray-900 mb-6">What happens after you submit</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-6">Two ways to receive prayer</h2>
           <div className="space-y-4">
             {[
               {
                 step: '01',
-                text: 'Your request is received by the pastoral team at Fountain of Grace International in Pretoria North.',
+                text: 'WhatsApp +27 75 259 2555 with your request - you will receive a personal prayer within seconds, any time of day or night. No waiting. No account needed.',
               },
               {
                 step: '02',
-                text: 'It is prayed over - not forwarded to a committee, not posted anywhere. Kept between you and the pastoral team.',
+                text: 'Submit the form above for a pastoral follow-up. Your request is received by the team, prayed over, and kept confidential - not forwarded to a committee, not posted publicly.',
               },
               {
                 step: '03',
-                text: 'If you included an email address, someone will respond within 48 hours to follow up personally.',
+                text: 'If you included an email address, a member of the pastoral team will respond within 48 hours to follow up personally.',
               },
             ].map((item) => (
               <div key={item.step} className="flex gap-4 items-start bg-white rounded-xl border border-gray-100 p-5">
