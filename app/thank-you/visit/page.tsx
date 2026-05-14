@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import VisitThankYouClient from './VisitThankYouClient'
+import ThankYouTracker from '@/components/ThankYouTracker'
 
 export const metadata: Metadata = {
   title: 'We Are Ready For You | Fountain of Grace International',
@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function VisitThankYouPage() {
   return (
     <>
-      <VisitThankYouClient />
+      <ThankYouTracker formName="plan_your_visit" />
 
       <section className="bg-[#008080] text-white pt-16 pb-16 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
