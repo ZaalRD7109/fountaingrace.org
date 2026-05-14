@@ -1,14 +1,15 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import DevotionalSubscribeForm from './DevotionalSubscribeForm'
 
 export const metadata: Metadata = {
-  title: 'Devotional | Fountain of Grace International | Pretoria North',
-  description: 'Weekly devotional content from Pastor Ricardo Zaal at Fountain of Grace International - short readings to prepare your heart before Sunday and keep you grounded through the week.',
+  title: 'Daily Devotional | Fountain of Grace International | Pretoria North',
+  description: 'A fresh word from God every morning - sent to you by Fountain of Grace International in Pretoria North. Subscribe free and receive your daily devotional by email or WhatsApp.',
   robots: 'index, follow',
   alternates: { canonical: 'https://www.fountaingrace.org/devotional' },
   openGraph: {
-    title: 'Devotional | Fountain of Grace International',
-    description: 'Weekly devotional content from Pastor Ricardo Zaal - prepare your heart before Sunday.',
+    title: 'Daily Devotional | Fountain of Grace International',
+    description: 'A fresh word from God every morning - free daily devotional from Fountain of Grace International.',
     type: 'website',
     url: 'https://www.fountaingrace.org/devotional',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International' }],
@@ -55,20 +56,57 @@ export default function DevotionalPage() {
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
           <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
-            Devotional - Fountain of Grace International
+            Daily Devotional - Fountain of Grace International
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
-            A word for the week
+            A fresh word. Every morning.
           </h1>
           <p className="text-white text-base leading-relaxed">
-            Short, direct readings from Pastor Ricardo Zaal - published every Saturday to prepare you for Sunday and every Wednesday to keep you grounded through the week.
+            A short, direct word from God - delivered to you every morning at 6 AM.
+            No filler. No religious performance. Just the truth you need for the day ahead.
           </p>
+        </div>
+      </section>
+
+      {/* SUBSCRIBE - EMAIL */}
+      <section className="bg-white py-14 px-4 sm:px-6">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Get it every morning - free</h2>
+          <p className="text-[#595959] text-sm leading-relaxed mb-8">
+            Subscribe and receive the daily devotional by email every morning at 6 AM.
+            No spam. One word from God. That is it.
+          </p>
+          <DevotionalSubscribeForm />
+          <p className="text-xs text-[#888] mt-5 max-w-sm mx-auto">
+            By subscribing you consent to receiving the FGI Daily Devotional by email from Fountain of Grace International (NPO 316-193).
+            Used only for this purpose. Never sold or shared. Reply STOP to unsubscribe at any time.{' '}
+            <Link href="/privacy-policy" className="underline">Privacy Policy</Link>.
+          </p>
+        </div>
+      </section>
+
+      {/* SUBSCRIBE - WHATSAPP */}
+      <section className="bg-gray-50 py-10 px-4 sm:px-6">
+        <div className="max-w-xl mx-auto text-center">
+          <h2 className="text-lg font-bold text-gray-900 mb-2">Prefer WhatsApp?</h2>
+          <p className="text-[#595959] text-sm leading-relaxed mb-5">
+            Message us on WhatsApp and type <strong>daily devotion</strong> - we will add you to the broadcast list.
+          </p>
+          <a
+            href="https://wa.me/27752592555?text=daily%20devotion"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-6 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm"
+          >
+            Subscribe on WhatsApp
+          </a>
         </div>
       </section>
 
       {/* ARTICLES GRID */}
       <section className="bg-white py-16 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto">
+          <h2 className="text-xl font-bold text-gray-900 mb-8 text-center">Recent devotionals</h2>
           <div className="grid gap-8 sm:grid-cols-2">
             {devotionals.map((d) => (
               <Link
@@ -91,32 +129,6 @@ export default function DevotionalPage() {
               </Link>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* SUBSCRIBE CTA */}
-      <section className="bg-gray-50 py-12 px-4 sm:px-6">
-        <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-xl font-bold text-gray-900 mb-3">Get the devotional every week</h2>
-          <p className="text-[#595959] text-sm leading-relaxed mb-6">
-            Receive the Saturday devotional before Sunday and the Wednesday resource directly on WhatsApp or email.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a
-              href="https://wa.me/27752592555?text=Hi%2C%20I%20would%20like%20to%20subscribe%20to%20the%20weekly%20devotional"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-6 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm"
-            >
-              Subscribe on WhatsApp
-            </a>
-            <Link href="/plan-your-visit" className="inline-block border-2 border-[#008080] text-[#008080] font-semibold px-6 py-3 rounded-lg hover:bg-[#008080] hover:text-white transition-colors text-sm">
-              Plan Your Visit
-            </Link>
-          </div>
-          <p className="text-xs text-[#888] mt-4 max-w-sm mx-auto">
-            By subscribing you consent to receiving weekly devotional content from Fountain of Grace International (NPO 316-193). Used only for this purpose. Never sold or shared. Reply STOP to unsubscribe at any time. <Link href="/privacy-policy" className="underline">Privacy Policy</Link>.
-          </p>
         </div>
       </section>
 
