@@ -1,15 +1,18 @@
 'use client'
 
 import { useState } from 'react'
+import Link from 'next/link'
 
 export default function DevotionalSubscribeForm() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
+  const [consent, setConsent] = useState(false)
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [message, setMessage] = useState('')
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault()
+    if (!consent) return
     setStatus('loading')
 
     try {
@@ -24,6 +27,7 @@ export default function DevotionalSubscribeForm() {
         setMessage(data.message || 'You are subscribed. Check your inbox.')
         setEmail('')
         setName('')
+        setConsent(false)
       } else {
         setStatus('error')
         setMessage(data.message || 'Something went wrong. Please try again.')
@@ -61,9 +65,32 @@ export default function DevotionalSubscribeForm() {
           required
           className="w-full border border-gray-200 rounded-lg px-4 py-3 text-sm text-gray-900 placeholder-gray-400 focus:outline-none focus:border-[#008080]"
         />
+
+        {/* POPIA Consent */}
+        <label className="flex items-start gap-3 cursor-pointer">
+          <input
+            type="checkbox"
+            checked={consent}
+            onChange={(e) => setConsent(e.target.checked)}
+            required
+            className="mt-0.5 h-4 w-4 shrink-0 accent-[#008080]"
+          />
+          <span className="text-xs text-[#595959] leading-relaxed">
+            By subscribing I consent to Fountain of Grace International (NPO 316-193)
+            sending me a daily devotional email. My email address will be used only for
+            this purpose and will never be sold or shared with third parties. I can
+            unsubscribe at any time by replying STOP or clicking the unsubscribe link in
+            any email.{' '}
+            <Link href="/privacy-policy" className="underline hover:text-[#008080]" target="_blank">
+              Privacy Policy
+            </Link>
+            .
+          </span>
+        </label>
+
         <button
           type="submit"
-          disabled={status === 'loading'}
+          disabled={status === 'loading' || !consent}
           className="w-full bg-[#008080] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors text-sm disabled:opacity-60"
         >
           {status === 'loading' ? 'Subscribing...' : 'Send me the daily word'}
