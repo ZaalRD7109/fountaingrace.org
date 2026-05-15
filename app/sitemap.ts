@@ -19,6 +19,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/faq`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/when-you-cant-believe-things-will-get-better-again`, lastModified: new Date('2026-04-26'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/tired-of-the-same-pain-coming-back-try-this`, lastModified: new Date('2025-12-14'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/when-life-feels-like-a-grave-you-cannot-climb-out-of`, lastModified: new Date('2026-04-05'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/feeling-empty-and-exhausted-how-to-find-strength-when-you-have-nothing`, lastModified: new Date('2026-04-27'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/victory-battle-the-lords-fight-not-yours`, lastModified: new Date('2024-06-01'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/if-your-church-does-not-change-you-change-your-church`, lastModified: new Date('2023-07-02'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/dont-pray-the-storm-away-why-you-need-the-storm`, lastModified: new Date('2024-01-01'), changeFrequency: 'monthly', priority: 0.6 },

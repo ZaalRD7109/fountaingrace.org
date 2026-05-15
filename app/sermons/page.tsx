@@ -22,6 +22,38 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'when-you-cant-believe-things-will-get-better-again',
+    title: 'When You Can\'t Believe Things Will Get Better Again',
+    date: '2026-04-26',
+    dateDisplay: '26 April 2026',
+    intro:
+      'For the person who has been hurt so deeply they cannot believe good news anymore. Pastor Ricardo Zaal on why pain blinds you to the answers standing right in front of you, and how honest faith starts growing back.',
+  },
+  {
+    slug: 'tired-of-the-same-pain-coming-back-try-this',
+    title: 'Tired of the Same Pain Coming Back? Try This',
+    date: '2025-12-14',
+    dateDisplay: '14 December 2025',
+    intro:
+      'If the same sickness, breakups, money problems or family patterns keep coming back no matter how hard you pray, this message exposes a spiritual weapon hidden in Scripture from Genesis to Revelation. Pastor Ricardo Zaal shows you how to use it.',
+  },
+  {
+    slug: 'when-life-feels-like-a-grave-you-cannot-climb-out-of',
+    title: 'When Life Feels Like a Grave You Cannot Climb Out Of',
+    date: '2026-04-05',
+    dateDisplay: '5 April 2026',
+    intro:
+      'If you are sitting in a graveyard moment right now, retrenchment, loss, a relationship that died, a diagnosis you did not expect, this message is for you. Pastor Ricardo shares his own losses and seven honest ways to walk through the dark until the third day breaks.',
+  },
+  {
+    slug: 'feeling-empty-and-exhausted-how-to-find-strength-when-you-have-nothing',
+    title: 'Feeling Empty and Exhausted? How to Find Strength When You Have Nothing Left',
+    date: '2026-04-27',
+    dateDisplay: '27 April 2026',
+    intro:
+      'For the person who feels dried up, exhausted, and quietly carrying too much. Pastor Ricardo Zaal opens 2 Corinthians 12:9 and shows why your emptiest moment is the exact place where real strength shows up. Honest, practical, and for anyone running on empty.',
+  },
+  {
     slug: 'victory-battle-the-lords-fight-not-yours',
     title: "Stop Fighting a Battle That Was Never Yours to Win",
     date: "2024-06-01",

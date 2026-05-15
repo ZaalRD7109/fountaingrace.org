@@ -51,6 +51,10 @@ https://fountaingrace.org/* https://www.fountaingrace.org/:splat 301
 /blog/* /sermons  301
 
 # Short links
+/s/cant-believe-things /sermons/when-you-cant-believe-things-will-get-better-again 301
+/s/tired-same-pain /sermons/tired-of-the-same-pain-coming-back-try-this 301
+/s/life-feels-like /sermons/when-life-feels-like-a-grave-you-cannot-climb-out-of 301
+/s/feeling-empty-exhausted /sermons/feeling-empty-and-exhausted-how-to-find-strength-when-you-have-nothing 301
 /visit /plan-your-visit  301
 /facebook https://www.facebook.com/FGIPta/  301
 /youtube https://www.youtube.com/@fgipta  301
