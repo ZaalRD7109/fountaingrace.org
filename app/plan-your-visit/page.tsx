@@ -118,38 +118,10 @@ export default function PlanYourVisitPage() {
         </div>
       </section>
 
-      {/* FORM - full width */}
-      <section className="bg-white py-6 px-4 sm:px-6">
+      {/* FAQ - directly above form to answer objections before conversion */}
+      <section className="bg-gray-50 py-10 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
-          <VisitForm />
-        </div>
-      </section>
-
-      {/* SERVICE INFO - compact 3-col strip below form */}
-      <section className="bg-gray-50 py-8 px-4 sm:px-6">
-        <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
-          <div className="bg-white rounded-xl p-4 border border-gray-100">
-            <p className="text-[#008080] font-bold text-sm mb-1">Service time</p>
-            <p className="text-sm text-gray-700">Every Sunday at 09:00</p>
-            <p className="text-xs text-[#595959] mt-1">Approx 90 minutes</p>
-          </div>
-          <div className="bg-white rounded-xl p-4 border border-gray-100">
-            <p className="text-[#008080] font-bold text-sm mb-1">What to wear</p>
-            <p className="text-sm text-gray-700">Come exactly as you are.</p>
-            <p className="text-xs text-[#595959] mt-1">Jeans, casual - no one will care.</p>
-          </div>
-          <div className="bg-white rounded-xl p-4 border border-gray-100">
-            <p className="text-[#008080] font-bold text-sm mb-1">Arrive early</p>
-            <p className="text-sm text-gray-700">10–15 min before 09:00.</p>
-            <p className="text-xs text-[#595959] mt-1">Someone will meet you at the door.</p>
-          </div>
-        </div>
-      </section>
-
-      {/* FAQ */}
-      <section className="bg-white py-12 px-4 sm:px-6">
-        <div className="section-container max-w-2xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+          <h2 className="text-xl font-bold text-gray-900 mb-5">
             Questions about your first visit
           </h2>
           <dl className="space-y-0">
@@ -181,6 +153,34 @@ export default function PlanYourVisitPage() {
               </div>
             ))}
           </dl>
+        </div>
+      </section>
+
+      {/* FORM - full width */}
+      <section className="bg-white py-6 px-4 sm:px-6">
+        <div className="max-w-2xl mx-auto">
+          <VisitForm />
+        </div>
+      </section>
+
+      {/* SERVICE INFO - compact 3-col strip below form */}
+      <section className="bg-gray-50 py-8 px-4 sm:px-6">
+        <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="bg-white rounded-xl p-4 border border-gray-100">
+            <p className="text-[#008080] font-bold text-sm mb-1">Service time</p>
+            <p className="text-sm text-gray-700">Every Sunday at 09:00</p>
+            <p className="text-xs text-[#595959] mt-1">Approx 90 minutes</p>
+          </div>
+          <div className="bg-white rounded-xl p-4 border border-gray-100">
+            <p className="text-[#008080] font-bold text-sm mb-1">What to wear</p>
+            <p className="text-sm text-gray-700">Come exactly as you are.</p>
+            <p className="text-xs text-[#595959] mt-1">Jeans, casual - no one will care.</p>
+          </div>
+          <div className="bg-white rounded-xl p-4 border border-gray-100">
+            <p className="text-[#008080] font-bold text-sm mb-1">Arrive early</p>
+            <p className="text-sm text-gray-700">10-15 min before 09:00.</p>
+            <p className="text-xs text-[#595959] mt-1">Someone will meet you at the door.</p>
+          </div>
         </div>
       </section>
 
