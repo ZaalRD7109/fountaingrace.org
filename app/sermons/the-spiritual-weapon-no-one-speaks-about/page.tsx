@@ -92,9 +92,9 @@ const jsonLd = [
     '@type': 'VideoObject',
     name: 'The One Weapon Nobody Teaches You That Changes Every Fight',
     description: 'The One Weapon Nobody Teaches You That Changes Every Fight',
-    thumbnailUrl: 'https://img.youtube.com/vi/_fxcjo2raRQ/maxresdefault.jpg',
+    thumbnailUrl: 'https://img.youtube.com/vi/49-0bgFQsUU/maxresdefault.jpg',
     uploadDate: '2025-10-19',
-    embedUrl: 'https://www.youtube.com/embed/_fxcjo2raRQ',
+    embedUrl: 'https://www.youtube.com/embed/49-0bgFQsUU',
     url: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-no-one-speaks-about',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
     publisher: {
@@ -137,7 +137,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
-                src="https://www.youtube.com/embed/_fxcjo2raRQ"
+                src="https://www.youtube.com/embed/49-0bgFQsUU"
                 title="The One Weapon Nobody Teaches You That Changes Every Fight"
                 className="absolute inset-0 w-full h-full"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
