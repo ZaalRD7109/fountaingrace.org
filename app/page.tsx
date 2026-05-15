@@ -64,7 +64,9 @@ const jsonLd = [
     sameAs: [
       'https://www.facebook.com/FGIPta/',
       'https://www.youtube.com/@fgipta',
+      'https://www.instagram.com/fgiptanorth/',
       'https://www.tiktok.com/@fountainofgraceintl',
+      'https://www.google.com/maps/place/Fountain+Of+Grace+International/@-25.6722298,28.1755196,17z',
     ],
   },
   {
