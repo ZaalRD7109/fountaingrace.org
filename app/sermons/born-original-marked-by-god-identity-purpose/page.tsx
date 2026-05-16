@@ -35,8 +35,24 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-08-30',
+    datePublished: '2025-06-01',
     url: 'https://www.fountaingrace.org/sermons/born-original-marked-by-god-identity-purpose',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: "You Were Not Made to Be a Copy of Someone Else",
+    description: "Struggling to find your identity? Pastor Ricardo Zaal unpacks why God crafted you as a one-of-a-kind original with purpose only you can fulfil. 1 Peter 4:10.",
+    thumbnailUrl: 'https://img.youtube.com/vi/7ahyk9Jp67I/maxresdefault.jpg',
+    uploadDate: '2025-06-01',
+    embedUrl: 'https://www.youtube.com/embed/7ahyk9Jp67I',
+    url: 'https://www.youtube.com/watch?v=7ahyk9Jp67I',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
   },
   {
     '@context': 'https://schema.org',
@@ -179,18 +195,16 @@ export default function SermonPage() {
           </div>
         </header>
 
-        <section className="bg-white pt-10 pb-8 px-4 sm:px-6">
+        <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <div className="rounded-xl bg-[#f0fafa] border border-[#2a9df4]/20 px-6 py-5 text-center">
-              <p className="text-[#2a9df4] font-semibold mb-1">Watch Live Every Sunday</p>
-              <p className="text-[#555] text-sm">
-                This message was preached at Fountain of Grace International, Pretoria North.
-                Join us every Sunday at 09:00 or{' '}
-                <a href="https://www.youtube.com/@fgipta" target="_blank" rel="noopener noreferrer" className="underline text-[#2a9df4]">
-                  subscribe on YouTube
-                </a>{' '}
-                to catch future sermons live.
-              </p>
+            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src="https://www.youtube.com/embed/7ahyk9Jp67I"
+                title="You Were Not Made to Be a Copy of Someone Else - Fountain of Grace International"
+                className="absolute inset-0 w-full h-full"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
             </div>
           </div>
         </section>

@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-05-16',
+    datePublished: '2025-06-22',
     url: 'https://www.fountaingrace.org/sermons/youre-still-in-the-story-when-god-seems-silent',
   },
   {
@@ -46,7 +46,7 @@ const jsonLd = [
     name: "When It Looks Like God Is Silent - You're Still in the Story",
     description: "When everything goes quiet and nothing seems to be moving, most people assume God stopped. Romans 8:28 says something different. This message shows why silence is not the same as absence.",
     thumbnailUrl: 'https://img.youtube.com/vi/OOofjfMVZG4/maxresdefault.jpg',
-    uploadDate: '2026-05-16',
+    uploadDate: '2025-06-22',
     embedUrl: 'https://www.youtube.com/embed/OOofjfMVZG4',
     url: 'https://www.youtube.com/watch?v=OOofjfMVZG4',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
@@ -153,7 +153,7 @@ export default function SermonPage() {
               The silence does not mean He stopped. It does not mean you failed. It does not mean the promise is cancelled. Romans 8:28 says all things - not some things - work together for good. You are still in the story. The Author has not closed the book.
             </p>
             <p className="text-white/60 text-sm">
-              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 16 May 2026
+              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 22 June 2025
             </p>
           </div>
         </header>
