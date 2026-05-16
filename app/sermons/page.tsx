@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'youre-still-in-the-story-when-god-seems-silent',
+    title: "You're Still in the Story: When It Looks Like God Is Silent",
+    date: '2026-05-16',
+    dateDisplay: '16 May 2026',
+    intro:
+      'When everything goes quiet and nothing seems to be moving, it is easy to assume God stopped. This message opens Romans 8:28 and shows why the silence you are living in right now is not the end of what God is writing in your life.',
+  },
+  {
     slug: 'when-you-cant-believe-things-will-get-better-again',
     title: 'When You Can\'t Believe Things Will Get Better Again',
     date: '2026-04-26',
