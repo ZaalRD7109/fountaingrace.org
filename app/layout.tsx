@@ -60,8 +60,7 @@ export default function RootLayout({
       <head>
         {/* Favicon served automatically from app/icon.png and app/apple-icon.png */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
-        <link rel="dns-prefetch" href="https://www.clarity.ms" />
-        <link rel="dns-prefetch" href="https://challenges.cloudflare.com" />
+<link rel="dns-prefetch" href="https://challenges.cloudflare.com" />
       </head>
       <body className={poppins.className}>
         {/* Skip to main content - accessibility for keyboard and screen reader users */}
