@@ -37,8 +37,18 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-04-26',
+    datePublished: '2026-03-15',
     url: 'https://www.fountaingrace.org/sermons/the-principle-that-activates-everything',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'The Principle That Activates Everything: Right Action',
+    description: 'Faith without the right action at the right time produces nothing. This message shows why obedient, timely action is the activating principle behind every breakthrough.',
+    thumbnailUrl: 'https://img.youtube.com/vi/pM8THfQE3MU/maxresdefault.jpg',
+    uploadDate: '2026-03-15',
+    embedUrl: 'https://www.youtube.com/embed/pM8THfQE3MU',
+    url: 'https://www.youtube.com/watch?v=pM8THfQE3MU',
   },
   {
     '@context': 'https://schema.org',
@@ -149,10 +159,24 @@ export default function SermonPage() {
               You have prayed. You have believed. You have attended every service. But something is still not activating. The missing piece is almost always the same: the right action, taken at the right time, in the right direction. This is the principle that turns faith into results.
             </p>
             <p className="text-white/60 text-sm">
-              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 26 April 2026
+              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 15 March 2026
             </p>
           </div>
         </header>
+
+        <section className="bg-[#000] py-8 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute inset-0 w-full h-full"
+                src="https://www.youtube.com/embed/pM8THfQE3MU"
+                title="The Principle That Activates Everything: Right Action"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </section>
 
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
