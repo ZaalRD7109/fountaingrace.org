@@ -195,16 +195,18 @@ export default function SermonPage() {
           </div>
         </header>
 
-        <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
+        <section className="bg-white pt-10 pb-8 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                src="https://www.youtube.com/embed/7ahyk9Jp67I"
-                title="You Were Not Made to Be a Copy of Someone Else - Fountain of Grace International"
-                className="absolute inset-0 w-full h-full"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              />
+            <div className="rounded-xl bg-[#f0fafa] border border-[#2a9df4]/20 px-6 py-5 text-center">
+              <p className="text-[#2a9df4] font-semibold mb-1">Watch Live Every Sunday</p>
+              <p className="text-[#555] text-sm">
+                This message was preached at Fountain of Grace International, Pretoria North.
+                Join us every Sunday at 09:00 or{' '}
+                <a href="https://www.youtube.com/@fgipta" target="_blank" rel="noopener noreferrer" className="underline text-[#2a9df4]">
+                  subscribe on YouTube
+                </a>{' '}
+                to catch future sermons live.
+              </p>
             </div>
           </div>
         </section>
