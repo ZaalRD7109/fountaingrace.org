@@ -22,10 +22,26 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: 'why-the-easy-road-always-leads-to-the-wrong-place',
+    title: 'Why the Easy Road Always Leads to the Wrong Place',
+    date: '2026-05-17',
+    dateDisplay: '17 May 2026',
+    intro:
+      'Every shortcut you have taken has cost more than it promised. And somehow you ended up further back than where you started. This message explains exactly why the easy road always delivers the wrong destination - and what the real road actually requires.',
+  },
+  {
+    slug: 'you-already-know-what-to-do-so-why-arent-you-doing-it',
+    title: "You Already Know What To Do - So Why Aren't You Doing It?",
+    date: '2026-05-17',
+    dateDisplay: '17 May 2026',
+    intro:
+      'The problem is not that you need more information. You already know what to do. The gap is between knowing and doing - and that gap has a name. This message identifies what is actually keeping you stuck and shows you how to move.',
+  },
+  {
     slug: 'youre-still-in-the-story-when-god-seems-silent',
     title: "You're Still in the Story: When It Looks Like God Is Silent",
-    date: '2026-05-16',
-    dateDisplay: '16 May 2026',
+    date: '2025-06-22',
+    dateDisplay: '22 June 2025',
     intro:
       'When everything goes quiet and nothing seems to be moving, it is easy to assume God stopped. This message opens Romans 8:28 and shows why the silence you are living in right now is not the end of what God is writing in your life.',
   },
