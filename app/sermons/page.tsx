@@ -32,8 +32,8 @@ const sermonPosts = [
   {
     slug: 'you-already-know-what-to-do-so-why-arent-you-doing-it',
     title: "You Already Know What To Do - So Why Aren't You Doing It?",
-    date: '2026-05-17',
-    dateDisplay: '17 May 2026',
+    date: '2026-03-01',
+    dateDisplay: '1 March 2026',
     intro:
       'The problem is not that you need more information. You already know what to do. The gap is between knowing and doing - and that gap has a name. This message identifies what is actually keeping you stuck and shows you how to move.',
   },

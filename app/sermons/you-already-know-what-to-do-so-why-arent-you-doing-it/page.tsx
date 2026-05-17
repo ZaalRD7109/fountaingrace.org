@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-05-17',
+    datePublished: '2026-03-01',
     url: 'https://www.fountaingrace.org/sermons/you-already-know-what-to-do-so-why-arent-you-doing-it',
   },
   {
@@ -46,7 +46,7 @@ const jsonLd = [
     name: "You Already Know What To Do - So Why Aren't You Doing It?",
     description: "The gap between knowing and doing is not about information. Fear disguised as wisdom, double-minded thinking, and waiting for perfect conditions keep capable people frozen.",
     thumbnailUrl: 'https://img.youtube.com/vi/XC1uMayfflI/maxresdefault.jpg',
-    uploadDate: '2026-05-17',
+    uploadDate: '2026-03-01',
     embedUrl: 'https://www.youtube.com/embed/XC1uMayfflI',
     url: 'https://www.youtube.com/watch?v=XC1uMayfflI',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
@@ -161,7 +161,7 @@ export default function SermonPage() {
               The problem is not that you need more information. You already know what to do. The gap is between knowing and doing - and that gap has a name. This message identifies what is actually keeping you stuck and shows you how to move.
             </p>
             <p className="text-white/60 text-sm">
-              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 17 May 2026
+              Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 1 March 2026
             </p>
           </div>
         </header>
