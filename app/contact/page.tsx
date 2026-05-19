@@ -43,13 +43,13 @@ const jsonLd = [
       latitude: -25.672286342520497,
       longitude: 28.172968674468688,
     },
-    hasMap: 'https://www.google.com/maps?q=323+B+Danie+Theron+Street+Pretoria+North',
+    hasMap: 'https://www.google.com/maps/place/Fountain+Of+Grace+International/@-25.6722298,28.1755196,17z/data=!3m1!4b1!4m6!3m5!1s0x1ebfd98f5fad1ef9:0xa7c843ea6a82944a!8m2!3d-25.6722298!4d28.1755196!16s%2Fg%2F11xt5ftb9b',
     sameAs: [
       'https://www.facebook.com/FGIPta/',
       'https://www.youtube.com/@fgipta',
       'https://www.instagram.com/fgiptanorth/',
       'https://www.tiktok.com/@fountainofgraceintl',
-      'https://www.google.com/maps/place/Fountain+Of+Grace+International/@-25.6722298,28.1755196,17z',
+      'https://www.google.com/maps/place/Fountain+Of+Grace+International/@-25.6722298,28.1755196,17z/data=!3m1!4b1!4m6!3m5!1s0x1ebfd98f5fad1ef9:0xa7c843ea6a82944a!8m2!3d-25.6722298!4d28.1755196!16s%2Fg%2F11xt5ftb9b',
     ],
     contactPoint: {
       '@type': 'ContactPoint',
