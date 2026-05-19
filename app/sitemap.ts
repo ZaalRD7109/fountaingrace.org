@@ -17,6 +17,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/volunteer`, lastModified: now, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/prayer`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${base}/faq`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${base}/sermons/youre-still-in-the-story-when-god-seems-silent`, lastModified: new Date('2026-05-16'), changeFrequency: 'monthly', priority: 0.6 },

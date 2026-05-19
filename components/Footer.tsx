@@ -53,6 +53,7 @@ export default function Footer() {
                 { href: '/faq', label: 'FAQ' },
                 { href: '/pastors', label: 'Pastors' },
                 { href: '/about', label: 'About Us' },
+                { href: '/what-we-believe', label: 'What We Believe' },
                 { href: '/sermons', label: 'Sermons' },
                 { href: '/contact', label: 'Contact' },
               ].map((link) => (
