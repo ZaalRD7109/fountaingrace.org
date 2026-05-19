@@ -166,6 +166,14 @@ const sermonPosts = [
       'You made the right choice - then everything fell apart. That is not a sign you got it wrong. In Scripture, the biggest battles come immediately after the biggest decisions. This message explains why opposition after a breakthrough is confirmation, not contradiction.',
   },
   {
+    slug: 'when-you-stop-hearing-the-voice-that-used-to-guide-every-decision',
+    title: "When You Stop Hearing the Voice That Used to Guide Every Decision",
+    date: "2026-05-10",
+    dateDisplay: "10 May 2026",
+    intro:
+      "There was a time you knew exactly what to do. Something - a quiet voice, a clear nudge, a settled knowing - guided your best decisions. Then the noise got louder and the voice got quieter. This message from Pastor Ricardo Zaal shows why that happened and how to hear clearly again.",
+  },
+  {
     slug: 'you-dont-know-who-you-are-yet',
     title: "You Don't Know Who You Are Yet",
     date: '2026-05-03',
