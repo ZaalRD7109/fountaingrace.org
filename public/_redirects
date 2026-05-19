@@ -1,5 +1,10 @@
-# Non-www to www canonical redirect - prevents "Alternate page with proper canonical tag" in Search Console
-https://fountaingrace.org/* https://www.fountaingrace.org/:splat 301
+# Non-www to www canonical redirect is NOT handled here.
+# Cloudflare Pages _redirects only supports path-based rules (relative to the host),
+# so cross-host syntax like "https://fountaingrace.org/* ..." is a no-op.
+# The apex (fountaingrace.org) is handled by a Cloudflare Worker:
+#   - Worker: fgi-apex-redirect (source in apex-redirect-worker/)
+#   - Route: fountaingrace.org/* → fgi-apex-redirect (zone c8aedf54fd9e2cfc49778e4d415f0012)
+# To verify: curl -I https://fountaingrace.org/ should return 301 to https://www.fountaingrace.org/
 
 # Canonical consolidation - duplicate pages removed 2026-05-01
 /church-pretoria-north / 301

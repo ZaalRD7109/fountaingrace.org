@@ -1,0 +1,5 @@
+name = "fgi-apex-redirect"
+main = "src/index.js"
+compatibility_date = "2026-05-19"
+account_id = "562021304fa80353a114b0b9fe662364"
+workers_dev = true
