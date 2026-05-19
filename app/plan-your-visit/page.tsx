@@ -163,6 +163,28 @@ export default function PlanYourVisitPage() {
         </div>
       </section>
 
+      {/* WHATSAPP - alternative for people who won't fill a form */}
+      <section className="bg-white pb-6 px-4 sm:px-6">
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-[#f0fafa] border border-teal-100 rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-4">
+            <div className="flex-1">
+              <p className="text-sm font-bold text-gray-900 mb-1">Rather ask us a question first?</p>
+              <p className="text-sm text-[#595959] leading-relaxed">
+                WhatsApp us before Sunday - we will answer anything you want to know before you walk through the door.
+              </p>
+            </div>
+            <a
+              href="https://wa.me/27752592555?text=Hi%2C%20I%20have%20a%20question%20about%20visiting%20Fountain%20of%20Grace"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-5 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
+            >
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICE INFO - compact 3-col strip below form */}
       <section className="bg-gray-50 py-8 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
