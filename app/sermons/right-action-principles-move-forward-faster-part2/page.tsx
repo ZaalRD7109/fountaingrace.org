@@ -35,7 +35,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-11-16',
+    datePublished: '2026-05-11',
     url: 'https://www.fountaingrace.org/sermons/right-action-principles-move-forward-faster-part2',
   },
   {
@@ -91,7 +91,7 @@ const jsonLd = [
     name: "The Right Action Principle: What Moves You Forward Faster | James 2:17",
     description: "The Right Action Principle: What Moves You Forward Faster | James 2:17",
     thumbnailUrl: 'https://img.youtube.com/vi/FBT-X4cy6Xs/maxresdefault.jpg',
-    uploadDate: '2025-11-16',
+    uploadDate: '2026-05-11',
     embedUrl: 'https://www.youtube.com/embed/FBT-X4cy6Xs',
     url: 'https://www.fountaingrace.org/sermons/right-action-principles-move-forward-faster-part2',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
@@ -108,7 +108,7 @@ const sd = {
   "intro": "You have been to every interview, tried every option, and still nothing is moving. In this message, Pastor Ricardo Zaal explains that the problem is rarely a lack of effort - it is a lack of the right action, taken at the right time. This is Part 2 of a practical, Bible-based series on the principles that move people forward faster in every area of life.",
   "scripture": "James 2:17",
   "quote": "Faith has nothing to do with just believing God will help you. Every time you believe God will help you, you do the right action that will create the help that God will give you.",
-  "dateDisplay": "16 November 2025",
+  "dateDisplay": "11 May 2026",
   "sections": [
     {
       "heading": "Doing Everything But Getting Nothing",
