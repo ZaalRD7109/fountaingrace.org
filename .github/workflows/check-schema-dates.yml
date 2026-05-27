@@ -1,0 +1,32 @@
+name: Check schema dates have timezone
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Catches the regression of the 2026-05-23 Search Console flag
+# ("Datetime property X is missing a time zone"). Every sermon page
+# hard-codes uploadDate and datePublished in JSON-LD. If anyone reverts
+# to a date-only string this fails fast and surfaces a red X on the commit.
+# Background: docs/infrastructure/2026-05-27-fgi-video-uploaddate-fix.md
+# in the workspace repo.
+
+jobs:
+  grep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fail if any uploadDate or datePublished is date-only
+        run: |
+          set -e
+          hits=$(grep -rEn "(uploadDate|datePublished)['\"]?:[[:space:]]*['\"][0-9]{4}-[0-9]{2}-[0-9]{2}['\"]" app/sermons --include="*.tsx" || true)
+          if [[ -n "$hits" ]]; then
+            echo "::error::Found date-only uploadDate or datePublished (missing time + timezone). Google rejects these in structured data."
+            echo "Fix: append T12:00:00+02:00 to each value."
+            echo "Hits:"
+            echo "$hits"
+            exit 1
+          fi
+          echo "OK — every uploadDate and datePublished in app/sermons has a time and timezone."
