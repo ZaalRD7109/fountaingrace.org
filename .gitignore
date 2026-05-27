@@ -30,3 +30,8 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# audit-session artifacts (written by previous Claude Code automated audit
+# on 2026-05-24; regenerated on every audit run, never meant to commit)
+.audit-state.json
+IMPROVEMENTS.md
