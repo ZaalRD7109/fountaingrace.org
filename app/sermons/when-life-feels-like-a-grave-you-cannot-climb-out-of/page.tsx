@@ -73,7 +73,7 @@ const jsonLd = [
     "name": "When Life Feels Like a Grave You Cannot Climb Out Of",
     "description": "Repossession letters, retrenchment, the death of someone you love. Pastor Ricardo Zaal shows why the darkness you sit in right now is not the end of your story.",
     "thumbnailUrl": "https://img.youtube.com/vi/0X1vZhqOVg4/maxresdefault.jpg",
-    "uploadDate": "2026-04-05",
+    "uploadDate": "2026-04-05T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/0X1vZhqOVg4",
     "url": "https://www.fountaingrace.org/sermons/when-life-feels-like-a-grave-you-cannot-climb-out-of",
     "author": {

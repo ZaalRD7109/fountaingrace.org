@@ -91,7 +91,7 @@ const jsonLd = [
     name: "The Right Action Principle: What Moves You Forward Faster | James 2:17",
     description: "The Right Action Principle: What Moves You Forward Faster | James 2:17",
     thumbnailUrl: 'https://img.youtube.com/vi/FBT-X4cy6Xs/maxresdefault.jpg',
-    uploadDate: '2026-05-11',
+    uploadDate: '2026-05-11T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/FBT-X4cy6Xs',
     url: 'https://www.fountaingrace.org/sermons/right-action-principles-move-forward-faster-part2',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

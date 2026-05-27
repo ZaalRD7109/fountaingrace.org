@@ -82,7 +82,7 @@ const jsonLd = [
     name: 'Follow Your Inner Voice - Discover Your Destiny',
     description: 'Follow Your Inner Voice - Discover Your Destiny',
     thumbnailUrl: 'https://img.youtube.com/vi/4Trsd4Q-2fY/maxresdefault.jpg',
-    uploadDate: '2026-02-24',
+    uploadDate: '2026-02-24T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/4Trsd4Q-2fY',
     url: 'https://www.fountaingrace.org/sermons/follow-your-inner-voice-discover-your-destiny',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

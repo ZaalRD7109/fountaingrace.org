@@ -78,7 +78,7 @@ const jsonLd = [
     name: 'When Knowing Is the Problem',
     description: 'When Knowing Is the Problem',
     thumbnailUrl: 'https://img.youtube.com/vi/JdeSa5ag41w/maxresdefault.jpg',
-    uploadDate: '2026-02-15',
+    uploadDate: '2026-02-15T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/JdeSa5ag41w',
     url: 'https://www.fountaingrace.org/sermons/when-knowing-is-the-problem',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

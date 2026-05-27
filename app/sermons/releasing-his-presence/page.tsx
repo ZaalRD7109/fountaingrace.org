@@ -77,7 +77,7 @@ const jsonLd = [
     name: 'Why Keeping Everything to Yourself Is the Reason Nothing Flows',
     description: 'Why Keeping Everything to Yourself Is the Reason Nothing Flows',
     thumbnailUrl: 'https://img.youtube.com/vi/MAkF8V0B1hI/maxresdefault.jpg',
-    uploadDate: '2025-06-29',
+    uploadDate: '2025-06-29T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/MAkF8V0B1hI',
     url: 'https://www.fountaingrace.org/sermons/releasing-his-presence',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

@@ -78,7 +78,7 @@ const jsonLd = [
     name: 'Why Some People Are Completely Untouchable No Matter What Life Throws',
     description: 'Why Some People Are Completely Untouchable No Matter What Life Throws',
     thumbnailUrl: 'https://img.youtube.com/vi/K1grmAWoNBI/maxresdefault.jpg',
-    uploadDate: '2025-08-24',
+    uploadDate: '2025-08-24T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/K1grmAWoNBI',
     url: 'https://www.fountaingrace.org/sermons/the-anointing-that-makes-hell-fear-you',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

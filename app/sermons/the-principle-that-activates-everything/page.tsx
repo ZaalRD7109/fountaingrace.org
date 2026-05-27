@@ -46,7 +46,7 @@ const jsonLd = [
     name: 'The Principle That Activates Everything: Right Action',
     description: 'Faith without the right action at the right time produces nothing. This message shows why obedient, timely action is the activating principle behind every breakthrough.',
     thumbnailUrl: 'https://img.youtube.com/vi/pM8THfQE3MU/maxresdefault.jpg',
-    uploadDate: '2026-03-15',
+    uploadDate: '2026-03-15T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/pM8THfQE3MU',
     url: 'https://www.youtube.com/watch?v=pM8THfQE3MU',
   },

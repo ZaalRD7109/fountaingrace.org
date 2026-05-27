@@ -78,7 +78,7 @@ const jsonLd = [
     name: 'Why Does Your Life Keep Collapsing No Matter What You Build?',
     description: 'Why Does Your Life Keep Collapsing No Matter What You Build?',
     thumbnailUrl: 'https://img.youtube.com/vi/vorvFFUxyRE/maxresdefault.jpg',
-    uploadDate: '2026-01-11',
+    uploadDate: '2026-01-11T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/vorvFFUxyRE',
     url: 'https://www.fountaingrace.org/sermons/why-does-your-life-keep-collapsing',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

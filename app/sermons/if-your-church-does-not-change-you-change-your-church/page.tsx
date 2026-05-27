@@ -91,7 +91,7 @@ const jsonLd = [
     name: "Are You Actually Being Transformed or Just Showing Up?",
     description: "Are You Actually Being Transformed or Just Showing Up?",
     thumbnailUrl: 'https://img.youtube.com/vi/Ox1mbbUJoS4/maxresdefault.jpg',
-    uploadDate: '2023-07-02',
+    uploadDate: '2023-07-02T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/Ox1mbbUJoS4',
     url: 'https://www.fountaingrace.org/sermons/if-your-church-does-not-change-you-change-your-church',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

@@ -55,7 +55,7 @@ const jsonLd = [
     name: 'Dying Right - Good Friday Message | Fountain of Grace International Pretoria North',
     description: 'Jesus did not die as a victim. Every word He spoke from the cross was deliberate. Good Friday message from Pastor Ricardo Zaal at Fountain of Grace International, Pretoria North.',
     thumbnailUrl: 'https://img.youtube.com/vi/ROCdYtxJa24/maxresdefault.jpg',
-    uploadDate: '2026-04-03',
+    uploadDate: '2026-04-03T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/ROCdYtxJa24',
     url: 'https://www.fountaingrace.org/sermons/dying-right-good-friday-message',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

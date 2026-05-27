@@ -78,7 +78,7 @@ const jsonLd = [
     name: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed',
     description: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed',
     thumbnailUrl: 'https://img.youtube.com/vi/5SpeluDggbU/maxresdefault.jpg',
-    uploadDate: '2025-06-22',
+    uploadDate: '2025-06-22T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/5SpeluDggbU',
     url: 'https://www.fountaingrace.org/sermons/hosting-the-presence-of-god',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

@@ -55,7 +55,7 @@ const jsonLd = [
     name: 'WHY YOUR BIGGEST BATTLE ALWAYS FOLLOWS YOUR BEST DECISION',
     description: 'The moment you make the right decision is often when everything falls apart. This is not failure - it is confirmation. Pastor Ricardo Zaal explains why opposition after a breakthrough is not a sign you got it wrong.',
     thumbnailUrl: 'https://img.youtube.com/vi/z5QxF4LbCl8/maxresdefault.jpg',
-    uploadDate: '2026-05-10',
+    uploadDate: '2026-05-10T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/z5QxF4LbCl8',
     url: 'https://www.fountaingrace.org/sermons/why-your-biggest-battle-follows-your-best-decision',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

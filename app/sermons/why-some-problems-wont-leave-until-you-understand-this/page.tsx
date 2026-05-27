@@ -111,7 +111,7 @@ const points = [
     "name": "Why Some Problems Won't Leave Until You Understand This",
     "description": "Why Some Problems Won't Leave Until You Understand This",
     "thumbnailUrl": "https://img.youtube.com/vi/N1_YYrEGtto/maxresdefault.jpg",
-    "uploadDate": "2026-04-19",
+    "uploadDate": "2026-04-19T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/N1_YYrEGtto",
     "url": "https://www.fountaingrace.org/sermons/why-some-problems-wont-leave-until-you-understand-this",
     "author": { "@type": "Person", "name": "Pastor Ricardo Zaal" },

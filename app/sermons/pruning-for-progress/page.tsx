@@ -78,7 +78,7 @@ const jsonLd = [
     name: 'Pruning for Progress: From Bare Branch to Bountiful Blessing',
     description: 'Pruning for Progress: From Bare Branch to Bountiful Blessing',
     thumbnailUrl: 'https://img.youtube.com/vi/RSX7jGdlo6s/maxresdefault.jpg',
-    uploadDate: '2025-11-02',
+    uploadDate: '2025-11-02T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/RSX7jGdlo6s',
     url: 'https://www.fountaingrace.org/sermons/pruning-for-progress',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

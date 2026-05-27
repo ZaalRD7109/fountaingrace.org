@@ -78,7 +78,7 @@ const jsonLd = [
     name: 'Why Nothing Changes No Matter How Hard You Try',
     description: 'Why Nothing Changes No Matter How Hard You Try',
     thumbnailUrl: 'https://img.youtube.com/vi/r9Cqow1ffcE/maxresdefault.jpg',
-    uploadDate: '2026-01-04',
+    uploadDate: '2026-01-04T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/r9Cqow1ffcE',
     url: 'https://www.fountaingrace.org/sermons/why-your-prayers-are-not-changing-your-life',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

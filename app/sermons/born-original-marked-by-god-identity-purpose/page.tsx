@@ -44,7 +44,7 @@ const jsonLd = [
     name: "You Were Not Made to Be a Copy of Someone Else",
     description: "Struggling to find your identity? Pastor Ricardo Zaal unpacks why God crafted you as a one-of-a-kind original with purpose only you can fulfil. 1 Peter 4:10.",
     thumbnailUrl: 'https://img.youtube.com/vi/7ahyk9Jp67I/maxresdefault.jpg',
-    uploadDate: '2025-06-01',
+    uploadDate: '2025-06-01T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/7ahyk9Jp67I',
     url: 'https://www.youtube.com/watch?v=7ahyk9Jp67I',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

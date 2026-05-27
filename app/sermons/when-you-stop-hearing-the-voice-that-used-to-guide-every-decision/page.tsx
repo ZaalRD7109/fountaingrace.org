@@ -91,7 +91,7 @@ const jsonLd = [
     name: "When You Stop Hearing the Voice That Used to Guide Every Decision | John 10:27",
     description: "When You Stop Hearing the Voice That Used to Guide Every Decision | John 10:27",
     thumbnailUrl: 'https://img.youtube.com/vi/Q1ynsfCO2C4/maxresdefault.jpg',
-    uploadDate: '2026-05-10',
+    uploadDate: '2026-05-10T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/Q1ynsfCO2C4',
     url: 'https://www.fountaingrace.org/sermons/when-you-stop-hearing-the-voice-that-used-to-guide-every-decision',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
