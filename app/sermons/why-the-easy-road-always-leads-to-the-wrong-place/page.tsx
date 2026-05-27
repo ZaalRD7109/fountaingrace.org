@@ -46,7 +46,7 @@ const jsonLd = [
     name: 'Why the Easy Road Always Leads to the Wrong Place',
     description: "Every shortcut promises faster. Every shortcut costs more. This message uses Matthew 4 and Proverbs 14:12 to explain why the easy road always delivers the wrong destination.",
     thumbnailUrl: 'https://img.youtube.com/vi/fuG5lS9Q0Fs/maxresdefault.jpg',
-    uploadDate: '2026-05-17',
+    uploadDate: '2026-05-17T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/fuG5lS9Q0Fs',
     url: 'https://www.youtube.com/watch?v=fuG5lS9Q0Fs',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

@@ -93,7 +93,7 @@ const jsonLd = [
     name: 'The One Weapon Nobody Teaches You That Changes Every Fight',
     description: 'The One Weapon Nobody Teaches You That Changes Every Fight',
     thumbnailUrl: 'https://img.youtube.com/vi/49-0bgFQsUU/maxresdefault.jpg',
-    uploadDate: '2025-10-19',
+    uploadDate: '2025-10-19T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/49-0bgFQsUU',
     url: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-no-one-speaks-about',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

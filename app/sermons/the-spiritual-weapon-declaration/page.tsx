@@ -93,7 +93,7 @@ const jsonLd = [
     name: 'How to Break a Pattern That Has Followed Your Family for Generations',
     description: 'How to Break a Pattern That Has Followed Your Family for Generations',
     thumbnailUrl: 'https://img.youtube.com/vi/KjkqdhqaiZ0/maxresdefault.jpg',
-    uploadDate: '2025-10-26',
+    uploadDate: '2025-10-26T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/KjkqdhqaiZ0',
     url: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-declaration',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

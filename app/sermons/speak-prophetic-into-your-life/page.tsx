@@ -77,7 +77,7 @@ const jsonLd = [
     name: 'Every Word You Say About Yourself Is Writing Your Future',
     description: 'Every Word You Say About Yourself Is Writing Your Future',
     thumbnailUrl: 'https://img.youtube.com/vi/3LyJPmCi-v4/maxresdefault.jpg',
-    uploadDate: '2025-04-06',
+    uploadDate: '2025-04-06T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/3LyJPmCi-v4',
     url: 'https://www.fountaingrace.org/sermons/speak-prophetic-into-your-life',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

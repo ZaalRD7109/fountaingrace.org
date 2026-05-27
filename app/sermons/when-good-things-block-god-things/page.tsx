@@ -78,7 +78,7 @@ const jsonLd = [
     name: 'How Good Opportunities Become the Thing That Stops Your Real Breakthrough',
     description: 'How Good Opportunities Become the Thing That Stops Your Real Breakthrough',
     thumbnailUrl: 'https://img.youtube.com/vi/RvGYWIJ6XQo/maxresdefault.jpg',
-    uploadDate: '2026-02-08',
+    uploadDate: '2026-02-08T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/RvGYWIJ6XQo',
     url: 'https://www.fountaingrace.org/sermons/when-good-things-block-god-things',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

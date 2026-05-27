@@ -73,7 +73,7 @@ const jsonLd = [
     "name": "When You Can't Believe Things Will Get Better Again",
     "description": "You have been through real pain and now you cannot believe anyone who says better is coming. This message explains why your hope shut down and how to take one small step out of the grave of disappointment.",
     "thumbnailUrl": "https://img.youtube.com/vi/sq99GTzfotc/maxresdefault.jpg",
-    "uploadDate": "2026-04-26",
+    "uploadDate": "2026-04-26T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/sq99GTzfotc",
     "url": "https://www.fountaingrace.org/sermons/when-you-cant-believe-things-will-get-better-again",
     "author": {

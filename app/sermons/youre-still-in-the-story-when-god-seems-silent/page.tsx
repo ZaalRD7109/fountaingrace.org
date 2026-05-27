@@ -46,7 +46,7 @@ const jsonLd = [
     name: "When It Looks Like God Is Silent - You're Still in the Story",
     description: "When everything goes quiet and nothing seems to be moving, most people assume God stopped. Romans 8:28 says something different. This message shows why silence is not the same as absence.",
     thumbnailUrl: 'https://img.youtube.com/vi/OOofjfMVZG4/maxresdefault.jpg',
-    uploadDate: '2025-06-22',
+    uploadDate: '2025-06-22T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/OOofjfMVZG4',
     url: 'https://www.youtube.com/watch?v=OOofjfMVZG4',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

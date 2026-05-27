@@ -82,7 +82,7 @@ const jsonLd = [
     name: 'What If Someone Else Finishes What Was Meant for You?',
     description: 'What If Someone Else Finishes What Was Meant for You?',
     thumbnailUrl: 'https://img.youtube.com/vi/jwUGYb3uuQI/maxresdefault.jpg',
-    uploadDate: '2026-02-22',
+    uploadDate: '2026-02-22T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/jwUGYb3uuQI',
     url: 'https://www.fountaingrace.org/sermons/what-if-someone-else-finishes-what-was-meant-for-you',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

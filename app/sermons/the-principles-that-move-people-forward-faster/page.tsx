@@ -82,7 +82,7 @@ const jsonLd = [
     name: 'The Principles That Move People Forward Faster',
     description: 'The Principles That Move People Forward Faster',
     thumbnailUrl: 'https://img.youtube.com/vi/hmBthWSxN6g/maxresdefault.jpg',
-    uploadDate: '2026-03-08',
+    uploadDate: '2026-03-08T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/hmBthWSxN6g',
     url: 'https://www.fountaingrace.org/sermons/the-principles-that-move-people-forward-faster',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

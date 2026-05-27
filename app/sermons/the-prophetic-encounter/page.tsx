@@ -77,7 +77,7 @@ const jsonLd = [
     name: 'You Were Built for Something Specific - Here Is How to Find It',
     description: 'You Were Built for Something Specific - Here Is How to Find It',
     thumbnailUrl: 'https://img.youtube.com/vi/4HYzxlTEb4o/maxresdefault.jpg',
-    uploadDate: '2025-02-23',
+    uploadDate: '2025-02-23T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/4HYzxlTEb4o',
     url: 'https://www.fountaingrace.org/sermons/the-prophetic-encounter',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

@@ -46,7 +46,7 @@ const jsonLd = [
     name: "You Already Know What To Do - So Why Aren't You Doing It?",
     description: "The gap between knowing and doing is not about information. Fear disguised as wisdom, double-minded thinking, and waiting for perfect conditions keep capable people frozen.",
     thumbnailUrl: 'https://img.youtube.com/vi/XC1uMayfflI/maxresdefault.jpg',
-    uploadDate: '2026-03-01',
+    uploadDate: '2026-03-01T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/XC1uMayfflI',
     url: 'https://www.youtube.com/watch?v=XC1uMayfflI',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

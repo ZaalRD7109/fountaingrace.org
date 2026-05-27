@@ -73,7 +73,7 @@ const jsonLd = [
     "name": "Tired of the Same Pain Coming Back? Try This",
     "description": "If your family keeps repeating the same pain, sickness, breakups or money problems, something deeper is at work. Pastor Ricardo Zaal opens up a spiritual weapon most believers have never been taught.",
     "thumbnailUrl": "https://img.youtube.com/vi/_fxcjo2raRQ/maxresdefault.jpg",
-    "uploadDate": "2025-12-14",
+    "uploadDate": "2025-12-14T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/_fxcjo2raRQ",
     "url": "https://www.fountaingrace.org/sermons/tired-of-the-same-pain-coming-back-try-this",
     "author": {

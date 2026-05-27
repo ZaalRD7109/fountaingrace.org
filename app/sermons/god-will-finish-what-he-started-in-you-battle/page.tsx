@@ -91,7 +91,7 @@ const jsonLd = [
     name: "When Everything Fights Against What You Were Meant to Build",
     description: "When Everything Fights Against What You Were Meant to Build",
     thumbnailUrl: 'https://img.youtube.com/vi/q_9iSfTN6IQ/maxresdefault.jpg',
-    uploadDate: '2025-11-09',
+    uploadDate: '2025-11-09T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/q_9iSfTN6IQ',
     url: 'https://www.fountaingrace.org/sermons/god-will-finish-what-he-started-in-you-battle',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

@@ -78,7 +78,7 @@ const jsonLd = [
     name: 'The Silent Assassin of Destiny: Overthinking',
     description: 'The Silent Assassin of Destiny: Overthinking',
     thumbnailUrl: 'https://img.youtube.com/vi/FZtTcG2gSsE/maxresdefault.jpg',
-    uploadDate: '2025-08-31',
+    uploadDate: '2025-08-31T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/FZtTcG2gSsE',
     url: 'https://www.fountaingrace.org/sermons/the-silent-assassin-of-destiny',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

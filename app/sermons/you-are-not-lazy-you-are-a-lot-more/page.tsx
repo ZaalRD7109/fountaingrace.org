@@ -77,7 +77,7 @@ const jsonLd = [
     name: 'You Are Not Lazy - You Are a Lot More',
     description: 'You Are Not Lazy - You Are a Lot More',
     thumbnailUrl: 'https://img.youtube.com/vi/kaN3Wn6yaD4/maxresdefault.jpg',
-    uploadDate: '2024-01-28',
+    uploadDate: '2024-01-28T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/kaN3Wn6yaD4',
     url: 'https://www.fountaingrace.org/sermons/you-are-not-lazy-you-are-a-lot-more',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

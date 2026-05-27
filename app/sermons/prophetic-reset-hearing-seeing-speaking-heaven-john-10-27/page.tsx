@@ -91,7 +91,7 @@ const jsonLd = [
     name: "When You Stop Hearing the Voice That Used to Guide Every Decision",
     description: "When You Stop Hearing the Voice That Used to Guide Every Decision",
     thumbnailUrl: 'https://img.youtube.com/vi/Q1ynsfCO2C4/maxresdefault.jpg',
-    uploadDate: '2025-10-12',
+    uploadDate: '2025-10-12T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/Q1ynsfCO2C4',
     url: 'https://www.fountaingrace.org/sermons/prophetic-reset-hearing-seeing-speaking-heaven-john-10-27',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

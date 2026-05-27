@@ -55,7 +55,7 @@ const jsonLd = [
     name: "You Don't Know Who You Are Yet",
     description: "Most people live by an identity built from failure, other people's words, and what life has done to them. This message from Pastor Ricardo Zaal shows you what God says instead.",
     thumbnailUrl: 'https://img.youtube.com/vi/2eUaSyffcIs/maxresdefault.jpg',
-    uploadDate: '2026-05-03',
+    uploadDate: '2026-05-03T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/2eUaSyffcIs',
     url: 'https://www.fountaingrace.org/sermons/you-dont-know-who-you-are-yet',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

@@ -78,7 +78,7 @@ const jsonLd = [
     name: 'Stop Waiting for Your Real Life to Begin - It Already Started',
     description: 'Stop Waiting for Your Real Life to Begin - It Already Started',
     thumbnailUrl: 'https://img.youtube.com/vi/FwXMY51fZEs/maxresdefault.jpg',
-    uploadDate: '2025-09-28',
+    uploadDate: '2025-09-28T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/FwXMY51fZEs',
     url: 'https://www.fountaingrace.org/sermons/no-more-waiting-rooms-god-is-live-now',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

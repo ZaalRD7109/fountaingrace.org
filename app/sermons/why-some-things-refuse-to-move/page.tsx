@@ -78,7 +78,7 @@ const jsonLd = [
     name: 'Why Some Things Refuse to Move',
     description: 'Why Some Things Refuse to Move',
     thumbnailUrl: 'https://img.youtube.com/vi/Hdrz2Qh2hkM/maxresdefault.jpg',
-    uploadDate: '2026-01-04',
+    uploadDate: '2026-01-04T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/Hdrz2Qh2hkM',
     url: 'https://www.fountaingrace.org/sermons/why-some-things-refuse-to-move',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

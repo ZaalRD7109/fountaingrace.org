@@ -78,7 +78,7 @@ const jsonLd = [
     name: 'You Know What You Should Be Doing - So Why Are You Still on the Sidelines?',
     description: 'You Know What You Should Be Doing - So Why Are You Still on the Sidelines?',
     thumbnailUrl: 'https://img.youtube.com/vi/C-wXZBOBE40/maxresdefault.jpg',
-    uploadDate: '2026-04-05',
+    uploadDate: '2026-04-05T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/C-wXZBOBE40',
     url: 'https://www.fountaingrace.org/sermons/you-love-god-but-are-you-in-the-game',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

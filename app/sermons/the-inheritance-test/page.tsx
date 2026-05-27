@@ -77,7 +77,7 @@ const jsonLd = [
     name: 'The Inheritance Test: Will It Reach Three Generations?',
     description: 'The Inheritance Test: Will It Reach Three Generations?',
     thumbnailUrl: 'https://img.youtube.com/vi/bT4i6UxLjEM/maxresdefault.jpg',
-    uploadDate: '2024-09-08',
+    uploadDate: '2024-09-08T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/bT4i6UxLjEM',
     url: 'https://www.fountaingrace.org/sermons/the-inheritance-test',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

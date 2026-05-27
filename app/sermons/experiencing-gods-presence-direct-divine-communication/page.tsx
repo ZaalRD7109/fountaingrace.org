@@ -91,7 +91,7 @@ const jsonLd = [
     name: "Can Something Greater Than Yourself Actually Speak Directly to You?",
     description: "Can Something Greater Than Yourself Actually Speak Directly to You?",
     thumbnailUrl: 'https://img.youtube.com/vi/ViHsAzbBhRU/maxresdefault.jpg',
-    uploadDate: '2025-09-14',
+    uploadDate: '2025-09-14T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/ViHsAzbBhRU',
     url: 'https://www.fountaingrace.org/sermons/experiencing-gods-presence-direct-divine-communication',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },

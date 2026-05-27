@@ -82,7 +82,7 @@ const jsonLd = [
     name: 'Part 2: Right Action - The Principles That Move People Forward Faster',
     description: 'Part 2: Right Action - The Principles That Move People Forward Faster',
     thumbnailUrl: 'https://img.youtube.com/vi/pM8THfQE3MU/maxresdefault.jpg',
-    uploadDate: '2026-03-15',
+    uploadDate: '2026-03-15T12:00:00+02:00',
     embedUrl: 'https://www.youtube.com/embed/pM8THfQE3MU',
     url: 'https://www.fountaingrace.org/sermons/right-action-principles-that-move-people-forward-faster',
     author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
