@@ -35,7 +35,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-09-14',
+    datePublished: '2025-09-14T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/experiencing-gods-presence-direct-divine-communication',
   },
   {

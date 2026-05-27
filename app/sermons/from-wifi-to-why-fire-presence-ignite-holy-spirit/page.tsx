@@ -35,7 +35,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-09-07',
+    datePublished: '2025-09-07T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/from-wifi-to-why-fire-presence-ignite-holy-spirit',
   },
   {

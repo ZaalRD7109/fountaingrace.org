@@ -35,7 +35,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2023-07-02',
+    datePublished: '2023-07-02T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/if-your-church-does-not-change-you-change-your-church',
   },
   {

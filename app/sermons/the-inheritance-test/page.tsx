@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2024-09-08',
+    datePublished: '2024-09-08T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/the-inheritance-test',
   },
   {

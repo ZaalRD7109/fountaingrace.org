@@ -37,7 +37,7 @@ const jsonLd = [
       addressCountry: 'ZA',
     },
   },
-    datePublished: '2026-02-16',
+    datePublished: '2026-02-16T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/be-a-doer-of-gods-word-not-just-a-hearer',
   },
   {

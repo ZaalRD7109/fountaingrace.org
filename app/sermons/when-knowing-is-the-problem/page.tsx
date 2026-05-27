@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-02-15',
+    datePublished: '2026-02-15T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/when-knowing-is-the-problem',
   },
   {

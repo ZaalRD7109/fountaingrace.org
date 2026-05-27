@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-05-17',
+    datePublished: '2026-05-17T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/why-the-easy-road-always-leads-to-the-wrong-place',
   },
   {

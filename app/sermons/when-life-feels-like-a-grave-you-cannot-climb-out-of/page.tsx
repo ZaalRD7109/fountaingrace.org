@@ -40,7 +40,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-04-05",
+    "datePublished": "2026-04-05T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/when-life-feels-like-a-grave-you-cannot-climb-out-of"
   },
   {

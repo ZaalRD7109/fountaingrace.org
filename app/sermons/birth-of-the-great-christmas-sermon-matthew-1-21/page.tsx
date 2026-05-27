@@ -35,7 +35,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2022-12-25',
+    datePublished: '2022-12-25T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/birth-of-the-great-christmas-sermon-matthew-1-21',
   },
   {

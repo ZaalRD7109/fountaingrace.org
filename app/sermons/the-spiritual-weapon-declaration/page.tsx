@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-10-26',
+    datePublished: '2025-10-26T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-declaration',
   },
   {

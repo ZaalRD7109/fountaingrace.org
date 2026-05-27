@@ -35,7 +35,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-11-09',
+    datePublished: '2025-11-09T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/god-will-finish-what-he-started-in-you-battle',
   },
   {

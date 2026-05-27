@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-08-24',
+    datePublished: '2025-08-24T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/the-anointing-that-makes-hell-fear-you',
   },
   {

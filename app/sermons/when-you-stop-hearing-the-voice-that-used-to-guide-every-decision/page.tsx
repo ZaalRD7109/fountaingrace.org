@@ -35,7 +35,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-05-10',
+    datePublished: '2026-05-10T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/when-you-stop-hearing-the-voice-that-used-to-guide-every-decision',
   },
   {

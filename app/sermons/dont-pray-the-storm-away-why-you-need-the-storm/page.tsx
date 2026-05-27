@@ -35,7 +35,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2024-01-01',
+    datePublished: '2024-01-01T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/dont-pray-the-storm-away-why-you-need-the-storm',
   },
   {

@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-06-08',
+    datePublished: '2025-06-08T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/faith-is-the-router-that-connects-you-to-gods-supply',
   },
   {

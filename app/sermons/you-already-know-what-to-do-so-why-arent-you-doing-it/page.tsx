@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-03-01',
+    datePublished: '2026-03-01T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/you-already-know-what-to-do-so-why-arent-you-doing-it',
   },
   {

@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-04-05',
+    datePublished: '2026-04-05T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/you-love-god-but-are-you-in-the-game',
   },
   {

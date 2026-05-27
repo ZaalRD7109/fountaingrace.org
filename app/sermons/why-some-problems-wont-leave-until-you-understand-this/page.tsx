@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-04-19',
+    datePublished: '2026-04-19T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/why-some-problems-wont-leave-until-you-understand-this',
   },
   {

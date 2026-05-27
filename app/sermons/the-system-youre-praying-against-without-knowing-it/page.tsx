@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-01-18',
+    datePublished: '2026-01-18T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/the-system-youre-praying-against-without-knowing-it',
   },
   {

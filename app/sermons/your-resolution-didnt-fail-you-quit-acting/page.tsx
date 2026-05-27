@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-01-25',
+    datePublished: '2026-01-25T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/your-resolution-didnt-fail-you-quit-acting',
   },
   {

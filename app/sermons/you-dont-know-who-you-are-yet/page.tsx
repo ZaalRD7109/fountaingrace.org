@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-05-03',
+    datePublished: '2026-05-03T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/you-dont-know-who-you-are-yet',
   },
   {

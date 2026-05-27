@@ -35,7 +35,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-10-12',
+    datePublished: '2025-10-12T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/prophetic-reset-hearing-seeing-speaking-heaven-john-10-27',
   },
   {

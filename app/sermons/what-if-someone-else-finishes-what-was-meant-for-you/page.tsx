@@ -37,7 +37,7 @@ const jsonLd = [
       addressCountry: 'ZA',
     },
   },
-    datePublished: '2026-02-22',
+    datePublished: '2026-02-22T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/what-if-someone-else-finishes-what-was-meant-for-you',
   },
   {

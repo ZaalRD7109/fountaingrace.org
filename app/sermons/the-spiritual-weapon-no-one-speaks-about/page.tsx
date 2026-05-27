@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-10-19',
+    datePublished: '2025-10-19T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-no-one-speaks-about',
   },
   {

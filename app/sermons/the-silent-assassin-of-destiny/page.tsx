@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-08-31',
+    datePublished: '2025-08-31T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/the-silent-assassin-of-destiny',
   },
   {

@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-09-28',
+    datePublished: '2025-09-28T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/no-more-waiting-rooms-god-is-live-now',
   },
   {

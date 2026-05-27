@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-01-11',
+    datePublished: '2026-01-11T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/why-does-your-life-keep-collapsing',
   },
   {

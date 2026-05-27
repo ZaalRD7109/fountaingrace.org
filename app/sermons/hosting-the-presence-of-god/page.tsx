@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-06-22',
+    datePublished: '2025-06-22T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/hosting-the-presence-of-god',
   },
   {

@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2024-01-28',
+    datePublished: '2024-01-28T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/you-are-not-lazy-you-are-a-lot-more',
   },
   {

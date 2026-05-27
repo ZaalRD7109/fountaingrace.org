@@ -37,7 +37,7 @@ const jsonLd = [
       addressCountry: 'ZA',
     },
   },
-    datePublished: '2026-03-08',
+    datePublished: '2026-03-08T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/the-principles-that-move-people-forward-faster',
   },
   {

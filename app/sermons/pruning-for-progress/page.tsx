@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2025-11-02',
+    datePublished: '2025-11-02T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/pruning-for-progress',
   },
   {

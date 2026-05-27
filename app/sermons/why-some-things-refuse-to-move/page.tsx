@@ -37,7 +37,7 @@ const jsonLd = [
         addressCountry: 'ZA',
       },
     },
-    datePublished: '2026-01-04',
+    datePublished: '2026-01-04T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/why-some-things-refuse-to-move',
   },
   {

@@ -78,6 +78,19 @@ DO NOT use Ricardo's personal book brand (#00ced1) or the navy in tailwind.confi
 - `C:\Users\User\FGI_Website\fountaingrace.org` — old static HTML site, deprecated
 - `fountaingrace.org` mounted folder — same old site, do not read from it
 
+## Sermon page convention (locked — Google Search Console rule)
+When you copy an existing sermon `page.tsx` to add a new sermon, the JSON-LD date fields **must** be ISO 8601 with timezone, not date-only. Google's structured-data validator rejects date-only and the whole VideoObject error count goes back up.
+
+- Right: `uploadDate: '2026-05-03T12:00:00+02:00'`
+- Wrong: `uploadDate: '2026-05-03'`
+- Same rule applies to `datePublished` on the Article block.
+
+Use noon SAST (`T12:00:00+02:00`). It is a neutral time that cannot roll the sermon's apparent date into the wrong day for any viewer in any timezone. Don't use midnight, 23:00, or unusual hours.
+
+The visible "preached on" date string and the listing-page `date` / `dateDisplay` fields are separate and stay as they are — those never leave the website, only Google ever reads the JSON-LD.
+
+Background: Search Console flagged this on 2026-05-23. Fixed across 43 sermon pages and 47 Article blocks on 2026-05-27. See `docs/infrastructure/2026-05-27-fgi-video-uploaddate-fix.md` in the workspace repo.
+
 ## Preferences
 - Keep writing simple, concise, no bullets in prose responses
 - No emojis, no semicolons, no hashtags

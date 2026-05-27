@@ -40,7 +40,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-04-26",
+    "datePublished": "2026-04-26T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/when-you-cant-believe-things-will-get-better-again"
   },
   {

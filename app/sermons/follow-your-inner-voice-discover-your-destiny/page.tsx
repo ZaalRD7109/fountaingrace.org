@@ -37,7 +37,7 @@ const jsonLd = [
       addressCountry: 'ZA',
     },
   },
-    datePublished: '2026-02-24',
+    datePublished: '2026-02-24T12:00:00+02:00',
     url: 'https://www.fountaingrace.org/sermons/follow-your-inner-voice-discover-your-destiny',
   },
   {

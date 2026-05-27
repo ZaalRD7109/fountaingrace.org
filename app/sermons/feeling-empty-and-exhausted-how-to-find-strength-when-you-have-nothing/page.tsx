@@ -40,7 +40,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-04-27",
+    "datePublished": "2026-04-27T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/feeling-empty-and-exhausted-how-to-find-strength-when-you-have-nothing"
   },
   {
