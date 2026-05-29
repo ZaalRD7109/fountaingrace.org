@@ -9,21 +9,18 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        // FGI locked brand palette (confirmed by Ricardo 2026-05-29). Do not guess.
         brand: {
-          navy: '#001F54',   // primary dark — hero backgrounds, dark sections
-          teal: '#00796B',   // secondary — NPO sections, accents
-          gold: '#FFD600',   // CTA buttons, highlights
-          light: '#f8faff',  // section backgrounds (light blue tint)
-          lteal: '#f0f9f7',  // section backgrounds (light teal tint)
-          grey: '#555555',   // body text
-          dark: '#222222',   // headings
+          white: '#ffffff', // backgrounds
+          blue: '#2a9df4',  // primary — logo, CTAs, links
+          gold: '#ffd700',  // accent — highlights, CTA buttons
+          teal: '#008080',  // secondary — NPO context, accents
+          grey: '#7d7d7d',  // body text
+          black: '#000000', // dark sections, logo background
         },
       },
       fontFamily: {
         sans: ['Poppins', 'system-ui', 'sans-serif'],
-      },
-      backgroundImage: {
-        'hero-gradient': 'linear-gradient(145deg, #001F54 0%, #00796B 100%)',
       },
       borderRadius: {
         pill: '30px',
