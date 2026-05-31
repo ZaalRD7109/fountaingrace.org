@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "i-nearly-died-this-week-heres-what-changed-everything",
+    title: "I Nearly Died This Week. Here's What Changed Everything.",
+    date: "2026-04-29",
+    dateDisplay: "29 April 2026",
+    intro:
+      "A brush with death reveals why most people stay stuck in laziness, broken relationships, and wasted potential. Pastor Ricardo Zaal shares what he learned in a hospital bed.",
+  },
+  {
     slug: "why-youre-busy-but-stuck-the-action-that-actually-works",
     title: "Why You're Busy But Stuck - The Action That Actually Works",
     date: "2026-05-11",
