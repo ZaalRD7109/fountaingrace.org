@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "why-youre-busy-but-stuck-the-action-that-actually-works",
+    title: "Why You're Busy But Stuck - The Action That Actually Works",
+    date: "2026-05-11",
+    dateDisplay: "11 May 2026",
+    intro:
+      "You're working hard. You're showing up. But nothing changes. The problem isn't your effort - it's the type of action you're taking.",
+  },
+  {
     slug: 'why-the-easy-road-always-leads-to-the-wrong-place',
     title: 'Why the Easy Road Always Leads to the Wrong Place',
     date: '2026-05-17',
