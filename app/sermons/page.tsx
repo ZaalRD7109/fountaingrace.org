@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "your-dreams-feel-dead-but-delays-arent-denials-heres-why",
+    title: "Your Dreams Feel Dead, But Delays Aren't Denials-Here's Why",
+    date: "2025-03-15",
+    dateDisplay: "15 March 2025",
+    intro:
+      "You're doing everything right. Your intentions are solid. Yet life keeps hurting and progress stalls. What if the real answer isn't more hustle-it's understanding what suffering actually does in a life built to matter?",
+  },
+  {
     slug: "why-your-preparation-matters-more-than-your-luck",
     title: "Your Big Break Is Coming, But You're Not Ready For It",
     date: "2025-03-22",
