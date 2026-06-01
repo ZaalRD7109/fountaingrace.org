@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "I Nearly Died This Week. Here's What Changed Everything. | Proverbs 6:6 - Go to the ant, you sluggard | Fountain of Grace International",
-  description: "Pastor Ricardo Zaal survived a near-fatal accident and discovered what truly matters. His message challenges you to stop settling.",
+  title: "You're Stuck Because You Don't Know Where You're Going | Proverbs 6:6-11 | Fountain of Grace International",
+  description: "Why lack of direction kills motivation more than laziness. Learn what actually holds you back from meaningful change.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/i-nearly-died-this-week-heres-what-changed-everything" },
   openGraph: {
-    title: "I Nearly Died This Week. Here's What Changed Everything.",
-    description: "Pastor Ricardo Zaal survived a near-fatal accident and discovered what truly matters. His message challenges you to stop settling.",
+    title: "You're Stuck Because You Don't Know Where You're Going",
+    description: "Why lack of direction kills motivation more than laziness. Learn what actually holds you back from meaningful change.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: "https://www.fountaingrace.org/sermons/i-nearly-died-this-week-heres-what-changed-everything",
@@ -19,8 +19,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "I Nearly Died This Week. Here's What Changed Everything.",
-    "description": "Pastor Ricardo Zaal survived a near-fatal accident and discovered that laziness is not about effort, but about choosing to stay asleep until life forces you awake.",
+    "headline": "You're Stuck Because You Don't Know Where You're Going",
+    "description": "Laziness isn't about physical inactivity. It's about spiritual passivity and the absence of a compelling vision. Learn how to create direction, build momentum through small wins, find accountability, and align your words with your potential.",
     "author": {
       "@type": "Person",
       "name": "Pastor Ricardo Zaal"
@@ -58,7 +58,7 @@ const jsonLd = [
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "I Nearly Died This Week. Here's What Changed Everything.",
+        "name": "You're Stuck Because You Don't Know Where You're Going",
         "item": "https://www.fountaingrace.org/sermons/i-nearly-died-this-week-heres-what-changed-everything"
       }
     ]
@@ -69,26 +69,26 @@ const jsonLd = [
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How do I know if I am lazy or just stuck?",
+        "name": "I've tried starting small before and it didn't work. Why would this be different?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Laziness is not about how many dishes you wash or how early you wake up. It is about staying in situations that are killing you and doing nothing. It is sitting in a relationship where you are beaten and choosing to stay. It is staying in a job where you do not grow and never trying to leave. It is having a dream and choosing fear instead. If you are in a situation that hurts you and you are not moving, that is laziness. The cure is to start, even small. One step forward breaks the pattern."
+          "text": "Starting small only works if you have something pulling you forward. Without a vision for where you're going, small steps feel pointless. First, get clear on what you actually want to build or change. Then start small toward that specific target. The difference isn't the size of your effort. It's having a reason for the effort. Small steps toward nothing go nowhere. Small steps toward something compound into momentum."
         }
       },
       {
         "@type": "Question",
-        "name": "What if I fail when I try to change?",
+        "name": "What if I don't have anyone to hold me accountable?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Failure is not the opposite of success. Quitting is. David did not defeat Goliath by accident. He prepared. He practiced with his sling. He failed before he won. The Bible is full of people who failed and kept going. When you fail, you have learned something. You have moved forward even if it looks like backward movement. Find an accountability partner who will tell you to get back up. Celebrate the fact that you tried. Then try again differently. Greater is He that is within you than He that is in the world."
+          "text": "Start by creating accountability with yourself. Write down your goal. Mark one small action you'll take this week. Tell one person what you're doing. Start a simple document tracking your progress. Then find one person who matters to you and ask them to check in. You don't need a coach or a group. You need one human who cares enough to ask, 'Did you do what you said?' That person exists in your life."
         }
       },
       {
         "@type": "Question",
-        "name": "Why should I care about this if I am comfortable right now?",
+        "name": "How do I know my vision is worth pursuing if I keep doubting myself?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Pastor Ricardo was comfortable driving to the Free State. In seconds, his life changed. Comfort is not safety. It is a false sense of security. One moment changes everything. If you died tomorrow, would your life have mattered? Would people remember someone who glorified Jesus or someone who played it safe? The harvest is big and the laborers are few. You were not put here to be comfortable. You were put here to do something. Start now, not when you have time, because time is running out."
+          "text": "Doubt is normal. It's not a sign you're wrong. It's a sign you're moving toward something unfamiliar. The question isn't whether doubt disappears. It's whether you move forward anyway. When doubt whispers that you can't, speak louder: 'I am capable. I am strong. I am moving closer to my goal with each step.' Your feelings will follow your actions and your words. Start before you feel ready. The readiness comes on the other side of the first step."
         }
       }
     ]
@@ -96,8 +96,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": "I Nearly Died This Week. Here's What Changed Everything.",
-    "description": "I Nearly Died This Week. Here's What Changed Everything.",
+    "name": "You're Stuck Because You Don't Know Where You're Going",
+    "description": "You're Stuck Because You Don't Know Where You're Going",
     "thumbnailUrl": "https://img.youtube.com/vi/4Y-J89_zY6I/maxresdefault.jpg",
     "uploadDate": "2026-04-29T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/4Y-J89_zY6I",
@@ -124,54 +124,47 @@ export default function SermonPage() {
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"I Nearly Died This Week. Here's What Changed Everything."}</h1>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"A brush with death reveals why most people stay stuck in laziness, broken relationships, and wasted potential. Pastor Ricardo Zaal shares what he learned in a hospital bed."}</p>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You're Stuck Because You Don't Know Where You're Going"}</h1>
+            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're not lazy. You're directionless. Here's how to escape dead-end situations and build momentum toward something that matters."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-              <iframe src="https://www.youtube.com/embed/4Y-J89_zY6I" title={"I Nearly Died This Week. Here's What Changed Everything."} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <iframe src="https://www.youtube.com/embed/4Y-J89_zY6I" title={"You're Stuck Because You Don't Know Where You're Going"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             </div>
           </div>
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Happened in the Hospital"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo was in the Free State when his life changed in seconds. An accident left him with three head wounds and a scratched arm. Lying in a hospital bed, dizzy and confused, only one thought consumed him: his children. What if he had died?"}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Gratitude flooded him. He realized he had been given a second chance. Most people never get that wake-up call. They go through life assuming they have unlimited tomorrows. But the hospital bed forced a question: If I died today, would my life have mattered?"}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You're Not Lazy. You're Asleep."}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo challenges the idea that people are simply lazy. The real problem is different. You have not yet faced a situation where it is Jesus or death. You have not yet been forced to choose. Your life has been comfortable enough that you can afford to stay asleep."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"When everything is fine, when you have money and a car and a house, it feels safe to ignore God. But this comfort is fragile. One moment changes everything. The moment God removes His hand, everything comes tumbling down. Most people do not understand this until it is too late."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Laziness is not about dishes or sleep. It is about staying in a broken relationship that beats you down. It is about sitting in a dead-end job and never trying to move forward. It is about knowing you need to change and choosing not to."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Praise Actually Changes Your Circumstances"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"God inhabits the praises of His people. This is not a nice idea. It is a physical reality. When you praise God, His presence enters your situation. When you complain, you push Him out."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Think of it like a trampoline. When everyone jumps in unison, the bounce is powerful and smooth. When one person jumps out of rhythm, they fall. When God's people praise together, they are in unison with His movement. When you stay outside of that, the world shakes you. You feel the trembling because you are not aligned with His beat."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"The weak say I am strong. Not I wish I were strong. Not I hope to be strong. You declare strength now. Even in weakness, His strength is perfect. When you speak this, your body changes. Your shoulders go back. Your chest comes out. You walk differently. And laziness loses its grip."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Five Practical Steps to Break Free"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"First, have a vision. Know where you are going. Without a vision, obstacles stop you. With one, obstacles become stepping stones. You will borrow ten rand if you know you are getting one hundred thousand rand at the end."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Second, start small and build momentum. The hardest part is starting. Break the journey into manageable pieces. Wash yourself. Plan the trip. Take one step. Like the ant, carry small objects consistently. Move from two kilogram dumbbells to five, then ten. Build gradually."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Third, find an accountability partner. Work never happens alone. Ants work as a unit because they know the queen depends on them. Find someone who will tell you the truth. Find someone who will hold you to your word. Surround yourself with people who inspire and motivate you, not plastic people who burn you down."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Fourth, celebrate every milestone. The moment you reach your first goal, celebrate it. Mark it. Write it down. These small victories are fuel for the next push. Without celebrating, you forget why you started."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Fifth, keep speaking to yourself. Greater is He that is within you than He that is in the world. Reject negative thoughts. Replace them with truth. I am capable. I am hardworking. Each step forward brings me closer. These are not feel-good lies. They are warfare. They are how you break laziness."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Look at Who Came Before You"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"David was a boy when Goliath was a giant. David had no armor. He had a sling and a stone. Everyone told him it was impossible. He did it anyway. Not because he was brave. Because he refused to accept the norm."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"The Bible is full of ordinary people who did extraordinary things. Jesus said you will do greater things than I did. Not because you are better. Because you have social media and technology. Because the world is smaller. Because you can reach more people faster."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Find your story in Scripture. Find your David. Find your reason to believe that if they did it, so can you. Because somebody, somewhere, sat in your shoes before. They went through exactly what you are going through. And today they are winning."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Cost of Doing Nothing"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Imagine your funeral. Someone stands and talks about your life. What will they say? Will they talk about a person who tried? A person who failed but kept going? Or a person who was afraid to start?"}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo almost died this week. He is standing in that pulpit today because God had more work for him. He has not reached half the people he is supposed to reach. He will not waste another day being comfortable when there is work to do."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Your tomorrow is not guaranteed. The question is not whether you will die. The question is whether you will have lived. Whether you will have done what you came here to do. Whether you will have glorified Jesus with the time you were given."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Real Laziness Nobody Talks About"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"You wake up and nothing pulls you forward. Not because you're naturally lazy, but because you have no vision for your life. Real laziness isn't about skipping dishes or sleeping in. It's sitting in a toxic relationship for ten years and doing nothing. It's staying in a job that goes nowhere while your potential dies inside. It's spiritual passivity masquerading as tiredness."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The Bible says in Proverbs 6:6, 'Go to the ant, consider its ways and be wise.' Ants don't move randomly. They move with purpose. They know what they're building toward. That certainty drives every action. Without a clear destination, your brain has no reason to get your body moving. Obstacles feel insurmountable. Challenges feel pointless. You're not broken. You're just unmotivated because you don't know why you should move."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Your Motivation Vanishes at the First Obstacle"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"A person heading to Johannesburg with fifty thousand rand waiting won't be stopped by the lack of transport money today. They'll ask neighbors for ten rand. They'll find a ride. Obstacles become problems to solve, not walls to stop them. But when you have no destination? A small setback becomes permission to quit."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"This is what kills most people. Not actual laziness, but the absence of a vision compelling enough to push through resistance. Jesus taught this principle when he said in Matthew 6:33 to seek first the kingdom and his righteousness. A life aligned with purpose becomes unstoppable. A life drifting becomes defeated at the first inconvenience."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Start Small. Build Momentum. Celebrate."}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"You don't overcome this by forcing yourself to work harder. You overcome it by starting so small that starting becomes the hardest part. Break your goal into manageable tasks. If building a business feels overwhelming, start by planning. Start by saving one hundred rand. Start by making one phone call. The movement itself is the oil that unsticks the gears."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Then celebrate. Mark that moment. The first time you saved money. The first conversation with a potential client. The first step toward leaving that toxic situation. These small wins aren't trivial. They're proof that change is possible. They're the fuel that turns one small step into momentum. Ants don't judge the size of what they carry. They carry consistently. So must you."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Find Someone Who Will Tell You the Truth"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"You need an accountability partner. Not someone who cheers you on when you're wrong, but someone who tells you when you're walking the wrong direction. The Bible says in Proverbs 27:17, 'As iron sharpens iron, so one person sharpens another.' Plastic doesn't sharpen plastic. It only surrounds itself with more plastic that tells it whatever it wants to hear."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"When someone knows you're supposed to wake at seven and calls to wake you, it's easier to move. When someone asks what you promised last week, you can't lie to yourself. This is why ants work so hard for their queen. They know the entire colony depends on their diligence. You need people who make you matter. Find them."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Speak Life to Yourself When Your Mind Whispers Lies"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"Your mind will tell you that you're not capable. That you're not smart enough. That people like you don't succeed. This is the voice of spiritual laziness trying to keep you passive. The Bible says in Proverbs 23:7, 'As a man thinks in his heart, so is he.' Not just what your brain tells you, but what you believe in your core. Your heart pumps blood to your entire body. When you feed it lies, those lies reach every cell."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Instead, speak truth. When weakness whispers, say 'I am strong.' When poverty threatens, say 'I am blessed.' When failure feels imminent, say 'His strength is perfect in my weakness.' This isn't positive thinking. It's alignment. It's matching your words and posture to what is actually true about you as someone made in God's image. Your body responds. Your confidence rises. Your laziness dissolves."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Study Jesus. Then Do What He Did, But Better."}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"Jesus said before his death that those who followed him would do greater things than he did. Not because they were smarter or more gifted, but because they had access to technology and platforms he never had. Three thousand people came to God in one meeting without social media. Imagine what's possible now."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"This is your permission to stop accepting the small life you've settled into. Stop accepting that you need the perfect job title, the right degree, the expensive clothes before you move. David defeated Goliath without the heavy armor everyone told him to wear. He broke the norm because he wasn't playing the game others expected. Your vision doesn't need the world's approval to matter. It needs your diligence and your decision to move."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"You are not lazy. You are asleep. And you will stay asleep until life shakes you awake.\""}</p>
+              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"You're not lazy because you don't want to work. You're stuck because you don't know where you're going.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
             <ol className="list-decimal list-inside space-y-3 text-[#555] leading-relaxed mb-6">
-              <li><strong>{"Vision Creates Movement"}</strong> {" "}{"Without knowing where you are going, obstacles stop you cold. But when you have a clear vision, those same obstacles become part of the journey. The vision pulls you forward even when the path is hard. Pastor Ricardo illustrates this by showing how someone will borrow money and sacrifice comfort if they know a hundred thousand rand waits at the end. Your vision is the force that makes you move. Without it, you will always find a reason to stay still."}</li>
-              <li><strong>{"Small Steps Build Unstoppable Momentum"}</strong> {" "}{"Trying to change everything at once overwhelms you. Breaking your goal into smaller pieces makes it possible. Start by getting up and washing yourself. Move from two kilogram dumbbells to five. Celebrate that you borrowed the money for your trip. The ant does not carry the entire load in one day. It carries small objects consistently. Momentum comes from repeated small actions, not from one giant heroic effort. Each step is tiny, but the pattern becomes powerful."}</li>
-              <li><strong>{"You Need Iron Around You, Not Plastic"}</strong> {" "}{"Proverbs says iron sharpens iron. This means you need people around you who are strong, who challenge you, who hold you accountable. But you also need to remove plastic people, the ones who tell you it is impossible, who discourage you, who want you to stay small so they feel comfortable. Your circle determines your trajectory. Find people who will wake you up at seven o'clock. Find people who believe you can do it. Find people who celebrate your wins. Burn the plastic. Keep the iron."}</li>
+              <li><strong>{"Vision Beats Motivation"}</strong> {" "}{"A clear destination transforms obstacles into problems worth solving. Without knowing where you're headed, the smallest setback becomes an excuse to quit. When you know what you're building toward, you stop waiting for perfect conditions and start moving with whatever is in your hand. The ant doesn't need inspiration every morning. It knows the mission. So must you."}</li>
+              <li><strong>{"Momentum Comes From Small Wins, Not Big Leaps"}</strong> {" "}{"Your brain releases dopamine when you accomplish something, no matter how small. Celebrate the first hundred rand saved. Celebrate the first phone call made. Celebrate the conversation that moves you closer. These aren't trivial moments. They're proof that change works. They're the fuel that turns one small action into a pattern of diligence. Build in increments. Mark every milestone."}</li>
+              <li><strong>{"Your Words Shape Your Reality"}</strong> {" "}{"When you speak negatively about yourself, your body responds with defeat. Your posture slouches. Your shoulders drop. Your energy drains. When you speak truth over yourself, your chest rises, your shoulders pull back, and your entire nervous system aligns with possibility. This is not delusion. This is alignment. Your words are the first step toward becoming who you're speaking yourself to be."}</li>
             </ol>
             <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
           </div>
@@ -181,16 +174,16 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-6">Frequently Asked Questions</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"How do I know if I am lazy or just stuck?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"Laziness is not about how many dishes you wash or how early you wake up. It is about staying in situations that are killing you and doing nothing. It is sitting in a relationship where you are beaten and choosing to stay. It is staying in a job where you do not grow and never trying to leave. It is having a dream and choosing fear instead. If you are in a situation that hurts you and you are not moving, that is laziness. The cure is to start, even small. One step forward breaks the pattern."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"I've tried starting small before and it didn't work. Why would this be different?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Starting small only works if you have something pulling you forward. Without a vision for where you're going, small steps feel pointless. First, get clear on what you actually want to build or change. Then start small toward that specific target. The difference isn't the size of your effort. It's having a reason for the effort. Small steps toward nothing go nowhere. Small steps toward something compound into momentum."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What if I fail when I try to change?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"Failure is not the opposite of success. Quitting is. David did not defeat Goliath by accident. He prepared. He practiced with his sling. He failed before he won. The Bible is full of people who failed and kept going. When you fail, you have learned something. You have moved forward even if it looks like backward movement. Find an accountability partner who will tell you to get back up. Celebrate the fact that you tried. Then try again differently. Greater is He that is within you than He that is in the world."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What if I don't have anyone to hold me accountable?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Start by creating accountability with yourself. Write down your goal. Mark one small action you'll take this week. Tell one person what you're doing. Start a simple document tracking your progress. Then find one person who matters to you and ask them to check in. You don't need a coach or a group. You need one human who cares enough to ask, 'Did you do what you said?' That person exists in your life."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"Why should I care about this if I am comfortable right now?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"Pastor Ricardo was comfortable driving to the Free State. In seconds, his life changed. Comfort is not safety. It is a false sense of security. One moment changes everything. If you died tomorrow, would your life have mattered? Would people remember someone who glorified Jesus or someone who played it safe? The harvest is big and the laborers are few. You were not put here to be comfortable. You were put here to do something. Start now, not when you have time, because time is running out."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"How do I know my vision is worth pursuing if I keep doubting myself?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Doubt is normal. It's not a sign you're wrong. It's a sign you're moving toward something unfamiliar. The question isn't whether doubt disappears. It's whether you move forward anyway. When doubt whispers that you can't, speak louder: 'I am capable. I am strong. I am moving closer to my goal with each step.' Your feelings will follow your actions and your words. Start before you feel ready. The readiness comes on the other side of the first step."}</p>
               </div>
             </div>
           </div>

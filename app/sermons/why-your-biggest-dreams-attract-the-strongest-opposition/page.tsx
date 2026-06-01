@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Why Your Biggest Dreams Attract the Strongest Opposition | Genesis 37:5-11 | Fountain of Grace International",
-  description: "Discover why jealousy follows divine favor and how betrayals position you for God's greater purpose. Learn from Joseph's unexpected detours.",
+  title: "When Your Success Makes People Jealous: Here's What It Really Means | Genesis 37:5-11 | Fountain of Grace International",
+  description: "Opposition from family and friends often signals something bigger is coming. Learn why attacks mean you're on the right path.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" },
   openGraph: {
-    title: "Why Your Biggest Dreams Attract the Strongest Opposition",
-    description: "Discover why jealousy follows divine favor and how betrayals position you for God's greater purpose. Learn from Joseph's unexpected detours.",
+    title: "When Your Success Makes People Jealous: Here's What It Really Means",
+    description: "Opposition from family and friends often signals something bigger is coming. Learn why attacks mean you're on the right path.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: "https://www.fountaingrace.org/sermons/why-your-biggest-dreams-attract-the-strongest-opposition",
@@ -19,8 +19,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Why Your Biggest Dreams Attract the Strongest Opposition",
-    "description": "Learn why divine favor attracts jealousy and how betrayals position you for God's greater purpose through the untold principles of Joseph's life.",
+    "headline": "When Your Success Makes People Jealous: Here's What It Really Means",
+    "description": "When jealousy and opposition come from family or colleagues, it signals that your success is real enough to threaten others. Learn why attacks are often signs of bigger things ahead, how to extract wisdom from people ahead of you, and how to stay steady when the people closest to you turn against your progress.",
     "author": {
       "@type": "Person",
       "name": "Pastor Ricardo Zaal"
@@ -58,7 +58,7 @@ const jsonLd = [
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Why Your Biggest Dreams Attract the Strongest Opposition",
+        "name": "When Your Success Makes People Jealous: Here's What It Really Means",
         "item": "https://www.fountaingrace.org/sermons/why-your-biggest-dreams-attract-the-strongest-opposition"
       }
     ]
@@ -69,26 +69,26 @@ const jsonLd = [
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Why do people close to me not support my dreams?",
+        "name": "What do I do when my family opposes my big plans?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "God-given dreams are often misunderstood by those closest to us. They may be operating from fear, past experience, or limited vision. Joseph's own father rebuked his dream. Your family's doubt does not mean your dream is wrong. It means your dream is bigger than their current understanding. Trust God more than you need their approval. Once your dream comes to pass, they will see. Until then, keep your dream between you and God."
+          "text": "Family opposition often signals that your plan is real enough to threaten the life they know. This is not a sign to quit. It is a sign to stop asking for permission and start preparing for the opportunity. Study people who have done what you want to do. Extract the principles. Move forward quietly. Your job is to be ready, not to convince them."
         }
       },
       {
         "@type": "Question",
-        "name": "Is it normal to face opposition when pursuing a big goal?",
+        "name": "How do I know if jealousy from others means I am on the right path?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes. Opposition is often a sign of divine favor, not a sign you are wrong. When people become jealous of you, it means they can see something in you that threatens them. This jealousy is proof that God has put something on your life worth fighting for. The enemy only attacks those who matter to him. If he is attacking you, it means you have something he cannot have and somewhere you are going that he does not want you to reach."
+          "text": "Jealousy is often a mirror. People only get jealous of something they value or something that threatens what they have. If the people around you suddenly turn hostile when you start moving up, it is because they can sense you are leaving. That awareness is your confirmation. The attack is the proof."
         }
       },
       {
         "@type": "Question",
-        "name": "How do I know if a setback is a betrayal or a redirection?",
+        "name": "When betrayal happens, how do I know if it is a setback or a setup?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You cannot know in the moment. Joseph did not know when his brothers sold him that he was being positioned for Egypt. You will only see the answer when you look back at your whole story. For now, trust that God is with you in the setback. Keep moving forward. Keep learning. Keep preparing. The betrayal is a redirection when you refuse to stay bitter and instead ask God what He is teaching you. One day your pit will become your palace."
+          "text": "You cannot know in the moment. That is why you keep moving. Joseph did not know his brothers' betrayal would land him in the palace. He only knew that quitting was not an option. Look back later and you will see the pattern. Every door that closed actually moved you toward where you needed to be. Trust the direction even when the path is dark."
         }
       }
     ]
@@ -96,8 +96,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": "Why Your Biggest Dreams Attract the Strongest Opposition",
-    "description": "Why Your Biggest Dreams Attract the Strongest Opposition",
+    "name": "When Your Success Makes People Jealous: Here's What It Really Means",
+    "description": "When Your Success Makes People Jealous: Here's What It Really Means",
     "thumbnailUrl": "https://img.youtube.com/vi/cjHvsH_hTDA/maxresdefault.jpg",
     "uploadDate": "2025-03-30T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/cjHvsH_hTDA",
@@ -124,47 +124,53 @@ export default function SermonPage() {
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Why Your Biggest Dreams Attract the Strongest Opposition"}</h1>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"When God gives you a dream, opposition comes from those closest to you. But that jealousy is actually a sign of something bigger ahead."}</p>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"When Your Success Makes People Jealous: Here's What It Really Means"}</h1>
+            <p className="text-white/80 text-lg leading-relaxed mb-4">{"When people closest to you suddenly turn jealous or hostile, it feels like failure. But it might be the opposite."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-              <iframe src="https://www.youtube.com/embed/cjHvsH_hTDA" title={"Why Your Biggest Dreams Attract the Strongest Opposition"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <iframe src="https://www.youtube.com/embed/cjHvsH_hTDA" title={"When Your Success Makes People Jealous: Here's What It Really Means"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             </div>
           </div>
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Divine Favor Always Attracts Envy"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"When God puts favor on your life, jealousy follows. Not because you did something wrong, but because people can see you are destined for something bigger. Joseph's brothers hated him after his dream. Saul hunted David after the crowd praised him. This pattern repeats in every generation."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"The devil does not fight those who are with him. He fights those who are against him. So when you feel the heat of jealousy coming your way, stop and ask yourself: what favor is God giving me that threatens others? Jealousy is a backward compliment. It means people see something in you that makes them afraid."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Family May Not Understand Your Dream"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Not everybody will support your God-given dream. Joseph told his dream to his brothers and father. They did not celebrate. They rebuked him. They hated him more. His own family became his first opposition. This is a hard principle but a true one. The people closest to you may be the last to believe in what God is calling you to do."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"This does not mean your family is against God. It means they cannot see what God sees. Their fear, their experience, their doubts cloud their vision of your future. A parent does not want their sixteen-year-old to move out because love says protect. But God's dream for that person says grow. Both can be true at the same time. You must know the difference between protection and prevention."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Looks Like Betrayal Is Actually Positioning"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Joseph was sold for twenty pieces of silver. His brothers meant it for evil. But God meant it for good. He was sold into slavery, which led him to Potiphar's house, then prison, then the palace. Every betrayal was a step toward his throne. Without the betrayal, there is no Egypt. Without Egypt, there is no salvation for the nations."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Judas betrayed Jesus for thirty pieces of silver. In the moment it looked like the end. But that betrayal opened the door to redemption for all mankind. Stop looking at what happened to you and start asking where God is moving you. The pit is not your destination. It is your passage. The prison is not your end. It is your preparation. What feels like being thrown away is actually being positioned."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"God's Presence Stays With You on the Mountain and in the Valley"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Genesis 39:2 says the Lord was with Joseph, and Joseph prospered. Not because Joseph was smart. Not because Joseph was lucky. Because God was with him. When you are in the pit with your brothers throwing rocks at you, God is there. When you are in prison for a crime you did not commit, God is there. When you are betrayed by someone you trusted, God is there."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"The height of the mountain does not matter. What matters is whether you recognize God's presence at that height. Joshua 1:9 is clear: the Lord is with you wherever you go. Mountains feel big until you reach the top. Then you see the whole landscape. Valleys feel dark until you start climbing. Then you see the light. Both are necessary. Both teach you something different about God."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Prepare Now for the Opportunity You Cannot Yet See"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Joseph did not know when he was in prison that he would interpret Pharaoh's dream one day. But he was preparing. He was learning. He was paying attention. When the dream interpreter needed help, Joseph was ready. When Pharaoh needed answers, Joseph did not say I know. He said God knows. That humility came from preparation, not luck."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Do not ask God for a smooth road. Ask for the strength to climb the hard mountains. Because it is on the mountains that your vision becomes clear. It is in the valleys that your faith becomes real. It is in the struggle that you become qualified for what God has waiting on the other side. Success happens when opportunity meets preparation. Be preparing now for an opportunity you cannot yet see."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Keep Your Dream Close Until God Opens the Door"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Joseph told his dream to his brothers. Then he told it to his father. Everyone heard it. Everyone rejected it. Then everyone became jealous of it. Your dream is a seed. Seeds need darkness and silence to grow. Share it too early and people stomp on it with their doubts, their fears, their jealousy."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Write your dreams down. Keep them between you and God. When God opens the door, your dream will speak for itself. You will not need to convince anyone because everyone will see it happening. The dream Joseph kept in his heart came true in ways he could never have imagined. The dreams you keep quiet belong to God alone until God says otherwise."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Opposition is a Sign, Not a Setback"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"When you start moving toward something bigger, the people around you often react badly. Your family questions your choices. Coworkers undermine you. Friends disappear. This is not random. This is a pattern that shows up in the lives of people who actually accomplish something meaningful."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The ancient story of Joseph shows this plainly. His brothers hated him more after he shared his dream. His own father rebuked him. But that hatred did not mean Joseph was wrong. It meant Joseph was heading somewhere the people around him could not yet see. The opposition was not a sign he should quit. It was a sign he was on to something."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"When someone threatens the status quo, jealousy surfaces fast. A king (Saul) became jealous of a young man (David) because the crowd cheered louder for David. The more success David had, the more Saul hunted him. But Saul's jealousy did not stop David's purpose. It just meant David was valuable enough to be threatened."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Learn From People Ahead of You, Not Just Envy Them"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"When you see someone doing better than you, your first instinct might be to dismiss them or resent them. But that is a wasted opportunity. Instead, look behind their success. Ask what they do differently. What habits do they have? What knowledge do they gain? Even if someone uses shortcuts to get ahead (and some do), you can still extract the lessons."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The gym analogy is simple: some people use drugs to build muscle fast. That is a shortcut. But the fact that they are at the gym and committed to training still teaches you something. You can learn the discipline and the method without the shortcut. Joseph learned to interpret dreams not through a single revelation, but through years of exposure, failure, and refinement. He was preparing for an opportunity he did not yet know was coming."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"When you stop being offended by others' success and start studying it instead, you accelerate your own growth. This is not about copying them. It is about extracting wisdom. Every obstacle someone overcame before you is a map you can use."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Dreams Attract Both Opportunity and Attack"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"A real dream (not a wish, but a clear sense of direction) acts like a signal. It attracts two things: people who want to help you and people who want to stop you. Joseph's dream showed his brothers that he would rise above them one day. That dream terrified them more than anything else. So they moved to kill it by killing him. They failed. But the dream was what triggered the attack."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"This is not a coincidence. When you carry a genuine purpose, you become a target. The closer people are to you, the more they sense when something big is coming. Family members often resist hardest because they can see it most clearly. A parent who rebuffs your big plans is not always being protective. Sometimes they are being protective of the world they know, not of you."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Your job is not to convince people your dream is real. Your job is to prepare for the opportunity that dream is pointing toward. Joseph did not argue with his brothers about his dream. He did not try to explain it. He kept moving, kept learning, kept preparing. When the moment came to interpret the Pharaoh's dream, he was ready. The preparation mattered more than the approval."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Betrayal Often Positions You for Something Bigger"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"What looks like betrayal can be redirection. Joseph was sold by his own brothers for twenty pieces of silver. To them, it was the end of him. To the story, it was a passage. That sale moved him from a shepherd's tent into a position where he would eventually save a nation. The brothers thought they were ending his story. They were actually moving him toward his destiny."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"This does not mean every betrayal is good or that you should accept mistreatment. It means that when betrayal happens, the worst response is to stop moving. Joseph could have quit after his brothers sold him. He could have quit again when he was falsely accused and thrown in prison. But each setback was actually a setup for the next level."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The pattern holds: difficulty is not a sign you chose wrong. Difficulty is a sign you are moving toward something worth protecting. Easy roads keep you in one place. Hard roads take you somewhere you have to grow to reach."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Presence That Stays When Everything Else Leaves"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"One phrase appears throughout Joseph's story, even in the darkest moments: he was prosperous because the presence of the divine was with him. Not because his circumstances improved instantly. Not because people stopped attacking him. But because something deeper was at work that circumstances could not touch."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"This changes how you interpret your own setbacks. You lose your job. Is the presence still there? You fail publicly. Is the presence still there? You are betrayed by someone you trusted. Is the presence still there? The answer defines whether you quit or keep moving. Joseph kept moving because he believed something was with him that was bigger than what was against him."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Every mountain you climb teaches you something a flat road never could. The higher you go, the harder the wind. The greater your purpose, the more opposition it attracts. But the presence that brought you this far does not abandon you halfway up. That is the only certainty that matters when everything else falls apart."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How to Read the Signs in Your Own Life"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"Start by watching how people react to your progress. If no one is jealous, you are probably staying small. If the people closest to you are most resistant, pay attention. That resistance is not a reason to quit. It is evidence that something real is moving in you."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Second, study the people ahead of you. Not to worship them or resent them, but to extract the principles that work. What did they do when they faced opposition? How did they stay steady when others attacked? What did they prepare for that you are preparing for now?"}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Third, protect your direction without broadcasting it. Joseph eventually learned not to announce every dream. That was wisdom. Share your vision with people who expand it, not people who shrink it. Write down what you are sensing. Stay quiet. Keep moving. The opposition will come anyway. At least you will not have added noise to the signal."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"When divine favor is upon your life, the enemy attacks because he can see you are going to make it far.\""}</p>
+              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"When people closest to you suddenly fight your success, it is not a sign you are failing. It is a sign something bigger is coming.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
             <ol className="list-decimal list-inside space-y-3 text-[#555] leading-relaxed mb-6">
-              <li><strong>{"Jealousy Is a Sign of Favor"}</strong> {" "}{"Do not pray for jealousy to stop. Pray for the strength to handle it. Jealousy means people can see what God has put on your life. It means your destiny is so clear that it threatens those around you. When Saul saw that the crowd loved David, Saul began to hunt David. When Joseph's brothers heard his dream, they began to hate him. This pattern shows up in the Bible again and again because it is how the world works. Favor attracts opposition. The bigger your calling, the louder the voice saying you cannot make it. That voice is proof that God has something big for you."}</li>
-              <li><strong>{"Betrayal Is Often Redirection"}</strong> {" "}{"Stop asking why people hurt you. Start asking where God is moving you. Joseph's brothers threw him in a pit. Then they sold him. Each betrayal moved him closer to his throne. If his brothers had kept him home, he would have stayed poor. If they had not sold him, Egypt would have starved and the nations would have died. The betrayal looked like the worst thing that could happen. It was actually the best thing that needed to happen. Your pain has a purpose you cannot see yet. One day you will look back and see how every betrayal was actually a redirection toward your destiny."}</li>
-              <li><strong>{"God's Presence Is Your Real Success"}</strong> {" "}{"You do not need a smooth life. You need God with you in a hard life. Genesis 39:2 does not say Joseph had it easy. It says the Lord was with Joseph and Joseph prospered. In prison. In slavery. In betrayal. In false accusation. God was with him. That is what made Joseph prosper, not his circumstances. When you lose your job, God is still with you. When people reject you, God is still with you. When you fail, God is still with you. The presence of God in your worst season is worth more than success in your best season without Him. Recognize His presence. That recognition is what turns a pit into a passage and a prison into a preparation."}</li>
+              <li><strong>{"Opposition Reveals Direction"}</strong> {" "}{"When you carry a real purpose, jealousy and attack follow. The people who matter most often sense your ascent before you do. Their resistance is not feedback on your choice. It is confirmation that your choice matters. The question is never whether opposition will come. The question is whether you will interpret it correctly when it does."}</li>
+              <li><strong>{"Preparation Matters More Than Permission"}</strong> {" "}{"You do not need approval from the people around you to prepare for what is coming. Joseph did not wait for his brothers to believe in his dream. He learned to interpret dreams. He mastered the skill. When the opportunity finally came, he was ready. Others can reject you. But they cannot prevent you from becoming the person the opportunity requires."}</li>
+              <li><strong>{"Every Season Has a Presence"}</strong> {" "}{"Whether you are rising or falling, winning or losing, the same stability that worked in the good season still works in the hard season. This is not about positive thinking. It is about recognizing that something deeper than your circumstances has always been with you. Learning to sense and trust that presence is what allows you to stay steady when everything around you is shaking."}</li>
             </ol>
             <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
           </div>
@@ -174,16 +180,16 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-6">Frequently Asked Questions</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"Why do people close to me not support my dreams?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"God-given dreams are often misunderstood by those closest to us. They may be operating from fear, past experience, or limited vision. Joseph's own father rebuked his dream. Your family's doubt does not mean your dream is wrong. It means your dream is bigger than their current understanding. Trust God more than you need their approval. Once your dream comes to pass, they will see. Until then, keep your dream between you and God."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What do I do when my family opposes my big plans?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Family opposition often signals that your plan is real enough to threaten the life they know. This is not a sign to quit. It is a sign to stop asking for permission and start preparing for the opportunity. Study people who have done what you want to do. Extract the principles. Move forward quietly. Your job is to be ready, not to convince them."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"Is it normal to face opposition when pursuing a big goal?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"Yes. Opposition is often a sign of divine favor, not a sign you are wrong. When people become jealous of you, it means they can see something in you that threatens them. This jealousy is proof that God has put something on your life worth fighting for. The enemy only attacks those who matter to him. If he is attacking you, it means you have something he cannot have and somewhere you are going that he does not want you to reach."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"How do I know if jealousy from others means I am on the right path?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Jealousy is often a mirror. People only get jealous of something they value or something that threatens what they have. If the people around you suddenly turn hostile when you start moving up, it is because they can sense you are leaving. That awareness is your confirmation. The attack is the proof."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"How do I know if a setback is a betrayal or a redirection?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"You cannot know in the moment. Joseph did not know when his brothers sold him that he was being positioned for Egypt. You will only see the answer when you look back at your whole story. For now, trust that God is with you in the setback. Keep moving forward. Keep learning. Keep preparing. The betrayal is a redirection when you refuse to stay bitter and instead ask God what He is teaching you. One day your pit will become your palace."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"When betrayal happens, how do I know if it is a setback or a setup?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"You cannot know in the moment. That is why you keep moving. Joseph did not know his brothers' betrayal would land him in the palace. He only knew that quitting was not an option. Look back later and you will see the pattern. Every door that closed actually moved you toward where you needed to be. Trust the direction even when the path is dark."}</p>
               </div>
             </div>
           </div>

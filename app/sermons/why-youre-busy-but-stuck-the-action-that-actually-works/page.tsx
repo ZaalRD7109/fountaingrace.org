@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Why You're Busy But Stuck - The Action That Actually Works | James 2:17 | Fountain of Grace International",
-  description: "You're doing everything but getting nothing. Here's why your effort fails and what actually moves you forward.",
+  title: "You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck | James 2:17 | Fountain of Grace International",
+  description: "Discover why doing more doesn't equal winning. Learn the one principle that separates busy people from successful ones.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" },
   openGraph: {
-    title: "Why You're Busy But Stuck - The Action That Actually Works",
-    description: "You're doing everything but getting nothing. Here's why your effort fails and what actually moves you forward.",
+    title: "You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck",
+    description: "Discover why doing more doesn't equal winning. Learn the one principle that separates busy people from successful ones.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: "https://www.fountaingrace.org/sermons/why-youre-busy-but-stuck-the-action-that-actually-works",
@@ -19,8 +19,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Why You're Busy But Stuck - The Action That Actually Works",
-    "description": "Stop confusing activity with progress. This is why your effort fails and what actually creates results in your job, relationships, and life.",
+    "headline": "You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck",
+    "description": "Learn why busy people stay broke and how the right action taken immediately creates the success that effort alone never will.",
     "author": {
       "@type": "Person",
       "name": "Pastor Ricardo Zaal"
@@ -58,7 +58,7 @@ const jsonLd = [
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Why You're Busy But Stuck - The Action That Actually Works",
+        "name": "You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck",
         "item": "https://www.fountaingrace.org/sermons/why-youre-busy-but-stuck-the-action-that-actually-works"
       }
     ]
@@ -69,26 +69,26 @@ const jsonLd = [
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "I pray all the time but nothing changes. Why?",
+        "name": "I've been applying for jobs for months and nothing. What am I doing wrong?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Prayer without action is incomplete faith. God does not send food to your bed while your fridge is full. He opens doors, but you have to walk through them. After you pray, take the next step: send that CV, make that call, learn that skill, show up to that place. Prayer plus right action equals results. Prayer alone leaves you stuck."
+          "text": "Most likely, you're applying to jobs you're not qualified for, applying late (missing deadline windows), or not following up. The right action isn't sending more applications. It's increasing your value, targeting roles that match your actual experience, building relationships with people who hire, and applying immediately when positions open. Strategy beats volume."
         }
       },
       {
         "@type": "Question",
-        "name": "How do I know if my action is the right action?",
+        "name": "I pray about my problems but nothing changes. Why isn't God answering?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Ask yourself three questions: Does this action move me toward my specific goal? Have I positioned myself in the right place to take this action? Does this action match what God has actually called me to do? If you want to be a doctor, applying to medical school is right action. If you want a job in management but have zero management experience, you first need to build that experience. Right action is specific, not general."
+          "text": "Prayer without the next action isn't faith, it's fantasy. Faith requires works (James 2:17). If you pray for a job but don't send your resume, update your skills, network, or show up to interviews on time, you're praying but not obeying. God responds to the person who prays and then immediately takes the right action. The right action is what creates the outcome prayer prepares you for."
         }
       },
       {
         "@type": "Question",
-        "name": "What if I do everything right but still fail?",
+        "name": "How do I know what the right action is?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Failure happens. But if you've taken the right action at the right time with the right positioning, you've already changed your trajectory. The seed you plant produces a harvest - not always immediately, but it does produce. Keep planting the right seeds, stay positioned correctly, and remove delay from your action. Results follow."
+          "text": "Ask three things: Does it move me toward what I actually want? Can I do it now, not later? Is it something I can do with integrity? Pray for wisdom. Talk to people who've done what you want to do. Look at the successful people in your field and do what they did. Once you know, don't wait. Move immediately. The clarity comes through doing, not through more thinking."
         }
       }
     ]
@@ -96,8 +96,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": "Why You're Busy But Stuck - The Action That Actually Works",
-    "description": "Why You're Busy But Stuck - The Action That Actually Works",
+    "name": "You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck",
+    "description": "You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck",
     "thumbnailUrl": "https://img.youtube.com/vi/FBT-X4cy6Xs/maxresdefault.jpg",
     "uploadDate": "2026-05-11T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/FBT-X4cy6Xs",
@@ -124,47 +124,53 @@ export default function SermonPage() {
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Why You're Busy But Stuck - The Action That Actually Works"}</h1>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're working hard. You're showing up. But nothing changes. The problem isn't your effort - it's the type of action you're taking."}</p>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck"}</h1>
+            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You show up. You try hard. You do everything right. So why are you still failing? The answer isn't more hustle. It's the specific, immediate action nobody taught you to take."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-              <iframe src="https://www.youtube.com/embed/FBT-X4cy6Xs" title={"Why You're Busy But Stuck - The Action That Actually Works"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <iframe src="https://www.youtube.com/embed/FBT-X4cy6Xs" title={"You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             </div>
           </div>
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Problem With Doing Everything"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"You go to every job interview. You swipe through dating apps. You show up at church. Yet nothing happens. You tell yourself you've done everything, but the results don't match your effort. This is a real problem that real people face."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Here's the hard truth: if you're doing everything and getting nothing, you're not actually doing everything. You're doing a lot of the wrong things. The issue isn't your work ethic. It's that your action is misfired. You're aiming at the wrong target or building on sand."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Faith Without Right Action Is Dead"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"The Bible says in James 2:17 that faith without works is dead. But let's be more precise: faith without the right works is dead. Lots of people pray for a job without sending out a single CV. They pray for a relationship without having a real conversation with another person. They pray for blessings while refusing to move."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Abraham didn't ask God questions. God said leave your country and everything familiar. Abraham left. No negotiations. No delay. That obedience - immediate and exact - changed everything for his life and his descendants. You cannot believe God will help you and then do nothing. Real faith looks like immediate, targeted action."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Delay Destroys the Right Action"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"The ant doesn't sleep during summer. It gathers food while the season is open. If it waits until winter to prepare, there is no food. The timing matters as much as the action itself. You can do the right thing at the wrong time and still fail."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"The interview starts at 10 a.m. You arrive at 11 a.m. The job is gone. The business opportunity was open last month. You think about it this month. The door closes. Wise people act when the opportunity is there. Not after. Not tomorrow. Now."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You Only Harvest What You Plant"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"The harvest belongs to the workers. If you plant apples, you reap apples - not lions, not money, not miracles. If you want a better job, you increase the value you offer. If you want a relationship, you do the work to build real connection. If you want the church to support you, you first give to the church."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Don't expect something from a place where you've given nothing. This is not punishment. It's the law that runs the world. You get what you work for. Your results come from your seeds. Stop blaming luck or God's timing when you haven't done the work."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Trap of Doing Everything and Getting Nothing"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"You go to every job interview. You swipe through dating apps. You show up to events. You pray. Yet nothing changes. You're not lazy. You're not stupid. But you're exhausted and confused because all your effort produces zero results."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The problem isn't your effort. It's your direction. You're taking action, but not the right action. You're applying for jobs you're not qualified for. You're praying for a job while your resume sits in a drawer. You're at church expecting God to solve problems you're not doing anything about. The Bible is clear on this: faith without works is dead (James 2:17). But works without direction is just spinning wheels."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"This message is for anyone who feels stuck in this trap. If you're doing everything but winning nothing, you need to understand one principle: success requires the right action taken immediately, not just any action taken eventually."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Right Action Beats Hard Work Every Time"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"Strategy beats effort. A clear, specific target beats vague ambition. If you want a management job, you don't apply everywhere and expect results. You increase your value. You get experience. You build relationships with people who hire managers. You target companies that actually need managers. You show up early to interviews, not late. You do the right things for the right outcome."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Think about someone trying to sell a car brake service. They could charge 200 and call it a day. But the right action is different. You ask the customer what happens if their brakes fail. You show them the consequence: no stopping power on a downhill drive. You help them see the real value. Now they'll pay what's needed because they understand the stakes. Same effort. Different action. Completely different result."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The law of sowing and reaping is simple: the right seed produces the right plant. You can't plant apples and expect lions. Your harvest comes from what you actually plant. If you want a 20,000 rand monthly salary but you're looking for management jobs with zero management experience, you're planting in the wrong field. The right action is to build experience first, then apply. That's not laziness. That's wisdom."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Delay Destroys Even the Right Action"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"You know the right thing to do. You just don't do it now. An interview is tomorrow. You tell yourself you'll go. But in the morning you delay. You take your time. By the time you arrive at 11, they've already hired someone who showed up at 10. The right action delayed becomes the wrong action."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Look at the ant (Proverbs 6:6-11). During summer, when food is available, the ant works without guidance, without a supervisor, without a deadline breathing down its neck. It just works because it knows winter is coming. If the ant delayed gathering food until autumn, it would starve. Opportunity doesn't wait. When the interview window opens, you move. When the job posting appears, you apply. When God speaks, you go."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Abraham is the example. God told him to leave his country, his family, his father's house, and go to a land he'd never seen. Abraham didn't ask questions. He didn't negotiate. He didn't wait. The Scripture says, 'So Abram departed as the Lord has spoken unto him' (Genesis 12:4). He obeyed immediately. That's the difference between knowing what to do and actually winning."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Obedience Without Delay Multiplies Everything"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"You can know the right action and still get nothing if you don't obey it immediately. Knowing and doing are not the same. Saying you'll take action tomorrow is the same as saying you won't take action at all. Immediate right action multiplies impact. Delayed right action produces nothing."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The sluggard craves things and gets nothing (Proverbs 13:4). Not because they don't want it. Not because they're not intelligent. They get nothing because desire without immediate action is just a fantasy. You want a house. You pray for a house. But have you actually started saving? Have you spoken to a mortgage broker? Have you looked at properties? Prayer without the next step is just noise."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"This is why relationships matter, why positioning matters, why strategy matters. You do the right action in the right place with the right people at the right time. That's not luck. That's obedience to wisdom."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Harvest Belongs to the Workers, Not the Wishers"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"There's plenty of harvest available. The problem is never the harvest. The problem is the workers. Jesus said the harvest is plentiful but the workers are few (Matthew 9:37). Do you understand? There's enough to go around. But it goes to the people who actually work, not the people who pray and wait."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"If you come to church expecting the church to help you, but you've never worked in the church, never served, never sown into it, why would the harvest belong to you? If you get sick and call the church asking for prayer support, but you haven't been there in ten years, why should they drop everything? The harvest belongs to the workers. Pastor Ricardo gives to his home church in Postmasburg big offerings because he sowed into it. He gave his heart to it. He served there. Now, even though he's not there permanently, the harvest relationship still exists because he created it."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"What are you sowing? What are you doing? What is the right action you're taking right now that's putting you in position for the harvest? If you're not working toward it, you're not getting it. Period."}</p>
             <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Four Things That Change Everything"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"First: pray for direction. Second: seek wisdom to know the right action, not just any action. Third: position yourself correctly - if you want to be a doctor, go to medical school, not engineering school. Fourth: take the right action immediately, not eventually."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"When these four align, your life changes. Not because you're working harder. Because you're working in the right direction at the right time with the right skill. The question isn't whether you can do it. The question is whether you'll actually do it now."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"One Question That Matters"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"God has already told you what to do. Think about it for just a second. What is that thing? What has God spoken to you about that you haven't acted on yet? Maybe it's sending out CVs. Maybe it's having a real conversation with someone. Maybe it's learning a skill. Maybe it's showing up to the place you've been avoiding."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Write that down. Then do it. Don't pray about it for another year. Don't think about it. Do it. If you align your action with what God has already spoken into your life, your story changes. You will have a life of wow. But only if you act."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"When these four align, your life transforms. First: prayer and direction from God. Don't build in vain. Ask God what the right action is. Seek His direction. Second: wisdom. Wisdom tells you that what worked last year isn't working now. Wisdom tells you to change course."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Third: positioning. If you want to be a doctor, don't go to an engineering school. Position yourself in the right place for the outcome you want. Are you building relationships in your field? Are you learning from the right people? Are you where opportunity can actually find you? Fourth: right action immediately. Once you know what to do, move. Don't wait. Don't delay. Don't negotiate with yourself."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Think about something specific in your life right now. Is there one thing you know God wants you to do? Write it down. Do it. Pastor Ricardo guarantees you this: if you identify what God wants and you do it without delay, you will have a life of wow. Not a life of regret. Not a life of should-have-been. A life of actual results."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Faith without the right works is dead, and the right action delayed is still the wrong action.\""}</p>
+              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"If you desire a job, a house, a relationship, or anything else, you can't just pray for it while your fridge is full and your resume is in a drawer. The right action taken immediately is what creates the outcome.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
             <ol className="list-decimal list-inside space-y-3 text-[#555] leading-relaxed mb-6">
-              <li><strong>{"Right Action Beats Busy Action"}</strong> {" "}{"Most people confuse movement with progress. You can be active every single day and still go nowhere if your action is aimed at the wrong target. A cleaner's job is still a job, but if you want management, you need to build management experience first. The principle is simple: identify exactly what you want, then take the specific steps to get there. Stop doing random work and start doing the right work."}</li>
-              <li><strong>{"Timing Is Part of the Action"}</strong> {" "}{"The right action at the wrong time fails. An ant that waits until winter to gather food starves. A person who arrives late to an interview loses the job. The opportunity creates a window, and you must move while that window is open. Waiting is not wisdom. It's delay. Wise people act when they see the opening, not after it closes."}</li>
-              <li><strong>{"You Cannot Reap What You Don't Plant"}</strong> {" "}{"This is not a spiritual principle only - it is how the world works. If you want support from your church, you first give to your church. If you want a higher salary, you first increase your value to others. If you want relationships, you first invest in people. The harvest matches the seed. Stop expecting outcomes you haven't worked for, and start working for the outcomes you actually want."}</li>
+              <li><strong>{"Right Action Requires Clarity, Not Just Effort"}</strong> {" "}{"You can be busy and still be broke. Vague effort produces vague results. Before you take action, identify exactly what you want and what specific steps create it. Don't apply for management jobs without management experience. Don't show up to interviews late. Don't pray for a job while refusing to network or improve your skills. Clarity about your target plus clarity about the steps required equals strategy. Strategy beats effort every single time."}</li>
+              <li><strong>{"Delay Kills More Dreams Than Doubt"}</strong> {" "}{"The right action delayed becomes the wrong action. When the opportunity window opens, it doesn't stay open forever. The ant works in summer because it knows winter is coming and won't wait. An interview slot fills when you're still deciding whether to go. A job posting closes when you're still thinking about applying tomorrow. Immediate action multiplies impact. Every day you delay is a day someone else is moving toward the same goal. Speed in the right direction wins."}</li>
+              <li><strong>{"The Harvest Belongs Only to the Workers"}</strong> {" "}{"You cannot reap from a harvest you never worked in. If you want opportunity from a church, a community, a company, or a network, you have to contribute to it first. Sow into relationships. Show up to serve, not just to receive. Work in the right place with the right people. Only then do you earn the right to the harvest. God blesses work, not wishful thinking. The person who built relationships, who served, who contributed is the person the opportunity finds."}</li>
             </ol>
             <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
           </div>
@@ -174,16 +180,16 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-6">Frequently Asked Questions</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"I pray all the time but nothing changes. Why?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"Prayer without action is incomplete faith. God does not send food to your bed while your fridge is full. He opens doors, but you have to walk through them. After you pray, take the next step: send that CV, make that call, learn that skill, show up to that place. Prayer plus right action equals results. Prayer alone leaves you stuck."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"I've been applying for jobs for months and nothing. What am I doing wrong?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Most likely, you're applying to jobs you're not qualified for, applying late (missing deadline windows), or not following up. The right action isn't sending more applications. It's increasing your value, targeting roles that match your actual experience, building relationships with people who hire, and applying immediately when positions open. Strategy beats volume."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"How do I know if my action is the right action?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"Ask yourself three questions: Does this action move me toward my specific goal? Have I positioned myself in the right place to take this action? Does this action match what God has actually called me to do? If you want to be a doctor, applying to medical school is right action. If you want a job in management but have zero management experience, you first need to build that experience. Right action is specific, not general."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"I pray about my problems but nothing changes. Why isn't God answering?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Prayer without the next action isn't faith, it's fantasy. Faith requires works (James 2:17). If you pray for a job but don't send your resume, update your skills, network, or show up to interviews on time, you're praying but not obeying. God responds to the person who prays and then immediately takes the right action. The right action is what creates the outcome prayer prepares you for."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What if I do everything right but still fail?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"Failure happens. But if you've taken the right action at the right time with the right positioning, you've already changed your trajectory. The seed you plant produces a harvest - not always immediately, but it does produce. Keep planting the right seeds, stay positioned correctly, and remove delay from your action. Results follow."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"How do I know what the right action is?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Ask three things: Does it move me toward what I actually want? Can I do it now, not later? Is it something I can do with integrity? Pray for wisdom. Talk to people who've done what you want to do. Look at the successful people in your field and do what they did. Once you know, don't wait. Move immediately. The clarity comes through doing, not through more thinking."}</p>
               </div>
             </div>
           </div>

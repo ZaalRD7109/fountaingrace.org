@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "False Accusations Won't Stop Your Dreams: What Joseph's Story Reveals | Genesis 37-50 | Fountain of Grace International",
-  description: "Discover why lies and injustice delay but cannot destroy God's purpose for your life. Learn the Joseph principle.",
+  title: "Your Boss Will Never Promote You Like This | Matthew 27:12-14 | Fountain of Grace International",
+  description: "Why quiet, consistent work beats self-promotion, politics, and fake confidence-and how sudden advancement actually happens.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" },
   openGraph: {
-    title: "False Accusations Won't Stop Your Dreams: What Joseph's Story Reveals",
-    description: "Discover why lies and injustice delay but cannot destroy God's purpose for your life. Learn the Joseph principle.",
+    title: "Your Boss Will Never Promote You Like This",
+    description: "Why quiet, consistent work beats self-promotion, politics, and fake confidence-and how sudden advancement actually happens.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: "https://www.fountaingrace.org/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals",
@@ -19,8 +19,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "False Accusations Won't Stop Your Dreams: What Joseph's Story Reveals",
-    "description": "Learn why false accusations cannot stop God's purpose and how faithfulness in hidden places positions you for sudden promotion.",
+    "headline": "Your Boss Will Never Promote You Like This",
+    "description": "Why quiet, consistent work and honest character matter more for real advancement than self-promotion, fake confidence, or cutting corners-and how sudden promotion actually happens.",
     "author": {
       "@type": "Person",
       "name": "Pastor Ricardo Zaal"
@@ -58,7 +58,7 @@ const jsonLd = [
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "False Accusations Won't Stop Your Dreams: What Joseph's Story Reveals",
+        "name": "Your Boss Will Never Promote You Like This",
         "item": "https://www.fountaingrace.org/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals"
       }
     ]
@@ -69,26 +69,26 @@ const jsonLd = [
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What if I'm falsely accused and it costs me my job?",
+        "name": "Can false accusations really not stop my success?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "False accusation can delay your progress, but it cannot destroy God's purpose for your life. Joseph went from slave to prisoner to ruler. The accusation was real. The consequence was real. But God's plan for Joseph was bigger than the lie. Stay faithful in whatever position you are in now. Keep your character intact. Don't become bitter or dishonest because of injustice. God sees. God judges. And God can shift you in an instant when the time is right."
+          "text": "False accusations are painful, but they don't determine your outcome. What determines it is your actual character and the choices you make when facing them. You can spend your energy defending yourself endlessly, or you can keep doing the work and let your actual results speak. The person or system that matters most sees the truth. Stay faithful, stay honest, and let the accusation fade while your real work builds."
         }
       },
       {
         "@type": "Question",
-        "name": "How do I know if I'm supposed to wait for promotion or go after it?",
+        "name": "What if I do good work in hidden places but nobody notices?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "God looks at your heart. Ask yourself: Am I trying to serve others or am I trying to impress people? Am I being faithful in my current role or am I already looking past it? Am I doing the work or am I just talking about doing the work? If you are faithful, consistent, and excellent in what you have now, you do not need to chase promotion. Someone will mention your name. God will open the door. If you are trying to force it through politics or flattery, you are disqualifying yourself."
+          "text": "Someone notices. Maybe not today. Maybe not the person you hoped would notice. But faithful work creates a pattern-reliability, competence, trustworthiness. When opportunity comes looking for someone to take on larger responsibility, your name gets mentioned because you've already proven you can be trusted with small things. The reward might come suddenly, from an unexpected direction, but it comes."
         }
       },
       {
         "@type": "Question",
-        "name": "Why does God sometimes take a long time to promote someone who is faithful?",
+        "name": "Is it really wrong to fake confidence or self-promote a little?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "God is not just promoting you to a higher position. He is building your character for that position. He is watching how you handle pressure, injustice, and small responsibilities. He is checking whether your heart will stay pure when power comes. Joseph's time in the prison was not wasted. It was preparation. During that time, he interpreted dreams for the cupbearer and the baker. That faithfulness eventually got him mentioned to Pharaoh. Trust the process. Faithfulness now is preparation for promotion later."
+          "text": "The cost of faking it is higher than the benefit. You attract opportunity that's based on the image, not on you. You have to maintain the lie. You can't relax. And when the real work starts, you're not actually equipped for it. The judge sees the heart. If your heart is built on image instead of substance, advancement will expose that lack. Work on actual competence and genuine confidence instead."
         }
       }
     ]
@@ -96,8 +96,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": "False Accusations Won't Stop Your Dreams: What Joseph's Story Reveals",
-    "description": "False Accusations Won't Stop Your Dreams: What Joseph's Story Reveals",
+    "name": "Your Boss Will Never Promote You Like This",
+    "description": "Your Boss Will Never Promote You Like This",
     "thumbnailUrl": "https://img.youtube.com/vi/TIBm_2JMonc/maxresdefault.jpg",
     "uploadDate": "2025-04-06T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/TIBm_2JMonc",
@@ -124,53 +124,53 @@ export default function SermonPage() {
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"False Accusations Won't Stop Your Dreams: What Joseph's Story Reveals"}</h1>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You've been accused. Wrongly. And it feels like everything is over. But Joseph's story proves that false accusations cannot stop what God has planned for you-they can only delay it."}</p>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Boss Will Never Promote You Like This"}</h1>
+            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You work hard. You stay honest. But the person who cuts corners and talks loudly gets the promotion. Here's what nobody tells you about how real success actually works."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-              <iframe src="https://www.youtube.com/embed/TIBm_2JMonc" title={"False Accusations Won't Stop Your Dreams: What Joseph's Story Reveals"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <iframe src="https://www.youtube.com/embed/TIBm_2JMonc" title={"Your Boss Will Never Promote You Like This"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             </div>
           </div>
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Lies Cannot Change Truth"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Potiphar's wife lied about Joseph. She said he tried to rape her when he refused her advances. That lie got him thrown into prison. But here's what matters: truth doesn't change. The truth never changes regardless of facts, figures, or failures."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"A lie requires you to remember everything you said. You have to keep the story straight. But truth is simple. Truth is always truth. There's nothing added, nothing subtracted. If they had tested Potiphar's wife's claim back then, the test would have exposed her lie. Joseph's innocence was always his innocence. The accusation couldn't make it untrue."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"When you speak the truth, you don't have to remember what you said. When false accusation comes against you, don't panic. God sees what actually happened. God knows your heart. That false accusation cannot stop what God planned for you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Jesus Was Accused Too-And It Didn't Stop Him"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Matthew 27:12 shows Jesus standing before Pilate. The chief priests and elders accused Him. Jesus answered nothing. Pilate was amazed at His silence. And here's the key: those false accusations led to the cross. The cross was supposed to be the end. Instead, it was the beginning."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Jesus is the greatest of all time. Two thousand years later, His name is still revered. Pelé played soccer brilliantly. Maradona changed the game. But where are they now in human memory compared to Jesus? False accusation tried to destroy Him. It couldn't. Because God's purpose cannot be destroyed by a lie."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Your situation might look hopeless right now. The accusation might feel like it's the end of your story. It's not. It's a detour. God's purpose for your life is bigger than this moment."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Faithfulness in Hidden Places Gets Noticed"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Joseph served faithfully in Potiphar's house. No one was watching. No applause. No recognition. But the Bible says God rewards faithfulness even in hidden places. When you fast, Jesus told us to fast secretly, not to impress people. When you serve, serve as if God is watching-because He is."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Then Joseph went to prison. Still faithful. Still serving with excellence. And when the Pharaoh needed someone to interpret his dream, someone mentioned Joseph's name. Just one person remembered. That one mention changed everything. Joseph went from prison to palace in a single day."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"What are you doing in the hidden places? Is your name being mentioned somewhere because of how you handled small things? Are you known for reliability, for honesty, for doing the right thing when no one is looking? That faithfulness is being noted. God is watching. And promotion comes from God, not from people making noise about you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"God Looks at Your Heart, Not Your Resume"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"1 Samuel 16:7 says God does not look at outward appearance. Man looks at how tall you are, how handsome you are, how impressive your credentials sound. God looks at the heart. He is looking at your intentions. He is looking at whether you are trying to build yourself or serve others."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Some people get promoted by putting others down. They whisper behind someone's back to make themselves look better. They undermine colleagues to climb higher. God judges the heart. He sees those tactics. And He judges them accordingly. He may put down the climber and lift up the servant."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Promotion does not come from the east, west, or south. It comes from God. And God judges the heart first. If your heart is in the right place, God will position you. If your heart is divided, chasing money or status or appearance, God knows. He will not promote you into a place where you will fail because of your character."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Action, Not Intention, Creates Change"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Many churches see people make commitments every Sunday. Then Monday comes and the commitment stays at the church door. Intention feels good. It feels spiritual. But intention changes nothing. Action changes everything. God rewards what you do, not what you intend to do."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"James 1:22 is clear: be doers of the word, not hearers only. A hearer gets motivated. They feel inspired. They plan and dream and imagine. A doer gets up and does something. The first step matters more than the perfect plan. What is one small action you can take today toward what God called you to do?"}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Greatness begins with action. Not with thinking about it. Not with planning it. Not with talking about it. With doing it. Start. Even if the first step is small, take it. Consistency in small actions compounds into visible results. Post once a week. Show up every Monday. Open the church every morning. These small actions build the reputation that gets you mentioned when opportunity comes."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"God Can Shift You Instantly-But Don't Force It"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Joseph moved from the pit to Potiphar's house to the prison to the palace. Each shift happened because of faithfulness, not because he manipulated his way up. He was not backstabbing. He was not creating drama. He was being excellent in his current position. And God shifted him."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Don't try to promote yourself. Don't fake it till you make it. That theology costs money and causes stress. When you pretend to be someone you are not, you attract a life you cannot sustain. You end up paying for a car you do not own, owing money for years, all because you wanted people to see you a certain way."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"God is omnipresent. He sees everything. You cannot trick Him with fancy presentations or smooth talk. He judges the heart. If your heart is right and your work is faithful, God will position you. Sometimes suddenly. Sometimes slowly. But it will be sustainable because it comes from God, not from your performance."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"False Accusations and Lies Cannot Stop What's Meant for You"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"Someone falsely accuses you. The lie spreads. Your reputation takes a hit. Your instinct is to fight back, prove them wrong, make people see the truth. But here's what actually happens: you exhaust yourself defending against something you didn't do, while the other person keeps lying and rebuilding their story. Every lie needs a new lie to cover it. Every false word needs to be remembered and reinforced."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The scripture shows us that Jesus stood before Pilate accused of crimes he never committed. He didn't argue. He didn't try to convince people. He knew something fundamental: truth doesn't need your defense. Truth is consistent. It doesn't change with the facts or the season. A lie, by contrast, collapses under its own weight because the person telling it has to remember every version they created."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"False accusation is painful, but it's also temporary. God's purpose for your life doesn't depend on what others believe about you today. It depends on who you actually are when nobody's watching."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Hidden Work Gets Rewarded-Sometimes Suddenly"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"You show up early to work without being asked. You fix problems nobody credits you for. You pray for people six months after they ask because you write it down and follow through. You post content on social media every single day, even when engagement is low. You serve in positions nobody celebrates. Most people call this invisible work a waste. Most people quit after three months because the results don't show."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"But there's a principle at work: whoever can be trusted with small things gets trusted with large ones. This isn't motivation talk. It's observable. When you consistently do what you said you'd do-even when it's hidden, even when nobody sees-you become the person someone mentions when they need someone reliable. Your name gets spoken in rooms you're not in. Not because you promoted yourself, but because your character did."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Promotion doesn't come from your boss liking you or your expertise being flashy. It comes from being the person who actually does the work. Sometimes that promotion happens overnight. Sometimes it happens because you were prepared in the darkness, and when you stood in front of the king, you were sharp. Ready. Positioned."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Stop Intending. Start Doing."}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"Church ends. You feel moved. You make a promise to yourself and to whoever's listening: this week I'm going to change. This month I will do it. Next year everything shifts. Then Monday comes. The intention disappears. By next Sunday you're back, making the same promise, leaving it at the church door again."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Greatness doesn't start with feeling inspired. It starts with action. A single step you can actually take today. Not a grand vision you'll think about forever. Not a New Year's resolution you'll abandon by February. Intention sounds good in a moment of emotion. But action is what builds a life. Action is what gets you mentioned. Action is what attracts opportunity."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The difference between someone who gets promoted and someone who stays stuck isn't talent or luck. It's the person who does one small thing consistently versus the person who thinks about doing ten big things and does none of them. If you want to change something in your life, identify the smallest, most doable action and do it today. Not tomorrow. Not when conditions are perfect. Today."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Faking It Costs More Than You Know"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"You see someone with a better car, a nicer apartment, a sharper image. So you tell yourself: fake it till you make it. You spend money you don't have to look like you already won. You borrow to project success. You work two jobs to maintain an image that impresses people who don't actually matter. The cost is brutal-not just financially, but spiritually and emotionally."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Promotion by self-promotion is a trap. You promote yourself through gossip, by talking badly about others to make yourself look better. You dress like someone else, spend like someone else, speak like someone else. You cut corners and exaggerate to get noticed. In the short term, it works. People see confidence. What they don't see is the lie underneath it. And neither do you-until the bill comes due."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"God looks at the heart. Not the appearance, not the image, not the carefully crafted story you tell about yourself. When you fake something to get ahead, you're betting that nobody will notice. But there's someone who always notices: the one who actually judges. And the judgment isn't based on what you look like-it's based on what you actually are when nobody's watching."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Judge Looks at Your Heart, Not Your Resume"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"Samuel was sent to anoint a king. He looked at the tall ones, the handsome ones, the impressive ones. Each time God said no. Finally the youngest, least impressive son showed up from the fields. God said: this one. Because God looks at the heart, not the appearance. The heart determines what you actually do when opportunity comes. The heart determines whether you'll stay honest when dishonesty would be easier. The heart determines whether you'll serve people or use them."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"You can trick the whole world. You can build a flawless image. You can position yourself perfectly through politics and connections. But the one who actually judges-the one who sees what you do when cameras are off, when nobody's watching, when you could get away with it-that one sees the truth. And promotion that matters comes from that judgment, not from human approval."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"If there's an area of your life where growth has stalled, consider what your heart actually looks like in that area. Not what you tell people. Not what you project. What are you actually willing to do? Who are you when advantage is on the table? The answer to that question explains your current position better than any other factor."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"One Faithful Day Can Change Everything"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"Joseph spent years in prison. Years of faithful service that nobody recognized. Then one day the king needed an answer. Joseph spoke truth. The king heard something in the way he spoke-clarity, wisdom, character. One conversation. That's all it took. Joseph went from prison to running a nation."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"You don't know when your moment will come. You don't know which small, faithful action you take today will be the one that gets mentioned in the right room at the right time. You don't know which Tuesday your consistency will be noticed by someone who can change your trajectory. But you know this: if you're faithful in small things, you'll be ready when the moment arrives. You'll be sharp. You'll know what to do. You won't panic because you've already been doing it."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Don't wait for permission or perfect conditions or a guarantee of reward before you act. Act because it's right. Do the work because it needs to be done, not because someone's watching. Stay honest because you know who you are, not because you're afraid of getting caught. The promotion will come when it comes-sometimes suddenly, sometimes unexpectedly. But it will come to the person who was already faithful before anyone was looking."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"God rewards what you do, not what you intend to do.\""}</p>
+              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Promotion comes neither from talking about yourself nor from tricking the system-it comes from the judge who actually sees what you do when nobody's watching.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
             <ol className="list-decimal list-inside space-y-3 text-[#555] leading-relaxed mb-6">
-              <li><strong>{"Lies Delay, They Don't Destroy"}</strong> {" "}{"False accusation can cost you time. It can send you to prison for a season. But it cannot stop God's purpose. Truth always comes out. God always judges correctly. The question is not whether your dream survives the accusation-it will. The question is whether you survive it with your character intact. Stay faithful. Stay honest. Stay humble. God is not surprised by what happened to you."}</li>
-              <li><strong>{"Faithfulness in Small Things Builds Your Reputation"}</strong> {" "}{"You may not have an audience for the work you do right now. You may serve in the background. You may work without recognition. That is the place where God watches you most carefully. How you handle small things determines what He entrusts to you. Someone will mention your name. Someone will remember you did the right thing. Someone will say, 'I know someone who can handle this.' And that mention will change everything. Be faithful now."}</li>
-              <li><strong>{"Action Beats Intention Every Time"}</strong> {" "}{"Stop making promises to God on Sunday that you break on Monday. Stop saying you will do something and then not doing it. God rewards the person who takes one small step, not the person who makes grand plans. Start where you are. Do one thing. Do it consistently. Excellence in action attracts promotion. Intention attracts nothing but regret."}</li>
+              <li><strong>{"Lies Need Lies; Truth Stands Alone"}</strong> {" "}{"A lie requires you to remember every version, to defend each detail, to keep building. Truth is consistent. It doesn't change. When you're accused falsely, the natural instinct is to defend yourself to death. But truth outlasts the accusation every time. Your job is to stay truthful, not to convince everyone. The judge of truth sees what actually happened, regardless of the story being told."}</li>
+              <li><strong>{"Small Faithfulness Leads to Large Opportunity"}</strong> {" "}{"You don't get promoted because you're talented or lucky. You get promoted because someone knows you can be trusted with what matters. That trust comes from years of small, unseen choices-showing up when nobody's watching, finishing what you started, doing what you said you'd do. When opportunity suddenly appears, it doesn't pick the loudest person in the room. It picks the person who already proved they're reliable."}</li>
+              <li><strong>{"Action Beats Intention Every Time"}</strong> {" "}{"Intention feels powerful in the moment. It makes you feel like you're already changing. But intention disappears by Monday morning. Action is one small step you can do today. Not a vision for next year. Not a promise you'll make and break. One thing, done. Then tomorrow, another thing. The person who takes five small actions beats the person who intends fifty big ones. Greatness isn't built on how you feel-it's built on what you actually do."}</li>
             </ol>
             <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
           </div>
@@ -180,16 +180,16 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-6">Frequently Asked Questions</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What if I'm falsely accused and it costs me my job?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"False accusation can delay your progress, but it cannot destroy God's purpose for your life. Joseph went from slave to prisoner to ruler. The accusation was real. The consequence was real. But God's plan for Joseph was bigger than the lie. Stay faithful in whatever position you are in now. Keep your character intact. Don't become bitter or dishonest because of injustice. God sees. God judges. And God can shift you in an instant when the time is right."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"Can false accusations really not stop my success?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"False accusations are painful, but they don't determine your outcome. What determines it is your actual character and the choices you make when facing them. You can spend your energy defending yourself endlessly, or you can keep doing the work and let your actual results speak. The person or system that matters most sees the truth. Stay faithful, stay honest, and let the accusation fade while your real work builds."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"How do I know if I'm supposed to wait for promotion or go after it?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"God looks at your heart. Ask yourself: Am I trying to serve others or am I trying to impress people? Am I being faithful in my current role or am I already looking past it? Am I doing the work or am I just talking about doing the work? If you are faithful, consistent, and excellent in what you have now, you do not need to chase promotion. Someone will mention your name. God will open the door. If you are trying to force it through politics or flattery, you are disqualifying yourself."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What if I do good work in hidden places but nobody notices?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Someone notices. Maybe not today. Maybe not the person you hoped would notice. But faithful work creates a pattern-reliability, competence, trustworthiness. When opportunity comes looking for someone to take on larger responsibility, your name gets mentioned because you've already proven you can be trusted with small things. The reward might come suddenly, from an unexpected direction, but it comes."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"Why does God sometimes take a long time to promote someone who is faithful?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"God is not just promoting you to a higher position. He is building your character for that position. He is watching how you handle pressure, injustice, and small responsibilities. He is checking whether your heart will stay pure when power comes. Joseph's time in the prison was not wasted. It was preparation. During that time, he interpreted dreams for the cupbearer and the baker. That faithfulness eventually got him mentioned to Pharaoh. Trust the process. Faithfulness now is preparation for promotion later."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"Is it really wrong to fake confidence or self-promote a little?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"The cost of faking it is higher than the benefit. You attract opportunity that's based on the image, not on you. You have to maintain the lie. You can't relax. And when the real work starts, you're not actually equipped for it. The judge sees the heart. If your heart is built on image instead of substance, advancement will expose that lack. Work on actual competence and genuine confidence instead."}</p>
               </div>
             </div>
           </div>

@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Why Jesus Changed Everything: The Birth That Brings New Life | Matthew 1:21 | Fountain of Grace International",
-  description: "Discover how Jesus's birth brings transformation to your life. Hope for struggles with relationships, finances, depression, and finding purpose.",
+  title: "Your Stuck Life Can Actually Change: Here's What Needs to Happen First | Matthew 1:21 | Fountain of Grace International",
+  description: "Feeling trapped in a failing marriage, financial crisis, or depression? Discover what actually reverses broken situations.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/why-jesus-changed-everything-the-birth-that-brings-new-life" },
   openGraph: {
-    title: "Why Jesus Changed Everything: The Birth That Brings New Life",
-    description: "Discover how Jesus's birth brings transformation to your life. Hope for struggles with relationships, finances, depression, and finding purpose.",
+    title: "Your Stuck Life Can Actually Change: Here's What Needs to Happen First",
+    description: "Feeling trapped in a failing marriage, financial crisis, or depression? Discover what actually reverses broken situations.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: "https://www.fountaingrace.org/sermons/why-jesus-changed-everything-the-birth-that-brings-new-life",
@@ -19,8 +19,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Why Jesus Changed Everything: The Birth That Brings New Life",
-    "description": "Jesus's birth brings more than a holiday celebration. It brings salvation from sin and transformation in finances, relationships, health, and hope.",
+    "headline": "Your Stuck Life Can Actually Change: Here's What Needs to Happen First",
+    "description": "Discover how transformation happens in your marriage, finances, mental health, and home when you understand what Christ's arrival actually promises for broken people.",
     "author": {
       "@type": "Person",
       "name": "Pastor Ricardo Zaal"
@@ -58,7 +58,7 @@ const jsonLd = [
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Why Jesus Changed Everything: The Birth That Brings New Life",
+        "name": "Your Stuck Life Can Actually Change: Here's What Needs to Happen First",
         "item": "https://www.fountaingrace.org/sermons/why-jesus-changed-everything-the-birth-that-brings-new-life"
       }
     ]
@@ -69,26 +69,26 @@ const jsonLd = [
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "What does it mean that Jesus saves us from our sins?",
+        "name": "Can my marriage actually get better if my spouse won't change?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "It means Jesus removes the guilt and breaks the power of sin in your life right now. Sin destroys relationships, finances, health, and peace. When you confess your sins to Jesus and ask for forgiveness, he restores what sin broke. The connection between you and God gets fixed. Then God can actually work in your life. Doors open. Relationships heal. Finances improve. Peace returns. This is not about pretending you did nothing wrong. It is about admitting what you did and letting Jesus free you from it."
+          "text": "Yes. Not because they transform, but because you do. When you stop waiting for them to change before your peace arrives, you reclaim power over your own life. The relationship may still be difficult, but it no longer controls whether you're okay. That shift inside you is the birth. You become someone who can thrive even in hard circumstances, and ironically, people often respond differently to someone who's no longer desperate for them to change."
         }
       },
       {
         "@type": "Question",
-        "name": "What should I do if I am depressed and feel like no one cares?",
+        "name": "How does giving money I don't have actually make my finances better?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "First, tell someone. Tell a family member, a friend, a pastor, a counselor, anyone you trust. Depression is real and you should not face it alone. Second, know that God cares about you even when no one else seems to. Jesus came to give life to the broken and hopeless. God will send someone to you. He will show you that you are loved. You have a great destiny ahead. But you have to stay alive to see it. If you are having thoughts of suicide, call your country's suicide prevention line immediately or go to the nearest hospital emergency room."
+          "text": "Giving doesn't make math work differently. It shifts your identity from hoarder to planter. When you release even a single coin to help someone else eat, you're declaring that survival isn't about gripping tight-it's about circulation. People who plant grow. People who only take shrink. As you become someone who gives, you become someone who attracts opportunity, because you've proven you're trustworthy with provision."
         }
       },
       {
         "@type": "Question",
-        "name": "How do I celebrate Christmas if I have lost someone I love?",
+        "name": "Is it wrong to want my own house instead of renting?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Grief is real and it does not disappear on a holiday. But Christmas is about God sending his Son to comfort the broken. The Holy Spirit is described as the Comforter. He will surround you and comfort you during this time. Allow yourself to feel sad. Be with people who care about you if you can. Talk about the person you lost. Let others know you are hurting. And know that God has not forgotten you or your loved one. There is healing in time and in community."
+          "text": "No. Wanting stability, space, and ownership isn't greed-it's dignity. Your family deserves a home where they belong completely, not temporarily. This desire is part of what restoration means. It requires faith and action-work, saving, speaking it-but it's not selfish to pursue it. Christ came to save you from scarcity. That includes housing."
         }
       }
     ]
@@ -96,8 +96,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": "Why Jesus Changed Everything: The Birth That Brings New Life",
-    "description": "Why Jesus Changed Everything: The Birth That Brings New Life",
+    "name": "Your Stuck Life Can Actually Change: Here's What Needs to Happen First",
+    "description": "Your Stuck Life Can Actually Change: Here's What Needs to Happen First",
     "thumbnailUrl": "https://img.youtube.com/vi/fdwHnhR92-M/maxresdefault.jpg",
     "uploadDate": "2025-06-15T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/fdwHnhR92-M",
@@ -124,50 +124,53 @@ export default function SermonPage() {
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Why Jesus Changed Everything: The Birth That Brings New Life"}</h1>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Christmas is not just a holiday. It marks the arrival of someone who saves people from their sins and brings life where there was none. This changes everything."}</p>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Stuck Life Can Actually Change: Here's What Needs to Happen First"}</h1>
+            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're not meant to stay where you are. Real transformation starts with understanding what broke things can become."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-              <iframe src="https://www.youtube.com/embed/fdwHnhR92-M" title={"Why Jesus Changed Everything: The Birth That Brings New Life"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <iframe src="https://www.youtube.com/embed/fdwHnhR92-M" title={"Your Stuck Life Can Actually Change: Here's What Needs to Happen First"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             </div>
           </div>
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Name That Matters"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Jesus is not just a name. It is the name demons flee from. It is the name that heals. It is the name above every other name. When Joseph and Mary heard they would have a son, they were told to call him Jesus because he would save his people from their sins."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"This is why Christmas matters. Not because of decorations or sales or traditions. It matters because a Savior was born. Someone came who could actually change the direction of human life. Two thousand years later, his name still carries that same power."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Life Gives Birth to New Things"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"When Jesus came, he did not bring condemnation. He brought life. Abundant life. The kind of life that makes you think, 'Wow, life has been great.' When you know Jesus, you stop doing the things that destroy you. You stop the hatred, the stealing, the killing. You start living."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"This matters for your actual situation right now. If your marriage is broken, if your business is failing, if your health is collapsing, if you are depressed and alone, Jesus brings birth to new things. Not fake hope. Real transformation that starts with knowing you are forgiven and loved by God."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"The birth of Jesus into the world means the birth of possibility into your life. A new job. A restored relationship. A business that grows. Finances that flow because you understand stewardship. These are not accidents when someone follows Jesus. They are fruits of a life aligned with God."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"When You Cannot Change Others, Change Yourself"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Maybe there is someone in your life who gives you constant headaches. Your husband. Your son. Your boss. Someone you cannot seem to fix no matter how hard you try. Here is what the birth of Jesus teaches you: you cannot change that person. But you can change yourself toward that person."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"This is where real peace comes from. Not from controlling others. Not from waiting for them to finally get it. Peace comes from changing your attitude, your perspective, your response. When you do this, your whole life shifts. The situation may not change, but your experience of it does. That is the birth of something new."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Jesus Saves You From Your Sins"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Sin is not just about breaking rules. It is about breaking the connection between you and God. When that connection is broken, everything else breaks. Your finances suffer. Your relationships suffer. Your health suffers. Your peace disappears."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Matthew 1:21 says Jesus will save his people from their sins. This means he restores what sin destroyed. He removes the guilt that keeps you stuck. He forgives what you thought was unforgivable. This is not about pretending you did nothing wrong. It is about admitting what you did wrong and letting Jesus free you from it."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"When you repent, when you turn around and ask God for forgiveness, something shifts. The iniquity that stood between you and God gets removed. Then God can actually move in your life. Then birth happens. Then greatness comes."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"If You Feel Like Giving Up, Listen"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"If you are thinking about taking your own life, stop. Depression is not your portion. Loneliness is not your destiny. Despair is not the end of your story. God has great things planned for you. The pain you have been through, God can use it. He can turn it into testimony. He can use it to help others. But only if you stay alive."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"God will send someone to your door. He will show you that you are loved. He will open opportunities in your mind that you never saw before. He will lift you up to a place higher than your enemies. He will prepare a table for you to eat at while your enemies watch. This is not fantasy. This is the promise of Jesus to anyone who calls on his name."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Whatever situation put you down on the ground, God will lift you up. Right now. Not tomorrow. This moment. Call out his name. Ask for help. Tell someone you are struggling. Then watch what God does."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Celebration Is About Victory, Not Just the Day"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Christmas is not just about remembering a birth that happened two thousand years ago. It is about celebrating your own victory. Your victory over the circumstances that tried to destroy you. Your victory over the lies that told you that you were worthless. Your victory over the depression that said you should give up."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"When you eat your meal today, whether it is with family or alone, celebrate that you made it this far. Celebrate that despite everything, you are still here. Celebrate that Jesus is still in the business of saving people and changing lives. Your life can be next."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Problem: You're Stuck and It Feels Permanent"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"You know the feeling. The husband who won't come home. The one-bedroom apartment when your family needs space. The job you can't find. The depression that won't lift. The suicidal thoughts that visit at night. The marriage that's imploding. The finances that never recover. A year goes by, then another, and nothing changes."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"These aren't small problems. They're the kind of things that make you wonder if life will ever actually work. You've tried. You've prayed maybe. You've asked for help. Yet here you remain, and every day feels like proof that you're meant to stay stuck."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"But there's something you need to know: stuckness is not your final destination. The pastor's message centers on a single promise that changes everything. Christ came not to keep you as you are, but to bring birth to new things in every broken area of your life."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Birth Actually Means in Your Specific Situation"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"When Pastor Ricardo says Jesus brings birth to your situation, he's not talking symbolically. He means actual, concrete change. New jobs that appear. Relationships that shift. Peace that replaces panic. Housing that fits your family. A mind that stops threatening suicide."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Matthew 1:21 makes this clear: Jesus came to save people from their sins. Sin isn't just rule-breaking. It's the force that steals, kills, and destroys. It's what makes husbands leave. What makes money disappear. What whispers that you're worthless. When Christ comes into a life, that destructive force loses its grip."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Birth means something genuinely new emerges where death was. Not eventually. Not in heaven. But in your actual marriage, your actual bank account, your actual mental state, your actual home. The birth of Christ becomes the birth of fresh starts in the exact places where you've felt most trapped."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"When You Can't Change the Person, You Change Toward Them"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"One of the hardest stuck places is being married to or working alongside someone you cannot fix. That person won't listen. Won't change. Won't come home. Won't get help. You cannot force transformation on another person, no matter how much you love them or how much sense your argument makes."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"But here's what actually transforms the situation: you change your stance toward that person. Not to enable them or accept abuse, but to stop carrying the weight of their choices. You stop waiting for them to change before your life gets better. This shift inside you? That's the birth. That's the new thing Christ brings. Suddenly you can breathe in a situation you thought would suffocate you."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"This isn't resignation. It's liberation. You take back the power over your own peace that you handed to their behavior. The relationship may still be hard, but now it no longer defines whether you survive the day."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Financial Birth: Every Dollar You Release Becomes a Seed"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"Depression often arrives with empty pockets. Anxiety feeds on scarcity. But the pastor speaks directly to this: if you have a one cent coin, that one cent becomes a seed when you release it. You buy someone bread. You help pay for a Christmas lunch. You give money to someone who needed exactly that today."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"That act is not a loss. It's a planting. That person now has a meal they didn't have. That person now has dignity. And the pastor promises that when you become someone who plants into others' lives rather than someone who only takes to survive, growth begins in your own situation. One cent becomes ten cents. Bread money becomes business opportunity."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"This isn't prosperity gospel magic. This is simple truth: people who give are never the poorest. A closed fist holds less than an open hand. Financial birth comes to people who understand that their survival is tied to other people's survival, and who act on it."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Birth of Your Own House, Not Someone Else's"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"Four people in one bedroom is not stability. It's compromise dressed up as gratitude. The pastor addresses this directly: if you're renting, the birth Christ brings includes moving into your own place. If you're in a small place, birth means a larger one where each child has their own room."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"This isn't greed. This is dignity. Your family deserves space. Your children deserve to know what home ownership feels like. This is the kind of concrete, material transformation that happens when Christ's birth reshapes your reality. Not someday. Not as a reward for being patient enough. But as part of what salvation actually means: being restored to wholeness in every area."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"That birth requires faith, but faith isn't passive. It means you stop accepting the temporary as permanent. You start looking for work. You start saving. You start speaking it. You stop apologizing for wanting more for your family."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Against Suicide: The Message You Need to Hear Right Now"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"If you're reading this and you've thought about ending your life, the pastor's words are for you directly. He names it. He doesn't dance around it. Suicidal thinking is the enemy's plan to steal your life before you've lived it. And he comes against that plan in the name of Christ with urgency and authority."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"You have a great destiny. That's not motivation poster language. That's diagnosis. Something in you knows you were meant for more than this pain. Depression is lying when it says you're a burden. Loneliness is lying when it says no one cares. The pastor speaks life into that void: God will send someone to knock on your door. God will place you where you're safe. God will show you that you matter to Him."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"If you feel alone right now, the Holy Spirit is the comforter that comes when humans fail you. If you're thinking of taking your life, reach out to someone today. Tell them. The fact that you're reading this message means Christ is still reaching toward you. Your life is not over. Your story is not finished."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"The birth of Jesus brings birth to new things in your life. A new job. A restored marriage. A healed mind. A full table. Whatever was dying, God can make it live again.\""}</p>
+              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Whatever situation put you down on the ground, God will lift you up this morning to a realm high above your enemies.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
             <ol className="list-decimal list-inside space-y-3 text-[#555] leading-relaxed mb-6">
-              <li><strong>{"Jesus Saves From Sins, Not Just to Heaven"}</strong> {" "}{"When Matthew 1:21 says Jesus will save his people from their sins, it does not just mean you get to heaven someday. It means he saves you right now from the destructive power of sin in your life. Sin breaks your relationships. Sin empties your wallet. Sin destroys your peace. Sin kills your hope. Jesus interrupts that cycle. He forgives you. He removes the guilt. He gives you a new start. Then your life can actually improve because you are no longer carrying the weight of what you did wrong."}</li>
-              <li><strong>{"You Cannot Control Others, But You Can Control Your Response"}</strong> {" "}{"The hardest people to live with are the ones you cannot change. Your spouse who will not listen. Your child who keeps making bad choices. Your boss who is unfair. You can spend your whole life trying to fix them and go gray with stress. But Jesus teaches something different. You cannot change them. But you can change how you respond to them. You can change your attitude. You can change your perspective. You can choose peace instead of anger. When you do, something shifts in your life even if they never change. That is the birth of new freedom."}</li>
-              <li><strong>{"God Meets You in Your Worst Moment"}</strong> {" "}{"If you are sitting alone on Christmas wondering if anyone cares, God knows. If you are hungry and have no food, God knows. If you are thinking about ending your life because the pain is too much, God is listening right now. He does not wait for you to get your act together. He comes to you in your mess. He sends someone to knock on your door. He puts a thought in someone's mind to reach out to you. He whispers to you that you have a great destiny ahead. This is the nature of Jesus. He comes to the broken, the lost, the alone, and he brings life. That can be you today."}</li>
+              <li><strong>{"Birth Replaces Death in Every Area"}</strong> {" "}{"You don't stay broken forever. Christ's arrival means the force that kills-in your finances, relationships, health, housing, and mind-loses power over you. New things actually emerge where old things died. This isn't fantasy. It's the promise embedded in why Christ came at all. You can expect birth in the exact places where you've only known death."}</li>
+              <li><strong>{"You Must Plant to Harvest"}</strong> {" "}{"Scarcity thinking kills growth. The moment you start giving-a coin, time, help, whatever you have-you shift from taker to planter. That shift changes what grows in your life. Financial birth doesn't come to people who hoard their last dollar. It comes to people who understand their survival is connected to others' survival and who act on it even when they're afraid."}</li>
+              <li><strong>{"You Change Toward What You Cannot Change"}</strong> {" "}{"You cannot force another person to transform. But you can transform your stance toward them. This shift inside you-from victim of their choices to someone at peace despite their behavior-is the real birth. It doesn't fix them. It frees you. And freedom, it turns out, is where real life begins."}</li>
             </ol>
             <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
           </div>
@@ -177,16 +180,16 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-6">Frequently Asked Questions</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What does it mean that Jesus saves us from our sins?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"It means Jesus removes the guilt and breaks the power of sin in your life right now. Sin destroys relationships, finances, health, and peace. When you confess your sins to Jesus and ask for forgiveness, he restores what sin broke. The connection between you and God gets fixed. Then God can actually work in your life. Doors open. Relationships heal. Finances improve. Peace returns. This is not about pretending you did nothing wrong. It is about admitting what you did and letting Jesus free you from it."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"Can my marriage actually get better if my spouse won't change?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Yes. Not because they transform, but because you do. When you stop waiting for them to change before your peace arrives, you reclaim power over your own life. The relationship may still be difficult, but it no longer controls whether you're okay. That shift inside you is the birth. You become someone who can thrive even in hard circumstances, and ironically, people often respond differently to someone who's no longer desperate for them to change."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What should I do if I am depressed and feel like no one cares?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"First, tell someone. Tell a family member, a friend, a pastor, a counselor, anyone you trust. Depression is real and you should not face it alone. Second, know that God cares about you even when no one else seems to. Jesus came to give life to the broken and hopeless. God will send someone to you. He will show you that you are loved. You have a great destiny ahead. But you have to stay alive to see it. If you are having thoughts of suicide, call your country's suicide prevention line immediately or go to the nearest hospital emergency room."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"How does giving money I don't have actually make my finances better?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Giving doesn't make math work differently. It shifts your identity from hoarder to planter. When you release even a single coin to help someone else eat, you're declaring that survival isn't about gripping tight-it's about circulation. People who plant grow. People who only take shrink. As you become someone who gives, you become someone who attracts opportunity, because you've proven you're trustworthy with provision."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"How do I celebrate Christmas if I have lost someone I love?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"Grief is real and it does not disappear on a holiday. But Christmas is about God sending his Son to comfort the broken. The Holy Spirit is described as the Comforter. He will surround you and comfort you during this time. Allow yourself to feel sad. Be with people who care about you if you can. Talk about the person you lost. Let others know you are hurting. And know that God has not forgotten you or your loved one. There is healing in time and in community."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"Is it wrong to want my own house instead of renting?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"No. Wanting stability, space, and ownership isn't greed-it's dignity. Your family deserves a home where they belong completely, not temporarily. This desire is part of what restoration means. It requires faith and action-work, saving, speaking it-but it's not selfish to pursue it. Christ came to save you from scarcity. That includes housing."}</p>
               </div>
             </div>
           </div>

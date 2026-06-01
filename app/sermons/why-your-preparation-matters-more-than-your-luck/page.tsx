@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Why Your Preparation Matters More Than Your Luck | Genesis 37-50 | Fountain of Grace International",
-  description: "Learn the Joseph Principle: how preparing yourself positions you to seize opportunities God sends your way.",
+  title: "Your Big Break Is Coming, But You're Not Ready For It | Proverbs 21:31 | Fountain of Grace International",
+  description: "You have dreams and opportunities knock. But you're stuck without the skills, credentials, or resources to seize them. Here's what actually works.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/why-your-preparation-matters-more-than-your-luck" },
   openGraph: {
-    title: "Why Your Preparation Matters More Than Your Luck",
-    description: "Learn the Joseph Principle: how preparing yourself positions you to seize opportunities God sends your way.",
+    title: "Your Big Break Is Coming, But You're Not Ready For It",
+    description: "You have dreams and opportunities knock. But you're stuck without the skills, credentials, or resources to seize them. Here's what actually works.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: "https://www.fountaingrace.org/sermons/why-your-preparation-matters-more-than-your-luck",
@@ -19,8 +19,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Why Your Preparation Matters More Than Your Luck",
-    "description": "Pastor Ricardo Zaal teaches the 13th principle from Joseph's life: preparation positions you to seize God-given opportunities when they arrive, from the book of Genesis.",
+    "headline": "Your Big Break Is Coming, But You're Not Ready For It",
+    "description": "Success isn't luck. Learn why most people miss their big opportunities and what preparation actually looks like in your daily life.",
     "author": {
       "@type": "Person",
       "name": "Pastor Ricardo Zaal"
@@ -58,7 +58,7 @@ const jsonLd = [
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Why Your Preparation Matters More Than Your Luck",
+        "name": "Your Big Break Is Coming, But You're Not Ready For It",
         "item": "https://www.fountaingrace.org/sermons/why-your-preparation-matters-more-than-your-luck"
       }
     ]
@@ -69,26 +69,26 @@ const jsonLd = [
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How do I prepare when I don't know what's coming?",
+        "name": "What if I don't have enough time to prepare before the opportunity comes?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You can't predict every opportunity, but you can build your skills, your knowledge, your character, and your practical readiness. Study your field deeply. Practice your craft. Build your credentials. Stay in good spiritual condition. Save money for unexpected costs. Learn how to speak and present yourself professionally. These preparations work across many different opportunities. When the right moment comes, you'll be ready for it - whatever it is."
+          "text": "You start now. Not when you're ready. Not when conditions are perfect. Most people never feel ready. They feel ready only after they've already started. If you see a job posting that excites you but you need a certification, you enroll tomorrow. You don't wait for the next posting. If you want to change careers but need to learn a skill, you start learning this week while you're still at your current job. Preparation doesn't wait for convenience. It happens in the margins of your life, in the time you have right now."
         }
       },
       {
         "@type": "Question",
-        "name": "What if I've already missed opportunities because I wasn't prepared?",
+        "name": "How do I know what to prepare for if I don't know what opportunities are coming?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Joseph was in prison - a place most would consider a permanent dead end. But his preparation while in prison positioned him for the greatest opportunity of his life. You don't need to regret the past. Start preparing now for what's ahead. Every day you improve yourself, learn something new, or build a skill is a day you're getting ready for what God has planned next. Preparation always works - it's never too late to start."
+          "text": "Look at where you want to go, not where you are now. If you want to own a business, start learning business basics now. If you want a leadership role, start developing people skills now. If you want a certain job, look at what that job requires and start building those requirements now. You don't need to know the exact opportunity - you just need to know the direction. Then prepare in that direction. Read books in your field. Get certifications. Practice the skills. Network with people ahead of you. When you're ready in general, the specific opportunity won't catch you off guard."
         }
       },
       {
         "@type": "Question",
-        "name": "Is preparation the same as trying too hard?",
+        "name": "What if I've wasted years already and feel too far behind?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No. Trying too hard is anxious effort without direction. Preparation is intentional work that positions you. You prepare a meal by gathering ingredients, planning steps, and timing things right - not by frantically cooking at the last second. Similarly, preparation is calm, ongoing work toward readiness. You study your field because you care about excellence, not because you're panicked. You build skills because they matter, not because you're desperate. That's the difference between healthy preparation and anxious striving."
+          "text": "Stop counting backward and start moving forward. Joseph spent years in a pit and prison - circumstances he didn't choose and time he couldn't get back. But he didn't spend those years bitter or idle. He prepared anyway. He reasoned things out. He stayed close to God. He was ready when his moment came. You can start today. Not tomorrow. Today. Take one small step toward preparation in your field. Make one phone call. Read one chapter. Enroll in one course. You don't need to catch up to everyone else. You need to be ready when your opportunity arrives. And it will arrive - but only if you're prepared."
         }
       }
     ]
@@ -96,8 +96,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": "Why Your Preparation Matters More Than Your Luck",
-    "description": "Why Your Preparation Matters More Than Your Luck",
+    "name": "Your Big Break Is Coming, But You're Not Ready For It",
+    "description": "Your Big Break Is Coming, But You're Not Ready For It",
     "thumbnailUrl": "https://img.youtube.com/vi/Ga0nsQvo6jY/maxresdefault.jpg",
     "uploadDate": "2025-03-22T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/Ga0nsQvo6jY",
@@ -124,54 +124,53 @@ export default function SermonPage() {
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Why Your Preparation Matters More Than Your Luck"}</h1>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Success isn't random. It happens when you prepare yourself to meet the opportunities God has already lined up for you. Pastor Ricardo Zaal explains principle 13 from the life of Joseph."}</p>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Big Break Is Coming, But You're Not Ready For It"}</h1>
+            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Success isn't luck. It's the collision of opportunity and preparation. Most people wait for the perfect moment instead of preparing during this one."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-              <iframe src="https://www.youtube.com/embed/Ga0nsQvo6jY" title={"Why Your Preparation Matters More Than Your Luck"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <iframe src="https://www.youtube.com/embed/Ga0nsQvo6jY" title={"Your Big Break Is Coming, But You're Not Ready For It"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             </div>
           </div>
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"This Series Is For You"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"You've felt rejected. Your ideas get cut off. People dismiss your dreams before you even finish telling them. This 12-part series on the Joseph Principle speaks directly to you - whether you've been in a pit for years, stuck in a job that's going nowhere, or running from one disappointment to another."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Joseph's story shows what happens when you stay faithful even when everything falls apart. But this isn't just about surviving hard times. It's about positioning yourself to recognize and seize the opportunities God sends when circumstances shift. The principles work together. You surrender control. You live with integrity. You serve others. You forgive. You work with excellence. And now - you prepare."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Preparation Actually Means"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Preparation isn't motivation or wishful thinking. The Greek word hetoimoi means being in a constant state of readiness - spiritually and practically. It's the meat thawing in the fridge before your wife gets home from work. It's planning ahead so you can move faster when the moment arrives."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Think about Joseph in prison. He didn't start by interpreting dreams for Pharaoh. He started by learning what interpretation even means. When he finally had the opportunity, he was ready. He had thought through how dreams work. He had prepared his mind. When Potiphar's servant asked him to interpret a dream, Joseph didn't fumble. He knew exactly how to respond."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Preparation positions you before the opportunity arrives. You can't prepare after. By then it's too late."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Hidden Cost of Being Unprepared"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Imagine landing a job that pays 70,000 Rand per month - solid money. The company asks one question: do you have reliable transport? Your car sits broken in the garage. Five kilometers a day is all it can manage. You have the job offer but not the transportation. That 70,000 disappears because you weren't ready."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Or an interview tomorrow in Chubbac. Transport costs 120 Rand. You don't have it tonight. The job would pay 30,000 per month, but 120 Rand stops you from even showing up. Small thing. Big consequence."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"A government tender comes out. All you need is a company registration number and a health and safety certificate. You have neither. You forfeit before you even submit. Success and preparation don't meet. The opportunity passes to someone else."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How Joseph Prepared Without Knowing It"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Joseph made a mistake early on. He told his brothers about his dream without understanding it first - without interpretation. His brothers hated him for it. They sold him into slavery because of those careless words."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"But that failure taught him something crucial. By the time he sat in prison, he had learned: don't claim to understand something you haven't studied. When the baker and cupbearer asked him to interpret their dreams, Joseph didn't guess. He said, 'God will provide the interpretation.' He had prepared himself to be completely dependent on God's wisdom, not his own confidence."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"That preparation - spiritual and intellectual - is what got him noticed. The cupbearer mentioned him to Pharaoh. The opportunity met preparation. And Joseph stood before a king."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Where You Need to Prepare Right Now"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Preparation happens in different areas. If you're looking for a husband but waking up in pajamas with breath that stinks, you won't find what you're looking for. If you want to transition into a leadership role, dress like a leader now. Study like a leader now. Think like a leader now. Prepare."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"If you're tendering for a contract, have your company number ready. Get your certifications. Write your company profile. Have it all prepared before the tender closes. Don't scramble at the last minute."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"If you're going into an interview, know your industry. Know your skills. Know how to talk about yourself professionally - not your personal history, but your expertise. Practice it. Prepare answers."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Proverbs 16:3 says it: 'Commit to the Lord whatever you do, and He will establish your plans.' Prepare the practical side. Then trust God with the outcome."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Preparation Meets Opportunity - Then Success Happens"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"A Roman philosopher said it clearly: success occurs when opportunity meets preparation. Not when you're lucky. Not when you're talented. When you meet the moment ready."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Joseph prepared by studying dreams, by depending on God, by working with excellence in Potiphar's house, by staying faithful in prison. Then the dreams came that changed everything. He was ready."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Proverbs 22:29 promises this: 'Do you see someone skilled in their work? They will serve before kings.' Not officials of low rank - before kings. Your preparation determines who wants to work with you."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"But here's the balance from Proverbs 21:31: 'The horse is prepared against the day of battle, but safety is of the Lord.' You do the preparing. God does the protecting and blessing. Work like it depends on you. Pray like it depends on God. That's preparation done right."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Success Happens When Opportunity Meets Preparation"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"You already know the feeling. The dream job posting appears. The business opportunity surfaces. Someone says they know someone who could help you. And your chest tightens. Not from excitement. From dread. Because you're not ready."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"This isn't about luck or connections or being born into the right family. A Roman philosopher said it plainly: success occurs when opportunity meets preparation. Right now, opportunities are passing you by not because they don't exist, but because when they arrive, you're unprepared. You don't have the certification. You can't afford the transport to the interview. Your car won't make it to the next town. You've never invested in learning your craft deeply enough."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The Bible shows this truth through Joseph's life. He didn't start in the palace. He started in a pit, then a prison. But while he was there, he prepared. When someone asked him to interpret a dream, he had learned to listen to God and reason things out. When Pharaoh's chief cupbearer met him in jail, Joseph was ready with an answer. And that readiness changed his entire future. That's not luck. That's preparation meeting opportunity."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Preparation Is a Constant State of Readiness"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"To be prepared, in the original Greek, means to be in a constant state of readiness. Not just physical readiness. Spiritual readiness. Intellectual readiness. The kind of readiness that comes from daily investment in becoming better at something."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Think about your life like a map. Every move you make, God is already positioning you for what's coming next. But you have to do your part. If you want to own a million-dollar company someday, stop wearing flip-flops to business meetings now. Stop dressing like you're headed to the beach when you're building something. A CEO doesn't dress casually by accident. He's already preparing mentally and physically for the weight of what he carries."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The same applies everywhere. If you're in a relationship and want to get married, you can't show up in pajamas unwashed. If you're looking for a job that pays well, you need your company registered before the tender arrives, your SARS certification done, your health and safety certificate earned. When the opportunity shows up, you hand over the documents. You're done. Everything is already prepared. You don't scramble. You present."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Preparation Starts Long Before the Opportunity Appears"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"One of the biggest lies people believe is that preparation happens when you see the opportunity. It doesn't. Preparation happens in the everyday moments when nobody is watching. When you're reading. When you're listening in class. When you're reasoning out how what you're learning applies to your life right now."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Cramming for an exam the night before doesn't work. Studying a little bit every day works because your brain processes and connects the material over time. The same is true for your career, your relationships, your health, your finances. The person who reads one book a month for five years knows more than someone who panics and reads five books in one week before a crisis hits."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"When Pharaoh asked Joseph to interpret his dream, Joseph didn't say, 'Let me study this overnight.' He interpreted it on the spot because he had spent years in that prison and earlier years in Potiphar's house learning to listen to God, to think clearly, to speak with wisdom. His preparation was already done. When you prepare yourself daily in your field, your gift, your skills, you become the person people want to hire. You become the person people trust with their money, their secrets, their business. Proverbs 22:29 says it: do you see someone skilled in their work? They will serve before kings, not before officials of low rank. Your skill opens the door."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What You Need to Prepare For Right Now"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"Look at your life. Where is preparation needed? Do you need a driver's license? Get it now. Do you need a certification in your field? Start it now, not when the job posting appears. Do you need to learn how to interview, how to speak professionally, how to handle money? Start now. Do you have a car that breaks down every month? That's robbing you of opportunities. Save for a reliable one while you still have time."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"If you're looking for a husband or wife, preparation means becoming the kind of person you want to attract. If you want someone who is disciplined and intentional, become that person first. If you want someone educated, educate yourself. If you want someone who takes care of their health and appearance, start that now. You can't attract what you don't become."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Here's what most people miss: the preparation itself is not what saves you. Proverbs 21:31 says, 'The horse is prepared against the day of battle, but safety is of the Lord.' You prepare the horse. You get the equipment. You train. But at the end, your safety, your success, your breakthrough comes from God. So while you're preparing, you're also trusting. While you're studying, you're praying. While you're getting certified, you're asking God to open doors. You prepare as if everything depends on you. You trust as if everything depends on God."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Be Dressed and Ready, With Your Lamp Burning"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"Jesus told a parable about servants waiting for their master to return. He said, 'Be dressed ready for service and keep your lamps burning.' Readiness isn't something you turn on when the master shows up. It's something you maintain every single day. Your lamp should already be burning. Your clothes should already be on. You should already be watching and waiting and preparing."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"This changes everything about how you spend your time. Every hour you waste scrolling mindlessly is an hour you didn't invest in your future. Every day you avoid going after a certification because it feels hard is a day you stay trapped. Every moment you make excuses instead of preparing is a moment you're not ready when opportunity knocks."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The good news is simple: you still have time. Right now. Today. This week. You can start preparing for the thing you think is years away. You can invest in yourself. You can learn. You can practice. You can humble yourself and admit what you don't know, then go find someone who does and let them teach you. And when the opportunity arrives, when God opens that door, you won't panic. You'll walk through it prepared, confident, and ready to seize what He's already planned for you."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Make Every Decision Count Toward Your Eternal Purpose"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"As you prepare, keep one thing in the front of your mind: your life is part of God's bigger story. You're not just preparing for a job or a house or a promotion. You're preparing for the role God has already written you into. Every small decision matters because every decision either moves you closer to readiness or further away from it."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"When Joseph was in the pit, he didn't know he was being prepared to run Egypt. When he was in prison, he didn't know the dream interpretation he was about to give would change nations. But he prepared anyway. He stayed faithful. He kept learning. He stayed close to God. And when the moment came, he was ready."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Your preparation today is your platform tomorrow. Make sure you're preparing in a way that honors God, that builds real skill, that serves others, that reflects your integrity. Because when the opportunity comes, it won't just change your life. It will show everyone around you what God can do through a person who refused to waste their time and refused to make excuses. Be ready."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Success occurs when opportunity meets preparation - not luck, not talent, not wishes, but readiness that you build today.\""}</p>
+              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Success doesn't come from luck - it comes from the day you finally prepared meeting the day God opened the door.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
             <ol className="list-decimal list-inside space-y-3 text-[#555] leading-relaxed mb-6">
-              <li><strong>{"Preparation is constant readiness"}</strong> {" "}{"The Greek word hetoimoi means being in a constant state of spiritual and intellectual readiness. It's not cramming the night before. It's daily work over time - studying your field, practicing your craft, building your knowledge, staying sharp. When Joseph finally had the moment to interpret Pharaoh's dreams, he wasn't seeing dreams for the first time. He had prepared his mind long before. Preparation isn't something you do when an opportunity appears. It's something you do every day so you're ready when the moment comes."}</li>
-              <li><strong>{"Small preparations stop big opportunities"}</strong> {" "}{"You don't miss opportunities because you lack talent. You miss them because you lack the small things. 120 Rand for transport stops you from a 30,000 per month job. A missing company registration number stops you from a contract. A broken-down car stops you from accepting a higher-paying position. These aren't character failures. They're preparation failures. The antidote is simple: think ahead. What will you need? What could go wrong? What small thing, if missing, would stop you from seizing an opportunity? Fix it now, while you have time."}</li>
-              <li><strong>{"Preparation + God's presence = unstoppable"}</strong> {" "}{"You prepare the practical side - the skill, the certification, the transport, the knowledge. God handles the safety, the timing, the breakthrough. Proverbs 21:31 captures this balance: the horse is prepared for battle, but safety belongs to the Lord. Don't wait for God to do the preparing. Don't try to succeed by preparation alone. Do both. Prepare diligently, commit it to God, and trust Him to open doors that your preparation alone could never open. That combination is unbeatable."}</li>
+              <li><strong>{"Preparation Is Not Optional, It Is Essential"}</strong> {" "}{"Every great achievement starts with unglamorous preparation that nobody sees. You don't get the job because you got lucky on interview day - you get it because you spent months learning your field, practicing your answers, earning your certifications. You don't win the contract because someone likes you - you win it because your paperwork is already done, your company profile is sharp, and your credentials are solid. Preparation is the invisible work that makes visible success possible. The question isn't whether you have time to prepare. The question is whether you can afford not to."}</li>
+              <li><strong>{"Your Gift and Skill Create Access to Opportunities"}</strong> {" "}{"Proverbs 22:29 isn't a nice thought - it's a law: become skilled in your work and you will stand before kings. This doesn't mean you need to be perfect or know everything. It means you need to know your subject deeply enough to be dangerous, to be trusted, to be valuable. A Jewish doctor won't fix his own car because he's skilled in medicine and finds a landscaper who's skilled in landscaping. They're not generalists doing everything halfway - they're specialists who've invested their time into mastery. Pick one thing you can become excellent at. Invest in it. Study it. Practice it daily. Let your skill open the door that no amount of networking ever could."}</li>
+              <li><strong>{"Trust God While You Prepare, But You Must Still Prepare"}</strong> {" "}{"This is the balance most people miss. Proverbs 21:31 says the horse is prepared for battle, but safety comes from the Lord. You don't pray for a job without studying. You don't ask God for a house while refusing to save money. You don't expect a promotion without developing your skills. You prepare as if everything depends on you - you get the certification, you learn the skill, you save the money, you show up. And then you trust as if everything depends on God, knowing that even your best preparation is useless without His blessing. Both must happen. Not one or the other."}</li>
             </ol>
             <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
           </div>
@@ -181,16 +180,16 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-6">Frequently Asked Questions</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"How do I prepare when I don't know what's coming?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"You can't predict every opportunity, but you can build your skills, your knowledge, your character, and your practical readiness. Study your field deeply. Practice your craft. Build your credentials. Stay in good spiritual condition. Save money for unexpected costs. Learn how to speak and present yourself professionally. These preparations work across many different opportunities. When the right moment comes, you'll be ready for it - whatever it is."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What if I don't have enough time to prepare before the opportunity comes?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"You start now. Not when you're ready. Not when conditions are perfect. Most people never feel ready. They feel ready only after they've already started. If you see a job posting that excites you but you need a certification, you enroll tomorrow. You don't wait for the next posting. If you want to change careers but need to learn a skill, you start learning this week while you're still at your current job. Preparation doesn't wait for convenience. It happens in the margins of your life, in the time you have right now."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What if I've already missed opportunities because I wasn't prepared?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"Joseph was in prison - a place most would consider a permanent dead end. But his preparation while in prison positioned him for the greatest opportunity of his life. You don't need to regret the past. Start preparing now for what's ahead. Every day you improve yourself, learn something new, or build a skill is a day you're getting ready for what God has planned next. Preparation always works - it's never too late to start."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"How do I know what to prepare for if I don't know what opportunities are coming?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Look at where you want to go, not where you are now. If you want to own a business, start learning business basics now. If you want a leadership role, start developing people skills now. If you want a certain job, look at what that job requires and start building those requirements now. You don't need to know the exact opportunity - you just need to know the direction. Then prepare in that direction. Read books in your field. Get certifications. Practice the skills. Network with people ahead of you. When you're ready in general, the specific opportunity won't catch you off guard."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"Is preparation the same as trying too hard?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"No. Trying too hard is anxious effort without direction. Preparation is intentional work that positions you. You prepare a meal by gathering ingredients, planning steps, and timing things right - not by frantically cooking at the last second. Similarly, preparation is calm, ongoing work toward readiness. You study your field because you care about excellence, not because you're panicked. You build skills because they matter, not because you're desperate. That's the difference between healthy preparation and anxious striving."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What if I've wasted years already and feel too far behind?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Stop counting backward and start moving forward. Joseph spent years in a pit and prison - circumstances he didn't choose and time he couldn't get back. But he didn't spend those years bitter or idle. He prepared anyway. He reasoned things out. He stayed close to God. He was ready when his moment came. You can start today. Not tomorrow. Today. Take one small step toward preparation in your field. Make one phone call. Read one chapter. Enroll in one course. You don't need to catch up to everyone else. You need to be ready when your opportunity arrives. And it will arrive - but only if you're prepared."}</p>
               </div>
             </div>
           </div>

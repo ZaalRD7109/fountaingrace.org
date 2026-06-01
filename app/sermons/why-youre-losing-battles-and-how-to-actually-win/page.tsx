@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Why You're Losing Battles (And How to Actually Win) | 1 Samuel 17:47 | Fountain of Grace International",
-  description: "Learn why battles start in your mind and how to win them. Pastor Ricardo Zaal reveals the strategy that changes everything.",
+  title: "The Real Reason You Feel Like You're Losing When Everything Falls Apart | 1 Samuel 17:47 | Fountain of Grace International",
+  description: "Why your worst struggles feel hopeless, and what actually determines if you win or lose them.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/why-youre-losing-battles-and-how-to-actually-win" },
   openGraph: {
-    title: "Why You're Losing Battles (And How to Actually Win)",
-    description: "Learn why battles start in your mind and how to win them. Pastor Ricardo Zaal reveals the strategy that changes everything.",
+    title: "The Real Reason You Feel Like You're Losing When Everything Falls Apart",
+    description: "Why your worst struggles feel hopeless, and what actually determines if you win or lose them.",
     type: 'article',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: "https://www.fountaingrace.org/sermons/why-youre-losing-battles-and-how-to-actually-win",
@@ -19,8 +19,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "Why You're Losing Battles (And How to Actually Win)",
-    "description": "Learn the three reasons you lose battles and the one thing that guarantees you win them, based on Pastor Ricardo Zaal's biblical teaching on spiritual warfare.",
+    "headline": "The Real Reason You Feel Like You're Losing When Everything Falls Apart",
+    "description": "Learn why feeling defeated in your hardest struggles is often a sign you're still trying to win alone, and discover the strategy that transforms battles from losses into victories.",
     "author": {
       "@type": "Person",
       "name": "Pastor Ricardo Zaal"
@@ -58,7 +58,7 @@ const jsonLd = [
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Why You're Losing Battles (And How to Actually Win)",
+        "name": "The Real Reason You Feel Like You're Losing When Everything Falls Apart",
         "item": "https://www.fountaingrace.org/sermons/why-youre-losing-battles-and-how-to-actually-win"
       }
     ]
@@ -69,26 +69,26 @@ const jsonLd = [
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "How do I know if I'm in a spiritual battle?",
+        "name": "If the battle is already won, why do I still feel like I'm losing?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "A spiritual battle is any place where you face resistance, must make a stand, or feel pressure to give up. It could be addiction, a broken relationship, health crisis, job loss, or internal struggle with fear. Battles are not always dramatic. They are often quiet internal wars where you must decide whether to trust God or give in to despair. If you are fighting something hard and feel alone, you are in a battle."
+          "text": "Because you haven't accepted that the battle isn't yours yet. Victory is promised, but you have to actually believe it and live like it's true. That means reading Scripture to know the one who's fighting for you, trusting Him instead of trying harder, and refusing to quit in the middle. The battle is won in Jesus, but you have to step into that truth. It's like having money in the bank but spending your days acting poor-the money is there, but you're not accessing it."
         }
       },
       {
         "@type": "Question",
-        "name": "Why do I lose battles even when I'm fighting hard?",
+        "name": "What do I actually do when I'm in a battle right now?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Fighting hard is not the same as fighting smart. Some battles are won by letting go, not by holding on tighter. If you are in an abusive relationship, staying and fighting harder damages you. If you are fighting fear with fear, anxiety wins. The secret is knowing when to stand firm and when to walk away. Ask God which battle is worth fighting. Then trust Him to take the ones that are not yours to fight."
+          "text": "First, stop fighting the person or problem the way you've been fighting. That only makes it worse. Second, get into Scripture and remind yourself of what God has done. Third, pray-actually say the name of Jesus and ask Him to fight for you. Fourth, do what needs to be done, but without desperation. Make the hard decision, have the hard conversation, or walk away-but do it from a place of trust, not fear. And fifth, be consistent. Show up. Refuse to quit. Let God do the heavy lifting."
         }
       },
       {
         "@type": "Question",
-        "name": "What should I do when I feel like giving up?",
+        "name": "How do I know if I'm supposed to fight a battle or walk away from it?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Call on God by name. Jeremiah 33 verse 3 says call upon Me and I will show you great things. Say the name Jesus and remind yourself that every knee bows to His name. Remember that your breakthrough is often one step away. Most people quit right before victory. Keep going. Stay consistent like water. And remember this: the battle is already won. You are just walking it out."
+          "text": "If the battle is destroying you and you keep losing no matter how hard you fight, it might be time to walk away. Some relationships need to end. Some situations need to be surrendered. Some battles aren't worth your life. The test is: am I getting stronger and more free, or am I getting weaker and more trapped? If a relationship is crushing you, walk away. If a job is killing you, leave. If a situation is taking your peace, surrender it to God instead of white-knuckling it. Walking away isn't losing-it's winning your sanity and your future back."
         }
       }
     ]
@@ -96,8 +96,8 @@ const jsonLd = [
   {
     "@context": "https://schema.org",
     "@type": "VideoObject",
-    "name": "Why You're Losing Battles (And How to Actually Win)",
-    "description": "Why You're Losing Battles (And How to Actually Win)",
+    "name": "The Real Reason You Feel Like You're Losing When Everything Falls Apart",
+    "description": "The Real Reason You Feel Like You're Losing When Everything Falls Apart",
     "thumbnailUrl": "https://img.youtube.com/vi/NxlXObg16sE/maxresdefault.jpg",
     "uploadDate": "2025-06-15T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/NxlXObg16sE",
@@ -124,51 +124,53 @@ export default function SermonPage() {
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Why You're Losing Battles (And How to Actually Win)"}</h1>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Most people lose before the battle even starts. Discover what separates winners from quitters and why God already won your fight."}</p>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"The Real Reason You Feel Like You're Losing When Everything Falls Apart"}</h1>
+            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Your spouse left. Your job vanished. Your savings dried up. You're drowning in problems that feel bigger than you. But there's something about how battles actually work that changes everything."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-              <iframe src="https://www.youtube.com/embed/NxlXObg16sE" title={"Why You're Losing Battles (And How to Actually Win)"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <iframe src="https://www.youtube.com/embed/NxlXObg16sE" title={"The Real Reason You Feel Like You're Losing When Everything Falls Apart"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
             </div>
           </div>
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Actually Is a Battle"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"A battle is more than physical combat. It's resistance. It's standing up to something. When you fight an illness, resist temptation, or walk away from abuse, you are in a battle. The Bible calls it spiritual warfare. Most people face daily battles without realizing what they are."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Your battle might look different from someone else's. But every battle has the same problem: it often starts losing in your mind before your body ever enters the fight. You think defeat before you face it. You imagine failure and then it arrives. This is why preparation matters more than physical strength."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How You Lose Battles Before They Begin"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Loss starts in your thinking. Job said it clearly: what I feared came upon me. Fear of the outcome is enough to defeat you. You surrender mentally while standing physically. You tell yourself the battle is already lost, so why try. This mental defeat is real and it spreads into everything else."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"The second killer is isolation. You tell yourself I am alone in this. No one can help. But no army wins alone. Every fighter needs communication, strategy, and support from others. When you stand thinking only I can do this, you have already weakened yourself. Isolation multiplies your burden and divides your strength."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"The third way to lose is by fighting back the wrong way. Some battles are not meant to be won through force. If someone keeps hitting you, hitting back harder only makes the fight worse. The true victory is recognizing your worth and walking away. Winning sometimes means stepping back, not standing firm."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Secret to Winning: The Battle Is Not Yours"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"David faced Goliath knowing one thing: the battle is the Lord's. Not his sword. Not his strength. God's battle. The moment David accepted this, victory was already decided. This is not giving up responsibility. This is releasing the weight you were never meant to carry alone."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"God fights for you. Deuteronomy 20 verse 4 says God goes with you to fight your enemies and save you. Not against you. With you. This changes everything. You stop relying on your own tactics and start trusting His strategy. You stop measuring your chances and start measuring His promises."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"When you know God is with you, fear loses its power. Not because your problem disappears. But because you are no longer alone in it. A fish does not worry about water because it swims in water. You should live in God this way, knowing He surrounds you completely."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How to Prepare for Your Battle"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"First, get into God's Word. Joshua 1 verse 8 says meditating on Scripture day and night makes your way prosperous and gives you good success. You cannot win what you do not understand. God's Word is the instruction manual for battle. It tells you what has already been won and why you can trust the outcome."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Second, know God Himself. Reading about Him is not the same as knowing Him. You know Him by spending time with Him, calling on His name, and watching how He moves in your life. Psalm 46 verse 10 says be still and know that I am God. Stillness is not weakness. It is the posture that lets you hear His voice."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"Third, trust His Word. His Word is yea and amen. Nothing can be added. Nothing can be taken away. When God makes a promise, it stands. When you trust what He has said, you are not guessing. You are standing on something solid. This trust is what shifts victory from possibility to certainty."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Consistency Wins"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"Water is not the strongest force in nature. But water is consistent. It flows day after day and eventually cuts through mountains. You win battles the same way. Every battle you fight and refuse to quit on strengthens you for the next one. Giving up is easy. Staying steady is what builds victory."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"James 1 verse 12 says blessed is the person who endures temptation because when tested they receive the crown of life. Endurance is the prize. Do not quit when you are closest to breakthrough. Most people give up just before victory arrives. They accept defeat ultimatums when God's answer is almost there."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"When you trust God and remain consistent, you become like a tree planted by rivers of water. In drought you sink your roots deeper. In heat you still produce fruit. You cannot lose because you are connected to an endless source. Your victory is not about winning once. It is about fruitfulness that never stops."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Choice Today"}</h2>
-            <p className="text-[#555] leading-relaxed mb-4">{"This is not complicated. You either know God or you don't. You either trust Him with your battle or you fight alone. If you are not with God, you are against Him. If you are against Him, you are on the losing team. But you can change teams today."}</p>
-            <p className="text-[#555] leading-relaxed mb-4">{"If your battles have worn you down. If your marriage is breaking. If your children have left. If your body is sick. If your finances are destroyed. You can stop fighting alone. You can surrender your battle to God this morning and join the winning side. This is not weakness. This is the only way to win."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What a Battle Really Is"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"A battle is not just combat between armies. It's any fight you face, any resistance you push against, any struggle that makes you want to give up. A serious illness, a marriage falling apart, losing your job, watching your children walk away, watching your savings disappear-these are all battles. The problem is that most of us think the battle is ours to win or lose based on how hard we fight."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"But here's what nobody tells you: battles are lost or won in your mind first, long before anything physical happens. You decide you've already lost before you even fight. Fear of the outcome becomes your defeat. You think you're alone. You think your strength has to be enough. And when you believe those lies, you've already surrendered without ever really fighting."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The real twist is this-the toughest battles aren't supposed to be yours at all. There's a completely different way to win."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How You Actually Lose Without Even Trying"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"You lose a battle by doing the one thing that feels most natural: fighting back harder. When someone hits you, you hit them back. When someone betrays you, you scheme revenge. When the pressure comes, you grip tighter and force harder solutions. Every punch you throw makes the fight worse, not better. You're exhausted. They're exhausted. And the relationship or the situation gets worse every single time."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"You also lose by standing alone. You tell yourself: I have to handle this myself. I can't ask for help. I'm alone in this. The moment you believe that lie, you've already lost because you've cut yourself off from the one resource that actually changes the outcome."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"And you lose by living in fear of what might happen. Job said it: 'What I feared has come over me.' Your fear becomes a prophecy. You imagine defeat so hard and so long that you actually create it. The battle dies in your mind before your body ever has to fight."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Battle Isn't Yours-It's Already Been Won"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"When David stood in front of Goliath, he didn't say, 'I will win this.' He said something that changed everything: 'The battle is the Lord's.' He knew he was a kid with a sling facing a giant with armor and a spear. By every measure, he should have lost. But he understood one thing that the giant didn't-the battle had never belonged to him in the first place."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Your struggles-your broken marriage, your lost job, your sick body, your betrayed trust-these battles belong to someone else too. Not because you don't have to do anything about them. But because the actual power to win them doesn't come from you trying harder. It comes from knowing someone is fighting with you and for you."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The Bible says: 'The Lord your God is He that goes with you to fight for you against your enemies to save you.' Not against you. With you. Fighting for you. Saving you. This changes everything. You're not alone. You're not the weakest link. You're not outmatched. Because the one fighting for you has never lost a battle in His life."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How to Prepare for the Battle You're Already Winning"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"First, get into Scripture. Read it. Sit with it. Meditate on it. When you read the Bible, you're not just reading words-you're meeting the person who has already won every battle. Joshua was told: 'The book of the law shall not depart out of your mouth, but you shall meditate on it day and night. Then you will make your way prosperous and have good success.' Good success doesn't come from working harder. It comes from knowing the one who gives success."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Second, actually know God. Reading about Him is not the same as knowing Him. Be still. Listen. Notice how He shows up in small ways. Start to see that He surrounds your life like water surrounds a fish. The fish doesn't usually think about water-it's always there. But the moment it's removed from water, everything dies. You need God like that. Not sometimes. Always."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Third, trust Him instead of fighting. This is the hardest part because trust feels passive when you're in pain. But trusting God doesn't mean doing nothing-it means doing what needs to be done without the desperation, the scheming, the fear. It means stepping back from a relationship that's crushing you instead of staying to prove you're strong enough. It means admitting you don't have the answer instead of forcing a wrong solution. It means calling His name instead of calling in favors from people who can't actually help."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Quitting Isn't the Same as Losing"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"Here's a battle strategy nobody teaches: some battles are meant to be walked away from. If someone is hitting you and you keep fighting back, you're not winning. You're choosing slow destruction over actually surviving. Sometimes winning the battle means leaving the relationship. Sometimes it means admitting you can't solve this yourself. Sometimes it means saying no instead of pushing through."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Water doesn't defeat rocks by fighting them. Water wins by being consistent. It flows around the rock, through the small spaces, every single day, for years. And eventually the rock surrenders. You're supposed to work like that too. Show up. Be steady. Don't panic. Don't give up. Let the pressure work. Let time work. Let God work. The battles that matter are won by those who don't fold when things get hard-not by those who punch harder."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"The Bible promises: 'Blessed is the one who endures temptation. For when he is tried, he will receive the crown of life.' You don't get the crown by winning without struggle. You get it by refusing to quit in the middle of the struggle."}</p>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Happens When You Stop Fighting and Start Trusting"}</h2>
+            <p className="text-[#555] leading-relaxed mb-4">{"When you surrender your life to Jesus-when you actually tell Him, 'I can't win this alone, I need You'-everything shifts. You're not giving up. You're giving over. You're joining the winning team. The Bible says: 'You are of God and have overcome them because greater is He that is in you than he that is in the world.' The moment you invite Him into the battle, the battle changes. You change. The outcome changes."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"Jeremiah describes what this looks like: 'Blessed is the one who trusts in the Lord. He shall be like a tree planted by the waters that spreads out its roots by the river. When the heat comes, he will not be afraid. His leaf shall remain green. He will not cease from bearing fruit.' In other words, when you trust, when you put down roots into something bigger than your circumstances, drought doesn't destroy you. Heat doesn't kill you. You keep growing. You keep producing. You keep winning."}</p>
+            <p className="text-[#555] leading-relaxed mb-4">{"This is the promise for your broken marriage. For your lost job. For your abandoned dreams. For the battles that have hammered you senseless. The same power that raised Jesus from the dead is offering to fight for you. Not someday. Now. While you're scared. While you're tired. While you think you've already lost."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"The battle is only won if you know Him. If you don't know Him, the battle will always be tougher for you.\""}</p>
+              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"The moment you stop believing the battle is yours to win and accept that it's already being won for you, everything changes.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
             <ol className="list-decimal list-inside space-y-3 text-[#555] leading-relaxed mb-6">
-              <li><strong>{"Battles Are Won or Lost in Your Mind First"}</strong> {" "}{"Before your circumstances change, your thinking must change. Fear of the outcome defeats you before you start. What you believe about yourself becomes your reality. This is why Scripture tells us to meditate on God's Word day and night. Your mind is the battlefield. Control your thoughts and you control your outcome. Write down what God has promised. Repeat it. Believe it. Act on it. Your mind will follow where your faith leads."}</li>
-              <li><strong>{"Isolation Weakens You. Connection Strengthens You"}</strong> {" "}{"No one wins a battle alone. Every victory requires strategy, support, and wisdom from others. When you think I must do this by myself, you have already lost power. God designed us for community. He designed us to ask for help. Reach out. Share your burden. Find people who believe in your victory. Let them speak faith over your situation. The moment you stop standing alone, your strength multiplies."}</li>
-              <li><strong>{"Consistency Over Intensity Wins Every Time"}</strong> {" "}{"You do not need dramatic moments. You need daily faithfulness. Water does not move fast but it moves constantly and it cuts through stone. Each day you choose not to give up. Each time you trust instead of panic. Each moment you refuse to accept defeat. These small choices pile up into mountains moved. Your breakthrough is not one big event. It is a thousand small decisions to keep going. Stay steady. Stay true. Stay connected to God. This is how you win."}</li>
+              <li><strong>{"Battles Are Lost in the Mind Before They're Lost in Reality"}</strong> {" "}{"Fear of the outcome becomes your defeat before anything actually happens. You imagine failure so clearly that you create it. The solution is not to think positive thoughts-it's to know the truth: you're not fighting alone, and the outcome has already been secured. When you shift from 'I'm going to lose' to 'This isn't even my battle,' your actions change. Your decisions change. Your endurance changes. You stop panicking and start moving with purpose."}</li>
+              <li><strong>{"The Hardest Battles Are Won by Stepping Back, Not Fighting Harder"}</strong> {" "}{"Every time you punch back, the fight gets worse. Every time you scheme revenge, you dig yourself deeper. Every time you force a solution, you create new problems. Winning doesn't always mean winning the fight-sometimes it means winning your life back by walking away. Water doesn't defeat mountains by hitting them. It flows consistently, finding the small gaps, and the mountain eventually cracks. You win by being steady, by refusing to quit, by not responding to every provocation. This is what real strength looks like."}</li>
+              <li><strong>{"You Win Every Battle by Knowing God and Trusting Him More Than You Trust Yourself"}</strong> {" "}{"Read Scripture. Get to know how God moves. See how He wins. Then believe that the same power is available to you right now, in your specific pain. Trusting God doesn't mean sitting still and doing nothing-it means acting without desperation, deciding without fear, moving forward without needing to control the outcome. The moment you surrender your life to Jesus, you join the winning team. The power that raises the dead now fights for you. That's not religion. That's the actual game changer."}</li>
             </ol>
             <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
           </div>
@@ -178,16 +180,16 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-6">Frequently Asked Questions</h2>
             <div className="space-y-6">
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"How do I know if I'm in a spiritual battle?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"A spiritual battle is any place where you face resistance, must make a stand, or feel pressure to give up. It could be addiction, a broken relationship, health crisis, job loss, or internal struggle with fear. Battles are not always dramatic. They are often quiet internal wars where you must decide whether to trust God or give in to despair. If you are fighting something hard and feel alone, you are in a battle."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"If the battle is already won, why do I still feel like I'm losing?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"Because you haven't accepted that the battle isn't yours yet. Victory is promised, but you have to actually believe it and live like it's true. That means reading Scripture to know the one who's fighting for you, trusting Him instead of trying harder, and refusing to quit in the middle. The battle is won in Jesus, but you have to step into that truth. It's like having money in the bank but spending your days acting poor-the money is there, but you're not accessing it."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"Why do I lose battles even when I'm fighting hard?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"Fighting hard is not the same as fighting smart. Some battles are won by letting go, not by holding on tighter. If you are in an abusive relationship, staying and fighting harder damages you. If you are fighting fear with fear, anxiety wins. The secret is knowing when to stand firm and when to walk away. Ask God which battle is worth fighting. Then trust Him to take the ones that are not yours to fight."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What do I actually do when I'm in a battle right now?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"First, stop fighting the person or problem the way you've been fighting. That only makes it worse. Second, get into Scripture and remind yourself of what God has done. Third, pray-actually say the name of Jesus and ask Him to fight for you. Fourth, do what needs to be done, but without desperation. Make the hard decision, have the hard conversation, or walk away-but do it from a place of trust, not fear. And fifth, be consistent. Show up. Refuse to quit. Let God do the heavy lifting."}</p>
               </div>
               <div>
-                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What should I do when I feel like giving up?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"Call on God by name. Jeremiah 33 verse 3 says call upon Me and I will show you great things. Say the name Jesus and remind yourself that every knee bows to His name. Remember that your breakthrough is often one step away. Most people quit right before victory. Keep going. Stay consistent like water. And remember this: the battle is already won. You are just walking it out."}</p>
+                <h3 className="font-semibold text-[#1a1a1a] mb-2">{"How do I know if I'm supposed to fight a battle or walk away from it?"}</h3>
+                <p className="text-[#555] leading-relaxed text-sm">{"If the battle is destroying you and you keep losing no matter how hard you fight, it might be time to walk away. Some relationships need to end. Some situations need to be surrendered. Some battles aren't worth your life. The test is: am I getting stronger and more free, or am I getting weaker and more trapped? If a relationship is crushing you, walk away. If a job is killing you, leave. If a situation is taking your peace, surrender it to God instead of white-knuckling it. Walking away isn't losing-it's winning your sanity and your future back."}</p>
               </div>
             </div>
           </div>

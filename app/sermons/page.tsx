@@ -23,67 +23,67 @@ export const metadata: Metadata = {
 const sermonPosts = [
   {
     slug: "why-your-preparation-matters-more-than-your-luck",
-    title: "Why Your Preparation Matters More Than Your Luck",
+    title: "Your Big Break Is Coming, But You're Not Ready For It",
     date: "2025-03-22",
     dateDisplay: "22 March 2025",
     intro:
-      "Success isn't random. It happens when you prepare yourself to meet the opportunities God has already lined up for you. Pastor Ricardo Zaal explains principle 13 from the life of Joseph.",
+      "Success isn't luck. It's the collision of opportunity and preparation. Most people wait for the perfect moment instead of preparing during this one.",
   },
   {
     slug: "why-your-biggest-dreams-attract-the-strongest-opposition",
-    title: "Why Your Biggest Dreams Attract the Strongest Opposition",
+    title: "When Your Success Makes People Jealous: Here's What It Really Means",
     date: "2025-03-30",
     dateDisplay: "30 March 2025",
     intro:
-      "When God gives you a dream, opposition comes from those closest to you. But that jealousy is actually a sign of something bigger ahead.",
+      "When people closest to you suddenly turn jealous or hostile, it feels like failure. But it might be the opposite.",
   },
   {
     slug: "false-accusations-wont-stop-your-dreams-what-josephs-story-reveals",
-    title: "False Accusations Won't Stop Your Dreams: What Joseph's Story Reveals",
+    title: "Your Boss Will Never Promote You Like This",
     date: "2025-04-06",
     dateDisplay: "6 April 2025",
     intro:
-      "You've been accused. Wrongly. And it feels like everything is over. But Joseph's story proves that false accusations cannot stop what God has planned for you-they can only delay it.",
+      "You work hard. You stay honest. But the person who cuts corners and talks loudly gets the promotion. Here's what nobody tells you about how real success actually works.",
   },
   {
     slug: "why-your-kindness-might-be-hurting-people",
-    title: "Why Your Kindness Might Be Hurting People",
+    title: "Your Help Is Making Them Helpless",
     date: "2025-04-12",
     dateDisplay: "12 April 2025",
     intro:
-      "You want to help. But endless giving without teaching creates a trap that kills dignity and stunts growth. This message shows you how to actually empower people.",
+      "You think you're helping. But endless handouts, overprotection, and solving problems for people actually stunts their growth and steals their dignity. Learn when real love means letting people struggle.",
   },
   {
     slug: "why-jesus-changed-everything-the-birth-that-brings-new-life",
-    title: "Why Jesus Changed Everything: The Birth That Brings New Life",
+    title: "Your Stuck Life Can Actually Change: Here's What Needs to Happen First",
     date: "2025-06-15",
     dateDisplay: "15 June 2025",
     intro:
-      "Christmas is not just a holiday. It marks the arrival of someone who saves people from their sins and brings life where there was none. This changes everything.",
+      "You're not meant to stay where you are. Real transformation starts with understanding what broke things can become.",
   },
   {
     slug: "why-youre-losing-battles-and-how-to-actually-win",
-    title: "Why You're Losing Battles (And How to Actually Win)",
+    title: "The Real Reason You Feel Like You're Losing When Everything Falls Apart",
     date: "2025-06-15",
     dateDisplay: "15 June 2025",
     intro:
-      "Most people lose before the battle even starts. Discover what separates winners from quitters and why God already won your fight.",
+      "Your spouse left. Your job vanished. Your savings dried up. You're drowning in problems that feel bigger than you. But there's something about how battles actually work that changes everything.",
   },
   {
     slug: "i-nearly-died-this-week-heres-what-changed-everything",
-    title: "I Nearly Died This Week. Here's What Changed Everything.",
+    title: "You're Stuck Because You Don't Know Where You're Going",
     date: "2026-04-29",
     dateDisplay: "29 April 2026",
     intro:
-      "A brush with death reveals why most people stay stuck in laziness, broken relationships, and wasted potential. Pastor Ricardo Zaal shares what he learned in a hospital bed.",
+      "You're not lazy. You're directionless. Here's how to escape dead-end situations and build momentum toward something that matters.",
   },
   {
     slug: "why-youre-busy-but-stuck-the-action-that-actually-works",
-    title: "Why You're Busy But Stuck - The Action That Actually Works",
+    title: "You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck",
     date: "2026-05-11",
     dateDisplay: "11 May 2026",
     intro:
-      "You're working hard. You're showing up. But nothing changes. The problem isn't your effort - it's the type of action you're taking.",
+      "You show up. You try hard. You do everything right. So why are you still failing? The answer isn't more hustle. It's the specific, immediate action nobody taught you to take.",
   },
   {
     slug: 'why-the-easy-road-always-leads-to-the-wrong-place',
