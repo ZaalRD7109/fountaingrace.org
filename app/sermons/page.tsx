@@ -22,6 +22,54 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "why-your-preparation-matters-more-than-your-luck",
+    title: "Why Your Preparation Matters More Than Your Luck",
+    date: "2025-03-22",
+    dateDisplay: "22 March 2025",
+    intro:
+      "Success isn't random. It happens when you prepare yourself to meet the opportunities God has already lined up for you. Pastor Ricardo Zaal explains principle 13 from the life of Joseph.",
+  },
+  {
+    slug: "why-your-biggest-dreams-attract-the-strongest-opposition",
+    title: "Why Your Biggest Dreams Attract the Strongest Opposition",
+    date: "2025-03-30",
+    dateDisplay: "30 March 2025",
+    intro:
+      "When God gives you a dream, opposition comes from those closest to you. But that jealousy is actually a sign of something bigger ahead.",
+  },
+  {
+    slug: "false-accusations-wont-stop-your-dreams-what-josephs-story-reveals",
+    title: "False Accusations Won't Stop Your Dreams: What Joseph's Story Reveals",
+    date: "2025-04-06",
+    dateDisplay: "6 April 2025",
+    intro:
+      "You've been accused. Wrongly. And it feels like everything is over. But Joseph's story proves that false accusations cannot stop what God has planned for you-they can only delay it.",
+  },
+  {
+    slug: "why-your-kindness-might-be-hurting-people",
+    title: "Why Your Kindness Might Be Hurting People",
+    date: "2025-04-12",
+    dateDisplay: "12 April 2025",
+    intro:
+      "You want to help. But endless giving without teaching creates a trap that kills dignity and stunts growth. This message shows you how to actually empower people.",
+  },
+  {
+    slug: "why-jesus-changed-everything-the-birth-that-brings-new-life",
+    title: "Why Jesus Changed Everything: The Birth That Brings New Life",
+    date: "2025-06-15",
+    dateDisplay: "15 June 2025",
+    intro:
+      "Christmas is not just a holiday. It marks the arrival of someone who saves people from their sins and brings life where there was none. This changes everything.",
+  },
+  {
+    slug: "why-youre-losing-battles-and-how-to-actually-win",
+    title: "Why You're Losing Battles (And How to Actually Win)",
+    date: "2025-06-15",
+    dateDisplay: "15 June 2025",
+    intro:
+      "Most people lose before the battle even starts. Discover what separates winners from quitters and why God already won your fight.",
+  },
+  {
     slug: "i-nearly-died-this-week-heres-what-changed-everything",
     title: "I Nearly Died This Week. Here's What Changed Everything.",
     date: "2026-04-29",
