@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "the-person-who-notices-when-you-disappear",
+    title: "The Person Who Notices When You Disappear",
+    date: "2025-02-21",
+    dateDisplay: "21 February 2025",
+    intro:
+      "You probably know someone who vanished when they needed help most. Pastor Ricardo explains why most communities fail their people, and how real accountability actually works.",
+  },
+  {
     slug: "your-dreams-feel-dead-but-delays-arent-denials-heres-why",
     title: "Your Dreams Feel Dead, But Delays Aren't Denials-Here's Why",
     date: "2025-03-15",
