@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it",
+    title: "Your Mind Is Broken By Lies You Believed - Here's How to Rebuild It",
+    date: "2025-01-12",
+    dateDisplay: "12 January 2025",
+    intro:
+      "You were created for wholeness, provision, and belonging. But somewhere along the way, lies and broken patterns corrupted your thinking. This is how you get back to who you were meant to be.",
+  },
+  {
     slug: "when-life-deliberately-gets-worse-before-it-works-out",
     title: "When Life Deliberately Gets Worse Before It Works Out",
     date: "2025-03-01",

@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it`, lastModified: new Date('2025-01-12'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/when-life-deliberately-gets-worse-before-it-works-out`, lastModified: new Date('2025-03-01'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/the-real-reason-youre-trapped-in-debt-and-how-to-break-free`, lastModified: new Date('2024-12-08'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/you-got-what-you-prayed-for-but-lost-it-anyway`, lastModified: new Date('2025-01-31'), changeFrequency: 'monthly', priority: 0.6 },
