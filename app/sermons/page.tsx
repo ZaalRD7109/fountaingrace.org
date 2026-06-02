@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "you-got-what-you-prayed-for-but-lost-it-anyway",
+    title: "You Got What You Prayed For But Lost It Anyway",
+    date: "2025-01-31",
+    dateDisplay: "31 January 2025",
+    intro:
+      "You finally got the job you desperately needed. Three months later you're fired again. You got the money. It's gone. Your spouse came back, but the trust is shattered. What's actually broken?",
+  },
+  {
     slug: "the-person-who-notices-when-you-disappear",
     title: "The Person Who Notices When You Disappear",
     date: "2025-02-21",
