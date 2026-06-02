@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it",
+    title: "The Person Nobody Checks On: How You're Losing Friends Without Knowing It",
+    date: "2024-12-15",
+    dateDisplay: "15 December 2024",
+    intro:
+      "You feel alone because nobody's watching your back. And you're probably doing the same to others. Here's how mutual accountability actually works.",
+  },
+  {
     slug: "your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it",
     title: "Your Mind Is Broken By Lies You Believed - Here's How to Rebuild It",
     date: "2025-01-12",
