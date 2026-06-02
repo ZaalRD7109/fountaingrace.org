@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "the-real-reason-youre-trapped-in-debt-and-how-to-break-free",
+    title: "The Real Reason You're Trapped in Debt (And How to Break Free)",
+    date: "2024-12-08",
+    dateDisplay: "8 December 2024",
+    intro:
+      "You feel the pressure to have enough - enough money, enough health, enough worth. But what if the debt you owe has already been paid in full? Explore what changes when you stop competing and start receiving.",
+  },
+  {
     slug: "you-got-what-you-prayed-for-but-lost-it-anyway",
     title: "You Got What You Prayed For But Lost It Anyway",
     date: "2025-01-31",
