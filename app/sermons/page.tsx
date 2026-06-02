@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "when-life-deliberately-gets-worse-before-it-works-out",
+    title: "When Life Deliberately Gets Worse Before It Works Out",
+    date: "2025-03-01",
+    dateDisplay: "1 March 2025",
+    intro:
+      "You had a clear plan. Then betrayal, false accusations, or circumstances beyond your control derailed everything. Now you're wondering if your life will ever move forward. What if this detour is actually the route to something better?",
+  },
+  {
     slug: "the-real-reason-youre-trapped-in-debt-and-how-to-break-free",
     title: "The Real Reason You're Trapped in Debt (And How to Break Free)",
     date: "2024-12-08",
