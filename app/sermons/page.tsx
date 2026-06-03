@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear",
+    title: "How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear",
+    date: "2024-10-27",
+    dateDisplay: "27 October 2024",
+    intro:
+      "You get a strong feeling about a relationship, a friend, a decision. But how do you know if it's real guidance or just anxiety talking? Here's how to tell the difference and act on what matters.",
+  },
+  {
     slug: "six-invisible-gaps-that-wreck-your-life-and-how-to-close-them",
     title: "Six Invisible Gaps That Wreck Your Life (And How to Close Them)",
     date: "2025-01-19",
