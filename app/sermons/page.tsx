@@ -302,14 +302,6 @@ const sermonPosts = [
       'For the person who feels dried up, exhausted, and quietly carrying too much. Pastor Ricardo Zaal opens 2 Corinthians 12:9 and shows why your emptiest moment is the exact place where real strength shows up. Honest, practical, and for anyone running on empty.',
   },
   {
-    slug: 'victory-battle-the-lords-fight-not-yours',
-    title: "Stop Fighting a Battle That Was Never Yours to Win",
-    date: "2024-06-01",
-    dateDisplay: "1 June 2024",
-    intro:
-      "Are you exhausted from fighting battles that seem impossible to win? Whether it is sickness, broken relationships, fear, or daily struggles, Pastor Ricardo Zaal brings a word that will shift your perspective completely. The battle is not yours to fight alone - it belongs to God, and that truth alone changes everything.",
-  },
-  {
     slug: 'if-your-church-does-not-change-you-change-your-church',
     title: "Are You Actually Being Transformed or Just Showing Up?",
     date: "2023-07-02",
@@ -332,14 +324,6 @@ const sermonPosts = [
     dateDisplay: "25 December 2022",
     intro:
       "Christmas can feel hollow when you are grieving a loss, struggling financially, or sitting alone with no one at the table. Pastor Ricardo Zaal opens the Word on Christmas morning and shows that the birth of Jesus Christ is not a distant historical event but a living force that births new things into the dead places of your life. If something in your world has gone dry, this message is for you.",
-  },
-  {
-    slug: 'from-wifi-to-why-fire-presence-ignite-holy-spirit',
-    title: "Why Your Drive Burns Out Before the Breakthrough",
-    date: "2025-09-07",
-    dateDisplay: "7 September 2025",
-    intro:
-      "Ever felt fired up about God on Sunday, only for that feeling to be completely gone by Monday morning? You are not broken - you are buffering. In this message Pastor Ricardo Zaal uses the everyday frustration of slow WiFi to explain why so many people have access to God's full power but only ever experience a fraction of it. The answer is closer than you think, and it starts with presence.",
   },
   {
     slug: 'born-original-marked-by-god-identity-purpose',
