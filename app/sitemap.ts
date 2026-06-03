@@ -20,6 +20,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/stop-waiting-for-permission-to-become-who-you-already-are`, lastModified: new Date('2024-10-04'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming`, lastModified: new Date('2024-11-10'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/when-life-knocks-you-down-does-integrity-actually-matter`, lastModified: new Date('2025-03-08'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/the-small-habits-that-quietly-destroy-your-life`, lastModified: new Date('2024-12-08'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/the-one-conversation-that-stops-relationship-arguments-before-they-start`, lastModified: new Date('2024-10-13'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/how-to-know-what-to-do-when-everything-feels-confusing`, lastModified: new Date('2024-11-03'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/the-cost-of-sitting-on-the-sidelines`, lastModified: new Date('2025-02-15'), changeFrequency: 'monthly', priority: 0.6 },

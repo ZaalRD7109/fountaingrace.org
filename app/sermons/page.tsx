@@ -22,6 +22,38 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "stop-waiting-for-permission-to-become-who-you-already-are",
+    title: "Stop Waiting for Permission to Become Who You Already Are",
+    date: "2024-10-04",
+    dateDisplay: "4 October 2024",
+    intro:
+      "Feeling like you don't measure up? Discover how ordinary people amplify what matters most by being authentically themselves, not waiting for perfect conditions or someone else to act.",
+  },
+  {
+    slug: "stop-waiting-for-someone-else-to-tell-you-whats-coming",
+    title: "Stop Waiting for Someone Else to Tell You What's Coming",
+    date: "2024-11-10",
+    dateDisplay: "10 November 2024",
+    intro:
+      "You already sense things you can't explain. Here's how to trust those instincts, act on them with confidence, and access guidance for the decisions that matter most.",
+  },
+  {
+    slug: "when-life-knocks-you-down-does-integrity-actually-matter",
+    title: "When Life Knocks You Down, Does Integrity Actually Matter",
+    date: "2025-03-08",
+    dateDisplay: "8 March 2025",
+    intro:
+      "You've been lied to, knocked down, or betrayed. Now you're wondering if playing by the rules even works. A forgotten story shows you it does-but not how you think.",
+  },
+  {
+    slug: "the-small-habits-that-quietly-destroy-your-life",
+    title: "The Small Habits That Quietly Destroy Your Life",
+    date: "2024-12-08",
+    dateDisplay: "8 December 2024",
+    intro:
+      "You notice small habits and negative patterns in your life, but they feel harmless. The truth is they're already growing into something much bigger. This message shows why what you tolerate today becomes who you are tomorrow.",
+  },
+  {
     slug: "the-one-conversation-that-stops-relationship-arguments-before-they-start",
     title: "The One Conversation That Stops Relationship Arguments Before They Start",
     date: "2024-10-13",
