@@ -20,6 +20,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids`, lastModified: new Date('2025-06-15'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/your-life-falls-apart-under-pressure-because-of-whats-actually-inside-you`, lastModified: new Date('2026-01-18'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/everyone-around-you-is-pretending-heres-why-youre-alone`, lastModified: new Date('2026-05-24'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life`, lastModified: new Date('2026-05-31'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear`, lastModified: new Date('2024-10-27'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them`, lastModified: new Date('2025-01-19'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/stop-waiting-for-permission-to-become-who-you-already-are`, lastModified: new Date('2024-10-04'), changeFrequency: 'monthly', priority: 0.6 },

@@ -22,6 +22,38 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids",
+    title: "The Pain You Inherited From Your Father Is Quietly Breaking Your Kids",
+    date: "2025-06-15",
+    dateDisplay: "15 June 2025",
+    intro:
+      "Your father's unresolved pain doesn't just hurt him-it shapes how you parent, what you believe about yourself, and what your children will inherit. This message shows why presence and healing matter more than you think.",
+  },
+  {
+    slug: "your-life-falls-apart-under-pressure-because-of-whats-actually-inside-you",
+    title: "Your Life Falls Apart Under Pressure Because of What's Actually Inside You",
+    date: "2026-01-18",
+    dateDisplay: "18 January 2026",
+    intro:
+      "You know all the right things to say and do in public. But the moment real pressure hits-financial stress, relationship conflict, temptation-you fall apart. That's not a sign you're broken. It's a sign your foundation is built wrong.",
+  },
+  {
+    slug: "everyone-around-you-is-pretending-heres-why-youre-alone",
+    title: "Everyone Around You Is Pretending - Here's Why You're Alone",
+    date: "2026-05-24",
+    dateDisplay: "24 May 2026",
+    intro:
+      "You're waiting for the right people to show up while pushing away the ones who could actually change your life. A message about why your standards are costing you genuine connection.",
+  },
+  {
+    slug: "the-hidden-cost-of-staying-silent-at-work-home-and-in-life",
+    title: "The Hidden Cost of Staying Silent at Work, Home, and in Life",
+    date: "2026-05-31",
+    dateDisplay: "31 May 2026",
+    intro:
+      "You have brilliant ideas, strong convictions, and things that matter. But fear, insecurity, or waiting for permission keeps you quiet-while less qualified people advance, your relationships suffer, and your potential dies unspoken.",
+  },
+  {
     slug: "how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear",
     title: "How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear",
     date: "2024-10-27",
