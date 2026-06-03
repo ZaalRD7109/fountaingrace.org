@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "six-invisible-gaps-that-wreck-your-life-and-how-to-close-them",
+    title: "Six Invisible Gaps That Wreck Your Life (And How to Close Them)",
+    date: "2025-01-19",
+    dateDisplay: "19 January 2025",
+    intro:
+      "You wake up with good intentions but life spirals. Work, hurt, laziness, and confusion quietly disconnect you from your own stability. Six specific obstacles explain why-and one daily practice fixes it.",
+  },
+  {
     slug: "stop-waiting-for-permission-to-become-who-you-already-are",
     title: "Stop Waiting for Permission to Become Who You Already Are",
     date: "2024-10-04",
