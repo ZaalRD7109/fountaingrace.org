@@ -20,6 +20,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/the-one-conversation-that-stops-relationship-arguments-before-they-start`, lastModified: new Date('2024-10-13'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/how-to-know-what-to-do-when-everything-feels-confusing`, lastModified: new Date('2024-11-03'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/the-cost-of-sitting-on-the-sidelines`, lastModified: new Date('2025-02-15'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it`, lastModified: new Date('2024-12-15'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it`, lastModified: new Date('2025-01-12'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/when-life-deliberately-gets-worse-before-it-works-out`, lastModified: new Date('2025-03-01'), changeFrequency: 'monthly', priority: 0.6 },

@@ -22,6 +22,30 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "the-one-conversation-that-stops-relationship-arguments-before-they-start",
+    title: "The One Conversation That Stops Relationship Arguments Before They Start",
+    date: "2024-10-13",
+    dateDisplay: "13 October 2024",
+    intro:
+      "You're probably fighting about things neither of you actually said. The real problem is unstated expectations and unclear communication. One honest conversation changes everything.",
+  },
+  {
+    slug: "how-to-know-what-to-do-when-everything-feels-confusing",
+    title: "How to Know What to Do When Everything Feels Confusing",
+    date: "2024-11-03",
+    dateDisplay: "3 November 2024",
+    intro:
+      "You already have access to wisdom beyond your own panicked thoughts. Here's how to hear it and use it to guide your decisions when life gets messy.",
+  },
+  {
+    slug: "the-cost-of-sitting-on-the-sidelines",
+    title: "The Cost of Sitting on the Sidelines",
+    date: "2025-02-15",
+    dateDisplay: "15 February 2025",
+    intro:
+      "You already know what you need to do. The only thing stopping you is waiting for conditions to be just right-and that wait might cost you everything.",
+  },
+  {
     slug: "the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it",
     title: "The Person Nobody Checks On: How You're Losing Friends Without Knowing It",
     date: "2024-12-15",
