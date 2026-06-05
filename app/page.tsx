@@ -368,8 +368,8 @@ export default function HomePage() {
                 </p>
                 <p>
                   His ministry is grounded in practical teaching, personal responsibility, and
-                  equipping people to lead in their own lives. He is a husband and father. He is
-                  accessible - not behind an appointment wall.
+                  equipping people to lead in their own lives. He is a husband and father, and he
+                  stays personally involved with the people he leads.
                 </p>
                 <p>
                   Fountain of Grace International holds NPO registration 316-193, and the

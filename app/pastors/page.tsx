@@ -111,7 +111,7 @@ export default function PastorsPage() {
             The people who lead Fountain of Grace International.
           </h1>
           <p className="text-white text-base leading-relaxed mb-5">
-            Real people, living in Pretoria North, available to the people they lead. Not behind an appointment wall.
+            Real people, living in Pretoria North, available to the people they lead.
           </p>
           <Link href="/plan-your-visit" className="btn-primary text-sm">
             Come This Sunday
@@ -196,8 +196,7 @@ export default function PastorsPage() {
                   <Link href="/plan-your-visit" className="fgi-link">
                     Sunday services
                   </Link>{' '}
-                  every week at 09:00 and is available to his community directly - not behind an
-                  appointment wall.
+                  every week at 09:00 and stays personally involved with his community.
                 </p>
                 <p>
                   He is a husband and father, living in Pretoria North. You can reach him via
@@ -247,7 +246,7 @@ export default function PastorsPage() {
               },
               {
                 title: 'Available to people',
-                body: 'He is not behind an appointment system. If you need to talk, you can reach him directly via WhatsApp. That is not a slogan - it is how he operates.',
+                body: 'If you need to talk, you can reach him directly via WhatsApp, or book a time that suits you. That is not a slogan - it is how he operates.',
               },
               {
                 title: 'Accountability without guilt',

@@ -114,7 +114,7 @@ const values: Value[] = [
   },
   {
     title: 'Available leadership',
-    body: 'The pastors are not behind appointment systems. If you need to talk, you can reach them directly.',
+    body: 'The pastors stay available. If you need to talk, you can reach them directly.',
   },
 ]
 
@@ -211,8 +211,8 @@ export default function AboutPage() {
                 </p>
                 <p>
                   He is a husband and father, committed to building strong families, strong faith,
-                  and a lasting legacy. He lives in Pretoria North and is available directly - not
-                  behind an appointment wall. You can reach him via WhatsApp or through the{' '}
+                  and a lasting legacy. He lives in Pretoria North and stays personally available.
+                  You can reach him via WhatsApp or through the{' '}
                   <Link href="/contact" className="fgi-link">
                     contact form on this site
                   </Link>.
