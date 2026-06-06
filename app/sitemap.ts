@@ -20,6 +20,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/when-you-stop-hearing-the-voice-that-used-to-guide-every-decision`, lastModified: new Date('2026-05-10'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/why-the-easy-road-always-leads-to-the-wrong-place`, lastModified: new Date('2026-05-17'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/you-already-know-what-to-do-so-why-arent-you-doing-it`, lastModified: new Date('2026-03-01'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids`, lastModified: new Date('2025-06-15'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/your-life-falls-apart-under-pressure-because-of-whats-actually-inside-you`, lastModified: new Date('2026-01-18'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/everyone-around-you-is-pretending-heres-why-youre-alone`, lastModified: new Date('2026-05-24'), changeFrequency: 'monthly', priority: 0.6 },
