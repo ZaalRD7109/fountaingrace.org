@@ -10,6 +10,12 @@
 /church-pretoria-north / 301
 /sunday-services /plan-your-visit 301
 
+# Canonical consolidation - duplicate sermon pages removed 2026-06-06
+# (each old church-named slug superseded by the out-there retitled page for the same video)
+/sermons/right-action-principles-move-forward-faster-part2 /sermons/why-youre-busy-but-stuck-the-action-that-actually-works 301
+/sermons/right-action-principles-that-move-people-forward-faster /sermons/the-principle-that-activates-everything 301
+/sermons/prophetic-reset-hearing-seeing-speaking-heaven-john-10-27 /sermons/when-you-stop-hearing-the-voice-that-used-to-guide-every-decision 301
+
 # Core pages — .html → clean URL (single hop, no chains)
 /index.html /  301
 /about.html /about  301
@@ -102,7 +108,7 @@
 # YouTube sermon description links
 # Paste these exact URLs into the description of each YouTube video
 # GA4 will show you: source=youtube, content=<sermon-slug>, campaign=sermon_description
-/s/right-action /sermons/right-action-principles-that-move-people-forward-faster?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=right-action-principles  302
+/s/right-action /sermons/the-principle-that-activates-everything?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=right-action-principles  302
 /s/the-principles /sermons/the-principles-that-move-people-forward-faster?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=the-principles-move-forward  302
 /s/the-system /sermons/the-system-youre-praying-against-without-knowing-it?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=the-system-praying-against  302
 /s/what-if-someone-else /sermons/what-if-someone-else-finishes-what-was-meant-for-you?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=what-if-someone-else-finishes  302

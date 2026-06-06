@@ -334,14 +334,6 @@ const sermonPosts = [
       "Do you ever feel like you were born into the wrong story - comparing yourself to others, wishing you looked different, or trying to fit a mould someone else set for you? Pastor Ricardo Zaal tackles that pressure head-on in this message, showing that God did not clone you - He crafted you. From the Hebrew meaning of fearfully and wonderfully made to the intimate knowledge God had of you before birth, this sermon reminds you that your fingerprints, your quirks, and your calling are not accidents.",
   },
   {
-    slug: 'right-action-principles-move-forward-faster-part2',
-    title: "The Right Action Principle: What Moves You Forward Faster | James 2:17",
-    date: "2026-05-11",
-    dateDisplay: "11 May 2026",
-    intro:
-      "You have been to every interview, tried every option, and still nothing is moving. In this message, Pastor Ricardo Zaal explains that the problem is rarely a lack of effort - it is a lack of the right action, taken at the right time. This is Part 2 of a practical, Bible-based series on the principles that move people forward faster in every area of life.",
-  },
-  {
     slug: 'god-will-finish-what-he-started-in-you-battle',
     title: "When Everything Fights Against What You Were Meant to Build",
     date: "2025-11-09",
@@ -356,14 +348,6 @@ const sermonPosts = [
     dateDisplay: "14 September 2025",
     intro:
       "Many people find it hard to believe that God would actually speak to them personally - that kind of closeness can feel like it belongs only to pastors or Bible heroes. In this message, Pastor Ricardo Zaal of Fountain of Grace International in Pretoria North confronts that doubt head-on and opens up the possibility of a real, living encounter with God. If you have ever sat in church wondering whether God's voice is something you could ever truly hear, this sermon is for you.",
-  },
-  {
-    slug: 'prophetic-reset-hearing-seeing-speaking-heaven-john-10-27',
-    title: "When You Stop Hearing the Voice That Used to Guide Every Decision",
-    date: "2025-10-12",
-    dateDisplay: "12 October 2025",
-    intro:
-      "Have you ever felt like God is speaking but you cannot quite pick up what He is saying? This sermon kicks off a 4-week Prophetic Reset series designed to help ordinary believers - not just special prophets - tune back into the voice of God. Pastor Ricardo Zaal unpacks why hearing God is your inheritance, how He speaks through scripture, His Spirit and creation, and what simple disciplines will open your ears again.",
   },
   {
     slug: 'why-your-biggest-battle-follows-your-best-decision',
@@ -476,14 +460,6 @@ const sermonPosts = [
     dateDisplay: '4 January 2026',
     intro:
       'A prophetic word only activates when faith meets the right action step. Most regrets are not about what you did wrong - they are about what you never did at all. The foundation was laid. Nobody ever added the bricks.',
-  },
-  {
-    slug: 'right-action-principles-that-move-people-forward-faster',
-    title: 'Part 2: Right Action - The Principles That Move People Forward Faster',
-    date: '2026-03-15',
-    dateDisplay: '15 March 2026',
-    intro:
-      'Knowing the principles is not the same as applying them. Part 2 asks the harder question: why do you still know, but not act? What separates the person who plans from the person who moves?',
   },
   {
     slug: 'the-principles-that-move-people-forward-faster',
