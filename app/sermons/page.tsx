@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "stop-wasting-energy-on-people-who-wont-listen",
+    title: "Stop Wasting Energy on People Who Won't Listen",
+    date: "2026-06-07",
+    dateDisplay: "7 June 2026",
+    intro:
+      "You're exhausted from defending yourself to people who have already decided who you are. This is the trap-and how to escape it.",
+  },
+  {
     slug: "the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids",
     title: "The Pain You Inherited From Your Father Is Quietly Breaking Your Kids",
     date: "2025-06-15",
