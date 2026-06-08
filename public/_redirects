@@ -21,7 +21,6 @@
 /about.html /about  301
 /contact.html /contact  301
 /contact-success.html /contact  301
-/programs.html /programs  301
 /plan-your-visit.html /plan-your-visit  301
 /what-to-expect.html /what-to-expect  301
 /sermons.html /sermons  301
@@ -38,6 +37,11 @@
 # Get involved → Community Impact
 /get-involved.html /community-impact  301
 /get-involved /community-impact  301
+
+# Programs → Community Impact (programs merged into community-impact 2026-05-01).
+# Static export cannot 301 from a page, so the redirect lives here, not in app/programs.
+/programs /community-impact  301
+/programs.html /community-impact  301
 
 # Legal
 /privacy-policy.html /privacy-policy  301

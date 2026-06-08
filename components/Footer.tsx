@@ -79,7 +79,7 @@ export default function Footer() {
                 { href: '/community-impact', label: 'Community Impact' },
                 { href: '/stories', label: 'Stories' },
                 { href: '/volunteer', label: 'Volunteer' },
-                { href: '/programs', label: 'Programs' },
+                { href: '/community-impact', label: 'Programs' },
                 { href: '/prayer', label: 'Prayer Request' },
                 { href: '/donate', label: 'Donate' },
               ].map((link) => (

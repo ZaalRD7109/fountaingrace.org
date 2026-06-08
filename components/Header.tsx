@@ -107,7 +107,7 @@ export default function Header() {
               <Link href="/community-impact" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Community Impact</Link>
               <Link href="/volunteer" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Volunteer</Link>
               <Link href="/stories" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Stories</Link>
-              <Link href="/programs" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Programs</Link>
+              <Link href="/community-impact" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Programs</Link>
             </div>
 
             {/* Connect section */}
