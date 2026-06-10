@@ -159,7 +159,7 @@ export default function SermonPage() {
               There is a version of faith that performs in public and collapses in private. Bible in hand on Sunday. But at home, the same anger, the same anxiety, the same instability that has been there for years. The people watching - your children, your family - are not convinced by the Sunday version. They are watching the Tuesday and Wednesday version.
             </p>
             <p className="text-[#555] leading-relaxed mb-4">
-              Jesus asked in Matthew 7:26–27 about the man who heard His words and did not do them - and when the storm came, the house fell. The collapse was &quot;great.&quot; The foundation was wrong. The issue was not the storm. It was what the house was built on.
+              Jesus asked in Matthew 7:26-27 about the man who heard His words and did not do them - and when the storm came, the house fell. The collapse was &quot;great.&quot; The foundation was wrong. The issue was not the storm. It was what the house was built on.
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
@@ -179,7 +179,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}
-              - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
+ - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
             </p>
           </div>
         </section>

@@ -50,7 +50,7 @@ const timeline = [
     title: 'Arrival',
     color: 'bg-[#FFD600]',
     items: [
-      'Arrive 10–15 minutes before 09:00. If you are unsure about parking, WhatsApp us before you come and we will send you exact directions.',
+      'Arrive 10-15 minutes before 09:00. If you are unsure about parking, WhatsApp us before you come and we will send you exact directions.',
       "Someone is stationed at the door. They are expecting first-time visitors. When you arrive, they will greet you - no script, no name badge forced on you.",
       'You choose where you sit. There is no special visitor section. Sit wherever you are comfortable.',
       'You will not be handed a stack of materials and left to figure things out. If you have a question, the person at the door will help you.',

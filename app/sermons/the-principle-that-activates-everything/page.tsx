@@ -109,19 +109,19 @@ const principles = [
   {
     n: 2,
     title: 'Right Action Delayed Still Destroys Opportunity',
-    scripture: 'Proverbs 6:6–9',
+    scripture: 'Proverbs 6:6-9',
     body: '"Go to the ant, thou sluggard; consider her ways, and be wise." The ant gathers in summer. If she sleeps through summer and waits for winter, she starves. The right action at the wrong time is still the wrong action. Opportunities have windows. When the interview is at 10, arriving at 11 means the next candidate already has the position.',
   },
   {
     n: 3,
     title: 'Right Obedience in the Right Place',
-    scripture: 'Genesis 12:1–4',
+    scripture: 'Genesis 12:1-4',
     body: 'God told Abraham to leave his country, his family, and his father\'s house - and go to a land He would show him. God was still speaking when Abraham made his decision. He did not negotiate. He did not ask for more information. "So Abram departed, as the LORD had spoken unto him." Obedience to the call - even before you know all the details - is the condition for the promise.',
   },
   {
     n: 4,
     title: 'The Harvest Belongs to the Workers',
-    scripture: 'Matthew 9:37–38',
+    scripture: 'Matthew 9:37-38',
     body: '"The harvest truly is plenteous, but the labourers are few." The harvest is not the problem. The harvest has always been there. The problem is workers who want the harvest without working the field. You cannot expect a church to pray for you in your sickness if you have not been in that church for ten years. The sowing and the reaping are connected.',
   },
   {
@@ -133,7 +133,7 @@ const principles = [
   {
     n: 6,
     title: 'Immediate Right Action Multiplies Impact',
-    scripture: 'Luke 5:4–6',
+    scripture: 'Luke 5:4-6',
     body: 'When Jesus told Simon to let down the nets, Simon did not plan it or schedule it. He did it immediately - and the catch broke the nets. Delayed right action reduces impact. When God says lower the net, the time to act is now. The immediacy of obedience is what triggers the multiplication.',
   },
 ]
@@ -226,7 +226,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}
-              - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
+ - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
             </p>
           </div>
         </section>

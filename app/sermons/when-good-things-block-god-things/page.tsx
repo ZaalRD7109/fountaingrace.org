@@ -145,7 +145,7 @@ export default function SermonPage() {
 
             <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Martha Pattern: Good Intentions, Wrong Moment</h2>
             <p className="text-[#555] leading-relaxed mb-4">
-              Luke 10:38–42 describes two sisters in the same house when Jesus was present. Martha was serving - cooking, preparing, managing. Her intentions were good. She was doing something that would normally be commendable. Mary sat at Jesus&apos; feet and listened.
+              Luke 10:38-42 describes two sisters in the same house when Jesus was present. Martha was serving - cooking, preparing, managing. Her intentions were good. She was doing something that would normally be commendable. Mary sat at Jesus&apos; feet and listened.
             </p>
             <p className="text-[#555] leading-relaxed mb-4">
               Martha grew frustrated. She even appealed to Jesus: &quot;Lord, dost thou not care that my sister hath left me to serve alone?&quot; And Jesus answered: &quot;Martha, Martha, thou art careful and troubled about many things: but one thing is needful: and Mary hath chosen that good part, which shall not be taken away from her.&quot;
@@ -179,7 +179,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}
-              - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
+ - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
             </p>
           </div>
         </section>

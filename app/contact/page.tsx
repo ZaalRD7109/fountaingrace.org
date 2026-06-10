@@ -125,7 +125,7 @@ export default function ContactPage() {
               <h2 className="text-white font-bold text-lg mb-3">Service Times</h2>
               <p className="text-white text-sm">Sunday: 09:00</p>
               <p className="text-white text-sm mt-1">
-                Arrive 10–15 minutes early
+                Arrive 10-15 minutes early
               </p>
               <div className="mt-4">
                 <Link

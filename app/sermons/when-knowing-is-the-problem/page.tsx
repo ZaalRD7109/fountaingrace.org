@@ -145,7 +145,7 @@ export default function SermonPage() {
 
             <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Mirror That Nobody Acts On</h2>
             <p className="text-[#555] leading-relaxed mb-4">
-              James 1:23–24 - &quot;For if any be a hearer of the word, and not a doer, he is like unto a man beholding his natural face in a glass: for he beholdeth himself, and goeth his way, and straightway forgetteth what manner of man he was.&quot;
+              James 1:23-24 - &quot;For if any be a hearer of the word, and not a doer, he is like unto a man beholding his natural face in a glass: for he beholdeth himself, and goeth his way, and straightway forgetteth what manner of man he was.&quot;
             </p>
             <p className="text-[#555] leading-relaxed mb-4">
               The illustration is precise. You look in the mirror. You see exactly what is there - a clear and accurate picture. You walk away. Within moments, the picture is gone. The mirror was useful while you were looking at it. The moment you moved, the usefulness ended because no action followed the seeing.
@@ -182,7 +182,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}
-              - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
+ - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
             </p>
           </div>
         </section>

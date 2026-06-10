@@ -2,15 +2,15 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Releasing His Presence — From Container to Conduit | Luke 24:32 | Fountain of Grace International',
+  title: 'Releasing His Presence - From Container to Conduit | Luke 24:32 | Fountain of Grace International',
   description:
-    'You sense God\'s presence in church — but it stays there. Matthew 5:15 says a lamp hidden under a basket gives no light. This message shows how to move from containing the presence to releasing it. Pretoria North.',
+    'You sense God\'s presence in church - but it stays there. Matthew 5:15 says a lamp hidden under a basket gives no light. This message shows how to move from containing the presence to releasing it. Pretoria North.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/sermons/releasing-his-presence',
   },
   openGraph: {
-    title: 'Releasing His Presence — From Container to Conduit',
+    title: 'Releasing His Presence - From Container to Conduit',
     description:
       'You already have the power inside you. The problem is the switch is off. This message is about moving from containing God\'s presence to releasing it into every area of your life. Pretoria North.',
     type: 'article',
@@ -109,7 +109,7 @@ export default function SermonPage() {
               Releasing His Presence: From Container to Conduit
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
-              You sense the presence of God in church. Your heart burns. Something moves in you. And then you go home — and your family is ice cold. Your workplace is unchanged. The fire that was in the building did not travel with you. This message is about why that happens and what changes when you move from containing the presence to releasing it.
+              You sense the presence of God in church. Your heart burns. Something moves in you. And then you go home - and your family is ice cold. Your workplace is unchanged. The fire that was in the building did not travel with you. This message is about why that happens and what changes when you move from containing the presence to releasing it.
             </p>
             <p className="text-white/60 text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 29 June 2025
@@ -139,29 +139,29 @@ export default function SermonPage() {
               Imagine someone cooking a meal that smells incredible. The whole neighbourhood can smell it. People passing by stop and wonder what is on the stove. But when it is time to eat, the cook sits alone with the pot. Full. Surrounded by food. And the people who could have been fed walk past hungry.
             </p>
             <p className="text-[#555] leading-relaxed mb-8">
-              This is the picture of a believer who carries the presence of God but does not release it. The presence is real. The anointing is genuine. The fire that burns in church is not manufactured. But it stays in the building. It stays in the meeting. It does not travel into the home, the workplace, or the neighbourhood — because the believer has become a container rather than a conduit.
+              This is the picture of a believer who carries the presence of God but does not release it. The presence is real. The anointing is genuine. The fire that burns in church is not manufactured. But it stays in the building. It stays in the meeting. It does not travel into the home, the workplace, or the neighbourhood - because the believer has become a container rather than a conduit.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Luke 24:32 — The Burning That Changes Everything</h2>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Luke 24:32 - The Burning That Changes Everything</h2>
             <p className="text-[#555] leading-relaxed mb-4">
-              Luke 24:32 — &quot;And they said one to another, Did not our heart burn within us, while he talked with us by the way, and while he opened to us the scriptures?&quot;
+              Luke 24:32 - &quot;And they said one to another, Did not our heart burn within us, while he talked with us by the way, and while he opened to us the scriptures?&quot;
             </p>
             <p className="text-[#555] leading-relaxed mb-4">
-              The two disciples on the road to Emmaus did not recognise Jesus at first. But something happened while He walked with them. Their hearts burned. That burning was not intellectual — it was the unmistakable mark of the presence. When Jesus was revealed to them and left, they did not stay where they were. They got up immediately and went back to Jerusalem to tell the others.
+              The two disciples on the road to Emmaus did not recognise Jesus at first. But something happened while He walked with them. Their hearts burned. That burning was not intellectual - it was the unmistakable mark of the presence. When Jesus was revealed to them and left, they did not stay where they were. They got up immediately and went back to Jerusalem to tell the others.
             </p>
             <p className="text-[#555] leading-relaxed mb-8">
-              The burning was meant to be released. It produced movement. It produced testimony. It changed the room they walked into. The presence of God is not designed to terminate at the person who received it — it is designed to flow through them into whatever environment they enter.
+              The burning was meant to be released. It produced movement. It produced testimony. It changed the room they walked into. The presence of God is not designed to terminate at the person who received it - it is designed to flow through them into whatever environment they enter.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Matthew 5:15 — The Lamp Under the Basket</h2>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Matthew 5:15 - The Lamp Under the Basket</h2>
             <p className="text-[#555] leading-relaxed mb-4">
-              Matthew 5:15 — &quot;Neither do men light a candle, and put it under a bushel, but on a candlestick; and it giveth light unto all that are in the house.&quot;
+              Matthew 5:15 - &quot;Neither do men light a candle, and put it under a bushel, but on a candlestick; and it giveth light unto all that are in the house.&quot;
             </p>
             <p className="text-[#555] leading-relaxed mb-4">
-              A lamp hidden under a basket is not a broken lamp. The flame is real. The light is genuine. But nothing around it benefits from it because it has been covered. The problem is not the power — it is the position.
+              A lamp hidden under a basket is not a broken lamp. The flame is real. The light is genuine. But nothing around it benefits from it because it has been covered. The problem is not the power - it is the position.
             </p>
             <p className="text-[#555] leading-relaxed mb-8">
-              Many believers carry the presence of God the way a lamp sits under a basket. Church was on fire — but the family at home is still in darkness. Something moved in the meeting — but the workplace is unchanged. The presence is real. But it has not been released. It has been contained — either through passivity, through not knowing that it is meant to flow outward, or through not making the deliberate choice to let it.
+              Many believers carry the presence of God the way a lamp sits under a basket. Church was on fire - but the family at home is still in darkness. Something moved in the meeting - but the workplace is unchanged. The presence is real. But it has not been released. It has been contained - either through passivity, through not knowing that it is meant to flow outward, or through not making the deliberate choice to let it.
             </p>
 
             <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Electricity That Only Flows When You Flip the Switch</h2>
@@ -169,14 +169,14 @@ export default function SermonPage() {
               Electricity is in the wall before you flip the switch. The power is already there. The connection is already made. But the room stays dark until you make the deliberate choice to activate the circuit.
             </p>
             <p className="text-[#555] leading-relaxed mb-8">
-              You are not waiting for God to give you something before you can release the presence. The presence is already in you — 1 Corinthians 6:19 makes that clear. The switch is the deliberate, daily choice to let what is in you flow into what is around you. Into conversations. Into how you respond to people. Into how you walk into a room. Into how you pray with someone who is struggling. The power is there. The question is whether the switch is on.
+              You are not waiting for God to give you something before you can release the presence. The presence is already in you - 1 Corinthians 6:19 makes that clear. The switch is the deliberate, daily choice to let what is in you flow into what is around you. Into conversations. Into how you respond to people. Into how you walk into a room. Into how you pray with someone who is struggling. The power is there. The question is whether the switch is on.
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
               <p className="text-[#2a9df4] font-semibold text-lg italic">
-                &quot;The presence you carry in church is the same presence your family needs at home. Do not be a container. Be a conduit. A conduit does not keep what passes through it — it moves it to where it is needed most.&quot;
+                &quot;The presence you carry in church is the same presence your family needs at home. Do not be a container. Be a conduit. A conduit does not keep what passes through it - it moves it to where it is needed most.&quot;
               </p>
-              <cite className="text-[#555] text-sm not-italic mt-2 block">— Pastor Ricardo Zaal</cite>
+              <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
 
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Moving From Container to Conduit</h2>
@@ -191,7 +191,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
                 come on a Sunday
               </Link>{' '}
-              — these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
+ - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
             </p>
           </div>
         </section>

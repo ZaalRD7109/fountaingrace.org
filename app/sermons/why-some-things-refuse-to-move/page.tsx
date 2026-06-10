@@ -145,7 +145,7 @@ export default function SermonPage() {
 
             <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Philippians 2: The Name Above Every Name</h2>
             <p className="text-[#555] leading-relaxed mb-4">
-              Philippians 2:9–10 - &quot;God also hath highly exalted him, and given him a name which is above every name: that at the name of Jesus every knee should bow, of things in heaven, and things in earth, and things under the earth.&quot;
+              Philippians 2:9-10 - &quot;God also hath highly exalted him, and given him a name which is above every name: that at the name of Jesus every knee should bow, of things in heaven, and things in earth, and things under the earth.&quot;
             </p>
             <p className="text-[#555] leading-relaxed mb-8">
               This is courtroom language. Every authority structure - in heaven, on earth, and under the earth - is required to bow. When a judge speaks in a courtroom, the authority is not in the volume of his voice. It is in the position he holds. The name of Jesus carries jurisdiction in every realm. The question is not whether the name has power. The question is whether the one using it has the standing to represent it.
@@ -153,7 +153,7 @@ export default function SermonPage() {
 
             <h2 className="text-xl font-bold text-[#2a9df4] mb-3">A Name Without Relationship Becomes Noise</h2>
             <p className="text-[#555] leading-relaxed mb-4">
-              Matthew 7:22–23 records one of the most sobering statements in the Gospels. Jesus says many will come saying &quot;Lord, Lord, have we not prophesied in thy name? And in thy name have cast out devils?&quot; And He will answer: &quot;I never knew you: depart from me.&quot;
+              Matthew 7:22-23 records one of the most sobering statements in the Gospels. Jesus says many will come saying &quot;Lord, Lord, have we not prophesied in thy name? And in thy name have cast out devils?&quot; And He will answer: &quot;I never knew you: depart from me.&quot;
             </p>
             <p className="text-[#555] leading-relaxed mb-4">
               The name was used. The works were done. But the relationship was absent. The name without the relationship becomes noise in the spiritual realm. Luke 6:46 asks: &quot;Why call ye me Lord, Lord, and do not the things which I say?&quot; Using the name of the one you do not obey is a contradiction that nullifies the authority.
@@ -181,7 +181,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}
-              - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
+ - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
             </p>
           </div>
         </section>
@@ -192,7 +192,7 @@ export default function SermonPage() {
             <div className="space-y-6">
               <div>
                 <h3 className="font-semibold text-[#1a1a1a] mb-2">Why doesn&apos;t commanding in the name of Jesus always produce results?</h3>
-                <p className="text-[#555] leading-relaxed text-sm">Matthew 7:22–23 shows people who used the name of Jesus in works and Jesus said &quot;I never knew you.&quot; The name without relationship is noise. Luke 6:46 identifies the contradiction: calling Him Lord while not doing what He says removes the authority from the claim.</p>
+                <p className="text-[#555] leading-relaxed text-sm">Matthew 7:22-23 shows people who used the name of Jesus in works and Jesus said &quot;I never knew you.&quot; The name without relationship is noise. Luke 6:46 identifies the contradiction: calling Him Lord while not doing what He says removes the authority from the claim.</p>
               </div>
               <div>
                 <h3 className="font-semibold text-[#1a1a1a] mb-2">How are the name of Jesus and the Word of God connected?</h3>

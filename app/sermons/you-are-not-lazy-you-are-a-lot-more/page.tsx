@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You Are Not Lazy — You Are a Lot More | Proverbs 6:6-8 | Fountain of Grace International",
+  title: "You Are Not Lazy - You Are a Lot More | Proverbs 6:6-8 | Fountain of Grace International",
   description:
     "You are not lazy. You are disconnected. The ant in Proverbs 6 works without a commander because it knows its purpose. This message challenges you to stop calling yourself what God never called you. Pretoria North.",
   robots: 'index, follow',
@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.fountaingrace.org/sermons/you-are-not-lazy-you-are-a-lot-more',
   },
   openGraph: {
-    title: "You Are Not Lazy — You Are a Lot More | Proverbs 6:6-8",
+    title: "You Are Not Lazy - You Are a Lot More | Proverbs 6:6-8",
     description:
       "When you lift up Jesus, He draws people to Himself. When you lift up your problems, they grow. This message stops the wrong confession and starts the right one. Pretoria North.",
     type: 'article',
@@ -106,10 +106,10 @@ export default function SermonPage() {
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
-              You Are Not Lazy — You Are a Lot More
+              You Are Not Lazy - You Are a Lot More
             </h1>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
-              Somewhere along the way, you accepted a label. Lazy. Incapable. Behind. And now that label has become a confession — something you say about yourself without even thinking. This message challenges that label at its root. You are not what your worst season called you. You are what God says you are.
+              Somewhere along the way, you accepted a label. Lazy. Incapable. Behind. And now that label has become a confession - something you say about yourself without even thinking. This message challenges that label at its root. You are not what your worst season called you. You are what God says you are.
             </p>
             <p className="text-white/60 text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 28 January 2024
@@ -136,45 +136,45 @@ export default function SermonPage() {
 
             <h2 className="text-xl font-bold text-[#2a9df4] mb-3">What You Glorify Is What You Invite</h2>
             <p className="text-[#555] leading-relaxed mb-4">
-              Whatever you talk about most, you are lifting up. And what you lift up is what draws. Jesus said it plainly — &quot;And I, if I be lifted up from the earth, will draw all men unto me&quot; (John 12:32). When you lift up Jesus, He draws people to Himself. When you lift up your problems, they grow. When you lift up Satan by constantly talking about what he is doing in your life, you are handing him attention and authority he was never meant to have.
+              Whatever you talk about most, you are lifting up. And what you lift up is what draws. Jesus said it plainly - &quot;And I, if I be lifted up from the earth, will draw all men unto me&quot; (John 12:32). When you lift up Jesus, He draws people to Himself. When you lift up your problems, they grow. When you lift up Satan by constantly talking about what he is doing in your life, you are handing him attention and authority he was never meant to have.
             </p>
             <p className="text-[#555] leading-relaxed mb-8">
-              Every time you open your mouth and say &quot;life is so hard,&quot; &quot;things never work out for me,&quot; &quot;I am so far behind&quot; — you are glorifying the problem. And Psalm 22:3 says God inhabits the praises of His people. Praise is not just the songs before the sermon. Praise is every declaration that lifts God above your circumstances. When you stop glorifying the struggle and start glorifying God, the atmosphere shifts.
+              Every time you open your mouth and say &quot;life is so hard,&quot; &quot;things never work out for me,&quot; &quot;I am so far behind&quot; - you are glorifying the problem. And Psalm 22:3 says God inhabits the praises of His people. Praise is not just the songs before the sermon. Praise is every declaration that lifts God above your circumstances. When you stop glorifying the struggle and start glorifying God, the atmosphere shifts.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Proverbs 6:6-8 — The Ant That Needs No Commander</h2>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Proverbs 6:6-8 - The Ant That Needs No Commander</h2>
             <p className="text-[#555] leading-relaxed mb-4">
-              Proverbs 6:6-8 — &quot;Go to the ant, thou sluggard; consider her ways, and be wise: Which having no guide, overseer, or ruler, provideth her meat in the summer, and gathereth her food in the harvest.&quot;
+              Proverbs 6:6-8 - &quot;Go to the ant, thou sluggard; consider her ways, and be wise: Which having no guide, overseer, or ruler, provideth her meat in the summer, and gathereth her food in the harvest.&quot;
             </p>
             <p className="text-[#555] leading-relaxed mb-4">
-              The ant does not need a manager standing over it to motivate it to work. It does not need a supervisor to confirm what it already knows it was created to do. It operates from internal purpose — and the result is consistent, diligent, well-timed preparation.
+              The ant does not need a manager standing over it to motivate it to work. It does not need a supervisor to confirm what it already knows it was created to do. It operates from internal purpose - and the result is consistent, diligent, well-timed preparation.
             </p>
             <p className="text-[#555] leading-relaxed mb-8">
               God is not pointing to the ant to shame you. He is showing you a picture of what you are already capable of. You are not lazy. You are a person who has been told they are lazy often enough that they started agreeing with it. But God&apos;s Word says something different. It says you have been given a spirit of power, of love, and of a sound mind (2 Timothy 1:7). The ant does not question whether it can do what it was made to do. Neither should you.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Joel 3:10 — Let the Weak Say I Am Strong</h2>
+            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Joel 3:10 - Let the Weak Say I Am Strong</h2>
             <p className="text-[#555] leading-relaxed mb-4">
-              Joel 3:10 — &quot;Beat your plowshares into swords, and your pruninghooks into spears: let the weak say, I am strong.&quot;
+              Joel 3:10 - &quot;Beat your plowshares into swords, and your pruninghooks into spears: let the weak say, I am strong.&quot;
             </p>
             <p className="text-[#555] leading-relaxed mb-4">
-              God is not asking you to pretend you are not struggling. He is asking you to choose whose report you will believe. The weak person in Joel 3 is genuinely weak — they are not being asked to manufacture a feeling of strength. They are being asked to declare what God says rather than what the situation says. There is a difference between ignoring reality and refusing to let reality have the last word.
+              God is not asking you to pretend you are not struggling. He is asking you to choose whose report you will believe. The weak person in Joel 3 is genuinely weak - they are not being asked to manufacture a feeling of strength. They are being asked to declare what God says rather than what the situation says. There is a difference between ignoring reality and refusing to let reality have the last word.
             </p>
             <p className="text-[#555] leading-relaxed mb-8">
-              Romans 10:17 — faith comes by hearing. When you hear yourself say &quot;I am strong in the Lord,&quot; faith grows. When you hear yourself say &quot;I am a failure,&quot; defeat grows. What you are building with your words right now is the environment you will live in tomorrow. Joel 3:10 is an invitation to build a different one.
+              Romans 10:17 - faith comes by hearing. When you hear yourself say &quot;I am strong in the Lord,&quot; faith grows. When you hear yourself say &quot;I am a failure,&quot; defeat grows. What you are building with your words right now is the environment you will live in tomorrow. Joel 3:10 is an invitation to build a different one.
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
               <p className="text-[#2a9df4] font-semibold text-lg italic">
                 &quot;Stop confessing who your worst week said you were. Start confessing who God says you are. You are not lazy. You are not behind. You are not forgotten. You are chosen, capable, and purposefully placed. Say it until you believe it.&quot;
               </p>
-              <cite className="text-[#555] text-sm not-italic mt-2 block">— Pastor Ricardo Zaal</cite>
+              <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
 
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Three Things to Change Starting Today</h2>
             <ol className="list-decimal list-inside space-y-3 text-[#555] leading-relaxed mb-6">
-              <li><strong>Stop glorifying the problem.</strong> Every time you catch yourself talking about how hard life is, how impossible things feel, how behind you are — pause. That is a declaration, and it is building something. Choose to lift up Jesus instead of the struggle.</li>
-              <li><strong>Let the weak say I am strong.</strong> Find a scripture that speaks directly to the weakness you keep confessing. Say it out loud, every day. Not because you already feel it — but because faith comes by hearing, and you need to hear it from your own mouth.</li>
+              <li><strong>Stop glorifying the problem.</strong> Every time you catch yourself talking about how hard life is, how impossible things feel, how behind you are - pause. That is a declaration, and it is building something. Choose to lift up Jesus instead of the struggle.</li>
+              <li><strong>Let the weak say I am strong.</strong> Find a scripture that speaks directly to the weakness you keep confessing. Say it out loud, every day. Not because you already feel it - but because faith comes by hearing, and you need to hear it from your own mouth.</li>
               <li><strong>Operate from purpose, not pressure.</strong> The ant in Proverbs 6 does not need a supervisor. You have been given the Spirit of God, the Word of God, and a God-appointed purpose. You do not need someone standing over you to activate what is already inside you.</li>
             </ol>
 
@@ -183,7 +183,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
                 come on a Sunday
               </Link>{' '}
-              — these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
+ - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
             </p>
           </div>
         </section>

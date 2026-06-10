@@ -145,7 +145,7 @@ export default function SermonPage() {
 
             <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Battle Is in the Mind</h2>
             <p className="text-[#555] leading-relaxed mb-4">
-              2 Corinthians 10:4–5 - &quot;For the weapons of our warfare are not carnal, but mighty through God to the pulling down of strong holds; casting down imaginations, and every high thing that exalteth itself against the knowledge of God, and bringing into captivity every thought to the obedience of Christ.&quot;
+              2 Corinthians 10:4-5 - &quot;For the weapons of our warfare are not carnal, but mighty through God to the pulling down of strong holds; casting down imaginations, and every high thing that exalteth itself against the knowledge of God, and bringing into captivity every thought to the obedience of Christ.&quot;
             </p>
             <p className="text-[#555] leading-relaxed mb-4">
               Paul does not say cast down circumstances. He says cast down imaginations. The stronghold is not in your bank account or your situation. It is in the pattern of thought that runs unchecked in your mind every time a challenge appears. A stronghold is simply a thought pattern that has been in place so long it feels like reality.
@@ -181,7 +181,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}
-              - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
+ - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
             </p>
           </div>
         </section>

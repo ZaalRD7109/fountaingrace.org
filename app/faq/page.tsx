@@ -42,8 +42,8 @@ const faqs: FaqCategory[] = [
       },
       {
         q: 'What time are Sunday services?',
-        a: <>Every <Link href="/plan-your-visit" className="fgi-link">Sunday at 09:00</Link>. Arrive 10–15 minutes early to find a seat and meet someone before the service starts. Services last approximately 90 minutes. See the <Link href="/what-to-expect" className="fgi-link">full what to expect guide</Link>.</>,
-        aText: 'Every Sunday at 09:00. Arrive 10–15 minutes early to find a seat and meet someone before the service starts. Services last approximately 90 minutes.',
+        a: <>Every <Link href="/plan-your-visit" className="fgi-link">Sunday at 09:00</Link>. Arrive 10-15 minutes early to find a seat and meet someone before the service starts. Services last approximately 90 minutes. See the <Link href="/what-to-expect" className="fgi-link">full what to expect guide</Link>.</>,
+        aText: 'Every Sunday at 09:00. Arrive 10-15 minutes early to find a seat and meet someone before the service starts. Services last approximately 90 minutes.',
       },
       {
         q: 'Do I need to register before coming?',
