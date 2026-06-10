@@ -19,5 +19,17 @@ export async function sendEmail(
       reply_to: replyTo ?? 'info@fountaingrace.org',
     }),
   })
+  if (!res.ok) {
+    // Never fail silently: log the real Resend response so a broken send is visible
+    // in the edge-function logs (this is exactly the failure that hid for weeks -
+    // an unverified domain returned 403 while the caller ignored the result).
+    let body = ''
+    try {
+      body = await res.text()
+    } catch {
+      body = '(could not read body)'
+    }
+    console.error(`RESEND SEND FAILED status=${res.status} to=${to} subject="${subject}" body=${body}`)
+  }
   return res.ok
 }

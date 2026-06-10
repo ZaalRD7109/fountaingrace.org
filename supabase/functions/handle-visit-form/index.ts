@@ -4,6 +4,17 @@ import { verifyTurnstile } from '../_shared/turnstile.ts'
 import { sendEmail } from '../_shared/resend.ts'
 import { whatsappLink } from '../_shared/whatsapp.ts'
 
+// Format the visitor's chosen date as e.g. "Sunday, 21 June" (SAST-anchored so the day never shifts).
+function formatVisitDate(d: string): string {
+  try {
+    return new Date(`${d}T12:00:00+02:00`).toLocaleDateString('en-ZA', {
+      weekday: 'long', day: 'numeric', month: 'long', timeZone: 'Africa/Johannesburg',
+    })
+  } catch {
+    return d
+  }
+}
+
 Deno.serve(async (req) => {
   if (req.method === 'OPTIONS') {
     return new Response(null, { status: 200, headers: corsHeaders })
@@ -50,10 +61,11 @@ Deno.serve(async (req) => {
 
     const now = new Date().toLocaleString('en-ZA', { timeZone: 'Africa/Johannesburg' })
     const firstName = name.split(' ')[0]
+    const visitDay = formatVisitDate(plannedDate)
 
-    await sendEmail(
+    const visitorEmailOk = await sendEmail(
       email,
-      `We are ready for you - see you on Sunday, ${firstName}`,
+      `We are ready for you, ${firstName} - ${visitDay}`,
       `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;color:#333">
         <div style="background:#008080;padding:24px;text-align:center">
           <h1 style="color:#ffffff;margin:0;font-size:22px">Fountain of Grace International</h1>
@@ -61,8 +73,9 @@ Deno.serve(async (req) => {
         </div>
         <div style="padding:32px 24px">
           <p style="font-size:16px">Hi ${firstName},</p>
-          <p>You are on our radar for Sunday. Someone from Fountain of Grace will reach out to you before then to make sure you know exactly where to park, where to sit, and what to expect.</p>
-          <p style="font-weight:bold;color:#008080">Here is what Sunday looks like at FGI:</p>
+          <p>You are on our radar for <strong>${visitDay}</strong>, and we are genuinely glad you are coming.</p>
+          <p>Everything you need for your first visit is ready for you - where to park, what to wear, and what to expect are all answered on the page below. And if anything is on your mind before then, message us any time on WhatsApp on <a href="https://wa.me/27752592555" style="color:#008080">+27 75 259 2555</a>. It is our church's own number and we answer there - ask us anything.</p>
+          <p style="font-weight:bold;color:#008080">Here is what to expect at FGI:</p>
           <ul style="padding-left:20px;line-height:1.8">
             <li>Service starts at 09:00 - arrive 10-15 minutes early</li>
             <li>Casual dress - come exactly as you are</li>
@@ -72,7 +85,7 @@ Deno.serve(async (req) => {
           <div style="margin:24px 0">
             <a href="https://www.fountaingrace.org/what-to-expect" style="background:#008080;color:#fff;padding:12px 24px;text-decoration:none;border-radius:30px;font-size:14px;font-weight:bold;display:inline-block">What to Expect</a>
           </div>
-          <p>If something changes and you cannot make it on the day you planned, just reply to this email and let us know. There is no pressure - we are here whenever you are ready.</p>
+          <p>If something changes and you cannot make it on ${visitDay}, just reply to this email and let us know. There is no pressure - we are here whenever you are ready.</p>
           <p>In grace,<br><strong>Pastor Ricardo Zaal</strong><br>Fountain of Grace International</p>
           <p style="color:#555;font-size:13px;margin-top:32px;border-top:1px solid #eee;padding-top:16px">
             323 B Danie Theron Street, Pretoria North, Gauteng<br>
@@ -85,20 +98,20 @@ Deno.serve(async (req) => {
 
     const waLink = phone ? whatsappLink(phone, firstName) : `https://wa.me/?text=${encodeURIComponent(`Hi, reaching out regarding ${name} who filled in the Plan Your Visit form.`)}`
 
-    await sendEmail(
+    const staffEmailOk = await sendEmail(
       'info@fountaingrace.org',
-      `New visit planned: ${name} - ${plannedDate}`,
+      `New visit planned: ${name} - ${visitDay}`,
       `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;color:#333">
         <div style="background:#008080;padding:16px 24px">
           <h2 style="color:#fff;margin:0;font-size:18px">New Plan Your Visit Submission</h2>
         </div>
         <div style="padding:24px">
-          <p style="background:#e8f5e9;border:1px solid #4caf50;padding:10px 14px;border-radius:6px;color:#2e7d32;font-weight:bold">Action needed - reach out to this visitor before Sunday ${plannedDate}.</p>
+          <p style="background:#e8f5e9;border:1px solid #4caf50;padding:10px 14px;border-radius:6px;color:#2e7d32;font-weight:bold">New visitor coming on ${visitDay}. They have the website info and can reach us on WhatsApp - give them a warm welcome on the day.</p>
           <table style="width:100%;border-collapse:collapse;margin-top:12px">
             <tr><td style="padding:8px;font-weight:bold;width:140px">Name</td><td style="padding:8px">${name}</td></tr>
             <tr style="background:#f9f9f9"><td style="padding:8px;font-weight:bold">Email</td><td style="padding:8px"><a href="mailto:${email}" style="color:#008080">${email}</a></td></tr>
             <tr><td style="padding:8px;font-weight:bold">Phone</td><td style="padding:8px">${phone || 'Not provided'}</td></tr>
-            <tr style="background:#f9f9f9"><td style="padding:8px;font-weight:bold">Planned Sunday</td><td style="padding:8px"><strong>${plannedDate}</strong></td></tr>
+            <tr style="background:#f9f9f9"><td style="padding:8px;font-weight:bold">Planned visit</td><td style="padding:8px"><strong>${visitDay}</strong></td></tr>
             <tr><td style="padding:8px;font-weight:bold">Bringing Kids</td><td style="padding:8px">${bringingKids ? 'Yes' : 'No'}</td></tr>
             <tr style="background:#f9f9f9"><td style="padding:8px;font-weight:bold">Heard Via</td><td style="padding:8px">${heardVia || 'Not specified'}</td></tr>
             <tr><td style="padding:8px;font-weight:bold">Submitted</td><td style="padding:8px">${now}</td></tr>
@@ -112,7 +125,17 @@ Deno.serve(async (req) => {
       email
     )
 
-    return new Response(JSON.stringify({ success: true }), {
+    // A new visitor lead must never go unnoticed. If the staff notification email
+    // did not send (e.g. mail provider down), log it loudly AND flag the row so the
+    // server-side safety-net cron picks it up and alerts staff over Telegram.
+    if (!staffEmailOk || !visitorEmailOk) {
+      console.error(
+        `EMAIL DELIVERY PROBLEM for new visitor "${name}" <${email}>: ` +
+        `visitorEmailOk=${visitorEmailOk} staffEmailOk=${staffEmailOk}`
+      )
+    }
+
+    return new Response(JSON.stringify({ success: true, visitorEmailOk, staffEmailOk }), {
       status: 200,
       headers: { ...corsHeaders, 'Content-Type': 'application/json' },
     })

@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import Link from 'next/link'
 import TurnstileWidget from '@/components/TurnstileWidget'
 import { EDGE_BASE } from '@/lib/edgeBase'
-import { getNextSundayISO } from '@/lib/nextSunday'
+import { getUpcomingSundays } from '@/lib/nextSunday'
 import { useFormStartOnce } from '@/lib/tracking'
 
 export default function VisitForm() {
@@ -13,7 +13,8 @@ export default function VisitForm() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
-  const [plannedDate, setPlannedDate] = useState(getNextSundayISO())
+  const sundays = getUpcomingSundays(10)
+  const [plannedDate, setPlannedDate] = useState(sundays[0].iso)
   const [bringingKids, setBringingKids] = useState(false)
   const [heardVia, setHeardVia] = useState('')
   const [turnstileToken, setTurnstileToken] = useState('')
@@ -111,15 +112,19 @@ export default function VisitForm() {
         <label htmlFor="visit-date" className={labelClass}>
           Which Sunday are you planning to visit? <span className="text-red-500">*</span>
         </label>
-        <input
+        <select
           id="visit-date"
-          type="date"
           required
           value={plannedDate}
-          min={getNextSundayISO()}
           onChange={(e) => setPlannedDate(e.target.value)}
           className={inputClass}
-        />
+        >
+          {sundays.map((s) => (
+            <option key={s.iso} value={s.iso}>
+              {s.label}
+            </option>
+          ))}
+        </select>
       </div>
 
       <div>

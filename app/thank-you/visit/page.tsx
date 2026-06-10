@@ -4,7 +4,7 @@ import ThankYouTracker from '@/components/ThankYouTracker'
 
 export const metadata: Metadata = {
   title: 'We Are Ready For You | Fountain of Grace International',
-  description: 'Thank you for planning your visit. We will be in touch before Sunday.',
+  description: 'Thank you for planning your visit. Everything you need to know is ready for you.',
   robots: 'noindex, nofollow',
 }
 
@@ -22,8 +22,9 @@ export default function VisitThankYouPage() {
             We are ready for you on Sunday.
           </h1>
           <p className="text-white text-base leading-relaxed mb-8">
-            Someone from Fountain of Grace will reach out to you before Sunday to make sure
-            you know exactly where to go and what to expect.
+            Everything you need for your visit is ready for you on our website, and our
+            church WhatsApp is open if anything is on your mind before then. On the day,
+            someone will be at the door watching for you.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/what-to-expect" className="btn-primary">
@@ -52,7 +53,7 @@ export default function VisitThankYouPage() {
               },
               {
                 step: '02',
-                text: 'Someone from FGI will reach out before Sunday - by WhatsApp or email - to make sure you have everything you need.',
+                text: 'Everything you need for your first visit - where to park, what to wear, what to expect - is already answered on our website, so you are never left guessing.',
               },
               {
                 step: '03',

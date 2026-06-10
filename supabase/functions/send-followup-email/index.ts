@@ -213,7 +213,7 @@ Deno.serve(async (req) => {
 
   const { data: visitors, error } = await supabase
     .from('visitor_submissions')
-    .select('id, name, email, created_at, followup_stage')
+    .select('id, name, email, submitted_at, followup_stage')
     .eq('followup_done', false)
     .not('email', 'is', null)
 
@@ -226,7 +226,7 @@ Deno.serve(async (req) => {
   let skipped = 0
 
   for (const visitor of visitors ?? []) {
-    const days = daysSince(visitor.created_at)
+    const days = daysSince(visitor.submitted_at)
     const currentStage = visitor.followup_stage
     const nextStage = currentStage + 1
 
