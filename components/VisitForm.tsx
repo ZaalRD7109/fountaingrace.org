@@ -95,12 +95,13 @@ export default function VisitForm() {
 
       <div>
         <label htmlFor="visit-phone" className={labelClass}>
-          Phone / WhatsApp{' '}
-          <span className="text-[#595959] font-normal text-xs">(optional - so we can reach you before Sunday)</span>
+          Phone / WhatsApp <span className="text-red-500">*</span>{' '}
+          <span className="text-[#595959] font-normal text-xs">(so we can WhatsApp you everything for your visit)</span>
         </label>
         <input
           id="visit-phone"
           type="tel"
+          required
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           placeholder="+27 75 000 0000"
