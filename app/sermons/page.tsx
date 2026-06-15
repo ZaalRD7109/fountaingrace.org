@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "youre-not-beyond-repair-no-matter-what-youve-done",
+    title: "You're Not Beyond Repair No Matter What You've Done",
+    date: "2026-06-15",
+    dateDisplay: "15 June 2026",
+    intro:
+      "Feel like your mistakes define you? Struggling with shame and alienation? You can find hope and acceptance.",
+  },
+  {
     slug: "stop-wasting-energy-on-people-who-wont-listen",
     title: "Stop Wasting Energy on People Who Won't Listen",
     date: "2026-06-07",
