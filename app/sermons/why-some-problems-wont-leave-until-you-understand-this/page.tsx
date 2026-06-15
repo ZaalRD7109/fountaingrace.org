@@ -153,6 +153,7 @@ export default function SermonPage() {
 
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
+            <p className="text-[#1a1a1a] text-lg font-semibold leading-snug mb-4">{"Your guilt feels like a weight that won't lift."}</p>
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.youtube.com/embed/N1_YYrEGtto"
@@ -162,6 +163,17 @@ export default function SermonPage() {
                 allowFullScreen
               />
             </div>
+            <p className="text-[#555] text-sm mt-4 mb-2">Prefer reading? The full sermon notes are below.</p>
+            <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
+              <h2 className="text-lg font-bold text-[#1a1a1a] mb-3">This message is for you if:</h2>
+              <ul className="list-disc list-inside space-y-2 text-[#555]">
+                <li className="leading-relaxed">{"You feel burdened by past mistakes."}</li>
+                <li className="leading-relaxed">{"You think working harder will fix it."}</li>
+                <li className="leading-relaxed">{"You can't shake the sense of shame."}</li>
+                <li className="leading-relaxed">{"You feel okay isn't good enough yet."}</li>
+              </ul>
+            </div>
+
           </div>
         </section>
 
@@ -255,6 +267,16 @@ export default function SermonPage() {
           </div>
         </section>
       
+        <section className="bg-white py-12 px-4 sm:px-6">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-2">Send this to someone who needs it</h2>
+            <p className="text-[#555] mb-5">One message can reach someone you cannot. Pass it on.</p>
+            <a href={"https://wa.me/?text=I%20thought%20this%20message%20may%20encourage%20you%3A%20https%3A//www.fountaingrace.org/sermons/why-some-problems-wont-leave-until-you-understand-this%3Futm_source%3Dwhatsapp"} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold text-lg px-7 py-4 rounded-xl hover:bg-[#1ebe5d] transition-colors w-full sm:w-auto">
+              <svg viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.821 11.821 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.911zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              Share on WhatsApp
+            </a>
+          </div>
+        </section>
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
