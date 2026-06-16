@@ -22,6 +22,22 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "your-success-depends-on-what-you-do-before-it-arrives",
+    title: "Your Success Depends on What You Do Before It Arrives",
+    date: "2026-06-16",
+    dateDisplay: "16 June 2026",
+    intro:
+      "Most people wait passively for good things to happen. But breakthrough doesn't work that way. Your marriage, money, health, and purpose all follow the same rule: preparation before arrival.",
+  },
+  {
+    slug: "stop-waiting-to-be-perfect-before-you-matter",
+    title: "Stop Waiting to Be Perfect Before You Matter",
+    date: "2026-06-16",
+    dateDisplay: "16 June 2026",
+    intro:
+      "Most people underestimate what they can do and overestimate what they need before they start. This changes that.",
+  },
+  {
     slug: "youre-not-beyond-repair-no-matter-what-youve-done",
     title: "You're Not Beyond Repair No Matter What You've Done",
     date: "2026-06-15",
