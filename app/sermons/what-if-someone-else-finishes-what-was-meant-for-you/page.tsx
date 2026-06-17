@@ -213,7 +213,7 @@ export default function SermonPage() {
             </blockquote>
 
             <p className="text-[#555] leading-relaxed">
-              This message was preached at Fountain of Grace International in Pretoria North. If you are in Pretoria North and these questions are sitting with you,{' '}
+              This message was preached at Fountain of Grace International in Pretoria North. If you are in or around Pretoria or Johannesburg and these questions are sitting with you,{' '}
               <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}

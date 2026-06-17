@@ -36,7 +36,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-06-17T12:00:00+02:00",
+    "datePublished": "2022-12-11T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/youre-blocked-by-one-thing-and-dont-even-know-it"
   },
   {
@@ -99,7 +99,7 @@ const jsonLd = [
     "name": "You're Blocked by One Thing and Don't Even Know It",
     "description": "You're Blocked by One Thing and Don't Even Know It",
     "thumbnailUrl": "https://img.youtube.com/vi/kJPPw1KJWys/maxresdefault.jpg",
-    "uploadDate": "2026-06-17T12:00:00+02:00",
+    "uploadDate": "2022-12-11T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/kJPPw1KJWys",
     "url": "https://www.fountaingrace.org/sermons/youre-blocked-by-one-thing-and-dont-even-know-it",
     "author": {
@@ -189,7 +189,7 @@ export default function SermonPage() {
               <li><strong>{"Seeing Jesus Changes How You See Everything Else"}</strong> {" "}{"Perspective shift is everything. When your focus stays on what you're missing, you stay stuck. When you shift your eyes to who Jesus is and what He's done, you see your situation differently. You see His hand moving. You see opportunity where you only saw obstacle. You see a future instead of a dead end. This isn't positive thinking-it's actual sight. It's learning to look at your life the way Jesus looks at it."}</li>
               <li><strong>{"Immediate Obedience Opens Doors That Waiting Closes"}</strong> {" "}{"Jesus said 'make haste' and 'today.' Not because He's in a hurry, but because delay kills momentum and feeds doubt. The moment you know what you should do, do it. Apply for the job today. Ask for forgiveness today. Seek Jesus today. Tomorrow brings a thousand new reasons to delay. Today is the only day you're guaranteed, and it's the only day Jesus promised to abide with you in."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">

@@ -196,7 +196,7 @@ export default function SermonPage() {
               <li><strong>{"Preparation Matters More Than Permission"}</strong> {" "}{"You do not need approval from the people around you to prepare for what is coming. Joseph did not wait for his brothers to believe in his dream. He learned to interpret dreams. He mastered the skill. When the opportunity finally came, he was ready. Others can reject you. But they cannot prevent you from becoming the person the opportunity requires."}</li>
               <li><strong>{"Every Season Has a Presence"}</strong> {" "}{"Whether you are rising or falling, winning or losing, the same stability that worked in the good season still works in the hard season. This is not about positive thinking. It is about recognizing that something deeper than your circumstances has always been with you. Learning to sense and trust that presence is what allows you to stay steady when everything around you is shaking."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">

@@ -24,56 +24,56 @@ const sermonPosts = [
   {
     slug: "everyones-rejected-you-heres-what-that-really-means-about-your-worth",
     title: "Everyone's Rejected You. Here's What That Really Means About Your Worth",
-    date: "2026-06-17",
-    dateDisplay: "17 June 2026",
+    date: "2022-07-31",
+    dateDisplay: "31 July 2022",
     intro:
       "You've been thrown away, rejected, called a failure. But what others believe about you and what's actually true about you are two completely different things.",
   },
   {
     slug: "theyre-using-you-and-god-is-too",
     title: "They're Using You-And God Is Too",
-    date: "2026-06-17",
-    dateDisplay: "17 June 2026",
+    date: "2022-08-07",
+    dateDisplay: "7 August 2022",
     intro:
       "Your pain at work, in relationships, or at church might feel pointless. But what if the very people hurting you are unknowingly part of God's plan to position you for breakthrough?",
   },
   {
     slug: "youre-exhausted-because-youre-trying-to-do-everything-alone",
     title: "You're Exhausted Because You're Trying to Do Everything Alone",
-    date: "2026-06-17",
-    dateDisplay: "17 June 2026",
+    date: "2022-07-24",
+    dateDisplay: "24 July 2022",
     intro:
       "You keep pushing harder but falling further behind. There's a reason you can't seem to do it all on your own-and a way out.",
   },
   {
     slug: "you-feel-trapped-by-what-others-say-you-cant-do",
     title: "You Feel Trapped By What Others Say You Can't Do",
-    date: "2026-06-17",
-    dateDisplay: "17 June 2026",
+    date: "2022-11-27",
+    dateDisplay: "27 November 2022",
     intro:
       "You've heard it a thousand times: you can't start that business, you can't leave that job, you can't be worthy of love. This message shows you why those voices keep you captive and how to actually break free.",
   },
   {
     slug: "your-struggles-arent-wasting-your-life-theyre-building-you-for-something",
     title: "Your Struggles Aren't Wasting Your Life-They're Building You for Something",
-    date: "2026-06-17",
-    dateDisplay: "17 June 2026",
+    date: "2022-09-18",
+    dateDisplay: "18 September 2022",
     intro:
       "You've endured things that make no sense right now. But what if every painful season-the early parenthood, failed relationships, job rejections, financial crises-was actually divine preparation for the specific purpose you're meant to fulfill?",
   },
   {
     slug: "youre-about-to-quit-right-before-everything-changes",
     title: "You're About to Quit Right Before Everything Changes",
-    date: "2026-06-17",
-    dateDisplay: "17 June 2026",
+    date: "2022-07-10",
+    dateDisplay: "10 July 2022",
     intro:
       "You've been working all night with nothing to show for it. Your business stalls. Your relationship feels broken. Your health won't improve. The temptation to quit is overwhelming. But what if your breakthrough is closer than you think?",
   },
   {
     slug: "youre-blocked-by-one-thing-and-dont-even-know-it",
     title: "You're Blocked by One Thing and Don't Even Know It",
-    date: "2026-06-17",
-    dateDisplay: "17 June 2026",
+    date: "2022-12-11",
+    dateDisplay: "11 December 2022",
     intro:
       "You have limitations. Maybe you lack qualifications, money, the right looks, or you're ashamed of past mistakes. But these aren't your real obstacle. Your real problem is believing they mean you can't move forward.",
   },

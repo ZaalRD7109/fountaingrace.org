@@ -222,7 +222,7 @@ export default function SermonPage() {
             </ol>
 
             <p className="text-[#555] leading-relaxed">
-              If you are in Pretoria North,{' '}
+              If you are in or around Pretoria or Johannesburg,{' '}
               <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
                 come on a Sunday
               </Link>{' '}

@@ -195,7 +195,7 @@ export default function SermonPage() {
               <li><strong>{"You Must Plant to Harvest"}</strong> {" "}{"Scarcity thinking kills growth. The moment you start giving-a coin, time, help, whatever you have-you shift from taker to planter. That shift changes what grows in your life. Financial birth doesn't come to people who hoard their last dollar. It comes to people who understand their survival is connected to others' survival and who act on it even when they're afraid."}</li>
               <li><strong>{"You Change Toward What You Cannot Change"}</strong> {" "}{"You cannot force another person to transform. But you can transform your stance toward them. This shift inside you-from victim of their choices to someone at peace despite their behavior-is the real birth. It doesn't fix them. It frees you. And freedom, it turns out, is where real life begins."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">

@@ -252,7 +252,7 @@ export default function SermonPage() {
             </blockquote>
 
             <p className="text-[#555] leading-relaxed">
-              There is a Part 2 to this message that goes deeper on the action side. If you are in Pretoria North,{' '}
+              There is a Part 2 to this message that goes deeper on the action side. If you are in or around Pretoria or Johannesburg,{' '}
               <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}

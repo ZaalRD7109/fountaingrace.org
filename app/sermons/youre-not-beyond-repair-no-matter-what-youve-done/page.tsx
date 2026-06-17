@@ -188,7 +188,7 @@ export default function SermonPage() {
               <li><strong>{"Accept Imperfection"}</strong> {" "}{"Perfection isn't a prerequisite for love and acceptance. Reach out as you are for genuine healing."}</li>
               <li><strong>{"Jesus Moves Towards You"}</strong> {" "}{"No matter how isolated you feel, divine acceptance is as close as reaching out."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">

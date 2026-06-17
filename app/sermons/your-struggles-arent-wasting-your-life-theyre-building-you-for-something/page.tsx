@@ -36,7 +36,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-06-17T12:00:00+02:00",
+    "datePublished": "2022-09-18T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something"
   },
   {
@@ -99,7 +99,7 @@ const jsonLd = [
     "name": "Your Struggles Aren't Wasting Your Life-They're Building You for Something",
     "description": "Your Struggles Aren't Wasting Your Life-They're Building You for Something",
     "thumbnailUrl": "https://img.youtube.com/vi/y_IB0fwS2VU/maxresdefault.jpg",
-    "uploadDate": "2026-06-17T12:00:00+02:00",
+    "uploadDate": "2022-09-18T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/y_IB0fwS2VU",
     "url": "https://www.fountaingrace.org/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something",
     "author": {
@@ -193,7 +193,7 @@ export default function SermonPage() {
               <li><strong>{"Your Struggle Becomes Your Solution"}</strong> {" "}{"Every hardship you survive teaches you something someone else will desperately need. If you've lived through financial crisis, you'll help others navigate money. If you've survived relational betrayal, you'll recognize and protect real love. If you've felt rejected at work, you'll be the leader who sees and values overlooked people. God wastes nothing. He converts your pain into your assignment. Your worst season is the credential for your greatest impact."}</li>
               <li><strong>{"Appointed Time Requires Surrender Now"}</strong> {" "}{"You can't force your moment to come. You can only prepare for it by surrendering control and trusting that God is orchestrating what you can't see. When you stop trying to prove yourself and start acknowledging that your strength comes only from God, that's when the power of God steps in. Less of you, more of Him. That surrender is not weakness-it's the exact posture that positions you for the breakthrough."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">

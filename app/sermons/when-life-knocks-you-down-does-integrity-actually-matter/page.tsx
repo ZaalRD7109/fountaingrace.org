@@ -188,7 +188,7 @@ export default function SermonPage() {
               <li><strong>{"Service Without Scorekeeping"}</strong> {" "}{"When you serve with open hands and no expectation of immediate return, you position yourself to receive. Excellence in small, unseen tasks-whether at work, at home, or in circumstances you didn't choose-develops character and attracts opportunity. The principle isn't that service guarantees rewards. It's that service opens you to God's direction and positions you where only He can take you further."}</li>
               <li><strong>{"Forgiveness as Freedom"}</strong> {" "}{"Holding onto bitterness doesn't punish the person who wronged you; it imprisons you. Forgiveness isn't excusing what happened or pretending it didn't hurt. It's releasing the poison you've been drinking yourself so you can move forward. When you forgive, you're not saying 'what you did was okay.' You're saying 'what you did won't define my future.'"}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">

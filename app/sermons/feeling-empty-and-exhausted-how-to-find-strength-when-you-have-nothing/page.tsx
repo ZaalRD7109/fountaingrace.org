@@ -257,7 +257,7 @@ export default function SermonPage() {
             </ol>
 
             <p className="text-[#555] leading-relaxed">
-              If you are in Pretoria North and want to hear this kind of teaching live,{' '}
+              If you are in or around Pretoria or Johannesburg and want to hear this kind of teaching live,{' '}
               <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}

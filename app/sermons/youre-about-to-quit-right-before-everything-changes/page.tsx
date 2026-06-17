@@ -36,7 +36,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-06-17T12:00:00+02:00",
+    "datePublished": "2022-07-10T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/youre-about-to-quit-right-before-everything-changes"
   },
   {
@@ -99,7 +99,7 @@ const jsonLd = [
     "name": "You're About to Quit Right Before Everything Changes",
     "description": "You're About to Quit Right Before Everything Changes",
     "thumbnailUrl": "https://img.youtube.com/vi/jpuKc9ZrwXk/maxresdefault.jpg",
-    "uploadDate": "2026-06-17T12:00:00+02:00",
+    "uploadDate": "2022-07-10T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/jpuKc9ZrwXk",
     "url": "https://www.fountaingrace.org/sermons/youre-about-to-quit-right-before-everything-changes",
     "author": {
@@ -196,7 +196,7 @@ export default function SermonPage() {
               <li><strong>{"God Asks Questions; He Doesn't Demand Answers"}</strong> {" "}{"Jesus didn't storm the disciples' boat and force them to move their net. He showed up and asked a question: Have you caught anything? When they said no, He offered a suggestion: try the right side. God respects your choice. He invites; He doesn't coerce. But when you're stuck, He's asking you what you're missing. Have you asked for help? Have you tried a different strategy? Have you brought this to me in prayer? The answer to your breakthrough often waits inside the question God is asking."}</li>
               <li><strong>{"God's Abundance Is Not Scarcity With Better Timing"}</strong> {" "}{"When God shows up in your situation, He doesn't add a little. He gives abundance. The net that was empty all night became so full they couldn't haul it. Your marriage won't just stay together; it flourishes with children and homes. Your business won't just survive; it hits multiples. Your healing won't be partial; it's full. God doesn't think in terms of enough. He thinks in terms of overflow. But you have to stay in the boat long enough to receive it."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">

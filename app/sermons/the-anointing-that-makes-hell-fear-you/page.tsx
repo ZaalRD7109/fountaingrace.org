@@ -204,7 +204,7 @@ export default function SermonPage() {
               You do not need to earn the anointing. You need to stop trusting your own ability over it. The moment you say &quot;it is me that gets things done&quot; - you have stepped out from under what God placed on you. The anointing does not work alongside self-reliance. It works through surrender.
             </p>
             <p className="text-[#555] leading-relaxed">
-              If you are in Pretoria North,{' '}
+              If you are in or around Pretoria or Johannesburg,{' '}
               <Link href="/plan-your-visit" className="fgi-link">
                 come on a Sunday
               </Link>{' '}

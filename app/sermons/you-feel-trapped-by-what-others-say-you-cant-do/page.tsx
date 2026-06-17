@@ -36,7 +36,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-06-17T12:00:00+02:00",
+    "datePublished": "2022-11-27T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/you-feel-trapped-by-what-others-say-you-cant-do"
   },
   {
@@ -99,7 +99,7 @@ const jsonLd = [
     "name": "You Feel Trapped By What Others Say You Can't Do",
     "description": "You Feel Trapped By What Others Say You Can't Do",
     "thumbnailUrl": "https://img.youtube.com/vi/r1S8uOycbCA/maxresdefault.jpg",
-    "uploadDate": "2026-06-17T12:00:00+02:00",
+    "uploadDate": "2022-11-27T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/r1S8uOycbCA",
     "url": "https://www.fountaingrace.org/sermons/you-feel-trapped-by-what-others-say-you-cant-do",
     "author": {
@@ -193,7 +193,7 @@ export default function SermonPage() {
               <li><strong>{"Your Mountain Gives You Strength, But It's Not Your Home"}</strong> {" "}{"Mountains and tombs teach you something. They show you that there's better than this. They force you to seek higher ground. But people who love you wrong try to keep you on the mountain to protect you. They confuse the lesson with the destination. Thank your mountains for making you stronger, but don't pitch your tent there. God didn't design you to live in the crisis-He designed the crisis to draw you closer to Him."}</li>
               <li><strong>{"Shame Is The Real Prison; Jesus Is The Real Key"}</strong> {" "}{"Physical chains can be broken. Emotional ones are harder because you carry them willingly. Shame is the story you believe about yourself-that you're too damaged, too sinful, too broken. Jesus doesn't argue with your past. He rewrites your future. The moment you accept that He forgives you completely, shame loses its grip. Your past becomes proof that His grace is real, not proof that you're worthless."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">

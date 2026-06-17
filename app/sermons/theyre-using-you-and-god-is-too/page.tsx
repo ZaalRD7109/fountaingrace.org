@@ -36,7 +36,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-06-17T12:00:00+02:00",
+    "datePublished": "2022-08-07T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/theyre-using-you-and-god-is-too"
   },
   {
@@ -99,7 +99,7 @@ const jsonLd = [
     "name": "They're Using You-And God Is Too",
     "description": "They're Using You-And God Is Too",
     "thumbnailUrl": "https://img.youtube.com/vi/BM499jSFeaI/maxresdefault.jpg",
-    "uploadDate": "2026-06-17T12:00:00+02:00",
+    "uploadDate": "2022-08-07T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/BM499jSFeaI",
     "url": "https://www.fountaingrace.org/sermons/theyre-using-you-and-god-is-too",
     "author": {
@@ -194,7 +194,7 @@ export default function SermonPage() {
               <li><strong>{"Training Happens in Obscurity, Before Elevation"}</strong> {" "}{"David spent years alone with sheep, overlooked by his own family, no one watching, no applause. That's where he learned to fight lions and bears, to stand firm when threatened, to protect what was entrusted to him. God didn't put him in the spotlight first. God trained him first, hidden and unglamorous. When your breakthrough comes, you'll be ready not because you were famous, but because you were faithful when it didn't matter. The loneliness, the overlooking, the hard work no one sees-that's not wasted time. That's your training ground."}</li>
               <li><strong>{"God's Plan for Good Overrides Everyone Else's Plan for Harm"}</strong> {" "}{"Genesis 50:20 is the hinge of hope: 'You meant evil against me, but God meant it for good.' Your boss meant to use you for free labor. Your partner meant to manipulate you. Your church leader meant to exploit your loyalty. But 'God meant it for good.' This doesn't erase the wrongness of what they did-it means God is better at turning ashes into purpose than anyone is at creating ashes. When you trust that God meant good, you stop needing the people who hurt you to acknowledge it or fix it. You move. You build. You rise."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">

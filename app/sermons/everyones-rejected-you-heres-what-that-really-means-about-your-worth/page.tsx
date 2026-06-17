@@ -36,7 +36,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-06-17T12:00:00+02:00",
+    "datePublished": "2022-07-31T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth"
   },
   {
@@ -99,7 +99,7 @@ const jsonLd = [
     "name": "Everyone's Rejected You. Here's What That Really Means About Your Worth",
     "description": "Everyone's Rejected You. Here's What That Really Means About Your Worth",
     "thumbnailUrl": "https://img.youtube.com/vi/1x-wGK26Lz0/maxresdefault.jpg",
-    "uploadDate": "2026-06-17T12:00:00+02:00",
+    "uploadDate": "2022-07-31T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/1x-wGK26Lz0",
     "url": "https://www.fountaingrace.org/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth",
     "author": {
@@ -190,7 +190,7 @@ export default function SermonPage() {
               <li><strong>{"The Body Cannot Function With Amputations"}</strong> {" "}{"In 1 Corinthians 12, Paul explains that the body of Christ needs all its parts-not just the impressive ones, but the ones that seem weak or less honorable. When you reject someone from your family, your church, or your community because of their struggle, you do not just hurt them. You weaken the whole body. The person you write off may have exactly what someone else needs. Healing comes through restoration and community, not rejection and isolation. Before you cut someone off, ask yourself what you might be removing that the whole system depends on."}</li>
               <li><strong>{"God's Verdict Overrides Human Judgment"}</strong> {" "}{"Your name is written on the palm of God's hand-tattooed, permanent, unforgettable. This is not opinion. This is not subject to change based on whether people like you, accept you, or think you are useful. The moment you were created, God decided your worth. It is not earned. It is not lost when you fail. Jesus died on the cross and rose again to prove that failure, shame, rejection, and death do not have the final word. God does. Start believing Him about who you are instead of believing the people who only saw a snapshot and called it your whole story."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">

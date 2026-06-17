@@ -189,7 +189,7 @@ export default function SermonPage() {
             </blockquote>
 
             <p className="text-[#555] leading-relaxed">
-              If you are in Pretoria North and something in this message is stirring you,{' '}
+              If you are in or around Pretoria or Johannesburg and something in this message is stirring you,{' '}
               <Link href="/plan-your-visit" className="fgi-link">
                 come to Fountain of Grace International on Sunday
               </Link>

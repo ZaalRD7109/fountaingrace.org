@@ -36,7 +36,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-06-17T12:00:00+02:00",
+    "datePublished": "2022-07-24T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone"
   },
   {
@@ -99,7 +99,7 @@ const jsonLd = [
     "name": "You're Exhausted Because You're Trying to Do Everything Alone",
     "description": "You're Exhausted Because You're Trying to Do Everything Alone",
     "thumbnailUrl": "https://img.youtube.com/vi/eudyGpUf45k/maxresdefault.jpg",
-    "uploadDate": "2026-06-17T12:00:00+02:00",
+    "uploadDate": "2022-07-24T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/eudyGpUf45k",
     "url": "https://www.fountaingrace.org/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone",
     "author": {
@@ -193,7 +193,7 @@ export default function SermonPage() {
               <li><strong>{"Big Things Happen Through Small, Consistent Steps"}</strong> {" "}{"You don't get from Pretoria to Johannesburg by wishing you were there. You take the first step, then the next, then the next. When you try to do everything at once, you do nothing well. When you take one step at a time, you actually move forward. This is how you keep from burning out. This is how you keep promises to yourself. This is how dreams actually become real."}</li>
               <li><strong>{"Help Is Not a Failure, It's a Strategy"}</strong> {" "}{"Asking for help is not giving up. It's how God designed the world to work. Moses couldn't win the battle alone, even though he was the leader. He needed Aaron and Hur. You need people too. The question is not whether you can do it alone. You can't. The question is whether you'll be humble enough to ask. That humility is actually the strongest thing about you."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">

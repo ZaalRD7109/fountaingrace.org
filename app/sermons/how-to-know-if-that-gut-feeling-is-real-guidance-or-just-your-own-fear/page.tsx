@@ -191,7 +191,7 @@ export default function SermonPage() {
               <li><strong>{"Guidance Brings Peace, Not Panic"}</strong> {" "}{"False signals create anxiety, confusion, and that sick feeling in your gut that won't go away. Real guidance brings an underlying calm, even when it's challenging you to do something hard. You might feel nervous about acting on it, but underneath that nervousness is a quiet certainty that this is right. That peace is the marker - it's how you know you're on solid ground."}</li>
               <li><strong>{"You Learn by Doing, Not Thinking"}</strong> {" "}{"Understanding guidance in theory doesn't help you. You build real confidence by practicing - starting with one small word or encouragement to someone, then watching to see if it lands true. Each time you do this, you strengthen your ability to recognize the real thing. The more you act on what you're sensing, the clearer the signal becomes."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in Pretoria North,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
