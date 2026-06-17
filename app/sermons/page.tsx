@@ -22,6 +22,38 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "you-feel-trapped-by-what-others-say-you-cant-do",
+    title: "You Feel Trapped By What Others Say You Can't Do",
+    date: "2026-06-17",
+    dateDisplay: "17 June 2026",
+    intro:
+      "You've heard it a thousand times: you can't start that business, you can't leave that job, you can't be worthy of love. This message shows you why those voices keep you captive and how to actually break free.",
+  },
+  {
+    slug: "your-struggles-arent-wasting-your-life-theyre-building-you-for-something",
+    title: "Your Struggles Aren't Wasting Your Life-They're Building You for Something",
+    date: "2026-06-17",
+    dateDisplay: "17 June 2026",
+    intro:
+      "You've endured things that make no sense right now. But what if every painful season-the early parenthood, failed relationships, job rejections, financial crises-was actually divine preparation for the specific purpose you're meant to fulfill?",
+  },
+  {
+    slug: "youre-about-to-quit-right-before-everything-changes",
+    title: "You're About to Quit Right Before Everything Changes",
+    date: "2026-06-17",
+    dateDisplay: "17 June 2026",
+    intro:
+      "You've been working all night with nothing to show for it. Your business stalls. Your relationship feels broken. Your health won't improve. The temptation to quit is overwhelming. But what if your breakthrough is closer than you think?",
+  },
+  {
+    slug: "youre-blocked-by-one-thing-and-dont-even-know-it",
+    title: "You're Blocked by One Thing and Don't Even Know It",
+    date: "2026-06-17",
+    dateDisplay: "17 June 2026",
+    intro:
+      "You have limitations. Maybe you lack qualifications, money, the right looks, or you're ashamed of past mistakes. But these aren't your real obstacle. Your real problem is believing they mean you can't move forward.",
+  },
+  {
     slug: "your-success-depends-on-what-you-do-before-it-arrives",
     title: "Your Success Depends on What You Do Before It Arrives",
     date: "2026-06-16",

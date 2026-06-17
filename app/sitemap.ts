@@ -20,6 +20,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/you-feel-trapped-by-what-others-say-you-cant-do`, lastModified: new Date('2026-06-17'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something`, lastModified: new Date('2026-06-17'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/youre-about-to-quit-right-before-everything-changes`, lastModified: new Date('2026-06-17'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/youre-blocked-by-one-thing-and-dont-even-know-it`, lastModified: new Date('2026-06-17'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/your-success-depends-on-what-you-do-before-it-arrives`, lastModified: new Date('2026-06-16'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/stop-waiting-to-be-perfect-before-you-matter`, lastModified: new Date('2026-06-16'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/youre-not-beyond-repair-no-matter-what-youve-done`, lastModified: new Date('2026-06-15'), changeFrequency: 'monthly', priority: 0.6 },
