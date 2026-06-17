@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "your-past-mistakes-dont-determine-your-future",
+    title: "Your Past Mistakes Don't Determine Your Future",
+    date: "2023-04-14",
+    dateDisplay: "14 April 2023",
+    intro:
+      "You're paralyzed by what happened. But the person you're meant to become doesn't live in yesterday. Here's how to rebuild when captivity feels permanent.",
+  },
+  {
     slug: "stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave",
     title: "Stuck in a Dead Relationship or Job? Here's Why You Won't Leave",
     date: "2024-01-28",

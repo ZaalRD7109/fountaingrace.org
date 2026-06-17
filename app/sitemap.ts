@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/your-past-mistakes-dont-determine-your-future`, lastModified: new Date('2023-04-14'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave`, lastModified: new Date('2024-01-28'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/the-shortcut-thats-ruining-your-life`, lastModified: new Date('2023-03-05'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be`, lastModified: new Date('2022-08-14'), changeFrequency: 'monthly', priority: 0.6 },
