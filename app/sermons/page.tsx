@@ -22,6 +22,30 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "everyones-rejected-you-heres-what-that-really-means-about-your-worth",
+    title: "Everyone's Rejected You. Here's What That Really Means About Your Worth",
+    date: "2026-06-17",
+    dateDisplay: "17 June 2026",
+    intro:
+      "You've been thrown away, rejected, called a failure. But what others believe about you and what's actually true about you are two completely different things.",
+  },
+  {
+    slug: "theyre-using-you-and-god-is-too",
+    title: "They're Using You-And God Is Too",
+    date: "2026-06-17",
+    dateDisplay: "17 June 2026",
+    intro:
+      "Your pain at work, in relationships, or at church might feel pointless. But what if the very people hurting you are unknowingly part of God's plan to position you for breakthrough?",
+  },
+  {
+    slug: "youre-exhausted-because-youre-trying-to-do-everything-alone",
+    title: "You're Exhausted Because You're Trying to Do Everything Alone",
+    date: "2026-06-17",
+    dateDisplay: "17 June 2026",
+    intro:
+      "You keep pushing harder but falling further behind. There's a reason you can't seem to do it all on your own-and a way out.",
+  },
+  {
     slug: "you-feel-trapped-by-what-others-say-you-cant-do",
     title: "You Feel Trapped By What Others Say You Can't Do",
     date: "2026-06-17",

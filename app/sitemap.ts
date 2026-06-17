@@ -20,6 +20,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth`, lastModified: new Date('2026-06-17'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/theyre-using-you-and-god-is-too`, lastModified: new Date('2026-06-17'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone`, lastModified: new Date('2026-06-17'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/you-feel-trapped-by-what-others-say-you-cant-do`, lastModified: new Date('2026-06-17'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something`, lastModified: new Date('2026-06-17'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/youre-about-to-quit-right-before-everything-changes`, lastModified: new Date('2026-06-17'), changeFrequency: 'monthly', priority: 0.6 },
