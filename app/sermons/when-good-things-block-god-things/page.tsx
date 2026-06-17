@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Misalignment is not weakness - it is a direction problem. You may be doing right things at the wrong time and not know it. Fountain of Grace International, Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/RvGYWIJ6XQo/maxresdefault.jpg", width: 1280, height: 720, alt: "How Good Opportunities Become the Thing That Stops Your Real Breakthrough - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/when-good-things-block-god-things',
   },
 }

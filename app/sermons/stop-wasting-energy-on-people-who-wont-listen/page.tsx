@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Stop Wasting Energy on People Who Won't Listen",
     description: "Your explanations trap you in endless justification. Learn when to stay silent and let your actions speak.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/UPmG74FtssQ/maxresdefault.jpg", width: 1280, height: 720, alt: "Stop Wasting Energy on People Who Won't Listen - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/stop-wasting-energy-on-people-who-wont-listen",
   },
 }

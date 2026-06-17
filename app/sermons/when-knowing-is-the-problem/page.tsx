@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'The danger is not ignorance. The danger is delayed obedience in someone who already knows what God is asking. This message from James 1 speaks directly to it. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/JdeSa5ag41w/maxresdefault.jpg", width: 1280, height: 720, alt: "When Knowing Is the Problem - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/when-knowing-is-the-problem',
   },
 }

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Stop Waiting to Be Perfect Before You Matter",
     description: "You're holding back your gifts because you're not good enough yet. But you already have what others need right now.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/L7tX_Oby05I/sddefault.jpg", width: 640, height: 480, alt: "Stop Waiting to Be Perfect Before You Matter - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/stop-waiting-to-be-perfect-before-you-matter",
   },
 }

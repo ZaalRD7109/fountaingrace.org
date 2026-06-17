@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'John 8:6 - He wrote on the ground and every accuser left. Genesis 1 shows God spoke to the earth before He spoke to man. Creation is programmed to respond to spoken authority. This message from Fountain of Grace International in Pretoria North shows you how to use the weapon.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/49-0bgFQsUU/maxresdefault.jpg", width: 1280, height: 720, alt: "The One Weapon Nobody Teaches You That Changes Every Fight - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-no-one-speaks-about',
   },
 }

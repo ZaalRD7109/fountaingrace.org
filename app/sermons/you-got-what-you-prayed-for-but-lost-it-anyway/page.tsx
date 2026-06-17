@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "You Got What You Prayed For But Lost It Anyway",
     description: "Why getting the job, money, or relationship back isn't enough. The real reason surface fixes fail.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/kSpfYremVh0/maxresdefault.jpg", width: 1280, height: 720, alt: "You Got What You Prayed For But Lost It Anyway - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/you-got-what-you-prayed-for-but-lost-it-anyway",
   },
 }

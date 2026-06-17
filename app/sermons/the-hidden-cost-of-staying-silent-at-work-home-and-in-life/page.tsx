@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "The Hidden Cost of Staying Silent at Work, Home, and in Life",
     description: "Discover why your silence is costing you promotions, influence, and opportunities-and how to start speaking up without permission or a perfect moment.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/e5WMnoEwm3I/maxresdefault.jpg", width: 1280, height: 720, alt: "The Hidden Cost of Staying Silent at Work, Home, and in Life - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life",
   },
 }

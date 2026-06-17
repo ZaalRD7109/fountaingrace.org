@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'The shortcut always looks straight. But Proverbs 14:12 says there is a way that seems right to a man, and the end is death. This message shows what the easy road actually costs. Fountain of Grace International, Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/fuG5lS9Q0Fs/maxresdefault.jpg", width: 1280, height: 720, alt: "Why the Easy Road Always Leads to the Wrong Place - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/why-the-easy-road-always-leads-to-the-wrong-place',
   },
 }

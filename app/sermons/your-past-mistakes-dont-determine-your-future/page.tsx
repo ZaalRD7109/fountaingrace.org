@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Your Past Mistakes Don't Determine Your Future",
     description: "Stuck in fear after failure? Learn why your worst moments aren't your final destination-and how to move forward anyway.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/rn-zrz4lO9s/maxresdefault.jpg", width: 1280, height: 720, alt: "Your Past Mistakes Don't Determine Your Future - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/your-past-mistakes-dont-determine-your-future",
   },
 }

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Your Help Is Making Them Helpless",
     description: "Discover why constant giving, overprotective parenting, and doing things for others backfires. Real compassion teaches independence.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/wwmT7nrgMYg/maxresdefault.jpg", width: 1280, height: 720, alt: "Your Help Is Making Them Helpless - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/why-your-kindness-might-be-hurting-people",
   },
 }

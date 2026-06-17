@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Everyone Around You Is Pretending - Here's Why You're Alone",
     description: "You feel surrounded by fake people. The real problem isn't them-it's who you're rejecting.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/omO2j6qMF9A/maxresdefault.jpg", width: 1280, height: 720, alt: "Everyone Around You Is Pretending - Here's Why You're Alone - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/everyone-around-you-is-pretending-heres-why-youre-alone",
   },
 }

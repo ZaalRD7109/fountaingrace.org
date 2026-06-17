@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "The silence is not the end. Romans 8:28 says all things - not some things - work together for good. You are still in the story. Fountain of Grace International, Pretoria North.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/OOofjfMVZG4/maxresdefault.jpg", width: 1280, height: 720, alt: "When It Looks Like God Is Silent - You're Still in the Story - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/youre-still-in-the-story-when-god-seems-silent',
   },
 }

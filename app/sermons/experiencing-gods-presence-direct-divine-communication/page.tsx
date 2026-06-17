@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Can Something Greater Than Yourself Actually Speak Directly to You?",
     description: "Pastor Ricardo Zaal explores how God speaks directly to His people and how you can experience His presence in a real, personal way.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/ViHsAzbBhRU/maxresdefault.jpg", width: 1280, height: 720, alt: "Can Something Greater Than Yourself Actually Speak Directly to You? - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/experiencing-gods-presence-direct-divine-communication',
   },
 }

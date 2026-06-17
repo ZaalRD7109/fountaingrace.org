@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "You're About to Quit Right Before Everything Changes",
     description: "The moment you feel most like giving up is often when breakthrough arrives. Learn why persistence beats surrender.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/jpuKc9ZrwXk/maxresdefault.jpg", width: 1280, height: 720, alt: "You're About to Quit Right Before Everything Changes - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/youre-about-to-quit-right-before-everything-changes",
   },
 }

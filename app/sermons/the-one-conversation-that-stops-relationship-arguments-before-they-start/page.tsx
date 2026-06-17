@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "The One Conversation That Stops Relationship Arguments Before They Start",
     description: "Most fights aren't about what you think. Learn what's really breaking relationships and the simple fix that actually works.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/y4nM2VpjSP4/sddefault.jpg", width: 640, height: 480, alt: "The One Conversation That Stops Relationship Arguments Before They Start - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/the-one-conversation-that-stops-relationship-arguments-before-they-start",
   },
 }

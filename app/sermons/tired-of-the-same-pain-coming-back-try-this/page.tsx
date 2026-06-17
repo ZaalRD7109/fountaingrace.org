@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'If your family keeps repeating the same pain, sickness, breakups or money problems, something deeper is at work. Pastor Ricardo Zaal opens up a spiritual weapon most believers have never been taught.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/_fxcjo2raRQ/maxresdefault.jpg", width: 1280, height: 720, alt: "Tired of the Same Pain Coming Back? Try This - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/tired-of-the-same-pain-coming-back-try-this',
   },
 }

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Cheering for Jesus is easy. Carrying the weight is the real question. Based on Matthew 21, this message calls you from the crowd into committed action. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/C-wXZBOBE40/maxresdefault.jpg", width: 1280, height: 720, alt: "You Know What You Should Be Doing - So Why Are You Still on the Sidelines? - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/you-love-god-but-are-you-in-the-game',
   },
 }

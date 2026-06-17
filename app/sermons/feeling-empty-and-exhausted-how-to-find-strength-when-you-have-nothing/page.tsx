@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'You feel like a lemon squeezed dry, with nothing left to give. Pastor Ricardo Zaal shows why your weakest moment is exactly where help shows up strongest.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/R36fgD4M-9A/maxresdefault.jpg", width: 1280, height: 720, alt: "Feeling Empty and Exhausted? How to Find Strength When You Have Nothing Left - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/feeling-empty-and-exhausted-how-to-find-strength-when-you-have-nothing',
   },
 }

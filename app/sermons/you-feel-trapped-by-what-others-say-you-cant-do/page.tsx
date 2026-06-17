@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "You Feel Trapped By What Others Say You Can't Do",
     description: "Why people hold you back and how to break free from the shame keeping you stuck in old patterns.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/r1S8uOycbCA/maxresdefault.jpg", width: 1280, height: 720, alt: "You Feel Trapped By What Others Say You Can't Do - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/you-feel-trapped-by-what-others-say-you-cant-do",
   },
 }

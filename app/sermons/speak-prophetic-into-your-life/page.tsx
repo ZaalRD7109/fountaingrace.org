@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'You are always prophesying. Every word you speak over your life is either building faith or destroying it. This message shows you how to change the confession. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/3LyJPmCi-v4/maxresdefault.jpg", width: 1280, height: 720, alt: "Every Word You Say About Yourself Is Writing Your Future | 1 Corinthians 14:3 - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/speak-prophetic-into-your-life',
   },
 }

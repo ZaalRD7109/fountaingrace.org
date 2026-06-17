@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "You're Exhausted Because You're Trying to Do Everything Alone",
     description: "Feeling overwhelmed and burnt out? Discover why you're so tired and the three proven steps to regain strength and actually finish what matters.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/eudyGpUf45k/maxresdefault.jpg", width: 1280, height: 720, alt: "You're Exhausted Because You're Trying to Do Everything Alone - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone",
   },
 }

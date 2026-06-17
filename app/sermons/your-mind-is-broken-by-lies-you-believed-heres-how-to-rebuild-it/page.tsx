@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Your Mind Is Broken By Lies You Believed - Here's How to Rebuild It",
     description: "Discover why you feel stuck, anxious, and broken despite having everything. Learn the blueprint to reset your thinking and reclaim your designed purpose.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/npDgCqj3kvU/maxresdefault.jpg", width: 1280, height: 720, alt: "Your Mind Is Broken By Lies You Believed - Here's How to Rebuild It - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it",
   },
 }

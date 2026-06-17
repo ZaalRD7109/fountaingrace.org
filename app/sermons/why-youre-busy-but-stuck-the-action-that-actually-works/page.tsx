@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck",
     description: "Discover why doing more doesn't equal winning. Learn the one principle that separates busy people from successful ones.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/FBT-X4cy6Xs/maxresdefault.jpg", width: 1280, height: 720, alt: "You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/why-youre-busy-but-stuck-the-action-that-actually-works",
   },
 }

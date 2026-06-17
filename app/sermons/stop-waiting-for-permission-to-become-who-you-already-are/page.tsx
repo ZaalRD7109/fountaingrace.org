@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Stop Waiting for Permission to Become Who You Already Are",
     description: "You have unique gifts that only you can give. Learn why self-doubt costs the world more than failure ever could.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/aeGCT5CNgG4/sddefault.jpg", width: 640, height: 480, alt: "Stop Waiting for Permission to Become Who You Already Are - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/stop-waiting-for-permission-to-become-who-you-already-are",
   },
 }

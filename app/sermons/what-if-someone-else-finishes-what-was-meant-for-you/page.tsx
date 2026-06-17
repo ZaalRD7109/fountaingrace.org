@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "The assignment does not wait. Based on Esther 4:14 and the story of Jonah. Preached by Pastor Ricardo Zaal at Fountain of Grace International, Pretoria North.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/jwUGYb3uuQI/maxresdefault.jpg", width: 1280, height: 720, alt: "What If Someone Else Finishes What Was Meant for You? - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/what-if-someone-else-finishes-what-was-meant-for-you',
   },
 }

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Your Boss Will Never Promote You Like This",
     description: "Why quiet, consistent work beats self-promotion, politics, and fake confidence-and how sudden advancement actually happens.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/TIBm_2JMonc/maxresdefault.jpg", width: 1280, height: 720, alt: "Your Boss Will Never Promote You Like This - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals",
   },
 }

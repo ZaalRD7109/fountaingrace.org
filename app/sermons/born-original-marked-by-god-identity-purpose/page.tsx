@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "You Were Not Made to Be a Copy of Someone Else",
     description: "You were never meant to live in someone else's shadow. Discover your God-given identity with Pastor Ricardo Zaal.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/7ahyk9Jp67I/sddefault.jpg", width: 640, height: 480, alt: "You Were Not Made to Be a Copy of Someone Else - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/born-original-marked-by-god-identity-purpose',
   },
 }

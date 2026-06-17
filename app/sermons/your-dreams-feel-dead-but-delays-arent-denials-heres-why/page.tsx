@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Your Dreams Feel Dead, But Delays Aren't Denials-Here's Why",
     description: "Stuck while others move forward? Learn why your pain might be training, not punishment-and what actually determines if your breakthrough comes.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/c4BTJofaZuc/maxresdefault.jpg", width: 1280, height: 720, alt: "Your Dreams Feel Dead, But Delays Aren't Denials-Here's Why - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why",
   },
 }

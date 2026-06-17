@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "Are You Actually Being Transformed or Just Showing Up?",
     description: "If your church is not changing you, something is missing. Pastor Ricardo Zaal delivers a bold, Spirit-led challenge from Joel 2.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/Ox1mbbUJoS4/sddefault.jpg", width: 640, height: 480, alt: "Are You Actually Being Transformed or Just Showing Up? - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/if-your-church-does-not-change-you-change-your-church',
   },
 }

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'The name of Jesus is not a religious formula - it is a courtroom claim. This message explains authority, relationship, and why things only move when the name is used correctly. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/Hdrz2Qh2hkM/maxresdefault.jpg", width: 1280, height: 720, alt: "Why Some Things Refuse to Move - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/why-some-things-refuse-to-move',
   },
 }

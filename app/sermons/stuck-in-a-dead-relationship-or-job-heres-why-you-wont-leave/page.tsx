@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Stuck in a Dead Relationship or Job? Here's Why You Won't Leave",
     description: "You're not lazy. You lack vision tied to something bigger than comfort. How faith resets your motivation.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/A7PhWOyw574/maxresdefault.jpg", width: 1280, height: 720, alt: "Stuck in a Dead Relationship or Job? Here's Why You Won't Leave - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave",
   },
 }

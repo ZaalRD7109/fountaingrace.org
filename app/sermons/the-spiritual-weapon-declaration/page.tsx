@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "Jeremiah 22:29 - O earth, earth, earth, hear the word of the LORD. God called to the earth three times. You have the same authority. Genesis 1:26 gave you dominion. John 14:12 says the works Jesus did, you shall do also. This is your activation session. Fountain of Grace International, Pretoria North.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/KjkqdhqaiZ0/maxresdefault.jpg", width: 1280, height: 720, alt: "How to Break a Pattern That Has Followed Your Family for Generations - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/the-spiritual-weapon-declaration',
   },
 }

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "The Real Reason You're Trapped in Debt (And How to Break Free)",
     description: "Stop fighting for scraps. Discover how one ancient sacrifice ended your financial and spiritual debt forever.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/rfeuO89XSFY/maxresdefault.jpg", width: 1280, height: 720, alt: "The Real Reason You're Trapped in Debt (And How to Break Free) - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/the-real-reason-youre-trapped-in-debt-and-how-to-break-free",
   },
 }

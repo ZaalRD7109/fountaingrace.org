@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'You have been through real pain and now you cannot believe anyone who says better is coming. This message explains why your hope shut down and how to take one small step out of the grave of disappointment.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/sq99GTzfotc/maxresdefault.jpg", width: 1280, height: 720, alt: "When You Can\\ - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/when-you-cant-believe-things-will-get-better-again',
   },
 }

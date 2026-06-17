@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "The Real Reason You Feel Like You're Losing When Everything Falls Apart",
     description: "Why your worst struggles feel hopeless, and what actually determines if you win or lose them.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/NxlXObg16sE/sddefault.jpg", width: 640, height: 480, alt: "The Real Reason You Feel Like You're Losing When Everything Falls Apart - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/why-youre-losing-battles-and-how-to-actually-win",
   },
 }

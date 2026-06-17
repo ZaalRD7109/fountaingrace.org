@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Numbers 12:6 - God speaks in visions and dreams. The problem is not that He has gone silent. The problem is translation. Learn to read the grammar of the Spirit. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/G73Ce-8su78/maxresdefault.jpg", width: 1280, height: 720, alt: "Hearing the Right Things and Still Getting Them Wrong - Here Is Why - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/the-language-of-the-spirit-interpreting-what-you-hear',
   },
 }

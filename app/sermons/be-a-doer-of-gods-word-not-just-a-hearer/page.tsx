@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "James 1:21-25. What is the difference between a person who hears and a person who does? Fountain of Grace International, Pretoria North.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/L0NMow_4Ni0/maxresdefault.jpg", width: 1280, height: 720, alt: "You Know What to Do. So Why Is Nothing Changing? - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/be-a-doer-of-gods-word-not-just-a-hearer",
   },
 }

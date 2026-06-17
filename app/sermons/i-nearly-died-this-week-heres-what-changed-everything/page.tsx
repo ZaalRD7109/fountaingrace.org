@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "You're Stuck Because You Don't Know Where You're Going",
     description: "Why lack of direction kills motivation more than laziness. Learn what actually holds you back from meaningful change.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/4Y-J89_zY6I/maxresdefault.jpg", width: 1280, height: 720, alt: "You're Stuck Because You Don't Know Where You're Going - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/i-nearly-died-this-week-heres-what-changed-everything",
   },
 }

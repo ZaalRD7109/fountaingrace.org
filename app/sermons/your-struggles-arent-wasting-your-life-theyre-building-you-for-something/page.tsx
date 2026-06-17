@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Your Struggles Aren't Wasting Your Life-They're Building You for Something",
     description: "Hidden, overlooked, rejected. Your pain wasn't random. See how hardship prepares you for the exact moment you're meant to step into your calling.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/y_IB0fwS2VU/maxresdefault.jpg", width: 1280, height: 720, alt: "Your Struggles Aren't Wasting Your Life-They're Building You for Something - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something",
   },
 }

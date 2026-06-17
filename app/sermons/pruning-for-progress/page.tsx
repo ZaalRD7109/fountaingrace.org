@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'The branch that gets cut is the one God is preparing for more fruit. If you are in a season of cutting, this message is for you. John 15:1-8. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/RSX7jGdlo6s/maxresdefault.jpg", width: 1280, height: 720, alt: "Pruning for Progress: From Bare Branch to Bountiful Blessing - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/pruning-for-progress',
   },
 }

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "When Life Deliberately Gets Worse Before It Works Out",
     description: "Your setback isn't a dead end. Learn why repeated failures and unfair circumstances are redirections toward a bigger purpose.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/vobMexikTyo/maxresdefault.jpg", width: 1280, height: 720, alt: "When Life Deliberately Gets Worse Before It Works Out - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/when-life-deliberately-gets-worse-before-it-works-out",
   },
 }

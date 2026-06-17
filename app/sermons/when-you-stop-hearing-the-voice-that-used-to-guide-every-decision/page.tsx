@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "When You Stop Hearing the Voice That Used to Guide Every Decision | John 10:27",
     description: "God never stopped speaking. Find out why the voice got quieter and how to hear clearly again - Pastor Ricardo Zaal, Pretoria North.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/Q1ynsfCO2C4/maxresdefault.jpg", width: 1280, height: 720, alt: "When You Stop Hearing the Voice That Used to Guide Every Decision | John 10:27 - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/when-you-stop-hearing-the-voice-that-used-to-guide-every-decision',
   },
 }

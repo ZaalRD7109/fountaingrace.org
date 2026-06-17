@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "When Your Success Makes People Jealous: Here's What It Really Means",
     description: "Opposition from family and friends often signals something bigger is coming. Learn why attacks mean you're on the right path.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/cjHvsH_hTDA/maxresdefault.jpg", width: 1280, height: 720, alt: "When Your Success Makes People Jealous: Here's What It Really Means - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/why-your-biggest-dreams-attract-the-strongest-opposition",
   },
 }

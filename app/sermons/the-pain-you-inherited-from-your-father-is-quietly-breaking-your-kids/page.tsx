@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "The Pain You Inherited From Your Father Is Quietly Breaking Your Kids",
     description: "Unhealed father wounds pass to the next generation. Learn the six types of fathers and how to break the cycle.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/eSOeyL4WEBc/maxresdefault.jpg", width: 1280, height: 720, alt: "The Pain You Inherited From Your Father Is Quietly Breaking Your Kids - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids",
   },
 }

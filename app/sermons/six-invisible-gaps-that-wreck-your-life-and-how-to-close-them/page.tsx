@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Six Invisible Gaps That Wreck Your Life (And How to Close Them)",
     description: "Discover why you drift from what matters most and lose control of your decisions, relationships, and peace-even when you intend not to.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/MPabICArcOQ/maxresdefault.jpg", width: 1280, height: 720, alt: "Six Invisible Gaps That Wreck Your Life (And How to Close Them) - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them",
   },
 }

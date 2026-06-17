@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "The gap between knowing and doing is not about information. It is about fear, double-mindedness, and waiting for perfect conditions that will never come. Fountain of Grace International, Pretoria North.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/XC1uMayfflI/maxresdefault.jpg", width: 1280, height: 720, alt: "You Already Know What To Do - So Why Aren't You Doing It? - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/you-already-know-what-to-do-so-why-arent-you-doing-it',
   },
 }

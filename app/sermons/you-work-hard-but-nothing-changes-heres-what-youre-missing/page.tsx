@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "You Work Hard But Nothing Changes - Here's What You're Missing",
     description: "Discover why your efforts feel pointless and how to shift from despair to confidence about your future, even when results are invisible.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/N-1xvzcqC3o/maxresdefault.jpg", width: 1280, height: 720, alt: "You Work Hard But Nothing Changes - Here's What You're Missing - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing",
   },
 }

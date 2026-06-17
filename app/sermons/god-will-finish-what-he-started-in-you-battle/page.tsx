@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     title: "When Everything Fights Against What You Were Meant to Build",
     description: "No person or circumstance can stop what God began in you. Discover why the battle you face cannot cancel God's plan for your life.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/q_9iSfTN6IQ/maxresdefault.jpg", width: 1280, height: 720, alt: "When Everything Fights Against What You Were Meant to Build - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/god-will-finish-what-he-started-in-you-battle',
   },
 }

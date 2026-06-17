@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Your Life Falls Apart Under Pressure Because of What's Actually Inside You",
     description: "Why you collapse in stress, relationships, and temptation even when you work hard at being good. The real reason-and how to fix it.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/hE9vAF5TXFc/maxresdefault.jpg", width: 1280, height: 720, alt: "Your Life Falls Apart Under Pressure Because of What's Actually Inside You - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/your-life-falls-apart-under-pressure-because-of-whats-actually-inside-you",
   },
 }

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "The Cost of Sitting on the Sidelines",
     description: "Stop waiting for perfect conditions. Real change happens when you show up first, even broken and afraid.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/AgswQ2CHh74/sddefault.jpg", width: 640, height: 480, alt: "The Cost of Sitting on the Sidelines - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/the-cost-of-sitting-on-the-sidelines",
   },
 }

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Every year the resolution is made. Every year it fades. This message explains why declarations without habit change produce nothing - and what to do differently. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/MmHgI9ybwSM/maxresdefault.jpg", width: 1280, height: 720, alt: "Your Resolution Didn\\ - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/your-resolution-didnt-fail-you-quit-acting',
   },
 }

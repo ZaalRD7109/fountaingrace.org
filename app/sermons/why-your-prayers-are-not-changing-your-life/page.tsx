@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'You had the idea. Somebody else took it. You had the word from God. Nothing happened. This message explains the missing piece between prayer and result. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/r9Cqow1ffcE/maxresdefault.jpg", width: 1280, height: 720, alt: "Why Nothing Changes No Matter How Hard You Try - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/why-your-prayers-are-not-changing-your-life',
   },
 }

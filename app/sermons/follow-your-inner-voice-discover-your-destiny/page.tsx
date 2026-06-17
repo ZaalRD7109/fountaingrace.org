@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "God did not research you on Google. He formed you, made you, and wrote what your life would look like. This message from Fountain of Grace International in Pretoria North is for the person who knows what they are supposed to be doing - but keeps listening to the wrong voices.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/4Trsd4Q-2fY/maxresdefault.jpg", width: 1280, height: 720, alt: "Follow Your Inner Voice - Discover Your Destiny - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/follow-your-inner-voice-discover-your-destiny',
   },
 }

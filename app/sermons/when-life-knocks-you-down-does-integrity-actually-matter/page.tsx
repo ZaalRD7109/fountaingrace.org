@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "When Life Knocks You Down, Does Integrity Actually Matter",
     description: "Discover why staying honest through betrayal, serving without payoff, and forgiving the unforgivable actually leads somewhere. Real examples inside.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/ZakSP1Aq5ZQ/maxresdefault.jpg", width: 1280, height: 720, alt: "When Life Knocks You Down, Does Integrity Actually Matter - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/when-life-knocks-you-down-does-integrity-actually-matter",
   },
 }

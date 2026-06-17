@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Something in the system is locked - not because God ignored you, but because a specific biblical mechanism has been misunderstood. Fountain of Grace International, Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/TLZitG4cpqA/maxresdefault.jpg", width: 1280, height: 720, alt: "Why You Keep Losing - You Are Fighting the Wrong Enemy - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/the-system-youre-praying-against-without-knowing-it',
   },
 }

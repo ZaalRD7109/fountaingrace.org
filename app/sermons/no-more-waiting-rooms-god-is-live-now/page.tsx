@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'The frustration of a waiting room. The buffering screen. The song that never plays. This message says God is already live - the question is whether you have tuned in. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/FwXMY51fZEs/maxresdefault.jpg", width: 1280, height: 720, alt: "Stop Waiting for Your Real Life to Begin - It Already Started - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/no-more-waiting-rooms-god-is-live-now',
   },
 }

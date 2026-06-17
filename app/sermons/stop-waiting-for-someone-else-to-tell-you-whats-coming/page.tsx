@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Stop Waiting for Someone Else to Tell You What's Coming",
     description: "Learn to recognize inner nudges and mental images that guide your decisions. Practical steps to develop spiritual intuition without confusion or doubt.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/KaQiBLTKXDI/maxresdefault.jpg", width: 1280, height: 720, alt: "Stop Waiting for Someone Else to Tell You What's Coming - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming",
   },
 }

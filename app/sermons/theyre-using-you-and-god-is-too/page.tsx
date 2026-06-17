@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "They're Using You-And God Is Too",
     description: "When people exploit you, abuse your trust, or make empty promises, God is actually training you for something greater. Here's how.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/BM499jSFeaI/maxresdefault.jpg", width: 1280, height: 720, alt: "They're Using You-And God Is Too - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/theyre-using-you-and-god-is-too",
   },
 }

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'You already have the power inside you. The problem is the switch is off. This message is about moving from containing God\'s presence to releasing it into every area of your life. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/MAkF8V0B1hI/maxresdefault.jpg", width: 1280, height: 720, alt: "Releasing His Presence - From Container to Conduit - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/releasing-his-presence',
   },
 }

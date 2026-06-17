@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Proverbs 13:22 - a good man leaves an inheritance to his children\'s children. When Joseph\'s coat was taken twice, he never lost his character. The coat was not the inheritance - the character was. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/bT4i6UxLjEM/maxresdefault.jpg", width: 1280, height: 720, alt: "The Inheritance Test: Will It Reach Three Generations? - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/the-inheritance-test',
   },
 }

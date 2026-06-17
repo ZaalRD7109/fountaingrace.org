@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear",
     description: "Learn to recognize true guidance from false signals when making life decisions. Practical ways to test what you're hearing before you act.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/NQDHWbJGi5g/hqdefault.jpg", width: 480, height: 360, alt: "How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear",
   },
 }

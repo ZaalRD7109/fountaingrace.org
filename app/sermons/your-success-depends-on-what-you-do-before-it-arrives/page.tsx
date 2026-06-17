@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Your Success Depends on What You Do Before It Arrives",
     description: "Stuck waiting for breakthroughs? The real reason blessings don't stick-and how to prepare for them.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/eY2Z-ufGRio/sddefault.jpg", width: 640, height: 480, alt: "Your Success Depends on What You Do Before It Arrives - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/your-success-depends-on-what-you-do-before-it-arrives",
   },
 }

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'The devil cannot touch you unless you allow him to. His entry point is your mind. This message names the silent pattern that kills destiny before it begins. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/FZtTcG2gSsE/maxresdefault.jpg", width: 1280, height: 720, alt: "The Silent Assassin of Destiny: Overthinking - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/the-silent-assassin-of-destiny',
   },
 }

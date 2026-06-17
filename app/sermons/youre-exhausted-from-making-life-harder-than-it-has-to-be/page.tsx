@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "You're Exhausted From Making Life Harder Than It Has to Be",
     description: "Stop relying on your own strength. Discover why following someone who's already walked the path makes everything easier.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/Vc6Qg-KZh1k/maxresdefault.jpg", width: 1280, height: 720, alt: "You're Exhausted From Making Life Harder Than It Has to Be - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be",
   },
 }

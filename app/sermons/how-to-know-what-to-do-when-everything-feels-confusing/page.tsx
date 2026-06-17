@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "How to Know What to Do When Everything Feels Confusing",
     description: "Learn to tap into quiet guidance that cuts through anxiety and confusion. Real strategies for clarity in relationships, money, and life decisions.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/_19sqUvcFc8/maxresdefault.jpg", width: 1280, height: 720, alt: "How to Know What to Do When Everything Feels Confusing - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/how-to-know-what-to-do-when-everything-feels-confusing",
   },
 }

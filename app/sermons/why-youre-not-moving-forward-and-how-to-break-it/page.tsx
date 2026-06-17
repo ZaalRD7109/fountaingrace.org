@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "You know exactly what to do - but you're not doing it. Pastor Ricardo unpacks the real reasons and how to break through. Fountain of Grace International, Pretoria North.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/fI9G4-OvxnA/maxresdefault.jpg", width: 1280, height: 720, alt: "Why You're Not Moving Forward - And How to Break It - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/why-youre-not-moving-forward-and-how-to-break-it',
   },
 }

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Nobody becomes an overnight success overnight. Judas didn\'t betray Jesus in a moment. Samson didn\'t fall in a day. Little compromises are seeds of great falls. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/pFksuQqOuL0/maxresdefault.jpg", width: 1280, height: 720, alt: "The Danger of Overnight Success and the Power of Long Obedience - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/the-danger-of-overnight-success',
   },
 }

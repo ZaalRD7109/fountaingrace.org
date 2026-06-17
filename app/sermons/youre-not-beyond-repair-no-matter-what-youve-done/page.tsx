@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "You're Not Beyond Repair No Matter What You've Done",
     description: "Overwhelmed by past mistakes and labels? Find reassurance you're never too flawed for acceptance.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/BpCTJjbbmT0/maxresdefault.jpg", width: 1280, height: 720, alt: "You're Not Beyond Repair No Matter What You've Done - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/youre-not-beyond-repair-no-matter-what-youve-done",
   },
 }

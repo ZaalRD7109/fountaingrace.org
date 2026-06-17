@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Repossession letters, retrenchment, the death of someone you love. Pastor Ricardo Zaal shows why the darkness you sit in right now is not the end of your story.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/0X1vZhqOVg4/maxresdefault.jpg", width: 1280, height: 720, alt: "When Life Feels Like a Grave You Cannot Climb Out Of - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/when-life-feels-like-a-grave-you-cannot-climb-out-of',
   },
 }

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'If a problem keeps returning after prayer, fasting, and faith - this message explains what most people are missing. Fountain of Grace International, Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/N1_YYrEGtto/maxresdefault.jpg", width: 1280, height: 720, alt: "Why Some Problems Won\\ - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/why-some-problems-wont-leave-until-you-understand-this',
   },
 }

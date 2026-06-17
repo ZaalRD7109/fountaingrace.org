@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Everyone's Rejected You. Here's What That Really Means About Your Worth",
     description: "When family, work, or friends write you off as useless, does that make it true? Discover what rejection actually reveals.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/1x-wGK26Lz0/maxresdefault.jpg", width: 1280, height: 720, alt: "Everyone's Rejected You. Here's What That Really Means About Your Worth - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth",
   },
 }

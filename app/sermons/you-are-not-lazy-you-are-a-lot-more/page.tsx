@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "When you lift up Jesus, He draws people to Himself. When you lift up your problems, they grow. This message stops the wrong confession and starts the right one. Pretoria North.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/kaN3Wn6yaD4/maxresdefault.jpg", width: 1280, height: 720, alt: "You Are Not Lazy - You Are a Lot More | Proverbs 6:6-8 - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/you-are-not-lazy-you-are-a-lot-more',
   },
 }

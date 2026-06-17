@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Samson lost his strength without noticing. Obed-Edom\'s house overflowed in 3 months. The difference was not effort - it was how each one treated the presence. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/5SpeluDggbU/maxresdefault.jpg", width: 1280, height: 720, alt: "Why Sunday Feels Different and Monday Feels Like Nothing Changed | Psalm 27:8 - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/hosting-the-presence-of-god',
   },
 }

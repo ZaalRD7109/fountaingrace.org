@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'If you have ever faced an ending you did not choose, this Good Friday message shows how Jesus turned the most brutal death in history into the most purposeful act ever recorded. Fountain of Grace International, Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/ROCdYtxJa24/maxresdefault.jpg", width: 1280, height: 720, alt: "Dying Right - Good Friday Message - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/dying-right-good-friday-message',
   },
 }

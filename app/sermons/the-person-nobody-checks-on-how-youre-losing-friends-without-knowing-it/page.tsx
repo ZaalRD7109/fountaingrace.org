@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "The Person Nobody Checks On: How You're Losing Friends Without Knowing It",
     description: "Why people drift away when no one holds them accountable. Build the relationships that actually last.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/W9r2iNw8KGM/maxresdefault.jpg", width: 1280, height: 720, alt: "The Person Nobody Checks On: How You're Losing Friends Without Knowing It - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it",
   },
 }

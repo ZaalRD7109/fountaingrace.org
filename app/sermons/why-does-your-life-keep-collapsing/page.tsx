@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'Living the same year on repeat. Collapsing under the same pressure. Knowing scripture but not standing in it. This message names the root cause. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/vorvFFUxyRE/maxresdefault.jpg", width: 1280, height: 720, alt: "Why Does Your Life Keep Collapsing No Matter What You Build? - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/why-does-your-life-keep-collapsing',
   },
 }

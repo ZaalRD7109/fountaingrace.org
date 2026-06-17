@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "10 biblical principles that accelerate progress - for the person who feels stuck, financially trapped, or moving in circles. Fountain of Grace International, Pretoria North.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/hmBthWSxN6g/maxresdefault.jpg", width: 1280, height: 720, alt: "The Principles That Move People Forward Faster - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/the-principles-that-move-people-forward-faster',
   },
 }

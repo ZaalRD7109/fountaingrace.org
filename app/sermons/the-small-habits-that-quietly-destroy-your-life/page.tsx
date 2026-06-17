@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "The Small Habits That Quietly Destroy Your Life",
     description: "Discover how tiny daily compromises and ignored warning signs grow into patterns that damage your future. Learn to fix the root before the damage spreads.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/3wXrFVFbPIM/maxresdefault.jpg", width: 1280, height: 720, alt: "The Small Habits That Quietly Destroy Your Life - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/the-small-habits-that-quietly-destroy-your-life",
   },
 }

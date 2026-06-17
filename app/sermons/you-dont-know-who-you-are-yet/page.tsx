@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       "If you have spent years living by an identity that was handed to you by your worst moments, this message is the interruption you need. Fountain of Grace International, Pretoria North.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/2eUaSyffcIs/maxresdefault.jpg", width: 1280, height: 720, alt: "You Don't Know Who You Are Yet - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/you-dont-know-who-you-are-yet",
   },
 }

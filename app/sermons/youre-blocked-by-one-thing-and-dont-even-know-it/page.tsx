@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "You're Blocked by One Thing and Don't Even Know It",
     description: "Your circumstances aren't stopping you. Your belief about them is. See how to break through what's holding you back.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/kJPPw1KJWys/maxresdefault.jpg", width: 1280, height: 720, alt: "You're Blocked by One Thing and Don't Even Know It - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/youre-blocked-by-one-thing-and-dont-even-know-it",
   },
 }

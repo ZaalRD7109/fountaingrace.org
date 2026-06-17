@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       '2 Timothy 1:6 - stir up the gift of God which is in thee. Isaiah 42:3 says a bruised reed shall he not break. You are not broken. You are bruised. Fear is the prison. Walk out. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/4HYzxlTEb4o/maxresdefault.jpg", width: 1280, height: 720, alt: "You Were Built for Something Specific - Here Is How to Find It - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/the-prophetic-encounter',
   },
 }

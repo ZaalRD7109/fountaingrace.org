@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'The harvest belongs to the workers. Part 2 of the Principles series - why the right action at the right time changes everything. Fountain of Grace International, Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/pM8THfQE3MU/maxresdefault.jpg", width: 1280, height: 720, alt: "The Principle That Activates Everything: Right Action - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/the-principle-that-activates-everything',
   },
 }

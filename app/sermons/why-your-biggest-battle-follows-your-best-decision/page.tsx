@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'You made the right choice. Then everything collapsed. This message explains why opposition after a breakthrough is not a sign you got it wrong. Fountain of Grace International, Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/z5QxF4LbCl8/maxresdefault.jpg", width: 1280, height: 720, alt: "Why Your Biggest Battle Always Follows Your Best Decision - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/why-your-biggest-battle-follows-your-best-decision',
   },
 }

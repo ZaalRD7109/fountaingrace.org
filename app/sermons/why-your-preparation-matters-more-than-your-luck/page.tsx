@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Your Big Break Is Coming, But You're Not Ready For It",
     description: "You have dreams and opportunities knock. But you're stuck without the skills, credentials, or resources to seize them. Here's what actually works.",
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/Ga0nsQvo6jY/maxresdefault.jpg", width: 1280, height: 720, alt: "Your Big Break Is Coming, But You're Not Ready For It - Fountain of Grace International" }],
     url: "https://www.fountaingrace.org/sermons/why-your-preparation-matters-more-than-your-luck",
   },
 }

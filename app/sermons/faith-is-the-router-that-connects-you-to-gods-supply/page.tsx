@@ -14,7 +14,7 @@ export const metadata: Metadata = {
     description:
       'The Wi-Fi is on. The subscription is paid. But if your router is broken, you get nothing. This message explains why faith - not effort - is the thing that connects you to what God has already released. Pretoria North.',
     type: 'article',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
+    images: [{ url: "https://img.youtube.com/vi/PCA8BdDtmUY/maxresdefault.jpg", width: 1280, height: 720, alt: "The Missing Connection Blocking Everything You Need From Getting Through - Fountain of Grace International" }],
     url: 'https://www.fountaingrace.org/sermons/faith-is-the-router-that-connects-you-to-gods-supply',
   },
 }
