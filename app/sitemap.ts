@@ -20,6 +20,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave`, lastModified: new Date('2024-01-28'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/the-shortcut-thats-ruining-your-life`, lastModified: new Date('2023-03-05'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be`, lastModified: new Date('2022-08-14'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth`, lastModified: new Date('2022-07-31'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/theyre-using-you-and-god-is-too`, lastModified: new Date('2022-08-07'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone`, lastModified: new Date('2022-07-24'), changeFrequency: 'monthly', priority: 0.6 },

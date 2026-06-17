@@ -22,6 +22,30 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave",
+    title: "Stuck in a Dead Relationship or Job? Here's Why You Won't Leave",
+    date: "2024-01-28",
+    dateDisplay: "28 January 2024",
+    intro:
+      "You feel trapped in circumstances that drain you-a relationship that hurts, a job going nowhere, life not improving. The real problem isn't laziness. It's separation from purpose.",
+  },
+  {
+    slug: "the-shortcut-thats-ruining-your-life",
+    title: "The Shortcut That's Ruining Your Life",
+    date: "2023-03-05",
+    dateDisplay: "5 March 2023",
+    intro:
+      "When you're stuck in a job search, facing relationship rejection, or watching your dreams collapse, the temptation to cut corners feels irresistible. But there's a reason those shortcuts leave you emptier than before.",
+  },
+  {
+    slug: "youre-exhausted-from-making-life-harder-than-it-has-to-be",
+    title: "You're Exhausted From Making Life Harder Than It Has to Be",
+    date: "2022-08-14",
+    dateDisplay: "14 August 2022",
+    intro:
+      "Most people make life impossibly hard by refusing to follow someone who has already succeeded. What if the solution is simpler than you think?",
+  },
+  {
     slug: "everyones-rejected-you-heres-what-that-really-means-about-your-worth",
     title: "Everyone's Rejected You. Here's What That Really Means About Your Worth",
     date: "2022-07-31",
