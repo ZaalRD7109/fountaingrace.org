@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "you-work-hard-but-nothing-changes-heres-what-youre-missing",
+    title: "You Work Hard But Nothing Changes - Here's What You're Missing",
+    date: "2023-04-06",
+    dateDisplay: "6 April 2023",
+    intro:
+      "You pray, you work, you wait-but nothing seems to improve. This message is for anyone wrestling with whether their life has any real meaning or a good ending.",
+  },
+  {
     slug: "your-past-mistakes-dont-determine-your-future",
     title: "Your Past Mistakes Don't Determine Your Future",
     date: "2023-04-14",
