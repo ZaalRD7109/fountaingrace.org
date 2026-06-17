@@ -42,7 +42,9 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: '@FGIPta',
-    images: ['/og-image.jpg'],
+    // No hardcoded image: Next derives twitter:image from each page's openGraph.images,
+    // so sermon shares use their own YouTube thumbnail (the root openGraph fallback
+    // below still covers the homepage and any page that sets no openGraph.images).
   },
   other: {
     // IndexNow key for Bing/Yandex instant indexing
