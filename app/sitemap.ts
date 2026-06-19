@@ -20,6 +20,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works`, lastModified: new Date('2024-06-05'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think`, lastModified: new Date('2023-08-13'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/helping-someone-actually-keeps-them-stuck`, lastModified: new Date('2023-09-17'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/stop-helping-people-its-making-them-worse`, lastModified: new Date('2023-08-20'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/your-past-failures-dont-define-your-future-heres-why`, lastModified: new Date('2023-04-21'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/youre-working-hard-but-nothing-changes-heres-why`, lastModified: new Date('2022-07-04'), changeFrequency: 'monthly', priority: 0.6 },
