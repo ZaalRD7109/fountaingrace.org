@@ -36,7 +36,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-06-16T12:00:00+02:00",
+    "datePublished": "2024-06-16T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/your-success-depends-on-what-you-do-before-it-arrives"
   },
   {
@@ -99,7 +99,7 @@ const jsonLd = [
     "name": "Your Success Depends on What You Do Before It Arrives",
     "description": "Your Success Depends on What You Do Before It Arrives",
     "thumbnailUrl": "https://img.youtube.com/vi/eY2Z-ufGRio/maxresdefault.jpg",
-    "uploadDate": "2026-06-16T12:00:00+02:00",
+    "uploadDate": "2024-06-16T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/eY2Z-ufGRio",
     "url": "https://www.fountaingrace.org/sermons/your-success-depends-on-what-you-do-before-it-arrives",
     "author": {

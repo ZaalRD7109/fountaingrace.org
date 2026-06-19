@@ -120,24 +120,24 @@ const sermonPosts = [
   {
     slug: "your-success-depends-on-what-you-do-before-it-arrives",
     title: "Your Success Depends on What You Do Before It Arrives",
-    date: "2026-06-16",
-    dateDisplay: "16 June 2026",
+    date: "2024-06-16",
+    dateDisplay: "16 June 2024",
     intro:
       "Most people wait passively for good things to happen. But breakthrough doesn't work that way. Your marriage, money, health, and purpose all follow the same rule: preparation before arrival.",
   },
   {
     slug: "stop-waiting-to-be-perfect-before-you-matter",
     title: "Stop Waiting to Be Perfect Before You Matter",
-    date: "2026-06-16",
-    dateDisplay: "16 June 2026",
+    date: "2024-03-03",
+    dateDisplay: "3 March 2024",
     intro:
       "Most people underestimate what they can do and overestimate what they need before they start. This changes that.",
   },
   {
     slug: "youre-not-beyond-repair-no-matter-what-youve-done",
     title: "You're Not Beyond Repair No Matter What You've Done",
-    date: "2026-06-15",
-    dateDisplay: "15 June 2026",
+    date: "2026-06-14",
+    dateDisplay: "14 June 2026",
     intro:
       "Feel like your mistakes define you? Struggling with shame and alienation? You can find hope and acceptance.",
   },
@@ -424,8 +424,8 @@ const sermonPosts = [
   {
     slug: 'feeling-empty-and-exhausted-how-to-find-strength-when-you-have-nothing',
     title: 'Feeling Empty and Exhausted? How to Find Strength When You Have Nothing Left',
-    date: '2026-04-27',
-    dateDisplay: '27 April 2026',
+    date: '2026-04-26',
+    dateDisplay: '26 April 2026',
     intro:
       'For the person who feels dried up, exhausted, and quietly carrying too much. Pastor Ricardo Zaal opens 2 Corinthians 12:9 and shows why your emptiest moment is the exact place where real strength shows up. Honest, practical, and for anyone running on empty.',
   },

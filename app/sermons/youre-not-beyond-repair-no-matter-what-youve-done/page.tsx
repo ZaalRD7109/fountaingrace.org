@@ -36,7 +36,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-06-15T12:00:00+02:00",
+    "datePublished": "2026-06-14T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/youre-not-beyond-repair-no-matter-what-youve-done"
   },
   {
@@ -99,7 +99,7 @@ const jsonLd = [
     "name": "You're Not Beyond Repair No Matter What You've Done",
     "description": "You're Not Beyond Repair No Matter What You've Done",
     "thumbnailUrl": "https://img.youtube.com/vi/BpCTJjbbmT0/maxresdefault.jpg",
-    "uploadDate": "2026-06-15T12:00:00+02:00",
+    "uploadDate": "2026-06-14T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/BpCTJjbbmT0",
     "url": "https://www.fountaingrace.org/sermons/youre-not-beyond-repair-no-matter-what-youve-done",
     "author": {

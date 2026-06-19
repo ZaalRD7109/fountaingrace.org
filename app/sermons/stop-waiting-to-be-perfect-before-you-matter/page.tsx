@@ -36,7 +36,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-06-16T12:00:00+02:00",
+    "datePublished": "2024-03-03T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/stop-waiting-to-be-perfect-before-you-matter"
   },
   {
@@ -99,7 +99,7 @@ const jsonLd = [
     "name": "Stop Waiting to Be Perfect Before You Matter",
     "description": "Stop Waiting to Be Perfect Before You Matter",
     "thumbnailUrl": "https://img.youtube.com/vi/L7tX_Oby05I/maxresdefault.jpg",
-    "uploadDate": "2026-06-16T12:00:00+02:00",
+    "uploadDate": "2024-03-03T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/L7tX_Oby05I",
     "url": "https://www.fountaingrace.org/sermons/stop-waiting-to-be-perfect-before-you-matter",
     "author": {

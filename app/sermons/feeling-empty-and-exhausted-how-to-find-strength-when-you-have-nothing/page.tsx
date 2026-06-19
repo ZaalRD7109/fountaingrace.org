@@ -40,7 +40,7 @@ const jsonLd = [
         "addressCountry": "ZA"
       }
     },
-    "datePublished": "2026-04-27T12:00:00+02:00",
+    "datePublished": "2026-04-26T12:00:00+02:00",
     "url": "https://www.fountaingrace.org/sermons/feeling-empty-and-exhausted-how-to-find-strength-when-you-have-nothing"
   },
   {
@@ -73,7 +73,7 @@ const jsonLd = [
     "name": "Feeling Empty and Exhausted? How to Find Strength When You Have Nothing Left",
     "description": "You feel like a lemon squeezed dry, with nothing left to give. Pastor Ricardo Zaal shows why your weakest moment is exactly where help shows up strongest.",
     "thumbnailUrl": "https://img.youtube.com/vi/R36fgD4M-9A/maxresdefault.jpg",
-    "uploadDate": "2026-04-27T12:00:00+02:00",
+    "uploadDate": "2026-04-26T12:00:00+02:00",
     "embedUrl": "https://www.youtube.com/embed/R36fgD4M-9A",
     "url": "https://www.fountaingrace.org/sermons/feeling-empty-and-exhausted-how-to-find-strength-when-you-have-nothing",
     "author": {
