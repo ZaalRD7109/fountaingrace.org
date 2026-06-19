@@ -1,875 +1,181 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import SermonsFilter from './_components/SermonsFilter'
 
 export const metadata: Metadata = {
-  title: 'Sermons | Bible Teaching | Fountain of Grace International',
-  description:
-    'Practical Bible teaching from a Christian church in Pretoria North. Every Sunday message addresses a real problem you are facing. Listen online or come in person.',
+  title: " | Fountain of Grace International",
+  description: "",
   robots: 'index, follow',
-  alternates: {
-    canonical: 'https://www.fountaingrace.org/sermons',
-  },
+  alternates: { canonical: "https://www.fountaingrace.org/sermons/" },
   openGraph: {
-    title: 'Sermons | Bible Teaching | Fountain of Grace International',
-    description:
-      'Practical Bible teaching from a Christian church in Pretoria North. Every Sunday message addresses a real problem you are facing. Listen online or come in person.',
-    type: 'website',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
-    url: 'https://www.fountaingrace.org/sermons',
+    title: "",
+    description: "",
+    type: 'article',
+    images: [{ url: "https://img.youtube.com/vi/662IsjaB4zU/maxresdefault.jpg", width: 1280, height: 720, alt: " - Fountain of Grace International" }],
+    url: "https://www.fountaingrace.org/sermons/",
   },
 }
 
-const sermonPosts = [
-  {
-    slug: "you-work-hard-but-nothing-changes-heres-what-youre-missing",
-    title: "You Work Hard But Nothing Changes - Here's What You're Missing",
-    date: "2023-04-06",
-    dateDisplay: "6 April 2023",
-    intro:
-      "You pray, you work, you wait-but nothing seems to improve. This message is for anyone wrestling with whether their life has any real meaning or a good ending.",
-  },
-  {
-    slug: "your-past-mistakes-dont-determine-your-future",
-    title: "Your Past Mistakes Don't Determine Your Future",
-    date: "2023-04-14",
-    dateDisplay: "14 April 2023",
-    intro:
-      "You're paralyzed by what happened. But the person you're meant to become doesn't live in yesterday. Here's how to rebuild when captivity feels permanent.",
-  },
-  {
-    slug: "stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave",
-    title: "Stuck in a Dead Relationship or Job? Here's Why You Won't Leave",
-    date: "2024-01-28",
-    dateDisplay: "28 January 2024",
-    intro:
-      "You feel trapped in circumstances that drain you-a relationship that hurts, a job going nowhere, life not improving. The real problem isn't laziness. It's separation from purpose.",
-  },
-  {
-    slug: "the-shortcut-thats-ruining-your-life",
-    title: "The Shortcut That's Ruining Your Life",
-    date: "2023-03-05",
-    dateDisplay: "5 March 2023",
-    intro:
-      "When you're stuck in a job search, facing relationship rejection, or watching your dreams collapse, the temptation to cut corners feels irresistible. But there's a reason those shortcuts leave you emptier than before.",
-  },
-  {
-    slug: "youre-exhausted-from-making-life-harder-than-it-has-to-be",
-    title: "You're Exhausted From Making Life Harder Than It Has to Be",
-    date: "2022-08-14",
-    dateDisplay: "14 August 2022",
-    intro:
-      "Most people make life impossibly hard by refusing to follow someone who has already succeeded. What if the solution is simpler than you think?",
-  },
-  {
-    slug: "everyones-rejected-you-heres-what-that-really-means-about-your-worth",
-    title: "Everyone's Rejected You. Here's What That Really Means About Your Worth",
-    date: "2022-07-31",
-    dateDisplay: "31 July 2022",
-    intro:
-      "You've been thrown away, rejected, called a failure. But what others believe about you and what's actually true about you are two completely different things.",
-  },
-  {
-    slug: "theyre-using-you-and-god-is-too",
-    title: "They're Using You-And God Is Too",
-    date: "2022-08-07",
-    dateDisplay: "7 August 2022",
-    intro:
-      "Your pain at work, in relationships, or at church might feel pointless. But what if the very people hurting you are unknowingly part of God's plan to position you for breakthrough?",
-  },
-  {
-    slug: "youre-exhausted-because-youre-trying-to-do-everything-alone",
-    title: "You're Exhausted Because You're Trying to Do Everything Alone",
-    date: "2022-07-24",
-    dateDisplay: "24 July 2022",
-    intro:
-      "You keep pushing harder but falling further behind. There's a reason you can't seem to do it all on your own-and a way out.",
-  },
-  {
-    slug: "you-feel-trapped-by-what-others-say-you-cant-do",
-    title: "You Feel Trapped By What Others Say You Can't Do",
-    date: "2022-11-27",
-    dateDisplay: "27 November 2022",
-    intro:
-      "You've heard it a thousand times: you can't start that business, you can't leave that job, you can't be worthy of love. This message shows you why those voices keep you captive and how to actually break free.",
-  },
-  {
-    slug: "your-struggles-arent-wasting-your-life-theyre-building-you-for-something",
-    title: "Your Struggles Aren't Wasting Your Life-They're Building You for Something",
-    date: "2022-09-18",
-    dateDisplay: "18 September 2022",
-    intro:
-      "You've endured things that make no sense right now. But what if every painful season-the early parenthood, failed relationships, job rejections, financial crises-was actually divine preparation for the specific purpose you're meant to fulfill?",
-  },
-  {
-    slug: "youre-about-to-quit-right-before-everything-changes",
-    title: "You're About to Quit Right Before Everything Changes",
-    date: "2022-07-10",
-    dateDisplay: "10 July 2022",
-    intro:
-      "You've been working all night with nothing to show for it. Your business stalls. Your relationship feels broken. Your health won't improve. The temptation to quit is overwhelming. But what if your breakthrough is closer than you think?",
-  },
-  {
-    slug: "youre-blocked-by-one-thing-and-dont-even-know-it",
-    title: "You're Blocked by One Thing and Don't Even Know It",
-    date: "2022-12-11",
-    dateDisplay: "11 December 2022",
-    intro:
-      "You have limitations. Maybe you lack qualifications, money, the right looks, or you're ashamed of past mistakes. But these aren't your real obstacle. Your real problem is believing they mean you can't move forward.",
-  },
-  {
-    slug: "your-success-depends-on-what-you-do-before-it-arrives",
-    title: "Your Success Depends on What You Do Before It Arrives",
-    date: "2024-06-16",
-    dateDisplay: "16 June 2024",
-    intro:
-      "Most people wait passively for good things to happen. But breakthrough doesn't work that way. Your marriage, money, health, and purpose all follow the same rule: preparation before arrival.",
-  },
-  {
-    slug: "stop-waiting-to-be-perfect-before-you-matter",
-    title: "Stop Waiting to Be Perfect Before You Matter",
-    date: "2024-03-03",
-    dateDisplay: "3 March 2024",
-    intro:
-      "Most people underestimate what they can do and overestimate what they need before they start. This changes that.",
-  },
-  {
-    slug: "youre-not-beyond-repair-no-matter-what-youve-done",
-    title: "You're Not Beyond Repair No Matter What You've Done",
-    date: "2026-06-14",
-    dateDisplay: "14 June 2026",
-    intro:
-      "Feel like your mistakes define you? Struggling with shame and alienation? You can find hope and acceptance.",
-  },
-  {
-    slug: "stop-wasting-energy-on-people-who-wont-listen",
-    title: "Stop Wasting Energy on People Who Won't Listen",
-    date: "2026-06-07",
-    dateDisplay: "7 June 2026",
-    intro:
-      "You're exhausted from defending yourself to people who have already decided who you are. This is the trap-and how to escape it.",
-  },
-  {
-    slug: "the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids",
-    title: "The Pain You Inherited From Your Father Is Quietly Breaking Your Kids",
-    date: "2025-06-15",
-    dateDisplay: "15 June 2025",
-    intro:
-      "Your father's unresolved pain doesn't just hurt him-it shapes how you parent, what you believe about yourself, and what your children will inherit. This message shows why presence and healing matter more than you think.",
-  },
-  {
-    slug: "your-life-falls-apart-under-pressure-because-of-whats-actually-inside-you",
-    title: "Your Life Falls Apart Under Pressure Because of What's Actually Inside You",
-    date: "2026-01-18",
-    dateDisplay: "18 January 2026",
-    intro:
-      "You know all the right things to say and do in public. But the moment real pressure hits-financial stress, relationship conflict, temptation-you fall apart. That's not a sign you're broken. It's a sign your foundation is built wrong.",
-  },
-  {
-    slug: "everyone-around-you-is-pretending-heres-why-youre-alone",
-    title: "Everyone Around You Is Pretending - Here's Why You're Alone",
-    date: "2026-05-24",
-    dateDisplay: "24 May 2026",
-    intro:
-      "You're waiting for the right people to show up while pushing away the ones who could actually change your life. A message about why your standards are costing you genuine connection.",
-  },
-  {
-    slug: "the-hidden-cost-of-staying-silent-at-work-home-and-in-life",
-    title: "The Hidden Cost of Staying Silent at Work, Home, and in Life",
-    date: "2026-05-31",
-    dateDisplay: "31 May 2026",
-    intro:
-      "You have brilliant ideas, strong convictions, and things that matter. But fear, insecurity, or waiting for permission keeps you quiet-while less qualified people advance, your relationships suffer, and your potential dies unspoken.",
-  },
-  {
-    slug: "how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear",
-    title: "How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear",
-    date: "2024-10-27",
-    dateDisplay: "27 October 2024",
-    intro:
-      "You get a strong feeling about a relationship, a friend, a decision. But how do you know if it's real guidance or just anxiety talking? Here's how to tell the difference and act on what matters.",
-  },
-  {
-    slug: "six-invisible-gaps-that-wreck-your-life-and-how-to-close-them",
-    title: "Six Invisible Gaps That Wreck Your Life (And How to Close Them)",
-    date: "2025-01-19",
-    dateDisplay: "19 January 2025",
-    intro:
-      "You wake up with good intentions but life spirals. Work, hurt, laziness, and confusion quietly disconnect you from your own stability. Six specific obstacles explain why-and one daily practice fixes it.",
-  },
-  {
-    slug: "stop-waiting-for-permission-to-become-who-you-already-are",
-    title: "Stop Waiting for Permission to Become Who You Already Are",
-    date: "2024-10-04",
-    dateDisplay: "4 October 2024",
-    intro:
-      "Feeling like you don't measure up? Discover how ordinary people amplify what matters most by being authentically themselves, not waiting for perfect conditions or someone else to act.",
-  },
-  {
-    slug: "stop-waiting-for-someone-else-to-tell-you-whats-coming",
-    title: "Stop Waiting for Someone Else to Tell You What's Coming",
-    date: "2024-11-10",
-    dateDisplay: "10 November 2024",
-    intro:
-      "You already sense things you can't explain. Here's how to trust those instincts, act on them with confidence, and access guidance for the decisions that matter most.",
-  },
-  {
-    slug: "when-life-knocks-you-down-does-integrity-actually-matter",
-    title: "When Life Knocks You Down, Does Integrity Actually Matter",
-    date: "2025-03-08",
-    dateDisplay: "8 March 2025",
-    intro:
-      "You've been lied to, knocked down, or betrayed. Now you're wondering if playing by the rules even works. A forgotten story shows you it does-but not how you think.",
-  },
-  {
-    slug: "the-small-habits-that-quietly-destroy-your-life",
-    title: "The Small Habits That Quietly Destroy Your Life",
-    date: "2024-12-08",
-    dateDisplay: "8 December 2024",
-    intro:
-      "You notice small habits and negative patterns in your life, but they feel harmless. The truth is they're already growing into something much bigger. This message shows why what you tolerate today becomes who you are tomorrow.",
-  },
-  {
-    slug: "the-one-conversation-that-stops-relationship-arguments-before-they-start",
-    title: "The One Conversation That Stops Relationship Arguments Before They Start",
-    date: "2024-10-13",
-    dateDisplay: "13 October 2024",
-    intro:
-      "You're probably fighting about things neither of you actually said. The real problem is unstated expectations and unclear communication. One honest conversation changes everything.",
-  },
-  {
-    slug: "how-to-know-what-to-do-when-everything-feels-confusing",
-    title: "How to Know What to Do When Everything Feels Confusing",
-    date: "2024-11-03",
-    dateDisplay: "3 November 2024",
-    intro:
-      "You already have access to wisdom beyond your own panicked thoughts. Here's how to hear it and use it to guide your decisions when life gets messy.",
-  },
-  {
-    slug: "the-cost-of-sitting-on-the-sidelines",
-    title: "The Cost of Sitting on the Sidelines",
-    date: "2025-02-15",
-    dateDisplay: "15 February 2025",
-    intro:
-      "You already know what you need to do. The only thing stopping you is waiting for conditions to be just right-and that wait might cost you everything.",
-  },
-  {
-    slug: "the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it",
-    title: "The Person Nobody Checks On: How You're Losing Friends Without Knowing It",
-    date: "2024-12-15",
-    dateDisplay: "15 December 2024",
-    intro:
-      "You feel alone because nobody's watching your back. And you're probably doing the same to others. Here's how mutual accountability actually works.",
-  },
-  {
-    slug: "your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it",
-    title: "Your Mind Is Broken By Lies You Believed - Here's How to Rebuild It",
-    date: "2025-01-12",
-    dateDisplay: "12 January 2025",
-    intro:
-      "You were created for wholeness, provision, and belonging. But somewhere along the way, lies and broken patterns corrupted your thinking. This is how you get back to who you were meant to be.",
-  },
-  {
-    slug: "when-life-deliberately-gets-worse-before-it-works-out",
-    title: "When Life Deliberately Gets Worse Before It Works Out",
-    date: "2025-03-01",
-    dateDisplay: "1 March 2025",
-    intro:
-      "You had a clear plan. Then betrayal, false accusations, or circumstances beyond your control derailed everything. Now you're wondering if your life will ever move forward. What if this detour is actually the route to something better?",
-  },
-  {
-    slug: "the-real-reason-youre-trapped-in-debt-and-how-to-break-free",
-    title: "The Real Reason You're Trapped in Debt (And How to Break Free)",
-    date: "2024-12-08",
-    dateDisplay: "8 December 2024",
-    intro:
-      "You feel the pressure to have enough - enough money, enough health, enough worth. But what if the debt you owe has already been paid in full? Explore what changes when you stop competing and start receiving.",
-  },
-  {
-    slug: "you-got-what-you-prayed-for-but-lost-it-anyway",
-    title: "You Got What You Prayed For But Lost It Anyway",
-    date: "2025-01-31",
-    dateDisplay: "31 January 2025",
-    intro:
-      "You finally got the job you desperately needed. Three months later you're fired again. You got the money. It's gone. Your spouse came back, but the trust is shattered. What's actually broken?",
-  },
-  {
-    slug: "the-person-who-notices-when-you-disappear",
-    title: "The Person Who Notices When You Disappear",
-    date: "2025-02-21",
-    dateDisplay: "21 February 2025",
-    intro:
-      "You probably know someone who vanished when they needed help most. Pastor Ricardo explains why most communities fail their people, and how real accountability actually works.",
-  },
-  {
-    slug: "your-dreams-feel-dead-but-delays-arent-denials-heres-why",
-    title: "Your Dreams Feel Dead, But Delays Aren't Denials-Here's Why",
-    date: "2025-03-15",
-    dateDisplay: "15 March 2025",
-    intro:
-      "You're doing everything right. Your intentions are solid. Yet life keeps hurting and progress stalls. What if the real answer isn't more hustle-it's understanding what suffering actually does in a life built to matter?",
-  },
-  {
-    slug: "why-your-preparation-matters-more-than-your-luck",
-    title: "Your Big Break Is Coming, But You're Not Ready For It",
-    date: "2025-03-22",
-    dateDisplay: "22 March 2025",
-    intro:
-      "Success isn't luck. It's the collision of opportunity and preparation. Most people wait for the perfect moment instead of preparing during this one.",
-  },
-  {
-    slug: "why-your-biggest-dreams-attract-the-strongest-opposition",
-    title: "When Your Success Makes People Jealous: Here's What It Really Means",
-    date: "2025-03-30",
-    dateDisplay: "30 March 2025",
-    intro:
-      "When people closest to you suddenly turn jealous or hostile, it feels like failure. But it might be the opposite.",
-  },
-  {
-    slug: "false-accusations-wont-stop-your-dreams-what-josephs-story-reveals",
-    title: "Your Boss Will Never Promote You Like This",
-    date: "2025-04-06",
-    dateDisplay: "6 April 2025",
-    intro:
-      "You work hard. You stay honest. But the person who cuts corners and talks loudly gets the promotion. Here's what nobody tells you about how real success actually works.",
-  },
-  {
-    slug: "why-your-kindness-might-be-hurting-people",
-    title: "Your Help Is Making Them Helpless",
-    date: "2025-04-12",
-    dateDisplay: "12 April 2025",
-    intro:
-      "You think you're helping. But endless handouts, overprotection, and solving problems for people actually stunts their growth and steals their dignity. Learn when real love means letting people struggle.",
-  },
-  {
-    slug: "why-jesus-changed-everything-the-birth-that-brings-new-life",
-    title: "Your Stuck Life Can Actually Change: Here's What Needs to Happen First",
-    date: "2025-06-15",
-    dateDisplay: "15 June 2025",
-    intro:
-      "You're not meant to stay where you are. Real transformation starts with understanding what broke things can become.",
-  },
-  {
-    slug: "why-youre-losing-battles-and-how-to-actually-win",
-    title: "The Real Reason You Feel Like You're Losing When Everything Falls Apart",
-    date: "2025-06-15",
-    dateDisplay: "15 June 2025",
-    intro:
-      "Your spouse left. Your job vanished. Your savings dried up. You're drowning in problems that feel bigger than you. But there's something about how battles actually work that changes everything.",
-  },
-  {
-    slug: "i-nearly-died-this-week-heres-what-changed-everything",
-    title: "You're Stuck Because You Don't Know Where You're Going",
-    date: "2026-04-29",
-    dateDisplay: "29 April 2026",
-    intro:
-      "You're not lazy. You're directionless. Here's how to escape dead-end situations and build momentum toward something that matters.",
-  },
-  {
-    slug: "why-youre-busy-but-stuck-the-action-that-actually-works",
-    title: "You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck",
-    date: "2026-05-11",
-    dateDisplay: "11 May 2026",
-    intro:
-      "You show up. You try hard. You do everything right. So why are you still failing? The answer isn't more hustle. It's the specific, immediate action nobody taught you to take.",
-  },
-  {
-    slug: 'why-the-easy-road-always-leads-to-the-wrong-place',
-    title: 'Why the Easy Road Always Leads to the Wrong Place',
-    date: '2026-05-17',
-    dateDisplay: '17 May 2026',
-    intro:
-      'Every shortcut you have taken has cost more than it promised. And somehow you ended up further back than where you started. This message explains exactly why the easy road always delivers the wrong destination - and what the real road actually requires.',
-  },
-  {
-    slug: 'you-already-know-what-to-do-so-why-arent-you-doing-it',
-    title: "You Already Know What To Do - So Why Aren't You Doing It?",
-    date: '2026-03-01',
-    dateDisplay: '1 March 2026',
-    intro:
-      'The problem is not that you need more information. You already know what to do. The gap is between knowing and doing - and that gap has a name. This message identifies what is actually keeping you stuck and shows you how to move.',
-  },
-  {
-    slug: 'youre-still-in-the-story-when-god-seems-silent',
-    title: "You're Still in the Story: When It Looks Like God Is Silent",
-    date: '2025-06-22',
-    dateDisplay: '22 June 2025',
-    intro:
-      'When everything goes quiet and nothing seems to be moving, it is easy to assume God stopped. This message opens Romans 8:28 and shows why the silence you are living in right now is not the end of what God is writing in your life.',
-  },
-  {
-    slug: 'when-you-cant-believe-things-will-get-better-again',
-    title: 'When You Can\'t Believe Things Will Get Better Again',
-    date: '2026-04-26',
-    dateDisplay: '26 April 2026',
-    intro:
-      'For the person who has been hurt so deeply they cannot believe good news anymore. Pastor Ricardo Zaal on why pain blinds you to the answers standing right in front of you, and how honest faith starts growing back.',
-  },
-  {
-    slug: 'tired-of-the-same-pain-coming-back-try-this',
-    title: 'Tired of the Same Pain Coming Back? Try This',
-    date: '2025-12-14',
-    dateDisplay: '14 December 2025',
-    intro:
-      'If the same sickness, breakups, money problems or family patterns keep coming back no matter how hard you pray, this message exposes a spiritual weapon hidden in Scripture from Genesis to Revelation. Pastor Ricardo Zaal shows you how to use it.',
-  },
-  {
-    slug: 'when-life-feels-like-a-grave-you-cannot-climb-out-of',
-    title: 'When Life Feels Like a Grave You Cannot Climb Out Of',
-    date: '2026-04-05',
-    dateDisplay: '5 April 2026',
-    intro:
-      'If you are sitting in a graveyard moment right now, retrenchment, loss, a relationship that died, a diagnosis you did not expect, this message is for you. Pastor Ricardo shares his own losses and seven honest ways to walk through the dark until the third day breaks.',
-  },
-  {
-    slug: 'feeling-empty-and-exhausted-how-to-find-strength-when-you-have-nothing',
-    title: 'Feeling Empty and Exhausted? How to Find Strength When You Have Nothing Left',
-    date: '2026-04-26',
-    dateDisplay: '26 April 2026',
-    intro:
-      'For the person who feels dried up, exhausted, and quietly carrying too much. Pastor Ricardo Zaal opens 2 Corinthians 12:9 and shows why your emptiest moment is the exact place where real strength shows up. Honest, practical, and for anyone running on empty.',
-  },
-  {
-    slug: 'if-your-church-does-not-change-you-change-your-church',
-    title: "Are You Actually Being Transformed or Just Showing Up?",
-    date: "2023-07-02",
-    dateDisplay: "2 July 2023",
-    intro:
-      "Sitting in a church week after week but feeling no different can be one of the most quietly painful experiences a believer faces. Pastor Ricardo Zaal tackles this head-on with a bold statement - if your church does not change you, change your church. This sermon from Fountain of Grace International in Pretoria North is a Spirit-filled call to stop settling for a church experience that leaves you exactly where you started.",
-  },
-  {
-    slug: 'dont-pray-the-storm-away-why-you-need-the-storm',
-    title: "Stop Trying to Escape Your Problems - Here Is What They Are Actually For",
-    date: "2024-01-01",
-    dateDisplay: "1 January 2024",
-    intro:
-      "When life feels like it is falling apart, the first prayer most people pray is 'God, make it stop.' But what if the storm is not your enemy? Pastor Ricardo Zaal opens the Word on New Year's Day to show why the trials you are asking God to remove are often the very things He is using to grow you into who He needs you to be.",
-  },
-  {
-    slug: 'birth-of-the-great-christmas-sermon-matthew-1-21',
-    title: "Born Into Something Greater Than the Life You Are Currently Living",
-    date: "2022-12-25",
-    dateDisplay: "25 December 2022",
-    intro:
-      "Christmas can feel hollow when you are grieving a loss, struggling financially, or sitting alone with no one at the table. Pastor Ricardo Zaal opens the Word on Christmas morning and shows that the birth of Jesus Christ is not a distant historical event but a living force that births new things into the dead places of your life. If something in your world has gone dry, this message is for you.",
-  },
-  {
-    slug: 'born-original-marked-by-god-identity-purpose',
-    title: "You Were Not Made to Be a Copy of Someone Else",
-    date: "2025-08-30",
-    dateDisplay: "30 August 2025",
-    intro:
-      "Do you ever feel like you were born into the wrong story - comparing yourself to others, wishing you looked different, or trying to fit a mould someone else set for you? Pastor Ricardo Zaal tackles that pressure head-on in this message, showing that God did not clone you - He crafted you. From the Hebrew meaning of fearfully and wonderfully made to the intimate knowledge God had of you before birth, this sermon reminds you that your fingerprints, your quirks, and your calling are not accidents.",
-  },
-  {
-    slug: 'god-will-finish-what-he-started-in-you-battle',
-    title: "When Everything Fights Against What You Were Meant to Build",
-    date: "2025-11-09",
-    dateDisplay: "9 November 2025",
-    intro:
-      "When life feels like one long uphill battle - when circumstances, people, and your own exhaustion seem to be working against every promise you have believed for - this message is for you. Pastor Ricardo Zaal opens the Word to show that the God who started something good in your life has never stopped working on it. You are not fighting alone, and the outcome was never in your enemies' hands.",
-  },
-  {
-    slug: 'experiencing-gods-presence-direct-divine-communication',
-    title: "Can Something Greater Than Yourself Actually Speak Directly to You?",
-    date: "2025-09-14",
-    dateDisplay: "14 September 2025",
-    intro:
-      "Many people find it hard to believe that God would actually speak to them personally - that kind of closeness can feel like it belongs only to pastors or Bible heroes. In this message, Pastor Ricardo Zaal of Fountain of Grace International in Pretoria North confronts that doubt head-on and opens up the possibility of a real, living encounter with God. If you have ever sat in church wondering whether God's voice is something you could ever truly hear, this sermon is for you.",
-  },
-  {
-    slug: 'why-your-biggest-battle-follows-your-best-decision',
-    title: 'Why Your Biggest Battle Always Follows Your Best Decision',
-    date: '2026-05-10',
-    dateDisplay: '10 May 2026',
-    intro:
-      'You made the right choice - then everything fell apart. That is not a sign you got it wrong. In Scripture, the biggest battles come immediately after the biggest decisions. This message explains why opposition after a breakthrough is confirmation, not contradiction.',
-  },
-  {
-    slug: 'when-you-stop-hearing-the-voice-that-used-to-guide-every-decision',
-    title: "When You Stop Hearing the Voice That Used to Guide Every Decision",
-    date: "2026-05-10",
-    dateDisplay: "10 May 2026",
-    intro:
-      "There was a time you knew exactly what to do. Something - a quiet voice, a clear nudge, a settled knowing - guided your best decisions. Then the noise got louder and the voice got quieter. This message from Pastor Ricardo Zaal shows why that happened and how to hear clearly again.",
-  },
-  {
-    slug: 'you-dont-know-who-you-are-yet',
-    title: "You Don't Know Who You Are Yet",
-    date: '2026-05-03',
-    dateDisplay: '3 May 2026',
-    intro:
-      "You have been living by an identity built from failure, other people's words, and what life has done to you. God consistently addresses people by who they are becoming, not who they currently appear to be. Gideon was hiding when the angel called him a mighty man of valour.",
-  },
-  {
-    slug: 'the-principle-that-activates-everything',
-    title: 'The Principle That Activates Everything: Right Action',
-    date: '2026-04-26',
-    dateDisplay: '26 April 2026',
-    intro:
-      'You have prayed. You have believed. But something is still not activating. Right action - obedient, timely movement in the right direction - is the principle that turns faith into results. James 2:17.',
-  },
-  {
-    slug: 'why-some-problems-wont-leave-until-you-understand-this',
-    title: "Why Some Problems Won't Leave Until You Understand This",
-    date: '2026-04-19',
-    dateDisplay: '19 April 2026',
-    intro:
-      'The blood of Jesus has five specific functions that most believers have never applied. Problems that keep returning do so until you understand what Revelation 12:11 actually means by "they overcame."',
-  },
-  {
-    slug: 'you-love-god-but-are-you-in-the-game',
-    title: 'You Know What You Should Be Doing - So Why Are You Still on the Sidelines?',
-    date: '2026-04-05',
-    dateDisplay: '5 April 2026',
-    intro:
-      'The crowd cheered Jesus and then crucified Him. The donkey carried Him in silence and made history. Based on Matthew 21 and Luke 19, this message asks which one describes your relationship with God right now.',
-  },
-  {
-    slug: 'dying-right-good-friday-message',
-    title: 'Dying Right - What Jesus Did on the Cross That Most People Miss',
-    date: '2026-04-03',
-    dateDisplay: '3 April 2026',
-    intro:
-      'Good Friday is not a tragedy. Jesus was not a victim - He was a volunteer. Every word He spoke from the cross was deliberate. This message looks at what it means to face an ending the right way, and what tetelestai - paid in full - changes for you today.',
-  },
-  {
-    slug: 'when-knowing-is-the-problem',
-    title: 'When Knowing Is the Problem',
-    date: '2026-02-15',
-    dateDisplay: '15 February 2026',
-    intro:
-      'James 1:22 - the hearer who does not act is like a man who looks in a mirror and walks away forgetting his face. You already know what to do. That is exactly the problem this message addresses.',
-  },
-  {
-    slug: 'when-good-things-block-god-things',
-    title: 'How Good Opportunities Become the Thing That Stops Your Real Breakthrough',
-    date: '2026-02-08',
-    dateDisplay: '8 February 2026',
-    intro:
-      'You can be climbing a ladder leaned against the wrong wall. Good intentions and genuine busyness - but misaligned with God\'s appointed season. The Martha pattern is more common than most people admit.',
-  },
-  {
-    slug: 'your-resolution-didnt-fail-you-quit-acting',
-    title: "Your Resolution Didn't Fail - You Quit Acting",
-    date: '2026-01-25',
-    dateDisplay: '25 January 2026',
-    intro:
-      'The resolution was not the problem. Your habits did not hear the declaration. You are not lazy - you are tired of failing. This message explains the gap between motivation and consistent action.',
-  },
-  {
-    slug: 'the-system-youre-praying-against-without-knowing-it',
-    title: "Why You Keep Losing - You Are Fighting the Wrong Enemy",
-    date: '2026-01-18',
-    dateDisplay: '18 January 2026',
-    intro:
-      'God already opened the door. The system is already set. But disobedience, ingratitude, and praying for what is already provided - without walking through it - is unknowingly working against your own breakthrough.',
-  },
-  {
-    slug: 'why-does-your-life-keep-collapsing',
-    title: 'Why Does Your Life Keep Collapsing No Matter What You Build?',
-    date: '2026-01-11',
-    dateDisplay: '11 January 2026',
-    intro:
-      'Living 70 years but repeating the same one. Collapsing in the same places. Storms do not create what spills out - they reveal what was already there. This message names the root, not just the symptom.',
-  },
-  {
-    slug: 'why-some-things-refuse-to-move',
-    title: 'Why Some Things Refuse to Move',
-    date: '2026-01-04',
-    dateDisplay: '4 January 2026',
-    intro:
-      'The name of Jesus is not a religious formula to end prayers. It is a legal claim that requires relationship and order. Philippians 2:9-10 and Matthew 7:22-23 explain why some things still will not move.',
-  },
-  {
-    slug: 'why-your-prayers-are-not-changing-your-life',
-    title: 'Why Nothing Changes No Matter How Hard You Try',
-    date: '2026-01-04',
-    dateDisplay: '4 January 2026',
-    intro:
-      'A prophetic word only activates when faith meets the right action step. Most regrets are not about what you did wrong - they are about what you never did at all. The foundation was laid. Nobody ever added the bricks.',
-  },
-  {
-    slug: 'the-principles-that-move-people-forward-faster',
-    title: 'The Principles That Move People Forward Faster',
-    date: '2026-03-08',
-    dateDisplay: '8 March 2026',
-    intro:
-      'You have been praying. You have been trying. Nothing has changed. This message gives 10 biblical principles - obedience, positioning, wisdom, strategy, stewardship, relationships, and more.',
-  },
-  {
-    slug: 'what-if-someone-else-finishes-what-was-meant-for-you',
-    title: 'What If Someone Else Finishes What Was Meant for You?',
-    date: '2026-02-22',
-    dateDisplay: '22 February 2026',
-    intro:
-      'You know your potential. You keep postponing. Based on Esther 4:14, this message asks the uncomfortable question: what if your window closes and someone else steps into your assignment?',
-  },
-  {
-    slug: 'follow-your-inner-voice-discover-your-destiny',
-    title: 'Follow Your Inner Voice - Discover Your Destiny',
-    date: '2026-02-24',
-    dateDisplay: '24 February 2026',
-    intro:
-      'Before you were born, God already set you apart. This message challenges you to stop listening to the voices that told you to stop running - and start moving in the direction God placed inside you.',
-  },
-  {
-    slug: 'be-a-doer-of-gods-word-not-just-a-hearer',
-    title: "You Know What to Do. So Why Is Nothing Changing?",
-    date: '2026-02-16',
-    dateDisplay: '16 February 2026',
-    intro:
-      'James 1:21-25 - the person who hears and forgets is like a man who looks in a mirror and walks away. The blessing is attached to the doing, not the hearing.',
-  },
-  {
-    slug: 'why-youre-not-moving-forward-and-how-to-break-it',
-    title: "Why You're Not Moving Forward - And How to Break It",
-    date: '2026-03-01',
-    dateDisplay: '1 March 2026',
-    intro:
-      'Most people are not stuck because of a lack of information. They are stuck because of four specific patterns that disguise themselves as wisdom. This message names them and breaks them.',
-  },
-  {
-    slug: 'pruning-for-progress',
-    title: 'Pruning for Progress: From Bare Branch to Bountiful Blessing',
-    date: '2025-11-02',
-    dateDisplay: '2 November 2025',
-    intro:
-      'John 15:1-8 - God prunes every branch that bears fruit so it bears more. The cutting is not punishment. It is preparation. The season of pruning is the season closest to breakthrough.',
-  },
-  {
-    slug: 'the-spiritual-weapon-declaration',
-    title: 'How to Break a Pattern That Has Followed Your Family for Generations',
-    date: '2025-10-26',
-    dateDisplay: '26 October 2025',
-    intro:
-      'This is not a passive message - it is an activation. Jeremiah 22:29: O earth, earth, earth, hear the word of the LORD. Genesis 1:26 gave you dominion. John 14:12 says greater works. Open your mouth and speak.',
-  },
-  {
-    slug: 'the-spiritual-weapon-no-one-speaks-about',
-    title: 'The One Weapon Nobody Teaches You That Changes Every Fight (But Everyone Needs)',
-    date: '2025-10-19',
-    dateDisplay: '19 October 2025',
-    intro:
-      'John 8:6 - Jesus stooped and wrote on the ground. Every accuser left. That was a weapon. Genesis 1:11 shows God spoke to the earth before He spoke to man. Creation is programmed to respond to spoken authority. So are your cycles.',
-  },
-  {
-    slug: 'no-more-waiting-rooms-god-is-live-now',
-    title: 'Stop Waiting for Your Real Life to Begin - It Already Started',
-    date: '2025-09-28',
-    dateDisplay: '28 September 2025',
-    intro:
-      'You are not stuck in a waiting room. God is not buffering. Isaiah 43:19 says the new thing is already springing forth. The question is not when He will move - it is whether you are tuned in to where He already is.',
-  },
-  {
-    slug: 'the-silent-assassin-of-destiny',
-    title: 'The Silent Assassin of Destiny: Overthinking',
-    date: '2025-08-31',
-    dateDisplay: '31 August 2025',
-    intro:
-      'Overthinking kills destiny before you start. The enemy cannot touch you unless you allow him to - and his entry point is your mind. Based on 2 Corinthians 10:4-5, this message names the pattern and shows how to break it.',
-  },
-  {
-    slug: 'the-anointing-that-makes-hell-fear-you',
-    title: 'Why Some People Are Completely Untouchable No Matter What Life Throws',
-    date: '2025-08-24',
-    dateDisplay: '24 August 2025',
-    intro:
-      'Isaiah 10:27 - the yoke shall be destroyed because of the anointing. Not loosened. Rendered useless. This message explains what the anointing actually is, what it does, and why hell fears the person who carries it.',
-  },
-  {
-    slug: 'releasing-his-presence',
-    title: 'Releasing His Presence: From Container to Conduit',
-    date: '2025-06-29',
-    dateDisplay: '29 June 2025',
-    intro:
-      "You sense God's presence in church - but it stays there. Luke 24:32 says the disciples' hearts burned while Jesus walked with them, then they immediately went and told others. This message is about moving from containing the presence to releasing it.",
-  },
-  {
-    slug: 'faith-is-the-router-that-connects-you-to-gods-supply',
-    title: "The Missing Connection Blocking Everything You Need From Getting Through",
-    date: '2025-06-08',
-    dateDisplay: '8 June 2025',
-    intro:
-      'The Wi-Fi subscription is paid. The signal is available. But if your router is broken, you receive nothing - not because the supply stopped, but because the connection failed. Faith is your router. Based on 2 Corinthians 1:20 and Proverbs 3:5.',
-  },
-  {
-    slug: 'hosting-the-presence-of-god',
-    title: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed',
-    date: '2025-06-22',
-    dateDisplay: '22 June 2025',
-    intro:
-      "Psalm 27:8 - seek my face, require my presence. Obed-Edom's house overflowed in three months. Samson lost his strength without noticing. The difference between them was not effort - it was how each one treated the presence of God.",
-  },
-  {
-    slug: 'the-danger-of-overnight-success',
-    title: 'The Danger of Overnight Success and the Power of Long Obedience',
-    date: '2025-05-18',
-    dateDisplay: '18 May 2025',
-    intro:
-      'You can\'t cheat growth - you can only delay maturity. Based on Ecclesiastes 3:1 and Song of Solomon 2:15, this message shows why heaven builds in seasons, why little compromises become great falls, and why preparation is heaven\'s proof of trust.',
-  },
-  {
-    slug: 'speak-prophetic-into-your-life',
-    title: 'Every Word You Say About Yourself Is Writing Your Future',
-    date: '2025-04-06',
-    dateDisplay: '6 April 2025',
-    intro:
-      '1 Corinthians 14:3 - prophecy is to edify, exhort, and comfort. You are always prophesying over your life whether you know it or not. The question is whether your words are building faith or destroying it.',
-  },
-  {
-    slug: 'the-prophetic-encounter',
-    title: 'You Were Built for Something Specific - Here Is How to Find It',
-    date: '2025-02-23',
-    dateDisplay: '23 February 2025',
-    intro:
-      '2 Timothy 1:6 - stir up the gift of God which is in thee. The gift is already there. Isaiah 42:3 says a bruised reed shall he not break. You are not broken. You are bruised. Fear is the only thing keeping the gift from coming out.',
-  },
-  {
-    slug: 'the-language-of-the-spirit-interpreting-what-you-hear',
-    title: 'Hearing the Right Things and Still Getting Them Wrong - Here Is Why',
-    date: '2025-02-09',
-    dateDisplay: '9 February 2025',
-    intro:
-      'Numbers 12:6 - God speaks in visions and dreams. The problem is not that He has gone silent. The problem is translation. This message teaches you to read the grammar of the Spirit and interpret what He is saying correctly.',
-  },
-  {
-    slug: 'the-inheritance-test',
-    title: 'The Inheritance Test: Will It Reach Three Generations?',
-    date: '2024-09-08',
-    dateDisplay: '8 September 2024',
-    intro:
-      "Proverbs 13:22 - a good man leaves an inheritance to his children's children. Joseph's coat was taken twice. His character was never taken once. The coat is money. The character is the system. Only one of them can be stolen.",
-  },
-  {
-    slug: 'you-are-not-lazy-you-are-a-lot-more',
-    title: 'You Are Not Lazy - You Are a Lot More',
-    date: '2024-01-28',
-    dateDisplay: '28 January 2024',
-    intro:
-      'Proverbs 6:6-8 - the ant needs no commander, yet it prepares diligently for harvest. Joel 3:10 - let the weak say I am strong. You are not lazy. You have been confessing the wrong thing.',
-  },
-]
-
 const jsonLd = [
   {
-    '@context': 'https://schema.org',
-    '@type': 'Blog',
-    name: 'Sermons - Fountain of Grace International',
-    description: 'Practical teaching for real life from Fountain of Grace International in Pretoria North.',
-    url: 'https://www.fountaingrace.org/sermons',
-    publisher: {
-      '@type': 'Church',
-      name: 'Fountain of Grace International',
-      address: {
-        '@type': 'PostalAddress',
-        streetAddress: '323 B Danie Theron Street',
-        addressLocality: 'Pretoria North',
-        addressRegion: 'Gauteng',
-        addressCountry: 'ZA',
-      },
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "",
+    "description": "",
+    "author": {
+      "@type": "Person",
+      "name": "Pastor Ricardo Zaal"
     },
-    blogPost: sermonPosts.map((s) => ({
-      '@type': 'BlogPosting',
-      headline: s.title,
-      datePublished: s.date,
-      url: `https://www.fountaingrace.org/sermons/${s.slug}`,
-      author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
-    })),
+    "publisher": {
+      "@type": "Church",
+      "name": "Fountain of Grace International",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "323 B Danie Theron Street",
+        "addressLocality": "Pretoria North",
+        "addressRegion": "Gauteng",
+        "addressCountry": "ZA"
+      }
+    },
+    "datePublished": "2022-06-19T12:00:00+02:00",
+    "url": "https://www.fountaingrace.org/sermons/"
   },
   {
-    '@context': 'https://schema.org',
-    '@type': 'BreadcrumbList',
-    itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
-      { '@type': 'ListItem', position: 2, name: 'Sermons', item: 'https://www.fountaingrace.org/sermons' },
-    ],
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.fountaingrace.org"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Sermons",
+        "item": "https://www.fountaingrace.org/sermons"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "",
+        "item": "https://www.fountaingrace.org/sermons/"
+      }
+    ]
   },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": []
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoObject",
+    "name": "",
+    "description": "",
+    "thumbnailUrl": "https://img.youtube.com/vi/662IsjaB4zU/maxresdefault.jpg",
+    "uploadDate": "2022-06-19T12:00:00+02:00",
+    "embedUrl": "https://www.youtube.com/embed/662IsjaB4zU",
+    "url": "https://www.fountaingrace.org/sermons/",
+    "author": {
+      "@type": "Person",
+      "name": "Pastor Ricardo Zaal"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Fountain of Grace International",
+      "url": "https://www.fountaingrace.org"
+    }
+  }
 ]
 
-const sortedSermons = [...sermonPosts].sort((a, b) => b.date.localeCompare(a.date))
+const sermonTranscript = "Thank you. Thank you. Thank you. Thank you. Thank you Thank you Thank you. Thank you. Thank you. Thank you. Thank you Thank you. Thank you. Thank you. Thank you. Thank you Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you Thank you Thank you. Thank you. Thank you. Thank you. Thank you Thank you. Thank you. Thank you. Thank you. Thank you Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you. Thank you Thank you Thank you. Thank you. Thank you. Thank you Thank you Thank you. Thank you. Thank you. Thank you Thank you Thank you. Thank you. Thank you. Thank you. Thank you."
 
-export default function SermonsPage() {
+export default function SermonPage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
-      {/* HERO */}
-      <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
-        <div className="max-w-xl mx-auto text-center">
-          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
-            Sunday Teaching · Pretoria North
-          </p>
-          <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
-            Practical Bible teaching for real life.
-          </h1>
-          <p className="text-white text-base leading-relaxed mb-5">
-            Every message at{' '}
-            <Link href="/about" className="text-white font-semibold underline hover:text-[#1a1a1a]">Fountain of Grace International</Link>{' '}
-            is built around a problem people are actually living with. Not theory. Things that connect to your week.
-          </p>
-          <Link href="/plan-your-visit" className="btn-primary text-sm">
-            Come in Person
-          </Link>
-        </div>
-      </section>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <article>
+        <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
+          <div className="max-w-3xl mx-auto">
+            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{""}</h1>
+            <p className="text-white/80 text-lg leading-relaxed mb-4">{""}</p>
+            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+          </div>
+        </header>
+        <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+              <iframe src="https://www.youtube.com/embed/662IsjaB4zU" title={""} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            </div>
+            <p className="text-[#555] text-sm mt-4 mb-2">Prefer reading? The full sermon notes are below.</p>
+            <div className="mt-4">
+              <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
+              <div className="flex flex-col gap-2">
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Getting started"}</button>
+                <button type="button" data-start="120" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:00</span>{"Moving forward"}</button>
+                <button type="button" data-start="360" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">6:00</span>{"New direction"}</button>
+                <button type="button" data-start="780" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">13:00</span>{"Picking up pace"}</button>
+                <button type="button" data-start="1320" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">22:00</span>{"Shifting gears"}</button>
+                <button type="button" data-start="1800" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">30:00</span>{"Reaching deeper"}</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="bg-white py-14 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
 
-      {/* SEARCH + FILTER + SERMON CARDS */}
-      <SermonsFilter sermons={sortedSermons} />
+            <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
+              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"\""}</p>
+              <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
+            </blockquote>
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
+            <ol className="list-decimal list-inside space-y-3 text-[#555] leading-relaxed mb-6">
 
-      {/* DEVOTIONAL SIGNUP */}
-      <section className="bg-[#f0fafa] py-14 px-4 sm:px-6 border-t border-[#e0f4f4]">
-        <div className="section-container max-w-xl text-center">
-          <p className="text-[#008080] font-semibold text-xs uppercase tracking-widest mb-3">
-            Every week · Free
-          </p>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Get the weekly message delivered to you
-          </h2>
-          <p className="text-[#595959] leading-relaxed mb-7">
-            Each week Pastor Ricardo sends a short devotional based on the Sunday message -
-            practical, direct, and connected to what you are actually going through.
-            Choose how you want to receive it.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a
-              href="https://wa.me/27752592555?text=Hi%2C%20please%20add%20me%20to%20the%20weekly%20devotional%20list."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#25d366] text-[#1a1a1a] font-bold px-7 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors"
-            >
-              Subscribe via WhatsApp →
-            </a>
-            <a
-              href="mailto:info@fountaingrace.org?subject=Weekly%20Devotional%20Signup&body=Hi%2C%20please%20add%20me%20to%20the%20weekly%20devotional%20email%20list.%0A%0AMy%20name%20is%3A%20"
-              className="inline-block bg-[#2a9df4] text-white font-bold px-7 py-3 rounded-lg hover:bg-[#1a8de4] transition-colors"
-            >
-              Subscribe via Email →
+            </ol>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+          </div>
+        </section>
+        <section className="bg-gray-50 py-12 px-4 sm:px-6">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-6">Frequently Asked Questions</h2>
+            <div className="space-y-6">
+
+            </div>
+          </div>
+        </section>
+        <section className="bg-[#f0fafa] py-14 px-4 sm:px-6">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
+            <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
+            <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+          </div>
+        </section>
+        <section className="bg-white py-12 px-4 sm:px-6">
+          <div className="max-w-2xl mx-auto text-center">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-2">Send this to someone who needs it</h2>
+            <p className="text-[#555] mb-5">One message can reach someone you cannot. Pass it on.</p>
+            <a href={"https://wa.me/?text=I%20thought%20this%20message%20may%20encourage%20you%3A%20https%3A//www.fountaingrace.org/sermons/%3Futm_source%3Dwhatsapp"} target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-bold text-lg px-7 py-4 rounded-xl hover:bg-[#1ebe5d] transition-colors w-full sm:w-auto">
+              <svg viewBox="0 0 24 24" className="w-6 h-6" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.821 11.821 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.477-.911zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+              Share on WhatsApp
             </a>
           </div>
-          <p className="text-xs text-[#7d7d7d] mt-4 max-w-md mx-auto leading-relaxed">
-            By subscribing you consent to Fountain of Grace International (NPO 316-193) sending you a weekly devotional. Your details are used only for this purpose and are never sold or shared. Unsubscribe any time by replying STOP or UNSUBSCRIBE. See our{' '}
-            <a href="/privacy-policy" className="underline hover:text-[#008080]">Privacy Policy</a>.
-          </p>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="bg-[#008080] py-14 px-4 sm:px-6">
-        <div className="section-container text-center">
-          <h2 className="text-2xl font-bold text-white mb-4">
-            Come and hear this in person - Pretoria North
-          </h2>
-          <p className="text-white/70 mb-8 max-w-xl mx-auto">
-            Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.
-          </p>
-          <Link href="/plan-your-visit" className="btn-primary">
-            Plan Your Visit
-          </Link>
-        </div>
-      </section>
+        </section>
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-3xl mx-auto">
+            <details className="group">
+              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+                <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
+                Read Full Sermon Transcript
+              </summary>
+              <div className="mt-6 text-[#555] text-sm leading-relaxed whitespace-pre-wrap">{sermonTranscript}</div>
+            </details>
+          </div>
+        </section>
+      </article>
+      <script dangerouslySetInnerHTML={{ __html: "(function(){var f=document.querySelector('iframe[src*=\"youtube.com/embed/\"]');if(!f)return;var base=f.src.split('?')[0];document.querySelectorAll('.sermon-chapter').forEach(function(b){b.addEventListener('click',function(){var t=this.getAttribute('data-start');f.src=base+'?rel=0&autoplay=1&start='+t;f.scrollIntoView({behavior:'smooth',block:'center'});});});})();" }} />
     </>
   )
 }

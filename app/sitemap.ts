@@ -20,6 +20,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/stop-helping-people-its-making-them-worse`, lastModified: new Date('2023-08-20'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/your-past-failures-dont-define-your-future-heres-why`, lastModified: new Date('2023-04-21'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/youre-working-hard-but-nothing-changes-heres-why`, lastModified: new Date('2022-07-04'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/you-started-something-and-gave-up-heres-why-you-keep-doing-it`, lastModified: new Date('2022-06-12'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything`, lastModified: new Date('2022-08-18'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/sermons/`, lastModified: new Date('2022-06-19'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing`, lastModified: new Date('2023-04-06'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/your-past-mistakes-dont-determine-your-future`, lastModified: new Date('2023-04-14'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave`, lastModified: new Date('2024-01-28'), changeFrequency: 'monthly', priority: 0.6 },
