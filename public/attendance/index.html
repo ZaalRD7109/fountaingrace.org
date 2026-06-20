@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Sunday Attendance | Fountain of Grace</title>
+<link rel="icon" href="/favicon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --blue:#2a9df4; --gold:#ffd700; --teal:#008080; --ink:#14233a; --line:#e6ecf3; --green:#1f8a5b; --red:#c0392b; --bg:#f3f7fb; }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body { margin:0; font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  header { background:linear-gradient(135deg,#1b3b6f,#2a9df4); color:#fff; padding:20px 16px 18px; text-align:center; }
+  header img { height:46px; width:auto; border-radius:8px; margin-bottom:10px; }
+  header h1 { margin:0; font-size:18px; font-weight:700; }
+  header p { margin:6px 0 0; font-size:13px; opacity:.92; line-height:1.4; }
+  .wrap { max-width:560px; margin:0 auto; padding:14px 12px 70px; }
+  .hint { font-size:12px; color:#6b7c8f; margin:4px 4px 10px; text-align:center; }
+  .card { background:#fff; border:1px solid var(--line); border-left:5px solid var(--line); border-radius:14px; padding:15px; margin:12px 0; box-shadow:0 1px 3px rgba(20,35,58,.06); }
+  .card[data-state="yes"] { border-left-color:var(--green); }
+  .card[data-state="no"] { border-left-color:var(--red); }
+  .name { font-size:18px; font-weight:700; }
+  .meta { font-size:13px; color:#5a6b7e; margin-top:3px; }
+  .tag { background:var(--gold); color:#14233a; font-size:11px; font-weight:700; padding:2px 8px; border-radius:10px; margin-left:4px; }
+  .btns { display:flex; gap:10px; margin-top:13px; }
+  .btn { flex:1; padding:17px 8px; font-size:16px; font-weight:700; border-radius:12px; border:2px solid var(--line); background:#fff; color:var(--ink); cursor:pointer; }
+  .btn.came.on { background:var(--green); border-color:var(--green); color:#fff; }
+  .btn.noshow.on { background:var(--red); border-color:var(--red); color:#fff; }
+  .btn:active { transform:scale(.98); }
+  .status { font-size:12px; color:#7a8a9a; margin-top:9px; text-align:center; }
+  .box { background:#fff; border:1px solid var(--line); border-radius:14px; padding:24px; text-align:center; color:#5a6b7e; font-size:14px; line-height:1.5; }
+  .spin { color:#6b7c8f; text-align:center; padding:30px; font-size:14px; }
+</style>
+</head>
+<body>
+<header>
+  <img src="/logo.webp" alt="Fountain of Grace" onerror="this.style.display='none'">
+  <h1>Sunday Attendance</h1>
+  <p>Tap who came and who didn't.<br>The follow-up message is automatic.</p>
+</header>
+<div class="wrap">
+  <p class="hint">You can change a tap if you press the wrong one.</p>
+  <div id="list"><div class="spin">Loading visitors...</div></div>
+</div>
+<script>
+  var API = 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/visitor-attendance';
+  var K = 'att-eab3056b3bc9fb4d92c9f7ad';
+
+  function esc(s){ return (s==null?'':String(s)).replace(/[&<>"']/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+
+  function prettyDate(d){
+    try { return new Date(d+'T12:00:00+02:00').toLocaleDateString('en-ZA',
+      {weekday:'long',day:'numeric',month:'long'}); } catch(e){ return d; }
+  }
+
+  function render(data){
+    var list = document.getElementById('list');
+    var vis = (data && data.visitors) || [];
+    if (!vis.length){
+      list.innerHTML = '<div class="box">No visitors waiting to be marked right now.<br>'
+        + 'When someone books a visit, they appear here on their Sunday.</div>';
+      return;
+    }
+    list.innerHTML = vis.map(function(v){
+      var att = v.attended==='yes'?'yes':v.attended==='no'?'no':'';
+      var todayTag = (v.planned_date===data.today)?'<span class="tag">today</span>':'';
+      var st = att==='yes'?'Marked: came':att==='no'?'Marked: did not come':'Not marked yet';
+      return '<div class="card" data-id="'+v.id+'" data-state="'+att+'">'
+        + '<div class="name">'+esc(v.name||'Visitor')+'</div>'
+        + '<div class="meta">'+esc(prettyDate(v.planned_date))+' '+todayTag
+        + (v.phone?(' &middot; '+esc(v.phone)):'')+'</div>'
+        + '<div class="btns">'
+        + '<button class="btn came '+(att==='yes'?'on':'')+'" onclick="mark('+v.id+',\'yes\',this)">Came</button>'
+        + '<button class="btn noshow '+(att==='no'?'on':'')+'" onclick="mark('+v.id+',\'no\',this)">Didn\'t come</button>'
+        + '</div><div class="status">'+st+'</div></div>';
+    }).join('');
+  }
+
+  async function load(){
+    try {
+      var res = await fetch(API+'?k='+encodeURIComponent(K));
+      var data = await res.json();
+      if (!data.ok) throw new Error('bad');
+      render(data);
+    } catch(e){
+      document.getElementById('list').innerHTML =
+        '<div class="box">Could not load right now. Check your signal and refresh the page.</div>';
+    }
+  }
+
+  async function mark(id, val, btn){
+    var card = btn.closest('.card');
+    card.querySelector('.btn.came').classList.toggle('on', val==='yes');
+    card.querySelector('.btn.noshow').classList.toggle('on', val==='no');
+    card.dataset.state = val;
+    var st = card.querySelector('.status');
+    st.textContent = 'Saving...';
+    try {
+      var res = await fetch(API+'?k='+encodeURIComponent(K), {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ id:id, attended:val })
+      });
+      var data = await res.json();
+      if (!data.ok) throw new Error('bad');
+      st.textContent = val==='yes' ? 'Marked: came' : 'Marked: did not come';
+    } catch(e){
+      st.textContent = 'Could not save - check signal and tap again';
+    }
+  }
+
+  load();
+</script>
+</body>
+</html>
