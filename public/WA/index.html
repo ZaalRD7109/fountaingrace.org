@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#1b3b6f">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="FGI Chat">
+<title>FGI WhatsApp Chat</title>
+<link rel="icon" href="/favicon.jpg">
+<link rel="apple-touch-icon" href="/logo-square.png">
+<link rel="manifest" href="/WA/manifest.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --blue:#2a9df4; --navy:#1b3b6f; --gold:#ffd700; --teal:#008080;
+    --ink:#14233a; --line:#e6ecf3; --green:#1f8a5b; --red:#c0392b;
+    --bg:#eef3f8; --in:#ffffff; --out:#d6ebff; --muted:#6b7c8f;
+  }
+  *{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+  html,body{height:100%;}
+  body{margin:0; font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+       background:var(--bg); color:var(--ink); overflow:hidden;}
+  .screen{position:fixed; inset:0; display:flex; flex-direction:column; max-width:680px; margin:0 auto;
+          background:var(--bg); transition:transform .22s ease;}
+  /* ---- top bar ---- */
+  .bar{background:linear-gradient(135deg,var(--navy),var(--blue)); color:#fff; flex:0 0 auto;
+       padding:calc(env(safe-area-inset-top) + 12px) 14px 12px; display:flex; align-items:center; gap:12px;}
+  .bar img{height:34px; border-radius:7px;}
+  .bar .ttl{font-size:16px; font-weight:700; line-height:1.15;}
+  .bar .sub{font-size:11.5px; opacity:.9;}
+  .bar .back{font-size:24px; line-height:1; cursor:pointer; padding:2px 6px 2px 0; user-select:none;}
+  .bar .grow{flex:1; min-width:0;}
+  .bar .grow .ttl{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  /* ---- list ---- */
+  #list{flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch;}
+  .row{display:flex; gap:12px; align-items:center; padding:13px 15px; border-bottom:1px solid var(--line);
+       background:#fff; cursor:pointer;}
+  .row:active{background:#f4f8fc;}
+  .av{flex:0 0 46px; height:46px; border-radius:50%; background:var(--teal); color:#fff; font-weight:700;
+      display:flex; align-items:center; justify-content:center; font-size:17px;}
+  .row .mid{flex:1; min-width:0;}
+  .row .nm{font-weight:600; font-size:15.5px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+  .row .pv{font-size:13px; color:var(--muted); white-space:nowrap; overflow:hidden; text-overflow:ellipsis; margin-top:2px;}
+  .row .rt{flex:0 0 auto; text-align:right; display:flex; flex-direction:column; align-items:flex-end; gap:5px;}
+  .row .tm{font-size:11px; color:var(--muted);}
+  .badge{background:var(--green); color:#fff; font-size:11px; font-weight:700; min-width:20px; height:20px;
+         border-radius:10px; padding:0 6px; display:inline-flex; align-items:center; justify-content:center;}
+  .pill{font-size:10px; font-weight:700; padding:2px 7px; border-radius:9px;}
+  .pill.human{background:#fff4cc; color:#8a6d00;}
+  .pill.bot{background:#e7f3ee; color:var(--green);}
+  .pill.closed{background:#fde8e8; color:var(--red);}
+  /* ---- chat ---- */
+  #chat{transform:translateX(100%);}
+  #chat.open{transform:translateX(0);}
+  #msgs{flex:1; overflow-y:auto; -webkit-overflow-scrolling:touch; padding:14px 12px 6px;
+        background:#eef3f8;}
+  .b{max-width:80%; padding:9px 12px; border-radius:14px; margin:5px 0; font-size:14.5px; line-height:1.4;
+     white-space:pre-wrap; word-wrap:break-word; box-shadow:0 1px 1px rgba(20,35,58,.07);}
+  .b.in{background:var(--in); align-self:flex-start; border-bottom-left-radius:4px;}
+  .b.out{background:var(--out); align-self:flex-end; border-bottom-right-radius:4px;}
+  .b .who{font-size:10.5px; font-weight:700; color:var(--teal); margin-bottom:2px;}
+  .b.out .who{color:var(--navy);}
+  .b .t{font-size:10px; color:var(--muted); text-align:right; margin-top:3px;}
+  #msgs .col{display:flex; flex-direction:column;}
+  .daysep{align-self:center; background:#dde7f0; color:#5a6b7e; font-size:11px; font-weight:600;
+          padding:3px 11px; border-radius:10px; margin:10px 0;}
+  /* ---- takeover strip ---- */
+  .strip{flex:0 0 auto; padding:9px 12px; font-size:12.5px; display:flex; align-items:center; gap:10px;
+         border-bottom:1px solid var(--line); background:#fff;}
+  .strip .info{flex:1; line-height:1.3;}
+  .strip .win{font-weight:700;}
+  .tgl{flex:0 0 auto; border:none; border-radius:20px; padding:9px 14px; font-size:12.5px; font-weight:700;
+       cursor:pointer; color:#fff;}
+  .tgl.take{background:var(--green);}
+  .tgl.give{background:var(--navy);}
+  /* ---- composer ---- */
+  .comp{flex:0 0 auto; display:flex; gap:9px; align-items:flex-end; padding:10px 11px;
+        padding-bottom:calc(env(safe-area-inset-bottom) + 10px); background:#fff; border-top:1px solid var(--line);}
+  .comp textarea{flex:1; resize:none; border:1px solid var(--line); border-radius:20px; padding:11px 14px;
+       font:inherit; font-size:15px; max-height:120px; line-height:1.35; background:#f3f7fb;}
+  .comp textarea:disabled{background:#f0f0f0; color:#999;}
+  .send{flex:0 0 auto; width:48px; height:48px; border-radius:50%; border:none; background:var(--blue);
+        color:#fff; font-size:20px; cursor:pointer;}
+  .send:disabled{background:#b7c4d2;}
+  .closedmsg{padding:11px 14px; background:#fde8e8; color:#8a2b22; font-size:13px; text-align:center; line-height:1.4;}
+  /* ---- states ---- */
+  .empty{padding:50px 24px; text-align:center; color:var(--muted); font-size:14px; line-height:1.5;}
+  .lock{position:fixed; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;
+        padding:30px; text-align:center; background:var(--bg); gap:14px;}
+  .lock input{width:100%; max-width:320px; padding:13px; border:1px solid var(--line); border-radius:12px; font:inherit; font-size:15px;}
+  .lock button{padding:13px 22px; border:none; border-radius:12px; background:var(--blue); color:#fff; font-weight:700; font-size:15px;}
+  .toast{position:fixed; left:50%; bottom:80px; transform:translateX(-50%); background:#14233a; color:#fff;
+         padding:10px 16px; border-radius:20px; font-size:13px; opacity:0; transition:opacity .2s; z-index:50; pointer-events:none;}
+  .toast.show{opacity:.96;}
+</style>
+</head>
+<body>
+
+<!-- LIST SCREEN -->
+<div class="screen" id="listScreen">
+  <div class="bar">
+    <img src="/logo-square.png" alt="FGI">
+    <div class="grow">
+      <div class="ttl">FGI WhatsApp</div>
+      <div class="sub" id="listSub">Tap a chat to reply</div>
+    </div>
+  </div>
+  <div id="list"><div class="empty">Loading conversations...</div></div>
+</div>
+
+<!-- CHAT SCREEN -->
+<div class="screen" id="chat">
+  <div class="bar">
+    <span class="back" id="back">&#8592;</span>
+    <div class="grow">
+      <div class="ttl" id="cName">&nbsp;</div>
+      <div class="sub" id="cPhone">&nbsp;</div>
+    </div>
+  </div>
+  <div class="strip" id="strip"></div>
+  <div id="msgs"><div class="col" id="msgCol"></div></div>
+  <div id="composer"></div>
+</div>
+
+<!-- LOCK -->
+<div class="lock" id="lock" style="display:none">
+  <img src="/logo-square.png" alt="FGI" style="height:64px;border-radius:12px">
+  <div style="font-weight:700;font-size:17px">FGI WhatsApp Chat</div>
+  <div style="color:var(--muted);font-size:13.5px;max-width:300px">Paste your access link or key to open the inbox.</div>
+  <input id="keyIn" placeholder="Access key" autocomplete="off">
+  <button id="keyGo">Open inbox</button>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<script>
+const API = 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/wa-inbox';
+let KEY = '';
+let current = null;          // current phone in chat view
+let threadsCache = [];
+let pollTimer = null;
+
+// ---- key handling ----
+function readKey(){
+  const u = new URL(location.href);
+  let k = u.searchParams.get('k');
+  if(k){ localStorage.setItem('wa_key', k);
+    // clean the key out of the visible URL so it isn't shoulder-surfed
+    history.replaceState({}, '', '/WA/'); }
+  return k || localStorage.getItem('wa_key') || '';
+}
+function start(){
+  KEY = readKey();
+  if(!KEY){ document.getElementById('lock').style.display='flex'; return; }
+  document.getElementById('lock').style.display='none';
+  loadThreads();
+  pollTimer = setInterval(()=>{ current ? loadMessages(current,true) : loadThreads(); }, 8000);
+}
+document.getElementById('keyGo').onclick = ()=>{
+  const v = document.getElementById('keyIn').value.trim();
+  if(v){ localStorage.setItem('wa_key', v); start(); }
+};
+
+// ---- helpers ----
+function esc(s){ return (s||'').replace(/[&<>]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;'}[c])); }
+function fmtPhone(p){ // 27844647531 -> +27 84 464 7531
+  if(!p) return '';
+  if(p.startsWith('27') && p.length===11) return '+27 '+p.slice(2,4)+' '+p.slice(4,7)+' '+p.slice(7);
+  return '+'+p;
+}
+function initials(name, phone){
+  if(name){ const t=name.trim().split(/\s+/); return ((t[0]||'')[0]||'')+((t[1]||'')[0]||''); }
+  return phone ? phone.slice(-2) : '?';
+}
+function ago(iso){
+  const d=new Date(iso), now=new Date(), s=(now-d)/1000;
+  if(s<60) return 'now';
+  if(s<3600) return Math.floor(s/60)+'m';
+  const sameDay = d.toDateString()===now.toDateString();
+  if(sameDay) return d.toLocaleTimeString('en-ZA',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Africa/Johannesburg'});
+  const yest=new Date(now); yest.setDate(now.getDate()-1);
+  if(d.toDateString()===yest.toDateString()) return 'Yesterday';
+  if(s<7*86400) return d.toLocaleDateString('en-ZA',{weekday:'short',timeZone:'Africa/Johannesburg'});
+  return d.toLocaleDateString('en-ZA',{day:'2-digit',month:'short',timeZone:'Africa/Johannesburg'});
+}
+function clockTime(iso){ return new Date(iso).toLocaleTimeString('en-ZA',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Africa/Johannesburg'}); }
+function dayLabel(iso){ return new Date(iso).toLocaleDateString('en-ZA',{weekday:'long',day:'numeric',month:'long',timeZone:'Africa/Johannesburg'}); }
+function windowLeft(iso){ // returns text + msLeft from last inbound
+  if(!iso) return {txt:'No window yet', open:false};
+  const left = 24*3600*1000 - (Date.now()-new Date(iso).getTime());
+  if(left<=0) return {txt:'Reply window closed', open:false};
+  const h=Math.floor(left/3600000), m=Math.floor((left%3600000)/60000);
+  return {txt:(h>0? h+'h ':'')+m+'m left to reply free', open:true};
+}
+function toast(t){ const e=document.getElementById('toast'); e.textContent=t; e.classList.add('show'); setTimeout(()=>e.classList.remove('show'),2200); }
+
+async function api(qs, opts){
+  const r = await fetch(API+'?k='+encodeURIComponent(KEY)+(qs||''), opts);
+  if(r.status===404){ toast('Access key not accepted'); }
+  return r.json().catch(()=>({ok:false}));
+}
+
+// ---- list ----
+async function loadThreads(){
+  const d = await api('&action=threads');
+  if(!d.ok) return;
+  threadsCache = d.threads;
+  const totalUnread = d.threads.reduce((a,t)=>a+(t.unread||0),0);
+  document.getElementById('listSub').textContent = totalUnread? (totalUnread+' new message'+(totalUnread>1?'s':'')) : 'Tap a chat to reply';
+  const el = document.getElementById('list');
+  if(!d.threads.length){ el.innerHTML='<div class="empty">No conversations yet.<br>When someone messages the church WhatsApp, they will appear here.</div>'; return; }
+  el.innerHTML = d.threads.map(t=>{
+    const w = t.window_open;
+    const pill = t.human_active ? '<span class="pill human">You</span>'
+               : (w ? '<span class="pill bot">Bot</span>' : '<span class="pill closed">Closed</span>');
+    const pv = (t.last_role==='user'?'':'You: ')+esc(t.last||'');
+    return `<div class="row" data-p="${t.phone}">
+      <div class="av">${esc(initials(t.name,t.phone))}</div>
+      <div class="mid">
+        <div class="nm">${esc(t.name||fmtPhone(t.phone))}</div>
+        <div class="pv">${pv}</div>
+      </div>
+      <div class="rt">
+        <div class="tm">${ago(t.last_at)}</div>
+        ${t.unread?`<span class="badge">${t.unread}</span>`:pill}
+      </div>
+    </div>`;
+  }).join('');
+  el.querySelectorAll('.row').forEach(r=> r.onclick=()=>openChat(r.dataset.p));
+}
+
+// ---- chat ----
+function openChat(phone){
+  current = phone;
+  const t = threadsCache.find(x=>x.phone===phone) || {};
+  document.getElementById('cName').textContent = t.name || fmtPhone(phone);
+  document.getElementById('cPhone').textContent = t.name ? fmtPhone(phone) : '';
+  document.getElementById('chat').classList.add('open');
+  document.getElementById('msgCol').innerHTML='<div class="empty">Loading...</div>';
+  loadMessages(phone,false);
+}
+function closeChat(){ current=null; document.getElementById('chat').classList.remove('open'); loadThreads(); }
+document.getElementById('back').onclick = closeChat;
+
+async function loadMessages(phone, quiet){
+  const d = await api('&action=messages&phone='+phone);
+  if(!d.ok || current!==phone) return;
+  const col = document.getElementById('msgCol');
+  const nearBottom = (()=>{ const m=document.getElementById('msgs'); return m.scrollHeight-m.scrollTop-m.clientHeight < 120; })();
+  let html='', lastDay='';
+  d.messages.forEach(m=>{
+    const day=dayLabel(m.created_at);
+    if(day!==lastDay){ html+=`<div class="daysep">${day}</div>`; lastDay=day; }
+    const out = m.role!=='user';
+    const who = out ? (m.message_type==='human'?'You':'Auto reply') : '';
+    html+=`<div class="b ${out?'out':'in'}">${who?`<div class="who">${who}</div>`:''}${esc(m.content)}<div class="t">${clockTime(m.created_at)}</div></div>`;
+  });
+  col.innerHTML = html || '<div class="empty">No messages.</div>';
+  if(!quiet || nearBottom){ const m=document.getElementById('msgs'); m.scrollTop=m.scrollHeight; }
+  renderStrip(phone, d);
+  renderComposer(phone, d.window_open);
+}
+
+function renderStrip(phone, d){
+  const w = windowLeft(d.last_inbound);
+  const human = d.human_active;
+  const btn = human
+    ? `<button class="tgl give" id="tgl">Hand back to bot</button>`
+    : `<button class="tgl take" id="tgl">I'll reply</button>`;
+  const info = human
+    ? `<span class="win" style="color:var(--green)">You are handling this chat</span><br>Bot is paused. ${w.txt}.`
+    : (w.open ? `Auto bot is replying.<br>${w.txt}.` : `${w.txt}.`);
+  document.getElementById('strip').innerHTML = `<div class="info">${info}</div>${btn}`;
+  const tgl=document.getElementById('tgl');
+  if(tgl) tgl.onclick = async ()=>{
+    tgl.disabled=true;
+    await api('', {method:'POST', headers:{'content-type':'application/json'}, body:JSON.stringify({action:'takeover', phone, on:!human, by:'Pastor'})});
+    toast(human?'Bot will reply again':'You are now handling this chat');
+    loadMessages(phone,false);
+  };
+}
+
+function renderComposer(phone, open){
+  const c=document.getElementById('composer');
+  if(!open){
+    c.className=''; c.innerHTML='<div class="closedmsg">The free 24-hour reply window is closed. You can reply again once this person sends a new message.</div>';
+    return;
+  }
+  c.className='comp';
+  c.innerHTML = `<textarea id="ta" rows="1" placeholder="Type a message"></textarea><button class="send" id="snd">&#10148;</button>`;
+  const ta=document.getElementById('ta'), snd=document.getElementById('snd');
+  ta.oninput=()=>{ ta.style.height='auto'; ta.style.height=Math.min(ta.scrollHeight,120)+'px'; };
+  async function send(){
+    const text=ta.value.trim(); if(!text) return;
+    snd.disabled=true; ta.disabled=true;
+    const r = await api('', {method:'POST', headers:{'content-type':'application/json'}, body:JSON.stringify({action:'send', phone, text, by:'Pastor'})});
+    if(r.ok){ ta.value=''; ta.style.height='auto'; loadMessages(phone,false); }
+    else if(r.error==='window_closed'){ toast('Window closed - they must message first'); loadMessages(phone,false); }
+    else { toast('Could not send'+(r.meta?': '+r.meta:'')); }
+    snd.disabled=false; ta.disabled=false; ta.focus();
+  }
+  snd.onclick=send;
+  ta.onkeydown=(e)=>{ if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); send(); } };
+}
+
+// PWA
+if('serviceWorker' in navigator){ navigator.serviceWorker.register('/WA/sw.js').catch(()=>{}); }
+start();
+</script>
+</body>
+</html>
