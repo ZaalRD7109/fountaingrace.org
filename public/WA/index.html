@@ -236,58 +236,79 @@ async function loadThreads(){
 }
 
 // ---- chat ----
+let chatMeta = { phone:null, windowOpen:null, humanActive:null };
+
 function openChat(phone){
   current = phone;
+  chatMeta = { phone, windowOpen:null, humanActive:null };
   const t = threadsCache.find(x=>x.phone===phone) || {};
   document.getElementById('cName').textContent = t.name || fmtPhone(phone);
   document.getElementById('cPhone').textContent = t.name ? fmtPhone(phone) : '';
   document.getElementById('chat').classList.add('open');
   document.getElementById('msgCol').innerHTML='<div class="empty">Loading...</div>';
+  document.getElementById('strip').innerHTML='';
+  document.getElementById('composer').innerHTML='';
   loadMessages(phone,false);
 }
-function closeChat(){ current=null; document.getElementById('chat').classList.remove('open'); loadThreads(); }
+function closeChat(){ current=null; chatMeta={phone:null,windowOpen:null,humanActive:null}; document.getElementById('chat').classList.remove('open'); loadThreads(); }
 document.getElementById('back').onclick = closeChat;
 
 async function loadMessages(phone, quiet){
   const d = await api('&action=messages&phone='+phone);
   if(!d.ok || current!==phone) return;
-  const col = document.getElementById('msgCol');
-  const nearBottom = (()=>{ const m=document.getElementById('msgs'); return m.scrollHeight-m.scrollTop-m.clientHeight < 120; })();
+  renderMessages(d, quiet);
+  // CRITICAL: a routine 8s poll must NEVER rebuild the reply box - that wipes what
+  // the user is typing and drops the phone keyboard. Only rebuild the strip + box
+  // when the state (window open / human handling) actually changes.
+  if(chatMeta.windowOpen !== d.window_open || chatMeta.humanActive !== d.human_active){
+    chatMeta.windowOpen = d.window_open;
+    chatMeta.humanActive = d.human_active;
+    renderStrip(phone, d);
+    renderComposer(phone, d.window_open);
+  } else {
+    const e=document.getElementById('winTxt'); if(e) e.textContent = windowLeft(d.last_inbound).txt;
+  }
+}
+
+function renderMessages(d, quiet){
+  const m=document.getElementById('msgs');
+  const nearBottom = m.scrollHeight-m.scrollTop-m.clientHeight < 140;
   let html='', lastDay='';
-  d.messages.forEach(m=>{
-    const day=dayLabel(m.created_at);
+  d.messages.forEach(x=>{
+    const day=dayLabel(x.created_at);
     if(day!==lastDay){ html+=`<div class="daysep">${day}</div>`; lastDay=day; }
-    const out = m.role!=='user';
-    const who = out ? (m.message_type==='human'?'You':'Auto reply') : '';
-    html+=`<div class="b ${out?'out':'in'}">${who?`<div class="who">${who}</div>`:''}${esc(m.content)}<div class="t">${clockTime(m.created_at)}</div></div>`;
+    const out = x.role!=='user';
+    const who = out ? (x.message_type==='human'?'You':'Auto reply') : '';
+    html+=`<div class="b ${out?'out':'in'}">${who?`<div class="who">${who}</div>`:''}${esc(x.content)}<div class="t">${clockTime(x.created_at)}</div></div>`;
   });
-  col.innerHTML = html || '<div class="empty">No messages.</div>';
-  if(!quiet || nearBottom){ const m=document.getElementById('msgs'); m.scrollTop=m.scrollHeight; }
-  renderStrip(phone, d);
-  renderComposer(phone, d.window_open);
+  document.getElementById('msgCol').innerHTML = html || '<div class="empty">No messages.</div>';
+  if(!quiet || nearBottom) m.scrollTop=m.scrollHeight;
 }
 
 function renderStrip(phone, d){
-  const w = windowLeft(d.last_inbound);
   const human = d.human_active;
+  const w = windowLeft(d.last_inbound);
   const btn = human
     ? `<button class="tgl give" id="tgl">Hand back to bot</button>`
     : `<button class="tgl take" id="tgl">I'll reply</button>`;
   const info = human
-    ? `<span class="win" style="color:var(--green)">You are handling this chat</span><br>Bot is paused. ${w.txt}.`
-    : (w.open ? `Auto bot is replying.<br>${w.txt}.` : `${w.txt}.`);
+    ? `<span class="win" style="color:var(--green)">You are handling this chat</span><br>Bot is paused. <span id="winTxt">${w.txt}</span>.`
+    : (w.open ? `Auto bot is replying.<br><span id="winTxt">${w.txt}</span>.` : `<span id="winTxt">${w.txt}</span>.`);
   document.getElementById('strip').innerHTML = `<div class="info">${info}</div>${btn}`;
   const tgl=document.getElementById('tgl');
   if(tgl) tgl.onclick = async ()=>{
     tgl.disabled=true;
-    await api('', {method:'POST', headers:{'content-type':'application/json'}, body:JSON.stringify({action:'takeover', phone, on:!human, by:'Pastor'})});
-    toast(human?'Bot will reply again':'You are now handling this chat');
+    const newOn=!human;
+    await api('', {method:'POST', headers:{'content-type':'application/json'}, body:JSON.stringify({action:'takeover', phone, on:newOn, by:'Pastor'})});
+    toast(newOn?'You are now handling this chat':'Bot will reply again');
+    chatMeta.humanActive=null; chatMeta.windowOpen=null; // force a clean re-render
     loadMessages(phone,false);
   };
 }
 
 function renderComposer(phone, open){
   const c=document.getElementById('composer');
+  const prev=document.getElementById('ta'); const keep=prev?prev.value:'';   // never lose typed text
   if(!open){
     c.className=''; c.innerHTML='<div class="closedmsg">The free 24-hour reply window is closed. You can reply again once this person sends a new message.</div>';
     return;
@@ -295,15 +316,16 @@ function renderComposer(phone, open){
   c.className='comp';
   c.innerHTML = `<textarea id="ta" rows="1" placeholder="Type a message"></textarea><button class="send" id="snd">&#10148;</button>`;
   const ta=document.getElementById('ta'), snd=document.getElementById('snd');
+  if(keep){ ta.value=keep; ta.style.height='auto'; ta.style.height=Math.min(ta.scrollHeight,120)+'px'; }
   ta.oninput=()=>{ ta.style.height='auto'; ta.style.height=Math.min(ta.scrollHeight,120)+'px'; };
   async function send(){
     const text=ta.value.trim(); if(!text) return;
-    snd.disabled=true; ta.disabled=true;
+    snd.disabled=true;                       // disable only the send button, not typing
     const r = await api('', {method:'POST', headers:{'content-type':'application/json'}, body:JSON.stringify({action:'send', phone, text, by:'Pastor'})});
-    if(r.ok){ ta.value=''; ta.style.height='auto'; loadMessages(phone,false); }
-    else if(r.error==='window_closed'){ toast('Window closed - they must message first'); loadMessages(phone,false); }
+    snd.disabled=false;
+    if(r.ok){ ta.value=''; ta.style.height='auto'; chatMeta.humanActive=null; await loadMessages(phone,false); const n=document.getElementById('ta'); if(n) n.focus(); }
+    else if(r.error==='window_closed'){ toast('Window closed - they must message first'); chatMeta.windowOpen=null; loadMessages(phone,false); }
     else { toast('Could not send'+(r.meta?': '+r.meta:'')); }
-    snd.disabled=false; ta.disabled=false; ta.focus();
   }
   snd.onclick=send;
   ta.onkeydown=(e)=>{ if(e.key==='Enter' && !e.shiftKey){ e.preventDefault(); send(); } };
