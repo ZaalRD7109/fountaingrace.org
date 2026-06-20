@@ -24,7 +24,7 @@ Deno.serve(async (req) => {
     const { name, email, phone, plannedDate, bringingKids, heardVia, turnstileToken } =
       await req.json()
 
-    if (!name || !email || !phone || !plannedDate || !turnstileToken) {
+    if (!name || !phone || !plannedDate || !turnstileToken) {
       return new Response(JSON.stringify({ error: 'Missing required fields' }), {
         status: 400,
         headers: { ...corsHeaders, 'Content-Type': 'application/json' },
@@ -47,7 +47,7 @@ Deno.serve(async (req) => {
 
     const { error: dbError } = await supabase.from('visitor_submissions').insert({
       name,
-      email,
+      email: email || null,
       phone: phone || null,
       planned_date: plannedDate,
       bringing_kids: bringingKids ?? false,
@@ -63,7 +63,11 @@ Deno.serve(async (req) => {
     const firstName = name.split(' ')[0]
     const visitDay = formatVisitDate(plannedDate)
 
-    const visitorEmailOk = await sendEmail(
+    // Email is optional now. Only send the visitor confirmation if they gave one.
+    // When no email was provided, treat the visitor-email step as "ok" (nothing to send)
+    // so the safety-net below does not false-alarm on a phone-only visitor.
+    const visitorEmailOk = email
+      ? await sendEmail(
       email,
       `We are ready for you, ${firstName} - ${visitDay}`,
       `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;color:#333">
@@ -94,7 +98,8 @@ Deno.serve(async (req) => {
           </p>
         </div>
       </div>`
-    )
+        )
+      : true
 
     const waLink = phone ? whatsappLink(phone, firstName) : `https://wa.me/?text=${encodeURIComponent(`Hi, reaching out regarding ${name} who filled in the Plan Your Visit form.`)}`
 
@@ -109,7 +114,7 @@ Deno.serve(async (req) => {
           <p style="background:#e8f5e9;border:1px solid #4caf50;padding:10px 14px;border-radius:6px;color:#2e7d32;font-weight:bold">New visitor coming on ${visitDay}. They have the website info and can reach us on WhatsApp - give them a warm welcome on the day.</p>
           <table style="width:100%;border-collapse:collapse;margin-top:12px">
             <tr><td style="padding:8px;font-weight:bold;width:140px">Name</td><td style="padding:8px">${name}</td></tr>
-            <tr style="background:#f9f9f9"><td style="padding:8px;font-weight:bold">Email</td><td style="padding:8px"><a href="mailto:${email}" style="color:#008080">${email}</a></td></tr>
+            <tr style="background:#f9f9f9"><td style="padding:8px;font-weight:bold">Email</td><td style="padding:8px">${email ? `<a href="mailto:${email}" style="color:#008080">${email}</a>` : 'Not provided'}</td></tr>
             <tr><td style="padding:8px;font-weight:bold">Phone</td><td style="padding:8px">${phone || 'Not provided'}</td></tr>
             <tr style="background:#f9f9f9"><td style="padding:8px;font-weight:bold">Planned visit</td><td style="padding:8px"><strong>${visitDay}</strong></td></tr>
             <tr><td style="padding:8px;font-weight:bold">Bringing Kids</td><td style="padding:8px">${bringingKids ? 'Yes' : 'No'}</td></tr>
@@ -118,11 +123,11 @@ Deno.serve(async (req) => {
           </table>
           <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
             <a href="${waLink}" style="background:#25d366;color:#1a1a1a;padding:10px 18px;text-decoration:none;border-radius:6px;font-size:14px;font-weight:bold;display:inline-block">WhatsApp ${firstName}</a>
-            <a href="mailto:${email}" style="background:#008080;color:#fff;padding:10px 18px;text-decoration:none;border-radius:6px;font-size:14px;display:inline-block">Email ${firstName}</a>
+            ${email ? `<a href="mailto:${email}" style="background:#008080;color:#fff;padding:10px 18px;text-decoration:none;border-radius:6px;font-size:14px;display:inline-block">Email ${firstName}</a>` : ''}
           </div>
         </div>
       </div>`,
-      email
+      email || undefined
     )
 
     // A new visitor lead must never go unnoticed. If the staff notification email

@@ -40,7 +40,7 @@ export default function VisitForm() {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
             name,
-            email,
+            email: email || null,
             phone: phone || null,
             plannedDate,
             bringingKids,
@@ -80,12 +80,12 @@ export default function VisitForm() {
 
       <div>
         <label htmlFor="visit-email" className={labelClass}>
-          Email Address <span className="text-red-500">*</span>
+          Email Address{' '}
+          <span className="text-[#595959] font-normal text-xs">(optional)</span>
         </label>
         <input
           id="visit-email"
           type="email"
-          required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
