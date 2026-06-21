@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/the-father-who-never-shows-up-and-how-it-breaks-you`, lastModified: new Date('2026-06-21'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/`, lastModified: new Date('2022-06-19'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works`, lastModified: new Date('2024-06-05'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think`, lastModified: new Date('2023-08-13'), changeFrequency: 'monthly', priority: 0.6 },

@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "the-father-who-never-shows-up-and-how-it-breaks-you",
+    title: "The Father Who Never Shows Up (And How It Breaks You)",
+    date: "2026-06-21",
+    dateDisplay: "21 June 2026",
+    intro:
+      "You felt it your whole life: the emptiness of a father who paid the bills but never showed up. Or maybe you are that father now, repeating the pattern. There's a different way.",
+  },
+  {
     slug: "helping-someone-actually-keeps-them-stuck",
     title: "Helping Someone Actually Keeps Them Stuck",
     date: "2023-09-17",
