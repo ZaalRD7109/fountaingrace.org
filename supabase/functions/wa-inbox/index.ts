@@ -139,13 +139,15 @@ Deno.serve(async (req) => {
       .order('created_at', { ascending: true }).limit(500)
     if (error) return json({ ok: false, error: 'read failed' }, 500)
     const { data: t } = await supabase.from('wa_threads')
-      .select('human_active,human_active_at,contact_name')
+      .select('human_active,human_active_at,human_active_by,contact_name')
       .eq('church_id', CHURCH).eq('phone_number', phone).maybeSingle()
     await markRead(phone)
     const lastInbound = [...(data ?? [])].reverse().find((m) => m.role === 'user')?.created_at || null
+    const isPaused = paused(t?.human_active, t?.human_active_at)
     return json({
       ok: true, phone, messages: data ?? [],
-      human_active: paused(t?.human_active, t?.human_active_at),
+      human_active: isPaused,
+      auto_handoff: isPaused && t?.human_active_by === 'auto-handoff',
       contact_name: t?.contact_name || null,
       window_open: windowOpen(lastInbound),
       last_inbound: lastInbound,
@@ -160,7 +162,7 @@ Deno.serve(async (req) => {
     .order('created_at', { ascending: false }).limit(2000)
   if (error) return json({ ok: false, error: 'read failed' }, 500)
   const { data: threads } = await supabase.from('wa_threads')
-    .select('phone_number,human_active,human_active_at,last_seen_at,contact_name').eq('church_id', CHURCH)
+    .select('phone_number,human_active,human_active_at,human_active_by,last_seen_at,contact_name').eq('church_id', CHURCH)
   const tmap: Record<string, any> = {}
   for (const t of threads ?? []) tmap[t.phone_number] = t
 
@@ -182,12 +184,14 @@ Deno.serve(async (req) => {
     for (const m of msgs ?? []) {
       if (m.phone_number === g.phone && m.role === 'user' && new Date(m.created_at).getTime() > seen) unread++
     }
+    const isPaused = paused(t?.human_active, t?.human_active_at)
     return {
       phone: g.phone,
       name: t?.contact_name || null,
       last: g.last, last_role: g.last_role, last_at: g.last_at,
       unread,
-      human_active: paused(t?.human_active, t?.human_active_at),
+      human_active: isPaused,
+      auto_handoff: isPaused && t?.human_active_by === 'auto-handoff',
       window_open: windowOpen(g.last_inbound),
     }
   }).sort((a: any, b: any) => (a.last_at < b.last_at ? 1 : -1))

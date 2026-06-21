@@ -55,6 +55,8 @@
   .pill.human{background:#fff4cc; color:#8a6d00;}
   .pill.bot{background:#e7f3ee; color:var(--green);}
   .pill.closed{background:#fde8e8; color:var(--red);}
+  .pill.handoff{background:var(--red); color:#fff;}
+  .row.handoff{background:#fff6f5;}
   /* ---- chat ---- */
   #chat{transform:translateX(100%);}
   #chat.open{transform:translateX(0);}
@@ -217,10 +219,11 @@ async function loadThreads(){
   if(!d.threads.length){ el.innerHTML='<div class="empty">No conversations yet.<br>When someone messages the church WhatsApp, they will appear here.</div>'; return; }
   el.innerHTML = d.threads.map(t=>{
     const w = t.window_open;
-    const pill = t.human_active ? '<span class="pill human">You</span>'
+    const pill = t.auto_handoff ? '<span class="pill handoff">Needs you</span>'
+               : t.human_active ? '<span class="pill human">You</span>'
                : (w ? '<span class="pill bot">Bot</span>' : '<span class="pill closed">Closed</span>');
     const pv = (t.last_role==='user'?'':'You: ')+esc(t.last||'');
-    return `<div class="row" data-p="${t.phone}">
+    return `<div class="row${t.auto_handoff?' handoff':''}" data-p="${t.phone}">
       <div class="av">${esc(initials(t.name,t.phone))}</div>
       <div class="mid">
         <div class="nm">${esc(t.name||fmtPhone(t.phone))}</div>
@@ -236,11 +239,11 @@ async function loadThreads(){
 }
 
 // ---- chat ----
-let chatMeta = { phone:null, windowOpen:null, humanActive:null };
+let chatMeta = { phone:null, windowOpen:null, humanActive:null, autoHandoff:null };
 
 function openChat(phone){
   current = phone;
-  chatMeta = { phone, windowOpen:null, humanActive:null };
+  chatMeta = { phone, windowOpen:null, humanActive:null, autoHandoff:null };
   const t = threadsCache.find(x=>x.phone===phone) || {};
   document.getElementById('cName').textContent = t.name || fmtPhone(phone);
   document.getElementById('cPhone').textContent = t.name ? fmtPhone(phone) : '';
@@ -250,7 +253,7 @@ function openChat(phone){
   document.getElementById('composer').innerHTML='';
   loadMessages(phone,false);
 }
-function closeChat(){ current=null; chatMeta={phone:null,windowOpen:null,humanActive:null}; document.getElementById('chat').classList.remove('open'); loadThreads(); }
+function closeChat(){ current=null; chatMeta={phone:null,windowOpen:null,humanActive:null,autoHandoff:null}; document.getElementById('chat').classList.remove('open'); loadThreads(); }
 document.getElementById('back').onclick = closeChat;
 
 async function loadMessages(phone, quiet){
@@ -260,9 +263,10 @@ async function loadMessages(phone, quiet){
   // CRITICAL: a routine 8s poll must NEVER rebuild the reply box - that wipes what
   // the user is typing and drops the phone keyboard. Only rebuild the strip + box
   // when the state (window open / human handling) actually changes.
-  if(chatMeta.windowOpen !== d.window_open || chatMeta.humanActive !== d.human_active){
+  if(chatMeta.windowOpen !== d.window_open || chatMeta.humanActive !== d.human_active || chatMeta.autoHandoff !== d.auto_handoff){
     chatMeta.windowOpen = d.window_open;
     chatMeta.humanActive = d.human_active;
+    chatMeta.autoHandoff = d.auto_handoff;
     renderStrip(phone, d);
     renderComposer(phone, d.window_open);
   } else {
@@ -287,11 +291,14 @@ function renderMessages(d, quiet){
 
 function renderStrip(phone, d){
   const human = d.human_active;
+  const auto = d.auto_handoff;
   const w = windowLeft(d.last_inbound);
   const btn = human
     ? `<button class="tgl give" id="tgl">Hand back to bot</button>`
     : `<button class="tgl take" id="tgl">I'll reply</button>`;
-  const info = human
+  const info = auto
+    ? `<span class="win" style="color:var(--red)">The bot flagged this for you and paused</span><br>Reply below to take it over. <span id="winTxt">${w.txt}</span>.`
+    : human
     ? `<span class="win" style="color:var(--green)">You are handling this chat</span><br>Bot is paused. <span id="winTxt">${w.txt}</span>.`
     : (w.open ? `Auto bot is replying.<br><span id="winTxt">${w.txt}</span>.` : `<span id="winTxt">${w.txt}</span>.`);
   document.getElementById('strip').innerHTML = `<div class="info">${info}</div>${btn}`;
