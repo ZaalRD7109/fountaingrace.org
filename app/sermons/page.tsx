@@ -22,6 +22,22 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "you-know-what-you-need-to-do-so-why-cant-you-do-it",
+    title: "You Know What You Need to Do-So Why Can't You Do It?",
+    date: "2024-01-11",
+    dateDisplay: "11 January 2024",
+    intro:
+      "You have the power already. Satan just convinced you that you don't. Here's how to move faster than you ever thought possible.",
+  },
+  {
+    slug: "your-pain-has-an-expiration-date",
+    title: "Your Pain Has an Expiration Date",
+    date: "2023-10-09",
+    dateDisplay: "9 October 2023",
+    intro:
+      "You're in a season that feels permanent. It's not. What you're going through is reshaping you for something better, and that season is already shifting.",
+  },
+  {
     slug: "the-father-who-never-shows-up-and-how-it-breaks-you",
     title: "The Father Who Never Shows Up (And How It Breaks You)",
     date: "2026-06-21",
