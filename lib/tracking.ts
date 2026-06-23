@@ -25,10 +25,13 @@ function getWin(): TrackWindow | null {
 }
 
 function consentGranted(w: TrackWindow): boolean {
+  // Opt-out model (matches AnalyticsLoader): fire for everyone EXCEPT visitors who
+  // explicitly declined. This keeps conversion events (Lead, InitiateCheckout) in sync
+  // with the analytics that actually load, so ad-driven conversions are not undercounted.
   try {
-    return w.localStorage?.getItem('FGI_cookieConsent') === 'accepted'
+    return w.localStorage?.getItem('FGI_cookieConsent') !== 'declined'
   } catch {
-    return false
+    return true
   }
 }
 
