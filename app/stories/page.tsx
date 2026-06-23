@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Impact Stories | Fountain of Grace International | NPO 316-193 Pretoria North',
+  title: 'Impact Stories',
   description: 'Real stories of what your giving does in Pretoria North. Fountain of Grace International is a registered NPO (316-193) running food programs, outreach, and community support in Gauteng.',
   robots: 'index, follow',
   alternates: { canonical: 'https://www.fountaingrace.org/stories' },

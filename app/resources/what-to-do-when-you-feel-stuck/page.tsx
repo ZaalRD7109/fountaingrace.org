@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'What to Do When You Feel Stuck and Cannot Move Forward | Fountain of Grace International',
+  title: 'What to Do When You Feel Stuck and Cannot Move Forward',
   description: 'Feeling stuck is not a sign that something is wrong with you. It is a signal that something specific needs to change. Here is how to identify what it is and start moving again.',
   robots: 'index, follow',
   alternates: { canonical: 'https://www.fountaingrace.org/resources/what-to-do-when-you-feel-stuck' },

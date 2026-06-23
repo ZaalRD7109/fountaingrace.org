@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'When God Seems Silent - What to Do in the Waiting | Fountain of Grace International',
+  title: 'When God Seems Silent - What to Do in the Waiting',
   description: 'You prayed. You waited. Nothing came. The silence is not the answer you expected. Pastor Ricardo Zaal on what to do when God seems quiet.',
   robots: 'index, follow',
   alternates: { canonical: 'https://www.fountaingrace.org/devotional/when-god-seems-silent' },

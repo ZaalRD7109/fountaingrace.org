@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'How to Forgive Someone Who Is Not Sorry | Fountain of Grace International',
+  title: 'How to Forgive Someone Who Is Not Sorry',
   description: 'Forgiving someone who has not apologised feels wrong. But holding onto it is costing you more than them. Here is how forgiveness actually works - and why it is for you, not them.',
   robots: 'index, follow',
   alternates: { canonical: 'https://www.fountaingrace.org/resources/how-to-forgive-someone-who-is-not-sorry' },

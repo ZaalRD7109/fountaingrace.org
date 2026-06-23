@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Before You Walk In: What to Bring to Church This Sunday | Fountain of Grace International',
+  title: 'Before You Walk In: What to Bring to Church This Sunday',
   description: 'Most people prepare what they wear on Sunday. Very few prepare what they carry inside. A five-minute read from Pastor Ricardo Zaal before this Sunday.',
   robots: 'index, follow',
   alternates: { canonical: 'https://www.fountaingrace.org/devotional/prepare-your-heart-before-you-walk-in' },

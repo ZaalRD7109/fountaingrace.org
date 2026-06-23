@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'The Week Did Not Go as Planned - Come Anyway | Fountain of Grace International',
+  title: 'The Week Did Not Go as Planned - Come Anyway',
   description: 'The week was hard. Things did not work out. You are not in the mood for Sunday. Pastor Ricardo Zaal on why that is exactly the right time to come.',
   robots: 'index, follow',
   alternates: { canonical: 'https://www.fountaingrace.org/devotional/the-week-did-not-go-as-planned' },

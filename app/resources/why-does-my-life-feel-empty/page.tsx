@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Why Your Life Feels Empty - And What Actually Fills It | Fountain of Grace International',
+  title: 'Why Your Life Feels Empty - And What Actually Fills It',
   description: 'You can have the job, the house, even the family - and still feel hollow inside. Here is why that happens and what actually fills the gap. Biblical perspective from Pretoria North.',
   robots: 'index, follow',
   alternates: { canonical: 'https://www.fountaingrace.org/resources/why-does-my-life-feel-empty' },

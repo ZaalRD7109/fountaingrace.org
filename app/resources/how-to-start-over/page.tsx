@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'How to Start Over When Everything Has Fallen Apart | Fountain of Grace International',
+  title: 'How to Start Over When Everything Has Fallen Apart',
   description: 'When your life collapses - the marriage, the business, the career, the plan - what do you actually do next? A practical, honest guide to starting over from Pretoria North.',
   robots: 'index, follow',
   alternates: { canonical: 'https://www.fountaingrace.org/resources/how-to-start-over' },

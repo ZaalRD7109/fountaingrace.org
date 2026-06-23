@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Why Do Good People Suffer - An Honest Answer | Fountain of Grace International',
+  title: 'Why Do Good People Suffer - An Honest Answer',
   description: 'If God is good, why do good people suffer? This question has broken more faith than almost anything else. Here is an honest, Biblical answer that does not dismiss the pain.',
   robots: 'index, follow',
   alternates: { canonical: 'https://www.fountaingrace.org/resources/why-do-good-people-suffer' },

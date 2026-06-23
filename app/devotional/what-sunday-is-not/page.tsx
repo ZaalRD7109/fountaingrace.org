@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'What Sunday Is Not - Clearing Up the Biggest Misunderstanding About Church | Fountain of Grace International',
+  title: 'What Sunday Is Not - Clearing Up the Biggest Misunderstanding About Church',
   description: 'Most people who stop going to church leave for the same reason - they had the wrong idea of what it was supposed to be. Pastor Ricardo Zaal on what Sunday is actually for.',
   robots: 'index, follow',
   alternates: { canonical: 'https://www.fountaingrace.org/devotional/what-sunday-is-not' },

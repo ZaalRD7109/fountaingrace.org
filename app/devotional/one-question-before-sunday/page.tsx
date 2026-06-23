@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'One Question That Will Change How You Experience Church | Fountain of Grace International',
+  title: 'One Question That Will Change How You Experience Church',
   description: 'Before this Sunday, ask yourself one honest question. Pastor Ricardo Zaal explains how this single shift changes what you take home from every service.',
   robots: 'index, follow',
   alternates: { canonical: 'https://www.fountaingrace.org/devotional/one-question-before-sunday' },
