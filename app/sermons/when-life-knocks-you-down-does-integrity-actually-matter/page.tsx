@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "When Life Knocks You Down, Does Integrity Actually Matter | Romans 8:28 | Fountain of Grace International",
+  title: "When Life Knocks You Down, Does Integrity Actually Matter",
   description: "Discover why staying honest through betrayal, serving without payoff, and forgiving the unforgivable actually leads somewhere. Real examples inside.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/when-life-knocks-you-down-does-integrity-actually-matter" },

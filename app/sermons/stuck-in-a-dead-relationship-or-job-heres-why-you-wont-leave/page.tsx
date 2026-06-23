@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Stuck in a Dead Relationship or Job? Here's Why You Won't Leave | Proverbs 6:6-8 | Fountain of Grace International",
+  title: "Stuck in a Dead Relationship or Job? Here's Why You Won't Leave",
   description: "You're not lazy. You lack vision tied to something bigger than comfort. How faith resets your motivation.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave" },

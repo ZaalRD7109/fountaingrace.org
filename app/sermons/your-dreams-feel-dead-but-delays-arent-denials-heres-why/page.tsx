@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Your Dreams Feel Dead, But Delays Aren't Denials-Here's Why | Genesis 39:2 | Fountain of Grace International",
+  title: "Your Dreams Feel Dead, But Delays Aren't Denials-Here's Why",
   description: "Stuck while others move forward? Learn why your pain might be training, not punishment-and what actually determines if your breakthrough comes.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" },

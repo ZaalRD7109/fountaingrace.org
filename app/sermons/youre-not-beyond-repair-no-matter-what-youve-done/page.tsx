@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You're Not Beyond Repair No Matter What You've Done | Matthew 8:1-4 | Fountain of Grace International",
+  title: "You're Not Beyond Repair No Matter What You've Done",
   description: "Overwhelmed by past mistakes and labels? Find reassurance you're never too flawed for acceptance.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/youre-not-beyond-repair-no-matter-what-youve-done" },

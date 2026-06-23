@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Your Past Failures Don't Define Your Future-Here's Why | Fountain of Grace International",
+  title: "Your Past Failures Don't Define Your Future-Here's Why",
   description: "Stuck in old patterns? Your difficult circumstances are building you for something greater. Learn why.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/your-past-failures-dont-define-your-future-heres-why" },

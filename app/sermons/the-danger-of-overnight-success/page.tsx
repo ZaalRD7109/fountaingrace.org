@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'The Danger of Overnight Success and the Power of Long Obedience | Fountain of Grace International',
+  title: 'The Danger of Overnight Success and the Power of Long Obedience',
   description:
     'You can\'t cheat growth - you can only delay maturity. This message shows why heaven builds in seasons, not speed, and why the unseen roots determine everything visible above ground. Pretoria North.',
   robots: 'index, follow',

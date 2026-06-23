@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'When Knowing Is the Problem | Fountain of Grace International',
+  title: 'When Knowing Is the Problem',
   description:
     'You know what to do. You have done the courses, attended the services, read the scriptures. But nothing has shifted. James 1:22 identifies why. Pretoria North.',
   robots: 'index, follow',

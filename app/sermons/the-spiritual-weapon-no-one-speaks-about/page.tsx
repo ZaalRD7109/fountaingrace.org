@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'The One Weapon Nobody Teaches You That Changes Every Fight | Fountain of Grace International Pretoria North',
+  title: 'The One Weapon Nobody Teaches You That Changes Every Fight',
   description:
     'Jesus stooped and wrote on the ground. Every accuser left. That act was a weapon - and it still works. This message unpacks the authority you carry to break cycles, patterns, and spiritual blockage. Pretoria North.',
   robots: 'index, follow',

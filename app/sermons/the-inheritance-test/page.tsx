@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'The Inheritance Test: Will It Reach Three Generations? | Proverbs 13:22 | Fountain of Grace International',
+  title: 'The Inheritance Test: Will It Reach Three Generations?',
   description:
     'A good man leaves an inheritance to his children\'s children. But most leave money without systems. Joseph\'s coat was never about the coat - it was about the character and principles underneath it. Pretoria North.',
   robots: 'index, follow',

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Your Success Depends on What You Do Before It Arrives | Ecclesiastes 3:1-4 | Fountain of Grace International",
+  title: "Your Success Depends on What You Do Before It Arrives",
   description: "Stuck waiting for breakthroughs? The real reason blessings don't stick-and how to prepare for them.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/your-success-depends-on-what-you-do-before-it-arrives" },

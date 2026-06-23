@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You Feel Stuck and Invisible - Here's What Changes Everything | Luke 13:10-13 | Fountain of Grace International",
+  title: "You Feel Stuck and Invisible - Here's What Changes Everything",
   description: "Months of trying haven't worked. Learn why your breakthrough is closer than you think and how to recognize it.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" },

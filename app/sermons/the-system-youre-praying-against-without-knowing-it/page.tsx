@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'The System You\'re Praying Against Without Knowing It | Fountain of Grace International',
+  title: 'The System You\'re Praying Against Without Knowing It',
   description:
     'You have prayed. You have obeyed. Nothing moved. This message reveals how believers unknowingly pray against the very system God set up for their breakthrough. Pretoria North.',
   robots: 'index, follow',

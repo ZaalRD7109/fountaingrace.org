@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Everyone Around You Is Pretending - Here's Why You're Alone | Matthew 4:18 | Fountain of Grace International",
+  title: "Everyone Around You Is Pretending - Here's Why You're Alone",
   description: "You feel surrounded by fake people. The real problem isn't them-it's who you're rejecting.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" },

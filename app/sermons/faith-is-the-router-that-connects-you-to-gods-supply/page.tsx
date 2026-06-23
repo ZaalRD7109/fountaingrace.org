@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Faith Is the Router That Connects You to God\'s Supply | Fountain of Grace International',
+  title: 'Faith Is the Router That Connects You to God\'s Supply',
   description:
     'Your faith is not a feeling - it is the router that connects you to everything God has already provided. When the connection drops, the supply does not stop. You just lost the signal. Pretoria North.',
   robots: 'index, follow',

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You Work Hard But Nothing Changes - Here's What You're Missing | Jeremiah 29:11 | Fountain of Grace International",
+  title: "You Work Hard But Nothing Changes - Here's What You're Missing",
   description: "Discover why your efforts feel pointless and how to shift from despair to confidence about your future, even when results are invisible.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" },

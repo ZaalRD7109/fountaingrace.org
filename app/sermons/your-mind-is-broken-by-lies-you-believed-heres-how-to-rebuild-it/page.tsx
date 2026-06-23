@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Your Mind Is Broken By Lies You Believed - Here's How to Rebuild It | Genesis 1:26 | Fountain of Grace International",
+  title: "Your Mind Is Broken By Lies You Believed - Here's How to Rebuild It",
   description: "Discover why you feel stuck, anxious, and broken despite having everything. Learn the blueprint to reset your thinking and reclaim your designed purpose.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it" },

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Everyone's Rejected You. Here's What That Really Means About Your Worth | 1 Corinthians 12:12-19 | Fountain of Grace International",
+  title: "Everyone's Rejected You. Here's What That Really Means About Your Worth",
   description: "When family, work, or friends write you off as useless, does that make it true? Discover what rejection actually reveals.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" },

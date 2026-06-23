@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You're Stuck Because You Don't Know Where You're Going | Proverbs 6:6-11 | Fountain of Grace International",
+  title: "You're Stuck Because You Don't Know Where You're Going",
   description: "Why lack of direction kills motivation more than laziness. Learn what actually holds you back from meaningful change.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/i-nearly-died-this-week-heres-what-changed-everything" },

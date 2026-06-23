@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You Started Something and Gave Up - Here's Why You Keep Doing It | Philippians 1:6 | Fountain of Grace International",
+  title: "You Started Something and Gave Up - Here's Why You Keep Doing It",
   description: "You had a dream, a business plan, a commitment. Then it got hard or didn't look like you expected. So you quit. Learn how to push through.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/you-started-something-and-gave-up-heres-why-you-keep-doing-it" },

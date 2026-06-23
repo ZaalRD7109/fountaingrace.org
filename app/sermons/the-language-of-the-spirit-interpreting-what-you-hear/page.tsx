@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Hearing the Right Things and Still Getting Them Wrong - Here Is Why | Numbers 12:6 | Fountain of Grace International',
+  title: 'Hearing the Right Things and Still Getting Them Wrong - Here Is Why',
   description:
     'The problem is not God\'s silence - it is our translation. Numbers 12:6 says God speaks in visions and dreams. This message teaches you how to interpret what He is saying. Pretoria North.',
   robots: 'index, follow',

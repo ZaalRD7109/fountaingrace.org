@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Dying Right - Good Friday Message | Fountain of Grace International',
+  title: 'Dying Right - Good Friday Message',
   description:
     'Jesus did not die as a victim. Every word He spoke from the cross was deliberate. Good Friday message from Fountain of Grace International, Pretoria North.',
   robots: 'index, follow',

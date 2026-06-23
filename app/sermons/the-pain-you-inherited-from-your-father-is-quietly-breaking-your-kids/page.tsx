@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The Pain You Inherited From Your Father Is Quietly Breaking Your Kids | 2 Samuel 13:1-39 | Fountain of Grace International",
+  title: "The Pain You Inherited From Your Father Is Quietly Breaking Your Kids",
   description: "Unhealed father wounds pass to the next generation. Learn the six types of fathers and how to break the cycle.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids" },

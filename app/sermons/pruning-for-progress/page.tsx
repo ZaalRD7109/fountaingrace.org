@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Pruning for Progress: From Bare Branch to Bountiful Blessing | Fountain of Grace International',
+  title: 'Pruning for Progress: From Bare Branch to Bountiful Blessing',
   description:
     'John 15:1-8 - God prunes every branch that bears fruit so it bears more. The cutting is not punishment. It is preparation. This message explains why the season of pruning is the season closest to breakthrough. Pretoria North.',
   robots: 'index, follow',

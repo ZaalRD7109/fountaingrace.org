@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Stop Waiting for Permission to Become Who You Already Are | John 14:12 | Fountain of Grace International",
+  title: "Stop Waiting for Permission to Become Who You Already Are",
   description: "You have unique gifts that only you can give. Learn why self-doubt costs the world more than failure ever could.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/stop-waiting-for-permission-to-become-who-you-already-are" },

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Your Boss Will Never Promote You Like This | Matthew 27:12-14 | Fountain of Grace International",
+  title: "Your Boss Will Never Promote You Like This",
   description: "Why quiet, consistent work beats self-promotion, politics, and fake confidence-and how sudden advancement actually happens.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" },

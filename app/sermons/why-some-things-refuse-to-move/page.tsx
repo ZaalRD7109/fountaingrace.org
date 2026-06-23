@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Why Some Things Refuse to Move | Fountain of Grace International',
+  title: 'Why Some Things Refuse to Move',
   description:
     'You have used the name of Jesus. You have declared the Word. But things are not shifting. This message reveals why the name of Jesus is a legal claim - not a magic spell. Pretoria North.',
   robots: 'index, follow',

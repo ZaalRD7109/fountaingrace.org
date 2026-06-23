@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Why You're Not Moving Forward - And How to Break It | Fountain of Grace International Pretoria North",
+  title: "Why You're Not Moving Forward - And How to Break It",
   description:
     "You know exactly what to do - but you're not doing it. Pastor Ricardo Zaal unpacks 4 root causes of being stuck and the biblical framework for finally moving. Fountain of Grace International, Pretoria North.",
   robots: 'index, follow',

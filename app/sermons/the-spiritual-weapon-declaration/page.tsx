@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'The Spiritual Weapon - Declaration Session | Fountain of Grace International Pretoria North',
+  title: 'The Spiritual Weapon - Declaration Session',
   description:
     'Part 2 of the Spiritual Weapon series. This is not a passive message - it is a declaration. Speak to the earth. Break family cycles, sickness, financial blockage, and spiritual attack. Pretoria North.',
   robots: 'index, follow',

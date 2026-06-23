@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The Father Who Never Shows Up (And How It Breaks You) | Luke 15:20 | Fountain of Grace International",
+  title: "The Father Who Never Shows Up (And How It Breaks You)",
   description: "Why your dad's presence matters more than his paycheck. What real fatherhood looks like and how to break the cycle.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/the-father-who-never-shows-up-and-how-it-breaks-you" },

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Can Something Greater Than Yourself Actually Speak Directly to You? | Fountain of Grace International",
+  title: "Can Something Greater Than Yourself Actually Speak Directly to You?",
   description: "Have you ever wondered if God truly speaks to people today? Pastor Ricardo Zaal at Pretoria North unpacks how to experience God's presence and hear His voice.",
   robots: 'index, follow',
   alternates: {

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear | Jeremiah 29:11 | Fountain of Grace International",
+  title: "How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear",
   description: "Learn to recognize true guidance from false signals when making life decisions. Practical ways to test what you're hearing before you act.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" },

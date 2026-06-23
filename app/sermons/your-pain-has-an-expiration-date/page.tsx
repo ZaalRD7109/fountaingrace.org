@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Your Pain Has an Expiration Date | Song of Solomon 2:11 | Fountain of Grace International",
+  title: "Your Pain Has an Expiration Date",
   description: "The suffering you're enduring right now is temporary and has a purpose. Discover what comes after.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/your-pain-has-an-expiration-date" },

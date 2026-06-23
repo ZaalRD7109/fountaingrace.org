@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "They're Using You-And God Is Too | Genesis 50:20 | Fountain of Grace International",
+  title: "They're Using You-And God Is Too",
   description: "When people exploit you, abuse your trust, or make empty promises, God is actually training you for something greater. Here's how.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/theyre-using-you-and-god-is-too" },

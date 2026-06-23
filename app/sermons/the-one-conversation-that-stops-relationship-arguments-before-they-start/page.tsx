@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The One Conversation That Stops Relationship Arguments Before They Start | Song of Solomon 2:15 | Fountain of Grace International",
+  title: "The One Conversation That Stops Relationship Arguments Before They Start",
   description: "Most fights aren't about what you think. Learn what's really breaking relationships and the simple fix that actually works.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/the-one-conversation-that-stops-relationship-arguments-before-they-start" },

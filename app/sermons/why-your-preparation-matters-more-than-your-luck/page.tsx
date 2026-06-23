@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Your Big Break Is Coming, But You're Not Ready For It | Proverbs 21:31 | Fountain of Grace International",
+  title: "Your Big Break Is Coming, But You're Not Ready For It",
   description: "You have dreams and opportunities knock. But you're stuck without the skills, credentials, or resources to seize them. Here's what actually works.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/why-your-preparation-matters-more-than-your-luck" },

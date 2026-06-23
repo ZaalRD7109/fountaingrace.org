@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Your Stuck Life Can Actually Change: Here's What Needs to Happen First | Matthew 1:21 | Fountain of Grace International",
+  title: "Your Stuck Life Can Actually Change: Here's What Needs to Happen First",
   description: "Feeling trapped in a failing marriage, financial crisis, or depression? Discover what actually reverses broken situations.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/why-jesus-changed-everything-the-birth-that-brings-new-life" },

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Every Word You Say About Yourself Is Writing Your Future | 1 Corinthians 14:3 | Fountain of Grace International',
+  title: 'Every Word You Say About Yourself Is Writing Your Future',
   description:
     'Whether you know it or not, you are always prophesying over yourself. The question is whether your words are building you up or tearing you down. Based on 1 Corinthians 14:3. Pretoria North.',
   robots: 'index, follow',

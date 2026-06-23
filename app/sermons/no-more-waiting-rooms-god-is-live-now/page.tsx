@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Stop Waiting for Your Real Life to Begin - It Already Started | Fountain of Grace International',
+  title: 'Stop Waiting for Your Real Life to Begin - It Already Started',
   description:
     'You are not stuck in a waiting room. God is not buffering. This message challenges the believer who has been waiting for God to act - while God has already moved. Pretoria North.',
   robots: 'index, follow',

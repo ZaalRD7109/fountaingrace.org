@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'You Know What You Should Be Doing - So Why Are You Still on the Sidelines? | Fountain of Grace International',
+  title: 'You Know What You Should Be Doing - So Why Are You Still on the Sidelines?',
   description:
     'The crowd cheered Jesus and then crucified Him. The donkey carried Him in silence. Which one are you? A challenging message on commitment vs excitement. Pretoria North.',
   robots: 'index, follow',

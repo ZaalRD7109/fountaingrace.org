@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'How Good Opportunities Become the Thing That Stops Your Real Breakthrough | Fountain of Grace International',
+  title: 'How Good Opportunities Become the Thing That Stops Your Real Breakthrough',
   description:
     'You can be climbing a ladder leaned against the wrong wall. Good intentions, constant busyness - but misaligned with God\'s timing. This message names the pattern. Pretoria North.',
   robots: 'index, follow',

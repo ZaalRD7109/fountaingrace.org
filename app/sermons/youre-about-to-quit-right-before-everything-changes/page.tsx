@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You're About to Quit Right Before Everything Changes | John 21:3-6 | Fountain of Grace International",
+  title: "You're About to Quit Right Before Everything Changes",
   description: "The moment you feel most like giving up is often when breakthrough arrives. Learn why persistence beats surrender.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/youre-about-to-quit-right-before-everything-changes" },

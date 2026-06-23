@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "When It Looks Like God Is Silent - You're Still in the Story | Fountain of Grace International",
+  title: "When It Looks Like God Is Silent - You're Still in the Story",
   description:
     "When everything goes quiet and nothing seems to be moving, most people assume God stopped. Romans 8:28 says something different. Pastor Ricardo Zaal, Pretoria North.",
   robots: 'index, follow',

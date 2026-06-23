@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Your Help Is Making Them Helpless | Luke 16:28 | Fountain of Grace International",
+  title: "Your Help Is Making Them Helpless",
   description: "Discover why constant giving, overprotective parenting, and doing things for others backfires. Real compassion teaches independence.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/why-your-kindness-might-be-hurting-people" },

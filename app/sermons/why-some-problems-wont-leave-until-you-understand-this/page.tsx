@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Why Some Problems Won\'t Leave Until You Understand This | Fountain of Grace International',
+  title: 'Why Some Problems Won\'t Leave Until You Understand This',
   description:
     'Problems that keep returning do so for a reason. The blood of Jesus has five specific functions that break persistent cycles. Pretoria North.',
   robots: 'index, follow',

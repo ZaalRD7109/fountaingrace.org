@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "When Everything Fights Against What You Were Meant to Build | Fountain of Grace International",
+  title: "When Everything Fights Against What You Were Meant to Build",
   description: "Feeling like life is fighting against everything God promised you? This sermon from Pretoria North shows why no battle can stop what God has started in you.",
   robots: 'index, follow',
   alternates: {

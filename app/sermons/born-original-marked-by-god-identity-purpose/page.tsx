@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You Were Not Made to Be a Copy of Someone Else | Fountain of Grace International",
+  title: "You Were Not Made to Be a Copy of Someone Else",
   description: "Struggling to find your identity? Pastor Ricardo Zaal of Pretoria North unpacks why God crafted you as a one-of-a-kind original with purpose only you can fulfil.",
   robots: 'index, follow',
   alternates: {

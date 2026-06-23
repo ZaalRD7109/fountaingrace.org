@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "What If Someone Else Finishes What Was Meant for You? | Fountain of Grace International Pretoria North",
+  title: "What If Someone Else Finishes What Was Meant for You?",
   description:
     "You know your potential. You keep postponing. This message - based on Esther 4:14 - asks the uncomfortable question: what if your window closes? Pretoria North.",
   robots: 'index, follow',

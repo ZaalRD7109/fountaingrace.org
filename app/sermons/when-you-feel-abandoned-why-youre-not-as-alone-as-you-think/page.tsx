@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "When You Feel Abandoned: Why You're Not as Alone as You Think | Fountain of Grace International",
+  title: "When You Feel Abandoned: Why You're Not as Alone as You Think",
   description: "Life's storms make you feel forgotten. But what if someone powerful is still watching over you, even when you can't feel it?",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" },

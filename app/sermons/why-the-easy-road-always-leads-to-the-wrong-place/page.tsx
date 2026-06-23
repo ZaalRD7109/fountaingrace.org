@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Why the Easy Road Always Leads to the Wrong Place | Fountain of Grace International',
+  title: 'Why the Easy Road Always Leads to the Wrong Place',
   description:
     'Every shortcut you have ever taken has cost you more than it promised. This message unpacks why the easy route keeps leading to dead ends - and what the real road looks like. Pastor Ricardo Zaal, Pretoria North.',
   robots: 'index, follow',

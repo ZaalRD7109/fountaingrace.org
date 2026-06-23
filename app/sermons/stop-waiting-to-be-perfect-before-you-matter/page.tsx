@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Stop Waiting to Be Perfect Before You Matter | John 14:12 | Fountain of Grace International",
+  title: "Stop Waiting to Be Perfect Before You Matter",
   description: "You're holding back your gifts because you're not good enough yet. But you already have what others need right now.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/stop-waiting-to-be-perfect-before-you-matter" },

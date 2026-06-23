@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "How to Know What to Do When Everything Feels Confusing | Jeremiah 33:3 | Fountain of Grace International",
+  title: "How to Know What to Do When Everything Feels Confusing",
   description: "Learn to tap into quiet guidance that cuts through anxiety and confusion. Real strategies for clarity in relationships, money, and life decisions.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/how-to-know-what-to-do-when-everything-feels-confusing" },

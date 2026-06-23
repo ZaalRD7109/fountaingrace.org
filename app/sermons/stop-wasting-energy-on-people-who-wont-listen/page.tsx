@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Stop Wasting Energy on People Who Won't Listen | Job 2:1-6 | Fountain of Grace International",
+  title: "Stop Wasting Energy on People Who Won't Listen",
   description: "Your explanations trap you in endless justification. Learn when to stay silent and let your actions speak.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/stop-wasting-energy-on-people-who-wont-listen" },

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Born Into Something Greater Than the Life You Are Currently Living | Fountain of Grace International",
+  title: "Born Into Something Greater Than the Life You Are Currently Living",
   description: "Struggling this Christmas season in Pretoria North? Pastor Ricardo Zaal shows how the birth of Jesus Christ births new life into every broken situation you face.",
   robots: 'index, follow',
   alternates: {

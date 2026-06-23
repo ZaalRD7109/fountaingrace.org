@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The Small Habits That Quietly Destroy Your Life | Proverbs 4:23 | Fountain of Grace International",
+  title: "The Small Habits That Quietly Destroy Your Life",
   description: "Discover how tiny daily compromises and ignored warning signs grow into patterns that damage your future. Learn to fix the root before the damage spreads.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/the-small-habits-that-quietly-destroy-your-life" },

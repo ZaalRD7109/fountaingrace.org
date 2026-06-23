@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Your Past Mistakes Don't Determine Your Future | Jeremiah 29:11 | Fountain of Grace International",
+  title: "Your Past Mistakes Don't Determine Your Future",
   description: "Stuck in fear after failure? Learn why your worst moments aren't your final destination-and how to move forward anyway.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/your-past-mistakes-dont-determine-your-future" },

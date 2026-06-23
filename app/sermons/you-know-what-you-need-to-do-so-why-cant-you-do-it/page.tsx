@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You Know What You Need to Do-So Why Can't You Do It? | Psalm 41:9 | Fountain of Grace International",
+  title: "You Know What You Need to Do-So Why Can't You Do It?",
   description: "Feel stuck despite knowing your path? Satan attacks your ability to move, not your mind. Discover how to reclaim speed.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" },

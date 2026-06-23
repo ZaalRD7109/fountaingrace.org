@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You Are Not Lazy - You Are a Lot More | Proverbs 6:6-8 | Fountain of Grace International",
+  title: "You Are Not Lazy - You Are a Lot More",
   description:
     "You are not lazy. You are disconnected. The ant in Proverbs 6 works without a commander because it knows its purpose. This message challenges you to stop calling yourself what God never called you. Pretoria North.",
   robots: 'index, follow',

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You Don't Know Who You Are Yet | Fountain of Grace International",
+  title: "You Don't Know Who You Are Yet",
   description:
     "Most people live by an identity built from failure, other people's words, and what life has done to them. This message from Pastor Ricardo Zaal shows you what God says instead. Pretoria North.",
   robots: 'index, follow',

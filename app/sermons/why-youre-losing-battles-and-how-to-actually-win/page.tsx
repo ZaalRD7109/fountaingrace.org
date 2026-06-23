@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The Real Reason You Feel Like You're Losing When Everything Falls Apart | 1 Samuel 17:47 | Fountain of Grace International",
+  title: "The Real Reason You Feel Like You're Losing When Everything Falls Apart",
   description: "Why your worst struggles feel hopeless, and what actually determines if you win or lose them.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/why-youre-losing-battles-and-how-to-actually-win" },

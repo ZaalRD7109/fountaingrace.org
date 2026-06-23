@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Your Resolution Didn\'t Fail - You Quit Acting | Fountain of Grace International',
+  title: 'Your Resolution Didn\'t Fail - You Quit Acting',
   description:
     'You are not lazy. You are tired of failing. But the resolution itself wasn\'t the problem - your habits never changed. This message shows exactly why and what to do. Pretoria North.',
   robots: 'index, follow',

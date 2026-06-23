@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck | James 2:17 | Fountain of Grace International",
+  title: "You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck",
   description: "Discover why doing more doesn't equal winning. Learn the one principle that separates busy people from successful ones.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" },

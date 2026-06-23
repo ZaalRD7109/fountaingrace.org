@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Your Life Falls Apart Under Pressure Because of What's Actually Inside You | Matthew 7:24-25 | Fountain of Grace International",
+  title: "Your Life Falls Apart Under Pressure Because of What's Actually Inside You",
   description: "Why you collapse in stress, relationships, and temptation even when you work hard at being good. The real reason-and how to fix it.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/your-life-falls-apart-under-pressure-because-of-whats-actually-inside-you" },

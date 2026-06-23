@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "When Life Deliberately Gets Worse Before It Works Out | Genesis 50:20 | Fountain of Grace International",
+  title: "When Life Deliberately Gets Worse Before It Works Out",
   description: "Your setback isn't a dead end. Learn why repeated failures and unfair circumstances are redirections toward a bigger purpose.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/when-life-deliberately-gets-worse-before-it-works-out" },

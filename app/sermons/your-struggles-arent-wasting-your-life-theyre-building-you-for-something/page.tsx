@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Your Struggles Aren't Wasting Your Life-They're Building You for Something | Exodus 2:1-10 | Fountain of Grace International",
+  title: "Your Struggles Aren't Wasting Your Life-They're Building You for Something",
   description: "Hidden, overlooked, rejected. Your pain wasn't random. See how hardship prepares you for the exact moment you're meant to step into your calling.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something" },

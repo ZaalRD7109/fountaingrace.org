@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You're Working Hard But Nothing Changes. Here's Why. | Fountain of Grace International",
+  title: "You're Working Hard But Nothing Changes. Here's Why.",
   description: "Stuck in repetitive failure? Relationships won't progress, jobs go nowhere, prayers unanswered. There's a path you haven't taken yet.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/youre-working-hard-but-nothing-changes-heres-why" },

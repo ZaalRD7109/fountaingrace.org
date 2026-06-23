@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Why Some People Are Completely Untouchable No Matter What Life Throws | Isaiah 10:27 | Fountain of Grace International',
+  title: 'Why Some People Are Completely Untouchable No Matter What Life Throws',
   description:
     'The anointing is not eloquence or performance. Isaiah 10:27 says the yoke is destroyed because of it. This message explains what the anointing actually is and why hell fears it. Pretoria North.',
   robots: 'index, follow',

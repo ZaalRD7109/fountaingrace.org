@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Why Does Your Life Keep Collapsing No Matter What You Build? | Fountain of Grace International',
+  title: 'Why Does Your Life Keep Collapsing No Matter What You Build?',
   description:
     'You believe in God. But your life keeps breaking in the same places. This message addresses the root of repeated collapse for people who know the Bible but can\'t seem to stand. Pretoria North.',
   robots: 'index, follow',

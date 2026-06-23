@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Stop Trying to Escape Your Problems - Here Is What They Are Actually For | Fountain of Grace International",
+  title: "Stop Trying to Escape Your Problems - Here Is What They Are Actually For",
   description: "Struggling through pain and trials in Pretoria North? Pastor Ricardo Zaal explains from James 1 why your storm is growing you, not breaking you. Watch now.",
   robots: 'index, follow',
   alternates: {

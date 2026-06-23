@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Are You Actually Being Transformed or Just Showing Up? | Fountain of Grace International",
+  title: "Are You Actually Being Transformed or Just Showing Up?",
   description: "Feeling stuck spiritually? Pastor Ricardo Zaal of Pretoria North asks the hard question - is your church truly transforming you? A bold word from Joel 2.",
   robots: 'index, follow',
   alternates: {

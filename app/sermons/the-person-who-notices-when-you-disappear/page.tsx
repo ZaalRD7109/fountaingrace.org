@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The Person Who Notices When You Disappear | Ecclesiastes 4:9-10 | Fountain of Grace International",
+  title: "The Person Who Notices When You Disappear",
   description: "Most of us feel unseen. What if your community was built to catch you before you fall?",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/the-person-who-notices-when-you-disappear" },

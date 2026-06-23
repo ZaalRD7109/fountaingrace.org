@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Your Paycheck Disappears Every Month - Here's Why and What Actually Works | Romans 13:8 | Fountain of Grace International",
+  title: "Your Paycheck Disappears Every Month - Here's Why and What Actually Works",
   description: "Stuck living paycheck-to-paycheck? Learn the real reason money slips away and the concrete steps to break free from debt and build actual financial peace.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" },

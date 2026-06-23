@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Releasing His Presence - From Container to Conduit | Luke 24:32 | Fountain of Grace International',
+  title: 'Releasing His Presence - From Container to Conduit',
   description:
     'You sense God\'s presence in church - but it stays there. Matthew 5:15 says a lamp hidden under a basket gives no light. This message shows how to move from containing the presence to releasing it. Pretoria North.',
   robots: 'index, follow',

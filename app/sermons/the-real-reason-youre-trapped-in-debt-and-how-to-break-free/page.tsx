@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The Real Reason You're Trapped in Debt (And How to Break Free) | Colossians 2:13-14 | Fountain of Grace International",
+  title: "The Real Reason You're Trapped in Debt (And How to Break Free)",
   description: "Stop fighting for scraps. Discover how one ancient sacrifice ended your financial and spiritual debt forever.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/the-real-reason-youre-trapped-in-debt-and-how-to-break-free" },

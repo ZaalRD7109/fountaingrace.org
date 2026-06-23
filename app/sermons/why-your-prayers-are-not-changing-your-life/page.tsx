@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Why Nothing Changes No Matter How Hard You Try | Fountain of Grace International',
+  title: 'Why Nothing Changes No Matter How Hard You Try',
   description:
     'A prophetic word only activates when you combine faith with the right action step. Most regrets come from what you did not do, not what you did wrong. Pretoria North.',
   robots: 'index, follow',

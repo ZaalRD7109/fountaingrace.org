@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The Person Nobody Checks On: How You're Losing Friends Without Knowing It | Genesis 4:9 | Fountain of Grace International",
+  title: "The Person Nobody Checks On: How You're Losing Friends Without Knowing It",
   description: "Why people drift away when no one holds them accountable. Build the relationships that actually last.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" },

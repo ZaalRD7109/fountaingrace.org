@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You're Exhausted From Making Life Harder Than It Has to Be | John 14:6 | Fountain of Grace International",
+  title: "You're Exhausted From Making Life Harder Than It Has to Be",
   description: "Stop relying on your own strength. Discover why following someone who's already walked the path makes everything easier.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" },

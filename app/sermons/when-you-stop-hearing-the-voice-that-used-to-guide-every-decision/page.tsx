@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "When You Stop Hearing the Voice That Used to Guide Every Decision | John 10:27 | Fountain of Grace International",
+  title: "When You Stop Hearing the Voice That Used to Guide Every Decision",
   description: "There was a voice that used to guide your best decisions. Somewhere the static got louder. Pastor Ricardo Zaal shows why God never went silent - and how to tune back in. John 10:27.",
   robots: 'index, follow',
   alternates: {

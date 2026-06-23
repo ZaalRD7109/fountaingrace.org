@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You're Blocked by One Thing and Don't Even Know It | Luke 19:1-10 | Fountain of Grace International",
+  title: "You're Blocked by One Thing and Don't Even Know It",
   description: "Your circumstances aren't stopping you. Your belief about them is. See how to break through what's holding you back.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/youre-blocked-by-one-thing-and-dont-even-know-it" },

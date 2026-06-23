@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Stop Waiting for Someone Else to Tell You What's Coming | 1 Corinthians 14:1 | Fountain of Grace International",
+  title: "Stop Waiting for Someone Else to Tell You What's Coming",
   description: "Learn to recognize inner nudges and mental images that guide your decisions. Practical steps to develop spiritual intuition without confusion or doubt.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" },

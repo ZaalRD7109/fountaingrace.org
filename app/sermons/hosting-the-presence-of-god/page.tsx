@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed | Psalm 27:8 | Fountain of Grace International',
+  title: 'Why Sunday Feels Different and Monday Feels Like Nothing Changed',
   description:
     'Psalm 27:8 - seek my face, require my presence. This message explains the difference between attending church and hosting God\'s presence, and what changes when you carry it daily. Pretoria North.',
   robots: 'index, follow',

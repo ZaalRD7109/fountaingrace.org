@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Helping Someone Actually Keeps Them Stuck | Ephesians 4:28 | Fountain of Grace International",
+  title: "Helping Someone Actually Keeps Them Stuck",
   description: "Constant handouts destroy independence. Learn when helping hurts and what really builds someone up to stand on their own.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/helping-someone-actually-keeps-them-stuck" },

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You Already Know What To Do - So Why Aren't You Doing It? | Fountain of Grace International",
+  title: "You Already Know What To Do - So Why Aren't You Doing It?",
   description:
     "You have the idea, the plan, and the calling. The problem is not knowledge - it is execution. Pastor Ricardo Zaal breaks down exactly what keeps people frozen. Pretoria North, South Africa.",
   robots: 'index, follow',

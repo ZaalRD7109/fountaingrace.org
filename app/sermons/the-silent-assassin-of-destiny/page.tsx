@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'The Silent Assassin of Destiny: Overthinking | Fountain of Grace International',
+  title: 'The Silent Assassin of Destiny: Overthinking',
   description:
     'Overthinking kills destiny before you even start. Based on 2 Corinthians 10:4-5, this message exposes how the enemy uses your own mind against you - and how to stop it. Pretoria North.',
   robots: 'index, follow',

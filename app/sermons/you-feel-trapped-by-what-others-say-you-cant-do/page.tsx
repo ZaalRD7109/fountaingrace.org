@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You Feel Trapped By What Others Say You Can't Do | Mark 5:1-15 | Fountain of Grace International",
+  title: "You Feel Trapped By What Others Say You Can't Do",
   description: "Why people hold you back and how to break free from the shame keeping you stuck in old patterns.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/you-feel-trapped-by-what-others-say-you-cant-do" },

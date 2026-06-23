@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'You Were Built for Something Specific - Here Is How to Find It | 2 Timothy 1:6 | Fountain of Grace International',
+  title: 'You Were Built for Something Specific - Here Is How to Find It',
   description:
     'You are not broken - you are bruised. 2 Timothy 1:6 says stir up the gift of God which is in you. The gift is already there. Fear is the only thing keeping it from coming out. Pretoria North.',
   robots: 'index, follow',

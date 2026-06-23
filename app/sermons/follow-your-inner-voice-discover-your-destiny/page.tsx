@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Follow Your Inner Voice - Discover Your Destiny | Fountain of Grace International Pretoria North",
+  title: "Follow Your Inner Voice - Discover Your Destiny",
   description:
     "Before you were born, God already set you apart. This message challenges you to stop listening to the voices that told you to stop running - and start moving in the direction God placed inside you. Pretoria North.",
   robots: 'index, follow',

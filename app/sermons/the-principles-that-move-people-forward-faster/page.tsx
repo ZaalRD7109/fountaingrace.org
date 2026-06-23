@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The Principles That Move People Forward Faster | Fountain of Grace International Pretoria North",
+  title: "The Principles That Move People Forward Faster",
   description:
     "You have been praying. Nothing has changed. This message gives 10 biblical principles - obedience, positioning, wisdom, strategy, stewardship, relationships, and more. Pretoria North.",
   robots: 'index, follow',

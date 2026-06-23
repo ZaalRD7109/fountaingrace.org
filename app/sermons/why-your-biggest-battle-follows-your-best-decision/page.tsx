@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'Why Your Biggest Battle Always Follows Your Best Decision | Fountain of Grace International',
+  title: 'Why Your Biggest Battle Always Follows Your Best Decision',
   description:
     'The moment you make the right decision is often when everything falls apart. This is not failure - it is confirmation. Pastor Ricardo Zaal explains why from Pretoria North.',
   robots: 'index, follow',

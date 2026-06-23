@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "When Your Success Makes People Jealous: Here's What It Really Means | Genesis 37:5-11 | Fountain of Grace International",
+  title: "When Your Success Makes People Jealous: Here's What It Really Means",
   description: "Opposition from family and friends often signals something bigger is coming. Learn why attacks mean you're on the right path.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" },

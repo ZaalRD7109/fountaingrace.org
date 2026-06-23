@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The Hidden Cost of Staying Silent at Work, Home, and in Life | Genesis 3:6 | Fountain of Grace International",
+  title: "The Hidden Cost of Staying Silent at Work, Home, and in Life",
   description: "Discover why your silence is costing you promotions, influence, and opportunities-and how to start speaking up without permission or a perfect moment.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life" },

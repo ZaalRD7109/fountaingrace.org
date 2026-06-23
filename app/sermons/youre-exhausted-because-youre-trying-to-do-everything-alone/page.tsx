@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You're Exhausted Because You're Trying to Do Everything Alone | Jeremiah 31:25 | Fountain of Grace International",
+  title: "You're Exhausted Because You're Trying to Do Everything Alone",
   description: "Feeling overwhelmed and burnt out? Discover why you're so tired and the three proven steps to regain strength and actually finish what matters.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" },

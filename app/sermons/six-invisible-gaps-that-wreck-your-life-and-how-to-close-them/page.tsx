@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Six Invisible Gaps That Wreck Your Life (And How to Close Them) | Matthew 6:33 | Fountain of Grace International",
+  title: "Six Invisible Gaps That Wreck Your Life (And How to Close Them)",
   description: "Discover why you drift from what matters most and lose control of your decisions, relationships, and peace-even when you intend not to.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" },

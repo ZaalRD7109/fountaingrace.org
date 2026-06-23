@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "Stop Helping People (It's Making Them Worse) | Luke 16:28 | Fountain of Grace International",
+  title: "Stop Helping People (It's Making Them Worse)",
   description: "Your generosity might be crippling the people you're trying to save. Learn when helping becomes enabling.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/stop-helping-people-its-making-them-worse" },

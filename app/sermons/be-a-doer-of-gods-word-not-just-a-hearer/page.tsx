@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You Know What to Do. So Why Is Nothing Changing? | Fountain of Grace International",
+  title: "You Know What to Do. So Why Is Nothing Changing?",
   description:
     "James 1:21-25 - the person who hears and forgets is like a man who looks in a mirror and walks away. This message calls for active response to truth. Pretoria North.",
   robots: 'index, follow',

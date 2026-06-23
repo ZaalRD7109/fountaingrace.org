@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The Shortcut That's Ruining Your Life | John 2:5 | Fountain of Grace International",
+  title: "The Shortcut That's Ruining Your Life",
   description: "Desperate moves-lying, cheating, stepping on others-feel like the only way forward. Here's what actually works.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/the-shortcut-thats-ruining-your-life" },

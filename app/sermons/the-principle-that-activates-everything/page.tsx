@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: 'The Principle That Activates Everything: Right Action | Fountain of Grace International',
+  title: 'The Principle That Activates Everything: Right Action',
   description:
     'Faith without the right action at the right time produces nothing. This message shows why obedient, timely action is the activating principle behind every breakthrough. Pretoria North.',
   robots: 'index, follow',

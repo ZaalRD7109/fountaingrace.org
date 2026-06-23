@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "You Got What You Prayed For But Lost It Anyway | Matthew 9:20-22 | Fountain of Grace International",
+  title: "You Got What You Prayed For But Lost It Anyway",
   description: "Why getting the job, money, or relationship back isn't enough. The real reason surface fixes fail.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" },

@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 
 export const metadata: Metadata = {
-  title: "The Cost of Sitting on the Sidelines | Matthew 9:20-22 | Fountain of Grace International",
+  title: "The Cost of Sitting on the Sidelines",
   description: "Stop waiting for perfect conditions. Real change happens when you show up first, even broken and afraid.",
   robots: 'index, follow',
   alternates: { canonical: "https://www.fountaingrace.org/sermons/the-cost-of-sitting-on-the-sidelines" },
