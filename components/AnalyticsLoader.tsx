@@ -42,12 +42,15 @@ function loadAll() {
 
 export default function AnalyticsLoader() {
   useEffect(() => {
-    // Fire immediately if user already accepted in a previous visit
-    if (localStorage.getItem('FGI_cookieConsent') === 'accepted') {
+    // Load analytics by default (privacy-safe: Clarity masks names/emails/typed text),
+    // UNLESS the visitor has explicitly declined. Opt-out model so Clarity + GA4 actually
+    // capture visitor behaviour instead of only the rare person who taps Accept.
+    // (Ricardo 2026-06-23 - the dashboard was empty because the old setup tracked only Accept-clickers.)
+    if (localStorage.getItem('FGI_cookieConsent') !== 'declined') {
       loadAll()
     }
 
-    // Fire when user accepts in this visit
+    // Still honour an Accept tap in this visit (covers anyone who had previously declined and changes their mind)
     window.addEventListener('fgi:consent-accepted', loadAll)
     return () => window.removeEventListener('fgi:consent-accepted', loadAll)
   }, [])

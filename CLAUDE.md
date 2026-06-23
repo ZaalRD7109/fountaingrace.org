@@ -45,7 +45,7 @@ DO NOT use Ricardo's personal book brand (#00ced1) or the navy in tailwind.confi
 | Tool | ID |
 |------|------|
 | **Google Analytics 4** | G-15FK8BTR4B |
-| **Microsoft Clarity** | wcq3d0ed7r |
+| **Microsoft Clarity** | `wrvix7z3n5` (LIVE - this is the ID hardcoded in `components/AnalyticsLoader.tsx` and serving real Clarity JS, verified 2026-06-23). The old note `wcq3d0ed7r` is WRONG - that ID returns HTTP 204 (not a real project), so its dashboard is empty. Log into clarity.microsoft.com and open project `wrvix7z3n5` to see data. Clarity is consent-gated: it only records visitors who accept the cookie banner. |
 
 ## Terms
 | Term | Meaning |
