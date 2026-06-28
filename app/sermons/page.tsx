@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "your-mind-wont-stop-working-even-after-8-hours-of-sleep",
+    title: "Your Mind Won't Stop Working Even After 8 Hours of Sleep",
+    date: "2026-06-28",
+    dateDisplay: "28 June 2026",
+    intro:
+      "You lie down tired and wake up tired. Your body rests but your mind never stops spinning. There's a reason, and it's fixable.",
+  },
+  {
     slug: "you-know-what-you-need-to-do-so-why-cant-you-do-it",
     title: "You Know What You Need to Do-So Why Can't You Do It?",
     date: "2024-01-11",
