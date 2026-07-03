@@ -37,6 +37,8 @@ function loadClarity() {
 
 function loadMetaPixel() {
   if (document.getElementById('fgi-meta-pixel')) return
+  // Only fire on the production domain - never on .pages.dev staging URLs
+  if (window.location.hostname !== 'www.fountaingrace.org') return
   const s = document.createElement('script')
   s.id = 'fgi-meta-pixel'
   s.text = [
