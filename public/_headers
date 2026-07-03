@@ -1,6 +1,24 @@
 # Security headers for Cloudflare Pages
 # Applied to all routes
 
+# Next.js RSC payload files - every page gets a .txt twin (about.txt, sermons/<slug>.txt)
+# carrying the full page content with no canonical and no noindex. Google crawled them
+# and flagged "Duplicate without user-selected canonical" (Search Console, 2026-07-03).
+# noindex keeps them out of the index without blocking fetching, so the IndexNow key
+# file and llms.txt stay readable by the bots that need them.
+/*.txt
+  X-Robots-Tag: noindex
+
+# Utility apps - secret-link tools, not for search results
+/WA/
+  X-Robots-Tag: noindex
+/WA/*
+  X-Robots-Tag: noindex
+/attendance/
+  X-Robots-Tag: noindex
+/attendance/*
+  X-Robots-Tag: noindex
+
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
