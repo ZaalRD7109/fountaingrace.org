@@ -1,149 +1,134 @@
-import type { Metadata } from 'next'
-import Link from 'next/link'
-import DevotionalSubscribeForm from './DevotionalSubscribeForm'
+'use client';
+// FGI website - /devotional page (app/devotional/page.tsx in the FGI repo).
+// Shows today's devotional (fetched live from the daily-devotional edge function,
+// so the page updates itself at 06:00 with NO site rebuild). Sundays it invites
+// people to the 09:00 service instead. Cellphone-first: one column, big type,
+// one big WhatsApp share button.
+//
+// NOTE for the FGI repo: this is a client component; the static export serves the
+// shell and the content arrives on load. Old rows have only `content` (plain text),
+// new rows have the structured fields - both render.
 
-export const metadata: Metadata = {
-  title: 'Daily Devotional | Fountain of Grace International | Pretoria North',
-  description: 'A fresh word from God every morning - sent to you by Fountain of Grace International in Pretoria North. Subscribe free and receive your daily devotional by email or WhatsApp.',
-  robots: 'index, follow',
-  alternates: { canonical: 'https://www.fountaingrace.org/devotional' },
-  openGraph: {
-    title: 'Daily Devotional | Fountain of Grace International',
-    description: 'A fresh word from God every morning - free daily devotional from Fountain of Grace International.',
-    type: 'website',
-    url: 'https://www.fountaingrace.org/devotional',
-    images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International' }],
-  },
+import { useEffect, useState } from 'react';
+
+const FN_URL = 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/daily-devotional';
+const PAGE_URL = 'https://www.fountaingrace.org/devotional';
+
+type Devotional = {
+  sunday: boolean;
+  stale?: boolean;
+  date?: string;
+  day_of_year?: number;
+  headline?: string | null;
+  verse_ref?: string | null;
+  verse_text?: string | null;
+  explanation?: string | null;
+  application?: string | null;
+  reflection_question?: string | null;
+  prayer?: string | null;
+  share_line?: string | null;
+  content?: string | null;
+  message?: string;
+  plan_visit?: string;
+};
+
+function waShareUrl(d: Devotional): string {
+  const line = d.headline
+    ? `${d.headline}\n"${d.verse_text}" - ${d.verse_ref} (KJV)`
+    : 'Today’s devotional from Fountain of Grace International';
+  const text = `${line}\n\nRead it here: ${PAGE_URL}?utm_source=whatsapp&utm_medium=share&utm_campaign=devotional`;
+  return 'https://wa.me/?text=' + encodeURIComponent(text);
 }
 
-const devotionals = [
-  {
-    slug: 'prepare-your-heart-before-you-walk-in',
-    title: 'Before You Walk In: What to Bring to Church This Sunday',
-    intro: 'Most people prepare what they wear on Sunday. Very few prepare what they carry inside. Five minutes before Sunday changes everything about what you receive when you get there.',
-    category: 'Sunday Prep',
-  },
-  {
-    slug: 'when-god-seems-silent',
-    title: 'When God Seems Silent - What to Do in the Waiting',
-    intro: 'You prayed. You waited. Nothing came. The silence is not the answer you expected - but it is not the end of the story either. Here is what to hold onto and what to do.',
-    category: 'Faith',
-  },
-  {
-    slug: 'one-question-before-sunday',
-    title: 'One Question That Will Change How You Experience Church',
-    intro: 'Most people sit through church asking the wrong question. One small shift in what you bring through the door changes everything about what you take home.',
-    category: 'Sunday Prep',
-  },
-  {
-    slug: 'what-sunday-is-not',
-    title: 'What Sunday Is Not - Clearing Up the Biggest Misunderstanding About Church',
-    intro: 'Most people who walk away from church leave because they had the wrong idea of what it was supposed to be. Let us clear that up before it costs you something real.',
-    category: 'Church Life',
-  },
-  {
-    slug: 'the-week-did-not-go-as-planned',
-    title: 'The Week Did Not Go as Planned - Come Anyway',
-    intro: 'The week was hard. Things did not work out. You are not in the mood for Sunday. That is exactly the right time to come - and here is why it matters more than you think.',
-    category: 'Sunday Prep',
-  },
-]
-
 export default function DevotionalPage() {
+  const [d, setD] = useState<Devotional | null>(null);
+  const [err, setErr] = useState(false);
+
+  useEffect(() => {
+    fetch(FN_URL)
+      .then((r) => (r.ok ? r.json() : Promise.reject(r.status)))
+      .then(setD)
+      .catch(() => setErr(true));
+  }, []);
+
   return (
-    <>
-      {/* HERO */}
-      <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
-        <div className="max-w-xl mx-auto text-center">
-          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
-            Daily Devotional - Fountain of Grace International
-          </p>
-          <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
-            A fresh word. Every morning.
-          </h1>
-          <p className="text-white text-base leading-relaxed">
-            A short, direct word from God - delivered to you every morning at 6 AM.
-            No filler. No religious performance. Just the truth you need for the day ahead.
-          </p>
-        </div>
-      </section>
+    <main className="mx-auto max-w-xl px-5 py-10 text-gray-900">
+      <p className="text-sm font-semibold uppercase tracking-wide text-teal-700">
+        Daily Devotional
+      </p>
 
-      {/* SUBSCRIBE - EMAIL */}
-      <section className="bg-white py-14 px-4 sm:px-6">
-        <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Get it every morning - free</h2>
-          <p className="text-[#595959] text-sm leading-relaxed mb-8">
-            Subscribe and receive the daily devotional by email every morning at 6 AM.
-            No spam. One word from God. That is it.
-          </p>
-          <DevotionalSubscribeForm />
-          <p className="text-xs text-[#888] mt-5 max-w-sm mx-auto">
-            By subscribing you consent to receiving the FGI Daily Devotional by email from Fountain of Grace International (NPO 316-193).
-            Used only for this purpose. Never sold or shared. Reply STOP to unsubscribe at any time.{' '}
-            <Link href="/privacy-policy" className="underline">Privacy Policy</Link>.
-          </p>
-        </div>
-      </section>
+      {err && (
+        <p className="mt-6 text-lg">
+          We could not load today&apos;s devotional. Please try again in a moment.
+        </p>
+      )}
 
-      {/* SUBSCRIBE - WHATSAPP */}
-      <section className="bg-gray-50 py-10 px-4 sm:px-6">
-        <div className="max-w-xl mx-auto text-center">
-          <h2 className="text-lg font-bold text-gray-900 mb-2">Prefer WhatsApp?</h2>
-          <p className="text-[#595959] text-sm leading-relaxed mb-5">
-            Message us on WhatsApp and type <strong>daily devotion</strong> - we will add you to the broadcast list.
-          </p>
+      {!d && !err && <p className="mt-6 text-lg">Loading today&apos;s devotional...</p>}
+
+      {d?.sunday && (
+        <section className="mt-4">
+          <h1 className="text-3xl font-bold leading-tight">It&apos;s Sunday.</h1>
+          <p className="mt-4 text-lg">{d.message}</p>
           <a
-            href="https://wa.me/27752592555?text=daily%20devotion"
+            href={d.plan_visit || '/plan-your-visit'}
+            className="mt-8 block rounded-xl bg-teal-700 px-6 py-4 text-center text-lg font-semibold text-white"
+          >
+            Plan your visit - Sunday 09:00
+          </a>
+        </section>
+      )}
+
+      {d && !d.sunday && (
+        <section className="mt-2">
+          <p className="text-4xl font-extrabold text-amber-500">Day {d.day_of_year}</p>
+
+          {d.headline ? (
+            // one flowing devotional, no section labels; scripture AFTER the
+            // opening so the verse lands as God's answer (Ricardo, 2026-07-04)
+            <>
+              <h1 className="mt-4 text-3xl font-bold leading-tight">{d.headline}</h1>
+
+              <p className="mt-6 text-lg leading-relaxed">{d.explanation}</p>
+
+              <blockquote className="mt-6 border-l-4 border-amber-400 pl-4 text-lg italic text-gray-700">
+                &quot;{d.verse_text}&quot;
+                <footer className="mt-2 not-italic font-semibold text-teal-700">
+                  {d.verse_ref} (KJV)
+                </footer>
+              </blockquote>
+
+              <p className="mt-6 text-lg leading-relaxed">{d.application}</p>
+
+              <p className="mt-6 text-lg leading-relaxed">{d.reflection_question}</p>
+
+              <p className="mt-6 text-lg italic leading-relaxed">{d.prayer}</p>
+
+              <p className="mt-8 text-lg font-semibold">{d.share_line}</p>
+            </>
+          ) : (
+            // old-format fallback: render the plain content
+            <pre className="mt-4 whitespace-pre-wrap font-sans text-lg leading-relaxed">
+              {d.content}
+            </pre>
+          )}
+
+          <a
+            href={waShareUrl(d)}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-6 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm"
+            className="mt-6 block rounded-xl bg-[#25D366] px-6 py-4 text-center text-lg font-bold text-white"
           >
-            Subscribe on WhatsApp
+            Share on WhatsApp
           </a>
-        </div>
-      </section>
 
-      {/* ARTICLES GRID */}
-      <section className="bg-white py-16 px-4 sm:px-6">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-xl font-bold text-gray-900 mb-8 text-center">Recent devotionals</h2>
-          <div className="grid gap-8 sm:grid-cols-2">
-            {devotionals.map((d) => (
-              <Link
-                key={d.slug}
-                href={`/devotional/${d.slug}`}
-                className="block group bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200"
-              >
-                <span className="inline-block text-xs font-semibold text-[#008080] uppercase tracking-wider mb-3">
-                  {d.category}
-                </span>
-                <h2 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#008080] transition-colors leading-snug">
-                  {d.title}
-                </h2>
-                <p className="text-[#595959] text-sm leading-relaxed">
-                  {d.intro}
-                </p>
-                <span className="inline-block mt-4 text-sm font-semibold text-[#008080]">
-                  Read more
-                </span>
-              </Link>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* GEO BLOCK */}
-      <section className="bg-white py-8 px-4 sm:px-6">
-        <div className="section-container">
-          <div className="geo-block">
-            <p>
-              Fountain of Grace International is a church and registered NPO (316-193) in Pretoria North, Gauteng,
-              South Africa. Sunday services are held at 323 B Danie Theron Street every week at 09:00.
-              For questions, WhatsApp +27 75 259 2555 or email info@fountaingrace.org.
-            </p>
-          </div>
-        </div>
-      </section>
-    </>
-  )
+          <a
+            href="https://wa.me/27752592555"
+            className="mt-4 block text-center text-base text-teal-700 underline"
+          >
+            Need prayer? Send us a prayer request
+          </a>
+        </section>
+      )}
+    </main>
+  );
 }
