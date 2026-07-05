@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "stop-fixing-the-same-problems-over-and-over",
+    title: "Stop Fixing the Same Problems Over and Over",
+    date: "2026-07-05",
+    dateDisplay: "5 July 2026",
+    intro:
+      "You're exhausted because you've been treating symptoms instead of addressing the root causes of your struggles. True change starts with forgiveness and healing at the deepest level.",
+  },
+  {
     slug: "your-mind-wont-stop-working-even-after-8-hours-of-sleep",
     title: "Your Mind Won't Stop Working Even After 8 Hours of Sleep",
     date: "2026-06-28",
