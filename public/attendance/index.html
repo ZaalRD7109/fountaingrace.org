@@ -54,15 +54,13 @@
 
   <div id="return-section" style="display:none">
     <div class="section-label returning">Did any past visitors come back?</div>
-    <p class="return-note">These people visited before but the system has not seen them again. If they came back this Sunday, tap "Came back" to stop the follow-up messages.</p>
+    <p class="return-note">Everyone still in their 6-week follow-up stays on this list - people who came once and also people who missed their first Sunday. If you saw them in church this Sunday, tap "Came back" so the system stops asking them to come back.</p>
     <div id="return-list"></div>
   </div>
 </div>
 <script>
   var API = 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/visitor-attendance';
   var K = 'att-eab3056b3bc9fb4d92c9f7ad';
-  var RETURN_API = 'https://n8n.ricardozaal.com/webhook/ftv-return';
-  var RETURN_K = 'ftv-ret-761833c1cb67148f';
 
   function esc(s){ return (s==null?'':String(s)).replace(/[&<>"']/g,function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
@@ -104,13 +102,14 @@
     }
     sec.style.display = '';
     list.innerHTML = visitors.map(function(v){
+      var firstLabel = v.attended==='no' ? 'Missed their first Sunday: ' : 'First visit: ';
       return '<div class="card" data-id="'+v.id+'" data-state="">'
         + '<div class="name">'+esc(v.name||'Visitor')+'</div>'
-        + '<div class="meta">First visit: '+esc(prettyDate(v.planned_date))
+        + '<div class="meta">'+firstLabel+esc(prettyDate(v.planned_date))
         + (v.phone?(' &middot; '+esc(v.phone)):'')+'</div>'
         + '<div class="btns">'
         + '<button class="btn cameback" onclick="markReturned('+v.id+',this)">Came back!</button>'
-        + '</div><div class="status">Tap if they came back this Sunday</div></div>';
+        + '</div><div class="status">Tap if they came '+(v.attended==='no'?'':'back ')+'this Sunday</div></div>';
     }).join('');
   }
 
@@ -120,17 +119,10 @@
       var data = await res.json();
       if (!data.ok) throw new Error('bad');
       renderFirstVisit(data);
+      renderReturners(data.returners);
     } catch(e){
       document.getElementById('list').innerHTML =
         '<div class="box">Could not load right now. Check your signal and refresh the page.</div>';
-    }
-
-    try {
-      var rRes = await fetch(RETURN_API+'?k='+encodeURIComponent(RETURN_K));
-      var rData = await rRes.json();
-      if (rData.ok) renderReturners(rData.visitors);
-    } catch(e){
-      // Returner list failing is non-critical - just hide the section
     }
   }
 
@@ -160,9 +152,9 @@
     st.textContent = 'Saving...';
     btn.disabled = true;
     try {
-      var res = await fetch(RETURN_API+'?k='+encodeURIComponent(RETURN_K), {
+      var res = await fetch(API+'?k='+encodeURIComponent(K), {
         method:'POST', headers:{'Content-Type':'application/json'},
-        body: JSON.stringify({ k: RETURN_K, id: id })
+        body: JSON.stringify({ id: id, returned: true })
       });
       var data = await res.json();
       if (!data.ok) throw new Error(data.error || 'bad');
