@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
-  :root { --blue:#2a9df4; --gold:#ffd700; --teal:#008080; --ink:#14233a; --line:#e6ecf3; --green:#1f8a5b; --red:#c0392b; --bg:#f3f7fb; }
+  :root { --blue:#2a9df4; --gold:#ffd700; --teal:#008080; --ink:#14233a; --line:#e6ecf3; --green:#1f8a5b; --red:#c0392b; --bg:#f3f7fb; --purple:#6c3fad; }
   * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
   body { margin:0; font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--bg); color:var(--ink); }
   header { background:linear-gradient(135deg,#1b3b6f,#2a9df4); color:#fff; padding:20px 16px 18px; text-align:center; }
@@ -19,9 +19,12 @@
   header p { margin:6px 0 0; font-size:13px; opacity:.92; line-height:1.4; }
   .wrap { max-width:560px; margin:0 auto; padding:14px 12px 70px; }
   .hint { font-size:12px; color:#6b7c8f; margin:4px 4px 10px; text-align:center; }
+  .section-label { font-size:13px; font-weight:700; color:#14233a; margin:20px 4px 6px; padding-bottom:6px; border-bottom:2px solid var(--line); }
+  .section-label.returning { color:var(--purple); border-bottom-color:var(--purple); }
   .card { background:#fff; border:1px solid var(--line); border-left:5px solid var(--line); border-radius:14px; padding:15px; margin:12px 0; box-shadow:0 1px 3px rgba(20,35,58,.06); }
   .card[data-state="yes"] { border-left-color:var(--green); }
   .card[data-state="no"] { border-left-color:var(--red); }
+  .card[data-state="returned"] { border-left-color:var(--purple); }
   .name { font-size:18px; font-weight:700; }
   .meta { font-size:13px; color:#5a6b7e; margin-top:3px; }
   .tag { background:var(--gold); color:#14233a; font-size:11px; font-weight:700; padding:2px 8px; border-radius:10px; margin-left:4px; }
@@ -29,10 +32,12 @@
   .btn { flex:1; padding:17px 8px; font-size:16px; font-weight:700; border-radius:12px; border:2px solid var(--line); background:#fff; color:var(--ink); cursor:pointer; }
   .btn.came.on { background:var(--green); border-color:var(--green); color:#fff; }
   .btn.noshow.on { background:var(--red); border-color:var(--red); color:#fff; }
+  .btn.cameback.on { background:var(--purple); border-color:var(--purple); color:#fff; }
   .btn:active { transform:scale(.98); }
   .status { font-size:12px; color:#7a8a9a; margin-top:9px; text-align:center; }
   .box { background:#fff; border:1px solid var(--line); border-radius:14px; padding:24px; text-align:center; color:#5a6b7e; font-size:14px; line-height:1.5; }
   .spin { color:#6b7c8f; text-align:center; padding:30px; font-size:14px; }
+  .return-note { font-size:12px; color:#6b7c8f; margin:0 4px 6px; line-height:1.5; }
 </style>
 </head>
 <body>
@@ -43,11 +48,21 @@
 </header>
 <div class="wrap">
   <p class="hint">You can change a tap if you press the wrong one.</p>
+
+  <div class="section-label">First-time visitors</div>
   <div id="list"><div class="spin">Loading visitors...</div></div>
+
+  <div id="return-section" style="display:none">
+    <div class="section-label returning">Did any past visitors come back?</div>
+    <p class="return-note">These people visited before but the system has not seen them again. If they came back this Sunday, tap "Came back" to stop the follow-up messages.</p>
+    <div id="return-list"></div>
+  </div>
 </div>
 <script>
   var API = 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/visitor-attendance';
   var K = 'att-eab3056b3bc9fb4d92c9f7ad';
+  var RETURN_API = 'https://n8n.ricardozaal.com/webhook/ftv-return';
+  var RETURN_K = 'ftv-ret-761833c1cb67148f';
 
   function esc(s){ return (s==null?'':String(s)).replace(/[&<>"']/g,function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
@@ -57,11 +72,11 @@
       {weekday:'long',day:'numeric',month:'long'}); } catch(e){ return d; }
   }
 
-  function render(data){
+  function renderFirstVisit(data){
     var list = document.getElementById('list');
     var vis = (data && data.visitors) || [];
     if (!vis.length){
-      list.innerHTML = '<div class="box">No visitors waiting to be marked right now.<br>'
+      list.innerHTML = '<div class="box">No first-time visitors to mark right now.<br>'
         + 'When someone books a visit, they appear here on their Sunday.</div>';
       return;
     }
@@ -80,15 +95,42 @@
     }).join('');
   }
 
+  function renderReturners(visitors){
+    var sec = document.getElementById('return-section');
+    var list = document.getElementById('return-list');
+    if (!visitors || !visitors.length){
+      sec.style.display = 'none';
+      return;
+    }
+    sec.style.display = '';
+    list.innerHTML = visitors.map(function(v){
+      return '<div class="card" data-id="'+v.id+'" data-state="">'
+        + '<div class="name">'+esc(v.name||'Visitor')+'</div>'
+        + '<div class="meta">First visit: '+esc(prettyDate(v.planned_date))
+        + (v.phone?(' &middot; '+esc(v.phone)):'')+'</div>'
+        + '<div class="btns">'
+        + '<button class="btn cameback" onclick="markReturned('+v.id+',this)">Came back!</button>'
+        + '</div><div class="status">Tap if they came back this Sunday</div></div>';
+    }).join('');
+  }
+
   async function load(){
     try {
       var res = await fetch(API+'?k='+encodeURIComponent(K));
       var data = await res.json();
       if (!data.ok) throw new Error('bad');
-      render(data);
+      renderFirstVisit(data);
     } catch(e){
       document.getElementById('list').innerHTML =
         '<div class="box">Could not load right now. Check your signal and refresh the page.</div>';
+    }
+
+    try {
+      var rRes = await fetch(RETURN_API+'?k='+encodeURIComponent(RETURN_K));
+      var rData = await rRes.json();
+      if (rData.ok) renderReturners(rData.visitors);
+    } catch(e){
+      // Returner list failing is non-critical - just hide the section
     }
   }
 
@@ -108,6 +150,27 @@
       if (!data.ok) throw new Error('bad');
       st.textContent = val==='yes' ? 'Marked: came' : 'Marked: did not come';
     } catch(e){
+      st.textContent = 'Could not save - check signal and tap again';
+    }
+  }
+
+  async function markReturned(id, btn){
+    var card = btn.closest('.card');
+    var st = card.querySelector('.status');
+    st.textContent = 'Saving...';
+    btn.disabled = true;
+    try {
+      var res = await fetch(RETURN_API+'?k='+encodeURIComponent(RETURN_K), {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ k: RETURN_K, id: id })
+      });
+      var data = await res.json();
+      if (!data.ok) throw new Error(data.error || 'bad');
+      card.dataset.state = 'returned';
+      btn.classList.add('on');
+      st.textContent = 'Marked: came back - follow-up stopped';
+    } catch(e){
+      btn.disabled = false;
       st.textContent = 'Could not save - check signal and tap again';
     }
   }
