@@ -54,7 +54,7 @@
 
   <div id="return-section" style="display:none">
     <div class="section-label returning">Did any past visitors come back?</div>
-    <p class="return-note">Everyone still in their 6-week follow-up stays on this list - people who came once and also people who missed their first Sunday. If you saw them in church this Sunday, tap "Came back" so the system stops asking them to come back.</p>
+    <p class="return-note">Everyone still in their 6-week follow-up stays on this list - people who came once and also people who missed their first Sunday. If you saw them in church this Sunday, tap "Came back". The system stops asking them to come back and switches to the glad-you-are-back messages instead.</p>
     <div id="return-list"></div>
   </div>
 </div>
@@ -160,7 +160,7 @@
       if (!data.ok) throw new Error(data.error || 'bad');
       card.dataset.state = 'returned';
       btn.classList.add('on');
-      st.textContent = 'Marked: came back - follow-up stopped';
+      st.textContent = 'Marked: came back - the welcome-back messages take over';
     } catch(e){
       btn.disabled = false;
       st.textContent = 'Could not save - check signal and tap again';
