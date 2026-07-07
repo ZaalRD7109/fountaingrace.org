@@ -69,7 +69,11 @@
 <script>
 const params = new URLSearchParams(location.search);
 const API = params.get('api') || 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/enneagram';
-const KEY = params.get('k') || '';
+// First open with ?k= saves the key on the phone and cleans the address bar
+// (same model as the /WA/ inbox app), so the bookmark is just /wired/team/.
+let KEY = params.get('k') || '';
+if(KEY){ try{ localStorage.setItem('enn_admin_key', KEY); }catch(e){} history.replaceState(null,'',location.pathname); }
+else { try{ KEY = localStorage.getItem('enn_admin_key') || ''; }catch(e){} }
 
 const TYPES = {
  1:{name:"The Reformer", shine:"Admin, finance, planning, order of service, quality checks.",

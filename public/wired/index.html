@@ -64,11 +64,11 @@
       <p>36 quick taps. About 5 minutes. There are no wrong answers, only honest ones.</p>
       <p>This is a mirror to help us serve you and place you better. It is not a label, not a test you can fail, and it never replaces prayer.</p>
       <label for="fname">Your first name</label>
-      <input type="text" id="fname" placeholder="e.g. Wayne" autocomplete="given-name">
+      <input type="text" id="fname" placeholder="e.g. Ricardo" autocomplete="given-name">
       <label for="sname">Your surname</label>
-      <input type="text" id="sname" placeholder="e.g. Govender" autocomplete="family-name">
+      <input type="text" id="sname" placeholder="e.g. Zaal" autocomplete="family-name">
       <label for="email">Your email (optional, we will email your result to you)</label>
-      <input type="text" id="email" placeholder="e.g. wayne@gmail.com" autocomplete="email" inputmode="email">
+      <input type="text" id="email" placeholder="e.g. ricardo@gmail.com" autocomplete="email" inputmode="email">
       <div class="consent">
         <input type="checkbox" id="consent">
         <label for="consent" class="consentlbl">I agree that Fountain of Grace International may keep my answers and use them to serve, care for and place me in the church. My information stays with the pastoral team, is never shared or sold, and I can ask for it to be removed at any time.</label>
@@ -123,7 +123,10 @@
 <script>
 const params = new URLSearchParams(location.search);
 const API = params.get('api') || 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/enneagram';
-const KEY = params.get('k') || '';
+// Member submit key is baked in so the public link stays clean (www.fountaingrace.org/wired/).
+// It only allows SAVING a result, never reading anyone's data - the admin key stays secret.
+const KEY = params.get('k') || 'enn-m-8923cfad18793d31a4e476fd';
+if(params.has('k')||params.has('api')) history.replaceState(null,'',location.pathname);
 
 const TYPES = {
  1:{name:"The Reformer",
