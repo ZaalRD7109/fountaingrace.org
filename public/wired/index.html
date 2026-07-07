@@ -26,8 +26,9 @@
   button{display:block; width:100%; border:none; border-radius:14px; padding:17px 14px; font-size:18px;
        font-weight:600; cursor:pointer; margin-top:12px;}
   .primary{background:var(--gold); color:#161616;}
-  .answer{background:var(--card2); color:var(--text); border:1px solid var(--line); text-align:left;}
-  .answer:active{background:#2a3552;}
+  .answer,.tbopt{background:var(--card2); color:var(--text); border:1px solid var(--line); text-align:left;}
+  .answer:active,.tbopt:active{background:#2a3552;}
+  .tbopt{font-size:16px; line-height:1.45; min-height:64px;}
   .back{background:none; border:none; color:var(--dim); font-size:15px; width:auto; padding:10px 4px; margin:2px 0 0;}
   .progressbar{height:8px; background:var(--card2); border-radius:6px; overflow:hidden; margin:6px 0 4px;}
   .progressbar div{height:100%; background:var(--gold); width:0%; transition:width .2s;}
@@ -90,6 +91,19 @@
       <button class="answer" data-v="0">Not really</button>
       <button class="back" id="btn-back">Back</button>
     </div>
+  </div>
+
+  <!-- SCREEN 2b: tie-breaker (only when the top two types land close) -->
+  <div id="scr-tb" class="hidden">
+    <div class="progressbar"><div id="tbbar"></div></div>
+    <div class="pcount" id="tbcount"></div>
+    <div class="card">
+      <div class="q" style="min-height:auto;">Which one sounds more like you?</div>
+      <button class="tbopt" id="tb-a"></button>
+      <button class="tbopt" id="tb-b"></button>
+      <button class="back" id="tb-back">Back</button>
+    </div>
+    <div class="note">Your answers came out close between two types. These five questions make sure we name your strongest one.</div>
   </div>
 
   <!-- SCREEN 3: result -->
@@ -234,13 +248,64 @@ const QUESTIONS = [
  {t:9,s:"People say they feel calm around me."}
 ];
 
+// Tie-breaker bank: 5 statements per type, one per dimension, in this order:
+// 1 deep fear, 2 deepest want, 3 first move under stress, 4 in conflict, 5 how people experience you.
+// A tie-break round pairs the SAME dimension for the two close types, so the choice is a fair contrast.
+const TIEBREAK = {
+ 1:["My deep fear is being wrong, bad or corrupt.",
+    "More than anything I want to live rightly and with integrity.",
+    "Under stress I get harder on myself and pick at every fault.",
+    "In conflict I point out what is right and expect it to be fixed.",
+    "People experience me as principled, precise and hard to impress."],
+ 2:["My deep fear is being unwanted or unloved.",
+    "More than anything I want to be loved and needed.",
+    "Under stress I do even more for others and hide my own needs.",
+    "In conflict I worry first about the relationship, not the issue.",
+    "People experience me as warm and always there for everyone."],
+ 3:["My deep fear is being worthless if I stop achieving.",
+    "More than anything I want to succeed and be admired.",
+    "Under stress I work harder and polish the image so nobody sees me struggle.",
+    "In conflict I want to settle it fast and come out looking good.",
+    "People experience me as driven and always busy winning at something."],
+ 4:["My deep fear is being ordinary, with no identity of my own.",
+    "More than anything I want to be fully myself and truly understood.",
+    "Under stress I pull into my feelings and feel misunderstood.",
+    "In conflict I take it personally and feel it long after it is over.",
+    "People experience me as deep, sensitive and one of a kind."],
+ 5:["My deep fear is being drained, invaded or out of my depth.",
+    "More than anything I want to understand and be capable.",
+    "Under stress I withdraw, go quiet and live in my head.",
+    "In conflict I step back and analyse instead of fighting.",
+    "People experience me as private, clever and hard to read."],
+ 6:["My deep fear is being without support when trouble comes.",
+    "More than anything I want to be safe and to know who I can trust.",
+    "Under stress I imagine worst cases and look for reassurance.",
+    "In conflict I test whether I can still trust the other person.",
+    "People experience me as loyal, careful and always prepared."],
+ 7:["My deep fear is being trapped in pain with no way out.",
+    "More than anything I want to be free and to enjoy life.",
+    "Under stress I stay busy and cheerful so I do not have to feel the pain.",
+    "In conflict I make it lighter with humour and change the subject.",
+    "People experience me as fun, upbeat and always onto the next thing."],
+ 8:["My deep fear is being controlled, used or betrayed.",
+    "More than anything I want to be strong and in charge of my own life.",
+    "Under stress I push harder and take control of the situation.",
+    "In conflict I go straight at it, raw and direct.",
+    "People experience me as strong, direct and a bit intimidating."],
+ 9:["My deep fear is conflict that costs me my connection with people.",
+    "More than anything I want peace, inside and around me.",
+    "Under stress I go numb, distract myself and put things off.",
+    "In conflict I go quiet and give in just to end it.",
+    "People experience me as calm, easy-going and slow to anger."]
+};
+
 let idx = 0;
 let answers = [];          // value per question index
 let memberName = '', memberSurname = '', memberEmail = '';
 
 const $ = id => document.getElementById(id);
 function show(scr){
-  ['scr-welcome','scr-quiz','scr-result'].forEach(s=>$(s).classList.add('hidden'));
+  ['scr-welcome','scr-quiz','scr-tb','scr-result'].forEach(s=>$(s).classList.add('hidden'));
   $(scr).classList.remove('hidden');
   window.scrollTo(0,0);
 }
@@ -295,6 +360,46 @@ function finish(){
   const scores = computeScores();
   const order = Object.keys(scores).map(Number).sort((a,b)=> scores[b]-scores[a] || a-b);
   const top = order[0], second = order[1];
+  // Close call: 5 either-or questions between the two types. Odd count = a dominant type, always.
+  if(scores[top]-scores[second] <= 2 && scores[second] > 0){
+    startTieBreak(scores, top, second);
+  } else {
+    showResult(scores, top, second, false);
+  }
+}
+
+// ---- tie-breaker ----
+let tbIdx = 0, tbTypes = null, tbScores = null, tbPicks = [];
+function startTieBreak(scores, a, b){
+  tbScores = scores; tbTypes = [a, b]; tbIdx = 0; tbPicks = [];
+  show('scr-tb'); renderTB();
+}
+function renderTB(){
+  const [a, b] = tbTypes;
+  // alternate which type sits on the top button, so position never favours one type
+  const first = (tbIdx % 2 === 0) ? a : b;
+  const other = (first === a) ? b : a;
+  $('tb-a').textContent = TIEBREAK[first][tbIdx];  $('tb-a').dataset.t = first;
+  $('tb-b').textContent = TIEBREAK[other][tbIdx];  $('tb-b').dataset.t = other;
+  $('tbbar').style.width = Math.round(tbIdx/5*100)+'%';
+  $('tbcount').textContent = 'Extra question '+(tbIdx+1)+' of 5';
+  $('tb-back').style.visibility = tbIdx===0 ? 'hidden' : 'visible';
+}
+function tbPick(t){
+  tbPicks[tbIdx] = t; tbIdx++;
+  if(tbIdx >= 5){
+    const [a, b] = tbTypes;
+    const aWins = tbPicks.filter(x => x === a).length;
+    const winner = aWins >= 3 ? a : b;
+    const loser = winner === a ? b : a;
+    showResult(tbScores, winner, loser, true);
+  } else { renderTB(); }
+}
+$('tb-a').onclick = () => tbPick(parseInt($('tb-a').dataset.t,10));
+$('tb-b').onclick = () => tbPick(parseInt($('tb-b').dataset.t,10));
+$('tb-back').onclick = () => { if(tbIdx>0){ tbIdx--; renderTB(); } };
+
+function showResult(scores, top, second, tiebroken){
   const t = TYPES[top];
   $('r-name').textContent = t.name;
   $('r-num').textContent = 'Type '+top+' of 9';
@@ -305,15 +410,18 @@ function finish(){
   $('r-serve').textContent = t.serve;
   $('r-verse').textContent = '"'+t.verse+'"';
   $('r-vref').textContent = t.ref+' (KJV)';
-  if(scores[top]-scores[second] <= 2 && scores[second] > 0){
-    $('r-second').innerHTML = 'You are also a lot like <strong>'+TYPES[second].name+'</strong> (Type '+second+'). Read that one too.';
+  const close = tiebroken || (scores[top]-scores[second] <= 2 && scores[second] > 0);
+  if(close && scores[second] > 0){
+    $('r-second').innerHTML = tiebroken
+      ? 'It was close between two types, so the extra questions decided. Your strongest is above. You are also a lot like <strong>'+TYPES[second].name+'</strong> (Type '+second+'). Read that one too.'
+      : 'You are also a lot like <strong>'+TYPES[second].name+'</strong> (Type '+second+'). Read that one too.';
     $('r-second').classList.remove('hidden');
   }
   show('scr-result');
-  submitResult(scores, top, second);
+  submitResult(scores, top, second, close && scores[second] > 0);
 }
 
-async function submitResult(scores, top, second){
+async function submitResult(scores, top, second, close){
   const el = $('savestate');
   const t = TYPES[top];
   try{
@@ -325,7 +433,7 @@ async function submitResult(scores, top, second){
         consent:true, scores:scores, top_type:top, second_type:second,
         result:{type_name:t.name, drives:t.drives, strength:t.strength, pressure:t.pressure,
                 decision:t.decision, serve:t.serve, verse:t.verse, ref:t.ref,
-                second_name:(scores[top]-scores[second] <= 2 && scores[second] > 0) ? TYPES[second].name : null}
+                second_name: close ? TYPES[second].name : null}
       })
     });
     if(!res.ok) throw new Error('HTTP '+res.status);
