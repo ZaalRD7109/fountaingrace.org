@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>How God Wired You - Fountain of Grace International</title>
+<style>
+  :root{
+    /* FGI brand: teal + gold, from the devotional card (TEAL 0,122,122 / GOLD 255,205,60) */
+    --bg:#043838; --card:#0a4a4a; --card2:#0f5858; --text:#f2fbfa; --dim:#a3cccc;
+    --gold:#ffcd3c; --green:#7ee2a8; --line:#1b6666; --red:#ff9c8a;
+  }
+  *{box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent;}
+  body{background:var(--bg); color:var(--text); font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+       min-height:100vh; display:flex; justify-content:center;}
+  .wrap{width:100%; max-width:480px; padding:18px 16px 40px;}
+  .brand{text-align:center; color:var(--gold); font-size:13px; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px;}
+  h1{font-size:26px; text-align:center; line-height:1.25; margin:8px 0 14px;}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 18px; margin-bottom:14px;}
+  .card p{color:var(--dim); font-size:16px; line-height:1.55; margin-bottom:10px;}
+  .card p strong{color:var(--text);}
+  label{display:block; font-size:14px; color:var(--dim); margin:12px 0 6px;}
+  input[type=text]{width:100%; font-size:18px; padding:14px; border-radius:12px; border:1px solid var(--line);
+       background:var(--card2); color:var(--text); outline:none;}
+  button{display:block; width:100%; border:none; border-radius:14px; padding:17px 14px; font-size:18px;
+       font-weight:600; cursor:pointer; margin-top:12px;}
+  .primary{background:var(--gold); color:#161616;}
+  .answer{background:var(--card2); color:var(--text); border:1px solid var(--line); text-align:left;}
+  .answer:active{background:#2a3552;}
+  .back{background:none; border:none; color:var(--dim); font-size:15px; width:auto; padding:10px 4px; margin:2px 0 0;}
+  .progressbar{height:8px; background:var(--card2); border-radius:6px; overflow:hidden; margin:6px 0 4px;}
+  .progressbar div{height:100%; background:var(--gold); width:0%; transition:width .2s;}
+  .pcount{font-size:13px; color:var(--dim); text-align:right; margin-bottom:14px;}
+  .q{font-size:22px; line-height:1.4; font-weight:600; margin:10px 0 20px; min-height:92px;}
+  .hidden{display:none;}
+  .typename{font-size:28px; color:var(--gold); text-align:center; font-weight:700; margin:4px 0 2px;}
+  .typenum{text-align:center; color:var(--dim); font-size:14px; margin-bottom:14px;}
+  .sec h3{font-size:14px; text-transform:uppercase; letter-spacing:1px; color:var(--gold); margin-bottom:6px;}
+  .sec{margin-bottom:16px;}
+  .sec p{color:var(--text); font-size:16px; line-height:1.55;}
+  .verse{font-style:italic; color:var(--text);}
+  .vref{color:var(--dim); font-size:14px; margin-top:4px;}
+  .note{font-size:14px; color:var(--dim); line-height:1.5; text-align:center; margin-top:14px;}
+  .savestate{text-align:center; font-size:14px; margin-top:10px; color:var(--dim);}
+  .savestate.ok{color:var(--green);}
+  .second{background:var(--card2); border-radius:12px; padding:12px 14px; font-size:15px; color:var(--dim); margin-bottom:16px;}
+  .second strong{color:var(--text);}
+  .consent{display:flex; gap:10px; align-items:flex-start; margin-top:16px;}
+  .consent input[type=checkbox]{width:26px; height:26px; flex:none; accent-color:var(--gold); margin-top:2px;}
+  .consentlbl{font-size:13px; color:var(--dim); line-height:1.5; margin:0;}
+  .warn{color:var(--red, #d46a5a); font-size:14px; margin-top:10px; line-height:1.4;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">Fountain of Grace International</div>
+
+  <!-- SCREEN 1: welcome -->
+  <div id="scr-welcome">
+    <h1>How God Wired You</h1>
+    <div class="card">
+      <p><strong>A short set of questions</strong> to help you see how you are wired, where you shine, and how you make your best decisions.</p>
+      <p>36 quick taps. About 5 minutes. There are no wrong answers, only honest ones.</p>
+      <p>This is a mirror to help us serve you and place you better. It is not a label, not a test you can fail, and it never replaces prayer.</p>
+      <label for="fname">Your first name</label>
+      <input type="text" id="fname" placeholder="e.g. Wayne" autocomplete="given-name">
+      <label for="sname">Your surname</label>
+      <input type="text" id="sname" placeholder="e.g. Govender" autocomplete="family-name">
+      <label for="email">Your email (optional, we will email your result to you)</label>
+      <input type="text" id="email" placeholder="e.g. wayne@gmail.com" autocomplete="email" inputmode="email">
+      <div class="consent">
+        <input type="checkbox" id="consent">
+        <label for="consent" class="consentlbl">I agree that Fountain of Grace International may keep my answers and use them to serve, care for and place me in the church. My information stays with the pastoral team, is never shared or sold, and I can ask for it to be removed at any time.</label>
+      </div>
+      <div class="warn hidden" id="formwarn"></div>
+      <button class="primary" id="btn-start">Start</button>
+    </div>
+    <div class="note">Your answers go only to the pastoral team. Nothing is shared publicly.</div>
+  </div>
+
+  <!-- SCREEN 2: questions -->
+  <div id="scr-quiz" class="hidden">
+    <div class="progressbar"><div id="pbar"></div></div>
+    <div class="pcount" id="pcount"></div>
+    <div class="card" id="qcard">
+      <div class="q" id="qtext"></div>
+      <button class="answer" data-v="2">Yes, that is me</button>
+      <button class="answer" data-v="1">Sometimes</button>
+      <button class="answer" data-v="0">Not really</button>
+      <button class="back" id="btn-back">Back</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 3: result -->
+  <div id="scr-result" class="hidden">
+    <h1 style="font-size:20px;">Here is how you are wired</h1>
+    <div class="card">
+      <div class="typename" id="r-name"></div>
+      <div class="typenum" id="r-num"></div>
+      <div class="second hidden" id="r-second"></div>
+      <div class="sec"><h3>What drives you</h3><p id="r-drives"></p></div>
+      <div class="sec"><h3>Your strength</h3><p id="r-strength"></p></div>
+      <div class="sec"><h3>Under pressure</h3><p id="r-pressure"></p></div>
+      <div class="sec"><h3>Before a big decision</h3><p id="r-decision"></p></div>
+      <div class="sec"><h3>Where you could shine at church</h3><p id="r-serve"></p></div>
+      <div class="sec"><h3>A word for you</h3><p class="verse" id="r-verse"></p><p class="vref" id="r-vref"></p></div>
+    </div>
+    <div class="card">
+      <div class="sec"><h3>How to use this</h3>
+        <p style="margin-bottom:10px;"><strong>Read it twice.</strong> Notice what feels true and what does not. Both are worth knowing.</p>
+        <p style="margin-bottom:10px;"><strong>Before big decisions,</strong> come back to your question above. Ask it, then pray. It helps you hear whether fear is choosing or wisdom is.</p>
+        <p style="margin-bottom:10px;"><strong>Catch your pressure pattern.</strong> The first time you notice it happening in real life and pause, the tool has done its job.</p>
+        <p style="margin-bottom:10px;"><strong>Try serving where you shine.</strong> Tell the team you want to try one of those areas. You will feel the difference between serving from duty and serving from design.</p>
+        <p><strong>Hold it loosely.</strong> This is a mirror, not a prophecy. God is still growing you, and He is not limited by any type.</p>
+      </div>
+    </div>
+    <div class="savestate" id="savestate">Saving your result with the church team...</div>
+    <div class="note">Remember: this is a mirror, not a box. God is still growing you. If parts do not feel true, that is okay, talk to Pastor Ricardo about it.</div>
+  </div>
+</div>
+
+<script>
+const params = new URLSearchParams(location.search);
+const API = params.get('api') || 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/enneagram';
+const KEY = params.get('k') || '';
+
+const TYPES = {
+ 1:{name:"The Reformer",
+    drives:"You want to be good, honest and right. Deep down you fear being wrong or corrupt.",
+    strength:"You hold a standard nobody else will hold. Things you touch get done properly.",
+    pressure:"Under pressure you become critical of yourself and everyone else. The inner voice gets loud and harsh.",
+    decision:"Ask yourself: is this actually wrong, or just not how I would do it?",
+    serve:"Admin, finance, planning, order of service, and checking quality on anything that must be right.",
+    verse:"There is therefore now no condemnation to them which are in Christ Jesus", ref:"Romans 8:1"},
+ 2:{name:"The Helper",
+    drives:"You want to be loved and needed. Deep down you fear being unwanted.",
+    strength:"You feel what people need before they say it. You make people feel truly cared for.",
+    pressure:"Under pressure you give until you are empty, then feel hurt when nobody notices.",
+    decision:"Ask yourself: am I choosing this to be loved, or because it is right?",
+    serve:"Welcome team, hosting visitors, visiting the sick, meals, and care for people in hard seasons.",
+    verse:"Come ye yourselves apart into a desert place, and rest a while", ref:"Mark 6:31"},
+ 3:{name:"The Achiever",
+    drives:"You want to succeed and be valued. Deep down you fear being worthless.",
+    strength:"You get things done and you lift the energy of everyone around you.",
+    pressure:"Under pressure you chase image and results and lose touch with who you are under the performance.",
+    decision:"Ask yourself: would I still choose this if nobody ever saw it?",
+    serve:"Leading projects, outreach, media and testimony, and anything that must grow.",
+    verse:"For by grace are ye saved through faith; and that not of yourselves: it is the gift of God", ref:"Ephesians 2:8"},
+ 4:{name:"The Individualist",
+    drives:"You want to be truly known and significant. Deep down you fear having no identity or place.",
+    strength:"You feel deeply and you bring honesty, beauty and comfort where others cannot.",
+    pressure:"Under pressure your feelings flood everything and you pull away, feeling misunderstood.",
+    decision:"Ask yourself: is this feeling a fact? Sleep on it and check again tomorrow.",
+    serve:"Worship, creative work, decor, writing, and sitting with people in grief.",
+    verse:"I will praise thee; for I am fearfully and wonderfully made", ref:"Psalm 139:14"},
+ 5:{name:"The Investigator",
+    drives:"You want to understand and be capable. Deep down you fear being drained or caught unprepared.",
+    strength:"You see clearly, learn deeply and stay calm when everyone else panics.",
+    pressure:"Under pressure you disappear into your head and cut people off to save energy.",
+    decision:"Ask yourself: do I truly need more information, or am I hiding in research?",
+    serve:"Sound desk, live stream, systems, research, and preparing teaching material.",
+    verse:"Trust in the LORD with all thine heart; and lean not unto thine own understanding.", ref:"Proverbs 3:5"},
+ 6:{name:"The Loyalist",
+    drives:"You want security and people you can trust. Deep down you fear being left without backup.",
+    strength:"You are faithful, prepared, and you see the risks everyone else misses.",
+    pressure:"Under pressure the what-ifs take over and you start doubting yourself and everyone else.",
+    decision:"Ask yourself: is this real danger, or my what-ifs talking? Test it with someone I trust.",
+    serve:"Safety and planning, children's ministry checks, and the faithful backbone roles every church stands on.",
+    verse:"Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee", ref:"Isaiah 41:10"},
+ 7:{name:"The Enthusiast",
+    drives:"You want freedom and joy. Deep down you fear being trapped in pain or boredom.",
+    strength:"You bring energy, hope and fresh ideas. People feel lighter around you.",
+    pressure:"Under pressure you run from hard things by staying busy, positive and everywhere at once.",
+    decision:"Ask yourself: am I choosing the exciting option just to escape the hard one?",
+    serve:"Youth, events, celebrations, outreach, and the first impression a visitor gets at the door.",
+    verse:"in thy presence is fulness of joy", ref:"Psalm 16:11"},
+ 8:{name:"The Challenger",
+    drives:"You want to be strong and in charge of your own life. Deep down you fear being controlled or betrayed.",
+    strength:"You protect people, carry weight, and say the hard thing nobody else will say.",
+    pressure:"Under pressure you push harder, take over, and bulldoze feelings, including your own.",
+    decision:"Ask yourself: am I deciding fast just to stay in control? Who should I hear first?",
+    serve:"Leadership, protection, tough conversations, and standing up for the vulnerable.",
+    verse:"God is our refuge and strength, a very present help in trouble.", ref:"Psalm 46:1"},
+ 9:{name:"The Peacemaker",
+    drives:"You want peace and for everyone to belong. Deep down you fear conflict and losing connection.",
+    strength:"You calm rooms, see every side, and make people feel at ease.",
+    pressure:"Under pressure you go quiet, avoid the decision, and disappear into routine.",
+    decision:"Ask yourself: am I agreeing just to keep the peace? What do I actually want here?",
+    serve:"Connecting visitors, mediation, the prayer team, and making new people feel at home.",
+    verse:"Blessed are the peacemakers: for they shall be called the children of God.", ref:"Matthew 5:9"}
+};
+
+// 36 statements, 4 per type, interleaved so no type clusters together.
+const QUESTIONS = [
+ {t:1,s:"I notice mistakes and things done wrong almost immediately."},
+ {t:2,s:"I can feel what other people need before they say it."},
+ {t:3,s:"I feel best about myself when I am achieving something."},
+ {t:4,s:"I feel things more deeply than most people around me."},
+ {t:5,s:"I need to understand something fully before I act on it."},
+ {t:6,s:"I quickly see what could go wrong in a plan."},
+ {t:7,s:"I always have something to look forward to, or I make one."},
+ {t:8,s:"I say the hard thing that others are scared to say."},
+ {t:9,s:"I keep the peace, even when it costs me my own opinion."},
+ {t:1,s:"I have a strong inner voice telling me how things should be done."},
+ {t:2,s:"I find it hard to say no when someone asks for help."},
+ {t:3,s:"I care a lot about how things look to other people."},
+ {t:4,s:"I often feel different from everyone else, like I do not fully fit in."},
+ {t:5,s:"Being around people for a long time drains me, even people I love."},
+ {t:6,s:"I feel safest when I know someone dependable has my back."},
+ {t:7,s:"I avoid painful or boring things by staying busy and positive."},
+ {t:8,s:"I take charge naturally when no one else steps up."},
+ {t:9,s:"I can see all sides of a matter, which makes choosing hard."},
+ {t:1,s:"It is hard for me to relax while something is still not right."},
+ {t:2,s:"Feeling unappreciated hurts me more than most things."},
+ {t:3,s:"I turn most things into a goal I can win."},
+ {t:4,s:"Ordinary and average are things I never want to be."},
+ {t:5,s:"I keep my thoughts and feelings to myself until I am ready."},
+ {t:6,s:"I ask a lot of what-if questions before deciding."},
+ {t:7,s:"I struggle to finish things once the exciting part is over."},
+ {t:8,s:"I protect the people under my care fiercely."},
+ {t:9,s:"I go along with others to avoid conflict."},
+ {t:1,s:"I would rather do a thing properly myself than watch it done halfway."},
+ {t:2,s:"I show love by doing things for people."},
+ {t:3,s:"Slowing down feels like falling behind."},
+ {t:4,s:"My moods can colour my whole day."},
+ {t:5,s:"I would rather watch and study first than jump in."},
+ {t:6,s:"Once I trust you, I am loyal for life."},
+ {t:7,s:"Being stuck or trapped is one of my biggest fears."},
+ {t:8,s:"Being controlled or lied to makes me very angry."},
+ {t:9,s:"People say they feel calm around me."}
+];
+
+let idx = 0;
+let answers = [];          // value per question index
+let memberName = '', memberSurname = '', memberEmail = '';
+
+const $ = id => document.getElementById(id);
+function show(scr){
+  ['scr-welcome','scr-quiz','scr-result'].forEach(s=>$(s).classList.add('hidden'));
+  $(scr).classList.remove('hidden');
+  window.scrollTo(0,0);
+}
+function warn(msg){
+  const w = $('formwarn');
+  if(msg){ w.textContent = msg; w.classList.remove('hidden'); }
+  else { w.classList.add('hidden'); }
+}
+
+$('btn-start').onclick = () => {
+  memberName = $('fname').value.trim();
+  memberSurname = $('sname').value.trim();
+  memberEmail = $('email').value.trim();
+  if(!memberName){ warn('Please type your first name.'); $('fname').focus(); return; }
+  if(!memberSurname){ warn('Please type your surname.'); $('sname').focus(); return; }
+  if(memberEmail && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(memberEmail)){
+    warn('That email does not look right. Fix it, or leave it empty.'); $('email').focus(); return;
+  }
+  if(!$('consent').checked){
+    warn('Please tick the box so we may keep your answers and use them to serve you.'); return;
+  }
+  warn('');
+  idx = 0; answers = [];
+  show('scr-quiz'); renderQ();
+};
+
+function renderQ(){
+  const q = QUESTIONS[idx];
+  $('qtext').textContent = q.s;
+  $('qcard').dataset.type = q.t;   // for testing, invisible to the user
+  $('pbar').style.width = Math.round(idx/QUESTIONS.length*100)+'%';
+  $('pcount').textContent = 'Question '+(idx+1)+' of '+QUESTIONS.length;
+  $('btn-back').style.visibility = idx===0 ? 'hidden' : 'visible';
+}
+
+document.querySelectorAll('.answer').forEach(b=>{
+  b.onclick = () => {
+    answers[idx] = parseInt(b.dataset.v,10);
+    idx++;
+    if(idx >= QUESTIONS.length){ finish(); } else { renderQ(); }
+  };
+});
+$('btn-back').onclick = () => { if(idx>0){ idx--; renderQ(); } };
+
+function computeScores(){
+  const scores = {1:0,2:0,3:0,4:0,5:0,6:0,7:0,8:0,9:0};
+  QUESTIONS.forEach((q,i)=>{ scores[q.t] += (answers[i]||0); });
+  return scores;
+}
+
+function finish(){
+  const scores = computeScores();
+  const order = Object.keys(scores).map(Number).sort((a,b)=> scores[b]-scores[a] || a-b);
+  const top = order[0], second = order[1];
+  const t = TYPES[top];
+  $('r-name').textContent = t.name;
+  $('r-num').textContent = 'Type '+top+' of 9';
+  $('r-drives').textContent = t.drives;
+  $('r-strength').textContent = t.strength;
+  $('r-pressure').textContent = t.pressure;
+  $('r-decision').textContent = t.decision;
+  $('r-serve').textContent = t.serve;
+  $('r-verse').textContent = '"'+t.verse+'"';
+  $('r-vref').textContent = t.ref+' (KJV)';
+  if(scores[top]-scores[second] <= 2 && scores[second] > 0){
+    $('r-second').innerHTML = 'You are also a lot like <strong>'+TYPES[second].name+'</strong> (Type '+second+'). Read that one too.';
+    $('r-second').classList.remove('hidden');
+  }
+  show('scr-result');
+  submitResult(scores, top, second);
+}
+
+async function submitResult(scores, top, second){
+  const el = $('savestate');
+  const t = TYPES[top];
+  try{
+    const res = await fetch(API, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({
+        k:KEY, name:memberName, surname:memberSurname, email:memberEmail || null,
+        consent:true, scores:scores, top_type:top, second_type:second,
+        result:{type_name:t.name, drives:t.drives, strength:t.strength, pressure:t.pressure,
+                decision:t.decision, serve:t.serve, verse:t.verse, ref:t.ref,
+                second_name:(scores[top]-scores[second] <= 2 && scores[second] > 0) ? TYPES[second].name : null}
+      })
+    });
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const out = await res.json();
+    if(memberEmail && out.emailed){
+      el.textContent = 'Saved with the church team. Your result was also emailed to '+memberEmail+'.';
+    } else if(memberEmail){
+      el.textContent = 'Saved with the church team. The email could not be sent, but your result is safe with us.';
+    } else {
+      el.textContent = 'Your result is saved with the church team.';
+    }
+    el.classList.add('ok');
+  }catch(e){
+    el.textContent = 'Could not save automatically. Please show this screen to Pastor Ricardo.';
+  }
+}
+</script>
+</body>
+</html>

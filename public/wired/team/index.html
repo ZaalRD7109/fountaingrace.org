@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Know Your People - FGI Pastor View</title>
+<style>
+  :root{
+    /* FGI brand: teal + gold, from the devotional card (TEAL 0,122,122 / GOLD 255,205,60) */
+    --bg:#043838; --card:#0a4a4a; --card2:#0f5858; --text:#f2fbfa; --dim:#a3cccc;
+    --gold:#ffcd3c; --green:#7ee2a8; --red:#ff9c8a; --line:#1b6666;
+  }
+  *{box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent;}
+  body{background:var(--bg); color:var(--text); font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+       min-height:100vh; display:flex; justify-content:center;}
+  .wrap{width:100%; max-width:520px; padding:18px 16px 40px;}
+  .brand{text-align:center; color:var(--gold); font-size:13px; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px;}
+  h1{font-size:24px; text-align:center; line-height:1.25; margin:8px 0 16px;}
+  h2{font-size:17px; color:var(--gold); margin:22px 0 10px;}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-bottom:12px;}
+  .card p{color:var(--dim); font-size:15px; line-height:1.55; margin-bottom:8px;}
+  .card p strong{color:var(--text);}
+  details{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:14px 16px; margin-bottom:12px;}
+  summary{font-size:16px; font-weight:600; cursor:pointer; padding:4px 0;}
+  details p{color:var(--dim); font-size:15px; line-height:1.55; margin:8px 0;}
+  details p strong{color:var(--text);}
+  .person{display:flex; justify-content:space-between; align-items:center; gap:10px;
+       background:var(--card); border:1px solid var(--line); border-radius:14px; padding:14px 16px; margin-bottom:10px;}
+  .person .nm{font-size:17px; font-weight:600;}
+  .person .dt{font-size:12px; color:var(--dim); margin-top:2px;}
+  .badge{background:var(--card2); border:1px solid var(--gold); color:var(--gold);
+       border-radius:10px; padding:8px 12px; font-size:14px; font-weight:700; white-space:nowrap;}
+  .empty{color:var(--dim); text-align:center; padding:24px 10px; font-size:15px;}
+  .summary-grid{display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; margin-bottom:6px;}
+  .cnt{background:var(--card2); border-radius:10px; text-align:center; padding:10px 4px;}
+  .cnt b{display:block; font-size:20px; color:var(--gold);}
+  .cnt span{font-size:11px; color:var(--dim);}
+  .rule{border-left:3px solid var(--gold); padding-left:10px; margin-bottom:10px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">Fountain of Grace International</div>
+  <h1>Know Your People</h1>
+
+  <details>
+    <summary>How to use this well (read me first)</summary>
+    <p class="rule"><strong>It is a mirror, not a verdict.</strong> A result describes a person's default pattern. It does not decide their future, their calling, or their character. God does.</p>
+    <p class="rule"><strong>Never label people out loud.</strong> Say "you are so good with new people", never "you are such a 2". Use the knowledge to serve, not to sort.</p>
+    <p class="rule"><strong>Never let it block or excuse.</strong> No type is banned from any role, and no type excuses sin or laziness. It shows the likely fit, that is all.</p>
+    <p class="rule"><strong>It serves prayer, never replaces it.</strong> Pray over placements and people the same as always. This just gives you better questions to pray with.</p>
+    <p class="rule"><strong>Keep results private.</strong> Personality data is personal information. Only the pastoral team sees this page. Never read someone's result to the congregation.</p>
+    <p class="rule"><strong>Let people disagree.</strong> If someone says their result does not feel true, believe them and talk. The conversation is worth more than the score.</p>
+  </details>
+
+  <details>
+    <summary>The 9 types at a glance (care and placement)</summary>
+    <div id="typeguide"></div>
+  </details>
+
+  <h2>Your church at a glance</h2>
+  <div class="card"><div class="summary-grid" id="grid"></div></div>
+
+  <h2>Results (newest first)</h2>
+  <div id="list"><div class="empty">Loading...</div></div>
+</div>
+
+<script>
+const params = new URLSearchParams(location.search);
+const API = params.get('api') || 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/enneagram';
+const KEY = params.get('k') || '';
+
+const TYPES = {
+ 1:{name:"The Reformer", shine:"Admin, finance, planning, order of service, quality checks.",
+    care:"Thank them for their standards. Remind them of grace. Do not let them carry silent frustration."},
+ 2:{name:"The Helper", shine:"Welcome team, hosting visitors, visitation, meals, care.",
+    care:"Thank them by name for specific things. Check that they also receive and rest. Watch for burnout."},
+ 3:{name:"The Achiever", shine:"Leading projects, outreach, media, testimony, growth work.",
+    care:"Love them apart from what they produce. Give them real goals, but never only love their output."},
+ 4:{name:"The Individualist", shine:"Worship, creative work, decor, writing, comfort for the grieving.",
+    care:"Take their feelings seriously. Include them on ordinary days. Never call them dramatic."},
+ 5:{name:"The Investigator", shine:"Sound desk, live stream, systems, research, teaching prep.",
+    care:"Give notice before asking for anything. Respect their energy. Never force the spotlight."},
+ 6:{name:"The Loyalist", shine:"Safety, planning, children's ministry checks, backbone roles.",
+    care:"Keep your promises. Be consistent. Reassure with facts, not hype. Do not spring changes."},
+ 7:{name:"The Enthusiast", shine:"Youth, events, celebrations, outreach, door energy.",
+    care:"Channel their energy into one thing at a time. Help them finish. Sit with them in pain even when they joke."},
+ 8:{name:"The Challenger", shine:"Leadership, protection, tough conversations, defending the vulnerable.",
+    care:"Be straight with them, never manage them from the side. Give real responsibility. Trust softens them."},
+ 9:{name:"The Peacemaker", shine:"Connecting visitors, mediation, prayer team, making people at ease.",
+    care:"Ask their opinion directly and wait for it. Do not let them disappear. Give gentle deadlines."}
+};
+
+const $ = id => document.getElementById(id);
+
+// build the type guide
+let tg = '';
+for(let i=1;i<=9;i++){
+  tg += '<p><strong>'+i+'. '+TYPES[i].name+'</strong><br>Shines in: '+TYPES[i].shine+'<br>Care for them: '+TYPES[i].care+'</p>';
+}
+$('typeguide').innerHTML = tg;
+
+function esc(s){ const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+
+async function load(){
+  try{
+    const res = await fetch(API+'?k='+encodeURIComponent(KEY));
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const rows = await res.json();
+    render(rows);
+  }catch(e){
+    $('list').innerHTML = '<div class="empty">Could not load results. Check the link key or try again.</div>';
+    $('grid').innerHTML = '';
+  }
+}
+
+function render(rows){
+  // counts per type
+  const counts = {}; for(let i=1;i<=9;i++) counts[i]=0;
+  rows.forEach(r=>{ if(counts[r.top_type]!==undefined) counts[r.top_type]++; });
+  let g = '';
+  for(let i=1;i<=9;i++){
+    g += '<div class="cnt"><b>'+counts[i]+'</b><span>'+esc(TYPES[i].name.replace('The ',''))+'</span></div>';
+  }
+  $('grid').innerHTML = g;
+
+  if(!rows.length){
+    $('list').innerHTML = '<div class="empty">No results yet. Share the test link with your members and results appear here.</div>';
+    return;
+  }
+  let h = '';
+  rows.forEach(r=>{
+    const t = TYPES[r.top_type] || {name:'Type '+r.top_type, shine:'', care:''};
+    const d = (r.created_at||'').slice(0,10);
+    const second = (r.second_type && TYPES[r.second_type]) ? ' close second: '+TYPES[r.second_type].name : '';
+    const fullname = esc(r.name) + (r.surname ? ' '+esc(r.surname) : '');
+    const mail = r.email ? '<p><strong>Email:</strong> '+esc(r.email)+(r.emailed_at ? ' (result emailed to them)' : ' (email not sent)')+'</p>' : '';
+    h += '<details class="person-det"><summary style="list-style:none;">'
+      +  '<div class="person" style="margin:0; border:none; padding:0; background:none;">'
+      +  '<div><div class="nm">'+fullname+'</div><div class="dt">'+d+second+'</div></div>'
+      +  '<div class="badge">'+esc(t.name)+'</div></div></summary>'
+      +  '<p style="margin-top:10px;"><strong>Shines in:</strong> '+t.shine+'</p>'
+      +  '<p><strong>Care for them:</strong> '+t.care+'</p>'+mail+'</details>';
+  });
+  $('list').innerHTML = h;
+}
+load();
+</script>
+</body>
+</html>
