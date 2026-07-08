@@ -113,6 +113,7 @@
       <div class="typename" id="r-name"></div>
       <div class="typenum" id="r-num"></div>
       <div class="second hidden" id="r-second"></div>
+      <button class="tbopt hidden" id="btn-readsecond" style="margin-bottom:16px;"></button>
       <div class="sec"><h3>What drives you</h3><p id="r-drives"></p></div>
       <div class="sec"><h3>Your strength</h3><p id="r-strength"></p></div>
       <div class="sec"><h3>Under pressure</h3><p id="r-pressure"></p></div>
@@ -128,6 +129,12 @@
         <p style="margin-bottom:10px;"><strong>Try serving where you shine.</strong> Tell the team you want to try one of those areas. You will feel the difference between serving from duty and serving from design.</p>
         <p><strong>Hold it loosely.</strong> This is a mirror, not a prophecy. God is still growing you, and He is not limited by any type.</p>
       </div>
+    </div>
+    <div class="card">
+      <div class="sec"><h3>Read about all 9 types</h3>
+        <p style="margin-bottom:12px;">Everyone around you is wired differently. Tap a type to read it. Read it as "if this is me" and notice what feels true.</p>
+      </div>
+      <div id="alltypes"></div>
     </div>
     <div class="savestate" id="savestate">Saving your result with the church team...</div>
     <div class="note">Remember: this is a mirror, not a box. God is still growing you. If parts do not feel true, that is okay, talk to Pastor Ricardo about it.</div>
@@ -412,13 +419,48 @@ function showResult(scores, top, second, tiebroken){
   $('r-vref').textContent = t.ref+' (KJV)';
   const close = tiebroken || (scores[top]-scores[second] <= 2 && scores[second] > 0);
   if(close && scores[second] > 0){
+    const s = TYPES[second];
     $('r-second').innerHTML = tiebroken
-      ? 'It was close between two types, so the extra questions decided. Your strongest is above. You are also a lot like <strong>'+TYPES[second].name+'</strong> (Type '+second+'). Read that one too.'
-      : 'You are also a lot like <strong>'+TYPES[second].name+'</strong> (Type '+second+'). Read that one too.';
+      ? 'It was close between two types, so the extra questions decided. Your strongest is above. You are also a lot like <strong>'+s.name+'</strong> (Type '+second+').'
+      : 'You are also a lot like <strong>'+s.name+'</strong> (Type '+second+').';
     $('r-second').classList.remove('hidden');
+    // the close second's reading lives in the all-9-types list below; this button jumps straight to it
+    $('btn-readsecond').textContent = 'Read about '+s.name;
+    $('btn-readsecond').classList.remove('hidden');
+    $('btn-readsecond').onclick = () => openType(second);
   }
+  buildAllTypes(top, close ? second : 0);
   show('scr-result');
   submitResult(scores, top, second, close && scores[second] > 0);
+}
+
+// the readable library of all 9 types on the result page
+function typePanelHtml(i){
+  const t = TYPES[i];
+  return '<div class="sec"><h3>What drives you</h3><p>'+t.drives+'</p></div>' +
+         '<div class="sec"><h3>Your strength</h3><p>'+t.strength+'</p></div>' +
+         '<div class="sec"><h3>Under pressure</h3><p>'+t.pressure+'</p></div>' +
+         '<div class="sec"><h3>Before a big decision</h3><p>'+t.decision+'</p></div>' +
+         '<div class="sec"><h3>Where you could shine at church</h3><p>'+t.serve+'</p></div>' +
+         '<div class="sec"><h3>A word for this type</h3><p class="verse">"'+t.verse+'"</p><p class="vref">'+t.ref+' (KJV)</p></div>';
+}
+function buildAllTypes(top, second){
+  let h = '';
+  for(let i=1;i<=9;i++){
+    let tag = '';
+    if(i===top) tag = ' <span style="color:var(--gold);font-size:13px;">(your type)</span>';
+    else if(i===second) tag = ' <span style="color:var(--gold);font-size:13px;">(your close second)</span>';
+    h += '<button class="tbopt" data-open="'+i+'" id="typerow-'+i+'" style="margin-bottom:8px;min-height:0;">'+i+'. '+TYPES[i].name+tag+'</button>' +
+         '<div class="hidden" id="typepanel-'+i+'" style="padding:2px 4px 10px;">'+typePanelHtml(i)+'</div>';
+  }
+  $('alltypes').innerHTML = h;
+  document.querySelectorAll('#alltypes [data-open]').forEach(b => {
+    b.onclick = () => $('typepanel-'+b.dataset.open).classList.toggle('hidden');
+  });
+}
+function openType(i){
+  $('typepanel-'+i).classList.remove('hidden');
+  $('typerow-'+i).scrollIntoView({behavior:'smooth', block:'start'});
 }
 
 async function submitResult(scores, top, second, close){
@@ -433,7 +475,10 @@ async function submitResult(scores, top, second, close){
         consent:true, scores:scores, top_type:top, second_type:second,
         result:{type_name:t.name, drives:t.drives, strength:t.strength, pressure:t.pressure,
                 decision:t.decision, serve:t.serve, verse:t.verse, ref:t.ref,
-                second_name: close ? TYPES[second].name : null}
+                second_name: close ? TYPES[second].name : null,
+                second: close ? {drives:TYPES[second].drives, strength:TYPES[second].strength,
+                                 pressure:TYPES[second].pressure, decision:TYPES[second].decision,
+                                 serve:TYPES[second].serve} : null}
       })
     });
     if(!res.ok) throw new Error('HTTP '+res.status);
