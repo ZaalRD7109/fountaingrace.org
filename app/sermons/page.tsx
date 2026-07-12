@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "what-no-one-tells-you-about-feeling-unready",
+    title: "What no one tells you about feeling unready",
+    date: "2026-07-12",
+    dateDisplay: "12 July 2026",
+    intro:
+      "Struggling with the feeling that you're not ready? This message urges you to start now.",
+  },
+  {
     slug: "stop-fixing-the-same-problems-over-and-over",
     title: "Stop Fixing the Same Problems Over and Over",
     date: "2026-07-05",
