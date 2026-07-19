@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/you-have-enough-right-now-heres-why-you-dont-believe-it`, lastModified: new Date('2026-07-19'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/what-no-one-tells-you-about-feeling-unready`, lastModified: new Date('2026-07-12'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/stop-fixing-the-same-problems-over-and-over`, lastModified: new Date('2026-07-05'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/your-mind-wont-stop-working-even-after-8-hours-of-sleep`, lastModified: new Date('2026-06-28'), changeFrequency: 'monthly', priority: 0.6 },

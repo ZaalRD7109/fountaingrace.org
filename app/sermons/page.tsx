@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "you-have-enough-right-now-heres-why-you-dont-believe-it",
+    title: "You Have Enough Right Now, Here's Why You Don't Believe It",
+    date: "2026-07-19",
+    dateDisplay: "19 July 2026",
+    intro:
+      "You feel stuck because you don't have enough money, time, talent, or resources to matter. But what if the problem isn't what you're missing, it's what you're refusing to give?",
+  },
+  {
     slug: "what-no-one-tells-you-about-feeling-unready",
     title: "What no one tells you about feeling unready",
     date: "2026-07-12",
