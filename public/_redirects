@@ -163,3 +163,16 @@
 /fa/sermon-video /sermons?utm_source=facebook&utm_medium=cpc&utm_campaign=sermon_video  302
 /fa/give /donate?utm_source=facebook&utm_medium=cpc&utm_campaign=giving_appeal  302
 /fa/visit /plan-your-visit?utm_source=facebook&utm_medium=cpc&utm_campaign=visit_intent  302
+
+# ---------------------------------------------------------------------------
+# WhatsApp prayer entry points - one per platform.
+# The pre-filled text names the platform in plain language, so the intake bot
+# can attribute the person to a source WITHOUT the visitor ever seeing a code.
+# This is the only reliable attribution on WhatsApp: it arrives inside the
+# message itself, attached to a real human, not to an anonymous pageview.
+# 302 on purpose - these are campaign links, they must never be hard-cached.
+/tt-pray https://wa.me/27752592555?text=Hi%20Fountain%20of%20Grace%2C%20I%20found%20you%20on%20TikTok.%20Please%20pray%20for%20  302
+/fb-pray https://wa.me/27752592555?text=Hi%20Fountain%20of%20Grace%2C%20I%20found%20you%20on%20Facebook.%20Please%20pray%20for%20  302
+/ig-pray https://wa.me/27752592555?text=Hi%20Fountain%20of%20Grace%2C%20I%20found%20you%20on%20Instagram.%20Please%20pray%20for%20  302
+/yt-pray https://wa.me/27752592555?text=Hi%20Fountain%20of%20Grace%2C%20I%20found%20you%20on%20YouTube.%20Please%20pray%20for%20  302
+/wa-pray https://wa.me/27752592555?text=Hi%20Fountain%20of%20Grace%2C%20I%20found%20you%20on%20your%20website.%20Please%20pray%20for%20  302

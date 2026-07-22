@@ -18,9 +18,12 @@ import type { MetadataRoute } from 'next'
 const TRACKING_LINK_PREFIXES = [
   '/s/', // sermon description links -> /sermons/<slug>?utm_...
   '/yt', // /yt, /yt-video
-  '/fb', // /fb, /fb-post, /fb-visit, /fb-sermons, /fb-give
-  '/ig', // /ig, /ig-post, /ig-visit, /ig-sermons, /ig-give
-  '/tt', // /tt, /tt-post, /tt-visit, /tt-sermons, /tt-give
+  '/fb', // /fb, /fb-post, /fb-visit, /fb-sermons, /fb-give, /fb-pray
+  '/ig', // /ig, /ig-post, /ig-visit, /ig-sermons, /ig-give, /ig-pray
+  '/tt', // /tt, /tt-post, /tt-visit, /tt-sermons, /tt-give, /tt-pray
+  // NOT '/pray' - that is a prefix of the real, indexed page /prayer and would
+  // have told Google to stop crawling it. Same trap as /s/ vs /sermons/.
+  '/wa-pray', // -> wa.me prayer entry point. Not a page, must never be indexed
 ]
 
 // A crawler obeys ONLY its most specific matching group. Googlebot has its own
