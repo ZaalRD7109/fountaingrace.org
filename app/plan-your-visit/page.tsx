@@ -108,21 +108,53 @@ export default function PlanYourVisitPage() {
             Your First Sunday · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
-            Everything you need to know before Sunday.
+            Plan your visit.
           </h1>
           <p className="text-white text-base leading-relaxed">
-            Fill in the form below and we will reach out before you arrive.{' '}
-            Want to know what Sunday looks like first?{' '}
-            <Link href="/what-to-expect" className="text-white font-semibold underline hover:text-[#1a1a1a]">See what to expect</Link>.
+            Sundays at 09:00 in Pretoria North. Fill in the form and we will WhatsApp you everything you need before you arrive.
           </p>
         </div>
       </section>
 
-      {/* FAQ - directly above form to answer objections before conversion */}
+      {/* FORM - full width. Deliberately the FIRST thing after the hero.
+          Anyone arriving from a "Plan your visit" link has already decided,
+          so they must not have to scroll past objection-handling to convert.
+          The FAQ sits BELOW the form for people who still have questions. */}
+      <section className="bg-white py-6 px-4 sm:px-6">
+        <div className="max-w-2xl mx-auto">
+          <VisitForm />
+        </div>
+      </section>
+
+      {/* WHATSAPP - alternative for people who won't fill a form */}
+      <section className="bg-white pb-6 px-4 sm:px-6">
+        <div className="max-w-2xl mx-auto">
+          <div className="bg-[#f0fafa] border border-teal-100 rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-4">
+            <div className="flex-1">
+              <p className="text-sm font-bold text-gray-900 mb-1">Rather ask us a question first?</p>
+              <p className="text-sm text-[#595959] leading-relaxed">
+                WhatsApp us before Sunday - we will answer anything you want to know before you walk through the door.
+              </p>
+            </div>
+            <a
+              href="https://wa.me/27752592555?text=Hi%2C%20I%20have%20a%20question%20about%20visiting%20Fountain%20of%20Grace"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="shrink-0 inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-5 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
+            >
+              Chat on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ - BELOW the form on purpose. Objection-handling is for people who
+          have not decided yet; it must never stand between a decided visitor
+          and the form. */}
       <section className="bg-gray-50 py-10 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-xl font-bold text-gray-900 mb-5">
-            Questions about your first visit
+            Still have a question?
           </h2>
           <dl className="space-y-0">
             {[
@@ -153,35 +185,10 @@ export default function PlanYourVisitPage() {
               </div>
             ))}
           </dl>
-        </div>
-      </section>
-
-      {/* FORM - full width */}
-      <section className="bg-white py-6 px-4 sm:px-6">
-        <div className="max-w-2xl mx-auto">
-          <VisitForm />
-        </div>
-      </section>
-
-      {/* WHATSAPP - alternative for people who won't fill a form */}
-      <section className="bg-white pb-6 px-4 sm:px-6">
-        <div className="max-w-2xl mx-auto">
-          <div className="bg-[#f0fafa] border border-teal-100 rounded-xl p-5 flex flex-col sm:flex-row sm:items-center gap-4">
-            <div className="flex-1">
-              <p className="text-sm font-bold text-gray-900 mb-1">Rather ask us a question first?</p>
-              <p className="text-sm text-[#595959] leading-relaxed">
-                WhatsApp us before Sunday - we will answer anything you want to know before you walk through the door.
-              </p>
-            </div>
-            <a
-              href="https://wa.me/27752592555?text=Hi%2C%20I%20have%20a%20question%20about%20visiting%20Fountain%20of%20Grace"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="shrink-0 inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-5 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
-            >
-              Chat on WhatsApp
-            </a>
-          </div>
+          <p className="text-sm text-[#595959] mt-6">
+            Want to see what a Sunday actually looks like?{' '}
+            <Link href="/what-to-expect" className="text-[#008080] font-semibold underline">See what to expect</Link>.
+          </p>
         </div>
       </section>
 
