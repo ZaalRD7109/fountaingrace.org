@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Connect TikTok | Fountain of Grace International</title>
+<!--
+  WHY THIS PAGE EXISTS
+  TikTok will not approve an app for automated posting until you submit a demo
+  video showing a REAL page, on the SAME domain you registered, where a person
+  connects their TikTok account and content is posted through the Content
+  Posting API. It cannot be mocked up - their reviewers check the domain in the
+  video against the app's website URL.
+
+  So this is that page: the church's own admin screen for connecting the FGI
+  TikTok account and publishing a sermon clip to it. It is noindex and unlisted;
+  only someone with the link reaches it.
+
+  Flow (all visible on www.fountaingrace.org, which is what the reviewer needs):
+    1. Connect TikTok  -> TikTok's own authorise screen (Login Kit,
+                          scopes user.info.basic + video.upload)
+    2. TikTok returns here with ?code=...
+    3. This page hands the code to our edge function, which swaps it for a
+       token server-side so the client secret never touches the browser
+    4. Shows who is connected, then posts a real sermon clip
+-->
+<style>
+  :root { --blue:#2a9df4; --gold:#ffd700; --teal:#008080; --ink:#0f0d0b; }
+  * { box-sizing:border-box }
+  body { margin:0; font-family:Poppins,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+         background:#f6f8fa; color:#1a1a1a; -webkit-font-smoothing:antialiased }
+  .wrap { max-width:520px; margin:0 auto; padding:24px 18px 60px }
+  header { text-align:center; padding:28px 0 20px }
+  header img { width:76px; height:76px; border-radius:50%; display:block; margin:0 auto 14px }
+  h1 { font-size:22px; margin:0 0 6px; font-weight:700 }
+  .sub { color:#595959; font-size:14px; margin:0 }
+  .card { background:#fff; border:1px solid #e6eaee; border-radius:14px; padding:20px; margin-top:18px }
+  .step { font-size:12px; letter-spacing:.08em; text-transform:uppercase; color:var(--teal); font-weight:700; margin:0 0 8px }
+  h2 { font-size:17px; margin:0 0 10px; font-weight:700 }
+  p { line-height:1.55; margin:0 0 14px; font-size:15px; color:#333 }
+  button { width:100%; border:0; border-radius:10px; padding:15px 18px; font-size:16px;
+           font-weight:700; cursor:pointer; font-family:inherit }
+  .primary { background:var(--ink); color:#fff }
+  .primary:disabled { background:#c8ced4; cursor:not-allowed }
+  .tt { background:#fe2c55; color:#fff }
+  .status { margin-top:14px; padding:13px 15px; border-radius:10px; font-size:14px; line-height:1.5; display:none }
+  .ok { background:#e8f7ee; color:#14663a; border:1px solid #bde5cd; display:block }
+  .err { background:#fdecec; color:#8a1c1c; border:1px solid #f5c6c6; display:block }
+  .info { background:#eef6fd; color:#12507f; border:1px solid #cbe2f5; display:block }
+  .who { display:flex; align-items:center; gap:12px; margin-bottom:14px }
+  .who img { width:44px; height:44px; border-radius:50%; background:#eee }
+  .who b { display:block; font-size:15px }
+  .who span { font-size:13px; color:#595959 }
+  .clip { border:1px solid #e6eaee; border-radius:10px; padding:12px; margin-bottom:14px; font-size:14px }
+  .clip b { display:block; margin-bottom:4px }
+  .muted { color:#7d7d7d; font-size:13px; margin-top:16px; text-align:center; line-height:1.5 }
+  .hide { display:none }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <img src="/tiktok/fgi-app-icon-1024.png" alt="Fountain of Grace International">
+    <h1>Connect TikTok</h1>
+    <p class="sub">Fountain of Grace International &middot; Pretoria North</p>
+  </header>
+
+  <!-- STEP 1: connect (Login Kit) -->
+  <section class="card" id="card-connect">
+    <p class="step">Step 1</p>
+    <h2>Connect the church TikTok account</h2>
+    <p>This lets us publish sermon clips to the church TikTok account. We only
+       ever post our own sermon content, and only to this one account.</p>
+    <button class="tt" id="btn-connect">Continue with TikTok</button>
+    <div class="status" id="connect-status"></div>
+  </section>
+
+  <!-- STEP 2: post (Content Posting API) -->
+  <section class="card hide" id="card-post">
+    <p class="step">Step 2</p>
+    <h2>Publish a sermon clip</h2>
+    <div class="who">
+      <img id="who-avatar" alt="">
+      <div>
+        <b id="who-name">&nbsp;</b>
+        <span id="who-handle">connected</span>
+      </div>
+    </div>
+    <div class="clip">
+      <b id="clip-title">Sermon clip</b>
+      <span id="clip-caption"></span>
+    </div>
+    <button class="primary" id="btn-post">Post this clip to TikTok</button>
+    <div class="status" id="post-status"></div>
+  </section>
+
+  <p class="muted">
+    Fountain of Grace International (NPO 316-193), 323 B Danie Theron Street,
+    Pretoria North.<br>
+    <a href="/privacy-policy">Privacy Policy</a> &middot; <a href="/terms">Terms</a>
+  </p>
+</div>
+
+<script>
+// The edge function holds the client secret and does every TikTok API call
+// server-side. The browser only ever sees the authorise redirect and results.
+const FN = "https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/tiktok-connect";
+
+const $ = (id) => document.getElementById(id);
+function say(el, kind, msg) { el.className = "status " + kind; el.textContent = msg; }
+
+// --- Step 1: send the admin to TikTok's own authorise screen -------------
+$("btn-connect").addEventListener("click", async () => {
+  say($("connect-status"), "info", "Opening TikTok...");
+  try {
+    const r = await fetch(FN + "?action=auth_url");
+    const j = await r.json();
+    if (!j.url) throw new Error(j.error || "could not build the TikTok link");
+    window.location.href = j.url;
+  } catch (e) {
+    say($("connect-status"), "err", "Could not open TikTok: " + e.message);
+  }
+});
+
+// --- Step 2: TikTok sent us back with ?code -> swap it for a token -------
+async function finishConnect(code) {
+  say($("connect-status"), "info", "Finishing the connection with TikTok...");
+  try {
+    const r = await fetch(FN + "?action=callback&code=" + encodeURIComponent(code));
+    const j = await r.json();
+    if (!j.ok) throw new Error(j.error || "TikTok did not accept the connection");
+    $("who-name").textContent = j.display_name || "Fountain of Grace";
+    $("who-handle").textContent = "connected to TikTok";
+    if (j.avatar) $("who-avatar").src = j.avatar;
+    $("card-connect").classList.add("hide");
+    $("card-post").classList.remove("hide");
+    loadClip();
+  } catch (e) {
+    say($("connect-status"), "err", e.message);
+  }
+}
+
+// --- show which clip is queued ------------------------------------------
+async function loadClip() {
+  try {
+    const r = await fetch(FN + "?action=next_clip");
+    const j = await r.json();
+    $("clip-title").textContent = j.title || "Sermon clip";
+    $("clip-caption").textContent = j.caption || "";
+  } catch (e) { /* non-fatal, the post step still works */ }
+}
+
+// --- Step 3: publish it (Content Posting API) ---------------------------
+$("btn-post").addEventListener("click", async () => {
+  const btn = $("btn-post");
+  btn.disabled = true;
+  say($("post-status"), "info", "Uploading the clip to TikTok...");
+  try {
+    const r = await fetch(FN + "?action=post", { method: "POST" });
+    const j = await r.json();
+    if (!j.ok) throw new Error(j.error || "TikTok rejected the upload");
+    say($("post-status"), "ok", "Posted to TikTok. It appears on the church account once TikTok finishes processing it.");
+  } catch (e) {
+    say($("post-status"), "err", e.message);
+    btn.disabled = false;
+  }
+});
+
+// on load: if TikTok bounced us back with a code, continue the flow
+(function () {
+  const p = new URLSearchParams(location.search);
+  if (p.get("error")) {
+    say($("connect-status"), "err", "TikTok cancelled the connection: " + p.get("error"));
+  } else if (p.get("code")) {
+    history.replaceState({}, "", "/tiktok/");   // keep the code out of the address bar
+    finishConnect(p.get("code"));
+  }
+})();
+</script>
+</body>
+</html>

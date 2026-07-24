@@ -1,0 +1,198 @@
+// TikTok connect + post - the server half of https://www.fountaingrace.org/tiktok/
+//
+// WHY: TikTok will not approve an app for automated posting until we submit a
+// demo video showing a real connect-and-post flow on our own domain. This is
+// the backend for that flow. It is also the thing that, once approved, gives
+// our server a long-lived refresh token so post_reels.py can publish to TikTok
+// on cron the same way it already does Facebook and Instagram.
+//
+// The client secret NEVER goes to the browser. The page only ever sees an
+// authorise URL and plain results.
+//
+// Actions:
+//   ?action=auth_url    -> the TikTok authorise URL to send the admin to
+//   ?action=callback    -> swap ?code for access+refresh tokens, store them
+//   ?action=next_clip   -> which sermon clip is queued (for the demo screen)
+//   POST ?action=post   -> publish that clip via the Content Posting API
+//
+// Secrets expected in the function environment:
+//   TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET
+//   SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
+
+const CLIENT_KEY = Deno.env.get("TIKTOK_CLIENT_KEY") ?? "";
+const CLIENT_SECRET = Deno.env.get("TIKTOK_CLIENT_SECRET") ?? "";
+const SB_URL = Deno.env.get("SUPABASE_URL") ?? "";
+const SB_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
+
+const REDIRECT_URI = "https://www.fountaingrace.org/tiktok/";
+// user.info.basic = who is connected (Login Kit)
+// video.upload    = send a video to the account (Content Posting API).
+//                   video.publish (direct auto-post) only becomes available
+//                   once TikTok has audited the app - which is what the demo
+//                   video this page exists for is meant to unlock.
+const SCOPES = "user.info.basic,video.upload";
+
+const CORS = {
+  "Access-Control-Allow-Origin": "https://www.fountaingrace.org",
+  "Access-Control-Allow-Headers": "content-type",
+  "Access-Control-Allow-Methods": "GET,POST,OPTIONS",
+};
+
+function json(body: unknown, status = 200) {
+  return new Response(JSON.stringify(body), {
+    status,
+    headers: { ...CORS, "content-type": "application/json" },
+  });
+}
+
+// --- tiny store for the tokens (service-role only table) ------------------
+async function saveTokens(t: Record<string, unknown>) {
+  await fetch(`${SB_URL}/rest/v1/tiktok_tokens?on_conflict=id`, {
+    method: "POST",
+    headers: {
+      apikey: SB_KEY,
+      Authorization: `Bearer ${SB_KEY}`,
+      "content-type": "application/json",
+      Prefer: "resolution=merge-duplicates",
+    },
+    body: JSON.stringify({ id: "fgi", ...t, updated_at: new Date().toISOString() }),
+  });
+}
+
+async function loadTokens(): Promise<Record<string, string> | null> {
+  const r = await fetch(`${SB_URL}/rest/v1/tiktok_tokens?id=eq.fgi&select=*`, {
+    headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` },
+  });
+  const rows = await r.json();
+  return Array.isArray(rows) && rows.length ? rows[0] : null;
+}
+
+Deno.serve(async (req) => {
+  if (req.method === "OPTIONS") return new Response("ok", { headers: CORS });
+
+  const url = new URL(req.url);
+  const action = url.searchParams.get("action");
+
+  if (!CLIENT_KEY || !CLIENT_SECRET) {
+    return json({ error: "TikTok credentials are not configured yet" }, 500);
+  }
+
+  try {
+    // 1. Where to send the admin to authorise ------------------------------
+    if (action === "auth_url") {
+      const state = crypto.randomUUID();
+      const u = new URL("https://www.tiktok.com/v2/auth/authorize/");
+      u.searchParams.set("client_key", CLIENT_KEY);
+      u.searchParams.set("scope", SCOPES);
+      u.searchParams.set("response_type", "code");
+      u.searchParams.set("redirect_uri", REDIRECT_URI);
+      u.searchParams.set("state", state);
+      return json({ url: u.toString() });
+    }
+
+    // 2. TikTok bounced back with a code -> exchange it ---------------------
+    if (action === "callback") {
+      const code = url.searchParams.get("code");
+      if (!code) return json({ ok: false, error: "no code from TikTok" }, 400);
+
+      const body = new URLSearchParams({
+        client_key: CLIENT_KEY,
+        client_secret: CLIENT_SECRET,
+        code,
+        grant_type: "authorization_code",
+        redirect_uri: REDIRECT_URI,
+      });
+      const tr = await fetch("https://open.tiktokapis.com/v2/oauth/token/", {
+        method: "POST",
+        headers: { "content-type": "application/x-www-form-urlencoded" },
+        body,
+      });
+      const tok = await tr.json();
+      if (!tok.access_token) {
+        return json({ ok: false, error: tok.error_description || "TikTok refused the code" }, 400);
+      }
+
+      await saveTokens({
+        access_token: tok.access_token,
+        refresh_token: tok.refresh_token,
+        open_id: tok.open_id,
+        scope: tok.scope,
+        expires_at: new Date(Date.now() + (tok.expires_in ?? 0) * 1000).toISOString(),
+      });
+
+      // who did we just connect?
+      let display_name = "", avatar = "";
+      const ur = await fetch(
+        "https://open.tiktokapis.com/v2/user/info/?fields=display_name,avatar_url",
+        { headers: { Authorization: `Bearer ${tok.access_token}` } },
+      );
+      const uj = await ur.json();
+      if (uj?.data?.user) {
+        display_name = uj.data.user.display_name ?? "";
+        avatar = uj.data.user.avatar_url ?? "";
+      }
+      return json({ ok: true, display_name, avatar });
+    }
+
+    // 3. Which clip is queued (shown on the demo screen) --------------------
+    if (action === "next_clip") {
+      const r = await fetch(
+        `${SB_URL}/rest/v1/tiktok_queue?posted=is.null&select=title,caption,video_url&order=created_at&limit=1`,
+        { headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` } },
+      );
+      const rows = await r.json();
+      if (Array.isArray(rows) && rows.length) return json(rows[0]);
+      return json({ title: "Sermon clip", caption: "Ready to publish." });
+    }
+
+    // 4. Publish it ---------------------------------------------------------
+    if (action === "post" && req.method === "POST") {
+      const t = await loadTokens();
+      if (!t?.access_token) return json({ ok: false, error: "TikTok is not connected yet" }, 400);
+
+      const qr = await fetch(
+        `${SB_URL}/rest/v1/tiktok_queue?posted=is.null&select=id,title,caption,video_url&order=created_at&limit=1`,
+        { headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` } },
+      );
+      const rows = await qr.json();
+      if (!Array.isArray(rows) || !rows.length) {
+        return json({ ok: false, error: "no clip is queued" }, 400);
+      }
+      const clip = rows[0];
+
+      // PULL_FROM_URL: TikTok fetches the file from our own host, so we never
+      // stream a video through this function.
+      const pr = await fetch("https://open.tiktokapis.com/v2/post/publish/inbox/video/init/", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${t.access_token}`,
+          "content-type": "application/json; charset=UTF-8",
+        },
+        body: JSON.stringify({
+          source_info: { source: "PULL_FROM_URL", video_url: clip.video_url },
+        }),
+      });
+      const pj = await pr.json();
+      if (pj?.error?.code && pj.error.code !== "ok") {
+        return json({ ok: false, error: pj.error.message || JSON.stringify(pj.error) }, 400);
+      }
+
+      await fetch(`${SB_URL}/rest/v1/tiktok_queue?id=eq.${clip.id}`, {
+        method: "PATCH",
+        headers: {
+          apikey: SB_KEY,
+          Authorization: `Bearer ${SB_KEY}`,
+          "content-type": "application/json",
+          Prefer: "return=minimal",
+        },
+        body: JSON.stringify({ posted: new Date().toISOString(), publish_id: pj?.data?.publish_id ?? null }),
+      });
+
+      return json({ ok: true, publish_id: pj?.data?.publish_id ?? null });
+    }
+
+    return json({ error: "unknown action" }, 400);
+  } catch (e) {
+    return json({ error: String(e) }, 500);
+  }
+});
