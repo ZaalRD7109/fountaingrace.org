@@ -15,14 +15,24 @@
 //   ?action=next_clip   -> which sermon clip is queued (for the demo screen)
 //   POST ?action=post   -> publish that clip via the Content Posting API
 //
-// Secrets expected in the function environment:
-//   TIKTOK_CLIENT_KEY, TIKTOK_CLIENT_SECRET
-//   SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY
+// The app's client key/secret live in the service-role-only table
+// `tiktok_config` (same pattern as wa_config for the WhatsApp inbox), because
+// function secrets cannot be set from our tooling. They are never sent to the
+// browser.
 
-const CLIENT_KEY = Deno.env.get("TIKTOK_CLIENT_KEY") ?? "";
-const CLIENT_SECRET = Deno.env.get("TIKTOK_CLIENT_SECRET") ?? "";
 const SB_URL = Deno.env.get("SUPABASE_URL") ?? "";
 const SB_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") ?? "";
+
+let _cfg: { client_key: string; client_secret: string } | null = null;
+async function creds() {
+  if (_cfg) return _cfg;
+  const r = await fetch(`${SB_URL}/rest/v1/tiktok_config?id=eq.fgi&select=client_key,client_secret`, {
+    headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` },
+  });
+  const rows = await r.json();
+  _cfg = Array.isArray(rows) && rows.length ? rows[0] : { client_key: "", client_secret: "" };
+  return _cfg!;
+}
 
 const REDIRECT_URI = "https://www.fountaingrace.org/tiktok/";
 // user.info.basic = who is connected (Login Kit)
@@ -73,6 +83,7 @@ Deno.serve(async (req) => {
   const url = new URL(req.url);
   const action = url.searchParams.get("action");
 
+  const { client_key: CLIENT_KEY, client_secret: CLIENT_SECRET } = await creds();
   if (!CLIENT_KEY || !CLIENT_SECRET) {
     return json({ error: "TikTok credentials are not configured yet" }, 500);
   }
@@ -132,6 +143,16 @@ Deno.serve(async (req) => {
         avatar = uj.data.user.avatar_url ?? "";
       }
       return json({ ok: true, display_name, avatar });
+    }
+
+    // 2b. Disconnect - clears the stored token so the page returns to step 1.
+    // Needed so the app-review demo video can show the whole flow from scratch.
+    if (action === "disconnect" && req.method === "POST") {
+      await fetch(`${SB_URL}/rest/v1/tiktok_tokens?id=eq.fgi`, {
+        method: "DELETE",
+        headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` },
+      });
+      return json({ ok: true });
     }
 
     // 3. Which clip is queued (shown on the demo screen) --------------------

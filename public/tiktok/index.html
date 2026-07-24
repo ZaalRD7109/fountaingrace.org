@@ -93,6 +93,9 @@
     </div>
     <button class="primary" id="btn-post">Post this clip to TikTok</button>
     <div class="status" id="post-status"></div>
+    <p class="muted" style="margin-top:14px">
+      <a href="#" id="btn-reset">Disconnect and start over</a>
+    </p>
   </section>
 
   <p class="muted">
@@ -165,6 +168,15 @@ $("btn-post").addEventListener("click", async () => {
     say($("post-status"), "err", e.message);
     btn.disabled = false;
   }
+});
+
+// Disconnect: clears the stored token so the page returns to step 1. Needed so
+// the app-review demo video can show the WHOLE flow (connect then post), not a
+// page that is already connected.
+document.getElementById("btn-reset").addEventListener("click", async (e) => {
+  e.preventDefault();
+  try { await fetch(FN + "?action=disconnect", { method: "POST" }); } catch (err) {}
+  location.href = "/tiktok/";
 });
 
 // on load: if TikTok bounced us back with a code, continue the flow
