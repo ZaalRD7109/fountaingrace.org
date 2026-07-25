@@ -655,7 +655,7 @@ export const devotionals: Devo[] = [
     "dateDisplay": "1 May 2026",
     "day": null,
     "headline": "When God Seems Silent",
-    "verseRef": null,
+    "verseRef": "Isaiah 40:31",
     "card": null
   },
   {
@@ -664,7 +664,7 @@ export const devotionals: Devo[] = [
     "dateDisplay": "1 May 2026",
     "day": null,
     "headline": "One Question Before Sunday",
-    "verseRef": null,
+    "verseRef": "Matthew 7:7",
     "card": null
   },
   {
@@ -673,7 +673,7 @@ export const devotionals: Devo[] = [
     "dateDisplay": "1 May 2026",
     "day": null,
     "headline": "What Sunday Is Not",
-    "verseRef": null,
+    "verseRef": "Luke 5:31",
     "card": null
   },
   {
@@ -682,7 +682,7 @@ export const devotionals: Devo[] = [
     "dateDisplay": "1 May 2026",
     "day": null,
     "headline": "The Week Did Not Go As Planned",
-    "verseRef": null,
+    "verseRef": "Psalm 34:18",
     "card": null
   },
   {
@@ -691,7 +691,7 @@ export const devotionals: Devo[] = [
     "dateDisplay": "27 April 2026",
     "day": null,
     "headline": "Prepare Your Heart Before You Walk In",
-    "verseRef": null,
+    "verseRef": "Matthew 11:28",
     "card": null
   }
 ]
