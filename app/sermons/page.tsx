@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "everything-crumbling-at-once-heres-what-youre-actually-walking-on",
+    title: "Everything Crumbling at Once? Here's What You're Actually Walking On",
+    date: "2026-07-26",
+    dateDisplay: "26 July 2026",
+    intro:
+      "When everything that made you feel secure crumbles, you're not sinking. You're being called to walk on what would drown you.",
+  },
+  {
     slug: "you-have-enough-right-now-heres-why-you-dont-believe-it",
     title: "You Have Enough Right Now, Here's Why You Don't Believe It",
     date: "2026-07-19",
