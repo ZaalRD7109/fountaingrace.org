@@ -45,6 +45,8 @@ DO NOT use Ricardo's personal book brand (#00ced1) or the navy in tailwind.confi
 | Tool | ID |
 |------|------|
 | **Google Analytics 4** | G-15FK8BTR4B |
+| **Meta Pixel** | `2211800306311040` (dataset "FGI Website", created 2026-06-23 in the FGI Meta business "Fountain of Grace Ministries", business_id 157402573519371). Loaded in `components/AnalyticsLoader.tsx`, fires PageView + Lead/InitiateCheckout via `lib/tracking.ts`. The other two Meta datasets - FGI Messages (1433664817983649) and n8n AutoPoster (1338430963892130) - are NOT website pixels. |
+| **Analytics consent** | OPT-OUT model since 2026-06-23 (for ad measurement): GA4 + Clarity + Meta Pixel load by default for every visitor unless they explicitly Decline the cookie banner. Set in `AnalyticsLoader.tsx` and `lib/tracking.ts` (consentGranted). Clarity masks personal data automatically. |
 | **Microsoft Clarity** | `wrvix7z3n5` (LIVE - this is the ID hardcoded in `components/AnalyticsLoader.tsx` and serving real Clarity JS, verified 2026-06-23). The old note `wcq3d0ed7r` is WRONG - that ID returns HTTP 204 (not a real project), so its dashboard is empty. Log into clarity.microsoft.com and open project `wrvix7z3n5` to see data. Clarity is consent-gated: it only records visitors who accept the cookie banner. |
 
 ## Terms

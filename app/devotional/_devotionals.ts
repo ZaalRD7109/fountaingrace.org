@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "how-do-i-stop-saying-things-i-regret-to-the-people-i-love",
+    "date": "2026-07-26",
+    "dateDisplay": "26 July 2026",
+    "day": 207,
+    "headline": "How do I stop saying things I regret to the people I love?",
+    "verseRef": "Proverbs 21:23",
+    "card": "/devotional-cards/how-do-i-stop-saying-things-i-regret-to-the-people-i-love.jpg"
+  },
+  {
     "slug": "is-it-possible-to-actually-love-my-family-well-when-im-this-depleted",
     "date": "2026-07-25",
     "dateDisplay": "25 July 2026",
