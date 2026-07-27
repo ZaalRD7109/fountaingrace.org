@@ -34,10 +34,12 @@
 //      valid link could tick ANY row id in the table, including another church's,
 //      and setting returned_at on someone else's visitor silently suppressed
 //      their day-14 / day-30 / missed-you messages. Silent, no error, no trace.
-//   3. VOLUNTEERS DO NOT GET PHONE NUMBERS. A volunteer needs a name to greet
-//      someone at the door. Under POPIA's minimum-necessary principle that is
-//      all they get. The planned date already disambiguates two same-name
-//      visitors. The page guards on v.phone so it simply stops rendering it.
+//   3. THE VOLUNTEER GETS THE PHONE NUMBER. An earlier version withheld it on
+//      minimum-necessary grounds. That was wrong, and Ricardo overruled it:
+//      the welcome team has to ring a visitor and check on them, and a name
+//      cannot be dialled. The POPIA answer is a clear consent line on the
+//      visit form saying what the number is used for, not concealment after
+//      the fact. Email is still not sent - nobody needs it to make a call.
 //
 // NOTE: RLS is NOT a backstop here. This function uses the service role, which
 // bypasses RLS entirely. The token->church filter and the ownership check ARE
