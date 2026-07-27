@@ -60,7 +60,24 @@
 </div>
 <script>
   var API = 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/visitor-attendance';
-  var K = 'att-eab3056b3bc9fb4d92c9f7ad';
+
+  // The key comes from the LINK, never from this page.
+  //
+  // It used to be written here in the source, which meant anyone who simply
+  // opened /attendance/ could read the visitor list, and the key sat in a
+  // public GitHub repo. Now the page is useless on its own: the key arrives
+  // in the ?k= of the link, is saved to this phone, and is wiped out of the
+  // address bar so it does not sit in history or get shared by accident.
+  // Same pattern already used by the WhatsApp inbox and the pastor view.
+  var K = '';
+  try {
+    var q = new URLSearchParams(location.search).get('k');
+    if (q) {
+      localStorage.setItem('fgi_att_key', q);
+      history.replaceState(null, '', location.pathname);
+    }
+    K = localStorage.getItem('fgi_att_key') || '';
+  } catch (e) { K = ''; }
 
   function esc(s){ return (s==null?'':String(s)).replace(/[&<>"']/g,function(c){
     return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
@@ -114,6 +131,13 @@
   }
 
   async function load(){
+    if (!K) {
+      document.getElementById('list').innerHTML =
+        '<div class="box"><b>Open your own link.</b><br>'
+        + 'This page only works from the link the church sent you. '
+        + 'Open that link once on this phone and it will remember you after that.</div>';
+      return;
+    }
     try {
       var res = await fetch(API+'?k='+encodeURIComponent(K));
       var data = await res.json();
