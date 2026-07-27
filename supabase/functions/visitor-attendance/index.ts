@@ -57,10 +57,12 @@ const WINDOW_BACK = 9
 const WINDOW_FWD = 1
 const FOLLOWUP_WINDOW_DAYS = 45 // the 6-week (42-day) follow-up window plus grace
 
-// Volunteers never receive phone or email. There is deliberately no wider
-// field set here: a pastor view is a separate concern and shipping an unused
-// branch that returns phone numbers is a hole waiting for someone to open it.
-const FIELDS_VOLUNTEER = 'id,name,planned_date,attended'
+// The volunteer DOES get the phone number. Taking it away broke the actual
+// job: someone on the welcome team has to ring a visitor and check on them,
+// and a name cannot be dialled. The POPIA answer is not to withhold it, it is
+// to tell the visitor on the form exactly what their number will be used for
+// and get their consent. Cover it honestly instead of hiding it.
+const FIELDS_VOLUNTEER = 'id,name,phone,planned_date,attended'
 
 const CORS = {
   'Access-Control-Allow-Origin': '*',
