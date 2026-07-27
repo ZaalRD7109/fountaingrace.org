@@ -136,6 +136,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - daily library, one page per devotional)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/devotional/am-i-actually-present-at-home-or-just-physically-there`, lastModified: new Date('2026-07-27'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/how-do-i-stop-saying-things-i-regret-to-the-people-i-love`, lastModified: new Date('2026-07-26'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/is-it-possible-to-actually-love-my-family-well-when-im-this-depleted`, lastModified: new Date('2026-07-25'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/why-do-i-snap-at-the-people-i-love-most`, lastModified: new Date('2026-07-24'), changeFrequency: 'monthly', priority: 0.6 },

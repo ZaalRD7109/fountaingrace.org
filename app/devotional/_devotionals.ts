@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "am-i-actually-present-at-home-or-just-physically-there",
+    "date": "2026-07-27",
+    "dateDisplay": "27 July 2026",
+    "day": 208,
+    "headline": "Am I actually present at home, or just physically there?",
+    "verseRef": "Deuteronomy 6:6-7",
+    "card": "/devotional-cards/am-i-actually-present-at-home-or-just-physically-there.jpg"
+  },
+  {
     "slug": "how-do-i-stop-saying-things-i-regret-to-the-people-i-love",
     "date": "2026-07-26",
     "dateDisplay": "26 July 2026",
