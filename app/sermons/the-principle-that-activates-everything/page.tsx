@@ -300,33 +300,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
+                <Link href="/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                  You
+                </Link>
+              </li>
+              <li>
                 <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
                   The Principles That Move People Forward Faster
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
-                  You Were Built for Something Specific - Here Is How to Find It
+                <Link href="/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave" className="text-[#2a9df4] hover:underline font-medium">
+                  Stuck in a Dead Relationship or Job? Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-shortcut-thats-ruining-your-life" className="text-[#2a9df4] hover:underline font-medium">
-                  The Shortcut That
+                <Link href="/sermons/why-the-easy-road-always-leads-to-the-wrong-place" className="text-[#2a9df4] hover:underline font-medium">
+                  Why the Easy Road Always Leads to the Wrong Place
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-spiritual-weapon-no-one-speaks-about" className="text-[#2a9df4] hover:underline font-medium">
-                  The One Weapon Nobody Teaches You That Changes Every Fight
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#2a9df4] hover:underline font-medium">
-                  When Life Deliberately Gets Worse Before It Works Out
+                <Link href="/sermons/you-already-know-what-to-do-so-why-arent-you-doing-it" className="text-[#2a9df4] hover:underline font-medium">
+                  You Already Know What To Do - So Why Aren't You Doing It?
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

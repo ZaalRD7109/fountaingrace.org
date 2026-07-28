@@ -252,33 +252,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#2a9df4] hover:underline font-medium">
-                  You
+                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#2a9df4] hover:underline font-medium">
+                  How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-blocked-by-one-thing-and-dont-even-know-it" className="text-[#2a9df4] hover:underline font-medium">
-                  You
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                  When You Feel Abandoned: Why You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#2a9df4] hover:underline font-medium">
-                  You
+                <Link href="/sermons/the-shortcut-thats-ruining-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  The Shortcut That
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/be-a-doer-of-gods-word-not-just-a-hearer" className="text-[#2a9df4] hover:underline font-medium">
-                  Be a Doer of God's Word, Not Just a Hearer
+                <Link href="/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Struggles Aren
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/experiencing-gods-presence-direct-divine-communication" className="text-[#2a9df4] hover:underline font-medium">
-                  Can Something Greater Than Yourself Actually Speak Directly to You?
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                  When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
       <script dangerouslySetInnerHTML={{ __html: "(function(){var f=document.querySelector('iframe[src*=\"youtube.com/embed/\"]');if(!f)return;var base=f.src.split('?')[0];document.querySelectorAll('.sermon-chapter').forEach(function(b){b.addEventListener('click',function(){var t=this.getAttribute('data-start');f.src=base+'?rel=0&autoplay=1&start='+t;f.scrollIntoView({behavior:'smooth',block:'center'});});});})();" }} />

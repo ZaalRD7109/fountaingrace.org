@@ -325,33 +325,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#2a9df4] hover:underline font-medium">
-                  When Your Success Makes People Jealous: Here
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                  The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-kindness-might-be-hurting-people" className="text-[#2a9df4] hover:underline font-medium">
-                  Your Help Is Making Them Helpless
+                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Nothing Changes No Matter How Hard You Try
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#2a9df4] hover:underline font-medium">
-                  Your Big Break Is Coming, But You
+                <Link href="/sermons/you-dont-know-who-you-are-yet" className="text-[#2a9df4] hover:underline font-medium">
+                  You Don't Know Who You Are Yet
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-already-know-what-to-do-so-why-arent-you-doing-it" className="text-[#2a9df4] hover:underline font-medium">
-                  You Already Know What To Do - So Why Aren't You Doing It?
+                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Does Your Life Keep Collapsing No Matter What You Build?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-love-god-but-are-you-in-the-game" className="text-[#2a9df4] hover:underline font-medium">
-                  You Know What You Should Be Doing - So Why Are You Still on the Sidelines?
+                <Link href="/sermons/no-more-waiting-rooms-god-is-live-now" className="text-[#2a9df4] hover:underline font-medium">
+                  Stop Waiting for Your Real Life to Begin - It Already Started
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

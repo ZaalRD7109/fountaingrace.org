@@ -248,33 +248,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life" className="text-[#2a9df4] hover:underline font-medium">
-                  The Hidden Cost of Staying Silent at Work, Home, and in Life
+                <Link href="/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids" className="text-[#2a9df4] hover:underline font-medium">
+                  The Pain You Inherited From Your Father Is Quietly Breaking Your Kids
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-inheritance-test" className="text-[#2a9df4] hover:underline font-medium">
-                  The Inheritance Test: Will It Reach Three Generations?
+                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
+                  Helping Someone Actually Keeps Them Stuck
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-one-conversation-that-stops-relationship-arguments-before-they-start" className="text-[#2a9df4] hover:underline font-medium">
-                  The One Conversation That Stops Relationship Arguments Before They Start
+                <Link href="/sermons/stop-fixing-the-same-problems-over-and-over" className="text-[#2a9df4] hover:underline font-medium">
+                  Stop Fixing the Same Problems Over and Over
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-principle-that-activates-everything" className="text-[#2a9df4] hover:underline font-medium">
-                  The Principle That Activates Everything: Right Action
+                <Link href="/sermons/why-your-kindness-might-be-hurting-people" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Help Is Making Them Helpless
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-spiritual-weapon-no-one-speaks-about" className="text-[#2a9df4] hover:underline font-medium">
-                  The One Weapon Nobody Teaches You That Changes Every Fight
+                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#2a9df4] hover:underline font-medium">
+                  The Cost of Sitting on the Sidelines
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
       <script dangerouslySetInnerHTML={{ __html: "(function(){var f=document.querySelector('iframe[src*=\"youtube.com/embed/\"]');if(!f)return;var base=f.src.split('?')[0];document.querySelectorAll('.sermon-chapter').forEach(function(b){b.addEventListener('click',function(){var t=this.getAttribute('data-start');f.src=base+'?rel=0&autoplay=1&start='+t;f.scrollIntoView({behavior:'smooth',block:'center'});});});})();" }} />

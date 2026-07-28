@@ -337,33 +337,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
-                  You Were Built for Something Specific - Here Is How to Find It
+                <Link href="/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                  You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-real-reason-youre-trapped-in-debt-and-how-to-break-free" className="text-[#2a9df4] hover:underline font-medium">
-                  The Real Reason You
+                <Link href="/sermons/the-principle-that-activates-everything" className="text-[#2a9df4] hover:underline font-medium">
+                  The Principle That Activates Everything: Right Action
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-silent-assassin-of-destiny" className="text-[#2a9df4] hover:underline font-medium">
-                  The Silent Assassin of Destiny: Overthinking
+                <Link href="/sermons/the-inheritance-test" className="text-[#2a9df4] hover:underline font-medium">
+                  The Inheritance Test: Will It Reach Three Generations?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
-                  The System You're Praying Against Without Knowing It
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                  When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-feels-like-a-grave-you-cannot-climb-out-of" className="text-[#2a9df4] hover:underline font-medium">
-                  When Life Feels Like a Grave You Cannot Climb Out Of
+                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Big Break Is Coming, But You
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

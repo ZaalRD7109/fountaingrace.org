@@ -334,33 +334,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/no-more-waiting-rooms-god-is-live-now" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Waiting for Your Real Life to Begin - It Already Started
+                <Link href="/sermons/experiencing-gods-presence-direct-divine-communication" className="text-[#2a9df4] hover:underline font-medium">
+                  Can Something Greater Than Yourself Actually Speak Directly to You?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/pruning-for-progress" className="text-[#2a9df4] hover:underline font-medium">
-                  Pruning for Progress: From Bare Branch to Bountiful Blessing
+                <Link href="/sermons/birth-of-the-great-christmas-sermon-matthew-1-21" className="text-[#2a9df4] hover:underline font-medium">
+                  Born Into Something Greater Than the Life You Are Currently Living
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
-                  Six Invisible Gaps That Wreck Your Life (And How to Close Them)
+                <Link href="/sermons/when-you-stop-hearing-the-voice-that-used-to-guide-every-decision" className="text-[#2a9df4] hover:underline font-medium">
+                  When You Stop Hearing the Voice That Used to Guide Every Decision
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Waiting for Permission to Become Who You Already Are
+                <Link href="/sermons/god-will-finish-what-he-started-in-you-battle" className="text-[#2a9df4] hover:underline font-medium">
+                  When Everything Fights Against What You Were Meant to Build
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-father-who-never-shows-up-and-how-it-breaks-you" className="text-[#2a9df4] hover:underline font-medium">
-                  The Father Who Never Shows Up (And How It Breaks You)
+                <Link href="/sermons/dont-pray-the-storm-away-why-you-need-the-storm" className="text-[#2a9df4] hover:underline font-medium">
+                  Stop Trying to Escape Your Problems - Here Is What They Are Actually For
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

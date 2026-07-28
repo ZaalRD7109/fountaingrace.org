@@ -250,33 +250,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-inheritance-test" className="text-[#2a9df4] hover:underline font-medium">
-                  The Inheritance Test: Will It Reach Three Generations?
+                <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#2a9df4] hover:underline font-medium">
+                  You Know What You Need to Do-So Why Can
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-language-of-the-spirit-interpreting-what-you-hear" className="text-[#2a9df4] hover:underline font-medium">
-                  Hearing the Right Things and Still Getting Them Wrong - Here Is Why
+                <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#2a9df4] hover:underline font-medium">
+                  Everyone Around You Is Pretending - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids" className="text-[#2a9df4] hover:underline font-medium">
-                  The Pain You Inherited From Your Father Is Quietly Breaking Your Kids
+                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#2a9df4] hover:underline font-medium">
+                  The Cost of Sitting on the Sidelines
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
-                  The Principles That Move People Forward Faster
+                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Boss Will Never Promote You Like This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
-                  The System You're Praying Against Without Knowing It
+                <Link href="/sermons/you-have-enough-right-now-heres-why-you-dont-believe-it" className="text-[#2a9df4] hover:underline font-medium">
+                  You Have Enough Right Now, Here
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

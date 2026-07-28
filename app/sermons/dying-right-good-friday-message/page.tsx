@@ -326,33 +326,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#2a9df4] hover:underline font-medium">
-                  Everyone Around You Is Pretending - Here
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                  The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#2a9df4] hover:underline font-medium">
-                  Everyone
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                  You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/experiencing-gods-presence-direct-divine-communication" className="text-[#2a9df4] hover:underline font-medium">
-                  Can Something Greater Than Yourself Actually Speak Directly to You?
+                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Does Your Life Keep Collapsing No Matter What You Build?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/follow-your-inner-voice-discover-your-destiny" className="text-[#2a9df4] hover:underline font-medium">
-                  Follow Your Inner Voice - Discover Your Destiny
+                <Link href="/sermons/you-dont-know-who-you-are-yet" className="text-[#2a9df4] hover:underline font-medium">
+                  You Don't Know Who You Are Yet
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/no-more-waiting-rooms-god-is-live-now" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Waiting for Your Real Life to Begin - It Already Started
+                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Nothing Changes No Matter How Hard You Try
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

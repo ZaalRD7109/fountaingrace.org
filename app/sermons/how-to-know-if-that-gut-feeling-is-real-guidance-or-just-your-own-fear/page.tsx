@@ -255,28 +255,34 @@ export default function SermonPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#2a9df4] hover:underline font-medium">
-                  You
+                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#2a9df4] hover:underline font-medium">
+                  Stop Waiting for Someone Else to Tell You What
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/no-more-waiting-rooms-god-is-live-now" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Waiting for Your Real Life to Begin - It Already Started
+                <Link href="/sermons/stop-waiting-to-be-perfect-before-you-matter" className="text-[#2a9df4] hover:underline font-medium">
+                  Stop Waiting to Be Perfect Before You Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#2a9df4] hover:underline font-medium">
-                  Every Word You Say About Yourself Is Writing Your Future
+                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
+                  Helping Someone Actually Keeps Them Stuck
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-anointing-that-makes-hell-fear-you" className="text-[#2a9df4] hover:underline font-medium">
-                  Why Some People Are Completely Untouchable No Matter What Life Throws
+                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Success Depends on What You Do Before It Arrives
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

@@ -302,23 +302,8 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/dying-right-good-friday-message" className="text-[#2a9df4] hover:underline font-medium">
-                  Dying Right - What Jesus Did on the Cross That Most People Miss
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#2a9df4] hover:underline font-medium">
-                  Everyone Around You Is Pretending - Here
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/everything-crumbling-at-once-heres-what-youre-actually-walking-on" className="text-[#2a9df4] hover:underline font-medium">
-                  Everything Crumbling at Once? Here
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/feeling-empty-and-exhausted-how-to-find-strength-when-you-have-nothing" className="text-[#2a9df4] hover:underline font-medium">
-                  Feeling Empty and Exhausted? How to Find Strength When You Have Nothing Left
+                <Link href="/sermons/pruning-for-progress" className="text-[#2a9df4] hover:underline font-medium">
+                  Pruning for Progress: From Bare Branch to Bountiful Blessing
                 </Link>
               </li>
               <li>
@@ -326,9 +311,30 @@ export default function SermonPage() {
                   Are You Actually Being Transformed or Just Showing Up?
                 </Link>
               </li>
+              <li>
+                <Link href="/sermons/god-will-finish-what-he-started-in-you-battle" className="text-[#2a9df4] hover:underline font-medium">
+                  When Everything Fights Against What You Were Meant to Build
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/birth-of-the-great-christmas-sermon-matthew-1-21" className="text-[#2a9df4] hover:underline font-medium">
+                  Born Into Something Greater Than the Life You Are Currently Living
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  The Small Habits That Quietly Destroy Your Life
+                </Link>
+              </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

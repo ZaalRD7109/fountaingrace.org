@@ -250,33 +250,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave" className="text-[#2a9df4] hover:underline font-medium">
-                  Stuck in a Dead Relationship or Job? Here
+                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Boss Will Never Promote You Like This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-anointing-that-makes-hell-fear-you" className="text-[#2a9df4] hover:underline font-medium">
-                  Why Some People Are Completely Untouchable No Matter What Life Throws
+                <Link href="/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life" className="text-[#2a9df4] hover:underline font-medium">
+                  The Hidden Cost of Staying Silent at Work, Home, and in Life
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-danger-of-overnight-success" className="text-[#2a9df4] hover:underline font-medium">
-                  The Danger of Overnight Success and the Power of Long Obedience
+                <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#2a9df4] hover:underline font-medium">
+                  Everyone Around You Is Pretending - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-language-of-the-spirit-interpreting-what-you-hear" className="text-[#2a9df4] hover:underline font-medium">
-                  Hearing the Right Things and Still Getting Them Wrong - Here Is Why
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                  When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-real-reason-youre-trapped-in-debt-and-how-to-break-free" className="text-[#2a9df4] hover:underline font-medium">
-                  The Real Reason You
+                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#2a9df4] hover:underline font-medium">
+                  When Life Deliberately Gets Worse Before It Works Out
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

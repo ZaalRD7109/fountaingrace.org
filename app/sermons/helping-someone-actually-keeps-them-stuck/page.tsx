@@ -252,8 +252,13 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/hosting-the-presence-of-god" className="text-[#2a9df4] hover:underline font-medium">
-                  Why Sunday Feels Different and Monday Feels Like Nothing Changed
+                <Link href="/sermons/stop-helping-people-its-making-them-worse" className="text-[#2a9df4] hover:underline font-medium">
+                  Stop Helping People (It
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/why-your-kindness-might-be-hurting-people" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Help Is Making Them Helpless
                 </Link>
               </li>
               <li>
@@ -262,23 +267,24 @@ export default function SermonPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#2a9df4] hover:underline font-medium">
-                  You
+                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
+                  Six Invisible Gaps That Wreck Your Life (And How to Close Them)
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/releasing-his-presence" className="text-[#2a9df4] hover:underline font-medium">
-                  Releasing His Presence: From Container to Conduit
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/stop-wasting-energy-on-people-who-wont-listen" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Wasting Energy on People Who Won
+                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Paycheck Disappears Every Month - Here
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
       <script dangerouslySetInnerHTML={{ __html: "(function(){var f=document.querySelector('iframe[src*=\"youtube.com/embed/\"]');if(!f)return;var base=f.src.split('?')[0];document.querySelectorAll('.sermon-chapter').forEach(function(b){b.addEventListener('click',function(){var t=this.getAttribute('data-start');f.src=base+'?rel=0&autoplay=1&start='+t;f.scrollIntoView({behavior:'smooth',block:'center'});});});})();" }} />

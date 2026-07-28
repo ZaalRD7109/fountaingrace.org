@@ -313,33 +313,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/you-are-not-lazy-you-are-a-lot-more" className="text-[#2a9df4] hover:underline font-medium">
-                  You Are Not Lazy - You Are a Lot More
+                <Link href="/sermons/why-youre-not-moving-forward-and-how-to-break-it" className="text-[#2a9df4] hover:underline font-medium">
+                  Why You're Not Moving Forward - And How to Break It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-dont-know-who-you-are-yet" className="text-[#2a9df4] hover:underline font-medium">
-                  You Don't Know Who You Are Yet
+                <Link href="/sermons/the-silent-assassin-of-destiny" className="text-[#2a9df4] hover:underline font-medium">
+                  The Silent Assassin of Destiny: Overthinking
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#2a9df4] hover:underline font-medium">
-                  You Feel Trapped By What Others Say You Can
+                <Link href="/sermons/the-principle-that-activates-everything" className="text-[#2a9df4] hover:underline font-medium">
+                  The Principle That Activates Everything: Right Action
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-love-god-but-are-you-in-the-game" className="text-[#2a9df4] hover:underline font-medium">
-                  You Know What You Should Be Doing - So Why Are You Still on the Sidelines?
+                <Link href="/sermons/youre-working-hard-but-nothing-changes-heres-why" className="text-[#2a9df4] hover:underline font-medium">
+                  You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-past-failures-dont-define-your-future-heres-why" className="text-[#2a9df4] hover:underline font-medium">
-                  Your Past Failures Don
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
+                  The Principles That Move People Forward Faster
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

@@ -315,33 +315,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/faith-is-the-router-that-connects-you-to-gods-supply" className="text-[#2a9df4] hover:underline font-medium">
-                  Faith Is the Router That Connects You to God's Supply
+                <Link href="/sermons/when-you-stop-hearing-the-voice-that-used-to-guide-every-decision" className="text-[#2a9df4] hover:underline font-medium">
+                  When You Stop Hearing the Voice That Used to Guide Every Decision
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#2a9df4] hover:underline font-medium">
-                  Your Boss Will Never Promote You Like This
+                <Link href="/sermons/god-will-finish-what-he-started-in-you-battle" className="text-[#2a9df4] hover:underline font-medium">
+                  When Everything Fights Against What You Were Meant to Build
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/follow-your-inner-voice-discover-your-destiny" className="text-[#2a9df4] hover:underline font-medium">
-                  Follow Your Inner Voice - Discover Your Destiny
+                <Link href="/sermons/if-your-church-does-not-change-you-change-your-church" className="text-[#2a9df4] hover:underline font-medium">
+                  Are You Actually Being Transformed or Just Showing Up?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#2a9df4] hover:underline font-medium">
-                  How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
+                <Link href="/sermons/birth-of-the-great-christmas-sermon-matthew-1-21" className="text-[#2a9df4] hover:underline font-medium">
+                  Born Into Something Greater Than the Life You Are Currently Living
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#2a9df4] hover:underline font-medium">
-                  Every Word You Say About Yourself Is Writing Your Future
+                <Link href="/sermons/dont-pray-the-storm-away-why-you-need-the-storm" className="text-[#2a9df4] hover:underline font-medium">
+                  Stop Trying to Escape Your Problems - Here Is What They Are Actually For
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

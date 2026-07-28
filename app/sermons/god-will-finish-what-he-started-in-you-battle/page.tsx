@@ -315,33 +315,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
-                  Helping Someone Actually Keeps Them Stuck
+                <Link href="/sermons/experiencing-gods-presence-direct-divine-communication" className="text-[#2a9df4] hover:underline font-medium">
+                  Can Something Greater Than Yourself Actually Speak Directly to You?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/hosting-the-presence-of-god" className="text-[#2a9df4] hover:underline font-medium">
-                  Why Sunday Feels Different and Monday Feels Like Nothing Changed
+                <Link href="/sermons/when-you-stop-hearing-the-voice-that-used-to-guide-every-decision" className="text-[#2a9df4] hover:underline font-medium">
+                  When You Stop Hearing the Voice That Used to Guide Every Decision
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-what-to-do-when-everything-feels-confusing" className="text-[#2a9df4] hover:underline font-medium">
-                  How to Know What to Do When Everything Feels Confusing
+                <Link href="/sermons/birth-of-the-great-christmas-sermon-matthew-1-21" className="text-[#2a9df4] hover:underline font-medium">
+                  Born Into Something Greater Than the Life You Are Currently Living
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/pruning-for-progress" className="text-[#2a9df4] hover:underline font-medium">
-                  Pruning for Progress: From Bare Branch to Bountiful Blessing
+                <Link href="/sermons/youre-still-in-the-story-when-god-seems-silent" className="text-[#2a9df4] hover:underline font-medium">
+                  You're Still in the Story: When It Looks Like God Is Silent
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-to-be-perfect-before-you-matter" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Waiting to Be Perfect Before You Matter
+                <Link href="/sermons/if-your-church-does-not-change-you-change-your-church" className="text-[#2a9df4] hover:underline font-medium">
+                  Are You Actually Being Transformed or Just Showing Up?
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

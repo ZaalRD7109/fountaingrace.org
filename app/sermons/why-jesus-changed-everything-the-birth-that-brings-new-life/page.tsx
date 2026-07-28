@@ -254,23 +254,13 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/why-some-problems-wont-leave-until-you-understand-this" className="text-[#2a9df4] hover:underline font-medium">
-                  Why Some Problems Won't Leave Until You Understand This
+                <Link href="/sermons/birth-of-the-great-christmas-sermon-matthew-1-21" className="text-[#2a9df4] hover:underline font-medium">
+                  Born Into Something Greater Than the Life You Are Currently Living
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#2a9df4] hover:underline font-medium">
-                  Why Some Things Refuse to Move
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/why-your-biggest-battle-follows-your-best-decision" className="text-[#2a9df4] hover:underline font-medium">
-                  Why Your Biggest Battle Always Follows Your Best Decision
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#2a9df4] hover:underline font-medium">
-                  Your Big Break Is Coming, But You
+                <Link href="/sermons/your-pain-has-an-expiration-date" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Pain Has an Expiration Date
                 </Link>
               </li>
               <li>
@@ -278,9 +268,25 @@ export default function SermonPage() {
                   You Feel Trapped By What Others Say You Can
                 </Link>
               </li>
+              <li>
+                <Link href="/sermons/your-past-mistakes-dont-determine-your-future" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Past Mistakes Don
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                  When You Feel Abandoned: Why You
+                </Link>
+              </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

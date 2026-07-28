@@ -254,8 +254,8 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids" className="text-[#2a9df4] hover:underline font-medium">
-                  The Pain You Inherited From Your Father Is Quietly Breaking Your Kids
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                  When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
@@ -264,23 +264,29 @@ export default function SermonPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-principle-that-activates-everything" className="text-[#2a9df4] hover:underline font-medium">
-                  The Principle That Activates Everything: Right Action
+                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  The Small Habits That Quietly Destroy Your Life
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-shortcut-thats-ruining-your-life" className="text-[#2a9df4] hover:underline font-medium">
-                  The Shortcut That
+                <Link href="/sermons/the-person-who-notices-when-you-disappear" className="text-[#2a9df4] hover:underline font-medium">
+                  The Person Who Notices When You Disappear
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/what-if-someone-else-finishes-what-was-meant-for-you" className="text-[#2a9df4] hover:underline font-medium">
-                  What If Someone Else Finishes What Was Meant for You?
+                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
+                  Six Invisible Gaps That Wreck Your Life (And How to Close Them)
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

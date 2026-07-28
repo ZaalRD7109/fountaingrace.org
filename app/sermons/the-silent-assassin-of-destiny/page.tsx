@@ -272,33 +272,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#2a9df4] hover:underline font-medium">
-                  The Small Habits That Quietly Destroy Your Life
+                <Link href="/sermons/why-your-biggest-battle-follows-your-best-decision" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Your Biggest Battle Always Follows Your Best Decision
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#2a9df4] hover:underline font-medium">
-                  The Spiritual Weapon - Declaration Session
+                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  Every Word You Say About Yourself Is Writing Your Future
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
-                  The System You're Praying Against Without Knowing It
+                <Link href="/sermons/why-some-problems-wont-leave-until-you-understand-this" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Some Problems Won't Leave Until You Understand This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/what-no-one-tells-you-about-feeling-unready" className="text-[#2a9df4] hover:underline font-medium">
-                  What no one tells you about feeling unready
+                <Link href="/sermons/hosting-the-presence-of-god" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Sunday Feels Different and Monday Feels Like Nothing Changed
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-you-stop-hearing-the-voice-that-used-to-guide-every-decision" className="text-[#2a9df4] hover:underline font-medium">
-                  When You Stop Hearing the Voice That Used to Guide Every Decision
+                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Some Things Refuse to Move
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

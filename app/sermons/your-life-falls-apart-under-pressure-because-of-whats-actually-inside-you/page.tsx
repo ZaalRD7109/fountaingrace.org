@@ -267,33 +267,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it" className="text-[#2a9df4] hover:underline font-medium">
-                  Your Mind Is Broken By Lies You Believed - Here
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                  When You Feel Abandoned: Why You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-mind-wont-stop-working-even-after-8-hours-of-sleep" className="text-[#2a9df4] hover:underline font-medium">
-                  Your Mind Won
+                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Does Your Life Keep Collapsing No Matter What You Build?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-past-failures-dont-define-your-future-heres-why" className="text-[#2a9df4] hover:underline font-medium">
-                  Your Past Failures Don
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                  When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something" className="text-[#2a9df4] hover:underline font-medium">
-                  Your Struggles Aren
+                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  The Small Habits That Quietly Destroy Your Life
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-working-hard-but-nothing-changes-heres-why" className="text-[#2a9df4] hover:underline font-medium">
-                  You
+                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#2a9df4] hover:underline font-medium">
+                  Stop Waiting for Someone Else to Tell You What
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

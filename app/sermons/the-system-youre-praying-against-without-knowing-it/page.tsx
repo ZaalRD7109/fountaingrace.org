@@ -262,33 +262,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#2a9df4] hover:underline font-medium">
-                  They
+                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Nothing Changes No Matter How Hard You Try
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/tired-of-the-same-pain-coming-back-try-this" className="text-[#2a9df4] hover:underline font-medium">
-                  Tired of the Same Pain Coming Back? Try This
+                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Resolution Didn't Fail - You Quit Acting
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/what-no-one-tells-you-about-feeling-unready" className="text-[#2a9df4] hover:underline font-medium">
-                  What no one tells you about feeling unready
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                  You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-feels-like-a-grave-you-cannot-climb-out-of" className="text-[#2a9df4] hover:underline font-medium">
-                  When Life Feels Like a Grave You Cannot Climb Out Of
+                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Does Your Life Keep Collapsing No Matter What You Build?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#2a9df4] hover:underline font-medium">
-                  Why Some Things Refuse to Move
+                <Link href="/sermons/when-knowing-is-the-problem" className="text-[#2a9df4] hover:underline font-medium">
+                  When Knowing Is the Problem
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

@@ -282,33 +282,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/stop-fixing-the-same-problems-over-and-over" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Fixing the Same Problems Over and Over
+                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Nothing Changes No Matter How Hard You Try
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-helping-people-its-making-them-worse" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Helping People (It
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                  You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Waiting for Someone Else to Tell You What
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                  The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-anointing-that-makes-hell-fear-you" className="text-[#2a9df4] hover:underline font-medium">
-                  Why Some People Are Completely Untouchable No Matter What Life Throws
+                <Link href="/sermons/dying-right-good-friday-message" className="text-[#2a9df4] hover:underline font-medium">
+                  Dying Right - What Jesus Did on the Cross That Most People Miss
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids" className="text-[#2a9df4] hover:underline font-medium">
-                  The Pain You Inherited From Your Father Is Quietly Breaking Your Kids
+                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Some Things Refuse to Move
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

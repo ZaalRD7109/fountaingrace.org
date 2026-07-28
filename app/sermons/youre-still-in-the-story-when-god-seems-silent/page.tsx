@@ -306,33 +306,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/youre-working-hard-but-nothing-changes-heres-why" className="text-[#2a9df4] hover:underline font-medium">
-                  You
+                <Link href="/sermons/god-will-finish-what-he-started-in-you-battle" className="text-[#2a9df4] hover:underline font-medium">
+                  When Everything Fights Against What You Were Meant to Build
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/be-a-doer-of-gods-word-not-just-a-hearer" className="text-[#2a9df4] hover:underline font-medium">
-                  Be a Doer of God's Word, Not Just a Hearer
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                  When You Feel Abandoned: Why You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/born-original-marked-by-god-identity-purpose" className="text-[#2a9df4] hover:underline font-medium">
-                  You Were Not Made to Be a Copy of Someone Else
+                <Link href="/sermons/why-the-easy-road-always-leads-to-the-wrong-place" className="text-[#2a9df4] hover:underline font-medium">
+                  Why the Easy Road Always Leads to the Wrong Place
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#2a9df4] hover:underline font-medium">
-                  Everyone
+                <Link href="/sermons/experiencing-gods-presence-direct-divine-communication" className="text-[#2a9df4] hover:underline font-medium">
+                  Can Something Greater Than Yourself Actually Speak Directly to You?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
-                  Helping Someone Actually Keeps Them Stuck
+                <Link href="/sermons/what-if-someone-else-finishes-what-was-meant-for-you" className="text-[#2a9df4] hover:underline font-medium">
+                  What If Someone Else Finishes What Was Meant for You?
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

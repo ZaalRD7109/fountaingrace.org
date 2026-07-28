@@ -279,33 +279,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#2a9df4] hover:underline font-medium">
-                  When Life Deliberately Gets Worse Before It Works Out
+                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Resolution Didn't Fail - You Quit Acting
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-feels-like-a-grave-you-cannot-climb-out-of" className="text-[#2a9df4] hover:underline font-medium">
-                  When Life Feels Like a Grave You Cannot Climb Out Of
+                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Nothing Changes No Matter How Hard You Try
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-you-cant-believe-things-will-get-better-again" className="text-[#2a9df4] hover:underline font-medium">
-                  When You Can't Believe Things Will Get Better Again
+                <Link href="/sermons/when-good-things-block-god-things" className="text-[#2a9df4] hover:underline font-medium">
+                  How Good Opportunities Become the Thing That Stops Your Real Breakthrough
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-jesus-changed-everything-the-birth-that-brings-new-life" className="text-[#2a9df4] hover:underline font-medium">
-                  Your Stuck Life Can Actually Change: Here
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                  The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#2a9df4] hover:underline font-medium">
-                  Your Big Break Is Coming, But You
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                  You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

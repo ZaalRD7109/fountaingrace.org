@@ -267,18 +267,13 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/birth-of-the-great-christmas-sermon-matthew-1-21" className="text-[#2a9df4] hover:underline font-medium">
-                  Born Into Something Greater Than the Life You Are Currently Living
+                <Link href="/sermons/when-knowing-is-the-problem" className="text-[#2a9df4] hover:underline font-medium">
+                  When Knowing Is the Problem
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/born-original-marked-by-god-identity-purpose" className="text-[#2a9df4] hover:underline font-medium">
-                  You Were Not Made to Be a Copy of Someone Else
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/dying-right-good-friday-message" className="text-[#2a9df4] hover:underline font-medium">
-                  Dying Right - What Jesus Did on the Cross That Most People Miss
+                <Link href="/sermons/what-if-someone-else-finishes-what-was-meant-for-you" className="text-[#2a9df4] hover:underline font-medium">
+                  What If Someone Else Finishes What Was Meant for You?
                 </Link>
               </li>
               <li>
@@ -287,13 +282,24 @@ export default function SermonPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#2a9df4] hover:underline font-medium">
-                  How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
+                <Link href="/sermons/your-life-falls-apart-under-pressure-because-of-whats-actually-inside-you" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Life Falls Apart Under Pressure Because of What
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#2a9df4] hover:underline font-medium">
+                  The Spiritual Weapon - Declaration Session
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

@@ -286,33 +286,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/god-will-finish-what-he-started-in-you-battle" className="text-[#2a9df4] hover:underline font-medium">
-                  When Everything Fights Against What You Were Meant to Build
+                <Link href="/sermons/born-original-marked-by-god-identity-purpose" className="text-[#2a9df4] hover:underline font-medium">
+                  You Were Not Made to Be a Copy of Someone Else
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
-                  Helping Someone Actually Keeps Them Stuck
+                <Link href="/sermons/the-silent-assassin-of-destiny" className="text-[#2a9df4] hover:underline font-medium">
+                  The Silent Assassin of Destiny: Overthinking
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#2a9df4] hover:underline font-medium">
-                  How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
+                <Link href="/sermons/you-dont-know-who-you-are-yet" className="text-[#2a9df4] hover:underline font-medium">
+                  You Don't Know Who You Are Yet
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/no-more-waiting-rooms-god-is-live-now" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Waiting for Your Real Life to Begin - It Already Started
+                <Link href="/sermons/when-good-things-block-god-things" className="text-[#2a9df4] hover:underline font-medium">
+                  How Good Opportunities Become the Thing That Stops Your Real Breakthrough
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Waiting for Someone Else to Tell You What
+                <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#2a9df4] hover:underline font-medium">
+                  The Spiritual Weapon - Declaration Session
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

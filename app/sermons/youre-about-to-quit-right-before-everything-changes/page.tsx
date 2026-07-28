@@ -252,33 +252,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/youre-blocked-by-one-thing-and-dont-even-know-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                  When You Feel Abandoned: Why You
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#2a9df4] hover:underline font-medium">
+                  The Real Reason You Feel Like You
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#2a9df4] hover:underline font-medium">
+                  Everyone Around You Is Pretending - Here
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#2a9df4] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#2a9df4] hover:underline font-medium">
-                  You
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/youre-not-beyond-repair-no-matter-what-youve-done" className="text-[#2a9df4] hover:underline font-medium">
-                  You
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/birth-of-the-great-christmas-sermon-matthew-1-21" className="text-[#2a9df4] hover:underline font-medium">
-                  Born Into Something Greater Than the Life You Are Currently Living
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/faith-is-the-router-that-connects-you-to-gods-supply" className="text-[#2a9df4] hover:underline font-medium">
-                  Faith Is the Router That Connects You to God's Supply
+                <Link href="/sermons/you-started-something-and-gave-up-heres-why-you-keep-doing-it" className="text-[#2a9df4] hover:underline font-medium">
+                  You Started Something and Gave Up - Here
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
       <script dangerouslySetInnerHTML={{ __html: "(function(){var f=document.querySelector('iframe[src*=\"youtube.com/embed/\"]');if(!f)return;var base=f.src.split('?')[0];document.querySelectorAll('.sermon-chapter').forEach(function(b){b.addEventListener('click',function(){var t=this.getAttribute('data-start');f.src=base+'?rel=0&autoplay=1&start='+t;f.scrollIntoView({behavior:'smooth',block:'center'});});});})();" }} />

@@ -254,13 +254,13 @@ export default function SermonPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-principle-that-activates-everything" className="text-[#2a9df4] hover:underline font-medium">
-                  The Principle That Activates Everything: Right Action
+                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
+                  Six Invisible Gaps That Wreck Your Life (And How to Close Them)
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
-                  You Were Built for Something Specific - Here Is How to Find It
+                <Link href="/sermons/the-one-conversation-that-stops-relationship-arguments-before-they-start" className="text-[#2a9df4] hover:underline font-medium">
+                  The One Conversation That Stops Relationship Arguments Before They Start
                 </Link>
               </li>
               <li>
@@ -269,13 +269,19 @@ export default function SermonPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-good-things-block-god-things" className="text-[#2a9df4] hover:underline font-medium">
-                  How Good Opportunities Become the Thing That Stops Your Real Breakthrough
+                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
+                  Helping Someone Actually Keeps Them Stuck
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

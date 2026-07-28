@@ -342,33 +342,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/follow-your-inner-voice-discover-your-destiny" className="text-[#2a9df4] hover:underline font-medium">
-                  Follow Your Inner Voice - Discover Your Destiny
+                <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#2a9df4] hover:underline font-medium">
+                  You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/god-will-finish-what-he-started-in-you-battle" className="text-[#2a9df4] hover:underline font-medium">
-                  When Everything Fights Against What You Were Meant to Build
+                <Link href="/sermons/your-pain-has-an-expiration-date" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Pain Has an Expiration Date
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/hosting-the-presence-of-god" className="text-[#2a9df4] hover:underline font-medium">
-                  Why Sunday Feels Different and Monday Feels Like Nothing Changed
+                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#2a9df4] hover:underline font-medium">
+                  You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/if-your-church-does-not-change-you-change-your-church" className="text-[#2a9df4] hover:underline font-medium">
-                  Are You Actually Being Transformed or Just Showing Up?
+                <Link href="/sermons/when-you-cant-believe-things-will-get-better-again" className="text-[#2a9df4] hover:underline font-medium">
+                  When You Can't Believe Things Will Get Better Again
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Waiting for Permission to Become Who You Already Are
+                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#2a9df4] hover:underline font-medium">
+                  You
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

@@ -254,33 +254,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#2a9df4] hover:underline font-medium">
-                  The Real Reason You Feel Like You
+                <Link href="/sermons/the-principle-that-activates-everything" className="text-[#2a9df4] hover:underline font-medium">
+                  The Principle That Activates Everything: Right Action
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-youre-not-moving-forward-and-how-to-break-it" className="text-[#2a9df4] hover:underline font-medium">
-                  Why You're Not Moving Forward - And How to Break It
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
+                  The Principles That Move People Forward Faster
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-are-not-lazy-you-are-a-lot-more" className="text-[#2a9df4] hover:underline font-medium">
-                  You Are Not Lazy - You Are a Lot More
+                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Big Break Is Coming, But You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#2a9df4] hover:underline font-medium">
-                  You Got What You Prayed For But Lost It Anyway
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                  When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it" className="text-[#2a9df4] hover:underline font-medium">
-                  Your Mind Is Broken By Lies You Believed - Here
+                <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#2a9df4] hover:underline font-medium">
+                  You
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

@@ -275,33 +275,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/releasing-his-presence" className="text-[#2a9df4] hover:underline font-medium">
-                  Releasing His Presence: From Container to Conduit
+                <Link href="/sermons/the-danger-of-overnight-success" className="text-[#2a9df4] hover:underline font-medium">
+                  The Danger of Overnight Success and the Power of Long Obedience
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
-                  Six Invisible Gaps That Wreck Your Life (And How to Close Them)
+                <Link href="/sermons/you-are-not-lazy-you-are-a-lot-more" className="text-[#2a9df4] hover:underline font-medium">
+                  You Are Not Lazy - You Are a Lot More
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-fixing-the-same-problems-over-and-over" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Fixing the Same Problems Over and Over
+                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  The Small Habits That Quietly Destroy Your Life
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-to-be-perfect-before-you-matter" className="text-[#2a9df4] hover:underline font-medium">
-                  Stop Waiting to Be Perfect Before You Matter
+                <Link href="/sermons/dont-pray-the-storm-away-why-you-need-the-storm" className="text-[#2a9df4] hover:underline font-medium">
+                  Stop Trying to Escape Your Problems - Here Is What They Are Actually For
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-inheritance-test" className="text-[#2a9df4] hover:underline font-medium">
-                  The Inheritance Test: Will It Reach Three Generations?
+                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  Every Word You Say About Yourself Is Writing Your Future
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

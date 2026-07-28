@@ -255,33 +255,39 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
+                <Link href="/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Mind Is Broken By Lies You Believed - Here
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Paycheck Disappears Every Month - Here
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                  When You Feel Abandoned: Why You
+                </Link>
+              </li>
+              <li>
                 <Link href="/sermons/the-shortcut-thats-ruining-your-life" className="text-[#2a9df4] hover:underline font-medium">
                   The Shortcut That
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-silent-assassin-of-destiny" className="text-[#2a9df4] hover:underline font-medium">
-                  The Silent Assassin of Destiny: Overthinking
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#2a9df4] hover:underline font-medium">
-                  The Spiritual Weapon - Declaration Session
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/tired-of-the-same-pain-coming-back-try-this" className="text-[#2a9df4] hover:underline font-medium">
-                  Tired of the Same Pain Coming Back? Try This
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/when-you-cant-believe-things-will-get-better-again" className="text-[#2a9df4] hover:underline font-medium">
-                  When You Can't Believe Things Will Get Better Again
+                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#2a9df4] hover:underline font-medium">
+                  You
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

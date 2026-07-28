@@ -310,23 +310,8 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/what-no-one-tells-you-about-feeling-unready" className="text-[#2a9df4] hover:underline font-medium">
-                  What no one tells you about feeling unready
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/when-good-things-block-god-things" className="text-[#2a9df4] hover:underline font-medium">
-                  How Good Opportunities Become the Thing That Stops Your Real Breakthrough
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#2a9df4] hover:underline font-medium">
-                  When Life Deliberately Gets Worse Before It Works Out
-                </Link>
-              </li>
-              <li>
-                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
-                  When You Feel Abandoned: Why You
+                <Link href="/sermons/be-a-doer-of-gods-word-not-just-a-hearer" className="text-[#2a9df4] hover:underline font-medium">
+                  Be a Doer of God's Word, Not Just a Hearer
                 </Link>
               </li>
               <li>
@@ -334,9 +319,30 @@ export default function SermonPage() {
                   When Your Success Makes People Jealous: Here
                 </Link>
               </li>
+              <li>
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
+                  The Principles That Move People Forward Faster
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#2a9df4] hover:underline font-medium">
+                  They
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                  You
+                </Link>
+              </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>

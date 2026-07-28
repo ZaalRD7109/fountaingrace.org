@@ -316,28 +316,34 @@ export default function SermonPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
-                  The System You're Praying Against Without Knowing It
-                </Link>
-              </li>
-              <li>
                 <Link href="/sermons/tired-of-the-same-pain-coming-back-try-this" className="text-[#2a9df4] hover:underline font-medium">
                   Tired of the Same Pain Coming Back? Try This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-knowing-is-the-problem" className="text-[#2a9df4] hover:underline font-medium">
-                  When Knowing Is the Problem
+                <Link href="/sermons/why-some-problems-wont-leave-until-you-understand-this" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Some Problems Won't Leave Until You Understand This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-jesus-changed-everything-the-birth-that-brings-new-life" className="text-[#2a9df4] hover:underline font-medium">
-                  Your Stuck Life Can Actually Change: Here
+                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  Every Word You Say About Yourself Is Writing Your Future
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Some Things Refuse to Move
                 </Link>
               </li>
             </ul>
+            <p className="mt-6 text-[#555]">
+              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+                Browse every sermon
+              </Link>
+            </p>
           </div>
         </section>
+
 
       </article>
     </>
