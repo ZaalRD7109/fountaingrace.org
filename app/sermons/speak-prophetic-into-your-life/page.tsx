@@ -108,6 +108,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Every Word You Say About Yourself Is Writing Your Future
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 6 April 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               You are always prophesying. Every time you say &quot;life is hard&quot; or &quot;I can&apos;t do this&quot; or &quot;nothing ever works for me&quot; - you are releasing a prophetic word over your own life. The problem is not that you are not prophesying. The problem is what you are prophesying. This message shows you how to change it.
             </p>

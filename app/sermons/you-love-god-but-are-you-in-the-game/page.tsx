@@ -109,6 +109,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               You Know What You Should Be Doing - So Why Are You Still on the Sidelines?
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 5 April 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               The Sunday before Easter, the crowd cheered Jesus loudly. They threw garments in the road, waved palm branches, and called Him the son of David. A few days later, the same crowd called for His crucifixion. The donkey He rode said nothing. It simply carried Him. That contrast is this message.
             </p>

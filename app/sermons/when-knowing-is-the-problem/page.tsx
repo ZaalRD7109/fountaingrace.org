@@ -109,6 +109,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               When Knowing Is the Problem
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 February 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               This message is not for the ignorant. It is for the person who has attended every service, done every course, read every book, quoted every scripture - and yet nothing in their life has shifted. This is the message James 1 was written for.
             </p>

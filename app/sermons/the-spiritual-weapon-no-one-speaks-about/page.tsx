@@ -124,6 +124,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               The One Weapon Nobody Teaches You That Changes Every Fight
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 19 October 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               If cycles in your family keep repeating - sickness, debt, broken relationships, blocked progress - this message is for you. Jesus stooped and wrote on the ground. Every accuser left. That was not a coincidence. It was a weapon. And it still works.
             </p>

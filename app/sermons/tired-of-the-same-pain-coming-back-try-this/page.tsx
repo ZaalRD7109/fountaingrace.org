@@ -170,6 +170,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Tired of the Same Pain Coming Back? Try This
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 14 December 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               Some pain refuses to leave. The same sickness comes back. The same fights repeat in your home. The money never stretches. This message is for the person who is tired and ready for something to shift at the root.
             </p>

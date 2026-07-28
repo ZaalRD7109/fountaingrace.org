@@ -92,6 +92,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Faith Is the Router That Connects You to God&apos;s Supply
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 8 June 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               The Wi-Fi subscription is paid. The signal is available. But if your router is broken, you receive nothing - not because the supply stopped, but because the connection failed. Faith is your router. When faith breaks down, God&apos;s supply does not disappear. You just lost your connection to it.
             </p>

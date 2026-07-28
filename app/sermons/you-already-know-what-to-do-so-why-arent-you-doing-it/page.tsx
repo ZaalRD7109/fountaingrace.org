@@ -157,6 +157,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               You Already Know What To Do - So Why Aren&apos;t You Doing It?
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 1 March 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               The problem is not that you need more information. You already know what to do. The gap is between knowing and doing - and that gap has a name. This message identifies what is actually keeping you stuck and shows you how to move.
             </p>

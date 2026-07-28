@@ -125,6 +125,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Stuck in a Dead Relationship or Job? Here's Why You Won't Leave"}</h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 28 January 2024</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">{"You feel trapped in circumstances that drain you-a relationship that hurts, a job going nowhere, life not improving. The real problem isn't laziness. It's separation from purpose."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>

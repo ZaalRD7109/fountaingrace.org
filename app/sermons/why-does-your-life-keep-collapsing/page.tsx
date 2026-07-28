@@ -109,6 +109,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Why Does Your Life Keep Collapsing No Matter What You Build?
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 11 January 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               You believe in God. You have for years. But your life keeps breaking in the same places - the same financial pressure, the same relationship patterns, the same collapse under the same kind of storm. You walk out of church feeling strong. Life meets you at the door and you fall again. This message names why.
             </p>

@@ -125,6 +125,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"The Father Who Never Shows Up (And How It Breaks You)"}</h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 21 June 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">{"You felt it your whole life: the emptiness of a father who paid the bills but never showed up. Or maybe you are that father now, repeating the pattern. There's a different way."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>

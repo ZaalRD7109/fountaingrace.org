@@ -125,6 +125,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"How to Know What to Do When Everything Feels Confusing"}</h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 3 November 2024</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">{"You already have access to wisdom beyond your own panicked thoughts. Here's how to hear it and use it to guide your decisions when life gets messy."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>

@@ -151,6 +151,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               You Don&apos;t Know Who You Are Yet
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 3 May 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               You have been living by an identity built from your worst moments, from what people said about you, and from what life has done to you. None of that is who God says you are. This message is about the gap between the version of you that was shaped by pressure and the version God has been forming since before you were born.
             </p>

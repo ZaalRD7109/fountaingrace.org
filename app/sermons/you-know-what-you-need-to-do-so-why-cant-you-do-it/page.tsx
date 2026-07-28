@@ -125,6 +125,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You Know What You Need to Do-So Why Can't You Do It?"}</h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 11 January 2024</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">{"You have the power already. Satan just convinced you that you don't. Here's how to move faster than you ever thought possible."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>

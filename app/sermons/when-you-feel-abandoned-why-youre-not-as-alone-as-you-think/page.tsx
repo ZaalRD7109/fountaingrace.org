@@ -125,6 +125,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"When You Feel Abandoned: Why You're Not as Alone as You Think"}</h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 13 August 2023</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're in a storm and it feels like no one is coming. But presence isn't always visible. Sometimes the most powerful help is the kind you can't see until it saves your life."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>

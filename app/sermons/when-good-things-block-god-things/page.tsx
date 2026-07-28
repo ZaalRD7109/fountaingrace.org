@@ -109,6 +109,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               How Good Opportunities Become the Thing That Stops Your Real Breakthrough
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 8 February 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               You have real responsibilities. Real pressure. Real results to show. And yet, underneath all of it, something feels off. You are busy but not fruitful. Disciplined but not a disciple. Doing many right things in the wrong direction. This message is for the person who is tired - not because they are lazy, but because they are misaligned.
             </p>

@@ -124,6 +124,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               The Spiritual Weapon - Declaration Session
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 26 October 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               This is not a passive message. This is an activation. Following the teaching on the weapon Jesus used in John 8:6 - this session puts it in your hands. Pick up something to hold. Open your mouth. Speak. The earth is programmed to answer you.
             </p>

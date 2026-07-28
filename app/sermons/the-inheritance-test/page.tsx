@@ -108,6 +108,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               The Inheritance Test: Will It Reach Three Generations?
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 8 September 2024</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               Proverbs 13:22 says a good man leaves an inheritance to his children&apos;s children. Not his children - his children&apos;s children. Most people leave money. God is asking for more than that. He is asking for systems, character, and the kind of wisdom that multiplies what it receives rather than spending it back down to zero.
             </p>

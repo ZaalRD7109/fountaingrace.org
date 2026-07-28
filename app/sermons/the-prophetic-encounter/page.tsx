@@ -108,6 +108,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               You Were Built for Something Specific - Here Is How to Find It
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 23 February 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               2 Timothy 1:6 does not tell you to go find the gift. It tells you to stir up the gift that is already in you. The problem is not that God withheld something. The problem is that fear, comparison, and the wrong season buried what was already there. This message is about getting it back out.
             </p>

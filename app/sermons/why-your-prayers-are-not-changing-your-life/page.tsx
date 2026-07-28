@@ -109,6 +109,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Why Nothing Changes No Matter How Hard You Try
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 4 January 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               We have been preaching. Nothing has changed. We have been prophesying. Nothing has changed. We have been praying over you. Nothing has changed. At some point, the honest question has to be asked: what is missing between the prayer and the result?
             </p>

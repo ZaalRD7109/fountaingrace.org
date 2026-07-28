@@ -157,6 +157,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Why the Easy Road Always Leads to the Wrong Place
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 17 May 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               Every shortcut you have taken has cost more than it promised. And somehow you ended up further back than where you started. This message explains exactly why the easy road always delivers the wrong destination - and what the real road actually requires.
             </p>

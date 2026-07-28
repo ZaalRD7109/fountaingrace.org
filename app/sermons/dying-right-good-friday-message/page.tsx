@@ -151,6 +151,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Dying Right - What Jesus Did on the Cross That Most People Miss
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 3 April 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               Most people see Good Friday as a tragedy. It was not. Every word Jesus spoke from the cross was deliberate. He was not reacting to what was happening to Him - He was completing what He came to do. This message looks at what it means to face an ending the right way.
             </p>

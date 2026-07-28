@@ -108,6 +108,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Releasing His Presence: From Container to Conduit
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 29 June 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               You sense the presence of God in church. Your heart burns. Something moves in you. And then you go home - and your family is ice cold. Your workplace is unchanged. The fire that was in the building did not travel with you. This message is about why that happens and what changes when you move from containing the presence to releasing it.
             </p>

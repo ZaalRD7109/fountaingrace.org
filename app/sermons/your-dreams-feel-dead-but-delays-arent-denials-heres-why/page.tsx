@@ -125,6 +125,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Dreams Feel Dead, But Delays Aren't Denials-Here's Why"}</h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 March 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're doing everything right. Your intentions are solid. Yet life keeps hurting and progress stalls. What if the real answer isn't more hustle-it's understanding what suffering actually does in a life built to matter?"}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>

@@ -155,6 +155,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               The Principle That Activates Everything: Right Action
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 March 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               You have prayed. You have believed. You have attended every service. But something is still not activating. The missing piece is almost always the same: the right action, taken at the right time, in the right direction. This is the principle that turns faith into results.
             </p>

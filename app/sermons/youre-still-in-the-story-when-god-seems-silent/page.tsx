@@ -149,6 +149,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               You&apos;re Still in the Story: When It Looks Like God Is Silent
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 22 June 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               The silence does not mean He stopped. It does not mean you failed. It does not mean the promise is cancelled. Romans 8:28 says all things - not some things - work together for good. You are still in the story. The Author has not closed the book.
             </p>

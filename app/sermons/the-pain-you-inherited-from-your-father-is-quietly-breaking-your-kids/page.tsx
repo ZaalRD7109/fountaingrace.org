@@ -125,6 +125,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"The Pain You Inherited From Your Father Is Quietly Breaking Your Kids"}</h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 June 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">{"Your father's unresolved pain doesn't just hurt him-it shapes how you parent, what you believe about yourself, and what your children will inherit. This message shows why presence and healing matter more than you think."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>

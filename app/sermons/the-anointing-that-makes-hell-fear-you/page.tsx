@@ -109,6 +109,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Why Some People Are Completely Untouchable No Matter What Life Throws
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 24 August 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               The anointing is not eloquent words. It is not a confident stage presence. Isaiah 10:27 says the yoke shall be destroyed because of it - not because of you. This message is about what the anointing actually is, what it does, and why you need it in every area of your life.
             </p>

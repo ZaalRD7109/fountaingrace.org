@@ -108,6 +108,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Hearing the Right Things and Still Getting Them Wrong - Here Is Why
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 9 February 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               The problem is not that God has gone silent. The problem is translation. Numbers 12:6 says God makes himself known through visions and speaks in dreams - but receiving the vision is only half of it. Interpreting it correctly is what changes your life. This message teaches you to read the grammar of the Spirit.
             </p>

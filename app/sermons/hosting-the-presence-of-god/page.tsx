@@ -109,6 +109,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Why Sunday Feels Different and Monday Feels Like Nothing Changed
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 22 June 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               We live in a world full of connections but very little communion. People scroll all night and still feel empty. Christians attend services and go home unchanged. The problem is not the absence of God - it is that we have confused performance for presence. This message is about what changes when you stop performing and start hosting.
             </p>

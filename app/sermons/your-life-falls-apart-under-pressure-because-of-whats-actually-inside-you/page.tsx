@@ -125,6 +125,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Life Falls Apart Under Pressure Because of What's Actually Inside You"}</h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 18 January 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">{"You know all the right things to say and do in public. But the moment real pressure hits-financial stress, relationship conflict, temptation-you fall apart. That's not a sign you're broken. It's a sign your foundation is built wrong."}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>

@@ -113,6 +113,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Follow Your Inner Voice - Discover Your Destiny
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 24 February 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               Before you were born, God already set you apart. He did not research you on Google. He formed you, made you, and wrote what your life would look like. This message is for the person whose inner voice keeps saying &quot;go&quot; - while other voices keep saying &quot;stop.&quot;
             </p>

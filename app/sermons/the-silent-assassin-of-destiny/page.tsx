@@ -109,6 +109,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               The Silent Assassin of Destiny: Overthinking
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 31 August 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               The devil cannot touch you unless you allow him to. His entry point is not your circumstances - it is your mind. One comment, one setback, one look from someone - and your mind is already five steps ahead, building a case against your own future.
             </p>

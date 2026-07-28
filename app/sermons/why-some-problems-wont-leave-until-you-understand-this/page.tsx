@@ -142,6 +142,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Why Some Problems Won&apos;t Leave Until You Understand This
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 19 April 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               Some problems keep coming back. You pray, you fast, you believe - and yet it returns. The reason is almost never what you think. Revelation 12:11 says they overcame by a specific means. Not by effort. Not by waiting. By something most people have not yet applied.
             </p>

@@ -92,6 +92,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               The System You&apos;re Praying Against Without Knowing It
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 18 January 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               Your prayers go up. Nothing moves. You have obeyed when God asked. You have fasted. You have believed. But something in the system feels locked. This message explains why - and it is not what most people expect to hear.
             </p>

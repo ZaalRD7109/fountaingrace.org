@@ -170,6 +170,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Feeling Empty and Exhausted? How to Find Strength When You Have Nothing Left
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 26 April 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               You feel tired. You feel empty. You came here because something inside is dry and you do not know where else to turn. This message is for the person carrying stress silently, who feels like there is nothing left to give.
             </p>

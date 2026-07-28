@@ -186,6 +186,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               {sd.headline}
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 1 June 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               {sd.intro}
             </p>

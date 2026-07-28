@@ -108,6 +108,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               You Are Not Lazy - You Are a Lot More
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 28 January 2024</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               Somewhere along the way, you accepted a label. Lazy. Incapable. Behind. And now that label has become a confession - something you say about yourself without even thinking. This message challenges that label at its root. You are not what your worst season called you. You are what God says you are.
             </p>

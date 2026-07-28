@@ -125,6 +125,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You're About to Quit Right Before Everything Changes"}</h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 10 July 2022</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">{"You've been working all night with nothing to show for it. Your business stalls. Your relationship feels broken. Your health won't improve. The temptation to quit is overwhelming. But what if your breakthrough is closer than you think?"}</p>
             <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>

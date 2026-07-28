@@ -109,6 +109,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Stop Waiting for Your Real Life to Begin - It Already Started
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 28 September 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               Everyone knows the frustration of a waiting room. The buffering screen. The livestream that won&apos;t load. You are hungry for what is on the other side - and the delay is unbearable. This message says God is not buffering. He is already live. The question is whether you have tuned in.
             </p>

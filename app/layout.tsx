@@ -64,6 +64,39 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
         <link rel="dns-prefetch" href="https://challenges.cloudflare.com" />
+        {/* Site-wide Organization entity. Read by Google and by the AI answer
+            engines to work out who publishes this site and whether to trust it
+            enough to cite. It existed on 3 sermon pages by accident and nowhere
+            site-wide, so it is declared once here instead. */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': ['Organization', 'Church'],
+              '@id': 'https://www.fountaingrace.org/#organization',
+              name: 'Fountain of Grace International',
+              alternateName: 'FGI',
+              url: 'https://www.fountaingrace.org',
+              logo: 'https://www.fountaingrace.org/logo.webp',
+              email: 'info@fountaingrace.org',
+              telephone: '+27752592555',
+              address: {
+                '@type': 'PostalAddress',
+                streetAddress: '323 B Danie Theron Street',
+                addressLocality: 'Pretoria North',
+                addressRegion: 'Gauteng',
+                postalCode: '0182',
+                addressCountry: 'ZA',
+              },
+              sameAs: [
+                'https://www.facebook.com/FGIPta/',
+                'https://www.youtube.com/@fgipta',
+                'https://www.tiktok.com/@fountainofgraceintl',
+              ],
+            }),
+          }}
+        />
       </head>
       <body className={poppins.className}>
         {/* Skip to main content - accessibility for keyboard and screen reader users */}

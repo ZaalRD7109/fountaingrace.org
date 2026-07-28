@@ -113,6 +113,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               What If Someone Else Finishes What Was Meant for You?
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 22 February 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               This message is not about religion. It is about life. You know you are capable of more. You keep postponing. What if the window closes?
             </p>

@@ -92,6 +92,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Your Resolution Didn&apos;t Fail - You Quit Acting
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 25 January 2026</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               Every year, the same cycle. Loud declaration on day one. Budget apps downloaded. Walking trackers activated. Step goals set. And by the third week - the alarm is snoozed, the app is ignored, and the goal is quietly shelved. The resolution was not the problem. Something else stopped it.
             </p>

@@ -109,6 +109,7 @@ export default function SermonPage() {
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               The Danger of Overnight Success and the Power of Long Obedience
             </h1>
+            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 18 May 2025</p>
             <p className="text-white/80 text-lg leading-relaxed mb-4">
               Nobody becomes an overnight success overnight. It just looks that way from the outside. The visible result came from years of unseen roots going deeper. This message is not against success - it is about the danger of pursuing the result while skipping the process that makes it possible to hold what God gives you.
             </p>
