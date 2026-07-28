@@ -245,6 +245,39 @@ export default function SermonPage() {
             </details>
           </div>
         </section>
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
+            <ul className="space-y-3 list-disc pl-5 text-[#333]">
+              <li>
+                <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#2a9df4] hover:underline font-medium">
+                  Everyone
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/everything-crumbling-at-once-heres-what-youre-actually-walking-on" className="text-[#2a9df4] hover:underline font-medium">
+                  Everything Crumbling at Once? Here
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/faith-is-the-router-that-connects-you-to-gods-supply" className="text-[#2a9df4] hover:underline font-medium">
+                  Faith Is the Router That Connects You to God's Supply
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/god-will-finish-what-he-started-in-you-battle" className="text-[#2a9df4] hover:underline font-medium">
+                  When Everything Fights Against What You Were Meant to Build
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/pruning-for-progress" className="text-[#2a9df4] hover:underline font-medium">
+                  Pruning for Progress: From Bare Branch to Bountiful Blessing
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+
       </article>
     </>
   )

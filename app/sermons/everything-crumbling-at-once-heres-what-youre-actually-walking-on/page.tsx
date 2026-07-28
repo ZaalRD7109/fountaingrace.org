@@ -245,6 +245,39 @@ export default function SermonPage() {
             </details>
           </div>
         </section>
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
+            <ul className="space-y-3 list-disc pl-5 text-[#333]">
+              <li>
+                <Link href="/sermons/experiencing-gods-presence-direct-divine-communication" className="text-[#2a9df4] hover:underline font-medium">
+                  Can Something Greater Than Yourself Actually Speak Directly to You?
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/faith-is-the-router-that-connects-you-to-gods-supply" className="text-[#2a9df4] hover:underline font-medium">
+                  Faith Is the Router That Connects You to God's Supply
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/feeling-empty-and-exhausted-how-to-find-strength-when-you-have-nothing" className="text-[#2a9df4] hover:underline font-medium">
+                  Feeling Empty and Exhausted? How to Find Strength When You Have Nothing Left
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/hosting-the-presence-of-god" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Sunday Feels Different and Monday Feels Like Nothing Changed
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
+                  Six Invisible Gaps That Wreck Your Life (And How to Close Them)
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+
       </article>
       <script dangerouslySetInnerHTML={{ __html: "(function(){var f=document.querySelector('iframe[src*=\"youtube.com/embed/\"]');if(!f)return;var base=f.src.split('?')[0];document.querySelectorAll('.sermon-chapter').forEach(function(b){b.addEventListener('click',function(){var t=this.getAttribute('data-start');f.src=base+'?rel=0&autoplay=1&start='+t;f.scrollIntoView({behavior:'smooth',block:'center'});});});})();" }} />
     </>

@@ -247,6 +247,39 @@ export default function SermonPage() {
             </details>
           </div>
         </section>
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
+            <ul className="space-y-3 list-disc pl-5 text-[#333]">
+              <li>
+                <Link href="/sermons/your-past-failures-dont-define-your-future-heres-why" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Past Failures Don
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/your-past-mistakes-dont-determine-your-future" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Past Mistakes Don
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Resolution Didn't Fail - You Quit Acting
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/youre-blocked-by-one-thing-and-dont-even-know-it" className="text-[#2a9df4] hover:underline font-medium">
+                  You
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/born-original-marked-by-god-identity-purpose" className="text-[#2a9df4] hover:underline font-medium">
+                  You Were Not Made to Be a Copy of Someone Else
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+
       </article>
       <script dangerouslySetInnerHTML={{ __html: "(function(){var f=document.querySelector('iframe[src*=\"youtube.com/embed/\"]');if(!f)return;var base=f.src.split('?')[0];document.querySelectorAll('.sermon-chapter').forEach(function(b){b.addEventListener('click',function(){var t=this.getAttribute('data-start');f.src=base+'?rel=0&autoplay=1&start='+t;f.scrollIntoView({behavior:'smooth',block:'center'});});});})();" }} />
     </>

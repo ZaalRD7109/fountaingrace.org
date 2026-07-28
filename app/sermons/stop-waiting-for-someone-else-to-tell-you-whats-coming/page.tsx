@@ -248,6 +248,39 @@ export default function SermonPage() {
             </details>
           </div>
         </section>
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
+            <ul className="space-y-3 list-disc pl-5 text-[#333]">
+              <li>
+                <Link href="/sermons/stop-waiting-to-be-perfect-before-you-matter" className="text-[#2a9df4] hover:underline font-medium">
+                  Stop Waiting to Be Perfect Before You Matter
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/stop-wasting-energy-on-people-who-wont-listen" className="text-[#2a9df4] hover:underline font-medium">
+                  Stop Wasting Energy on People Who Won
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/the-anointing-that-makes-hell-fear-you" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Some People Are Completely Untouchable No Matter What Life Throws
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life" className="text-[#2a9df4] hover:underline font-medium">
+                  The Hidden Cost of Staying Silent at Work, Home, and in Life
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
+                  The Principles That Move People Forward Faster
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+
       </article>
     </>
   )

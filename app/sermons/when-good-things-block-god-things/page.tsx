@@ -271,6 +271,39 @@ export default function SermonPage() {
             </details>
           </div>
         </section>
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
+            <ul className="space-y-3 list-disc pl-5 text-[#333]">
+              <li>
+                <Link href="/sermons/when-knowing-is-the-problem" className="text-[#2a9df4] hover:underline font-medium">
+                  When Knowing Is the Problem
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#2a9df4] hover:underline font-medium">
+                  When Life Deliberately Gets Worse Before It Works Out
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                  When Life Knocks You Down, Does Integrity Actually Matter
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Does Your Life Keep Collapsing No Matter What You Build?
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                  Why Nothing Changes No Matter How Hard You Try
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+
       </article>
     </>
   )

@@ -249,6 +249,39 @@ export default function SermonPage() {
             </details>
           </div>
         </section>
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
+            <ul className="space-y-3 list-disc pl-5 text-[#333]">
+              <li>
+                <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#2a9df4] hover:underline font-medium">
+                  The Real Reason You Feel Like You
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/why-youre-not-moving-forward-and-how-to-break-it" className="text-[#2a9df4] hover:underline font-medium">
+                  Why You're Not Moving Forward - And How to Break It
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/you-are-not-lazy-you-are-a-lot-more" className="text-[#2a9df4] hover:underline font-medium">
+                  You Are Not Lazy - You Are a Lot More
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#2a9df4] hover:underline font-medium">
+                  You Got What You Prayed For But Lost It Anyway
+                </Link>
+              </li>
+              <li>
+                <Link href="/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it" className="text-[#2a9df4] hover:underline font-medium">
+                  Your Mind Is Broken By Lies You Believed - Here
+                </Link>
+              </li>
+            </ul>
+          </div>
+        </section>
+
       </article>
     </>
   )
