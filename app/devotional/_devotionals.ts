@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "will-the-small-things-i-did-for-my-family-actually-matter-in-the-end",
+    "date": "2026-07-29",
+    "dateDisplay": "29 July 2026",
+    "day": 210,
+    "headline": "Will the small things I did for my family actually matter in the end?",
+    "verseRef": "Psalm 90:17",
+    "card": "/devotional-cards/will-the-small-things-i-did-for-my-family-actually-matter-in-the-end.jpg"
+  },
+  {
     "slug": "is-god-actually-doing-something-with-the-mess-in-my-home",
     "date": "2026-07-28",
     "dateDisplay": "28 July 2026",
