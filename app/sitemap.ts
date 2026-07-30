@@ -136,6 +136,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - daily library, one page per devotional)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/devotional/why-does-money-stress-feel-like-it-never-fully-goes-away`, lastModified: new Date('2026-07-30'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/will-the-small-things-i-did-for-my-family-actually-matter-in-the-end`, lastModified: new Date('2026-07-29'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/is-god-actually-doing-something-with-the-mess-in-my-home`, lastModified: new Date('2026-07-28'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/am-i-actually-present-at-home-or-just-physically-there`, lastModified: new Date('2026-07-27'), changeFrequency: 'monthly', priority: 0.6 },

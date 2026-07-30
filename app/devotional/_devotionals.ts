@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "why-does-money-stress-feel-like-it-never-fully-goes-away",
+    "date": "2026-07-30",
+    "dateDisplay": "30 July 2026",
+    "day": 211,
+    "headline": "Why does money stress feel like it never fully goes away?",
+    "verseRef": "Philippians 4:19",
+    "card": "/devotional-cards/why-does-money-stress-feel-like-it-never-fully-goes-away.jpg"
+  },
+  {
     "slug": "will-the-small-things-i-did-for-my-family-actually-matter-in-the-end",
     "date": "2026-07-29",
     "dateDisplay": "29 July 2026",
