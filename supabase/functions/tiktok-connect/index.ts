@@ -74,7 +74,45 @@ async function loadTokens(): Promise<Record<string, string> | null> {
     headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` },
   });
   const rows = await r.json();
-  return Array.isArray(rows) && rows.length ? rows[0] : null;
+  const t = Array.isArray(rows) && rows.length ? rows[0] : null;
+  if (!t) return null;
+
+  // A TikTok access token lasts 24 HOURS. The refresh token lasts a year.
+  // Without this block the whole integration works for exactly one day after
+  // connecting and then fails with "The access token is invalid or not found",
+  // which is precisely what happened between 2026-07-24 and 2026-07-31 while
+  // nothing reported it. Refresh a minute early to avoid an edge-of-expiry miss.
+  const expiresAt = t.expires_at ? Date.parse(t.expires_at) : 0;
+  if (expiresAt && expiresAt - 60_000 > Date.now()) return t;
+  if (!t.refresh_token) return t; // nothing we can do; the caller reports the failure
+
+  const { client_key, client_secret } = await creds();
+  const rr = await fetch("https://open.tiktokapis.com/v2/oauth/token/", {
+    method: "POST",
+    headers: { "content-type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams({
+      client_key,
+      client_secret,
+      grant_type: "refresh_token",
+      refresh_token: t.refresh_token,
+    }),
+  });
+  const rj = await rr.json();
+  if (!rj?.access_token) {
+    // Hand back the stale token so the caller surfaces TikTok's own error
+    // rather than a vague one from us.
+    return t;
+  }
+
+  const fresh = {
+    access_token: rj.access_token,
+    refresh_token: rj.refresh_token ?? t.refresh_token,
+    open_id: rj.open_id ?? t.open_id,
+    scope: rj.scope ?? t.scope,
+    expires_at: new Date(Date.now() + (Number(rj.expires_in) || 86400) * 1000).toISOString(),
+  };
+  await saveTokens(fresh);
+  return { ...t, ...fresh };
 }
 
 Deno.serve(async (req) => {
