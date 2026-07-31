@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "why-do-i-feel-ashamed-that-i-am-struggling-financially",
+    "date": "2026-07-31",
+    "dateDisplay": "31 July 2026",
+    "day": 212,
+    "headline": "Why do I feel ashamed that I am struggling financially?",
+    "verseRef": "Psalm 34:10",
+    "card": "/devotional-cards/why-do-i-feel-ashamed-that-i-am-struggling-financially.jpg"
+  },
+  {
     "slug": "why-does-money-stress-feel-like-it-never-fully-goes-away",
     "date": "2026-07-30",
     "dateDisplay": "30 July 2026",
