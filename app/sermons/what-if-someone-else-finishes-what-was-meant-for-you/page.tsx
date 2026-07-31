@@ -61,7 +61,7 @@ const jsonLd = [
       {
         '@type': 'Question',
         name: "What does Esther 4:14 actually mean - the full verse, not just 'such a time as this'?",
-        acceptedAnswer: { '@type': 'Answer', text: "The full verse says if you remain silent, deliverance will come from another place - and you and your house will be destroyed. The opportunity is real. But so is the consequence of not taking it. This is the core of this message from Fountain of Grace International." },
+        acceptedAnswer: { '@type': 'Answer', text: "The full verse says that if thou altogether holdest thy peace at this time, then shall there enlargement and deliverance arise to the Jews from another place, but thou and thy father's house shall be destroyed. The opportunity is real. But so is the consequence of not taking it. This is the core of this message from Fountain of Grace International." },
       },
       {
         '@type': 'Question',
@@ -234,7 +234,7 @@ export default function SermonPage() {
                 },
                 {
                   q: 'What does Esther 4:14 actually mean - the full verse, not just "such a time as this"?',
-                  a: 'The full verse says if you remain silent, deliverance will come from another place - and you and your house will be destroyed. The opportunity is real. But so is the consequence of not taking it. This is the core of this message from Fountain of Grace International.',
+                  a: 'The full verse says that if thou altogether holdest thy peace at this time, then shall there enlargement and deliverance arise to the Jews from another place, but thou and thy father\'s house shall be destroyed. The opportunity is real. But so is the consequence of not taking it. This is the core of this message from Fountain of Grace International.',
                 },
                 {
                   q: 'Was Jonah replaced or substituted when he ran from God?',

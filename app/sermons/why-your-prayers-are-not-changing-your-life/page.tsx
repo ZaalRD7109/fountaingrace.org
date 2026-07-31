@@ -171,7 +171,7 @@ export default function SermonPage() {
 
             <h2 className="text-xl font-bold text-[#2a9df4] mb-3">A Prophetic Word Only Activates With Action</h2>
             <p className="text-[#555] leading-relaxed mb-4">
-              A prophetic word only becomes real when two things are present: faith and a corresponding action step. The word alone is a seed in your hand. Faith alone, without movement, does not plant it. James 2:17 - &quot;Faith by itself, if it does not have works, is dead.&quot;
+              A prophetic word only becomes real when two things are present: faith and a corresponding action step. The word alone is a seed in your hand. Faith alone, without movement, does not plant it. James 2:17 - &quot;Even so faith, if it hath not works, is dead, being alone.&quot;
             </p>
             <p className="text-[#555] leading-relaxed mb-4">
               The image that makes this clear: you have the foundation. You have the bricks. You have the mortar. You even have the building plans. But if you never move a single brick to the mortar, the building remains an idea. Years pass. The foundation is still there. The vision is still there. But it is still just a foundation. The action is what builds.

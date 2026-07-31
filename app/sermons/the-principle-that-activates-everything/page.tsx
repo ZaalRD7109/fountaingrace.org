@@ -84,7 +84,7 @@ const jsonLd = [
         name: 'Why do some believers work hard but still see no results?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'The problem is usually not the effort - it is the direction. Proverbs 13:4 says the soul of the sluggard craves and gets nothing, while the diligent is richly supplied. But even diligent effort in the wrong direction produces nothing. Matthew 9:37-38 says the harvest is plenteous but the labourers are few - meaning the harvest is always available, but workers must be positioned correctly to access it. Pastor Ricardo Zaal at Fountain of Grace International teaches that right action requires four things: prayer first, wisdom to identify the correct direction, positioning yourself correctly, and then moving immediately.',
+          text: 'The problem is usually not the effort - it is the direction. Proverbs 13:4 says the soul of the sluggard desireth, and hath nothing, but the soul of the diligent shall be made fat. But even diligent effort in the wrong direction produces nothing. Matthew 9:37-38 says the harvest is plenteous but the labourers are few - meaning the harvest is always available, but workers must be positioned correctly to access it. Pastor Ricardo Zaal at Fountain of Grace International teaches that right action requires four things: prayer first, wisdom to identify the correct direction, positioning yourself correctly, and then moving immediately.',
         },
       },
       {
@@ -92,7 +92,7 @@ const jsonLd = [
         name: 'What does James 2:17 mean by faith without works is dead?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "James 2:17 says faith by itself, if it does not have works, is dead. This does not mean you earn God's provision. It means faith was never designed to operate without a corresponding action. Noah believed the flood was coming - and built the ark. The belief and the building worked together. The ark without the belief is just wood. The belief without the ark is just a feeling. Right action is not works-based salvation - it is the activation mechanism that faith requires to produce results in the physical world.",
+          text: "James 2:17 says that even so faith, if it hath not works, is dead, being alone. This does not mean you earn God's provision. It means faith was never designed to operate without a corresponding action. Noah believed the flood was coming - and built the ark. The belief and the building worked together. The ark without the belief is just wood. The belief without the ark is just a feeling. Right action is not works-based salvation - it is the activation mechanism that faith requires to produce results in the physical world.",
         },
       },
     ],
@@ -104,7 +104,7 @@ const principles = [
     n: 1,
     title: 'Faith Requires Correct Action',
     scripture: 'James 2:17',
-    body: '"Faith by itself, if it does not have works, is dead." Believing that God will help you is not the same as doing the right thing that creates the help God will send. Noah believed the flood was coming - and built the ark. That is the pattern. Belief activates movement, and movement activates provision.',
+    body: '"Even so faith, if it hath not works, is dead, being alone." Believing that God will help you is not the same as doing the right thing that creates the help God will send. Noah believed the flood was coming - and built the ark. That is the pattern. Belief activates movement, and movement activates provision.',
   },
   {
     n: 2,
@@ -128,7 +128,7 @@ const principles = [
     n: 5,
     title: 'Laziness Blocks Progress',
     scripture: 'Proverbs 13:4',
-    body: '"The soul of the sluggard craves, and gets nothing, while the soul of the diligent is richly supplied." Desire is not enough. Craving the result without doing the work produces nothing. God honours the diligent. He can give you a Lamborghini - but if you have no income, the rates on it will take it back. Right action creates the context for what God provides to remain.',
+    body: '"The soul of the sluggard desireth, and hath nothing: but the soul of the diligent shall be made fat." Desire is not enough. Craving the result without doing the work produces nothing. God honours the diligent. He can give you a Lamborghini - but if you have no income, the rates on it will take it back. Right action creates the context for what God provides to remain.',
   },
   {
     n: 6,
@@ -182,7 +182,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <p className="text-[#555] leading-relaxed text-lg mb-4">
-              Many people say, &quot;I have done everything.&quot; But when you ask what their everything was, it often turns out to be effort in the wrong direction, or the right action taken too late, or faith without the corresponding work. James 2:17 is not complicated: &quot;Faith by itself, if it does not have works, is dead.&quot; Right action is not optional - it is the activating mechanism.
+              Many people say, &quot;I have done everything.&quot; But when you ask what their everything was, it often turns out to be effort in the wrong direction, or the right action taken too late, or faith without the corresponding work. James 2:17 is not complicated: &quot;Even so faith, if it hath not works, is dead, being alone.&quot; Right action is not optional - it is the activating mechanism.
             </p>
             <p className="text-[#555] leading-relaxed mb-10">
               This message builds on{' '}

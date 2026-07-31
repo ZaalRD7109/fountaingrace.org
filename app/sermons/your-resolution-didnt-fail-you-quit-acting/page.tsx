@@ -66,7 +66,7 @@ const jsonLd = [
         name: 'What is the difference between motivation and discipline?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Motivation responds to how you feel. Discipline executes regardless of how you feel. Resolutions that depend on motivation always fade because the feeling that launched them cannot sustain itself. Proverbs 13:4 says the soul of the diligent is richly supplied. Diligence is not inspired - it is chosen, consistently, over time.',
+          text: 'Motivation responds to how you feel. Discipline executes regardless of how you feel. Resolutions that depend on motivation always fade because the feeling that launched them cannot sustain itself. Proverbs 13:4 says the soul of the diligent shall be made fat. Diligence is not inspired - it is chosen, consistently, over time.',
         },
       },
     ],
@@ -156,7 +156,7 @@ export default function SermonPage() {
               If you are thirsty, you know exactly what to do - drink water. But if you cannot open the cap, the knowing is useless. Many people are in that exact position spiritually and practically. They know the vision. They know the scripture. They know what obedience looks like. But there is a gap between knowing and executing - and that gap is filled with unaddressed resistance.
             </p>
             <p className="text-[#555] leading-relaxed mb-8">
-              The resistance has a name: overload. You are not stuck because you have no information. You are stuck because you are carrying too much at once with no system for moving any of it. Proverbs 13:4 puts it plainly - &quot;The soul of the sluggard craves, and gets nothing, while the soul of the diligent is richly supplied.&quot; Craving without direction produces nothing. Diligence with direction produces supply.
+              The resistance has a name: overload. You are not stuck because you have no information. You are stuck because you are carrying too much at once with no system for moving any of it. Proverbs 13:4 puts it plainly - &quot;The soul of the sluggard desireth, and hath nothing: but the soul of the diligent shall be made fat.&quot; Craving without direction produces nothing. Diligence with direction produces supply.
             </p>
 
             <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Motivation Wears Off - Consistency Does Not</h2>
@@ -202,7 +202,7 @@ export default function SermonPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-[#1a1a1a] mb-2">How do you break a cycle of starting and stopping?</h3>
-                <p className="text-[#555] leading-relaxed text-sm">The cycle breaks when you move from motivation-based action to commitment-based action. Pick one specific thing. Commit to it for 30 days regardless of how you feel. Proverbs 13:4 - the soul of the diligent is richly supplied. Diligence is not something you feel - it is something you choose, consistently, over time.</p>
+                <p className="text-[#555] leading-relaxed text-sm">The cycle breaks when you move from motivation-based action to commitment-based action. Pick one specific thing. Commit to it for 30 days regardless of how you feel. Proverbs 13:4 - the soul of the diligent shall be made fat. Diligence is not something you feel - it is something you choose, consistently, over time.</p>
               </div>
             </div>
           </div>
