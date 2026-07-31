@@ -247,7 +247,17 @@ Deno.serve(async (req) => {
         body: JSON.stringify({ posted: new Date().toISOString(), publish_id: pj?.data?.publish_id ?? null }),
       });
 
-      return json({ ok: true, publish_id: pj?.data?.publish_id ?? null });
+      // Hand the caption back. The inbox (draft) endpoint accepts the VIDEO ONLY -
+      // it takes no title, caption or tags, because the user writes those in the
+      // TikTok app. Only direct-post carries a caption, and that needs the app
+      // audit we have not passed. So the caller relays the caption to Ricardo's
+      // phone to copy and paste, otherwise the wording we generated is wasted.
+      return json({
+        ok: true,
+        publish_id: pj?.data?.publish_id ?? null,
+        title: clip.title ?? null,
+        caption: clip.caption ?? null,
+      });
     }
 
     return json({ error: "unknown action" }, 400);
