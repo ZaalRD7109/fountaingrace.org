@@ -2,6 +2,8 @@
 
 import { useEffect } from 'react'
 
+import { classifyWhatsAppHref, trackWhatsAppTap } from '@/lib/tracking'
+
 function loadGA4() {
   if (document.getElementById('fgi-ga4')) return
   const s = document.createElement('script')
@@ -59,7 +61,33 @@ function loadAll() {
   loadMetaPixel()
 }
 
+/**
+ * One document-level listener covers every WhatsApp link on the site.
+ *
+ * There are over 200 pages carrying a wa.me link and more are generated every
+ * week by the sermon and devotional engines, so editing them individually would
+ * be wrong twice over: it would miss the ones written tomorrow. This catches
+ * every existing link and every future one, including links inside content that
+ * was rendered server-side.
+ */
+function whatsAppClickListener(e: MouseEvent) {
+  const target = e.target as HTMLElement | null
+  const anchor = target?.closest?.('a') as HTMLAnchorElement | null
+  if (!anchor) return
+  const kind = classifyWhatsAppHref(anchor.getAttribute('href') || '')
+  if (!kind) return
+  trackWhatsAppTap(kind, anchor.href)
+}
+
 export default function AnalyticsLoader() {
+  useEffect(() => {
+    // Capture phase, so it still records even if something downstream stops
+    // the event. It never calls preventDefault, so the tap always goes through
+    // to WhatsApp exactly as before.
+    document.addEventListener('click', whatsAppClickListener, true)
+    return () => document.removeEventListener('click', whatsAppClickListener, true)
+  }, [])
+
   useEffect(() => {
     // Load analytics by default (privacy-safe: Clarity masks names/emails/typed text),
     // UNLESS the visitor has explicitly declined. Opt-out model so Clarity + GA4 actually
