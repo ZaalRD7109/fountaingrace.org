@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "is-god-actually-aware-of-what-i-cannot-afford-right-now",
+    "date": "2026-08-01",
+    "dateDisplay": "1 August 2026",
+    "day": 213,
+    "headline": "Is God actually aware of what I cannot afford right now?",
+    "verseRef": "Matthew 6:31-32",
+    "card": "/devotional-cards/is-god-actually-aware-of-what-i-cannot-afford-right-now.jpg"
+  },
+  {
     "slug": "why-do-i-feel-ashamed-that-i-am-struggling-financially",
     "date": "2026-07-31",
     "dateDisplay": "31 July 2026",
