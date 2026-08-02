@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "youre-burning-out-because-nobody-told-you-when-to-stop",
+    title: "You're Burning Out Because Nobody Told You When to Stop",
+    date: "2026-08-02",
+    dateDisplay: "2 August 2026",
+    intro:
+      "You pour yourself out endlessly for others, feel guilty resting, yet collapse anyway. Pastor Ricardo Zaal reveals where Jesus found the strength to keep going, and how you can too.",
+  },
+  {
     slug: "everything-crumbling-at-once-heres-what-youre-actually-walking-on",
     title: "Everything Crumbling at Once? Here's What You're Actually Walking On",
     date: "2026-07-26",
