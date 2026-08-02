@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "does-god-actually-have-practical-advice-for-my-money-problems",
+    "date": "2026-08-02",
+    "dateDisplay": "2 August 2026",
+    "day": 214,
+    "headline": "Does God actually have practical advice for my money problems?",
+    "verseRef": "Proverbs 21:5",
+    "card": "/devotional-cards/does-god-actually-have-practical-advice-for-my-money-problems.jpg"
+  },
+  {
     "slug": "is-god-actually-aware-of-what-i-cannot-afford-right-now",
     "date": "2026-08-01",
     "dateDisplay": "1 August 2026",
