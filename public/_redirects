@@ -176,3 +176,22 @@
 /ig-pray https://wa.me/27752592555?text=Hi%20Fountain%20of%20Grace%2C%20I%20found%20you%20on%20Instagram.%20Please%20pray%20for%20  302
 /yt-pray https://wa.me/27752592555?text=Hi%20Fountain%20of%20Grace%2C%20I%20found%20you%20on%20YouTube.%20Please%20pray%20for%20  302
 /wa-pray https://wa.me/27752592555?text=Hi%20Fountain%20of%20Grace%2C%20I%20found%20you%20on%20your%20website.%20Please%20pray%20for%20  302
+
+# ---------------------------------------------------------------------------
+# Google review short-links -> the Business Profile "write a review" form.
+#
+# The destination is Google's own short link for THIS profile, captured from
+# Business Profile Manager on 2026-08-02 and verified to resolve to
+# search.google.com/local/writereview?placeid=ChIJ-R6tX4_Zvx4RSpSCaupDyKc
+# (the same place: CID 12089987873764447306 = 0xa7c843ea6a82944a on Maps).
+#
+# One link per channel ON PURPOSE. Nothing we send survives the hop to Google,
+# so the ONLY way to know which ask actually produces reviews is to give each
+# ask its own path and read the hit counts. Same reasoning as the *-pray links.
+#
+# 302, never 301 - a 301 is hard-cached, and if Google ever reissues the short
+# link a cached 301 would silently send people to a dead form forever.
+/review     https://g.page/r/CUqUgmrqQ8inEBM/review  302
+/review-qr  https://g.page/r/CUqUgmrqQ8inEBM/review  302
+/review-wa  https://g.page/r/CUqUgmrqQ8inEBM/review  302
+/review-yt  https://g.page/r/CUqUgmrqQ8inEBM/review  302

@@ -24,6 +24,12 @@ const TRACKING_LINK_PREFIXES = [
   // NOT '/pray' - that is a prefix of the real, indexed page /prayer and would
   // have told Google to stop crawling it. Same trap as /s/ vs /sermons/.
   '/wa-pray', // -> wa.me prayer entry point. Not a page, must never be indexed
+  '/review', // /review, /review-qr, /review-wa, /review-yt -> the Google review
+  // form. Off-site 302s, so identical to the rest: never pages, and if Google
+  // crawled them they would land in "Page with redirect" and never validate.
+  // Checked 2026-08-02 against the live sitemap and the app/ routes - nothing
+  // real starts with "/review", so this cannot swallow a page the way "/pray"
+  // would have swallowed /prayer.
   '/ga/', // Google Ads inbound campaign tracking links - not pages
   '/fa/', // Facebook/Instagram Ads inbound campaign tracking links - not pages
 ]
