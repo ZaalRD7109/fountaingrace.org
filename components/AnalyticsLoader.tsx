@@ -4,22 +4,57 @@ import { useEffect } from 'react'
 
 import { classifyWhatsAppHref, trackWhatsAppTap } from '@/lib/tracking'
 
+/**
+ * Set up the queues immediately, load the scripts later.
+ *
+ * This is the part that makes the delay safe. gtag and fbq are both designed
+ * to be called before their script arrives: the calls sit in a queue and are
+ * replayed the moment it does. So the queue is primed here, at page load, with
+ * no network request at all - and every event fired in between, including a
+ * WhatsApp tap, is held rather than dropped.
+ *
+ * Without this, lib/tracking.ts checks `typeof window.gtag === 'function'` and
+ * silently throws the event away, which would have quietly broken the WhatsApp
+ * tap tracking built on 2026-07-31 - the church's most honest conversion.
+ */
+function primeQueues() {
+  const w = window as unknown as Record<string, any>
+  w.dataLayer = w.dataLayer || []
+  if (typeof w.gtag !== 'function') {
+    w.gtag = function gtag() {
+      // eslint-disable-next-line prefer-rest-params
+      w.dataLayer.push(arguments)
+    }
+  }
+  if (!w.__fgiGaPrimed) {
+    w.__fgiGaPrimed = true
+    w.gtag('js', new Date())
+    w.gtag('config', 'G-15FK8BTR4B')
+  }
+  if (typeof w.fbq !== 'function' && window.location.hostname === 'www.fountaingrace.org') {
+    const n: any = function () {
+      // eslint-disable-next-line prefer-rest-params
+      n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    }
+    w.fbq = n
+    if (!w._fbq) w._fbq = n
+    n.push = n
+    n.loaded = true
+    n.version = '2.0'
+    n.queue = []
+    w.fbq('init', '2211800306311040') // FGI Website pixel (Meta dataset 'FGI Website')
+    w.fbq('track', 'PageView')
+  }
+}
+
 function loadGA4() {
   if (document.getElementById('fgi-ga4')) return
+  primeQueues()
   const s = document.createElement('script')
   s.id = 'fgi-ga4'
   s.src = 'https://www.googletagmanager.com/gtag/js?id=G-15FK8BTR4B'
   s.async = true
   document.head.appendChild(s)
-  const init = document.createElement('script')
-  init.id = 'fgi-ga4-init'
-  init.text = [
-    'window.dataLayer=window.dataLayer||[];',
-    'function gtag(){dataLayer.push(arguments);}',
-    "gtag('js',new Date());",
-    "gtag('config','G-15FK8BTR4B');",
-  ].join('')
-  document.head.appendChild(init)
 }
 
 function loadClarity() {
@@ -41,17 +76,13 @@ function loadMetaPixel() {
   if (document.getElementById('fgi-meta-pixel')) return
   // Only fire on the production domain - never on .pages.dev staging URLs
   if (window.location.hostname !== 'www.fountaingrace.org') return
+  // init and PageView were already queued by primeQueues() at page load, so
+  // fbevents.js drains them the moment it arrives with their original order.
+  primeQueues()
   const s = document.createElement('script')
   s.id = 'fgi-meta-pixel'
-  s.text = [
-    "!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?",
-    "n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;",
-    "n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;",
-    "t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}",
-    "(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');",
-    "fbq('init','2211800306311040');",  // FGI Website pixel (Meta dataset 'FGI Website')
-    "fbq('track','PageView');",
-  ].join('')
+  s.src = 'https://connect.facebook.net/en_US/fbevents.js'
+  s.async = true
   document.head.appendChild(s)
 }
 
@@ -71,13 +102,19 @@ function loadAll() {
  * Paint on mobile was 6.2s against Google's 2.5s bar.
  *
  * Nothing is dropped. Everything still loads, either the moment the visitor
- * does anything at all (a scroll, a tap, a key) or shortly after the page has
- * finished loading, whichever comes first. A real person is recorded exactly
- * as before. What changes is that the church's own words paint first and the
- * trackers wait their turn.
+ * does anything at all (a scroll, a tap, a key) or ten seconds after the page
+ * has finished loading, whichever comes first. Any real person who reads,
+ * scrolls or taps is recorded exactly as before, and every conversion we care
+ * about - a WhatsApp tap, a form, a donation - is an interaction by
+ * definition. What is given up is the visitor who lands, touches nothing and
+ * leaves inside ten seconds. That is the trade, and it is worth it: the tags
+ * were costing 600ms of blocked main thread on the one measurement Google
+ * rejected the Ad Grant over, twice.
  */
-const IDLE_DELAY_MS = 3500
-const WAKE_EVENTS = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'wheel'] as const
+const IDLE_DELAY_MS = 10000
+// 'click' is in the list as well as 'pointerdown' on purpose: a keyboard or an
+// assistive device can produce a click with no pointer event in front of it.
+const WAKE_EVENTS = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'wheel', 'click'] as const
 
 function loadAllWhenIdle() {
   let fired = false
@@ -131,6 +168,8 @@ export default function AnalyticsLoader() {
     // capture visitor behaviour instead of only the rare person who taps Accept.
     // (Ricardo 2026-06-23 - the dashboard was empty because the old setup tracked only Accept-clickers.)
     if (localStorage.getItem('FGI_cookieConsent') !== 'declined') {
+      // Queues open now (no network), scripts arrive later.
+      primeQueues()
       loadAllWhenIdle()
     }
 
