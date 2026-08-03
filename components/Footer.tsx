@@ -60,7 +60,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link prefetch={false}
                     href={link.href}
-                    className="text-white font-medium hover:underline transition-colors"
+                    className="inline-block py-1.5 text-white font-medium hover:underline transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -86,7 +86,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link prefetch={false}
                     href={link.href}
-                    className="text-white font-medium hover:underline transition-colors"
+                    className="inline-block py-1.5 text-white font-medium hover:underline transition-colors"
                   >
                     {link.label}
                   </Link>
@@ -110,22 +110,22 @@ export default function Footer() {
             </div>
             <div className="mt-4 flex flex-wrap gap-3">
               <a href="https://www.facebook.com/FGIPta/" target="_blank" rel="noopener noreferrer"
-                className="text-white font-medium hover:underline text-sm"
+                className="inline-block py-1.5 text-white font-medium hover:underline text-sm"
                 aria-label="Fountain of Grace International on Facebook">
                 Facebook
               </a>
               <a href="https://www.youtube.com/@fgipta" target="_blank" rel="noopener noreferrer"
-                className="text-white font-medium hover:underline text-sm"
+                className="inline-block py-1.5 text-white font-medium hover:underline text-sm"
                 aria-label="Fountain of Grace International on YouTube">
                 YouTube
               </a>
               <a href="https://www.instagram.com/fgiptanorth/" target="_blank" rel="noopener noreferrer"
-                className="text-white font-medium hover:underline text-sm"
+                className="inline-block py-1.5 text-white font-medium hover:underline text-sm"
                 aria-label="Fountain of Grace International on Instagram">
                 Instagram
               </a>
               <a href="https://www.tiktok.com/@fountainofgraceintl" target="_blank" rel="noopener noreferrer"
-                className="text-white font-medium hover:underline text-sm"
+                className="inline-block py-1.5 text-white font-medium hover:underline text-sm"
                 aria-label="Fountain of Grace International on TikTok">
                 TikTok
               </a>

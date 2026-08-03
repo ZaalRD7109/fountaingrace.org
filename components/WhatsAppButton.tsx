@@ -4,7 +4,7 @@ export default function WhatsAppButton() {
       href="https://wa.me/27752592555"
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat with Fountain of Grace International on WhatsApp"
+      aria-label="Chat on WhatsApp with Fountain of Grace International"
       className="fixed bottom-5 right-5 z-50 flex items-center justify-center w-14 h-14 bg-[#25d366] rounded-full shadow-lg hover:bg-[#1ebe5d] transition-colors duration-200 group"
     >
       {/* WhatsApp SVG icon */}
