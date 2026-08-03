@@ -24,14 +24,14 @@ export default function Error({
         <h1 className="text-3xl sm:text-4xl font-extrabold text-[#000000]">
           Something went wrong
         </h1>
-        <p className="mt-4 text-[#7d7d7d]">
+        <p className="mt-4 text-[#595959]">
           Sorry about that. Please try again, or reach us on WhatsApp and we will help right away.
         </p>
 
         <div className="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
           <button
             onClick={() => reset()}
-            className="rounded-[30px] bg-[#2a9df4] px-6 py-3 font-semibold text-white hover:opacity-90 transition"
+            className="rounded-[30px] bg-[#0d6fbf] px-6 py-3 font-semibold text-white hover:opacity-90 transition"
           >
             Try again
           </button>
@@ -43,8 +43,8 @@ export default function Error({
           </a>
         </div>
 
-        <div className="mt-6 text-sm text-[#7d7d7d]">
-          <a href="/" className="text-[#008080] hover:underline font-medium">
+        <div className="mt-6 text-sm text-[#595959]">
+          <a href="/" className="text-[#006b6b] hover:underline font-medium">
             Return home
           </a>
         </div>

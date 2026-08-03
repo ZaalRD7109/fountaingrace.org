@@ -102,17 +102,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Hearing the Right Things and Still Getting Them Wrong - Here Is Why
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 9 February 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 9 February 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               The problem is not that God has gone silent. The problem is translation. Numbers 12:6 says God makes himself known through visions and speaks in dreams - but receiving the vision is only half of it. Interpreting it correctly is what changes your life. This message teaches you to read the grammar of the Spirit.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 9 February 2025
             </p>
           </div>
@@ -134,13 +134,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"When we misunderstand messages"}</button>
-                <button type="button" data-start="210" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:30</span>{"Check what motivates the speaker"}</button>
-                <button type="button" data-start="450" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">7:30</span>{"Real or just made up"}</button>
-                <button type="button" data-start="780" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">13:00</span>{"Why interpretation matters"}</button>
-                <button type="button" data-start="1440" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">24:00</span>{"Multiple ways messages come through"}</button>
-                <button type="button" data-start="2280" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">38:00</span>{"Write it down to understand"}</button>
-                <button type="button" data-start="3420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">57:00</span>{"Three tests for confirmation"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"When we misunderstand messages"}</button>
+                <button type="button" data-start="210" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:30</span>{"Check what motivates the speaker"}</button>
+                <button type="button" data-start="450" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">7:30</span>{"Real or just made up"}</button>
+                <button type="button" data-start="780" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">13:00</span>{"Why interpretation matters"}</button>
+                <button type="button" data-start="1440" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">24:00</span>{"Multiple ways messages come through"}</button>
+                <button type="button" data-start="2280" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">38:00</span>{"Write it down to understand"}</button>
+                <button type="button" data-start="3420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">57:00</span>{"Three tests for confirmation"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -159,7 +159,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Baby Who Is Speaking But Cannot Be Understood</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Baby Who Is Speaking But Cannot Be Understood</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               A baby communicates constantly - but you cannot interpret a crying baby by just hearing the sound. You read the face. You read the body. You ask what the whole picture is showing you. If the child is laughing and you reach for a pain tablet, you have heard the child without interpreting the child. The result is that you respond to something entirely different from what was actually said.
             </p>
@@ -167,7 +167,7 @@ export default function SermonPage() {
               That is the exact situation many believers find themselves in with God. He is speaking. He has always been speaking. But when we get the communication wrong - when we interpret fear as God warning us, when we interpret anxiety as confirmation, when we act on a fragment without asking for the whole message - we end up frustrated and confused, convinced that God has gone quiet. He has not. Our translation is the issue.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Numbers 12:6 - God Speaks in Visions and Dreams</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Numbers 12:6 - God Speaks in Visions and Dreams</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Numbers 12:6 - &quot;And he said, Hear now my words: If there be a prophet among you, I the Lord will make myself known unto him in a vision, and will speak unto him in a dream.&quot;
             </p>
@@ -178,7 +178,7 @@ export default function SermonPage() {
               Dreams are not random thoughts that float in while you sleep. They are spiritual pictures that carry meaning. The same God who spoke to Moses through a burning bush, who spoke to Joseph through grain and stars, who spoke to Pharaoh through cows and rivers - He still speaks in picture language today. And that language has a grammar. Learning it changes how you respond to what He is saying.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Reading the Symbols - What the Spirit Uses</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Reading the Symbols - What the Spirit Uses</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               When God communicates through visions or dreams, the details matter. A door in a vision is not just a door. Revelation 3:8 says, &quot;I have set before thee an open door, and no man can shut it.&quot; An open door is an opportunity or a transition - a next realm being made available. A closed door is a closed chapter. But you must ask: was the door open or closed when you saw it? Because the answer changes everything about how you respond.
             </p>
@@ -189,7 +189,7 @@ export default function SermonPage() {
               God uses symbols to reveal His will, just as Jesus used parables to reveal kingdom principles. The parable was never random. It was a picture chosen to communicate something specific. When you receive a vision or dream, the first question is not just &quot;what did I see?&quot; but &quot;what was the context around what I saw?&quot;
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Habakkuk 2:2-3 - Write It Down</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Habakkuk 2:2-3 - Write It Down</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Habakkuk 2:2-3 - &quot;And the Lord answered me, and said, Write the vision, and make it plain upon tables, that he may run that readeth it. For the vision is yet for an appointed time, but at the end it shall speak, and not lie: though it tarry, wait for it; because it will surely come, it will not tarry.&quot;
             </p>
@@ -200,7 +200,7 @@ export default function SermonPage() {
               Revelation matures over time. God may show one part now and another later. What looked confusing in a dream can become unmistakably clear after a season of obedience. The act of writing is itself an act of faith - you are saying, Lord, I received this, I am holding onto it, and I will not rush past it.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Genesis 40:8 and Colossians 3:15 - Interpretation Belongs to God</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Genesis 40:8 and Colossians 3:15 - Interpretation Belongs to God</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Genesis 40:8 - Joseph said to the cupbearer and the baker, &quot;Do not interpretations belong to God? Tell me them, I pray you.&quot; Joseph did not interpret from his own knowledge. He operated from a partnership - he invited them to speak, but pointed toward God as the source of the meaning. Interpretation is not guesswork. It is not pattern-matching from what someone else told you in a different season. It is a conversation with the Spirit who gave the vision in the first place.
             </p>
@@ -209,7 +209,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;The problem is not God&apos;s silence. The problem is translation. God is always speaking. The question is whether you have learned the grammar of His language well enough to understand what He is actually saying.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -224,7 +224,7 @@ export default function SermonPage() {
 
             <p className="text-[#555] leading-relaxed">
               If you are in or around Pretoria or Johannesburg,{' '}
-              <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
+              <Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">
                 come on a Sunday
               </Link>{' '}
               - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
@@ -258,7 +258,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">
                 Plan Your Visit
               </Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
                 Send a Prayer Request
               </Link>
             </div>
@@ -279,7 +279,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -294,33 +294,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Every Word You Say About Yourself Is Writing Your Future
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Does Your Life Keep Collapsing No Matter What You Build?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#0d6fbf] hover:underline font-medium">
                   You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Some Things Refuse to Move
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

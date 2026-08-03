@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Six Invisible Gaps That Wreck Your Life (And How to Close Them)"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 19 January 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You wake up with good intentions but life spirals. Work, hurt, laziness, and confusion quietly disconnect you from your own stability. Six specific obstacles explain why-and one daily practice fixes it."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 19 January 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You wake up with good intentions but life spirals. Work, hurt, laziness, and confusion quietly disconnect you from your own stability. Six specific obstacles explain why-and one daily practice fixes it."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Six reasons people drift away"}</button>
-                <button type="button" data-start="325" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:25</span>{"How busyness takes over"}</button>
-                <button type="button" data-start="1056" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">17:36</span>{"When hurt derails you"}</button>
-                <button type="button" data-start="1905" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">31:45</span>{"Apathy and complacency trap"}</button>
-                <button type="button" data-start="2818" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">46:58</span>{"Can't see what matters"}</button>
-                <button type="button" data-start="3804" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:03:24</span>{"Leaning only on yourself"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Six reasons people drift away"}</button>
+                <button type="button" data-start="325" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:25</span>{"How busyness takes over"}</button>
+                <button type="button" data-start="1056" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">17:36</span>{"When hurt derails you"}</button>
+                <button type="button" data-start="1905" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">31:45</span>{"Apathy and complacency trap"}</button>
+                <button type="button" data-start="2818" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">46:58</span>{"Can't see what matters"}</button>
+                <button type="button" data-start="3804" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:03:24</span>{"Leaning only on yourself"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,40 +162,40 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why You Drift Without Realizing It"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why You Drift Without Realizing It"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You intend to stay connected to what anchors you. But six obstacles quietly pull you away. Busyness disguises itself as productivity. Hurt from past disappointment keeps you cautious. Complacency whispers that you are fine where you are. Self-reliance convinces you that you can handle it alone. Misplaced confidence in what worked before blinds you to what is changing. Spiritual blindness-worldly noise drowning out clarity-makes you forget what matters."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Each one operates in isolation, but together they compound. You make worse decisions. Relationships fracture. Anxiety rises. You lose your sense of direction. The Bible says in Matthew 6:33, seek first the kingdom and its righteousness, and all these things will be given to you. But when you neglect that foundation, everything else collapses."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The real shock: you do not notice until crisis hits. By then, you are already disconnected-anxious, unstable, making choices that hurt you. The good news is recognizing these six gaps lets you close them before damage spreads."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Six Obstacles That Disconnect You"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Six Obstacles That Disconnect You"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Busyness and distraction come first. You prioritize work, money, entertainment, even family-but not the daily practice that steadies you. Look at your bank account and your calendar. They show your real priorities. If most of your time and money flow elsewhere, your stability suffers. The Bible says in Matthew 6:33 that when you seek the kingdom first, everything else finds its proper place."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Hurt and disappointment come second. A betrayal by someone you trusted. A leader who failed you. A broken promise. Past hurt makes you cautious, even fearful of risking connection again. But Galatians 6:9 says do not grow weary of doing good-for in due season you will reap if you do not give up. Healing requires you to keep moving toward restoration, not away from it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Complacency and apathy come third. You feel satisfied. You think you have arrived. You do not see the next level. Revelations 3:16 warns: because you are lukewarm, neither hot nor cold, I am about to spit you out of my mouth. Spiritual stagnation is spiritual death. Growth requires daily intentional action."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Self-reliance comes fourth. You lean on your own thinking, your own strength, your own solutions. But acknowledging your dependence on God is not weakness-it is the source of resilience. When you try to carry everything alone, you grow weary. The Holy Spirit prays for you when you do not know what to pray. Ask for that help."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Misplaced confidence in past knowledge comes fifth. You trust what has worked before without testing whether it still fits. Your kids do not check the meter box-they trust that electricity always comes on. When it does not, they are unprepared. The same happens to you when you assume yesterday's answers still apply today."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Spiritual blindness comes sixth. Worldly ideas, noise, and pressure cloud your vision. Second Corinthians 4:4 says the god of this age has blinded the minds of unbelievers so that they cannot see the light of the gospel. Renewal comes through God's Word and prayer, as Romans 12:2 says: be transformed by the renewing of your mind."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Six Signs You Are Already Drifting"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Six Signs You Are Already Drifting"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Anxiety and restlessness arrive first. You worry constantly. You cannot rest. Philippians 4:6 says do not be anxious about anything-but in every situation present your requests to God with thanksgiving. If you are anxious, something is broken in your foundation."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Poor decision-making arrives second. You choose poorly. Instead of growth, you regress. Psalm 119:105 says God's word is a lamp to your feet and a light to your path. Without that light, you stumble in the dark."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Broken relationships arrive third. Your marriages fracture. Your friendships collapse. Conflict erupts over small things. Proverbs 15:1 says a gentle answer turns away wrath, but a harsh word stirs up anger. Without spiritual grounding, your words destroy what matters most."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Lack of purpose arrives fourth. You drift from goal to goal. Nothing sticks. You feel aimless. Jeremiah 29:11 says God knows the plans He has for you-plans to prosper you and not to harm you. But you must know His plans, not just bumble through yours."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Increasing sin and guilt arrive fifth. You do things that do not make sense to you. You fall into patterns you hate. Matthew 26:41 says watch and pray so that you will not fall into temptation. Without that daily watch, guilt compounds."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Emotional instability arrives sixth. Small comments wound you deeply. You react with anger or tears over nothing. Isaiah 26:3 says God keeps in perfect peace those whose minds are steadfast because they trust in Him. When you lose that trust, your emotions become unmoored."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Five Signs You Are Back On Track"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Five Signs You Are Back On Track"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Inner peace settles in first. You are calm with yourself and others. Philippians 4:7 says the peace of God, which transcends all understanding, will guard your hearts and your minds in Christ Jesus. This is not escape from problems-it is stability within them."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Clarity in decision-making returns second. You know what to do and why. Proverbs 22:29 says a person skilled in work will stand before kings. Skill requires daily practice and guidance. When you commit your plans to God, He establishes them."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Healthy relationships heal third. You forgive. You listen. You choose gentle words. Ephesians 4:32 says be kind and compassionate to one another, forgiving each other just as in Christ God forgave you. This is not tolerance-it is active, daily love."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Purpose and direction crystallize fourth. You know what you are building toward. Philippians 4:13 says I can do all things through Him who gives me strength. Purpose is not inspiration-it is a daily commitment backed by God's power."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Joy and contentment settle in fifth. Your cup overflows. Not because life is perfect, but because you are grounded. Psalm 23:5-6 says surely goodness and mercy shall follow you all the days of your life. This is the fruit of staying connected."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The One Daily Practice That Changes Everything"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The One Daily Practice That Changes Everything"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Spiritual growth is not accident. It is not inspiration. It is personal responsibility. Just as you brush your teeth every day, wash your hands throughout the day, and groom your hair regularly, you must maintain your spiritual life daily. Not once a week on Sunday. Daily."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Romans 14:12 says each of us will give an account of ourselves to God. Not your pastor. Not your family. You. Your spiritual stability is your work. You cannot outsource it. You cannot borrow it from someone else's overflow. You cannot coast on yesterday's connection."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is not burden-it is freedom. When you take responsibility for your own spiritual maintenance, you stop blaming circumstances or other people. You stop waiting for someone to fix you. You start fixing yourself. And that is when real change begins."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How to Close the Gaps Right Now"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How to Close the Gaps Right Now"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Start by identifying which obstacle owns you. Is it busyness? Hurt? Laziness? Spiritual blindness? Name it. Write it down. The first step to closing a gap is seeing it clearly."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Then commit to one daily practice. Read Scripture. Pray. Sit in silence. Confess what is breaking. Ask God for strength. Do this before work, before your phone, before anything else claims your attention. Make it non-negotiable, like brushing your teeth."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Finally, live as if Jesus could arrive today. Ask yourself: if He came right now, would He find me ready? The Bible says He can come anytime. Matthew 24:44 says the Son of Man will come at an hour you do not expect. That is not threat-it is invitation to stay awake, stay grounded, stay connected. Your spiritual life is the most important investment you will ever make."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Spiritual growth is your own personal accountability-not inspiration, not overflow from someone else, but daily intentional action, like grooming yourself every single day.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Spiritual growth is your own personal accountability-not inspiration, not overflow from someone else, but daily intentional action, like grooming yourself every single day.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -204,7 +204,7 @@ export default function SermonPage() {
               <li><strong>{"Your Stability Is Your Responsibility"}</strong> {" "}{"No one can maintain your spiritual life for you. Not your pastor, not your spouse, not your friends. Romans 14:12 is clear: each of us will give an account of ourselves to God. You cannot borrow someone else's peace. You cannot live off their overflow forever. You cannot coast. Daily intentional action-prayer, Scripture, confession, stillness-is not optional. It is the foundation. When you stop doing the work, the foundation cracks. When you start again, it strengthens."}</li>
               <li><strong>{"Readiness Is a Daily Choice"}</strong> {" "}{"Jesus can return anytime. That is not fear-that is clarity. It means your spiritual life matters now, today, this hour. Not someday. Not after the new year. Not when things settle down. The question is not whether you will be ready eventually; it is whether you will be ready today. That readiness comes from daily grooming-maintaining your connection to God the way you maintain your body. One day of neglect is manageable. One month is dangerous. One year disconnects you so far that you may not recognize yourself. Start today. Stay grounded. Live ready."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -232,7 +232,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -250,7 +250,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -263,33 +263,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Someone Else to Tell You What
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#0d6fbf] hover:underline font-medium">
                   Helping Someone Actually Keeps Them Stuck
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The Person Nobody Checks On: How You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   The Small Habits That Quietly Destroy Your Life
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-what-to-do-when-everything-feels-confusing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-what-to-do-when-everything-feels-confusing" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know What to Do When Everything Feels Confusing
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

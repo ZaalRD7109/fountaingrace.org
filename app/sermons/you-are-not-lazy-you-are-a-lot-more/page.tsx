@@ -102,17 +102,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               You Are Not Lazy - You Are a Lot More
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 28 January 2024</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 28 January 2024</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               Somewhere along the way, you accepted a label. Lazy. Incapable. Behind. And now that label has become a confession - something you say about yourself without even thinking. This message challenges that label at its root. You are not what your worst season called you. You are what God says you are.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 28 January 2024
             </p>
           </div>
@@ -134,13 +134,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Finding real care"}</button>
-                <button type="button" data-start="120" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:00</span>{"Life worth living"}</button>
-                <button type="button" data-start="420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">7:00</span>{"Fighting for survival"}</button>
-                <button type="button" data-start="900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:00</span>{"Power of praise"}</button>
-                <button type="button" data-start="1440" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">24:00</span>{"Overcoming laziness"}</button>
-                <button type="button" data-start="2280" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">38:00</span>{"Finding your strength"}</button>
-                <button type="button" data-start="3120" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">52:00</span>{"Using what you have"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Finding real care"}</button>
+                <button type="button" data-start="120" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">2:00</span>{"Life worth living"}</button>
+                <button type="button" data-start="420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">7:00</span>{"Fighting for survival"}</button>
+                <button type="button" data-start="900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:00</span>{"Power of praise"}</button>
+                <button type="button" data-start="1440" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">24:00</span>{"Overcoming laziness"}</button>
+                <button type="button" data-start="2280" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">38:00</span>{"Finding your strength"}</button>
+                <button type="button" data-start="3120" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">52:00</span>{"Using what you have"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -159,7 +159,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">What You Glorify Is What You Invite</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">What You Glorify Is What You Invite</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Whatever you talk about most, you are lifting up. And what you lift up is what draws. Jesus said it plainly - &quot;And I, if I be lifted up from the earth, will draw all men unto me&quot; (John 12:32). When you lift up Jesus, He draws people to Himself. When you lift up your problems, they grow. When you lift up Satan by constantly talking about what he is doing in your life, you are handing him attention and authority he was never meant to have.
             </p>
@@ -167,7 +167,7 @@ export default function SermonPage() {
               Every time you open your mouth and say &quot;life is so hard,&quot; &quot;things never work out for me,&quot; &quot;I am so far behind&quot; - you are glorifying the problem. And Psalm 22:3 says God inhabits the praises of His people. Praise is not just the songs before the sermon. Praise is every declaration that lifts God above your circumstances. When you stop glorifying the struggle and start glorifying God, the atmosphere shifts.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Proverbs 6:6-8 - The Ant That Needs No Commander</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Proverbs 6:6-8 - The Ant That Needs No Commander</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Proverbs 6:6-8 - &quot;Go to the ant, thou sluggard; consider her ways, and be wise: Which having no guide, overseer, or ruler, provideth her meat in the summer, and gathereth her food in the harvest.&quot;
             </p>
@@ -178,7 +178,7 @@ export default function SermonPage() {
               God is not pointing to the ant to shame you. He is showing you a picture of what you are already capable of. You are not lazy. You are a person who has been told they are lazy often enough that they started agreeing with it. But God&apos;s Word says something different. It says you have been given a spirit of power, of love, and of a sound mind (2 Timothy 1:7). The ant does not question whether it can do what it was made to do. Neither should you.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Joel 3:10 - Let the Weak Say I Am Strong</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Joel 3:10 - Let the Weak Say I Am Strong</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Joel 3:10 - &quot;Beat your plowshares into swords, and your pruninghooks into spears: let the weak say, I am strong.&quot;
             </p>
@@ -190,7 +190,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;Stop confessing who your worst week said you were. Start confessing who God says you are. You are not lazy. You are not behind. You are not forgotten. You are chosen, capable, and purposefully placed. Say it until you believe it.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -205,7 +205,7 @@ export default function SermonPage() {
 
             <p className="text-[#555] leading-relaxed">
               If you are in or around Pretoria or Johannesburg,{' '}
-              <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
+              <Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">
                 come on a Sunday
               </Link>{' '}
  - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
@@ -239,7 +239,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">
                 Plan Your Visit
               </Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
                 Send a Prayer Request
               </Link>
             </div>
@@ -260,7 +260,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -275,33 +275,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Resolution Didn't Fail - You Quit Acting
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave" className="text-[#0d6fbf] hover:underline font-medium">
                   Stuck in a Dead Relationship or Job? Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/dying-right-good-friday-message" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/dying-right-good-friday-message" className="text-[#0d6fbf] hover:underline font-medium">
                   Dying Right - What Jesus Did on the Cross That Most People Miss
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

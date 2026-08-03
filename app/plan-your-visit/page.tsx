@@ -187,7 +187,7 @@ export default function PlanYourVisitPage() {
           </dl>
           <p className="text-sm text-[#595959] mt-6">
             Want to see what a Sunday actually looks like?{' '}
-            <Link href="/what-to-expect" className="text-[#008080] font-semibold underline">See what to expect</Link>.
+            <Link href="/what-to-expect" className="text-[#006b6b] font-semibold underline">See what to expect</Link>.
           </p>
         </div>
       </section>
@@ -196,17 +196,17 @@ export default function PlanYourVisitPage() {
       <section className="bg-gray-50 py-8 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto grid grid-cols-1 sm:grid-cols-3 gap-4">
           <div className="bg-white rounded-xl p-4 border border-gray-100">
-            <p className="text-[#008080] font-bold text-sm mb-1">Service time</p>
+            <p className="text-[#006b6b] font-bold text-sm mb-1">Service time</p>
             <p className="text-sm text-gray-700">Every Sunday at 09:00</p>
             <p className="text-xs text-[#595959] mt-1">Approx 90 minutes</p>
           </div>
           <div className="bg-white rounded-xl p-4 border border-gray-100">
-            <p className="text-[#008080] font-bold text-sm mb-1">What to wear</p>
+            <p className="text-[#006b6b] font-bold text-sm mb-1">What to wear</p>
             <p className="text-sm text-gray-700">Come exactly as you are.</p>
             <p className="text-xs text-[#595959] mt-1">Jeans, casual - no one will care.</p>
           </div>
           <div className="bg-white rounded-xl p-4 border border-gray-100">
-            <p className="text-[#008080] font-bold text-sm mb-1">Arrive early</p>
+            <p className="text-[#006b6b] font-bold text-sm mb-1">Arrive early</p>
             <p className="text-sm text-gray-700">10-15 min before 09:00.</p>
             <p className="text-xs text-[#595959] mt-1">Someone will meet you at the door.</p>
           </div>

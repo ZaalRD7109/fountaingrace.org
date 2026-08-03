@@ -52,16 +52,16 @@ export default function StoriesPage() {
                 href={`/stories/${s.slug}`}
                 className="block group bg-white border border-gray-100 rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow duration-200"
               >
-                <span className="inline-block text-xs font-semibold text-[#008080] uppercase tracking-wider mb-3">
+                <span className="inline-block text-xs font-semibold text-[#006b6b] uppercase tracking-wider mb-3">
                   {s.category}
                 </span>
-                <h2 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#008080] transition-colors leading-snug">
+                <h2 className="text-lg font-bold text-gray-900 mb-3 group-hover:text-[#006b6b] transition-colors leading-snug">
                   {s.title}
                 </h2>
                 <p className="text-[#595959] text-sm leading-relaxed">
                   {s.intro}
                 </p>
-                <span className="inline-block mt-4 text-sm font-semibold text-[#008080]">
+                <span className="inline-block mt-4 text-sm font-semibold text-[#006b6b]">
                   Read the story
                 </span>
               </Link>
@@ -83,7 +83,7 @@ export default function StoriesPage() {
             <Link href="/donate" className="btn-primary text-sm">
               Donate Now
             </Link>
-            <Link href="/community-impact" className="inline-block border-2 border-white text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-white hover:text-[#008080] transition-colors text-sm">
+            <Link href="/community-impact" className="inline-block border-2 border-white text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-white hover:text-[#006b6b] transition-colors text-sm">
               See Full Impact Report
             </Link>
           </div>

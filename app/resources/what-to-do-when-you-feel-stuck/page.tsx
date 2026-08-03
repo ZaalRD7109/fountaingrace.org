@@ -131,7 +131,7 @@ export default function WhatToDoWhenStuckPage() {
           <p className="text-[#595959] text-sm leading-relaxed mb-6">Come and hear practical teaching built around exactly this kind of problem. Every Sunday at 09:00, Pretoria North.</p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/plan-your-visit" className="btn-primary text-sm">Plan Your Visit</Link>
-            <Link href="/sermons" className="inline-block border-2 border-[#008080] text-[#008080] font-semibold px-6 py-3 rounded-lg hover:bg-[#008080] hover:text-white transition-colors text-sm">Browse Sermons</Link>
+            <Link href="/sermons" className="inline-block border-2 border-[#008080] text-[#006b6b] font-semibold px-6 py-3 rounded-lg hover:bg-[#008080] hover:text-white transition-colors text-sm">Browse Sermons</Link>
           </div>
         </div>
       </section>

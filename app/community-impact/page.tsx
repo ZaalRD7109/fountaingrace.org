@@ -151,7 +151,7 @@ export default function CommunityImpactPage() {
             Fountain of Grace International is a registered NPO (316-193) in Pretoria North, running structured
             programs that address real challenges - from emotional distress and family breakdown to poverty and social isolation.
           </p>
-          <div className="inline-block bg-white text-[#008080] rounded-lg px-6 py-4 shadow-sm text-left">
+          <div className="inline-block bg-white text-[#006b6b] rounded-lg px-6 py-4 shadow-sm text-left">
             <p className="font-extrabold">NPO Registration Number: 316-193</p>
             <p className="text-sm font-medium text-[#595959] mt-1">
               Registered under the Nonprofit Organisations Act, 71 of 1997
@@ -192,25 +192,25 @@ export default function CommunityImpactPage() {
                 key={p.title}
                 className="bg-white rounded-xl border border-gray-100 border-t-4 border-t-[#008080] p-7 flex flex-col shadow-[0_2px_12px_rgba(42,157,244,0.06)] hover:shadow-[0_6px_24px_rgba(0,121,107,0.1)] transition-shadow duration-200"
               >
-                <span className="inline-block self-start bg-[#f0f9f7] text-[#008080] text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
+                <span className="inline-block self-start bg-[#f0f9f7] text-[#006b6b] text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
                   {p.badge}
                 </span>
                 <h3 className="text-lg font-bold text-gray-900 mb-5 leading-snug">{p.title}</h3>
                 <div className="flex flex-col gap-4 flex-1 mb-6">
                   <div>
-                    <span className="block text-[11px] font-bold uppercase tracking-wider text-[#008080] mb-1">Who we serve</span>
+                    <span className="block text-[11px] font-bold uppercase tracking-wider text-[#006b6b] mb-1">Who we serve</span>
                     <p className="text-sm text-[#555] leading-relaxed">{p.who}</p>
                   </div>
                   <div>
-                    <span className="block text-[11px] font-bold uppercase tracking-wider text-[#008080] mb-1">The problem</span>
+                    <span className="block text-[11px] font-bold uppercase tracking-wider text-[#006b6b] mb-1">The problem</span>
                     <p className="text-sm text-[#555] leading-relaxed">{p.problem}</p>
                   </div>
                   <div>
-                    <span className="block text-[11px] font-bold uppercase tracking-wider text-[#008080] mb-1">What we provide</span>
+                    <span className="block text-[11px] font-bold uppercase tracking-wider text-[#006b6b] mb-1">What we provide</span>
                     <p className="text-sm text-[#555] leading-relaxed">{p.provides}</p>
                   </div>
                   <div>
-                    <span className="block text-[11px] font-bold uppercase tracking-wider text-[#008080] mb-1">Outcome</span>
+                    <span className="block text-[11px] font-bold uppercase tracking-wider text-[#006b6b] mb-1">Outcome</span>
                     <p className="text-sm text-gray-800 font-semibold leading-relaxed">{p.outcome}</p>
                   </div>
                 </div>
@@ -248,7 +248,7 @@ export default function CommunityImpactPage() {
                 ].map((row) => (
                   <tr key={row.cat} className="border-b border-gray-100">
                     <td className="py-3 pr-6">{row.cat}</td>
-                    <td className="py-3 font-semibold text-[#008080]">{row.pct}</td>
+                    <td className="py-3 font-semibold text-[#006b6b]">{row.pct}</td>
                   </tr>
                 ))}
               </tbody>
@@ -358,11 +358,11 @@ export default function CommunityImpactPage() {
       {/* PLAN YOUR VISIT CTA */}
       <section className="bg-[#008080] py-12 px-4 sm:px-6">
         <div className="section-container text-center">
-          <p className="text-white/60 text-sm font-semibold uppercase tracking-wider mb-3">
+          <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
             You are also welcome on Sunday
           </p>
           <h2 className="text-2xl font-bold text-white mb-4">Come and see the community behind the work.</h2>
-          <p className="text-white/70 mb-6 max-w-lg mx-auto">
+          <p className="text-white mb-6 max-w-lg mx-auto">
             Fountain of Grace International is a church in Pretoria North as well as a registered NPO.{' '}
             <Link href="/what-to-expect" className="text-white font-semibold hover:underline">Sunday services</Link>{' '}
             are open to everyone.
@@ -384,7 +384,7 @@ export default function CommunityImpactPage() {
               Akasia, Orchards, Shosanguve, Montana, Wonderboom, Suiderberg, Amandasig, and Rosslyn. FGI accepts
               donations via PayPal and direct EFT, and welcomes volunteers and organisational partnerships.
               Contact us on{' '}
-              <a href="tel:+27752592555" className="text-[#008080] font-semibold">+27 75 259 2555</a>.
+              <a href="tel:+27752592555" className="text-[#006b6b] font-semibold">+27 75 259 2555</a>.
             </p>
           </div>
         </div>

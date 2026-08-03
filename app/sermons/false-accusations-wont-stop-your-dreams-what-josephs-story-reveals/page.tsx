@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Boss Will Never Promote You Like This"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 6 April 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You work hard. You stay honest. But the person who cuts corners and talks loudly gets the promotion. Here's what nobody tells you about how real success actually works."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 6 April 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You work hard. You stay honest. But the person who cuts corners and talks loudly gets the promotion. Here's what nobody tells you about how real success actually works."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Old school songs and principles"}</button>
-                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:30</span>{"Running a whole country"}</button>
-                <button type="button" data-start="240" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:00</span>{"Unhappiness cannot stop everything"}</button>
-                <button type="button" data-start="390" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">6:30</span>{"Greatest of all time debate"}</button>
-                <button type="button" data-start="645" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">10:45</span>{"Lies get manufactured constantly"}</button>
-                <button type="button" data-start="975" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">16:15</span>{"Trust comes from consistency"}</button>
-                <button type="button" data-start="1785" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">29:45</span>{"Sudden promotions are possible"}</button>
-                <button type="button" data-start="2520" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">42:00</span>{"Judge people by their heart"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Old school songs and principles"}</button>
+                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:30</span>{"Running a whole country"}</button>
+                <button type="button" data-start="240" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:00</span>{"Unhappiness cannot stop everything"}</button>
+                <button type="button" data-start="390" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">6:30</span>{"Greatest of all time debate"}</button>
+                <button type="button" data-start="645" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">10:45</span>{"Lies get manufactured constantly"}</button>
+                <button type="button" data-start="975" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">16:15</span>{"Trust comes from consistency"}</button>
+                <button type="button" data-start="1785" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">29:45</span>{"Sudden promotions are possible"}</button>
+                <button type="button" data-start="2520" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">42:00</span>{"Judge people by their heart"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -164,32 +164,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"False Accusations and Lies Cannot Stop What's Meant for You"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"False Accusations and Lies Cannot Stop What's Meant for You"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Someone falsely accuses you. The lie spreads. Your reputation takes a hit. Your instinct is to fight back, prove them wrong, make people see the truth. But here's what actually happens: you exhaust yourself defending against something you didn't do, while the other person keeps lying and rebuilding their story. Every lie needs a new lie to cover it. Every false word needs to be remembered and reinforced."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The scripture shows us that Jesus stood before Pilate accused of crimes he never committed. He didn't argue. He didn't try to convince people. He knew something fundamental: truth doesn't need your defense. Truth is consistent. It doesn't change with the facts or the season. A lie, by contrast, collapses under its own weight because the person telling it has to remember every version they created."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"False accusation is painful, but it's also temporary. God's purpose for your life doesn't depend on what others believe about you today. It depends on who you actually are when nobody's watching."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Hidden Work Gets Rewarded-Sometimes Suddenly"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Hidden Work Gets Rewarded-Sometimes Suddenly"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You show up early to work without being asked. You fix problems nobody credits you for. You pray for people six months after they ask because you write it down and follow through. You post content on social media every single day, even when engagement is low. You serve in positions nobody celebrates. Most people call this invisible work a waste. Most people quit after three months because the results don't show."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But there's a principle at work: whoever can be trusted with small things gets trusted with large ones. This isn't motivation talk. It's observable. When you consistently do what you said you'd do-even when it's hidden, even when nobody sees-you become the person someone mentions when they need someone reliable. Your name gets spoken in rooms you're not in. Not because you promoted yourself, but because your character did."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Promotion doesn't come from your boss liking you or your expertise being flashy. It comes from being the person who actually does the work. Sometimes that promotion happens overnight. Sometimes it happens because you were prepared in the darkness, and when you stood in front of the king, you were sharp. Ready. Positioned."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Stop Intending. Start Doing."}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Stop Intending. Start Doing."}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Church ends. You feel moved. You make a promise to yourself and to whoever's listening: this week I'm going to change. This month I will do it. Next year everything shifts. Then Monday comes. The intention disappears. By next Sunday you're back, making the same promise, leaving it at the church door again."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Greatness doesn't start with feeling inspired. It starts with action. A single step you can actually take today. Not a grand vision you'll think about forever. Not a New Year's resolution you'll abandon by February. Intention sounds good in a moment of emotion. But action is what builds a life. Action is what gets you mentioned. Action is what attracts opportunity."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The difference between someone who gets promoted and someone who stays stuck isn't talent or luck. It's the person who does one small thing consistently versus the person who thinks about doing ten big things and does none of them. If you want to change something in your life, identify the smallest, most doable action and do it today. Not tomorrow. Not when conditions are perfect. Today."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Faking It Costs More Than You Know"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Faking It Costs More Than You Know"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You see someone with a better car, a nicer apartment, a sharper image. So you tell yourself: fake it till you make it. You spend money you don't have to look like you already won. You borrow to project success. You work two jobs to maintain an image that impresses people who don't actually matter. The cost is brutal-not just financially, but spiritually and emotionally."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Promotion by self-promotion is a trap. You promote yourself through gossip, by talking badly about others to make yourself look better. You dress like someone else, spend like someone else, speak like someone else. You cut corners and exaggerate to get noticed. In the short term, it works. People see confidence. What they don't see is the lie underneath it. And neither do you-until the bill comes due."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"God looks at the heart. Not the appearance, not the image, not the carefully crafted story you tell about yourself. When you fake something to get ahead, you're betting that nobody will notice. But there's someone who always notices: the one who actually judges. And the judgment isn't based on what you look like-it's based on what you actually are when nobody's watching."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Judge Looks at Your Heart, Not Your Resume"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Judge Looks at Your Heart, Not Your Resume"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Samuel was sent to anoint a king. He looked at the tall ones, the handsome ones, the impressive ones. Each time God said no. Finally the youngest, least impressive son showed up from the fields. God said: this one. Because God looks at the heart, not the appearance. The heart determines what you actually do when opportunity comes. The heart determines whether you'll stay honest when dishonesty would be easier. The heart determines whether you'll serve people or use them."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You can trick the whole world. You can build a flawless image. You can position yourself perfectly through politics and connections. But the one who actually judges-the one who sees what you do when cameras are off, when nobody's watching, when you could get away with it-that one sees the truth. And promotion that matters comes from that judgment, not from human approval."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If there's an area of your life where growth has stalled, consider what your heart actually looks like in that area. Not what you tell people. Not what you project. What are you actually willing to do? Who are you when advantage is on the table? The answer to that question explains your current position better than any other factor."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"One Faithful Day Can Change Everything"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"One Faithful Day Can Change Everything"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Joseph spent years in prison. Years of faithful service that nobody recognized. Then one day the king needed an answer. Joseph spoke truth. The king heard something in the way he spoke-clarity, wisdom, character. One conversation. That's all it took. Joseph went from prison to running a nation."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You don't know when your moment will come. You don't know which small, faithful action you take today will be the one that gets mentioned in the right room at the right time. You don't know which Tuesday your consistency will be noticed by someone who can change your trajectory. But you know this: if you're faithful in small things, you'll be ready when the moment arrives. You'll be sharp. You'll know what to do. You won't panic because you've already been doing it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Don't wait for permission or perfect conditions or a guarantee of reward before you act. Act because it's right. Do the work because it needs to be done, not because someone's watching. Stay honest because you know who you are, not because you're afraid of getting caught. The promotion will come when it comes-sometimes suddenly, sometimes unexpectedly. But it will come to the person who was already faithful before anyone was looking."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Promotion comes neither from talking about yourself nor from tricking the system-it comes from the judge who actually sees what you do when nobody's watching.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Promotion comes neither from talking about yourself nor from tricking the system-it comes from the judge who actually sees what you do when nobody's watching.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -198,7 +198,7 @@ export default function SermonPage() {
               <li><strong>{"Small Faithfulness Leads to Large Opportunity"}</strong> {" "}{"You don't get promoted because you're talented or lucky. You get promoted because someone knows you can be trusted with what matters. That trust comes from years of small, unseen choices-showing up when nobody's watching, finishing what you started, doing what you said you'd do. When opportunity suddenly appears, it doesn't pick the loudest person in the room. It picks the person who already proved they're reliable."}</li>
               <li><strong>{"Action Beats Intention Every Time"}</strong> {" "}{"Intention feels powerful in the moment. It makes you feel like you're already changing. But intention disappears by Monday morning. Action is one small step you can do today. Not a vision for next year. Not a promise you'll make and break. One thing, done. Then tomorrow, another thing. The person who takes five small actions beats the person who intends fifty big ones. Greatness isn't built on how you feel-it's built on what you actually do."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -226,7 +226,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -244,7 +244,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -257,33 +257,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Deliberately Gets Worse Before It Works Out
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Big Break Is Coming, But You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#0d6fbf] hover:underline font-medium">
                   They
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-wasting-energy-on-people-who-wont-listen" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-wasting-energy-on-people-who-wont-listen" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Wasting Energy on People Who Won
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

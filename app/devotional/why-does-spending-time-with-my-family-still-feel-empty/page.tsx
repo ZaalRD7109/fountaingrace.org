@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 184 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Why does spending time with my family still feel empty?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 3 July 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 3 July 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Jesus said unto him, Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind. This is the first and great commandment. And the second is like unto it, Thou shalt love thy neighbour as thyself."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Jesus said unto him, Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind. This is the first and great commandment. And the second is like unto it, Thou shalt love thy neighbour as thyself."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Matthew 22:37-39 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You love your family deeply. I see it. You provide, you show up, you care about getting it right. So you schedule time with them like you schedule everything else that matters. Calendar blocks. Efficiency. Intention. There is something good in that, truly.\n\nBut somewhere along the way, the system became the thing. You began managing your family the way you manage your work, and now being together feels like another appointment you might not make. The irony cuts: you organized time with them so carefully that you forgot to actually be with them. And that gap between the schedule and the presence is where the real ache lives.\n\nHere is the tender truth. You do not need a better system. You need permission to stop performing your way through love. \"Jesus said unto him, Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind. This is the first and great commandment. And the second is like unto it, Thou shalt love thy neighbour as thyself.\" Love is not an efficiency to master. It is a presence to risk.\n\nThis week, let one dinner be unscheduled. Let one conversation wander. Your family does not need your perfect planning. They need you, actually here, actually listening. That is where grace meets you, and where they will meet you too.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

@@ -958,7 +958,7 @@ export default function SermonsPage() {
       {/* DEVOTIONAL SIGNUP */}
       <section className="bg-[#f0fafa] py-14 px-4 sm:px-6 border-t border-[#e0f4f4]">
         <div className="section-container max-w-xl text-center">
-          <p className="text-[#008080] font-semibold text-xs uppercase tracking-widest mb-3">
+          <p className="text-[#006b6b] font-semibold text-xs uppercase tracking-widest mb-3">
             Every week · Free
           </p>
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
@@ -980,14 +980,14 @@ export default function SermonsPage() {
             </a>
             <a
               href="mailto:info@fountaingrace.org?subject=Weekly%20Devotional%20Signup&body=Hi%2C%20please%20add%20me%20to%20the%20weekly%20devotional%20email%20list.%0A%0AMy%20name%20is%3A%20"
-              className="inline-block bg-[#2a9df4] text-white font-bold px-7 py-3 rounded-lg hover:bg-[#1a8de4] transition-colors"
+              className="inline-block bg-[#0d6fbf] text-white font-bold px-7 py-3 rounded-lg hover:bg-[#1a8de4] transition-colors"
             >
               Subscribe via Email →
             </a>
           </div>
-          <p className="text-xs text-[#7d7d7d] mt-4 max-w-md mx-auto leading-relaxed">
+          <p className="text-xs text-[#595959] mt-4 max-w-md mx-auto leading-relaxed">
             By subscribing you consent to Fountain of Grace International (NPO 316-193) sending you a weekly devotional. Your details are used only for this purpose and are never sold or shared. Unsubscribe any time by replying STOP or UNSUBSCRIBE. See our{' '}
-            <a href="/privacy-policy" className="underline hover:text-[#008080]">Privacy Policy</a>.
+            <a href="/privacy-policy" className="underline hover:text-[#006b6b]">Privacy Policy</a>.
           </p>
         </div>
       </section>
@@ -998,7 +998,7 @@ export default function SermonsPage() {
           <h2 className="text-2xl font-bold text-white mb-4">
             Come and hear this in person - Pretoria North
           </h2>
-          <p className="text-white/70 mb-8 max-w-xl mx-auto">
+          <p className="text-white mb-8 max-w-xl mx-auto">
             Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.
           </p>
           <Link href="/plan-your-visit" className="btn-primary">

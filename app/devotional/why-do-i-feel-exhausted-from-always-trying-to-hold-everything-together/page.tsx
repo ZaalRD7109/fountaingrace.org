@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 164 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Why do I feel exhausted from always trying to hold everything together?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 13 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 13 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Come unto me, all ye that labour and are heavy laden, and I will give you rest."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Come unto me, all ye that labour and are heavy laden, and I will give you rest."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Matthew 11:28 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You've been shouldering the weight of everyone else's struggles for so long, you've forgotten what it's like to not be holding something together.\n\nYour exhaustion is not just a sign of overwork, it's a warning that you're running on empty, with no reserve to draw from.\n\nAs the scripture says, \"the battle is not yours, but God's\" - what if your role is not to hold everything together, but to learn to trust that He will.\n\nYou are not a pillar, you are a person, and it's time to stop carrying the weight of the world."}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

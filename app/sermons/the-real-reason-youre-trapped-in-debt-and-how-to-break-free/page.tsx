@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"The Real Reason You're Trapped in Debt (And How to Break Free)"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 8 December 2024</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You feel the pressure to have enough - enough money, enough health, enough worth. But what if the debt you owe has already been paid in full? Explore what changes when you stop competing and start receiving."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 8 December 2024</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You feel the pressure to have enough - enough money, enough health, enough worth. But what if the debt you owe has already been paid in full? Explore what changes when you stop competing and start receiving."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"We ignore the warning signs"}</button>
-                <button type="button" data-start="146" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:26</span>{"What happened on Friday"}</button>
-                <button type="button" data-start="535" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">8:55</span>{"Why Black Friday matters"}</button>
-                <button type="button" data-start="1203" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">20:03</span>{"The payment was made"}</button>
-                <button type="button" data-start="1723" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">28:43</span>{"Peace that doesn't compete"}</button>
-                <button type="button" data-start="2447" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">40:47</span>{"Real abundance right now"}</button>
-                <button type="button" data-start="3234" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">53:54</span>{"Our worth was shown"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"We ignore the warning signs"}</button>
+                <button type="button" data-start="146" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">2:26</span>{"What happened on Friday"}</button>
+                <button type="button" data-start="535" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">8:55</span>{"Why Black Friday matters"}</button>
+                <button type="button" data-start="1203" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">20:03</span>{"The payment was made"}</button>
+                <button type="button" data-start="1723" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">28:43</span>{"Peace that doesn't compete"}</button>
+                <button type="button" data-start="2447" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">40:47</span>{"Real abundance right now"}</button>
+                <button type="button" data-start="3234" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">53:54</span>{"Our worth was shown"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,32 +163,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Debt You Cannot Repay"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Debt You Cannot Repay"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Every person carries an invisible red ink in their ledger. Not just money, but spiritual debt - the accumulated weight of choices, failures, and the parts of yourself you wish were different. This debt creates the anxiety that haunts modern life: the fear that you will never have enough, never be enough, never earn enough to cover what you owe."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Black Friday exposes this fear in raw form. People trample each other, max out credit cards, queue overnight from midnight until morning - all for a discount. They are willing to go deeper into debt, willing to risk their safety, because the underlying terror is real: there is not enough, and you must fight to survive. But this desperation is a symptom of a much deeper problem - the sense that you carry an unpayable debt."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible calls this debt sin. Not in the preachy sense, but in the literal sense: you have done things you cannot undo, you are not who you want to be, and no amount of willpower or money or achievement will fix it. Colossians 2:13-14 says that when you were dead in your failures, God made you alive with Jesus and canceled the legal charge against you - the handwriting in red ink was erased."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Payment That Ended the Debt"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Payment That Ended the Debt"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"On a Friday two thousand years ago, Jesus hung on a cross in darkness. For three hours, from noon until three in the afternoon, the sky went black. Religious leaders later rebranded Black Friday to mean profit - moving from red ink to black ink. But on that original black Friday, something far more significant happened: a debt was being paid that you could never pay yourself."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus did not go to the cross because He owed anything. He went because you owed what you could not repay. Romans 3:23-25 explains it plainly: everyone has fallen short, and the consequence of that shortfall is death - but Jesus became the payment. His blood shed on the cross became the price that canceled your debt completely. Not partially forgiven, not deferred - completely canceled."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is why it is called Good Friday. The darkness was real, the suffering was real, but the outcome reversed everything. Where you were condemned, you are now free. Where you were in red, the account is now settled. The weight you have been carrying - the sense that you must perform, earn, compete, and fight to be worthy - it was lifted that day. Galatians 3:13-14 says Jesus became a curse by hanging on the cross so that the blessing could come to you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why You No Longer Have to Fight"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why You No Longer Have to Fight"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Black Friday is chaos because scarcity is the driving force. People believe there is not enough, so they fight. But the gift Jesus offers operates on a completely different principle: abundance. John 14:27 records His words: I give you peace - not as the world gives, but as a gift that does not require you to trample anyone to receive it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Philippians 4:19 makes a staggering claim: God will meet all your needs according to His riches in Christ. Not some needs. Not the needs you deserve. All your needs - food, shelter, healing, belonging, purpose. These are provided through Christ's sacrifice, not through your desperation or competition. Second Corinthians 9:8 reinforces this: God is able to bless you abundantly so that in all things and at all times, having all sufficiency, you abound in every good work."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This abundance is not seasonal. It does not wait for a holiday sale or a discount. It is available now, every day, in every season. The moment you stop trying to earn it and start receiving it, the desperation lifts. You no longer need to queue from midnight. You no longer need to go into debt. You no longer need to compete with others because what is freely given cannot run out."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Healing and Worth You Already Have"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Healing and Worth You Already Have"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Debt creates sickness - not just financial, but physical and emotional. When you believe you owe what you cannot pay, your body carries the stress, your mind carries the shame, your relationships carry the strain. But Isaiah 53:5 says that Jesus was pierced and crushed so that by His wounds you are healed. This is not future healing. This is healing that was already secured the moment He paid the debt."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Notice what else happened in that darkness on the cross: Jesus was rejected so that you could be accepted. Isaiah 53:3 describes how He was despised and rejected - literally cast out. Ephesians 1:5-6 explains why: because of Jesus, God predestined you for adoption as His child through Jesus Christ, giving you His glorious grace freely in the one He loves. You are not an outsider anymore. You are not a reject. You are adopted, fully loved, fully accepted."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"First Corinthians 6:20 completes the picture: you were bought at a price - Jesus paid 30 pieces of silver was the betrayal price, but the real price was His blood. This means your worth is not based on what you own, how much you earn, or how you look. Your worth is established by what was paid for you. You are valuable beyond measure because Jesus' sacrifice declared it."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Freedom from the Fear That Drives You"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Freedom from the Fear That Drives You"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The fear underneath all desperation is the fear of not having, not being, not mattering. But Romans 10:9 and John 8:12 offer an exit from this fear. When you acknowledge that Jesus is Lord and believe that God raised Him from the dead, you are saved - and this salvation means you step out of darkness into light. The light of Jesus removes the darkness of sin and the fear that sin creates."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Notice that Romans 10:9 does not say you must earn salvation or prove yourself worthy. It says declare and believe - simply receive what has already been done. This is the radical shift: from striving to receiving, from performing to resting, from fear to trust."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Because your debt is paid, you lack nothing according to the riches of Christ. Because you are adopted, you are fully loved. Because you are healed, you do not have to wait for pain to disappear on its own. Because you are accepted, you do not have to prove yourself anymore. The pressure to have enough, be enough, earn enough - it can finally lift."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How to Live in This Freedom Now"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How to Live in This Freedom Now"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Freedom from debt is not something that happens to you passively. You must choose to take God at His word. Philippians 4:19 promises that God will meet all your needs, but it requires you to believe it and act on it - to stop running to Black Friday sales and credit cards, and instead to trust the provision already available to you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This means you reorient your life around receiving rather than fighting. You stop the all-night queues, the competition with others, the desperation to grab the last deal. You stop going into debt to prove you deserve good things. You start living as someone whose worth is already established, whose needs are already promised, whose healing is already secured."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The peace that comes from this - the peace that Jesus promised - is not the absence of problems. It is the confidence that because your debt is paid, because you are loved, because you are provided for, you can face what comes next without the grinding fear of scarcity. You can bless others instead of competing with them. You can rest instead of striving. You can receive instead of desperately grasping."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Jesus paid a debt He did not owe because you owed a debt you could not pay - and now you are free.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Jesus paid a debt He did not owe because you owed a debt you could not pay - and now you are free.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -197,7 +197,7 @@ export default function SermonPage() {
               <li><strong>{"Abundance is available now, not on sale"}</strong> {" "}{"God's provision is not seasonal or limited to special occasions. Philippians 4:19 and Second Corinthians 9:8 promise that all your needs - food, shelter, healing, purpose, belonging - are met through Christ's riches, not through your desperation or your credit card. This abundance is constant and overflowing, available to you right now. The lie that you must wait for a discount, go into debt to get something, or compete with others to survive is exposed. When you stop running toward scarcity (Black Friday sales, debt, competition) and start receiving from sufficiency (Christ's riches, daily provision, peace), your entire life changes."}</li>
               <li><strong>{"Your worth was established by the price paid for you"}</strong> {" "}{"You do not determine your value based on what you own, earn, or achieve. First Corinthians 6:20 says you were bought at a price - the blood of Jesus. This price declares your immeasurable worth. Additionally, because Jesus was rejected on the cross, you were accepted into God's family as an adopted child fully loved (Ephesians 1:5-6). The shame, the sense of not being enough, the fear that you do not matter - these are lies contradicted by what was paid for you. When you live from the truth of your established worth, you stop trying to prove yourself and start living from the freedom of being already loved."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -225,7 +225,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -243,7 +243,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -256,33 +256,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Mind Is Broken By Lies You Believed - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Paycheck Disappears Every Month - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
                   When You Feel Abandoned: Why You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-shortcut-thats-ruining-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-shortcut-thats-ruining-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   The Shortcut That
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 143 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Why do I keep scrolling my phone instead of sleeping?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 23 May 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 23 May 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Cast thy burden upon the LORD, and he shall sustain thee: he shall never suffer the righteous to be moved."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Cast thy burden upon the LORD, and he shall sustain thee: he shall never suffer the righteous to be moved."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 55:22 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You're not scrolling because you're bored, are you? No, it's more like the silence feels too loud when the screen goes dark. That gnawing worry about tomorrow. The lingering regrets about today. You tell yourself it’s only a few minutes, but we both know the truth. It's hard to face the night when you're scared of what the quiet might say.\n\nSo, let’s cut through it. You're not avoiding sleep - you’re avoiding what's inside. The thoughts you haven’t wanted to touch. Because when the screen fades, there’s nowhere else to hide. It’s like a mirror, reflecting back the questions you've buried. But you can't avoid yourself forever. And the truth? It's okay to admit you’re weary, to feel overwhelmed by it all. God knows this dance of avoidance - He knows you.\n\nHere’s the reframe. \"Cast thy burden upon the LORD, and he shall sustain thee.\" Simple words, but they hold weight if you let them. It’s not a call to religion. It’s an invitation to stop running from your own mind. To pause. To listen. To trust that you're not alone in this. That He can hold what you’ve been clutching so tightly.\n\nTonight, just ask yourself - what if the quiet isn’t your enemy?\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

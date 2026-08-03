@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"The Person Who Notices When You Disappear"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 21 February 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You probably know someone who vanished when they needed help most. Pastor Ricardo explains why most communities fail their people, and how real accountability actually works."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 21 February 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You probably know someone who vanished when they needed help most. Pastor Ricardo explains why most communities fail their people, and how real accountability actually works."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Welcome to accountability"}</button>
-                <button type="button" data-start="91" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:31</span>{"Small choices matter more"}</button>
-                <button type="button" data-start="220" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:40</span>{"Are we really living it"}</button>
-                <button type="button" data-start="438" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">7:18</span>{"Holding power to account"}</button>
-                <button type="button" data-start="612" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">10:12</span>{"How people shared back then"}</button>
-                <button type="button" data-start="915" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:15</span>{"Truth from someone who cares"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Welcome to accountability"}</button>
+                <button type="button" data-start="91" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:31</span>{"Small choices matter more"}</button>
+                <button type="button" data-start="220" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:40</span>{"Are we really living it"}</button>
+                <button type="button" data-start="438" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">7:18</span>{"Holding power to account"}</button>
+                <button type="button" data-start="612" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">10:12</span>{"How people shared back then"}</button>
+                <button type="button" data-start="915" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:15</span>{"Truth from someone who cares"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,32 +162,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Unseen Christian Problem"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Unseen Christian Problem"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo tells the story of what he calls the 11-month Christian. This person shows up faithfully throughout the year, engaged and present. But when December arrives, they disappear. Not physically from everything, but from their community. They drift away."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Why? Because they felt forgotten. When the holidays hit and everyone else seemed surrounded by family and connection, this person felt the weight of isolation. No one from their church checked in. No one asked where they had gone. The community that claimed to care about them had moved on."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This happens because most of us live in a state of practical isolation, even when surrounded by people. We carry our struggles alone. We hide our needs. And we fail to notice when others do the same."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Accountability Isn't About Judgment, It's About Being Seen"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Accountability Isn't About Judgment, It's About Being Seen"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The central question of accountability is simple but challenging: Am I my brother's keeper? This isn't about controlling someone else's life. It's about noticing. It's about asking questions before assuming. It's about showing up consistently, not just when it feels convenient."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo draws from the story of David and Nathan. When Nathan the prophet confronted King David about his sin with Bathsheba, he didn't do it to humiliate him. He did it because he cared enough to speak truth. That's what real accountability looks like. It's a parent telling their child to take a bath, not to shame them, but because they love them and see something that needs attention."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The modern church often swings between two extremes: either ignoring people's problems entirely, or stepping in with judgment instead of grace. Real accountability lives in the middle. It speaks truth in love. It asks questions to understand the full story. It prays together, not at someone, but with them."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How to Actually Hold Yourself Accountable"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How to Actually Hold Yourself Accountable"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Before you can be someone else's keeper, you have to look honestly at yourself. This starts with three basic moves: honesty about your mistakes without excuses, openness to feedback even when it stings, and humility to admit you don't have all the answers."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo shares his own struggle. He felt discouraged, almost wanted to give up on ministry, and turned to his wife for help. He also realized he was the only person who knew how to fix the electrical system at church, which meant he had failed to share knowledge or delegate responsibility. When the power went out, the whole service depended on one person. That's a failure of accountability, and he admitted it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Real accountability means being willing to actually change. Not just talking about it. Not just feeling bad. But taking concrete steps to do things differently, and letting someone you trust know what those steps are."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How to Hold Others Accountable Without Being Harsh"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How to Hold Others Accountable Without Being Harsh"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When you see someone struggling or moving in the wrong direction, don't assume you know the whole story. Ask questions first. This simple shift from judgment to curiosity changes everything. It shows you actually care about understanding them, not proving them wrong."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Then speak truth, but do it in love. Pastor Ricardo learned this from Jethro's advice to Moses: delegate, share the load, build a system where multiple people carry responsibility. This prevents burnout and it also prevents one person's failure from destroying everyone. It's why iron sharpens iron. We need each other to grow."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Finally, follow up. Accountability isn't a one-time conversation. It's showing up for the long haul, celebrating victories, offering encouragement when someone stumbles, and being willing to have hard conversations again if needed. Pray together. Check in regularly. Walk alongside, don't just point the way."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What the Early Church Got Right That We've Lost"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What the Early Church Got Right That We've Lost"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"In the book of Acts, believers shared everything. They sold possessions and distributed to anyone who had need. No one was left to carry their burden alone. There was a culture of mutual support so strong that people were willing to give up their own comfort for others."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"We may not be selling houses today, but we can create that same spirit. We can notice. We can ask. We can show up. We can share our talents, our skills, our time, and our honest words with people who need them. Everyone has something to offer, even if it seems small."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is the real message: God designed us to need each other. Accountability isn't weakness or burden. It's the framework for survival, growth, and belonging. When you know someone is actually watching out for you, when someone notices if you disappear, that changes everything."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your First Step This Week"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your First Step This Week"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You don't need to overhaul your entire life. Start small. Find one person you trust and be more transparent. Share a real struggle, not a polished version of your life. Ask for honest feedback on something you're working on."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If someone confides in you, don't rush to fix their problem. Listen. Offer empathy. Show up. That's often enough. And remember, accountability is a two-way street. Be open to receiving feedback yourself, even when it's uncomfortable."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo's final call is simple: commit to be somebody's keeper. Look beyond yourself. Notice when someone disappears. Ask questions. Speak truth in love. Follow up. Celebrate growth. That's not a program or a burden. It's what humans were built for."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"We can't ignore the needs around us and then wonder why we feel alone.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"We can't ignore the needs around us and then wonder why we feel alone.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -196,7 +196,7 @@ export default function SermonPage() {
               <li><strong>{"Noticing and Asking Questions Comes Before Speaking"}</strong> {" "}{"The difference between judgment and accountability is simple: ask first. When you see someone struggling or moving away, your instinct might be to assume you know why. Resist that. Ask genuine questions without judgment. This shows respect, builds understanding, and often reveals a completely different story than the one you imagined. Speaking truth without understanding the full context is not courage. It's just noise. When you ask questions first and listen carefully, your words will land differently because the person knows you actually tried to understand them."}</li>
               <li><strong>{"Follow-Up Is Where Accountability Becomes Real"}</strong> {" "}{"One conversation doesn't change anything. Real accountability is showing up over time, checking in, celebrating small wins, offering encouragement when someone falls, and being willing to have difficult conversations again if needed. This is the hard part because it requires consistency and presence. But it's also the part that transforms people. When someone knows you're not just concerned for a moment but committed for the long haul, they feel genuinely seen. That sense of being noticed and cared for is what keeps the 11-month Christian from disappearing in December."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -224,7 +224,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -242,7 +242,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -255,33 +255,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The Person Nobody Checks On: How You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-one-conversation-that-stops-relationship-arguments-before-they-start" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-one-conversation-that-stops-relationship-arguments-before-they-start" className="text-[#0d6fbf] hover:underline font-medium">
                   The One Conversation That Stops Relationship Arguments Before They Start
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#0d6fbf] hover:underline font-medium">
                   Helping Someone Actually Keeps Them Stuck
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

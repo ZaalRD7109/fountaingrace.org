@@ -102,17 +102,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               You Were Built for Something Specific - Here Is How to Find It
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 23 February 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 23 February 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               2 Timothy 1:6 does not tell you to go find the gift. It tells you to stir up the gift that is already in you. The problem is not that God withheld something. The problem is that fear, comparison, and the wrong season buried what was already there. This message is about getting it back out.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 23 February 2025
             </p>
           </div>
@@ -134,14 +134,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Four weeks of training"}</button>
-                <button type="button" data-start="50" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:50</span>{"Speaking awakens the gift"}</button>
-                <button type="button" data-start="310" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:10</span>{"Everyone has something to offer"}</button>
-                <button type="button" data-start="660" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">11:00</span>{"Gifts come in many shapes"}</button>
-                <button type="button" data-start="1420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">23:40</span>{"You are chosen and named"}</button>
-                <button type="button" data-start="2010" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:30</span>{"Delays are not denials"}</button>
-                <button type="button" data-start="2950" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">49:10</span>{"Fear keeps you stuck"}</button>
-                <button type="button" data-start="3630" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:00:30</span>{"Direction and purpose return"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Four weeks of training"}</button>
+                <button type="button" data-start="50" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:50</span>{"Speaking awakens the gift"}</button>
+                <button type="button" data-start="310" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:10</span>{"Everyone has something to offer"}</button>
+                <button type="button" data-start="660" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">11:00</span>{"Gifts come in many shapes"}</button>
+                <button type="button" data-start="1420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">23:40</span>{"You are chosen and named"}</button>
+                <button type="button" data-start="2010" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:30</span>{"Delays are not denials"}</button>
+                <button type="button" data-start="2950" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">49:10</span>{"Fear keeps you stuck"}</button>
+                <button type="button" data-start="3630" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:00:30</span>{"Direction and purpose return"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -160,7 +160,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">When the Teaching Is Not Enough Without the Encounter</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">When the Teaching Is Not Enough Without the Encounter</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               You can speak about the Holy Spirit for twelve months and the Spirit never shows up to confirm what you said. You can talk about Jesus for a month and see nothing shift in your life. You can teach on prophecy for four weeks and have nothing prophetic happen. If the word you are preaching is not backed up by something happening in your actual life - there is an error somewhere.
             </p>
@@ -168,7 +168,7 @@ export default function SermonPage() {
               God honours His word more than He honours anything else. When the teaching is true and the heart is right, something should break open. That is what this message is about. Not more theory. An encounter - the kind that comes when the gift inside you is finally stirred up and activated.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">2 Timothy 1:6 - The Gift Is Already in You</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">2 Timothy 1:6 - The Gift Is Already in You</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               2 Timothy 1:6 - &quot;Wherefore I put thee in remembrance that thou stir up the gift of God, which is in thee by the putting on of my hands.&quot;
             </p>
@@ -179,7 +179,7 @@ export default function SermonPage() {
               1 Corinthians 14:1 says, &quot;Follow after charity, and desire spiritual gifts.&quot; The word is desire. Not observe. Not admire in others from a distance. Desire means you actively want it for yourself. The reason so many believers see gifts operating in others but never in their own lives is that they stopped desiring what God put in them - because somewhere along the way they became convinced that their gift was not worth much.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Stop Trying to Be Somebody Else&apos;s Gift</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Stop Trying to Be Somebody Else&apos;s Gift</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               You see the pastor preach and you want to preach like him. You see your mother pray in tongues and you think that is what your gift should look like. You hear somebody with the gift of music and you feel like your quiet gift of service or craftsmanship or mercy is somehow less. That is not the gift of God operating in you - that is comparison shutting the gift of God down.
             </p>
@@ -190,7 +190,7 @@ export default function SermonPage() {
               The gift He put in you is not the gift He put in the person next to you. Your assignment to find it is not to copy what you have seen elsewhere. It is to ask God what He specifically placed in you - and then to stir it up until it burns again.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Isaiah 42:3 - You Are Bruised, Not Broken</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Isaiah 42:3 - You Are Bruised, Not Broken</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Isaiah 42:3 - &quot;A bruised reed shall he not break, and the smoking flax shall he not quench: he shall bring forth judgment unto truth.&quot;
             </p>
@@ -201,7 +201,7 @@ export default function SermonPage() {
               What you went through felt like it was going to end you. The relationship that ended, the season that collapsed, the door that closed without explanation. You cried in ways you did not expect. You thought you would never recover. But you were bruised - not broken. And the gift that was buried under that season is still there. God did not remove it when things went wrong. He preserved it. Now is the time to stir it up.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Fear That Is Keeping You in the Prison</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Fear That Is Keeping You in the Prison</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               2 Timothy 1:7 - &quot;For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.&quot;
             </p>
@@ -213,7 +213,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;You are not broken. You are bruised. There is a difference. Bruised things heal. And the gift that was buried under the bruise is still in you. Stir it up. God preserved it for a reason - and the reason is now.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -228,7 +228,7 @@ export default function SermonPage() {
 
             <p className="text-[#555] leading-relaxed">
               If you are in or around Pretoria or Johannesburg,{' '}
-              <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
+              <Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">
                 come on a Sunday
               </Link>{' '}
               - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
@@ -262,7 +262,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">
                 Plan Your Visit
               </Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
                 Send a Prayer Request
               </Link>
             </div>
@@ -283,7 +283,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -298,33 +298,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Nothing Changes No Matter How Hard You Try
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/releasing-his-presence" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/releasing-his-presence" className="text-[#0d6fbf] hover:underline font-medium">
                   Releasing His Presence: From Container to Conduit
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Resolution Didn't Fail - You Quit Acting
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-dont-know-who-you-are-yet" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-dont-know-who-you-are-yet" className="text-[#0d6fbf] hover:underline font-medium">
                   You Don't Know Who You Are Yet
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

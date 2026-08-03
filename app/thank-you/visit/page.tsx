@@ -15,7 +15,7 @@ export default function VisitThankYouPage() {
 
       <section className="bg-[#008080] text-white pt-16 pb-16 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#FFD600] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             You are on our list
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -80,7 +80,7 @@ export default function VisitThankYouPage() {
               href="https://wa.me/27752592555"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-[#008080] font-semibold hover:underline text-sm"
+              className="text-[#006b6b] font-semibold hover:underline text-sm"
             >
               WhatsApp +27 75 259 2555
             </a>

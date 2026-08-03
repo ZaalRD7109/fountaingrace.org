@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You Feel Trapped By What Others Say You Can't Do"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 27 November 2022</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You've heard it a thousand times: you can't start that business, you can't leave that job, you can't be worthy of love. This message shows you why those voices keep you captive and how to actually break free."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 27 November 2022</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You've heard it a thousand times: you can't start that business, you can't leave that job, you can't be worthy of love. This message shows you why those voices keep you captive and how to actually break free."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Good morning everyone"}</button>
-                <button type="button" data-start="423" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">7:03</span>{"What we all need"}</button>
-                <button type="button" data-start="951" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:51</span>{"There's a purpose here"}</button>
-                <button type="button" data-start="1526" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:26</span>{"Something's been holding you back"}</button>
-                <button type="button" data-start="2023" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:43</span>{"You don't need that stuff"}</button>
-                <button type="button" data-start="2643" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">44:03</span>{"Finding your better life"}</button>
-                <button type="button" data-start="3307" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">55:07</span>{"Let me pray with you"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Good morning everyone"}</button>
+                <button type="button" data-start="423" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">7:03</span>{"What we all need"}</button>
+                <button type="button" data-start="951" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:51</span>{"There's a purpose here"}</button>
+                <button type="button" data-start="1526" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:26</span>{"Something's been holding you back"}</button>
+                <button type="button" data-start="2023" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:43</span>{"You don't need that stuff"}</button>
+                <button type="button" data-start="2643" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">44:03</span>{"Finding your better life"}</button>
+                <button type="button" data-start="3307" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">55:07</span>{"Let me pray with you"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,30 +162,30 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Chains Holding You Captive"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Chains Holding You Captive"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You know the feeling. Someone tells you not to start that business because you'll fail. Someone says you're not smart enough for that job. Someone whispers that nobody will ever love you the way you are. And the worst part is, over time, you start believing them. Those words become chains."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The story of the demon-possessed man in Mark 5 is your story. People tried to bind him with chains. He broke them. People tried again. He broke them again. Eventually they gave up and let him wander between graveyards and mountains, cutting himself with stones. He wasn't held by chains anymore. He was held by something worse-the belief that he was beyond help, that he belonged in the grave."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your own negative beliefs work the same way. They're the chains you've stopped noticing because you've worn them so long. The voices telling you what you can't do, the shame from what you've already done, the fear that you're too broken-these are your mountains and tombs."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why People Keep You Trapped"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why People Keep You Trapped"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Here's what most people don't tell you: the people holding you captive usually think they're protecting you. Someone says you can't start that business because they're afraid you'll get hurt. Someone keeps you small because they're scared you'll fail and suffer. Their chains come wrapped in concern."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But protection isn't the same as freedom. Love that locks you down isn't love-it's control dressed up as care. When someone tells you that you're useless, that you don't deserve better, that you should stay where you are because the outside world is too dangerous, they're not protecting you. They're keeping you in a graveyard while you're still alive."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Stone You've Been Using to Survive"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Stone You've Been Using to Survive"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When the man in the tombs got desperate, he cut himself with stones. You do this too, though it looks different. When life gets too hard, you pick up stones-gospel songs, prayers, routines, habits-just to get relief for a moment. There's nothing wrong with those things. But you've been using them to numb the pain instead of using them to meet Jesus."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"A stone is what Jesus became-the cornerstone that builders reject but that holds everything together. When you're crying night and day in your mountain and tomb situation, you're actually calling out for the one who can move mountains and raise the dead. Jesus is the cornerstone you've been using as a crutch. Stop using him as a band-aid. Meet him as your rescuer."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Fear That Keeps You From Jesus"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Fear That Keeps You From Jesus"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Here's where the real trap springs. Once you see Jesus coming toward you, the devil shows up with a list. All the things you stole. All the people you hurt. All the times you failed. And the devil whispers: Jesus is coming to torment you, not save you. You're too dirty. Your sins are legion-too many to count, too big to forgive."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But that's a lie. Jesus didn't come to torment you. He came to forgive you. When you ask for forgiveness, He doesn't pull out a ledger. He doesn't say your sins are too numerous. He says yes. Over and over again, yes. The only barrier between you and freedom is the shame you've agreed to carry, the belief that you're beyond repair."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"What's your name? Jesus asked the demon-possessed man. And the answer was Legion-because he was carrying so many problems, so much shame, so much weight. But Jesus didn't flinch. He healed him anyway. That same Jesus is asking your name right now."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How to Actually Break Free"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How to Actually Break Free"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Breaking free from your mountain and tomb situation doesn't start with changing your circumstances. It starts with a choice: you have to decide right now that you need Jesus as your Lord and Savior. Not as a helper. Not as a bonus. As the one who moves mountains and opens tombs."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"That choice removes the shame barrier. Once Jesus is your foundation, the voices telling you that you're useless become background noise. The chains you've worn so long lose their weight. Your past mistakes stop defining your future. You don't have to use stones to scratch yourself anymore. You have a cornerstone."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Then action follows belief. You start the business. You go after the relationship. You apply for the job. You stop waiting for permission from people who benefit from keeping you small. Every time fear whispers, you remember: I have someone on my side. I have Jesus."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Next Step"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Next Step"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"If you haven't made Jesus your Lord and Savior, do it now. The prayer is simple: acknowledge that you've sinned, ask for forgiveness, and invite Him to be your personal Lord and Savior. That's it. He's waiting for you to call."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If you used to follow Jesus but you've drifted back into the world, come back. He's the Father who welcomes His children home-not with shame, but with celebration. Come back to work with Him, to help others break free like you did."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Then reach out. Tell someone at your church or in this community that you've made that choice. Take the next step. Let someone help you understand the promises God has actually made to you-not the chains others have placed on you."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"For far too long people have been holding you captive with their words and their fear-but Jesus is here to tell you that you don't belong in the grave and the mountain is not your home.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"For far too long people have been holding you captive with their words and their fear-but Jesus is here to tell you that you don't belong in the grave and the mountain is not your home.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -194,7 +194,7 @@ export default function SermonPage() {
               <li><strong>{"Your Mountain Gives You Strength, But It's Not Your Home"}</strong> {" "}{"Mountains and tombs teach you something. They show you that there's better than this. They force you to seek higher ground. But people who love you wrong try to keep you on the mountain to protect you. They confuse the lesson with the destination. Thank your mountains for making you stronger, but don't pitch your tent there. God didn't design you to live in the crisis-He designed the crisis to draw you closer to Him."}</li>
               <li><strong>{"Shame Is The Real Prison; Jesus Is The Real Key"}</strong> {" "}{"Physical chains can be broken. Emotional ones are harder because you carry them willingly. Shame is the story you believe about yourself-that you're too damaged, too sinful, too broken. Jesus doesn't argue with your past. He rewrites your future. The moment you accept that He forgives you completely, shame loses its grip. Your past becomes proof that His grace is real, not proof that you're worthless."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -221,7 +221,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -237,7 +237,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -250,33 +250,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#0d6fbf] hover:underline font-medium">
                   Everyone
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-fixing-the-same-problems-over-and-over" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-fixing-the-same-problems-over-and-over" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Fixing the Same Problems Over and Over
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
                   When You Feel Abandoned: Why You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#0d6fbf] hover:underline font-medium">
                   You Know What You Need to Do-So Why Can
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#0d6fbf] hover:underline font-medium">
                   You Work Hard But Nothing Changes - Here
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Life Falls Apart Under Pressure Because of What's Actually Inside You"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 18 January 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You know all the right things to say and do in public. But the moment real pressure hits-financial stress, relationship conflict, temptation-you fall apart. That's not a sign you're broken. It's a sign your foundation is built wrong."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 18 January 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You know all the right things to say and do in public. But the moment real pressure hits-financial stress, relationship conflict, temptation-you fall apart. That's not a sign you're broken. It's a sign your foundation is built wrong."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Why does life keep collapsing"}</button>
-                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:45</span>{"What we actually hear"}</button>
-                <button type="button" data-start="380" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">6:20</span>{"Pressure reveals what's inside"}</button>
-                <button type="button" data-start="840" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">14:00</span>{"The foundation must be strong"}</button>
-                <button type="button" data-start="1650" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">27:30</span>{"Five pillars of a solid house"}</button>
-                <button type="button" data-start="3180" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">53:00</span>{"Fruits show who you really are"}</button>
-                <button type="button" data-start="3600" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:00:00</span>{"Building something that lasts"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Why does life keep collapsing"}</button>
+                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:45</span>{"What we actually hear"}</button>
+                <button type="button" data-start="380" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">6:20</span>{"Pressure reveals what's inside"}</button>
+                <button type="button" data-start="840" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">14:00</span>{"The foundation must be strong"}</button>
+                <button type="button" data-start="1650" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">27:30</span>{"Five pillars of a solid house"}</button>
+                <button type="button" data-start="3180" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">53:00</span>{"Fruits show who you really are"}</button>
+                <button type="button" data-start="3600" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:00:00</span>{"Building something that lasts"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,44 +163,44 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You Know the Words but Not the Life"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You Know the Words but Not the Life"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Most people who claim faith can quote scripture perfectly. They have the words memorized. They say the right things at church. But then life gets hard-a financial crisis, a relationship breakdown, a real temptation-and they collapse into fear, anger, bitterness, or dishonesty. Nothing they said they believed seems to work."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The problem is not that God abandoned them. The problem is that they built their life on the wrong foundation. In Matthew 7:24, Jesus draws a stark picture: a wise person hears His teachings and actually does them. The Greek word is 'phronimos'-not just knowledge, but skilled, practical, proven action. A foolish person hears the same words and ignores them. When the storm comes, only one house stands."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"What matters is not what you know in your head. It is what you actually live out in your hands, your choices, and your relationships. The tea inside the cup is what spills when you get bumped-not the bumping itself."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Seven Pillars That Storms Test"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Seven Pillars That Storms Test"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Every building has a structure. When pressure comes, the structure gets exposed. Jesus teaches that a strong life rests on seven pillars that work together. If even one is weak or missing, the whole building fails when the test comes."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"These pillars are: obedience (the foundation-actually doing what you know is right); Christ as cornerstone (making Him the alignment for everything, not your culture or comfort); truth and integrity (being the same person in private as in public); prayer and dependence (covering your life with reliance on God, not just your own effort); holiness and separation (being set apart, distinct from the world around you); love and forgiveness (controlling who and what gets access to your heart); and fruit inspection (the visible proof that your life has actually changed)."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"A storm does not create these pillars. A storm tests them. The collapse happens not because the storm is too strong, but because the house was built badly."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Obedience Is the Foundation-Doing, Not Just Knowing"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Obedience Is the Foundation-Doing, Not Just Knowing"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"James 1:22 cuts straight to it: 'Be doers of the word, not hearers only.' This is the bedrock. In construction, the deeper the foundation goes, the higher the building can rise. A shallow foundation-one that rests on appearance or words alone-cannot hold when pressure increases."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Obedience means when God tells you something, or when you know something is right, you actually do it. Not when you feel like it. Not when it's convenient. Not when people are watching. An inspector does not ask a builder to describe the foundation; the inspector digs and looks. God inspects your life the same way. He looks at what you actually obey, what you actually do, what you actually refuse to do. That is your real foundation."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Ask yourself this week: What did God tell me to do that I did not do? Where did I know the right choice and pick the wrong one anyway? That gap-between knowing and doing-is where your foundation cracks."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Christ Must Be Your Cornerstone-Not Culture, Not Comfort"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Christ Must Be Your Cornerstone-Not Culture, Not Comfort"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Ephesians 2:20 says the church is 'built on the foundation of the apostles and prophets, Jesus Christ himself being the chief cornerstone.' A cornerstone sets the alignment for the entire structure. Remove it and everything shifts out of square. If Christ is not your cornerstone, your values, your decisions, and your character will be out of alignment."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your culture, your upbringing, your comfort, your reputation-none of these can be your cornerstone. Only Christ. This means when your culture says one thing and Jesus says another, Jesus wins. When comfort says 'stay silent' and Christ says 'speak truth,' Christ wins. When revenge feels right and forgiveness feels weak, Christ's way is the alignment that holds everything together."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If you do not have Christ as your Lord and Savior, the entire building will fall. Reading scripture, attending church, looking the part-none of it makes a house stand if the cornerstone is missing."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Truth and Integrity: Being the Same Person Everywhere"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Truth and Integrity: Being the Same Person Everywhere"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Integrity is not what you tell people you are. Integrity is who you are when no one is watching. Proverbs 10:9 teaches that your integrity-your honest character-protects you. A lie and integrity cannot live together. When a storm comes, integrity either holds or shatters, and everyone sees which one it was."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You might be kind to your spouse in public and harsh in private. You might be honest at work and cheat at home. You might give generously in front of others and refuse privately. These splits do not stay hidden. What you do in the dark comes to light. A fifty-rand note on the floor, a moment when no one is looking, a choice when you could get away with it-these moments reveal your true integrity."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pillar of truth and integrity means you are the same person in private and in public, not because someone is watching, but because you actually are that person."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Prayer and Dependence: The Roof Over Your Head"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Prayer and Dependence: The Roof Over Your Head"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Psalm 127:1 says, 'Unless the Lord builds the house, the laborers toil in vain.' Prayer is not a ritual you perform when there is a crisis. Prayer is the covering that protects your whole life-the roof. Without it, the floods come in. Without it, you are working on your own strength, which always fails under real pressure."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Many people depend entirely on their paycheck, their partner, their health, their reputation. Then one of those things breaks-a job is lost, a relationship fails, health fails-and they collapse because they have no roof. Dependence on God means you trust that He provides, that He is with you, that your real security is not in what you earn or own but in His faithfulness. Prayer is how you maintain that covering every single day, not just in emergencies."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When did you stop working on your own strength and actually trust God? That shift-from self-reliance to God-reliance-is what the roof of prayer and dependence builds."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Holiness and Separation: The Walls That Protect"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Holiness and Separation: The Walls That Protect"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Walls protect what is inside a house. Holiness is being set apart-sanctified, consecrated for a purpose that is not the world's purpose. The Bible says, 'Be holy, for I am holy.' This does not mean isolation or judgment toward others. It means you distinguish yourself by the choices you make, the boundaries you keep, and the character you guard."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Holiness shows up in small decisions. When everyone is drinking and you decline-not with pride, but with conviction. When money is on the ground and no one would know if you took it-and you don't. When you are angry and you choose to speak in love instead. These moments build walls around your character that keep out what would damage you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The question is simple: What separates you from those who do not follow Christ? If nothing visibly separates you-your speech, your choices, your treatment of others-then your walls are not standing."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Love and Forgiveness: The Doors That Control Access"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Love and Forgiveness: The Doors That Control Access"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Matthew 6:14-15 is blunt: if you forgive others, God forgives you; if you do not forgive, God does not forgive you. Love and forgiveness are the doors of your life-they control who and what gets access to your heart. When you close that door through unforgiveness, bitterness takes root. You drink the poison of unforgiveness thinking it will hurt the other person. It only kills you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Forgiveness does not mean forgetting what happened or pretending it was okay. It means releasing your grip on the debt the other person owes you. It means choosing freedom over revenge. When you love someone, you open the door to forgive them. When you refuse to forgive, you lock the door and keep out the grace that could heal you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Some of the deepest struggles people face-anxiety, depression, rage-come not from the original hurt but from the unforgiveness that followed. The door you keep locked is locking you in with your own bitterness."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Fruit Inspection: The Visible Proof of Everything"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Fruit Inspection: The Visible Proof of Everything"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Matthew 7:20 says, 'Therefore by their fruits you will know them.' Fruit is not what you claim. Fruit is what actually grows from your life-the visible outcome. If you say you are obedient but you rebel when pressure comes, that fruit shows the truth. If you say Christ is your cornerstone but your choices serve your comfort instead, that fruit shows the truth. If you claim integrity but live differently in private, that fruit shows the truth."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"An apple tree produces apples. A pear tree produces pears. You do not get to choose-the nature of the tree determines the fruit. What you are on the inside determines what grows from your life. A Christian produces Christ-like fruit: love, patience, honesty, kindness, faithfulness. If your life produces anger, selfishness, deception, or harshness, then something inside the tree is not Christ."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Do not ask if you look like a Christian. Ask what fruit you are actually producing. Are you more honest than you were? More forgiving? More at peace? More loving? More willing to obey even when it costs you? That fruit is the inspection that matters."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Storms do not test your appearance. They expose what is actually inside you.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Storms do not test your appearance. They expose what is actually inside you.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -209,7 +209,7 @@ export default function SermonPage() {
               <li><strong>{"Your Real Foundation Is Obedience, Not Appearance"}</strong> {" "}{"You can look spiritual on Sunday and live selfishly on Tuesday. You can speak truth in church and lie in your business. You can preach kindness and practice harshness at home. An inspector does not ask you to describe the foundation; the inspector digs and looks. God does the same. He looks at what you actually obey, what you actually choose, what you actually become when no one is watching and when pressure forces your true self out. Your foundation is not your image, your words, or your gifts. Your foundation is the daily choice to obey, even when it costs you."}</li>
               <li><strong>{"The Storm Will Come-The Question Is Whether Your House Passes Inspection"}</strong> {" "}{"Whether you accept this message or not, storms will come. Financial crisis, relational breakdown, health failure, betrayal-life will test your structure. The question is not if the storm arrives but whether the seven pillars you have built-obedience, Christ as cornerstone, truth and integrity, prayer and dependence, holiness and separation, love and forgiveness, and the fruit they produce-will hold. Every weakness you have not addressed will be exposed. Every pillar you have neglected will fail. Now, before the storm hits, is the time to inspect your own life and build according to God's blueprint, not the world's."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -237,7 +237,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -255,7 +255,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -268,33 +268,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
                   When You Feel Abandoned: Why You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Does Your Life Keep Collapsing No Matter What You Build?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   The Small Habits That Quietly Destroy Your Life
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Someone Else to Tell You What
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

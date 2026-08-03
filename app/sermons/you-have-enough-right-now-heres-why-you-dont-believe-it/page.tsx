@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You Have Enough Right Now, Here's Why You Don't Believe It"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 19 July 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You feel stuck because you don't have enough money, time, talent, or resources to matter. But what if the problem isn't what you're missing, it's what you're refusing to give?"}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 19 July 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You feel stuck because you don't have enough money, time, talent, or resources to matter. But what if the problem isn't what you're missing, it's what you're refusing to give?"}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"The person who never has enough"}</button>
-                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:45</span>{"This is who I mean"}</button>
-                <button type="button" data-start="309" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:09</span>{"He felt something for them"}</button>
-                <button type="button" data-start="401" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">6:41</span>{"He broke it and shared it"}</button>
-                <button type="button" data-start="652" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">10:52</span>{"He asked for what they had"}</button>
-                <button type="button" data-start="1323" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">22:03</span>{"Become a giver not a taker"}</button>
-                <button type="button" data-start="1543" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:43</span>{"The real story is different"}</button>
-                <button type="button" data-start="2536" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">42:16</span>{"Hand over what you have"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"The person who never has enough"}</button>
+                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:45</span>{"This is who I mean"}</button>
+                <button type="button" data-start="309" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:09</span>{"He felt something for them"}</button>
+                <button type="button" data-start="401" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">6:41</span>{"He broke it and shared it"}</button>
+                <button type="button" data-start="652" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">10:52</span>{"He asked for what they had"}</button>
+                <button type="button" data-start="1323" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">22:03</span>{"Become a giver not a taker"}</button>
+                <button type="button" data-start="1543" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:43</span>{"The real story is different"}</button>
+                <button type="button" data-start="2536" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">42:16</span>{"Hand over what you have"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,26 +163,26 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Gap Between What You Have and What You Think You Need"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Gap Between What You Have and What You Think You Need"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You work a dead-end job and tell yourself you don't have enough to start a business. You have a skill nobody pays attention to and convince yourself it's worthless. You're raising kids on a hundred rand until payday and already planning the worst. The voice in your head runs the same loop: 'I don't have enough of anything, money, time, talent, strength, so why even try?'"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo Zaal unpacks the feeding of the five thousand from Matthew 14 to show you that this feeling is where the miracle begins, not where it ends. When the disciples faced five thousand hungry people with only five loaves and two fish, they measured the need against what was in their hands. The gap made them panic. Jesus didn't panic. He didn't ask them to find more. He asked them to bring what they already had."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Blessing What You Have Changes Everything"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Blessing What You Have Changes Everything"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Before Jesus broke the bread and multiplied it, he did something that sounds small but rewires everything: he looked up to heaven and blessed it. The Greek word eulogio means to speak well of something. Jesus spoke well over that little. That's the moment everything changed."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is what most people skip. You get a small gift, a small amount of money, a small skill, and you immediately see the gap, how far short it falls from what you need. You don't bless it. You don't speak well of it. You hide it. But the multiplication never happens in hiding. It happens when you acknowledge what you have, thank God for it, and step into it with faith. Pastor Ricardo Zaal explains that blessing isn't prayer-speak, it's naming the value in what's already in your hands."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Multiplication Only Happens When You Give It Away"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Multiplication Only Happens When You Give It Away"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Nothing multiplied while the bread was in the disciples' hands. The moment it left their grip and went to Jesus, the multiplication began. They started with five loaves and two fish. They ended with twelve baskets of fragments left over. They had more at the end than at the start, because they gave."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is the pattern Scripture repeats. In 1 Kings 17, Elijah asks a starving widow to bake him bread first, before she feeds herself and her son. She has one handful of flour left. Logic says no. But she gives first, and the flour doesn't run out. Her oil doesn't fail. You don't run out when you give to God. You overflow. Stop holding on to your little waiting for it to become big enough. Start giving your little and watch what God does."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Little Can You Give This Week?"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Little Can You Give This Week?"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo Zaal challenges you to look at your own life: What small thing have you been hiding because it feels too ordinary? A spare hour you waste feeling guilty about? A room in your house? A car seat? A skill you can teach one person? These aren't the building blocks of some future blessing, they're the seed God is waiting for you to plant right now."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The message for this week is simple: do the small part and God will do the rest. The small part isn't preaching on a big stage. It's telling one person God loves them. It's using the skill you have to help one customer, one student, one friend. It's cooking the meal you know how to cook and charging for it. It's coaching someone on business in your spare time and finally asking for payment. According to 2 Corinthians 9:8, God is able to make all grace abound toward you so that you always have all sufficiency in all things and abound to every good work. Start with what you have. Start this week."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Pride Keeps You Poor; Humility Multiplies You"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Pride Keeps You Poor; Humility Multiplies You"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo Zaal shares his own story: after leaving his job with a small UIF payout, he could have waited until he had capital for a real business. Instead he bought wine, sold it by the glass for one rand each, and made enough profit to buy more the next day. One customer. One rand glasses. It looked foolish. But it worked because he didn't let pride stop him from doing small things."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Zechariah 4:10 asks: 'Who has despised the day of small things?' The people who despise small beginnings never get to large endings. The person who won't sing one song for payment will never record an album. The person who won't teach one person will never reach crowds. The person who won't bless what they have will never see it multiply. Stop measuring yourself against people with big followings, big budgets, big platforms. Measure yourself against what's in your own hands right now."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Truth Churches Don't Tell You About Giving"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Truth Churches Don't Tell You About Giving"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo Zaal names something most church leaders won't say: believers have been trained to give freely because they received freely, without asking for compensation. But the world pays for the same counseling, coaching, and teaching that Christians give away in Jesus' name. This isn't humility, it's undervaluing the work God wired you to do."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You got your knowledge and skill for free from God, yes. But it came with pain, failure, and time you can never get back. When someone pays you for teaching them what you learned the hard way, that's not greed. That's honoring the value God placed in you. This week, identify one small skill you've been giving away for free and ask yourself: what if I blessed it, gave it to God for multiplication, and let people pay me for it?"}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"The miracle doesn't start with the fact that there is bread or fish. The miracle starts with the fact that it's not enough, and therefore you can rely on Jesus more.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"The miracle doesn't start with the fact that there is bread or fish. The miracle starts with the fact that it's not enough, and therefore you can rely on Jesus more.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -191,7 +191,7 @@ export default function SermonPage() {
               <li><strong>{"Giving Away Is How You Keep More"}</strong> {" "}{"The disciples started with five loaves and two fish. After they gave them to Jesus, the crowd ate and was satisfied, and they collected twelve baskets of leftovers. They gave and ended with more than they started with. This is not a metaphor, it's the pattern of how God's economy works. You don't multiply by holding tight. You multiply by opening your hands. The fear that giving will leave you with nothing is the exact lie that keeps you from the overflow."}</li>
               <li><strong>{"Small Beginnings Lead to Large Endings"}</strong> {" "}{"You don't need permission to start. You don't need ten thousand to teach one person. You don't need a restaurant to cook and sell food. You don't need a music label to sing one song for payment. Every business, ministry, and movement started with someone doing one small thing for one person. Stop waiting to be big enough. Start with what's in your hands right now, teach one person, sell to one customer, help one friend, and watch what God does with obedience."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -218,7 +218,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -234,7 +234,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -247,33 +247,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/what-no-one-tells-you-about-feeling-unready" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/what-no-one-tells-you-about-feeling-unready" className="text-[#0d6fbf] hover:underline font-medium">
                   What no one tells you about feeling unready
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#0d6fbf] hover:underline font-medium">
                   Helping Someone Actually Keeps Them Stuck
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#0d6fbf] hover:underline font-medium">
                   The Principles That Move People Forward Faster
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Success Depends on What You Do Before It Arrives
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Paycheck Disappears Every Month - Here
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

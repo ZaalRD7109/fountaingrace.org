@@ -181,7 +181,7 @@ export default function HomePage() {
             <Link href="/plan-your-visit" className="btn-primary text-sm">
               Plan Your Visit
             </Link>
-            <Link href="/sermons" className="inline-block border-2 border-white text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-white hover:text-[#008080] transition-colors text-sm">
+            <Link href="/sermons" className="inline-block border-2 border-white text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-white hover:text-[#006b6b] transition-colors text-sm">
               Watch a Sermon
             </Link>
           </div>
@@ -223,7 +223,7 @@ export default function HomePage() {
                 </p>
                 <div className="bg-white border border-gray-200 rounded-lg px-5 py-4 mt-4">
                   <p className="text-sm font-semibold text-gray-700">
-                    Service Time: <span className="text-[#008080]">09:00 every Sunday</span>
+                    Service Time: <span className="text-[#006b6b]">09:00 every Sunday</span>
                   </p>
                   <p className="text-sm text-gray-600 mt-1">
                     Address: 323 B Danie Theron Street, Pretoria North
@@ -231,7 +231,7 @@ export default function HomePage() {
                 </div>
               </div>
               <div className="mt-6">
-                <Link href="/what-to-expect" className="text-[#008080] font-semibold text-sm hover:underline">
+                <Link href="/what-to-expect" className="text-[#006b6b] font-semibold text-sm hover:underline">
                   See exactly what to expect on your first Sunday →
                 </Link>
               </div>
@@ -280,7 +280,7 @@ export default function HomePage() {
       {/* SERMON PREVIEWS - trust-building before the CTA ask */}
       <section className="bg-gray-50 py-16 px-4 sm:px-6">
         <div className="section-container">
-          <p className="text-[#008080] font-semibold text-sm uppercase tracking-wider text-center mb-3">
+          <p className="text-[#006b6b] font-semibold text-sm uppercase tracking-wider text-center mb-3">
             Hear Before You Come
           </p>
           <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 text-center mb-4">
@@ -312,13 +312,13 @@ export default function HomePage() {
                 href={sermon.href}
                 className="group block bg-white border border-gray-100 rounded-xl px-6 py-5 hover:shadow-md hover:border-[#008080] transition-all duration-200"
               >
-                <span className="inline-block text-xs font-semibold text-[#008080] uppercase tracking-wider mb-3">
+                <span className="inline-block text-xs font-semibold text-[#006b6b] uppercase tracking-wider mb-3">
                   {sermon.tag}
                 </span>
-                <p className="text-gray-900 font-bold text-base leading-snug group-hover:text-[#008080] transition-colors">
+                <p className="text-gray-900 font-bold text-base leading-snug group-hover:text-[#006b6b] transition-colors">
                   {sermon.title}
                 </p>
-                <span className="inline-block mt-3 text-sm text-[#008080] font-semibold">
+                <span className="inline-block mt-3 text-sm text-[#006b6b] font-semibold">
                   Listen →
                 </span>
               </Link>
@@ -340,7 +340,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/plan-your-visit"
-            className="inline-block bg-white text-[#008080] font-bold px-8 py-4 rounded-lg hover:bg-teal-50 transition-colors shadow-sm text-base"
+            className="inline-block bg-white text-[#006b6b] font-bold px-8 py-4 rounded-lg hover:bg-teal-50 transition-colors shadow-sm text-base"
           >
             Plan Your Visit
           </Link>
@@ -352,7 +352,7 @@ export default function HomePage() {
         <div className="section-container">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
-              <p className="text-[#008080] font-semibold text-sm uppercase tracking-wider mb-3">
+              <p className="text-[#006b6b] font-semibold text-sm uppercase tracking-wider mb-3">
                 The People Behind FGI
               </p>
               <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-5">
@@ -410,9 +410,14 @@ export default function HomePage() {
             programs in Pretoria North that put practical support directly into the hands of people
             who need it.
           </p>
+          {/* White text at 80% opacity over the teal measures 3.6:1, under the
+              4.5:1 minimum, so it failed the accessibility contrast check. Solid
+              white on this teal is 4.77:1 and passes, and a filled pill reads as
+              a real call to action instead of a faded link. */}
           <Link
+            prefetch={false}
             href="/community-impact"
-            className="text-white underline text-sm opacity-80 hover:opacity-100 transition-opacity"
+            className="inline-block bg-white text-[#006b6b] font-bold text-base rounded-lg px-6 py-3 hover:bg-gray-50 transition-colors"
           >
             Learn About Our Community Work →
           </Link>
@@ -462,7 +467,7 @@ export default function HomePage() {
           </p>
           <Link
             href="/plan-your-visit"
-            className="inline-block bg-white text-[#008080] font-bold px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors shadow-sm text-base"
+            className="inline-block bg-white text-[#006b6b] font-bold px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors shadow-sm text-base"
           >
             Plan Your Visit
           </Link>

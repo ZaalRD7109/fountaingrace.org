@@ -118,17 +118,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Declaration Session · Part 2 · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               The Spiritual Weapon - Declaration Session
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 26 October 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 26 October 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               This is not a passive message. This is an activation. Following the teaching on the weapon Jesus used in John 8:6 - this session puts it in your hands. Pick up something to hold. Open your mouth. Speak. The earth is programmed to answer you.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North
             </p>
           </div>
@@ -150,12 +150,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Are you tired of struggling"}</button>
-                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:45</span>{"Something fighting your destiny"}</button>
-                <button type="button" data-start="130" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:10</span>{"Speak it out loud"}</button>
-                <button type="button" data-start="245" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:05</span>{"You have dominion here"}</button>
-                <button type="button" data-start="413" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">6:53</span>{"Creation is listening to you"}</button>
-                <button type="button" data-start="924" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:24</span>{"No weapon can stop you"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Are you tired of struggling"}</button>
+                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:45</span>{"Something fighting your destiny"}</button>
+                <button type="button" data-start="130" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">2:10</span>{"Speak it out loud"}</button>
+                <button type="button" data-start="245" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:05</span>{"You have dominion here"}</button>
+                <button type="button" data-start="413" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">6:53</span>{"Creation is listening to you"}</button>
+                <button type="button" data-start="924" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:24</span>{"No weapon can stop you"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -182,7 +182,7 @@ export default function SermonPage() {
               , you know what the weapon is. This session is about using it. Do not say these declarations in your head. Speak them out loud. The weapon requires your voice.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-8 mb-3">The Foundation of Your Authority</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-8 mb-3">The Foundation of Your Authority</h2>
             <p className="text-[#555] leading-relaxed">
               Genesis 1:26 - God made man in His image and gave him dominion over the earth. That dominion was not an experiment. It was a legal assignment. The fall disrupted man&apos;s walk with God - but Jesus restored full authority and said in John 14:12 that the works he did, you shall do also - and greater works than these, because he went to the Father.
             </p>
@@ -190,7 +190,7 @@ export default function SermonPage() {
               Jeremiah 22:29 records God speaking directly to the earth: <em>&quot;O earth, earth, earth, hear the word of the LORD.&quot;</em> Three times. A trinity pattern. A legal declaration. The earth was listening then. It is listening now. And as one made in God&apos;s image - it is listening for you.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-8 mb-3">Declarations Are Not Positive Thinking</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-8 mb-3">Declarations Are Not Positive Thinking</h2>
             <p className="text-[#555] leading-relaxed">
               Proverbs 18:21 does not say death and life are in the power of the mind. It says the power is in the tongue. Romans 10:10 says with the mouth confession is made. The pattern throughout Scripture is spoken authority. God spoke to darkness. Jesus spoke to storms. He spoke to fig trees. He spoke to sickness. He spoke to death. All of it responded.
             </p>
@@ -198,7 +198,7 @@ export default function SermonPage() {
               A declaration is not wishful thinking. It is the alignment of your mouth with what God has already said - spoken with the authority He assigned to you in Genesis 1. When you speak it, creation hears it.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-8 mb-3">What This Session Covers</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-8 mb-3">What This Session Covers</h2>
             <ul className="list-disc list-inside space-y-2 text-[#555] leading-relaxed mb-6">
               <li>Breaking family cycles - patterns that have repeated for generations</li>
               <li>Health and healing - speaking life over sickness returning to your body</li>
@@ -208,7 +208,7 @@ export default function SermonPage() {
             </ul>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;O earth, earth, earth, hear the word of the LORD. God said it three times. He was not repeating himself. He was establishing legal authority. Now open your mouth - and do the same.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal, Fountain of Grace International</cite>
@@ -226,7 +226,7 @@ export default function SermonPage() {
 
         <section className="bg-[#f0fafa] py-14 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#2a9df4] mb-8">Questions this message answers</h2>
+            <h2 className="text-2xl font-bold text-[#0d6fbf] mb-8">Questions this message answers</h2>
             <dl className="space-y-0">
               {[
                 {
@@ -247,7 +247,7 @@ export default function SermonPage() {
                 },
               ].map((item) => (
                 <div key={item.q} className="faq-block">
-                  <dt className="font-semibold text-[#2a9df4] mb-2">{item.q}</dt>
+                  <dt className="font-semibold text-[#0d6fbf] mb-2">{item.q}</dt>
                   <dd className="text-[#555] leading-relaxed">{item.a}</dd>
                 </div>
               ))}
@@ -274,7 +274,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-white mb-4">
               Come and hear this in person - Pretoria North, every Sunday.
             </h2>
-            <p className="text-white/70 mb-8 max-w-lg mx-auto">
+            <p className="text-white mb-8 max-w-lg mx-auto">
               323 B Danie Theron Street. Services at 09:00. Someone will meet you at the door.
             </p>
             <Link href="/plan-your-visit" className="btn-primary">
@@ -297,7 +297,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -312,33 +312,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-spiritual-weapon-no-one-speaks-about" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-spiritual-weapon-no-one-speaks-about" className="text-[#0d6fbf] hover:underline font-medium">
                   The One Weapon Nobody Teaches You That Changes Every Fight
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/tired-of-the-same-pain-coming-back-try-this" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/tired-of-the-same-pain-coming-back-try-this" className="text-[#0d6fbf] hover:underline font-medium">
                   Tired of the Same Pain Coming Back? Try This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-some-problems-wont-leave-until-you-understand-this" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-some-problems-wont-leave-until-you-understand-this" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Some Problems Won't Leave Until You Understand This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Every Word You Say About Yourself Is Writing Your Future
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Some Things Refuse to Move
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

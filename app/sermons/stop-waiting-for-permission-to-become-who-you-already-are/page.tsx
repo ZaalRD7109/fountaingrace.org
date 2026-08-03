@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Stop Waiting for Permission to Become Who You Already Are"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 4 October 2024</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Feeling like you don't measure up? Discover how ordinary people amplify what matters most by being authentically themselves, not waiting for perfect conditions or someone else to act."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 4 October 2024</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"Feeling like you don't measure up? Discover how ordinary people amplify what matters most by being authentically themselves, not waiting for perfect conditions or someone else to act."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Getting confused as we grow"}</button>
-                <button type="button" data-start="310" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:10</span>{"Your hidden power within"}</button>
-                <button type="button" data-start="900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:00</span>{"Why you hold back your gifts"}</button>
-                <button type="button" data-start="1680" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">28:00</span>{"The strength of working behind scenes"}</button>
-                <button type="button" data-start="2850" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">47:30</span>{"Your position is closer than you think"}</button>
-                <button type="button" data-start="4050" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:07:30</span>{"Stop waiting for the perfect moment"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Getting confused as we grow"}</button>
+                <button type="button" data-start="310" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:10</span>{"Your hidden power within"}</button>
+                <button type="button" data-start="900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:00</span>{"Why you hold back your gifts"}</button>
+                <button type="button" data-start="1680" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">28:00</span>{"The strength of working behind scenes"}</button>
+                <button type="button" data-start="2850" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">47:30</span>{"Your position is closer than you think"}</button>
+                <button type="button" data-start="4050" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:07:30</span>{"Stop waiting for the perfect moment"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,32 +162,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Self-Doubt Is Costing Others More Than You Know"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Self-Doubt Is Costing Others More Than You Know"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Low self-esteem is not just your problem. It is a theft. When you shrink yourself because you don't believe in what you carry, you rob your family, your workplace, your community of gifts only you can deliver. You withhold what was meant to flow through you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pastor stuttered as a young man. He stayed silent for years, convinced his voice did not matter. But the message inside him mattered. The encouragement he could give mattered. The unique way only he could say certain things mattered. And the world was poorer because he was afraid."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You do not need to be the best. You need to be yourself and start where you are."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You Already Know What You Are Good At"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You Already Know What You Are Good At"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Stop searching for some hidden superpower. You already have it. Think of someone who believed in you when you did not believe in yourself. Ask them what they see. They will tell you things you have overlooked because you were too busy staring at what you lack."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pastor counseled a man who felt useless to his wife and children. The man listed everything he could not do. But when asked how long his family had stayed with him, the answer was 14 years. A truly useless person gets left. His family stayed because he was offering something real, even if he could not name it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your strength is not loud. It does not need to be eloquent or impressive. It is there, and the people close to you already know it. They are staying because of it."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Fear Is Always About What Has Not Happened Yet"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Fear Is Always About What Has Not Happened Yet"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Fear lives in the future. When you see a snake, you are not afraid of the snake in front of you. You are afraid of the bite that might come. You are afraid of something that has not occurred. This imaginary future steals your present power."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Past failures make you expect future failures. Your parents' mistakes make you brace for your own. But this moment, right now, is neither the past nor the future. In this moment you can act. And the moment you act, fear loses its grip."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pastor stood on stage in Grade 8, terrified he would fail in his small role. His hands sweated. His head pounded. But he took the step. He went on stage. And nothing destroyed him. Today he stands before crowds and speaks. The only difference is he stopped waiting for fear to leave and moved forward anyway."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You Do Not Have to Be Perfect to Make an Impact"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You Do Not Have to Be Perfect to Make an Impact"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"In a team, not everyone is the star player. Some people pass the ball. Some people fill gaps. Some people show up and do the small thing no one else will do. And without them, the team cannot function. Your role does not have to be the headline. It has to be real."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pastor's wife hated speaking in public. One day she was the only person at a meeting who could bridge a language barrier. She spoke. No one asked her permission. Circumstances forced her hand. And she discovered she could do it. The ability was already there. The opportunity revealed it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Do not wait for perfect conditions or for someone else to go first. Take the leap. A small step toward your gift is already amplifying what matters."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Strength Matters More Than Your Weakness"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Strength Matters More Than Your Weakness"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You focus on what you cannot do. You compare yourself to people who have trained longer, practiced more, or started younger. And you conclude you have nothing to offer. This is a lie you are telling yourself."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pastor told his daughter: you do not have to be the best netball player to matter on the court. You just have to catch the ball and pass it. That makes you essential. Your strength is not measured against someone else's strength. It is measured by whether you show up and use what you have."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Stop rehearsing your weaknesses. Start listing your strengths. Write them down. Say them out loud. Because the gap between who you think you are and who others know you to be is the gap where your fear lives."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Action Changes Everything; Waiting Changes Nothing"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Action Changes Everything; Waiting Changes Nothing"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You want something but you are waiting for: more money, more time, more skill, the right moment, someone else's approval. You are waiting for conditions to be perfect. But perfection never comes. What comes is the moment you decide to act with what you have."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"A person who wants to be a millionaire does not think their way there. They start small. A hundred becomes two hundred becomes four hundred. Every action moves the goal closer. Sitting and planning moves nothing."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You cannot amplify what matters while you sit frozen by indecision. Serve where you are. Use what you have. Do it now. The moment you move, your goal moves toward you."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"When you shrink yourself because of low self-esteem, you rob others of the gift only you can give.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"When you shrink yourself because of low self-esteem, you rob others of the gift only you can give.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -196,7 +196,7 @@ export default function SermonPage() {
               <li><strong>{"Know Your Limits and Ask for Help"}</strong> {" "}{"Being yourself does not mean being self-sufficient. Knowing you have limits is wisdom, not weakness. When you know what you cannot do, you can ask someone who can. This is how teams work. This is how the kingdom works. Two people working from their strengths amplify the message more than one person straining at their weakness. Do not apologize for needing others. Use the help."}</li>
               <li><strong>{"Serve, But Never Become a Doormat"}</strong> {" "}{"Service means offering your strength in love. It does not mean allowing yourself to be used or disrespected. When someone asks you to carry a table too heavy for you, say yes to helping and no to breaking yourself. Service is not about proving your worth by destroying yourself. It is about using your real strength to help others while honoring the limits you have. That kind of service lasts. That kind of service comes from the heart."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -224,7 +224,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -242,7 +242,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -255,33 +255,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/stop-waiting-to-be-perfect-before-you-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-to-be-perfect-before-you-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting to Be Perfect Before You Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#0d6fbf] hover:underline font-medium">
                   The Cost of Sitting on the Sidelines
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Success Depends on What You Do Before It Arrives
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

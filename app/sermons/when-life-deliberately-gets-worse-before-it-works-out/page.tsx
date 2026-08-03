@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"When Life Deliberately Gets Worse Before It Works Out"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 1 March 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You had a clear plan. Then betrayal, false accusations, or circumstances beyond your control derailed everything. Now you're wondering if your life will ever move forward. What if this detour is actually the route to something better?"}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 1 March 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You had a clear plan. Then betrayal, false accusations, or circumstances beyond your control derailed everything. Now you're wondering if your life will ever move forward. What if this detour is actually the route to something better?"}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Living for something greater"}</button>
-                <button type="button" data-start="335" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:35</span>{"How to handle life's detours"}</button>
-                <button type="button" data-start="790" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">13:10</span>{"Understanding the rules that bind us"}</button>
-                <button type="button" data-start="1445" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">24:05</span>{"The pit and the principle"}</button>
-                <button type="button" data-start="2000" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:20</span>{"When you refuse to give up"}</button>
-                <button type="button" data-start="2760" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">46:00</span>{"Protecting what matters most"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Living for something greater"}</button>
+                <button type="button" data-start="335" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:35</span>{"How to handle life's detours"}</button>
+                <button type="button" data-start="790" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">13:10</span>{"Understanding the rules that bind us"}</button>
+                <button type="button" data-start="1445" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">24:05</span>{"The pit and the principle"}</button>
+                <button type="button" data-start="2000" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:20</span>{"When you refuse to give up"}</button>
+                <button type="button" data-start="2760" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">46:00</span>{"Protecting what matters most"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,31 +162,31 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Pit Is Not the Grave"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Pit Is Not the Grave"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When Joseph's brothers threw him into a pit, they intended it as a death sentence. But Joseph's first principle was simple: I'm in a pit, not a grave. That distinction saved his mind. Right now you might feel like you're in one. Job loss after someone betrayed you. Health problems that killed a career you trained for. False accusations that destroyed your reputation. A dream that repeatedly fails no matter how hard you work."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The difference between a pit and a grave is that a pit has a way out. A grave is final. Your situation-no matter how dark-is temporary. This is the hardest truth to believe when you're inside it, but it's the one that keeps you moving instead of giving up."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Never giving up is not motivational talk. It's a principle. Your father might give up after years pass with no sign of hope. Most people do. But the people who navigate detours to their real destiny refuse to accept that the darkness is permanent."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"When God's Plan Looks Nothing Like Your Dream"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"When God's Plan Looks Nothing Like Your Dream"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Joseph had a dream. A real one. His brothers had dreams too-they dreamed of getting rid of him. What Joseph didn't see in his dream was the pit, the slave market, the false accusation, the prison cell. He was sold by his own family. He was enslaved. He was imprisoned for a crime he didn't commit. By any fair measurement, his life was ruined."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Romans 8:28 says God works all things for good to those who love Him. Not just the good things. Not just the days when your bank account is full. All things. Your husband leaving. Money going into the wrong account. The betrayal. The layoff. These are part of 'all things.' You cannot see how they work for good from inside them. Joseph couldn't either."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"What Joseph learned-and what you have to learn-is that your specific dream might need to die so your actual destiny can live. He wanted to be a carpenter like his father Jacob. But being in a pit, a slave house, and a prison stripped away his ability to control his outcome. The only thing left was to trust that there was a reason. And there was. When he interpreted the king's dream about the coming famine, he saved not just Egypt, but his entire family. His brothers who sold him came to him for help. He couldn't have done that if he'd gotten what he originally wanted."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Integrity When No One Is Watching (and When Everyone Is Watching)"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Integrity When No One Is Watching (and When Everyone Is Watching)"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Potiphar's wife wanted Joseph. He was a slave in her house. No one would have blamed him. In fact, giving in might have gotten him out of slavery faster. He could have become her favorite, lived better, avoided the hard work. Instead, he refused. He said no. And for saying no to her, he went to prison."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is where most people break. You do the right thing and you get punished for it. Your integrity doesn't protect you. It doesn't make life easier. It makes it harder in the moment. So why maintain it? Because integrity is not a strategy to get what you want. It's a principle that guides you toward who you become. Proverbs 11:3 says the integrity of the upright guides them. Not protects them-guides them. Your character becomes your compass when circumstances are pulling you in every direction."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Joseph's refusal to compromise didn't save him from prison. It saved him from becoming the kind of man who compromises. And when the king needed someone he could trust with Egypt's entire future, that man with unbroken integrity was the only one who could do it. The detour through the pit, the slave house, and the prison wasn't punishment. It was the path. And his character was what carried him through it."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Purpose Is Bigger Than Your Pain"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Purpose Is Bigger Than Your Pain"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Joseph's brothers thought they were destroying him. Instead, they were moving him toward a position where he could feed his entire family during a famine-including the brothers who sold him. He couldn't see that while he was in the pit. He couldn't see it in slavery. He couldn't see it in prison. But it was always the direction he was moving."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you help enough people get where they want to go, you end up where you were meant to be. This isn't karma or luck. It's a principle built into how the world works. Your job might feel like it doesn't matter. You might think it's just a paycheck. But if you're teaching, you're building people. If you're working in healthcare, you're preserving life. If you're in business, you're solving problems. Every act of integrity and effort creates value that comes back to you in ways you don't expect."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The detour isn't punishment for a wrong turn. It's the long route that builds something in you that the short route never could. You can't see the palace from inside the pit. You can't see the purpose while you're being falsely accused. But the people who trust that there is a purpose-who refuse to give up and refuse to compromise-they find it."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Three Principles That Work Anywhere, Anytime"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Three Principles That Work Anywhere, Anytime"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"First: never give up. Your situation is a pit, not a grave. It's temporary, even when it feels permanent. The hand of the law is long-the truth will reveal itself eventually, even if it takes years."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Second: trust God's plan in the middle of adversity. You cannot judge from inside your circumstances whether they're leading you in the right direction. But if you've ever seen someone's life from beginning to end, you know that the detours made sense. The setbacks created the person they became. The unfair treatment taught them something they needed. Trust that the same is true for you, even though you can't see how yet."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Third: maintain integrity regardless of the situation. Your character is the only thing you fully control. People can take your job, your reputation, your freedom. But they can't take your refusal to become someone who compromises. That integrity becomes the compass that guides you through the dark places and the foundation that builds your real destiny."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What to Do Monday Morning"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What to Do Monday Morning"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Stop measuring your life against the dream you had before the detour. The dream might have been real, but it might not have been the destination. Read the story of Joseph from beginning to end. Notice how the thing he thought he wanted-to be with his father, to be respected by his brothers, to avoid suffering-isn't what he got. What he got was better, but he had to lose everything else first to see it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The people reading this who are in a pit right now-betrayed, wrongly accused, repeatedly failing-hear this: your life is not over. It's being redirected. You have no way to see from where you're standing where it's going. But if you refuse to give up, trust that there's a reason, and keep your integrity intact, you will find that the detour was the only path that could have made you who you needed to become."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"The detour isn't punishment-it's the route that builds something in you that the short way never could.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"The detour isn't punishment-it's the route that builds something in you that the short way never could.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -195,7 +195,7 @@ export default function SermonPage() {
               <li><strong>{"Trust an Unseen Plan Over Your Visible Dream"}</strong> {" "}{"You can see the dream you wanted. You cannot see God's plan. This creates the unbearable tension where doing everything right still gets you thrown into a pit, enslaved, and imprisoned. Romans 8:28 doesn't say good things work out for good. It says all things-even the betrayals, the false accusations, the unfair losses-work for good to those who love God and are called according to His purpose. Your specific dream might need to die so your actual destiny can live. Trust that the detour is the route, even though you can't see where it leads."}</li>
               <li><strong>{"Integrity Is Your Only Unfakeable Asset"}</strong> {" "}{"When no one is watching and compromise would make your life easier, you maintain your character anyway. When you're falsely accused and your integrity costs you everything, you refuse to become someone who bends. Proverbs 11:3 says integrity guides you-not protects you, but guides you. In the pit, in slavery, in prison, Joseph's character was the only thing that remained his. When the moment came that required absolute trustworthiness, he was ready because he'd been building it all along. Your integrity is the compass that works in the dark."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -223,7 +223,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -241,7 +241,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -254,33 +254,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#0d6fbf] hover:underline font-medium">
                   When Your Success Makes People Jealous: Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Boss Will Never Promote You Like This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Dreams Feel Dead, But Delays Aren
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-inheritance-test" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-inheritance-test" className="text-[#0d6fbf] hover:underline font-medium">
                   The Inheritance Test: Will It Reach Three Generations?
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

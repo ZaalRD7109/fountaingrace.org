@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 180 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Is it okay to have doubts about your faith?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 29 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 29 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Come unto me, all ye that labour and are heavy laden, and I will give you rest."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Come unto me, all ye that labour and are heavy laden, and I will give you rest."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Matthew 11:28 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You keep your faith quiet. Not because it is small, but because you are afraid of what might crack if someone asked you a real question about it. You have learned that silence feels safer than doubt spoken out loud.\n\nBut here is what your silence is protecting you from: it is protecting you from the very thing that could set you free. The questions you fear, the doubts you will not name, the places where your faith feels thin—these are not enemies of belief. They are invitations. God is not fragile. He does not need you to defend Him by staying quiet. He is big enough for your honest wrestling, your real confusion, your messy heart.\n\nListen to what He says: \"Come unto me, all ye that labour and are heavy laden, and I will give you rest.\" Not when you have it figured out. Not when your faith is polished and presentable. Now. As you are. With your questions still wet and your doubts still real.\n\nYou can lay down the exhausting work of keeping it all hidden. God has been waiting for you to bring Him the real version of yourself. That is where grace begins. That is where you become free.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

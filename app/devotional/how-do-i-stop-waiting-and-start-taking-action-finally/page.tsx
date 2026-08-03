@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 146 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"How do I stop waiting and start taking action finally?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 26 May 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 26 May 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Take therefore no thought for the morrow: for the morrow shall take thought for the things of itself. Sufficient unto the day is the evil thereof."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Matthew 6:34 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You’ve been waiting for a green light that never comes. Let’s be honest - you’ve built a whole life around preparing. Not starting, just preparing. It’s an easy trap, isn’t it? It feels safe, like climbing gear without the mountain.\n\nHere's the truth. You’re filling your days with tasks to block out the fear, but you’re not fooling yourself. Busyness is not bravery. It takes courage to admit you’re stalling. Fear whispers that you’re not ready. But readiness is often a myth - a way to hide from the risk of failure.\n\nConsider this: “Sufficient unto the day is the evil thereof.” You only need enough for today. Trust you’ll find your footing as you move forward. The story of your life isn’t written in plans. It’s in the steps you take when you don’t have the whole map.\n\nPerhaps the question you need isn’t when, but why not today?\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

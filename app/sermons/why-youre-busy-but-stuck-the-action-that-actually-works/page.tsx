@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 11 May 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You show up. You try hard. You do everything right. So why are you still failing? The answer isn't more hustle. It's the specific, immediate action nobody taught you to take."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 11 May 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You show up. You try hard. You do everything right. So why are you still failing? The answer isn't more hustle. It's the specific, immediate action nobody taught you to take."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Who this message is for"}</button>
-                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:30</span>{"The missing ingredient"}</button>
-                <button type="button" data-start="370" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">6:10</span>{"Action changes everything"}</button>
-                <button type="button" data-start="900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:00</span>{"Your effort has to match"}</button>
-                <button type="button" data-start="1505" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:05</span>{"Right action in right place"}</button>
-                <button type="button" data-start="2045" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">34:05</span>{"He just started moving"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Who this message is for"}</button>
+                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:30</span>{"The missing ingredient"}</button>
+                <button type="button" data-start="370" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">6:10</span>{"Action changes everything"}</button>
+                <button type="button" data-start="900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:00</span>{"Your effort has to match"}</button>
+                <button type="button" data-start="1505" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:05</span>{"Right action in right place"}</button>
+                <button type="button" data-start="2045" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">34:05</span>{"He just started moving"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,32 +162,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Trap of Doing Everything and Getting Nothing"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Trap of Doing Everything and Getting Nothing"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You go to every job interview. You swipe through dating apps. You show up to events. You pray. Yet nothing changes. You're not lazy. You're not stupid. But you're exhausted and confused because all your effort produces zero results."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The problem isn't your effort. It's your direction. You're taking action, but not the right action. You're applying for jobs you're not qualified for. You're praying for a job while your resume sits in a drawer. You're at church expecting God to solve problems you're not doing anything about. The Bible is clear on this: faith without works is dead (James 2:17). But works without direction is just spinning wheels."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This message is for anyone who feels stuck in this trap. If you're doing everything but winning nothing, you need to understand one principle: success requires the right action taken immediately, not just any action taken eventually."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Right Action Beats Hard Work Every Time"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Right Action Beats Hard Work Every Time"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Strategy beats effort. A clear, specific target beats vague ambition. If you want a management job, you don't apply everywhere and expect results. You increase your value. You get experience. You build relationships with people who hire managers. You target companies that actually need managers. You show up early to interviews, not late. You do the right things for the right outcome."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Think about someone trying to sell a car brake service. They could charge 200 and call it a day. But the right action is different. You ask the customer what happens if their brakes fail. You show them the consequence: no stopping power on a downhill drive. You help them see the real value. Now they'll pay what's needed because they understand the stakes. Same effort. Different action. Completely different result."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The law of sowing and reaping is simple: the right seed produces the right plant. You can't plant apples and expect lions. Your harvest comes from what you actually plant. If you want a 20,000 rand monthly salary but you're looking for management jobs with zero management experience, you're planting in the wrong field. The right action is to build experience first, then apply. That's not laziness. That's wisdom."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Delay Destroys Even the Right Action"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Delay Destroys Even the Right Action"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You know the right thing to do. You just don't do it now. An interview is tomorrow. You tell yourself you'll go. But in the morning you delay. You take your time. By the time you arrive at 11, they've already hired someone who showed up at 10. The right action delayed becomes the wrong action."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Look at the ant (Proverbs 6:6-11). During summer, when food is available, the ant works without guidance, without a supervisor, without a deadline breathing down its neck. It just works because it knows winter is coming. If the ant delayed gathering food until autumn, it would starve. Opportunity doesn't wait. When the interview window opens, you move. When the job posting appears, you apply. When God speaks, you go."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Abraham is the example. God told him to leave his country, his family, his father's house, and go to a land he'd never seen. Abraham didn't ask questions. He didn't negotiate. He didn't wait. The Scripture says, 'So Abram departed as the Lord has spoken unto him' (Genesis 12:4). He obeyed immediately. That's the difference between knowing what to do and actually winning."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Obedience Without Delay Multiplies Everything"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Obedience Without Delay Multiplies Everything"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You can know the right action and still get nothing if you don't obey it immediately. Knowing and doing are not the same. Saying you'll take action tomorrow is the same as saying you won't take action at all. Immediate right action multiplies impact. Delayed right action produces nothing."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The sluggard craves things and gets nothing (Proverbs 13:4). Not because they don't want it. Not because they're not intelligent. They get nothing because desire without immediate action is just a fantasy. You want a house. You pray for a house. But have you actually started saving? Have you spoken to a mortgage broker? Have you looked at properties? Prayer without the next step is just noise."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is why relationships matter, why positioning matters, why strategy matters. You do the right action in the right place with the right people at the right time. That's not luck. That's obedience to wisdom."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Harvest Belongs to the Workers, Not the Wishers"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Harvest Belongs to the Workers, Not the Wishers"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"There's plenty of harvest available. The problem is never the harvest. The problem is the workers. Jesus said the harvest is plentiful but the workers are few (Matthew 9:37). Do you understand? There's enough to go around. But it goes to the people who actually work, not the people who pray and wait."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If you come to church expecting the church to help you, but you've never worked in the church, never served, never sown into it, why would the harvest belong to you? If you get sick and call the church asking for prayer support, but you haven't been there in ten years, why should they drop everything? The harvest belongs to the workers. Pastor Ricardo gives to his home church in Postmasburg big offerings because he sowed into it. He gave his heart to it. He served there. Now, even though he's not there permanently, the harvest relationship still exists because he created it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"What are you sowing? What are you doing? What is the right action you're taking right now that's putting you in position for the harvest? If you're not working toward it, you're not getting it. Period."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Four Things That Change Everything"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Four Things That Change Everything"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When these four align, your life transforms. First: prayer and direction from God. Don't build in vain. Ask God what the right action is. Seek His direction. Second: wisdom. Wisdom tells you that what worked last year isn't working now. Wisdom tells you to change course."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Third: positioning. If you want to be a doctor, don't go to an engineering school. Position yourself in the right place for the outcome you want. Are you building relationships in your field? Are you learning from the right people? Are you where opportunity can actually find you? Fourth: right action immediately. Once you know what to do, move. Don't wait. Don't delay. Don't negotiate with yourself."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Think about something specific in your life right now. Is there one thing you know God wants you to do? Write it down. Do it. Pastor Ricardo guarantees you this: if you identify what God wants and you do it without delay, you will have a life of wow. Not a life of regret. Not a life of should-have-been. A life of actual results."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"If you desire a job, a house, a relationship, or anything else, you can't just pray for it while your fridge is full and your resume is in a drawer. The right action taken immediately is what creates the outcome.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"If you desire a job, a house, a relationship, or anything else, you can't just pray for it while your fridge is full and your resume is in a drawer. The right action taken immediately is what creates the outcome.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -196,7 +196,7 @@ export default function SermonPage() {
               <li><strong>{"Delay Kills More Dreams Than Doubt"}</strong> {" "}{"The right action delayed becomes the wrong action. When the opportunity window opens, it doesn't stay open forever. The ant works in summer because it knows winter is coming and won't wait. An interview slot fills when you're still deciding whether to go. A job posting closes when you're still thinking about applying tomorrow. Immediate action multiplies impact. Every day you delay is a day someone else is moving toward the same goal. Speed in the right direction wins."}</li>
               <li><strong>{"The Harvest Belongs Only to the Workers"}</strong> {" "}{"You cannot reap from a harvest you never worked in. If you want opportunity from a church, a community, a company, or a network, you have to contribute to it first. Sow into relationships. Show up to serve, not just to receive. Work in the right place with the right people. Only then do you earn the right to the harvest. God blesses work, not wishful thinking. The person who built relationships, who served, who contributed is the person the opportunity finds."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -224,7 +224,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -242,7 +242,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -255,33 +255,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-principle-that-activates-everything" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-principle-that-activates-everything" className="text-[#0d6fbf] hover:underline font-medium">
                   The Principle That Activates Everything: Right Action
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#0d6fbf] hover:underline font-medium">
                   The Principles That Move People Forward Faster
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Big Break Is Coming, But You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

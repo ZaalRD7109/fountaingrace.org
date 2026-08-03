@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 203 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"When I look back at my life, has God actually been faithful?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 22 July 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 22 July 2026</p>
           </div>
         </header>
 
@@ -57,7 +57,7 @@ export default function DevotionalPage() {
             <p className="text-[#555] leading-relaxed text-lg">{"Some weeks end with you still tired, still holding questions you cannot fully answer. And in that place it is easy to wonder whether God has really been present through all of it, or whether you have just been managing alone. But take a moment and look back honestly. The job that came through when you had nothing. The friendship that held you. The morning you woke up and the fear had quietly lifted. You did not arrange those things. This is what God says about every single day of your life:"}</p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 23:6 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before tonight ends, write down three moments from your past where you can see now that you were not alone, even if it felt that way then. They do not have to be big. Name them out loud or on paper. Let that list be your evidence."}</p>
@@ -84,13 +84,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

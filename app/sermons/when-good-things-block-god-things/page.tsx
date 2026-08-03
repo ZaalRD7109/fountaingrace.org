@@ -103,17 +103,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               How Good Opportunities Become the Thing That Stops Your Real Breakthrough
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 8 February 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 8 February 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               You have real responsibilities. Real pressure. Real results to show. And yet, underneath all of it, something feels off. You are busy but not fruitful. Disciplined but not a disciple. Doing many right things in the wrong direction. This message is for the person who is tired - not because they are lazy, but because they are misaligned.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 8 February 2026
             </p>
           </div>
@@ -135,13 +135,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"When good blocks better"}</button>
-                <button type="button" data-start="105" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:45</span>{"The tired busy trap"}</button>
-                <button type="button" data-start="475" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">7:55</span>{"Climbing the wrong ladder"}</button>
-                <button type="button" data-start="1335" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">22:15</span>{"Rest over hustle"}</button>
-                <button type="button" data-start="2280" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">38:00</span>{"What you were made for"}</button>
-                <button type="button" data-start="3330" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">55:30</span>{"Seizing the right moment"}</button>
-                <button type="button" data-start="4380" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:13:00</span>{"Small things matter first"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"When good blocks better"}</button>
+                <button type="button" data-start="105" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:45</span>{"The tired busy trap"}</button>
+                <button type="button" data-start="475" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">7:55</span>{"Climbing the wrong ladder"}</button>
+                <button type="button" data-start="1335" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">22:15</span>{"Rest over hustle"}</button>
+                <button type="button" data-start="2280" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">38:00</span>{"What you were made for"}</button>
+                <button type="button" data-start="3330" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">55:30</span>{"Seizing the right moment"}</button>
+                <button type="button" data-start="4380" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:13:00</span>{"Small things matter first"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -160,7 +160,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Chronos vs Kairos: Two Types of Time</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Chronos vs Kairos: Two Types of Time</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               The Bible uses two Greek words for time. Chronos is clock time - every hour of every day, the steady accumulation of activity and obligation. Kairos is appointed time - the specific moment God has set for something to happen. You can be fully occupied in chronos and completely miss the kairos.
             </p>
@@ -168,7 +168,7 @@ export default function SermonPage() {
               Chronos fatigue is what happens when you fill every hour with activity but none of it is aligned to the appointed moment. You are busy - genuinely busy - but the busyness is on the wrong wall. Like a person who climbs a ladder with great effort and discipline, only to reach the top and find it was leaned against the wrong building. They worked hard. Nothing was wasted in terms of effort. But everything was wasted in terms of direction.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Martha Pattern: Good Intentions, Wrong Moment</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Martha Pattern: Good Intentions, Wrong Moment</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Luke 10:38-42 describes two sisters in the same house when Jesus was present. Martha was serving - cooking, preparing, managing. Her intentions were good. She was doing something that would normally be commendable. Mary sat at Jesus&apos; feet and listened.
             </p>
@@ -179,7 +179,7 @@ export default function SermonPage() {
               Martha was not lazy. Martha was not rebellious. Martha was doing a genuinely good thing - at the wrong moment. The presence of Jesus in the house changed what the &quot;right thing&quot; was. When the kairos arrives, the old good things may need to pause.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Misalignment Is Not Weakness - It Is a Direction Problem</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Misalignment Is Not Weakness - It Is a Direction Problem</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               The person who feels stuck while doing everything right is often experiencing misalignment, not failure. They are disciplined - but not a disciple. Busy - but not productive for the kingdom. Doing things that are good - but not the thing that God is asking in this season.
             </p>
@@ -188,7 +188,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;You can be very busy climbing the right ladder, but when you get to the top and see the building - you realise it was the wrong one. The effort was real. The direction was wrong.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -240,7 +240,7 @@ export default function SermonPage() {
               </Link>
               <Link
                 href="/prayer"
-                className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
+                className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
               >
                 Send a Prayer Request
               </Link>
@@ -262,7 +262,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -277,33 +277,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-knowing-is-the-problem" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-knowing-is-the-problem" className="text-[#0d6fbf] hover:underline font-medium">
                   When Knowing Is the Problem
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Resolution Didn't Fail - You Quit Acting
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Nothing Changes No Matter How Hard You Try
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#0d6fbf] hover:underline font-medium">
                   You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

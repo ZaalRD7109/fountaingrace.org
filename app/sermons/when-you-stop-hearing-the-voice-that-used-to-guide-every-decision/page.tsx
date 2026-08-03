@@ -178,17 +178,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message - Fountain of Grace International - Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               {sd.headline}
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 10 May 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 10 May 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               {sd.intro}
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal - Fountain of Grace International, Pretoria North - {sd.dateDisplay}
             </p>
           </div>
@@ -210,14 +210,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"What this training is about"}</button>
-                <button type="button" data-start="57" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:57</span>{"Retuning your hearing ability"}</button>
-                <button type="button" data-start="145" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:25</span>{"Learning to see and discern"}</button>
-                <button type="button" data-start="326" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:26</span>{"Fixing your mind and motives"}</button>
-                <button type="button" data-start="500" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">8:20</span>{"Everyone can receive messages"}</button>
-                <button type="button" data-start="952" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:52</span>{"Messages must reveal truth"}</button>
-                <button type="button" data-start="1425" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">23:45</span>{"Ditching the special person myth"}</button>
-                <button type="button" data-start="1743" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">29:03</span>{"Practical ways to activate this"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"What this training is about"}</button>
+                <button type="button" data-start="57" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:57</span>{"Retuning your hearing ability"}</button>
+                <button type="button" data-start="145" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">2:25</span>{"Learning to see and discern"}</button>
+                <button type="button" data-start="326" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:26</span>{"Fixing your mind and motives"}</button>
+                <button type="button" data-start="500" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">8:20</span>{"Everyone can receive messages"}</button>
+                <button type="button" data-start="952" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:52</span>{"Messages must reveal truth"}</button>
+                <button type="button" data-start="1425" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">23:45</span>{"Ditching the special person myth"}</button>
+                <button type="button" data-start="1743" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">29:03</span>{"Practical ways to activate this"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -238,7 +238,7 @@ export default function SermonPage() {
 
             {(sd.sections as Section[]).map((section, i) => (
               <div key={i} className="mb-10">
-                <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{section.heading}</h2>
+                <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{section.heading}</h2>
                 {section.paragraphs.map((para, j) => (
                   <p key={j} className="text-[#555] leading-relaxed mb-4">{para}</p>
                 ))}
@@ -246,7 +246,7 @@ export default function SermonPage() {
             ))}
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;{sd.quote}&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -298,7 +298,7 @@ export default function SermonPage() {
               </Link>
               <Link
                 href="/prayer"
-                className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
+                className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
               >
                 Send a Prayer Request
               </Link>
@@ -321,33 +321,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/experiencing-gods-presence-direct-divine-communication" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/experiencing-gods-presence-direct-divine-communication" className="text-[#0d6fbf] hover:underline font-medium">
                   Can Something Greater Than Yourself Actually Speak Directly to You?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/god-will-finish-what-he-started-in-you-battle" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/god-will-finish-what-he-started-in-you-battle" className="text-[#0d6fbf] hover:underline font-medium">
                   When Everything Fights Against What You Were Meant to Build
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/if-your-church-does-not-change-you-change-your-church" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/if-your-church-does-not-change-you-change-your-church" className="text-[#0d6fbf] hover:underline font-medium">
                   Are You Actually Being Transformed or Just Showing Up?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-what-to-do-when-everything-feels-confusing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-what-to-do-when-everything-feels-confusing" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know What to Do When Everything Feels Confusing
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/birth-of-the-great-christmas-sermon-matthew-1-21" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/birth-of-the-great-christmas-sermon-matthew-1-21" className="text-[#0d6fbf] hover:underline font-medium">
                   Born Into Something Greater Than the Life You Are Currently Living
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

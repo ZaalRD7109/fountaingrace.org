@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 208 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Am I actually present at home, or just physically there?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 27 July 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 27 July 2026</p>
           </div>
         </header>
 
@@ -57,7 +57,7 @@ export default function DevotionalPage() {
             <p className="text-[#555] leading-relaxed text-lg">{"You came home. You were there. But maybe your eyes were on a screen, your mind was still at work, your heart was somewhere else entirely. It happens to almost everyone, and it costs more than we realise. The people under your roof do not need a perfect version of you. They need the actual you, turned toward them. God always intended home to be a place of real presence, real conversation, real connection. He put it this way:"}</p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"And these words, which I command thee this day, shall be in thine heart: And thou shalt teach them diligently unto thy children, and shalt talk of them when thou sittest in thine house, and when thou walkest by the way, and when thou liest down, and when thou risest up."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"And these words, which I command thee this day, shall be in thine heart: And thou shalt teach them diligently unto thy children, and shalt talk of them when thou sittest in thine house, and when thou walkest by the way, and when thou liest down, and when thou risest up."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Deuteronomy 6:6-7 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Tonight, pick one person in your home and give them ten minutes with no phone, no distraction. Ask them one real question and actually listen to the answer. It does not have to be deep. It just has to be real."}</p>
@@ -83,13 +83,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

@@ -55,7 +55,7 @@ export default function CookiePolicyPage() {
 
       <section className="bg-white pt-16 pb-12 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#008080] font-semibold text-sm uppercase tracking-wider mb-4">
+          <p className="text-[#006b6b] font-semibold text-sm uppercase tracking-wider mb-4">
             Legal · POPIA Compliant
           </p>
           <h1 className="text-4xl font-extrabold text-gray-900 leading-tight mb-4">
@@ -150,7 +150,7 @@ export default function CookiePolicyPage() {
                     href="https://policies.google.com/privacy"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#008080] hover:underline"
+                    className="text-[#006b6b] underline"
                   >
                     Google Privacy Policy
                   </a>
@@ -173,7 +173,7 @@ export default function CookiePolicyPage() {
                     href="https://policies.google.com/privacy"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#008080] hover:underline"
+                    className="text-[#006b6b] underline"
                   >
                     Google Privacy Policy
                   </a>
@@ -190,7 +190,7 @@ export default function CookiePolicyPage() {
             </p>
             <ul className="space-y-3 pl-4">
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span>
                   <strong>On this website:</strong> Use the cookie consent banner when you first
                   visit to accept or decline analytics cookies. Declining means only essential
@@ -198,7 +198,7 @@ export default function CookiePolicyPage() {
                 </span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span>
                   <strong>In your browser:</strong> Most browsers allow you to view, manage,
                   and delete cookies in their settings. Look for Privacy or Security settings.
@@ -206,14 +206,14 @@ export default function CookiePolicyPage() {
                 </span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span>
                   <strong>Google Analytics opt-out:</strong> Install the{' '}
                   <a
                     href="https://tools.google.com/dlpage/gaoptout"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#008080] hover:underline"
+                    className="text-[#006b6b] underline"
                   >
                     Google Analytics Opt-out Browser Add-on
                   </a>{' '}

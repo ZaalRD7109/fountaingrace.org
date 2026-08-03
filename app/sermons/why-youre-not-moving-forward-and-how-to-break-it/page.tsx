@@ -91,17 +91,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Why You&apos;re Not Moving Forward - And How to Break It
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 1 March 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 1 March 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               You know exactly what to do. But you are not doing it. The problem is not a lack of knowledge - it is something deeper.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 1 March 2026
             </p>
           </div>
@@ -123,13 +123,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"We talk but nothing changes"}</button>
-                <button type="button" data-start="47" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:47</span>{"Fear keeps us stuck"}</button>
-                <button type="button" data-start="221" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:41</span>{"Everyone wants different things"}</button>
-                <button type="button" data-start="528" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">8:48</span>{"Baggage always shows up"}</button>
-                <button type="button" data-start="1240" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">20:40</span>{"Walking together matters most"}</button>
-                <button type="button" data-start="1823" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">30:23</span>{"Real unity needs agreement"}</button>
-                <button type="button" data-start="2416" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">40:16</span>{"Words without action fail"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"We talk but nothing changes"}</button>
+                <button type="button" data-start="47" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:47</span>{"Fear keeps us stuck"}</button>
+                <button type="button" data-start="221" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:41</span>{"Everyone wants different things"}</button>
+                <button type="button" data-start="528" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">8:48</span>{"Baggage always shows up"}</button>
+                <button type="button" data-start="1240" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">20:40</span>{"Walking together matters most"}</button>
+                <button type="button" data-start="1823" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">30:23</span>{"Real unity needs agreement"}</button>
+                <button type="button" data-start="2416" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">40:16</span>{"Words without action fail"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -157,27 +157,27 @@ export default function SermonPage() {
               The root issue is not that you don&apos;t know what to do. You know exactly what to do. But you&apos;re not doing it. Peter walking on water - in Matthew 14:28 - is the biblical model Pastor Ricardo returned to throughout this message. When Jesus said &quot;Come,&quot; Peter did not wait until the waves calmed. He moved.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-10 mb-4">1. Fear disguised as wisdom</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-10 mb-4">1. Fear disguised as wisdom</h2>
             <p className="text-[#555] leading-relaxed">
               You tell yourself you are being careful. But when you examine it through scripture, 2 Timothy 1:7 is direct: <em>&quot;God has not given us a spirit of fear, but of power and of love and of a sound mind.&quot;</em> The Greek word for fear here is <em>delia</em> - cowardice, shrinking back. The word for power is <em>dynamis</em> - like dynamite, a force in action. You have not been given the spirit of shrinking. You have been given the spirit of movement.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-10 mb-4">2. Double-minded thinking</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-10 mb-4">2. Double-minded thinking</h2>
             <p className="text-[#555] leading-relaxed">
               James 1:6-8 says a double-minded man is unstable in all his ways - and should not expect to receive anything from God. You keep your options open. You say &quot;maybe this, maybe that.&quot; Be specific. If you want a specific outcome, tell God specifically. The brain follows what you give it focus. A vague ask produces a vague result.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-10 mb-4">3. Waiting for perfect conditions</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-10 mb-4">3. Waiting for perfect conditions</h2>
             <p className="text-[#555] leading-relaxed">
               Ecclesiastes 11:4 says: <em>&quot;He who observes the wind will not sow, and he who regards the clouds will not reap.&quot;</em> The Hebrew word for &quot;observe&quot; here means to watch carefully and wait for ideal conditions. If you wait for perfect conditions, you will never plant. The perfect time was yesterday. The next best time is now.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-10 mb-4">4. Leaning on your own logic</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-10 mb-4">4. Leaning on your own logic</h2>
             <p className="text-[#555] leading-relaxed">
               Proverbs 3:5-6: <em>&quot;Trust in the Lord with all your heart, and lean not on your own understanding. In all your ways acknowledge him, and he shall direct your paths.&quot;</em> God directs moving people - not people who are standing still. If you are not moving, there is no direction needed. God gives direction to the mover.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-10 mb-4">A practical framework for moving</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-10 mb-4">A practical framework for moving</h2>
             <p className="text-[#555] leading-relaxed">
               Pastor Ricardo also shared five principles from David Allen&apos;s <em>Getting Things Done</em> that align directly with this message:
             </p>
@@ -190,14 +190,14 @@ export default function SermonPage() {
                 'The two-minute rule: if it takes less than two minutes, do it immediately. Do not schedule it, optimize it, or overthink it.',
               ].map((item, i) => (
                 <li key={i} className="flex gap-3">
-                  <span className="text-[#FFD600] font-bold flex-shrink-0">{i + 1}.</span>
+                  <span className="text-white font-bold flex-shrink-0">{i + 1}.</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ol>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;You don&apos;t procrastinate because you are lazy. You procrastinate because your tasks are unclear. Get clarity.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal, Fountain of Grace International</cite>
@@ -212,7 +212,7 @@ export default function SermonPage() {
         {/* FAQ */}
         <section className="bg-[#f0fafa] py-14 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#2a9df4] mb-8">Questions this message answers</h2>
+            <h2 className="text-2xl font-bold text-[#0d6fbf] mb-8">Questions this message answers</h2>
             <dl className="space-y-0">
               {[
                 {
@@ -233,7 +233,7 @@ export default function SermonPage() {
                 },
               ].map((item) => (
                 <div key={item.q} className="faq-block">
-                  <dt className="font-semibold text-[#2a9df4] mb-2">{item.q}</dt>
+                  <dt className="font-semibold text-[#0d6fbf] mb-2">{item.q}</dt>
                   <dd className="text-[#555] leading-relaxed">{item.a}</dd>
                 </div>
               ))}
@@ -263,7 +263,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-white mb-4">
               If this connected with where you are - come on Sunday.
             </h2>
-            <p className="text-white/70 mb-8 max-w-lg mx-auto">
+            <p className="text-white mb-8 max-w-lg mx-auto">
               Fountain of Grace International in Pretoria North. Every Sunday at 09:00. Someone will meet you at the door.
             </p>
             <Link href="/plan-your-visit" className="btn-primary">
@@ -286,7 +286,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -301,33 +301,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/you-already-know-what-to-do-so-why-arent-you-doing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-already-know-what-to-do-so-why-arent-you-doing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   You Already Know What To Do - So Why Aren't You Doing It?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#0d6fbf] hover:underline font-medium">
                   The Principles That Move People Forward Faster
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Paycheck Disappears Every Month - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-working-hard-but-nothing-changes-heres-why" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-working-hard-but-nothing-changes-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 156 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"How do I stop waiting for a sign and just start?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 5 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 5 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Therefore to him that knoweth to do good, and doeth it not, to him it is sin."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Therefore to him that knoweth to do good, and doeth it not, to him it is sin."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"James 4:17 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You have become an expert at gathering confirmations instead of taking steps.\n\nOne more sign. One more person's approval. One more season of certainty. You know what needs to happen - you have known for months. But confirmation feels safer than commitment. It feels like preparation when it is actually procrastination wearing a spiritual costume. The truth is, you are waiting for a version of certainty that does not exist.\n\nHere is what nobody tells you: the thing you almost started six times has already given you all the information you need. More signs will not make you braver. More approval will not make you ready. \"Now we see through a glass, darkly\" - we will never see everything clearly before we move. The people who change are not the ones who wait until they are certain. They are the ones who decide that staying is more painful than trying.\n\nYour resistance is not really about needing one more confirmation.\n\nIt is about needing permission to fail, and no one can give you that but yourself.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You Got What You Prayed For But Lost It Anyway"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 31 January 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You finally got the job you desperately needed. Three months later you're fired again. You got the money. It's gone. Your spouse came back, but the trust is shattered. What's actually broken?"}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 31 January 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You finally got the job you desperately needed. Three months later you're fired again. You got the money. It's gone. Your spouse came back, but the trust is shattered. What's actually broken?"}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,10 +140,10 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"When healing gets personal"}</button>
-                <button type="button" data-start="260" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:20</span>{"The woman who touched the hem"}</button>
-                <button type="button" data-start="1545" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:45</span>{"Why we stop asking for help"}</button>
-                <button type="button" data-start="2790" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">46:30</span>{"Twelve years of carrying shame"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"When healing gets personal"}</button>
+                <button type="button" data-start="260" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:20</span>{"The woman who touched the hem"}</button>
+                <button type="button" data-start="1545" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:45</span>{"Why we stop asking for help"}</button>
+                <button type="button" data-start="2790" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">46:30</span>{"Twelve years of carrying shame"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -160,32 +160,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Problem With Asking God For Half a Fix"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Problem With Asking God For Half a Fix"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You pray for a job. God gives you the job. On day one, your new boss asks why you left the last place. Your stomach drops. You have to say it: you were fired for stealing. Now your new employer knows you have a dishonesty problem, and the job you prayed so hard for is already at risk."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is the pattern most people miss. We ask God to fix the symptom, not the disease. We ask for money without asking for the discipline to keep it. We ask for our marriage back without asking for the faithfulness and respect to maintain it. We ask for healing without asking to be healed of the shame, rejection, and spiritual damage that came with the sickness."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The woman in Matthew 9 who had been bleeding for twelve years did something different. Before she even touched Jesus' garment, she made a specific decision in her mind: 'If I touch his garment, I shall be made whole.' Not healed. Whole. That word matters."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Healed Is Not The Same As Whole"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Healed Is Not The Same As Whole"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Healing is a physical fix. Your broken bone mends. Your infection clears. Your bleeding stops. But wholeness is different. Wholeness is when every broken part of your life gets restored at once: your body, your mind, your finances, your relationships, your dignity, your spirit."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Think about what that woman had endured for twelve years. Yes, she had a medical problem. But she also had financial ruin from doctors who could not help her. She had been separated from society because of the smell and the shame. She had developed loneliness so deep it probably made her curse God. She had spiritual wounds from desperate choices, maybe visits to traditional healers that bound her in ways beyond the physical. She was incomplete."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When Jesus told her 'your faith has made you whole,' he was not just stopping the bleeding. He was restoring her financially, emotionally, spiritually, and socially all at once. That is the difference between a surface fix and genuine restoration."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Your Prayers Keep Missing The Target"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why Your Prayers Keep Missing The Target"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You pray: 'Lord, give me money.' What you do not pray: 'Lord, give me the discipline and wisdom to manage money so I do not lose it the way I lost it before.' So God gives you the money. But your mindset is still a broke person's mindset. You spend it on the same shortcuts and quick fixes. The money disappears in days."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You pray: 'Lord, restore my marriage.' What you do not pray: 'Lord, forgive me for the disrespect I showed my spouse. Heal the broken trust I caused. Change the part of me that led to infidelity.' So your spouse comes back. But every time your spouse looks at you, they are wondering: will you do it again? Your marriage is technically restored but rotting from the inside."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You pray: 'Lord, heal me from this sickness.' What you do not pray: 'Lord, heal me from the shame I carry because of this sickness. Restore my mind from the rejection I felt. Give me back the dignity I lost. Forgive me for the desperate spiritual choices I made while I was suffering.' So the sickness leaves. But the emotional wreckage remains, and you cannot move forward."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Wholeness Actually Requires"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Wholeness Actually Requires"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The woman with the bleeding disorder humbled herself completely. She did not wait for Jesus to come to her. She pushed through a crowd. She got on her knees. She reached only for the hem of his garment, not his robes or his head. Her action showed that she understood something: wholeness requires surrender, not just request. It requires honesty about what is actually broken, not just what hurts the most right now."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you come to God asking to be made whole, you have to name the real damage. Not just the job loss, but the dishonesty that caused it. Not just the financial crisis, but the lack of self-control that created it. Not just the broken relationship, but the betrayal and disrespect you inflicted. Not just the sickness, but the shame, the loneliness, the curses you spoke, the wrong choices you made while desperate."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Wholeness means asking God to restore everything that got broken in the process, not just the headline problem. King David understood this when he prayed in Psalm 51 after his adultery and murder: 'Create in me a clean heart and renew a right spirit within me.' He was not asking to escape punishment. He was asking to be made whole again, from the inside out."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Specificity That Changes Everything"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Specificity That Changes Everything"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When you ask God for a car, be specific. Do not ask for 'a car.' Ask for the exact car you actually need, with the exact features, the exact color, the exact everything. Why? Because vague prayers get vague answers. More importantly, vague prayers show God that you have not actually thought through what you need."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The same applies to asking for wholeness. Do not pray 'Lord, fix my life.' That is too big and too unclear. Pray: 'Lord, I need to be healed from this physical problem AND from the shame it created AND from the loneliness it caused AND from the spiritual damage of my desperate choices AND from the broken relationships it fractured.' Name it. Specify it. Show God and yourself that you understand the full scope of what is broken."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The woman at the well in John 4 came looking for water, but Jesus met her deeper need: the need to be seen, valued, and restored after five failed marriages and a current situation of total shame. When she encountered wholeness, she ran back to tell everyone in her village. That is what real restoration does: it does not hide anymore. It overflows."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How To Know If You Are Asking For Half or Whole"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How To Know If You Are Asking For Half or Whole"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Blind Bartimaeus could have asked just for his sight back. Instead, he was asking for his dignity, his ability to work, his place in society, his identity as more than 'the beggar.' When Jesus healed him, Bartimaeus did not go home grateful. He followed Jesus on the road. That is what wholeness does: it gives you the strength and clarity to move forward, not just to survive."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Prodigal Son did not just need forgiveness. He needed his identity restored as a son, not a servant. His father gave him a robe, a ring, and sandals. The ring was not decoration. It was authority. It was the return of his power and his place. That is wholeness: not just being let back in, but being fully restored to who you were meant to be."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Ask yourself: What am I really asking God for? Am I asking him to patch the hole, or am I asking him to rebuild the entire structure? Am I asking for relief, or am I asking for restoration? Am I asking for healing, or am I asking to be made whole? The answer changes everything about how you pray and what happens when God answers."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Do not ask God for a car when you do not even know how to drive. Ask him to make you whole first, then the car will stay with you.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Do not ask God for a car when you do not even know how to drive. Ask him to make you whole first, then the car will stay with you.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -194,7 +194,7 @@ export default function SermonPage() {
               <li><strong>{"Wholeness Requires Naming What Is Actually Broken"}</strong> {" "}{"The woman with twelve years of bleeding did not just need the bleeding to stop. She needed financial restoration from years of failed doctors, emotional healing from years of rejection and loneliness, spiritual cleansing from desperate choices she made while suffering, and social restoration to be able to sit next to people again without shame. Wholeness means you stop hiding the real damage and start asking God to fix all of it. Name it out loud. That honesty is where restoration begins."}</li>
               <li><strong>{"Humility And Specificity Change How God Responds"}</strong> {" "}{"The woman did not demand healing. She humbled herself, pushed through the crowd, got on her knees, and reached only for the hem of his garment. That complete surrender, combined with her clear faith that she would be made whole, is what moved God. When you come to God with vague prayers and pride still intact, you get vague answers. When you come with humility, specificity about what is broken, and faith that he can restore all of it, everything changes."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -222,7 +222,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -240,7 +240,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -253,33 +253,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#0d6fbf] hover:underline font-medium">
                   The Cost of Sitting on the Sidelines
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-fixing-the-same-problems-over-and-over" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-fixing-the-same-problems-over-and-over" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Fixing the Same Problems Over and Over
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids" className="text-[#0d6fbf] hover:underline font-medium">
                   The Pain You Inherited From Your Father Is Quietly Breaking Your Kids
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#0d6fbf] hover:underline font-medium">
                   Everyone
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#0d6fbf] hover:underline font-medium">
                   Six Invisible Gaps That Wreck Your Life (And How to Close Them)
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

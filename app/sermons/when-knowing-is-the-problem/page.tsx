@@ -103,17 +103,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               When Knowing Is the Problem
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 February 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 February 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               This message is not for the ignorant. It is for the person who has attended every service, done every course, read every book, quoted every scripture - and yet nothing in their life has shifted. This is the message James 1 was written for.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 15 February 2026
             </p>
           </div>
@@ -135,13 +135,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Why I'm talking about this"}</button>
-                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:30</span>{"Time to stop waiting"}</button>
-                <button type="button" data-start="330" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:30</span>{"Two kinds of time"}</button>
-                <button type="button" data-start="960" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">16:00</span>{"Noah got ready in time"}</button>
-                <button type="button" data-start="1680" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">28:00</span>{"Are you prepared"}</button>
-                <button type="button" data-start="2460" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">41:00</span>{"You have free will"}</button>
-                <button type="button" data-start="3360" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">56:00</span>{"Teaching you to fish"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Why I'm talking about this"}</button>
+                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:30</span>{"Time to stop waiting"}</button>
+                <button type="button" data-start="330" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:30</span>{"Two kinds of time"}</button>
+                <button type="button" data-start="960" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">16:00</span>{"Noah got ready in time"}</button>
+                <button type="button" data-start="1680" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">28:00</span>{"Are you prepared"}</button>
+                <button type="button" data-start="2460" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">41:00</span>{"You have free will"}</button>
+                <button type="button" data-start="3360" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">56:00</span>{"Teaching you to fish"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -160,7 +160,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Danger Is Not Ignorance</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Danger Is Not Ignorance</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Most teaching assumes the problem is lack of knowledge. Give people more information, more inspiration, more scriptural insight - and they will change. But James 1 addresses a completely different problem: the person who hears the truth, agrees with the truth, understands the truth - and delays obedience to it.
             </p>
@@ -168,7 +168,7 @@ export default function SermonPage() {
               James 1:22 - &quot;But be ye doers of the word, and not hearers only, deceiving your own selves.&quot; The word &quot;deceiving&quot; is important. The hearer who does not act is not just passive - they are self-deceived. They believe they have engaged because they heard. But hearing without movement is not engagement with the Word. It is information storage.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Mirror That Nobody Acts On</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Mirror That Nobody Acts On</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               James 1:23-24 - &quot;For if any be a hearer of the word, and not a doer, he is like unto a man beholding his natural face in a glass: for he beholdeth himself, and goeth his way, and straightway forgetteth what manner of man he was.&quot;
             </p>
@@ -179,7 +179,7 @@ export default function SermonPage() {
               Many believers live in the mirror. Every Sunday, the word shows them something. They agree. They feel conviction. They even make internal resolutions. By Tuesday, the picture has faded and the week continues as before.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Blessed One Acts</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Blessed One Acts</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               James 1:25 - &quot;But whoso looketh into the perfect law of liberty, and continueth therein, he being not a forgetful hearer, but a doer of the work, this man shall be blessed in his deed.&quot;
             </p>
@@ -191,7 +191,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;The blessing is not attached to the hearing. It is attached to the doing. You can know every scripture and still be missing the one obedient step that would change your life.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -243,7 +243,7 @@ export default function SermonPage() {
               </Link>
               <Link
                 href="/prayer"
-                className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
+                className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
               >
                 Send a Prayer Request
               </Link>
@@ -265,7 +265,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -280,33 +280,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Resolution Didn't Fail - You Quit Acting
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Nothing Changes No Matter How Hard You Try
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-good-things-block-god-things" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-good-things-block-god-things" className="text-[#0d6fbf] hover:underline font-medium">
                   How Good Opportunities Become the Thing That Stops Your Real Breakthrough
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#0d6fbf] hover:underline font-medium">
                   You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

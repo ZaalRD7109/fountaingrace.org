@@ -118,17 +118,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               The One Weapon Nobody Teaches You That Changes Every Fight
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 19 October 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 19 October 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               If cycles in your family keep repeating - sickness, debt, broken relationships, blocked progress - this message is for you. Jesus stooped and wrote on the ground. Every accuser left. That was not a coincidence. It was a weapon. And it still works.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North
             </p>
           </div>
@@ -150,14 +150,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"You are not alone"}</button>
-                <button type="button" data-start="180" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:00</span>{"Why silence hurts"}</button>
-                <button type="button" data-start="420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">7:00</span>{"Power for the weak"}</button>
-                <button type="button" data-start="840" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">14:00</span>{"Blood speaks with authority"}</button>
-                <button type="button" data-start="1440" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">24:00</span>{"Protection through the sign"}</button>
-                <button type="button" data-start="2100" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">35:00</span>{"Removing the guilt"}</button>
-                <button type="button" data-start="2700" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">45:00</span>{"Sharing the meal matters"}</button>
-                <button type="button" data-start="3240" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">54:00</span>{"You are covered"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"You are not alone"}</button>
+                <button type="button" data-start="180" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:00</span>{"Why silence hurts"}</button>
+                <button type="button" data-start="420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">7:00</span>{"Power for the weak"}</button>
+                <button type="button" data-start="840" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">14:00</span>{"Blood speaks with authority"}</button>
+                <button type="button" data-start="1440" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">24:00</span>{"Protection through the sign"}</button>
+                <button type="button" data-start="2100" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">35:00</span>{"Removing the guilt"}</button>
+                <button type="button" data-start="2700" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">45:00</span>{"Sharing the meal matters"}</button>
+                <button type="button" data-start="3240" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">54:00</span>{"You are covered"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -180,7 +180,7 @@ export default function SermonPage() {
               This message is not for everyone. If the patterns in your family do not bother you - if sickness returning, finances blocked, relationships breaking down is something you have accepted - this is not for you. But if you are tired of cycles repeating and nothing you try seems to break them, you need to hear this.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-8 mb-3">He Wrote on the Ground and They All Left</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-8 mb-3">He Wrote on the Ground and They All Left</h2>
             <p className="text-[#555] leading-relaxed">
               John 8:6 records one of the most mysterious moments in the Gospels. A woman caught in adultery was brought before Jesus. The accusers were ready. And Jesus stooped down, and with his finger wrote on the ground as though he heard them not. He did not argue. He did not defend. He wrote. And one by one, every accuser left - convicted, silent, gone.
             </p>
@@ -188,7 +188,7 @@ export default function SermonPage() {
               What he wrote, Scripture does not tell us. But what happened after tells us everything. That act - writing on the ground with authority - was not incidental. It connects directly to the pattern God established at the very beginning of creation.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-8 mb-3">God Spoke to the Earth Before He Spoke to Man</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-8 mb-3">God Spoke to the Earth Before He Spoke to Man</h2>
             <p className="text-[#555] leading-relaxed">
               Genesis 1:11 - God said, let the earth bring forth. He spoke to the earth. He commanded it. And it produced exactly what He said. This is the pattern. The earth was designed to respond to spoken and written authority from the beginning.
             </p>
@@ -196,7 +196,7 @@ export default function SermonPage() {
               Job 12:8 makes it plain: <em>&quot;Speak to the earth, and it shall teach thee.&quot;</em> This is not metaphor. It is instruction. The earth is listening. Creation is programmed to respond to the sound of God&apos;s image-bearer speaking with authority.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-8 mb-3">Your Enemy Has Been Using This Against You</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-8 mb-3">Your Enemy Has Been Using This Against You</h2>
             <p className="text-[#555] leading-relaxed">
               Proverbs 18:21 says death and life are in the power of the tongue. The enemy knows this better than most believers do. He has been using cycles, patterns, and generational blockages against families for decades - because no one has stood up and used the authority God placed in them to respond.
             </p>
@@ -205,7 +205,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;He did not argue. He did not defend. He wrote on the ground - and every single accuser left. That is the weapon. And it is still available to you.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal, Fountain of Grace International</cite>
@@ -227,7 +227,7 @@ export default function SermonPage() {
 
         <section className="bg-[#f0fafa] py-14 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#2a9df4] mb-8">Questions this message answers</h2>
+            <h2 className="text-2xl font-bold text-[#0d6fbf] mb-8">Questions this message answers</h2>
             <dl className="space-y-0">
               {[
                 {
@@ -248,7 +248,7 @@ export default function SermonPage() {
                 },
               ].map((item) => (
                 <div key={item.q} className="faq-block">
-                  <dt className="font-semibold text-[#2a9df4] mb-2">{item.q}</dt>
+                  <dt className="font-semibold text-[#0d6fbf] mb-2">{item.q}</dt>
                   <dd className="text-[#555] leading-relaxed">{item.a}</dd>
                 </div>
               ))}
@@ -275,7 +275,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-white mb-4">
               Come and hear this in person - Pretoria North, every Sunday.
             </h2>
-            <p className="text-white/70 mb-8 max-w-lg mx-auto">
+            <p className="text-white mb-8 max-w-lg mx-auto">
               323 B Danie Theron Street. Services at 09:00. Someone will meet you at the door.
             </p>
             <Link href="/plan-your-visit" className="btn-primary">
@@ -298,7 +298,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -313,33 +313,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Some Things Refuse to Move
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Nothing Changes No Matter How Hard You Try
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#0d6fbf] hover:underline font-medium">
                   You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#0d6fbf] hover:underline font-medium">
                   The Spiritual Weapon - Declaration Session
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

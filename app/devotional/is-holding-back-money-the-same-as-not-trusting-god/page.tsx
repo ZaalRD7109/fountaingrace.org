@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 215 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Is holding back money the same as not trusting God?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 3 August 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 3 August 2026</p>
           </div>
         </header>
 
@@ -57,7 +57,7 @@ export default function DevotionalPage() {
             <p className="text-[#555] leading-relaxed text-lg">{"Money is tight and the month feels long. When things are thin, the natural move is to grip harder, hold tighter, let nothing out of your hands. Maybe that makes complete sense to you right now. Or maybe, underneath it, there is a quiet fear whispering that God will not come through if you let go. Solomon watched this pattern for years, and what he saw surprised him."}</p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"There is that scattereth, and yet increaseth; and there is that withholdeth more than is meet, but it tendeth to poverty."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"There is that scattereth, and yet increaseth; and there is that withholdeth more than is meet, but it tendeth to poverty."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Proverbs 11:24 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Today, find one small way to give something. Not when it is easy, not when the account is full. A few rands for someone's taxi, a meal shared, something you can do now. Let it be a small, deliberate act of trust that says God is still my source."}</p>
@@ -83,13 +83,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

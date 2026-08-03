@@ -107,17 +107,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Follow Your Inner Voice - Discover Your Destiny
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 24 February 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 24 February 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               Before you were born, God already set you apart. He did not research you on Google. He formed you, made you, and wrote what your life would look like. This message is for the person whose inner voice keeps saying &quot;go&quot; - while other voices keep saying &quot;stop.&quot;
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 24 February 2026
             </p>
           </div>
@@ -139,10 +139,10 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"When your thoughts lie to you"}</button>
-                <button type="button" data-start="47" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:47</span>{"Why you keep going anyway"}</button>
-                <button type="button" data-start="135" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:15</span>{"How to stop the falling"}</button>
-                <button type="button" data-start="233" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:53</span>{"Something greater inside you"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"When your thoughts lie to you"}</button>
+                <button type="button" data-start="47" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:47</span>{"Why you keep going anyway"}</button>
+                <button type="button" data-start="135" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">2:15</span>{"How to stop the falling"}</button>
+                <button type="button" data-start="233" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:53</span>{"Something greater inside you"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -169,12 +169,12 @@ export default function SermonPage() {
               The Hebrew word for &quot;know&quot; in Jeremiah 1:5 is <em>yada</em> - an intimate, purposeful knowing. God did not discover you accidentally. He did not observe you from a distance and decide to use you. He formed you. He wrote your life before you lived it. The question is not whether he placed a purpose inside you. The question is whether you are willing to follow it.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-8 mb-3">The voices that tell you to stop</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-8 mb-3">The voices that tell you to stop</h2>
             <p className="text-[#555] leading-relaxed">
               Some of those voices belong to people who loved you. Parents who said &quot;don&apos;t run, you will fall&quot; because they were trying to protect you. The problem is that when those voices get repeated enough times, they become indistinguishable from your own. You start to think it is your voice saying &quot;stop&quot; - when it was never yours at all.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-8 mb-3">The voice inside you</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-8 mb-3">The voice inside you</h2>
             <p className="text-[#555] leading-relaxed">
               1 John 4:4 - <em>&quot;Greater is he that is within me than he that is in the world.&quot;</em> The God who formed you lives inside you. When that inner knowing says &quot;go,&quot; it is not your imagination. It is the God who wrote your destiny speaking to the person he made you to be.
             </p>
@@ -183,7 +183,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;God did not do what I do when I search something on Google. God did not research you. God knew you. He aughted you, made you, formed you, and wrote what life would be like.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal, Fountain of Grace International</cite>
@@ -201,7 +201,7 @@ export default function SermonPage() {
 
         <section className="bg-[#f0fafa] py-14 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#2a9df4] mb-8">Questions this message answers</h2>
+            <h2 className="text-2xl font-bold text-[#0d6fbf] mb-8">Questions this message answers</h2>
             <dl className="space-y-0">
               {[
                 {
@@ -222,7 +222,7 @@ export default function SermonPage() {
                 },
               ].map((item) => (
                 <div key={item.q} className="faq-block">
-                  <dt className="font-semibold text-[#2a9df4] mb-2">{item.q}</dt>
+                  <dt className="font-semibold text-[#0d6fbf] mb-2">{item.q}</dt>
                   <dd className="text-[#555] leading-relaxed">{item.a}</dd>
                 </div>
               ))}
@@ -249,7 +249,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-white mb-4">
               Come and hear this in person - Pretoria North, every Sunday.
             </h2>
-            <p className="text-white/70 mb-8 max-w-lg mx-auto">
+            <p className="text-white mb-8 max-w-lg mx-auto">
               323 B Danie Theron Street. Services at 09:00. Someone will meet you at the door.
             </p>
             <Link href="/plan-your-visit" className="btn-primary">
@@ -272,7 +272,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -287,33 +287,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/born-original-marked-by-god-identity-purpose" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/born-original-marked-by-god-identity-purpose" className="text-[#0d6fbf] hover:underline font-medium">
                   You Were Not Made to Be a Copy of Someone Else
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-silent-assassin-of-destiny" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-silent-assassin-of-destiny" className="text-[#0d6fbf] hover:underline font-medium">
                   The Silent Assassin of Destiny: Overthinking
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-dont-know-who-you-are-yet" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-dont-know-who-you-are-yet" className="text-[#0d6fbf] hover:underline font-medium">
                   You Don't Know Who You Are Yet
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-good-things-block-god-things" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-good-things-block-god-things" className="text-[#0d6fbf] hover:underline font-medium">
                   How Good Opportunities Become the Thing That Stops Your Real Breakthrough
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#0d6fbf] hover:underline font-medium">
                   The Spiritual Weapon - Declaration Session
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

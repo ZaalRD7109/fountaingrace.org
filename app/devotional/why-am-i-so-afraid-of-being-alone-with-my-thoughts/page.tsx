@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 140 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Why am I so afraid of being alone with my thoughts?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 20 May 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 20 May 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Be still, and know that I am God: I will be exalted among the heathen, I will be exalted in the earth."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Be still, and know that I am God: I will be exalted among the heathen, I will be exalted in the earth."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 46:10 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You fear the silence but won't admit it. You cram your days with noise, meetings, tasks. Anything to keep the quiet at bay. Because when the world stills, what's left? Just you and the questions you avoid.\n\nYou didn't ask for these shadows. But they linger. Busyness might mask them, but deep down, you know they're there. Each frantic hour a shield from your own thoughts. If you stop, even for a moment, the reality might flood in - and that's terrifying. No one talks about this, do they? How the demands can be both refuge and prison.\n\nYet, consider this: \"Be still, and know that I am God.\" Silence isn't empty - it's full. Full of grace, understanding, healing. When Elijah fled to the cave, it wasn't wind or fire that reached him - it was the whisper. What if the quiet is where you find what you've been running from, but also what you've been longing for?\n\nSo, tonight, let the noise fade a bit. What would it mean for you to truly listen?\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

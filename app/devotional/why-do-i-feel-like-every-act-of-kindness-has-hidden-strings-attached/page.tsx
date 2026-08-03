@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 152 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Why do I feel like every act of kindness has hidden strings attached?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 1 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 1 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Herein is love, not that we loved God, but that he loved us, and sent his Son to be the propitiation for our sins."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Herein is love, not that we loved God, but that he loved us, and sent his Son to be the propitiation for our sins."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"1 John 4:10 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You're already calculating the cost before anyone's finished speaking.\n\nSomeone shows up for you and your mind goes straight to the debt column. What will they want later. What favour is being banked. Love, in your experience, has always come with an invoice attached. So you keep the ledger balanced. You give before they ask. You anticipate needs. You stay useful. Safe.\n\nBut here's what you're not seeing: you've turned every relationship into a transaction because somewhere along the way, that's what love looked like to you. Conditional. Measured. You learned that affection came with strings, so now you tie your own strings first. It feels like protection. It's actually exhaustion.\n\nListen to what Paul knew: \"Herein is love, not that we loved God, but that he loved us, and sent his Son to be the propitiation for our sins.\" One direction. No invoice. No hidden agenda. He didn't love you because you were useful first. He loved you before you could do anything in return.\n\nWhat if the person reaching toward you right now isn't setting a trap?\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

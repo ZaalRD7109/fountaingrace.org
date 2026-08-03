@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 170 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Why am I always pretending to be okay around people?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 19 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 19 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"And ye shall know the truth, and the truth shall make you free."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"And ye shall know the truth, and the truth shall make you free."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"John 8:32 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You know that moment. The table goes quiet, someone says something that lands wrong, and before your brain catches up your face is already moving. The laugh comes out. Everyone relaxes. Crisis averted. You are fine. Everything is fine.\n\nBut you are not fine. You are tired. You are performing safety for people around you because the cost of honesty feels too high. Maybe they will think less of you. Maybe the moment will break. Maybe you will have to sit in discomfort and that feels impossible right now. So you laugh at jokes that hurt. You nod at things you disagree with. You become very good at being what everyone needs you to be.\n\nThis is the exhaustion of living backwards, away from yourself. But listen: \"Ye shall know the truth, and the truth shall make you free.\" Not the performance. Not the laugh that costs you something. The truth. God sees the real you, the one behind the smile. He is not waiting for you to get better at hiding. He is waiting for you to stop.\n\nYou do not have to earn your place at the table by disappearing. The people worth keeping will love the actual you. And the ones who will not, well, that is their work, not yours. Come home to yourself today.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

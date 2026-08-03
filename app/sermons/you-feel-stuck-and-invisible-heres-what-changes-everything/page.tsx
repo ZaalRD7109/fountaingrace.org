@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You Feel Stuck and Invisible - Here's What Changes Everything"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 18 August 2022</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You've been stuck longer than you expected. You're doing everything right but nothing moves. What if someone could see your real situation and show you what's actually coming next?"}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 18 August 2022</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You've been stuck longer than you expected. You're doing everything right but nothing moves. What if someone could see your real situation and show you what's actually coming next?"}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Giving thanks and praise"}</button>
-                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:45</span>{"Asking for transformation"}</button>
-                <button type="button" data-start="330" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:30</span>{"Welcoming the presence"}</button>
-                <button type="button" data-start="720" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">12:00</span>{"Choosing commitment again"}</button>
-                <button type="button" data-start="2160" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">36:00</span>{"Words of knowledge flowing"}</button>
-                <button type="button" data-start="4500" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:15:00</span>{"Change is coming forward"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Giving thanks and praise"}</button>
+                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:45</span>{"Asking for transformation"}</button>
+                <button type="button" data-start="330" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:30</span>{"Welcoming the presence"}</button>
+                <button type="button" data-start="720" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">12:00</span>{"Choosing commitment again"}</button>
+                <button type="button" data-start="2160" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">36:00</span>{"Words of knowledge flowing"}</button>
+                <button type="button" data-start="4500" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:15:00</span>{"Change is coming forward"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -161,32 +161,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Someone Is Actually Watching Your Situation"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Someone Is Actually Watching Your Situation"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You feel unseen. You work, you apply, you try, but no one notices. No one calls. No one sees what you're worth. That weight of invisibility gets heavier each month. You start wondering if you're the problem, if something is fundamentally broken in you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Scripture in Luke 13 shows something different. A woman bent over for eighteen years - trapped, limited, unable to lift herself up. But the text says this: 'Jesus saw her.' Not because she asked. Not because she performed. Jesus simply saw. He called her to him and said, 'Woman, thou art loosed from thine infirmity.' Then he laid his hands on her, and she was made straight immediately."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"What matters is this: someone real saw her actual condition, not some polished version. And the change that came was immediate and visible. You are being seen right now in exactly the same way. Your financial struggle, your relational hurt, your lack of confidence, your stagnation - it is all visible to the one who made you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Change Is Not Random - It Comes Through Real Doors"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Change Is Not Random - It Comes Through Real Doors"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You may feel like change has to be supernatural and instant. But Scripture shows a different pattern. When Jesus opened the rock in Psalm 105, waters gushed out in dry places like a river. The miracle was real. But it came through a real opening - a physical door that actually moved."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The same is true for you. Your job opportunity will come through an actual employer. Your business partnership will come through an actual person. Your healing will work through actual means. Your family restoration will happen through real conversations. Jesus does not skip the human world - he works through it. He opens actual doors. He moves actual people to reach out to you. He guides actual circumstances."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"What changes tonight is your awareness. You stop waiting for magic and start recognizing the doors that are already opening. A call you almost missed. A connection you nearly ignored. A person you almost said no to. These are not coincidences. They are the hand of Jesus moving through the ordinary world to straighten what has been bent."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Financial Situation Is About to Shift"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Financial Situation Is About to Shift"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"If you have failed financially, if you feel you are not a man or woman to be called capable because money keeps slipping away, Jesus is speaking directly to your shame tonight. You feel the weight of not being the provider you wanted to be. You feel the failure each time you cannot say yes to someone you love."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Here is what is true: Jesus owns everything in this world. Your finances are not outside his attention. And he does not wait years to move - he works according to his own riches, already set aside for you. Your job opportunity is not a dream. It is coming. It may be a promotion in where you are. It may be an unexpected call from somewhere you sent your details months ago and forgot about. It may be a business partnership that starts small and grows. The monetary value of it will move you out of your predicament."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But understand this: the money you receive is a sign, not the whole message. The sign points to something deeper. It tells you that you are seen, that your worth is real, that you are moved by Jesus himself from invisibility into visibility. When the money comes, it comes because Jesus has already declared you straightened up."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Open Doors Are Already Moving - Don't Miss Them"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Open Doors Are Already Moving - Don't Miss Them"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Many people miss their breakthrough because they are looking for something that feels like a breakthrough. They expect lightning and thunder. Instead, a person calls. An email arrives. A conversation happens. A thought comes to mind. And they think it is ordinary."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus told his disciples to launch into the deep. To move past the shallow water where they could see the bottom. To go where the bottom cannot be seen - that is where the abundance is. Right now, you are being invited to move deeper. To trust what you cannot yet see. To say yes to something that looks smaller than you hoped but is actually the beginning of everything."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Scripture says death and life are in the tongue. What you speak, what you believe about yourself, what you decide in the next days - these shape what comes. Speak life over your own situation. Say it out loud: I am straightened up. I am moving forward. I am seen. I am provided for. These are not positive thoughts - they are aligned with what Jesus has already declared true about you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Stops Most People From Moving Forward"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Stops Most People From Moving Forward"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You have been hurt before. You have invested and lost. You have tried and failed. So now when something new appears, you pull back. You take back your heart. You do not give your full effort. You think: what if it does not work out? What if I fail again?"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But this is the trap. The enemy uses past hurt to keep you small. He whispers: protect yourself. Do not risk. Do not hope. And slowly, you become a person who watches from the sidelines while others move forward. This is not caution. This is paralysis dressed up as wisdom."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus is telling you tonight: do not grow weary in doing good. Do not stop yourself from giving your all to what he is calling you toward. Yes, people may hurt you. Yes, businesses may fail. Yes, relationships may break. But if you close your heart to protect yourself, you have already lost what matters. Open your heart. Give your effort. Say yes to the partnerships and conversations that come your way. Trust that if Jesus sends it, he will see you through it."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Tonight Is the Night Things Begin to Turn"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Tonight Is the Night Things Begin to Turn"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You did not find this message by accident. You are reading it because something in you is still hoping. Still believing that change is possible. Still willing to open yourself up to the idea that you are seen and loved by the one who made you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"That hope is not foolish. It is exactly right. Because the Scripture is true: Jesus is the same yesterday, today, and forever. He saw the bent woman in Luke 13. He straightened her. He sees you tonight in exactly the same way. Your situation is no surprise to him. Your pain is no accident. Your timing is no mistake."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"From this point forward, pay attention. Notice the calls that come. Notice the people who reach out. Notice the ideas that come to mind. Notice the doors that open. These are not coincidences. They are Jesus, working through the actual world, to move you from where you are to where he has already planned for you to be. You are about to be straightened up."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Jesus saw her - not because she asked, but because he always sees. He is seeing you right now in exactly the same way.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Jesus saw her - not because she asked, but because he always sees. He is seeing you right now in exactly the same way.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -195,7 +195,7 @@ export default function SermonPage() {
               <li><strong>{"Trust the Ordinary Door"}</strong> {" "}{"Miracles often look like normal life while they are happening. A job offer is not dramatic the moment it arrives - it is an email or a phone call. A partnership begins with a conversation. A healing starts with a doctor's appointment or a simple choice. Jesus works through the real world, not around it. Do not wait for something that feels magical. Watch for the ordinary door that opens. The ordinary job. The ordinary person. The ordinary opportunity. These are where Jesus moves most of the time."}</li>
               <li><strong>{"Your Heart Cannot Be Protected and Opened at the Same Time"}</strong> {" "}{"Fear of being hurt again is real and understandable. But a closed heart is a trapped heart. Jesus is not asking you to be reckless. He is asking you to trust. To give your full effort to what he puts in front of you. To say yes without keeping escape routes open. This is not weakness - it is the only way to move forward. The people who change their lives are not the ones who protect themselves best. They are the ones who, despite their fear, decide to believe again."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -222,7 +222,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -238,7 +238,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -251,33 +251,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#0d6fbf] hover:underline font-medium">
                   You Work Hard But Nothing Changes - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Someone Else to Tell You What
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
                   When You Feel Abandoned: Why You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#0d6fbf] hover:underline font-medium">
                   You Know What You Need to Do-So Why Can
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

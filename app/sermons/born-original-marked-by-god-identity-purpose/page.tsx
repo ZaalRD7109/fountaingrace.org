@@ -180,17 +180,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message - Fountain of Grace International - Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               {sd.headline}
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 1 June 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 1 June 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               {sd.intro}
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal - Fountain of Grace International, Pretoria North - {sd.dateDisplay}
             </p>
           </div>
@@ -199,11 +199,11 @@ export default function SermonPage() {
         <section className="bg-white pt-10 pb-8 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
             <div className="rounded-xl bg-[#f0fafa] border border-[#2a9df4]/20 px-6 py-5 text-center">
-              <p className="text-[#2a9df4] font-semibold mb-1">Watch Live Every Sunday</p>
+              <p className="text-[#0d6fbf] font-semibold mb-1">Watch Live Every Sunday</p>
               <p className="text-[#555] text-sm">
                 This message was preached at Fountain of Grace International, Pretoria North.
                 Join us every Sunday at 09:00 or{' '}
-                <a href="https://www.youtube.com/@fgipta" target="_blank" rel="noopener noreferrer" className="underline text-[#2a9df4]">
+                <a href="https://www.youtube.com/@fgipta" target="_blank" rel="noopener noreferrer" className="underline text-[#0d6fbf]">
                   subscribe on YouTube
                 </a>{' '}
                 to catch future sermons live.
@@ -217,7 +217,7 @@ export default function SermonPage() {
 
             {(sd.sections as Section[]).map((section, i) => (
               <div key={i} className="mb-10">
-                <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{section.heading}</h2>
+                <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{section.heading}</h2>
                 {section.paragraphs.map((para, j) => (
                   <p key={j} className="text-[#555] leading-relaxed mb-4">{para}</p>
                 ))}
@@ -225,7 +225,7 @@ export default function SermonPage() {
             ))}
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;{sd.quote}&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -277,7 +277,7 @@ export default function SermonPage() {
               </Link>
               <Link
                 href="/prayer"
-                className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
+                className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
               >
                 Send a Prayer Request
               </Link>
@@ -299,7 +299,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -314,33 +314,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#0d6fbf] hover:underline font-medium">
                   You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-dont-know-who-you-are-yet" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-dont-know-who-you-are-yet" className="text-[#0d6fbf] hover:underline font-medium">
                   You Don't Know Who You Are Yet
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Resolution Didn't Fail - You Quit Acting
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/releasing-his-presence" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/releasing-his-presence" className="text-[#0d6fbf] hover:underline font-medium">
                   Releasing His Presence: From Container to Conduit
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/follow-your-inner-voice-discover-your-destiny" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/follow-your-inner-voice-discover-your-destiny" className="text-[#0d6fbf] hover:underline font-medium">
                   Follow Your Inner Voice - Discover Your Destiny
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

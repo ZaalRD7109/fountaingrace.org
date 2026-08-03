@@ -14,7 +14,7 @@ export default function PrayerThankYouPage() {
       <ThankYouTracker formName="prayer" />
       <section className="bg-[#008080] text-white pt-16 pb-16 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#FFD600] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Your request is in safe hands
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -55,7 +55,7 @@ export default function PrayerThankYouPage() {
             </a>
             <Link
               href="/"
-              className="inline-block border border-gray-200 text-[#595959] font-semibold px-6 py-3 rounded-[30px] hover:border-[#008080] hover:text-[#008080] transition-colors text-sm text-center"
+              className="inline-block border border-gray-200 text-[#595959] font-semibold px-6 py-3 rounded-[30px] hover:border-[#008080] hover:text-[#006b6b] transition-colors text-sm text-center"
             >
               Back to Home
             </Link>

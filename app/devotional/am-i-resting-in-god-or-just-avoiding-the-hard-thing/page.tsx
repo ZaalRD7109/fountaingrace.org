@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 201 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Am I resting in God or just avoiding the hard thing?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 20 July 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 20 July 2026</p>
           </div>
         </header>
 
@@ -57,7 +57,7 @@ export default function DevotionalPage() {
             <p className="text-[#555] leading-relaxed text-lg">{"Sometimes rest feels like peace. And sometimes it feels like procrastination wearing a Bible verse. It is worth asking honestly: when you go quiet, are you leaning into God, or are you just leaning away from something difficult? There is no shame in the question. Both look the same from the outside. But one fills you up and the other just delays the drain. God's invitation to be still was never an excuse to stay stuck. It was a command to stop striving long enough to remember who He is."}</p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Be still, and know that I am God: I will be exalted among the heathen, I will be exalted in the earth."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Be still, and know that I am God: I will be exalted among the heathen, I will be exalted in the earth."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 46:10 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Sit quietly for two minutes today, no phone, no task list. Ask God one honest question: am I resting in You right now, or am I hiding? You do not need to have the answer ready. Just ask it out loud and let Him into that honest space."}</p>
@@ -84,13 +84,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

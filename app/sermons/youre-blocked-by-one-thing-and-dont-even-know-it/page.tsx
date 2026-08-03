@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You're Blocked by One Thing and Don't Even Know It"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 11 December 2022</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You have limitations. Maybe you lack qualifications, money, the right looks, or you're ashamed of past mistakes. But these aren't your real obstacle. Your real problem is believing they mean you can't move forward."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 11 December 2022</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You have limitations. Maybe you lack qualifications, money, the right looks, or you're ashamed of past mistakes. But these aren't your real obstacle. Your real problem is believing they mean you can't move forward."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,11 +140,11 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Breaking through your situations"}</button>
-                <button type="button" data-start="305" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:05</span>{"The power of seeing yourself clearly"}</button>
-                <button type="button" data-start="590" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">9:50</span>{"Climbing higher for what you want"}</button>
-                <button type="button" data-start="1195" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">19:55</span>{"Walking with someone who changes everything"}</button>
-                <button type="button" data-start="1956" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">32:36</span>{"Someone wants to spend time with you"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Breaking through your situations"}</button>
+                <button type="button" data-start="305" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:05</span>{"The power of seeing yourself clearly"}</button>
+                <button type="button" data-start="590" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">9:50</span>{"Climbing higher for what you want"}</button>
+                <button type="button" data-start="1195" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">19:55</span>{"Walking with someone who changes everything"}</button>
+                <button type="button" data-start="1956" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">32:36</span>{"Someone wants to spend time with you"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -160,28 +160,28 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Shortcoming Is Not Your Stopping Point"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Shortcoming Is Not Your Stopping Point"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Zacchaeus was a man with a real obstacle. He was short. In a crowd trying to see Jesus, his height made it impossible. Most people would accept that limitation and walk away. Instead, Zacchaeus looked at what he lacked and climbed a tree anyway."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is what Jesus wants you to understand: your shortcomings don't block you from breakthrough. They're actually the thing God uses to push you forward. You don't have the job qualifications? That's the exact moment to apply anyway. You lack the money for transport? Stand on the route. You think your past disqualifies you? That's when Jesus moves closest."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The limitation isn't between you and your future. Your belief that it is-that's what stops you cold. Jesus entered Jericho to find Zacchaeus because He saw someone willing to overcome an obstacle, not someone paralyzed by it."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"See Who Jesus Really Is in Your Situation"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"See Who Jesus Really Is in Your Situation"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Zacchaeus climbed that tree because he wanted to see Jesus. Not to be famous. Not to be close to the center of attention. He wanted to see Him. When you shift your eyes from your problem to Jesus, everything changes. You start to see what He's doing in your situation, not just what's going wrong in it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Maybe you lost a car the bank repossessed. Your eyes stay on the loss. But if you look for Jesus in that moment, you see He's clearing the way for something better-a car that won't drain your finances, owned free and clear. You can't see that breakthrough until you see Him first. Jesus told us in His word: 'I know the plans I have for you, plans to prosper you and not to harm you, plans to give you a future and a hope' (Jeremiah 29:11). That future exists. You just have to look for Him in your present."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you desire to know Jesus, you'll actually know Him. Your mind has to be set on finding Him in your circumstances, not giving up because of them. That's when He becomes real to you-not in theory, but in the situations you're walking through right now."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Move Today, Not Tomorrow"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Move Today, Not Tomorrow"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus said to Zacchaeus: 'Make haste and come down, for today I must abide at thy house.' Not tomorrow. Not when you've prepared enough or waited for better timing. Today. Most of us know what we should do but never do it. We think. We plan. We wait for the perfect moment. Meanwhile, Jesus moves on."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You have one opportunity in front of you right now. It might not come back. God is asking you to stop procrastinating and act today. If you know you need to pursue that job, apply today. If you know you need to ask for forgiveness, do it today. If you know you need to turn your life around, start today. The delay is what costs you, not the action."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But here's the hard part: before you move, you have to come down. You have to swallow your pride. Zacchaeus was the head of the tax collectors-important, respected, proud. Jesus told him to humble himself. If you've been telling yourself you're too good for certain opportunities, too damaged by your past, too embarrassed to ask for help, you have to come down from that. Humility isn't weakness. It's the position from which Jesus lifts you up."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Happens When You Actually Abide With Him"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Happens When You Actually Abide With Him"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When Zacchaeus received Jesus joyfully, something shifted. He didn't just get advice. He got presence. He walked with Jesus. Imagine what changes when the God who made everything is actually walking next to you, with you, in your daily life. Your struggle about money? Jesus turns water into wine. Your need for provision? He tells you where the fish are. Your fear about the future? He gives you a vision of where you're headed."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Abiding with Jesus means you're fully satisfied. Not someday. Now. You stop waiting for all your problems to solve before you can be at peace. You have peace because He's with you. You have provision because He's present. You're not anxious about tomorrow because you're living with the God who holds tomorrow."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"And here's what else happens: people notice. You'll be 'the talk of the town.' Some will respect what God has done in you. Others will be jealous or skeptical. They'll see the shift in your circumstances and wonder how it happened. That's fine. Let them talk. What matters is that you're living under the covering of Jesus, and He takes care of His own."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Ask for Forgiveness and Receive Salvation"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Ask for Forgiveness and Receive Salvation"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Zacchaeus didn't just receive Jesus and move on. He faced what he'd done wrong. He said: 'Lord, I give half my goods to the poor, and if I've wrongfully accused anyone, I'll repay them fourfold.' He asked for forgiveness. Not just from God-from the people he'd harmed. That's what remorse looks like. Not shame that paralyzes you, but sorrow that moves you to make it right."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus responded: 'This day is salvation come to this house.' Not next week. Not after you've proven yourself. Today. Salvation means you're forgiven. Your past doesn't define your future. Your mistakes don't disqualify you. You're seen as a son of Abraham-a child of God, part of His family, given a fresh start. That's what Jesus offers when you stop hiding your past and bring it to Him honestly."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The same salvation is available to you. Not because you deserve it. Because Jesus came 'to seek and to save that which was lost' (Luke 19:10). You're not too far gone. Your circumstances aren't too complicated. Your shame isn't too heavy. Jesus came for you."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Your shortcomings aren't what's stopping you. Your belief that they should stop you is.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Your shortcomings aren't what's stopping you. Your belief that they should stop you is.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -190,7 +190,7 @@ export default function SermonPage() {
               <li><strong>{"Seeing Jesus Changes How You See Everything Else"}</strong> {" "}{"Perspective shift is everything. When your focus stays on what you're missing, you stay stuck. When you shift your eyes to who Jesus is and what He's done, you see your situation differently. You see His hand moving. You see opportunity where you only saw obstacle. You see a future instead of a dead end. This isn't positive thinking-it's actual sight. It's learning to look at your life the way Jesus looks at it."}</li>
               <li><strong>{"Immediate Obedience Opens Doors That Waiting Closes"}</strong> {" "}{"Jesus said 'make haste' and 'today.' Not because He's in a hurry, but because delay kills momentum and feeds doubt. The moment you know what you should do, do it. Apply for the job today. Ask for forgiveness today. Seek Jesus today. Tomorrow brings a thousand new reasons to delay. Today is the only day you're guaranteed, and it's the only day Jesus promised to abide with you in."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -217,7 +217,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -233,7 +233,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -246,33 +246,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#0d6fbf] hover:underline font-medium">
                   You Work Hard But Nothing Changes - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Someone Else to Tell You What
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#0d6fbf] hover:underline font-medium">
                   Six Invisible Gaps That Wreck Your Life (And How to Close Them)
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#0d6fbf] hover:underline font-medium">
                   Everyone Around You Is Pretending - Here
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

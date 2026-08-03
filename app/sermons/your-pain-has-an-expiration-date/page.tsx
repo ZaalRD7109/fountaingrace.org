@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Pain Has an Expiration Date"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 9 October 2023</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're in a season that feels permanent. It's not. What you're going through is reshaping you for something better, and that season is already shifting."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 9 October 2023</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You're in a season that feels permanent. It's not. What you're going through is reshaping you for something better, and that season is already shifting."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Pain into purpose"}</button>
-                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:30</span>{"A new season blooming"}</button>
-                <button type="button" data-start="480" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">8:00</span>{"Love changes everything"}</button>
-                <button type="button" data-start="1200" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">20:00</span>{"Your ears will hear good"}</button>
-                <button type="button" data-start="1350" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">22:30</span>{"Love brings real hope"}</button>
-                <button type="button" data-start="1560" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">26:00</span>{"Comfort for your hurt"}</button>
-                <button type="button" data-start="1980" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:00</span>{"Greater things ahead"}</button>
-                <button type="button" data-start="2160" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">36:00</span>{"Step into your power"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Pain into purpose"}</button>
+                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:30</span>{"A new season blooming"}</button>
+                <button type="button" data-start="480" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">8:00</span>{"Love changes everything"}</button>
+                <button type="button" data-start="1200" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">20:00</span>{"Your ears will hear good"}</button>
+                <button type="button" data-start="1350" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">22:30</span>{"Love brings real hope"}</button>
+                <button type="button" data-start="1560" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">26:00</span>{"Comfort for your hurt"}</button>
+                <button type="button" data-start="1980" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:00</span>{"Greater things ahead"}</button>
+                <button type="button" data-start="2160" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">36:00</span>{"Step into your power"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,32 +163,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Winter is Passing"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Winter is Passing"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You know the weight. The sleepless nights. The rejection. The debt stacking up. The kids not listening. The relationships that failed. The thought that this is just who you are now-broken, stuck, done."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The preacher opens with an image from Song of Solomon: 'The winter is past, the rain is over and gone, the flowers appear on the earth.' This is not poetic fluff. This is a declaration into your actual situation. Your season of pain has an end date. Not someday far off. Now."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"God did not design you for permanent suffering. He designed you for seasons. And your season of winter-the freezing, the darkness, the feeling of death-is closing."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Pain You're Feeling Is Birth, Not Death"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Pain You're Feeling Is Birth, Not Death"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Here's what most people miss: you've been interpreting your pain wrong. The agony you're in feels like it's killing you. It's not. It's more like labor. Childbirth is the most painful experience many women endure-yet the pain has a purpose. It brings new life."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your suffering isn't random punishment. It's a process. It's reshaping you. It's breaking the person you thought you had to be so the person God created you to be can emerge. Romans 5 puts it plainly: suffering produces endurance, endurance produces character, character produces hope. You're not being destroyed. You're being rebuilt."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This distinction matters when you're standing at the edge. The voice saying 'end it' is the voice of the enemy. But the voice saying 'this is hard but it's working something in you'-that's the voice of truth."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Suicide Is Not the Answer (Even When Everything Else Failed)"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why Suicide Is Not the Answer (Even When Everything Else Failed)"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"If you're scrolling at night looking for a way out, listen: suicide doesn't end pain. It transfers it. It moves your pain onto everyone who loved you. Your parents. Your siblings. Your friends. They don't get closure. They get a lifetime of 'what if' and 'why didn't we see it coming' and 'what could we have done.' You don't escape. You guarantee they won't."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"More than that, you forfeit the good future that's already being prepared for you. God has promised you an abundant life-not just survival, but flourishing. Enemies and adversaries don't get the final word on your life. God does. And He says: I have a plan for your welfare, not for evil. To give you a future and a hope."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The depression lying to you right now is a liar. The suicidal thoughts have no authority over you. They're being resisted and cast out in the name of Jesus. Your mind is being taken captive to the Holy Spirit this morning. You will hear His voice, not the enemy's."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What's Coming: A Season of Love and Healing"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What's Coming: A Season of Love and Healing"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Out of the winter comes spring. Out of the pain comes acceptance. You've felt rejected by people, by circumstances, by life itself. In this new season, God is accepting you. Fully. Without conditions. The love of Christ-the kind that paid your debts on the cross, that took your shame, that sees your brokenness and says 'you're mine anyway'-that love is covering you now."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If you're in debt, God is about to change it. If your kids aren't listening, God is opening their ears. If your relationships fell apart, those were stepping stones to the right relationship. If you've felt invisible, invisible people are about to become irresistible. Not because you've earned it. Because grace and favor are upon your life."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Healing is coming. Not just emotional healing-physical, spiritual, relational. The same anointing that breaks yokes is breaking the yoke in your life. What the enemy has stolen, God is restoring. And it's not because you've finally earned it. It's because you belong to God, and He doesn't leave His children in the pit."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Weakness Is Where God Shows Up"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Weakness Is Where God Shows Up"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You feel weak. Broken. Like you have nothing to offer. That's the exact place where God's power becomes visible. Second Corinthians 12:9 isn't a comfort verse for later-it's for right now: 'My grace is sufficient for you, for my power is made perfect in weakness.' The weaker you feel, the clearer God's strength becomes in your life."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"God is not waiting for you to get your act together before He moves. He moves through weakness. Through broken people. Through those who have hit bottom and know they can't fix it themselves. That's when His grace is most obvious."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This week, as you move into this new season, favor will follow you. Joy will follow you. And when that feels insufficient, grace will meet you. Not your good works. Not your effort. His grace. That's what moves you forward."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Open Your Eyes to What's Already Yours"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Open Your Eyes to What's Already Yours"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Darkness covered the earth before creation. Nothing was visible until God said 'let there be light.' Your circumstances right now are the darkness. But the light is already there. God has already prepared good things for you. You just can't see them yet because darkness is covering your vision."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"He's asking you to do one thing: open your eyes. Stop staring at what's broken. Stop rehearsing what's lost. Open your eyes to the opportunities already placed in front of you. The people already drawn to you. The doors that are about to open."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"God has a renewed purpose for your life. Not the purpose you thought you had. A better one. One you can only see through His eyes, not through the eyes of people who've hurt you or disappointed you. That purpose is waiting. And you're stepping into it now."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Your pain has changed. The season of pain is gone. You are moving into a season of love.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Your pain has changed. The season of pain is gone. You are moving into a season of love.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -197,7 +197,7 @@ export default function SermonPage() {
               <li><strong>{"Grace Works When You're Too Weak to Earn It"}</strong> {" "}{"You don't have to clean up your life first. You don't have to fix your mistakes before God moves. Grace is God's power working on your behalf when you have nothing left. It's unearned. It's undeserved. It's the only thing that moves when you've hit bottom. The moment you admit you can't fix this alone, grace takes over."}</li>
               <li><strong>{"Your Future Is Being Prepared Right Now, Even If You Can't See It"}</strong> {" "}{"Just as the sun rises before you wake and see it, God's plan for your good is already in motion. You're moving into abundance even while the season still looks dark. Jeremiah 29:11 isn't a promise for someday-it's a fact about right now. God knows the plans He has for you. They are plans for welfare, not evil. Plans to give you a future and a hope. That future is already yours."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -224,7 +224,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -240,7 +240,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -253,33 +253,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/why-jesus-changed-everything-the-birth-that-brings-new-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-jesus-changed-everything-the-birth-that-brings-new-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Stuck Life Can Actually Change: Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/birth-of-the-great-christmas-sermon-matthew-1-21" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/birth-of-the-great-christmas-sermon-matthew-1-21" className="text-[#0d6fbf] hover:underline font-medium">
                   Born Into Something Greater Than the Life You Are Currently Living
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Trapped By What Others Say You Can
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Mind Is Broken By Lies You Believed - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#0d6fbf] hover:underline font-medium">
                   Everyone
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Mind Is Broken By Lies You Believed - Here's How to Rebuild It"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 12 January 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You were created for wholeness, provision, and belonging. But somewhere along the way, lies and broken patterns corrupted your thinking. This is how you get back to who you were meant to be."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 12 January 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You were created for wholeness, provision, and belonging. But somewhere along the way, lies and broken patterns corrupted your thinking. This is how you get back to who you were meant to be."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Opening praise"}</button>
-                <button type="button" data-start="135" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:15</span>{"Reset to factory settings"}</button>
-                <button type="button" data-start="325" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:25</span>{"Rewiring your mindset"}</button>
-                <button type="button" data-start="910" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:10</span>{"Stop worrying about everything"}</button>
-                <button type="button" data-start="1443" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">24:03</span>{"Healing through wounds"}</button>
-                <button type="button" data-start="1946" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">32:26</span>{"Rewire your thinking"}</button>
-                <button type="button" data-start="2609" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">43:29</span>{"Transform negative patterns"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Opening praise"}</button>
+                <button type="button" data-start="135" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">2:15</span>{"Reset to factory settings"}</button>
+                <button type="button" data-start="325" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:25</span>{"Rewiring your mindset"}</button>
+                <button type="button" data-start="910" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:10</span>{"Stop worrying about everything"}</button>
+                <button type="button" data-start="1443" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">24:03</span>{"Healing through wounds"}</button>
+                <button type="button" data-start="1946" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">32:26</span>{"Rewire your thinking"}</button>
+                <button type="button" data-start="2609" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">43:29</span>{"Transform negative patterns"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,27 +163,27 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Problem: Your Mind Is Wired Wrong"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Problem: Your Mind Is Wired Wrong"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You were made in God's image, which means you were created perfect. But sin and life's circumstances have corrupted your thinking. Fear, worry, disconnection, financial stress, sickness, and loneliness are not random problems - they are signs that your mental wiring has been damaged."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible calls this pattern your circuit breaker tripping. When you feel anxiety about money that won't go away, when you're surrounded by people but still feel alone, when your body keeps getting sick, or when you can't shake the feeling that something is fundamentally wrong with you - these are diagnostic signals. They tell you that somewhere in your life, you believed a lie instead of God's truth."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Root Issue: You Believe Lies About Yourself and God"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Root Issue: You Believe Lies About Yourself and God"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Your thinking became corrupted when you started believing lies. Maybe you were told you couldn't do something, so you stopped trying. Maybe hard circumstances made you think God doesn't provide. Maybe past failures convinced you that you're not enough. These lies rewired your brain to expect failure, scarcity, rejection, and sickness instead of the wholeness God designed you for."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The enemy speaks lies constantly - that you're abandoned, that God won't help you, that you're broken beyond repair. Your job is to recognize when you're believing those lies and reject them. The Bible says in 2 Corinthians 4:7-8 that God gives us power to demolish these false thoughts. You take every thought captive and test it against God's actual promises, not against your past or your feelings."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Reset: Return to Your Original Design"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Reset: Return to Your Original Design"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Reset means going back to factory settings. When God created you in Genesis 1:26, He made you in His image - perfect, whole, designed for provision, healing, and belonging. Sin corrupted that original design, but your reset button is Christ. When you accept Jesus and are born again in 2 Corinthians 5:17, the old you is gone and the new you begins."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Resetting your thinking means stopping trying to fix yourself and returning to what God always said about you. You are not abandoned - God promised in Hebrews 13:5 to never leave you or forsake you. You are not broken beyond repair - Isaiah 53:5 says by Jesus' wounds you are healed. You are not in lack - Philippians 4:19 promises God will meet all your needs. The reset happens when you stop believing the circumstantial lies and start believing God's actual promises about your identity and destiny."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Renew: Retrain Your Mind Daily With God's Truth"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Renew: Retrain Your Mind Daily With God's Truth"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Renew means making new again what became old. Your mind became corrupted by negative patterns, fear-based thinking, and the lies of this world. Renewing it means meditating on Scripture daily until God's truth becomes the default way you think, not the exception. When you read that God has not given you a spirit of fear but of power and love and a sound mind in 2 Timothy 1:7, you are rewiring your brain to believe that."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The practical process is this: When a negative thought comes - I can't afford this, I'm going to get sick, nobody cares about me, I'm not good enough - you stop and ask, What does God actually say about this? Then you find the Scripture that contradicts the lie and meditate on it. Philippians 4:8 tells you to think on what is true, noble, right, pure, lovely, and admirable. Replace the garbage in your mind with God's promises. Do this every single day, and your thinking will transform."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Holy Spirit is your operating system for this renewal. When you invite Him to guide your thoughts and help you see truth, He opens your eyes to God's actual will and promises. Romans 12:2 says you are transformed by the renewing of your mind - not by positive thinking, not by motivation, but by aligning your thoughts with God's word and letting the Holy Spirit do the work."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Rewire: Live Like the Victorious Person You Are"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Rewire: Live Like the Victorious Person You Are"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Rewire means changing the electrical system after you identify the broken connections. Here are the five major areas where most people trip: First, fear and worry disconnect you from God's promise to care for you - reject that lie and believe 2 Timothy 1:7. Second, disconnection from God through sin - confess it and draw near to Him as James 4:8 says. Third, sickness and health problems - remember that your health prospers as your soul prospers in God's truth, as 3 John 1:2 teaches. Fourth, financial stress and lack - God owns all silver and gold in Haggai 2:8, so ask Him directly instead of panicking. Fifth, loneliness and rejection - God promised never to leave you and to be closer than a brother, as Psalm 34:18 confirms."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Rewiring also means affirming your identity in Christ every day. Stop saying I am a failure and start saying I am victorious in Christ. Stop saying I am broken and start saying I am a new creation in Christ. In Ephesians 4:22-24, Paul calls you to put off your old self and put on the new self created in righteousness and true holiness. You already won the battle - Romans 8:37 says you are more than a conqueror through Jesus. Stop fighting like you're losing when Christ already won. Trust His strength in Philippians 4:13 instead of your own strength, and you will live the life you were designed for."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Blueprint for Your Comeback"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Blueprint for Your Comeback"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"This is your daily reset, renew, rewire blueprint: First, identify what is making you trip - anxiety, disconnection, sickness, financial worry, or loneliness. Second, find the lie underneath that feeling - Am I abandoned? Is God punishing me? Do I not deserve abundance? Third, look up the Scripture that directly contradicts that lie and spend time meditating on it. Fourth, reject the worldly pattern and the enemy's voice. Fifth, declare your new identity in Christ out loud - I am loved, I am provided for, I am healed, I am victorious."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Make this a daily practice. Every morning, renew your mind with Scripture. When a lie tries to take root, take it captive and replace it with God's truth. Thank God for what He has done and is doing, because gratitude rewires your brain to notice His blessings instead of your struggles. This is not positive thinking - this is truth thinking. You are rewiring your thoughts to match who you actually are in Christ, and when your thoughts align with God's word, your life aligns with God's design. This is how you get your breakthrough."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Your mind was corrupted by lies you believed, but it can be restored when you replace those lies with God's promises about who you really are.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Your mind was corrupted by lies you believed, but it can be restored when you replace those lies with God's promises about who you really are.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -192,7 +192,7 @@ export default function SermonPage() {
               <li><strong>{"Your Feelings Are Not Facts - God's Word Is"}</strong> {" "}{"You may feel abandoned, but God promised never to forsake you. You may feel sick, but God offers healing. You may feel poor, but God says He will meet all your needs. Your circumstances and emotions are temporary and often deceive you, but God's promises are eternal and always true. When your feelings contradict God's word, believe God's word. This is the core of rewiring - learning to trust His truth more than your experience."}</li>
               <li><strong>{"Renewal Is a Daily Practice, Not a One-Time Event"}</strong> {" "}{"You don't reset, renew, and rewire your mind once and stay fixed. This is ongoing work. Every morning you choose to meditate on Scripture instead of fear. Every time a negative thought comes, you take it captive and replace it. Every day you affirm your identity in Christ. The Holy Spirit helps this process, but you have to participate. This daily alignment of your thoughts with God's truth is how you reclaim the wholeness you were designed to have."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -220,7 +220,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -238,7 +238,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -251,33 +251,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
                   When You Feel Abandoned: Why You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#0d6fbf] hover:underline font-medium">
                   Six Invisible Gaps That Wreck Your Life (And How to Close Them)
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-real-reason-youre-trapped-in-debt-and-how-to-break-free" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-real-reason-youre-trapped-in-debt-and-how-to-break-free" className="text-[#0d6fbf] hover:underline font-medium">
                   The Real Reason You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#0d6fbf] hover:underline font-medium">
                   You Work Hard But Nothing Changes - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/faith-is-the-router-that-connects-you-to-gods-supply" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/faith-is-the-router-that-connects-you-to-gods-supply" className="text-[#0d6fbf] hover:underline font-medium">
                   Faith Is the Router That Connects You to God's Supply
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

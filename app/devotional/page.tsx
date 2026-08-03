@@ -37,24 +37,24 @@ export default function DevotionalHub() {
       <main className="bg-white">
         <header className="pt-14 pb-10 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight">Daily Devotional</h1>
-            <p className="text-white/80 text-lg mt-4">One real question, answered from scripture, every day. Read it, let it lift you, and send it to someone who needs it.</p>
+            <p className="text-white text-lg mt-4">One real question, answered from scripture, every day. Read it, let it lift you, and send it to someone who needs it.</p>
           </div>
         </header>
 
         {today && (
           <section className="px-4 sm:px-6 py-10 border-b border-gray-100">
             <div className="max-w-3xl mx-auto">
-              <p className="text-[#008080] text-xs font-bold uppercase tracking-wider mb-4">Today</p>
+              <p className="text-[#006b6b] text-xs font-bold uppercase tracking-wider mb-4">Today</p>
               <Link href={'/devotional/' + today.slug} className="block sm:flex gap-6 group">
                 {today.card && (
                   <img src={today.card} alt={today.headline} width={1080} height={1350} loading="eager" className="w-full sm:w-48 shrink-0 rounded-xl mb-4 sm:mb-0" />
                 )}
                 <div>
-                  <h2 className="text-2xl font-bold text-[#1a1a1a] group-hover:text-[#2a9df4] leading-snug">{today.headline}</h2>
-                  {today.verseRef && <p className="text-[#008080] font-semibold mt-2">{today.verseRef} (KJV)</p>}
-                  <p className="text-[#999] text-sm mt-2">{today.dateDisplay}</p>
+                  <h2 className="text-2xl font-bold text-[#1a1a1a] group-hover:text-[#0d6fbf] leading-snug">{today.headline}</h2>
+                  {today.verseRef && <p className="text-[#006b6b] font-semibold mt-2">{today.verseRef} (KJV)</p>}
+                  <p className="text-[#595959] text-sm mt-2">{today.dateDisplay}</p>
                 </div>
               </Link>
             </div>
@@ -67,9 +67,9 @@ export default function DevotionalHub() {
             <div className="grid sm:grid-cols-2 gap-5">
               {rest.map((d) => (
                 <Link key={d.slug} href={'/devotional/' + d.slug} className="block rounded-xl border border-gray-100 p-5 hover:border-[#2a9df4] hover:shadow-sm transition group">
-                  <h3 className="font-bold text-[#1a1a1a] group-hover:text-[#2a9df4] leading-snug">{d.headline}</h3>
-                  {d.verseRef && <p className="text-[#008080] text-sm font-semibold mt-2">{d.verseRef} (KJV)</p>}
-                  <p className="text-[#999] text-xs mt-2">{d.dateDisplay}</p>
+                  <h3 className="font-bold text-[#1a1a1a] group-hover:text-[#0d6fbf] leading-snug">{d.headline}</h3>
+                  {d.verseRef && <p className="text-[#006b6b] text-sm font-semibold mt-2">{d.verseRef} (KJV)</p>}
+                  <p className="text-[#595959] text-xs mt-2">{d.dateDisplay}</p>
                 </Link>
               ))}
             </div>

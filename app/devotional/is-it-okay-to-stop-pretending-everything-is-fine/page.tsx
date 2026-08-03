@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 176 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Is it okay to stop pretending everything is fine?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 25 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 25 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Come unto me, all ye that labour and are heavy laden, and I will give you rest."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Come unto me, all ye that labour and are heavy laden, and I will give you rest."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Matthew 11:28 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"I see you. That smile, that quick pivot to safer ground. You know how to do it so smoothly that nobody notices you have just stepped away from yourself. And I am not here to call you out for it. I am here because I recognize the weight of holding something alone.\n\nWhat sits underneath that smile is the fear that if you speak it out loud, it becomes too real. Maybe it is grief you have not named. Maybe it is doubt about something you are supposed to be certain of. Maybe it is the exhaustion of pretending things are better than they are. The silence feels like protection. It keeps you safe from having to hear yourself say the hard thing, and from having to see the look in someone else's eyes when you do.\n\nBut listen to this: \"Come unto me, all ye that labour and are heavy laden, and I will give you rest.\" Jesus is not asking you to fix it first or figure it out before you come. He is asking you to come exactly as you are, carrying exactly what you are carrying, with the conversation you are not ready for still locked inside. He already knows it. He is waiting.\n\nYour silence does not protect you from what is true. Only God's presence does that. And He is closer to you than your own breath, ready to meet you in the exact place you have been afraid to go alone. You do not have to smile today. You can just be.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

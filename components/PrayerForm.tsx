@@ -101,7 +101,7 @@ export default function PrayerForm() {
           type="checkbox"
           checked={confidential}
           onChange={(e) => setConfidential(e.target.checked)}
-          className="mt-0.5 h-4 w-4 rounded border-gray-300 text-[#008080] focus:ring-[#008080]"
+          className="mt-0.5 h-4 w-4 rounded border-gray-300 text-[#006b6b] focus:ring-[#008080]"
         />
         <span className="text-sm text-gray-700">
           Please keep this between the pastor and me (confidential)
@@ -115,11 +115,11 @@ export default function PrayerForm() {
         handled by the pastoral team only. Nothing is shared publicly. Data is stored securely
         for up to 24 months and is never sold or shared with third parties. You may request
         deletion at any time by emailing{' '}
-        <a href="mailto:info@fountaingrace.org" className="text-[#008080] hover:underline">
+        <a href="mailto:info@fountaingrace.org" className="text-[#006b6b] underline">
           info@fountaingrace.org
         </a>
         . By submitting you consent to this in line with POPIA. See our{' '}
-        <Link href="/privacy-policy" className="text-[#008080] hover:underline">
+        <Link href="/privacy-policy" className="text-[#006b6b] underline">
           Privacy Policy
         </Link>
         .

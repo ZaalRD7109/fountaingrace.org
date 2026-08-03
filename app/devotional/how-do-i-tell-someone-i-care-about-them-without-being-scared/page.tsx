@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 178 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"How do I tell someone I care about them without being scared?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 27 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 27 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Matthew 7:12 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You know the feeling. You catch their eye across a room and think, they must know by now. They must feel it. So you stay quiet, protecting yourself from the awkwardness of saying it aloud. But silence, friend, is not protection. It is a cage you have built for both of you.\n\nWhat you are protecting yourself from is not their rejection. It is the vulnerability of mattering enough to speak. When you say the words, you become real to them. You become someone who cares enough to risk being wrong, being too much, being seen. That terrifies us. So we tell ourselves they already know, and we keep the distance safe.\n\nBut God does not deal in assumed love. He speaks. He shows up. He says the thing. Listen to what He tells us: \"Therefore all things whatsoever ye would that men should do to you, do ye even so to them.\" He does not say assume they know. He says act. Speak. Show them. This is how love becomes real, not theoretical.\n\nToday you have a chance to step out of the cage. Say what needs saying. Your words, spoken with honesty and kindness, are a gift they cannot receive if you keep them locked away. This is the courage grace gives you.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

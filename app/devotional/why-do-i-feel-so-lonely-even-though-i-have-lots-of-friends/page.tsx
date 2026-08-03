@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 153 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Why do I feel so lonely even though I have lots of friends?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 2 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 2 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"A man that hath friends must shew himself friendly: and there is a friend that sticketh closer than a brother."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"A man that hath friends must shew himself friendly: and there is a friend that sticketh closer than a brother."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Proverbs 18:24 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You have more followers than friends. More notifications than conversations where someone actually asks how you are.\n\nThe loneliness is worse because you're surrounded. You've optimized connection into a kind of performance - curated, scheduled, measured in metrics. And it works. People respond. But nobody sees you. Not the real you. The one who wakes up at three in the morning wondering if anyone would notice if you disappeared for a month.\n\nHere's what I've learned burying children and rebuilding from ashes. Real relationship costs something. Not money. Presence. Vulnerability. The willingness to be boring together, to sit in silence, to let someone know you're afraid. \"A man that hath friends must shew himself friendly: but there is a friend that sticketh closer than a brother.\" That closeness requires risk. Most of your current connections don't. They're safe. They're also starving you.\n\nYou're not lonely because you're isolated. You're lonely because you're known by many and unknown by anyone.\n\nThis week, name one person who could actually handle the real version of you. Then do the terrifying thing.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

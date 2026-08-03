@@ -183,7 +183,7 @@ export default function PrayerPage() {
             <Link href="/plan-your-visit" className="btn-primary text-sm">
               Plan Your Visit
             </Link>
-            <Link href="/contact" className="inline-block border-2 border-white text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-white hover:text-[#008080] transition-colors text-sm">
+            <Link href="/contact" className="inline-block border-2 border-white text-white font-semibold px-6 py-2.5 rounded-lg hover:bg-white hover:text-[#006b6b] transition-colors text-sm">
               Contact Us
             </Link>
           </div>

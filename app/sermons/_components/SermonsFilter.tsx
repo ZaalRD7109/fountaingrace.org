@@ -59,7 +59,7 @@ export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
           {/* Search input */}
           <div className="relative">
             <svg
-              className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 w-4 h-4"
+              className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-600 w-4 h-4"
               fill="none" stroke="currentColor" strokeWidth="2"
               viewBox="0 0 24 24"
             >
@@ -76,7 +76,7 @@ export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
             {search && (
               <button
                 onClick={() => setSearch('')}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-700 text-xl leading-none"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-600 hover:text-gray-700 text-xl leading-none"
                 aria-label="Clear search"
               >
                 &times;
@@ -86,13 +86,13 @@ export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
 
           {/* Year filter pills */}
           <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs text-gray-400 mr-1">Year:</span>
+            <span className="text-xs text-gray-600 mr-1">Year:</span>
             <button
               onClick={() => setYear(null)}
               className={`px-3 py-1 rounded-full text-xs font-semibold border transition-colors ${
                 year === null
                   ? 'bg-[#008080] text-white border-[#008080]'
-                  : 'bg-white text-[#555] border-gray-200 hover:border-[#008080] hover:text-[#008080]'
+                  : 'bg-white text-[#555] border-gray-200 hover:border-[#008080] hover:text-[#006b6b]'
               }`}
             >
               All
@@ -104,7 +104,7 @@ export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
                 className={`px-3 py-1 rounded-full text-xs font-semibold border transition-colors ${
                   year === y
                     ? 'bg-[#008080] text-white border-[#008080]'
-                    : 'bg-white text-[#555] border-gray-200 hover:border-[#008080] hover:text-[#008080]'
+                    : 'bg-white text-[#555] border-gray-200 hover:border-[#008080] hover:text-[#006b6b]'
                 }`}
               >
                 {y}
@@ -115,7 +115,7 @@ export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
               <span className="ml-auto text-xs text-[#555]">
                 {filtered.length} of {sermons.length} messages
                 {search.trim() && (
-                  <span className="ml-1 text-gray-400">
+                  <span className="ml-1 text-gray-600">
                     {indexReady ? '· full transcript search' : '· loading deep search...'}
                   </span>
                 )}
@@ -134,7 +134,7 @@ export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
               <p className="text-[#555] mb-4">No messages match your search.</p>
               <button
                 onClick={() => { setSearch(''); setYear(null) }}
-                className="text-[#008080] font-semibold text-sm hover:underline"
+                className="text-[#006b6b] font-semibold text-sm hover:underline"
               >
                 Clear all filters
               </button>
@@ -154,7 +154,7 @@ export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
                 >
                   <time
                     dateTime={post.date}
-                    className="text-xs font-semibold text-[#008080] uppercase tracking-wider"
+                    className="text-xs font-semibold text-[#006b6b] uppercase tracking-wider"
                   >
                     {post.dateDisplay}
                   </time>
@@ -165,8 +165,8 @@ export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
                   <Link
                     prefetch={false}
                     href={`/sermons/${post.slug}`}
-                    className="text-[#008080] font-semibold text-sm hover:underline"
-                    aria-label={`Read full message: ${post.title}`}
+                    className="text-[#006b6b] font-semibold text-sm hover:underline"
+                    aria-label={`Read More: ${post.title}`}
                   >
                     Read More &rarr;
                   </Link>

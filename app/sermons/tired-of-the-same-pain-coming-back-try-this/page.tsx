@@ -164,17 +164,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Tired of the Same Pain Coming Back? Try This
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 14 December 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 14 December 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               Some pain refuses to leave. The same sickness comes back. The same fights repeat in your home. The money never stretches. This message is for the person who is tired and ready for something to shift at the root.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 14 December 2025
             </p>
           </div>
@@ -196,13 +196,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Setting expectations"}</button>
-                <button type="button" data-start="46" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:46</span>{"This message isn't for everyone"}</button>
-                <button type="button" data-start="131" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:11</span>{"When money stops moving"}</button>
-                <button type="button" data-start="221" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:41</span>{"Prayers that shift things"}</button>
-                <button type="button" data-start="837" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">13:57</span>{"Know your real enemy"}</button>
-                <button type="button" data-start="1237" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">20:37</span>{"Earth can hear you"}</button>
-                <button type="button" data-start="2021" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:41</span>{"Earth as a weapon"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Setting expectations"}</button>
+                <button type="button" data-start="46" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:46</span>{"This message isn't for everyone"}</button>
+                <button type="button" data-start="131" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">2:11</span>{"When money stops moving"}</button>
+                <button type="button" data-start="221" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:41</span>{"Prayers that shift things"}</button>
+                <button type="button" data-start="837" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">13:57</span>{"Know your real enemy"}</button>
+                <button type="button" data-start="1237" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">20:37</span>{"Earth can hear you"}</button>
+                <button type="button" data-start="2021" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:41</span>{"Earth as a weapon"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -234,8 +234,8 @@ export default function SermonPage() {
                     {p.n}
                   </div>
                   <div>
-                    <h2 className="text-lg font-bold text-[#2a9df4] mb-1">{p.title}</h2>
-                    <p className="text-xs text-[#008080] font-semibold mb-3">{p.scripture}</p>
+                    <h2 className="text-lg font-bold text-[#0d6fbf] mb-1">{p.title}</h2>
+                    <p className="text-xs text-[#006b6b] font-semibold mb-3">{p.scripture}</p>
                     <p className="text-[#555] leading-relaxed">{p.body}</p>
                   </div>
                 </div>
@@ -243,7 +243,7 @@ export default function SermonPage() {
             </div>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;Jesus did not shout. He did not argue. He wrote it into the earth, and the accusation was cancelled at the root.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -308,7 +308,7 @@ export default function SermonPage() {
               </Link>
               <Link
                 href="/prayer"
-                className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
+                className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
               >
                 Send a Prayer Request
               </Link>
@@ -330,7 +330,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -345,33 +345,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#0d6fbf] hover:underline font-medium">
                   The Spiritual Weapon - Declaration Session
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-spiritual-weapon-no-one-speaks-about" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-spiritual-weapon-no-one-speaks-about" className="text-[#0d6fbf] hover:underline font-medium">
                   The One Weapon Nobody Teaches You That Changes Every Fight
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#0d6fbf] hover:underline font-medium">
                   You Got What You Prayed For But Lost It Anyway
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#0d6fbf] hover:underline font-medium">
                   The Real Reason You Feel Like You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-some-problems-wont-leave-until-you-understand-this" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-some-problems-wont-leave-until-you-understand-this" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Some Problems Won't Leave Until You Understand This
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

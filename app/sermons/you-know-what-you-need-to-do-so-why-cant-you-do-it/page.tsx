@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You Know What You Need to Do-So Why Can't You Do It?"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 11 January 2024</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You have the power already. Satan just convinced you that you don't. Here's how to move faster than you ever thought possible."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 11 January 2024</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You have the power already. Satan just convinced you that you don't. Here's how to move faster than you ever thought possible."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Wake up grateful"}</button>
-                <button type="button" data-start="285" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:45</span>{"Serving others lifts you"}</button>
-                <button type="button" data-start="900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:00</span>{"Giving beats receiving"}</button>
-                <button type="button" data-start="1380" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">23:00</span>{"Count your steps forward"}</button>
-                <button type="button" data-start="2010" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:30</span>{"Satan whispers lies"}</button>
-                <button type="button" data-start="3120" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">52:00</span>{"Meditation unlocks answers"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Wake up grateful"}</button>
+                <button type="button" data-start="285" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:45</span>{"Serving others lifts you"}</button>
+                <button type="button" data-start="900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:00</span>{"Giving beats receiving"}</button>
+                <button type="button" data-start="1380" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">23:00</span>{"Count your steps forward"}</button>
+                <button type="button" data-start="2010" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:30</span>{"Satan whispers lies"}</button>
+                <button type="button" data-start="3120" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">52:00</span>{"Meditation unlocks answers"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -161,26 +161,26 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Satan Attacks Your Heel, Not Your Head"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Satan Attacks Your Heel, Not Your Head"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You are not weak. You are not powerless. But there is an enemy who wants you to believe you are. In Genesis, God told Satan something that Satan has never forgotten: 'She will crush your head, and you will strike her heel.' Satan cannot touch your mind, your heart, your hands, or your mouth. What he attacks is your movement-your ability to step forward and act."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is why you feel paralyzed. It is not because you lack power or direction. It is because Satan has convinced you that moving forward is impossible. He whispers: 'You already failed. You're not good enough. Wait until everything is perfect. Listen to what others are saying about you.' Every time you listen to his voice instead of God's voice, your feet stay planted."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"God Already Gave You Everything You Need"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"God Already Gave You Everything You Need"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Acts 1:8 is clear: 'You will receive power when the Holy Spirit comes upon you.' Notice the word used is 'dynamis'-the same root that gives us the word dynamite. You have already received this power. It is not something you are waiting for. It is not something you need permission to claim. You have it right now."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The problem is not that you lack power. The problem is that you are listening to the wrong voice. Satan tells you that you are weak. God tells you that you have already been anointed. One of these voices is lying. The question is: which voice will you believe?"}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Stop Blaming Others and Take Responsibility"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Stop Blaming Others and Take Responsibility"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"In Genesis 3, when God asked Adam what happened, Adam did not say, 'I made a mistake.' He said, 'The woman you gave me-she gave me the fruit.' Eve did the same thing: 'The serpent tricked me.' Both of them blamed someone else. And both of them stayed stuck."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You are where you are because of the choices you made. Not because your parents failed you. Not because your boss doesn't see your value. Not because the economy is broken. Not because someone else ate the bread that was meant for you. Every time you blame someone else, you give away your power to change your situation. God says to you what He said to them: 'You did this. You are responsible for this. And you are responsible for moving forward from here.'"}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Listen to God Directly, Not Broken Telephone"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Listen to God Directly, Not Broken Telephone"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Your pastor is a broken telephone. Your friend is a broken telephone. Your family is a broken telephone. What they tell you is filtered through their own fear, their own experience, their own understanding. God does not speak to you the way He speaks to someone else, because you are not someone else. Your pain is not their pain. Your calling is not their calling. Your power is not their power."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you read the Bible, do not read it like a storybook. Meditate on it. Ask the Holy Spirit to open it to you specifically. Ask God: 'What are you saying to me? What do you want me to do? Where do you want me to move?' The only way to get speed is to hear from God directly. When you do, you will know exactly what to do next, and you will stop listening to the voices that keep you stuck."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Count Your Steps and Know Where You Stand"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Count Your Steps and Know Where You Stand"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Job said, 'My feet have closely followed His steps and I have kept His way without turning aside.' Then he asked God, 'Did you not see my ways and count all my steps?' This is the key: before you can move forward, you have to know where you are standing right now. If you want to be debt-free, you must know exactly how much you owe and how much you earn. If you want to reach a goal, you must count the steps between where you are and where you need to be."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Satan keeps you stuck because he keeps you confused about your starting point. You do not know your actual situation. You do not count your steps. You just feel lost. But when you get honest about where you are, when you take responsibility for your position, when you count what you have and what you owe, suddenly you can see the path forward. And you can start moving."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Receive the Anointing and Move in Speed"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Receive the Anointing and Move in Speed"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Anointing always happened when someone was being lifted up-never when they were being cast down. When Aaron and his sons were anointed, they moved from outside the priesthood into the priesthood. When David was anointed, he moved from shepherd boy to king. When you are anointed, you move. That is what anointing does."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You do not need more information. You do not need another book. You do not need another seminar. You need to be anointed. You need to connect directly with God, receive His power, hear His voice, take responsibility for your life, and move. When you do these things, speed follows. Your next project happens faster. Your next promotion happens faster. Your next healing, your next breakthrough, your next step into your calling-all of it happens faster. Because you stopped listening to Satan and started listening to God. And you started moving."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Satan doesn't have a hold on your mind, your heart, or your hands-he only restricts your movement, and only because you believed him when he said you couldn't move.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Satan doesn't have a hold on your mind, your heart, or your hands-he only restricts your movement, and only because you believed him when he said you couldn't move.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -189,7 +189,7 @@ export default function SermonPage() {
               <li><strong>{"Personal Accountability Breaks Paralysis"}</strong> {" "}{"Every person who blamed someone else-Adam blamed Eve, Eve blamed the serpent-stayed stuck. The moment you stop blaming others and take full responsibility for where you are and what you do next, you reclaim your power to change your situation. You cannot move forward when you are pointing your finger at someone else. You can only move when you say: 'This is on me. I did this. I will change this.'"}</li>
               <li><strong>{"Direct Connection to God Gives Direction"}</strong> {" "}{"Other people will always filter God's voice through their own fears and limitations. Your pastor, your friend, your mentor-they are all broken telephones. The only way to get clear direction and the speed to act on it is to spend time with God yourself, read His Word with the Holy Spirit's help, and ask Him directly what He wants you to do. When you hear from God, not from people, you will know what step to take and you will take it fast."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -216,7 +216,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -232,7 +232,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -245,33 +245,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Stuck and Invisible - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life" className="text-[#0d6fbf] hover:underline font-medium">
                   The Hidden Cost of Staying Silent at Work, Home, and in Life
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Trapped By What Others Say You Can
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#0d6fbf] hover:underline font-medium">
                   Helping Someone Actually Keeps Them Stuck
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

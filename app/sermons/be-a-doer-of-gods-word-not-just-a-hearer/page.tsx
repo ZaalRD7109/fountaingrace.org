@@ -90,17 +90,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Be a Doer of God&apos;s Word, Not Just a Hearer
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 16 February 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 16 February 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               James 1:21-25. The person who only hears and does not act is like someone who looks in a mirror, sees what they look like, and immediately forgets. The one who acts - this one will be blessed in what they do.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 16 February 2026
             </p>
           </div>
@@ -142,7 +142,7 @@ export default function SermonPage() {
               The person who hears and does not act is not neutral. They are actively deceiving themselves. James does not say they are uninformed - he says they are deceived. They have the knowledge. They have heard truth. But they have walked away unchanged.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-8 mb-3">The mirror illustration</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-8 mb-3">The mirror illustration</h2>
             <p className="text-[#555] leading-relaxed">
               James uses one of the most vivid images in the New Testament: a man who looks at his face in a mirror, then walks away and immediately forgets what he looked like. That is what passive hearing does. You sit in a service, you receive truth, you feel something move - and by the time you reach your car, it is already fading.
             </p>
@@ -150,7 +150,7 @@ export default function SermonPage() {
               The person who looks into the perfect law of liberty and <em>continues in it</em> - who does not forget but acts - this one will be blessed in what they do. The blessing is attached to the doing, not the hearing.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-8 mb-3">What does active receiving look like?</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-8 mb-3">What does active receiving look like?</h2>
             <div className="space-y-4">
               {[
                 { title: 'Lay aside', body: 'The word calls you to put something down before you can pick something up. You cannot receive with full hands. Laying aside means actively clearing out what has been filling the space where the word should go.' },
@@ -158,14 +158,14 @@ export default function SermonPage() {
                 { title: 'Continue in it', body: 'Continuing in the law of liberty means staying under it. Not walking away. Not hearing on Sunday and living contrary on Monday. The word you received is supposed to accompany your decisions throughout the week.' },
               ].map((item) => (
                 <div key={item.title} className="card-teal-border">
-                  <p className="font-bold text-[#2a9df4] mb-1">{item.title}</p>
+                  <p className="font-bold text-[#0d6fbf] mb-1">{item.title}</p>
                   <p className="text-[#555] text-sm leading-relaxed">{item.body}</p>
                 </div>
               ))}
             </div>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;This one will be blessed in what he does.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-1 block">- James 1:25</cite>
@@ -183,7 +183,7 @@ export default function SermonPage() {
 
         <section className="bg-[#f0fafa] py-14 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#2a9df4] mb-8">Questions this message answers</h2>
+            <h2 className="text-2xl font-bold text-[#0d6fbf] mb-8">Questions this message answers</h2>
             <dl className="space-y-0">
               {[
                 {
@@ -204,7 +204,7 @@ export default function SermonPage() {
                 },
               ].map((item) => (
                 <div key={item.q} className="faq-block">
-                  <dt className="font-semibold text-[#2a9df4] mb-2">{item.q}</dt>
+                  <dt className="font-semibold text-[#0d6fbf] mb-2">{item.q}</dt>
                   <dd className="text-[#555] leading-relaxed">{item.a}</dd>
                 </div>
               ))}
@@ -231,7 +231,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-white mb-4">
               Come and hear this in person - Pretoria North.
             </h2>
-            <p className="text-white/70 mb-8 max-w-lg mx-auto">
+            <p className="text-white mb-8 max-w-lg mx-auto">
               Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.
             </p>
             <Link href="/plan-your-visit" className="btn-primary">
@@ -253,7 +253,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -268,33 +268,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-knowing-is-the-problem" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-knowing-is-the-problem" className="text-[#0d6fbf] hover:underline font-medium">
                   When Knowing Is the Problem
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/what-if-someone-else-finishes-what-was-meant-for-you" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/what-if-someone-else-finishes-what-was-meant-for-you" className="text-[#0d6fbf] hover:underline font-medium">
                   What If Someone Else Finishes What Was Meant for You?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/experiencing-gods-presence-direct-divine-communication" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/experiencing-gods-presence-direct-divine-communication" className="text-[#0d6fbf] hover:underline font-medium">
                   Can Something Greater Than Yourself Actually Speak Directly to You?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-life-falls-apart-under-pressure-because-of-whats-actually-inside-you" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-life-falls-apart-under-pressure-because-of-whats-actually-inside-you" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Life Falls Apart Under Pressure Because of What
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#0d6fbf] hover:underline font-medium">
                   The Spiritual Weapon - Declaration Session
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

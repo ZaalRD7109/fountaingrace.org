@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"When You Feel Abandoned: Why You're Not as Alone as You Think"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 13 August 2023</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're in a storm and it feels like no one is coming. But presence isn't always visible. Sometimes the most powerful help is the kind you can't see until it saves your life."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 13 August 2023</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You're in a storm and it feels like no one is coming. But presence isn't always visible. Sometimes the most powerful help is the kind you can't see until it saves your life."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Thank you this morning"}</button>
-                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:45</span>{"Words that change everything"}</button>
-                <button type="button" data-start="288" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:48</span>{"When you feel abandoned"}</button>
-                <button type="button" data-start="903" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:03</span>{"Spiritual binoculars needed"}</button>
-                <button type="button" data-start="1587" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">26:27</span>{"Always with you"}</button>
-                <button type="button" data-start="2108" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">35:08</span>{"Present in the storm"}</button>
-                <button type="button" data-start="3182" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">53:02</span>{"Getting back to basics"}</button>
-                <button type="button" data-start="4422" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:13:42</span>{"Faith over what we see"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Thank you this morning"}</button>
+                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:45</span>{"Words that change everything"}</button>
+                <button type="button" data-start="288" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:48</span>{"When you feel abandoned"}</button>
+                <button type="button" data-start="903" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:03</span>{"Spiritual binoculars needed"}</button>
+                <button type="button" data-start="1587" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">26:27</span>{"Always with you"}</button>
+                <button type="button" data-start="2108" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">35:08</span>{"Present in the storm"}</button>
+                <button type="button" data-start="3182" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">53:02</span>{"Getting back to basics"}</button>
+                <button type="button" data-start="4422" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:13:42</span>{"Faith over what we see"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,26 +163,26 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Storm Makes You Deaf to Everything Else"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Storm Makes You Deaf to Everything Else"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When life hits hard, your senses lock down. You're in pain so you can't hear anything but the pain. You're afraid so you can't see anything but the threat. It's like touching a hot stove-your fingers burn so intensely that you can't feel anything else, even if someone is holding your hand to comfort you. The circumstances become so loud that they drown out everything, including any sign of help."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Matthew 28:20 says Jesus promised, \"Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you alway, even unto the end of the world. Amen.\" Not conditionally. Not based on whether you can feel Him. Always. But your storm is so overwhelming that you can't hear it. You're looking for Him in the wrong place-in your feelings, in what you can touch, in visible proof. Meanwhile, He's been there the entire time, just not in the way your pain tells you to look."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Presence Isn't Proof You Can See"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Presence Isn't Proof You Can See"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus' disciples were in a boat during a storm. They were terrified. They woke Him up screaming, \"Don't you see the storm? Don't you care that we're dying?\" Jesus had been there the whole time, sleeping peacefully, because the storm had nothing to do with Him. He wasn't distant. He was present and at peace because He knew what the disciples didn't: He had already won."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You're waiting for Him to show up in a dramatic way-raise His hands, beat the water, prove He's real. But His presence works differently. In Matthew 8, Jesus simply says to the storm, \"Be still.\" No fanfare. No visible effort. Just His word, and everything changes. This is how He works in your life too. You won't always see it happen. You'll just notice one day that the storm stopped and you're still alive."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You Need Spiritual Binoculars and a Microscope"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You Need Spiritual Binoculars and a Microscope"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Things that feel far away look close when you use binoculars. Things too small to see become visible under a microscope. Your situation is so big and overwhelming that you can't see the small, daily protections and provisions-the ones that prove you're being looked after. You missed the ride home because you were late. You almost took money that wasn't yours but something stopped you. Your child got sick but recovered. You lost a job and found a better one. These aren't luck. These are the small visible proofs of invisible presence."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Hebrews 11:1 defines faith this way: \"Faith is the substance of things hoped for, the evidence of things not seen.\" In other words, faith means believing there is solid ground beneath your feet even though you can't see it. It means trusting that someone is protecting you based on evidence you wouldn't normally notice-because you're too busy looking at what's wrong. Start looking for what's right. The small mercies. The close calls you survived. The needs that got met. These are your spiritual binoculars showing you what's really there."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Fruit in Your Life Tells You Who's Inside It"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Fruit in Your Life Tells You Who's Inside It"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus said you will know a tree by its fruit. If you have love in your heart, peace in crisis, joy when things are hard, patience when you're tested, kindness toward people who don't deserve it, goodness, faithfulness, gentleness, and self-control-these are not your fruits. These are the fruits of someone else living in you. These are the signature of the one who is unseen but present. Galatians 5:22-23 lists them. If your life is producing these, then you're not alone. Someone is in there."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"On the other hand, if you're producing hatred, fear, bitterness, cruelty, impatience, and chaos, then something else has taken residence. The presence or absence of these fruits is your real evidence. Not your circumstances. Not your bank account. Not your romantic status. The fruit. That's what tells the truth about who's with you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Trust His Word Over What You Feel"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Trust His Word Over What You Feel"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Your feelings right now are telling you that you've been abandoned. Your mind is listing reasons why you're alone. Your circumstances look like proof of it. But these are all lies. Jeremiah 33:3 says, \"Call unto me, and I will answer thee, and shew thee great and mighty things, which thou knowest not.\" When you're in trouble, you call. And He answers. Not sometimes. Always. The answer might not come the way you expect, but it comes."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The only way out of this is to stop aligning yourself with your circumstances and start aligning yourself with His word. In John 14:27, He says, \"Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you. Let not your heart be troubled, neither let it be afraid.\" That peace that transcends understanding-the one that doesn't make logical sense-that's available to you right now. You just have to choose to receive it instead of the fear."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Water in Your Boat Is There for a Reason"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Water in Your Boat Is There for a Reason"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Sometimes difficulties come into your life not to destroy you but to wake you up. When your boat is sinking, you stop relying on yourself to steer it. You stop pretending you're strong enough. You cry out. And in that moment of surrender, you finally feel Him. The water in your boat is the thing that forces you to your knees. It's the thing that makes you pray the hardest prayers. And it's often in those moments that you meet Him most clearly."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Isaiah 53:5 says He \"was pierced for our transgressions; he was crushed for our iniquities.\" He knows what it feels like to be broken. He knows what it feels like to be in the deepest darkness. He went through it so that when you go through it, you wouldn't have to go through it alone. Your suffering has meaning because it connects you to Him. It's the moment you finally stop fighting and finally let Him in."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"His unseen presence needs spiritual binoculars-you have to look for the small mercies to see how close He really is.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"His unseen presence needs spiritual binoculars-you have to look for the small mercies to see how close He really is.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -191,7 +191,7 @@ export default function SermonPage() {
               <li><strong>{"Faith Means Trusting What You Can't See"}</strong> {" "}{"Faith isn't about feeling better or getting proof. Hebrews 11:1 says faith is \"the substance of things hoped for, the evidence of things not seen.\" You trust that the ground will hold you even though you can't see the foundation. You trust the pilot you've never met to land the plane. The same trust applies here. You trust that He is present and working on your behalf even though you can't see it, feel it, or touch it. This trust changes everything because it stops the waiting for a sign and starts the looking for hidden blessings."}</li>
               <li><strong>{"Fruit, Not Feeling, Is the Real Evidence"}</strong> {" "}{"Don't judge by your emotions. Judge by what's growing in your life. Love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control-these aren't natural. They're supernatural. They're the signature of presence. When you're producing these in the middle of hardship, that's proof someone is living in you. When you've lost these and replaced them with bitterness and fear, that's proof something else has moved in. Check your fruit. That's your real meter for whether the unseen presence is actually there."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -218,7 +218,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -234,7 +234,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -247,33 +247,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Success Depends on What You Do Before It Arrives
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-mind-wont-stop-working-even-after-8-hours-of-sleep" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-mind-wont-stop-working-even-after-8-hours-of-sleep" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Mind Won
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/everything-crumbling-at-once-heres-what-youre-actually-walking-on" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/everything-crumbling-at-once-heres-what-youre-actually-walking-on" className="text-[#0d6fbf] hover:underline font-medium">
                   Everything Crumbling at Once? Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#0d6fbf] hover:underline font-medium">
                   You Work Hard But Nothing Changes - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#0d6fbf] hover:underline font-medium">
                   The Real Reason You Feel Like You
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Paycheck Disappears Every Month - Here's Why and What Actually Works"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 5 June 2024</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You earn decent money but it vanishes. The problem isn't your income-it's the choices you're making with it. Pastor Ricardo reveals what actually changes your financial life."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 5 June 2024</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You earn decent money but it vanishes. The problem isn't your income-it's the choices you're making with it. Pastor Ricardo reveals what actually changes your financial life."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Standing together for change"}</button>
-                <button type="button" data-start="48" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:48</span>{"Why unity matters most"}</button>
-                <button type="button" data-start="390" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">6:30</span>{"Taking the spotlight off yourself"}</button>
-                <button type="button" data-start="955" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:55</span>{"Love is more than words"}</button>
-                <button type="button" data-start="1425" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">23:45</span>{"Money and borrowing truth"}</button>
-                <button type="button" data-start="3330" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">55:30</span>{"How wealth circulates in communities"}</button>
-                <button type="button" data-start="3405" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">56:45</span>{"Getting your finances stable"}</button>
-                <button type="button" data-start="3915" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:05:15</span>{"Smart money moves now"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Standing together for change"}</button>
+                <button type="button" data-start="48" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:48</span>{"Why unity matters most"}</button>
+                <button type="button" data-start="390" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">6:30</span>{"Taking the spotlight off yourself"}</button>
+                <button type="button" data-start="955" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:55</span>{"Love is more than words"}</button>
+                <button type="button" data-start="1425" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">23:45</span>{"Money and borrowing truth"}</button>
+                <button type="button" data-start="3330" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">55:30</span>{"How wealth circulates in communities"}</button>
+                <button type="button" data-start="3405" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">56:45</span>{"Getting your finances stable"}</button>
+                <button type="button" data-start="3915" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:05:15</span>{"Smart money moves now"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,26 +163,26 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Real Problem Isn't What You Think"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Real Problem Isn't What You Think"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You probably blame your boss, the economy, or bad luck. But the Bible cuts through that. Romans 13:8 says plainly: \"Let no debt remain outstanding.\" Not someday. Not when things improve. Now. The reason your money disappears is you're spending more than you earn, and you've never written down where it goes. Most people don't have a budget-they have wishes. They hope money will stretch. It won't."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The deeper issue is that you've learned to live like the world teaches: grab status, chase comfort, take shortcuts when you can't afford the real thing. You borrow for things you want today instead of saving for them tomorrow. And debt isn't just a money problem. Proverbs 22:7 is brutal: \"The rich ruleth over the poor, and the borrower is servant to the lender.\" When you owe, you're no longer free. Someone else owns your future paychecks. Your choices shrink. Your peace vanishes."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Path Out Starts With One Thing: Seek God's Wisdom"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Path Out Starts With One Thing: Seek God's Wisdom"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You don't need a miracle. You need direction. James 1:5 promises: \"If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.\" God isn't waiting for you to have it all figured out. He wants to guide you. But wisdom requires you to stop doing what feels good and start doing what works. That means saying no to your kids' demands for KFC. It means wearing clothes with stains because that's what you have. It means one spoon of honey instead of the whole bottle."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Living within your means isn't deprivation-it's freedom. When you spend less than you earn, even by a little, you begin to breathe. The key is a budget. Write down what you owe. Write down what food costs, what electricity costs, what your kids need. Tell your money where to go before you spend it. Proverbs 21:5 says it: \"The thoughts of the diligent tend only to plenteousness; but of every one that is hasty only to want.\" Diligence means you keep showing up, keep planning, keep refusing shortcuts. That's when God can work."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Stop Taking on Debt While You're Still Drowning"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Stop Taking on Debt While You're Still Drowning"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"If you already owe money, this is critical: stop borrowing. Not later. Now. Avoid any new debt while you're paying off what you have. Focus on the debts with the highest interest first-those eat your money fastest. The longer you owe, the more you pay. A hundred rand borrowed becomes one-hundred-twenty if the interest is twenty percent. And it grows every month you delay. That's not a mistake; that's math."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Here's the hard truth: if you can't pay for it in cash, you can't afford it. Not yet. Save first, buy later. This breaks the slave cycle. Deuteronomy 28:12 shows what happens when you get it right: \"The LORD shall open unto thee his good treasure, the heaven to give the rain unto thy land in his season, and to bless all the work of thine hand: and thou shalt lend unto many nations, and thou shalt not borrow.\" That's the opposite of your life now. God wants you lending, not borrowing. But you can't lend if you're chained to debt."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Generosity Is the Sign You're Actually Free"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Generosity Is the Sign You're Actually Free"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The real test of financial freedom isn't what you own. It's what you can give away. When you're debt-free and living under your means, you have margin. And margin is where generosity lives. Jesus taught in Luke 6:38: \"Give, and it shall be given unto you; good measure, pressed down, and shaken together, and running over, shall men give into your bosom. For with the same measure that ye mete withal it shall be measured to you again.\" The world teaches hoarding. God teaches circulation. Money moves. The twenty rand you give to the petrol attendant blesses his family, pays for the truck driver, helps the mechanic. It circles back."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you shift from scarcity to generosity, your whole mind changes. Instead of \"I don't have enough,\" you think \"I have enough to help.\" Acts 4:32-35 shows early Christians selling possessions and sharing so \"there were no needy persons among them.\" That's the kind of community strong finances build. You stop being afraid and start being free. That's when you truly prosper."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Spiritual Core: Are You Following the Way or a Shortcut?"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Spiritual Core: Are You Following the Way or a Shortcut?"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus said in John 14:6, \"I am the way and the truth and the life.\" There's only one path that leads somewhere real. Not bribes to traffic cops. Not stealing to look rich. Not borrowing for status. Those shortcuts feel fast but they trap you. A bribed official gets caught. A stolen house means a stolen life. Shortcuts always cost more than the long way."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Isaiah 55:1-2 invites: \"Ho, every one that thirsteth, come ye to the waters, and he that hath no money; come ye, buy, and eat; yea, come, buy wine and milk without money and without price. Wherefore do ye spend money for that which is not bread? and your labour for that which satisfieth not? hearken diligently unto me, and eat ye that which is good, and let your soul delight itself in fatness.\" God's provision is free-but it requires you to follow His way, not your own. That means budgets that feel tight now so your family eats freely later. That means contentment with what you have instead of envy of what others have. 1 Timothy 6:6 nails it: \"Godliness with contentment is great gain.\" You don't need more income. You need to stop leaking money and start building trust that God provides when you obey."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Happens When You Finally Get This Right"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Happens When You Finally Get This Right"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When you live debt-free, the benefits aren't just numbers. Peace comes first. No more panic at the mailbox. No more shame when your child asks for something you can't afford. No more sleepless nights. Second, you become generous. 2 Corinthians 9:8 says God \"is able to bless you abundantly, so that in all things at all times, having all that you need, you will abound in every good work.\" Generosity becomes normal. You invest in others-your kids' education, a neighbor's crisis, your church's mission. Your money works for God's kingdom, not just your comfort."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Third, your community strengthens. When you're not desperate, you stop using people. When you have margin, you can help. This builds real relationships, not transactions. Proverbs 13:11 says: \"Wealth gotten by vanity shall be diminished: but he that gathereth by labour shall increase.\" Small, faithful choices compound. A budget kept for a year becomes a surplus. A surplus invested grows into margin. Margin becomes generosity. And generosity becomes the evidence that you've learned the way Jesus teaches-that freedom comes through obedience, not shortcuts."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"When you don't owe anybody anything, you're free. That's the promise.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"When you don't owe anybody anything, you're free. That's the promise.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -191,7 +191,7 @@ export default function SermonPage() {
               <li><strong>{"A Budget Isn't a Cage; It's a Compass"}</strong> {" "}{"Writing down what you owe and what you need isn't restrictive-it's liberating. It shows you where your money actually goes and stops it from disappearing into invisible expenses. Tell your money where to go before you spend it. The moment you plan, you gain control. That control is where peace begins. And peace is where you can hear God's direction for your finances."}</li>
               <li><strong>{"Generosity Is the Proof You Trust God"}</strong> {" "}{"You can't be generous when you're drowning in debt. But the moment you're debt-free, generosity becomes your natural response. It's the evidence you actually believe God provides. When you give, you're saying with your actions: \"I trust you more than I trust this money.\" That faith is what God rewards. Not the amount-the willingness to let it circulate, to bless others, and to believe more will come."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -218,7 +218,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -234,7 +234,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -247,33 +247,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-inheritance-test" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-inheritance-test" className="text-[#0d6fbf] hover:underline font-medium">
                   The Inheritance Test: Will It Reach Three Generations?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Success Depends on What You Do Before It Arrives
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#0d6fbf] hover:underline font-medium">
                   Helping Someone Actually Keeps Them Stuck
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/everything-crumbling-at-once-heres-what-youre-actually-walking-on" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/everything-crumbling-at-once-heres-what-youre-actually-walking-on" className="text-[#0d6fbf] hover:underline font-medium">
                   Everything Crumbling at Once? Here
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

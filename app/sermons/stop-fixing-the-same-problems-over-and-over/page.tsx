@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Stop Fixing the Same Problems Over and Over"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 5 July 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're exhausted because you've been treating symptoms instead of addressing the root causes of your struggles. True change starts with forgiveness and healing at the deepest level."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 5 July 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You're exhausted because you've been treating symptoms instead of addressing the root causes of your struggles. True change starts with forgiveness and healing at the deepest level."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,11 +140,11 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"You Keep Fixing the Wrong Things"}</button>
-                <button type="button" data-start="50" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:50</span>{"The Endless Cycle of Problems"}</button>
-                <button type="button" data-start="743" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">12:23</span>{"Stop Looking at Symptoms"}</button>
-                <button type="button" data-start="1604" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">26:44</span>{"What Real Forgiveness Means"}</button>
-                <button type="button" data-start="2536" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">42:16</span>{"Generational Lies Hold You Back"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"You Keep Fixing the Wrong Things"}</button>
+                <button type="button" data-start="50" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:50</span>{"The Endless Cycle of Problems"}</button>
+                <button type="button" data-start="743" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">12:23</span>{"Stop Looking at Symptoms"}</button>
+                <button type="button" data-start="1604" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">26:44</span>{"What Real Forgiveness Means"}</button>
+                <button type="button" data-start="2536" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">42:16</span>{"Generational Lies Hold You Back"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -160,28 +160,28 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You're Playing Whack-a-Mole With Your Life"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You're Playing Whack-a-Mole With Your Life"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Most people spend their entire lives fighting symptoms instead of causes. You pay off a debt and another one appears. You switch jobs thinking the problem is your employer, but you bring the same unhappiness to the new place. You leave a relationship and enter the next one carrying the same wounds. You treat anxiety with coping mechanisms but never ask what trauma created it in the first place. This is exhausting because you're not actually solving anything."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"A sore throat is not the problem-it's a sign something deeper is wrong. Maybe it's a nasal drip. Maybe it's reflux. Maybe it's something else entirely. But if you only treat the throat, the real issue stays hidden and keeps coming back. Your life works the same way. The financial crisis, the failed relationship, the job that makes you miserable, the health problem that won't go away-these are all symptoms pointing to something underneath that you haven't diagnosed yet."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You're tired because you keep treating the roof leak instead of finding where the water is actually getting in. Every time you patch one hole, another opens. This is not failure on your part. It's misdirection. You're fixing the wrong things because nobody taught you how to dig deeper."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Jesus Diagnosed the Real Problem First"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Jesus Diagnosed the Real Problem First"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When the paralyzed man was brought to Jesus in Matthew 9, everyone saw a man who couldn't walk. His friends were focused on the symptom-the useless legs. But Jesus saw something else first. Before he said anything about walking, he said: 'Your sins are forgiven.' The disciples and scribes were baffled. The man needed to walk, not forgiveness. They thought Jesus was missing the point. He wasn't. He was going straight to the root."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus prophetically understood that this man's paralysis wasn't just physical. Something spiritual and psychological had him bound. Maybe shame. Maybe guilt. Maybe a wound from the past that had convinced him he couldn't move forward. Jesus dealt with that first-the invisible chains that were actually keeping him on that bed. Only after the forgiveness came the command: 'Arise, take up your bed and go.' The man could walk because the root was healed. The symptom disappeared when its cause was gone."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is what changes everything about how you approach your own stuck places. You've been asking God to fix your legs when the real work is forgiving what has chained them. Your relationship struggles may not be about finding the right person-they may be about forgiving past betrayal that taught you not to trust. Your financial chaos may not be about needing more money-it may be about forgiving yourself for spending patterns you learned from parents who modeled the same thing. Your job dissatisfaction may not be about the employer-it may be about forgiving the voice that told you long ago that you weren't good enough."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Invisible Ropes Holding You Captive"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Invisible Ropes Holding You Captive"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"An elephant trained as a calf to a small rope will still refuse to move when it's tethered as an adult, even though it could easily break free. The rope was never the real restraint-it was the belief, planted early, that movement was impossible. You carry the same kind of rope. Someone fired you for doing the right thing and now you're afraid to try anything. Someone betrayed your trust in a relationship and now you cannot see genuine love when it's offered to you. Someone told you that you weren't smart enough and now you don't attempt things you're actually capable of."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"These ropes get passed down. Your grandmother's fear becomes your mother's caution becomes your hesitation. The Bible says the sins of the fathers are visited on the children. That's not poetry-that's diagnosis. You're carrying ancestral wounds, inherited patterns, old lies about yourself that were spoken into your family line and somehow landed in your mind as truth. Your paralysis today is connected to your grandfather's paralysis yesterday. Your relationship fear is connected to your mother's heartbreak. Your financial anxiety is connected to your father's shame. These aren't just your problems. They're inherited patterns."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But here's what changes: forgiveness breaks the rope. When you forgive-yourself, your parents, your past, the people who hurt you-you're not saying what they did was okay. You're releasing it from having power over you. Forgiveness is the Greek word 'ephiemi,' which means to send away, to release completely, to wipe the debt clean as if it never existed. When you forgive, that rope doesn't just loosen-it dissolves. You're no longer bound by what happened or what you've done."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Healing Starts on the Inside, Then Works Out"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Healing Starts on the Inside, Then Works Out"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"God doesn't just forgive and stop. Jesus told the man, 'Arise, take up your bed and walk.' The inside healing came first, but it was immediately followed by outside restoration. Real change touches both-your spirit and your circumstances, your mindset and your behavior, your past and your future. When God addresses the root, the symptoms don't linger."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is why you must stop asking God only for the external fix. Don't just ask for ten thousand rand to pay the bills-ask God to show you the spending patterns that created the debt in the first place. Don't just ask for a new job-ask God to show you what you're running from or what you believe about yourself that makes you unhappy everywhere you go. Don't just ask for the anxiety to go away-ask God to show you the trauma that created it so you can forgive what happened and who you blamed yourself for not preventing."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"As you move forward, ask God one question repeatedly: 'What is the root cause of this?' Not the symptom you see. The root beneath it. God will open your eyes. He will show you the generational patterns. He will reveal the lie you've believed. He will expose the unforgiveness you've been carrying. And when you deal with that root-when you truly forgive and release it-the external problems lose their power over you. You'll find yourself moving, building, creating, relating in ways that weren't possible before because you're no longer weighed down by invisible chains."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You Don't Need Permission to Move Forward"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You Don't Need Permission to Move Forward"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"For far too long, you've been waiting for someone else to fix you. Waiting for the right person, the right job, the right break, the right amount of money. Waiting for someone to come rescue you. Jesus didn't come to carry you. He came to free you so you can walk on your own. The forgiveness he offers isn't permission to stay stuck-it's permission to move."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Every friend, family member, or circumstance that's been carrying your load will be released at the same time you are released. They don't have to hold you up anymore because you can carry yourself. This doesn't mean you don't need community. It means you stop living as a dependent when you have the capacity to live as a participant in your own life. You have the right to help yourself. You have the right to move forward. You have the right to try and fail and try again without someone else's approval."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"God will show you this week exactly where you've been bound. Not by accident. Not by bad luck. Not because you're broken beyond repair. You've been bound by things you can actually release. Unforgiveness. Old beliefs. Inherited shame. Wounds you've nursed instead of healed. These aren't permanent. They're not your identity. They're just ropes. And ropes can be cut."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"The problem you see is rarely the deepest problem. Jesus knew that the man on the bed needed forgiveness more than he needed to walk, so he started there.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"The problem you see is rarely the deepest problem. Jesus knew that the man on the bed needed forgiveness more than he needed to walk, so he started there.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -190,7 +190,7 @@ export default function SermonPage() {
               <li><strong>{"Forgiveness Releases You From Invisible Chains"}</strong> {" "}{"Forgiveness doesn't mean what happened to you was acceptable. It means you stop letting it define and control you. When you forgive, you're sending away the debt, releasing the hold, cutting the rope. You forgive others so you're not enslaved to their actions. You forgive yourself so you're not enslaved to your shame. You forgive your past so it stops determining your future. Forgiveness is the prerequisite for movement because as long as you're holding resentment, pain, and blame, part of you stays paralyzed in that moment."}</li>
               <li><strong>{"God Heals Inside First, Then Outside"}</strong> {" "}{"Real change never stops at spiritual healing. Jesus didn't just forgive the paralyzed man's sins-he also told him to stand up and walk. When you address the root cause with forgiveness and God's healing, the external circumstances shift too. Your relationships improve not because you found a different person but because you're no longer carrying past betrayal into every new connection. Your finances improve not just because of more income but because you've addressed the spending patterns and lies about scarcity that drove them. God works from the inside out, and when he works, both dimensions change."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -217,7 +217,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -233,7 +233,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -246,33 +246,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Trapped By What Others Say You Can
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#0d6fbf] hover:underline font-medium">
                   You Got What You Prayed For But Lost It Anyway
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids" className="text-[#0d6fbf] hover:underline font-medium">
                   The Pain You Inherited From Your Father Is Quietly Breaking Your Kids
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   The Small Habits That Quietly Destroy Your Life
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#0d6fbf] hover:underline font-medium">
                   You Know What You Need to Do-So Why Can
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

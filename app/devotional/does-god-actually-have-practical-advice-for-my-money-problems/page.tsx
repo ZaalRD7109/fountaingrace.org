@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 214 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Does God actually have practical advice for my money problems?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 2 August 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 2 August 2026</p>
           </div>
         </header>
 
@@ -57,7 +57,7 @@ export default function DevotionalPage() {
             <p className="text-[#555] leading-relaxed text-lg">{"When money is tight, it is easy to make rushed decisions. Take the loan. Grab the quick fix. Do anything to stop the pressure. Most of us have been there. But panic rarely builds anything, and haste with money almost always costs more in the end. God is not silent on this. He gave us real, plain wisdom for exactly this kind of moment."}</p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"The thoughts of the diligent tend only to plenteousness; but of every one that is hasty only to want."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"The thoughts of the diligent tend only to plenteousness; but of every one that is hasty only to want."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Proverbs 21:5 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before you make any money decision today, even a small one, pause for sixty seconds and ask yourself one question: am I doing this because it is wise, or because I am afraid? You do not need all the answers. You just need that one moment of stillness before you act."}</p>
@@ -83,13 +83,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

@@ -144,11 +144,11 @@ export default function VolunteerForm() {
         purpose of connecting you with volunteer opportunities. Data is stored securely and is
         not shared with or sold to any third party. You may request access, correction, or
         deletion at any time by emailing{' '}
-        <a href="mailto:info@fountaingrace.org" className="text-[#008080] hover:underline">
+        <a href="mailto:info@fountaingrace.org" className="text-[#006b6b] underline">
           info@fountaingrace.org
         </a>
         . By submitting you consent to this in line with POPIA. See our{' '}
-        <Link href="/privacy-policy" className="text-[#008080] hover:underline">
+        <Link href="/privacy-policy" className="text-[#006b6b] underline">
           Privacy Policy
         </Link>
         .

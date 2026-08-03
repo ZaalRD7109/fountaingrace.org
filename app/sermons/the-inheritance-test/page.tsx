@@ -102,17 +102,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               The Inheritance Test: Will It Reach Three Generations?
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 8 September 2024</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 8 September 2024</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               Proverbs 13:22 says a good man leaves an inheritance to his children&apos;s children. Not his children - his children&apos;s children. Most people leave money. God is asking for more than that. He is asking for systems, character, and the kind of wisdom that multiplies what it receives rather than spending it back down to zero.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North
             </p>
           </div>
@@ -134,13 +134,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"A question about death"}</button>
-                <button type="button" data-start="102" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:42</span>{"What inheritance means"}</button>
-                <button type="button" data-start="260" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:20</span>{"Character over clothing"}</button>
-                <button type="button" data-start="945" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:45</span>{"Freedom through hard work"}</button>
-                <button type="button" data-start="1620" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">27:00</span>{"Teaching yourself to fish"}</button>
-                <button type="button" data-start="2565" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">42:45</span>{"Start saving young"}</button>
-                <button type="button" data-start="3600" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:00:00</span>{"Multiple income streams"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"A question about death"}</button>
+                <button type="button" data-start="102" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:42</span>{"What inheritance means"}</button>
+                <button type="button" data-start="260" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:20</span>{"Character over clothing"}</button>
+                <button type="button" data-start="945" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:45</span>{"Freedom through hard work"}</button>
+                <button type="button" data-start="1620" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">27:00</span>{"Teaching yourself to fish"}</button>
+                <button type="button" data-start="2565" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">42:45</span>{"Start saving young"}</button>
+                <button type="button" data-start="3600" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:00:00</span>{"Multiple income streams"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -159,7 +159,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Pot Without the Skills to Cook</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Pot Without the Skills to Cook</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               If you look in a cupboard and say there is nothing there, but somebody else can come in and make a full meal from the same cupboard - the problem was never the cupboard. The problem was the skill. You were looking for a ready-made meal. They were looking for ingredients.
             </p>
@@ -167,7 +167,7 @@ export default function SermonPage() {
               That is the difference between leaving your children money and leaving your children wisdom. Money without wisdom becomes zero quickly. The lottery winner who has lived paycheck to paycheck and suddenly receives five million rand does not become wealthy - they become a person with five million rand and a paycheck-to-paycheck mindset. The mindset brings the money back to where it feels familiar.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Proverbs 13:22 - The Third Generation Standard</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Proverbs 13:22 - The Third Generation Standard</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Proverbs 13:22 - &quot;A good man leaveth an inheritance to his children&apos;s children: and the wealth of the sinner is laid up for the just.&quot;
             </p>
@@ -178,7 +178,7 @@ export default function SermonPage() {
               A good man leaves something that the third generation can still build on. Not something they spend and forget. That requires teaching your children how to think, how to save, how to manage, and how to build - not just handing them what you have earned.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Joseph&apos;s Coat Was Never Just a Coat</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Joseph&apos;s Coat Was Never Just a Coat</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               When Jacob gave Joseph the coat of many colors, he was placing favor on him. But he was also placing something deeper - a kingdom mentality. The coat was the outward sign of what was being built inwardly. Character. Wisdom. Systems for living.
             </p>
@@ -189,7 +189,7 @@ export default function SermonPage() {
               The person who knows how to get money will always find money. The person who knows how to manage it will keep it and multiply it. The coat is money. The character is the system. Jacob gave his son both - and only one of them could be taken away.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Proverbs 21:20 - The Wise Store Up</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Proverbs 21:20 - The Wise Store Up</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Proverbs 21:20 - &quot;There is treasure to be desired and oil in the dwelling of the wise; but a foolish man spendeth it up.&quot;
             </p>
@@ -200,7 +200,7 @@ export default function SermonPage() {
               Saving is not about the amount. It is about the consistency. Twenty rand a month will not feel like much. But twenty rand a month every month for twenty years, with compound interest working in your favour, becomes something your children can build from. The axe gets the tree down eventually. But the chainsaw gets it down faster with less effort. And the machine gets it down in three minutes while you are already moving to the next one. The system determines the outcome.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Mindset That Multiplies and the Mindset That Shrinks</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Mindset That Multiplies and the Mindset That Shrinks</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               The person who has always lived with a hundred rand and receives a million will not stay a millionaire long - because their internal system still runs on a hundred-rand mentality. They will stretch the million down to a hundred without realising it, because that is the level they know how to manage.
             </p>
@@ -209,7 +209,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;The coat can be taken. The character cannot. Build the character in your children and you have given them something that no brother can steal and no accusation can remove. That is the inheritance that reaches three generations.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -224,7 +224,7 @@ export default function SermonPage() {
 
             <p className="text-[#555] leading-relaxed">
               If you are in or around Pretoria or Johannesburg,{' '}
-              <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
+              <Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">
                 come on a Sunday
               </Link>{' '}
               - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
@@ -258,7 +258,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">
                 Plan Your Visit
               </Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
                 Send a Prayer Request
               </Link>
             </div>
@@ -279,7 +279,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -294,33 +294,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#0d6fbf] hover:underline font-medium">
                   The Principles That Move People Forward Faster
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Deliberately Gets Worse Before It Works Out
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-language-of-the-spirit-interpreting-what-you-hear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-language-of-the-spirit-interpreting-what-you-hear" className="text-[#0d6fbf] hover:underline font-medium">
                   Hearing the Right Things and Still Getting Them Wrong - Here Is Why
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Paycheck Disappears Every Month - Here
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

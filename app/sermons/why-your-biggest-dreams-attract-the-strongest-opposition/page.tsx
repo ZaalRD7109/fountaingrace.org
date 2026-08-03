@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"When Your Success Makes People Jealous: Here's What It Really Means"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 30 March 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"When people closest to you suddenly turn jealous or hostile, it feels like failure. But it might be the opposite."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 30 March 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"When people closest to you suddenly turn jealous or hostile, it feels like failure. But it might be the opposite."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"What success really looks like"}</button>
-                <button type="button" data-start="46" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:46</span>{"Motivated by those ahead"}</button>
-                <button type="button" data-start="310" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:10</span>{"We forget what matters"}</button>
-                <button type="button" data-start="528" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">8:48</span>{"Bad things teach us"}</button>
-                <button type="button" data-start="852" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">14:12</span>{"Preparation meets opportunity"}</button>
-                <button type="button" data-start="1552" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:52</span>{"Higher ground awaits"}</button>
-                <button type="button" data-start="2848" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">47:28</span>{"When jealousy strikes"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"What success really looks like"}</button>
+                <button type="button" data-start="46" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:46</span>{"Motivated by those ahead"}</button>
+                <button type="button" data-start="310" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:10</span>{"We forget what matters"}</button>
+                <button type="button" data-start="528" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">8:48</span>{"Bad things teach us"}</button>
+                <button type="button" data-start="852" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">14:12</span>{"Preparation meets opportunity"}</button>
+                <button type="button" data-start="1552" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:52</span>{"Higher ground awaits"}</button>
+                <button type="button" data-start="2848" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">47:28</span>{"When jealousy strikes"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,32 +163,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Opposition is a Sign, Not a Setback"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Opposition is a Sign, Not a Setback"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When you start moving toward something bigger, the people around you often react badly. Your family questions your choices. Coworkers undermine you. Friends disappear. This is not random. This is a pattern that shows up in the lives of people who actually accomplish something meaningful."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The ancient story of Joseph shows this plainly. His brothers hated him more after he shared his dream. His own father rebuked him. But that hatred did not mean Joseph was wrong. It meant Joseph was heading somewhere the people around him could not yet see. The opposition was not a sign he should quit. It was a sign he was on to something."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When someone threatens the status quo, jealousy surfaces fast. A king (Saul) became jealous of a young man (David) because the crowd cheered louder for David. The more success David had, the more Saul hunted him. But Saul's jealousy did not stop David's purpose. It just meant David was valuable enough to be threatened."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Learn From People Ahead of You, Not Just Envy Them"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Learn From People Ahead of You, Not Just Envy Them"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When you see someone doing better than you, your first instinct might be to dismiss them or resent them. But that is a wasted opportunity. Instead, look behind their success. Ask what they do differently. What habits do they have? What knowledge do they gain? Even if someone uses shortcuts to get ahead (and some do), you can still extract the lessons."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The gym analogy is simple: some people use drugs to build muscle fast. That is a shortcut. But the fact that they are at the gym and committed to training still teaches you something. You can learn the discipline and the method without the shortcut. Joseph learned to interpret dreams not through a single revelation, but through years of exposure, failure, and refinement. He was preparing for an opportunity he did not yet know was coming."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you stop being offended by others' success and start studying it instead, you accelerate your own growth. This is not about copying them. It is about extracting wisdom. Every obstacle someone overcame before you is a map you can use."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Dreams Attract Both Opportunity and Attack"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Dreams Attract Both Opportunity and Attack"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"A real dream (not a wish, but a clear sense of direction) acts like a signal. It attracts two things: people who want to help you and people who want to stop you. Joseph's dream showed his brothers that he would rise above them one day. That dream terrified them more than anything else. So they moved to kill it by killing him. They failed. But the dream was what triggered the attack."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is not a coincidence. When you carry a genuine purpose, you become a target. The closer people are to you, the more they sense when something big is coming. Family members often resist hardest because they can see it most clearly. A parent who rebuffs your big plans is not always being protective. Sometimes they are being protective of the world they know, not of you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your job is not to convince people your dream is real. Your job is to prepare for the opportunity that dream is pointing toward. Joseph did not argue with his brothers about his dream. He did not try to explain it. He kept moving, kept learning, kept preparing. When the moment came to interpret the Pharaoh's dream, he was ready. The preparation mattered more than the approval."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Betrayal Often Positions You for Something Bigger"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Betrayal Often Positions You for Something Bigger"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"What looks like betrayal can be redirection. Joseph was sold by his own brothers for twenty pieces of silver. To them, it was the end of him. To the story, it was a passage. That sale moved him from a shepherd's tent into a position where he would eventually save a nation. The brothers thought they were ending his story. They were actually moving him toward his destiny."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This does not mean every betrayal is good or that you should accept mistreatment. It means that when betrayal happens, the worst response is to stop moving. Joseph could have quit after his brothers sold him. He could have quit again when he was falsely accused and thrown in prison. But each setback was actually a setup for the next level."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pattern holds: difficulty is not a sign you chose wrong. Difficulty is a sign you are moving toward something worth protecting. Easy roads keep you in one place. Hard roads take you somewhere you have to grow to reach."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Presence That Stays When Everything Else Leaves"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Presence That Stays When Everything Else Leaves"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"One phrase appears throughout Joseph's story, even in the darkest moments: he was prosperous because the presence of the divine was with him. Not because his circumstances improved instantly. Not because people stopped attacking him. But because something deeper was at work that circumstances could not touch."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This changes how you interpret your own setbacks. You lose your job. Is the presence still there? You fail publicly. Is the presence still there? You are betrayed by someone you trusted. Is the presence still there? The answer defines whether you quit or keep moving. Joseph kept moving because he believed something was with him that was bigger than what was against him."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Every mountain you climb teaches you something a flat road never could. The higher you go, the harder the wind. The greater your purpose, the more opposition it attracts. But the presence that brought you this far does not abandon you halfway up. That is the only certainty that matters when everything else falls apart."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How to Read the Signs in Your Own Life"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How to Read the Signs in Your Own Life"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Start by watching how people react to your progress. If no one is jealous, you are probably staying small. If the people closest to you are most resistant, pay attention. That resistance is not a reason to quit. It is evidence that something real is moving in you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Second, study the people ahead of you. Not to worship them or resent them, but to extract the principles that work. What did they do when they faced opposition? How did they stay steady when others attacked? What did they prepare for that you are preparing for now?"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Third, protect your direction without broadcasting it. Joseph eventually learned not to announce every dream. That was wisdom. Share your vision with people who expand it, not people who shrink it. Write down what you are sensing. Stay quiet. Keep moving. The opposition will come anyway. At least you will not have added noise to the signal."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"When people closest to you suddenly fight your success, it is not a sign you are failing. It is a sign something bigger is coming.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"When people closest to you suddenly fight your success, it is not a sign you are failing. It is a sign something bigger is coming.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -197,7 +197,7 @@ export default function SermonPage() {
               <li><strong>{"Preparation Matters More Than Permission"}</strong> {" "}{"You do not need approval from the people around you to prepare for what is coming. Joseph did not wait for his brothers to believe in his dream. He learned to interpret dreams. He mastered the skill. When the opportunity finally came, he was ready. Others can reject you. But they cannot prevent you from becoming the person the opportunity requires."}</li>
               <li><strong>{"Every Season Has a Presence"}</strong> {" "}{"Whether you are rising or falling, winning or losing, the same stability that worked in the good season still works in the hard season. This is not about positive thinking. It is about recognizing that something deeper than your circumstances has always been with you. Learning to sense and trust that presence is what allows you to stay steady when everything around you is shaking."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -225,7 +225,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -243,7 +243,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -256,33 +256,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Deliberately Gets Worse Before It Works Out
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Big Break Is Coming, But You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Dreams Feel Dead, But Delays Aren
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

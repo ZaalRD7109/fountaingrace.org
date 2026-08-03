@@ -103,17 +103,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Pruning for Progress: From Bare Branch to Bountiful Blessing
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 2 November 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 2 November 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               The branch that gets cut is not always the dead one. Sometimes God prunes what is already bearing fruit - because He intends it to bear more. If you are in a season that feels like cutting, this message is for you.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 2 November 2025
             </p>
           </div>
@@ -135,13 +135,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Understanding your foundation"}</button>
-                <button type="button" data-start="180" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:00</span>{"What makes trees grow"}</button>
-                <button type="button" data-start="780" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">13:00</span>{"The root search for water"}</button>
-                <button type="button" data-start="1440" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">24:00</span>{"Building wrong foundations"}</button>
-                <button type="button" data-start="2250" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">37:30</span>{"Spotting fake fruit"}</button>
-                <button type="button" data-start="3150" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">52:30</span>{"Draining relationships"}</button>
-                <button type="button" data-start="4200" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:10:00</span>{"Fear stops your growth"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Understanding your foundation"}</button>
+                <button type="button" data-start="180" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:00</span>{"What makes trees grow"}</button>
+                <button type="button" data-start="780" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">13:00</span>{"The root search for water"}</button>
+                <button type="button" data-start="1440" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">24:00</span>{"Building wrong foundations"}</button>
+                <button type="button" data-start="2250" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">37:30</span>{"Spotting fake fruit"}</button>
+                <button type="button" data-start="3150" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">52:30</span>{"Draining relationships"}</button>
+                <button type="button" data-start="4200" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:10:00</span>{"Fear stops your growth"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -160,7 +160,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Tree You Did Not Ask For</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Tree You Did Not Ask For</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Some trees in your yard were not planted intentionally. You found them there. And over time, they grew - close to the house, roots lifting the foundation, branches threatening the roof. You prune them not because they are worthless but because of what they could become if left unchecked.
             </p>
@@ -168,7 +168,7 @@ export default function SermonPage() {
               That is the picture behind John 15. God does not prune what He does not care about. He prunes what He is invested in. The cutting is never random - it is always purposeful. And the purpose is always more fruit.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">John 15:1-2 - The Branch That Gets Cut Is Bearing Fruit</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">John 15:1-2 - The Branch That Gets Cut Is Bearing Fruit</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               John 15:1-2 - &quot;I am the true vine, and my Father is the husbandman. Every branch in me that beareth not fruit he taketh away: and every branch that beareth fruit, he purgeth it, that it may bring forth more fruit.&quot;
             </p>
@@ -179,7 +179,7 @@ export default function SermonPage() {
               Pruning is never comfortable. The branch does not understand what the gardener sees. The branch feels the cut without seeing the outcome. But the gardener prunes with the harvest in mind - and He knows exactly how much to cut and where.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Root Determines What Wind Can Do to You</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Root Determines What Wind Can Do to You</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               A tree with a deep taproot can stand in winds that topple trees rooted near the surface. The taproot goes down in search of water and nutrients - not outward. It is less visible than surface roots, but it is the reason the tree stands when everything else falls.
             </p>
@@ -191,7 +191,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;A dry branch has two uses: decoration or fire. Stay connected to the vine. The branch that stays connected is the one that bears fruit - and the branch that bears fruit is the one the Father prunes for more.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -240,7 +240,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">
                 Plan Your Visit
               </Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
                 Send a Prayer Request
               </Link>
             </div>
@@ -261,7 +261,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -276,33 +276,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-danger-of-overnight-success" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-danger-of-overnight-success" className="text-[#0d6fbf] hover:underline font-medium">
                   The Danger of Overnight Success and the Power of Long Obedience
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-are-not-lazy-you-are-a-lot-more" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-are-not-lazy-you-are-a-lot-more" className="text-[#0d6fbf] hover:underline font-medium">
                   You Are Not Lazy - You Are a Lot More
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   The Small Habits That Quietly Destroy Your Life
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/dont-pray-the-storm-away-why-you-need-the-storm" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/dont-pray-the-storm-away-why-you-need-the-storm" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Trying to Escape Your Problems - Here Is What They Are Actually For
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Every Word You Say About Yourself Is Writing Your Future
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

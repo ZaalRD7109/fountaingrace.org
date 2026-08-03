@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Everything Crumbling at Once? Here's What You're Actually Walking On"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 26 July 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"When everything that made you feel secure crumbles, you're not sinking. You're being called to walk on what would drown you."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 26 July 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"When everything that made you feel secure crumbles, you're not sinking. You're being called to walk on what would drown you."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"When you feel like sinking"}</button>
-                <button type="button" data-start="50" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:50</span>{"Marriage suddenly falls apart"}</button>
-                <button type="button" data-start="957" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:57</span>{"The difference between feeling and reality"}</button>
-                <button type="button" data-start="1509" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:09</span>{"He says I am here"}</button>
-                <button type="button" data-start="2001" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:21</span>{"Speaking up feels like exposure"}</button>
-                <button type="button" data-start="2750" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">45:50</span>{"Your ghost might be him"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"When you feel like sinking"}</button>
+                <button type="button" data-start="50" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:50</span>{"Marriage suddenly falls apart"}</button>
+                <button type="button" data-start="957" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:57</span>{"The difference between feeling and reality"}</button>
+                <button type="button" data-start="1509" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:09</span>{"He says I am here"}</button>
+                <button type="button" data-start="2001" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:21</span>{"Speaking up feels like exposure"}</button>
+                <button type="button" data-start="2750" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">45:50</span>{"Your ghost might be him"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -161,32 +161,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"When Everything You Stood On Fails"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"When Everything You Stood On Fails"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You thought the job was solid ground. Then it crumbled. You thought the marriage was the one thing that would hold. Then that crumbled too. You thought your health was untouchable. Your savings were proof you'd made it. But now you're standing on nothing and the water is rising."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is not a rare moment of doubt. This is the person sinking because everything they built their life on has collapsed at once. The world calls this disaster. It feels like abandonment. It feels like God has left you alone in the chaos."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But Pastor Ricardo Zaal unpacks a different reading of what Jesus actually does in Matthew 14:22-31. Jesus does not wait until the storm calms. He does not send rescue after the weather improves. He comes to the disciples in the fourth watch of the night, walking on the very water that is tossing their boat."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Ghost That Is Actually Jesus"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Ghost That Is Actually Jesus"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When the disciples saw a figure walking toward them on the water, they thought it was a spirit, a ghost. They cried out in fear. But Jesus announced himself with the same words God spoke to Moses at the burning bush: \"Ego eimi.\" It is I. I am. In Greek, this word carries the weight of God's eternal presence, not a distant rescue but immediate identity."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo shows how the things in your life that look like ghosts, like enemies, like disaster, are often Jesus in camouflage. The hard conversation you avoid looks like conflict, but it might be reconciliation. The public speaking that terrifies you looks like exposure, but it is your calling confirming itself. The debt that forces you to stop borrowing looks like ruin, but it is discipline teaching you to build wealth instead of borrow it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The business that looks like a spirit to you because it is risky and unfamiliar, the therapy that reopens old wounds, the move from the familiar to the unknown, the discipline of getting up to exercise when you don't want to, the moment you ask your boss for a raise you know you deserve. These all look like ghosts. But they are invitations. They are \"I am.\""}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You Can Walk On What Would Drown You"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You Can Walk On What Would Drown You"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Peter did something wild. When Jesus called him to come, Peter stepped out of the boat and walked on the water. The water that was tossing the boat became the floor he walked on. The same sea that was stormy when Jesus walked on it, the same sea that was stormy when Peter walked on it, became solid ground under his feet because he moved toward Jesus despite the fear."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo shares his own collapse into debt. He maxed out credit cards. His family went under financial administration, which meant they could borrow nothing more. It looked like drowning. It was the darkest storm. But that very restriction taught them to live debt-free, to save cash, to build wealth instead of borrow it. The storm that looked like ruin became the teacher that freed them. The water that would have drowned them became the ground they walked on."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"He quit smoking on February 10, 2000. For 26 years and counting, he has not touched a cigarette, even when the smell tempts him in the morning. He stepped into what looked like a ghost, the ghost of discipline and denial, and now he stands on it. That ghost became his freedom."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Jesus' Hand Is Already Reaching"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Jesus' Hand Is Already Reaching"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Peter began to sink when he saw the wind and became afraid. He cried out, and immediately Jesus stretched out his hand and caught him. The moment you step out in faith, thinking you will drown, Jesus' hand is already there. You do not have to wait for proof. You do not have to see the ground first. You step, and his hand is already waiting."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The man addicted to gambling lost 25,000 rand every month at the slots. His car was pawned. His family thought it was stolen. He thought about suicide. But the moment his fear of living this lie became smaller than his fear of losing his family, he spoke to his wife. He told her the truth. That moment of stepping into what looked like destruction, like exposure, like the end, became the moment of freedom. Eight years later, he has not gambled again."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you speak to your boss about the salary increase you have earned, when you tell your marriage partner that you need more intimacy and partnership, when you face the trauma you have avoided for years, when you take the risk on the business or the education or the career that terrifies you, Jesus' hand is already stretched out. You do not see it yet. But the moment you move despite the fear, you will find it."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"God Is With You In the Storm, Not After It"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"God Is With You In the Storm, Not After It"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Isaiah 43:2 makes this promise clear: \"When thou passest through the waters I will be with thee. And through the rivers, it shall not overflow thee. When thou walkest through the fire, thou shalt not be burnt. Neither shall the flame kindle upon thee.\" God does not say the waters will part or the rivers will disappear. He says he will be with you as you pass through them. As you walk through the fire. In the storm itself, not when it ends."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo lost his family. That was the darkest moment of his life. And yet Jesus was with him in that darkness. Not waiting for the pain to fade. Not appearing after he had grieved enough. Present in the grief itself, teaching him that \"I am\" means God shows up exactly where you feel most abandoned."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The collapse of your job, marriage, health, or money is not proof that God has left. It is proof that he is walking toward you on the very thing that is drowning you. He is showing you: you can walk on this. This thing that looks like a ghost, a disaster, a ruin, is actually me, saying \"I am.\" It is your breakthrough."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Are You Meant to Walk On?"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Are You Meant to Walk On?"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo asks the question directly: What is the thing that looks like a ghost to you that you need to understand is Jesus in camouflage? What is the collapse, the fear, the hard conversation, the discipline, the risk, the exposure, the truth you have been avoiding? What is the one thing that, if you stepped into it once and did not retreat, would change everything?"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The person afraid to speak publicly does not know that public speaking is the gateway to being heard in the CEO meeting, being seen as someone with solutions, being promoted. The person afraid to have the hard conversation does not know that conversation is often the line between marriage breaking and marriage deepening. The person afraid to step into their own business does not know that the security of employment is also the ceiling on their wealth."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You do not have to play it safe under these circumstances. You do not have to wait for conditions to calm down. Jesus is calling you out of the boat now. The water is stormy now. That is exactly why he is there. That is exactly when you can walk."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"The same thing that is supposed to drown you is the same thing you can walk on.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"The same thing that is supposed to drown you is the same thing you can walk on.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -195,7 +195,7 @@ export default function SermonPage() {
               <li><strong>{"The Storm Is the Invitation, Not the Barrier"}</strong> {" "}{"God does not rescue you after the storm passes. He shows up inside it. Isaiah 43:2 promises he will be with you as you pass through the waters, through the rivers, through the fire, not when they end. The collapse of your job, marriage, health, or money is not punishment or accident. It is Jesus walking toward you on the very thing that is drowning you, saying \"I am.\" You do not need to wait for conditions to improve to move. You move now, in the storm, with Jesus present in it. The moment you step out despite the fear, his hand is already reaching."}</li>
               <li><strong>{"Movement Matters More Than Certainty"}</strong> {" "}{"Peter did not wait until the water was calm or the conditions were safe. Jesus said \"Come,\" and Peter came. The instruction was simple and did not require explanation. Peter walked on the water that was tossing the boat. He became afraid when he focused on the wind, but the moment he stepped, he walked. Your breakthrough does not wait for you to feel ready or see the ground first. It waits for you to move despite the fear. The discipline to get up when you don't want to, to speak when you want to hide, to step into the business when you want security, to face the trauma when you want to avoid it, to ask for what you deserve when you want to stay small. Movement opens the hand of Jesus."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -222,7 +222,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -238,7 +238,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -251,33 +251,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
                   When You Feel Abandoned: Why You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-mind-wont-stop-working-even-after-8-hours-of-sleep" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-mind-wont-stop-working-even-after-8-hours-of-sleep" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Mind Won
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Paycheck Disappears Every Month - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Success Depends on What You Do Before It Arrives
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

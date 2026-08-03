@@ -14,7 +14,7 @@ export default function ContactThankYouPage() {
       <ThankYouTracker formName="contact" />
       <section className="bg-[#008080] text-white pt-16 pb-16 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
-          <p className="text-[#FFD600] font-semibold text-xs uppercase tracking-wider mb-3">
+          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
             Message received
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
@@ -43,7 +43,7 @@ export default function ContactThankYouPage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/faq"
-              className="inline-block border border-[#008080] text-[#008080] font-semibold px-6 py-3 rounded-[30px] hover:bg-[#008080] hover:text-white transition-colors text-sm"
+              className="inline-block border border-[#008080] text-[#006b6b] font-semibold px-6 py-3 rounded-[30px] hover:bg-[#008080] hover:text-white transition-colors text-sm"
             >
               Read our FAQ
             </Link>

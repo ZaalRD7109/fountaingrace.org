@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Stuck Life Can Actually Change: Here's What Needs to Happen First"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 June 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're not meant to stay where you are. Real transformation starts with understanding what broke things can become."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 June 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You're not meant to stay where you are. Real transformation starts with understanding what broke things can become."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Why we celebrate today"}</button>
-                <button type="button" data-start="255" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:15</span>{"What this birth means"}</button>
-                <button type="button" data-start="435" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">7:15</span>{"Life for your struggles"}</button>
-                <button type="button" data-start="630" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">10:30</span>{"Comfort in hard times"}</button>
-                <button type="button" data-start="1098" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">18:18</span>{"Victory over everything"}</button>
-                <button type="button" data-start="1290" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">21:30</span>{"You are protected now"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Why we celebrate today"}</button>
+                <button type="button" data-start="255" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:15</span>{"What this birth means"}</button>
+                <button type="button" data-start="435" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">7:15</span>{"Life for your struggles"}</button>
+                <button type="button" data-start="630" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">10:30</span>{"Comfort in hard times"}</button>
+                <button type="button" data-start="1098" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">18:18</span>{"Victory over everything"}</button>
+                <button type="button" data-start="1290" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">21:30</span>{"You are protected now"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,32 +162,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Problem: You're Stuck and It Feels Permanent"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Problem: You're Stuck and It Feels Permanent"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You know the feeling. The husband who won't come home. The one-bedroom apartment when your family needs space. The job you can't find. The depression that won't lift. The suicidal thoughts that visit at night. The marriage that's imploding. The finances that never recover. A year goes by, then another, and nothing changes."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"These aren't small problems. They're the kind of things that make you wonder if life will ever actually work. You've tried. You've prayed maybe. You've asked for help. Yet here you remain, and every day feels like proof that you're meant to stay stuck."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But there's something you need to know: stuckness is not your final destination. The pastor's message centers on a single promise that changes everything. Christ came not to keep you as you are, but to bring birth to new things in every broken area of your life."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Birth Actually Means in Your Specific Situation"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Birth Actually Means in Your Specific Situation"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When Pastor Ricardo says Jesus brings birth to your situation, he's not talking symbolically. He means actual, concrete change. New jobs that appear. Relationships that shift. Peace that replaces panic. Housing that fits your family. A mind that stops threatening suicide."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Matthew 1:21 makes this clear: Jesus came to save people from their sins. Sin isn't just rule-breaking. It's the force that steals, kills, and destroys. It's what makes husbands leave. What makes money disappear. What whispers that you're worthless. When Christ comes into a life, that destructive force loses its grip."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Birth means something genuinely new emerges where death was. Not eventually. Not in heaven. But in your actual marriage, your actual bank account, your actual mental state, your actual home. The birth of Christ becomes the birth of fresh starts in the exact places where you've felt most trapped."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"When You Can't Change the Person, You Change Toward Them"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"When You Can't Change the Person, You Change Toward Them"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"One of the hardest stuck places is being married to or working alongside someone you cannot fix. That person won't listen. Won't change. Won't come home. Won't get help. You cannot force transformation on another person, no matter how much you love them or how much sense your argument makes."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But here's what actually transforms the situation: you change your stance toward that person. Not to enable them or accept abuse, but to stop carrying the weight of their choices. You stop waiting for them to change before your life gets better. This shift inside you? That's the birth. That's the new thing Christ brings. Suddenly you can breathe in a situation you thought would suffocate you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This isn't resignation. It's liberation. You take back the power over your own peace that you handed to their behavior. The relationship may still be hard, but now it no longer defines whether you survive the day."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Financial Birth: Every Dollar You Release Becomes a Seed"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Financial Birth: Every Dollar You Release Becomes a Seed"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Depression often arrives with empty pockets. Anxiety feeds on scarcity. But the pastor speaks directly to this: if you have a one cent coin, that one cent becomes a seed when you release it. You buy someone bread. You help pay for a Christmas lunch. You give money to someone who needed exactly that today."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"That act is not a loss. It's a planting. That person now has a meal they didn't have. That person now has dignity. And the pastor promises that when you become someone who plants into others' lives rather than someone who only takes to survive, growth begins in your own situation. One cent becomes ten cents. Bread money becomes business opportunity."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This isn't prosperity gospel magic. This is simple truth: people who give are never the poorest. A closed fist holds less than an open hand. Financial birth comes to people who understand that their survival is tied to other people's survival, and who act on it."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Birth of Your Own House, Not Someone Else's"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Birth of Your Own House, Not Someone Else's"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Four people in one bedroom is not stability. It's compromise dressed up as gratitude. The pastor addresses this directly: if you're renting, the birth Christ brings includes moving into your own place. If you're in a small place, birth means a larger one where each child has their own room."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This isn't greed. This is dignity. Your family deserves space. Your children deserve to know what home ownership feels like. This is the kind of concrete, material transformation that happens when Christ's birth reshapes your reality. Not someday. Not as a reward for being patient enough. But as part of what salvation actually means: being restored to wholeness in every area."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"That birth requires faith, but faith isn't passive. It means you stop accepting the temporary as permanent. You start looking for work. You start saving. You start speaking it. You stop apologizing for wanting more for your family."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Against Suicide: The Message You Need to Hear Right Now"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Against Suicide: The Message You Need to Hear Right Now"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"If you're reading this and you've thought about ending your life, the pastor's words are for you directly. He names it. He doesn't dance around it. Suicidal thinking is the enemy's plan to steal your life before you've lived it. And he comes against that plan in the name of Christ with urgency and authority."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You have a great destiny. That's not motivation poster language. That's diagnosis. Something in you knows you were meant for more than this pain. Depression is lying when it says you're a burden. Loneliness is lying when it says no one cares. The pastor speaks life into that void: God will send someone to knock on your door. God will place you where you're safe. God will show you that you matter to Him."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If you feel alone right now, the Holy Spirit is the comforter that comes when humans fail you. If you're thinking of taking your life, reach out to someone today. Tell them. The fact that you're reading this message means Christ is still reaching toward you. Your life is not over. Your story is not finished."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Whatever situation put you down on the ground, God will lift you up this morning to a realm high above your enemies.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Whatever situation put you down on the ground, God will lift you up this morning to a realm high above your enemies.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -196,7 +196,7 @@ export default function SermonPage() {
               <li><strong>{"You Must Plant to Harvest"}</strong> {" "}{"Scarcity thinking kills growth. The moment you start giving-a coin, time, help, whatever you have-you shift from taker to planter. That shift changes what grows in your life. Financial birth doesn't come to people who hoard their last dollar. It comes to people who understand their survival is connected to others' survival and who act on it even when they're afraid."}</li>
               <li><strong>{"You Change Toward What You Cannot Change"}</strong> {" "}{"You cannot force another person to transform. But you can transform your stance toward them. This shift inside you-from victim of their choices to someone at peace despite their behavior-is the real birth. It doesn't fix them. It frees you. And freedom, it turns out, is where real life begins."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -224,7 +224,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -242,7 +242,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -255,33 +255,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/birth-of-the-great-christmas-sermon-matthew-1-21" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/birth-of-the-great-christmas-sermon-matthew-1-21" className="text-[#0d6fbf] hover:underline font-medium">
                   Born Into Something Greater Than the Life You Are Currently Living
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-pain-has-an-expiration-date" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-pain-has-an-expiration-date" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Pain Has an Expiration Date
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Trapped By What Others Say You Can
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-past-mistakes-dont-determine-your-future" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-past-mistakes-dont-determine-your-future" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Past Mistakes Don
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
                   When You Feel Abandoned: Why You
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"The Cost of Sitting on the Sidelines"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 February 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You already know what you need to do. The only thing stopping you is waiting for conditions to be just right-and that wait might cost you everything."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 February 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You already know what you need to do. The only thing stopping you is waiting for conditions to be just right-and that wait might cost you everything."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"You gotta move"}</button>
-                <button type="button" data-start="240" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:00</span>{"Gratitude opens doors"}</button>
-                <button type="button" data-start="660" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">11:00</span>{"What stops you showing up"}</button>
-                <button type="button" data-start="1320" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">22:00</span>{"Your heart matters most"}</button>
-                <button type="button" data-start="1800" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">30:00</span>{"Excuses are everywhere"}</button>
-                <button type="button" data-start="2400" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">40:00</span>{"Faith needs action"}</button>
-                <button type="button" data-start="3300" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">55:00</span>{"Just show up"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"You gotta move"}</button>
+                <button type="button" data-start="240" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:00</span>{"Gratitude opens doors"}</button>
+                <button type="button" data-start="660" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">11:00</span>{"What stops you showing up"}</button>
+                <button type="button" data-start="1320" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">22:00</span>{"Your heart matters most"}</button>
+                <button type="button" data-start="1800" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">30:00</span>{"Excuses are everywhere"}</button>
+                <button type="button" data-start="2400" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">40:00</span>{"Faith needs action"}</button>
+                <button type="button" data-start="3300" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">55:00</span>{"Just show up"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,32 +163,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Winners Get Remembered and Spectators Get Forgotten"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why Winners Get Remembered and Spectators Get Forgotten"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The world celebrates winners. When someone wins an election, a championship, or builds a business empire, we talk about them for years. But here's what gets overlooked: the people who never entered the game get talked about even less. They get forgotten entirely."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The real tragedy isn't losing. Losers still have a name, a place in history, a story. The real tragedy is never showing up at all. The woman with the issue of blood had every excuse to stay home. She was broke, ritually unclean, socially rejected, and physically broken from twelve years of bleeding. But she pushed through anyway and touched Jesus's garment. Two thousand years later, we still know her name-not her given name, but her story. She's remembered because she showed up."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you sit on the sidelines criticizing others, you produce nothing. You contribute nothing. You become nothing. The moment you step into the game-even if you're afraid, even if you're broken, even if you fail-you become part of the story that matters."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Excuses That Keep You Stuck"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Excuses That Keep You Stuck"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Listen to what people say when they're about to make a change: \"I'm too dirty. I'm too sinful. I'll come to church when I get my act together.\" \"People will judge me.\" \"I don't have enough money.\" \"I'm not ready yet.\" \"I don't understand enough.\" \"I don't feel it right now.\" \"I'll do it when I have more time.\" \"I'll start my business when I have enough capital.\" \"I'll get married when my finances are perfect.\" \"I'll go back to school when conditions are right.\" \"I'll go to the gym when I have time.\""}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Every single one of these is a variation on the same lie: that perfect conditions come before action. They don't. Action comes first. The woman with the issue of blood didn't wait until she was clean. She didn't wait until she had money or social approval or perfect health. She moved. And because she moved, God moved. Isaiah 1:18 says, \"Though your sins are like scarlet, they shall be white as snow.\" Jesus didn't ask her to be perfect first. He just asked her to show up."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Thomas Edison failed 999 times before inventing the light bulb. Walt Disney got fired from a newspaper for lack of creativity. Oprah Winfrey was told she wasn't fit for television. Did they wait for perfect conditions? No. They showed up, they tried, they failed, they kept going. And they're remembered because of it."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Being Broken Is Not Disqualification"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Being Broken Is Not Disqualification"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Some of you think you're too messed up. Too much of a drinker. Too much of a failure. Too rejected by everyone around you. The demon-possessed man in Mark 5 was rejected by society. He was so broken that people chained him and threw him out. But Jesus restored him-not because the man deserved it, not because he was perfect, but because he showed up in front of Jesus."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The prodigal son was covered in pig filth. He didn't wait to shower and change clothes before going home to his father. He went as he was, dirty and broken, because staying where he was meant death. His father didn't turn him away for his condition. He ran to embrace him. When you move toward Jesus, toward change, toward obedience-even broken and afraid-God moves toward you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"1 Samuel 16:7 says God looks at your heart, not your appearance. While people are judging your clothes, your past, your failures, your smell, your accent, God sees the one who operates the heart. He's looking at whether you're willing. God is not bothered about your perfection. He's bothered about your willingness."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Delayed Obedience Is Disobedience"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Delayed Obedience Is Disobedience"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You know when someone says \"I'll give my life to Christ when I'm older\"? That's not a plan. That's a gamble with your life. Your son could die at twelve. Your friend could be in an accident tomorrow. The rich man in Luke 12 kept building bigger barns, thinking he had time. Then he died in his sleep without warning. 2 Corinthians 6:2 says, \"(For he saith, I have heard thee in a time accepted, and in the day of salvation have I succoured thee: behold, now is the accepted time; behold, now is the day of salvation.)\""}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Delayed obedience is also disobedience. You could have done it now, but you chose not to. You waited. You made excuses. Every day you delay is a day the breakthrough doesn't happen. Every month you wait to start your business is a month someone else gets ahead. Every year you put off the relationship conversation is a year wasted."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Moses wasn't perfect. Peter denied Jesus three times. Paul persecuted Christians. But when they were called, they showed up. And God used them in ways that echo through history. God doesn't call the qualified. He qualifies the called. All He needs is for you to move."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Faith Without Action Is Just Talk"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Faith Without Action Is Just Talk"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"James 2:18 cuts through all the religious noise: \"Yea, a man may say, Thou hast faith, and I have works: shew me thy faith without thy works, and I will shew thee my faith by my works.\" Faith is not a feeling. Faith is not what you say you believe. Faith is what you do when you're afraid and you do it anyway."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You can say you have faith in God, but if you don't show up to church, don't take the risk, don't step out in business, don't have the hard conversation, don't go back to school-your faith is empty words. The woman with the issue of blood didn't say, \"I believe Jesus can heal me.\" She believed it, and then she pushed through the crowd and touched His garment. That's faith. That's actionable."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Second Corinthians 5:7 says, \"We walk by faith, not by sight.\" You don't wait to see the whole staircase before you take the first step. You can't see the end of the stairs unless you start climbing. Take the step. Start the business. Make the call. Go to church. Sign up for school. Join the gym. Do the thing. Because when you move, God will move too."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Start Now, Wherever You Are"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Start Now, Wherever You Are"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You don't have to be qualified. You don't have to be ready. You don't have to feel it. You just have to start. The woman with the issue of blood didn't wait until she was healed to believe. She believed while she was still bleeding. She moved while she was still sick. And the moment she touched Him, she was made whole."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If it's a business you want to start, start now. Not when you have enough money. Start with what you have. If it's prayer you want to practice, start now. If it's a relationship you want to pursue, start now. If it's your health you want to fix, start now-take one block walk, then two blocks, then three. Success and healing don't come when conditions are perfect. They come when you step out in faith."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Philippians 4:13 says, \"I can do all things through Christ which strengtheneth me.\" You're not strong enough on your own. You're not qualified enough on your own. But through Christ, you are. Stop waiting for the feeling. Stop waiting for permission. Stop waiting for perfect. Step out in obedience, and watch what God does."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"God will show up only when you show up. If you sit and wait for Him, you're telling Him you're playing for the wrong team.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"God will show up only when you show up. If you sit and wait for Him, you're telling Him you're playing for the wrong team.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -197,7 +197,7 @@ export default function SermonPage() {
               <li><strong>{"Excuses Are the Enemy of Action"}</strong> {" "}{"\"I'm not ready.\" \"I don't have enough money.\" \"People will judge me.\" \"I'm too broken.\" \"I don't feel it.\" \"I'll do it when conditions are right.\" Every excuse is a variation on the same lie: that the world will hand you perfect timing. It won't. Perfect timing doesn't exist. The woman with the issue of blood had more reasons to stay home than reasons to push through the crowd. But she moved anyway. And that movement changed everything. Your excuse is costing you the life you could be living."}</li>
               <li><strong>{"Delayed Obedience Is Disobedience"}</strong> {" "}{"When God calls you to do something-start that business, have that conversation, join that church, go back to school, make that change-delaying is the same as refusing. You're saying, \"Not now. Maybe later. When things are better.\" But later never comes. The perfect moment never arrives. The only moment you have is now. You don't see the whole staircase, but you can see the first step. Take it. Because when you move in obedience, God moves with you."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -225,7 +225,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -243,7 +243,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -256,33 +256,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#0d6fbf] hover:underline font-medium">
                   You Got What You Prayed For But Lost It Anyway
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-to-be-perfect-before-you-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-to-be-perfect-before-you-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting to Be Perfect Before You Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life" className="text-[#0d6fbf] hover:underline font-medium">
                   The Hidden Cost of Staying Silent at Work, Home, and in Life
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Permission to Become Who You Already Are
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-love-god-but-are-you-in-the-game" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-love-god-but-are-you-in-the-game" className="text-[#0d6fbf] hover:underline font-medium">
                   You Know What You Should Be Doing - So Why Are You Still on the Sidelines?
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

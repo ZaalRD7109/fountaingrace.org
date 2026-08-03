@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You're Stuck Because You Don't Know Where You're Going"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 29 April 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're not lazy. You're directionless. Here's how to escape dead-end situations and build momentum toward something that matters."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 29 April 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You're not lazy. You're directionless. Here's how to escape dead-end situations and build momentum toward something that matters."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Finding someone who cares"}</button>
-                <button type="button" data-start="47" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:47</span>{"The feeling of being alive"}</button>
-                <button type="button" data-start="358" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:58</span>{"What winning looks like"}</button>
-                <button type="button" data-start="682" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">11:22</span>{"Being lifted up"}</button>
-                <button type="button" data-start="1034" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">17:14</span>{"How happiness moves you"}</button>
-                <button type="button" data-start="1543" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:43</span>{"Breaking free from laziness"}</button>
-                <button type="button" data-start="2024" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:44</span>{"Starting small and growing"}</button>
-                <button type="button" data-start="2744" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">45:44</span>{"Finding your accountability"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Finding someone who cares"}</button>
+                <button type="button" data-start="47" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:47</span>{"The feeling of being alive"}</button>
+                <button type="button" data-start="358" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:58</span>{"What winning looks like"}</button>
+                <button type="button" data-start="682" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">11:22</span>{"Being lifted up"}</button>
+                <button type="button" data-start="1034" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">17:14</span>{"How happiness moves you"}</button>
+                <button type="button" data-start="1543" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:43</span>{"Breaking free from laziness"}</button>
+                <button type="button" data-start="2024" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:44</span>{"Starting small and growing"}</button>
+                <button type="button" data-start="2744" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">45:44</span>{"Finding your accountability"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -164,26 +164,26 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Real Laziness Nobody Talks About"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Real Laziness Nobody Talks About"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You wake up and nothing pulls you forward. Not because you're naturally lazy, but because you have no vision for your life. Real laziness isn't about skipping dishes or sleeping in. It's sitting in a toxic relationship for ten years and doing nothing. It's staying in a job that goes nowhere while your potential dies inside. It's spiritual passivity masquerading as tiredness."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible says in Proverbs 6:6, 'Go to the ant, consider its ways and be wise.' Ants don't move randomly. They move with purpose. They know what they're building toward. That certainty drives every action. Without a clear destination, your brain has no reason to get your body moving. Obstacles feel insurmountable. Challenges feel pointless. You're not broken. You're just unmotivated because you don't know why you should move."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Your Motivation Vanishes at the First Obstacle"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why Your Motivation Vanishes at the First Obstacle"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"A person heading to Johannesburg with fifty thousand rand waiting won't be stopped by the lack of transport money today. They'll ask neighbors for ten rand. They'll find a ride. Obstacles become problems to solve, not walls to stop them. But when you have no destination? A small setback becomes permission to quit."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is what kills most people. Not actual laziness, but the absence of a vision compelling enough to push through resistance. Jesus taught this principle when he said in Matthew 6:33 to seek first the kingdom and his righteousness. A life aligned with purpose becomes unstoppable. A life drifting becomes defeated at the first inconvenience."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Start Small. Build Momentum. Celebrate."}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Start Small. Build Momentum. Celebrate."}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You don't overcome this by forcing yourself to work harder. You overcome it by starting so small that starting becomes the hardest part. Break your goal into manageable tasks. If building a business feels overwhelming, start by planning. Start by saving one hundred rand. Start by making one phone call. The movement itself is the oil that unsticks the gears."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Then celebrate. Mark that moment. The first time you saved money. The first conversation with a potential client. The first step toward leaving that toxic situation. These small wins aren't trivial. They're proof that change is possible. They're the fuel that turns one small step into momentum. Ants don't judge the size of what they carry. They carry consistently. So must you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Find Someone Who Will Tell You the Truth"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Find Someone Who Will Tell You the Truth"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You need an accountability partner. Not someone who cheers you on when you're wrong, but someone who tells you when you're walking the wrong direction. The Bible says in Proverbs 27:17, 'As iron sharpens iron, so one person sharpens another.' Plastic doesn't sharpen plastic. It only surrounds itself with more plastic that tells it whatever it wants to hear."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When someone knows you're supposed to wake at seven and calls to wake you, it's easier to move. When someone asks what you promised last week, you can't lie to yourself. This is why ants work so hard for their queen. They know the entire colony depends on their diligence. You need people who make you matter. Find them."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Speak Life to Yourself When Your Mind Whispers Lies"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Speak Life to Yourself When Your Mind Whispers Lies"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Your mind will tell you that you're not capable. That you're not smart enough. That people like you don't succeed. This is the voice of spiritual laziness trying to keep you passive. The Bible says in Proverbs 23:7, 'As a man thinks in his heart, so is he.' Not just what your brain tells you, but what you believe in your core. Your heart pumps blood to your entire body. When you feed it lies, those lies reach every cell."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Instead, speak truth. When weakness whispers, say 'I am strong.' When poverty threatens, say 'I am blessed.' When failure feels imminent, say 'His strength is perfect in my weakness.' This isn't positive thinking. It's alignment. It's matching your words and posture to what is actually true about you as someone made in God's image. Your body responds. Your confidence rises. Your laziness dissolves."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Study Jesus. Then Do What He Did, But Better."}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Study Jesus. Then Do What He Did, But Better."}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus said before his death that those who followed him would do greater things than he did. Not because they were smarter or more gifted, but because they had access to technology and platforms he never had. Three thousand people came to God in one meeting without social media. Imagine what's possible now."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is your permission to stop accepting the small life you've settled into. Stop accepting that you need the perfect job title, the right degree, the expensive clothes before you move. David defeated Goliath without the heavy armor everyone told him to wear. He broke the norm because he wasn't playing the game others expected. Your vision doesn't need the world's approval to matter. It needs your diligence and your decision to move."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"You're not lazy because you don't want to work. You're stuck because you don't know where you're going.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"You're not lazy because you don't want to work. You're stuck because you don't know where you're going.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -192,7 +192,7 @@ export default function SermonPage() {
               <li><strong>{"Momentum Comes From Small Wins, Not Big Leaps"}</strong> {" "}{"Your brain releases dopamine when you accomplish something, no matter how small. Celebrate the first hundred rand saved. Celebrate the first phone call made. Celebrate the conversation that moves you closer. These aren't trivial moments. They're proof that change works. They're the fuel that turns one small action into a pattern of diligence. Build in increments. Mark every milestone."}</li>
               <li><strong>{"Your Words Shape Your Reality"}</strong> {" "}{"When you speak negatively about yourself, your body responds with defeat. Your posture slouches. Your shoulders drop. Your energy drains. When you speak truth over yourself, your chest rises, your shoulders pull back, and your entire nervous system aligns with possibility. This is not delusion. This is alignment. Your words are the first step toward becoming who you're speaking yourself to be."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -220,7 +220,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -238,7 +238,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -251,33 +251,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave" className="text-[#0d6fbf] hover:underline font-medium">
                   Stuck in a Dead Relationship or Job? Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-are-not-lazy-you-are-a-lot-more" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-are-not-lazy-you-are-a-lot-more" className="text-[#0d6fbf] hover:underline font-medium">
                   You Are Not Lazy - You Are a Lot More
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Paycheck Disappears Every Month - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Permission to Become Who You Already Are
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-one-conversation-that-stops-relationship-arguments-before-they-start" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-one-conversation-that-stops-relationship-arguments-before-they-start" className="text-[#0d6fbf] hover:underline font-medium">
                   The One Conversation That Stops Relationship Arguments Before They Start
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

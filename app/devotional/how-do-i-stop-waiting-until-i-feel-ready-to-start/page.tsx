@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 154 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"How do I stop waiting until I feel ready to start?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 3 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 3 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"(For we walk by faith, not by sight:)"}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"(For we walk by faith, not by sight:)"}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"2 Corinthians 5:7 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You know exactly what I am talking about, don't you. The thing that is not quite perfect yet. The one that will be ready next month. Or the month after that.\n\nEight months is long enough to know the truth. It is not ready because you are protecting yourself from the moment someone says no. Almost-ready is safe. It cannot fail because it never actually tries. You stay the person with potential instead of becoming the person with a record.\n\nBut here is what I have learned. Faith is not hope that things will work out. Faith is moving while you are still afraid. \"For we walk by faith, not by sight.\" The thing does not need to be perfect. It needs to be real. And real things are always rough around the edges at first.\n\nStop waiting for ready. Ready is a lie you tell yourself so you never have to know what you are actually made of.\n\nWhat would you do this week if you knew failure was survivable?\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

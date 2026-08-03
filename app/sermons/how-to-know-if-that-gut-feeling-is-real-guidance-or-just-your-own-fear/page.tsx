@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 27 October 2024</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You get a strong feeling about a relationship, a friend, a decision. But how do you know if it's real guidance or just anxiety talking? Here's how to tell the difference and act on what matters."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 27 October 2024</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You get a strong feeling about a relationship, a friend, a decision. But how do you know if it's real guidance or just anxiety talking? Here's how to tell the difference and act on what matters."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"What we're covering today"}</button>
-                <button type="button" data-start="360" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">6:00</span>{"Why speaking up matters"}</button>
-                <button type="button" data-start="900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:00</span>{"The four main points"}</button>
-                <button type="button" data-start="1785" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">29:45</span>{"How messages come through"}</button>
-                <button type="button" data-start="2760" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">46:00</span>{"Recognizing real guidance"}</button>
-                <button type="button" data-start="4200" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:10:00</span>{"Trusting what you can't see"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"What we're covering today"}</button>
+                <button type="button" data-start="360" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">6:00</span>{"Why speaking up matters"}</button>
+                <button type="button" data-start="900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:00</span>{"The four main points"}</button>
+                <button type="button" data-start="1785" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">29:45</span>{"How messages come through"}</button>
+                <button type="button" data-start="2760" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">46:00</span>{"Recognizing real guidance"}</button>
+                <button type="button" data-start="4200" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:10:00</span>{"Trusting what you can't see"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,28 +162,28 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Problem: You're Getting Signals But Can't Trust Them"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Problem: You're Getting Signals But Can't Trust Them"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Most people are drowning in noise. Your own thoughts, your fears, other people's opinions, social media, your past regrets - they all scream at once. When something important is happening - a bad relationship, a shaky friendship, a big decision - you might feel a strong pull or impression. But you freeze. Is that real? Is it just me being anxious? Is someone else in my head?"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The truth is, everyone has the capacity to sense real guidance about their own life. But almost nobody knows how to recognize it or tell it apart from background static. That gap is where people get stuck - and where bad decisions happen."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How Real Guidance Actually Comes Through"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How Real Guidance Actually Comes Through"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Guidance doesn't arrive in only one form. It shows up as a thought that won't leave you alone. A sentence from something you read that suddenly hits different. A repeated word or theme from people who don't know each other. A dream you can't shake. An impression in your chest - calm, not panicked. Even a conversation with someone who has no idea they're answering your unspoken question."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The ancient text called the Bible makes this clear: real guidance can come through Scripture that suddenly stands out, through your own thoughts and feelings, through visions or dreams, through other people, through circumstances. The key is that real guidance usually arrives in multiple channels at once, not just one source screaming at you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Three Ways to Test If It's Real"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Three Ways to Test If It's Real"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"First: Does it align with what you already know is right? Real guidance never tells you to do something destructive, dishonest, or cruel. It might challenge you or ask you to do something hard - like leaving a bad relationship or having a difficult conversation - but the core of it always lines up with what wisdom and integrity look like. If something tells you to manipulate someone, lie, or hurt yourself or others, stop. That's not guidance."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Second: Does it bring you peace or anxiety? False signals create a churning in your stomach, racing thoughts, fear that won't settle. Real guidance, even when it's asking you to do something difficult, brings a quiet certainty underneath. You might feel challenged, but you also feel steady. An old text says this peace guards your mind and heart like a fence - it protects you from confusion and panic."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Third: Does it encourage and strengthen you, or does it tear you down? Real guidance builds you up. It shows you something true about yourself or your situation that helps you move forward. If it's making you feel shame, unworthiness, or like you're worthless, that's a lie dressed up as guidance. Real direction always has kindness underneath it, even when it's calling you to change."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Practice: Start Small and Watch What Happens"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Practice: Start Small and Watch What Happens"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You don't learn to recognize guidance by thinking about it. You learn by doing it. Start this week with something small. Notice when you feel a pull to encourage someone, warn a friend, or speak up about something you sense is wrong. Before you act, pray about it - just ask yourself whether it feels right, whether you have peace about it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Then tell the person one simple thing. Not a whole speech. Not a prediction. Just one word or one sentence: 'I felt like I should tell you that you are loved.' Or: 'Something tells me you should be careful about this.' Or: 'I think you're stronger than you know you are.' Watch what happens. Most of the time, the person will tell you that you nailed something true for them - something they needed to hear exactly then."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The more you practice, the more you'll trust your own sensing. You'll start to recognize the difference between real guidance and noise. You'll know when to act and when to wait. You'll build actual confidence that you can hear what matters."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why This Matters for Your Actual Life"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why This Matters for Your Actual Life"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"This isn't about becoming a prophet or joining a church. This is about your ability to make better decisions when your life depends on it. When you're stuck in a relationship that's hurting you, can you hear the signal to leave? When a friend is pulling you down, can you recognize it and act? When you're facing a major choice and you're terrified, can you sense what's actually true versus what your fear is telling you?"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Learning to recognize real guidance is a survival skill. It protects you from the people and choices that drain you. It helps you move toward what's actually good for you. And it gives you a way to help others see what they're missing about themselves - which turns out to be one of the most powerful things you can do for someone else."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The One Thing That Changes Everything"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The One Thing That Changes Everything"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Before you tell someone something, before you act on what you're sensing, before you make the big decision - stop and get quiet for a moment. Ask yourself: Is this kind? Is this honest? Do I have peace about this? Will this build this person up or tear them down? Am I doing this to help or to control?"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"That pause changes everything. It's the difference between blurting out something that hurts and delivering something that heals. It's the difference between acting out of fear and acting out of clarity. That pause is where wisdom lives."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"You don't learn to recognize real guidance by thinking about it - you learn by doing it, starting small, and watching what actually happens.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"You don't learn to recognize real guidance by thinking about it - you learn by doing it, starting small, and watching what actually happens.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -192,7 +192,7 @@ export default function SermonPage() {
               <li><strong>{"Guidance Brings Peace, Not Panic"}</strong> {" "}{"False signals create anxiety, confusion, and that sick feeling in your gut that won't go away. Real guidance brings an underlying calm, even when it's challenging you to do something hard. You might feel nervous about acting on it, but underneath that nervousness is a quiet certainty that this is right. That peace is the marker - it's how you know you're on solid ground."}</li>
               <li><strong>{"You Learn by Doing, Not Thinking"}</strong> {" "}{"Understanding guidance in theory doesn't help you. You build real confidence by practicing - starting with one small word or encouragement to someone, then watching to see if it lands true. Each time you do this, you strengthen your ability to recognize the real thing. The more you act on what you're sensing, the clearer the signal becomes."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -220,7 +220,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -238,7 +238,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -251,33 +251,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/how-to-know-what-to-do-when-everything-feels-confusing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-what-to-do-when-everything-feels-confusing" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know What to Do When Everything Feels Confusing
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Someone Else to Tell You What
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-to-be-perfect-before-you-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-to-be-perfect-before-you-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting to Be Perfect Before You Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#0d6fbf] hover:underline font-medium">
                   Helping Someone Actually Keeps Them Stuck
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Success Depends on What You Do Before It Arrives
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

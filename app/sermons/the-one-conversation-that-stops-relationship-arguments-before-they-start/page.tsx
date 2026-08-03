@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"The One Conversation That Stops Relationship Arguments Before They Start"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 13 October 2024</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're probably fighting about things neither of you actually said. The real problem is unstated expectations and unclear communication. One honest conversation changes everything."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 13 October 2024</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You're probably fighting about things neither of you actually said. The real problem is unstated expectations and unclear communication. One honest conversation changes everything."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Why your presence matters"}</button>
-                <button type="button" data-start="210" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:30</span>{"Sundays set your week"}</button>
-                <button type="button" data-start="610" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">10:10</span>{"Spotting what holds you back"}</button>
-                <button type="button" data-start="1265" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">21:05</span>{"The small foxes problem"}</button>
-                <button type="button" data-start="1860" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">31:00</span>{"Communication breaks everything"}</button>
-                <button type="button" data-start="2700" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">45:00</span>{"Assumptions ruin relationships"}</button>
-                <button type="button" data-start="3510" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">58:30</span>{"Serving what they love"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Why your presence matters"}</button>
+                <button type="button" data-start="210" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:30</span>{"Sundays set your week"}</button>
+                <button type="button" data-start="610" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">10:10</span>{"Spotting what holds you back"}</button>
+                <button type="button" data-start="1265" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">21:05</span>{"The small foxes problem"}</button>
+                <button type="button" data-start="1860" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">31:00</span>{"Communication breaks everything"}</button>
+                <button type="button" data-start="2700" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">45:00</span>{"Assumptions ruin relationships"}</button>
+                <button type="button" data-start="3510" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">58:30</span>{"Serving what they love"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,31 +163,31 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Small Habits Kill Big Dreams"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Small Habits Kill Big Dreams"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You work hard for something. You're about to get the reward. Then small habits sneak in and steal it all. The Bible calls these small foxes. They look harmless but they destroy your vineyard right before harvest."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This happens in every area of life-careers, health, finances, and especially relationships. Most people don't realize their small compromises are the actual problem. They blame the other person or bad luck. But the real saboteur is what they've let slide."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Relationship Fights Are About What You Never Said"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Relationship Fights Are About What You Never Said"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Here's what actually kills relationships: one person assumes the other person knows what they want. The other person has no idea they're supposed to know. Both people get angry at each other for not reading minds."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You say 'I want to go out.' You're thinking casual mall trip in shorts. Your partner thinks formal dinner and dressing up. Neither of you said it. You both expected the other to understand. Then you get angry."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The argument isn't about going out. It's about unstated expectations. Assumption is the mother of all relationship failures. Clear communication stops this before it starts."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Clear Communication Actually Means"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Clear Communication Actually Means"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Clear communication is not just talking. It's saying exactly what you expect from the other person. Specific. Not vague."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Don't say 'I want you to dress nicely.' Say 'I want you to wear your black dress with red stripes and your formal shoes.' Don't say 'Let's go out.' Say 'Next Sunday we're going to a formal dinner at 7 PM. Please wear something dressy.'"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible says in Ephesians 4:29: 'Do not let any unwholesome talk come out of your mouth, but only what is helpful for building others up according to their needs, that it may benefit those who listen.' Real communication builds the other person up. It removes confusion. It prevents the fight before it happens."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Forgiveness Stops You From Destroying Yourself"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Forgiveness Stops You From Destroying Yourself"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Holding unforgiveness is like holding a rope tied around someone's neck. If you don't forgive, you keep pulling. They pull back because they don't want to die. Both of you suffer. The harder you pull, the more it hurts you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Unforgiveness hurts you far more than it hurts them. It's like drinking poison to kill someone else. You die instead. Past mistakes and closed doors matter here. If a previous relationship never ended properly, those unresolved fights come into your new relationship."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Colossians 3:13 says: 'Bear with each other and forgive one another if any of you has a grievance against someone. Forgive as the Lord forgave you.' Let the past stay in the past. Close the door. See people for who they are becoming, not what they did."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Real Relationships Run on Service, Not Taking"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Real Relationships Run on Service, Not Taking"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"A relationship dies when one person only asks 'What's in it for me?' A one-sided relationship will not survive. It will collapse under its own selfishness."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Service means you want to do things. You're not forced. You cook because you want to. You help because you care, not because you're keeping score. It's not transactional. It's not 'I gave you money so you owe me.'"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Ephesians 5:21 says: 'Submit to one another out of reverence for Christ.' Both people serve. Both people give. Both people put the other person's needs on the list. When both partners do this, the relationship thrives. When only one serves, it breaks."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Know The Person You're With"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Know The Person You're With"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Many people stay in relationships but never actually know the other person. You know their name and their job. You don't know what they love, what breaks them, how they're woven together as a human being."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Pursue wisdom about who they are. Ask questions. Listen when they answer. Find out what matters to them. This takes time. It takes intentionality. Lazy people don't do this. Lazy people sit next to each other but never actually connect."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Proverbs 4:7 says: 'The beginning of wisdom is this: get wisdom though it costs all you have. Get understanding.' Invest time in knowing your partner. Play together. Have real conversations. Not about the kids or the bills. About each other. This is what makes relationships last."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Don't think they know what you want. Ask. Don't assume. Communicate exactly what you expect, then act on it.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Don't think they know what you want. Ask. Don't assume. Communicate exactly what you expect, then act on it.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -196,7 +196,7 @@ export default function SermonPage() {
               <li><strong>{"Forgiveness Frees You, Not Them"}</strong> {" "}{"When you hold unforgiveness, you're the one suffering. You're the one carrying the rope. You're the one poisoning yourself. Forgiveness isn't about saying what they did was okay. It's about refusing to let their past actions destroy your present and future. Let it go. Close the door on what happened. See them as they are now, not as they were then. This is how relationships heal and move forward."}</li>
               <li><strong>{"Relationships Survive When Both People Serve"}</strong> {" "}{"A relationship that only takes from one side will collapse. Service means both people willingly give. Both people make time. Both people seek to know the other person better. Both people work through challenges instead of running. When service is mutual, the relationship becomes strong enough to weather anything. When service is one-sided, resentment grows and the relationship dies."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -224,7 +224,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -242,7 +242,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -255,33 +255,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The Person Nobody Checks On: How You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-small-habits-that-quietly-destroy-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   The Small Habits That Quietly Destroy Your Life
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-person-who-notices-when-you-disappear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-person-who-notices-when-you-disappear" className="text-[#0d6fbf] hover:underline font-medium">
                   The Person Who Notices When You Disappear
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#0d6fbf] hover:underline font-medium">
                   Six Invisible Gaps That Wreck Your Life (And How to Close Them)
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

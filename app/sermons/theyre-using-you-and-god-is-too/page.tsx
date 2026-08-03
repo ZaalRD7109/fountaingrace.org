@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"They're Using You-And God Is Too"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 7 August 2022</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Your pain at work, in relationships, or at church might feel pointless. But what if the very people hurting you are unknowingly part of God's plan to position you for breakthrough?"}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 7 August 2022</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"Your pain at work, in relationships, or at church might feel pointless. But what if the very people hurting you are unknowingly part of God's plan to position you for breakthrough?"}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Rejected and loved"}</button>
-                <button type="button" data-start="345" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:45</span>{"There's a time for everything"}</button>
-                <button type="button" data-start="915" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:15</span>{"You're treated differently"}</button>
-                <button type="button" data-start="1505" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:05</span>{"Don't judge by appearance"}</button>
-                <button type="button" data-start="2408" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">40:08</span>{"The degree doesn't define you"}</button>
-                <button type="button" data-start="3420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">57:00</span>{"Love yourself first"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Rejected and loved"}</button>
+                <button type="button" data-start="345" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:45</span>{"There's a time for everything"}</button>
+                <button type="button" data-start="915" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:15</span>{"You're treated differently"}</button>
+                <button type="button" data-start="1505" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:05</span>{"Don't judge by appearance"}</button>
+                <button type="button" data-start="2408" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">40:08</span>{"The degree doesn't define you"}</button>
+                <button type="button" data-start="3420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">57:00</span>{"Love yourself first"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -161,32 +161,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"When Use Becomes Training"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"When Use Becomes Training"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Joseph's brothers threw him in a pit because they were jealous. They thought they were destroying him. David's own family sent him out to tend sheep alone all day-overlooked, undervalued, invisible. Neither of them knew what God knew: their betrayal was the first step toward their greatest purpose."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When someone uses you-whether it's your boss asking you to stay late without recognition, a partner promising a future that never comes, or a church leader stretching you thin with no reward-you're being trained. God doesn't waste pain. He converts it into skill, character, and readiness for what comes next."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The person exploiting you thinks they're gaining something. God thinks differently. He sees the strengthening happening inside you. Every time you're stretched beyond what feels fair, you're learning capacity you'll need later."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Pattern in Scripture"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Pattern in Scripture"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Samuel the prophet was sent to anoint a king, but God didn't tell him which son. When he arrived at Jesse's house, he looked at the eldest son-the obvious choice, the tall one, the one who looked like a leader. God said no. Samuel went through seven sons, all rejected. The youngest was still out with the sheep, doing the job no one else wanted."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When David finally came-sunburned, alone all day, overlooked by his own family-God said, 'This is the one.' David had been trained in obscurity. While his brothers saw him as disposable, God saw him as a shepherd preparing to lead a nation. The same skills-protecting, providing, staying faithful when no one is watching-would become his greatest strength as king."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Genesis 50:20 captures this truth: 'You meant evil against me, but God meant it for good.' Joseph told his brothers this years later, after he'd been sold into slavery, imprisoned falsely, and finally elevated to save Egypt. The very betrayal that looked like the end was the beginning."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What God Is Actually Doing While They Use You"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What God Is Actually Doing While They Use You"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"At work, your boss uses your talent but won't promote you. You stay late, solve problems, make them look good. But God is building your reputation silently. One person-like Lana in Pastor Ricardo's story-will notice your character, your reliability, your willingness to help. When a real opportunity opens, your faithfulness becomes your reference. The abuse was training you not to demand credit, to lead quietly, to solve problems without needing recognition."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"In a manipulative relationship, he makes promises to keep you close. 'I'll leave my wife. I'll change. I'll buy you a house if you just stay a little longer.' You're being used. But God is training you to recognize what you will never accept from a spouse. The pain teaches you boundaries. The false promises train you to demand integrity. You're learning what love actually looks like by experiencing what it doesn't."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When church leaders stretch you with promises of leadership that never materialize, God is testing your motive. Are you serving to be seen, or to serve? Are you faithful in small things, or only when there's a reward? The confusion and disappointment strip away the wrong reasons and leave only what's real-and that's what God can actually use."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Jesus Went Through the Same Pattern"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Jesus Went Through the Same Pattern"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"They arrested Jesus, beat him, mocked him, lifted him on a cross to die. It looked like total defeat. They thought they were destroying him. But God meant it for redemption. The very cross that was meant to be his end became the door through which all of us walk free. Jesus didn't stay dead. He rose, and in rising, he made a way for everyone who's been used, abused, and left for dead to rise too."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When Jesus rose, he didn't rise as a victim. He rose as a king. He told his followers, 'All authority in heaven and on earth is given to me.' That's what happens when God has a plan. The people who meant it for evil end up serving God's purpose of good. And everyone who comes after Jesus-everyone who trusts him-gets lifted with him."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You are not separate from this pattern. If you've been used, abused, or forgotten, Jesus knows exactly what that feels like. And he knows exactly how God turns it into purpose. Isaiah 49:15-16 says God has engraved your name on the palm of his hand. Every time he lifts his hand in blessing, your name is visible. You are not forgotten. You are not useless. You are being prepared."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Changes When You Understand This"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Changes When You Understand This"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You stop asking 'Why is this happening to me?' and start asking 'What is God doing in me?' The pain doesn't disappear, but it stops being pointless. Every time you're tempted to quit, to give up, to believe you're worthless-remember Joseph in the pit, David with the sheep, Jesus on the cross. None of them stayed there. All of them were being positioned."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your obedience becomes power. When you choose to keep showing up, keep being honest, keep serving even when you're not getting credit, you're not being naive-you're being trained for authority. God doesn't trust people with power who need to be seen. He trusts people with power who've learned to serve without applause."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"And you stop waiting for the people who hurt you to fix it. You stop needing them to apologize or admit they were wrong. You look at what God did with their use of you, and you move forward into what he's building. That's freedom. That's how you stop being trapped by the people who tried to trap you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Promise Over Your Life"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Promise Over Your Life"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jeremiah 29:11 isn't just comfort-it's a declaration: 'I know the plans I have for you, plans to prosper you and not to harm you, plans to give you hope and a future.' Not plans to punish you for being naive. Not plans to waste what happened to you. Plans to prosper you. The very thing meant to destroy you becomes the thing that strengthens you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If you're tired right now, if you feel used up and forgotten, God hears that. He's not deaf to your frustration. He's not blind to the promises people made and broke. And he's not done with you. What looks like the end is the pit. What looks like the end is the shepherding years no one respects. What looks like the end is the cross. It's never the end. It's always the setup."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your name is engraved on God's hand. When people mean it for evil, God means it for good. And when your time comes-when the doors open that only God can open-you'll be ready because you've been trained by fire. You won't need anyone's permission or applause. You'll have authority because you've learned faithfulness."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"When they use you, they're actually training you-and while they think they're abusing you, God is making you unbreakable.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"When they use you, they're actually training you-and while they think they're abusing you, God is making you unbreakable.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -195,7 +195,7 @@ export default function SermonPage() {
               <li><strong>{"Training Happens in Obscurity, Before Elevation"}</strong> {" "}{"David spent years alone with sheep, overlooked by his own family, no one watching, no applause. That's where he learned to fight lions and bears, to stand firm when threatened, to protect what was entrusted to him. God didn't put him in the spotlight first. God trained him first, hidden and unglamorous. When your breakthrough comes, you'll be ready not because you were famous, but because you were faithful when it didn't matter. The loneliness, the overlooking, the hard work no one sees-that's not wasted time. That's your training ground."}</li>
               <li><strong>{"God's Plan for Good Overrides Everyone Else's Plan for Harm"}</strong> {" "}{"Genesis 50:20 is the hinge of hope: 'You meant evil against me, but God meant it for good.' Your boss meant to use you for free labor. Your partner meant to manipulate you. Your church leader meant to exploit your loyalty. But 'God meant it for good.' This doesn't erase the wrongness of what they did-it means God is better at turning ashes into purpose than anyone is at creating ashes. When you trust that God meant good, you stop needing the people who hurt you to acknowledge it or fix it. You move. You build. You rise."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -222,7 +222,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -238,7 +238,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -251,33 +251,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Boss Will Never Promote You Like This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Struggles Aren
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Dreams Feel Dead, But Delays Aren
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Deliberately Gets Worse Before It Works Out
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

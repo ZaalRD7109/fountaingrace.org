@@ -34,7 +34,7 @@ export default function Header() {
           <nav className="hidden lg:flex items-center gap-3" aria-label="Main navigation">
             <Link prefetch={false}
               href="/sermons"
-              className="inline-block border-2 border-[#008080] text-[#008080] font-bold px-5 py-2.5 rounded-[30px] text-sm hover:bg-[#008080] hover:text-white transition-all duration-300 tracking-wide"
+              className="inline-block border-2 border-[#008080] text-[#006b6b] font-bold px-5 py-2.5 rounded-[30px] text-sm hover:bg-[#008080] hover:text-white transition-all duration-300 tracking-wide"
             >
               Sermons
             </Link>
@@ -87,7 +87,7 @@ export default function Header() {
 
             {/* Visit section */}
             <div className="border-t border-gray-100 mt-2 pt-3">
-              <p className="text-xs font-semibold text-[#999] uppercase tracking-wider px-2 mb-1">Your Visit</p>
+              <p className="text-xs font-semibold text-[#595959] uppercase tracking-wider px-2 mb-1">Your Visit</p>
               <Link prefetch={false} href="/what-to-expect" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">What to Expect</Link>
               <Link prefetch={false} href="/faq" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">FAQ</Link>
               <Link prefetch={false} href="/about" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">About Us</Link>
@@ -96,14 +96,14 @@ export default function Header() {
 
             {/* Resources section */}
             <div className="border-t border-gray-100 mt-2 pt-3">
-              <p className="text-xs font-semibold text-[#999] uppercase tracking-wider px-2 mb-1">Resources</p>
+              <p className="text-xs font-semibold text-[#595959] uppercase tracking-wider px-2 mb-1">Resources</p>
               <Link prefetch={false} href="/resources" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Articles</Link>
               <Link prefetch={false} href="/devotional" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Devotionals</Link>
             </div>
 
             {/* Community section */}
             <div className="border-t border-gray-100 mt-2 pt-3">
-              <p className="text-xs font-semibold text-[#999] uppercase tracking-wider px-2 mb-1">Community</p>
+              <p className="text-xs font-semibold text-[#595959] uppercase tracking-wider px-2 mb-1">Community</p>
               <Link prefetch={false} href="/community-impact" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Community Impact</Link>
               <Link prefetch={false} href="/volunteer" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Volunteer</Link>
               <Link prefetch={false} href="/stories" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Stories</Link>
@@ -112,7 +112,7 @@ export default function Header() {
 
             {/* Connect section */}
             <div className="border-t border-gray-100 mt-2 pt-3">
-              <p className="text-xs font-semibold text-[#999] uppercase tracking-wider px-2 mb-1">Connect</p>
+              <p className="text-xs font-semibold text-[#595959] uppercase tracking-wider px-2 mb-1">Connect</p>
               <Link prefetch={false} href="/prayer" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Prayer Request</Link>
               <Link prefetch={false} href="/donate" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Donate</Link>
               <Link prefetch={false} href="/contact" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Contact</Link>

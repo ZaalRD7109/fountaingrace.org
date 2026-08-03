@@ -196,7 +196,7 @@ export default function WhyDoesMyLifeFeelEmptyPage() {
             <Link href="/plan-your-visit" className="btn-primary text-sm">
               Plan Your Visit
             </Link>
-            <Link href="/prayer" className="inline-block border-2 border-[#008080] text-[#008080] font-semibold px-6 py-3 rounded-lg hover:bg-[#008080] hover:text-white transition-colors text-sm">
+            <Link href="/prayer" className="inline-block border-2 border-[#008080] text-[#006b6b] font-semibold px-6 py-3 rounded-lg hover:bg-[#008080] hover:text-white transition-colors text-sm">
               Submit a Prayer Request
             </Link>
           </div>

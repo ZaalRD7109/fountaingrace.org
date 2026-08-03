@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 179 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Is it weak to ask for help when you are struggling?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 28 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 28 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Come unto me, all ye that labour and are heavy laden, and I will give you rest."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Come unto me, all ye that labour and are heavy laden, and I will give you rest."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Matthew 11:28 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You have built something strong in your silence. You have handled what comes, managed what breaks, kept standing when others might have crumbled. That takes real strength. I see that in you.\n\nBut strength that never bends becomes brittle. And the admission you are protecting yourself from is simply this: you cannot do this alone, and you were never meant to. Asking for help is not weakness showing through. It is wisdom recognizing a truth that has always been true. You are human. You need. That is not failure. That is honest.\n\nListen to what God says to you: \"Come unto me, all ye that labour and are heavy laden, and I will give you rest.\" Not judgment. Not disappointment. Rest. He is not waiting for you to have it all sorted before you come. He is waiting for you to come as you are, tired and needing, and He will carry what you cannot.\n\nToday, tell one person one true thing about what you are carrying. Let yourself be known. Let yourself be helped. That is not collapse. That is the beginning of real strength, the kind that lasts because it is not yours alone to bear.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

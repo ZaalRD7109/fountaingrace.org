@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Everyone's Rejected You. Here's What That Really Means About Your Worth"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 31 July 2022</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You've been thrown away, rejected, called a failure. But what others believe about you and what's actually true about you are two completely different things."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 31 July 2022</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You've been thrown away, rejected, called a failure. But what others believe about you and what's actually true about you are two completely different things."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Opening music"}</button>
-                <button type="button" data-start="305" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:05</span>{"What you reject matters"}</button>
-                <button type="button" data-start="2140" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">35:40</span>{"The broken toe story"}</button>
-                <button type="button" data-start="2694" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">44:54</span>{"You are the head"}</button>
-                <button type="button" data-start="3360" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">56:00</span>{"Money and restoration"}</button>
-                <button type="button" data-start="3538" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">58:58</span>{"Blessings coming your way"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Opening music"}</button>
+                <button type="button" data-start="305" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:05</span>{"What you reject matters"}</button>
+                <button type="button" data-start="2140" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">35:40</span>{"The broken toe story"}</button>
+                <button type="button" data-start="2694" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">44:54</span>{"You are the head"}</button>
+                <button type="button" data-start="3360" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">56:00</span>{"Money and restoration"}</button>
+                <button type="button" data-start="3538" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">58:58</span>{"Blessings coming your way"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -161,28 +161,28 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Two Kinds of Rejection"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Two Kinds of Rejection"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"There are two people in this story. One person throws stones at others, writing them off as useless, drunk, worthless, or irredeemable. The other person has been written off and is starting to believe it about themselves. Both need to hear the same truth: rejection by humans is not final, and it is not a true measure of your value."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The person throwing stones often does it from a glass house. You criticize someone for their worst moment while ignoring your own private struggles. You reject someone from your family or your church, not realizing what that rejection actually does to them. That person goes home and drinks not because they are a drunkard, but because the place they thought might accept them just threw them away."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus modeled this in John 8 when the religious crowd wanted to stone a woman caught in adultery. He didn't defend her behavior. He asked who among them had no sin. And as he asked, he probably wrote their names in the sand. The point was not that no one had sinned. The point was that throwing stones while living in a glass house is not justice-it is hypocrisy."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Lie You Accepted About Yourself"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Lie You Accepted About Yourself"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When someone calls you useless, you may have accepted that word as truth. But people only see a closeup view of you. Imagine a camera zooming in on someone's face. The closer it gets, the less you can see of the whole picture. From one foot away, all you see is their face. You cannot see what is behind them, what strengths they have in other areas, what contributions they make where you are not looking."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"God sees what pastors call a bird's eye view. From that vantage point, He sees all areas of your life. He knows you are useful somewhere, even if the people who rejected you never looked long enough to find out where. You may show love differently than others. You may have gifts that operate in places those critics never visit. That does not make you useless. It makes you real."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Scripture is clear in 1 Corinthians 12: 'If the foot should say, Because I'm not the hand, I do not belong to the body, would it therefore not be a part of the body?' You were not designed to be a hand. You may be a foot, an ear, an eye. The body of Christ needs all of them. Reject the word that does not align with who you actually are. Say out loud: I am not useless. I am useful in the kingdom of God."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Toe That Should Have Healed"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Toe That Should Have Healed"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"A man broke his big toe playing sports. It swelled, turned blue, caused him pain. Instead of waiting for antibiotics and anti-inflammatories to work, he demanded the doctor cut it off. He wanted to play his game in three months, and the temporary pain felt unbearable. The doctor warned him, but the man insisted. So the doctor cut it off."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But something went wrong during the healing. An infection spread from where the toe was removed. It infected his leg. Now the doctor asked him, 'Should I cut off your leg too?' The man finally understood: his rush to remove the pain had created a much worse problem. When you reject someone because of a temporary struggle, you may be removing someone the body needs. You may be causing damage far worse than the original wound."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is what happens in families and churches. Someone is struggling with addiction, divorce, failure, or shame. Instead of bringing them medicine-grace, time, community, healing-you amputate them. You write them off. You tell them they do not belong. And then you wonder why they spiral deeper. The body of Christ is one organism. What you remove in rejection, you rob from yourself."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Name Is Written on God's Hand"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Name Is Written on God's Hand"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"In Psalm 8, the writer asks: 'Who is man that you have thought about him?' This is the moment of awe. God, who is infinite and high and lifted up, has actually thought about you. Not just thought about you in passing. God wrote your name. Not just wrote it like you write something you might erase. God tattooed your name on the palm of His hand. Isaiah 49:16 says exactly this: 'I have engraved you on the palms of my hands.'"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This means your rejection by humans does not erase your identity with God. When God lifts His hands, your name is there. Permanent. Indelible. Known. You are the apple of His eye. You are a peculiar people, set apart by Him, not cast aside. The real question is not whether others see your worth. The question is whether you will accept God's verdict about you or cling to the rejection of people who only saw a closeup view and called it the whole truth."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Everything Pastor Ricardo prophesied in that service points to this single reality: wherever you have been rejected, God will reverse it. Not because you earned it through behavior change alone, though that matters. But because God does not write anyone off. He does not amputate His children because of their struggles. He brings healing. He brings restoration. He brings people back into the palace after they have been thrown into the pit."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What You Do Now Matters"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What You Do Now Matters"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"If you have been rejecting others, stop. Do not throw stones from a glass house. Do not write off the corner stone that might be the very thing holding up the whole structure. The drunk person who walks into church might be the one whose testimony saves someone from suicide. The divorced person might be the one who counsels someone through their marriage crisis. The failures are often the ones who can help others stand."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If you have internalized rejection, refuse it. Do not accept the label. Do not live as though other people's closeup view is God's complete perspective. You are more than your worst moment. You are more than your current situation. You are more than their judgment. The infection of shame is killing you because you keep listening to voices that are not God. 1 Corinthians 12:4-6 reminds us: there are different gifts, different services, different workings-but the same God works in all. Your gift may not look like theirs. That does not make it inferior. It makes it essential."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This week, make one decision. Decide whose voice you will believe about who you are. Will it be the voice of the critic, the rejector, the person who saw only your flaws? Or will it be the voice of Jesus, who sees everything and still calls you by name, still writes your name on His hand, still refuses to throw you away? That decision will change everything."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Don't accept what people are telling you about who you are, knowing that you are better than what they are calling you.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Don't accept what people are telling you about who you are, knowing that you are better than what they are calling you.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -191,7 +191,7 @@ export default function SermonPage() {
               <li><strong>{"The Body Cannot Function With Amputations"}</strong> {" "}{"In 1 Corinthians 12, Paul explains that the body of Christ needs all its parts-not just the impressive ones, but the ones that seem weak or less honorable. When you reject someone from your family, your church, or your community because of their struggle, you do not just hurt them. You weaken the whole body. The person you write off may have exactly what someone else needs. Healing comes through restoration and community, not rejection and isolation. Before you cut someone off, ask yourself what you might be removing that the whole system depends on."}</li>
               <li><strong>{"God's Verdict Overrides Human Judgment"}</strong> {" "}{"Your name is written on the palm of God's hand-tattooed, permanent, unforgettable. This is not opinion. This is not subject to change based on whether people like you, accept you, or think you are useful. The moment you were created, God decided your worth. It is not earned. It is not lost when you fail. Jesus died on the cross and rose again to prove that failure, shame, rejection, and death do not have the final word. God does. Start believing Him about who you are instead of believing the people who only saw a snapshot and called it your whole story."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -218,7 +218,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -234,7 +234,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -247,33 +247,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Trapped By What Others Say You Can
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Stuck and Invisible - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
                   When You Feel Abandoned: Why You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#0d6fbf] hover:underline font-medium">
                   You Got What You Prayed For But Lost It Anyway
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

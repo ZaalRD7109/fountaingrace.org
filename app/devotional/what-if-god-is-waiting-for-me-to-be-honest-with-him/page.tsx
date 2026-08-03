@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 187 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"What if God is waiting for me to be honest with Him?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 6 July 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 6 July 2026</p>
           </div>
         </header>
 
@@ -57,7 +57,7 @@ export default function DevotionalPage() {
             <p className="text-[#555] leading-relaxed text-lg">{"Sometimes prayer dries up not because God has gone quiet, but because we have started performing instead of talking. We say the right words, in the right order, but something underneath stays locked. It is easier to repeat a familiar prayer than to say the thing we are actually feeling. Maybe the drought is not in God at all. Maybe it is in the gap between what we are saying and what we really mean. David knew the difference, and God told him to close it:"}</p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Trust in him at all times; ye people, pour out your heart before him: God is a refuge for us. Selah."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Trust in him at all times; ye people, pour out your heart before him: God is a refuge for us. Selah."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 62:8 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before tonight ends, find two minutes alone and say one true thing to God that you have been smoothing over. Not polished, not loud, just honest. One real sentence is worth more than ten minutes of careful words."}</p>
@@ -84,13 +84,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

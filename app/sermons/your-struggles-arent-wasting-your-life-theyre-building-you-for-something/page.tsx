@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Struggles Aren't Wasting Your Life-They're Building You for Something"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 18 September 2022</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You've endured things that make no sense right now. But what if every painful season-the early parenthood, failed relationships, job rejections, financial crises-was actually divine preparation for the specific purpose you're meant to fulfill?"}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 18 September 2022</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You've endured things that make no sense right now. But what if every painful season-the early parenthood, failed relationships, job rejections, financial crises-was actually divine preparation for the specific purpose you're meant to fulfill?"}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Grateful for faithfulness"}</button>
-                <button type="button" data-start="360" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">6:00</span>{"Hidden for protection"}</button>
-                <button type="button" data-start="747" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">12:27</span>{"Elevation is coming"}</button>
-                <button type="button" data-start="1439" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">23:59</span>{"Right time for you"}</button>
-                <button type="button" data-start="1950" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">32:30</span>{"Someone is watching"}</button>
-                <button type="button" data-start="2640" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">44:00</span>{"Already orchestrated for you"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Grateful for faithfulness"}</button>
+                <button type="button" data-start="360" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">6:00</span>{"Hidden for protection"}</button>
+                <button type="button" data-start="747" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">12:27</span>{"Elevation is coming"}</button>
+                <button type="button" data-start="1439" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">23:59</span>{"Right time for you"}</button>
+                <button type="button" data-start="1950" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">32:30</span>{"Someone is watching"}</button>
+                <button type="button" data-start="2640" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">44:00</span>{"Already orchestrated for you"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -161,31 +161,31 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Hidden Season Nobody Warns You About"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Hidden Season Nobody Warns You About"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You've been told your life should follow a straight line. Early parenthood, job loss, relationship failure, financial crisis-none of these fit the plan you had. So you buried the shame. You hid. And now you feel disposable, like you're 'made in China'-cheap, defective, built to break."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But the Bible tells a different story about a man named Moses. His mother hid him in a basket on the river to save his life from a king's death order. That baby didn't know his hiding was actually preparation. He couldn't see that the very water meant to destroy him was teaching him how to move through crises with faith. Every hard thing was a lesson he would need later."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Your Hidden Season Is Actually Building"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Your Hidden Season Is Actually Building"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When you had a child too young, God wasn't punishing you. You were learning what it means to provide for someone when you have nothing. You were developing compassion, sacrifice, and problem-solving under pressure. Those aren't wasted years-they're your classroom."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When relationships fell apart, God wasn't abandoning you. He was protecting you from the wrong person and teaching you what real partnership looks like so you could recognize it when it comes. When your business partner dropped you, when the interview didn't land, when the money ran out-each time, God was hiding you from a path that would have broken you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pain you feel right now is not meaningless. It's the exact training ground for the solution you're meant to become. Moses learned the river so he could part the Red Sea. You learned your struggle so you could help others walk through theirs."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You Are Not Made in China-You Are Fearfully and Wonderfully Made"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You Are Not Made in China-You Are Fearfully and Wonderfully Made"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The moment the daughter of Pharaoh saw that baby crying in the basket, something shifted. She had compassion. She recognized something precious, not disposable. And that recognition became the open door to Moses's calling."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Right now, somebody is watching you. Not judging. Watching. They're seeing how you work, how you handle pressure, how you show up even when nobody gives you credit. They're seeing someone who has endured things that would break most people. They're seeing someone strong enough to be trusted with real responsibility."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"God placed you in hiding not to destroy you but to develop you. In Exodus 2:3, the Bible says when his mother 'could hide him no longer,' she made a plan. There is an appointed time coming when you cannot stay hidden any longer. That time is not random. It's the exact moment you're meant to step into your calling."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Appointment Time You Can't See Yet"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Appointment Time You Can't See Yet"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You're looking at your situation thinking, 'God, why me? Why is it this hard?' The answer isn't 'because you deserve it.' It's 'because I'm making you ready.' Moses didn't understand the river until he faced the Red Sea. You won't understand your struggle until you're standing in the place where it becomes your greatest strength."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If you've struggled with finances, God is preparing you to be the person who lifts others out of poverty. If you've survived betrayal in relationships, God is making you the one who can guide someone else into genuine connection. If you've felt invisible at work, God is positioning you as the solution person everybody remembers when the real crisis hits."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The hardest thing about this truth is that you have to live it before you see it. You can't skip the hiding season and jump to the promotion. But this week, this month, this year-your appointed time is coming. Not because of your effort or talent, but because God has been orchestrating it all along."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What You Do When Your Moment Arrives"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What You Do When Your Moment Arrives"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When God opens the door, you won't walk through it the way someone who had an easy path would. You'll step through it with the weight of understanding. You'll protect what you've been given because you know what it's like not to have it. You'll help others because you've been helped through impossible things. That gratitude and wisdom can't be faked-it has to be earned."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus taught that when you feed the hungry, clothe the naked, visit the prisoner, you're actually serving Him (Matthew 25:35-40). Your hardship is the qualification for that service. Every time you help someone else walk through the valley you've walked, you're acknowledging that your pain meant something. You're making it count."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The people around you need what you've learned. They need your story. They need to hear from someone who actually survived it that there's a way through. That's your calling. That's why you were hidden. That's why God is preparing you now."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Taking Back Your Worth This Week"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Taking Back Your Worth This Week"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Stop agreeing with the lie that your struggle was a waste. Stop accepting the words people spoke over you-'you can't,' 'you're useless,' 'you'll never amount to anything.' Those were lies told by people who couldn't see what God sees. Psalm 139:14 says you are 'fearfully and wonderfully made.' Not 'will be someday.' You are. Right now. In this season of hiding, you are already precious."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This week, look for one sign that someone is watching you. Maybe it's a manager noticing your work ethic. Maybe it's a friend seeing how you handled a crisis. Maybe it's a child seeing that you didn't give up. That watching is the beginning of your appointment time. That's the door opening."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"And when it does, remember: you are not made in China. You are made in God's image. You are the head, not the tail. You are equipped. You are enough. Your past is not your punishment-it's your platform."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Your hardship is not random punishment-it's divine preparation for the exact moment you're meant to step into your calling.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Your hardship is not random punishment-it's divine preparation for the exact moment you're meant to step into your calling.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -194,7 +194,7 @@ export default function SermonPage() {
               <li><strong>{"Your Struggle Becomes Your Solution"}</strong> {" "}{"Every hardship you survive teaches you something someone else will desperately need. If you've lived through financial crisis, you'll help others navigate money. If you've survived relational betrayal, you'll recognize and protect real love. If you've felt rejected at work, you'll be the leader who sees and values overlooked people. God wastes nothing. He converts your pain into your assignment. Your worst season is the credential for your greatest impact."}</li>
               <li><strong>{"Appointed Time Requires Surrender Now"}</strong> {" "}{"You can't force your moment to come. You can only prepare for it by surrendering control and trusting that God is orchestrating what you can't see. When you stop trying to prove yourself and start acknowledging that your strength comes only from God, that's when the power of God steps in. Less of you, more of Him. That surrender is not weakness-it's the exact posture that positions you for the breakthrough."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -221,7 +221,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -237,7 +237,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -250,33 +250,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#0d6fbf] hover:underline font-medium">
                   They
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Success Depends on What You Do Before It Arrives
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Dreams Feel Dead, But Delays Aren
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Someone Else to Tell You What
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

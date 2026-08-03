@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"When Life Knocks You Down, Does Integrity Actually Matter"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 8 March 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You've been lied to, knocked down, or betrayed. Now you're wondering if playing by the rules even works. A forgotten story shows you it does-but not how you think."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 8 March 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You've been lied to, knocked down, or betrayed. Now you're wondering if playing by the rules even works. A forgotten story shows you it does-but not how you think."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,11 +140,11 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Not taking life seriously"}</button>
-                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:45</span>{"One man's complicated story"}</button>
-                <button type="button" data-start="312" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:12</span>{"When forgiveness feels impossible"}</button>
-                <button type="button" data-start="1504" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:04</span>{"Working like nobody's watching"}</button>
-                <button type="button" data-start="3345" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">55:45</span>{"Getting wisdom for your dreams"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Not taking life seriously"}</button>
+                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:45</span>{"One man's complicated story"}</button>
+                <button type="button" data-start="312" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:12</span>{"When forgiveness feels impossible"}</button>
+                <button type="button" data-start="1504" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:04</span>{"Working like nobody's watching"}</button>
+                <button type="button" data-start="3345" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">55:45</span>{"Getting wisdom for your dreams"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -161,26 +161,26 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Detour That Feels Like the End"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Detour That Feels Like the End"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Life doesn't just dent your plans. It demolishes them. You lose the job you thought was secure. Someone you trusted stabs you in the back. Injustice wins while you play fair. The natural response is anger, bitterness, or taking shortcuts to get even. But what if the detour isn't the end of your story-it's the beginning of your real one?"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Joseph's life reads like a country song gone wrong: family betrayal, slavery, false accusation, prison. By all logic he should have become bitter, cynical, or broken. Instead, each setback positioned him for something he couldn't have engineered himself. The principles he lived by-integrity, servant-heartedness, forgiveness, diligent work, and seeking God's guidance-didn't make his life easier. They made it possible."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Integrity When Nobody's Watching"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Integrity When Nobody's Watching"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Integrity sounds like a luxury. When you're broke, falsely accused, or watching liars prosper, honesty feels naive. But the principle is simple: if you're honest, you don't have to remember the lie. More than that, honesty builds trust that money can't buy."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The scripture says: 'The integrity of the upright shall guide them, but the perverseness of the transgressor shall destroy them.' When you're tempted to take a shortcut-stealing to become rich, lying to save face, manipulating to get ahead-you're not just breaking rules. You're poisoning the foundation you're building on. Easy money doesn't stay. It evaporates. But a reputation for being trustworthy opens doors no scheme ever will. Joseph worked with integrity in slavery, in false imprisonment, in forgotten circumstances. That integrity eventually put him before kings."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Serving When You're Getting Nothing Back"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Serving When You're Getting Nothing Back"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Serving sounds good in theory. In practice, it's brutal when you're not paid, promoted, or even thanked. But serving isn't about what you receive. It's about what it does to you. When you give with open hands, you're positioned to receive. When your hands are closed-gripping what you have, refusing to help without guarantee-you're blocked."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Joseph served Potiphar, served in prison, served the inmates by interpreting their dreams with no payment. Each act of service positioned him closer to power. He didn't serve to be seen. He served as if serving God, because he was. The scripture says Jesus himself 'did not come to be served but to serve, and to give his life as a ransom for many.' Work diligently even when the paycheck is late or the boss isn't watching. Excellence in small things positions you for larger ones. Skilled, faithful workers 'stand before kings, not before officials of low rank.'"}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Forgiveness: Drinking Poison Yourself"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Forgiveness: Drinking Poison Yourself"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Unforgiveness feels like power. You're holding a grudge, and the person who wronged you deserves it. Except you're the one dying from it. Unforgiveness is like poisoning yourself and expecting the other person to suffer. You replay the betrayal. You fantasize about revenge. You tell the story to anyone who'll listen. Meanwhile, they're living their life."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Joseph's brothers sold him into slavery out of jealousy. His master's wife falsely accused him of rape. By every measure, he had the right to hate them, to let bitterness consume him. But he chose differently. He said: 'You intended to harm me, but God intended it for good.' That doesn't mean what they did was okay. It means Joseph refused to let their evil define his future. Forgiveness freed him-not them. The scripture says: 'Forgive one another as the Lord forgave you.' Forgiveness doesn't excuse what happened. It stops the poison from killing you. Let go of what others did so you can walk into what God has for you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Work as if You Work for God"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Work as if You Work for God"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Most people work for a paycheck or a promotion. They coast when the boss isn't looking, cut corners, phone it in. But there's a principle: whatever you do, do it with all your heart, as if working for God. Not half-hearted. Not strategically lazy. All your heart."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This changes everything. You fix a car-you're not just fixing metal, you're fixing someone's ability to earn a living, to get to their family, to make their life work. You teach a class-you're not just transferring information, you're shaping how someone sees themselves. You do your job well-not for your boss's approval, but because excellence is built into who you are. Joseph interpreted dreams in prison with the same devotion he'd have shown in a palace, because his work wasn't about the setting. It was about his character. The scripture says: 'Colossians 3:23 - Whatever you do, work at it with all your heart, as working for the Lord, not for human masters, since you know that you will receive an inheritance from the Lord as a reward. It is the Lord Christ you are serving.' Excellence opens doors. Sloppiness closes them."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Seek God's Wisdom, Not Your Own"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Seek God's Wisdom, Not Your Own"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Your gut feels right. Your plan sounds smart. Your shortcut seems faster. But your wisdom is limited to what you can see. God's wisdom sees the whole board. When Joseph was asked to interpret Pharaoh's dreams, he didn't lean on his own skill. He said: 'God will give Pharaoh the answer.' He credited wisdom to God, not himself. That humility connected him to power beyond himself."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Before you make big decisions-about money, relationships, your career, who to trust-ask God for wisdom. The scripture says if you lack wisdom, ask God and He gives generously. But most of us spend months wrestling with decisions that God's already answered. We're looking for the answer in one place while He's placed it in another. We want the big house, but God offers you the small one that grows. We demand respect, but God offers you service that leads to it. Seek wisdom first. Listen for the answer. Then act. Joseph didn't scheme his way to power. He listened, worked, forgave, and let God position him. That's the principle that still works."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Unforgiveness is like poisoning yourself and expecting the other person to suffer.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Unforgiveness is like poisoning yourself and expecting the other person to suffer.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -189,7 +189,7 @@ export default function SermonPage() {
               <li><strong>{"Service Without Scorekeeping"}</strong> {" "}{"When you serve with open hands and no expectation of immediate return, you position yourself to receive. Excellence in small, unseen tasks-whether at work, at home, or in circumstances you didn't choose-develops character and attracts opportunity. The principle isn't that service guarantees rewards. It's that service opens you to God's direction and positions you where only He can take you further."}</li>
               <li><strong>{"Forgiveness as Freedom"}</strong> {" "}{"Holding onto bitterness doesn't punish the person who wronged you; it imprisons you. Forgiveness isn't excusing what happened or pretending it didn't hurt. It's releasing the poison you've been drinking yourself so you can move forward. When you forgive, you're not saying 'what you did was okay.' You're saying 'what you did won't define my future.'"}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -217,7 +217,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -235,7 +235,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -248,33 +248,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Deliberately Gets Worse Before It Works Out
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Dreams Feel Dead, But Delays Aren
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Big Break Is Coming, But You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Boss Will Never Promote You Like This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#0d6fbf] hover:underline font-medium">
                   When Your Success Makes People Jealous: Here
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

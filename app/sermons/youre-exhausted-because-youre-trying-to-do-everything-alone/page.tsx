@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You're Exhausted Because You're Trying to Do Everything Alone"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 24 July 2022</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You keep pushing harder but falling further behind. There's a reason you can't seem to do it all on your own-and a way out."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 24 July 2022</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You keep pushing harder but falling further behind. There's a reason you can't seem to do it all on your own-and a way out."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"There's the way"}</button>
-                <button type="button" data-start="43" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:43</span>{"Stop doing everything alone"}</button>
-                <button type="button" data-start="590" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">9:50</span>{"When pressure derails your plans"}</button>
-                <button type="button" data-start="1311" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">21:51</span>{"You're tired because you need help"}</button>
-                <button type="button" data-start="1980" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:00</span>{"Rest is part of winning"}</button>
-                <button type="button" data-start="2706" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">45:06</span>{"Make a real plan first"}</button>
-                <button type="button" data-start="3234" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">53:54</span>{"The fight isn't yours to carry"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"There's the way"}</button>
+                <button type="button" data-start="43" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:43</span>{"Stop doing everything alone"}</button>
+                <button type="button" data-start="590" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">9:50</span>{"When pressure derails your plans"}</button>
+                <button type="button" data-start="1311" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">21:51</span>{"You're tired because you need help"}</button>
+                <button type="button" data-start="1980" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:00</span>{"Rest is part of winning"}</button>
+                <button type="button" data-start="2706" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">45:06</span>{"Make a real plan first"}</button>
+                <button type="button" data-start="3234" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">53:54</span>{"The fight isn't yours to carry"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,30 +162,30 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You're Tired Because You're Doing It Alone"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You're Tired Because You're Doing It Alone"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Picture this: you're the manager, the salesperson, the administrator, the cleaner, and the customer service person all at once. A customer walks in needing help. The phone rings. Someone else walks in. You're running between them all, and nothing gets the focus it needs. That's not just a hard day. That's a setup for burnout."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The real reason you're exhausted is not because you're weak or lazy. It's because you're trying to do everything yourself. You have two hands, two ears, one mouth, and two feet. That's it. You can only handle two things at a time with real focus. The moment you add a third, something breaks. God never designed you to carry everything alone. He designed you to rely on Him first, then ask for help from others."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jeremiah 31:25 says it straight: \"For I have satiated the weary soul, and I have replenished every sorrowful soul.\" God sees your exhaustion. He's not ignoring it. But you have to stop carrying what you were never meant to carry by yourself."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Real Problem: You're Trying to Do Big Things Too Fast"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Real Problem: You're Trying to Do Big Things Too Fast"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You wake up with a plan: open the windows, use the bathroom, start work, finish the project. But then life interrupts. You need the bathroom first. A crisis hits. An urgent call comes in. By the time you address that, your plan is gone. You feel like you failed before you even started."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Here's what happens: you think something big should happen fast. It shouldn't. Something big doesn't come quick. It comes through small steps done consistently. You can't drive from Pretoria to Johannesburg by suddenly appearing there. You have to follow the road step by step."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you don't have a plan for yourself, life's difficulties create a plan for you instead. You end up reacting to crises instead of moving toward what matters. That's why you're tired. You're not making progress on what you actually want. You're just putting out fires all day long."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Three Steps to Stop Drowning"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Three Steps to Stop Drowning"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"First, start with God. Don't be timid about it. Tell Him the truth: \"Lord, I'm tired. I've been struggling for years. I can't take this alone anymore. I need Your help.\" Speak to God with passion. Let Him know you're at the end of yourself. The Bible says in Philippians 4:13 that you can do all things through Christ who strengthens you. But you have to actually ask Him. Stop trying to impress God with how strong you are. Be honest about how weak you feel."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Second, break big things into small steps. Don't try to finish the whole project today. Take step one, then step two, then step three. Each step matters. Each step counts as progress. This is how you actually move forward without burning yourself out. Elijah got so tired he wanted to die (1 Kings 19). But God didn't scold him. God fed him, let him rest, and then gave him a plan. That's the rhythm God wants for you: work, rest, receive help, move forward."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Third, ask someone to help you. This is not weakness. This is wisdom. In Exodus 17, Moses grew tired holding up his hands during battle. Aaron and Hur came and lifted his hands up with him. As long as they held his hands up, the people won. When they let go, they started losing. Moses needed help. And so do you. God will send destiny helpers, people who are supposed to help you reach where you need to go. Ask for them. Receive them."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Rest Is Not a Luxury, It's a Requirement"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Rest Is Not a Luxury, It's a Requirement"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"People think rest is something you earn after you finish everything. It's not. Rest is what allows you to finish anything. God rested on the seventh day (Genesis 2:3). Not because He was tired, but because rest is holy. It resets your mind. It gives you perspective."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Some of the most productive people take a full break every six months or every year. They close their business. They stop answering calls. They actually rest. And when they come back, they're more focused, more clear, and more effective than before. Their brain switched off for a bit. They gained new understanding. You cannot run on empty."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If your knee is injured, the more you walk, the worse it gets. You have to stop and let it heal. The same is true for you. If you're exhausted, stop. Sit down. Listen to yourself. Ask: where is the pain I've been ignoring? Matthew 11:28 says it: \"Come unto me, all you that labor and are heavy laden, and I will give you rest. Take my yoke upon you and learn of me, for I am meek and lowly in heart, and ye shall find rest unto your soul. For my yoke is easy and my burden is light.\" Jesus isn't offering rest as a reward for finishing. He's offering it as a necessity for living."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You Are Not Old, You Are Not Too Weak"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You Are Not Old, You Are Not Too Weak"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You might think, \"I'm getting older. Of course I'm tired.\" But youth doesn't fix exhaustion either. Young people get tired too. The issue is not your age. Isaiah 40:29-31 says: \"But they that wait upon the Lord shall renew their strength. They shall mount up with wings as eagles. They shall run and not grow weary. They shall walk and not grow faint.\" The key word is wait. Wait on the Lord. Let Him renew you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Before Solomon was even born, he was called a man of rest (1 Chronicles 22:9). His name meant peace. He hadn't done anything yet, but God called him to rest because of his lineage, because of who his father was. If you have accepted Jesus as your Savior, you are in the lineage of Solomon. You are called to rest too. Not because you've earned it, but because of who your Father is."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Tired Is a Signal, Not a Sentence"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Tired Is a Signal, Not a Sentence"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When you're exhausted, that's not failure. That's a signal. Your body and soul are telling you something is wrong with how you're living. Listen to that signal. Take inventory. What have you promised yourself you'd do that you haven't? What's fallen apart? Where does it hurt?"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Then make the three decisions: rely on God, make a real plan with small steps, and ask for help. These three things together will change everything. You won't suddenly have unlimited energy. But you'll have clarity. You'll move forward instead of spinning in place. You'll feel the weight actually get lighter because you're not carrying it alone anymore."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"You can only do everything through Christ who strengthens you. If you're not relying on Him, you'll always be tired.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"You can only do everything through Christ who strengthens you. If you're not relying on Him, you'll always be tired.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -194,7 +194,7 @@ export default function SermonPage() {
               <li><strong>{"Big Things Happen Through Small, Consistent Steps"}</strong> {" "}{"You don't get from Pretoria to Johannesburg by wishing you were there. You take the first step, then the next, then the next. When you try to do everything at once, you do nothing well. When you take one step at a time, you actually move forward. This is how you keep from burning out. This is how you keep promises to yourself. This is how dreams actually become real."}</li>
               <li><strong>{"Help Is Not a Failure, It's a Strategy"}</strong> {" "}{"Asking for help is not giving up. It's how God designed the world to work. Moses couldn't win the battle alone, even though he was the leader. He needed Aaron and Hur. You need people too. The question is not whether you can do it alone. You can't. The question is whether you'll be humble enough to ask. That humility is actually the strongest thing about you."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -221,7 +221,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -237,7 +237,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -250,33 +250,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#0d6fbf] hover:underline font-medium">
                   The Real Reason You Feel Like You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Struggles Aren
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-mind-wont-stop-working-even-after-8-hours-of-sleep" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-mind-wont-stop-working-even-after-8-hours-of-sleep" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Mind Won
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/feeling-empty-and-exhausted-how-to-find-strength-when-you-have-nothing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/feeling-empty-and-exhausted-how-to-find-strength-when-you-have-nothing" className="text-[#0d6fbf] hover:underline font-medium">
                   Feeling Empty and Exhausted? How to Find Strength When You Have Nothing Left
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

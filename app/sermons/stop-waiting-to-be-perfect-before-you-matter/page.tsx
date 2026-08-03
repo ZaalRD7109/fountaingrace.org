@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Stop Waiting to Be Perfect Before You Matter"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 3 March 2024</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Most people underestimate what they can do and overestimate what they need before they start. This changes that."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 3 March 2024</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"Most people underestimate what they can do and overestimate what they need before they start. This changes that."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Are you like your mother or father"}</button>
-                <button type="button" data-start="53" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:53</span>{"We're all made in the same image"}</button>
-                <button type="button" data-start="140" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:20</span>{"Today's big idea revealed"}</button>
-                <button type="button" data-start="320" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:20</span>{"It's about knowing who you are"}</button>
-                <button type="button" data-start="545" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">9:05</span>{"Don't hold back your gifts"}</button>
-                <button type="button" data-start="945" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:45</span>{"Being yourself is your superpower"}</button>
-                <button type="button" data-start="1408" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">23:28</span>{"Work with what you have now"}</button>
-                <button type="button" data-start="2014" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:34</span>{"Stop letting fear run your life"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Are you like your mother or father"}</button>
+                <button type="button" data-start="53" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:53</span>{"We're all made in the same image"}</button>
+                <button type="button" data-start="140" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">2:20</span>{"Today's big idea revealed"}</button>
+                <button type="button" data-start="320" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:20</span>{"It's about knowing who you are"}</button>
+                <button type="button" data-start="545" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">9:05</span>{"Don't hold back your gifts"}</button>
+                <button type="button" data-start="945" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:45</span>{"Being yourself is your superpower"}</button>
+                <button type="button" data-start="1408" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">23:28</span>{"Work with what you have now"}</button>
+                <button type="button" data-start="2014" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:34</span>{"Stop letting fear run your life"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,26 +163,26 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Real Problem: You Know Your Weaknesses Better Than Your Strengths"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Real Problem: You Know Your Weaknesses Better Than Your Strengths"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Most of us are experts at listing what we can't do. You stutter, so you don't speak up. You're not as skilled as others, so you sit on the sidelines. You don't have a platform, so you think your voice doesn't matter. Meanwhile, the people around you are silently suffering because you're withholding the exact gift they need."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"A man once told Pastor Ricardo he felt useless. His wife didn't respect him. His kids didn't listen. He was convinced he had nothing to offer. But when asked how long his wife had stuck by him, he said 14 years. His kids had never left. When the pastor asked what that meant, the man suddenly realized: his family stayed because he gave them something valuable. He just couldn't see it because he was too focused on what he lacked."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Being Yourself Is Not Selfish, It's How God Reaches Others"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Being Yourself Is Not Selfish, It's How God Reaches Others"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus said in John 14:12 that those who believe in him will do greater works than he did. Not because they are more talented. Not because they waited until they were perfect. But because Christ is in them, and that power is greater than any weakness holding them back."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You don't have to be the best speaker to amplify Christ. You don't have to be the most skilled person in the room. You amplify him by being yourself in your unique position, with your unique gifts, right now. A woman who hated public speaking was the only one in her group who could speak the local language at a meeting with elderly residents. Her fear almost kept her silent. But in that moment, she was exactly who those people needed. Christ was amplified through her willingness to show up, stutter or not."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You Are Not Meant to Do It Alone"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You Are Not Meant to Do It Alone"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible gives the example of Moses and Aaron. Moses had the message but couldn't speak. Aaron could speak but didn't have the message. Neither one could do it alone, but together they amplified what God was doing. Knowing your weakness is not a reason to hide, it is permission to ask for help."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo gave a message to someone who had gotten married the day before, but he didn't have the person's phone number. So he called someone who knew him. That message was amplified through collaboration. You don't need to be perfect at everything. You need to know what you are strong at, know what you are weak at, and build with others."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Fear Is Not About What's Happening Now"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Fear Is Not About What's Happening Now"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Fear always looks backward or forward, never at the present moment. When you see a snake, you're not afraid of the snake in front of you, you're afraid of what it might do. When you won't speak up, you're not reacting to what is happening right now, you're reacting to a past failure or a future judgment that hasn't arrived yet."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is the chains that hold you. You're trading the present moment, where you have power, for a future that doesn't exist yet. Jesus said greater is he that is in you than he that is in the world. The strength inside you right now is greater than any fear of what might happen. Stop bringing the past into the present. Act now, in this moment, with what you have."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Start Small, Take One Step, and Let Your Goal Come to You"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Start Small, Take One Step, and Let Your Goal Come to You"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You don't become a millionaire by thinking about being a millionaire. You become one by making a hundred, then doubling it. Then doubling that. Then doubling that. Each small action brings your goal closer to you. Sitting and planning gets you nowhere. Taking one step gets you somewhere."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When Pastor Ricardo began his journey as a speaker, he was terrified. He couldn't even stand on stage without sweating through his clothes. But he took one small step. Then another. Today he stands and speaks with confidence because he moved, not because he waited until he felt ready. You will never feel ready. The readiness comes after you start."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Let Your Unique Strengths Serve Others, Not Just Yourself"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Let Your Unique Strengths Serve Others, Not Just Yourself"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"There is a difference between ambition and selfish ambition. Ambition that serves others, builds others, loves others, that ambition will take you somewhere. But ambition that is all about you will leave you empty. Jesus lived a life of love, service, and humility. He didn't do things to prove himself. He did them to serve."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo spent years carrying heavy speakers into a church hall before services, preparing everything alone, in the early morning hours. He wasn't doing it for the people who came and left. He was doing it for God. He prayed as he worked: God, lift me up like I lift this speaker. Put me down among people of influence. He turned his service into an offering. That is how you amplify Christ, not by forcing attention on yourself but by showing love and service to others."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Your weaknesses are not reasons to wait, they are invitations to ask for help and let Christ's strength show up in your life.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Your weaknesses are not reasons to wait, they are invitations to ask for help and let Christ's strength show up in your life.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -191,7 +191,7 @@ export default function SermonPage() {
               <li><strong>{"Take Action Before You Feel Ready"}</strong> {" "}{"Every excuse comes down to one thing: you have not taken action. Not yet. Not today. You are waiting for money, time, permission, confidence, skill. But action creates confidence, not the other way around. Take one step. Then another. The moment you move toward your goal, your goal moves toward you. You will never feel ready. The feeling of readiness comes after you have already begun. So begin now, with what you have, where you are."}</li>
               <li><strong>{"Serve Others, Not Your Own Reputation"}</strong> {" "}{"When you do things to build yourself up, you build a fragile tower. When you do things to serve others and serve God, you build something that lasts. Let your actions and reactions show love, humility, and service. Reflect the character of Christ. This is not weakness, it is the strongest thing you can do. Because when you are serving others, you are not thinking about whether you are good enough. You are thinking about whether they are helped. And in that shift, you become who you were always meant to be."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -218,7 +218,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -234,7 +234,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -247,33 +247,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Permission to Become Who You Already Are
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Success Depends on What You Do Before It Arrives
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#0d6fbf] hover:underline font-medium">
                   The Cost of Sitting on the Sidelines
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Someone Else to Tell You What
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

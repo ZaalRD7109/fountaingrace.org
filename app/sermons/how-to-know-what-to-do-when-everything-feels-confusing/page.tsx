@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"How to Know What to Do When Everything Feels Confusing"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 3 November 2024</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You already have access to wisdom beyond your own panicked thoughts. Here's how to hear it and use it to guide your decisions when life gets messy."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 3 November 2024</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You already have access to wisdom beyond your own panicked thoughts. Here's how to hear it and use it to guide your decisions when life gets messy."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Listen to what matters"}</button>
-                <button type="button" data-start="67" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:07</span>{"Why speaking to you matters"}</button>
-                <button type="button" data-start="262" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:22</span>{"Stop being anxious about things"}</button>
-                <button type="button" data-start="884" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">14:44</span>{"Finding your secret place"}</button>
-                <button type="button" data-start="1505" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:05</span>{"Why listening actually matters"}</button>
-                <button type="button" data-start="2106" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">35:06</span>{"Recognizing the voice patterns"}</button>
-                <button type="button" data-start="2755" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">45:55</span>{"Music sends you messages"}</button>
-                <button type="button" data-start="3381" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">56:21</span>{"Dreams and visions guide you"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Listen to what matters"}</button>
+                <button type="button" data-start="67" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:07</span>{"Why speaking to you matters"}</button>
+                <button type="button" data-start="262" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:22</span>{"Stop being anxious about things"}</button>
+                <button type="button" data-start="884" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">14:44</span>{"Finding your secret place"}</button>
+                <button type="button" data-start="1505" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:05</span>{"Why listening actually matters"}</button>
+                <button type="button" data-start="2106" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">35:06</span>{"Recognizing the voice patterns"}</button>
+                <button type="button" data-start="2755" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">45:55</span>{"Music sends you messages"}</button>
+                <button type="button" data-start="3381" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">56:21</span>{"Dreams and visions guide you"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -164,32 +164,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Circumstances Are Too Loud to Hear Anything Else"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Circumstances Are Too Loud to Hear Anything Else"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When you are drowning in financial stress, relationship chaos, or health fears, those sounds become deafening. Your circumstances scream so loud that any quiet signal gets buried. A still small voice cannot compete with a crisis."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is not weakness. This is how human attention works. The problem is that the guidance you actually need lives in the quiet spaces, not in the panic. The Bible says to cast all your cares on God because He actually cares for you in detail. But first you have to create space to hear Him."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The issue is not that guidance is unavailable. The issue is that you have never learned to tune your attention away from the noise and toward the signal. Most people spend their entire lives talking to God, asking, begging, demanding answers. Almost none of them stop to listen."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Learning to Recognize Guidance When It Comes"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Learning to Recognize Guidance When It Comes"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Real guidance does not arrive as a thunderbolt or a voice from the sky. It shows up as a thought that won't leave you alone. A feeling of unease about a situation. A scripture that suddenly makes sense of your confusion. A dream that stays with you. A sense of peace about a decision even when the facts don't add up yet."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible calls this prophetic sensitivity. It is not mystical. It is simply learning to notice what God is already trying to tell you through His word, through your intuition, through the wisdom of people you trust, and through the stillness inside you when everything else goes quiet."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This kind of guidance shows up especially when you stop fighting reality and start paying attention. When you go to a quiet place alone. When you read scripture not to prove a point but to hear what God actually wants you to know. When you listen to music that settles your nervous system instead of ramping it up."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Secret Place: Where Clarity Actually Happens"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Secret Place: Where Clarity Actually Happens"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You need a place where only you and God exist. Not a place where you sit with God while your mind scrolls through problems. A place where you are actually present and actually listening. This could be a room in your house, a park bench, your car before you start the day, or even five minutes in the shower before the world wakes up."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"In that place, something shifts. Your body calms down. Your thoughts slow down. And in that slowness, patterns emerge. You start to see the real problem instead of just the symptom. You remember what matters. You remember who you actually are beneath the stress."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is not religious ritual. This is practical neurology. Your brain cannot receive subtle signals while it is in survival mode. The secret place is simply where you tell your nervous system it is safe enough to stop screaming."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Specific Tools That Make Guidance Clearer"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Specific Tools That Make Guidance Clearer"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"First, use scripture as a mirror for your situation. When you face a real decision, go back to God's word and ask what He says about this kind of thing. Do not twist scripture to justify what you already want. Instead, let scripture challenge what you think you want. A verse that stands out to you, that makes you uncomfortable or strangely peaceful, is often a signal."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Second, pay attention to symbols and patterns. If you keep seeing or hearing the same word, image, or message from different sources, that repetition is a sign. God often emphasizes things by repeating them. Write these patterns down. Keep a record. Over time they will form a map."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Third, notice where you feel deep peace. Not excitement or relief, but genuine peace. When you sense peace about a decision, even if it is scary, that peace is often the presence of God's confirmation. When you sense unease or dread, even if the option looks good on paper, something is wrong. Learn to trust that feeling."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Happens When You Actually Start Listening"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Happens When You Actually Start Listening"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"As you practice this, you begin to think differently. You start to see other people's situations with more compassion and clarity. You understand what someone really needs instead of just giving surface advice. You recognize what is actually causing someone's pain instead of treating the symptom."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is what becoming like Jesus looks like in real life. He could tell a woman He had just met the entire truth about her life because He listened to God about her. He could feed five thousand people with one small lunch because He trusted God's guidance instead of His own panic about scarcity."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You do not have to be a pastor or a priest for this to matter. You do not have to be officially prophetic. You just need to learn to hear and then have the courage to say what you hear with love. Your friend in crisis needs this. Your struggling family member needs this. Your workplace needs people who can see clearly and speak truthfully."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Start Where You Are: Three Practical Next Steps"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Start Where You Are: Three Practical Next Steps"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"One: Find your secret place this week and spend fifteen minutes there with no phone, no distractions. Bring a real problem you are facing. Read one scripture about it. Then sit in silence and write down whatever comes to mind. Do not judge it. Just write."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Two: Keep a journal of moments when you felt peace about a decision or when a warning feeling turned out to be right. Start building evidence that you can actually hear guidance. Your own life story will become your teacher."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Three: When you sense God telling you something through scripture, a dream, a thought, or a feeling, say it out loud. Tell someone. Practice speaking what you are hearing. Start small, stay humble, and notice what happens. The more you speak what you sense, the clearer your signal becomes."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"God is not the problem. Your circumstances are so loud that you cannot hear Him speaking. Create quiet space and your confusion starts to clear.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"God is not the problem. Your circumstances are so loud that you cannot hear Him speaking. Create quiet space and your confusion starts to clear.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -198,7 +198,7 @@ export default function SermonPage() {
               <li><strong>{"Your Circumstances Are Not the Final Word"}</strong> {" "}{"Your bank account says one thing. Your relationship looks one way. Your health report reads like defeat. But God sees what you cannot see yet. He knows the end of your story. The guidance that matters most often contradicts what your circumstances are telling you right now. When someone in financial panic can prophesy abundance to another person, they are choosing to believe God's word over what they see. When someone in pain can offer genuine hope to others, they are listening to something deeper than their circumstances. This is the freedom that comes from learning to hear God beyond what feels true right now."}</li>
               <li><strong>{"Becoming Clear Also Changes How You Show Up for Others"}</strong> {" "}{"As you learn to hear guidance for yourself, you naturally become someone who can see and speak truth into other people's lives. You stop offering surface solutions because you learned to listen for the real problem. You stop reacting from fear because you learned to check for peace first. You become more like someone who actually helps instead of just offering advice. This is not a special gift given to a few. It is a skill that develops the same way any skill does: through practice, humility, and willingness to try and fail and try again."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -226,7 +226,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -244,7 +244,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -257,33 +257,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Someone Else to Tell You What
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#0d6fbf] hover:underline font-medium">
                   You Work Hard But Nothing Changes - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#0d6fbf] hover:underline font-medium">
                   Six Invisible Gaps That Wreck Your Life (And How to Close Them)
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-language-of-the-spirit-interpreting-what-you-hear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-language-of-the-spirit-interpreting-what-you-hear" className="text-[#0d6fbf] hover:underline font-medium">
                   Hearing the Right Things and Still Getting Them Wrong - Here Is Why
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

@@ -149,17 +149,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               The Principle That Activates Everything: Right Action
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 March 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 March 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               You have prayed. You have believed. You have attended every service. But something is still not activating. The missing piece is almost always the same: the right action, taken at the right time, in the right direction. This is the principle that turns faith into results.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 15 March 2026
             </p>
           </div>
@@ -199,8 +199,8 @@ export default function SermonPage() {
                     {p.n}
                   </div>
                   <div>
-                    <h2 className="text-lg font-bold text-[#2a9df4] mb-1">{p.title}</h2>
-                    <p className="text-xs text-[#008080] font-semibold mb-3">{p.scripture}</p>
+                    <h2 className="text-lg font-bold text-[#0d6fbf] mb-1">{p.title}</h2>
+                    <p className="text-xs text-[#006b6b] font-semibold mb-3">{p.scripture}</p>
                     <p className="text-[#555] leading-relaxed">{p.body}</p>
                   </div>
                 </div>
@@ -208,7 +208,7 @@ export default function SermonPage() {
             </div>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;God told you to do certain things. He has spoken to you. Why have you not done it? That answer - when you find it honestly - is where your breakthrough is waiting.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -234,7 +234,7 @@ export default function SermonPage() {
 
         <section className="bg-[#f0fafa] py-14 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#2a9df4] mb-8">Questions this message answers</h2>
+            <h2 className="text-2xl font-bold text-[#0d6fbf] mb-8">Questions this message answers</h2>
             <dl className="space-y-0">
               {[
                 {
@@ -255,7 +255,7 @@ export default function SermonPage() {
                 },
               ].map((item) => (
                 <div key={item.q} className="faq-block">
-                  <dt className="font-semibold text-[#2a9df4] mb-2">{item.q}</dt>
+                  <dt className="font-semibold text-[#0d6fbf] mb-2">{item.q}</dt>
                   <dd className="text-[#555] leading-relaxed">{item.a}</dd>
                 </div>
               ))}
@@ -278,7 +278,7 @@ export default function SermonPage() {
               </Link>
               <Link
                 href="/prayer"
-                className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
+                className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
               >
                 Send a Prayer Request
               </Link>
@@ -301,33 +301,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#0d6fbf] hover:underline font-medium">
                   The Principles That Move People Forward Faster
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave" className="text-[#0d6fbf] hover:underline font-medium">
                   Stuck in a Dead Relationship or Job? Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-the-easy-road-always-leads-to-the-wrong-place" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-the-easy-road-always-leads-to-the-wrong-place" className="text-[#0d6fbf] hover:underline font-medium">
                   Why the Easy Road Always Leads to the Wrong Place
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-already-know-what-to-do-so-why-arent-you-doing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-already-know-what-to-do-so-why-arent-you-doing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   You Already Know What To Do - So Why Aren't You Doing It?
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

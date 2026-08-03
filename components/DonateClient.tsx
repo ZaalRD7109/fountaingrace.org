@@ -114,7 +114,7 @@ export default function DonateClient() {
             Every rand you give goes directly to real people in our community - food for
             families, support for recovery, training for those rebuilding their lives.
           </p>
-          <span className="inline-block bg-white/10 border border-white/20 text-white px-5 py-2 rounded-full text-sm font-semibold tracking-wide">
+          <span className="inline-block bg-black/15 border border-white/40 text-white px-5 py-2 rounded-full text-sm font-semibold tracking-wide">
             Registered NPO 316-193 · Dept of Social Development, South Africa
           </span>
         </div>
@@ -131,7 +131,7 @@ export default function DonateClient() {
             { label: 'Location', value: 'Pretoria North, Gauteng' },
           ].map((item) => (
             <div key={item.label}>
-              <p className="font-bold text-[#2a9df4] text-sm">{item.value}</p>
+              <p className="font-bold text-[#0d6fbf] text-sm">{item.value}</p>
               <p className="text-[#595959] text-xs">{item.label}</p>
             </div>
           ))}
@@ -142,10 +142,10 @@ export default function DonateClient() {
       <section className="bg-white py-16 px-4 sm:px-6">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <p className="text-[#008080] font-semibold text-xs uppercase tracking-widest mb-2">
+            <p className="text-[#006b6b] font-semibold text-xs uppercase tracking-widest mb-2">
               100% Transparency
             </p>
-            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2a9df4] mb-3">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d6fbf] mb-3">
               Where Your Money Goes - Specifically
             </h2>
             <p className="text-[#595959] max-w-xl mx-auto leading-relaxed">
@@ -160,9 +160,9 @@ export default function DonateClient() {
                 className="bg-[#f0fafa] rounded-2xl p-6 border-l-4 border-[#FFD600]"
               >
                 <div className="text-3xl mb-2" aria-hidden="true">{p.icon}</div>
-                <h3 className="font-bold text-[#2a9df4] text-sm mb-1">{p.title}</h3>
+                <h3 className="font-bold text-[#0d6fbf] text-sm mb-1">{p.title}</h3>
                 <p className="text-[#555] text-sm leading-relaxed mb-3">{p.desc}</p>
-                <p className="text-[#008080] font-semibold text-xs">{p.example}</p>
+                <p className="text-[#006b6b] font-semibold text-xs">{p.example}</p>
               </div>
             ))}
           </div>
@@ -172,7 +172,7 @@ export default function DonateClient() {
       {/* ── GIVE FORM ────────────────────────────────────────────── */}
       <section className="bg-[#f0fafa] py-16 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#2a9df4] text-center mb-10">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d6fbf] text-center mb-10">
             Choose How You Want to Give
           </h2>
 
@@ -189,7 +189,7 @@ export default function DonateClient() {
                 className={`px-6 py-2.5 rounded-full text-sm font-bold border-2 transition-all duration-150 ${
                   amount === p
                     ? 'bg-[#FFD600] text-[#1a1a1a] border-[#FFD600] shadow-[0_3px_10px_rgba(255,214,0,0.4)]'
-                    : 'bg-white text-[#2a9df4] border-[#e0f0ff] hover:border-[#008080] hover:text-[#008080]'
+                    : 'bg-white text-[#0d6fbf] border-[#e0f0ff] hover:border-[#008080] hover:text-[#006b6b]'
                 }`}
               >
                 R{p}
@@ -199,7 +199,7 @@ export default function DonateClient() {
 
           {/* Custom amount */}
           <div className="flex items-center gap-2 max-w-xs mx-auto mb-2">
-            <span className="text-lg font-bold text-[#2a9df4]">R</span>
+            <span className="text-lg font-bold text-[#0d6fbf]">R</span>
             <input
               id="amount"
               type="number"
@@ -208,11 +208,11 @@ export default function DonateClient() {
               value={amount}
               onFocus={handleFormStart}
               onChange={(e) => setAmount(e.target.value)}
-              className="flex-1 border-2 border-[#e0f0ff] rounded-xl px-4 py-3 text-lg font-bold text-[#2a9df4] text-center focus:outline-none focus:border-[#008080]"
+              className="flex-1 border-2 border-[#e0f0ff] rounded-xl px-4 py-3 text-lg font-bold text-[#0d6fbf] text-center focus:outline-none focus:border-[#008080]"
               aria-label="Custom donation amount in Rand"
             />
           </div>
-          <p className="text-center text-[#008080] font-semibold text-sm mb-10 min-h-[1.25rem]">
+          <p className="text-center text-[#006b6b] font-semibold text-sm mb-10 min-h-[1.25rem]">
             {impactText}
           </p>
 
@@ -257,7 +257,7 @@ export default function DonateClient() {
                       type="submit"
                       className="w-full text-center rounded-xl border-2 border-[#e0f0ff] hover:border-[#FFD600] hover:bg-[#fffbe6] transition-all p-3 group"
                     >
-                      <p className="font-bold text-[#2a9df4] text-sm group-hover:text-[#1a1a1a]">{opt.label}</p>
+                      <p className="font-bold text-[#0d6fbf] text-sm group-hover:text-[#1a1a1a]">{opt.label}</p>
                       <p className="text-xs text-[#595959] mt-0.5">{opt.note}</p>
                     </button>
                   </form>
@@ -316,7 +316,7 @@ export default function DonateClient() {
                   ['Reference', 'Your Name / Donation'],
                 ].map(([label, value]) => (
                   <p key={label}>
-                    <span className="font-semibold text-[#2a9df4] inline-block w-36">{label}:</span>
+                    <span className="font-semibold text-[#0d6fbf] inline-block w-36">{label}:</span>
                     <span className="text-gray-700">{value}</span>
                   </p>
                 ))}
@@ -325,7 +325,7 @@ export default function DonateClient() {
                 For a receipt, email proof of payment to{' '}
                 <a
                   href="mailto:info@fountaingrace.org"
-                  className="text-[#008080] font-semibold hover:underline"
+                  className="text-[#006b6b] font-semibold hover:underline"
                 >
                   info@fountaingrace.org
                 </a>.
@@ -360,13 +360,13 @@ export default function DonateClient() {
         return (
           <section className="bg-[#008080] py-12 px-4 sm:px-6 text-white">
             <div className="max-w-3xl mx-auto">
-              <p className="text-[#1a1a1a] font-semibold text-xs uppercase tracking-widest mb-6 text-center">
+              <p className="text-white font-semibold text-xs uppercase tracking-widest mb-6 text-center">
                 Every rand accounted for
               </p>
-              <div className="flex flex-col sm:flex-row items-center gap-8 bg-white/[0.07] border border-white/10 rounded-2xl p-7">
+              <div className="flex flex-col sm:flex-row items-center gap-8 bg-black/15 border border-white/25 rounded-2xl p-7">
                 {/* Donut chart */}
                 <div className="shrink-0 flex flex-col items-center">
-                  <p className="text-[#FFD600] font-semibold text-xs uppercase tracking-widest mb-4 text-center">
+                  <p className="text-white font-semibold text-xs uppercase tracking-widest mb-4 text-center">
                     How We Spend
                   </p>
                   <svg viewBox="0 0 200 200" width="160" height="160" aria-hidden="true">
@@ -394,16 +394,16 @@ export default function DonateClient() {
                       <div className="flex items-center justify-between mb-1.5">
                         <div className="flex items-center gap-2">
                           <span className="w-2.5 h-2.5 rounded-sm shrink-0" style={{ backgroundColor: seg.color }} aria-hidden="true" />
-                          <span className="text-white/80 text-sm">{seg.label}</span>
+                          <span className="text-white text-sm">{seg.label}</span>
                         </div>
-                        <span className="text-sm font-bold" style={{ color: seg.color }}>{seg.pct}%</span>
+                        <span className="text-sm font-bold text-white">{seg.pct}%</span>
                       </div>
-                      <div className="h-2 bg-white/10 rounded-full overflow-hidden">
+                      <div className="h-2 bg-black/20 rounded-full overflow-hidden">
                         <div className="h-full rounded-full" style={{ width: `${seg.pct}%`, backgroundColor: seg.color }} />
                       </div>
                     </div>
                   ))}
-                  <p className="text-white/40 text-xs mt-1">Based on 2025 operational figures.</p>
+                  <p className="text-white text-xs mt-1">Based on 2025 operational figures.</p>
                 </div>
               </div>
             </div>
@@ -415,13 +415,13 @@ export default function DonateClient() {
       <section className="bg-[#008080] py-16 px-4 sm:px-6 text-white">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
-            <p className="text-[#FFD600] font-semibold text-xs uppercase tracking-widest mb-2">
+            <p className="text-white font-semibold text-xs uppercase tracking-widest mb-2">
               Why you can trust us
             </p>
             <h2 className="text-2xl sm:text-3xl font-extrabold mb-3">
               Your Money Is Safe. Here Is How We Are Accountable.
             </h2>
-            <p className="text-white/70 max-w-xl mx-auto leading-relaxed">
+            <p className="text-white max-w-xl mx-auto leading-relaxed">
               We do not have Section 18A tax certificates yet - but we operate with full
               integrity and transparency. Here is what that means in practice.
             </p>
@@ -429,16 +429,16 @@ export default function DonateClient() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
             {TRUST_CARDS.map((card) => (
-              <div key={card.title} className="bg-white/[0.06] border border-white/10 rounded-2xl p-5">
+              <div key={card.title} className="bg-black/15 border border-white/25 rounded-2xl p-5">
                 <span className="text-2xl mb-3 block" aria-hidden="true">{card.icon}</span>
-                <h3 className="text-[#FFD600] font-bold text-sm mb-1">{card.title}</h3>
-                <p className="text-white/70 text-sm leading-relaxed">{card.desc}</p>
+                <h3 className="text-white font-bold text-sm mb-1">{card.title}</h3>
+                <p className="text-white text-sm leading-relaxed">{card.desc}</p>
               </div>
             ))}
           </div>
 
           {/* NPO details block */}
-          <div className="bg-[rgba(255,214,0,0.08)] border border-[rgba(255,214,0,0.2)] rounded-2xl p-7 text-sm leading-loose">
+          <div className="bg-black/15 border border-[#FFD600]/40 border border-[rgba(255,214,0,0.2)] rounded-2xl p-7 text-sm leading-loose">
             {[
               ['NPO Number', '316-193'],
               ['Registered Under', 'Department of Social Development, South Africa'],
@@ -447,12 +447,12 @@ export default function DonateClient() {
               ['WhatsApp', '+27 75 259 2555'],
               ['Section 18A', 'Tax certificates are not yet available. We are working toward this status.'],
             ].map(([label, value]) => (
-              <p key={label} className="text-white/80">
-                <span className="text-[#FFD600] font-bold inline-block w-44">{label}:</span>
+              <p key={label} className="text-white">
+                <span className="text-white font-bold inline-block w-44">{label}:</span>
                 {label === 'Email' ? (
-                  <a href="mailto:info@fountaingrace.org" className="text-[#FFD600] hover:underline">{value}</a>
+                  <a href="mailto:info@fountaingrace.org" className="text-white hover:underline">{value}</a>
                 ) : label === 'WhatsApp' ? (
-                  <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="text-[#FFD600] hover:underline">{value}</a>
+                  <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="text-white hover:underline">{value}</a>
                 ) : (
                   value
                 )}
@@ -479,7 +479,7 @@ export default function DonateClient() {
             </Link>
             <Link
               href="/plan-your-visit"
-              className="inline-block bg-white text-[#008080] font-bold px-7 py-3 rounded-lg hover:bg-teal-50 transition-colors text-sm"
+              className="inline-block bg-white text-[#006b6b] font-bold px-7 py-3 rounded-lg hover:bg-teal-50 transition-colors text-sm"
             >
               Plan Your Visit
             </Link>

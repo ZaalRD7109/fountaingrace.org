@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You Work Hard But Nothing Changes - Here's What You're Missing"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 6 April 2023</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You pray, you work, you wait-but nothing seems to improve. This message is for anyone wrestling with whether their life has any real meaning or a good ending."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 6 April 2023</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You pray, you work, you wait-but nothing seems to improve. This message is for anyone wrestling with whether their life has any real meaning or a good ending."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"We need help right now"}</button>
-                <button type="button" data-start="420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">7:00</span>{"What he has done for us"}</button>
-                <button type="button" data-start="1305" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">21:45</span>{"I give myself away"}</button>
-                <button type="button" data-start="1665" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">27:45</span>{"How great you are"}</button>
-                <button type="button" data-start="5328" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:28:48</span>{"Fear keeps you stuck"}</button>
-                <button type="button" data-start="7380" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:03:00</span>{"Speaking truth that matters"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"We need help right now"}</button>
+                <button type="button" data-start="420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">7:00</span>{"What he has done for us"}</button>
+                <button type="button" data-start="1305" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">21:45</span>{"I give myself away"}</button>
+                <button type="button" data-start="1665" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">27:45</span>{"How great you are"}</button>
+                <button type="button" data-start="5328" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:28:48</span>{"Fear keeps you stuck"}</button>
+                <button type="button" data-start="7380" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">2:03:00</span>{"Speaking truth that matters"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -161,26 +161,26 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Thought That Changes Everything"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Thought That Changes Everything"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You feel trapped because you believe the only thoughts that matter are the ones you can see working out in your life right now. But Jeremiah 29:11 says it plainly: God is constantly thinking peaceful thoughts toward you-thoughts of peace, not of harm. Not someday. Right now. While you struggle."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is not motivation. This is a shift in how you understand reality. While you are stuck in traffic, buried in work, or lying awake at 3 a.m. with worry, Jesus Christ is thinking about you with love and intention. Your circumstances do not change this fact. Your doubts do not stop it. Your silence does not make it less true."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Fear Blocks Your Future"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Fear Blocks Your Future"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"In 2 Timothy 1:7, Paul writes that God has not given you a spirit of fear but of a sound mind. When fear runs the show, you cannot think clearly. You shrink from decisions. You stay in unsafe situations because your mind goes static. A manager who makes you fear making mistakes keeps you small. A future that feels hopeless makes you stop trying. Fear paralyzes not because it is powerful, but because you believe the lie underneath it: that you are not protected."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But if God is thinking thoughts of peace toward you-constantly-then fear is not the dominant force of your life. Peace is. A sound mind is available to you. Right now. Not after things get better. Not after you feel it first."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Real Prophecy Does"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Real Prophecy Does"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"In 1 Corinthians 14, Paul emphasizes prophecy above other spiritual gifts for a specific reason: prophecy should edify you, comfort you, and build you up. If a word-from a pastor, a prophet, a friend, or even your own voice-tears you down, confuses you, or makes you feel smaller, that is not a word from God. Jesus said in 1 Corinthians 14:33 that God is not the author of confusion but of peace. Confusion is the opposite of peace."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This matters because many people carry prophetic words spoken over them that have crushed them. A preacher said your marriage would fail. Someone said you had a demon. A voice inside told you that you were not enough. Those were not words from God. God's words about you are always moving you toward your expected end-toward wholeness, not fragmentation."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Declare Over Your Own Life"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Declare Over Your Own Life"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"In Psalm 8:4, the psalmist asks in wonder: 'What is man that you are mindful of him?' God thinks of you the way someone in early love thinks of their beloved-constantly. Every second. Every moment. He is not distant or indifferent. He is courting you toward your best life."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is why you must prophesy over your own life. Not with fake affirmations, but with declarations rooted in what God has already said about you. Let the poor declare: 'I am prosperous.' Let the sick declare: 'I am healed.' Let the small declare: 'I am the head, not the tail.' You are not lying-you are speaking into alignment with what God is already thinking about you. You are choosing to agree with his thoughts instead of the world's evidence."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"When You Cannot Feel His Presence"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"When You Cannot Feel His Presence"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo admits in the sermon something most leaders won't: 'Sometimes I feel like you are not there, God. So I want to ask you, if I cannot feel you-are you not there?' This is honest. Being human is hard. You sow seed and see no harvest. You serve and feel abandoned. You obey and still struggle. If what you see is all you trust, faith becomes impossible."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"In Matthew 5:8, Jesus says: 'Blessed are the pure in heart, for they shall see God.' The clarity you need is not available to a heart clouded by despair, bitterness, or self-doubt. You cannot purify your own heart alone. But you can ask Jesus to do it. You can ask him to remove the eyes of mere flesh and give you spiritual eyes. To close your ears to the news of loss and death and open them only to what he is speaking. This is not denial. This is choosing where you direct your attention while trusting that he is working even when you cannot track it."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Expected End"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Expected End"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When a woman realizes she is pregnant, we say she is expecting. She has a future already in motion. God says in Jeremiah 29:11 that he thinks thoughts of peace toward you to give you an expected end. Your life is not random. It is not a failure if you cannot see the fullness of it yet. He sees it. He is thinking about it. He is moving toward it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This week, choose one area of your life where you feel most hopeless. Work, money, relationships, health, purpose-whatever it is. Then make a declaration based on what God thinks, not on what you see. Say it out loud. Write it down. Return to it when doubt floods back in. You are not pretending. You are aligning your thoughts with his. You are prophesying your own life into agreement with the thoughts he holds toward you right now."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"God is thinking of you every second, and he is thinking thoughts of peace and purpose-not because of what you have done, but because of who you are.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"God is thinking of you every second, and he is thinking thoughts of peace and purpose-not because of what you have done, but because of who you are.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -189,7 +189,7 @@ export default function SermonPage() {
               <li><strong>{"Fear Stops You, But a Sound Mind Moves You Forward"}</strong> {" "}{"In 2 Timothy 1:7, Paul says God has not given you a spirit of fear but of a sound mind. When fear dominates, you cannot think clearly, choose wisely, or step forward into the life God is thinking about for you. But a sound mind-one rooted in peace rather than panic-is available to you. This mind does not come from feeling safe first or seeing proof first. It comes from deciding, even in uncertainty, that the thoughts God has toward you are true. From that decision, clear thinking becomes possible. Action becomes possible."}</li>
               <li><strong>{"Prophecy Builds You Up; Confusion Tears You Down"}</strong> {" "}{"In 1 Corinthians 14:3 and 14:33, Paul anchors the prophetic gift to one purpose: to edify, comfort, and build people up. God is not the author of confusion but of peace. Any word-spoken or internal-that leaves you smaller, more confused, or more afraid is not from God, no matter how spiritual it sounds or who said it. The prophetic words you speak over your own life matter deeply. They should align with what God thinks about you: that you are valued, that you are capable, that you have a future. When you declare these truths out loud, you are not pretending. You are speaking into alignment with the thoughts God already holds."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -216,7 +216,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -232,7 +232,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -245,33 +245,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/your-past-mistakes-dont-determine-your-future" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-past-mistakes-dont-determine-your-future" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Past Mistakes Don
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Stuck and Invisible - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-past-failures-dont-define-your-future-heres-why" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-past-failures-dont-define-your-future-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Past Failures Don
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-blocked-by-one-thing-and-dont-even-know-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-blocked-by-one-thing-and-dont-even-know-it" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

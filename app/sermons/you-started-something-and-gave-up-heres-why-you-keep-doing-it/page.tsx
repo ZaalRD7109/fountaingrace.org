@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You Started Something and Gave Up - Here's Why You Keep Doing It"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 12 June 2022</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Most people who abandon their goals don't lack opportunity. They lack the stamina to push through the intermediate disappointments and labor required, especially when what arrives isn't exactly what they expected."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 12 June 2022</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"Most people who abandon their goals don't lack opportunity. They lack the stamina to push through the intermediate disappointments and labor required, especially when what arrives isn't exactly what they expected."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Getting lost on the way"}</button>
-                <button type="button" data-start="47" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:47</span>{"Realizing you are late"}</button>
-                <button type="button" data-start="210" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:30</span>{"Finding your own path"}</button>
-                <button type="button" data-start="316" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:16</span>{"Starting something you quit"}</button>
-                <button type="button" data-start="590" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">9:50</span>{"Discovering the wrong prize"}</button>
-                <button type="button" data-start="950" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:50</span>{"Love makes you finish"}</button>
-                <button type="button" data-start="1303" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">21:43</span>{"Staying committed matters"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Getting lost on the way"}</button>
+                <button type="button" data-start="47" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:47</span>{"Realizing you are late"}</button>
+                <button type="button" data-start="210" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:30</span>{"Finding your own path"}</button>
+                <button type="button" data-start="316" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:16</span>{"Starting something you quit"}</button>
+                <button type="button" data-start="590" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">9:50</span>{"Discovering the wrong prize"}</button>
+                <button type="button" data-start="950" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:50</span>{"Love makes you finish"}</button>
+                <button type="button" data-start="1303" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">21:43</span>{"Staying committed matters"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,31 +162,31 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Jacob Problem: You Worked Seven Years and Got the Wrong Thing"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Jacob Problem: You Worked Seven Years and Got the Wrong Thing"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jacob knew exactly what he wanted. He loved Rachel so much that he agreed to work seven years for her. The Bible says those seven years seemed like only a few days because of his love for her. He had clarity. He had passion. He had a goal."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Then came the Leah moment. On the wedding night, Laban switched the daughters. Jacob got Leah instead of Rachel. Everything he worked for looked wrong. He had every reason to walk away. The promise was broken. The wrong person was in the tent. He could have said, \"This is a sign. I quit.\""}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But Jacob did something different. He acknowledged the disappointment, then asked for what he actually wanted and worked another seven years to get it. He didn't abandon his goal because the intermediate reward wasn't perfect. He kept his eyes on Rachel."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why You Stop When You Should Keep Going"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why You Stop When You Should Keep Going"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You start a business and get rejected. That rejection is your Leah moment. It's not the thing you wanted, but it's proof you're on the right track. Instead of seeing it that way, you interpret it as a signal to quit."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You commit to a relationship and hit conflict. You expected smooth progress, but you got a puncture on the road. Instead of fixing the tire and driving to your destination, you turn the car around and go home."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You return to school and the first semester is harder than expected. You get a lower grade than you wanted. That's your Leah. It means you're still in the game, still moving toward your Rachel. But you see it as proof you don't belong there."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Three Rules for Actually Finishing What You Start"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Three Rules for Actually Finishing What You Start"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Rule one: Make sure it's something you love. If you don't love it, disappointment will kill it. Jacob loved Rachel. That's why seven years felt like a few days. That's why he didn't quit when things got weird. Your goal has to be worth the work, or work will break you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Rule two: Everything else that comes will look like it's the real thing, but it won't be. A smaller salary is your Leah. A partial contract is your Leah. Rejection with an offer to try again is your Leah. These aren't signs to quit. They're smaller rewards proving you're still on track toward your real desire."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Rule three: The way to finish is to start, then endure the labor. Philippians 1:6 says, \"Being confident of this very thing, that he which hath begun a good work in you will perform it until the day of Jesus Christ:\" But you have to do your part. You have to show up. You have to work seven years if that's what it takes. You have to fix the tire and keep driving. Grace doesn't mean no work. Grace means power to do the work."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Disappointment Is Not a Stop Sign"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Disappointment Is Not a Stop Sign"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When you're working toward something real, disappointment is guaranteed. Not because you chose wrong, but because the world is broken and people are unreliable and timelines slip. Jacob was promised one daughter and got another. You were promised one outcome and got something different."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The difference between finishers and quitters is not the absence of disappointment. It's what they do with it. Finishers say, \"This is not what I wanted, and I'm not settling for it, but I'm also not turning back. I'm going to work another seven years if I have to.\" Quitters say, \"This is not what I wanted, so I'm done.\""}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Every step toward your goal brings you closer to finishing. Every small reward-even the Leah moments-proves you're still in the race."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Your Past Procrastination Doesn't Have to Be Your Future"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why Your Past Procrastination Doesn't Have to Be Your Future"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo waited 22 years to plant this church. He gave his heart to God in 2000. He knew what he was called to do. But he kept saying, \"I'll do it next time. I'll do it next time.\" Twenty-two years of next times."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"He stopped waiting because he realized the same delay was happening in the lives of thousands of other people. You want to start a business. You want to change careers. You want to go back to school. You want to repair a relationship. You want to give your life to God. But you keep saying, \"Next time.\""}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The message isn't condemning you for what you've already delayed. It's inviting you to start now. Not perfectly. Not when all the conditions are right. Now. Because the path from starting to finishing requires labor, disappointment, and more labor. The sooner you start, the sooner you can finish."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Grace Is Not Permission to Skip the Work"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Grace Is Not Permission to Skip the Work"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The sermon ends with prayer, asking for grace. Not grace to avoid hard work. Grace to do hard work with power. Ephesians 2:8 says, \"For by grace are ye saved through faith; and that not of yourselves: it is the gift of God.\" But 1 Corinthians 15:10 adds the truth most people miss: \"But by the grace of God I am what I am: and his grace which was bestowed upon me was not in vain; but I laboured more abundantly than they all: yet not I, but the grace of God which was with me.\""}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Grace gives you power to work. Not power to coast. Not power to expect easy. Power to push through the Leah moments and keep walking toward your Rachel. That's what makes finishing possible."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Every step towards finishing brings you closer to your goal, even the small rewards that feel wrong.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Every step towards finishing brings you closer to your goal, even the small rewards that feel wrong.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -195,7 +195,7 @@ export default function SermonPage() {
               <li><strong>{"Leah Moments Are Not Failure Signals"}</strong> {" "}{"The smaller rewards that show up-the partial success, the rejection with an invitation to try again, the salary that's less than promised but still moving you forward-these are not signs to quit. They're proof that you're still in the game. Jacob didn't quit when he got Leah. He acknowledged the disappointment, kept his eyes on Rachel, and worked another seven years. Your Leah moments are checkpoints on the way to your Rachel, not exit ramps."}</li>
               <li><strong>{"You Have to Show Up and Do the Work"}</strong> {" "}{"Grace is power, not permission. God will complete what He starts, but you have to do your part. You have to start. You have to endure the labor. You have to fix the tire. You have to work seven years if that's what it takes. The gap between good intentions and follow-through isn't closed by waiting for things to feel right or for all the obstacles to disappear. It's closed by showing up and working, powered by grace."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -222,7 +222,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -238,7 +238,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -251,33 +251,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Permission to Become Who You Already Are
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave" className="text-[#0d6fbf] hover:underline font-medium">
                   Stuck in a Dead Relationship or Job? Here
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

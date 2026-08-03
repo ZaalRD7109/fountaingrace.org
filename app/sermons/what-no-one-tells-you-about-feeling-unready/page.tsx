@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"What no one tells you about feeling unready"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 12 July 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Struggling with the feeling that you're not ready? This message urges you to start now."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 12 July 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"Struggling with the feeling that you're not ready? This message urges you to start now."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -150,20 +150,20 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Start With What You Have"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Start With What You Have"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Many people delay pursuing their dreams because they feel unprepared. But often, what we need to get started is already within our reach. You might have a talent, a resource, or an idea that you haven't fully used yet. Just like the disciples who were sent out with what they already had, you too can begin right where you are."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The common excuse of waiting for a perfect moment or complete readiness is a trap. Readiness is not always about having everything in place, but about taking the first step with what you currently possess. Your abilities and resources, no matter how small they seem, are enough to start moving forward."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Power of Action"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Power of Action"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Starting doesn't require an elaborate plan. It requires action. The longer you wait, the more distant your goals seem. When Jesus called the disciples, He gave them power and sent them out, immediately. They didn't need years of preparation; they just needed to begin."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"In Matthew 10:1 and 10:7, the disciples received authority and were sent out to act. What does this mean for you? It’s a reminder that authority and capability often come when you start, not before. It's about having faith in the action itself and knowing that the journey begins with a single step."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Redefining Readiness"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Redefining Readiness"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Our cultural conditioning teaches us that readiness must precede action. However, historical and biblical narratives show otherwise. The disciples, despite being untrained, were called to greater works because they followed the instruction to 'go.' God equips the called; He doesn't necessarily call the equipped."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is echoed in Exodus 4:10-12, where Moses expressed his doubts about speaking, yet was chosen to lead. True readiness lies in trusting the process, in moving even when doubt whispers that you're not enough."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Let Go of Perfection"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Let Go of Perfection"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Perfectionism paralyzes many from starting their journeys. The idea that everything must be perfect before taking action is a fallacy. The journey itself is what perfects you over time."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Consider 2 Corinthians 3:5: 'Not that we are sufficient of ourselves... but our sufficiency is of God.' Your sufficiency is not in your own ability, but in the one who sends you. Trust that as you begin, you will grow and adapt."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Just start. Your potential is realized in the doing.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Just start. Your potential is realized in the doing.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -172,7 +172,7 @@ export default function SermonPage() {
               <li><strong>{"Action breeds ability"}</strong> {" "}{"Taking the first step often unlocks the skills and resources you think you lack. Begin, and the needed tools will follow."}</li>
               <li><strong>{"Trust in the sender"}</strong> {" "}{"You may not feel ready, but the one who calls you equips you. Your readiness is established in your obedience to start."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -199,7 +199,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -215,7 +215,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -228,33 +228,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/you-have-enough-right-now-heres-why-you-dont-believe-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-have-enough-right-now-heres-why-you-dont-believe-it" className="text-[#0d6fbf] hover:underline font-medium">
                   You Have Enough Right Now, Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Permission to Become Who You Already Are
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#0d6fbf] hover:underline font-medium">
                   The Cost of Sitting on the Sidelines
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-inheritance-test" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-inheritance-test" className="text-[#0d6fbf] hover:underline font-medium">
                   The Inheritance Test: Will It Reach Three Generations?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#0d6fbf] hover:underline font-medium">
                   The Principles That Move People Forward Faster
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

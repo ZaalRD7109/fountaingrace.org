@@ -130,7 +130,7 @@ export default function ContactPage() {
               <div className="mt-4">
                 <Link
                   href="/plan-your-visit"
-                  className="inline-block bg-white text-[#008080] text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-blue-50 transition-colors"
+                  className="inline-block bg-white text-[#006b6b] text-sm font-semibold px-5 py-2.5 rounded-lg hover:bg-blue-50 transition-colors"
                 >
                   Plan Your Visit
                 </Link>
@@ -256,7 +256,7 @@ export default function ContactPage() {
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Send us a message</h2>
           <p className="text-[#595959] mb-4 text-sm leading-relaxed">
             For your first visit use the{' '}
-            <Link href="/plan-your-visit" className="text-[#008080] hover:underline font-medium">
+            <Link href="/plan-your-visit" className="text-[#006b6b] hover:underline font-medium">
               Plan Your Visit
             </Link>{' '}
             form so we can prepare specifically for you.
@@ -274,7 +274,7 @@ export default function ContactPage() {
               <p>323 B Danie Theron Street, Pretoria North, Gauteng</p>
               <p>
                 Tel:{' '}
-                <a href="tel:+27752592555" className="text-[#008080] hover:underline font-medium">
+                <a href="tel:+27752592555" className="text-[#006b6b] hover:underline font-medium">
                   +27 75 259 2555
                 </a>
               </p>
@@ -284,12 +284,12 @@ export default function ContactPage() {
                   href="https://wa.me/27752592555"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#008080] hover:underline font-medium"
+                  className="text-[#006b6b] hover:underline font-medium"
                 >
                   +27 75 259 2555
                 </a>
               </p>
-              <p className="text-xs text-gray-400 mt-1">NPO No: 316-193</p>
+              <p className="text-xs text-gray-600 mt-1">NPO No: 316-193</p>
             </address>
             <div className="mt-5 pt-5 border-t border-gray-100 flex flex-col sm:flex-row gap-3">
               <Link href="/plan-your-visit" className="btn-primary text-sm text-center">

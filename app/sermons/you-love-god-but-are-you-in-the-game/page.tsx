@@ -103,17 +103,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               You Know What You Should Be Doing - So Why Are You Still on the Sidelines?
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 5 April 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 5 April 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               The Sunday before Easter, the crowd cheered Jesus loudly. They threw garments in the road, waved palm branches, and called Him the son of David. A few days later, the same crowd called for His crucifixion. The donkey He rode said nothing. It simply carried Him. That contrast is this message.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 5 April 2026
             </p>
           </div>
@@ -135,12 +135,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"The day he got applause"}</button>
-                <button type="button" data-start="143" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:23</span>{"What the voice actually said"}</button>
-                <button type="button" data-start="239" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:59</span>{"Loving it but sitting out"}</button>
-                <button type="button" data-start="1035" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">17:15</span>{"The donkey that refused"}</button>
-                <button type="button" data-start="1755" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">29:15</span>{"When the crowd goes wild"}</button>
-                <button type="button" data-start="2241" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">37:21</span>{"They wanted the show"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"The day he got applause"}</button>
+                <button type="button" data-start="143" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">2:23</span>{"What the voice actually said"}</button>
+                <button type="button" data-start="239" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:59</span>{"Loving it but sitting out"}</button>
+                <button type="button" data-start="1035" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">17:15</span>{"The donkey that refused"}</button>
+                <button type="button" data-start="1755" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">29:15</span>{"When the crowd goes wild"}</button>
+                <button type="button" data-start="2241" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">37:21</span>{"They wanted the show"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -159,7 +159,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Crowd vs The Donkey</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Crowd vs The Donkey</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Matthew 21:9 - &quot;And the multitudes that went before, and that followed, cried, saying, Hosanna to the son of David: Blessed is he that cometh in the name of the Lord.&quot; This was real excitement. They meant it. They gave Jesus a royal entrance. But their excitement had no root in commitment - and when the pressure came, they changed their tune completely.
             </p>
@@ -167,7 +167,7 @@ export default function SermonPage() {
               The donkey, by contrast, is described in Luke 19:30 as one &quot;whereon yet never man sat.&quot; No training. No experience. No status. A donkey does not have the reputation of a horse. A king on a donkey in battle would be vulnerable. Yet Jesus asked for that specific donkey - and it carried Him into Jerusalem without complaint, without fanfare, without stopping.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Why God Uses a Donkey Instead of a Horse</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Why God Uses a Donkey Instead of a Horse</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Zechariah 9:9, written hundreds of years before the event, already prophesied: &quot;Behold, thy King cometh unto thee: he is just, and having salvation; lowly, and riding upon an ass.&quot; The donkey had a prophetic word on its life before it knew what to do with it. You may feel untrained, unqualified, stuck in the same place - but there is a prophetic purpose on your life that is not dependent on your resume.
             </p>
@@ -175,7 +175,7 @@ export default function SermonPage() {
               God uses the donkey specifically because when a donkey carries Jesus, no one gives the credit to the donkey. The honour goes where it belongs. A horse would attract attention to itself. The donkey moves the mission without claiming the glory.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Problem With Living in the Crowd</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Problem With Living in the Crowd</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               The crowd reacted to what happened. The donkey responded to what was asked. That difference is everything. Reaction is driven by feelings - when the feeling is high, you cheer; when the feeling drops, you disappear. Response is driven by commitment - whether the feeling is present or not, the work gets done.
             </p>
@@ -186,7 +186,7 @@ export default function SermonPage() {
               The crowd disappears when things get hard. The donkey carries the weight regardless. Which one describes your relationship with God right now?
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">This Is a Year of Carrying, Not Clapping</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">This Is a Year of Carrying, Not Clapping</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               The declaration for this season is not &quot;I feel led&quot; - because when the feeling stops, the leading stops. It is not &quot;I am praying about it&quot; - because when the fight comes from both sides, the praying also stops. The call is to move. To carry. To avail yourself to what God is asking, whether you feel qualified or not.
             </p>
@@ -195,7 +195,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;The crowd had a moment. The donkey had a mission. The crowd&apos;s moment is forgotten. The donkey&apos;s mission is still being preached.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -242,7 +242,7 @@ export default function SermonPage() {
               </Link>
               <Link
                 href="/prayer"
-                className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
+                className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
               >
                 Send a Prayer Request
               </Link>
@@ -264,7 +264,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -279,33 +279,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#0d6fbf] hover:underline font-medium">
                   The Cost of Sitting on the Sidelines
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#0d6fbf] hover:underline font-medium">
                   The Principles That Move People Forward Faster
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-what-to-do-when-everything-feels-confusing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-what-to-do-when-everything-feels-confusing" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know What to Do When Everything Feels Confusing
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#0d6fbf] hover:underline font-medium">
                   They
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/what-if-someone-else-finishes-what-was-meant-for-you" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/what-if-someone-else-finishes-what-was-meant-for-you" className="text-[#0d6fbf] hover:underline font-medium">
                   What If Someone Else Finishes What Was Meant for You?
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

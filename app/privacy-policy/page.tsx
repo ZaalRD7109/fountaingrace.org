@@ -63,7 +63,7 @@ export default function PrivacyPolicyPage() {
 
       <section className="bg-white pt-16 pb-12 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#008080] font-semibold text-sm uppercase tracking-wider mb-4">
+          <p className="text-[#006b6b] font-semibold text-sm uppercase tracking-wider mb-4">
             Legal · POPIA Compliant
           </p>
           <h1 className="text-4xl font-extrabold text-gray-900 leading-tight mb-4">
@@ -106,19 +106,19 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul className="space-y-2 pl-4">
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span>Your name, phone number, and email address when you use our contact or visit planning form.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span>Your name and contact details when you enquire about volunteering.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span>Anonymous usage data collected by Google Analytics (pages visited, time on site, device type). This data cannot identify you personally.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span>Cookies and browser data - see our <a href="/cookie-policy" className="fgi-link">Cookie Policy</a> for full details.</span>
               </li>
             </ul>
@@ -129,19 +129,19 @@ export default function PrivacyPolicyPage() {
             <p className="mb-3">Your information is used only for the following purposes:</p>
             <ul className="space-y-2 pl-4">
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span>To respond to enquiries and prepare for your visit.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span>To follow up with you after your first Sunday via WhatsApp, where you have requested this.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span>To process and acknowledge donations.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span>To improve the performance of our website using anonymous analytics data.</span>
               </li>
             </ul>
@@ -180,29 +180,29 @@ export default function PrivacyPolicyPage() {
             <p className="mb-3">You have the right to:</p>
             <ul className="space-y-2 pl-4">
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span><strong>Access</strong> the personal information we hold about you.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span><strong>Correct</strong> any inaccurate or incomplete information.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span><strong>Request deletion</strong> of your personal information at any time.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span><strong>Object</strong> to the processing of your information for any purpose.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
                 <span><strong>Lodge a complaint</strong> with the Information Regulator of South Africa at{' '}
                   <a
                     href="https://www.justice.gov.za/inforeg/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#008080] hover:underline"
+                    className="text-[#006b6b] underline"
                   >
                     www.justice.gov.za/inforeg
                   </a>.
@@ -230,24 +230,24 @@ export default function PrivacyPolicyPage() {
             </p>
             <ul className="space-y-2 pl-4">
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
-                <span><strong>Google Analytics 4</strong> - anonymous website usage tracking. IP addresses are anonymised. Only loads after you accept cookies. You can opt out at <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">tools.google.com/dlpage/gaoptout</a>.</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
+                <span><strong>Google Analytics 4</strong> - anonymous website usage tracking. IP addresses are anonymised. Only loads after you accept cookies. You can opt out at <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] underline">tools.google.com/dlpage/gaoptout</a>.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
-                <span><strong>Microsoft Clarity</strong> - anonymous session recording and heatmapping to understand how people use our site. Only loads after you accept cookies. See <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">Microsoft's Privacy Policy</a>.</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
+                <span><strong>Microsoft Clarity</strong> - anonymous session recording and heatmapping to understand how people use our site. Only loads after you accept cookies. See <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] underline">Microsoft's Privacy Policy</a>.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
-                <span><strong>Google Fonts</strong> - fonts loaded from Google servers. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">Google's Privacy Policy</a>.</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
+                <span><strong>Google Fonts</strong> - fonts loaded from Google servers. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] underline">Google's Privacy Policy</a>.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
-                <span><strong>Google Maps</strong> - the embedded map on our contact page is served by Google. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">Google's Privacy Policy</a>.</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
+                <span><strong>Google Maps</strong> - the embedded map on our contact page is served by Google. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] underline">Google's Privacy Policy</a>.</span>
               </li>
               <li className="flex gap-2">
-                <span className="text-[#008080] mt-1 flex-shrink-0">·</span>
-                <span><strong>PayPal</strong> - donation processing. Subject to <a href="https://www.paypal.com/za/legalhub/privacy-full" target="_blank" rel="noopener noreferrer" className="text-[#008080] hover:underline">PayPal's Privacy Policy</a>.</span>
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
+                <span><strong>PayPal</strong> - donation processing. Subject to <a href="https://www.paypal.com/za/legalhub/privacy-full" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] underline">PayPal's Privacy Policy</a>.</span>
               </li>
             </ul>
           </div>

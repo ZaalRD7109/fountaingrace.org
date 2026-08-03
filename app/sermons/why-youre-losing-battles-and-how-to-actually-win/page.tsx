@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"The Real Reason You Feel Like You're Losing When Everything Falls Apart"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 June 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Your spouse left. Your job vanished. Your savings dried up. You're drowning in problems that feel bigger than you. But there's something about how battles actually work that changes everything."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 June 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"Your spouse left. Your job vanished. Your savings dried up. You're drowning in problems that feel bigger than you. But there's something about how battles actually work that changes everything."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Standing here with you"}</button>
-                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:30</span>{"You already won"}</button>
-                <button type="button" data-start="520" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">8:40</span>{"Singing together now"}</button>
-                <button type="button" data-start="1015" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">16:55</span>{"Fighting and winning battles"}</button>
-                <button type="button" data-start="1510" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:10</span>{"Your mind is lying"}</button>
-                <button type="button" data-start="2100" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">35:00</span>{"More than a conqueror"}</button>
-                <button type="button" data-start="2800" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">46:40</span>{"Think it to win it"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Standing here with you"}</button>
+                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:30</span>{"You already won"}</button>
+                <button type="button" data-start="520" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">8:40</span>{"Singing together now"}</button>
+                <button type="button" data-start="1015" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">16:55</span>{"Fighting and winning battles"}</button>
+                <button type="button" data-start="1510" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:10</span>{"Your mind is lying"}</button>
+                <button type="button" data-start="2100" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">35:00</span>{"More than a conqueror"}</button>
+                <button type="button" data-start="2800" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">46:40</span>{"Think it to win it"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,32 +163,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What a Battle Really Is"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What a Battle Really Is"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"A battle is not just combat between armies. It's any fight you face, any resistance you push against, any struggle that makes you want to give up. A serious illness, a marriage falling apart, losing your job, watching your children walk away, watching your savings disappear-these are all battles. The problem is that most of us think the battle is ours to win or lose based on how hard we fight."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But here's what nobody tells you: battles are lost or won in your mind first, long before anything physical happens. You decide you've already lost before you even fight. Fear of the outcome becomes your defeat. You think you're alone. You think your strength has to be enough. And when you believe those lies, you've already surrendered without ever really fighting."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The real twist is this-the toughest battles aren't supposed to be yours at all. There's a completely different way to win."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How You Actually Lose Without Even Trying"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How You Actually Lose Without Even Trying"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You lose a battle by doing the one thing that feels most natural: fighting back harder. When someone hits you, you hit them back. When someone betrays you, you scheme revenge. When the pressure comes, you grip tighter and force harder solutions. Every punch you throw makes the fight worse, not better. You're exhausted. They're exhausted. And the relationship or the situation gets worse every single time."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You also lose by standing alone. You tell yourself: I have to handle this myself. I can't ask for help. I'm alone in this. The moment you believe that lie, you've already lost because you've cut yourself off from the one resource that actually changes the outcome."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"And you lose by living in fear of what might happen. Job said it: 'What I feared has come over me.' Your fear becomes a prophecy. You imagine defeat so hard and so long that you actually create it. The battle dies in your mind before your body ever has to fight."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Battle Isn't Yours-It's Already Been Won"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Battle Isn't Yours-It's Already Been Won"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When David stood in front of Goliath, he didn't say, 'I will win this.' He said something that changed everything: 'The battle is the Lord's.' He knew he was a kid with a sling facing a giant with armor and a spear. By every measure, he should have lost. But he understood one thing that the giant didn't-the battle had never belonged to him in the first place."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your struggles-your broken marriage, your lost job, your sick body, your betrayed trust-these battles belong to someone else too. Not because you don't have to do anything about them. But because the actual power to win them doesn't come from you trying harder. It comes from knowing someone is fighting with you and for you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible says: 'The Lord your God is He that goes with you to fight for you against your enemies to save you.' Not against you. With you. Fighting for you. Saving you. This changes everything. You're not alone. You're not the weakest link. You're not outmatched. Because the one fighting for you has never lost a battle in His life."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How to Prepare for the Battle You're Already Winning"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How to Prepare for the Battle You're Already Winning"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"First, get into Scripture. Read it. Sit with it. Meditate on it. When you read the Bible, you're not just reading words-you're meeting the person who has already won every battle. Joshua was told: 'The book of the law shall not depart out of your mouth, but you shall meditate on it day and night. Then you will make your way prosperous and have good success.' Good success doesn't come from working harder. It comes from knowing the one who gives success."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Second, actually know God. Reading about Him is not the same as knowing Him. Be still. Listen. Notice how He shows up in small ways. Start to see that He surrounds your life like water surrounds a fish. The fish doesn't usually think about water-it's always there. But the moment it's removed from water, everything dies. You need God like that. Not sometimes. Always."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Third, trust Him instead of fighting. This is the hardest part because trust feels passive when you're in pain. But trusting God doesn't mean doing nothing-it means doing what needs to be done without the desperation, the scheming, the fear. It means stepping back from a relationship that's crushing you instead of staying to prove you're strong enough. It means admitting you don't have the answer instead of forcing a wrong solution. It means calling His name instead of calling in favors from people who can't actually help."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Quitting Isn't the Same as Losing"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why Quitting Isn't the Same as Losing"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Here's a battle strategy nobody teaches: some battles are meant to be walked away from. If someone is hitting you and you keep fighting back, you're not winning. You're choosing slow destruction over actually surviving. Sometimes winning the battle means leaving the relationship. Sometimes it means admitting you can't solve this yourself. Sometimes it means saying no instead of pushing through."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Water doesn't defeat rocks by fighting them. Water wins by being consistent. It flows around the rock, through the small spaces, every single day, for years. And eventually the rock surrenders. You're supposed to work like that too. Show up. Be steady. Don't panic. Don't give up. Let the pressure work. Let time work. Let God work. The battles that matter are won by those who don't fold when things get hard-not by those who punch harder."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible promises: 'Blessed is the one who endures temptation. For when he is tried, he will receive the crown of life.' You don't get the crown by winning without struggle. You get it by refusing to quit in the middle of the struggle."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Happens When You Stop Fighting and Start Trusting"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Happens When You Stop Fighting and Start Trusting"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When you surrender your life to Jesus-when you actually tell Him, 'I can't win this alone, I need You'-everything shifts. You're not giving up. You're giving over. You're joining the winning team. The Bible says: 'You are of God and have overcome them because greater is He that is in you than he that is in the world.' The moment you invite Him into the battle, the battle changes. You change. The outcome changes."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jeremiah describes what this looks like: 'Blessed is the one who trusts in the Lord. He shall be like a tree planted by the waters that spreads out its roots by the river. When the heat comes, he will not be afraid. His leaf shall remain green. He will not cease from bearing fruit.' In other words, when you trust, when you put down roots into something bigger than your circumstances, drought doesn't destroy you. Heat doesn't kill you. You keep growing. You keep producing. You keep winning."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is the promise for your broken marriage. For your lost job. For your abandoned dreams. For the battles that have hammered you senseless. The same power that raised Jesus from the dead is offering to fight for you. Not someday. Now. While you're scared. While you're tired. While you think you've already lost."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"The moment you stop believing the battle is yours to win and accept that it's already being won for you, everything changes.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"The moment you stop believing the battle is yours to win and accept that it's already being won for you, everything changes.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -197,7 +197,7 @@ export default function SermonPage() {
               <li><strong>{"The Hardest Battles Are Won by Stepping Back, Not Fighting Harder"}</strong> {" "}{"Every time you punch back, the fight gets worse. Every time you scheme revenge, you dig yourself deeper. Every time you force a solution, you create new problems. Winning doesn't always mean winning the fight-sometimes it means winning your life back by walking away. Water doesn't defeat mountains by hitting them. It flows consistently, finding the small gaps, and the mountain eventually cracks. You win by being steady, by refusing to quit, by not responding to every provocation. This is what real strength looks like."}</li>
               <li><strong>{"You Win Every Battle by Knowing God and Trusting Him More Than You Trust Yourself"}</strong> {" "}{"Read Scripture. Get to know how God moves. See how He wins. Then believe that the same power is available to you right now, in your specific pain. Trusting God doesn't mean sitting still and doing nothing-it means acting without desperation, deciding without fear, moving forward without needing to control the outcome. The moment you surrender your life to Jesus, you join the winning team. The power that raises the dead now fights for you. That's not religion. That's the actual game changer."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -225,7 +225,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -243,7 +243,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -256,33 +256,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
                   When You Feel Abandoned: Why You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#0d6fbf] hover:underline font-medium">
                   When Your Success Makes People Jealous: Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Success Depends on What You Do Before It Arrives
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

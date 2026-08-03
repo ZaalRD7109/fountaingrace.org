@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 155 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"How do I stop over-researching and actually start doing the thing?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 4 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 4 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"For as the body without the spirit is dead, so faith without works is dead also."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"For as the body without the spirit is dead, so faith without works is dead also."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"James 2:26 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You know the research folder. You could teach a seminar on the thing you haven't started.\n\nAnother tab opens. Another article. Another expert's method that might be the missing piece. You're not lazy - you're thorough. Except thoroughness has become a beautiful disguise for fear. You research because research doesn't fail. It doesn't reject you. It doesn't require you to be inadequate in front of other people. Analysis is safe. Action isn't.\n\nHere's what actually moves: \"Faith without works is dead.\" Not faith without perfect knowledge. Not faith without every angle covered. Dead faith is the kind that never leaves the research phase. The Israelites didn't map Canaan for forty years - they walked in, trembling and unprepared, and God met them there. In the actual doing.\n\nYou already know enough. You've known enough for months. The thing you're waiting to understand before you start isn't knowledge.\n\nIt's permission to be imperfect while you learn.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

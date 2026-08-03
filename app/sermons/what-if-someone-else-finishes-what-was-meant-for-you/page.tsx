@@ -107,17 +107,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               What If Someone Else Finishes What Was Meant for You?
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 22 February 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 22 February 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               This message is not about religion. It is about life. You know you are capable of more. You keep postponing. What if the window closes?
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 22 February 2026
             </p>
           </div>
@@ -139,13 +139,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"You're stuck in place"}</button>
-                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:30</span>{"What substitution really means"}</button>
-                <button type="button" data-start="280" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:40</span>{"You still have access"}</button>
-                <button type="button" data-start="610" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">10:10</span>{"Losing your position"}</button>
-                <button type="button" data-start="1055" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">17:35</span>{"When you get replaced"}</button>
-                <button type="button" data-start="1520" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:20</span>{"Trust matters for leaders"}</button>
-                <button type="button" data-start="2000" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:20</span>{"Someone else steps in"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"You're stuck in place"}</button>
+                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:30</span>{"What substitution really means"}</button>
+                <button type="button" data-start="280" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:40</span>{"You still have access"}</button>
+                <button type="button" data-start="610" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">10:10</span>{"Losing your position"}</button>
+                <button type="button" data-start="1055" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">17:35</span>{"When you get replaced"}</button>
+                <button type="button" data-start="1520" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:20</span>{"Trust matters for leaders"}</button>
+                <button type="button" data-start="2000" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:20</span>{"Someone else steps in"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -167,7 +167,7 @@ export default function SermonPage() {
               There is a difference between being substituted and being replaced. Pastor Ricardo unpacks both with precision - and challenges the listener to understand which one they are currently experiencing.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-10 mb-4">Substitution vs. Replacement</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-10 mb-4">Substitution vs. Replacement</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               When a player is substituted in soccer, their position is still there. It is a correction, not a removal. Jonah ran from Nineveh - and God did not replace him. He sent a fish. The word of the Lord came to Jonah a <em>second time</em>. That is substitution: you are benched, corrected, but still in the game.
             </p>
@@ -176,17 +176,17 @@ export default function SermonPage() {
             </p>
 
             <div className="card-teal-border my-8">
-              <p className="text-[#2a9df4] font-semibold">
+              <p className="text-[#0d6fbf] font-semibold">
                 The difference: substitution brings pressure to improve. Replacement brings the silence of distance - no more conviction, no more correction.
               </p>
             </div>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-10 mb-4">Esther 4:14 - the full verse</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-10 mb-4">Esther 4:14 - the full verse</h2>
             <p className="text-[#555] leading-relaxed">
               People use this verse as motivation: &quot;for such a time as this.&quot; But read the full passage. Mordecai is saying: if you hold your peace, help will come from another place - and <em>you and your father&apos;s house will be destroyed.</em> The church will go on. Ministry will go on. Progress will happen. The only question is whether it will happen through you or through someone else who said yes.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mt-10 mb-4">How to make sure life does not move on without you</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mt-10 mb-4">How to make sure life does not move on without you</h2>
             <ol className="space-y-4 text-[#555] mt-4">
               {[
                 { n: '1', title: 'Act immediately.', body: 'Do not wait until you feel ready. James 1:22 - be a doer of the word, not just a hearer. Waiting for confidence is how the moment passes.' },
@@ -199,7 +199,7 @@ export default function SermonPage() {
                     {item.n}
                   </span>
                   <div>
-                    <p className="font-semibold text-[#2a9df4]">{item.title}</p>
+                    <p className="font-semibold text-[#0d6fbf]">{item.title}</p>
                     <p className="text-[#555]">{item.body}</p>
                   </div>
                 </li>
@@ -207,7 +207,7 @@ export default function SermonPage() {
             </ol>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;Let us rather rest than be replaced. If you need rest, rest. But do not be replaced.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal · 2 Timothy 4:7</cite>
@@ -225,7 +225,7 @@ export default function SermonPage() {
 
         <section className="bg-[#f0fafa] py-14 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl font-bold text-[#2a9df4] mb-8">Questions this message answers</h2>
+            <h2 className="text-2xl font-bold text-[#0d6fbf] mb-8">Questions this message answers</h2>
             <dl className="space-y-0">
               {[
                 {
@@ -246,7 +246,7 @@ export default function SermonPage() {
                 },
               ].map((item) => (
                 <div key={item.q} className="faq-block">
-                  <dt className="font-semibold text-[#2a9df4] mb-2">{item.q}</dt>
+                  <dt className="font-semibold text-[#0d6fbf] mb-2">{item.q}</dt>
                   <dd className="text-[#555] leading-relaxed">{item.a}</dd>
                 </div>
               ))}
@@ -273,7 +273,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-white mb-4">
               Come and hear this in person - Pretoria North, every Sunday.
             </h2>
-            <p className="text-white/70 mb-8 max-w-lg mx-auto">
+            <p className="text-white mb-8 max-w-lg mx-auto">
               Fountain of Grace International. 323 B Danie Theron Street. Services at 09:00.
             </p>
             <Link href="/plan-your-visit" className="btn-primary">
@@ -296,7 +296,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -311,33 +311,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/be-a-doer-of-gods-word-not-just-a-hearer" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/be-a-doer-of-gods-word-not-just-a-hearer" className="text-[#0d6fbf] hover:underline font-medium">
                   Be a Doer of God's Word, Not Just a Hearer
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#0d6fbf] hover:underline font-medium">
                   When Your Success Makes People Jealous: Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#0d6fbf] hover:underline font-medium">
                   The Principles That Move People Forward Faster
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#0d6fbf] hover:underline font-medium">
                   They
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

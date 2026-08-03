@@ -86,17 +86,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Your Resolution Didn&apos;t Fail - You Quit Acting
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 25 January 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 25 January 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               Every year, the same cycle. Loud declaration on day one. Budget apps downloaded. Walking trackers activated. Step goals set. And by the third week - the alarm is snoozed, the app is ignored, and the goal is quietly shelved. The resolution was not the problem. Something else stopped it.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 25 January 2026
             </p>
           </div>
@@ -118,13 +118,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Something you wanted to change"}</button>
-                <button type="button" data-start="85" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:25</span>{"Why people go back"}</button>
-                <button type="button" data-start="390" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">6:30</span>{"The empty house problem"}</button>
-                <button type="button" data-start="1200" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">20:00</span>{"Real transformation happens inside"}</button>
-                <button type="button" data-start="1800" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">30:00</span>{"Replace the bad habit"}</button>
-                <button type="button" data-start="2400" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">40:00</span>{"Change your environment too"}</button>
-                <button type="button" data-start="2700" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">45:00</span>{"Get accountability and support"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Something you wanted to change"}</button>
+                <button type="button" data-start="85" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:25</span>{"Why people go back"}</button>
+                <button type="button" data-start="390" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">6:30</span>{"The empty house problem"}</button>
+                <button type="button" data-start="1200" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">20:00</span>{"Real transformation happens inside"}</button>
+                <button type="button" data-start="1800" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">30:00</span>{"Replace the bad habit"}</button>
+                <button type="button" data-start="2400" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">40:00</span>{"Change your environment too"}</button>
+                <button type="button" data-start="2700" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">45:00</span>{"Get accountability and support"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -143,7 +143,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Your Habits Did Not Hear Your Declaration</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Your Habits Did Not Hear Your Declaration</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               When you said &quot;this is my year,&quot; you meant it. The energy was real. The vision was clear. But your habits were not in the room when you made the declaration. They were already set - morning routines, default responses, patterns of avoidance - and they continued exactly as before.
             </p>
@@ -151,7 +151,7 @@ export default function SermonPage() {
               This is not laziness. Lazy people do not download budget apps or write out step-by-step plans. You are not lazy - you are tired of failing. There is a difference. The person who is tired of failing has tried. The person who is lazy has not. You have tried. The issue is not trying harder. It is understanding why your effort keeps stopping at the same place.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">You Know What to Do - But You Can&apos;t Open the Cap</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">You Know What to Do - But You Can&apos;t Open the Cap</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               If you are thirsty, you know exactly what to do - drink water. But if you cannot open the cap, the knowing is useless. Many people are in that exact position spiritually and practically. They know the vision. They know the scripture. They know what obedience looks like. But there is a gap between knowing and executing - and that gap is filled with unaddressed resistance.
             </p>
@@ -159,7 +159,7 @@ export default function SermonPage() {
               The resistance has a name: overload. You are not stuck because you have no information. You are stuck because you are carrying too much at once with no system for moving any of it. Proverbs 13:4 puts it plainly - &quot;The soul of the sluggard desireth, and hath nothing: but the soul of the diligent shall be made fat.&quot; Craving without direction produces nothing. Diligence with direction produces supply.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Motivation Wears Off - Consistency Does Not</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Motivation Wears Off - Consistency Does Not</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               The most common mistake is building a resolution on motivation. Motivation is real - but it is temporary. It responds to the feeling you had in the moment you made the decision. When the feeling changes, the motivation changes. When the motivation changes, the action stops.
             </p>
@@ -171,7 +171,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;You said this is your year. But your habits didn&apos;t hear it. And habits do not change by declaration - they change by consistent action, chosen daily, whether you feel like it or not.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -223,7 +223,7 @@ export default function SermonPage() {
               </Link>
               <Link
                 href="/prayer"
-                className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
+                className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
               >
                 Send a Prayer Request
               </Link>
@@ -245,7 +245,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -260,33 +260,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Nothing Changes No Matter How Hard You Try
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-knowing-is-the-problem" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-knowing-is-the-problem" className="text-[#0d6fbf] hover:underline font-medium">
                   When Knowing Is the Problem
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#0d6fbf] hover:underline font-medium">
                   You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Does Your Life Keep Collapsing No Matter What You Build?
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

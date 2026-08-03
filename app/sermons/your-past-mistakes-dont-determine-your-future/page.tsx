@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Past Mistakes Don't Determine Your Future"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 14 April 2023</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're paralyzed by what happened. But the person you're meant to become doesn't live in yesterday. Here's how to rebuild when captivity feels permanent."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 14 April 2023</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You're paralyzed by what happened. But the person you're meant to become doesn't live in yesterday. Here's how to rebuild when captivity feels permanent."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,11 +140,11 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Hide me in your love"}</button>
-                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:45</span>{"What he thinks about you"}</button>
-                <button type="button" data-start="1069" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">17:49</span>{"Making mistakes and moving forward"}</button>
-                <button type="button" data-start="1346" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">22:26</span>{"Peace and wholeness"}</button>
-                <button type="button" data-start="1436" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">23:56</span>{"Build instead of destroy"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Hide me in your love"}</button>
+                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:45</span>{"What he thinks about you"}</button>
+                <button type="button" data-start="1069" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">17:49</span>{"Making mistakes and moving forward"}</button>
+                <button type="button" data-start="1346" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">22:26</span>{"Peace and wholeness"}</button>
+                <button type="button" data-start="1436" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">23:56</span>{"Build instead of destroy"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -160,28 +160,28 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Captivity is a mindset, not a sentence"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Captivity is a mindset, not a sentence"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When Jeremiah wrote his letter, he was writing to a nation locked away in Babylon. Not for a few months. For 70 years. These people had every reason to believe they would die in captivity-that their situation was permanent, that building anything was pointless, that enjoying life was naive."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"God's message to them wasn't about escaping their walls. It was about escaping their thinking. He told them to build houses and live in them. Plant gardens and eat the fruit. Take spouses and have children. Increase, not diminish. He wasn't denying their captivity. He was refusing to let their captivity define their choices."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You may feel exactly like that right now. Your workplace stress doesn't end when you leave the office-it follows you home and poisons your family time. Your financial pressure won't let you spend money without fear. Your past mistake at work has convinced you that you're one error away from destruction. Your situation is real. Your feelings are valid. But your situation is not your destination."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The gap between what you think and what is true"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The gap between what you think and what is true"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Here's what God says in Isaiah 55:8-9: \"My thoughts are not your thoughts, neither are your ways my ways. As the heavens are higher than the earth, so are my ways higher than your ways, and my thoughts than your thoughts.\" This isn't poetic language. This is a direct claim: you and God are not thinking the same thing right now."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you're in fear, you think: \"I will lose my job. My family will suffer. I cannot afford to enjoy anything. I am permanently damaged by my mistakes.\" These thoughts feel true because they feel heavy. But God thinks something entirely different about you. He thinks in terms of Shalom-a Hebrew word that appears 236 times in Scripture and means far more than just peace."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Shalom means wholeness. Completion. Safety. Wellness. Success. Blessing. Health. Prosperity. When God says His thoughts toward you are thoughts of peace, He's saying: I am thinking about your healing, your happiness, your wisdom, your security, all at the same time. I am thinking about you as a whole person, not just your problems. Solomon's name comes from this same word-it means prosperity and peace combined. God's thoughts toward you are that comprehensive."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You're thinking evil; He's thinking completion"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You're thinking evil; He's thinking completion"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jeremiah 29:11 says it plainly: \"The thoughts I have toward you are thoughts of peace and not of evil, to give you an expected end.\" The word 'evil' here doesn't just mean bad intentions. In the original language, it means adversity, friction, calamity, harm, hurt, illness, mischief, misery, sorrow, trouble. God is saying: I am not planning those things for you. I am planning the opposite."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Meanwhile, what are you planning? If you're afraid to spend money because tomorrow might be worse, you're planning scarcity. If you bring work stress home and can't be present with your family, you're planning disconnection. If you replay your mistake endlessly, you're planning shame. You're not just experiencing your circumstances-you're choosing thoughts that lock you deeper into captivity."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The shift God asks for is not denial. It's not pretending your job is secure or your money is endless. It's a choice to build and plant anyway. To eat fruit even when the garden is in rocky soil. To enjoy your spouse and children even when work is brutal. To move as though wholeness is possible because God says it is, even when your eyes only see crisis."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Build the house even while you're captive"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Build the house even while you're captive"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"This is the radical instruction God gave to people who had every reason to give up: Build your houses and dwell in them. Plant gardens and eat the fruit. Take wives and husbands. Have children so you may increase and not be diminished. In other words: live. Don't wait for freedom to start living. Live now, while you're still in the hard place."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"A mistake at work taught you something: you realized within days that your fear was worse than the mistake itself. For two or three days you couldn't work because of the dread in your mind. That's not weakness-that's proof that your thoughts have more power over you than your circumstances do. So shift the thought. You made a mistake. You apologized. You learned. You move forward. Building happens in the moving forward, not in the paralysis."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Weak people say \"I am strong\"-not because they're lying, but because they've discovered what God knows: your circumstances don't set your capacity. A valley is only a valley if you stay in it. A mountain only blocks you if you stare at it without moving. The person who builds a house while afraid, plants a garden while uncertain, enjoys dinner with family while stressed-that person is not naive. That person is obeying God's thoughts instead of their own catastrophic ones."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The thought of God is always building, never diminishing"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The thought of God is always building, never diminishing"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Here's the pattern God keeps returning to: don't let your situation trap your thinking. Yes, you're struggling financially-but that's not permission to refuse yourself the comfort of a home you own or tend. Yes, your workplace is hard-but that's not permission to rob your family of your presence. Yes, you made a mistake-but that's not permission to treat yourself as permanently disqualified. Your circumstances are temporary. Your situation is not your sentence."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When God says His thoughts toward you are thoughts of peace and not evil, He means it. He doesn't want you sick-He wants healing. He doesn't want you sad-He wants joy. He doesn't want you diminished-He wants you to increase. This isn't wishful thinking. This is the actual direction of His attention toward your life. The only question is: will you align your thoughts with His? Will you build the house even though you're afraid? Will you eat the fruit even though you're stressed? Will you have children and take a spouse even though the world is unstable?"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"That's what moves you from captivity to freedom. Not the removal of your hard circumstances, but the refusal to let them stop you from living as though wholeness is possible. Because it is. God sees your completion. He sees your wholeness. He sees the life you haven't built yet, the fruit you haven't planted yet, the relationships you're too afraid to deepen. And He's asking you tonight: will you see what I see?"}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Your captivity is real, but it's not your destination-and God's thoughts toward you are already building the life you can't yet imagine.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Your captivity is real, but it's not your destination-and God's thoughts toward you are already building the life you can't yet imagine.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -190,7 +190,7 @@ export default function SermonPage() {
               <li><strong>{"Building happens while you're still in the hard place, not after"}</strong> {" "}{"God didn't tell the captive nation to wait for freedom before building houses or planting gardens. He told them to build while captive. This is not an instruction to pretend everything is fine. It's an instruction to refuse to postpone your life. If you wait until work stress ends to be present with your family, you'll wait forever. If you wait until money is stable to enjoy what you have, you'll never enjoy anything. If you wait until you've healed every wound to move forward, you'll stay in the wound. The act of building-of choosing to create, tend, enjoy, and increase-is what transforms captivity from a permanent condition into a temporary one."}</li>
               <li><strong>{"Weakness becomes strength the moment you move anyway"}</strong> {" "}{"The Bible says \"Let the weak say I am strong.\" This doesn't mean pretending you're not afraid. It means moving despite the fear. It means building the house while your hands shake. Planting the garden while your mind whispers lies about scarcity. Being present with your spouse while work stress claws at your attention. This is not denial. This is defiance. This is alignment with God's thoughts instead of your own. Every time you choose to build when captivity says to freeze, you prove that your circumstances don't control your choices-your thoughts do. And if your thoughts control your choices, then changing your thoughts changes everything."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -217,7 +217,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -233,7 +233,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -246,33 +246,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/your-past-failures-dont-define-your-future-heres-why" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-past-failures-dont-define-your-future-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Past Failures Don
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#0d6fbf] hover:underline font-medium">
                   You Work Hard But Nothing Changes - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Stuck and Invisible - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Trapped By What Others Say You Can
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Success Depends on What You Do Before It Arrives
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

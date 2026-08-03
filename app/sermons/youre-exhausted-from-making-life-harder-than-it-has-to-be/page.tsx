@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You're Exhausted From Making Life Harder Than It Has to Be"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 14 August 2022</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Most people make life impossibly hard by refusing to follow someone who has already succeeded. What if the solution is simpler than you think?"}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 14 August 2022</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"Most people make life impossibly hard by refusing to follow someone who has already succeeded. What if the solution is simpler than you think?"}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Do you want everything"}</button>
-                <button type="button" data-start="810" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">13:30</span>{"Getting the one that matters"}</button>
-                <button type="button" data-start="1205" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">20:05</span>{"What happens when you commit"}</button>
-                <button type="button" data-start="1639" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">27:19</span>{"Making words come alive"}</button>
-                <button type="button" data-start="2005" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:25</span>{"The yoke that fits"}</button>
-                <button type="button" data-start="2800" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">46:40</span>{"Everything you need is here"}</button>
-                <button type="button" data-start="3360" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">56:00</span>{"The root of the problem"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Do you want everything"}</button>
+                <button type="button" data-start="810" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">13:30</span>{"Getting the one that matters"}</button>
+                <button type="button" data-start="1205" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">20:05</span>{"What happens when you commit"}</button>
+                <button type="button" data-start="1639" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">27:19</span>{"Making words come alive"}</button>
+                <button type="button" data-start="2005" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:25</span>{"The yoke that fits"}</button>
+                <button type="button" data-start="2800" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">46:40</span>{"Everything you need is here"}</button>
+                <button type="button" data-start="3360" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">56:00</span>{"The root of the problem"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,28 +162,28 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Real Problem: You're Walking a Road Alone"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Real Problem: You're Walking a Road Alone"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Life feels hard because you're trying to figure it out by yourself. You make decisions based on what you think is right, but the results leave you exhausted and full of regret. You're not lazy or stupid-you're just walking a path without a guide, a map, or someone who has already made it through."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The moment you realize this, everything changes. When you stop leaning on your own strength and follow someone who has already walked the difficult road, life becomes easier. Not because the problems disappear, but because you're no longer carrying the full weight alone."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus said it plainly: 'I am the way, the truth and the life.' He didn't say he has these things. He is them. That means if you want everything life can offer-purpose, love, direction, peace-you need him, not just his advice."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Following Someone Who Walked Before You Changes Everything"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why Following Someone Who Walked Before You Changes Everything"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Imagine walking through dense bushes with no path. The first person has to push through, creating a way. The grass gets trampled. The branches bend. By the time the tenth person walks through, there's a clear path. The road is easier because someone paid the price first."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus walked this earth. He went through temptation, pain, loss, confusion, and pressure-everything you face. He already knows the terrain. He already knows where the pitfalls are. He already knows what it takes to survive and actually thrive. When you follow his way instead of your own understanding, you step onto a road that has already been cleared for you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is why Jesus said, 'Take my yoke upon you and learn of me, for I am gentle and humble in heart, and you will find rest for your souls. For my yoke is easy and my burden is light.' The burden gets lighter when you're not carrying it alone."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Knowledge That Changes Your Life"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Knowledge That Changes Your Life"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"In 2 Peter 1:3, the Bible says: 'His divine power has given us everything we need for life and godliness through our knowledge of him.' Not just knowledge about him. Knowledge of him. There's a difference between knowing facts about someone and actually knowing them-their character, their heart, how they think, what they do."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you really know Jesus, you stop trying to earn your way. You stop relying on your own strength. You start accessing the divine power that he offers. This power isn't about becoming superhuman. It's about making decisions that actually work, about being guided away from the mistakes you used to make, about finally feeling like someone understands your situation because they've been through it themselves."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Most people stay stuck because they treat faith like a transaction. 'I gave my life to Jesus years ago, so why hasn't my life changed?' The answer is often simple: they know about Jesus, but they don't know him. They haven't built a real, daily, moment-by-moment relationship where they actually ask him for direction and then follow it."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Stop Solving the Wrong Problem"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Stop Solving the Wrong Problem"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You've been unemployed for five years, so you think the problem is getting a job. But maybe the real problem is you need an income, and a job is just one solution. Or you've been praying for your relationship to change, but the real problem is you don't know your own worth in God's eyes. We treat symptoms instead of finding the root cause."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Before Jesus can help you, you have to get honest about what you actually need. Not what you think you should need. Not what other people are getting. What do you really need? Then ask him. Not once. Every single time. Because life changes when you stop guessing and start asking the one who actually knows."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is surrender, but not weakness. It's the opposite. It's the strength to admit you don't have to figure everything out. It's the wisdom to follow someone who has already succeeded instead of copying people who are as lost as you are."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Life You Were Made for Starts Now"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Life You Were Made for Starts Now"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"God made you unique. Your purpose is not somebody else's purpose. Your gifts are not somebody else's gifts. But you can't step into your own life if you're trying to live somebody else's. That's like trying to put a bottle cap on a different bottle-it won't fit, and everything leaks."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you finally stop rejecting who God made you to be and start following Jesus in the specific way he designed for you, that's when you have everything pertaining to life. That's when you feel the love you've been searching for. That's when your work matters. That's when your relationships heal. That's when you stop waking up exhausted."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You don't need another self-help hack. You don't need more motivation. You need to know the one who walked through everything you're walking through and came out victorious. You need to follow his path instead of your own. That's when life gets easier. That's when you finally have everything."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"If you want everything in life, you have to get the one that is life, because if you get him, you have life.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"If you want everything in life, you have to get the one that is life, because if you get him, you have life.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -192,7 +192,7 @@ export default function SermonPage() {
               <li><strong>{"Knowledge of Him Changes Everything"}</strong> {" "}{"You can believe in Jesus without actually knowing him. Knowing him means talking to him daily, asking him questions, following his direction even when it feels risky, and watching him come through. It means reading his word not like a rulebook but like a letter from someone who loves you and knows what you're about to face. This relationship is what activates the divine power he offers. Without it, you're still walking the road alone."}</li>
               <li><strong>{"Find the Root, Not Just the Symptom"}</strong> {" "}{"Before you ask God to solve your problem, get honest about what the real problem is. You're not looking for a job-you're looking for an income. You're not trying to fix your marriage-you're trying to be loved for who you actually are. Your life has been hard not because you haven't tried hard enough, but because you haven't asked the right person for direction on the right question. When you identify the root cause and ask Jesus to guide you, solutions show up."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -219,7 +219,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -235,7 +235,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -248,33 +248,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Stuck and Invisible - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#0d6fbf] hover:underline font-medium">
                   Everyone
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#0d6fbf] hover:underline font-medium">
                   You Know What You Need to Do-So Why Can
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#0d6fbf] hover:underline font-medium">
                   Helping Someone Actually Keeps Them Stuck
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

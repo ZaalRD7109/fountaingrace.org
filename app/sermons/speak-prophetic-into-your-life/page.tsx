@@ -102,17 +102,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Every Word You Say About Yourself Is Writing Your Future
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 6 April 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 6 April 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               You are always prophesying. Every time you say &quot;life is hard&quot; or &quot;I can&apos;t do this&quot; or &quot;nothing ever works for me&quot; - you are releasing a prophetic word over your own life. The problem is not that you are not prophesying. The problem is what you are prophesying. This message shows you how to change it.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 6 April 2025
             </p>
           </div>
@@ -134,13 +134,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Speaking in a different way"}</button>
-                <button type="button" data-start="55" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:55</span>{"When words become negative"}</button>
-                <button type="button" data-start="1147" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">19:07</span>{"What really matters about speaking"}</button>
-                <button type="button" data-start="1758" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">29:18</span>{"It's not about the future"}</button>
-                <button type="button" data-start="2322" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">38:42</span>{"Work hard and keep going"}</button>
-                <button type="button" data-start="3138" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">52:18</span>{"Don't use words to trick people"}</button>
-                <button type="button" data-start="4008" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:06:48</span>{"Read slowly and think deep"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Speaking in a different way"}</button>
+                <button type="button" data-start="55" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:55</span>{"When words become negative"}</button>
+                <button type="button" data-start="1147" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">19:07</span>{"What really matters about speaking"}</button>
+                <button type="button" data-start="1758" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">29:18</span>{"It's not about the future"}</button>
+                <button type="button" data-start="2322" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">38:42</span>{"Work hard and keep going"}</button>
+                <button type="button" data-start="3138" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">52:18</span>{"Don't use words to trick people"}</button>
+                <button type="button" data-start="4008" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:06:48</span>{"Read slowly and think deep"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -159,7 +159,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Rudder You Are Already Using</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Rudder You Are Already Using</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               The Bible compares the tongue to a rudder on a ship. A rudder is not the engine - it does not provide the power. But it determines the direction. Without a functioning rudder, a ship with a full engine will end up on rocks. A ship is not destroyed by lack of power. It is destroyed by going the wrong direction.
             </p>
@@ -167,7 +167,7 @@ export default function SermonPage() {
               Your words work the same way. They are steering your life. Every time you open your mouth and say &quot;I&apos;m broke,&quot; &quot;I&apos;m useless,&quot; &quot;nothing ever changes for me&quot; - the rudder turns. That is a prophetic word. It is a negative prophetic word, but it is prophetic. It is setting a direction. The question is whether the direction it is setting is aligned with what God says about you.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">1 Corinthians 14:3 - What Prophecy Is Actually For</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">1 Corinthians 14:3 - What Prophecy Is Actually For</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               1 Corinthians 14:3 - &quot;But he that prophesieth speaketh unto men to edification, and exhortation, and comfort.&quot;
             </p>
@@ -178,7 +178,7 @@ export default function SermonPage() {
               Prophecy is not primarily about predicting the future. It is about declaring God&apos;s Word into the present. Not &quot;one day I will be&quot; but &quot;right now I am&quot; - because God&apos;s Word is present tense. Romans 10:17 - &quot;So then faith cometh by hearing, and hearing by the word of God.&quot; When you hear yourself say what God says, faith grows. That is the mechanism.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Ezekiel 37:4 - Prophesy to Your Dry Bones</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Ezekiel 37:4 - Prophesy to Your Dry Bones</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Ezekiel 37:4 - &quot;Again he said unto me, Prophesy upon these bones, and say unto them, O ye dry bones, hear the word of the LORD.&quot;
             </p>
@@ -189,7 +189,7 @@ export default function SermonPage() {
               Your dry bones are different from someone else&apos;s. Maybe it is a marriage that looks lifeless. A career that looks finished. A relationship that looks beyond repair. A body that feels broken. The instruction from Ezekiel 37 is not to accept the dry bones as the final word - it is to prophesy to them. Speak the Word of God at the thing that looks dead. That is your assignment.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Jeremiah 29:11 - God&apos;s Thoughts Are Already Set</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Jeremiah 29:11 - God&apos;s Thoughts Are Already Set</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Jeremiah 29:11 - &quot;For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end.&quot;
             </p>
@@ -198,7 +198,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;Stop prophesying the problem. Start prophesying the promise. You are always speaking a future into existence - make sure it is the future God intended for you.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -213,7 +213,7 @@ export default function SermonPage() {
 
             <p className="text-[#555] leading-relaxed">
               If you are in or around Pretoria or Johannesburg,{' '}
-              <Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">
+              <Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">
                 come on a Sunday
               </Link>{' '}
  - these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street.
@@ -247,7 +247,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">
                 Plan Your Visit
               </Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
                 Send a Prayer Request
               </Link>
             </div>
@@ -268,7 +268,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -283,33 +283,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Nothing Changes No Matter How Hard You Try
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#0d6fbf] hover:underline font-medium">
                   You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/dying-right-good-friday-message" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/dying-right-good-friday-message" className="text-[#0d6fbf] hover:underline font-medium">
                   Dying Right - What Jesus Did on the Cross That Most People Miss
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Some Things Refuse to Move
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

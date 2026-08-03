@@ -103,17 +103,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Why Sunday Feels Different and Monday Feels Like Nothing Changed
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 22 June 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 22 June 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               We live in a world full of connections but very little communion. People scroll all night and still feel empty. Christians attend services and go home unchanged. The problem is not the absence of God - it is that we have confused performance for presence. This message is about what changes when you stop performing and start hosting.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 22 June 2025
             </p>
           </div>
@@ -135,12 +135,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Followers versus real friends"}</button>
-                <button type="button" data-start="46" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:46</span>{"When something burns inside"}</button>
-                <button type="button" data-start="310" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:10</span>{"The power of being together"}</button>
-                <button type="button" data-start="1018" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">16:58</span>{"Your body is a temple"}</button>
-                <button type="button" data-start="1800" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">30:00</span>{"Samson lost his strength"}</button>
-                <button type="button" data-start="2542" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">42:22</span>{"How to host real presence"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Followers versus real friends"}</button>
+                <button type="button" data-start="46" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:46</span>{"When something burns inside"}</button>
+                <button type="button" data-start="310" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:10</span>{"The power of being together"}</button>
+                <button type="button" data-start="1018" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">16:58</span>{"Your body is a temple"}</button>
+                <button type="button" data-start="1800" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">30:00</span>{"Samson lost his strength"}</button>
+                <button type="button" data-start="2542" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">42:22</span>{"How to host real presence"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -159,7 +159,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Wi-Fi Without the Fire</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Wi-Fi Without the Fire</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               You can have followers without fellowship. A full house at church without a single changed life. Families sitting at the same dinner table staring at separate screens - present, but not present. This is the condition of a generation with more connection technology than any before it and less actual connection than most.
             </p>
@@ -167,7 +167,7 @@ export default function SermonPage() {
               The problem is not information. The problem is the absence of presence. A sermon can be excellent and the presence of God not be in it. Luke 24:32 - when the two disciples walked with Jesus on the road, they said, &quot;Did not our heart burn within us while he talked with us?&quot; Their hearts did not burn because of the information. They burned because of the presence of the One walking with them.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Psalm 27:8 - What Presence Actually Means</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Psalm 27:8 - What Presence Actually Means</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Psalm 27:8 - &quot;When thou saidst, Seek ye my face; my heart said unto thee, Thy face, LORD, will I seek.&quot; The Hebrew word for face is <em>panim</em> - presence is not just location, it is the face of God turned toward you. Being alongside, not merely nearby. The way two people in love want to be seen together - not just in the same room, but visibly, deliberately in each other&apos;s company.
             </p>
@@ -175,7 +175,7 @@ export default function SermonPage() {
               This is not a Sunday feeling. It is a daily reality. The person who experiences God on Sunday and cannot find their Bible on Monday has not hosted the presence - they experienced an event. Hosting is different. Hosting means you have made room for Him to stay.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">2 Samuel 6:11 - Three Months at Obed-Edom&apos;s House</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">2 Samuel 6:11 - Three Months at Obed-Edom&apos;s House</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               2 Samuel 6:11 - &quot;And the ark of the LORD continued in the house of Obededom the Gittite three months: and the LORD blessed Obededom, and all his household.&quot;
             </p>
@@ -186,7 +186,7 @@ export default function SermonPage() {
               Picture what it would mean if God stayed in your house for three months - not as a visitor, but as a resident. He is not a guest with restrictions. He is the owner. 1 Corinthians 6:19-20 - &quot;What? know ye not that your body is the temple of the Holy Ghost which is in you?&quot; You are not the host offering Him temporary space. You are the temple He already inhabits. The question is whether you are cultivating that reality or ignoring it.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Judges 16:20 - When You Lose Presence Without Noticing</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Judges 16:20 - When You Lose Presence Without Noticing</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Judges 16:20 - &quot;And she said, The Philistines be upon thee, Samson. And he awoke out of his sleep, and said, I will go out as at other times before, and shake myself. And he wist not that the LORD was departed from him.&quot;
             </p>
@@ -198,7 +198,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;Psalm 16:11 - in His presence is fullness of joy. Not partial joy. Fullness. When you host the presence of God, joy is not the goal - it is the evidence. It shows up because He is there.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -247,7 +247,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">
                 Plan Your Visit
               </Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
                 Send a Prayer Request
               </Link>
             </div>
@@ -268,7 +268,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -283,33 +283,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-language-of-the-spirit-interpreting-what-you-hear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-language-of-the-spirit-interpreting-what-you-hear" className="text-[#0d6fbf] hover:underline font-medium">
                   Hearing the Right Things and Still Getting Them Wrong - Here Is Why
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/releasing-his-presence" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/releasing-his-presence" className="text-[#0d6fbf] hover:underline font-medium">
                   Releasing His Presence: From Container to Conduit
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-silent-assassin-of-destiny" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-silent-assassin-of-destiny" className="text-[#0d6fbf] hover:underline font-medium">
                   The Silent Assassin of Destiny: Overthinking
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Every Word You Say About Yourself Is Writing Your Future
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-some-problems-wont-leave-until-you-understand-this" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-some-problems-wont-leave-until-you-understand-this" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Some Problems Won't Leave Until You Understand This
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

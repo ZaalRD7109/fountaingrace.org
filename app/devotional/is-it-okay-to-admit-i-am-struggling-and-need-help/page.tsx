@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 172 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Is it okay to admit I am struggling and need help?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 21 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 21 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Come unto me, all ye that labour and are heavy laden, and I will give you rest."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Come unto me, all ye that labour and are heavy laden, and I will give you rest."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Matthew 11:28 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You have built a life around being the one people turn to. Your hands are quick to help, your ear is ready to listen, your strength is there when others falter. It is a beautiful thing, truly. But I see you also, friend. I see how you redirect the conversation when someone asks how you are doing. I see how you carry things alone that were never meant to be carried alone.\n\nThe truth is gentler than you think. You have learned somewhere that your value lives in what you give, not in what you are. So needing anything feels like losing ground. Being honest about your own struggle feels like weakness, like you are letting people down. You have become so practiced at the performance that the real you, the one who needs grace too, gets quieter and quieter.\n\nBut listen to this: \"Come unto me, all ye that labour and are heavy laden, and I will give you rest.\" Jesus is not asking you to arrive put together. He is asking you to come as you are, tired and needing. Your honesty is not a failure of faith. It is the beginning of it.\n\nToday, you are allowed to be human. You are allowed to name what weighs on you, to ask for help, to show up imperfect. God does not need your performance. He needs your heart. And the people who love you need the real you more than they need another version of strength.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

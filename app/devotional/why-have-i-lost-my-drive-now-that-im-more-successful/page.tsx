@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 160 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Why have I lost my drive now that I'm more successful?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 9 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 9 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Because thou sayest, I am rich, and increased with goods, and have need of nothing; and knowest not that thou art wretched, and miserable, and poor, and blind, and naked."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Because thou sayest, I am rich, and increased with goods, and have need of nothing; and knowest not that thou art wretched, and miserable, and poor, and blind, and naked."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Revelation 3:17 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You've got more now than you had then. And somehow less fire.\n\nThree years ago you were hungry in a different way. Broke, maybe. Certainly uncertain. But you moved. You tried things that might fail because failure felt better than the weight of wondering. Now you've built something. A little stability. A few people counting on you. And that safety net has become a cage.\n\nHere is what's actually happening: you've mistaken security for progress. You think the version of you with less to lose was braver, but she wasn't braver - she was just unburdened by the fear of losing what she'd built. Solomon wrote \"He that hideth hatred with lying lips, and he that uttereth a slander, is a fool.\" You're being foolish with yourself. Pretending the problem is time or resources or readiness. The problem is you've made a god out of what you have.\n\nThe thing you haven't started in six attempts is not waiting for you to be ready. It's waiting for you to be willing to be poor again - not in money, but in certainty.\n\nWhat if the version of yourself three years from now is watching this moment too, wondering what happened to you right here?\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

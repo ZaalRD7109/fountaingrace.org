@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You're Not Beyond Repair No Matter What You've Done"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 14 June 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Feel like your mistakes define you? Struggling with shame and alienation? You can find hope and acceptance."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 14 June 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"Feel like your mistakes define you? Struggling with shame and alienation? You can find hope and acceptance."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Been There Before"}</button>
-                <button type="button" data-start="95" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:35</span>{"Who's This For?"}</button>
-                <button type="button" data-start="377" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">6:17</span>{"Keep Pressing On"}</button>
-                <button type="button" data-start="740" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">12:20</span>{"It's Adam's Fault"}</button>
-                <button type="button" data-start="1027" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">17:07</span>{"Pushing Through"}</button>
-                <button type="button" data-start="1380" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">23:00</span>{"Reach Out"}</button>
-                <button type="button" data-start="1513" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:13</span>{"The Father's Role"}</button>
-                <button type="button" data-start="1799" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">29:59</span>{"Come Closer"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Been There Before"}</button>
+                <button type="button" data-start="95" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:35</span>{"Who's This For?"}</button>
+                <button type="button" data-start="377" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">6:17</span>{"Keep Pressing On"}</button>
+                <button type="button" data-start="740" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">12:20</span>{"It's Adam's Fault"}</button>
+                <button type="button" data-start="1027" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">17:07</span>{"Pushing Through"}</button>
+                <button type="button" data-start="1380" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">23:00</span>{"Reach Out"}</button>
+                <button type="button" data-start="1513" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:13</span>{"The Father's Role"}</button>
+                <button type="button" data-start="1799" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">29:59</span>{"Come Closer"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -164,23 +164,23 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Feeling Stuck in Shame"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Feeling Stuck in Shame"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Many people feel trapped by their past mistakes. Whether it's a broken relationship, an addiction, or a life-altering mistake, the weight of shame can seem unbearable."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"It's common to think you must 'fix' yourself before seeking acceptance from others or even yourself. This message challenges that belief and offers a different path."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Leper's Story"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Leper's Story"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The sermon highlights the story of a leper who approached Jesus with faith, despite being an outcast. He sought healing when society deemed him beyond help."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"In Matthew 8, the interaction demonstrates that acceptance and transformation are possible no matter how outcast one feels."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Breaking the Cycle of Hiding"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Breaking the Cycle of Hiding"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Our natural response to shame is to hide, influenced by generational patterns from Adam onward. But hiding only deepens the feeling of isolation."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"We learn that reaching out with honesty about our struggles can bring the touch of healing and restoration into our lives."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Acceptance Without Precondition"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Acceptance Without Precondition"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus didn't demand the leper fix himself before granting healing. He reached out and touched him, defying societal norms."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This act showed that acceptance came before cleanliness, teaching us we don't need to be perfect to be worthy of love."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Power of Touch"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Power of Touch"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"In a world that pushes away what it doesn't understand, the touch of acceptance has the power to transform."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Like the leper, we can find wholeness and restoration by inviting this unconditional love into our lives."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"God reaches out to you long before you're clean.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"God reaches out to you long before you're clean.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -189,7 +189,7 @@ export default function SermonPage() {
               <li><strong>{"Accept Imperfection"}</strong> {" "}{"Perfection isn't a prerequisite for love and acceptance. Reach out as you are for genuine healing."}</li>
               <li><strong>{"Jesus Moves Towards You"}</strong> {" "}{"No matter how isolated you feel, divine acceptance is as close as reaching out."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -217,7 +217,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -235,7 +235,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -248,33 +248,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids" className="text-[#0d6fbf] hover:underline font-medium">
                   The Pain You Inherited From Your Father Is Quietly Breaking Your Kids
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#0d6fbf] hover:underline font-medium">
                   The Cost of Sitting on the Sidelines
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#0d6fbf] hover:underline font-medium">
                   You Got What You Prayed For But Lost It Anyway
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Trapped By What Others Say You Can
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-father-who-never-shows-up-and-how-it-breaks-you" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-father-who-never-shows-up-and-how-it-breaks-you" className="text-[#0d6fbf] hover:underline font-medium">
                   The Father Who Never Shows Up (And How It Breaks You)
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 202 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"What is God actually doing while I am this exhausted?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 21 July 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 21 July 2026</p>
           </div>
         </header>
 
@@ -57,7 +57,7 @@ export default function DevotionalPage() {
             <p className="text-[#555] leading-relaxed text-lg">{"When you are running on fumes, the last thing you want to hear is that this is good for you. That can feel like being told to smile through a broken leg. But there is a difference between someone dismissing your pain and someone showing you it is not wasted. You are not just surviving a hard stretch. Something is being built in you that could not have been built any other way. This is what God says into the exhaustion:"}</p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"And not only so, but we glory in tribulations also: knowing that tribulation worketh patience; and patience, experience; and experience, hope."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"And not only so, but we glory in tribulations also: knowing that tribulation worketh patience; and patience, experience; and experience, hope."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Romans 5:3-4 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before tonight, write down one thing that is harder for you now than it was two years ago, and then write one thing you can handle now that you could not handle then. Let that second thing be your evidence. God has been working longer than you noticed."}</p>
@@ -84,13 +84,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

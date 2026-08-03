@@ -103,17 +103,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Why Some People Are Completely Untouchable No Matter What Life Throws
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 24 August 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 24 August 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               The anointing is not eloquent words. It is not a confident stage presence. Isaiah 10:27 says the yoke shall be destroyed because of it - not because of you. This message is about what the anointing actually is, what it does, and why you need it in every area of your life.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 24 August 2025
             </p>
           </div>
@@ -135,14 +135,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Picture this moment"}</button>
-                <button type="button" data-start="51" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:51</span>{"Why you hesitate"}</button>
-                <button type="button" data-start="139" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:19</span>{"Danger in your life"}</button>
-                <button type="button" data-start="225" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:45</span>{"What gets you marked"}</button>
-                <button type="button" data-start="534" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">8:54</span>{"Why you need it"}</button>
-                <button type="button" data-start="1102" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">18:22</span>{"Others will know"}</button>
-                <button type="button" data-start="1436" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">23:56</span>{"Impossible becomes possible"}</button>
-                <button type="button" data-start="2342" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">39:02</span>{"Everything changes now"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Picture this moment"}</button>
+                <button type="button" data-start="51" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:51</span>{"Why you hesitate"}</button>
+                <button type="button" data-start="139" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">2:19</span>{"Danger in your life"}</button>
+                <button type="button" data-start="225" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:45</span>{"What gets you marked"}</button>
+                <button type="button" data-start="534" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">8:54</span>{"Why you need it"}</button>
+                <button type="button" data-start="1102" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">18:22</span>{"Others will know"}</button>
+                <button type="button" data-start="1436" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">23:56</span>{"Impossible becomes possible"}</button>
+                <button type="button" data-start="2342" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">39:02</span>{"Everything changes now"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -161,7 +161,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Crocodile in the Calm Water</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Crocodile in the Calm Water</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               You approach a river. The surface is calm - no waves, nothing visible. You think it is safe. But the sign at the riverbank says: crocodile-infested. The danger was there the whole time. You simply could not see it.
             </p>
@@ -169,7 +169,7 @@ export default function SermonPage() {
               Life works the same way. There are no signs warning you of what is ahead. But the anointing upon you is the reason the crocodile does not move. Not because of your alertness. Not because of your strength. Because God has marked His territory - and what He has marked, the enemy recognises.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Isaiah 10:27 - The Yoke Rendered Useless</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Isaiah 10:27 - The Yoke Rendered Useless</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Isaiah 10:27 - &quot;And it shall come to pass in that day, that his burden shall be taken away from off thy shoulder, and his yoke from off thy neck, and the yoke shall be destroyed because of the anointing.&quot;
             </p>
@@ -180,7 +180,7 @@ export default function SermonPage() {
               An ox under a yoke feels the pressure of bone against wood. When God&apos;s anointing comes - described as fat or oil between the bone and the yoke - the pressure disappears. His yoke is easy. His burden is light. Not because the yoke is removed, but because the anointing cushions everything it touches.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Three Things the Anointing Does</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Three Things the Anointing Does</h2>
             <ol className="list-decimal list-inside space-y-4 text-[#555] leading-relaxed mb-8">
               <li>
                 <strong>It marks you as God&apos;s property.</strong> When Samuel anointed David in 1 Samuel 16:13, David was in the field - overlooked, underestimated, not even invited to the ceremony. But God chose him. The anointing does not follow the most visible person in the room. It follows the one God has chosen. When you carry it, you are marked as His - and that mark is recognised in realms you cannot see.
@@ -194,7 +194,7 @@ export default function SermonPage() {
             </ol>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;God does not see you the way you look at yourself. He has anointed you already - and sometimes the one everybody overlooked is the one God has already set apart.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -240,7 +240,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">
                 Plan Your Visit
               </Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
                 Send a Prayer Request
               </Link>
             </div>
@@ -261,7 +261,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -276,33 +276,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/why-some-problems-wont-leave-until-you-understand-this" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-some-problems-wont-leave-until-you-understand-this" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Some Problems Won't Leave Until You Understand This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-biggest-battle-follows-your-best-decision" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-biggest-battle-follows-your-best-decision" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Your Biggest Battle Always Follows Your Best Decision
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/hosting-the-presence-of-god" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/hosting-the-presence-of-god" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Sunday Feels Different and Monday Feels Like Nothing Changed
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Every Word You Say About Yourself Is Writing Your Future
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-language-of-the-spirit-interpreting-what-you-hear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-language-of-the-spirit-interpreting-what-you-hear" className="text-[#0d6fbf] hover:underline font-medium">
                   Hearing the Right Things and Still Getting Them Wrong - Here Is Why
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

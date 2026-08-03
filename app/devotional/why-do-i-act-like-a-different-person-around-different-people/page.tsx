@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 168 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Why do I act like a different person around different people?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 17 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 17 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Be ye therefore perfect, even as your Father which is in heaven is perfect."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Be ye therefore perfect, even as your Father which is in heaven is perfect."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Matthew 5:48 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You know that feeling when you walk into a different room and something shifts in you. Your voice changes. Your shoulders settle differently. You laugh at jokes that wouldn't normally land. You are not lying, exactly. You are just... adjusting. And by the end of the day you are tired in a way that has nothing to do with work.\n\nThe truth underneath is that you are afraid. Afraid that the real version of you, the one with doubts and needs and soft places, will not be enough. So you have learned to read rooms like a survival skill. You have become very good at it. But now you cannot remember which room holds the actual you.\n\nHere is what God sees: He sees all of you at once. Every version. Every room. And He does not ask you to perform. \"Be ye therefore perfect, even as your Father which is in heaven is perfect\" does not mean flawless. It means whole. Complete. Honest. The kind of whole that only happens when you stop splitting yourself into pieces.\n\nYou do not have to keep managing other people's comfort with who you are. There is one audience that matters, and He already knows your name. Step into that room today. The real one. You are safe there.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

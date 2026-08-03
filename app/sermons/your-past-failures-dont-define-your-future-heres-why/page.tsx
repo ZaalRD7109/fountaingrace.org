@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Past Failures Don't Define Your Future-Here's Why"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 21 April 2023</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You feel trapped by what's happened to you. But what if your hardest seasons are actually preparing you for your best ones?"}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 21 April 2023</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You feel trapped by what's happened to you. But what if your hardest seasons are actually preparing you for your best ones?"}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"I love you completely"}</button>
-                <button type="button" data-start="53" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:53</span>{"Can you say it back"}</button>
-                <button type="button" data-start="235" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:55</span>{"Why wait for it"}</button>
-                <button type="button" data-start="815" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">13:35</span>{"Everything instant now"}</button>
-                <button type="button" data-start="1528" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:28</span>{"Peace means something real"}</button>
-                <button type="button" data-start="2305" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">38:25</span>{"Your thoughts matter too"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"I love you completely"}</button>
+                <button type="button" data-start="53" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:53</span>{"Can you say it back"}</button>
+                <button type="button" data-start="235" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:55</span>{"Why wait for it"}</button>
+                <button type="button" data-start="815" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">13:35</span>{"Everything instant now"}</button>
+                <button type="button" data-start="1528" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:28</span>{"Peace means something real"}</button>
+                <button type="button" data-start="2305" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">38:25</span>{"Your thoughts matter too"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -161,28 +161,28 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why You're Stuck in Your Past"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why You're Stuck in Your Past"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Right now, your thoughts about tomorrow are shaped by yesterday. You think, 'I failed at relationships before, so I'll fail again.' You think, 'Money never stayed with me, so why try.' You think, 'I'm not smart enough, not strong enough, not disciplined enough.' These aren't facts-they're chains forged from past pain."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Here's the problem: your thoughts keep you small. The Bible calls this living from fear, not faith. Jeremiah 29:11 shows God speaking to a nation in captivity-people who had lost everything and had every reason to give up. But God didn't say, 'I know how bad you feel.' He said, 'I know the thoughts that I think towards you, thoughts of peace and not of evil, to give you an expected end.' God's thoughts are better than your discouraging thoughts about yourself."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The hardest part? You don't believe it yet. You're looking at your empty bank account, your broken marriage, your stalled career, and you're thinking, 'How could anything good come from this?' But that question itself proves you're thinking from your past, not from God's plan."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Hardship Builds You for What's Coming"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Hardship Builds You for What's Coming"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"To understand why your struggles matter, imagine trying to lift 120 kilos on day one. Your arms can't do it. So you start with five kilos, then ten, then twenty. You build constantly. Each lift makes you stronger. By the time 120 comes, you're ready. Without those earlier lifts, you'd be broken."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your financial stress, your failed relationship, your setbacks at school or work-these are the smaller weights. They're making you stronger for what comes next. This is what Proverbs 10:24 means: 'The desire of the righteous shall be granted.' And Job 8:7 spells it out: 'Though thy beginning was small, yet thy latter shall be greatly increased.' God isn't punishing you with hardship. He's training you with it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The word for 'expected end' in Hebrew is 'tiqvah'-it means a cord, hope, something you long for. God isn't guessing about your future. He expects something specific for you. And that expectation is good. But you can't receive it while you're still believing the lie that your past defines your ceiling."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Latter Will Be Greater Than Your Former"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Latter Will Be Greater Than Your Former"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Here's what most people miss: you haven't seen your best days yet. Not even close. Psalm 37:37 says, 'Mark the perfect man and behold the upright, for the end of that man is peace.' The word for peace here is 'Shalom'-not just absence of conflict, but completion, wholeness, prosperity, health, success all wrapped together. That's your ending. That's what God is building toward."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This doesn't mean your circumstances will change tomorrow. Jeremiah's nation spent 70 years in captivity. They didn't just accept defeat-they built houses, planted gardens, raised families, lived while waiting. God told them: 'Go on with your life. Go on and do things even though it's tough.' Your job isn't to wait for the pain to stop before you live. Your job is to stop letting your past pain convince you that better isn't coming."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Think back to a season when you were struggling. A time you thought you wouldn't make it. Now look at where you are. That struggle? It was building you for where you stand today. The same is true right now. What you're going through today is building you for a tomorrow you can't yet imagine."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How to Align Your Expectations With God's Plan"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How to Align Your Expectations With God's Plan"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The battle is in your mind. Isaiah 55:8-9 cuts to the bone: 'My thoughts are not your thoughts, neither are your ways my ways. As the heavens are higher than the earth, so are my ways higher than your ways, and my thoughts than your thoughts.' Your thoughts come from fear. God's thoughts come from a plan you haven't seen yet."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you're pregnant, you expect one thing: a child. When that child is born, your expectations might shift-maybe you wanted a boy, got a girl. But you don't stop expecting good. The same applies to God's expectations for you. He expects good. He's not hedging his bets. He's not worried about whether you'll make it. His expectation is certain. Proverbs 23:18 promises: 'For surely there is an end; and thine expectation shall not be cut off.' Your expectation will not be cut off."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Stop letting your past write your future script. Tell yourself: 'I'm going through this hardship, but it's not killing me-it's building me. The money stress is temporary. The loneliness won't last. The failure at school is a lesson, not a sentence. God has greater things in store for me, and I'm choosing to expect them.'"}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Peace That Comes at the End"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Peace That Comes at the End"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When Jesus taught His followers, He wasn't offering escape from difficulty. He was offering something better: peace in the middle of it. The kind of peace that doesn't depend on whether your bank account is full or your relationship is working. The kind of peace that says, 'I don't understand this yet, but I trust it's building me.'"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is the Shalom God promises. Not happiness based on circumstance. But completion, wholeness, the sense that your life is adding up to something. That's what your latter looks like. And it's not someday in heaven. It starts when you stop expecting the worst and start expecting what God actually plans."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Tonight, if you're in pain, if you're broke, if you're alone, if you're stuck-Jesus invites you to surrender the lie that you're finished. Pray this: 'Lord Jesus, I want to stop thinking like my past defines my future. I want to believe that my hardships are building me, not breaking me. Show me what You see in me. Give me the faith to expect the good You have in store. And help me to live well while I'm waiting for it.' Because your latter will be greater than your former. That's not hope. That's God's expectation for you."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Stop letting your past convince you that better isn't coming-your struggles are building you for something greater.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Stop letting your past convince you that better isn't coming-your struggles are building you for something greater.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -191,7 +191,7 @@ export default function SermonPage() {
               <li><strong>{"Hardship Is a Tool, Not a Punishment"}</strong> {" "}{"Every difficulty you face is a weight in your hands-it's making you stronger for what's coming. Job 8:7 says it plainly: 'Though thy beginning was small, yet thy latter shall be greatly increased.' You don't build muscle without resistance. You don't build faith without trial. You don't build character without struggle. God isn't cruel. He's crafting you. When you stop seeing your hardship as meaningless suffering and start seeing it as training, you stop merely surviving and start actually living. The struggles building you today are preparing you for the role God has in mind."}</li>
               <li><strong>{"Your Expectation Creates Your Future"}</strong> {" "}{"Proverbs 23:18 promises, 'For surely there is an end; and thine expectation shall not be cut off.' What you expect of yourself, you move toward. What you expect from God, you receive. Right now, many people expect the worst-another failure, more loneliness, deeper poverty. But Proverbs 10:24 flips the script: 'The desire of the righteous shall be granted.' If you can align your expectation with God's expectation for you-not perfection, but completion, not ease, but peace-then your life will move in that direction. Your expectation won't be cut off. God guarantees it. The question is: are you willing to expect good?"}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -218,7 +218,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -234,7 +234,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -247,33 +247,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/your-past-mistakes-dont-determine-your-future" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-past-mistakes-dont-determine-your-future" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Past Mistakes Don
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#0d6fbf] hover:underline font-medium">
                   You Work Hard But Nothing Changes - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Stuck and Invisible - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Dreams Feel Dead, But Delays Aren
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Trapped By What Others Say You Can
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

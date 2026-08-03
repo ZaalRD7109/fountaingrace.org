@@ -103,17 +103,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               The Silent Assassin of Destiny: Overthinking
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 31 August 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 31 August 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               The devil cannot touch you unless you allow him to. His entry point is not your circumstances - it is your mind. One comment, one setback, one look from someone - and your mind is already five steps ahead, building a case against your own future.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 31 August 2025
             </p>
           </div>
@@ -135,13 +135,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Overthinking the silent assassin"}</button>
-                <button type="button" data-start="107" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:47</span>{"How the enemy attacks your mind"}</button>
-                <button type="button" data-start="433" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">7:13</span>{"Spiritual warfare not just anxiety"}</button>
-                <button type="button" data-start="1015" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">16:55</span>{"Rest is also a weapon"}</button>
-                <button type="button" data-start="1944" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">32:24</span>{"Four ways to overcome overthinking"}</button>
-                <button type="button" data-start="2852" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">47:32</span>{"Pray before you process"}</button>
-                <button type="button" data-start="3852" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:04:12</span>{"Sleep on your problems"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Overthinking the silent assassin"}</button>
+                <button type="button" data-start="107" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:47</span>{"How the enemy attacks your mind"}</button>
+                <button type="button" data-start="433" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">7:13</span>{"Spiritual warfare not just anxiety"}</button>
+                <button type="button" data-start="1015" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">16:55</span>{"Rest is also a weapon"}</button>
+                <button type="button" data-start="1944" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">32:24</span>{"Four ways to overcome overthinking"}</button>
+                <button type="button" data-start="2852" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">47:32</span>{"Pray before you process"}</button>
+                <button type="button" data-start="3852" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:04:12</span>{"Sleep on your problems"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -160,7 +160,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Why It Is Called Silent</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Why It Is Called Silent</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Picture someone walking into a room and saying, &quot;I think he hates me.&quot; He was not talking to you. He was not about you. But your mind has already started running. Why does he hate me? What did I do? Is it because of what I said last week? By the time you have finished that train of thought, you have a full story - and none of it happened.
             </p>
@@ -168,7 +168,7 @@ export default function SermonPage() {
               That is the silent assassination. It is silent because no one pulled a trigger. No external event occurred. The damage was done entirely inside your own mind. And because it is silent, you do not recognise it as an attack. You call it thinking. You call it being careful. You call it processing. But the result is the same: you did not move.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Battle Is in the Mind</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Battle Is in the Mind</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               2 Corinthians 10:4-5 - &quot;For the weapons of our warfare are not carnal, but mighty through God to the pulling down of strong holds; casting down imaginations, and every high thing that exalteth itself against the knowledge of God, and bringing into captivity every thought to the obedience of Christ.&quot;
             </p>
@@ -179,7 +179,7 @@ export default function SermonPage() {
               The instruction is not to stop thinking. It is to bring every thought into obedience. To examine what you are building inside your mind and ask: is this actually true, or is this an imagination I have constructed without evidence?
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">How Overthinking Kills Before You Start</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">How Overthinking Kills Before You Start</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Most people who never stepped into purpose were not stopped by the world. They were stopped by a thought. The business was never started because of what might go wrong. The conversation was never had because of how it might be received. The step of obedience was never taken because the mind built ten reasons why it would not work.
             </p>
@@ -188,7 +188,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;The devil can&apos;t touch you unless you allow him to. And you allow him in through one door: an unchecked thought that you never took captive.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -237,7 +237,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">
                 Plan Your Visit
               </Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
                 Send a Prayer Request
               </Link>
             </div>
@@ -258,7 +258,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -273,33 +273,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/why-your-biggest-battle-follows-your-best-decision" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-biggest-battle-follows-your-best-decision" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Your Biggest Battle Always Follows Your Best Decision
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/speak-prophetic-into-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Every Word You Say About Yourself Is Writing Your Future
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-some-problems-wont-leave-until-you-understand-this" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-some-problems-wont-leave-until-you-understand-this" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Some Problems Won't Leave Until You Understand This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/hosting-the-presence-of-god" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/hosting-the-presence-of-god" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Sunday Feels Different and Monday Feels Like Nothing Changed
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-some-things-refuse-to-move" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Some Things Refuse to Move
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

@@ -63,7 +63,7 @@ export default function TermsPage() {
 
       <section className="bg-white pt-16 pb-12 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto text-center">
-          <p className="text-[#008080] font-semibold text-sm uppercase tracking-wider mb-4">
+          <p className="text-[#006b6b] font-semibold text-sm uppercase tracking-wider mb-4">
             Legal · South Africa
           </p>
           <h1 className="text-4xl font-extrabold text-gray-900 leading-tight mb-4">

@@ -103,17 +103,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               The Danger of Overnight Success and the Power of Long Obedience
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 18 May 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 18 May 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               Nobody becomes an overnight success overnight. It just looks that way from the outside. The visible result came from years of unseen roots going deeper. This message is not against success - it is about the danger of pursuing the result while skipping the process that makes it possible to hold what God gives you.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 18 May 2025
             </p>
           </div>
@@ -135,13 +135,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"What comes before"}</button>
-                <button type="button" data-start="91" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:31</span>{"Power of long obedience"}</button>
-                <button type="button" data-start="143" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:23</span>{"Building takes process"}</button>
-                <button type="button" data-start="413" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">6:53</span>{"You can't cheat"}</button>
-                <button type="button" data-start="741" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">12:21</span>{"Experience versus depth"}</button>
-                <button type="button" data-start="1525" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:25</span>{"Guard your thoughts"}</button>
-                <button type="button" data-start="2437" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">40:37</span>{"Preparation isn't delay"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"What comes before"}</button>
+                <button type="button" data-start="91" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:31</span>{"Power of long obedience"}</button>
+                <button type="button" data-start="143" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">2:23</span>{"Building takes process"}</button>
+                <button type="button" data-start="413" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">6:53</span>{"You can't cheat"}</button>
+                <button type="button" data-start="741" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">12:21</span>{"Experience versus depth"}</button>
+                <button type="button" data-start="1525" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:25</span>{"Guard your thoughts"}</button>
+                <button type="button" data-start="2437" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">40:37</span>{"Preparation isn't delay"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -160,7 +160,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">You Don&apos;t Get Dirty Overnight</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">You Don&apos;t Get Dirty Overnight</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               You don&apos;t get dirty overnight and you don&apos;t get clean overnight. Nobody wakes up with Rastafarian hair the morning after they decide they want it. The hair had to grow, had to be tended through every stage, had to avoid the scissors through every temptation to just cut and start again. The visible thing is the result of a long, mostly invisible process.
             </p>
@@ -168,7 +168,7 @@ export default function SermonPage() {
               The same is true in reverse. Judas did not betray Jesus in one impulsive moment. He had been building toward it - through small offences nursed privately, through quiet greed, through gradual disappointment that was never resolved. By the time the opportunity appeared, his weakness was already waiting to receive it. You can&apos;t cheat growth. You can only delay maturity.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Ecclesiastes 3:1 - God Builds in Seasons, Not Speed</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Ecclesiastes 3:1 - God Builds in Seasons, Not Speed</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Ecclesiastes 3:1 - &quot;To every thing there is a season, and a time to every purpose under the heaven.&quot;
             </p>
@@ -179,7 +179,7 @@ export default function SermonPage() {
               Growth is not the proof of God&apos;s blessing. Rooting is. A tree can have green leaves in unfertile soil - the leaves show. But fruit is different. Fruit only appears when the root system is deep enough, stable enough, nourished enough to produce something beyond appearance. People see branches. God is watching roots.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Song of Solomon 2:15 - The Little Foxes</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Song of Solomon 2:15 - The Little Foxes</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Song of Solomon 2:15 - &quot;Take us the foxes, the little foxes, that spoil the vines: for our vines have tender grapes.&quot;
             </p>
@@ -190,7 +190,7 @@ export default function SermonPage() {
               Over time the loosening becomes a crack, and the crack becomes a collapse - and on the day it collapses, the person watching from the outside will say it happened overnight. It did not. The enemy does not huff and puff and blow your house down. He sends termites. Gradual, invisible, until the ceiling starts getting closer and you think you are growing taller.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">Luke 2:46 - Even Jesus Prepared</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">Luke 2:46 - Even Jesus Prepared</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               Luke 2:46 - &quot;And it came to pass, that after three days they found him in the temple, sitting in the midst of the doctors, both hearing them, and asking them questions.&quot;
             </p>
@@ -202,7 +202,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;You can uproot yourself looking for faster soil. You&apos;ll get green leaves - but no fruit. Green leaves come from soil. Fruit comes from roots. And roots take time that shortcuts cannot replace.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -251,7 +251,7 @@ export default function SermonPage() {
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">
                 Plan Your Visit
               </Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">
                 Send a Prayer Request
               </Link>
             </div>
@@ -272,7 +272,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -287,33 +287,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Does Your Life Keep Collapsing No Matter What You Build?
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#0d6fbf] hover:underline font-medium">
                   You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Resolution Didn't Fail - You Quit Acting
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-prayers-are-not-changing-your-life" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Nothing Changes No Matter How Hard You Try
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

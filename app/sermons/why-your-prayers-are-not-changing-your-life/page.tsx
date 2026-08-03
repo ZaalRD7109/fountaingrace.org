@@ -103,17 +103,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Why Nothing Changes No Matter How Hard You Try
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 4 January 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 4 January 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               We have been preaching. Nothing has changed. We have been prophesying. Nothing has changed. We have been praying over you. Nothing has changed. At some point, the honest question has to be asked: what is missing between the prayer and the result?
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 4 January 2026
             </p>
           </div>
@@ -135,14 +135,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Nothing"}</button>
-                <button type="button" data-start="48" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:48</span>{"When you can finally say it"}</button>
-                <button type="button" data-start="135" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">2:15</span>{"There was a prompting"}</button>
-                <button type="button" data-start="220" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:40</span>{"You will know every key"}</button>
-                <button type="button" data-start="326" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:26</span>{"Just be an idea"}</button>
-                <button type="button" data-start="426" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">7:06</span>{"He's still going to do it"}</button>
-                <button type="button" data-start="534" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">8:54</span>{"Sin"}</button>
-                <button type="button" data-start="626" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">10:26</span>{"This will be a year of action"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Nothing"}</button>
+                <button type="button" data-start="48" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:48</span>{"When you can finally say it"}</button>
+                <button type="button" data-start="135" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">2:15</span>{"There was a prompting"}</button>
+                <button type="button" data-start="220" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:40</span>{"You will know every key"}</button>
+                <button type="button" data-start="326" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:26</span>{"Just be an idea"}</button>
+                <button type="button" data-start="426" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">7:06</span>{"He's still going to do it"}</button>
+                <button type="button" data-start="534" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">8:54</span>{"Sin"}</button>
+                <button type="button" data-start="626" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">10:26</span>{"This will be a year of action"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -161,7 +161,7 @@ export default function SermonPage() {
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">The Regret in the Grave</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">The Regret in the Grave</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               If you could ask someone who has died what they most regret, the answer almost never involves something they did wrong. It is almost always something they did not do. The idea they did not pursue. The step they did not take. The word they received but sat on while someone else moved on it.
             </p>
@@ -169,7 +169,7 @@ export default function SermonPage() {
               You had the idea. You had the prompting. Then you hesitated - and watched someone else step into what you knew was meant for you. Not because they were more talented. Not because God favoured them more. Because they acted when you delayed. The opportunity was not about who deserved it. It was about who moved.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">A Prophetic Word Only Activates With Action</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">A Prophetic Word Only Activates With Action</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               A prophetic word only becomes real when two things are present: faith and a corresponding action step. The word alone is a seed in your hand. Faith alone, without movement, does not plant it. James 2:17 - &quot;Even so faith, if it hath not works, is dead, being alone.&quot;
             </p>
@@ -180,7 +180,7 @@ export default function SermonPage() {
               You can know F sharp, G, and A major. You can name every key on the keyboard. But if you have never sat down and played it consistently, the knowledge produces no music. The knowing is not the playing. The prayer is not the action.
             </p>
 
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">What Changes When You Add the Action Step</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">What Changes When You Add the Action Step</h2>
             <p className="text-[#555] leading-relaxed mb-4">
               The moment you identify what God has been prompting you toward and attach a specific, immediate action step to it - the system changes. Not because you earned something. Because you aligned yourself with how God designed the system to work.
             </p>
@@ -192,7 +192,7 @@ export default function SermonPage() {
             </p>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;Most regrets are not about what you did. They are about what you did not do. The moment has passed - but you are still standing at the building site with unbaked bricks and unused mortar.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -244,7 +244,7 @@ export default function SermonPage() {
               </Link>
               <Link
                 href="/prayer"
-                className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
+                className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
               >
                 Send a Prayer Request
               </Link>
@@ -266,7 +266,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -281,33 +281,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Resolution Didn't Fail - You Quit Acting
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#0d6fbf] hover:underline font-medium">
                   You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-knowing-is-the-problem" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-knowing-is-the-problem" className="text-[#0d6fbf] hover:underline font-medium">
                   When Knowing Is the Problem
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-does-your-life-keep-collapsing" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Does Your Life Keep Collapsing No Matter What You Build?
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

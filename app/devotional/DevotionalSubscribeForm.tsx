@@ -81,7 +81,7 @@ export default function DevotionalSubscribeForm() {
             this purpose and will never be sold or shared with third parties. I can
             unsubscribe at any time by replying STOP or clicking the unsubscribe link in
             any email.{' '}
-            <Link href="/privacy-policy" className="underline hover:text-[#008080]" target="_blank">
+            <Link href="/privacy-policy" className="underline hover:text-[#006b6b]" target="_blank">
               Privacy Policy
             </Link>
             .

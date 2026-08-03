@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 157 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"What if I start something but can't keep it going?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 6 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 6 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"2 Timothy 1:7 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You're not afraid of the starting line. You're terrified of what happens after you cross it.\n\nThe real fear isn't failure. It's success that requires maintenance. It's building something and then discovering you don't have what it takes to keep it standing. So you circle the thing six times, finding new reasons why next month is better. It feels like wisdom. It's actually a different kind of cowardice.\n\nHere's what shifts: You've been waiting to feel ready. But readiness is a lie you tell yourself when you're already strong enough. \"For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.\" That power isn't for the starting. It's for the maintaining. You don't get it before you need it. You get it exactly when you're in it.\n\nThe thing you're supposed to start isn't asking for a perfect version of you that never existed. It's asking for the version standing here right now - flawed, tired, real - willing to figure it out as you go.\n\nWhat would you attempt if you stopped waiting for the strength to keep it, and started trusting the strength to learn how?\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

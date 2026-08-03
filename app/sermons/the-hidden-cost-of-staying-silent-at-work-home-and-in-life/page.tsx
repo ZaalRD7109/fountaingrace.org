@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"The Hidden Cost of Staying Silent at Work, Home, and in Life"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 31 May 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You have brilliant ideas, strong convictions, and things that matter. But fear, insecurity, or waiting for permission keeps you quiet-while less qualified people advance, your relationships suffer, and your potential dies unspoken."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 31 May 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You have brilliant ideas, strong convictions, and things that matter. But fear, insecurity, or waiting for permission keeps you quiet-while less qualified people advance, your relationships suffer, and your potential dies unspoken."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Why staying quiet costs you"}</button>
-                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:30</span>{"Missing opportunities before leaders"}</button>
-                <button type="button" data-start="345" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:45</span>{"Speaking up changes everything"}</button>
-                <button type="button" data-start="1005" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">16:45</span>{"Don't wait for permission"}</button>
-                <button type="button" data-start="1535" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:35</span>{"Authority comes from knowing yourself"}</button>
-                <button type="button" data-start="2145" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">35:45</span>{"Speak to the right people"}</button>
-                <button type="button" data-start="2700" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">45:00</span>{"Your silence is silencing others"}</button>
-                <button type="button" data-start="3360" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">56:00</span>{"Make every place your stage"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Why staying quiet costs you"}</button>
+                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:30</span>{"Missing opportunities before leaders"}</button>
+                <button type="button" data-start="345" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:45</span>{"Speaking up changes everything"}</button>
+                <button type="button" data-start="1005" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">16:45</span>{"Don't wait for permission"}</button>
+                <button type="button" data-start="1535" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:35</span>{"Authority comes from knowing yourself"}</button>
+                <button type="button" data-start="2145" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">35:45</span>{"Speak to the right people"}</button>
+                <button type="button" data-start="2700" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">45:00</span>{"Your silence is silencing others"}</button>
+                <button type="button" data-start="3360" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">56:00</span>{"Make every place your stage"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -164,26 +164,26 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Silence Is Literally Costing You Everything"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Silence Is Literally Costing You Everything"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You sit in meetings with perfect ideas but never speak them. You watch someone less qualified than you get promoted because they opened their mouth and you didn't. You have a business idea buried in your notes. You have a conversation your marriage desperately needs, but you keep it locked inside. This is not a small thing. Your silence is the reason your life looks nothing like it could."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Growth does not happen in silence. A child drinks milk through a straw with a closed mouth, but to eat solid food-the food that makes you strong-the child must open its mouth wide. You have been sipping milk for years. You are still where you are because you never opened your mouth to take in what would actually grow you. The promotions, the influence, the doors, the opportunities-they all go to people willing to speak, even when they are not as qualified as you are."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Words Create Reality and Establish Your Identity"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Words Create Reality and Establish Your Identity"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible says 'Let the weak say I am strong.' Not think it. Not feel it. Say it. When you keep quiet in your weakness, you stay weak. But the moment you speak strength over yourself, something shifts inside you and around you. Words are not just air leaving your mouth-they are declarations that shape what becomes real in your life."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Someone else is naming you right now. If you stay silent when someone calls you incompetent, invisible, or incapable, that name sticks. Everyone sees you as they named you because you never named yourself. You have the words. You know the truth about who you are. But the world only knows what you actually say out loud. Your identity is not determined by what you think-it is determined by what you are willing to say."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You Do Not Need Permission to Start Speaking"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You Do Not Need Permission to Start Speaking"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus did not wait for a synagogue invitation. He did not wait for credentials, an ordination, a platform, a microphone, a building, or a crowd of ten thousand. He saw a multitude on a mountainside and opened his mouth. He had no stage. No permission. No official title. What he had was something to say and the willingness to say it. The moment he opened his mouth, authority filled his words-not because he had been officially appointed, but because he spoke what was true."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You are waiting for the perfect moment that will never come. You are waiting for permission that no one will ever give you. You are waiting for a platform that you can build yourself. Stop waiting. The platform exists right now-in your workplace, your home, your friend group, your community, your social media, wherever you are. Jesus opened his mouth without the stage. What are you waiting for?"}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Speaking Up Changes Everything-But Only If You Actually Do It"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Speaking Up Changes Everything-But Only If You Actually Do It"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Your spouse needs to hear what you really think and feel. Your children are growing up not knowing what you stand for because you have never said it out loud. Your boss needs to hear your idea before someone else claims it. The person God put in front of you needs to hear the truth from your mouth, not from a video online. You are not being humble by staying silent. You are being disobedient."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The gap between what you think in private and what you speak in public is destroying your life. Your silence has cost you years-in your career, your relationships, your influence. This week, speak. Tell your spouse what you have been holding back. Share the idea with your boss. Tell your children what matters to you. Say the thing you have been thinking. One conversation, one moment of courage to open your mouth, can change the direction of everything."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Authority Comes from Opening Your Mouth, Not from Titles"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Authority Comes from Opening Your Mouth, Not from Titles"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The religious leaders of Jesus' time had titles and credentials. Jesus had none. Yet when he spoke, people were astonished because he taught with authority. Authority does not come from being ordained or formally trained. It comes from knowing what you know, believing what you believe, and having the courage to say it. A person with no official title can speak to a situation with more power than a credentialed person who is afraid to speak."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Peter and John had no formal education. They had been called unlearned and ignorant men. But when they opened their mouths after being with Jesus, people recognized something had changed. Boldness had entered them. The boldness came from speaking, not from waiting. You already have what you need inside you. The only missing piece is your willingness to open your mouth."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Cost of Staying Silent Forever"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Cost of Staying Silent Forever"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Behind closed doors, you have been speaking wisdom to one person at a time in back rooms while others who are not as wise get credit and platforms because they speak in the front. Your anointing, your knowledge, your insights-they mean nothing if you do not open your mouth. No one knows what you carry. No one benefits from what you know. And you remain unseen, unheard, and stuck."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your business stays in your notes. Your marriage stays broken because the real conversation never happens. Your children grow up confused about what you believe. Your colleagues advance past you. Your voice is silenced not by anyone else, but by you. This is the moment to stop. Open your mouth. Say what matters. Build your own stage by speaking truth wherever you are. The world needs what you have to say."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"You have been waiting for a platform that will never come-but the platform already exists right where you are standing.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"You have been waiting for a platform that will never come-but the platform already exists right where you are standing.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -192,7 +192,7 @@ export default function SermonPage() {
               <li><strong>{"Words Create Reality Before Anything Else Does"}</strong> {" "}{"Before your promotion exists, you have to speak it. Before your idea becomes real, you have to say it out loud. Before your marriage heals, you have to have the conversation. What you say out loud becomes the truth that shapes your life and the lives around you. When you stay silent, you are allowing other people's words-their opinions, their names, their narratives-to become the reality everyone accepts about you. Your words have power. Use them."}</li>
               <li><strong>{"You Never Need Permission to Be Who You Already Are"}</strong> {" "}{"You do not need a title, a credential, a platform, a perfect moment, or someone else's approval to open your mouth and speak truth. Jesus did not wait. Peter and John did not wait. They knew who they were because they had been with Jesus, and they spoke. You already know what you know. You already believe what you believe. The only permission you need is the permission you give yourself to stop waiting and start speaking right now, exactly where you are."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -220,7 +220,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -238,7 +238,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -251,33 +251,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#0d6fbf] hover:underline font-medium">
                   You Know What You Need to Do-So Why Can
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#0d6fbf] hover:underline font-medium">
                   Everyone Around You Is Pretending - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#0d6fbf] hover:underline font-medium">
                   The Cost of Sitting on the Sidelines
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Boss Will Never Promote You Like This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-have-enough-right-now-heres-why-you-dont-believe-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-have-enough-right-now-heres-why-you-dont-believe-it" className="text-[#0d6fbf] hover:underline font-medium">
                   You Have Enough Right Now, Here
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

@@ -159,7 +159,7 @@ export default function WhatToExpectPage() {
                   <ul className="space-y-3">
                     {phase.items.map((item, i) => (
                       <li key={i} className="flex gap-3 text-[#595959] leading-relaxed">
-                        <span className="text-[#008080] mt-1 flex-shrink-0" aria-hidden="true">✓</span>
+                        <span className="text-[#006b6b] mt-1 flex-shrink-0" aria-hidden="true">✓</span>
                         <span>{item}</span>
                       </li>
                     ))}
@@ -190,7 +190,7 @@ export default function WhatToExpectPage() {
                 key={item}
                 className="flex gap-3 items-start bg-white border border-gray-100 rounded-lg p-4"
               >
-                <span className="text-[#008080] mt-0.5 flex-shrink-0 font-bold" aria-hidden="true">✗</span>
+                <span className="text-[#006b6b] mt-0.5 flex-shrink-0 font-bold" aria-hidden="true">✗</span>
                 <p className="text-sm text-[#595959] leading-relaxed">{item}</p>
               </div>
             ))}
@@ -261,7 +261,7 @@ export default function WhatToExpectPage() {
           </p>
           <Link
             href="/plan-your-visit"
-            className="inline-block bg-white text-[#008080] font-bold px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors text-base"
+            className="inline-block bg-white text-[#006b6b] font-bold px-8 py-4 rounded-lg hover:bg-blue-50 transition-colors text-base"
           >
             Plan Your Visit
           </Link>

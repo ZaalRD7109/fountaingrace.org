@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Stop Waiting for Someone Else to Tell You What's Coming"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 10 November 2024</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You already sense things you can't explain. Here's how to trust those instincts, act on them with confidence, and access guidance for the decisions that matter most."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 10 November 2024</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You already sense things you can't explain. Here's how to trust those instincts, act on them with confidence, and access guidance for the decisions that matter most."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"What this gift really means"}</button>
-                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:30</span>{"Love changes everything"}</button>
-                <button type="button" data-start="660" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">11:00</span>{"Reading the signs"}</button>
-                <button type="button" data-start="1320" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">22:00</span>{"Knowledge makes you better"}</button>
-                <button type="button" data-start="1980" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:00</span>{"Exposing what's hidden"}</button>
-                <button type="button" data-start="2640" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">44:00</span>{"Seeing it vividly"}</button>
-                <button type="button" data-start="3300" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">55:00</span>{"Protection surrounds you"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"What this gift really means"}</button>
+                <button type="button" data-start="90" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:30</span>{"Love changes everything"}</button>
+                <button type="button" data-start="660" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">11:00</span>{"Reading the signs"}</button>
+                <button type="button" data-start="1320" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">22:00</span>{"Knowledge makes you better"}</button>
+                <button type="button" data-start="1980" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:00</span>{"Exposing what's hidden"}</button>
+                <button type="button" data-start="2640" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">44:00</span>{"Seeing it vividly"}</button>
+                <button type="button" data-start="3300" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">55:00</span>{"Protection surrounds you"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,30 +163,30 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Generic Advice Never Feels Right for Your Specific Situation"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why Generic Advice Never Feels Right for Your Specific Situation"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You have experienced this: someone quotes a Bible verse at you, and it sounds nice but totally wrong for what you are actually facing right now. That is because real guidance must be specific to your life, your decisions, your circumstances today - not someone else's story from centuries ago."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Prophetic direction is not about having a stranger read your mind or predict lottery numbers. It is about recognizing how the spiritual realm communicates with you directly through specific impressions, sudden thoughts, and mental pictures that relate exactly to what you are going through. When you know how to spot these, you stop wasting time on generic advice and start acting on guidance that actually fits."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How Your Mind Already Works Like a Receiver (You Just Don't Know It)"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How Your Mind Already Works Like a Receiver (You Just Don't Know It)"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Close your eyes right now and picture a lemon. Imagine picking it up, smelling it, cutting it in half, watching the juice drip, even tasting it. Did you do that? If you could see, smell, taste, and feel all that in your mind without the lemon being there, you have just experienced how spiritual impression works. It happens in your mind's eye, not as physical reality."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is exactly how guidance comes. You get a sudden thought about someone needing prayer. You picture a scenario that has not happened yet. You feel a hesitation about a person or a place. You sense you should take a different route home and later learn an accident happened on your normal road. These are not coincidences or random thoughts. They are impressions - spiritual communication delivered to your inner awareness."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible calls this the Holy Spirit teaching you all things. It is quieter than you expect and more specific than you realize. Most people miss it because they are waiting for dramatic signs instead of paying attention to the quiet nudges already happening in their minds."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Three Non-Negotiable Requirements Before You Act on What You Sense"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Three Non-Negotiable Requirements Before You Act on What You Sense"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Not every thought that crosses your mind is worth sharing or acting on. You need three things in place or your guidance will turn into manipulation, judgment, or a curse wrapped in spiritual language."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"First: Love for the person. The Bible makes this clear - follow after love, then desire spiritual gifts. If you hate someone or want them to fail, whatever 'guidance' you sense about them will come out toxic. It becomes a curse, not a blessing. If you do not genuinely care about someone's wellbeing, stay silent."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Second: The presence of the Holy Spirit in your life. Do not boast that you can prophesy anytime, anywhere, any way. That attitude immediately grieves the Holy Spirit and shuts down real guidance. Humility matters. The moment you think you have this figured out and no longer need to seek God, you lose access to it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Third: Real desire for someone else's progress. You need a genuine heart for the person to change, grow, move in the right direction. Without that heart, you are just collecting information. With it, your impressions become sharper and more accurate because your motivation is pure."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Knowledge Changes Everything - What You Know Shapes What You See"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Knowledge Changes Everything - What You Know Shapes What You See"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"A prophet in Bible times saw things through the lens of what he knew. He described what he saw using the vocabulary available to him. Today, if someone describes a helicopter but has never seen one, they might call it a dragonfly. The impression is real. The interpretation depends on the knowledge the person holds."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is why developing knowledge matters so much. If you stay ignorant, your guidance will be vague or misinterpreted. If you grow - through reading, learning, asking God specific questions, studying the Bible not as a rulebook but as a spiritual manual - your impressions become clearer and more useful."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you lack knowledge, ask. The Scripture says clearly: Call upon me and I will answer you and show you great and mighty things which you do not know. God will reveal things you cannot search out yourself. But you have to ask. You have to seek. You have to develop deeper understanding. That knowledge becomes the framework that allows you to recognize and accurately interpret the guidance coming to you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"One Dangerous Mistake That Turns Guidance Into Harm"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"One Dangerous Mistake That Turns Guidance Into Harm"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Do not share what you sense until you have clarity. If something does not sit right in your spirit, if fear or doubt accompanies the impression, if you feel conflicted - wait. Get clarity first. Rushing to speak a half-formed sense can hurt someone deeply and damage trust."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"There is a difference between sensing something and being ready to speak it. Humility means knowing when to hold back. Wisdom means waiting for the Holy Spirit to confirm the timing and the exact words. This is not weakness. This is maturity. Many people damage their own gift by speaking too fast, too often, or with the wrong heart."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Breakthrough Is Closer Than You Think - Stop Counting Days"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Breakthrough Is Closer Than You Think - Stop Counting Days"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Everything you have endured was not wasted. The struggles, the setbacks, the losses - they were the ground preparing you for what comes next. What seemed like punishment or bad luck was actually working as fertilizer for your fruit to grow. The breakthrough is closer than the moment you want to give up. You are one step away from the thing you have been waiting for. Do not stop now."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"As you move forward and learn to recognize the guidance already available to you, you will see patterns. You will notice how people enter your life at exactly the right moment to help you. You will understand why certain doors close and others open. You will feel the peace that comes from knowing you are not walking blind. The abundance you sense coming - the opportunities, the blessings, the protection - is real. It is already on its way to you. You are just learning how to see it and move toward it with confidence."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Your breakthrough is so close that you felt like you were giving up, but you were the one that is actually supposed to just have one more step and it happened.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Your breakthrough is so close that you felt like you were giving up, but you were the one that is actually supposed to just have one more step and it happened.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -195,7 +195,7 @@ export default function SermonPage() {
               <li><strong>{"Knowledge Makes Impressions Clearer and More Useful"}</strong> {" "}{"Spiritual guidance works through the understanding you already have. The more you know - about Scripture, about people, about how the world actually works - the more accurately you will interpret what you sense. Do not stay in ignorance hoping guidance will just come. Ask God. Study. Learn. Grow your knowledge deliberately. That framework is what allows you to recognize impressions when they come and understand what they actually mean for real decisions in real time."}</li>
               <li><strong>{"The Holy Spirit Withdraws When You Boast About Your Gift"}</strong> {" "}{"The moment you start claiming spiritual authority, announcing your abilities, or taking credit for what you sense, the Holy Spirit steps back. Humility is not weakness - it is the condition for ongoing access. Stay desperate for God's input. Stay aware that this guidance is not your possession to control or brag about. The second you think you have mastered it and no longer need to seek God's presence, you have already grieved the Spirit and cut yourself off from the real thing."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -223,7 +223,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -241,7 +241,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -254,33 +254,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-what-to-do-when-everything-feels-confusing" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-what-to-do-when-everything-feels-confusing" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know What to Do When Everything Feels Confusing
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#0d6fbf] hover:underline font-medium">
                   Six Invisible Gaps That Wreck Your Life (And How to Close Them)
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#0d6fbf] hover:underline font-medium">
                   You Feel Stuck and Invisible - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Success Depends on What You Do Before It Arrives
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

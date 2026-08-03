@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 173 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Why am I so exhausted from trying to keep everyone happy?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 22 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 22 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"For do I now persuade men, or God? or do I seek to please men? for if I yet pleased men, I should not be the servant of Christ."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"For do I now persuade men, or God? or do I seek to please men? for if I yet pleased men, I should not be the servant of Christ."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Galatians 1:10 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You know the weight of keeping things looking right. The careful words chosen for the right ears. The version of yourself that fits the room and keeps the peace. It is exhausting work, and you have been doing it for so long that you might not even know where the real you ends and the performance begins.\n\nBut here is what I see: you are tired because you are carrying two lives at once. One that is true, and one that is acceptable. The gap between them is where your peace went. You have been so afraid of what people will think that you have stopped asking what God thinks, and what you actually need.\n\nListen to this: \"For am I now seeking the favour of men, or of God? or am I striving to please men? for if I yet pleased men, I should not be the servant of Christ.\" Paul wrote that because he knew the sickness of it. He also knew the cure. When you stop performing for people and start living for God, you do not lose approval. You lose the ones who needed your mask, and you find the ones who needed your truth.\n\nYou can put down that version now. The one you have been carrying is not your burden to keep. God is strong enough to handle who you actually are, and He loves that person more than any performance ever could.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

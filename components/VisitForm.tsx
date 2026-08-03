@@ -155,7 +155,7 @@ export default function VisitForm() {
           type="checkbox"
           checked={bringingKids}
           onChange={(e) => setBringingKids(e.target.checked)}
-          className="mt-0.5 h-4 w-4 rounded border-gray-300 text-[#008080] focus:ring-[#008080]"
+          className="mt-0.5 h-4 w-4 rounded border-gray-300 text-[#006b6b] focus:ring-[#008080]"
         />
         <span className="text-sm text-gray-700">
           I am bringing children with me
@@ -169,11 +169,11 @@ export default function VisitForm() {
         purpose of preparing for your visit and following up with you. Data is stored securely
         and is not shared with or sold to any third party. You may request access, correction,
         or deletion at any time by emailing{' '}
-        <a href="mailto:info@fountaingrace.org" className="text-[#008080] hover:underline">
+        <a href="mailto:info@fountaingrace.org" className="text-[#006b6b] underline">
           info@fountaingrace.org
         </a>
         . By submitting you consent to this in line with POPIA. See our{' '}
-        <Link href="/privacy-policy" className="text-[#008080] hover:underline">
+        <Link href="/privacy-policy" className="text-[#006b6b] underline">
           Privacy Policy
         </Link>
         .

@@ -230,7 +230,7 @@ export default function WhatWeBelievePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center flex-wrap">
             <Link
               href="/plan-your-visit"
-              className="inline-block bg-white text-[#008080] font-bold px-7 py-3.5 rounded-lg hover:bg-blue-50 transition-colors"
+              className="inline-block bg-white text-[#006b6b] font-bold px-7 py-3.5 rounded-lg hover:bg-blue-50 transition-colors"
             >
               Plan Your Visit
             </Link>

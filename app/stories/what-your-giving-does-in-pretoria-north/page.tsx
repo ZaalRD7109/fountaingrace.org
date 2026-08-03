@@ -165,7 +165,7 @@ export default function WhatYourGivingDoesPage() {
             <Link href="/donate" className="btn-primary text-sm">
               Give Monthly
             </Link>
-            <Link href="/volunteer" className="inline-block border-2 border-[#008080] text-[#008080] font-semibold px-6 py-3 rounded-lg hover:bg-[#008080] hover:text-white transition-colors text-sm">
+            <Link href="/volunteer" className="inline-block border-2 border-[#008080] text-[#006b6b] font-semibold px-6 py-3 rounded-lg hover:bg-[#008080] hover:text-white transition-colors text-sm">
               Volunteer Instead
             </Link>
           </div>

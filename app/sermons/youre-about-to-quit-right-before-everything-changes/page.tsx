@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You're About to Quit Right Before Everything Changes"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 10 July 2022</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You've been working all night with nothing to show for it. Your business stalls. Your relationship feels broken. Your health won't improve. The temptation to quit is overwhelming. But what if your breakthrough is closer than you think?"}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 10 July 2022</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You've been working all night with nothing to show for it. Your business stalls. Your relationship feels broken. Your health won't improve. The temptation to quit is overwhelming. But what if your breakthrough is closer than you think?"}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"None like you"}</button>
-                <button type="button" data-start="270" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:30</span>{"Never ever give up"}</button>
-                <button type="button" data-start="420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">7:00</span>{"The farmer and donkey"}</button>
-                <button type="button" data-start="780" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">13:00</span>{"Start your business"}</button>
-                <button type="button" data-start="1440" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">24:00</span>{"Nighttime feels endless"}</button>
-                <button type="button" data-start="1620" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">27:00</span>{"Change your strategy"}</button>
-                <button type="button" data-start="1980" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">33:00</span>{"Abundance overflows your boat"}</button>
-                <button type="button" data-start="2160" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">36:00</span>{"Ask for his burden"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"None like you"}</button>
+                <button type="button" data-start="270" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:30</span>{"Never ever give up"}</button>
+                <button type="button" data-start="420" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">7:00</span>{"The farmer and donkey"}</button>
+                <button type="button" data-start="780" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">13:00</span>{"Start your business"}</button>
+                <button type="button" data-start="1440" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">24:00</span>{"Nighttime feels endless"}</button>
+                <button type="button" data-start="1620" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">27:00</span>{"Change your strategy"}</button>
+                <button type="button" data-start="1980" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">33:00</span>{"Abundance overflows your boat"}</button>
+                <button type="button" data-start="2160" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">36:00</span>{"Ask for his burden"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,32 +163,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Donkey in the Well"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Donkey in the Well"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"A farmer hears his donkey screaming all night from an abandoned well. He calls neighbors. They try for hours. Nothing works. Finally, someone says the kindest thing: let's stop its suffering. Let's bury it. The owner, heartbroken, agrees. They start shoveling dirt into the well."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"But something unexpected happens. Each shovelful the donkey receives, it shakes off and steps up. Dirt after dirt, step after step. The very thing meant to crush it becomes the platform it stands on. The donkey keeps rising until it walks out of the well entirely."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is not a fairy tale. This is your life. When you stop giving up and start shifting your strategy, the same pressure that looked like burial becomes the soil beneath your feet."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Disciples Fished All Night and Caught Nothing"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Disciples Fished All Night and Caught Nothing"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Simon Peter and the disciples worked the entire night. Professional fishermen. Their boat. Their nets. Their strength. They caught zero fish. By dawn, they were exhausted and ready to quit. They had earned the right to give up."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Then Jesus showed up on the beach. He didn't criticize them for failing. He didn't mock their empty nets. He asked one question: 'Have you caught anything?' When they said no, He gave one instruction: 'Cast your net on the right side of the boat.' One change. One shift in strategy. One willingness to try something different."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"They obeyed. The net became so full of fish they couldn't haul it into the boat. Not a few fish. Not enough to survive. An overflow. An abundance. The kind of blessing that makes you forget the entire night of struggle."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Giving Up Becomes a Habit"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Giving Up Becomes a Habit"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Every time you quit, you train yourself to be a quitter. You don't just surrender that one goal. You surrender your confidence. You plant a seed that says 'I cannot do hard things.' The next time obstacles come-and they will-you're already halfway out the door."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your business struggles? You want to quit. Your boss rejects your idea? You want to quit. Your spouse criticizes you? You want to quit. Your loan application gets denied? You want to quit. But what if you treated each no as information, not a death sentence?"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When a lender says no because of three problems, don't give up. Go back and fix those three problems. Then ask again. When someone you love pulls away, don't disappear. Change your strategy. Show up differently. Try again. Every small persistence builds the confidence that carries you through the next storm."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Jesus Doesn't Come in the Day. He Comes in Your Morning."}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Jesus Doesn't Come in the Day. He Comes in Your Morning."}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The disciples' morning came at dawn after a long, dark night. Your morning might come at 3 a.m. when you stop fighting alone and finally ask God for help. Your morning might come when you change tactics instead of changing your mind. Your morning might come the moment you decide that giving up is not an option."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus asked the disciples one question: 'Cast your net on the right side.' That's all. He didn't do the fishing. He didn't guarantee success. He asked them to adjust their strategy and obey. When they did, He showed up in the abundance. That's how God works. He doesn't rescue you from the work. He shows up in the work and multiplies what you do."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your sickness has lasted years. Your finances have been tight for seasons. Your marriage has been cold. That long night was real. But the morning is coming. And in that morning, God doesn't give you a little help. He gives you abundance. Pressed down. Shaken together. Running over."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What God Is Asking You Right Now"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What God Is Asking You Right Now"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Stop looking at your circumstances as final. They're not. They're information. Your business didn't grow the way you planned? God asks: Have you asked me for strategy? Have you changed your approach? Your marriage is distant? God asks: Have you told them you love them? Have you tried a different way to connect? Your health won't improve? God asks: Have you asked the elders to anoint you? Have you stood on my word?"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"God doesn't demand. He asks. He respects your choice. But He's inviting you into a different way forward. Not your way alone. Not more of what didn't work. A new strategy. A shift in perspective. A decision to stay when everything says leave."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This morning, your breakthrough might be one conversation away. One prayer away. One decision to change your method instead of abandon your dream. The question isn't whether you can do it. The question is whether you'll ask God to show you how."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Never Give Up Is Not Inspiration. It's Obedience."}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Never Give Up Is Not Inspiration. It's Obedience."}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Giving up feels wise when you're tired. It feels kind to yourself. It feels like accepting reality. But accepting the false version of reality is rebellion. God says weeping endures for a night. He didn't say the night never ends. He said joy comes in the morning. You don't get to decide when the morning arrives. You get to decide whether you'll still be standing when it does."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The donkey didn't know the dirt was lifting it higher. The disciples didn't know the morning would bring abundance. You don't know what's one shift away. What you know is this: every time you kept going, you learned something. Every time you tried again, you got stronger. Every time you asked God instead of just pushing alone, things moved."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your breakthrough is not coming because you deserve it or because you've suffered enough. It's coming because you're learning to partner with God instead of fight alone. It's coming because you're willing to change strategy instead of change your dream. It's coming because you refuse to give Satan the satisfaction of making you believe you're a quitter. You're not. You're becoming the kind of person who stands. And when you stand, God shows up in abundance."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"The moment you're about to give up is the exact moment your breakthrough is about to arrive. That's not inspiration. That's how God works.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"The moment you're about to give up is the exact moment your breakthrough is about to arrive. That's not inspiration. That's how God works.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -197,7 +197,7 @@ export default function SermonPage() {
               <li><strong>{"God Asks Questions; He Doesn't Demand Answers"}</strong> {" "}{"Jesus didn't storm the disciples' boat and force them to move their net. He showed up and asked a question: Have you caught anything? When they said no, He offered a suggestion: try the right side. God respects your choice. He invites; He doesn't coerce. But when you're stuck, He's asking you what you're missing. Have you asked for help? Have you tried a different strategy? Have you brought this to me in prayer? The answer to your breakthrough often waits inside the question God is asking."}</li>
               <li><strong>{"God's Abundance Is Not Scarcity With Better Timing"}</strong> {" "}{"When God shows up in your situation, He doesn't add a little. He gives abundance. The net that was empty all night became so full they couldn't haul it. Your marriage won't just stay together; it flourishes with children and homes. Your business won't just survive; it hits multiples. Your healing won't be partial; it's full. God doesn't think in terms of enough. He thinks in terms of overflow. But you have to stay in the boat long enough to receive it."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -224,7 +224,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -240,7 +240,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -253,33 +253,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
                   When You Feel Abandoned: Why You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#0d6fbf] hover:underline font-medium">
                   The Real Reason You Feel Like You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#0d6fbf] hover:underline font-medium">
                   Everyone Around You Is Pretending - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-started-something-and-gave-up-heres-why-you-keep-doing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-started-something-and-gave-up-heres-why-you-keep-doing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   You Started Something and Gave Up - Here
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

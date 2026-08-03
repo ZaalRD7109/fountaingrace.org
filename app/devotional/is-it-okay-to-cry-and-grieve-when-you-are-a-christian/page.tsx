@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 175 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"Is it okay to cry and grieve when you are a Christian?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 24 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 24 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"Jesus wept."}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"Jesus wept."}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"John 11:35 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You know the weight you are carrying. That thing you do not speak about, do not name, do not let yourself fully feel. You have gotten quite good at this. The silence feels safer than the truth. And I see you. I see the careful way you move around it, the small deflections, the way your eyes change when someone gets close to the thing.\n\nBut silence is not protection. It is a room you have locked yourself inside, and the thing you are afraid will destroy you if it becomes real is already destroying you in the dark. You know this. That is why you are tired. Grief that will not be grieved becomes a weight that settles into your bones and pretends to be normal.\n\nGod does not ask you to stay in that room. He asks you to bring the broken thing to Him, exactly as it is. \"Jesus wept.\" Two words. The Son of God, standing at a grave, letting His heart break open in front of everyone. Not because weakness was holy, but because feeling the real loss was the only way to move through it toward resurrection. Your grief is not weakness. It is the proof that something mattered.\n\nYou do not have to be ready to grieve it perfectly. You only have to be willing to let it be real. And when you do, you will find that God meets you not with judgment, but with the deepest compassion. The silence can end today.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

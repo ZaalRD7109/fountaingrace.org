@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Everyone Around You Is Pretending - Here's Why You're Alone"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 24 May 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're waiting for the right people to show up while pushing away the ones who could actually change your life. A message about why your standards are costing you genuine connection."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 24 May 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You're waiting for the right people to show up while pushing away the ones who could actually change your life. A message about why your standards are costing you genuine connection."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,12 +140,12 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"When things don't go as planned"}</button>
-                <button type="button" data-start="82" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:22</span>{"Who this message is really for"}</button>
-                <button type="button" data-start="477" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">7:57</span>{"Your closest five friends reveal everything"}</button>
-                <button type="button" data-start="1380" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">23:00</span>{"We've written off the wrong people"}</button>
-                <button type="button" data-start="2145" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">35:45</span>{"He recruited from the beach not the office"}</button>
-                <button type="button" data-start="2947" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">49:07</span>{"Hurt people hurt people"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"When things don't go as planned"}</button>
+                <button type="button" data-start="82" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:22</span>{"Who this message is really for"}</button>
+                <button type="button" data-start="477" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">7:57</span>{"Your closest five friends reveal everything"}</button>
+                <button type="button" data-start="1380" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">23:00</span>{"We've written off the wrong people"}</button>
+                <button type="button" data-start="2145" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">35:45</span>{"He recruited from the beach not the office"}</button>
+                <button type="button" data-start="2947" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">49:07</span>{"Hurt people hurt people"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,28 +162,28 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why People Wear Masks Around You"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why People Wear Masks Around You"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You're surrounded by fake people because you've made it unsafe to be real. When you judge someone by their job title, their past mistakes, how they dress, or how they smell, they stop being themselves around you. They perform. They adapt. They wear whatever mask you want to see."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This isn't kindness or high standards-it's isolation. The people you've cut off, rejected, or kept at arm's length aren't failing you. They're failing to meet expectations you never told them about. They're drowning in your silent disapproval."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus understood this. He didn't wait for broken people to clean themselves up before he called them. He didn't interview them or ask for their CV. He walked straight to the beach where the fishermen stank, to the tax booth where the most hated man in town sat, and he said: Follow me."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Strategy Jesus Used (And You're Missing)"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Strategy Jesus Used (And You're Missing)"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus didn't recruit rabbis. He went to fishermen. He didn't look for accountants in the temple-he called a tax collector from his booth. Why? Because people who already think they have it figured out can't be changed. A fisherman had no choice but to listen. A tax collector had nowhere else to go. They were open. They were hungry."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This wasn't Jesus being nice. This was Jesus being strategic. He understood something crucial: hurt people hurt people, and broken people are the ones ready to be rebuilt. The rude person? They're protecting themselves from pain. The struggling person? They have resilience you don't. The person you're avoiding for their past mistakes? They have loyalty you've never experienced."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus gave Peter a new name-the rock-before Peter did a single thing to earn it. Before Peter denied him three times. Before Peter ran away. Jesus saw what others couldn't see. He looked past the dirty clothes and the stink and the failure, and he called out the king inside them."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You're Waiting for People Who Won't Come"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You're Waiting for People Who Won't Come"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You keep telling yourself: I'm waiting for the right business partner. I'm waiting for people on my level. I'm waiting for someone who has it all together. You're not waiting. You're hiding."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus didn't wait. He went through Samaria when every other Jew walked around it. He sought out what was lost. He didn't sit in the temple waiting for sinners to repent and show up cleaned up. He walked to where they were, sat with them, ate with them, and told them: I have come for you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Great Commission isn't about finding other Christians. It's about going. Going to the people you've rejected. Going to your cousin who keeps failing. Going to your colleague who talks wrong. Going to your brother who hasn't cleaned up yet. Going. Not waiting."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What You're Actually Rejecting"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What You're Actually Rejecting"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You reject the homeless person, not knowing they could teach you resilience. You reject the person with the past, not knowing they could teach you forgiveness. You reject the difficult person, not knowing they could teach you patience. You reject the hurting person, not knowing they're the exact mirror you need to see your own wounds."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Every person God puts in your path is there for a reason. Not because they're perfect. Because they're purposeful. The fisherman teaches you how to cast nets into new waters. The tax collector teaches you how to see value others miss. The betrayer-yes, even betrayal-becomes the pivot point where you stand higher than you ever stood before."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The coal you reject becomes the diamond. The thorn you avoid holds up the rose. The darkness you fear teaches you what light actually is. Stop looking at the surface. Start asking: what is God trying to show me through this person?"}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"One Simple Move Changes Everything"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"One Simple Move Changes Everything"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You don't need to overhaul your entire life. You need to make one move. Call one person you've been avoiding. Message them. Invite them for coffee. Sit down and listen to their story without judgment. That's it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Don't sit there waiting for the perfect person to show up. Don't keep warming the church benches waiting for people to come to you. Go. Go to the beach where it stinks. Go to the tax booth. Go through Samaria. Go to the place you've been taught to avoid."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus didn't say, 'Wait here and teach all nations.' He said, 'Go therefore and teach all nations.' Go. The real people you're looking for aren't coming to you. They're waiting for you to stop rejecting them and start seeing them."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"The real reason you have no real people in your life is not because the wrong people are around you-it's because you're rejecting the right ones.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"The real reason you have no real people in your life is not because the wrong people are around you-it's because you're rejecting the right ones.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -192,7 +192,7 @@ export default function SermonPage() {
               <li><strong>{"Your measuring stick is wrong"}</strong> {" "}{"You measure people by job title, appearance, behavior, and past mistakes. God measures people by potential, purpose, and the king He's placed inside them. Peter was a rock before he showed up like one. David was a king in a field. Matthew would write the gospel while collecting taxes. When you measure people the way the world does, you miss the ones God has already chosen. Ask God for His measuring stick, not the world's."}</li>
               <li><strong>{"Go. Don't wait."}</strong> {" "}{"Waiting for the right people to arrive is not a strategy-it's an escape. Jesus didn't wait for sinners to clean up and come to Him. He went to them. He walked to the beach, the tax booth, through Samaria, into rooms where religious people refused to go. The life you're waiting for won't come to you. It comes when you go to the people you've been taught to avoid and you say: I see you. I need you. Come with me."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -220,7 +220,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -238,7 +238,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -251,33 +251,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life" className="text-[#0d6fbf] hover:underline font-medium">
                   The Hidden Cost of Staying Silent at Work, Home, and in Life
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#0d6fbf] hover:underline font-medium">
                   Everyone
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#0d6fbf] hover:underline font-medium">
                   The Cost of Sitting on the Sidelines
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The Person Nobody Checks On: How You
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"The Small Habits That Quietly Destroy Your Life"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 8 December 2024</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You notice small habits and negative patterns in your life, but they feel harmless. The truth is they're already growing into something much bigger. This message shows why what you tolerate today becomes who you are tomorrow."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 8 December 2024</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You notice small habits and negative patterns in your life, but they feel harmless. The truth is they're already growing into something much bigger. This message shows why what you tolerate today becomes who you are tomorrow."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Just do it"}</button>
-                <button type="button" data-start="50" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:50</span>{"Root affects fruit"}</button>
-                <button type="button" data-start="370" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">6:10</span>{"Check before it grows"}</button>
-                <button type="button" data-start="530" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">8:50</span>{"Guard your heart"}</button>
-                <button type="button" data-start="1220" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">20:20</span>{"When to walk away"}</button>
-                <button type="button" data-start="1900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">31:40</span>{"Symptoms versus causes"}</button>
-                <button type="button" data-start="2400" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">40:00</span>{"Wrestle not flesh"}</button>
-                <button type="button" data-start="3185" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">53:05</span>{"Uproot the problem"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Just do it"}</button>
+                <button type="button" data-start="50" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:50</span>{"Root affects fruit"}</button>
+                <button type="button" data-start="370" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">6:10</span>{"Check before it grows"}</button>
+                <button type="button" data-start="530" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">8:50</span>{"Guard your heart"}</button>
+                <button type="button" data-start="1220" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">20:20</span>{"When to walk away"}</button>
+                <button type="button" data-start="1900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">31:40</span>{"Symptoms versus causes"}</button>
+                <button type="button" data-start="2400" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">40:00</span>{"Wrestle not flesh"}</button>
+                <button type="button" data-start="3185" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">53:05</span>{"Uproot the problem"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -164,32 +164,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Root Is Hidden, But the Fruit Shows Everywhere"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Root Is Hidden, But the Fruit Shows Everywhere"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You can't see a root. It sits buried under the surface, which is exactly why roots are so dangerous. A plant with a sick root will produce sick fruit, even if everything looks fine from above. Your habits, your thoughts, your character-these are your roots. They're invisible to everyone else, but they're already producing the life you live."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The book of Proverbs teaches that every tree is known by its own fruit. Bad roots cannot produce good fruit. This isn't poetry-it's how life actually works. When you stay up late scrolling, hold onto bitterness, stay dishonest in small ways, or fill your mind with negative self-talk, you're planting roots. And those roots will grow into patterns that shape your relationships, your work, your health, and your peace."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The dangerous part is that roots take time to show their damage. You don't see the problem immediately. So you keep ignoring it, thinking it's harmless. But under the surface, it's growing deeper."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Small Compromises Add Up Fast"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Small Compromises Add Up Fast"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"One five-minute delay isn't a problem. Five minutes of scrolling at night instead of sleeping isn't a disaster. One small dishonesty at work doesn't hurt anyone. One unkind thought about yourself won't destroy your day. But here's what actually happens: five minutes becomes ten. Ten becomes thirty. One dishonesty becomes a pattern of cheating. One negative thought becomes the voice that runs your entire inner life."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is how roots grow. The Scripture says in Galatians: a man reaps what he sows. Not all at once. Not overnight. But inevitably. What you plant today, you harvest tomorrow. Bitterness starts as a single hurt you don't forgive. Left unchecked, it spreads into your family, your friendships, your entire way of seeing people. Unforgiveness becomes a root that poisons every relationship you touch."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible warns in Hebrews 12:15 about roots of bitterness that spring up and trouble you, defiling many others. Notice-a root. One undealt-with wound grows into something that harms not just you, but everyone around you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Your Mind Is Your Battlefield"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Your Mind Is Your Battlefield"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"What you think about becomes what you believe about yourself. And what you believe shapes what you do. The Scripture says it plainly: as a man thinks in his heart, so is he. Your internal dialogue-the voice that talks to you all day long-is the root system of your entire life."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Negative self-talk is a root. When you tell yourself you're useless, you're lazy, you'll never make it, you don't deserve good things-you're planting seeds that will grow into exactly that reality. Not because you spoke it into existence like magic, but because your beliefs drive your choices, your effort, and how you respond when opportunities come."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Proverbs teach that the tongue has the power of life and death. Those who love it will eat its fruit. What you say to yourself and about yourself has power. Guard your thoughts like a farmer guards his field, because they are the root of everything that follows."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"When to Uproot and When to Wait"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"When to Uproot and When to Wait"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Not every root should be pulled immediately. A wise farmer knows that pulling a weed too early only removes the top-the root stays and grows back stronger. You have to wait until you have a proper grip, then pull the entire root out. The same is true with the patterns in your life."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Some trials come into your life that feel painful and wrong, but they're actually strengthening you. A difficult relationship might teach you what you don't want and make you stronger for the next one. A failure might expose a weakness you didn't know you had, giving you the chance to fix it. Don't uproot these lessons before you've learned from them. But once you have learned, don't keep holding onto the pain. Let it go."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The key is discernment. Know when to wait and learn, and know when to cut something out completely. If something is making you weaker, more bitter, more dishonest, more anxious-if it's producing poisoned fruit-don't wait. Don't hope it will get better. Uproot it now. But if something is hard but teaching you who you need to become, hold on a little longer. Ask God for wisdom about the difference."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Three Concrete Steps to Fix Your Roots"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Three Concrete Steps to Fix Your Roots"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"First: self-reflection. You cannot see your own blind spots alone. The Bible calls this meditation-taking time to look at your life and honestly ask what's growing in you. What habits have you ignored? What hurts have you buried? What thoughts do you rehearse every day? Regular examination of your thoughts, actions, and habits is not being introspective or soft-it's survival. If you don't know what's wrong, you can't fix it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Second: accountability. Find people who love you enough to lovingly tell you the truth. Not brutal honesty meant to hurt, but honest care that speaks up when you're headed toward disaster. When you're caught in a negative pattern, you often can't see it yourself. Someone standing outside your situation can see what you can't. The Scripture warns that pride goes before destruction, and pride loves to hide. Invite others to speak into your life."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Third: repent and renew. The word repent simply means to turn around and go the other way. If you're thinking negative thoughts, stop and replace them with truth. If you're in a harmful habit, confess it, ask God to forgive you, and commit to doing something different. Don't just stop the bad thing-replace it with something good. Fill the space left behind with Scripture, with prayer, with habits that strengthen you instead of weaken you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Guard Your Heart With Everything You've Got"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Guard Your Heart With Everything You've Got"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Proverbs 4:23 says: Keep your heart with all diligence, for out of it are the issues of life. Your heart-your inner world, your beliefs, your character-produces everything you become. Everything. If you want a different life, you have to start by guarding what grows inside you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This doesn't mean denial or pretending everything is fine. It means honest examination, quick repentance when you stumble, and consistent choice to feed yourself truth instead of lies. It means prayer and Scripture-not as religious duty but as medicine for a sick root. It means surrounding yourself with people and practices that make you stronger."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The stakes are real. What you leave undealt-with today will grow into who you become tomorrow. The small compromise becomes dishonesty. The small hurt becomes bitterness. The small negative thought becomes depression. But the reverse is also true. Small acts of honesty become integrity. Small acts of forgiveness become freedom. Small acts of faith become strength. Choose your roots carefully, because you will absolutely eat the fruit they produce."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"If the root is not right, the fruit will also be affected. Every tree is known by its own fruit.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"If the root is not right, the fruit will also be affected. Every tree is known by its own fruit.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -198,7 +198,7 @@ export default function SermonPage() {
               <li><strong>{"Small Compromises Become Big Patterns"}</strong> {" "}{"A five-minute delay becomes thirty minutes. One dishonest word becomes a pattern of deception. One hurt you refuse to forgive becomes bitterness that spreads to everyone around you. The danger of roots is that they grow slowly and silently. By the time you notice the fruit is poisoned, the root is deep and strong. This is why honest self-examination now is far cheaper than crisis later."}</li>
               <li><strong>{"You Need Wisdom to Know When to Uproot and When to Wait"}</strong> {" "}{"Not all painful things should be removed immediately. Some trials teach you lessons you desperately need. Some weaknesses exposed by difficulty are chances to grow stronger. But some roots only produce poison and must be cut out completely. The difference requires discernment and usually the counsel of people who love you and see what you can't. Ask God for wisdom about which is which-and then act on it."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -226,7 +226,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -244,7 +244,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -257,33 +257,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/pruning-for-progress" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/pruning-for-progress" className="text-[#0d6fbf] hover:underline font-medium">
                   Pruning for Progress: From Bare Branch to Bountiful Blessing
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#0d6fbf] hover:underline font-medium">
                   Six Invisible Gaps That Wreck Your Life (And How to Close Them)
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The Person Nobody Checks On: How You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-one-conversation-that-stops-relationship-arguments-before-they-start" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-one-conversation-that-stops-relationship-arguments-before-they-start" className="text-[#0d6fbf] hover:underline font-medium">
                   The One Conversation That Stops Relationship Arguments Before They Start
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Someone Else to Tell You What
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

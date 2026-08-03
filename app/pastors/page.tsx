@@ -224,7 +224,7 @@ export default function PastorsPage() {
                     {item.year.length <= 4 ? item.year : item.year.slice(0, 4)}
                   </div>
                   <div className="pt-1.5 pb-2">
-                    <p className="text-xs font-bold uppercase tracking-wider text-[#008080] mb-1">{item.year}</p>
+                    <p className="text-xs font-bold uppercase tracking-wider text-[#006b6b] mb-1">{item.year}</p>
                     <p className="text-[#595959] leading-relaxed">{item.event}</p>
                   </div>
                 </div>
@@ -283,7 +283,7 @@ export default function PastorsPage() {
             <Link href="/plan-your-visit" className="btn-primary">
               Plan Your Visit
             </Link>
-            <Link href="/plan-your-visit" className="inline-block border-2 border-white text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-white hover:text-[#008080] transition-colors">
+            <Link href="/plan-your-visit" className="inline-block border-2 border-white text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-white hover:text-[#006b6b] transition-colors">
               Plan Your Visit
             </Link>
           </div>
@@ -299,7 +299,7 @@ export default function PastorsPage() {
               a church and registered NPO (316-193) in Pretoria North, Gauteng. He has been in
               ministry since 2000 and founded FGI in June 2020. Sunday services are held every week
               at 09:00 at 323 B Danie Theron Street, Pretoria North. You can reach him directly on{' '}
-              <a href="tel:+27752592555" className="text-[#008080] font-semibold">+27 75 259 2555</a>.
+              <a href="tel:+27752592555" className="text-[#006b6b] font-semibold">+27 75 259 2555</a>.
             </p>
           </div>
         </div>

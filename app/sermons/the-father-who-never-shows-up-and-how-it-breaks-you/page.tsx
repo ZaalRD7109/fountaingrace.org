@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"The Father Who Never Shows Up (And How It Breaks You)"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 21 June 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You felt it your whole life: the emptiness of a father who paid the bills but never showed up. Or maybe you are that father now, repeating the pattern. There's a different way."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 21 June 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You felt it your whole life: the emptiness of a father who paid the bills but never showed up. Or maybe you are that father now, repeating the pattern. There's a different way."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,11 +140,11 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"When your father didn't show up"}</button>
-                <button type="button" data-start="210" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">3:30</span>{"Fathers think providing is enough"}</button>
-                <button type="button" data-start="900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:00</span>{"Breaking the cycle of absence"}</button>
-                <button type="button" data-start="1590" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">26:30</span>{"Running towards shame instead"}</button>
-                <button type="button" data-start="2700" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">45:00</span>{"What real love looks like"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"When your father didn't show up"}</button>
+                <button type="button" data-start="210" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">3:30</span>{"Fathers think providing is enough"}</button>
+                <button type="button" data-start="900" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:00</span>{"Breaking the cycle of absence"}</button>
+                <button type="button" data-start="1590" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">26:30</span>{"Running towards shame instead"}</button>
+                <button type="button" data-start="2700" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">45:00</span>{"What real love looks like"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -160,31 +160,31 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Wound No Paycheck Can Fix"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Wound No Paycheck Can Fix"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"We were taught that fatherhood is simple: bring home money, keep a roof on the house, pay school fees. Done. That is the lie that has broken families for generations. A father who provides material things but never shows up emotionally leaves a wound in his children that no amount of cash can close. The child grows up wondering: Does he even see me? Am I worth his time?"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This wound is real. It lives in grown adults who still wait for their father to run toward them, to acknowledge them, to say they matter. Some people will not go home because they left better off than they are now, and the shame of that keeps them away. Others become fathers themselves and repeat exactly what was done to them, providing but never present, never vulnerable, never there."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What a Father in Action Actually Does"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What a Father in Action Actually Does"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The story of the prodigal son is not really about the son at all. It is about the father. The son messed up badly and rehearsed his apology on the way home. But his father saw him from a great way off and did something shocking: he ran. In that culture, an old man did not run. Running meant lifting his robe, showing his legs, becoming a fool in front of the whole village. But he ran anyway."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Why? Because the distance between him and his child was unbearable. He would not let his son walk the walk of shame alone. He closed the distance first. The father in action does not wait to be approached. He does not wait for his child to ask. He moves toward them, even when it costs him his dignity."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is what God does. God the Father saw you a great way off and ran to you. He closed the distance first before you even apologized. He did not wait for you to get your words right. He came to spare you the embarrassment. And he calls every earthly father to do the same."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Hidden Story of Joseph"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Hidden Story of Joseph"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Joseph is the father no one talks about. He discovered that the woman he loved was pregnant and he knew it was not his child. He had every reason to walk away. The shame was real. The village would have understood. But he stayed. He showed up. He became a father to a child that was not biologically his."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus was raised by a stepfather. If you think you are the only one with a stepfather, think again. Jesus was that child asking, Who is my father? What am I? And yet Joseph showed up anyway. He changed the nappies. He bathed the baby. He looked for Jesus in the synagogue. The text says his parents were looking for him. Joseph was a father in action, and he modeled what it means to close the distance regardless of the circumstances."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Some of you are more a father or mother than your own parents ever were to you. You stand for your siblings when you should be going to your friends. You do the work of fatherhood without the title. Keep going. This is fatherhood: to be there. To show up. To stand where it is necessary."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Affirmation Before You Earn It"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Affirmation Before You Earn It"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"God the Father said over Jesus, This is my beloved Son in whom I am well pleased. This was way before Jesus had preached one sermon or done one miracle. The blessing came first. The worth was spoken before any achievement."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Some children search their whole lives for a handclap from their parent. Daddy, I cleaned the room. Silence. Daddy, I cleaned your car. Next. They wanted nothing but acknowledgement that they were doing well. Many never got it. But God gives it to you before you deserve it. Jesus came to give you your worth way before you earned it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you are a father, speak identity and blessing into your children before they have done anything to deserve it. Do not wait for perfect behavior or achievement. Let them know they matter to you simply because they are yours. This is what closes the relational distance. This is what heals the wound."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Father Living in Humiliation"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Father Living in Humiliation"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Some fathers clean drains. They work with things that humiliate them. They stand in the street sweeping, looking like a rubbish bin, but they do it so their children have something. They do not have toilet paper for themselves but they make sure their child has it. They work jobs that embarrass them because the alternative is watching their child go without."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Some fathers want to send money but they are afraid the mother will use it for other children or other purposes. Some fathers are absent not by choice but by circumstance: custody blocked by the mother, or circumstances that keep them away. Yet we only talk about fathers who are gone. We do not talk about the silent suffering of fathers who lie awake at night wondering if their child has something to wear."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If you are a father in this place, hear this: God sees you. He sees the embarrassment you endure. He sees the humiliation. He sees that you are trying. He is not asking you to be perfect. He is asking you to close the distance first. Show up. Be present. Take the shame so your child does not have to walk it alone."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Curse Turns to Blessing"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Curse Turns to Blessing"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Malachi 4:6 says, He shall turn the heart of the fathers to the children and the heart of the children to their fathers, lest I come and smite the earth with a curse. The breaking of the father-child relationship is so serious that God says it brings a curse on the earth. But when fathers turn their hearts toward their children and children turn their hearts toward their fathers, the curse stops. Blessing flows."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Some of you carry a name and a legacy from a grandfather you never knew. He blessed you before you were even born. His influence lives in you. You are walking in a blessing you did not earn. In the same way, when you run toward your children, when you close the distance, you break cycles. You stop the curse. You hand them a legacy of presence, sacrifice, and unconditional affirmation."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Whatever your father did or did not do, you can be different. If your father was absent, you can show up. If your father provided but never came close, you can move toward your children with your whole self. If your father was a stepfather or no father at all, you can be the one who closes the distance first. This is how cycles break. This is how blessing flows forward."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"God ran to you first before you could even give him your excuses. A father in action does the same.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"God ran to you first before you could even give him your excuses. A father in action does the same.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -193,7 +193,7 @@ export default function SermonPage() {
               <li><strong>{"Affirmation Comes Before Achievement"}</strong> {" "}{"God blessed Jesus before Jesus did anything to earn blessing. A father in action speaks worth into his children before they have earned it. He gives them identity and belonging simply because they are his. This is how you close the relational wound. Not with words of correction when they fail, but with words of affirmation before they even try. A child who knows they are loved and valued before they achieve will take risks, fail forward, and become who they are meant to be."}</li>
               <li><strong>{"Breaking the Cycle Starts With You"}</strong> {" "}{"Many fathers repeat what was done to them because they do not know any other way. But you are not trapped by your past. If your father was absent, you can be present. If your father provided but never came close, you can move toward your children with everything in you. You can be the one who stops the curse and starts a blessing. The distance between you and your child is unbearable to God. He is calling you to make it unbearable to yourself too, and to run toward them first."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -220,7 +220,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -236,7 +236,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -249,33 +249,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-pain-you-inherited-from-your-father-is-quietly-breaking-your-kids" className="text-[#0d6fbf] hover:underline font-medium">
                   The Pain You Inherited From Your Father Is Quietly Breaking Your Kids
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#0d6fbf] hover:underline font-medium">
                   Helping Someone Actually Keeps Them Stuck
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-fixing-the-same-problems-over-and-over" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-fixing-the-same-problems-over-and-over" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Fixing the Same Problems Over and Over
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-kindness-might-be-hurting-people" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-kindness-might-be-hurting-people" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Help Is Making Them Helpless
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-cost-of-sitting-on-the-sidelines" className="text-[#0d6fbf] hover:underline font-medium">
                   The Cost of Sitting on the Sidelines
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

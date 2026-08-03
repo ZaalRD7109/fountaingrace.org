@@ -28,13 +28,13 @@ export default function DevotionalPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-3">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
               Daily Devotional · Day 174 · Fountain of Grace International
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               {"How do I stop performing and just be myself?"}
             </h1>
-            <p className="text-white/60 text-sm mt-4">Pretoria North · 23 June 2026</p>
+            <p className="text-white text-sm mt-4">Pretoria North · 23 June 2026</p>
           </div>
         </header>
 
@@ -56,7 +56,7 @@ export default function DevotionalPage() {
           <div className="max-w-2xl mx-auto space-y-6">
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-3 my-8 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic leading-relaxed">&quot;{"And she called the name of the LORD that spake unto her, Thou God seest me: for she said, Have I also here looked after him that seeth me?"}&quot;</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic leading-relaxed">&quot;{"And she called the name of the LORD that spake unto her, Thou God seest me: for she said, Have I also here looked after him that seeth me?"}&quot;</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Genesis 16:13 (KJV)"}</cite>
             </blockquote>
             <div className="text-[#555] leading-relaxed text-lg whitespace-pre-wrap">{"You are beginning to wonder who you would be without the audience. Without the nod of approval, the careful words chosen to land right, the version of yourself that performs well. That question alone tells me something true about you: you are waking up.\n\nThe exhaustion of being watched, even by people you love, runs deeper than we admit. We build ourselves in layers. A version for work. A version for family. A version for church. And somewhere underneath all that construction, you wonder if anyone knows the real thing. You wonder if you would even recognize yourself if the eyes closed.\n\nHere is what God knows that you are just beginning to see: He has been watching you all along, and He loves what He sees when no one else is looking. \"Thou God seest me,\" Hagar said in her wilderness, and she found there was comfort in it. Not judgment. Not performance. Just a Father who knows you entirely and loves you anyway. This is the faithfulness that has held you through every version you have ever worn. This is what has been true the whole time.\n\nThe real you, the one without the audience, is exactly who God has been faithful to. Step into this week knowing that. You are already known. You are already loved.\n\nBlessings - Fountain of Grace International"}</div>
@@ -81,13 +81,13 @@ export default function DevotionalPage() {
         <section className="bg-[#008080] py-12 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto text-center">
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
-            <p className="text-white/70 mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
           </div>
         </section>
 
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
-          <Link href="/devotional" className="text-[#2a9df4] font-semibold underline">Read more daily devotionals</Link>
+          <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>
       </article>
     </>

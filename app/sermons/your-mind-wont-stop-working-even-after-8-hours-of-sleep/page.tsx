@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Mind Won't Stop Working Even After 8 Hours of Sleep"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 28 June 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You lie down tired and wake up tired. Your body rests but your mind never stops spinning. There's a reason, and it's fixable."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 28 June 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You lie down tired and wake up tired. Your body rests but your mind never stops spinning. There's a reason, and it's fixable."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Standing stronger through struggles"}</button>
-                <button type="button" data-start="240" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:00</span>{"Pride gets in the way"}</button>
-                <button type="button" data-start="615" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">10:15</span>{"Rest doesn't wait for calm"}</button>
-                <button type="button" data-start="1080" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">18:00</span>{"The real problem is us"}</button>
-                <button type="button" data-start="1605" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">26:45</span>{"Peace comes from inside"}</button>
-                <button type="button" data-start="2445" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">40:45</span>{"Don't drown in others' storms"}</button>
-                <button type="button" data-start="3120" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">52:00</span>{"Rest helps you keep going"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Standing stronger through struggles"}</button>
+                <button type="button" data-start="240" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:00</span>{"Pride gets in the way"}</button>
+                <button type="button" data-start="615" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">10:15</span>{"Rest doesn't wait for calm"}</button>
+                <button type="button" data-start="1080" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">18:00</span>{"The real problem is us"}</button>
+                <button type="button" data-start="1605" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">26:45</span>{"Peace comes from inside"}</button>
+                <button type="button" data-start="2445" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">40:45</span>{"Don't drown in others' storms"}</button>
+                <button type="button" data-start="3120" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">52:00</span>{"Rest helps you keep going"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,32 +162,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Storm That Doesn't Stop Is Not Always Your Storm"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Storm That Doesn't Stop Is Not Always Your Storm"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You wake up exhausted even though you slept eight hours. Your body got rest but your mind never switched off. Bills, family obligations, other people's crises, relationship drama-they all live in your head 24/7. The real problem is not the storms themselves. The real problem is that you are carrying storms that were never yours to carry."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"A boat can only hold so much weight before it sinks. When you take on someone else's financial crisis, someone else's relationship failure, someone else's life choices as if they are your responsibility, you are adding weight to your boat. Your boat is taking on water because it is overloaded. Not because the storm is bigger than other storms, but because you decided to carry cargo that doesn't belong to you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus taught this through a simple moment. His disciples were in a boat during a violent storm-the same storm Jesus was in. But Jesus slept while they panicked. The difference was not the storm. The difference was what they were carrying in their minds. Jesus knew the promise: they were going to the other side. Nothing in that storm changed that promise. So he rested. His rest was not based on the weather. His rest was based on the promise."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You Are Guarding a Life That God Is Already Guarding"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You Are Guarding a Life That God Is Already Guarding"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Here is what most exhausted people don't understand: God does not sleep. Psalm 121:4 says it plainly: 'Behold, he that keepeth Israel shall neither slumber nor sleep.' While you are lying awake at three in the morning worrying about tomorrow, God is awake. While you are stressed about your kids, your money, your future, God is not tired. He is not overwhelmed. He is not panicking."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You are trying to stay awake and guard a life that God is already guarding for you. You are doing work that was never assigned to you. God assigned rest to you. Psalm 4:8 says, 'I will both lay me down in peace and sleep, for thou, Lord, only makest me dwell in safety.' That is not a suggestion. That is permission. You are allowed to sleep because God has already taken the shift."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The moment you understand this, you can actually rest. Not because your problems disappeared. Not because your circumstances changed. But because you stopped trying to do the job that belongs to God."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Release What Is Not Yours to Carry"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Release What Is Not Yours to Carry"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"A parent's job is to teach their child how to become independent, not to make their child dependent on you forever. But many parents-and many of us who care about people-we take on storms that teach others to never learn to walk on their own. Your child's choice to go to the mall becomes your responsibility to drive them. Your family member's financial mess becomes your financial mess. Your friend's relationship crisis becomes your sleepless night."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is not the same as caring. Caring about someone and drowning in their storm are two different things. Jesus cared deeply for his disciples. But he did not take their panic into himself. He stayed calm. He held the promise. He slept."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This week, name one storm you have been carrying that was never yours. Say it out loud: 'This is not my storm to carry.' Then put it down. Not because you don't care. But because carrying someone else's storm is slowly sinking your boat, and nobody wins when your boat goes under."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Rest First, Then Speak to Your Storm"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Rest First, Then Speak to Your Storm"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus did two things in that boat. First, he rested. Second, he rose up and rebuked the wind and the sea with authority. Both were actions. He did not fight the storm while exhausted. He rested first."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your tongue is a rudder. It steers your entire life. When you are tired, your words become negative. You complain. You catastrophize. You tell the storm how big it is. But when you have rested, when your mind is clear, you can speak to your storm with different words. Peace. Still. Calm. Authority. The same Jesus who slept in the storm then spoke one command and the wind ceased and there was great calm."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Before you fight your own storms this week, rest first. Not sleep-rest. Real rest is when your mind stops spinning. When you can breathe slowly and deeply. When you stop trying to solve everything at once. Then, after you have rested, speak to your storm. Not with panic. Not with desperation. With the same calm authority Jesus used. Because he is in your boat with you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How to Actually Rest When Your Mind Won't Stop"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How to Actually Rest When Your Mind Won't Stop"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Many people sleep but never feel rested. Your body shuts down but your mind keeps running. This is why you can lie down for eight hours and wake up feeling like you never slept. The problem is not the amount of sleep. The problem is that you never actually rested."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"One of the most effective ways to calm your mind is through your breath. When you are stressed, you don't breathe-your breath becomes short and shallow. Try this: breathe in slowly for a count of five. Hold it for five. Then exhale for eight counts. Do this several times. The longer exhale signals your nervous system that you are safe. Your body will calm down. Your mind will calm down. This is not meditation. This is not religion. This is physiology."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"God rested on the seventh day. He did not rest because there was no more work. He rested to show us how to live. Rest is not laziness. Rest is not weakness. Rest is how you get wisdom to handle what comes next. When you rest, solutions come to you that never would have come while you were panicked."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Promise Does Not Change When the Storm Comes"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Promise Does Not Change When the Storm Comes"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Before the storm ever hit that boat, Jesus had already made a promise: 'Let us go over to the other side.' That promise was made before the wind, before the waves, before the panic. When the storm came, the promise did not change. The circumstances tried to convince the disciples that they were going to drown. But the promise said they were going to the other side."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Here is what exhaustion really is: it is the gap between what God promised and what your circumstances are showing you right now. You carry exhaustion because you believe what you see more than you believe what God said. The storm says you will not make it. God says you will go over to the other side. One of these will win your belief. Whichever one wins your belief will determine whether you rest or panic."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"1 Peter 5:7 says, 'Casting all your cares upon him, for he cared for you.' Stop trying to carry what he already said he would carry. The promise stands. The other side is real. The storm is temporary. Rest in the promise."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"He does not sleep so that you can rest; you are trying to stay awake and guard a life that God is already guarding for you.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"He does not sleep so that you can rest; you are trying to stay awake and guard a life that God is already guarding for you.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -196,7 +196,7 @@ export default function SermonPage() {
               <li><strong>{"The Promise Does Not Change Because of Circumstances"}</strong> {" "}{"Jesus slept in the storm because he already had a promise: they were going to the other side. The wind and waves tried to change that. They did not. Your exhaustion comes from believing what you see right now more than what God said about your future. The promise stands whether the storm is raging or calm. When you anchor yourself to the promise instead of the circumstances, you can rest."}</li>
               <li><strong>{"Rest Is Not Laziness; It Is Wisdom"}</strong> {" "}{"You cannot fight a storm with a tired mind. You cannot make good decisions when you are exhausted. Rest is not something you earn after you solve all your problems. Rest is something you take before you fight your storms so that you actually have clarity to fight them. God rested on the seventh day to show us this is not optional. When you rest, your mind clears, your words change, your solutions come."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -223,7 +223,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -239,7 +239,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -252,33 +252,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
                   When You Feel Abandoned: Why You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/everything-crumbling-at-once-heres-what-youre-actually-walking-on" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/everything-crumbling-at-once-heres-what-youre-actually-walking-on" className="text-[#0d6fbf] hover:underline font-medium">
                   Everything Crumbling at Once? Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-success-depends-on-what-you-do-before-it-arrives" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Success Depends on What You Do Before It Arrives
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-fixing-the-same-problems-over-and-over" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-fixing-the-same-problems-over-and-over" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Fixing the Same Problems Over and Over
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Big Break Is Coming, But You're Not Ready For It"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 22 March 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Success isn't luck. It's the collision of opportunity and preparation. Most people wait for the perfect moment instead of preparing during this one."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 22 March 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"Success isn't luck. It's the collision of opportunity and preparation. Most people wait for the perfect moment instead of preparing during this one."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Running a serious series"}</button>
-                <button type="button" data-start="51" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:51</span>{"This series is for you"}</button>
-                <button type="button" data-start="300" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:00</span>{"Five principles recap"}</button>
-                <button type="button" data-start="645" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">10:45</span>{"Living with eternal perspective"}</button>
-                <button type="button" data-start="1242" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">20:42</span>{"Being prepared for opportunities"}</button>
-                <button type="button" data-start="2640" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">44:00</span>{"Preparation leads to effectiveness"}</button>
-                <button type="button" data-start="3600" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:00:00</span>{"Skills open doors"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Running a serious series"}</button>
+                <button type="button" data-start="51" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:51</span>{"This series is for you"}</button>
+                <button type="button" data-start="300" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:00</span>{"Five principles recap"}</button>
+                <button type="button" data-start="645" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">10:45</span>{"Living with eternal perspective"}</button>
+                <button type="button" data-start="1242" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">20:42</span>{"Being prepared for opportunities"}</button>
+                <button type="button" data-start="2640" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">44:00</span>{"Preparation leads to effectiveness"}</button>
+                <button type="button" data-start="3600" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:00:00</span>{"Skills open doors"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,32 +163,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Success Happens When Opportunity Meets Preparation"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Success Happens When Opportunity Meets Preparation"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You already know the feeling. The dream job posting appears. The business opportunity surfaces. Someone says they know someone who could help you. And your chest tightens. Not from excitement. From dread. Because you're not ready."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This isn't about luck or connections or being born into the right family. A Roman philosopher said it plainly: success occurs when opportunity meets preparation. Right now, opportunities are passing you by not because they don't exist, but because when they arrive, you're unprepared. You don't have the certification. You can't afford the transport to the interview. Your car won't make it to the next town. You've never invested in learning your craft deeply enough."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible shows this truth through Joseph's life. He didn't start in the palace. He started in a pit, then a prison. But while he was there, he prepared. When someone asked him to interpret a dream, he had learned to listen to God and reason things out. When Pharaoh's chief cupbearer met him in jail, Joseph was ready with an answer. And that readiness changed his entire future. That's not luck. That's preparation meeting opportunity."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Preparation Is a Constant State of Readiness"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Preparation Is a Constant State of Readiness"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"To be prepared, in the original Greek, means to be in a constant state of readiness. Not just physical readiness. Spiritual readiness. Intellectual readiness. The kind of readiness that comes from daily investment in becoming better at something."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Think about your life like a map. Every move you make, God is already positioning you for what's coming next. But you have to do your part. If you want to own a million-dollar company someday, stop wearing flip-flops to business meetings now. Stop dressing like you're headed to the beach when you're building something. A CEO doesn't dress casually by accident. He's already preparing mentally and physically for the weight of what he carries."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The same applies everywhere. If you're in a relationship and want to get married, you can't show up in pajamas unwashed. If you're looking for a job that pays well, you need your company registered before the tender arrives, your SARS certification done, your health and safety certificate earned. When the opportunity shows up, you hand over the documents. You're done. Everything is already prepared. You don't scramble. You present."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Preparation Starts Long Before the Opportunity Appears"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Preparation Starts Long Before the Opportunity Appears"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"One of the biggest lies people believe is that preparation happens when you see the opportunity. It doesn't. Preparation happens in the everyday moments when nobody is watching. When you're reading. When you're listening in class. When you're reasoning out how what you're learning applies to your life right now."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Cramming for an exam the night before doesn't work. Studying a little bit every day works because your brain processes and connects the material over time. The same is true for your career, your relationships, your health, your finances. The person who reads one book a month for five years knows more than someone who panics and reads five books in one week before a crisis hits."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When Pharaoh asked Joseph to interpret his dream, Joseph didn't say, 'Let me study this overnight.' He interpreted it on the spot because he had spent years in that prison and earlier years in Potiphar's house learning to listen to God, to think clearly, to speak with wisdom. His preparation was already done. When you prepare yourself daily in your field, your gift, your skills, you become the person people want to hire. You become the person people trust with their money, their secrets, their business. Proverbs 22:29 says it: do you see someone skilled in their work? They will serve before kings, not before officials of low rank. Your skill opens the door."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What You Need to Prepare For Right Now"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What You Need to Prepare For Right Now"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Look at your life. Where is preparation needed? Do you need a driver's license? Get it now. Do you need a certification in your field? Start it now, not when the job posting appears. Do you need to learn how to interview, how to speak professionally, how to handle money? Start now. Do you have a car that breaks down every month? That's robbing you of opportunities. Save for a reliable one while you still have time."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If you're looking for a husband or wife, preparation means becoming the kind of person you want to attract. If you want someone who is disciplined and intentional, become that person first. If you want someone educated, educate yourself. If you want someone who takes care of their health and appearance, start that now. You can't attract what you don't become."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Here's what most people miss: the preparation itself is not what saves you. Proverbs 21:31 says, 'The horse is prepared against the day of battle, but safety is of the Lord.' You prepare the horse. You get the equipment. You train. But at the end, your safety, your success, your breakthrough comes from God. So while you're preparing, you're also trusting. While you're studying, you're praying. While you're getting certified, you're asking God to open doors. You prepare as if everything depends on you. You trust as if everything depends on God."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Be Dressed and Ready, With Your Lamp Burning"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Be Dressed and Ready, With Your Lamp Burning"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus told a parable about servants waiting for their master to return. He said, 'Be dressed ready for service and keep your lamps burning.' Readiness isn't something you turn on when the master shows up. It's something you maintain every single day. Your lamp should already be burning. Your clothes should already be on. You should already be watching and waiting and preparing."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This changes everything about how you spend your time. Every hour you waste scrolling mindlessly is an hour you didn't invest in your future. Every day you avoid going after a certification because it feels hard is a day you stay trapped. Every moment you make excuses instead of preparing is a moment you're not ready when opportunity knocks."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The good news is simple: you still have time. Right now. Today. This week. You can start preparing for the thing you think is years away. You can invest in yourself. You can learn. You can practice. You can humble yourself and admit what you don't know, then go find someone who does and let them teach you. And when the opportunity arrives, when God opens that door, you won't panic. You'll walk through it prepared, confident, and ready to seize what He's already planned for you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Make Every Decision Count Toward Your Eternal Purpose"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Make Every Decision Count Toward Your Eternal Purpose"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"As you prepare, keep one thing in the front of your mind: your life is part of God's bigger story. You're not just preparing for a job or a house or a promotion. You're preparing for the role God has already written you into. Every small decision matters because every decision either moves you closer to readiness or further away from it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When Joseph was in the pit, he didn't know he was being prepared to run Egypt. When he was in prison, he didn't know the dream interpretation he was about to give would change nations. But he prepared anyway. He stayed faithful. He kept learning. He stayed close to God. And when the moment came, he was ready."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your preparation today is your platform tomorrow. Make sure you're preparing in a way that honors God, that builds real skill, that serves others, that reflects your integrity. Because when the opportunity comes, it won't just change your life. It will show everyone around you what God can do through a person who refused to waste their time and refused to make excuses. Be ready."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Success doesn't come from luck - it comes from the day you finally prepared meeting the day God opened the door.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Success doesn't come from luck - it comes from the day you finally prepared meeting the day God opened the door.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -197,7 +197,7 @@ export default function SermonPage() {
               <li><strong>{"Your Gift and Skill Create Access to Opportunities"}</strong> {" "}{"Proverbs 22:29 isn't a nice thought - it's a law: become skilled in your work and you will stand before kings. This doesn't mean you need to be perfect or know everything. It means you need to know your subject deeply enough to be dangerous, to be trusted, to be valuable. A Jewish doctor won't fix his own car because he's skilled in medicine and finds a landscaper who's skilled in landscaping. They're not generalists doing everything halfway - they're specialists who've invested their time into mastery. Pick one thing you can become excellent at. Invest in it. Study it. Practice it daily. Let your skill open the door that no amount of networking ever could."}</li>
               <li><strong>{"Trust God While You Prepare, But You Must Still Prepare"}</strong> {" "}{"This is the balance most people miss. Proverbs 21:31 says the horse is prepared for battle, but safety comes from the Lord. You don't pray for a job without studying. You don't ask God for a house while refusing to save money. You don't expect a promotion without developing your skills. You prepare as if everything depends on you - you get the certification, you learn the skill, you save the money, you show up. And then you trust as if everything depends on God, knowing that even your best preparation is useless without His blessing. Both must happen. Not one or the other."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -225,7 +225,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -243,7 +243,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -256,33 +256,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Dreams Feel Dead, But Delays Aren
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#0d6fbf] hover:underline font-medium">
                   When Your Success Makes People Jealous: Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Boss Will Never Promote You Like This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-principles-that-move-people-forward-faster" className="text-[#0d6fbf] hover:underline font-medium">
                   The Principles That Move People Forward Faster
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

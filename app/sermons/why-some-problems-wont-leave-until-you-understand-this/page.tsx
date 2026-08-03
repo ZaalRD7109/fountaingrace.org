@@ -136,17 +136,17 @@ export default function SermonPage() {
           style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
               Sunday Message · Fountain of Grace International · Pretoria North
             </p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">
               Why Some Problems Won&apos;t Leave Until You Understand This
             </h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 19 April 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 19 April 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">
               Some problems keep coming back. You pray, you fast, you believe - and yet it returns. The reason is almost never what you think. Revelation 12:11 says they overcame by a specific means. Not by effort. Not by waiting. By something most people have not yet applied.
             </p>
-            <p className="text-white/60 text-sm">
+            <p className="text-white text-sm">
               Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North · 19 April 2026
             </p>
           </div>
@@ -194,8 +194,8 @@ export default function SermonPage() {
                     {p.n}
                   </div>
                   <div>
-                    <h2 className="text-lg font-bold text-[#2a9df4] mb-1">{p.title}</h2>
-                    <p className="text-xs text-[#008080] font-semibold mb-3">{p.scripture}</p>
+                    <h2 className="text-lg font-bold text-[#0d6fbf] mb-1">{p.title}</h2>
+                    <p className="text-xs text-[#006b6b] font-semibold mb-3">{p.scripture}</p>
                     <p className="text-[#555] leading-relaxed">{p.body}</p>
                   </div>
                 </div>
@@ -203,7 +203,7 @@ export default function SermonPage() {
             </div>
 
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">
                 &quot;Guilt has a voice. Shame has a voice. Accusation has a voice. But the blood of Jesus speaks louder than all of them.&quot;
               </p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
@@ -260,7 +260,7 @@ export default function SermonPage() {
               </Link>
               <Link
                 href="/prayer"
-                className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
+                className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors"
               >
                 Send a Prayer Request
               </Link>
@@ -281,7 +281,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -296,33 +296,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/dying-right-good-friday-message" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/dying-right-good-friday-message" className="text-[#0d6fbf] hover:underline font-medium">
                   Dying Right - What Jesus Did on the Cross That Most People Miss
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The System You're Praying Against Without Knowing It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-prophetic-encounter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-prophetic-encounter" className="text-[#0d6fbf] hover:underline font-medium">
                   You Were Built for Something Specific - Here Is How to Find It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/no-more-waiting-rooms-god-is-live-now" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/no-more-waiting-rooms-god-is-live-now" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Waiting for Your Real Life to Begin - It Already Started
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-anointing-that-makes-hell-fear-you" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-anointing-that-makes-hell-fear-you" className="text-[#0d6fbf] hover:underline font-medium">
                   Why Some People Are Completely Untouchable No Matter What Life Throws
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

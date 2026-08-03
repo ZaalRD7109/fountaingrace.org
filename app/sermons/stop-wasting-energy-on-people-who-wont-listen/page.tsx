@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Stop Wasting Energy on People Who Won't Listen"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 7 June 2026</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're exhausted from defending yourself to people who have already decided who you are. This is the trap-and how to escape it."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 7 June 2026</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You're exhausted from defending yourself to people who have already decided who you are. This is the trap-and how to escape it."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Stop explaining yourself"}</button>
-                <button type="button" data-start="48" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:48</span>{"They defined who you are"}</button>
-                <button type="button" data-start="256" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:16</span>{"The approval that never comes"}</button>
-                <button type="button" data-start="481" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">8:01</span>{"When silence beats defending"}</button>
-                <button type="button" data-start="1028" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">17:08</span>{"Pick your battles wisely"}</button>
-                <button type="button" data-start="1503" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">25:03</span>{"Answer what actually matters"}</button>
-                <button type="button" data-start="2154" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">35:54</span>{"The power of staying quiet"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Stop explaining yourself"}</button>
+                <button type="button" data-start="48" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:48</span>{"They defined who you are"}</button>
+                <button type="button" data-start="256" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:16</span>{"The approval that never comes"}</button>
+                <button type="button" data-start="481" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">8:01</span>{"When silence beats defending"}</button>
+                <button type="button" data-start="1028" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">17:08</span>{"Pick your battles wisely"}</button>
+                <button type="button" data-start="1503" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">25:03</span>{"Answer what actually matters"}</button>
+                <button type="button" data-start="2154" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">35:54</span>{"The power of staying quiet"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,27 +163,27 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Exhaustion Trap You Don't See Coming"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Exhaustion Trap You Don't See Coming"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You type and delete. Type and delete. You want to defend yourself in that email, on that family call, in that social media comment-but something stops you. By the end of the day you feel worse, not better, because you never sent the explanation that might finally make them understand. So you do it again tomorrow. And the day after."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is the cycle that drains your peace: trying to convince a boss who's already decided your work doesn't matter, explaining your spouse to relatives who made up their minds years ago, justifying your parenting to in-laws who think you're doing it wrong, arguing with strangers online who will never believe you anyway. You spend emotional energy proving yourself to audiences operating from bad faith-and they never change their minds. You do."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Your Explanations Only Make Things Worse"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why Your Explanations Only Make Things Worse"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When you defend yourself, you step into their trap. The Pharisees came to Jesus not to learn but to entangle him in his talk-to set a snare, like catching an animal. They asked loaded questions designed to trap him no matter how he answered. Jesus perceived their wickedness and refused to play. He stayed silent before Pilate even when accusers piled on. He did not defend himself to his own family when they said he was out of his mind."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Most questions designed to make you defend yourself are not sincere. They are tests: Will you justify yourself? Will you explain? Will you try to change my mind? The moment you answer, you've surrendered your peace. You've admitted their opinion has power over you. It doesn't."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Here is what happens while you are defending: you are not building. You are not moving forward. You are not doing the work that actually matters. You are trapped in the courtroom of someone else's judgment, fighting a case God never asked you to argue."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Skill Jesus Modeled: Answer What Matters, Ignore the Noise"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Skill Jesus Modeled: Answer What Matters, Ignore the Noise"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus knew how to distinguish between sincere questions and trap questions. When the Pharisees asked if it was lawful to pay taxes to Caesar, he could sense the wickedness behind it. He did not defend his position. Instead, he answered the question that actually mattered-showing them that there are things belonging to Caesar and things belonging to God, and you cannot confuse the two."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When Pilate asked if he was a king, Jesus answered because this was the truth that mattered: his kingdom was not of this world, and he came to bear witness to the truth. But when accusers hurled insults, he said nothing. Silence on the noise. Clarity on the mission."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You must learn this skill: which questions deserve your voice, and which ones deserve your silence. Not every question needs an answer. Not every accusation needs a defense. Some people have decided who you are before you ever opened your mouth. Your explanation will not change them. Only your obedience to God matters, and that obedience is silent when it needs to be."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"What Happens When You Stop Defending Yourself"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"What Happens When You Stop Defending Yourself"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When Jesus stayed silent before his accusers, he did not lose power-he kept it. His silence combined with his actions spoke louder than any defense ever could. He was brought as a lamb to the slaughter, and as a sheep before the shearer is dumb, so he opened not his mouth. And by walking through that silence and that obedience, he saved the world."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You don't owe explanations to people who have removed themselves from your story. You don't owe your in-laws a defense of your marriage. You don't owe old friends an explanation of why you've changed. You don't owe Facebook strangers anything. You owe God your obedience, and that is the only court that matters."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Stop drafting that email justifying your decision. Stop typing that comment explaining yourself. Delete that post. Close that conversation, even in your head. Pray about it. Then leave it. Your actions will speak for themselves. People operating from bad faith will look for reasons to disbelieve you anyway. Let them. Your peace is worth more than their approval."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Freedom That Comes When You Choose Your Words Carefully"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Freedom That Comes When You Choose Your Words Carefully"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"This week, choose your words for the right people, in the right places, for the right reasons. Not to defend. Not to convince. Not to prove your worth to someone who has already decided you have none. Speak to people who are genuinely asking. Stay silent with people who are setting snares."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Holy Spirit already knows when a question has an agenda behind it. When you sense that, you don't have to answer. You can say, 'I don't know, I can't answer that,' and walk away. You can sense the wickedness and refuse to play. This is not rudeness-this is wisdom. This is obedience."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You are tired because you have been answering questions God never asked you to answer. You are exhausted from defending decisions that have already been made. Stop. Delete the draft. Choose your silence. Your obedience to God is the only explanation the universe requires."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"While you are defending, you are not building-and some people have already decided their minds anyway, so your explanation is just a trap waiting to catch you.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"While you are defending, you are not building-and some people have already decided their minds anyway, so your explanation is just a trap waiting to catch you.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -192,7 +192,7 @@ export default function SermonPage() {
               <li><strong>{"Your actions speak louder than your defense"}</strong> {" "}{"Every time you defend yourself, you feed the cycle of justification and exhaust your peace. The people determined to disbelieve you will disbelieve you no matter what you say. Let your obedience, your choices, and your work speak for themselves. A lamb brought to slaughter does not argue-it walks through with integrity intact. That integrity is worth more than any vindication from people who made up their minds before you started talking."}</li>
               <li><strong>{"You do not owe your peace to anyone's opinion"}</strong> {" "}{"Stop typing and deleting. Stop crafting emails that justify your decisions to bosses, relatives, friends, and strangers online. These people are not your judge. God is. You owe God your obedience. You owe yourself your peace. You do not owe explanations to in-laws, old friends, family members who already decided who you are, or strangers on social media. Delete the draft. Say nothing. Pray. Move forward."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -220,7 +220,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -238,7 +238,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -251,33 +251,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Boss Will Never Promote You Like This
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-hidden-cost-of-staying-silent-at-work-home-and-in-life" className="text-[#0d6fbf] hover:underline font-medium">
                   The Hidden Cost of Staying Silent at Work, Home, and in Life
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#0d6fbf] hover:underline font-medium">
                   Everyone Around You Is Pretending - Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Deliberately Gets Worse Before It Works Out
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

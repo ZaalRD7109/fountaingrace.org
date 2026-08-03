@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Help Is Making Them Helpless"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 12 April 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You think you're helping. But endless handouts, overprotection, and solving problems for people actually stunts their growth and steals their dignity. Learn when real love means letting people struggle."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 12 April 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You think you're helping. But endless handouts, overprotection, and solving problems for people actually stunts their growth and steals their dignity. Learn when real love means letting people struggle."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Nothing I can do"}</button>
-                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:45</span>{"Where you supposed to be"}</button>
-                <button type="button" data-start="335" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">5:35</span>{"Drawing the line matters"}</button>
-                <button type="button" data-start="795" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">13:15</span>{"Teach them something real"}</button>
-                <button type="button" data-start="1275" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">21:15</span>{"Stop making people dependent"}</button>
-                <button type="button" data-start="1920" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">32:00</span>{"Give dignity with help"}</button>
-                <button type="button" data-start="2585" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">43:05</span>{"Teach them to fish"}</button>
-                <button type="button" data-start="3385" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">56:25</span>{"Long term solutions win"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Nothing I can do"}</button>
+                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:45</span>{"Where you supposed to be"}</button>
+                <button type="button" data-start="335" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">5:35</span>{"Drawing the line matters"}</button>
+                <button type="button" data-start="795" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">13:15</span>{"Teach them something real"}</button>
+                <button type="button" data-start="1275" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">21:15</span>{"Stop making people dependent"}</button>
+                <button type="button" data-start="1920" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">32:00</span>{"Give dignity with help"}</button>
+                <button type="button" data-start="2585" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">43:05</span>{"Teach them to fish"}</button>
+                <button type="button" data-start="3385" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">56:25</span>{"Long term solutions win"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -164,32 +164,32 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Trap of Good Intentions"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Trap of Good Intentions"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You see someone hungry on the street. You give them money. You feel good. They feel momentary relief. But what happens next week when hunger returns and you are not there? Your good heart just created a pattern of dependency. This is not love. This is enabling."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible calls us to show mercy to the poor. But mercy is not the same as rescue. Mercy means treating them with dignity. It means teaching them to solve their own problems instead of becoming addicted to your solutions. When you hand out fish instead of teaching fishing, you become their god-substitute. They no longer look to God for provision. They look to you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This applies to charity, parenting, friendships, church leadership, and marriage. Anywhere you habitually do for others what they are capable of doing themselves, you are slowly killing their independence and their self-respect."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"How Overprotection Cripples Your Children"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"How Overprotection Cripples Your Children"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You tie your child's shoes until age ten. You make their lunch until age fifteen. You pay their bills until age forty-five. Each act feels like love. Each act is actually a theft. You are stealing from them the chance to learn, to fail, to recover, and to grow strong."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Proverbs 22:6 says train up a child in the way they should go. But what way? The way of dependence or independence? When your child falls off a tree, a broken arm heals. But if you never let them climb, they never learn balance. They never build confidence. They never discover their own strength. Your fear of their pain is costing them their future."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The message your overprotection sends is not love. It is this: I do not believe you are capable. I do not trust you to survive without me. That message shapes them into adults who cannot make decisions, cannot handle conflict, and cannot function when you are gone. Is that the legacy you want?"}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Dignity Cost of Charity"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Dignity Cost of Charity"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You feed a homeless person and post the photo online. You mean well. But what you are really saying is: Look how I rescued this less-than person. You have turned their hunger into your resume. You have made them an object of your goodness instead of a human being capable of self-respect."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Jesus said do not let your right hand know what your left hand is doing. He was not being poetic. He was warning you that public charity degrades the recipient. When you hide the gift, you preserve their dignity. When you broadcast it, you announce their failure to the world. Temporary fixes bring long-term damage to the human soul."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"True mercy teaches people how to feed themselves. True mercy gives them the tools, the skills, the opportunity to provide for their own dignity. A bread maker in an orphanage is worth more than daily bread delivered to shame them."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why You Must Stop Praying For Others Instead of Teaching Them"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why You Must Stop Praying For Others Instead of Teaching Them"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You have a prayer gift. Your prayers seem to work. So your family stops praying. Your church members stop seeking God directly. They rely on your line to heaven instead of developing their own. You have made yourself their mediator. That is a form of spiritual control, not spiritual care."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The disciples asked Jesus to teach them to pray. Not to pray for them. They understood something you may have missed: learning to pray is more important than receiving an answered prayer. When you constantly intercede instead of equip, you create people who cannot hear God's voice without your translation. You have made them spiritual children forever."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The same applies to leaders, pastors, and managers who do all the teaching, all the decisions, all the speaking. You are not building a team. You are building dependents. And when you leave, the whole operation collapses because no one learned to think for themselves."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Real Problem: Fear and Reliance"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Real Problem: Fear and Reliance"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You do not help others because you love them most. You help them because you fear losing them. A parent who controls their adult child is not protecting them. They are trying to control their own fear of abandonment. A spouse who does everything is not serving. They are buying emotional insurance."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The Bible says in Galatians 6:5 that each person must carry their own load. Not because God is cruel. Because God knows that your load builds your character. Your struggle builds your strength. Your failure teaches you wisdom. When you remove the struggle, you remove the growth."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"As an adult, if you are still reliant on your boss for security, your spouse for identity, or your pastor for answers, you are still a child. And you are making those around you into false gods. The only sustainable reliance is on God. Everything else creates entanglement and eventually, resentment."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Long-Term Fix: Teach, Don't Give"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Long-Term Fix: Teach, Don't Give"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Stop giving money to the person on the street corner. Instead, offer them work or opportunity. Stop cooking for your adult child. Instead, teach them. Stop praying for people's problems. Instead, teach them to pray. The short-term discomfort of refusing to rescue someone is worth the long-term dignity of watching them rescue themselves."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Discipline now creates freedom later. Reading your Bible yourself is harder than listening to a preacher. But when you read it yourself, you rely on God, not man. Facing your own problems is painful. But when you face them, you discover your own strength. The temporary pain of self-reliance is the price of permanent independence."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your job as a parent, leader, friend, or believer is not to be needed. It is to become unnecessary. The best gift you can give is not your help. It is the confidence that they can help themselves. That is real love. That is the gospel lived out."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Stop giving fish. Stop even fishing for them. Teach them to fish, then get out of the way so they can learn what they are actually made of.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Stop giving fish. Stop even fishing for them. Teach them to fish, then get out of the way so they can learn what they are actually made of.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -198,7 +198,7 @@ export default function SermonPage() {
               <li><strong>{"Dependency on You Kills Reliance on God"}</strong> {" "}{"When people rely on you for their provision, protection, answers, or guidance, they stop relying on God. You become their source instead of God. This is spiritual death, even if it looks like kindness. The only sustainable reliance is on Jesus Christ, who is the author and finisher of faith. Your job is to point people to God, not to become their god-substitute. Every time you solve a problem for someone instead of teaching them to solve it, you are moving them further from God."}</li>
               <li><strong>{"Independence Is Harder Now, But Necessary Forever"}</strong> {" "}{"Teaching someone to be independent is harder than helping them. It is slower. It requires patience. It means watching them struggle. But this temporary difficulty creates permanent strength. When you raise children, lead teams, or help people, your goal must always be to make them less reliant on you, not more. The Bible says in Galatians 6:5 that each person must carry their own load. This is not cruelty. This is the only way humans grow. Discipline, struggle, and responsibility build character. Your good heart that removes all struggle is actually stealing their future."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -226,7 +226,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -244,7 +244,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -257,33 +257,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/stop-helping-people-its-making-them-worse" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-helping-people-its-making-them-worse" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Helping People (It
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#0d6fbf] hover:underline font-medium">
                   Helping Someone Actually Keeps Them Stuck
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
                   The Person Nobody Checks On: How You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#0d6fbf] hover:underline font-medium">
                   Six Invisible Gaps That Wreck Your Life (And How to Close Them)
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

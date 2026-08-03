@@ -102,12 +102,12 @@ export default function ContactForm() {
         purpose of responding to your message. Data is stored securely and is not shared with or
         sold to any third party. You may request access, correction, or deletion of your data at
         any time by emailing{' '}
-        <a href="mailto:info@fountaingrace.org" className="text-[#008080] hover:underline">
+        <a href="mailto:info@fountaingrace.org" className="text-[#006b6b] underline">
           info@fountaingrace.org
         </a>
         . By submitting this form you consent to this use of your data in line with POPIA. See
         our{' '}
-        <Link href="/privacy-policy" className="text-[#008080] hover:underline">
+        <Link href="/privacy-policy" className="text-[#006b6b] underline">
           Privacy Policy
         </Link>
         .

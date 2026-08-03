@@ -42,14 +42,14 @@ export default function CookieBanner() {
           no personal data is sold or shared. Read our{' '}
           <Link
             href="/cookie-policy"
-            className="underline font-semibold hover:text-[#FFD600] transition-colors"
+            className="underline font-semibold hover:text-white transition-colors"
           >
             Cookie Policy
           </Link>{' '}
           and{' '}
           <Link
             href="/privacy-policy"
-            className="underline font-semibold hover:text-[#FFD600] transition-colors"
+            className="underline font-semibold hover:text-white transition-colors"
           >
             Privacy Policy
           </Link>.

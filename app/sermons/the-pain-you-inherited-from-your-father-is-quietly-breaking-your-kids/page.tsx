@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"The Pain You Inherited From Your Father Is Quietly Breaking Your Kids"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 June 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"Your father's unresolved pain doesn't just hurt him-it shapes how you parent, what you believe about yourself, and what your children will inherit. This message shows why presence and healing matter more than you think."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 June 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"Your father's unresolved pain doesn't just hurt him-it shapes how you parent, what you believe about yourself, and what your children will inherit. This message shows why presence and healing matter more than you think."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,14 +140,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"What does manhood look like"}</button>
-                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:45</span>{"Six types of fathers"}</button>
-                <button type="button" data-start="105" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:45</span>{"The absent father problem"}</button>
-                <button type="button" data-start="495" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">8:15</span>{"My own father story"}</button>
-                <button type="button" data-start="1000" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">16:40</span>{"The provider only dad"}</button>
-                <button type="button" data-start="1635" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">27:15</span>{"Teaching kids emotional strength"}</button>
-                <button type="button" data-start="2700" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">45:00</span>{"What real leadership means"}</button>
-                <button type="button" data-start="3540" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">59:00</span>{"Forgiveness and new beginnings"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"What does manhood look like"}</button>
+                <button type="button" data-start="45" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:45</span>{"Six types of fathers"}</button>
+                <button type="button" data-start="105" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:45</span>{"The absent father problem"}</button>
+                <button type="button" data-start="495" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">8:15</span>{"My own father story"}</button>
+                <button type="button" data-start="1000" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">16:40</span>{"The provider only dad"}</button>
+                <button type="button" data-start="1635" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">27:15</span>{"Teaching kids emotional strength"}</button>
+                <button type="button" data-start="2700" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">45:00</span>{"What real leadership means"}</button>
+                <button type="button" data-start="3540" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">59:00</span>{"Forgiveness and new beginnings"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -164,31 +164,31 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Six Kinds of Fathers: Which One Are You Repeating?"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Six Kinds of Fathers: Which One Are You Repeating?"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Most people don't realize they are living out their father's script-even when they swore they never would. The sermon identifies six types: the absent father (gone by death, abandonment, or emotional distance), the provider-only father (money without relationship), the emotionally distant father (physically there but unreachable), the broken father (carrying unhealed pain he passes down), the restored father (willing to apologize and rebuild), and the godly father (leading with integrity, humility, and love)."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You might recognize yourself in more than one category. A man can be present with one child but absent with another. He can provide well but never teach. He can show up physically while his mind is somewhere else. The real question is not which type you are, but which type you are becoming-and whether you are willing to stop the generational damage before your children absorb it."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Broken Fathers Create Broken Children (Unless Something Changes)"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Broken Fathers Create Broken Children (Unless Something Changes)"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"A broken father is one who carries deep pain from his own past and never deals with it. He might be physically present, even emotionally invested, but the unhealed wound inside him becomes the filter through which he parents. He cannot give what he does not possess. If his father never showed him how to cry, he teaches his son not to cry. If he was abandoned, he might abandon in different ways. If he was shamed about his identity, he will pass that confusion to his children."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pastor shares his own story: growing up mixed race, told he was white because his biological father was Boer, yet raised in Motswana culture by a stepfather. That identity confusion nearly broke him-until he found his identity in Christ. Without that healing, he would have passed the fracture to his sons. A broken father who doesn't address his pain is like a cup with a crack pouring out dirty water into the next generation. The hole must be sealed first, or the children drink poison without knowing it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This is not about blame. Broken fathers often became broken because of what happened to them. But there is a turning point: the moment you realize your pain is not an excuse but a reason to get help. Your healing is not for you alone-it is the inheritance you give your children."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Identity Crisis Passes Down Through Generations"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Identity Crisis Passes Down Through Generations"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"One of the deepest wounds a father can pass to his child is a confused identity. When a father does not know who he is, he cannot teach his child who they are. When he is broken by shame, rejection, or the lies he was told about himself, he raises children who carry that same shame without understanding why."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pastor's stepdad taught him emotional control but never taught him emotional honesty. He learned to hide pain, to 'be a man' by not crying, to prove himself through toughness rather than truth. That pattern would have continued into his own parenting-until he recognized it and chose differently. Many cultures, family systems, and circumstances define people into boxes that are not true. A child raised to believe he does not belong will raise children who do not belong. A daughter told she is not worthy will raise daughters who doubt their worth."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"God does not give names; He gives identity. But broken fathers give lies instead-and those lies feel like truth because they come from someone the child loves. The healing starts when you stop letting your past, your culture, your circumstances define you, and you let God's truth remake you."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Presence Matters More Than Provision"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Presence Matters More Than Provision"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The provider-only father believes his job is finished when the child has food, clothes, and money. He gives the fish but never teaches how to fish. He pays for everything but shows up for nothing. Ephesians 6:4 says fathers are to bring children up in discipline and instruction, not just material supply. A child fed but never taught, provided for but never mentored, grows into an adult who has money but no character, resources but no wisdom."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pastor talks about Eli, a spiritual leader who failed to discipline his own sons. They became worthless because their father never invested himself into who they were becoming. A father's presence is not just about being in the room-it is about being emotionally available, willing to teach, ready to correct with love, and present during the moments that matter most."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The hardest part of fathering is not the money; it is the time, the attention, the willingness to be vulnerable enough to teach. A child does not need a perfect father. He needs a present father. He needs a father who shows up, admits mistakes, and keeps showing up anyway."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Restoration Breaks the Generational Curse"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Restoration Breaks the Generational Curse"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"A restored father is one who has made mistakes but turns back with humility and responsibility. He says, 'I was wrong. I am sorry. I want to make this right.' The prodigal son's father is the picture of restoration-he does not lecture or shame his returning son; he welcomes him. A father who can admit his failure and rebuild is a father who teaches his children that mistakes are not final, that redemption is real, and that love covers what shame tries to destroy."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Restoration does not erase the past damage. But it stops the damage from spreading. When a father says to his child, 'I hurt you, and I was wrong,' the child learns that accountability is stronger than defensiveness. When a father visibly changes, the child sees that people can change. This is how generational curses break. Not through perfection, but through honesty and the choice to become better."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pastor's youngest son grew up watching his father recognize his own violence against women and refuse to pass it on. The son told his father, 'I will never hit a girl, no matter what.' That is restoration. That is a father's broken past becoming a son's firm boundary. One man's healing saved the next generation from repeating his sin."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"God Is the Father Every Fatherless Child Actually Needs"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"God Is the Father Every Fatherless Child Actually Needs"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Some children have lost their father to death. Some never knew him. Some had a father in name only. The psalm says, 'Though my father and mother forsake me, the Lord will receive me.' This is not false comfort. It is the central truth: no earthly father is ultimate. Every fatherless child has access to the Father of fathers-God, who never abandons, never forgets, and never fails."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"God fills the gap that an absent, broken, or dead father leaves behind. He restores what was stolen. He names what culture tried to erase. He speaks identity over the confusion. When an earthly father fails, God does not. When an earthly father dies, God remains. Galatians says that God sent the Spirit of His Son into your heart, crying 'Abba, Father' (the intimate, Aramaic word for Dad). That cry is for everyone-those with present fathers and those without."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This does not minimize the real damage of a missing father. It means there is real healing available, real fatherhood available, real belonging available-not through luck or another person's choice, but through a relationship with God that no human can withhold or destroy."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"Your healing is never for yourself alone-it is the pressure that forms your children into diamonds instead of passing them the burden you carried.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"Your healing is never for yourself alone-it is the pressure that forms your children into diamonds instead of passing them the burden you carried.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -197,7 +197,7 @@ export default function SermonPage() {
               <li><strong>{"Presence Is Spiritual, Not Just Physical"}</strong> {" "}{"You can be in a room and be miles away. A father can provide every material need and provide nothing that matters. Presence means emotional availability, willingness to be seen, readiness to listen, courage to admit you were wrong, and the humility to keep trying. It is measured not by hours but by depth. One hour of real attention from a broken father choosing to heal matters more than years of distance from a silent provider."}</li>
               <li><strong>{"Pain Becomes Purpose When God Is Involved"}</strong> {" "}{"The pressure and pain you have survived is the force that shaped you, just as pressure shapes carbon into diamond. But without God, pain just damages. With God involved, pain teaches, refines, and equips you to help others. Your healing from your father's failure is the exact knowledge your children need. When you do the hard work of addressing your own wounds, you become the guide they need. Your greatest teaching moment is not your success-it is your honest recovery."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -225,7 +225,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -243,7 +243,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -256,33 +256,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-father-who-never-shows-up-and-how-it-breaks-you" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/the-father-who-never-shows-up-and-how-it-breaks-you" className="text-[#0d6fbf] hover:underline font-medium">
                   The Father Who Never Shows Up (And How It Breaks You)
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-fixing-the-same-problems-over-and-over" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/stop-fixing-the-same-problems-over-and-over" className="text-[#0d6fbf] hover:underline font-medium">
                   Stop Fixing the Same Problems Over and Over
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/you-got-what-you-prayed-for-but-lost-it-anyway" className="text-[#0d6fbf] hover:underline font-medium">
                   You Got What You Prayed For But Lost It Anyway
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/six-invisible-gaps-that-wreck-your-life-and-how-to-close-them" className="text-[#0d6fbf] hover:underline font-medium">
                   Six Invisible Gaps That Wreck Your Life (And How to Close Them)
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/youre-not-beyond-repair-no-matter-what-youve-done" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/youre-not-beyond-repair-no-matter-what-youve-done" className="text-[#0d6fbf] hover:underline font-medium">
                   You
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>

@@ -123,10 +123,10 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"You're Burning Out Because Nobody Told You When to Stop"}</h1>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You pour yourself out for everyone, feel guilty the moment you stop, and collapse anyway. Pastor Ricardo Zaal shows where the strongest people quietly refuel, and how you can do the same this week."}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You pour yourself out for everyone, feel guilty the moment you stop, and collapse anyway. Pastor Ricardo Zaal shows where the strongest people quietly refuel, and how you can do the same this week."}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -139,14 +139,14 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"My secret hiding place"}</button>
-                <button type="button" data-start="92" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:32</span>{"The real principle revealed"}</button>
-                <button type="button" data-start="254" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">4:14</span>{"Speaking to the lonely supporter"}</button>
-                <button type="button" data-start="621" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">10:21</span>{"Why solitude matters"}</button>
-                <button type="button" data-start="1325" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">22:05</span>{"The phone charging lesson"}</button>
-                <button type="button" data-start="1708" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">28:28</span>{"Successful people rest too"}</button>
-                <button type="button" data-start="2152" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">35:52</span>{"You cannot pour empty"}</button>
-                <button type="button" data-start="2838" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">47:18</span>{"Hidden prayers change everything"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"My secret hiding place"}</button>
+                <button type="button" data-start="92" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:32</span>{"The real principle revealed"}</button>
+                <button type="button" data-start="254" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">4:14</span>{"Speaking to the lonely supporter"}</button>
+                <button type="button" data-start="621" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">10:21</span>{"Why solitude matters"}</button>
+                <button type="button" data-start="1325" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">22:05</span>{"The phone charging lesson"}</button>
+                <button type="button" data-start="1708" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">28:28</span>{"Successful people rest too"}</button>
+                <button type="button" data-start="2152" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">35:52</span>{"You cannot pour empty"}</button>
+                <button type="button" data-start="2838" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">47:18</span>{"Hidden prayers change everything"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -162,23 +162,23 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Strength You Cannot See"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Strength You Cannot See"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Your phone warns you at 15 percent battery. Your car flashes when the tank runs empty. But you, you ignore your own warning signs until you collapse. This is the problem Pastor Ricardo Zaal identifies: you are running on empty because you keep pouring and never refill."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The real issue is not that you work too hard. The real issue is that you have no secret place to refuel. Jesus knew this. He withdrew regularly into solitude, not because He was weak, but because He was strong enough to protect what nobody could see. Matthew 14:23 tells us: \"And when he had sent the multitudes away, he went up into a mountain apart to pray. And when the evening was come, he was there alone.\" Even in the middle of ministry demands, He pulled away on purpose."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Secret Place Is Not Rest, It's Refueling"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Secret Place Is Not Rest, It's Refueling"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo Zaal unpacks the Greek word eremos, the solitary place, and explains it means a desert, a lonely deserted place away from people and noise. This is not a soft concept. This is the same wilderness where Jesus was tested and refined. The solitary place is where you are strengthened for the road ahead."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Mark 1:35 shows the pattern: \"And in the morning, rising up a great while before day, he went out and departed into a solitary place, and there prayed.\" Jesus did this early, before demands overwhelmed Him. This is intake, the fuel that makes output possible. A car cannot drive on an empty tank. Neither can you. Isaiah 40:31 promises: \"But they that wait upon the Lord shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.\""}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"You Cannot Pour from an Empty Cup"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"You Cannot Pour from an Empty Cup"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"There is no such thing as output without intake. Yet you believe rest is weakness, that busyness proves your worth, that pulling away means you are selfish or uncommitted. This is a lie that will kill you. Jesus served multitudes, but He could do it because He regularly went into a solitary place to refuel. Mark 6:31 captures His invitation to His disciples: \"And he said unto them, Come ye yourselves apart into a desert place, and rest a while: for there were many coming and going, and they had no leisure, so much as to eat.\""}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo shares his own practice: he refuses appointments when he is not prepared. He takes naps whenever he feels the need. Sleep, solitude, time away, these are refueling, not laziness. Psalm 23:2-3 shows God's design: \"He maketh me to lie down in green pastures: he leadeth me beside the still waters. He restoreth my soul.\" Restoration is not optional. It is how you become useful again."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Where Public Power Comes From"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Where Public Power Comes From"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The crowd saw Jesus heal and teach. They never saw the mountain at dawn where He prayed for that power. Your foundation of strength lies in the secret place, the place nobody sees. A skyscraper stands tall because of the depth of its foundation buried underground. Your public effectiveness comes from your private refueling."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Matthew 6:6 reveals this: \"But thou when thou prayest, enter into thy closet: and when thou hast shut thy door, pray to thy Father which is in secret: and thy Father which seeth in secret shall reward thee openly.\" The power that flows out comes from prayer that flows in, in secret, alone, protected. Pastor Ricardo spent years cleaning church seats at night, praying over each one, serving invisibly. The day before he was ordained as a pastor, he anointed a specific seat in prayer. The next day, that seat became his. Hidden obedience preceded public calling."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Choose Your Secret Place Now"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Choose Your Secret Place Now"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"This is not complicated theology. It is a practical choice. What is your solitary place? It could be early morning prayer. It could be a walk alone. It could be switching off your phone and sitting in silence. Whatever it looks like, the principle is the same: you must protect a place where you go alone with God to refuel before you hit empty."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Pastor Ricardo's final word is clear: you are not too needed to rest. You are not called to run dry. Pull away this week before you crash. Let your phone warn you at 15 percent. Listen to your own warning signs as you would listen to your car. Find your secret place, guard it fiercely, and return to serve from fullness instead of fumes. The strongest people who ever lived, Jesus Himself, pulled away on purpose, right in the middle of the demand. So can you."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"A secret place is where public power comes from. The moment you start to go refill yourself, there is always something happening, but you must go anyway.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"A secret place is where public power comes from. The moment you start to go refill yourself, there is always something happening, but you must go anyway.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -187,7 +187,7 @@ export default function SermonPage() {
               <li><strong>{"Rest Is Not Weakness, It Is Refueling"}</strong> {" "}{"The strongest person who ever lived, Jesus, withdrew regularly to pray and refuel. He did this not after the work was complete, but right in the middle of it. Pulling away when you are busy is not quitting; it is preparing. Sleep, solitude, prayer, silence, these are not luxuries for the weak. They are fuel for the capable. Your rest will help you become your best."}</li>
               <li><strong>{"Hidden Obedience Precedes Public Power"}</strong> {" "}{"Nobody saw the mountain where Jesus prayed at dawn. Nobody witnessed the prayers in the secret place. But that hidden obedience is exactly where His power came from. Your foundation is dug deep and unseen. What you do alone with God in prayer feeds the power people see when you minister. Protect the secret place, and the public anointing will follow."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -214,7 +214,7 @@ export default function SermonPage() {
             <h2 className="text-2xl font-bold text-[#1a1a1a] mb-4">Hear the next message this Sunday</h2>
             <p className="text-[#555] leading-relaxed mb-7">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold text-lg px-8 py-4 rounded-xl shadow-lg hover:bg-[#006666] transition-colors w-full sm:w-auto">Come this Sunday at 09:00</Link>
-            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#008080] font-semibold underline">Send a prayer request</a></p>
+            <p className="text-[#555] text-sm mt-6">Need prayer?{' '}<a href="https://wa.me/27752592555?text=I%20need%20prayer" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] font-semibold underline">Send a prayer request</a></p>
           </div>
         </section>
         <section className="bg-white py-12 px-4 sm:px-6">
@@ -230,7 +230,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>

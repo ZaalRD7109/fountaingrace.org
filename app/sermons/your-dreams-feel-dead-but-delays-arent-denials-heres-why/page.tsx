@@ -123,11 +123,11 @@ export default function SermonPage() {
       <article>
         <header className="pt-16 pb-14 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
-            <p className="text-[#FFD600] text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
+            <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">Sunday Message · Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-5">{"Your Dreams Feel Dead, But Delays Aren't Denials-Here's Why"}</h1>
-            <p data-byline className="text-white/70 text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 March 2025</p>
-            <p className="text-white/80 text-lg leading-relaxed mb-4">{"You're doing everything right. Your intentions are solid. Yet life keeps hurting and progress stalls. What if the real answer isn't more hustle-it's understanding what suffering actually does in a life built to matter?"}</p>
-            <p className="text-white/60 text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
+            <p data-byline className="text-white text-sm mt-3">Preached by Pastor Ricardo Zaal, Fountain of Grace International, Pretoria North &middot; 15 March 2025</p>
+            <p className="text-white text-lg leading-relaxed mb-4">{"You're doing everything right. Your intentions are solid. Yet life keeps hurting and progress stalls. What if the real answer isn't more hustle-it's understanding what suffering actually does in a life built to matter?"}</p>
+            <p className="text-white text-sm">Pastor Ricardo Zaal · Fountain of Grace International, Pretoria North</p>
           </div>
         </header>
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
@@ -140,13 +140,13 @@ export default function SermonPage() {
             <div className="mt-4">
               <p className="text-[#1a1a1a] font-semibold text-sm mb-2">Jump to a moment in the message:</p>
               <div className="flex flex-col gap-2">
-                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">0:00</span>{"Why does trust feel backwards"}</button>
-                <button type="button" data-start="88" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">1:28</span>{"When your brother betrays you"}</button>
-                <button type="button" data-start="478" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">7:58</span>{"Humility opens the right doors"}</button>
-                <button type="button" data-start="945" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">15:45</span>{"Your gifts matter more than money"}</button>
-                <button type="button" data-start="1467" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">24:27</span>{"Lead with compassion always"}</button>
-                <button type="button" data-start="1935" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">32:15</span>{"From stutterer to speaker"}</button>
-                <button type="button" data-start="2431" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#008080] font-semibold mr-2">40:31</span>{"Does this actually change you"}</button>
+                <button type="button" data-start="0" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">0:00</span>{"Why does trust feel backwards"}</button>
+                <button type="button" data-start="88" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">1:28</span>{"When your brother betrays you"}</button>
+                <button type="button" data-start="478" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">7:58</span>{"Humility opens the right doors"}</button>
+                <button type="button" data-start="945" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">15:45</span>{"Your gifts matter more than money"}</button>
+                <button type="button" data-start="1467" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">24:27</span>{"Lead with compassion always"}</button>
+                <button type="button" data-start="1935" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">32:15</span>{"From stutterer to speaker"}</button>
+                <button type="button" data-start="2431" className="sermon-chapter text-left w-full bg-[#f7f7f7] hover:bg-[#f0fafa] border border-gray-200 rounded-lg px-4 py-3 text-[#333] transition-colors"><span className="text-[#006b6b] font-semibold mr-2">40:31</span>{"Does this actually change you"}</button>
               </div>
             </div>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -163,36 +163,36 @@ export default function SermonPage() {
         </section>
         <section className="bg-white py-14 px-4 sm:px-6">
           <div className="max-w-3xl mx-auto">
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Gut-Wrenching Feeling That God Forgot You"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Gut-Wrenching Feeling That God Forgot You"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You wake up and watch someone else get promoted, get married, buy the house. Meanwhile you're still here. Same office. Same apartment. Same dead-end feeling. The thoughts come fast: Am I invisible? Did I do something wrong? Is my work even mattering?"}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"This feeling-that you've been thrown in a dungeon and abandoned-is so real it can poison your entire day. But here's what most people miss: being forgotten by people is not the same as being forgotten by God. Joseph was trapped in prison, betrayed by his own brothers, and everything around him screamed abandonment. Yet the Scripture says plainly: the Lord was with Joseph. Not someday. Not eventually. During. The presence happened while everything looked broken."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The delay you're experiencing right now is not proof you've been denied. It's proof you're being trained."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Why Good People Get Hit Harder-And What That Actually Means"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Why Good People Get Hit Harder-And What That Actually Means"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"You've heard the question before: If I'm doing everything right, why am I suffering more than people cutting corners? It feels like a cosmic unfairness. The people around you who don't care about integrity, who skip the hard conversations, who chase shortcuts-they seem fine. Meanwhile you're bleeding out trying to do the honorable thing."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pastor teaches it this way: staying faithful even when life feels like you've been thrown into a pit will pay off at the end. Not because the universe is fair. Not because hard work always gets instant results. But because your character is being forged in the very fire that hurts the most. That's different. That's active. That's purpose."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you maintain integrity in circumstances that would break you, when you serve others while your own needs aren't met, when you forgive someone who betrayed you close-that's not wasted suffering. That's the curriculum. That's what shapes a life that actually leads and influences others the way you were meant to."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Detours Are Training Grounds, Not Dead Ends"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Detours Are Training Grounds, Not Dead Ends"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Right now you're looking at your life and seeing a detour. A wrong turn. A delay that shouldn't be there. You're thinking: this detour is blocking my blessing. But when you look back-really look back-at the unexpected turns you've already survived, you see something different. That detour taught you something. That delay positioned you to meet someone or understand something you needed. The training happened without you knowing you were being trained."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Joseph didn't wake up in Potiphar's house thinking, 'Great, I'm learning servant leadership principles.' He was a slave. But the Scripture says: the Lord was with Joseph, and he became a prosperous man in his master's house. Even in captivity, even in the wrong place at the wrong time, he was learning excellence. He was learning how to serve. He was learning how to maintain character when nobody was watching."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Your detour is your training ground. The delays are the curriculum. And the person you're becoming in this season is exactly the person who will handle what actually comes next."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"God's Timing Isn't Late-Your Life Is Out of Sync With His Purpose"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"God's Timing Isn't Late-Your Life Is Out of Sync With His Purpose"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"Here's the hard truth nobody tells you: most of what you're going through happens because God's timing for your life is in perfect sync with His actual purpose for you, but your life is out of sync with what you want for yourself. You want the car now. You want the promotion now. You want the relationship now. But God is looking at who you'll become with the car, the promotion, the relationship-and whether you'll run toward Him or away."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Abraham was promised descendants when he was old and his wife Sarah couldn't conceive. They waited. They stressed. They made their own plan because the promise didn't balance with reality. But when they finally stopped forcing and started trusting, Genesis says: Sarah conceived and bore Abraham a son at the set time of which God had spoken to him. The set time. Not Abraham's time. Not Sarah's impatience. God's timing was perfect because it aligned with purpose."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The vision God gave you is real. The calling is real. But the way you're imagining it might be the humanly way-the way without pain, without waiting, without character development. That's not His way. His way includes the detour because His way is building you into someone who can handle the blessing without losing it."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"The Presence That Changes Everything"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"The Presence That Changes Everything"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"When Paul sat in prison awaiting execution, the Scripture records something stark: he and Silas praised God. Not because they'd been released. Not because rescue was certain. Because they understood a presence that transcended circumstance. The prison doors opened. The guards, facing execution for the escape, were moved by something they saw in those prisoners-a peace that made no logical sense. That peace was God's presence."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"You need to say it out loud, proudly even: God is with me. Not in a cocky way. Not bragging about yourself. But acknowledging the reality that the presence sustaining the universe is active in your hard times. Genesis 39 doesn't say Joseph was prosperous because he was talented or lucky. It says: the Lord was with Joseph, and he was a prosperous man. The presence came first. The prosperity followed."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you remind yourself that God is with you in the hard time-not after it, but during it-everything shifts. You stop spinning on panic and start steadying on purpose. You stop asking why this is happening and start asking what you're becoming because it's happening."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Everything You Have Is a Gift-Use It or Lose It"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Everything You Have Is a Gift-Use It or Lose It"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The pastor carries something from his own story: when he looked at what he had and saw himself being selfish, not using it to serve others, he realized why he lost it. That's not punishment. That's how the world actually works. Gifts stagnate when they're hoarded. Talents atrophy when they're hidden. The things God deposits in you-your skills, your resources, your words, your presence-are meant to move through you to others, not stay locked in you."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"Scripture is blunt about this: each of you has received a gift, a particular spiritual talent. Use it. Minister it to one another. Be a good steward of God's grace in its many forms. Every single thing you have-your money, your advice, your smile, your ability to listen, your skill with your hands-is owned by God and loaned to you for His purposes. The moment you recognize it's not yours to keep, you're free to actually use it."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"The pastor's example of Pastor Edgar, who greeted people before church with a genuine smile and his phrase 'By God's grace,' changed lives simply by seeing people, speaking their names, and remembering their burdens in prayer. That was his ministry. That was his gift in motion. He didn't wait until he had more money or bigger status. He used what he had-his attention, his warmth, his intercession-and it mattered eternally."}</p>
-            <h2 className="text-xl font-bold text-[#2a9df4] mb-3">{"Lead With What's Real: Compassion, Not Performance"}</h2>
+            <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">{"Lead With What's Real: Compassion, Not Performance"}</h2>
             <p className="text-[#555] leading-relaxed mb-4">{"The pastor grew up in rage. Every other word was profanity. His sisters flinched when he spoke. Teachers saw a different version of him only when he needed something from them. By his own account, he was manufacturer of anger, spreading pain everywhere he went. The transformation from that boy to the man leading a congregation wasn't about becoming more polished or successful on the outside. It was about recognizing that anger-that hardness-was not from God."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"When you lead with love, grace, and compassion, reflecting the character of the One you follow, everything changes. Not for you primarily-though you do change. But for everyone around you. Joseph, sitting in prison, treated his fellow prisoners with respect. They saw Christ's character in him. So when they were released, they recommended him to Potiphar. That recommendation came from how he made them feel."}</p>
             <p className="text-[#555] leading-relaxed mb-4">{"If you're leading your family, your team, your church, your influence through fear or anger or harshness-suspend. Ask yourself: where is this coming from? Because the Spirit you've been given is not the spirit of fear. It's the Spirit of power, love, and a sound mind. If what's coming out of you is killing someone's joy, if it's stealing their peace, if it's destroying their trust-you're not channeling God. You're transmitting something else entirely. It's time to return to the source and ask for restoration."}</p>
             <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-10 bg-[#f0fafa] rounded-r-xl">
-              <p className="text-[#2a9df4] font-semibold text-lg italic">{"\"God's timing is so perfect that even though you think He should have done it by now, He's still with you-training you for something you can't yet see.\""}</p>
+              <p className="text-[#0d6fbf] font-semibold text-lg italic">{"\"God's timing is so perfect that even though you think He should have done it by now, He's still with you-training you for something you can't yet see.\""}</p>
               <cite className="text-[#555] text-sm not-italic mt-2 block">- Pastor Ricardo Zaal</cite>
             </blockquote>
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">Key Takeaways</h2>
@@ -201,7 +201,7 @@ export default function SermonPage() {
               <li><strong>{"Delays Expose Whether You Trust the Timing or Your Timeline"}</strong> {" "}{"Your frustration usually comes from one place: your life is out of sync with what you want, while God's timing is perfectly in sync with His purpose for you. You want the promotion, the relationship, the breakthrough now. But God is asking whether you'll trust His 'set time' even when it contradicts your calendar. The delay is testing-and building-your actual faith, not punishing you for something."}</li>
               <li><strong>{"Everything Is a Loan, Not a Possession"}</strong> {" "}{"The moment you recognize that every gift, resource, skill, and opportunity you have belongs to God and is simply on loan to you for His purposes, you stop hoarding and start serving. When you use what you have to bless others-whether it's your money, your attention, your words, or your skills-you align with how the Kingdom actually works. When you hold it tight, you lose it. When you release it generously, it multiplies."}</li>
             </ol>
-            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#008080] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
+            <p className="text-[#555] leading-relaxed">If you are in or around Pretoria or Johannesburg,{' '}<Link href="/plan-your-visit" className="text-[#006b6b] font-semibold hover:underline">come and join us on a Sunday</Link>{' '}- these messages are preached live every week at Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
           </div>
         </section>
         <section className="bg-gray-50 py-12 px-4 sm:px-6">
@@ -229,7 +229,7 @@ export default function SermonPage() {
             <p className="text-[#555] leading-relaxed mb-6">Fountain of Grace International meets every Sunday at 09:00 at 323 B Danie Theron Street, Pretoria North. Come as you are.</p>
             <div className="flex flex-wrap gap-4">
               <Link href="/plan-your-visit" className="inline-block bg-[#008080] text-white font-bold px-6 py-3 rounded-lg hover:bg-[#006666] transition-colors">Plan Your Visit</Link>
-              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#008080] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
+              <Link href="/prayer" className="inline-block bg-white border border-[#008080] text-[#006b6b] font-bold px-6 py-3 rounded-lg hover:bg-[#f0fafa] transition-colors">Send a Prayer Request</Link>
             </div>
           </div>
         </section>
@@ -247,7 +247,7 @@ export default function SermonPage() {
         <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto">
             <details className="group">
-              <summary className="cursor-pointer text-[#2a9df4] font-semibold text-base select-none list-none flex items-center gap-2">
+              <summary className="cursor-pointer text-[#0d6fbf] font-semibold text-base select-none list-none flex items-center gap-2">
                 <span className="inline-block transition-transform group-open:rotate-90">&#9658;</span>
                 Read Full Sermon Transcript
               </summary>
@@ -260,33 +260,33 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-knocks-you-down-does-integrity-actually-matter" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Knocks You Down, Does Integrity Actually Matter
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/when-life-deliberately-gets-worse-before-it-works-out" className="text-[#0d6fbf] hover:underline font-medium">
                   When Life Deliberately Gets Worse Before It Works Out
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Big Break Is Coming, But You
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#0d6fbf] hover:underline font-medium">
                   When Your Success Makes People Jealous: Here
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#2a9df4] hover:underline font-medium">
+                <Link href="/sermons/false-accusations-wont-stop-your-dreams-what-josephs-story-reveals" className="text-[#0d6fbf] hover:underline font-medium">
                   Your Boss Will Never Promote You Like This
                 </Link>
               </li>
             </ul>
             <p className="mt-6 text-[#555]">
-              <Link href="/sermons" className="text-[#2a9df4] hover:underline font-medium">
+              <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">
                 Browse every sermon
               </Link>
             </p>
