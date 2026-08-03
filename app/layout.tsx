@@ -13,6 +13,11 @@ const poppins = Poppins({
   weight: ['400', '500', '600', '700', '800'],
   display: 'swap',
   variable: '--font-poppins',
+  // Five weights preloaded at highest priority is about 100KB of font files
+  // competing with the page's own picture on a phone connection, which showed
+  // up as 891ms of Load Delay in front of Largest Contentful Paint. The fonts
+  // still load and still swap in; they simply stop going first.
+  preload: false,
 })
 
 export const viewport: Viewport = {

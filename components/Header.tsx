@@ -13,7 +13,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
 
           {/* Logo - clickable home, tooltip for less technical users */}
-          <Link
+          <Link prefetch={false}
             href="/"
             className="flex-shrink-0"
             onClick={() => setMenuOpen(false)}
@@ -32,13 +32,13 @@ export default function Header() {
 
           {/* Desktop nav - two pill buttons only: Sermons (outline) + Plan Your Visit (solid gold) */}
           <nav className="hidden lg:flex items-center gap-3" aria-label="Main navigation">
-            <Link
+            <Link prefetch={false}
               href="/sermons"
               className="inline-block border-2 border-[#008080] text-[#008080] font-bold px-5 py-2.5 rounded-[30px] text-sm hover:bg-[#008080] hover:text-white transition-all duration-300 tracking-wide"
             >
               Sermons
             </Link>
-            <Link href="/plan-your-visit" className="btn-primary text-sm px-5 py-2.5">
+            <Link prefetch={false} href="/plan-your-visit" className="btn-primary text-sm px-5 py-2.5">
               Plan Your Visit
             </Link>
           </nav>
@@ -69,7 +69,7 @@ export default function Header() {
             aria-label="Mobile navigation"
           >
             {/* Primary action - always first and most prominent */}
-            <Link
+            <Link prefetch={false}
               href="/plan-your-visit"
               onClick={() => setMenuOpen(false)}
               className="btn-primary text-sm text-center mb-3"
@@ -77,7 +77,7 @@ export default function Header() {
               Plan Your Visit
             </Link>
 
-            <Link
+            <Link prefetch={false}
               href="/sermons"
               onClick={() => setMenuOpen(false)}
               className="text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors"
@@ -88,34 +88,34 @@ export default function Header() {
             {/* Visit section */}
             <div className="border-t border-gray-100 mt-2 pt-3">
               <p className="text-xs font-semibold text-[#999] uppercase tracking-wider px-2 mb-1">Your Visit</p>
-              <Link href="/what-to-expect" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">What to Expect</Link>
-              <Link href="/faq" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">FAQ</Link>
-              <Link href="/about" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">About Us</Link>
-              <Link href="/pastors" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Pastors</Link>
+              <Link prefetch={false} href="/what-to-expect" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">What to Expect</Link>
+              <Link prefetch={false} href="/faq" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">FAQ</Link>
+              <Link prefetch={false} href="/about" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">About Us</Link>
+              <Link prefetch={false} href="/pastors" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Pastors</Link>
             </div>
 
             {/* Resources section */}
             <div className="border-t border-gray-100 mt-2 pt-3">
               <p className="text-xs font-semibold text-[#999] uppercase tracking-wider px-2 mb-1">Resources</p>
-              <Link href="/resources" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Articles</Link>
-              <Link href="/devotional" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Devotionals</Link>
+              <Link prefetch={false} href="/resources" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Articles</Link>
+              <Link prefetch={false} href="/devotional" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Devotionals</Link>
             </div>
 
             {/* Community section */}
             <div className="border-t border-gray-100 mt-2 pt-3">
               <p className="text-xs font-semibold text-[#999] uppercase tracking-wider px-2 mb-1">Community</p>
-              <Link href="/community-impact" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Community Impact</Link>
-              <Link href="/volunteer" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Volunteer</Link>
-              <Link href="/stories" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Stories</Link>
-              <Link href="/community-impact" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Programs</Link>
+              <Link prefetch={false} href="/community-impact" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Community Impact</Link>
+              <Link prefetch={false} href="/volunteer" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Volunteer</Link>
+              <Link prefetch={false} href="/stories" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Stories</Link>
+              <Link prefetch={false} href="/community-impact" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Programs</Link>
             </div>
 
             {/* Connect section */}
             <div className="border-t border-gray-100 mt-2 pt-3">
               <p className="text-xs font-semibold text-[#999] uppercase tracking-wider px-2 mb-1">Connect</p>
-              <Link href="/prayer" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Prayer Request</Link>
-              <Link href="/donate" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Donate</Link>
-              <Link href="/contact" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Contact</Link>
+              <Link prefetch={false} href="/prayer" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Prayer Request</Link>
+              <Link prefetch={false} href="/donate" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Donate</Link>
+              <Link prefetch={false} href="/contact" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Contact</Link>
             </div>
           </nav>
         )}

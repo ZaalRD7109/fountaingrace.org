@@ -62,6 +62,43 @@ function loadAll() {
 }
 
 /**
+ * Third-party tags are loaded LATE, on purpose.
+ *
+ * Measured on 2026-08-03 with Google's own PageSpeed Insights after the Ad
+ * Grant application was rejected a second time for "load quickly": the Meta
+ * pixel and the GA4 tag together were 342KB and blocked the phone's main
+ * thread for 590ms, on a page whose own code is small. Largest Contentful
+ * Paint on mobile was 6.2s against Google's 2.5s bar.
+ *
+ * Nothing is dropped. Everything still loads, either the moment the visitor
+ * does anything at all (a scroll, a tap, a key) or shortly after the page has
+ * finished loading, whichever comes first. A real person is recorded exactly
+ * as before. What changes is that the church's own words paint first and the
+ * trackers wait their turn.
+ */
+const IDLE_DELAY_MS = 3500
+const WAKE_EVENTS = ['pointerdown', 'touchstart', 'keydown', 'scroll', 'wheel'] as const
+
+function loadAllWhenIdle() {
+  let fired = false
+  const run = () => {
+    if (fired) return
+    fired = true
+    WAKE_EVENTS.forEach((e) => window.removeEventListener(e, run))
+    loadAll()
+  }
+
+  // Whichever happens first: the visitor moves, or the page has been quiet.
+  WAKE_EVENTS.forEach((e) => window.addEventListener(e, run, { once: true, passive: true }))
+
+  const startTimer = () => window.setTimeout(run, IDLE_DELAY_MS)
+  if (document.readyState === 'complete') startTimer()
+  else window.addEventListener('load', startTimer, { once: true })
+
+  return run
+}
+
+/**
  * One document-level listener covers every WhatsApp link on the site.
  *
  * There are over 200 pages carrying a wa.me link and more are generated every
@@ -94,7 +131,7 @@ export default function AnalyticsLoader() {
     // capture visitor behaviour instead of only the rare person who taps Accept.
     // (Ricardo 2026-06-23 - the dashboard was empty because the old setup tracked only Accept-clickers.)
     if (localStorage.getItem('FGI_cookieConsent') !== 'declined') {
-      loadAll()
+      loadAllWhenIdle()
     }
 
     // Still honour an Accept tap in this visit (covers anyone who had previously declined and changes their mind)

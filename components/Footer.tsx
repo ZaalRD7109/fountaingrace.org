@@ -9,7 +9,7 @@ export default function Footer() {
 
           {/* NAP Block */}
           <div>
-            <Link href="/" className="block mb-4" title="Go to Homepage" aria-label="Fountain of Grace International - Go to Homepage">
+            <Link prefetch={false} href="/" className="block mb-4" title="Go to Homepage" aria-label="Fountain of Grace International - Go to Homepage">
               <Image
                 src="/logo-square.webp"
                 alt="Fountain of Grace International logo"
@@ -58,7 +58,7 @@ export default function Footer() {
                 { href: '/contact', label: 'Contact' },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link
+                  <Link prefetch={false}
                     href={link.href}
                     className="text-white font-medium hover:underline transition-colors"
                   >
@@ -84,7 +84,7 @@ export default function Footer() {
                 { href: '/donate', label: 'Donate' },
               ].map((link) => (
                 <li key={link.href}>
-                  <Link
+                  <Link prefetch={false}
                     href={link.href}
                     className="text-white font-medium hover:underline transition-colors"
                   >
@@ -101,7 +101,7 @@ export default function Footer() {
             <p className="text-sm text-white font-medium">Every Sunday at 09:00</p>
             <p className="text-sm text-white mt-1">323 B Danie Theron Street, Pretoria North</p>
             <div className="mt-4">
-              <Link
+              <Link prefetch={false}
                 href="/plan-your-visit"
                 className="inline-block bg-[#FFD600] text-[#1a1a1a] text-sm font-bold px-5 py-2.5 rounded-lg hover:bg-[#e6c200] transition-colors"
               >
@@ -136,9 +136,9 @@ export default function Footer() {
         <div className="border-t border-white/20 mt-10 pt-6 text-xs text-white flex flex-col sm:flex-row justify-between gap-3">
           <p>© {new Date().getFullYear()} Fountain of Grace International. Registered NPO No: 316-193. Pretoria North, South Africa.</p>
           <nav aria-label="Legal links" className="flex flex-wrap gap-x-4 gap-y-1">
-            <Link href="/privacy-policy" className="font-medium hover:underline transition-colors">Privacy Policy</Link>
-            <Link href="/cookie-policy" className="font-medium hover:underline transition-colors">Cookie Policy</Link>
-            <Link href="/terms" className="font-medium hover:underline transition-colors">Terms of Use</Link>
+            <Link prefetch={false} href="/privacy-policy" className="font-medium hover:underline transition-colors">Privacy Policy</Link>
+            <Link prefetch={false} href="/cookie-policy" className="font-medium hover:underline transition-colors">Cookie Policy</Link>
+            <Link prefetch={false} href="/terms" className="font-medium hover:underline transition-colors">Terms of Use</Link>
           </nav>
         </div>
       </div>

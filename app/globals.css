@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+/* Poppins is loaded and self-hosted by next/font/google in app/layout.tsx.
+   The old @import here fetched the SAME font a second time from
+   fonts.googleapis.com as a render-blocking stylesheet, which Google's own
+   PageSpeed run on 2026-08-03 measured at 880ms of blocked rendering on a
+   phone. Removed - the typeface is unchanged. */
 
 @tailwind base;
 @tailwind components;
