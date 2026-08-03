@@ -36,6 +36,17 @@ Ricardo (zaalricardo@gmail.com). Managing Fountain of Grace International's webs
 | `#008080` | FGI Teal — secondary, NPO context |
 | `#7d7d7d` | FGI Grey — body text |
 
+**Accessible text variants (added 2026-08-03, do not undo).** The brand colours above are correct for logos, fills and large graphics, but three of them fail WCAG AA as small TEXT and Lighthouse flags them:
+
+| Use | Colour | Why |
+|-----|--------|-----|
+| Blue TEXT or a button with white text | `#0d6fbf` | `#2a9df4` measures 2.90:1 both ways, needs 4.5 |
+| Teal TEXT on white or mint | `#006b6b` | `#008080` measures 4.45:1 on the mint backgrounds |
+| Grey body text | `#595959` | `#7d7d7d`, `#999` and `gray-400` all measure under 4:1 |
+| Gold on teal | use white for TEXT | `#FFD600` on teal measures 3.0:1. Gold stays for borders and fills |
+
+Never put a translucent WHITE or GOLD panel over the teal - it lifts the background to about `#128989` and drops white text to 4.2:1. Use `bg-black/15` with a white or gold border instead. Every page scored 100 on accessibility after this; keep it that way with `python3 /home/ricardo/workspace/scripts/site-speed/contrast_sweep.py --dry` if colours are ever added back.
+
 Logo files: `public/logo.webp` (horizontal, 255x134), `public/logo-square.webp` (square, 512x512), `public/favicon.jpg` (40x40).
 Typography: Poppins.
 DO NOT use Ricardo's personal book brand (#00ced1) or the navy in tailwind.config.ts — those are wrong.
