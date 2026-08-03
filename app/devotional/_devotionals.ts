@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "is-holding-back-money-the-same-as-not-trusting-god",
+    "date": "2026-08-03",
+    "dateDisplay": "3 August 2026",
+    "day": 215,
+    "headline": "Is holding back money the same as not trusting God?",
+    "verseRef": "Proverbs 11:24",
+    "card": "/devotional-cards/is-holding-back-money-the-same-as-not-trusting-god.jpg"
+  },
+  {
     "slug": "does-god-actually-have-practical-advice-for-my-money-problems",
     "date": "2026-08-02",
     "dateDisplay": "2 August 2026",
