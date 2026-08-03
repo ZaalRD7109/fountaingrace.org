@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Volunteer fit checks - Fountain of Grace International</title>
+<style>
+  :root{ --bg:#043838; --card:#0a4a4a; --card2:#0f5858; --text:#f2fbfa; --dim:#a3cccc;
+         --gold:#ffcd3c; --green:#7ee2a8; --line:#1b6666; --amber:#ffcd3c; }
+  *{box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent;}
+  body{background:var(--bg); color:var(--text); font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+       min-height:100vh; display:flex; justify-content:center;}
+  .wrap{width:100%; max-width:560px; padding:18px 16px 40px;}
+  .brand{text-align:center; color:var(--gold); font-size:13px; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px;}
+  h1{font-size:24px; text-align:center; margin:8px 0 14px;}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px 16px; margin-bottom:12px;}
+  .nm{font-size:19px; font-weight:700;}
+  .when{font-size:13px; color:var(--dim); margin-bottom:8px;}
+  .place{color:var(--gold); font-size:16px; font-weight:600; margin:6px 0;}
+  .row{font-size:14px; color:var(--dim); line-height:1.5; margin:3px 0;}
+  .row b{color:var(--text); font-weight:600;}
+  .bars{margin:10px 0 4px;}
+  .bar{display:flex; align-items:center; gap:8px; margin:4px 0;}
+  .bar span{font-size:12px; color:var(--dim); width:88px; flex:none; text-transform:capitalize;}
+  .bar div{height:9px; background:var(--card2); border-radius:5px; flex:1; overflow:hidden;}
+  .bar div i{display:block; height:100%; background:var(--gold);}
+  .flags{background:var(--card2); border-radius:10px; padding:10px 12px; margin-top:10px;}
+  .flags h4{font-size:12px; text-transform:uppercase; letter-spacing:1px; color:var(--amber); margin-bottom:6px;}
+  .flags p{font-size:14px; line-height:1.5; margin:3px 0; color:var(--text);}
+  .flags .foot{font-size:13px; color:var(--dim); margin-top:8px;}
+  a.wa{display:inline-block; background:#25d366; color:#0b2b16; text-decoration:none; font-weight:700;
+       padding:11px 16px; border-radius:12px; margin-top:10px; font-size:15px;}
+  .note{font-size:14px; color:var(--dim); line-height:1.55; margin:10px 0;}
+  details{margin-top:10px;} summary{color:var(--dim); font-size:14px; cursor:pointer;}
+  details .row{margin:6px 0;}
+  .empty{text-align:center; color:var(--dim); padding:26px 8px; line-height:1.6;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">Fountain of Grace International</div>
+  <h1>Volunteer fit checks</h1>
+  <div id="out" class="empty">Loading...</div>
+</div>
+<script>
+const params = new URLSearchParams(location.search);
+const API = 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/volunteer-fit';
+let KEY = params.get('k') || '';
+// Save the key on this phone and take it out of the address bar, so the link is
+// only ever exposed once. Same as the WhatsApp inbox and the wired team page.
+if(KEY){ try{ localStorage.setItem('volfit_key', KEY); }catch(e){} history.replaceState(null,'',location.pathname); }
+else { try{ KEY = localStorage.getItem('volfit_key') || ''; }catch(e){} }
+
+const AREAS = ["reliability","teachability","discretion","motive","people","safety"];
+const esc = (s) => String(s==null?"":s).replace(/[&<>"']/g, c =>
+  ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+
+function waLink(phone, first){
+  const d = String(phone||"").replace(/\D/g,"").replace(/^0/,"27");
+  if(d.length < 10) return "";
+  return "https://wa.me/"+d+"?text="+encodeURIComponent("Hi "+first+", this is Pastor Ricardo from Fountain of Grace International.");
+}
+
+function when(iso){
+  try{
+    const d = new Date(iso);
+    return d.toLocaleString('en-ZA',{timeZone:'Africa/Johannesburg',weekday:'short',day:'2-digit',
+      month:'short',hour:'2-digit',minute:'2-digit'}) + " SAST";
+  }catch(e){ return ""; }
+}
+
+function card(r){
+  const first = String(r.name||"").split(" ")[0] || "there";
+  const areas = r.areas || {}, needs = r.needs || {}, flags = r.flags || [];
+  const bars = AREAS.filter(a => a in areas).map(a =>
+    '<div class="bar"><span>'+a+'</span><div><i style="width:'+Math.round((areas[a]/9)*100)+'%"></i></div></div>').join("");
+  const wa = waLink(r.phone, first);
+  const answered = Object.entries(r.answers||{}).filter(([,v]) => v !== "skip").length;
+  const skipped = Object.values(r.answers||{}).filter(v => v === "skip").length;
+  return '<div class="card">'
+    + '<div class="nm">'+esc(r.name)+' '+esc(r.surname)+'</div>'
+    + '<div class="when">'+esc(when(r.created_at))+'</div>'
+    + '<div class="place">'+esc(r.placement||"No placement worked out")+'</div>'
+    + (r.capacity ? '<div class="row"><b>Time they have:</b> '+esc(r.capacity)+'</div>' : '')
+    + (needs.support ? '<div class="row"><b>Needs from us:</b> '+esc(needs.support)+'</div>' : '')
+    + (needs.learn ? '<div class="row"><b>Wants to learn:</b> '+esc(needs.learn)+'</div>' : '')
+    + (needs.when_wrong ? '<div class="row"><b>When it goes wrong:</b> '+esc(needs.when_wrong)+'</div>' : '')
+    + (r.phone ? '<div class="row"><b>Phone:</b> '+esc(r.phone)+'</div>' : '')
+    + (bars ? '<div class="bars">'+bars+'</div>' : '')
+    + (flags.length ? '<div class="flags"><h4>Worth talking about</h4>'
+        + flags.map(f => '<p>'+esc(f)+'</p>').join('')
+        + '<p class="foot">None of these stops them serving. They are things to ask about.</p></div>' : '')
+    + (wa ? '<a class="wa" href="'+wa+'">WhatsApp '+esc(first)+'</a>' : '')
+    + '<details><summary>Every answer ('+answered+' answered, '+skipped+' skipped)</summary>'
+    + Object.entries(r.answers||{}).sort((a,b)=>Number(a[0])-Number(b[0]))
+        .map(([q,v]) => '<div class="row">'+esc(q)+'. '+(v==="skip"?"skipped":esc(v))+'</div>').join('')
+    + '</details></div>';
+}
+
+async function load(){
+  const out = document.getElementById('out');
+  if(!KEY){ out.textContent = "Open this page using the link you were sent."; return; }
+  try{
+    const res = await fetch(API+'?k='+encodeURIComponent(KEY));
+    if(!res.ok){ out.textContent = "That link is not valid any more. Ask for a new one."; return; }
+    const rows = await res.json();
+    if(!rows.length){
+      out.className = "empty";
+      out.innerHTML = "Nobody has done the fit check yet.<br>When somebody does, they appear here and you get a Telegram within a minute.";
+      return;
+    }
+    out.className = "";
+    out.innerHTML = '<p class="note">Newest first. Every flag is a conversation to have, never a reason to turn somebody away.</p>'
+      + rows.map(card).join('');
+  }catch(e){ out.textContent = "Could not load. Check your signal and try again."; }
+}
+load();
+</script>
+</body>
+</html>

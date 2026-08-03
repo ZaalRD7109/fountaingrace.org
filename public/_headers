@@ -26,6 +26,10 @@
   X-Robots-Tag: noindex
 /wired/*
   X-Robots-Tag: noindex
+/serve/
+  X-Robots-Tag: noindex
+/serve/*
+  X-Robots-Tag: noindex
 
 /*
   X-Frame-Options: DENY

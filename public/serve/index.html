@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Where would you fit - Fountain of Grace International</title>
+<style>
+  :root{
+    --bg:#043838; --card:#0a4a4a; --card2:#0f5858; --text:#f2fbfa; --dim:#a3cccc;
+    --gold:#ffcd3c; --green:#7ee2a8; --line:#1b6666; --red:#ff9c8a;
+  }
+  *{box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent;}
+  body{background:var(--bg); color:var(--text); font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+       min-height:100vh; display:flex; justify-content:center;}
+  .wrap{width:100%; max-width:480px; padding:18px 16px 40px;}
+  .brand{text-align:center; color:var(--gold); font-size:13px; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px;}
+  h1{font-size:26px; text-align:center; line-height:1.25; margin:8px 0 14px;}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:20px 18px; margin-bottom:14px;}
+  .card p{color:var(--dim); font-size:16px; line-height:1.55; margin-bottom:10px;}
+  .card p strong{color:var(--text);}
+  label{display:block; font-size:14px; color:var(--dim); margin:12px 0 6px;}
+  input[type=text],input[type=tel],input[type=email]{width:100%; font-size:18px; padding:14px; border-radius:12px;
+       border:1px solid var(--line); background:var(--card2); color:var(--text); outline:none;}
+  button{display:block; width:100%; border:none; border-radius:14px; padding:17px 14px; font-size:18px;
+       font-weight:600; cursor:pointer; margin-top:12px;}
+  .primary{background:var(--gold); color:#161616;}
+  .answer{background:var(--card2); color:var(--text); border:1px solid var(--line); text-align:left;
+       font-size:16px; line-height:1.45; min-height:64px; font-weight:500;}
+  .answer:active{background:#146767;}
+  .back,.skip{background:none; border:none; color:var(--dim); font-size:15px; width:auto; padding:10px 4px; margin:2px 0 0;}
+  .navrow{display:flex; justify-content:space-between; align-items:center;}
+  .progressbar{height:8px; background:var(--card2); border-radius:6px; overflow:hidden; margin:6px 0 4px;}
+  .progressbar div{height:100%; background:var(--gold); width:0%; transition:width .2s;}
+  .pcount{font-size:13px; color:var(--dim); text-align:right; margin-bottom:14px;}
+  .q{font-size:21px; line-height:1.4; font-weight:600; margin:10px 0 18px;}
+  .qnote{font-size:14px; color:var(--gold); line-height:1.5; margin:-8px 0 16px;}
+  .hidden{display:none;}
+  .sec h3{font-size:14px; text-transform:uppercase; letter-spacing:1px; color:var(--gold); margin-bottom:6px;}
+  .sec{margin-bottom:16px;}
+  .sec p{color:var(--text); font-size:16px; line-height:1.55;}
+  .note{font-size:14px; color:var(--dim); line-height:1.5; margin-top:14px;}
+  .savestate{text-align:center; font-size:14px; margin-top:10px; color:var(--dim);}
+  .savestate.ok{color:var(--green);}
+  .consent{display:flex; gap:10px; align-items:flex-start; margin-top:16px;}
+  .consent input[type=checkbox]{width:26px; height:26px; flex:none; accent-color:var(--gold); margin-top:2px;}
+  .consentlbl{font-size:13px; color:var(--dim); line-height:1.5; margin:0;}
+  .warn{color:var(--red); font-size:14px; margin-top:10px; line-height:1.4;}
+  .big{font-size:20px; color:var(--gold); font-weight:700; text-align:center; margin:6px 0 12px; line-height:1.35;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">Fountain of Grace International</div>
+
+  <!-- SCREEN 1 -->
+  <div id="s1">
+    <h1>Where would you fit?</h1>
+    <div class="card">
+      <p><strong>This is not a test and there is no pass mark.</strong> About 27 questions, five minutes, all tapping and no typing.</p>
+      <p><strong>Nothing you answer here decides whether you can serve with us.</strong> It helps us work out where you will actually enjoy serving, instead of guessing and putting you in the wrong job.</p>
+      <p>Please answer the way you really are, not the way you think we want. If you answer like the perfect volunteer we will place you wrong, and you are the one who has to live with that on a Sunday morning.</p>
+      <p>Pastor Ricardo is the only person who sees your answers. If you would rather skip a question, skip it. If you would rather talk it through with a person instead, phone the church and we will do it that way.</p>
+    </div>
+    <div class="card">
+      <label for="fn">Your first name</label>
+      <input id="fn" type="text" autocomplete="given-name" placeholder="First name">
+      <label for="sn">Your surname</label>
+      <input id="sn" type="text" autocomplete="family-name" placeholder="Surname">
+      <label for="ph">Your WhatsApp number</label>
+      <input id="ph" type="tel" autocomplete="tel" placeholder="072 000 0000">
+      <label for="em">Email, if you have one</label>
+      <input id="em" type="email" autocomplete="email" placeholder="Optional">
+      <div class="consent">
+        <input id="cs" type="checkbox">
+        <p class="consentlbl">I am happy for Fountain of Grace International to keep my answers so they can place me well and check in with me later. Only Pastor Ricardo sees them, they are shared with nobody, and I can ask for them to be deleted at any time.</p>
+      </div>
+      <p id="e1" class="warn hidden"></p>
+      <button class="primary" id="go">Start</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 2 -->
+  <div id="s2" class="hidden">
+    <div class="progressbar"><div id="bar"></div></div>
+    <div class="pcount" id="pc"></div>
+    <div class="q" id="qt"></div>
+    <div class="qnote hidden" id="qn"></div>
+    <div id="opts"></div>
+    <div class="navrow">
+      <button class="back hidden" id="bk">Back</button>
+      <button class="skip" id="sk">Skip this one</button>
+    </div>
+  </div>
+
+  <!-- SCREEN 3 -->
+  <div id="s3" class="hidden">
+    <h1>Thank you</h1>
+    <div class="card">
+      <div class="big" id="rtitle"></div>
+      <div class="sec"><p id="rbody"></p></div>
+      <div class="sec" id="rneed"><h3>What you told us you need</h3><p id="rneedp"></p></div>
+      <p class="note">Somebody will phone you this week. Not to give you a result, there is no result, just to talk about where you would like to start.</p>
+      <p class="note">We keep your answers so we can place you well and check in with you later on. Only Pastor Ricardo sees them, we share them with nobody, and if you ever want them deleted just say so and they are gone.</p>
+      <div class="savestate" id="save"></div>
+    </div>
+  </div>
+</div>
+
+<script>
+// Save-only key. It can write one row and can read nothing at all, which is why
+// it is safe to have it here in a page anybody can view.
+const API = "https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/volunteer-fit";
+const KEY = "vf-m-5ecdf489f8bc2106bf6f3e47c0";
+
+// area: which of the six scored areas this question belongs to, or a "needs"
+// or "capacity" bucket, which are DESCRIPTIONS of a person and are never scored.
+// s: what each option adds to that area, 0 to 3. No option is the visibly right
+// one, which is the whole reason the tool is worth anything.
+const Q = [
+  {area:"place", key:"where", t:"Where do you feel most like yourself?", o:[
+    ["With people, out front", 0],["Behind the scenes, making it work", 0],
+    ["With a small group, properly", 0],["With detail, lists and systems", 0]]},
+  {area:"place", key:"done_before", t:"Have you done anything like this before?", o:[
+    ["Yes, at another church", 0],["Yes, at work or in a community group", 0],
+    ["A bit, here and there", 0],["No, this would be my first time", 0]]},
+  {area:"place", key:"would_say_yes", t:"Which of these would you say yes to today?", o:[
+    ["Welcome and the door", 0],["Children or youth", 0],
+    ["Music, sound or media", 0],["Admin, setup, behind the scenes", 0]]},
+
+  {area:"reliability", t:"You said you would help on Sunday. On Saturday night something better comes up. What actually happens?", o:[
+    ["I go to the other thing and let someone know I cannot make it",1],
+    ["I go to the other thing and explain on Monday",0],
+    ["I keep my word and go on Sunday, even though I mind a bit",3],
+    ["I keep my word and do not think about it again",3]]},
+  {area:"reliability", t:"You are going to be late for something you committed to. What do you do first?", o:[
+    ["Message the person waiting, straight away",3],
+    ["Rush, and explain when I get there",1],
+    ["Decide whether I am late enough for it to matter",0],
+    ["I am hardly ever late so it does not come up",2]]},
+  {area:"reliability", t:"How far ahead do you know your own week?", o:[
+    ["I plan weeks ahead and I keep to it",3],
+    ["I know this week, next week is a guess",2],
+    ["I take life as it comes",0],
+    ["I plan carefully and then life keeps changing it",2]]},
+
+  {area:"teachability", t:"Someone shows you a better way to do something you have done for years. First reaction?", o:[
+    ["Interested, I try it",3],["I listen, then decide if it really is better",2],
+    ["I feel a bit judged, then I get over it",1],["I explain why I do it my way",0]]},
+  {area:"teachability", t:"You are corrected in front of other people. What happens inside?", o:[
+    ["I take the point, who was listening does not matter much",3],
+    ["I take the point but I would rather it was said privately",2],
+    ["I go quiet and think about it for days",1],
+    ["I answer back in the moment",0]]},
+  {area:"teachability", t:"Which is closest to true for you?", o:[
+    ["I would rather be told I am wrong than carry on wrong",3],
+    ["I would rather work it out myself",1],
+    ["I take it well from people I respect",2],
+    ["Feedback usually feels personal to me",0]]},
+
+  {area:"discretion", t:"While serving you hear something private about a member. What do you do with it?", o:[
+    ["It stays with me, full stop",3],["I tell only the leader who needs to know",3],
+    ["I might tell my husband or wife, nobody else",1],["I would ask a few people to pray for them",0]]},
+  {area:"discretion", t:"Someone asks you about something you were told not to repeat. What comes out of your mouth?", o:[
+    ["I am not the person to ask about that",3],["I change the subject",2],
+    ["I say a little, not everything",1],["I tell them, they will hear it anyway",0]]},
+  {area:"discretion", t:"How would people who know you describe you with information?", o:[
+    ["A vault",3],["Careful, though I do talk to people close to me",2],
+    ["Open, I do not think about it much",1],["I like being the one who knows things",0]]},
+
+  {area:"motive", t:"What would make a Sunday feel worth it to you?", o:[
+    ["One person was helped and nobody saw me do it",3],
+    ["I did my job well and everything ran smoothly",2],
+    ["I was part of the team",2],
+    ["I was trusted with something that mattered",1]]},
+  {area:"motive", t:"You serve faithfully for a year and nobody ever says thank you. What happens?", o:[
+    ["I carry on, that is not why I came",3],["I carry on, but it hurts",2],
+    ["I would ask whether I am in the right place",1],["I would probably stop",0]]},
+  {area:"motive", t:"A role people can see and a role nobody sees both need filling. Which do you take?", o:[
+    ["The one nobody sees",3],["The one people can see",0],
+    ["Whichever is shortest of people",2],["Whichever suits what I am good at",2]]},
+
+  {area:"people", t:"Someone on your team keeps doing their part badly. What do you do?", o:[
+    ["Talk to them directly and kindly",3],["Tell the leader",2],
+    ["Quietly redo their work",1],["Leave it, it is not my place",0]]},
+  {area:"people", t:"Someone is sharp with you while you are serving. What do you do in that moment?", o:[
+    ["Let it go and carry on",2],["Answer calmly and deal with it afterwards",3],
+    ["Go cold and pull back",1],["Say something back",0]]},
+  {area:"people", t:"Two people on the team are not speaking and you are in the middle.", o:[
+    ["I stay useful to both and out of it",3],["I try to get them talking to each other",2],
+    ["I tell the leader it needs sorting out",2],["I usually end up hearing both sides",1]]},
+
+  {area:"safety", first:true, t:"You are helping with the children and one child wants to sit on your lap.", o:[
+    ["Sit them next to me, where everyone can see",3],["Let them, they are only a child",0],
+    ["Check with another helper first",2],["I would not be comfortable either way",1]]},
+  {area:"safety", t:"You are the last adult there and one child has still not been fetched.", o:[
+    ["Phone the leader and wait with the child somewhere open where others can see us",3],
+    ["Wait with them in the classroom",1],["Take them to the office",2],
+    ["Offer to drop them at home",0]]},
+  {area:"safety", t:"Another helper is a bit too friendly with a teenager. Nothing obviously wrong.", o:[
+    ["Mention it to the leader anyway",3],["Watch it for a while first",1],
+    ["Say something to the helper myself",2],["Assume I am reading it wrong",1]]},
+
+  {area:"needs", key:"learn", t:"Is there anything you would like to learn or get better at while you serve?", o:[
+    ["A practical skill, sound, media, admin, something I can use",0],
+    ["Leading and looking after people",0],
+    ["Working with children or young people",0],
+    ["Nothing in particular, I just want to help",0]]},
+  {area:"needs", key:"when_wrong", t:"When something goes wrong on your watch, what helps you most?", o:[
+    ["Being told straight away so I can put it right",0],
+    ["A chance to sort it out myself first",0],
+    ["Being shown how, properly, once",0],
+    ["Not being told off in front of everyone",0]]},
+  {area:"needs", key:"support", t:"What do you need from us to do this well?", o:[
+    ["Clear instructions before I start",0],["Somebody I can ask when I get stuck",0],
+    ["To be shown once and then left to get on with it",0],
+    ["A bit of training first, I would rather not guess",0]]},
+
+  {area:"cap", key:"amount", t:"In a normal month, how much time can you really give?", o:[
+    ["An hour or two, one Sunday",1],["Every Sunday, about three hours",2],
+    ["Every Sunday and a weeknight",3],["As much as is needed, I have the time",4]]},
+  {area:"cap", key:"season", t:"What does this season of your life look like?", o:[
+    ["Steady, I can commit",0],["Busy, but I want this to be a fixed point",0],
+    ["Unpredictable, I would rather help when I can",0],
+    ["I am between things and looking for something to pour into",0]]},
+  {area:"cap", key:"gives", t:"In a hard month, if something has to give, what goes first?", o:[
+    ["I would tell the leader early and hand over properly",0],["I would push through",0],
+    ["The church thing, because it feels less official",0],["I honestly do not know",0]]},
+];
+
+const SAFETY_NOTE = "These three are about being around children. We ask everybody the same three, including people who have been serving here for years. There is no catch. If your answer is not what we do here, we will show you what we do and why, and that is the end of it.";
+
+const LETTERS = ["a","b","c","d"];
+let i = 0;
+const answers = {};       // question number -> a/b/c/d/skip
+const person = {};
+
+const $ = (id) => document.getElementById(id);
+
+function show(n){
+  ["s1","s2","s3"].forEach((s,k)=>$(s).classList.toggle("hidden", k !== n));
+  window.scrollTo(0,0);
+}
+
+$("go").onclick = () => {
+  const fn = $("fn").value.trim(), sn = $("sn").value.trim();
+  const ph = $("ph").value.trim(), em = $("em").value.trim();
+  if(!fn || !sn){ return err("Please put in your first name and surname."); }
+  if(!ph && !em){ return err("Please give us a WhatsApp number or an email, so somebody can come back to you."); }
+  if(em && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){ return err("That email does not look right. Check it, or leave it blank."); }
+  if(!$("cs").checked){ return err("Please tick the box so we may keep your answers."); }
+  person.name = fn; person.surname = sn; person.phone = ph; person.email = em;
+  $("e1").classList.add("hidden");
+  show(1); render();
+};
+
+function err(m){ $("e1").textContent = m; $("e1").classList.remove("hidden"); }
+
+function render(){
+  const q = Q[i];
+  $("bar").style.width = Math.round((i / Q.length) * 100) + "%";
+  $("pc").textContent = "Question " + (i+1) + " of " + Q.length;
+  $("qt").textContent = q.t;
+  if(q.first && q.area === "safety"){
+    $("qn").textContent = SAFETY_NOTE; $("qn").classList.remove("hidden");
+  } else { $("qn").classList.add("hidden"); }
+  const box = $("opts"); box.innerHTML = "";
+  q.o.forEach((opt, n) => {
+    const b = document.createElement("button");
+    b.className = "answer"; b.textContent = opt[0];
+    b.onclick = () => { answers[i+1] = LETTERS[n]; next(); };
+    box.appendChild(b);
+  });
+  $("bk").classList.toggle("hidden", i === 0);
+}
+
+$("bk").onclick = () => { if(i > 0){ i--; render(); } };
+$("sk").onclick = () => { answers[i+1] = "skip"; next(); };
+
+function next(){
+  i++;
+  if(i >= Q.length){ finish(); } else { render(); }
+}
+
+function textOf(n){
+  const a = answers[n];
+  if(!a || a === "skip") return "";
+  return Q[n-1].o[LETTERS.indexOf(a)][0];
+}
+function scoreOf(n){
+  const a = answers[n];
+  if(!a || a === "skip") return null;
+  return Q[n-1].o[LETTERS.indexOf(a)][1];
+}
+
+function build(){
+  const areas = {}, counts = {};
+  const needs = {learn:"", when_wrong:"", support:"", where:[], done_before:[], would_say_yes:[]};
+  const cap = {};
+  Q.forEach((q, k) => {
+    const n = k + 1, s = scoreOf(n), t = textOf(n);
+    if(["reliability","teachability","discretion","motive","people","safety"].includes(q.area)){
+      if(s !== null){ areas[q.area] = (areas[q.area]||0) + s; counts[q.area] = (counts[q.area]||0)+1; }
+    } else if(q.area === "needs"){ if(t) needs[q.key] = t; }
+    else if(q.area === "place"){ if(t) needs[q.key] = [t]; }
+    else if(q.area === "cap"){ cap[q.key] = {text:t, score:s}; }
+  });
+  // A skipped question must never read as a low score, so an area with a skip
+  // is scaled to what was actually answered.
+  Object.keys(areas).forEach(k => {
+    if(counts[k] && counts[k] < 3) areas[k] = Math.round(areas[k] * 3 / counts[k]);
+  });
+
+  const skipped = Object.values(answers).filter(v => v === "skip").length;
+  const flags = [];
+  const A = (k) => (k in areas) ? areas[k] : null;
+  if(A("reliability") !== null && A("reliability") <= 3) flags.push("Pair them for the first month, do not give them a slot on their own");
+  if(A("teachability") !== null && A("teachability") <= 3) flags.push("Give feedback privately and once, never in front of the team");
+  if(A("discretion") !== null && A("discretion") <= 4) flags.push("Not pastoral care, and not admin that touches personal details");
+  if(A("motive") !== null && A("motive") <= 3) flags.push("Start them somewhere nobody sees and watch for a month");
+  if(A("people") !== null && A("people") <= 3) flags.push("Do not leave them carrying a difficult person on their own");
+  const safeScores = [19,20,21].map(scoreOf).filter(s => s !== null);
+  if(safeScores.some(s => s === 0)) flags.push("Talk through how we do things with children before any children's role");
+  if(safeScores.length === 3 && safeScores.every(s => s <= 1)) flags.push("No children's role until you have talked it through, and only if it changes");
+  const wantsALot = cap.amount && cap.amount.score >= 3;
+  if(wantsALot && cap.season && /Unpredictable/.test(cap.season.text)) flags.push("They offered more than their season allows, agree something smaller so they can win");
+  if(cap.gives && /less official/.test(cap.gives.text)) flags.push("Agree up front who they hand over to, so a hard month does not end in silence");
+  if(skipped >= 5) flags.push("They skipped several questions, worth asking gently rather than assuming");
+
+  // Placement: what they said they want, checked against what they are like.
+  const wants = (needs.would_say_yes[0] || "");
+  const where = (needs.where[0] || "");
+  let placement;
+  if(/Children/.test(wants)){
+    placement = (safeScores.length && safeScores.every(s => s >= 2))
+      ? "Children or youth, once the checks for that are back"
+      : "Start on welcome or setup, and talk about children later";
+  } else if(/Music/.test(wants)) placement = "Music, sound or media";
+  else if(/Admin/.test(wants)) placement = (A("discretion") === null || A("discretion") >= 6)
+      ? "Admin and behind the scenes" : "Setup and packing rather than admin for now";
+  else if(/Welcome/.test(wants)) placement = "Welcome and the door";
+  else if(/out front/.test(where)) placement = "Welcome and the door";
+  else if(/Behind the scenes/.test(where)) placement = "Setup, packing and media";
+  else if(/detail/.test(where)) placement = "Admin and behind the scenes";
+  else placement = "Welcome team to start";
+
+  return {areas, needs, flags, placement, capacity: cap.amount ? cap.amount.text : ""};
+}
+
+function reading(r){
+  const bits = [];
+  bits.push("From your answers you look like someone who would do well on " + r.placement.toLowerCase().replace(/^start on /,"") + ".");
+  if(r.areas.reliability >= 7) bits.push("You do what you said you would do, and that matters here more than almost anything else.");
+  if(r.areas.discretion >= 8) bits.push("You are careful with what people tell you, which is rarer than you would think.");
+  if(r.areas.people >= 7) bits.push("You handle people well when things are awkward.");
+  if(r.capacity) bits.push("You said you can give " + r.capacity.toLowerCase() + ", and we will hold you to that and not more.");
+  bits.push("None of this is a verdict on you. It is a starting point, and if it does not fit we will move you.");
+  return bits.join(" ");
+}
+
+function finish(){
+  $("bar").style.width = "100%";
+  const r = build();
+  show(2);
+  $("rtitle").textContent = r.placement;
+  $("rbody").textContent = reading(r);
+  const need = [r.needs.support, r.needs.learn].filter(Boolean);
+  if(need.length){ $("rneedp").textContent = need.join(". ") + "."; }
+  else { $("rneed").classList.add("hidden"); }
+
+  fetch(API, {
+    method: "POST",
+    headers: {"Content-Type": "application/json"},
+    body: JSON.stringify({
+      k: KEY, name: person.name, surname: person.surname,
+      phone: person.phone, email: person.email, consent: true,
+      answers, areas: r.areas, capacity: r.capacity, needs: r.needs,
+      placement: r.placement, flags: r.flags
+    })
+  }).then(res => res.json()).then(out => {
+    $("save").textContent = out && out.ok ? "Sent to Pastor Ricardo." :
+      "We could not send this through. Please phone the church and tell them, and nothing is lost.";
+    if(out && out.ok) $("save").classList.add("ok");
+  }).catch(() => {
+    $("save").textContent = "We could not send this through. Please phone the church and tell them, and nothing is lost.";
+  });
+}
+</script>
+</body>
+</html>
