@@ -17,7 +17,7 @@ const poppins = Poppins({
   // competing with the page's own picture on a phone connection, which showed
   // up as 891ms of Load Delay in front of Largest Contentful Paint. The fonts
   // still load and still swap in; they simply stop going first.
-  preload: false,
+  preload: true,
 })
 
 export const viewport: Viewport = {
