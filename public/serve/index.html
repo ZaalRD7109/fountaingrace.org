@@ -60,7 +60,7 @@
       <p><strong>This is not a test and there is no pass mark.</strong> About 27 questions, five minutes, all tapping and no typing.</p>
       <p><strong>Nothing you answer here decides whether you can serve with us.</strong> It helps us work out where you will actually enjoy serving, instead of guessing and putting you in the wrong job.</p>
       <p>Please answer the way you really are, not the way you think we want. If you answer like the perfect volunteer we will place you wrong, and you are the one who has to live with that on a Sunday morning.</p>
-      <p>Pastor Ricardo is the only person who sees your answers. If you would rather skip a question, skip it. If you would rather talk it through with a person instead, phone the church and we will do it that way.</p>
+      <p>Pastor Ricardo is the only person who sees your answers. If you would rather skip a question, skip it. If you would rather talk it through with a person instead of tapping, phone or WhatsApp Pastor Ricardo himself on 075 259 2555 and he will do it with you. It goes to the same one person either way.</p>
     </div>
     <div class="card">
       <label for="fn">Your first name</label>
@@ -110,6 +110,10 @@
 <script>
 // Save-only key. It can write one row and can read nothing at all, which is why
 // it is safe to have it here in a page anybody can view.
+//
+// IF A SECOND PERSON IS EVER GIVEN A RESULTS KEY, the two sentences on the
+// opening screen and in the consent box that say Pastor Ricardo is the only one
+// who sees the answers become false and must be changed in the same session.
 const API = "https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/volunteer-fit";
 const KEY = "vf-m-5ecdf489f8bc2106bf6f3e47c0";
 
@@ -379,10 +383,10 @@ function finish(){
     })
   }).then(res => res.json()).then(out => {
     $("save").textContent = out && out.ok ? "Sent to Pastor Ricardo." :
-      "We could not send this through. Please phone the church and tell them, and nothing is lost.";
+      "We could not send this through. Please WhatsApp Pastor Ricardo on 075 259 2555 and tell him, and nothing is lost.";
     if(out && out.ok) $("save").classList.add("ok");
   }).catch(() => {
-    $("save").textContent = "We could not send this through. Please phone the church and tell them, and nothing is lost.";
+    $("save").textContent = "We could not send this through. Please WhatsApp Pastor Ricardo on 075 259 2555 and tell him, and nothing is lost.";
   });
 }
 </script>
