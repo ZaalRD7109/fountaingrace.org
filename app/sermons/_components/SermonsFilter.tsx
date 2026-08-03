@@ -144,7 +144,13 @@ export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
               {filtered.map(post => (
                 <article
                   key={post.slug}
-                  className="bg-white rounded-xl border border-gray-100 p-6 sm:p-8 hover:shadow-md transition-shadow"
+                  // content-visibility lets the browser skip the layout and
+                  // paint work for cards that are off screen. This list is over
+                  // a hundred sermons and grows every week, and that rendering
+                  // work was showing up as render delay in front of Largest
+                  // Contentful Paint. contain-intrinsic-size reserves a
+                  // sensible height so nothing jumps as you scroll.
+                  className="bg-white rounded-xl border border-gray-100 p-6 sm:p-8 hover:shadow-md transition-shadow [content-visibility:auto] [contain-intrinsic-size:auto_280px]"
                 >
                   <time
                     dateTime={post.date}
@@ -157,6 +163,7 @@ export default function SermonsFilter({ sermons }: { sermons: Sermon[] }) {
                   </h2>
                   <p className="text-[#595959] leading-relaxed mb-6">{post.intro}</p>
                   <Link
+                    prefetch={false}
                     href={`/sermons/${post.slug}`}
                     className="text-[#008080] font-semibold text-sm hover:underline"
                     aria-label={`Read full message: ${post.title}`}
