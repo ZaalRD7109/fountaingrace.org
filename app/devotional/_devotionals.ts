@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "will-this-money-stress-ever-actually-make-me-stronger",
+    "date": "2026-08-04",
+    "dateDisplay": "4 August 2026",
+    "day": 216,
+    "headline": "Will this money stress ever actually make me stronger?",
+    "verseRef": "Romans 5:4",
+    "card": "/devotional-cards/will-this-money-stress-ever-actually-make-me-stronger.jpg"
+  },
+  {
     "slug": "is-holding-back-money-the-same-as-not-trusting-god",
     "date": "2026-08-03",
     "dateDisplay": "3 August 2026",
