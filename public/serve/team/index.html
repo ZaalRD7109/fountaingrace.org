@@ -34,6 +34,10 @@
   .note{font-size:14px; color:var(--dim); line-height:1.55; margin:10px 0;}
   details{margin-top:10px;} summary{color:var(--dim); font-size:14px; cursor:pointer;}
   details .row{margin:6px 0;}
+  .qa{border-top:1px solid var(--line); padding:8px 0;}
+  .qq{font-size:13px; color:var(--dim); line-height:1.45;}
+  .aa{font-size:15px; color:var(--text); margin-top:3px; line-height:1.45;}
+  .aa.sk{color:var(--dim); font-style:italic;}
   .empty{text-align:center; color:var(--dim); padding:26px 8px; line-height:1.6;}
 </style>
 </head>
@@ -70,6 +74,19 @@ function when(iso){
   }catch(e){ return ""; }
 }
 
+function answerList(r){
+  // A letter on its own tells you nothing. Show the question and what they
+  // actually chose, so you can see where to ask (Ricardo, 2026-08-04).
+  const full = Array.isArray(r.answers_full) ? r.answers_full : [];
+  if(full.length){
+    return full.slice().sort((a,b)=>(a.n||0)-(b.n||0)).map(x =>
+      '<div class="qa"><div class="qq">'+esc(x.q)+'</div>'
+      + '<div class="aa'+(/skipped/.test(x.a)?' sk':'')+'">'+esc(x.a)+'</div></div>').join('');
+  }
+  return '<div class="row">This one was done before the answers were stored in words. '
+       + 'Newer ones show the question and the answer.</div>';
+}
+
 function card(r){
   const first = String(r.name||"").split(" ")[0] || "there";
   const areas = r.areas || {}, needs = r.needs || {}, flags = r.flags || [];
@@ -93,8 +110,7 @@ function card(r){
         + '<p class="foot">None of these stops them serving. They are things to ask about.</p></div>' : '')
     + (wa ? '<a class="wa" href="'+wa+'">WhatsApp '+esc(first)+'</a>' : '')
     + '<details><summary>Every answer ('+answered+' answered, '+skipped+' skipped)</summary>'
-    + Object.entries(r.answers||{}).sort((a,b)=>Number(a[0])-Number(b[0]))
-        .map(([q,v]) => '<div class="row">'+esc(q)+'. '+(v==="skip"?"skipped":esc(v))+'</div>').join('')
+    + answerList(r)
     + '</details></div>';
 }
 

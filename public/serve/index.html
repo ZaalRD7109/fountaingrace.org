@@ -299,6 +299,16 @@ function scoreOf(n){
   return Q[n-1].o[LETTERS.indexOf(a)][1];
 }
 
+function fullAnswers(){
+  // The letters alone are unreadable to a human later. Store the question and
+  // what they actually chose, in order, so the record needs no decoder.
+  return Q.map((q, k) => ({
+    n: k + 1,
+    q: q.t,
+    a: answers[k + 1] === "skip" ? "(skipped)" : (textOf(k + 1) || "(no answer)")
+  }));
+}
+
 function build(){
   const areas = {}, counts = {};
   const needs = {learn:"", when_wrong:"", support:"", where:[], done_before:[], would_say_yes:[]};
@@ -380,8 +390,8 @@ function finish(){
     body: JSON.stringify({
       k: KEY, name: person.name, surname: person.surname,
       phone: person.phone, email: person.email, consent: true,
-      answers, areas: r.areas, capacity: r.capacity, needs: r.needs,
-      placement: r.placement, flags: r.flags
+      answers, answers_full: fullAnswers(), areas: r.areas, capacity: r.capacity,
+      needs: r.needs, placement: r.placement, flags: r.flags
     })
   }).then(res => res.json()).then(out => {
     $("save").textContent = out && out.ok ? "Sent to Pastor Ricardo." :
