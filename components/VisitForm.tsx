@@ -80,9 +80,9 @@ export default function VisitForm() {
 
       <div>
         <label htmlFor="visit-email" className={labelClass}>
-          Email Address{' '}
-          <span className="text-[#595959] font-normal text-xs">(optional)</span>
+          Email Address
         </label>
+        <p className="text-xs text-[#595959] mb-1">We send the important things by email, so please add it if you have one.</p>
         <input
           id="visit-email"
           type="email"

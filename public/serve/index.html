@@ -44,6 +44,7 @@
   .savestate.ok{color:var(--green);}
   .consent{display:flex; gap:10px; align-items:flex-start; margin-top:16px;}
   .consent input[type=checkbox]{width:26px; height:26px; flex:none; accent-color:var(--gold); margin-top:2px;}
+  .hint{font-size:12px; color:var(--dim); margin:-2px 0 6px; line-height:1.45;}
   .consentlbl{font-size:13px; color:var(--dim); line-height:1.5; margin:0;}
   .warn{color:var(--red); font-size:14px; margin-top:10px; line-height:1.4;}
   .big{font-size:20px; color:var(--gold); font-weight:700; text-align:center; margin:6px 0 12px; line-height:1.35;}
@@ -69,8 +70,9 @@
       <input id="sn" type="text" autocomplete="family-name" placeholder="Surname">
       <label for="ph">Your WhatsApp number</label>
       <input id="ph" type="tel" autocomplete="tel" placeholder="072 000 0000">
-      <label for="em">Email, if you have one</label>
-      <input id="em" type="email" autocomplete="email" placeholder="Optional">
+      <label for="em">Your email address</label>
+      <p class="hint">We send the important things by email, so please add it if you have one.</p>
+      <input id="em" type="email" autocomplete="email" placeholder="you@example.com">
       <div class="consent">
         <input id="cs" type="checkbox">
         <p class="consentlbl">I am happy for Fountain of Grace International to keep my answers so they can place me well and check in with me later. Only Pastor Ricardo sees them, nobody else at the church does, and I can ask for them to be deleted at any time.</p>
@@ -250,7 +252,7 @@ $("go").onclick = () => {
   const fn = $("fn").value.trim(), sn = $("sn").value.trim();
   const ph = $("ph").value.trim(), em = $("em").value.trim();
   if(!fn || !sn){ return err("Please put in your first name and surname."); }
-  if(!ph && !em){ return err("Please give us a WhatsApp number or an email, so somebody can come back to you."); }
+  if(!ph){ return err("Please put in your WhatsApp number, so somebody can come back to you."); }
   if(em && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(em)){ return err("That email does not look right. Check it, or leave it blank."); }
   if(!$("cs").checked){ return err("Please tick the box so we may keep your answers."); }
   person.name = fn; person.surname = sn; person.phone = ph; person.email = em;

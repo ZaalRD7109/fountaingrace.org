@@ -38,7 +38,7 @@ export default function VolunteerForm() {
           body: JSON.stringify({
             name,
             email,
-            phone: phone || null,
+            phone,
             skills: skills || null,
             availability: availability || null,
             turnstileToken,
@@ -76,12 +76,12 @@ export default function VolunteerForm() {
 
       <div>
         <label htmlFor="vol-email" className={labelClass}>
-          Email Address <span className="text-red-500">*</span>
+          Email Address
         </label>
+        <p className="text-xs text-[#595959] mb-1">We send the important things by email, so please add it if you have one.</p>
         <input
           id="vol-email"
           type="email"
-          required
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="your@email.com"
@@ -91,12 +91,12 @@ export default function VolunteerForm() {
 
       <div>
         <label htmlFor="vol-phone" className={labelClass}>
-          Phone / WhatsApp{' '}
-          <span className="text-[#595959] font-normal text-xs">(optional)</span>
+          Phone / WhatsApp <span className="text-red-500">*</span>
         </label>
         <input
           id="vol-phone"
           type="tel"
+          required
           value={phone}
           onChange={(e) => setPhone(e.target.value)}
           placeholder="+27 75 000 0000"
