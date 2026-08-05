@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "will-god-still-provide-when-the-whole-year-has-been-hard",
+    "date": "2026-08-05",
+    "dateDisplay": "5 August 2026",
+    "day": 217,
+    "headline": "Will God still provide when the whole year has been hard?",
+    "verseRef": "Psalm 37:25",
+    "card": "/devotional-cards/will-god-still-provide-when-the-whole-year-has-been-hard.jpg"
+  },
+  {
     "slug": "will-this-money-stress-ever-actually-make-me-stronger",
     "date": "2026-08-04",
     "dateDisplay": "4 August 2026",

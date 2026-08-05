@@ -137,6 +137,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - daily library, one page per devotional)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/devotional/will-god-still-provide-when-the-whole-year-has-been-hard`, lastModified: new Date('2026-08-05'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/will-this-money-stress-ever-actually-make-me-stronger`, lastModified: new Date('2026-08-04'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/is-holding-back-money-the-same-as-not-trusting-god`, lastModified: new Date('2026-08-03'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/does-god-actually-have-practical-advice-for-my-money-problems`, lastModified: new Date('2026-08-02'), changeFrequency: 'monthly', priority: 0.6 },
