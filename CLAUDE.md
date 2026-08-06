@@ -28,18 +28,20 @@ Ricardo (zaalricardo@gmail.com). Managing Fountain of Grace International's webs
 
 ## Brand (locked — do not guess)
 
-**Colour HIERARCHY decided 2026-08-06 (Ricardo handed the decision over: "it is the psychology of branding that will always win and not the person's preferences ... we make the choice today and we keep it"). Standard: `02-FGI/brand/FGI-Colour-Standard.pdf`.**
+**Colour HIERARCHY decided 2026-08-06. Standard: `02-FGI/brand/FGI-Colour-Standard.pdf`.**
 
 | Role | Colour | Share | Where |
 |---|---|---|---|
-| Identity | `#2a9df4` | - | The logo ONLY. Never text, never a filled button (2.91:1 both ways) |
-| **Primary** | `#0d6fbf` | 40-60% | Headings, filled bars, buttons, the church's public face |
-| Secondary | `#008080` (`#006b6b` as text) | 20-30% | The NPO side: governance, policies, community, pastoral |
-| Accent | `#ffd700` | 5-10% | Rules, underlines, the one thing to click. Never text on white (1.40:1) |
-| Dark | `#06243d` | - | Dark sections and video scrims, INSTEAD of pure black. Gold reads 11.28:1 on it |
+| **Primary** | `#008080` (`#006b6b` as text) | 40-60% | Headers, footers, buttons, filled bars - the church's public face |
+| Field / dark | `#04302f` and `#04262a` | - | Whole-screen cards, video scrims, gradient starts. INSTEAD of pure black |
+| Identity | `#2a9df4` | - | The logo mark ONLY. Never text, never a filled button (2.91:1 both ways) |
+| Links and text | `#0d6fbf` | - | Links and headings inside body copy - the readable version of the logo blue |
+| Accent | `#ffd700` / `#ffd600` | 5-10% | Rules, underlines, the one thing to click. Never text on white (1.40:1) |
 | Body text | `#595959` | - | `#7d7d7d` measures 4.12:1 and fails |
 
-The reason blue leads rather than teal: the logo is a blue fountain through a cross with gold rays, so blue is the name, not decoration. Teal kept winning by default only because `#2a9df4` is too light to carry text or hold white text - the fix was a darker blue of the same hue, not a different colour. **Public church surfaces lead blue. NPO and governance documents lead teal.** Do not reopen this.
+**Blue was tried and reversed the same day.** The logo measures 42% mid blue, so on "what is the mark made of" blue has the stronger claim - but blue is the most common colour in church branding, teal is rare in the category, and FGI had already spent months building teal across the header, the buttons and every daily card. Distinctiveness and incumbency beat the logo-match rule. There is no strong evidence a hue carries a fixed feeling; contrast, consistency and distinctiveness are the real tests.
+
+**Gradients must not start on `#2a9df4`.** The devotional headers and the cookie banner did, and white text on that end reads 2.91:1 - Lighthouse never caught it because it does not compute contrast against a gradient. They now run `#04302f` to `#008080` (14.30:1 to 4.77:1). Do not reopen this.
 The raw hex values (roles are the table above, not this one):
 
 | Hex | Name |
