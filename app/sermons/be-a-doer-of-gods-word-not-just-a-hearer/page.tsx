@@ -87,7 +87,7 @@ export default function SermonPage() {
       <article>
         <header
           className="pt-16 pb-14 px-4 sm:px-6 text-white"
-          style={{ background: 'linear-gradient(145deg, #2a9df4 0%, #008080 100%)' }}
+          style={{ background: 'linear-gradient(145deg, #06243d 0%, #0d6fbf 100%)' }}
         >
           <div className="max-w-3xl mx-auto">
             <p className="text-white text-sm font-semibold uppercase tracking-wider mb-4">
