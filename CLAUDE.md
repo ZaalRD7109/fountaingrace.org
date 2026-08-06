@@ -40,14 +40,18 @@ Ricardo (zaalricardo@gmail.com). Managing Fountain of Grace International's webs
 | Body text | `#595959` | - | `#7d7d7d` measures 4.12:1 and fails |
 
 The reason blue leads rather than teal: the logo is a blue fountain through a cross with gold rays, so blue is the name, not decoration. Teal kept winning by default only because `#2a9df4` is too light to carry text or hold white text - the fix was a darker blue of the same hue, not a different colour. **Public church surfaces lead blue. NPO and governance documents lead teal.** Do not reopen this.
-| Hex | Use |
-|-----|-----|
+The raw hex values (roles are the table above, not this one):
+
+| Hex | Name |
+|-----|------|
 | `#ffffff` | White — backgrounds |
-| `#000000` | FGI Black — logo bg, dark sections |
-| `#2a9df4` | FGI Blue — primary, logo, CTAs |
-| `#ffd700` | FGI Gold — accent, highlights |
+| `#000000` | FGI Black — logo background only. For dark SECTIONS use `#06243d` |
+| `#2a9df4` | FGI Blue — the logo mark |
+| `#0d6fbf` | FGI Working Blue — the primary in practice |
+| `#ffd700` | FGI Gold — accent |
 | `#008080` | FGI Teal — secondary, NPO context |
-| `#7d7d7d` | FGI Grey — body text |
+| `#06243d` | FGI Deep Blue — dark surfaces |
+| `#7d7d7d` | FGI Grey — NOT for body text, use `#595959` |
 
 **Accessible text variants (added 2026-08-03, do not undo).** The brand colours above are correct for logos, fills and large graphics, but three of them fail WCAG AA as small TEXT and Lighthouse flags them:
 
