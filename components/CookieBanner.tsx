@@ -4,24 +4,47 @@ import { useState, useEffect } from 'react'
 import Link from 'next/link'
 
 export default function CookieBanner() {
-  const [visible, setVisible] = useState(false)
+  // Starts VISIBLE so the banner ships inside the static HTML and paints with
+  // the rest of the page. It used to start hidden and only appear after
+  // hydration, which made this box the Largest Contentful Paint element on
+  // /plan-your-visit - a page whose own hero text is almost exactly the same
+  // size - and pushed LCP to 2.9s against Google's 2.5s bar (measured
+  // 2026-08-06, after two Ad Grant rejections for speed). 73% of that LCP was
+  // pure render delay, i.e. waiting for JavaScript to draw this box.
+  // A visitor who has already answered never SEES it: the inline script in
+  // app/layout.tsx stamps `fgi-consent` on <html> before first paint and the
+  // CSS rule in globals.css hides it, so there is no flash. The effect below
+  // then unmounts it properly once React takes over.
+  const [visible, setVisible] = useState(true)
 
   useEffect(() => {
-    // Only show if consent has not been given yet
-    const consent = localStorage.getItem('FGI_cookieConsent')
-    if (!consent) {
-      setVisible(true)
+    // Already answered - take it out of the DOM. It was never painted.
+    try {
+      if (localStorage.getItem('FGI_cookieConsent')) {
+        setVisible(false)
+      }
+    } catch {
+      // Private mode or storage blocked. Leave the banner up rather than
+      // assume consent - the visitor can still Accept or Decline.
     }
   }, [])
 
+  function remember(answer: 'accepted' | 'declined') {
+    try {
+      localStorage.setItem('FGI_cookieConsent', answer)
+    } catch {
+      // Storage blocked. The banner still closes for this visit.
+    }
+  }
+
   function accept() {
-    localStorage.setItem('FGI_cookieConsent', 'accepted')
+    remember('accepted')
     setVisible(false)
     window.dispatchEvent(new Event('fgi:consent-accepted'))
   }
 
   function decline() {
-    localStorage.setItem('FGI_cookieConsent', 'declined')
+    remember('declined')
     setVisible(false)
   }
 
@@ -29,6 +52,7 @@ export default function CookieBanner() {
 
   return (
     <div
+      id="fgi-cookie-banner"
       role="dialog"
       aria-label="Cookie consent"
       className="fixed bottom-4 left-4 right-4 z-50 max-w-md sm:left-auto sm:right-6 sm:bottom-6"

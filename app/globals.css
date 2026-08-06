@@ -19,6 +19,15 @@
   h1, h2, h3, h4, h5 {
     @apply font-bold leading-tight text-[#222];
   }
+
+  /* The cookie banner is in the static HTML so it paints with the page rather
+     than arriving late and becoming the Largest Contentful Paint element.
+     Anyone who has already answered gets this class stamped on <html> by the
+     inline script in app/layout.tsx before the first frame, so they never see
+     it at all. Do not delete one without the other. */
+  .fgi-consent #fgi-cookie-banner {
+    display: none;
+  }
 }
 
 @layer components {

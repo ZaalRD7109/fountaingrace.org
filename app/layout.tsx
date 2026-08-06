@@ -65,6 +65,22 @@ export default function RootLayout({
   return (
     <html lang="en-ZA" className={poppins.variable}>
       <head>
+        {/* Runs BEFORE first paint. The cookie banner now ships inside the
+            static HTML so it paints with the page instead of appearing late
+            once JavaScript has hydrated - that late paint was measured on
+            2026-08-06 as the Largest Contentful Paint element on
+            /plan-your-visit at 2.9s, over Google's 2.5s bar. A visitor who has
+            already answered must never see it flash, so this stamps <html>
+            here and the CSS rule in globals.css hides it in the same frame.
+            Kept deliberately tiny and inline: an external file would be a
+            network round trip in front of the paint, which is the very thing
+            being fixed. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "try{if(localStorage.getItem('FGI_cookieConsent'))document.documentElement.classList.add('fgi-consent')}catch(e){}",
+          }}
+        />
         {/* Favicon served automatically from app/icon.png and app/apple-icon.png */}
         <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
         <link rel="dns-prefetch" href="https://www.clarity.ms" />
