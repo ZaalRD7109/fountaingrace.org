@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "why-does-it-feel-like-god-has-forgotten-about-me",
+    "date": "2026-08-06",
+    "dateDisplay": "6 August 2026",
+    "day": 218,
+    "headline": "Why does it feel like God has forgotten about me?",
+    "verseRef": "Isaiah 49:15-16",
+    "card": "/devotional-cards/why-does-it-feel-like-god-has-forgotten-about-me.jpg"
+  },
+  {
     "slug": "will-god-still-provide-when-the-whole-year-has-been-hard",
     "date": "2026-08-05",
     "dateDisplay": "5 August 2026",
