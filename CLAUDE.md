@@ -27,6 +27,19 @@ Ricardo (zaalricardo@gmail.com). Managing Fountain of Grace International's webs
 → Details: memory/projects/website-migration.md
 
 ## Brand (locked — do not guess)
+
+**Colour HIERARCHY decided 2026-08-06 (Ricardo handed the decision over: "it is the psychology of branding that will always win and not the person's preferences ... we make the choice today and we keep it"). Standard: `02-FGI/brand/FGI-Colour-Standard.pdf`.**
+
+| Role | Colour | Share | Where |
+|---|---|---|---|
+| Identity | `#2a9df4` | - | The logo ONLY. Never text, never a filled button (2.91:1 both ways) |
+| **Primary** | `#0d6fbf` | 40-60% | Headings, filled bars, buttons, the church's public face |
+| Secondary | `#008080` (`#006b6b` as text) | 20-30% | The NPO side: governance, policies, community, pastoral |
+| Accent | `#ffd700` | 5-10% | Rules, underlines, the one thing to click. Never text on white (1.40:1) |
+| Dark | `#06243d` | - | Dark sections and video scrims, INSTEAD of pure black. Gold reads 11.28:1 on it |
+| Body text | `#595959` | - | `#7d7d7d` measures 4.12:1 and fails |
+
+The reason blue leads rather than teal: the logo is a blue fountain through a cross with gold rays, so blue is the name, not decoration. Teal kept winning by default only because `#2a9df4` is too light to carry text or hold white text - the fix was a darker blue of the same hue, not a different colour. **Public church surfaces lead blue. NPO and governance documents lead teal.** Do not reopen this.
 | Hex | Use |
 |-----|-----|
 | `#ffffff` | White — backgrounds |
