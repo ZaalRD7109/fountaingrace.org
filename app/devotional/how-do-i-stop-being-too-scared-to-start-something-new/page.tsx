@@ -25,7 +25,7 @@ export default function DevotionalPage() {
       <article>
         <header
           className="pt-14 pb-12 px-4 sm:px-6 text-white"
-          style={{ background: 'linear-gradient(145deg, #06243d 0%, #0d6fbf 100%)' }}
+          style={{ background: 'linear-gradient(145deg, #04302f 0%, #008080 100%)' }}
         >
           <div className="max-w-2xl mx-auto">
             <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">

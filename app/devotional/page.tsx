@@ -35,7 +35,7 @@ export default function DevotionalHub() {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <main className="bg-white">
-        <header className="pt-14 pb-10 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #06243d 0%, #0d6fbf 100%)' }}>
+        <header className="pt-14 pb-10 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #04302f 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
             <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">Fountain of Grace International · Pretoria North</p>
             <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight">Daily Devotional</h1>

@@ -59,7 +59,7 @@ export default function CookieBanner() {
     >
       <div
         className="rounded-2xl p-5 shadow-2xl text-white text-sm leading-relaxed"
-        style={{ background: 'linear-gradient(135deg, #06243d 0%, #0d6fbf 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #04302f 0%, #008080 100%)' }}
       >
         <p className="mb-4">
           We use cookies to understand how people use our site. Anonymous analytics only -
