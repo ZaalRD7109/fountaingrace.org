@@ -56,6 +56,10 @@
   .clip b { display:block; margin-bottom:4px }
   .muted { color:#595959; font-size:13px; margin-top:16px; text-align:center; line-height:1.5 }
   .hide { display:none }
+  /* The registered domain, stated on the page so the review video shows it
+     even when the phone's address bar is hidden. */
+  .domain { margin:8px 0 0; font-size:13px; font-weight:700; letter-spacing:.02em;
+            color:#006b6b; font-family:ui-monospace,SFMono-Regular,Menlo,monospace }
   /* Phone first: full-width controls, big tap targets, nothing side by side. */
   .fld { display:block; font-size:13px; font-weight:700; color:#333; margin:16px 0 6px }
   textarea, select { width:100%; font-family:inherit; font-size:15px; padding:12px;
@@ -73,6 +77,14 @@
     <img src="/tiktok/fgi-app-icon-1024.png" alt="Fountain of Grace International">
     <h1>Connect TikTok</h1>
     <p class="sub">Fountain of Grace International &middot; Pretoria North</p>
+    <!--
+      The domain in plain sight, on the page itself. TikTok's review checklist
+      requires the demo video to show the domain the app is registered to, and
+      the first recording was made with the browser's address bar collapsed, so
+      it never appeared once in 104 seconds. A page that says it out loud cannot
+      be undone by how somebody happens to hold their phone.
+    -->
+    <p class="domain">www.fountaingrace.org</p>
   </header>
 
   <!-- STEP 1: connect (Login Kit) -->
