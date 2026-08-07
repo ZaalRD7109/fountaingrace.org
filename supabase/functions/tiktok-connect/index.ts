@@ -36,11 +36,17 @@ async function creds() {
 
 const REDIRECT_URI = "https://www.fountaingrace.org/tiktok/";
 // user.info.basic = who is connected (Login Kit)
-// video.upload    = send a video to the account (Content Posting API).
-//                   video.publish (direct auto-post) only becomes available
-//                   once TikTok has audited the app - which is what the demo
-//                   video this page exists for is meant to unlock.
-const SCOPES = "user.info.basic,video.upload";
+// video.upload    = send a video to the account as a DRAFT the creator finishes
+//                   in the app. This is what the daily drip has used since July.
+// video.publish   = DIRECT POST, caption and all, with nobody touching it. This
+//                   is the one the app audit exists to unlock, and it is already
+//                   granted inside the sandbox, which is why the demo can show
+//                   it working before TikTok has approved anything.
+//
+// All three are requested together because TikTok requires the demo video to
+// show every scope being submitted for. Changing this string only affects NEW
+// authorisations - a stored refresh token keeps the scopes it was granted.
+const SCOPES = "user.info.basic,video.publish,video.upload";
 
 const CORS = {
   "Access-Control-Allow-Origin": "https://www.fountaingrace.org",
@@ -193,6 +199,29 @@ Deno.serve(async (req) => {
       return json({ ok: true });
     }
 
+    // 2c. Who are we about to post as, and what may they choose? -----------
+    // TikTok's Content Sharing Guidelines make this call MANDATORY before any
+    // direct post. It is not decoration: the reviewer checks that the creator's
+    // nickname is shown, that the privacy menu is built from the options this
+    // endpoint returns rather than a hardcoded list, and that an app stops when
+    // the account has hit its posting limit for the day.
+    if (action === "creator_info") {
+      const t = await loadTokens();
+      if (!t?.access_token) return json({ ok: false, error: "TikTok is not connected yet" }, 400);
+      const r = await fetch("https://open.tiktokapis.com/v2/post/publish/creator_info/query/", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${t.access_token}`,
+          "content-type": "application/json; charset=UTF-8",
+        },
+      });
+      const j = await r.json();
+      if (j?.error?.code && j.error.code !== "ok") {
+        return json({ ok: false, error: j.error.message || j.error.code }, 400);
+      }
+      return json({ ok: true, ...j.data });
+    }
+
     // 3. Which clip is queued (shown on the demo screen) --------------------
     if (action === "next_clip") {
       const r = await fetch(
@@ -258,6 +287,86 @@ Deno.serve(async (req) => {
         title: clip.title ?? null,
         caption: clip.caption ?? null,
       });
+    }
+
+    // 5. DIRECT POST - the whole point of the audit -------------------------
+    // Unlike the inbox endpoint above, this one carries the caption, the
+    // privacy level and the interaction settings, and the video goes live
+    // without anybody opening the TikTok app. Every field here is chosen by
+    // the person on the page, never defaulted by us, because TikTok's
+    // guidelines are explicit that the creator makes these choices.
+    if (action === "direct_post" && req.method === "POST") {
+      const t = await loadTokens();
+      if (!t?.access_token) return json({ ok: false, error: "TikTok is not connected yet" }, 400);
+
+      const body = await req.json().catch(() => ({}));
+      const {
+        clip_id, title, privacy_level,
+        allow_comment, allow_duet, allow_stitch,
+        brand_organic_toggle, brand_content_toggle,
+      } = body ?? {};
+
+      // No default privacy. If the person did not choose one we refuse, rather
+      // than quietly publishing to the whole world on their behalf.
+      if (!privacy_level) {
+        return json({ ok: false, error: "Choose who can see this post before publishing." }, 400);
+      }
+      // TikTok's own rule: branded content may not be private.
+      if (brand_content_toggle && privacy_level === "SELF_ONLY") {
+        return json({ ok: false, error: "Branded content cannot be posted privately." }, 400);
+      }
+
+      const q = clip_id
+        ? `tiktok_queue?id=eq.${encodeURIComponent(clip_id)}&select=id,title,caption,video_url`
+        : `tiktok_queue?posted=is.null&select=id,title,caption,video_url&order=created_at&limit=1`;
+      const qr = await fetch(`${SB_URL}/rest/v1/${q}`, {
+        headers: { apikey: SB_KEY, Authorization: `Bearer ${SB_KEY}` },
+      });
+      const rows = await qr.json();
+      if (!Array.isArray(rows) || !rows.length) {
+        return json({ ok: false, error: "no clip is queued" }, 400);
+      }
+      const clip = rows[0];
+
+      const pr = await fetch("https://open.tiktokapis.com/v2/post/publish/video/init/", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${t.access_token}`,
+          "content-type": "application/json; charset=UTF-8",
+        },
+        body: JSON.stringify({
+          post_info: {
+            title: (title ?? clip.caption ?? clip.title ?? "").slice(0, 2200),
+            privacy_level,
+            // The API speaks in DISABLE, the page speaks in ALLOW, because
+            // "allow comments" is what a human understands. Invert here so the
+            // unchecked-by-default boxes TikTok requires mean what they say.
+            disable_comment: !allow_comment,
+            disable_duet: !allow_duet,
+            disable_stitch: !allow_stitch,
+            brand_organic_toggle: !!brand_organic_toggle,
+            brand_content_toggle: !!brand_content_toggle,
+          },
+          source_info: { source: "PULL_FROM_URL", video_url: clip.video_url },
+        }),
+      });
+      const pj = await pr.json();
+      if (pj?.error?.code && pj.error.code !== "ok") {
+        return json({ ok: false, error: pj.error.message || JSON.stringify(pj.error) }, 400);
+      }
+
+      await fetch(`${SB_URL}/rest/v1/tiktok_queue?id=eq.${clip.id}`, {
+        method: "PATCH",
+        headers: {
+          apikey: SB_KEY,
+          Authorization: `Bearer ${SB_KEY}`,
+          "content-type": "application/json",
+          Prefer: "return=minimal",
+        },
+        body: JSON.stringify({ posted: new Date().toISOString(), publish_id: pj?.data?.publish_id ?? null }),
+      });
+
+      return json({ ok: true, publish_id: pj?.data?.publish_id ?? null, title: clip.title ?? null });
     }
 
     return json({ error: "unknown action" }, 400);

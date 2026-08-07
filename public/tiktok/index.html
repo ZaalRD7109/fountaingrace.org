@@ -54,8 +54,17 @@
   .who span { font-size:13px; color:#595959 }
   .clip { border:1px solid #e6eaee; border-radius:10px; padding:12px; margin-bottom:14px; font-size:14px }
   .clip b { display:block; margin-bottom:4px }
-  .muted { color:#7d7d7d; font-size:13px; margin-top:16px; text-align:center; line-height:1.5 }
+  .muted { color:#595959; font-size:13px; margin-top:16px; text-align:center; line-height:1.5 }
   .hide { display:none }
+  /* Phone first: full-width controls, big tap targets, nothing side by side. */
+  .fld { display:block; font-size:13px; font-weight:700; color:#333; margin:16px 0 6px }
+  textarea, select { width:100%; font-family:inherit; font-size:15px; padding:12px;
+                     border:1px solid #d8dee4; border-radius:10px; background:#fff; color:#1a1a1a }
+  textarea { resize:vertical; line-height:1.5 }
+  .chk { display:flex; align-items:center; gap:10px; padding:11px 0; font-size:15px; cursor:pointer }
+  .chk input { width:20px; height:20px; flex:0 0 auto }
+  .legal { font-size:13px; color:#595959; line-height:1.5; margin:16px 0 14px }
+  .legal a { color:#0d6fbf }
 </style>
 </head>
 <body>
@@ -91,6 +100,46 @@
       <b id="clip-title">Sermon clip</b>
       <span id="clip-caption"></span>
     </div>
+
+    <!--
+      Everything below is required by TikTok's Content Sharing Guidelines for a
+      direct post, and a reviewer checks for each one:
+        - the creator's nickname is shown above, from creator_info
+        - the caption is editable by the person posting
+        - privacy has NO default and its options come from creator_info
+        - comment, duet and stitch are UNCHECKED by default
+        - a commercial content toggle, and branded content may not be private
+        - the music usage declaration, which changes when branded is on
+    -->
+    <label class="fld" for="post-title">Caption</label>
+    <textarea id="post-title" rows="4" maxlength="2200"></textarea>
+
+    <label class="fld" for="post-privacy">Who can see this post</label>
+    <select id="post-privacy">
+      <option value="">Choose...</option>
+    </select>
+
+    <p class="fld">Allow people to</p>
+    <label class="chk"><input type="checkbox" id="allow-comment"> Comment</label>
+    <label class="chk"><input type="checkbox" id="allow-duet"> Duet</label>
+    <label class="chk"><input type="checkbox" id="allow-stitch"> Stitch</label>
+
+    <label class="chk" style="margin-top:14px">
+      <input type="checkbox" id="commercial"> This post promotes a brand or a product
+    </label>
+    <div id="commercial-box" class="hide" style="padding-left:26px">
+      <label class="chk"><input type="checkbox" id="brand-organic"> Your brand</label>
+      <label class="chk"><input type="checkbox" id="brand-content"> Branded content</label>
+      <p class="muted" style="text-align:left;margin:6px 0 0">
+        Branded content cannot be posted privately.
+      </p>
+    </div>
+
+    <p class="legal" id="legal">
+      By posting, you agree to TikTok's
+      <a href="https://www.tiktok.com/legal/page/global/music-usage-confirmation/en" target="_blank" rel="noopener">Music Usage Confirmation</a>.
+    </p>
+
     <button class="primary" id="btn-post">Post this clip to TikTok</button>
     <div class="status" id="post-status"></div>
     <p class="muted" style="margin-top:14px">
@@ -139,6 +188,7 @@ async function finishConnect(code) {
     $("card-connect").classList.add("hide");
     $("card-post").classList.remove("hide");
     loadClip();
+    loadCreator();
   } catch (e) {
     say($("connect-status"), "err", e.message);
   }
@@ -151,18 +201,93 @@ async function loadClip() {
     const j = await r.json();
     $("clip-title").textContent = j.title || "Sermon clip";
     $("clip-caption").textContent = j.caption || "";
+    // The caption is prefilled but editable. TikTok requires that the person
+    // posting chooses the title rather than the app deciding it for them.
+    $("post-title").value = j.caption || j.title || "";
   } catch (e) { /* non-fatal, the post step still works */ }
 }
 
-// --- Step 3: publish it (Content Posting API) ---------------------------
+// --- who are we posting as, and what may they choose? --------------------
+// Straight from creator_info. The privacy menu is built from what TikTok
+// returns, never a hardcoded list, and it opens on no selection at all.
+const PRIVACY_LABEL = {
+  PUBLIC_TO_EVERYONE: "Everyone",
+  MUTUAL_FOLLOW_FRIENDS: "Friends who follow each other",
+  FOLLOWER_OF_CREATOR: "Followers",
+  SELF_ONLY: "Only me",
+};
+async function loadCreator() {
+  try {
+    const r = await fetch(FN + "?action=creator_info");
+    const j = await r.json();
+    if (!j.ok) throw new Error(j.error || "could not read the account settings");
+    if (j.creator_nickname) $("who-name").textContent = j.creator_nickname;
+    if (j.creator_username) $("who-handle").textContent = "@" + j.creator_username;
+    if (j.creator_avatar_url) $("who-avatar").src = j.creator_avatar_url;
+
+    const sel = $("post-privacy");
+    (j.privacy_level_options || []).forEach((p) => {
+      const o = document.createElement("option");
+      o.value = p;
+      o.textContent = PRIVACY_LABEL[p] || p;
+      sel.appendChild(o);
+    });
+
+    // If the account itself has any of these switched off, the box cannot be
+    // ticked here either. Offering a choice TikTok would refuse is a lie.
+    [["comment_disabled", "allow-comment"], ["duet_disabled", "allow-duet"],
+     ["stitch_disabled", "allow-stitch"]].forEach(([flag, id]) => {
+      if (j[flag]) { $(id).checked = false; $(id).disabled = true; }
+    });
+  } catch (e) {
+    say($("post-status"), "err", e.message);
+  }
+}
+
+// Commercial content: reveal the two choices, and keep the declaration honest.
+$("commercial").addEventListener("change", () => {
+  $("commercial-box").classList.toggle("hide", !$("commercial").checked);
+  if (!$("commercial").checked) { $("brand-organic").checked = false; $("brand-content").checked = false; }
+  updateLegal();
+});
+$("brand-content").addEventListener("change", updateLegal);
+function updateLegal() {
+  const branded = $("commercial").checked && $("brand-content").checked;
+  $("legal").innerHTML = branded
+    ? 'By posting, you agree to TikTok\'s <a href="https://www.tiktok.com/legal/page/global/bc-policy/en" target="_blank" rel="noopener">Branded Content Policy</a> and <a href="https://www.tiktok.com/legal/page/global/music-usage-confirmation/en" target="_blank" rel="noopener">Music Usage Confirmation</a>.'
+    : 'By posting, you agree to TikTok\'s <a href="https://www.tiktok.com/legal/page/global/music-usage-confirmation/en" target="_blank" rel="noopener">Music Usage Confirmation</a>.';
+}
+
+// --- Step 3: publish it (Content Posting API, direct post) --------------
 $("btn-post").addEventListener("click", async () => {
   const btn = $("btn-post");
+  const privacy = $("post-privacy").value;
+  if (!privacy) {
+    say($("post-status"), "err", "Choose who can see this post first.");
+    return;
+  }
+  if ($("brand-content").checked && privacy === "SELF_ONLY") {
+    say($("post-status"), "err", "Branded content cannot be posted privately. Choose a different audience.");
+    return;
+  }
   btn.disabled = true;
-  say($("post-status"), "info", "Uploading the clip to TikTok...");
+  say($("post-status"), "info", "Posting the clip to TikTok...");
   try {
-    const r = await fetch(FN + "?action=post", { method: "POST" });
+    const r = await fetch(FN + "?action=direct_post", {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        title: $("post-title").value,
+        privacy_level: privacy,
+        allow_comment: $("allow-comment").checked,
+        allow_duet: $("allow-duet").checked,
+        allow_stitch: $("allow-stitch").checked,
+        brand_organic_toggle: $("commercial").checked && $("brand-organic").checked,
+        brand_content_toggle: $("commercial").checked && $("brand-content").checked,
+      }),
+    });
     const j = await r.json();
-    if (!j.ok) throw new Error(j.error || "TikTok rejected the upload");
+    if (!j.ok) throw new Error(j.error || "TikTok rejected the post");
     say($("post-status"), "ok", "Posted to TikTok. It appears on the church account once TikTok finishes processing it.");
   } catch (e) {
     say($("post-status"), "err", e.message);
