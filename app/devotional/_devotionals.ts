@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "does-god-even-notice-how-tired-of-waiting-i-am",
+    "date": "2026-08-07",
+    "dateDisplay": "7 August 2026",
+    "day": 219,
+    "headline": "Does God even notice how tired of waiting I am?",
+    "verseRef": "Psalm 13:1-2",
+    "card": "/devotional-cards/does-god-even-notice-how-tired-of-waiting-i-am.jpg"
+  },
+  {
     "slug": "why-does-it-feel-like-god-has-forgotten-about-me",
     "date": "2026-08-06",
     "dateDisplay": "6 August 2026",
