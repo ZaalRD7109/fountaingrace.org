@@ -140,6 +140,19 @@
       <a href="https://www.tiktok.com/legal/page/global/music-usage-confirmation/en" target="_blank" rel="noopener">Music Usage Confirmation</a>.
     </p>
 
+    <!--
+      Learned the hard way on 2026-08-07. TikTok refuses a direct post from an
+      app it has not audited unless the ACCOUNT ITSELF is private at that moment,
+      and the only thing it says back is "review our integration guidelines",
+      which tells a person nothing. Until the audit passes, this note is the
+      difference between a two-minute fix and a dead end.
+    -->
+    <div class="status info" style="display:block" id="sandbox-note">
+      Until TikTok has approved this app, it will only post to an account that is
+      set to private. Turn on Private account in the TikTok app first, post here,
+      then turn it back off.
+    </div>
+
     <button class="primary" id="btn-post">Post this clip to TikTok</button>
     <div class="status" id="post-status"></div>
     <p class="muted" style="margin-top:14px">
@@ -258,6 +271,27 @@ function updateLegal() {
     : 'By posting, you agree to TikTok\'s <a href="https://www.tiktok.com/legal/page/global/music-usage-confirmation/en" target="_blank" rel="noopener">Music Usage Confirmation</a>.';
 }
 
+// TikTok answers a compliance refusal with a link to its guidelines and nothing
+// else, which tells the person at the phone nothing at all. Translate the ones
+// we have actually hit into something a human can act on.
+function plain(err) {
+  const e = String(err || "");
+  if (/content-sharing-guidelines|unaudited/i.test(e)) {
+    return "TikTok will not post this while the church account is public. "
+         + "Until this app is approved, open TikTok, turn ON Private account "
+         + "under Settings and privacy, post again here, then turn it back off.";
+  }
+  if (/spam_risk|too_many/i.test(e)) {
+    return "TikTok is limiting how many posts this app may send today. "
+         + "Try again after midnight UTC, which is 2am our time.";
+  }
+  if (/access token|not found|scope/i.test(e)) {
+    return "The TikTok connection has expired. Tap Disconnect and start over, "
+         + "then connect again.";
+  }
+  return e;
+}
+
 // --- Step 3: publish it (Content Posting API, direct post) --------------
 $("btn-post").addEventListener("click", async () => {
   const btn = $("btn-post");
@@ -287,7 +321,7 @@ $("btn-post").addEventListener("click", async () => {
       }),
     });
     const j = await r.json();
-    if (!j.ok) throw new Error(j.error || "TikTok rejected the post");
+    if (!j.ok) throw new Error(plain(j.error) || "TikTok rejected the post");
     say($("post-status"), "ok", "Posted to TikTok. It appears on the church account once TikTok finishes processing it.");
   } catch (e) {
     say($("post-status"), "err", e.message);
