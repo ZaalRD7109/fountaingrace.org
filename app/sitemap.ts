@@ -137,6 +137,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - daily library, one page per devotional)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/devotional/how-long-does-god-expect-me-to-keep-waiting`, lastModified: new Date('2026-08-08'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/does-god-even-notice-how-tired-of-waiting-i-am`, lastModified: new Date('2026-08-07'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/why-does-it-feel-like-god-has-forgotten-about-me`, lastModified: new Date('2026-08-06'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/will-god-still-provide-when-the-whole-year-has-been-hard`, lastModified: new Date('2026-08-05'), changeFrequency: 'monthly', priority: 0.6 },

@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "how-long-does-god-expect-me-to-keep-waiting",
+    "date": "2026-08-08",
+    "dateDisplay": "8 August 2026",
+    "day": 220,
+    "headline": "How long does God expect me to keep waiting?",
+    "verseRef": "Psalm 27:14",
+    "card": "/devotional-cards/how-long-does-god-expect-me-to-keep-waiting.jpg"
+  },
+  {
     "slug": "does-god-even-notice-how-tired-of-waiting-i-am",
     "date": "2026-08-07",
     "dateDisplay": "7 August 2026",
