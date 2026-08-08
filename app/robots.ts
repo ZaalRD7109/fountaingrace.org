@@ -30,10 +30,15 @@ const TRACKING_LINK_PREFIXES = [
   // Checked 2026-08-02 against the live sitemap and the app/ routes - nothing
   // real starts with "/review", so this cannot swallow a page the way "/pray"
   // would have swallowed /prayer.
-  '/today', // -> that day's /devotional/<slug>. Printed on the devotional card so
-  // it can be typed off a WhatsApp status by hand. Its destination changes every
-  // morning, so it must never be indexed as a page in its own right. Checked
-  // 2026-08-08 against app/ and the sitemap: no real page starts with "/today".
+  // '/today' IS DELIBERATELY NOT LISTED HERE. DO NOT ADD IT.
+  // It was added on 2026-08-08 and removed the same day. /today is a 302 to that
+  // day's devotional, and unlike every link above it, it is meant to be PASTED
+  // INTO WHATSAPP. WhatsApp builds its link preview with facebookexternalhit,
+  // which respects robots.txt, so disallowing it kills the preview card - and the
+  // preview IS the product here: the devotional card image, the question and the
+  // first line are what make somebody tap. Verified on a real phone that the
+  // preview renders. The cost of leaving it crawlable is one informational
+  // "Page with redirect" row in Search Console, which is harmless.
   '/ga/', // Google Ads inbound campaign tracking links - not pages
   '/fa/', // Facebook/Instagram Ads inbound campaign tracking links - not pages
 ]
