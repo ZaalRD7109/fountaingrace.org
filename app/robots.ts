@@ -30,6 +30,10 @@ const TRACKING_LINK_PREFIXES = [
   // Checked 2026-08-02 against the live sitemap and the app/ routes - nothing
   // real starts with "/review", so this cannot swallow a page the way "/pray"
   // would have swallowed /prayer.
+  '/today', // -> that day's /devotional/<slug>. Printed on the devotional card so
+  // it can be typed off a WhatsApp status by hand. Its destination changes every
+  // morning, so it must never be indexed as a page in its own right. Checked
+  // 2026-08-08 against app/ and the sitemap: no real page starts with "/today".
   '/ga/', // Google Ads inbound campaign tracking links - not pages
   '/fa/', // Facebook/Instagram Ads inbound campaign tracking links - not pages
 ]
