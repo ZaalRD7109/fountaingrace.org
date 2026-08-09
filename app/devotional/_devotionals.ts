@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "how-do-i-stop-losing-my-mind-while-i-wait",
+    "date": "2026-08-09",
+    "dateDisplay": "9 August 2026",
+    "day": 221,
+    "headline": "How do I stop losing my mind while I wait?",
+    "verseRef": "Psalm 46:10",
+    "card": "/devotional-cards/how-do-i-stop-losing-my-mind-while-i-wait.jpg"
+  },
+  {
     "slug": "how-long-does-god-expect-me-to-keep-waiting",
     "date": "2026-08-08",
     "dateDisplay": "8 August 2026",
