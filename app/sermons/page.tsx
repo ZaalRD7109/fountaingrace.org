@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "youve-been-hurting-for-years-and-nobody-asked",
+    title: "You've Been Hurting for Years and Nobody Asked",
+    date: "2026-08-09",
+    dateDisplay: "9 August 2026",
+    intro:
+      "You smile in public while bleeding in private. You hold everyone together while quietly falling apart. This is the message for the one everyone walked past.",
+  },
+  {
     slug: "youre-burning-out-because-nobody-told-you-when-to-stop",
     title: "You're Burning Out Because Nobody Told You When to Stop",
     date: "2026-08-02",
