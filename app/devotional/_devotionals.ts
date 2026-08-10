@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "what-if-my-waiting-is-actually-doing-something-in-me",
+    "date": "2026-08-10",
+    "dateDisplay": "10 August 2026",
+    "day": 222,
+    "headline": "What if my waiting is actually doing something in me?",
+    "verseRef": "Romans 5:3-4",
+    "card": "/devotional-cards/what-if-my-waiting-is-actually-doing-something-in-me.jpg"
+  },
+  {
     "slug": "how-do-i-stop-losing-my-mind-while-i-wait",
     "date": "2026-08-09",
     "dateDisplay": "9 August 2026",
