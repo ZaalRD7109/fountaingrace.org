@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "is-god-actually-doing-something-while-nothing-is-happening",
+    "date": "2026-08-11",
+    "dateDisplay": "11 August 2026",
+    "day": 223,
+    "headline": "Is God actually doing something while nothing is happening?",
+    "verseRef": "James 1:4",
+    "card": "/devotional-cards/is-god-actually-doing-something-while-nothing-is-happening.jpg"
+  },
+  {
     "slug": "what-if-my-waiting-is-actually-doing-something-in-me",
     "date": "2026-08-10",
     "dateDisplay": "10 August 2026",
