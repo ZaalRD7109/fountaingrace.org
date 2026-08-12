@@ -80,7 +80,7 @@ const jsonLd = [
         "name": "What if I do not believe in this kind of spiritual guidance?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "You do not have to use spiritual language to benefit from learning to listen to your intuition, your values, and the wisdom of people you trust. You can call it listening to your gut, getting clarity through reflection, or paying attention to what brings you peace. The mechanism is the same: you slow down, you create space, you notice patterns, and you pay attention to what resonates as true. Whether you call it God or call it wisdom, the practice works."
+          "text": "You do not have to use spiritual language to benefit from learning to listen to your intuition, your values, and the wisdom of people you trust. You can call it listening to your gut, getting clarity through reflection, or paying attention to what brings you peace. The mechanism is the same: you slow down, you create space, you notice patterns, and you pay attention to what rings true. Whether you call it God or call it wisdom, the practice works."
         }
       },
       {
@@ -211,7 +211,7 @@ export default function SermonPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What if I do not believe in this kind of spiritual guidance?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"You do not have to use spiritual language to benefit from learning to listen to your intuition, your values, and the wisdom of people you trust. You can call it listening to your gut, getting clarity through reflection, or paying attention to what brings you peace. The mechanism is the same: you slow down, you create space, you notice patterns, and you pay attention to what resonates as true. Whether you call it God or call it wisdom, the practice works."}</p>
+                <p className="text-[#555] leading-relaxed text-sm">{"You do not have to use spiritual language to benefit from learning to listen to your intuition, your values, and the wisdom of people you trust. You can call it listening to your gut, getting clarity through reflection, or paying attention to what brings you peace. The mechanism is the same: you slow down, you create space, you notice patterns, and you pay attention to what rings true. Whether you call it God or call it wisdom, the practice works."}</p>
               </div>
               <div>
                 <h3 className="font-semibold text-[#1a1a1a] mb-2">{"I feel like I should be hearing something dramatic, but I just get quiet thoughts or feelings. Is that really guidance?"}</h3>

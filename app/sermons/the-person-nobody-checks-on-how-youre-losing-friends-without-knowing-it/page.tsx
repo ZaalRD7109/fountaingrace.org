@@ -153,7 +153,7 @@ export default function SermonPage() {
               <h2 className="text-lg font-bold text-[#1a1a1a] mb-3">This message is for you if:</h2>
               <ul className="list-disc list-inside space-y-2 text-[#555]">
                 <li className="leading-relaxed">{"You feel invisible to your friends"}</li>
-                <li className="leading-relaxed">{"You’re overwhelmed by your own problems"}</li>
+                <li className="leading-relaxed">{"You're overwhelmed by your own problems"}</li>
                 <li className="leading-relaxed">{"You notice someone drifting away silently"}</li>
                 <li className="leading-relaxed">{"You avoid asking direct questions about others"}</li>
               </ul>

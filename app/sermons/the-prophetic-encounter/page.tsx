@@ -206,7 +206,7 @@ export default function SermonPage() {
               2 Timothy 1:7 - &quot;For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.&quot;
             </p>
             <p className="text-[#555] leading-relaxed mb-4">
-              Fear has a specific texture when it comes to the gift. It is not usually the fear of failure - it is the fear of what people will say when you succeed. If you get the management position, will they say you used connections? If you build the business, will they say you used something darker to get there? If you step into the prophetic and speak, will they laugh? That fear of jealousy, of being seen and judged for thriving - that is the fear that keeps the most gifted people from ever activating what God put in them.
+              Fear has a specific texture around the gift. It is not usually the fear of failure - it is the fear of what people will say when you succeed. If you get the management position, will they say you used connections? If you build the business, will they say you used something darker to get there? If you step into the prophetic and speak, will they laugh? That fear of jealousy, of being seen and judged for thriving - that is the fear that keeps the most gifted people from ever activating what God put in them.
             </p>
             <p className="text-[#555] leading-relaxed mb-8">
               God did not give you that spirit. Walk out of the prison of fear. The door is already open - the same open door the Spirit showed in Revelation 3:8. Your little strength is not a disqualifier. It is the exact condition God uses to open doors that no man can shut. Stop letting fear decide what your ceiling is.

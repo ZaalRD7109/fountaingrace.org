@@ -64,7 +64,7 @@ const jsonLd = [
         name: "Can every Christian hear God speak or only special people?",
         acceptedAnswer: {
           '@type': 'Answer',
-          text: "1 Corinthians 14:31 in the KJV says, 'For ye may all prophesy one by one.' Paul was not describing an elite group - he was writing to the whole church. Prophecy at its core is hearing what the Holy Spirit is saying and speaking it. Every believer has access to God's voice. It is not about spiritual rank or years in ministry. It is about intimacy and attention.",
+          text: "1 Corinthians 14:31 in the KJV says, 'For ye may all prophesy one by one.' Paul was not describing an elite group - he was writing to the whole church. Prophecy is hearing what the Holy Spirit is saying and speaking it. Every believer has access to God's voice. It is not about spiritual rank or years in ministry. It is about intimacy and attention.",
         },
       },
       {

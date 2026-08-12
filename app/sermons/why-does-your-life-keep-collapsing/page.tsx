@@ -165,7 +165,7 @@ export default function SermonPage() {
               There is a pattern described this way: you live a life of 70 years but you repeat the same one year over and over again. The dates change. The situations change. But the responses, the fears, the failures - they stay exactly the same. A person can be in their forties and look back at the last fifteen years and see the identical cycle running on repeat.
             </p>
             <p className="text-[#555] leading-relaxed mb-8">
-              The question to ask is not &quot;what did I do wrong this time?&quot; The question is &quot;what has not changed inside me in the last ten years?&quot; Circumstances can change completely. If the internal landscape has not shifted, the same outcomes will follow you to every new environment.
+              The question to ask is not &quot;what did I do wrong this time?&quot; The question is &quot;what has not changed inside me in the last ten years?&quot; Circumstances can change completely. If nothing inside you has changed, the same outcomes will follow you to every new environment.
             </p>
 
             <h2 className="text-xl font-bold text-[#0d6fbf] mb-3">What You Carry Is What Spills</h2>

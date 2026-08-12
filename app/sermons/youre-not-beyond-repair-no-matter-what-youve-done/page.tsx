@@ -80,7 +80,7 @@ const jsonLd = [
         "name": "Do I need to clean up my life before seeking help?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No, the message underscores that acceptance and transformation do not require preconditions. You can reach out for help as you are."
+          "text": "No, the message shows that acceptance and transformation do not require preconditions. You can reach out for help as you are."
         }
       },
       {
@@ -202,7 +202,7 @@ export default function SermonPage() {
               </div>
               <div>
                 <h3 className="font-semibold text-[#1a1a1a] mb-2">{"Do I need to clean up my life before seeking help?"}</h3>
-                <p className="text-[#555] leading-relaxed text-sm">{"No, the message underscores that acceptance and transformation do not require preconditions. You can reach out for help as you are."}</p>
+                <p className="text-[#555] leading-relaxed text-sm">{"No, the message shows that acceptance and transformation do not require preconditions. You can reach out for help as you are."}</p>
               </div>
               <div>
                 <h3 className="font-semibold text-[#1a1a1a] mb-2">{"What can I do if I feel isolated?"}</h3>
