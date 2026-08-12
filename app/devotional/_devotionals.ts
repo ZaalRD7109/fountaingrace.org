@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "will-gods-faithfulness-hold-for-my-whole-life",
+    "date": "2026-08-12",
+    "dateDisplay": "12 August 2026",
+    "day": 224,
+    "headline": "Will God's faithfulness hold for my whole life?",
+    "verseRef": "Psalm 23:6",
+    "card": "/devotional-cards/will-gods-faithfulness-hold-for-my-whole-life.jpg"
+  },
+  {
     "slug": "is-god-actually-doing-something-while-nothing-is-happening",
     "date": "2026-08-11",
     "dateDisplay": "11 August 2026",
