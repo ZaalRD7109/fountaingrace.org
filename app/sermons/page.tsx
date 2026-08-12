@@ -22,6 +22,30 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "your-prayers-arent-working-because-youre-praying-against-open-doors",
+    title: "Your Prayers Aren't Working Because You're Praying Against Open Doors",
+    date: "2026-01-11",
+    dateDisplay: "11 January 2026",
+    intro:
+      "You pray hard but nothing shifts. You obey but stay stuck. The problem isn't God ignoring you, it's something locked in the system you can't see.",
+  },
+  {
+    slug: "why-youre-exhausted-trying-to-make-everything-happen-yourself",
+    title: "Why You're Exhausted Trying to Make Everything Happen Yourself",
+    date: "2026-04-29",
+    dateDisplay: "29 April 2026",
+    intro:
+      "You work harder than your boss but earn less. You pray but still feel stranded. There's a broken connection between you and the supply you need, and it has nothing to do with effort.",
+  },
+  {
+    slug: "you-quit-but-nothing-changed-the-real-reason-you-go-back",
+    title: "You Quit but Nothing Changed: The Real Reason You Go Back",
+    date: "2026-03-03",
+    dateDisplay: "3 March 2026",
+    intro:
+      "You meant it when you promised yourself. You cried. You prayed. You lasted a few weeks. Then life got hard and you slipped back into the same patterns, worse than before.",
+  },
+  {
     slug: "your-team-is-busy-but-going-nowhere-the-real-reason-nothing-changes",
     title: "Your Team is Busy But Going Nowhere: The Real Reason Nothing Changes",
     date: "2026-03-22",
