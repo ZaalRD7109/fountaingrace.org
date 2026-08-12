@@ -134,7 +134,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <p className="text-[#1a1a1a] text-lg font-semibold leading-snug mb-4">{"For those who keep waiting for the right moment."}</p>
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-              <iframe src="https://www.youtube.com/embed/6jE6sSR4cfs" title={"What no one tells you about feeling unready"} className="absolute inset-0 w-full h-full" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+              <div className="sermon-embed absolute inset-0 w-full h-full" data-video="6jE6sSR4cfs" data-title={"What no one tells you about feeling unready"} dangerouslySetInnerHTML={{ __html: '<button type="button" class="sermon-play absolute inset-0 w-full h-full bg-black" aria-label="Play the sermon video"><img src="/sermon-thumbs/6jE6sSR4cfs.webp" alt="" width="800" height="450" fetchpriority="high" decoding="async" class="absolute inset-0 w-full h-full object-cover"><span class="absolute inset-0 flex items-center justify-center"><span class="flex items-center justify-center w-16 h-16 rounded-full bg-[#006b6b]/90 shadow-lg"><svg viewBox="0 0 24 24" aria-hidden="true" class="w-8 h-8 ml-1 fill-white"><path d="M8 5v14l11-7z"/></svg></span></span></button>' }} />
             </div>
             <p className="text-[#555] text-sm mt-4 mb-2">Prefer reading? The full sermon notes are below.</p>
             <div className="bg-[#f0fafa] border border-[#cfeeee] rounded-xl p-5 mt-6">
@@ -263,6 +263,7 @@ export default function SermonPage() {
 
 
       </article>
+      <script dangerouslySetInnerHTML={{ __html: "(function(){function init(){var box=document.querySelector('.sermon-embed');if(!box)return;var vid=box.getAttribute('data-video');var btn=box.querySelector('.sermon-play');var name=box.getAttribute('data-title');if(btn&&name)btn.setAttribute('aria-label','Play: '+name);function play(start){var src='https://www.youtube.com/embed/'+vid+'?rel=0&autoplay=1'+(start?'&start='+start:'');var f=box.querySelector('iframe');if(f){f.src=src;return;}f=document.createElement('iframe');f.src=src;f.setAttribute('title',box.getAttribute('data-title')||'Sermon video');f.setAttribute('allow','accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture');f.setAttribute('allowfullscreen','');f.className='absolute inset-0 w-full h-full';f.style.border='0';if(btn)btn.style.display='none';box.appendChild(f);}if(btn)btn.addEventListener('click',function(){play(0);});document.querySelectorAll('.sermon-chapter').forEach(function(c){c.addEventListener('click',function(){play(this.getAttribute('data-start'));box.scrollIntoView({behavior:'smooth',block:'center'});});});}if(document.readyState==='complete')init();else window.addEventListener('load',init);})();" }} />
     </>
   )
 }

@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/your-team-is-busy-but-going-nowhere-the-real-reason-nothing-changes`, lastModified: new Date('2026-03-22'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/youve-been-hurting-for-years-and-nobody-asked`, lastModified: new Date('2026-08-09'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/youre-burning-out-because-nobody-told-you-when-to-stop`, lastModified: new Date('2026-08-02'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/everything-crumbling-at-once-heres-what-youre-actually-walking-on`, lastModified: new Date('2026-07-26'), changeFrequency: 'monthly', priority: 0.6 },

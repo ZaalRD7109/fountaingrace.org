@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "your-team-is-busy-but-going-nowhere-the-real-reason-nothing-changes",
+    title: "Your Team is Busy But Going Nowhere: The Real Reason Nothing Changes",
+    date: "2026-03-22",
+    dateDisplay: "22 March 2026",
+    intro:
+      "You can put in real effort alongside people you trust and still feel like nothing is moving. The problem isn't laziness. It's alignment.",
+  },
+  {
     slug: "youve-been-hurting-for-years-and-nobody-asked",
     title: "You've Been Hurting for Years and Nobody Asked",
     date: "2026-08-09",
