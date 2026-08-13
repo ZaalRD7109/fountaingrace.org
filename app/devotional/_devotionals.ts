@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "why-cant-i-just-let-it-go-even-when-i-want-to",
+    "date": "2026-08-13",
+    "dateDisplay": "13 August 2026",
+    "day": 225,
+    "headline": "Why can't I just let it go even when I want to?",
+    "verseRef": "Matthew 11:28",
+    "card": "/devotional-cards/why-cant-i-just-let-it-go-even-when-i-want-to.jpg"
+  },
+  {
     "slug": "will-gods-faithfulness-hold-for-my-whole-life",
     "date": "2026-08-12",
     "dateDisplay": "12 August 2026",

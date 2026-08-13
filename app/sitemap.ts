@@ -142,6 +142,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - daily library, one page per devotional)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/devotional/why-cant-i-just-let-it-go-even-when-i-want-to`, lastModified: new Date('2026-08-13'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/will-gods-faithfulness-hold-for-my-whole-life`, lastModified: new Date('2026-08-12'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/is-god-actually-doing-something-while-nothing-is-happening`, lastModified: new Date('2026-08-11'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/what-if-my-waiting-is-actually-doing-something-in-me`, lastModified: new Date('2026-08-10'), changeFrequency: 'monthly', priority: 0.6 },
