@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "why-does-holding-a-grudge-hurt-me-more-than-them",
+    "date": "2026-08-14",
+    "dateDisplay": "14 August 2026",
+    "day": 226,
+    "headline": "Why does holding a grudge hurt me more than them?",
+    "verseRef": "Psalm 55:22",
+    "card": "/devotional-cards/why-does-holding-a-grudge-hurt-me-more-than-them.jpg"
+  },
+  {
     "slug": "why-cant-i-just-let-it-go-even-when-i-want-to",
     "date": "2026-08-13",
     "dateDisplay": "13 August 2026",
