@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "does-god-actually-care-about-the-wound-i-cannot-stop-carrying",
+    "date": "2026-08-15",
+    "dateDisplay": "15 August 2026",
+    "day": 227,
+    "headline": "Does God actually care about the wound I cannot stop carrying?",
+    "verseRef": "Psalm 147:3",
+    "card": "/devotional-cards/does-god-actually-care-about-the-wound-i-cannot-stop-carrying.jpg"
+  },
+  {
     "slug": "why-does-holding-a-grudge-hurt-me-more-than-them",
     "date": "2026-08-14",
     "dateDisplay": "14 August 2026",
