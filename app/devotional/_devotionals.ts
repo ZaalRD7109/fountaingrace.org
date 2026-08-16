@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "how-do-i-actually-forgive-someone-who-never-said-sorry",
+    "date": "2026-08-16",
+    "dateDisplay": "16 August 2026",
+    "day": 228,
+    "headline": "How do I actually forgive someone who never said sorry?",
+    "verseRef": "Ephesians 4:32",
+    "card": "/devotional-cards/how-do-i-actually-forgive-someone-who-never-said-sorry.jpg"
+  },
+  {
     "slug": "does-god-actually-care-about-the-wound-i-cannot-stop-carrying",
     "date": "2026-08-15",
     "dateDisplay": "15 August 2026",
