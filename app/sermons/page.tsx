@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "you-feel-like-helping-but-never-actually-do-anything",
+    title: "You Feel Like Helping But Never Actually Do Anything",
+    date: "2026-08-16",
+    dateDisplay: "16 August 2026",
+    intro:
+      "You see someone's need. You feel moved for a moment. By lunchtime you've forgotten. This is the message for the person who cares deeply but keeps making excuses instead of showing up.",
+  },
+  {
     slug: "your-prayers-arent-working-because-youre-praying-against-open-doors",
     title: "Your Prayers Aren't Working Because You're Praying Against Open Doors",
     date: "2026-01-11",
