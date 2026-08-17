@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "what-if-i-am-not-ready-to-forgive-and-i-know-it",
+    "date": "2026-08-17",
+    "dateDisplay": "17 August 2026",
+    "day": 229,
+    "headline": "What if I am not ready to forgive and I know it?",
+    "verseRef": "Mark 11:25",
+    "card": "/devotional-cards/what-if-i-am-not-ready-to-forgive-and-i-know-it.jpg"
+  },
+  {
     "slug": "how-do-i-actually-forgive-someone-who-never-said-sorry",
     "date": "2026-08-16",
     "dateDisplay": "16 August 2026",
