@@ -49,7 +49,7 @@ export default function DevotionalHub() {
               <p className="text-[#006b6b] text-xs font-bold uppercase tracking-wider mb-4">Today</p>
               <Link href={'/devotional/' + today.slug} className="block sm:flex gap-6 group">
                 {today.card && (
-                  <img src={today.card} alt={today.headline} width={1080} height={1350} loading="eager" className="w-full sm:w-48 shrink-0 rounded-xl mb-4 sm:mb-0" />
+                  <img src={today.card} alt={today.headline} width={680} height={850} loading="eager" fetchPriority="high" decoding="async" className="w-full sm:w-48 shrink-0 rounded-xl mb-4 sm:mb-0" />
                 )}
                 <div>
                   <h2 className="text-2xl font-bold text-[#1a1a1a] group-hover:text-[#0d6fbf] leading-snug">{today.headline}</h2>

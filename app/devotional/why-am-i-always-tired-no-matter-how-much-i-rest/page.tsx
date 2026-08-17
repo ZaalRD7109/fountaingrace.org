@@ -41,11 +41,12 @@ export default function DevotionalPage() {
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto">
             <img
-              src="https://www.fountaingrace.org/devotional-cards/why-am-i-always-tired-no-matter-how-much-i-rest.jpg"
+              src="https://www.fountaingrace.org/devotional-cards/w680/why-am-i-always-tired-no-matter-how-much-i-rest.webp"
               alt="Why am I always tired no matter how much I rest? - Fountain of Grace International"
-              width={1080}
-              height={1350}
-              loading="lazy"
+              width={680}
+              height={850}
+              loading="eager"
+              fetchPriority="high"
               decoding="async"
               className="w-full max-w-[340px] mx-auto rounded-xl shadow-sm"
             />

@@ -41,11 +41,12 @@ export default function DevotionalPage() {
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto">
             <img
-              src="https://www.fountaingrace.org/devotional-cards/how-do-i-stop-saying-things-i-regret-to-the-people-i-love.jpg"
+              src="https://www.fountaingrace.org/devotional-cards/w680/how-do-i-stop-saying-things-i-regret-to-the-people-i-love.webp"
               alt="How do I stop saying things I regret to the people I love? - Fountain of Grace International"
-              width={1080}
-              height={1350}
-              loading="lazy"
+              width={680}
+              height={850}
+              loading="eager"
+              fetchPriority="high"
               decoding="async"
               className="w-full max-w-[340px] mx-auto rounded-xl shadow-sm"
             />

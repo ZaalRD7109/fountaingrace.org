@@ -41,11 +41,12 @@ export default function DevotionalPage() {
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto">
             <img
-              src="https://www.fountaingrace.org/devotional-cards/how-do-i-know-if-someone-loves-me-or-just-needs-me.jpg"
+              src="https://www.fountaingrace.org/devotional-cards/w680/how-do-i-know-if-someone-loves-me-or-just-needs-me.webp"
               alt="How do I know if someone loves me or just needs me? - Fountain of Grace International"
-              width={1080}
-              height={1350}
-              loading="lazy"
+              width={680}
+              height={850}
+              loading="eager"
+              fetchPriority="high"
               decoding="async"
               className="w-full max-w-[340px] mx-auto rounded-xl shadow-sm"
             />

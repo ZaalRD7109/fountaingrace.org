@@ -8,7 +8,7 @@ export const devotionals: Devo[] = [
     "day": 229,
     "headline": "What if I am not ready to forgive and I know it?",
     "verseRef": "Mark 11:25",
-    "card": "/devotional-cards/what-if-i-am-not-ready-to-forgive-and-i-know-it.jpg"
+    "card": "/devotional-cards/w680/what-if-i-am-not-ready-to-forgive-and-i-know-it.webp"
   },
   {
     "slug": "how-do-i-actually-forgive-someone-who-never-said-sorry",
@@ -17,7 +17,7 @@ export const devotionals: Devo[] = [
     "day": 228,
     "headline": "How do I actually forgive someone who never said sorry?",
     "verseRef": "Ephesians 4:32",
-    "card": "/devotional-cards/how-do-i-actually-forgive-someone-who-never-said-sorry.jpg"
+    "card": "/devotional-cards/w680/how-do-i-actually-forgive-someone-who-never-said-sorry.webp"
   },
   {
     "slug": "does-god-actually-care-about-the-wound-i-cannot-stop-carrying",
@@ -26,7 +26,7 @@ export const devotionals: Devo[] = [
     "day": 227,
     "headline": "Does God actually care about the wound I cannot stop carrying?",
     "verseRef": "Psalm 147:3",
-    "card": "/devotional-cards/does-god-actually-care-about-the-wound-i-cannot-stop-carrying.jpg"
+    "card": "/devotional-cards/w680/does-god-actually-care-about-the-wound-i-cannot-stop-carrying.webp"
   },
   {
     "slug": "why-does-holding-a-grudge-hurt-me-more-than-them",
@@ -35,7 +35,7 @@ export const devotionals: Devo[] = [
     "day": 226,
     "headline": "Why does holding a grudge hurt me more than them?",
     "verseRef": "Psalm 55:22",
-    "card": "/devotional-cards/why-does-holding-a-grudge-hurt-me-more-than-them.jpg"
+    "card": "/devotional-cards/w680/why-does-holding-a-grudge-hurt-me-more-than-them.webp"
   },
   {
     "slug": "why-cant-i-just-let-it-go-even-when-i-want-to",
@@ -44,7 +44,7 @@ export const devotionals: Devo[] = [
     "day": 225,
     "headline": "Why can't I just let it go even when I want to?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/why-cant-i-just-let-it-go-even-when-i-want-to.jpg"
+    "card": "/devotional-cards/w680/why-cant-i-just-let-it-go-even-when-i-want-to.webp"
   },
   {
     "slug": "will-gods-faithfulness-hold-for-my-whole-life",
@@ -53,7 +53,7 @@ export const devotionals: Devo[] = [
     "day": 224,
     "headline": "Will God's faithfulness hold for my whole life?",
     "verseRef": "Psalm 23:6",
-    "card": "/devotional-cards/will-gods-faithfulness-hold-for-my-whole-life.jpg"
+    "card": "/devotional-cards/w680/will-gods-faithfulness-hold-for-my-whole-life.webp"
   },
   {
     "slug": "is-god-actually-doing-something-while-nothing-is-happening",
@@ -62,7 +62,7 @@ export const devotionals: Devo[] = [
     "day": 223,
     "headline": "Is God actually doing something while nothing is happening?",
     "verseRef": "James 1:4",
-    "card": "/devotional-cards/is-god-actually-doing-something-while-nothing-is-happening.jpg"
+    "card": "/devotional-cards/w680/is-god-actually-doing-something-while-nothing-is-happening.webp"
   },
   {
     "slug": "what-if-my-waiting-is-actually-doing-something-in-me",
@@ -71,7 +71,7 @@ export const devotionals: Devo[] = [
     "day": 222,
     "headline": "What if my waiting is actually doing something in me?",
     "verseRef": "Romans 5:3-4",
-    "card": "/devotional-cards/what-if-my-waiting-is-actually-doing-something-in-me.jpg"
+    "card": "/devotional-cards/w680/what-if-my-waiting-is-actually-doing-something-in-me.webp"
   },
   {
     "slug": "how-do-i-stop-losing-my-mind-while-i-wait",
@@ -80,7 +80,7 @@ export const devotionals: Devo[] = [
     "day": 221,
     "headline": "How do I stop losing my mind while I wait?",
     "verseRef": "Psalm 46:10",
-    "card": "/devotional-cards/how-do-i-stop-losing-my-mind-while-i-wait.jpg"
+    "card": "/devotional-cards/w680/how-do-i-stop-losing-my-mind-while-i-wait.webp"
   },
   {
     "slug": "how-long-does-god-expect-me-to-keep-waiting",
@@ -89,7 +89,7 @@ export const devotionals: Devo[] = [
     "day": 220,
     "headline": "How long does God expect me to keep waiting?",
     "verseRef": "Psalm 27:14",
-    "card": "/devotional-cards/how-long-does-god-expect-me-to-keep-waiting.jpg"
+    "card": "/devotional-cards/w680/how-long-does-god-expect-me-to-keep-waiting.webp"
   },
   {
     "slug": "does-god-even-notice-how-tired-of-waiting-i-am",
@@ -98,7 +98,7 @@ export const devotionals: Devo[] = [
     "day": 219,
     "headline": "Does God even notice how tired of waiting I am?",
     "verseRef": "Psalm 13:1-2",
-    "card": "/devotional-cards/does-god-even-notice-how-tired-of-waiting-i-am.jpg"
+    "card": "/devotional-cards/w680/does-god-even-notice-how-tired-of-waiting-i-am.webp"
   },
   {
     "slug": "why-does-it-feel-like-god-has-forgotten-about-me",
@@ -107,7 +107,7 @@ export const devotionals: Devo[] = [
     "day": 218,
     "headline": "Why does it feel like God has forgotten about me?",
     "verseRef": "Isaiah 49:15-16",
-    "card": "/devotional-cards/why-does-it-feel-like-god-has-forgotten-about-me.jpg"
+    "card": "/devotional-cards/w680/why-does-it-feel-like-god-has-forgotten-about-me.webp"
   },
   {
     "slug": "will-god-still-provide-when-the-whole-year-has-been-hard",
@@ -116,7 +116,7 @@ export const devotionals: Devo[] = [
     "day": 217,
     "headline": "Will God still provide when the whole year has been hard?",
     "verseRef": "Psalm 37:25",
-    "card": "/devotional-cards/will-god-still-provide-when-the-whole-year-has-been-hard.jpg"
+    "card": "/devotional-cards/w680/will-god-still-provide-when-the-whole-year-has-been-hard.webp"
   },
   {
     "slug": "will-this-money-stress-ever-actually-make-me-stronger",
@@ -125,7 +125,7 @@ export const devotionals: Devo[] = [
     "day": 216,
     "headline": "Will this money stress ever actually make me stronger?",
     "verseRef": "Romans 5:4",
-    "card": "/devotional-cards/will-this-money-stress-ever-actually-make-me-stronger.jpg"
+    "card": "/devotional-cards/w680/will-this-money-stress-ever-actually-make-me-stronger.webp"
   },
   {
     "slug": "is-holding-back-money-the-same-as-not-trusting-god",
@@ -134,7 +134,7 @@ export const devotionals: Devo[] = [
     "day": 215,
     "headline": "Is holding back money the same as not trusting God?",
     "verseRef": "Proverbs 11:24",
-    "card": "/devotional-cards/is-holding-back-money-the-same-as-not-trusting-god.jpg"
+    "card": "/devotional-cards/w680/is-holding-back-money-the-same-as-not-trusting-god.webp"
   },
   {
     "slug": "does-god-actually-have-practical-advice-for-my-money-problems",
@@ -143,7 +143,7 @@ export const devotionals: Devo[] = [
     "day": 214,
     "headline": "Does God actually have practical advice for my money problems?",
     "verseRef": "Proverbs 21:5",
-    "card": "/devotional-cards/does-god-actually-have-practical-advice-for-my-money-problems.jpg"
+    "card": "/devotional-cards/w680/does-god-actually-have-practical-advice-for-my-money-problems.webp"
   },
   {
     "slug": "is-god-actually-aware-of-what-i-cannot-afford-right-now",
@@ -152,7 +152,7 @@ export const devotionals: Devo[] = [
     "day": 213,
     "headline": "Is God actually aware of what I cannot afford right now?",
     "verseRef": "Matthew 6:31-32",
-    "card": "/devotional-cards/is-god-actually-aware-of-what-i-cannot-afford-right-now.jpg"
+    "card": "/devotional-cards/w680/is-god-actually-aware-of-what-i-cannot-afford-right-now.webp"
   },
   {
     "slug": "why-do-i-feel-ashamed-that-i-am-struggling-financially",
@@ -161,7 +161,7 @@ export const devotionals: Devo[] = [
     "day": 212,
     "headline": "Why do I feel ashamed that I am struggling financially?",
     "verseRef": "Psalm 34:10",
-    "card": "/devotional-cards/why-do-i-feel-ashamed-that-i-am-struggling-financially.jpg"
+    "card": "/devotional-cards/w680/why-do-i-feel-ashamed-that-i-am-struggling-financially.webp"
   },
   {
     "slug": "why-does-money-stress-feel-like-it-never-fully-goes-away",
@@ -170,7 +170,7 @@ export const devotionals: Devo[] = [
     "day": 211,
     "headline": "Why does money stress feel like it never fully goes away?",
     "verseRef": "Philippians 4:19",
-    "card": "/devotional-cards/why-does-money-stress-feel-like-it-never-fully-goes-away.jpg"
+    "card": "/devotional-cards/w680/why-does-money-stress-feel-like-it-never-fully-goes-away.webp"
   },
   {
     "slug": "will-the-small-things-i-did-for-my-family-actually-matter-in-the-end",
@@ -179,7 +179,7 @@ export const devotionals: Devo[] = [
     "day": 210,
     "headline": "Will the small things I did for my family actually matter in the end?",
     "verseRef": "Psalm 90:17",
-    "card": "/devotional-cards/will-the-small-things-i-did-for-my-family-actually-matter-in-the-end.jpg"
+    "card": "/devotional-cards/w680/will-the-small-things-i-did-for-my-family-actually-matter-in-the-end.webp"
   },
   {
     "slug": "is-god-actually-doing-something-with-the-mess-in-my-home",
@@ -188,7 +188,7 @@ export const devotionals: Devo[] = [
     "day": 209,
     "headline": "Is God actually doing something with the mess in my home?",
     "verseRef": "1 Corinthians 3:9",
-    "card": "/devotional-cards/is-god-actually-doing-something-with-the-mess-in-my-home.jpg"
+    "card": "/devotional-cards/w680/is-god-actually-doing-something-with-the-mess-in-my-home.webp"
   },
   {
     "slug": "am-i-actually-present-at-home-or-just-physically-there",
@@ -197,7 +197,7 @@ export const devotionals: Devo[] = [
     "day": 208,
     "headline": "Am I actually present at home, or just physically there?",
     "verseRef": "Deuteronomy 6:6-7",
-    "card": "/devotional-cards/am-i-actually-present-at-home-or-just-physically-there.jpg"
+    "card": "/devotional-cards/w680/am-i-actually-present-at-home-or-just-physically-there.webp"
   },
   {
     "slug": "how-do-i-stop-saying-things-i-regret-to-the-people-i-love",
@@ -206,7 +206,7 @@ export const devotionals: Devo[] = [
     "day": 207,
     "headline": "How do I stop saying things I regret to the people I love?",
     "verseRef": "Proverbs 21:23",
-    "card": "/devotional-cards/how-do-i-stop-saying-things-i-regret-to-the-people-i-love.jpg"
+    "card": "/devotional-cards/w680/how-do-i-stop-saying-things-i-regret-to-the-people-i-love.webp"
   },
   {
     "slug": "is-it-possible-to-actually-love-my-family-well-when-im-this-depleted",
@@ -215,7 +215,7 @@ export const devotionals: Devo[] = [
     "day": 206,
     "headline": "Is it possible to actually love my family well when I'm this depleted?",
     "verseRef": "Isaiah 40:31",
-    "card": "/devotional-cards/is-it-possible-to-actually-love-my-family-well-when-im-this-depleted.jpg"
+    "card": "/devotional-cards/w680/is-it-possible-to-actually-love-my-family-well-when-im-this-depleted.webp"
   },
   {
     "slug": "why-do-i-snap-at-the-people-i-love-most",
@@ -224,7 +224,7 @@ export const devotionals: Devo[] = [
     "day": 205,
     "headline": "Why do I snap at the people I love most?",
     "verseRef": "Proverbs 15:1",
-    "card": "/devotional-cards/why-do-i-snap-at-the-people-i-love-most.jpg"
+    "card": "/devotional-cards/w680/why-do-i-snap-at-the-people-i-love-most.webp"
   },
   {
     "slug": "how-do-i-stay-calm-when-home-feels-chaotic",
@@ -233,7 +233,7 @@ export const devotionals: Devo[] = [
     "day": 204,
     "headline": "How do I stay calm when home feels chaotic?",
     "verseRef": "Psalm 46:1",
-    "card": "/devotional-cards/how-do-i-stay-calm-when-home-feels-chaotic.jpg"
+    "card": "/devotional-cards/w680/how-do-i-stay-calm-when-home-feels-chaotic.webp"
   },
   {
     "slug": "when-i-look-back-at-my-life-has-god-actually-been-faithful",
@@ -242,7 +242,7 @@ export const devotionals: Devo[] = [
     "day": 203,
     "headline": "When I look back at my life, has God actually been faithful?",
     "verseRef": "Psalm 23:6",
-    "card": "/devotional-cards/when-i-look-back-at-my-life-has-god-actually-been-faithful.jpg"
+    "card": "/devotional-cards/w680/when-i-look-back-at-my-life-has-god-actually-been-faithful.webp"
   },
   {
     "slug": "what-is-god-actually-doing-while-i-am-this-exhausted",
@@ -251,7 +251,7 @@ export const devotionals: Devo[] = [
     "day": 202,
     "headline": "What is God actually doing while I am this exhausted?",
     "verseRef": "Romans 5:3-4",
-    "card": "/devotional-cards/what-is-god-actually-doing-while-i-am-this-exhausted.jpg"
+    "card": "/devotional-cards/w680/what-is-god-actually-doing-while-i-am-this-exhausted.webp"
   },
   {
     "slug": "am-i-resting-in-god-or-just-avoiding-the-hard-thing",
@@ -260,7 +260,7 @@ export const devotionals: Devo[] = [
     "day": 201,
     "headline": "Am I resting in God or just avoiding the hard thing?",
     "verseRef": "Psalm 46:10",
-    "card": "/devotional-cards/am-i-resting-in-god-or-just-avoiding-the-hard-thing.jpg"
+    "card": "/devotional-cards/w680/am-i-resting-in-god-or-just-avoiding-the-hard-thing.webp"
   },
   {
     "slug": "how-do-i-know-when-to-push-through-and-when-to-stop",
@@ -269,7 +269,7 @@ export const devotionals: Devo[] = [
     "day": 200,
     "headline": "How do I know when to push through and when to stop?",
     "verseRef": "Proverbs 4:26",
-    "card": "/devotional-cards/how-do-i-know-when-to-push-through-and-when-to-stop.jpg"
+    "card": "/devotional-cards/w680/how-do-i-know-when-to-push-through-and-when-to-stop.webp"
   },
   {
     "slug": "what-if-i-cant-stop-feeling-overwhelmed",
@@ -278,7 +278,7 @@ export const devotionals: Devo[] = [
     "day": 199,
     "headline": "What if I can't stop feeling overwhelmed?",
     "verseRef": "Isaiah 41:10",
-    "card": "/devotional-cards/what-if-i-cant-stop-feeling-overwhelmed.jpg"
+    "card": "/devotional-cards/w680/what-if-i-cant-stop-feeling-overwhelmed.webp"
   },
   {
     "slug": "why-do-i-feel-so-tired-inside-all-the-time",
@@ -287,7 +287,7 @@ export const devotionals: Devo[] = [
     "day": 198,
     "headline": "Why do I feel so tired inside all the time?",
     "verseRef": "Isaiah 40:29",
-    "card": "/devotional-cards/why-do-i-feel-so-tired-inside-all-the-time.jpg"
+    "card": "/devotional-cards/w680/why-do-i-feel-so-tired-inside-all-the-time.webp"
   },
   {
     "slug": "how-do-i-find-rest-when-im-overwhelmed",
@@ -296,7 +296,7 @@ export const devotionals: Devo[] = [
     "day": 197,
     "headline": "How do I find rest when I'm overwhelmed?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/how-do-i-find-rest-when-im-overwhelmed.jpg"
+    "card": "/devotional-cards/w680/how-do-i-find-rest-when-im-overwhelmed.webp"
   },
   {
     "slug": "how-does-gods-faithfulness-look-over-my-whole-life",
@@ -305,7 +305,7 @@ export const devotionals: Devo[] = [
     "day": 196,
     "headline": "How does God's faithfulness look over my whole life?",
     "verseRef": "Lamentations 3:22-23",
-    "card": "/devotional-cards/how-does-gods-faithfulness-look-over-my-whole-life.jpg"
+    "card": "/devotional-cards/w680/how-does-gods-faithfulness-look-over-my-whole-life.webp"
   },
   {
     "slug": "how-can-i-see-what-god-is-forming-in-me",
@@ -314,7 +314,7 @@ export const devotionals: Devo[] = [
     "day": 195,
     "headline": "How can I see what God is forming in me?",
     "verseRef": "Philippians 1:6",
-    "card": "/devotional-cards/how-can-i-see-what-god-is-forming-in-me.jpg"
+    "card": "/devotional-cards/w680/how-can-i-see-what-god-is-forming-in-me.webp"
   },
   {
     "slug": "how-do-i-keep-joy-when-i-keep-comparing-myself",
@@ -323,7 +323,7 @@ export const devotionals: Devo[] = [
     "day": 194,
     "headline": "How do I keep joy when I keep comparing myself?",
     "verseRef": "2 Corinthians 10:12",
-    "card": "/devotional-cards/how-do-i-keep-joy-when-i-keep-comparing-myself.jpg"
+    "card": "/devotional-cards/w680/how-do-i-keep-joy-when-i-keep-comparing-myself.webp"
   },
   {
     "slug": "how-do-i-stop-my-mind-from-ruining-a-good-day",
@@ -332,7 +332,7 @@ export const devotionals: Devo[] = [
     "day": 193,
     "headline": "How do I stop my mind from ruining a good day?",
     "verseRef": "Philippians 4:8",
-    "card": "/devotional-cards/how-do-i-stop-my-mind-from-ruining-a-good-day.jpg"
+    "card": "/devotional-cards/w680/how-do-i-stop-my-mind-from-ruining-a-good-day.webp"
   },
   {
     "slug": "can-you-really-be-joyful-when-nothing-has-changed-yet",
@@ -341,7 +341,7 @@ export const devotionals: Devo[] = [
     "day": 192,
     "headline": "Can you really be joyful when nothing has changed yet?",
     "verseRef": "Habakkuk 3:17-18",
-    "card": "/devotional-cards/can-you-really-be-joyful-when-nothing-has-changed-yet.jpg"
+    "card": "/devotional-cards/w680/can-you-really-be-joyful-when-nothing-has-changed-yet.webp"
   },
   {
     "slug": "how-do-you-stay-grateful-when-life-just-feels-heavy",
@@ -350,7 +350,7 @@ export const devotionals: Devo[] = [
     "day": 191,
     "headline": "How do you stay grateful when life just feels heavy?",
     "verseRef": "Psalm 34:18",
-    "card": "/devotional-cards/how-do-you-stay-grateful-when-life-just-feels-heavy.jpg"
+    "card": "/devotional-cards/w680/how-do-you-stay-grateful-when-life-just-feels-heavy.webp"
   },
   {
     "slug": "why-does-it-feel-like-i-have-nothing-to-be-thankful-for",
@@ -359,7 +359,7 @@ export const devotionals: Devo[] = [
     "day": 190,
     "headline": "Why does it feel like I have nothing to be thankful for?",
     "verseRef": "Psalm 103:2",
-    "card": "/devotional-cards/why-does-it-feel-like-i-have-nothing-to-be-thankful-for.jpg"
+    "card": "/devotional-cards/w680/why-does-it-feel-like-i-have-nothing-to-be-thankful-for.webp"
   },
   {
     "slug": "does-god-actually-remember-everything-i-have-been-through",
@@ -368,7 +368,7 @@ export const devotionals: Devo[] = [
     "day": 189,
     "headline": "Does God actually remember everything I have been through?",
     "verseRef": "Psalm 77:11",
-    "card": "/devotional-cards/does-god-actually-remember-everything-i-have-been-through.jpg"
+    "card": "/devotional-cards/w680/does-god-actually-remember-everything-i-have-been-through.webp"
   },
   {
     "slug": "is-god-doing-something-in-me-even-when-prayer-feels-pointless",
@@ -377,7 +377,7 @@ export const devotionals: Devo[] = [
     "day": 188,
     "headline": "Is God doing something in me even when prayer feels pointless?",
     "verseRef": "James 1:3-4",
-    "card": "/devotional-cards/is-god-doing-something-in-me-even-when-prayer-feels-pointless.jpg"
+    "card": "/devotional-cards/w680/is-god-doing-something-in-me-even-when-prayer-feels-pointless.webp"
   },
   {
     "slug": "what-if-god-is-waiting-for-me-to-be-honest-with-him",
@@ -386,7 +386,7 @@ export const devotionals: Devo[] = [
     "day": 187,
     "headline": "What if God is waiting for me to be honest with Him?",
     "verseRef": "Psalm 62:8",
-    "card": "/devotional-cards/what-if-god-is-waiting-for-me-to-be-honest-with-him.jpg"
+    "card": "/devotional-cards/w680/what-if-god-is-waiting-for-me-to-be-honest-with-him.webp"
   },
   {
     "slug": "you-pray-the-same-thing-every-day-and-wonder-why",
@@ -395,7 +395,7 @@ export const devotionals: Devo[] = [
     "day": 186,
     "headline": "You pray the same thing every day and wonder why",
     "verseRef": "Romans 8:26",
-    "card": "/devotional-cards/you-pray-the-same-thing-every-day-and-wonder-why.jpg"
+    "card": "/devotional-cards/w680/you-pray-the-same-thing-every-day-and-wonder-why.webp"
   },
   {
     "slug": "is-it-too-late-to-make-up-for-missing-time-with-my-child",
@@ -404,7 +404,7 @@ export const devotionals: Devo[] = [
     "day": 185,
     "headline": "Is it too late to make up for missing time with my child?",
     "verseRef": "Matthew 19:14",
-    "card": "/devotional-cards/is-it-too-late-to-make-up-for-missing-time-with-my-child.jpg"
+    "card": "/devotional-cards/w680/is-it-too-late-to-make-up-for-missing-time-with-my-child.webp"
   },
   {
     "slug": "why-does-spending-time-with-my-family-still-feel-empty",
@@ -413,7 +413,7 @@ export const devotionals: Devo[] = [
     "day": 184,
     "headline": "Why does spending time with my family still feel empty?",
     "verseRef": "Matthew 22:37-39",
-    "card": "/devotional-cards/why-does-spending-time-with-my-family-still-feel-empty.jpg"
+    "card": "/devotional-cards/w680/why-does-spending-time-with-my-family-still-feel-empty.webp"
   },
   {
     "slug": "why-am-i-always-busy-but-still-feel-like-nothing-matters",
@@ -422,7 +422,7 @@ export const devotionals: Devo[] = [
     "day": 183,
     "headline": "Why am I always busy but still feel like nothing matters?",
     "verseRef": "Psalm 46:10",
-    "card": "/devotional-cards/why-am-i-always-busy-but-still-feel-like-nothing-matters.jpg"
+    "card": "/devotional-cards/w680/why-am-i-always-busy-but-still-feel-like-nothing-matters.webp"
   },
   {
     "slug": "why-do-i-feel-empty-even-when-i-get-everything-done",
@@ -431,7 +431,7 @@ export const devotionals: Devo[] = [
     "day": 182,
     "headline": "Why do I feel empty even when I get everything done?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/why-do-i-feel-empty-even-when-i-get-everything-done.jpg"
+    "card": "/devotional-cards/w680/why-do-i-feel-empty-even-when-i-get-everything-done.webp"
   },
   {
     "slug": "is-it-okay-to-cry-even-when-you-believe-in-god",
@@ -440,7 +440,7 @@ export const devotionals: Devo[] = [
     "day": 181,
     "headline": "Is it okay to cry even when you believe in God?",
     "verseRef": "John 11:35",
-    "card": "/devotional-cards/is-it-okay-to-cry-even-when-you-believe-in-god.jpg"
+    "card": "/devotional-cards/w680/is-it-okay-to-cry-even-when-you-believe-in-god.webp"
   },
   {
     "slug": "is-it-okay-to-have-doubts-about-your-faith",
@@ -449,7 +449,7 @@ export const devotionals: Devo[] = [
     "day": 180,
     "headline": "Is it okay to have doubts about your faith?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/is-it-okay-to-have-doubts-about-your-faith.jpg"
+    "card": "/devotional-cards/w680/is-it-okay-to-have-doubts-about-your-faith.webp"
   },
   {
     "slug": "is-it-weak-to-ask-for-help-when-you-are-struggling",
@@ -458,7 +458,7 @@ export const devotionals: Devo[] = [
     "day": 179,
     "headline": "Is it weak to ask for help when you are struggling?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/is-it-weak-to-ask-for-help-when-you-are-struggling.jpg"
+    "card": "/devotional-cards/w680/is-it-weak-to-ask-for-help-when-you-are-struggling.webp"
   },
   {
     "slug": "how-do-i-tell-someone-i-care-about-them-without-being-scared",
@@ -467,7 +467,7 @@ export const devotionals: Devo[] = [
     "day": 178,
     "headline": "How do I tell someone I care about them without being scared?",
     "verseRef": "Matthew 7:12",
-    "card": "/devotional-cards/how-do-i-tell-someone-i-care-about-them-without-being-scared.jpg"
+    "card": "/devotional-cards/w680/how-do-i-tell-someone-i-care-about-them-without-being-scared.webp"
   },
   {
     "slug": "is-it-okay-to-finally-leave-something-i-stayed-in-too-long",
@@ -476,7 +476,7 @@ export const devotionals: Devo[] = [
     "day": 177,
     "headline": "Is it okay to finally leave something I stayed in too long?",
     "verseRef": "John 8:32",
-    "card": "/devotional-cards/is-it-okay-to-finally-leave-something-i-stayed-in-too-long.jpg"
+    "card": "/devotional-cards/w680/is-it-okay-to-finally-leave-something-i-stayed-in-too-long.webp"
   },
   {
     "slug": "is-it-okay-to-stop-pretending-everything-is-fine",
@@ -485,7 +485,7 @@ export const devotionals: Devo[] = [
     "day": 176,
     "headline": "Is it okay to stop pretending everything is fine?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/is-it-okay-to-stop-pretending-everything-is-fine.jpg"
+    "card": "/devotional-cards/w680/is-it-okay-to-stop-pretending-everything-is-fine.webp"
   },
   {
     "slug": "is-it-okay-to-cry-and-grieve-when-you-are-a-christian",
@@ -494,7 +494,7 @@ export const devotionals: Devo[] = [
     "day": 175,
     "headline": "Is it okay to cry and grieve when you are a Christian?",
     "verseRef": "John 11:35",
-    "card": "/devotional-cards/is-it-okay-to-cry-and-grieve-when-you-are-a-christian.jpg"
+    "card": "/devotional-cards/w680/is-it-okay-to-cry-and-grieve-when-you-are-a-christian.webp"
   },
   {
     "slug": "how-do-i-stop-performing-and-just-be-myself",
@@ -503,7 +503,7 @@ export const devotionals: Devo[] = [
     "day": 174,
     "headline": "How do I stop performing and just be myself?",
     "verseRef": "Genesis 16:13",
-    "card": "/devotional-cards/how-do-i-stop-performing-and-just-be-myself.jpg"
+    "card": "/devotional-cards/w680/how-do-i-stop-performing-and-just-be-myself.webp"
   },
   {
     "slug": "why-am-i-so-exhausted-from-trying-to-keep-everyone-happy",
@@ -512,7 +512,7 @@ export const devotionals: Devo[] = [
     "day": 173,
     "headline": "Why am I so exhausted from trying to keep everyone happy?",
     "verseRef": "Galatians 1:10",
-    "card": "/devotional-cards/why-am-i-so-exhausted-from-trying-to-keep-everyone-happy.jpg"
+    "card": "/devotional-cards/w680/why-am-i-so-exhausted-from-trying-to-keep-everyone-happy.webp"
   },
   {
     "slug": "is-it-okay-to-admit-i-am-struggling-and-need-help",
@@ -521,7 +521,7 @@ export const devotionals: Devo[] = [
     "day": 172,
     "headline": "Is it okay to admit I am struggling and need help?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/is-it-okay-to-admit-i-am-struggling-and-need-help.jpg"
+    "card": "/devotional-cards/w680/is-it-okay-to-admit-i-am-struggling-and-need-help.webp"
   },
   {
     "slug": "why-do-i-always-stay-quiet-and-hide-who-i-really-am",
@@ -530,7 +530,7 @@ export const devotionals: Devo[] = [
     "day": 171,
     "headline": "Why do I always stay quiet and hide who I really am?",
     "verseRef": "Matthew 5:14",
-    "card": "/devotional-cards/why-do-i-always-stay-quiet-and-hide-who-i-really-am.jpg"
+    "card": "/devotional-cards/w680/why-do-i-always-stay-quiet-and-hide-who-i-really-am.webp"
   },
   {
     "slug": "why-am-i-always-pretending-to-be-okay-around-people",
@@ -539,7 +539,7 @@ export const devotionals: Devo[] = [
     "day": 170,
     "headline": "Why am I always pretending to be okay around people?",
     "verseRef": "John 8:32",
-    "card": "/devotional-cards/why-am-i-always-pretending-to-be-okay-around-people.jpg"
+    "card": "/devotional-cards/w680/why-am-i-always-pretending-to-be-okay-around-people.webp"
   },
   {
     "slug": "why-do-i-feel-so-alone-even-when-everyone-depends-on-me",
@@ -548,7 +548,7 @@ export const devotionals: Devo[] = [
     "day": 169,
     "headline": "Why do I feel so alone even when everyone depends on me?",
     "verseRef": "2 Corinthians 5:17",
-    "card": "/devotional-cards/why-do-i-feel-so-alone-even-when-everyone-depends-on-me.jpg"
+    "card": "/devotional-cards/w680/why-do-i-feel-so-alone-even-when-everyone-depends-on-me.webp"
   },
   {
     "slug": "why-do-i-act-like-a-different-person-around-different-people",
@@ -557,7 +557,7 @@ export const devotionals: Devo[] = [
     "day": 168,
     "headline": "Why do I act like a different person around different people?",
     "verseRef": "Matthew 5:48",
-    "card": "/devotional-cards/why-do-i-act-like-a-different-person-around-different-people.jpg"
+    "card": "/devotional-cards/w680/why-do-i-act-like-a-different-person-around-different-people.webp"
   },
   {
     "slug": "how-do-i-actually-rest-when-my-mind-wont-stop",
@@ -566,7 +566,7 @@ export const devotionals: Devo[] = [
     "day": 167,
     "headline": "How do I actually rest when my mind won't stop?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/how-do-i-actually-rest-when-my-mind-wont-stop.jpg"
+    "card": "/devotional-cards/w680/how-do-i-actually-rest-when-my-mind-wont-stop.webp"
   },
   {
     "slug": "how-do-i-find-my-purpose-again-when-i-feel-completely-burnt-out",
@@ -575,7 +575,7 @@ export const devotionals: Devo[] = [
     "day": 166,
     "headline": "How do I find my purpose again when I feel completely burnt out?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/how-do-i-find-my-purpose-again-when-i-feel-completely-burnt-out.jpg"
+    "card": "/devotional-cards/w680/how-do-i-find-my-purpose-again-when-i-feel-completely-burnt-out.webp"
   },
   {
     "slug": "why-am-i-always-tired-no-matter-how-much-i-rest",
@@ -584,7 +584,7 @@ export const devotionals: Devo[] = [
     "day": 165,
     "headline": "Why am I always tired no matter how much I rest?",
     "verseRef": "Matthew 26:41",
-    "card": "/devotional-cards/why-am-i-always-tired-no-matter-how-much-i-rest.jpg"
+    "card": "/devotional-cards/w680/why-am-i-always-tired-no-matter-how-much-i-rest.webp"
   },
   {
     "slug": "why-do-i-feel-exhausted-from-always-trying-to-hold-everything-together",
@@ -593,7 +593,7 @@ export const devotionals: Devo[] = [
     "day": 164,
     "headline": "Why do I feel exhausted from always trying to hold everything together?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/why-do-i-feel-exhausted-from-always-trying-to-hold-everything-together.jpg"
+    "card": "/devotional-cards/w680/why-do-i-feel-exhausted-from-always-trying-to-hold-everything-together.webp"
   },
   {
     "slug": "how-do-i-know-if-im-running-toward-the-wrong-goal-in-life",
@@ -602,7 +602,7 @@ export const devotionals: Devo[] = [
     "day": 163,
     "headline": "How do I know if I'm running toward the wrong goal in life?",
     "verseRef": "Romans 8:2",
-    "card": "/devotional-cards/how-do-i-know-if-im-running-toward-the-wrong-goal-in-life.jpg"
+    "card": "/devotional-cards/w680/how-do-i-know-if-im-running-toward-the-wrong-goal-in-life.webp"
   },
   {
     "slug": "why-do-i-feel-guilty-saying-no-to-people-who-need-me",
@@ -611,7 +611,7 @@ export const devotionals: Devo[] = [
     "day": 162,
     "headline": "Why do I feel guilty saying no to people who need me?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/why-do-i-feel-guilty-saying-no-to-people-who-need-me.jpg"
+    "card": "/devotional-cards/w680/why-do-i-feel-guilty-saying-no-to-people-who-need-me.webp"
   },
   {
     "slug": "why-am-i-exhausted-even-after-sleeping-enough",
@@ -620,7 +620,7 @@ export const devotionals: Devo[] = [
     "day": 161,
     "headline": "Why am I exhausted even after sleeping enough?",
     "verseRef": "Romans 12:2",
-    "card": "/devotional-cards/why-am-i-exhausted-even-after-sleeping-enough.jpg"
+    "card": "/devotional-cards/w680/why-am-i-exhausted-even-after-sleeping-enough.webp"
   },
   {
     "slug": "why-have-i-lost-my-drive-now-that-im-more-successful",
@@ -629,7 +629,7 @@ export const devotionals: Devo[] = [
     "day": 160,
     "headline": "Why have I lost my drive now that I'm more successful?",
     "verseRef": "Revelation 3:17",
-    "card": "/devotional-cards/why-have-i-lost-my-drive-now-that-im-more-successful.jpg"
+    "card": "/devotional-cards/w680/why-have-i-lost-my-drive-now-that-im-more-successful.webp"
   },
   {
     "slug": "how-do-i-stop-being-too-scared-to-start-something-new",
@@ -638,7 +638,7 @@ export const devotionals: Devo[] = [
     "day": 159,
     "headline": "How do I stop being too scared to start something new?",
     "verseRef": "2 Timothy 1:7",
-    "card": "/devotional-cards/how-do-i-stop-being-too-scared-to-start-something-new.jpg"
+    "card": "/devotional-cards/w680/how-do-i-stop-being-too-scared-to-start-something-new.webp"
   },
   {
     "slug": "why-do-i-keep-talking-about-my-goals-but-never-actually-start",
@@ -647,7 +647,7 @@ export const devotionals: Devo[] = [
     "day": 158,
     "headline": "Why do I keep talking about my goals but never actually start?",
     "verseRef": "James 2:17",
-    "card": "/devotional-cards/why-do-i-keep-talking-about-my-goals-but-never-actually-start.jpg"
+    "card": "/devotional-cards/w680/why-do-i-keep-talking-about-my-goals-but-never-actually-start.webp"
   },
   {
     "slug": "what-if-i-start-something-but-cant-keep-it-going",
@@ -656,7 +656,7 @@ export const devotionals: Devo[] = [
     "day": 157,
     "headline": "What if I start something but can't keep it going?",
     "verseRef": "2 Timothy 1:7",
-    "card": "/devotional-cards/what-if-i-start-something-but-cant-keep-it-going.jpg"
+    "card": "/devotional-cards/w680/what-if-i-start-something-but-cant-keep-it-going.webp"
   },
   {
     "slug": "how-do-i-stop-waiting-for-a-sign-and-just-start",
@@ -665,7 +665,7 @@ export const devotionals: Devo[] = [
     "day": 156,
     "headline": "How do I stop waiting for a sign and just start?",
     "verseRef": "James 4:17",
-    "card": "/devotional-cards/how-do-i-stop-waiting-for-a-sign-and-just-start.jpg"
+    "card": "/devotional-cards/w680/how-do-i-stop-waiting-for-a-sign-and-just-start.webp"
   },
   {
     "slug": "how-do-i-stop-over-researching-and-actually-start-doing-the-thing",
@@ -674,7 +674,7 @@ export const devotionals: Devo[] = [
     "day": 155,
     "headline": "How do I stop over-researching and actually start doing the thing?",
     "verseRef": "James 2:26",
-    "card": "/devotional-cards/how-do-i-stop-over-researching-and-actually-start-doing-the-thing.jpg"
+    "card": "/devotional-cards/w680/how-do-i-stop-over-researching-and-actually-start-doing-the-thing.webp"
   },
   {
     "slug": "how-do-i-stop-waiting-until-i-feel-ready-to-start",
@@ -683,7 +683,7 @@ export const devotionals: Devo[] = [
     "day": 154,
     "headline": "How do I stop waiting until I feel ready to start?",
     "verseRef": "2 Corinthians 5:7",
-    "card": "/devotional-cards/how-do-i-stop-waiting-until-i-feel-ready-to-start.jpg"
+    "card": "/devotional-cards/w680/how-do-i-stop-waiting-until-i-feel-ready-to-start.webp"
   },
   {
     "slug": "why-do-i-feel-so-lonely-even-though-i-have-lots-of-friends",
@@ -692,7 +692,7 @@ export const devotionals: Devo[] = [
     "day": 153,
     "headline": "Why do I feel so lonely even though I have lots of friends?",
     "verseRef": "Proverbs 18:24",
-    "card": "/devotional-cards/why-do-i-feel-so-lonely-even-though-i-have-lots-of-friends.jpg"
+    "card": "/devotional-cards/w680/why-do-i-feel-so-lonely-even-though-i-have-lots-of-friends.webp"
   },
   {
     "slug": "why-do-i-feel-like-every-act-of-kindness-has-hidden-strings-attached",
@@ -701,7 +701,7 @@ export const devotionals: Devo[] = [
     "day": 152,
     "headline": "Why do I feel like every act of kindness has hidden strings attached?",
     "verseRef": "1 John 4:10",
-    "card": "/devotional-cards/why-do-i-feel-like-every-act-of-kindness-has-hidden-strings-attached.jpg"
+    "card": "/devotional-cards/w680/why-do-i-feel-like-every-act-of-kindness-has-hidden-strings-attached.webp"
   },
   {
     "slug": "is-staying-in-a-painful-relationship-really-love-or-just-fear",
@@ -710,7 +710,7 @@ export const devotionals: Devo[] = [
     "day": 151,
     "headline": "Is staying in a painful relationship really love or just fear?",
     "verseRef": "Matthew 10:14",
-    "card": "/devotional-cards/is-staying-in-a-painful-relationship-really-love-or-just-fear.jpg"
+    "card": "/devotional-cards/w680/is-staying-in-a-painful-relationship-really-love-or-just-fear.webp"
   },
   {
     "slug": "how-do-i-know-if-someone-loves-me-or-just-needs-me",
@@ -719,7 +719,7 @@ export const devotionals: Devo[] = [
     "day": 150,
     "headline": "How do I know if someone loves me or just needs me?",
     "verseRef": "John 15:13",
-    "card": "/devotional-cards/how-do-i-know-if-someone-loves-me-or-just-needs-me.jpg"
+    "card": "/devotional-cards/w680/how-do-i-know-if-someone-loves-me-or-just-needs-me.webp"
   },
   {
     "slug": "what-happens-when-you-stop-pretending-to-be-someone-youre-not",
@@ -728,7 +728,7 @@ export const devotionals: Devo[] = [
     "day": 149,
     "headline": "What happens when you stop pretending to be someone you're not?",
     "verseRef": "Matthew 16:26",
-    "card": "/devotional-cards/what-happens-when-you-stop-pretending-to-be-someone-youre-not.jpg"
+    "card": "/devotional-cards/w680/what-happens-when-you-stop-pretending-to-be-someone-youre-not.webp"
   },
   {
     "slug": "why-do-i-feel-exhausted-from-always-being-there-for-everyone",
@@ -737,7 +737,7 @@ export const devotionals: Devo[] = [
     "day": 148,
     "headline": "Why do I feel exhausted from always being there for everyone?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/why-do-i-feel-exhausted-from-always-being-there-for-everyone.jpg"
+    "card": "/devotional-cards/w680/why-do-i-feel-exhausted-from-always-being-there-for-everyone.webp"
   },
   {
     "slug": "why-do-i-always-give-more-than-i-receive-in-relationships",
@@ -746,7 +746,7 @@ export const devotionals: Devo[] = [
     "day": 147,
     "headline": "Why do I always give more than I receive in relationships?",
     "verseRef": "Matthew 22:39",
-    "card": "/devotional-cards/why-do-i-always-give-more-than-i-receive-in-relationships.jpg"
+    "card": "/devotional-cards/w680/why-do-i-always-give-more-than-i-receive-in-relationships.webp"
   },
   {
     "slug": "how-do-i-stop-waiting-and-start-taking-action-finally",
@@ -755,7 +755,7 @@ export const devotionals: Devo[] = [
     "day": 146,
     "headline": "How do I stop waiting and start taking action finally?",
     "verseRef": "Matthew 6:34",
-    "card": "/devotional-cards/how-do-i-stop-waiting-and-start-taking-action-finally.jpg"
+    "card": "/devotional-cards/w680/how-do-i-stop-waiting-and-start-taking-action-finally.webp"
   },
   {
     "slug": "why-do-i-stay-busy-but-never-actually-change-anything",
@@ -764,7 +764,7 @@ export const devotionals: Devo[] = [
     "day": 145,
     "headline": "Why do I stay busy but never actually change anything?",
     "verseRef": "Hebrews 12:1",
-    "card": "/devotional-cards/why-do-i-stay-busy-but-never-actually-change-anything.jpg"
+    "card": "/devotional-cards/w680/why-do-i-stay-busy-but-never-actually-change-anything.webp"
   },
   {
     "slug": "why-do-i-keep-making-excuses-to-avoid-facing-the-truth",
@@ -773,7 +773,7 @@ export const devotionals: Devo[] = [
     "day": 144,
     "headline": "Why do I keep making excuses to avoid facing the truth?",
     "verseRef": "John 8:32",
-    "card": "/devotional-cards/why-do-i-keep-making-excuses-to-avoid-facing-the-truth.jpg"
+    "card": "/devotional-cards/w680/why-do-i-keep-making-excuses-to-avoid-facing-the-truth.webp"
   },
   {
     "slug": "why-do-i-keep-scrolling-my-phone-instead-of-sleeping",
@@ -782,7 +782,7 @@ export const devotionals: Devo[] = [
     "day": 143,
     "headline": "Why do I keep scrolling my phone instead of sleeping?",
     "verseRef": "Psalm 55:22",
-    "card": "/devotional-cards/why-do-i-keep-scrolling-my-phone-instead-of-sleeping.jpg"
+    "card": "/devotional-cards/w680/why-do-i-keep-scrolling-my-phone-instead-of-sleeping.webp"
   },
   {
     "slug": "why-do-i-keep-picking-fights-over-stupid-little-things",
@@ -791,7 +791,7 @@ export const devotionals: Devo[] = [
     "day": 142,
     "headline": "Why do I keep picking fights over stupid little things?",
     "verseRef": "Psalm 46:10",
-    "card": "/devotional-cards/why-do-i-keep-picking-fights-over-stupid-little-things.jpg"
+    "card": "/devotional-cards/w680/why-do-i-keep-picking-fights-over-stupid-little-things.webp"
   },
   {
     "slug": "why-do-i-keep-avoiding-a-difficult-conversation-i-need-to-have",
@@ -800,7 +800,7 @@ export const devotionals: Devo[] = [
     "day": 141,
     "headline": "Why do I keep avoiding a difficult conversation I need to have?",
     "verseRef": "Luke 12:2",
-    "card": "/devotional-cards/why-do-i-keep-avoiding-a-difficult-conversation-i-need-to-have.jpg"
+    "card": "/devotional-cards/w680/why-do-i-keep-avoiding-a-difficult-conversation-i-need-to-have.webp"
   },
   {
     "slug": "why-am-i-so-afraid-of-being-alone-with-my-thoughts",
@@ -809,7 +809,7 @@ export const devotionals: Devo[] = [
     "day": 140,
     "headline": "Why am I so afraid of being alone with my thoughts?",
     "verseRef": "Psalm 46:10",
-    "card": "/devotional-cards/why-am-i-so-afraid-of-being-alone-with-my-thoughts.jpg"
+    "card": "/devotional-cards/w680/why-am-i-so-afraid-of-being-alone-with-my-thoughts.webp"
   },
   {
     "slug": "do-my-small-daily-actions-actually-matter-in-the-long-run",
@@ -818,7 +818,7 @@ export const devotionals: Devo[] = [
     "day": 139,
     "headline": "Do my small daily actions actually matter in the long run?",
     "verseRef": "Jeremiah 29:11",
-    "card": "/devotional-cards/do-my-small-daily-actions-actually-matter-in-the-long-run.jpg"
+    "card": "/devotional-cards/w680/do-my-small-daily-actions-actually-matter-in-the-long-run.webp"
   },
   {
     "slug": "how-do-i-stop-trying-to-control-everything-in-my-life",
@@ -827,7 +827,7 @@ export const devotionals: Devo[] = [
     "day": 138,
     "headline": "How do I stop trying to control everything in my life?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/how-do-i-stop-trying-to-control-everything-in-my-life.jpg"
+    "card": "/devotional-cards/w680/how-do-i-stop-trying-to-control-everything-in-my-life.webp"
   },
   {
     "slug": "does-my-job-or-role-actually-define-who-i-am",
@@ -836,7 +836,7 @@ export const devotionals: Devo[] = [
     "day": 137,
     "headline": "Does my job or role actually define who I am?",
     "verseRef": "2 Corinthians 5:17",
-    "card": "/devotional-cards/does-my-job-or-role-actually-define-who-i-am.jpg"
+    "card": "/devotional-cards/w680/does-my-job-or-role-actually-define-who-i-am.webp"
   },
   {
     "slug": "how-do-i-stop-wasting-time-and-actually-live-with-purpose",
@@ -845,7 +845,7 @@ export const devotionals: Devo[] = [
     "day": 136,
     "headline": "How do I stop wasting time and actually live with purpose?",
     "verseRef": "Ephesians 5:16",
-    "card": "/devotional-cards/how-do-i-stop-wasting-time-and-actually-live-with-purpose.jpg"
+    "card": "/devotional-cards/w680/how-do-i-stop-wasting-time-and-actually-live-with-purpose.webp"
   },
   {
     "slug": "how-do-i-cope-when-life-feels-too-heavy-to-bear",
@@ -854,7 +854,7 @@ export const devotionals: Devo[] = [
     "day": 135,
     "headline": "How do I cope when life feels too heavy to bear?",
     "verseRef": "Matthew 11:28",
-    "card": "/devotional-cards/how-do-i-cope-when-life-feels-too-heavy-to-bear.jpg"
+    "card": "/devotional-cards/w680/how-do-i-cope-when-life-feels-too-heavy-to-bear.webp"
   },
   {
     "slug": "when-god-seems-silent",

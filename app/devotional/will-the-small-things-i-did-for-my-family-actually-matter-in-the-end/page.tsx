@@ -41,11 +41,12 @@ export default function DevotionalPage() {
         <section className="bg-white pt-10 pb-2 px-4 sm:px-6">
           <div className="max-w-2xl mx-auto">
             <img
-              src="https://www.fountaingrace.org/devotional-cards/will-the-small-things-i-did-for-my-family-actually-matter-in-the-end.jpg"
+              src="https://www.fountaingrace.org/devotional-cards/w680/will-the-small-things-i-did-for-my-family-actually-matter-in-the-end.webp"
               alt="Will the small things I did for my family actually matter in the end? - Fountain of Grace International"
-              width={1080}
-              height={1350}
-              loading="lazy"
+              width={680}
+              height={850}
+              loading="eager"
+              fetchPriority="high"
               decoding="async"
               className="w-full max-w-[340px] mx-auto rounded-xl shadow-sm"
             />
