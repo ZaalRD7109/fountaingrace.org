@@ -143,6 +143,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - daily library, one page per devotional)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/devotional/what-is-god-actually-making-out-of-all-this-pain`, lastModified: new Date('2026-08-18'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/what-if-i-am-not-ready-to-forgive-and-i-know-it`, lastModified: new Date('2026-08-17'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/how-do-i-actually-forgive-someone-who-never-said-sorry`, lastModified: new Date('2026-08-16'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/does-god-actually-care-about-the-wound-i-cannot-stop-carrying`, lastModified: new Date('2026-08-15'), changeFrequency: 'monthly', priority: 0.6 },

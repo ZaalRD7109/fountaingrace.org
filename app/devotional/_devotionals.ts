@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "what-is-god-actually-making-out-of-all-this-pain",
+    "date": "2026-08-18",
+    "dateDisplay": "18 August 2026",
+    "day": 230,
+    "headline": "What is God actually making out of all this pain?",
+    "verseRef": "Romans 8:28",
+    "card": "/devotional-cards/w680/what-is-god-actually-making-out-of-all-this-pain.webp"
+  },
+  {
     "slug": "what-if-i-am-not-ready-to-forgive-and-i-know-it",
     "date": "2026-08-17",
     "dateDisplay": "17 August 2026",
