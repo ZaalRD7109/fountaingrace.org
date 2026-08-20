@@ -42,6 +42,9 @@
   .banner b{color:var(--amber);}
   .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-bottom:14px;}
   .card.due{border-color:var(--amber);}
+  .card.held{border-color:#3a7f7f; opacity:.92;}
+  .pill.held{background:#12666b; color:#cdeef0;}
+  button.held{background:#12666b; color:#cdeef0;}
   .nm{font-size:19px; font-weight:700; line-height:1.3;}
   .when{font-size:13px; color:var(--dim); margin:4px 0 10px;}
   .pill{display:inline-block; background:var(--card2); color:var(--text); border-radius:20px;
@@ -149,7 +152,7 @@ function render(data) {
     return;
   }
 
-  const waiting = vols.filter(v => v.overdue).length;
+  const waiting = vols.filter(v => v.overdue).length;  // paused people are only counted once their grace runs out
   let html = '';
   if (waiting) {
     html += '<div class="banner"><b>' + waiting + (waiting === 1 ? ' person is' : ' people are') +
@@ -163,9 +166,12 @@ function render(data) {
     let c = '<div class="card' + (v.overdue ? ' due' : '') + '">';
     c += '<div class="nm">' + esc(v.name) + '</div>';
     c += '<div class="when">Put their hand up ' + esc(ago(v.waiting_days_since_apply)) + ' ago</div>';
-    c += '<span class="pill' + (v.overdue ? ' due' : (isDone ? ' done' : '')) + '">Step ' +
-         esc(v.stage_n) + ' of 7 &middot; ' + esc(v.stage_label) +
+    c += '<span class="pill' + (v.overdue ? ' due' : (v.waiting_on_them ? ' held' : (isDone ? ' done' : ''))) +
+         '">Step ' + esc(v.stage_n) + ' of 7 &middot; ' + esc(v.stage_label) +
          (v.waiting_days ? ' &middot; ' + esc(ago(v.waiting_days)) : '') + '</span>';
+    if (v.waiting_on_them) {
+      c += '<span class="pill held">Ball in their court &middot; ' + esc(ago(v.held_days)) + '</span>';
+    }
 
     if (!isOut) {
       c += '<div class="next"><h4>What happens next</h4><p>' + esc(v.next) + '</p>' +
@@ -208,7 +214,13 @@ function render(data) {
       c += '<button class="go" onclick="move(\'' + v.id + '\',\'' + v.advance + '\',this)">Done &middot; move to ' +
            esc(v.advance_label) + '</button>';
     }
+    // The ball is in their court. This pauses the nudge, it does not hide them:
+    // the card still shows how long we have been waiting, and after ten days it
+    // asks for a decision rather than going quiet.
     if (!isOut && !isDone) {
+      c += v.waiting_on_them
+        ? '<button class="held" onclick="waitOn(\'' + v.id + '\',false,this)">They came back</button>'
+        : '<button class="ghost" onclick="waitOn(\'' + v.id + '\',true,this)">Waiting on them</button>';
       c += '<button class="ghost" onclick="notNow(\'' + v.id + '\',this)">Not right now</button>';
     }
     if (isDone) c += '<div class="done-badge">Placed. Check in on them at 90 days.</div>';
@@ -244,6 +256,18 @@ async function notNow(id, btn) {
   btn.textContent = 'Saving...';
   const r = await post({ id: id, stage: 'not_now', note: why });
   if (!r) { btn.disabled = false; btn.textContent = 'Could not save. Tap to try again.'; return; }
+  load();
+}
+
+async function waitOn(id, on, btn) {
+  btn.disabled = true;
+  btn.textContent = 'Saving...';
+  const res = await fetch(API, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify({ k: KEY, action: 'waiting', id: id, on: on }),
+  });
+  if (!res.ok) { btn.disabled = false; btn.textContent = 'Could not save. Tap to try again.'; return; }
   load();
 }
 
