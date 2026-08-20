@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Volunteer board - Fountain of Grace International</title>
+<!--
+  The volunteer board.
+
+  Ricardo, 2026-08-20, on the second volunteer application the church has ever
+  had: "obviously we should be having a system in place so that this becomes a
+  standard operating procedure doc that makes all people who deal with
+  volunteers treat everyone the same way."
+
+  The seven-step path was written on 2026-08-03 and lived in a PDF. A path
+  nothing records is a path nobody walks: Koena applied on 3 August, finished
+  the fit check on 4 August, and on 20 August nothing on this server could say
+  whether anyone had spoken to her since.
+
+  So this page does three things and no more.
+    1. It shows every volunteer and WHERE they are on the path.
+    2. It shows the ONE thing that happens next, and who does it.
+    3. It records the move, with the name of whoever made it.
+
+  The steps themselves are printed at the bottom of this page on purpose. The
+  procedure has to live where the work happens, not in a document somebody has
+  to remember to open.
+-->
+<style>
+  :root{ --bg:#043838; --card:#0a4a4a; --card2:#0f5858; --text:#f2fbfa; --dim:#a3cccc;
+         --gold:#ffcd3c; --green:#7ee2a8; --line:#1b6666; --amber:#ffb02e; }
+  *{box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent;}
+  body{background:var(--bg); color:var(--text); font-family:-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+       min-height:100vh; display:flex; justify-content:center;}
+  .wrap{width:100%; max-width:560px; padding:18px 16px 40px;}
+  .brand{text-align:center; color:var(--gold); font-size:13px; letter-spacing:2px; text-transform:uppercase; margin-bottom:6px;}
+  h1{font-size:24px; text-align:center; margin:8px 0 4px;}
+  .sub{text-align:center; color:var(--dim); font-size:14px; line-height:1.5; margin-bottom:18px;}
+  .banner{background:var(--card2); border:1px solid var(--amber); border-radius:14px;
+          padding:13px 15px; margin-bottom:16px; font-size:15px; line-height:1.55;}
+  .banner b{color:var(--amber);}
+  .card{background:var(--card); border:1px solid var(--line); border-radius:16px; padding:16px; margin-bottom:14px;}
+  .card.due{border-color:var(--amber);}
+  .nm{font-size:19px; font-weight:700; line-height:1.3;}
+  .when{font-size:13px; color:var(--dim); margin:4px 0 10px;}
+  .pill{display:inline-block; background:var(--card2); color:var(--text); border-radius:20px;
+        padding:5px 13px; font-size:13px; font-weight:600; margin-bottom:10px;}
+  .pill.due{background:var(--amber); color:#2a1a00;}
+  .pill.done{background:var(--green); color:#04301a;}
+  .next{background:var(--card2); border-radius:12px; padding:12px 14px; margin:8px 0 4px;}
+  .next h4{font-size:11px; text-transform:uppercase; letter-spacing:1.4px; color:var(--gold); margin-bottom:5px;}
+  .next p{font-size:16px; line-height:1.5;}
+  .next .who{font-size:13px; color:var(--dim); margin-top:5px;}
+  .row{font-size:14px; color:var(--dim); line-height:1.5; margin:3px 0;}
+  .row b{color:var(--text); font-weight:600;}
+  .flags{background:var(--card2); border-radius:10px; padding:10px 12px; margin-top:10px;}
+  .flags h4{font-size:11px; text-transform:uppercase; letter-spacing:1.2px; color:var(--amber); margin-bottom:5px;}
+  .flags p{font-size:14px; line-height:1.5; margin:3px 0;}
+  .note{background:var(--card2); border-radius:10px; padding:10px 12px; margin-top:10px;
+        font-size:14px; line-height:1.55; color:var(--dim);}
+  /* One full-width button per row. Rule 19 - this is read on a phone, standing up. */
+  button, a.btn{display:block; width:100%; text-align:center; text-decoration:none; border:0;
+      font-family:inherit; font-size:16px; font-weight:700; padding:14px 12px;
+      border-radius:13px; margin-top:10px; cursor:pointer;}
+  button.go{background:var(--gold); color:#2a1a00;}
+  a.wa{background:#25d366; color:#0b2b16;}
+  button.ghost{background:transparent; color:var(--dim); border:1px solid var(--line); font-weight:600; font-size:14px;}
+  button:disabled{opacity:.5;}
+  .empty{text-align:center; color:var(--dim); padding:26px 8px; line-height:1.6;}
+  .sop{margin-top:26px; border-top:1px solid var(--line); padding-top:18px;}
+  .sop h2{font-size:16px; margin-bottom:4px;}
+  .sop .lead{font-size:14px; color:var(--dim); line-height:1.55; margin-bottom:12px;}
+  .step{display:flex; gap:12px; margin-bottom:11px;}
+  .step i{flex:none; width:26px; height:26px; border-radius:50%; background:var(--card2); color:var(--gold);
+          font-style:normal; font-size:13px; font-weight:700; display:flex; align-items:center; justify-content:center;}
+  .step div{font-size:14px; line-height:1.5;}
+  .step div span{display:block; color:var(--dim); font-size:13px; margin-top:2px;}
+  .done-badge{color:var(--green); font-size:13px; margin-top:6px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="brand">Fountain of Grace International</div>
+  <h1>Volunteer board</h1>
+  <p class="sub">Everyone who has put their hand up, and the one thing that happens next for each of them.</p>
+  <div id="out" class="empty">Loading...</div>
+
+  <div class="sop">
+    <h2>The path, every time, for everybody</h2>
+    <p class="lead">Same seven steps whoever is on duty. Nobody skips a step and nobody is rushed through one.</p>
+    <div id="steps"></div>
+  </div>
+</div>
+<script>
+const API = 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/volunteer-fit';
+const FIT_LINK = 'https://www.fountaingrace.org/serve/';
+
+// Save the key on this phone and take it out of the address bar, so the link is
+// safe to bookmark and a screenshot of the page does not hand the key away.
+// Same pattern as /serve/team/ and /WA/.
+let KEY = new URLSearchParams(location.search).get('k') || '';
+if (KEY) { try { localStorage.setItem('volboard_key', KEY); } catch (e) {} history.replaceState(null, '', location.pathname); }
+else { try { KEY = localStorage.getItem('volboard_key') || ''; } catch (e) {} }
+
+const out = document.getElementById('out');
+
+// Everything from the database is written with textContent or through esc().
+// A volunteer types their own name into a public form, so it is never trusted.
+function esc(s) {
+  return String(s == null ? '' : s).replace(/[&<>"']/g, c => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+  ));
+}
+
+function waNumber(phone) {
+  const d = String(phone || '').replace(/\D/g, '');
+  if (!d) return '';
+  if (d.startsWith('27')) return d;
+  if (d.startsWith('0')) return '27' + d.slice(1);
+  return d;
+}
+
+function ago(days) {
+  if (days === null || days === undefined) return '';
+  if (days === 0) return 'today';
+  if (days === 1) return '1 day';
+  return days + ' days';
+}
+
+let STAGES = {};
+
+function render(data) {
+  STAGES = data.stages || {};
+  const vols = data.volunteers || [];
+
+  // The steps, printed under the board. The procedure lives where the work is.
+  const order = Object.entries(STAGES)
+    .filter(([, s]) => s.n > 0)
+    .sort((a, b) => a[1].n - b[1].n);
+  document.getElementById('steps').innerHTML = order.map(([, s]) =>
+    '<div class="step"><i>' + s.n + '</i><div>' + esc(s.next) +
+    '<span>' + esc(s.who) + '</span></div></div>'
+  ).join('');
+
+  if (!vols.length) {
+    out.className = 'empty';
+    out.textContent = 'Nobody has filled in the volunteer form yet. When somebody does they appear here on their own.';
+    return;
+  }
+
+  const waiting = vols.filter(v => v.overdue).length;
+  let html = '';
+  if (waiting) {
+    html += '<div class="banner"><b>' + waiting + (waiting === 1 ? ' person is' : ' people are') +
+      ' waiting on us.</b> Their cards are outlined below. Nobody here has done anything wrong by waiting.</div>';
+  }
+
+  html += vols.map(v => {
+    const isDone = v.stage === 'placed';
+    const isOut = v.stage === 'not_now';
+    const wa = waNumber(v.phone);
+    let c = '<div class="card' + (v.overdue ? ' due' : '') + '">';
+    c += '<div class="nm">' + esc(v.name) + '</div>';
+    c += '<div class="when">Put their hand up ' + esc(ago(v.waiting_days_since_apply)) + ' ago</div>';
+    c += '<span class="pill' + (v.overdue ? ' due' : (isDone ? ' done' : '')) + '">Step ' +
+         esc(v.stage_n) + ' of 7 &middot; ' + esc(v.stage_label) +
+         (v.waiting_days ? ' &middot; ' + esc(ago(v.waiting_days)) : '') + '</span>';
+
+    if (!isOut) {
+      c += '<div class="next"><h4>What happens next</h4><p>' + esc(v.next) + '</p>' +
+           '<div class="who">' + esc(v.next_who) + '</div></div>';
+    }
+
+    if (v.availability) c += '<div class="row"><b>Available:</b> ' + esc(v.availability) + '</div>';
+    if (v.skills) c += '<div class="row"><b>Can offer:</b> ' + esc(v.skills) + '</div>';
+    if (v.phone) c += '<div class="row"><b>Phone:</b> ' + esc(v.phone) + '</div>';
+
+    if (v.fit) {
+      if (v.fit.placement) c += '<div class="row"><b>Fits best:</b> ' + esc(v.fit.placement) + '</div>';
+      if (v.fit.capacity) c += '<div class="row"><b>Honest capacity:</b> ' + esc(v.fit.capacity) + '</div>';
+      if (v.fit.flags && v.fit.flags.length) {
+        c += '<div class="flags"><h4>Talk about before placing</h4>' +
+             v.fit.flags.map(f => '<p>' + esc(f) + '</p>').join('') + '</div>';
+      }
+    }
+
+    if (v.note) c += '<div class="note">' + esc(v.note) + '</div>';
+
+    // Step 1 is the one that has been missing: the fit check link never reached
+    // anybody. One tap sends it and records that it was sent.
+    if (v.stage === 'new' && wa) {
+      const msg = encodeURIComponent(
+        'Hi ' + String(v.name).split(' ')[0] + ', this is Fountain of Grace International. ' +
+        'Thank you again for putting your hand up to serve. ' +
+        'Before we sit down, would you tap this and answer a few quick questions on your phone? ' +
+        'It takes about five minutes, there is no pass mark, and nothing in it decides whether you can serve. ' +
+        'It just helps us work out where you would actually enjoy serving. ' + FIT_LINK
+      );
+      c += '<a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/' + wa + '?text=' + msg +
+           '" onclick="markSent(\'' + v.id + '\')">Send the fit check on WhatsApp</a>';
+    } else if (wa) {
+      c += '<a class="btn wa" target="_blank" rel="noopener" href="https://wa.me/' + wa + '">WhatsApp ' +
+           esc(String(v.name).split(' ')[0]) + '</a>';
+    }
+
+    if (v.advance) {
+      c += '<button class="go" onclick="move(\'' + v.id + '\',\'' + v.advance + '\',this)">Done &middot; move to ' +
+           esc(v.advance_label) + '</button>';
+    }
+    if (!isOut && !isDone) {
+      c += '<button class="ghost" onclick="notNow(\'' + v.id + '\',this)">Not right now</button>';
+    }
+    if (isDone) c += '<div class="done-badge">Placed. Check in on them at 90 days.</div>';
+    c += '</div>';
+    return c;
+  }).join('');
+
+  out.className = '';
+  out.innerHTML = html;
+}
+
+async function post(body) {
+  const res = await fetch(API, {
+    method: 'POST',
+    headers: { 'content-type': 'application/json' },
+    body: JSON.stringify(Object.assign({ k: KEY, action: 'stage' }, body)),
+  });
+  return res.ok ? res.json() : null;
+}
+
+async function move(id, stage, btn) {
+  btn.disabled = true;
+  btn.textContent = 'Saving...';
+  const r = await post({ id: id, stage: stage });
+  if (!r) { btn.disabled = false; btn.textContent = 'Could not save. Tap to try again.'; return; }
+  load();
+}
+
+async function notNow(id, btn) {
+  const why = prompt('Why not right now? One line, so whoever picks this up later knows.');
+  if (why === null) return;
+  btn.disabled = true;
+  btn.textContent = 'Saving...';
+  const r = await post({ id: id, stage: 'not_now', note: why });
+  if (!r) { btn.disabled = false; btn.textContent = 'Could not save. Tap to try again.'; return; }
+  load();
+}
+
+// Fire-and-forget: WhatsApp is already opening in another tab, so this must
+// never block the send. If it fails the card simply still says step 1, which
+// is the safe way round - it would ask us to send again rather than pretend.
+function markSent(id) {
+  post({ id: id, stage: 'fit_sent' }).then(() => setTimeout(load, 400)).catch(() => {});
+}
+
+async function load() {
+  if (!KEY) {
+    out.className = 'empty';
+    out.textContent = 'This page needs your own link. Open the one that was sent to you.';
+    return;
+  }
+  try {
+    const res = await fetch(API + '?view=board&k=' + encodeURIComponent(KEY));
+    if (!res.ok) {
+      out.className = 'empty';
+      out.textContent = 'That link is not recognised. Ask for a new one.';
+      return;
+    }
+    const data = await res.json();
+    // How long since they applied, worked out here so the card can say both
+    // "applied 16 days ago" and "sitting at this step 12 days".
+    (data.volunteers || []).forEach(v => {
+      const t = Date.parse(v.created_at);
+      v.waiting_days_since_apply = Number.isFinite(t)
+        ? Math.floor((Date.now() - t) / 86400000) : null;
+    });
+    render(data);
+  } catch (e) {
+    out.className = 'empty';
+    out.textContent = 'Could not load right now. Check your signal and pull down to refresh.';
+  }
+}
+
+load();
+</script>
+</body>
+</html>
