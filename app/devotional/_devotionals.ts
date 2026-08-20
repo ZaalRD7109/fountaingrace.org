@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "why-does-my-brain-keep-running-even-when-i-am-exhausted",
+    "date": "2026-08-20",
+    "dateDisplay": "20 August 2026",
+    "day": 232,
+    "headline": "Why does my brain keep running even when I am exhausted?",
+    "verseRef": "Philippians 4:7",
+    "card": "/devotional-cards/w680/why-does-my-brain-keep-running-even-when-i-am-exhausted.webp"
+  },
+  {
     "slug": "can-i-really-trust-that-my-life-is-going-to-be-okay",
     "date": "2026-08-19",
     "dateDisplay": "19 August 2026",
