@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "why-do-i-wake-up-at-3am-scared-about-things-i-cannot-control",
+    "date": "2026-08-21",
+    "dateDisplay": "21 August 2026",
+    "day": 233,
+    "headline": "Why do I wake up at 3am scared about things I cannot control?",
+    "verseRef": "Psalm 34:4",
+    "card": "/devotional-cards/w680/why-do-i-wake-up-at-3am-scared-about-things-i-cannot-control.webp"
+  },
+  {
     "slug": "why-does-my-brain-keep-running-even-when-i-am-exhausted",
     "date": "2026-08-20",
     "dateDisplay": "20 August 2026",
