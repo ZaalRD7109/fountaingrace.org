@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "is-there-anything-that-can-actually-calm-a-mind-like-mine",
+    "date": "2026-08-22",
+    "dateDisplay": "22 August 2026",
+    "day": 234,
+    "headline": "Is there anything that can actually calm a mind like mine?",
+    "verseRef": "Isaiah 26:3",
+    "card": "/devotional-cards/w680/is-there-anything-that-can-actually-calm-a-mind-like-mine.webp"
+  },
+  {
     "slug": "why-do-i-wake-up-at-3am-scared-about-things-i-cannot-control",
     "date": "2026-08-21",
     "dateDisplay": "21 August 2026",
