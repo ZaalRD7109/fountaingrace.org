@@ -75,6 +75,22 @@ const jsonLd = [
       },
     ],
   },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoObject',
+    name: 'You Know What to Do. So Why Is Nothing Changing?',
+    description: 'Based on James 1:21-25. Pastor Ricardo Zaal teaches on the difference between passive hearing and active doing of God\'s word - and the blessing that comes to those who act.',
+    thumbnailUrl: 'https://img.youtube.com/vi/L0NMow_4Ni0/maxresdefault.jpg',
+    uploadDate: '2026-02-16T12:00:00+02:00',
+    embedUrl: 'https://www.youtube.com/embed/L0NMow_4Ni0',
+    url: 'https://www.fountaingrace.org/sermons/be-a-doer-of-gods-word-not-just-a-hearer',
+    author: { '@type': 'Person', name: 'Pastor Ricardo Zaal' },
+    publisher: {
+      '@type': 'Organization',
+      name: 'Fountain of Grace International',
+      url: 'https://www.fountaingrace.org',
+    },
+  },
 ]
 
 const sermonTranscript = "James 1 verse 21. And I'm going to read from the New King James Version. Therefore, lay aside all faultiness and overflow of wickedness, and receive with meekness the implanted word, which is able to save your souls. But be a doers of the word and not hearers only. Deceiving yourself. For if anyone is a hearer of the word and not a doer, he is like a man observing his natural face in a mirror. For he observes himself, goes away, and immediately forgets what kind of man he was. But he who looks into the perfect law of liberty and continues in it, and is not forgetful, hearers but a doer of the word, this one will be blessed in what he does. This one will be blessed in what he does."

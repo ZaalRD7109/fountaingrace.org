@@ -48,9 +48,36 @@ const articles = [
   },
 ]
 
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Resources - Fountain of Grace International',
+    description: 'Practical answers to real life questions - purpose, emptiness, failure, anxiety, forgiveness, and more. Biblical perspective from Fountain of Grace International in Pretoria North.',
+    url: 'https://www.fountaingrace.org/resources',
+    isPartOf: { '@type': 'WebSite', name: 'Fountain of Grace International', url: 'https://www.fountaingrace.org' },
+    publisher: { '@type': 'Organization', name: 'Fountain of Grace International', url: 'https://www.fountaingrace.org' },
+    hasPart: articles.map((a) => ({
+      '@type': 'Article',
+      headline: a.title,
+      description: a.intro,
+      url: 'https://www.fountaingrace.org/resources/' + a.slug,
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+      { '@type': 'ListItem', position: 2, name: 'Resources', item: 'https://www.fountaingrace.org/resources' },
+    ],
+  },
+]
+
 export default function ResourcesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">

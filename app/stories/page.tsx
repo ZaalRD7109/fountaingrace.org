@@ -24,9 +24,36 @@ const stories = [
   },
 ]
 
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: 'Impact Stories - Fountain of Grace International',
+    description: 'Real stories of what your giving does in Pretoria North. Fountain of Grace International is a registered NPO (316-193) running food programs, outreach, and community support in Gauteng.',
+    url: 'https://www.fountaingrace.org/stories',
+    isPartOf: { '@type': 'WebSite', name: 'Fountain of Grace International', url: 'https://www.fountaingrace.org' },
+    publisher: { '@type': 'Organization', name: 'Fountain of Grace International', url: 'https://www.fountaingrace.org' },
+    hasPart: stories.map((a) => ({
+      '@type': 'Article',
+      headline: a.title,
+      description: a.intro,
+      url: 'https://www.fountaingrace.org/stories/' + a.slug,
+    })),
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.fountaingrace.org' },
+      { '@type': 'ListItem', position: 2, name: 'Impact Stories', item: 'https://www.fountaingrace.org/stories' },
+    ],
+  },
+]
+
 export default function StoriesPage() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       {/* HERO */}
       <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
