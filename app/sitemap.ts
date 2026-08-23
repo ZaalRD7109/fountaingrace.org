@@ -145,6 +145,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - daily library, one page per devotional)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/devotional/how-do-i-actually-stop-a-worry-spiral-before-it-takes-over`, lastModified: new Date('2026-08-23'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/is-there-anything-that-can-actually-calm-a-mind-like-mine`, lastModified: new Date('2026-08-22'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/why-do-i-wake-up-at-3am-scared-about-things-i-cannot-control`, lastModified: new Date('2026-08-21'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/why-does-my-brain-keep-running-even-when-i-am-exhausted`, lastModified: new Date('2026-08-20'), changeFrequency: 'monthly', priority: 0.6 },

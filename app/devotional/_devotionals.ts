@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "how-do-i-actually-stop-a-worry-spiral-before-it-takes-over",
+    "date": "2026-08-23",
+    "dateDisplay": "23 August 2026",
+    "day": 235,
+    "headline": "How do I actually stop a worry spiral before it takes over?",
+    "verseRef": "Philippians 4:6",
+    "card": "/devotional-cards/w680/how-do-i-actually-stop-a-worry-spiral-before-it-takes-over.webp"
+  },
+  {
     "slug": "is-there-anything-that-can-actually-calm-a-mind-like-mine",
     "date": "2026-08-22",
     "dateDisplay": "22 August 2026",
