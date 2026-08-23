@@ -16,6 +16,14 @@
 /sermons/right-action-principles-that-move-people-forward-faster /sermons/the-principle-that-activates-everything 301
 /sermons/prophetic-reset-hearing-seeing-speaking-heaven-john-10-27 /sermons/when-you-stop-hearing-the-voice-that-used-to-guide-every-decision 301
 
+# Canonical consolidation - duplicate sermon pages removed 2026-08-23
+# (4 older hand-built pages embedded the same video as a newer engine page; the engine page
+#  is the one indexed on Google and the one YouTube links to, so the older URL 301s to it)
+/sermons/your-resolution-didnt-fail-you-quit-acting /sermons/you-quit-but-nothing-changed-the-real-reason-you-go-back 301
+/sermons/faith-is-the-router-that-connects-you-to-gods-supply /sermons/why-youre-exhausted-trying-to-make-everything-happen-yourself 301
+/sermons/why-youre-not-moving-forward-and-how-to-break-it /sermons/your-team-is-busy-but-going-nowhere-the-real-reason-nothing-changes 301
+/sermons/the-system-youre-praying-against-without-knowing-it /sermons/your-prayers-arent-working-because-youre-praying-against-open-doors 301
+
 # Core pages — .html → clean URL (single hop, no chains)
 /index.html /  301
 /about.html /about  301
@@ -114,17 +122,17 @@
 # GA4 will show you: source=youtube, content=<sermon-slug>, campaign=sermon_description
 /s/right-action /sermons/the-principle-that-activates-everything?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=right-action-principles  302
 /s/the-principles /sermons/the-principles-that-move-people-forward-faster?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=the-principles-move-forward  302
-/s/the-system /sermons/the-system-youre-praying-against-without-knowing-it?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=the-system-praying-against  302
+/s/the-system /sermons/your-prayers-arent-working-because-youre-praying-against-open-doors?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=the-system-praying-against  302
 /s/what-if-someone-else /sermons/what-if-someone-else-finishes-what-was-meant-for-you?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=what-if-someone-else-finishes  302
 /s/when-good-things /sermons/when-good-things-block-god-things?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=when-good-things-block-god  302
 /s/when-knowing /sermons/when-knowing-is-the-problem?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=when-knowing-is-the-problem  302
 /s/why-collapsing /sermons/why-does-your-life-keep-collapsing?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=why-life-keep-collapsing  302
 /s/why-some-problems /sermons/why-some-problems-wont-leave-until-you-understand-this?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=why-some-problems-wont-leave  302
 /s/why-some-things /sermons/why-some-things-refuse-to-move?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=why-some-things-refuse-to-move  302
-/s/not-moving-forward /sermons/why-youre-not-moving-forward-and-how-to-break-it?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=not-moving-forward-how-to-break  302
+/s/not-moving-forward /sermons/your-team-is-busy-but-going-nowhere-the-real-reason-nothing-changes?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=not-moving-forward-how-to-break  302
 /s/prayers-not-changing /sermons/why-your-prayers-are-not-changing-your-life?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=prayers-not-changing-your-life  302
 /s/in-the-game /sermons/you-love-god-but-are-you-in-the-game?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=you-love-god-in-the-game  302
-/s/resolution /sermons/your-resolution-didnt-fail-you-quit-acting?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=resolution-didnt-fail-quit-acting  302
+/s/resolution /sermons/you-quit-but-nothing-changed-the-real-reason-you-go-back?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=resolution-didnt-fail-quit-acting  302
 /s/releasing-his-presence /sermons/releasing-his-presence?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=releasing-his-presence  302
 /s/speak-prophetic /sermons/speak-prophetic-into-your-life?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=speak-prophetic-into-your-life  302
 /s/not-lazy /sermons/you-are-not-lazy-you-are-a-lot-more?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=you-are-not-lazy-a-lot-more  302
@@ -137,7 +145,7 @@
 /s/anointing-hell-fear /sermons/the-anointing-that-makes-hell-fear-you?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=anointing-that-makes-hell-fear  302
 /s/no-more-waiting /sermons/no-more-waiting-rooms-god-is-live-now?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=no-more-waiting-rooms  302
 /s/pruning-progress /sermons/pruning-for-progress?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=pruning-for-progress  302
-/s/faith-router /sermons/faith-is-the-router-that-connects-you-to-gods-supply?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=faith-is-the-router  302
+/s/faith-router /sermons/why-youre-exhausted-trying-to-make-everything-happen-yourself?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=faith-is-the-router  302
 /s/hosting-presence /sermons/hosting-the-presence-of-god?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=hosting-the-presence-of-god  302
 /s/overnight-success /sermons/the-danger-of-overnight-success?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=the-danger-of-overnight-success  302
 /s/spiritual-weapon /sermons/the-spiritual-weapon-no-one-speaks-about?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=the-spiritual-weapon  302

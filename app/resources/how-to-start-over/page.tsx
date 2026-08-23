@@ -172,7 +172,7 @@ export default function HowToStartOverPage() {
             every Sunday at 323 B Danie Theron Street. No registration needed.
             Or listen to sermons on{' '}
             <Link href="/sermons/why-does-your-life-keep-collapsing" className="fgi-link">why life keeps collapsing</Link>,{' '}
-            <Link href="/sermons/why-youre-not-moving-forward-and-how-to-break-it" className="fgi-link">how to break through when you are not moving forward</Link>, and{' '}
+            <Link href="/sermons/your-team-is-busy-but-going-nowhere-the-real-reason-nothing-changes" className="fgi-link">how to break through when you are not moving forward</Link>, and{' '}
             <Link href="/sermons/the-principle-that-activates-everything" className="fgi-link">the principle that activates everything</Link>.
           </p>
 

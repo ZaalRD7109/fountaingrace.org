@@ -271,8 +271,8 @@ export default function SermonPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/faith-is-the-router-that-connects-you-to-gods-supply" className="text-[#0d6fbf] hover:underline font-medium">
-                  Faith Is the Router That Connects You to God's Supply
+                <Link href="/sermons/why-youre-exhausted-trying-to-make-everything-happen-yourself" className="text-[#0d6fbf] hover:underline font-medium">
+                  Why You're Exhausted Trying to Make Everything Happen Yourself
                 </Link>
               </li>
             </ul>

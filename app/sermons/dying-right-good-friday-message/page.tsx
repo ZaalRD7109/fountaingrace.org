@@ -321,8 +321,8 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/the-system-youre-praying-against-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  The System You're Praying Against Without Knowing It
+                <Link href="/sermons/your-prayers-arent-working-because-youre-praying-against-open-doors" className="text-[#0d6fbf] hover:underline font-medium">
+                  Your Prayers Aren't Working Because You're Praying Against Open Doors
                 </Link>
               </li>
               <li>

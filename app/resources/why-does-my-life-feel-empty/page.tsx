@@ -176,7 +176,7 @@ export default function WhyDoesMyLifeFeelEmptyPage() {
           <p className="text-[#595959] text-base leading-relaxed mb-8">
             You can also listen to messages on topics like{' '}
             <Link href="/sermons/why-does-your-life-keep-collapsing" className="fgi-link">why life keeps collapsing</Link>,{' '}
-            <Link href="/sermons/why-youre-not-moving-forward-and-how-to-break-it" className="fgi-link">why you are not moving forward</Link>,
+            <Link href="/sermons/your-team-is-busy-but-going-nowhere-the-real-reason-nothing-changes" className="fgi-link">why you are not moving forward</Link>,
             and <Link href="/sermons/the-principle-that-activates-everything" className="fgi-link">the principle that activates everything</Link> in
             the <Link href="/sermons" className="fgi-link">sermons archive</Link>.
           </p>

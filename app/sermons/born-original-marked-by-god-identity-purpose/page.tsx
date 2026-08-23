@@ -324,8 +324,8 @@ export default function SermonPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/your-resolution-didnt-fail-you-quit-acting" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Resolution Didn't Fail - You Quit Acting
+                <Link href="/sermons/you-quit-but-nothing-changed-the-real-reason-you-go-back" className="text-[#0d6fbf] hover:underline font-medium">
+                  You Quit but Nothing Changed: The Real Reason You Go Back
                 </Link>
               </li>
               <li>

@@ -750,22 +750,6 @@ const sermonPosts = [
       'You can be climbing a ladder leaned against the wrong wall. Good intentions and genuine busyness - but misaligned with God\'s appointed season. The Martha pattern is more common than most people admit.',
   },
   {
-    slug: 'your-resolution-didnt-fail-you-quit-acting',
-    title: "Your Resolution Didn't Fail - You Quit Acting",
-    date: '2026-01-25',
-    dateDisplay: '25 January 2026',
-    intro:
-      'The resolution was not the problem. Your habits did not hear the declaration. You are not lazy - you are tired of failing. This message explains the gap between motivation and consistent action.',
-  },
-  {
-    slug: 'the-system-youre-praying-against-without-knowing-it',
-    title: "Why You Keep Losing - You Are Fighting the Wrong Enemy",
-    date: '2026-01-18',
-    dateDisplay: '18 January 2026',
-    intro:
-      'God already opened the door. The system is already set. But disobedience, ingratitude, and praying for what is already provided - without walking through it - is unknowingly working against your own breakthrough.',
-  },
-  {
     slug: 'why-does-your-life-keep-collapsing',
     title: 'Why Does Your Life Keep Collapsing No Matter What You Build?',
     date: '2026-01-11',
@@ -822,14 +806,6 @@ const sermonPosts = [
       'James 1:21-25 - the person who hears and forgets is like a man who looks in a mirror and walks away. The blessing is attached to the doing, not the hearing.',
   },
   {
-    slug: 'why-youre-not-moving-forward-and-how-to-break-it',
-    title: "Why You're Not Moving Forward - And How to Break It",
-    date: '2026-03-01',
-    dateDisplay: '1 March 2026',
-    intro:
-      'Most people are not stuck because of a lack of information. They are stuck because of four specific patterns that disguise themselves as wisdom. This message names them and breaks them.',
-  },
-  {
     slug: 'pruning-for-progress',
     title: 'Pruning for Progress: From Bare Branch to Bountiful Blessing',
     date: '2025-11-02',
@@ -884,14 +860,6 @@ const sermonPosts = [
     dateDisplay: '29 June 2025',
     intro:
       "You sense God's presence in church - but it stays there. Luke 24:32 says the disciples' hearts burned while Jesus walked with them, then they immediately went and told others. This message is about moving from containing the presence to releasing it.",
-  },
-  {
-    slug: 'faith-is-the-router-that-connects-you-to-gods-supply',
-    title: "The Missing Connection Blocking Everything You Need From Getting Through",
-    date: '2025-06-08',
-    dateDisplay: '8 June 2025',
-    intro:
-      'The Wi-Fi subscription is paid. The signal is available. But if your router is broken, you receive nothing - not because the supply stopped, but because the connection failed. Faith is your router. Based on 2 Corinthians 1:20 and Proverbs 3:5.',
   },
   {
     slug: 'hosting-the-presence-of-god',

@@ -112,8 +112,8 @@ export default function WhatToDoWhenStuckPage() {
 
           <p className="text-[#595959] text-base leading-relaxed mb-6">
             Sermons like{' '}
-            <Link href="/sermons/why-youre-not-moving-forward-and-how-to-break-it" className="fgi-link">
-              Why You Are Not Moving Forward and How to Break It
+            <Link href="/sermons/your-team-is-busy-but-going-nowhere-the-real-reason-nothing-changes" className="fgi-link">
+              Your Team is Busy But Going Nowhere: The Real Reason Nothing Changes
             </Link>{' '}
             and{' '}
             <Link href="/sermons/the-principle-that-activates-everything" className="fgi-link">

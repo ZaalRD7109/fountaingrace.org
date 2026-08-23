@@ -308,8 +308,8 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/why-youre-not-moving-forward-and-how-to-break-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  Why You're Not Moving Forward - And How to Break It
+                <Link href="/sermons/your-team-is-busy-but-going-nowhere-the-real-reason-nothing-changes" className="text-[#0d6fbf] hover:underline font-medium">
+                  Your Team is Busy But Going Nowhere: The Real Reason Nothing Changes
                 </Link>
               </li>
               <li>
