@@ -246,17 +246,17 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/your-past-mistakes-dont-determine-your-future" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Past Mistakes Don
+                  Your Past Mistakes Don&apos;t Determine Your Future
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Feel Stuck and Invisible - Here
+                  You Feel Stuck and Invisible - Here&apos;s What Changes Everything
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/your-past-failures-dont-define-your-future-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Past Failures Don
+                  Your Past Failures Don&apos;t Define Your Future-Here&apos;s Why
                 </Link>
               </li>
               <li>
@@ -266,7 +266,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/youre-blocked-by-one-thing-and-dont-even-know-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Blocked by One Thing and Don&apos;t Even Know It
                 </Link>
               </li>
             </ul>

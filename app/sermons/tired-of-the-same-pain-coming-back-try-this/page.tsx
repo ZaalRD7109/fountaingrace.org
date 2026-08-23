@@ -340,12 +340,12 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Spiritual Weapon - Declaration Session
+                  How to Break a Pattern That Has Followed Your Family for Generations
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/the-spiritual-weapon-no-one-speaks-about" className="text-[#0d6fbf] hover:underline font-medium">
-                  The One Weapon Nobody Teaches You That Changes Every Fight
+                  The One Weapon Nobody Teaches You That Changes Every Fight (But Everyone Needs)
                 </Link>
               </li>
               <li>
@@ -355,7 +355,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Real Reason You Feel Like You
+                  The Real Reason You Feel Like You&apos;re Losing When Everything Falls Apart
                 </Link>
               </li>
               <li>

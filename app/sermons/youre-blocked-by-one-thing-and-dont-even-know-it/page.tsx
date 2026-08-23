@@ -247,7 +247,7 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Work Hard But Nothing Changes - Here
+                  You Work Hard But Nothing Changes - Here&apos;s What You&apos;re Missing
                 </Link>
               </li>
               <li>
@@ -257,7 +257,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stop Waiting for Someone Else to Tell You What
+                  Stop Waiting for Someone Else to Tell You What&apos;s Coming
                 </Link>
               </li>
               <li>
@@ -267,7 +267,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#0d6fbf] hover:underline font-medium">
-                  Everyone Around You Is Pretending - Here
+                  Everyone Around You Is Pretending - Here&apos;s Why You&apos;re Alone
                 </Link>
               </li>
             </ul>

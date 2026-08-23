@@ -229,7 +229,7 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/you-have-enough-right-now-heres-why-you-dont-believe-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Have Enough Right Now, Here
+                  You Have Enough Right Now, Here&apos;s Why You Don&apos;t Believe It
                 </Link>
               </li>
               <li>

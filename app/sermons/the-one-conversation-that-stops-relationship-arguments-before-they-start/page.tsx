@@ -261,7 +261,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Person Nobody Checks On: How You
+                  The Person Nobody Checks On: How You&apos;re Losing Friends Without Knowing It
                 </Link>
               </li>
               <li>

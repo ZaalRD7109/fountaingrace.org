@@ -328,7 +328,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/the-spiritual-weapon-declaration" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Spiritual Weapon - Declaration Session
+                  How to Break a Pattern That Has Followed Your Family for Generations
                 </Link>
               </li>
             </ul>

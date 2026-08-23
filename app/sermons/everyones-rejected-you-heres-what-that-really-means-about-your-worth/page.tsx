@@ -248,22 +248,22 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Feel Trapped By What Others Say You Can
+                  You Feel Trapped By What Others Say You Can&apos;t Do
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Feel Stuck and Invisible - Here
+                  You Feel Stuck and Invisible - Here&apos;s What Changes Everything
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Exhausted From Making Life Harder Than It Has to Be
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
-                  When You Feel Abandoned: Why You
+                  When You Feel Abandoned: Why You&apos;re Not as Alone as You Think
                 </Link>
               </li>
               <li>

@@ -311,7 +311,7 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/why-jesus-changed-everything-the-birth-that-brings-new-life" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Stuck Life Can Actually Change: Here
+                  Your Stuck Life Can Actually Change: Here&apos;s What Needs to Happen First
                 </Link>
               </li>
               <li>

@@ -254,19 +254,15 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
-              <li>
-                <Link href="/sermons/stop-waiting-to-be-perfect-before-you-matter" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stop Waiting to Be Perfect Before You Matter
-                </Link>
-              </li>
+
               <li>
                 <Link href="/sermons/how-to-know-if-that-gut-feeling-is-real-guidance-or-just-your-own-fear" className="text-[#0d6fbf] hover:underline font-medium">
                   How to Know If That Gut Feeling Is Real Guidance or Just Your Own Fear
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                <Link href="/sermons/you-are-not-lazy-you-are-a-lot-more" className="text-[#0d6fbf] hover:underline font-medium">
+                  You Are Not Lazy - You Are a Lot More
                 </Link>
               </li>
               <li>

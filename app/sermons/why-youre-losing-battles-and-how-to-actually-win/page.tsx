@@ -257,17 +257,17 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
-                  When You Feel Abandoned: Why You
+                  When You Feel Abandoned: Why You&apos;re Not as Alone as You Think
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Exhausted Because You&apos;re Trying to Do Everything Alone
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#0d6fbf] hover:underline font-medium">
-                  When Your Success Makes People Jealous: Here
+                  When Your Success Makes People Jealous: Here&apos;s What It Really Means
                 </Link>
               </li>
               <li>
@@ -277,7 +277,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Exhausted From Making Life Harder Than It Has to Be
                 </Link>
               </li>
             </ul>

@@ -259,17 +259,17 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
-                  When You Feel Abandoned: Why You
+                  When You Feel Abandoned: Why You&apos;re Not as Alone as You Think
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/the-shortcut-thats-ruining-your-life" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Shortcut That
+                  The Shortcut That&apos;s Ruining Your Life
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Struggles Aren
+                  Your Struggles Aren&apos;t Wasting Your Life-They&apos;re Building You for Something
                 </Link>
               </li>
               <li>

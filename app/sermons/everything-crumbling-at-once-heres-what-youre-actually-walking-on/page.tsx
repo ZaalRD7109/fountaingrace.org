@@ -252,22 +252,22 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
-                  When You Feel Abandoned: Why You
+                  When You Feel Abandoned: Why You&apos;re Not as Alone as You Think
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/your-mind-wont-stop-working-even-after-8-hours-of-sleep" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Mind Won
+                  Your Mind Won&apos;t Stop Working Even After 8 Hours of Sleep
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Paycheck Disappears Every Month - Here
+                  Your Paycheck Disappears Every Month - Here&apos;s Why and What Actually Works
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re About to Quit Right Before Everything Changes
                 </Link>
               </li>
               <li>

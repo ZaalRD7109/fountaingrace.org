@@ -256,7 +256,7 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Person Nobody Checks On: How You
+                  The Person Nobody Checks On: How You&apos;re Losing Friends Without Knowing It
                 </Link>
               </li>
               <li>
@@ -275,8 +275,8 @@ export default function SermonPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                <Link href="/sermons/you-are-not-lazy-you-are-a-lot-more" className="text-[#0d6fbf] hover:underline font-medium">
+                  You Are Not Lazy - You Are a Lot More
                 </Link>
               </li>
             </ul>

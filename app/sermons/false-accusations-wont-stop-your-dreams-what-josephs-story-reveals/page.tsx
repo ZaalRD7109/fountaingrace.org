@@ -268,17 +268,17 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Big Break Is Coming, But You
+                  Your Big Break Is Coming, But You&apos;re Not Ready For It
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#0d6fbf] hover:underline font-medium">
-                  They
+                  They&apos;re Using You-And God Is Too
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/stop-wasting-energy-on-people-who-wont-listen" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stop Wasting Energy on People Who Won
+                  Stop Wasting Energy on People Who Won&apos;t Listen
                 </Link>
               </li>
             </ul>

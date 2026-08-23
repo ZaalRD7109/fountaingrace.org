@@ -252,12 +252,12 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Know What You Need to Do-So Why Can
+                  You Know What You Need to Do-So Why Can&apos;t You Do It?
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#0d6fbf] hover:underline font-medium">
-                  Everyone Around You Is Pretending - Here
+                  Everyone Around You Is Pretending - Here&apos;s Why You&apos;re Alone
                 </Link>
               </li>
               <li>
@@ -272,7 +272,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/you-have-enough-right-now-heres-why-you-dont-believe-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Have Enough Right Now, Here
+                  You Have Enough Right Now, Here&apos;s Why You Don&apos;t Believe It
                 </Link>
               </li>
             </ul>

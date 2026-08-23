@@ -264,7 +264,7 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stop Waiting for Someone Else to Tell You What
+                  Stop Waiting for Someone Else to Tell You What&apos;s Coming
                 </Link>
               </li>
               <li>
@@ -274,7 +274,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Person Nobody Checks On: How You
+                  The Person Nobody Checks On: How You&apos;re Losing Friends Without Knowing It
                 </Link>
               </li>
               <li>

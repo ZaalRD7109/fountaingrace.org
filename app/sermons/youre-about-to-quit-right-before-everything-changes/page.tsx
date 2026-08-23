@@ -254,27 +254,27 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
-                  When You Feel Abandoned: Why You
+                  When You Feel Abandoned: Why You&apos;re Not as Alone as You Think
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Real Reason You Feel Like You
+                  The Real Reason You Feel Like You&apos;re Losing When Everything Falls Apart
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#0d6fbf] hover:underline font-medium">
-                  Everyone Around You Is Pretending - Here
+                  Everyone Around You Is Pretending - Here&apos;s Why You&apos;re Alone
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Exhausted From Making Life Harder Than It Has to Be
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/you-started-something-and-gave-up-heres-why-you-keep-doing-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Started Something and Gave Up - Here
+                  You Started Something and Gave Up - Here&apos;s Why You Keep Doing It
                 </Link>
               </li>
             </ul>

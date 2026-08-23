@@ -253,7 +253,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stop Waiting for Someone Else to Tell You What
+                  Stop Waiting for Someone Else to Tell You What&apos;s Coming
                 </Link>
               </li>
               <li>

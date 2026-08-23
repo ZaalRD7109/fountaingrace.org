@@ -251,7 +251,7 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#0d6fbf] hover:underline font-medium">
-                  Everyone
+                  Everyone&apos;s Rejected You. Here&apos;s What That Really Means About Your Worth
                 </Link>
               </li>
               <li>
@@ -261,17 +261,17 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
-                  When You Feel Abandoned: Why You
+                  When You Feel Abandoned: Why You&apos;re Not as Alone as You Think
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Know What You Need to Do-So Why Can
+                  You Know What You Need to Do-So Why Can&apos;t You Do It?
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Work Hard But Nothing Changes - Here
+                  You Work Hard But Nothing Changes - Here&apos;s What You&apos;re Missing
                 </Link>
               </li>
             </ul>

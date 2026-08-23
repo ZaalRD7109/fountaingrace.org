@@ -264,7 +264,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Feel Trapped By What Others Say You Can
+                  You Feel Trapped By What Others Say You Can&apos;t Do
                 </Link>
               </li>
               <li>

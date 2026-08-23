@@ -132,7 +132,7 @@ export default function OneQuestionBeforeSundayPage() {
             Come to <Link href="/plan-your-visit" className="fgi-link">Fountain of Grace International</Link> this Sunday
             with your question ready. Services begin at 09:00 at 323 B Danie Theron Street, Pretoria North.
             Or listen to a sermon now - try{' '}
-            <Link href="/sermons/be-a-doer-of-gods-word-not-just-a-hearer" className="fgi-link">Be a Doer of God's Word, Not Just a Hearer</Link> as
+            <Link href="/sermons/when-knowing-is-the-problem" className="fgi-link">Be a Doer of God's Word, Not Just a Hearer</Link> as
             a starting point.
           </p>
 

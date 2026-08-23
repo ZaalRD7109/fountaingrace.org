@@ -332,15 +332,11 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
-                </Link>
-              </li>
-              <li>
                 <Link href="/sermons/the-principle-that-activates-everything" className="text-[#0d6fbf] hover:underline font-medium">
                   The Principle That Activates Everything: Right Action
                 </Link>
               </li>
+
               <li>
                 <Link href="/sermons/the-inheritance-test" className="text-[#0d6fbf] hover:underline font-medium">
                   The Inheritance Test: Will It Reach Three Generations?
@@ -353,7 +349,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Big Break Is Coming, But You
+                  Your Big Break Is Coming, But You&apos;re Not Ready For It
                 </Link>
               </li>
             </ul>

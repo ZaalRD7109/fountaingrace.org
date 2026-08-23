@@ -252,17 +252,17 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re About to Quit Right Before Everything Changes
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Exhausted Because You&apos;re Trying to Do Everything Alone
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                <Link href="/sermons/you-are-not-lazy-you-are-a-lot-more" className="text-[#0d6fbf] hover:underline font-medium">
+                  You Are Not Lazy - You Are a Lot More
                 </Link>
               </li>
               <li>
@@ -270,11 +270,7 @@ export default function SermonPage() {
                   Stop Waiting for Permission to Become Who You Already Are
                 </Link>
               </li>
-              <li>
-                <Link href="/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stuck in a Dead Relationship or Job? Here
-                </Link>
-              </li>
+
             </ul>
             <p className="mt-6 text-[#555]">
               <Link href="/sermons" className="text-[#0d6fbf] hover:underline font-medium">

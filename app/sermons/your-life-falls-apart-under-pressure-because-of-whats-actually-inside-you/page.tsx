@@ -269,7 +269,7 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
-                  When You Feel Abandoned: Why You
+                  When You Feel Abandoned: Why You&apos;re Not as Alone as You Think
                 </Link>
               </li>
               <li>
@@ -289,7 +289,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stop Waiting for Someone Else to Tell You What
+                  Stop Waiting for Someone Else to Tell You What&apos;s Coming
                 </Link>
               </li>
             </ul>

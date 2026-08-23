@@ -268,7 +268,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/everything-crumbling-at-once-heres-what-youre-actually-walking-on" className="text-[#0d6fbf] hover:underline font-medium">
-                  Everything Crumbling at Once? Here
+                  Everything Crumbling at Once? Here&apos;s What You&apos;re Actually Walking On
                 </Link>
               </li>
             </ul>

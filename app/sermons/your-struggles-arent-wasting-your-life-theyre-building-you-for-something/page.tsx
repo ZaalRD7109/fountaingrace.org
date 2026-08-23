@@ -251,7 +251,7 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#0d6fbf] hover:underline font-medium">
-                  They
+                  They&apos;re Using You-And God Is Too
                 </Link>
               </li>
               <li>
@@ -261,17 +261,17 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Dreams Feel Dead, But Delays Aren
+                  Your Dreams Feel Dead, But Delays Aren&apos;t Denials-Here&apos;s Why
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Exhausted Because You&apos;re Trying to Do Everything Alone
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stop Waiting for Someone Else to Tell You What
+                  Stop Waiting for Someone Else to Tell You What&apos;s Coming
                 </Link>
               </li>
             </ul>

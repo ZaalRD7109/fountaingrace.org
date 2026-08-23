@@ -270,7 +270,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Feel Stuck and Invisible - Here
+                  You Feel Stuck and Invisible - Here&apos;s What Changes Everything
                 </Link>
               </li>
               <li>

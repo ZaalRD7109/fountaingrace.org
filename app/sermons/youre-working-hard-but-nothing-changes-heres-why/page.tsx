@@ -249,27 +249,27 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
-                  When You Feel Abandoned: Why You
+                  When You Feel Abandoned: Why You&apos;re Not as Alone as You Think
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Exhausted From Making Life Harder Than It Has to Be
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re About to Quit Right Before Everything Changes
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                <Link href="/sermons/the-principle-that-activates-everything" className="text-[#0d6fbf] hover:underline font-medium">
+                  The Principle That Activates Everything: Right Action
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/why-jesus-changed-everything-the-birth-that-brings-new-life" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Stuck Life Can Actually Change: Here
+                  Your Stuck Life Can Actually Change: Here&apos;s What Needs to Happen First
                 </Link>
               </li>
             </ul>

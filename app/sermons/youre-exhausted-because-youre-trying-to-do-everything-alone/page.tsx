@@ -251,22 +251,22 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Exhausted From Making Life Harder Than It Has to Be
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Real Reason You Feel Like You
+                  The Real Reason You Feel Like You&apos;re Losing When Everything Falls Apart
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Struggles Aren
+                  Your Struggles Aren&apos;t Wasting Your Life-They&apos;re Building You for Something
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/your-mind-wont-stop-working-even-after-8-hours-of-sleep" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Mind Won
+                  Your Mind Won&apos;t Stop Working Even After 8 Hours of Sleep
                 </Link>
               </li>
               <li>

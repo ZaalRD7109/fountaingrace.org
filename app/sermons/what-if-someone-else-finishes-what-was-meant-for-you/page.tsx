@@ -305,13 +305,13 @@ export default function SermonPage() {
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
-                <Link href="/sermons/be-a-doer-of-gods-word-not-just-a-hearer" className="text-[#0d6fbf] hover:underline font-medium">
-                  Be a Doer of God's Word, Not Just a Hearer
+                <Link href="/sermons/when-knowing-is-the-problem" className="text-[#0d6fbf] hover:underline font-medium">
+                  When Knowing Is the Problem
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/why-your-biggest-dreams-attract-the-strongest-opposition" className="text-[#0d6fbf] hover:underline font-medium">
-                  When Your Success Makes People Jealous: Here
+                  When Your Success Makes People Jealous: Here&apos;s What It Really Means
                 </Link>
               </li>
               <li>
@@ -321,12 +321,12 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#0d6fbf] hover:underline font-medium">
-                  They
+                  They&apos;re Using You-And God Is Too
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/why-youre-busy-but-stuck-the-action-that-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                <Link href="/sermons/the-principle-that-activates-everything" className="text-[#0d6fbf] hover:underline font-medium">
+                  The Principle That Activates Everything: Right Action
                 </Link>
               </li>
             </ul>

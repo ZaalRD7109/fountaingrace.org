@@ -267,12 +267,12 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/why-your-preparation-matters-more-than-your-luck" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Big Break Is Coming, But You
+                  Your Big Break Is Coming, But You&apos;re Not Ready For It
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Dreams Feel Dead, But Delays Aren
+                  Your Dreams Feel Dead, But Delays Aren&apos;t Denials-Here&apos;s Why
                 </Link>
               </li>
               <li>

@@ -269,7 +269,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#0d6fbf] hover:underline font-medium">
-                  Everyone
+                  Everyone&apos;s Rejected You. Here&apos;s What That Really Means About Your Worth
                 </Link>
               </li>
               <li>

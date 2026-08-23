@@ -311,7 +311,7 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/the-shortcut-thats-ruining-your-life" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Shortcut That
+                  The Shortcut That&apos;s Ruining Your Life
                 </Link>
               </li>
               <li>
@@ -331,7 +331,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Exhausted From Making Life Harder Than It Has to Be
                 </Link>
               </li>
             </ul>

@@ -277,7 +277,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/youre-not-beyond-repair-no-matter-what-youve-done" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Not Beyond Repair No Matter What You&apos;ve Done
                 </Link>
               </li>
             </ul>

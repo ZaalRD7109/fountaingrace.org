@@ -273,21 +273,13 @@ export default function SermonPage() {
                   Your Prayers Aren't Working Because You're Praying Against Open Doors
                 </Link>
               </li>
-              <li>
-                <Link href="/sermons/i-nearly-died-this-week-heres-what-changed-everything" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
-                </Link>
-              </li>
+
               <li>
                 <Link href="/sermons/you-quit-but-nothing-changed-the-real-reason-you-go-back" className="text-[#0d6fbf] hover:underline font-medium">
                   You Quit but Nothing Changed: The Real Reason You Go Back
                 </Link>
               </li>
-              <li>
-                <Link href="/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stuck in a Dead Relationship or Job? Here
-                </Link>
-              </li>
+
               <li>
                 <Link href="/sermons/dying-right-good-friday-message" className="text-[#0d6fbf] hover:underline font-medium">
                   Dying Right - What Jesus Did on the Cross That Most People Miss

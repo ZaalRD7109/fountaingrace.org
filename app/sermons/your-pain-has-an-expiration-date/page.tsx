@@ -254,7 +254,7 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/why-jesus-changed-everything-the-birth-that-brings-new-life" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Stuck Life Can Actually Change: Here
+                  Your Stuck Life Can Actually Change: Here&apos;s What Needs to Happen First
                 </Link>
               </li>
               <li>
@@ -264,17 +264,17 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Feel Trapped By What Others Say You Can
+                  You Feel Trapped By What Others Say You Can&apos;t Do
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Mind Is Broken By Lies You Believed - Here
+                  Your Mind Is Broken By Lies You Believed - Here&apos;s How to Rebuild It
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#0d6fbf] hover:underline font-medium">
-                  Everyone
+                  Everyone&apos;s Rejected You. Here&apos;s What That Really Means About Your Worth
                 </Link>
               </li>
             </ul>

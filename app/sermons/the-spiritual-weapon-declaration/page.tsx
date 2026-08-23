@@ -307,7 +307,7 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/the-spiritual-weapon-no-one-speaks-about" className="text-[#0d6fbf] hover:underline font-medium">
-                  The One Weapon Nobody Teaches You That Changes Every Fight
+                  The One Weapon Nobody Teaches You That Changes Every Fight (But Everyone Needs)
                 </Link>
               </li>
               <li>

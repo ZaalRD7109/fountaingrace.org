@@ -324,7 +324,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/youre-working-hard-but-nothing-changes-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Working Hard But Nothing Changes. Here&apos;s Why.
                 </Link>
               </li>
               <li>

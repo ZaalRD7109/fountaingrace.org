@@ -257,7 +257,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/your-struggles-arent-wasting-your-life-theyre-building-you-for-something" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Struggles Aren
+                  Your Struggles Aren&apos;t Wasting Your Life-They&apos;re Building You for Something
                 </Link>
               </li>
               <li>
@@ -267,7 +267,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/your-dreams-feel-dead-but-delays-arent-denials-heres-why" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Dreams Feel Dead, But Delays Aren
+                  Your Dreams Feel Dead, But Delays Aren&apos;t Denials-Here&apos;s Why
                 </Link>
               </li>
               <li>

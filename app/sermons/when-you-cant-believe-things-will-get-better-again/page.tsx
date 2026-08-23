@@ -343,7 +343,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/you-feel-trapped-by-what-others-say-you-cant-do" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Feel Trapped By What Others Say You Can
+                  You Feel Trapped By What Others Say You Can&apos;t Do
                 </Link>
               </li>
               <li>
@@ -353,12 +353,12 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Mind Is Broken By Lies You Believed - Here
+                  Your Mind Is Broken By Lies You Believed - Here&apos;s How to Rebuild It
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
-                  When You Feel Abandoned: Why You
+                  When You Feel Abandoned: Why You&apos;re Not as Alone as You Think
                 </Link>
               </li>
             </ul>

@@ -249,22 +249,22 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/youre-exhausted-because-youre-trying-to-do-everything-alone" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Exhausted Because You&apos;re Trying to Do Everything Alone
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/you-feel-stuck-and-invisible-heres-what-changes-everything" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Feel Stuck and Invisible - Here
+                  You Feel Stuck and Invisible - Here&apos;s What Changes Everything
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#0d6fbf] hover:underline font-medium">
-                  Everyone
+                  Everyone&apos;s Rejected You. Here&apos;s What That Really Means About Your Worth
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/you-know-what-you-need-to-do-so-why-cant-you-do-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Know What You Need to Do-So Why Can
+                  You Know What You Need to Do-So Why Can&apos;t You Do It?
                 </Link>
               </li>
               <li>

@@ -253,22 +253,22 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/your-mind-wont-stop-working-even-after-8-hours-of-sleep" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Mind Won
+                  Your Mind Won&apos;t Stop Working Even After 8 Hours of Sleep
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/everything-crumbling-at-once-heres-what-youre-actually-walking-on" className="text-[#0d6fbf] hover:underline font-medium">
-                  Everything Crumbling at Once? Here
+                  Everything Crumbling at Once? Here&apos;s What You&apos;re Actually Walking On
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Work Hard But Nothing Changes - Here
+                  You Work Hard But Nothing Changes - Here&apos;s What You&apos;re Missing
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/why-youre-losing-battles-and-how-to-actually-win" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Real Reason You Feel Like You
+                  The Real Reason You Feel Like You&apos;re Losing When Everything Falls Apart
                 </Link>
               </li>
             </ul>

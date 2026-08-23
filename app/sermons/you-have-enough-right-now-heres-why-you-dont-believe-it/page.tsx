@@ -268,7 +268,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Paycheck Disappears Every Month - Here
+                  Your Paycheck Disappears Every Month - Here&apos;s Why and What Actually Works
                 </Link>
               </li>
             </ul>

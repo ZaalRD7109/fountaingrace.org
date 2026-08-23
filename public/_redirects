@@ -12,7 +12,7 @@
 
 # Canonical consolidation - duplicate sermon pages removed 2026-06-06
 # (each old church-named slug superseded by the out-there retitled page for the same video)
-/sermons/right-action-principles-move-forward-faster-part2 /sermons/why-youre-busy-but-stuck-the-action-that-actually-works 301
+/sermons/right-action-principles-move-forward-faster-part2 /sermons/the-principle-that-activates-everything 301
 /sermons/right-action-principles-that-move-people-forward-faster /sermons/the-principle-that-activates-everything 301
 /sermons/prophetic-reset-hearing-seeing-speaking-heaven-john-10-27 /sermons/when-you-stop-hearing-the-voice-that-used-to-guide-every-decision 301
 
@@ -26,6 +26,17 @@
 # 2026-08-18 service was a re-preach of the 5 April sermon (Ricardo, 2026-08-23: "delete both"); both its pages go to the April page
 /sermons/when-everything-falls-apart-at-once-and-you-think-theres-no-way-out /sermons/when-life-feels-like-a-grave-you-cannot-climb-out-of 301
 /sermons/when-everything-falls-apart-at-once-how-to-survive-your-darkest-days /sermons/when-life-feels-like-a-grave-you-cannot-climb-out-of 301
+
+# Word-for-word duplicates removed 2026-08-23 (Ricardo: the same recording must not be on the site twice;
+#  the same message preached again in different words stays). Personal-channel copies and re-uploads go
+#  to the FGI-channel page with the original service date; two short clip pages go to their full sermon.
+/sermons/stop-helping-people-its-making-them-worse /sermons/why-your-kindness-might-be-hurting-people 301
+/sermons/why-youre-busy-but-stuck-the-action-that-actually-works /sermons/the-principle-that-activates-everything 301
+/sermons/stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave /sermons/you-are-not-lazy-you-are-a-lot-more 301
+/sermons/i-nearly-died-this-week-heres-what-changed-everything /sermons/you-are-not-lazy-you-are-a-lot-more 301
+/sermons/stop-waiting-to-be-perfect-before-you-matter /sermons/stop-waiting-for-permission-to-become-who-you-already-are 301
+/sermons/be-a-doer-of-gods-word-not-just-a-hearer /sermons/when-knowing-is-the-problem 301
+/sermons/follow-your-inner-voice-discover-your-destiny /sermons/when-good-things-block-god-things 301
 
 # Core pages — .html → clean URL (single hop, no chains)
 /index.html /  301
@@ -142,8 +153,8 @@
 /s/inheritance-test /sermons/the-inheritance-test?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=the-inheritance-test  302
 /s/language-of-spirit /sermons/the-language-of-the-spirit-interpreting-what-you-hear?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=language-of-the-spirit  302
 /s/prophetic-encounter /sermons/the-prophetic-encounter?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=the-prophetic-encounter  302
-/s/follow-inner-voice /sermons/follow-your-inner-voice-discover-your-destiny?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=follow-your-inner-voice  302
-/s/be-a-doer /sermons/be-a-doer-of-gods-word-not-just-a-hearer?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=be-a-doer-of-gods-word  302
+/s/follow-inner-voice /sermons/when-good-things-block-god-things?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=follow-your-inner-voice  302
+/s/be-a-doer /sermons/when-knowing-is-the-problem?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=be-a-doer-of-gods-word  302
 /s/silent-assassin /sermons/the-silent-assassin-of-destiny?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=the-silent-assassin-of-destiny  302
 /s/anointing-hell-fear /sermons/the-anointing-that-makes-hell-fear-you?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=anointing-that-makes-hell-fear  302
 /s/no-more-waiting /sermons/no-more-waiting-rooms-god-is-live-now?utm_source=youtube&utm_medium=video_description&utm_campaign=sermon_description&utm_content=no-more-waiting-rooms  302

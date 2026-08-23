@@ -252,7 +252,7 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
-                  When You Feel Abandoned: Why You
+                  When You Feel Abandoned: Why You&apos;re Not as Alone as You Think
                 </Link>
               </li>
               <li>
@@ -262,12 +262,12 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/the-real-reason-youre-trapped-in-debt-and-how-to-break-free" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Real Reason You
+                  The Real Reason You&apos;re Trapped in Debt (And How to Break Free)
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/you-work-hard-but-nothing-changes-heres-what-youre-missing" className="text-[#0d6fbf] hover:underline font-medium">
-                  You Work Hard But Nothing Changes - Here
+                  You Work Hard But Nothing Changes - Here&apos;s What You&apos;re Missing
                 </Link>
               </li>
               <li>

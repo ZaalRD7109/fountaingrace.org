@@ -257,12 +257,12 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/everyones-rejected-you-heres-what-that-really-means-about-your-worth" className="text-[#0d6fbf] hover:underline font-medium">
-                  Everyone
+                  Everyone&apos;s Rejected You. Here&apos;s What That Really Means About Your Worth
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/youre-about-to-quit-right-before-everything-changes" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re About to Quit Right Before Everything Changes
                 </Link>
               </li>
               <li>
@@ -272,7 +272,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Person Nobody Checks On: How You
+                  The Person Nobody Checks On: How You&apos;re Losing Friends Without Knowing It
                 </Link>
               </li>
             </ul>

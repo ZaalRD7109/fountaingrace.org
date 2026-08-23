@@ -289,7 +289,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/theyre-using-you-and-god-is-too" className="text-[#0d6fbf] hover:underline font-medium">
-                  They
+                  They&apos;re Using You-And God Is Too
                 </Link>
               </li>
               <li>

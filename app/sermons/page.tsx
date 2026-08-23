@@ -150,14 +150,6 @@ const sermonPosts = [
       "Constant handouts destroy independence. Learn when helping hurts and what really builds someone up to stand on their own.",
   },
   {
-    slug: "stop-helping-people-its-making-them-worse",
-    title: "Stop Helping People (It's Making Them Worse)",
-    date: "2023-08-20",
-    dateDisplay: "20 August 2023",
-    intro:
-      "Your generosity might be crippling the people you're trying to save. Learn when helping becomes enabling.",
-  },
-  {
     slug: "when-you-feel-abandoned-why-youre-not-as-alone-as-you-think",
     title: "When You Feel Abandoned: Why You're Not as Alone as You Think",
     date: "2023-08-13",
@@ -220,14 +212,6 @@ const sermonPosts = [
     dateDisplay: "14 April 2023",
     intro:
       "You're paralyzed by what happened. But the person you're meant to become doesn't live in yesterday. Here's how to rebuild when captivity feels permanent.",
-  },
-  {
-    slug: "stuck-in-a-dead-relationship-or-job-heres-why-you-wont-leave",
-    title: "Stuck in a Dead Relationship or Job? Here's Why You Won't Leave",
-    date: "2024-01-28",
-    dateDisplay: "28 January 2024",
-    intro:
-      "You feel trapped in circumstances that drain you-a relationship that hurts, a job going nowhere, life not improving. The real problem isn't laziness. It's separation from purpose.",
   },
   {
     slug: "the-shortcut-thats-ruining-your-life",
@@ -308,14 +292,6 @@ const sermonPosts = [
     dateDisplay: "16 June 2024",
     intro:
       "Most people wait passively for good things to happen. But breakthrough doesn't work that way. Your marriage, money, health, and purpose all follow the same rule: preparation before arrival.",
-  },
-  {
-    slug: "stop-waiting-to-be-perfect-before-you-matter",
-    title: "Stop Waiting to Be Perfect Before You Matter",
-    date: "2024-03-03",
-    dateDisplay: "3 March 2024",
-    intro:
-      "Most people underestimate what they can do and overestimate what they need before they start. This changes that.",
   },
   {
     slug: "youre-not-beyond-repair-no-matter-what-youve-done",
@@ -542,22 +518,6 @@ const sermonPosts = [
       "Your spouse left. Your job vanished. Your savings dried up. You're drowning in problems that feel bigger than you. But there's something about how battles actually work that changes everything.",
   },
   {
-    slug: "i-nearly-died-this-week-heres-what-changed-everything",
-    title: "You're Stuck Because You Don't Know Where You're Going",
-    date: "2026-04-29",
-    dateDisplay: "29 April 2026",
-    intro:
-      "You're not lazy. You're directionless. Here's how to escape dead-end situations and build momentum toward something that matters.",
-  },
-  {
-    slug: "why-youre-busy-but-stuck-the-action-that-actually-works",
-    title: "You're Busy But Broke: Why Effort Without Strategy Keeps You Stuck",
-    date: "2026-05-11",
-    dateDisplay: "11 May 2026",
-    intro:
-      "You show up. You try hard. You do everything right. So why are you still failing? The answer isn't more hustle. It's the specific, immediate action nobody taught you to take.",
-  },
-  {
     slug: 'why-the-easy-road-always-leads-to-the-wrong-place',
     title: 'Why the Easy Road Always Leads to the Wrong Place',
     date: '2026-05-17',
@@ -772,22 +732,6 @@ const sermonPosts = [
     dateDisplay: '22 February 2026',
     intro:
       'You know your potential. You keep postponing. Based on Esther 4:14, this message asks the uncomfortable question: what if your window closes and someone else steps into your assignment?',
-  },
-  {
-    slug: 'follow-your-inner-voice-discover-your-destiny',
-    title: 'Follow Your Inner Voice - Discover Your Destiny',
-    date: '2026-02-24',
-    dateDisplay: '24 February 2026',
-    intro:
-      'Before you were born, God already set you apart. This message challenges you to stop listening to the voices that told you to stop running - and start moving in the direction God placed inside you.',
-  },
-  {
-    slug: 'be-a-doer-of-gods-word-not-just-a-hearer',
-    title: "You Know What to Do. So Why Is Nothing Changing?",
-    date: '2026-02-16',
-    dateDisplay: '16 February 2026',
-    intro:
-      'James 1:21-25 - the person who hears and forgets is like a man who looks in a mirror and walks away. The blessing is attached to the doing, not the hearing.',
   },
   {
     slug: 'pruning-for-progress',

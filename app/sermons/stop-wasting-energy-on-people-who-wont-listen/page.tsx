@@ -262,7 +262,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/everyone-around-you-is-pretending-heres-why-youre-alone" className="text-[#0d6fbf] hover:underline font-medium">
-                  Everyone Around You Is Pretending - Here
+                  Everyone Around You Is Pretending - Here&apos;s Why You&apos;re Alone
                 </Link>
               </li>
               <li>

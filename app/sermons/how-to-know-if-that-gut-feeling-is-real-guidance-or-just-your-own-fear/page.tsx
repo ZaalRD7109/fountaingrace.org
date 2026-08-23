@@ -257,12 +257,12 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/stop-waiting-for-someone-else-to-tell-you-whats-coming" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stop Waiting for Someone Else to Tell You What
+                  Stop Waiting for Someone Else to Tell You What&apos;s Coming
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-to-be-perfect-before-you-matter" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stop Waiting to Be Perfect Before You Matter
+                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#0d6fbf] hover:underline font-medium">
+                  Stop Waiting for Permission to Become Who You Already Are
                 </Link>
               </li>
               <li>

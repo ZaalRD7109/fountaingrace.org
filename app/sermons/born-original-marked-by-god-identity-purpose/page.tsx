@@ -334,8 +334,8 @@ export default function SermonPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/follow-your-inner-voice-discover-your-destiny" className="text-[#0d6fbf] hover:underline font-medium">
-                  Follow Your Inner Voice - Discover Your Destiny
+                <Link href="/sermons/when-good-things-block-god-things" className="text-[#0d6fbf] hover:underline font-medium">
+                  How Good Opportunities Become the Thing That Stops Your Real Breakthrough
                 </Link>
               </li>
             </ul>

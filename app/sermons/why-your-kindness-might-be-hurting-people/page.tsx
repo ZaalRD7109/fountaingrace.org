@@ -256,11 +256,7 @@ export default function SermonPage() {
           <div className="max-w-3xl mx-auto">
             <h2 className="text-xl font-bold text-[#1a1a1a] mb-4">More messages like this one</h2>
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
-              <li>
-                <Link href="/sermons/stop-helping-people-its-making-them-worse" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stop Helping People (It
-                </Link>
-              </li>
+
               <li>
                 <Link href="/sermons/helping-someone-actually-keeps-them-stuck" className="text-[#0d6fbf] hover:underline font-medium">
                   Helping Someone Actually Keeps Them Stuck
@@ -268,7 +264,7 @@ export default function SermonPage() {
               </li>
               <li>
                 <Link href="/sermons/the-person-nobody-checks-on-how-youre-losing-friends-without-knowing-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Person Nobody Checks On: How You
+                  The Person Nobody Checks On: How You&apos;re Losing Friends Without Knowing It
                 </Link>
               </li>
               <li>

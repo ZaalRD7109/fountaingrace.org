@@ -261,8 +261,8 @@ export default function SermonPage() {
                 </Link>
               </li>
               <li>
-                <Link href="/sermons/stop-waiting-to-be-perfect-before-you-matter" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stop Waiting to Be Perfect Before You Matter
+                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#0d6fbf] hover:underline font-medium">
+                  Stop Waiting for Permission to Become Who You Already Are
                 </Link>
               </li>
               <li>
@@ -270,11 +270,7 @@ export default function SermonPage() {
                   The Hidden Cost of Staying Silent at Work, Home, and in Life
                 </Link>
               </li>
-              <li>
-                <Link href="/sermons/stop-waiting-for-permission-to-become-who-you-already-are" className="text-[#0d6fbf] hover:underline font-medium">
-                  Stop Waiting for Permission to Become Who You Already Are
-                </Link>
-              </li>
+
               <li>
                 <Link href="/sermons/you-love-god-but-are-you-in-the-game" className="text-[#0d6fbf] hover:underline font-medium">
                   You Know What You Should Be Doing - So Why Are You Still on the Sidelines?

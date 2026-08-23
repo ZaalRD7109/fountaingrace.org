@@ -257,27 +257,27 @@ export default function SermonPage() {
             <ul className="space-y-3 list-disc pl-5 text-[#333]">
               <li>
                 <Link href="/sermons/your-mind-is-broken-by-lies-you-believed-heres-how-to-rebuild-it" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Mind Is Broken By Lies You Believed - Here
+                  Your Mind Is Broken By Lies You Believed - Here&apos;s How to Rebuild It
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/your-paycheck-disappears-every-month-heres-why-and-what-actually-works" className="text-[#0d6fbf] hover:underline font-medium">
-                  Your Paycheck Disappears Every Month - Here
+                  Your Paycheck Disappears Every Month - Here&apos;s Why and What Actually Works
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/when-you-feel-abandoned-why-youre-not-as-alone-as-you-think" className="text-[#0d6fbf] hover:underline font-medium">
-                  When You Feel Abandoned: Why You
+                  When You Feel Abandoned: Why You&apos;re Not as Alone as You Think
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/the-shortcut-thats-ruining-your-life" className="text-[#0d6fbf] hover:underline font-medium">
-                  The Shortcut That
+                  The Shortcut That&apos;s Ruining Your Life
                 </Link>
               </li>
               <li>
                 <Link href="/sermons/youre-exhausted-from-making-life-harder-than-it-has-to-be" className="text-[#0d6fbf] hover:underline font-medium">
-                  You
+                  You&apos;re Exhausted From Making Life Harder Than It Has to Be
                 </Link>
               </li>
             </ul>
