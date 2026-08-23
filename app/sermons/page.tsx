@@ -22,6 +22,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "the-one-thing-that-makes-you-actually-powerful",
+    title: "The One Thing That Makes You Actually Powerful",
+    date: "2026-08-23",
+    dateDisplay: "23 August 2026",
+    intro:
+      "You climb higher hoping to feel important, but the feeling never fills you the way it should. That's because you're chasing the wrong side of greatness.",
+  },
+  {
     slug: "you-feel-like-helping-but-never-actually-do-anything",
     title: "You Feel Like Helping But Never Actually Do Anything",
     date: "2026-08-16",
