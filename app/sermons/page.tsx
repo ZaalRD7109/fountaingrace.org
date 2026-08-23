@@ -22,14 +22,6 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
-    slug: "when-everything-falls-apart-at-once-and-you-think-theres-no-way-out",
-    title: "When Everything Falls Apart at Once and You Think There's No Way Out",
-    date: "2026-08-18",
-    dateDisplay: "18 August 2026",
-    intro:
-      "You've hit rock bottom. Lost a home, a child, a job, a loved one. The darkness feels final. But it never is.",
-  },
-  {
     slug: "when-everything-falls-apart-at-once-how-to-survive-your-darkest-days",
     title: "When Everything Falls Apart at Once: How to Survive Your Darkest Days",
     date: "2026-08-18",

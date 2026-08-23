@@ -23,6 +23,8 @@
 /sermons/faith-is-the-router-that-connects-you-to-gods-supply /sermons/why-youre-exhausted-trying-to-make-everything-happen-yourself 301
 /sermons/why-youre-not-moving-forward-and-how-to-break-it /sermons/your-team-is-busy-but-going-nowhere-the-real-reason-nothing-changes 301
 /sermons/the-system-youre-praying-against-without-knowing-it /sermons/your-prayers-arent-working-because-youre-praying-against-open-doors 301
+# same service streamed to both channels on 2026-08-18 - the FGI-channel copy (8LoNH9WGu1Y) is the page that stays
+/sermons/when-everything-falls-apart-at-once-and-you-think-theres-no-way-out /sermons/when-everything-falls-apart-at-once-how-to-survive-your-darkest-days 301
 
 # Core pages — .html → clean URL (single hop, no chains)
 /index.html /  301
