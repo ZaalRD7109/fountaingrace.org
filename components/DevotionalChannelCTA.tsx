@@ -10,15 +10,15 @@ export default function DevotionalChannelCTA() {
     <section className="bg-[#f0fafa] py-14 px-4 sm:px-6 border-t border-[#e0f4f4]">
       <div className="section-container max-w-xl text-center">
         <p className="text-[#006b6b] font-semibold text-xs uppercase tracking-widest mb-3">
-          Every week · Free
+          Every day · Free
         </p>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">
-          Get the weekly message delivered to you
+          Get a short word delivered every day
         </h2>
         <p className="text-[#595959] leading-relaxed mb-7">
-          Each week Pastor Ricardo sends a short devotional based on the Sunday
-          message - practical, direct, and connected to what you are actually
-          going through. Get it straight on your phone.
+          Every day, a short devotional - one honest question, answered from
+          scripture. Practical, direct, and about what you are actually going
+          through.
         </p>
         <a
           href={CHANNEL_URL}
