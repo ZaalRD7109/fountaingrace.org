@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import SermonsFilter from './_components/SermonsFilter'
+import DevotionalChannelCTA from '../../components/DevotionalChannelCTA'
 
 export const metadata: Metadata = {
   title: 'Sermons | Bible Teaching | Fountain of Grace International',
@@ -924,41 +925,7 @@ export default function SermonsPage() {
       <SermonsFilter sermons={sortedSermons} />
 
       {/* DEVOTIONAL SIGNUP */}
-      <section className="bg-[#f0fafa] py-14 px-4 sm:px-6 border-t border-[#e0f4f4]">
-        <div className="section-container max-w-xl text-center">
-          <p className="text-[#006b6b] font-semibold text-xs uppercase tracking-widest mb-3">
-            Every week · Free
-          </p>
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Get the weekly message delivered to you
-          </h2>
-          <p className="text-[#595959] leading-relaxed mb-7">
-            Each week Pastor Ricardo sends a short devotional based on the Sunday message -
-            practical, direct, and connected to what you are actually going through.
-            Choose how you want to receive it.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-3 justify-center">
-            <a
-              href="https://wa.me/27752592555?text=Hi%2C%20please%20add%20me%20to%20the%20weekly%20devotional%20list."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block bg-[#25d366] text-[#1a1a1a] font-bold px-7 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors"
-            >
-              Subscribe via WhatsApp →
-            </a>
-            <a
-              href="mailto:info@fountaingrace.org?subject=Weekly%20Devotional%20Signup&body=Hi%2C%20please%20add%20me%20to%20the%20weekly%20devotional%20email%20list.%0A%0AMy%20name%20is%3A%20"
-              className="inline-block bg-[#0d6fbf] text-white font-bold px-7 py-3 rounded-lg hover:bg-[#1a8de4] transition-colors"
-            >
-              Subscribe via Email →
-            </a>
-          </div>
-          <p className="text-xs text-[#595959] mt-4 max-w-md mx-auto leading-relaxed">
-            By subscribing you consent to Fountain of Grace International (NPO 316-193) sending you a weekly devotional. Your details are used only for this purpose and are never sold or shared. Unsubscribe any time by replying STOP or UNSUBSCRIBE. See our{' '}
-            <a href="/privacy-policy" className="underline hover:text-[#006b6b]">Privacy Policy</a>.
-          </p>
-        </div>
-      </section>
+      <DevotionalChannelCTA />
 
       {/* CTA */}
       <section className="bg-[#008080] py-14 px-4 sm:px-6">
