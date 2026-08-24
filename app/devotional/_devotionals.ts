@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "am-i-feeding-my-worry-without-even-realising-it",
+    "date": "2026-08-24",
+    "dateDisplay": "24 August 2026",
+    "day": 236,
+    "headline": "Am I feeding my worry without even realising it?",
+    "verseRef": "Matthew 6:34",
+    "card": "/devotional-cards/w680/am-i-feeding-my-worry-without-even-realising-it.webp"
+  },
+  {
     "slug": "how-do-i-actually-stop-a-worry-spiral-before-it-takes-over",
     "date": "2026-08-23",
     "dateDisplay": "23 August 2026",
