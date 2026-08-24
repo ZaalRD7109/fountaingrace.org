@@ -10,15 +10,15 @@ export default function DevotionalChannelCTA() {
     <section className="bg-[#f0fafa] py-14 px-4 sm:px-6 border-t border-[#e0f4f4]">
       <div className="section-container max-w-xl text-center">
         <p className="text-[#006b6b] font-semibold text-xs uppercase tracking-widest mb-3">
-          Free · Leave any time
+          Every week · Free
         </p>
         <h2 className="text-2xl font-bold text-gray-900 mb-4">
-          Get the message on your phone
+          Get the weekly message delivered to you
         </h2>
         <p className="text-[#595959] leading-relaxed mb-7">
-          Pastor Ricardo posts a short devotional to the WhatsApp channel -
-          practical, direct, and connected to the Sunday message. Follow the
-          channel to get it, and leave whenever you like.
+          Each week Pastor Ricardo sends a short devotional based on the Sunday
+          message - practical, direct, and connected to what you are actually
+          going through. Get it straight on your phone.
         </p>
         <a
           href={CHANNEL_URL}
@@ -26,7 +26,7 @@ export default function DevotionalChannelCTA() {
           rel="noopener noreferrer"
           className="inline-block bg-[#25d366] text-[#0a3d1c] font-bold text-lg px-9 py-4 rounded-lg hover:bg-[#1ebe5d] transition-colors"
         >
-          Follow on WhatsApp →
+          Get it on WhatsApp →
         </a>
         <p className="text-sm text-[#595959] mt-6">
           Prefer email?{' '}
