@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { devotionals } from './_devotionals'
-import DevotionalChannelCTA from '../../components/DevotionalChannelCTA'
 
 export const metadata: Metadata = {
   title: 'Daily Devotional - Fountain of Grace International',
@@ -61,8 +60,6 @@ export default function DevotionalHub() {
             </div>
           </section>
         )}
-
-        <DevotionalChannelCTA />
 
         <section className="px-4 sm:px-6 py-10">
           <div className="max-w-3xl mx-auto">

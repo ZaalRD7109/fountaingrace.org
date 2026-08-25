@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "why-is-god-using-my-anxiety-to-make-me-stronger",
+    "date": "2026-08-25",
+    "dateDisplay": "25 August 2026",
+    "day": 237,
+    "headline": "Why is God using my anxiety to make me stronger?",
+    "verseRef": "Romans 8:29",
+    "card": "/devotional-cards/w680/why-is-god-using-my-anxiety-to-make-me-stronger.webp"
+  },
+  {
     "slug": "am-i-feeding-my-worry-without-even-realising-it",
     "date": "2026-08-24",
     "dateDisplay": "24 August 2026",
