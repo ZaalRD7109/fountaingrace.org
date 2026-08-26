@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "has-god-actually-been-faithful-to-me-my-whole-life",
+    "date": "2026-08-26",
+    "dateDisplay": "26 August 2026",
+    "day": 238,
+    "headline": "Has God actually been faithful to me my whole life?",
+    "verseRef": "Psalm 37:25",
+    "card": "/devotional-cards/w680/has-god-actually-been-faithful-to-me-my-whole-life.webp"
+  },
+  {
     "slug": "why-is-god-using-my-anxiety-to-make-me-stronger",
     "date": "2026-08-25",
     "dateDisplay": "25 August 2026",

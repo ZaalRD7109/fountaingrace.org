@@ -133,6 +133,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - daily library, one page per devotional)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/devotional/has-god-actually-been-faithful-to-me-my-whole-life`, lastModified: new Date('2026-08-26'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/why-is-god-using-my-anxiety-to-make-me-stronger`, lastModified: new Date('2026-08-25'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/am-i-feeding-my-worry-without-even-realising-it`, lastModified: new Date('2026-08-24'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/how-do-i-actually-stop-a-worry-spiral-before-it-takes-over`, lastModified: new Date('2026-08-23'), changeFrequency: 'monthly', priority: 0.6 },
