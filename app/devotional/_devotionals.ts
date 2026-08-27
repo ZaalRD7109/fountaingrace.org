@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "does-god-even-notice-the-ordinary-work-i-do-every-day",
+    "date": "2026-08-27",
+    "dateDisplay": "27 August 2026",
+    "day": 239,
+    "headline": "Does God even notice the ordinary work I do every day?",
+    "verseRef": "Colossians 3:23",
+    "card": "/devotional-cards/w680/does-god-even-notice-the-ordinary-work-i-do-every-day.webp"
+  },
+  {
     "slug": "has-god-actually-been-faithful-to-me-my-whole-life",
     "date": "2026-08-26",
     "dateDisplay": "26 August 2026",
