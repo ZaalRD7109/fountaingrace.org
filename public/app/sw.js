@@ -1,8 +1,8 @@
 // Minimal service worker for the FGI member home screen (/app/).
 // Caches only the shell so the installed icon always opens, even offline.
 // Never caches the rest of the site - those pages stay live from the network.
-const CACHE = 'fgi-app-v2';
-const SHELL = ['/app/', '/logo-square.webp', '/logo-square.png', '/favicon.jpg'];
+const CACHE = 'fgi-app-v3';
+const SHELL = ['/app/', '/logo-square.webp', '/app/icon-192.png', '/favicon.jpg'];
 
 self.addEventListener('install', (e) => {
   e.waitUntil(caches.open(CACHE).then((c) => c.addAll(SHELL)).then(() => self.skipWaiting()));
@@ -24,8 +24,8 @@ self.addEventListener('push', (e) => {
   const title = data.title || 'Fountain of Grace';
   const opts = {
     body: data.body || '',
-    icon: '/logo-square.png',
-    badge: '/logo-square.png',
+    icon: '/app/icon-192.png',
+    badge: '/app/icon-192.png',
     data: { url: data.url || '/app/' },
   };
   e.waitUntil(self.registration.showNotification(title, opts));

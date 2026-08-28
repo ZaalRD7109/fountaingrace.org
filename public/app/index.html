@@ -11,7 +11,7 @@
 <meta name="apple-mobile-web-app-title" content="FGI">
 <title>Fountain of Grace - Member Home</title>
 <link rel="icon" href="/favicon.jpg">
-<link rel="apple-touch-icon" href="/logo-square.png">
+<link rel="apple-touch-icon" href="/app/icon-180.png">
 <link rel="manifest" href="/app/manifest.webmanifest">
 <style>
   :root{
@@ -117,7 +117,7 @@
   <div class="install" id="installBox">
     <b>Keep this on your phone.</b> Add this page to your home screen and it opens like an app, one tap from anywhere.
     <button id="installBtn">Add to home screen</button>
-    <div id="iosHint" style="display:none; margin-top:8px;">On iPhone: tap the Share button, then "Add to Home Screen".</div>
+    <div id="installSteps" style="display:none; margin-top:8px;"></div>
   </div>
 </main>
 
@@ -135,17 +135,41 @@
   if(standalone){ var b = document.getElementById('installBox'); if(b) b.style.display = 'none'; }
 
   var deferred = null;
+  var gotPrompt = false;
   window.addEventListener('beforeinstallprompt', function(e){
-    e.preventDefault(); deferred = e;
+    e.preventDefault(); deferred = e; gotPrompt = true;
     var btn = document.getElementById('installBtn');
+    var steps = document.getElementById('installSteps');
+    steps.style.display = 'none';
     btn.style.display = 'block';
     btn.addEventListener('click', function(){
       if(!deferred) return;
       deferred.prompt(); deferred = null; btn.style.display = 'none';
     });
   });
-  var isIos = /iphone|ipad|ipod/i.test(navigator.userAgent);
-  if(isIos && !standalone){ document.getElementById('iosHint').style.display = 'block'; }
+  window.addEventListener('appinstalled', function(){
+    var box = document.getElementById('installBox');
+    box.innerHTML = '<b>Installed.</b> The Fountain of Grace icon is now on your phone - look on your home screen, or in your list of apps, and open it from there next time.';
+  });
+
+  var ua = navigator.userAgent;
+  var isIos = /iphone|ipad|ipod/i.test(ua);
+  var inAppBrowser = /\bwv\b|WhatsApp|FBAN|FBAV|FB_IAB|Instagram|Telegram|TikTok/i.test(ua);
+  // If the phone offers no install button, say exactly what to tap instead.
+  if(!standalone){
+    setTimeout(function(){
+      if(gotPrompt || standalone) return;
+      var steps = document.getElementById('installSteps');
+      if(inAppBrowser){
+        steps.innerHTML = 'You are inside another app’s browser, and it cannot install. Tap the three dots at the top right, choose <b>Open in Chrome</b> (or Open in browser), then install from there.';
+      } else if(isIos){
+        steps.innerHTML = 'On iPhone: tap the <b>Share</b> button at the bottom of Safari, scroll down, tap <b>Add to Home Screen</b>, then Add.';
+      } else {
+        steps.innerHTML = 'Tap the <b>three dots</b> at the top right of your browser, tap <b>Add to Home screen</b>, then <b>Install</b>. The icon lands on your phone like any other app.';
+      }
+      steps.style.display = 'block';
+    }, 2500);
+  }
 
   // GA4, primed queue + deferred load so nothing blocks the page and no tap is lost
   window.dataLayer = window.dataLayer || [];
