@@ -103,7 +103,7 @@
       <span class="ic"><svg viewBox="0 0 24 24"><path d="M7 11.5V6a1.7 1.7 0 0 1 3.4 0v4.5"/><path d="M10.4 10.5V4.7a1.7 1.7 0 0 1 3.4 0v5.8"/><path d="M13.8 11V6.3a1.7 1.7 0 0 1 3.4 0v7.2a6 6 0 0 1-6 6 6 6 0 0 1-5.6-3.8L4 12.6a1.6 1.6 0 0 1 2.9-1.3l1 1.8"/></svg></span>
       <span class="tx"><span class="lb">Serve</span><span class="sb" style="display:block">Volunteer where you fit best</span></span>
     </a>
-    <a class="tile" href="https://wa.me/?text=This%20is%20a%20personal%20invitation%2C%20from%20me%20to%20you.%20I%20invite%20you%20to%20join%20me%20at%20Fountain%20of%20Grace%20this%20Sunday%20at%2009%3A00%20in%20Pretoria%20North.%20Grace%20me%20with%20your%20presence%20-%20come%20sit%20with%20me%2C%20I%20will%20be%20looking%20out%20for%20you%20at%20the%20door.%20Here%20is%20what%20to%20expect%3A%20https%3A%2F%2Fwww.fountaingrace.org%2Fwhat-to-expect%3Futm_source%3Dmember-invite%26utm_medium%3Dwhatsapp" data-ev="invite">
+    <a class="tile" href="https://wa.me/?text=I%20personally%20invite%20you%20to%20join%20me%20at%20Fountain%20of%20Grace%20this%20Sunday%20at%2009%3A00%20in%20Pretoria%20North.%20Grace%20me%20with%20your%20presence%20-%20come%20sit%20with%20me%2C%20I%20will%20be%20looking%20out%20for%20you%20at%20the%20door.%20Here%20is%20what%20to%20expect%3A%20https%3A%2F%2Fwww.fountaingrace.org%2Fwhat-to-expect%3Futm_source%3Dmember-invite%26utm_medium%3Dwhatsapp" data-ev="invite">
       <span class="ic"><svg viewBox="0 0 24 24"><circle cx="6" cy="12" r="2.6"/><circle cx="17.5" cy="5.5" r="2.6"/><circle cx="17.5" cy="18.5" r="2.6"/><path d="M8.4 10.8l6.8-4M8.4 13.2l6.8 4"/></svg></span>
       <span class="tx"><span class="lb">Invite someone</span><span class="sb" style="display:block">Share Sunday with a friend</span></span>
     </a>
@@ -113,6 +113,12 @@
     <span class="ic"><svg viewBox="0 0 24 24"><path d="M20 13.5a2 2 0 0 1-2 2H8l-4 4v-14a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2z"/></svg></span>
     <span class="tx"><span class="lb">Talk to us</span><span class="sb" style="display:block">Message the church on WhatsApp, any time</span></span>
   </a>
+
+  <div class="install" id="notifyBox" style="margin-top:20px; display:none;">
+    <b>Hear from your church.</b> Get a message on this phone when the morning devotional and the new sermon land.
+    <button id="notifyBtn" style="display:block; margin-top:10px; background:var(--teal); color:#fff; border:0; border-radius:10px; padding:12px 18px; font-size:14.5px; font-weight:600; width:100%;">Turn on notifications</button>
+    <div id="notifyState" style="display:none; margin-top:8px; font-weight:600; color:var(--ink);"></div>
+  </div>
 
   <div class="install" id="installBox">
     <b>Keep this on your phone.</b> Add this page to your home screen and it opens like an app, one tap from anywhere.
@@ -170,6 +176,82 @@
       loadGA();
     });
   });
+
+  // Microsoft Clarity, same deferred pattern - heatmaps and session recordings
+  var clLoaded = false;
+  function loadClarity(){
+    if(clLoaded) return; clLoaded = true;
+    window.clarity = window.clarity || function(){ (window.clarity.q = window.clarity.q || []).push(arguments); };
+    var s = document.createElement('script'); s.async = true;
+    s.src = 'https://www.clarity.ms/tag/wrvix7z3n5?ref=bwt';
+    document.head.appendChild(s);
+  }
+  ['touchstart','scroll','click'].forEach(function(ev){
+    window.addEventListener(ev, loadClarity, { once:true, passive:true });
+  });
+  setTimeout(loadClarity, 4000);
+
+  // Push notifications - the church can reach installed phones directly.
+  var PUSH_KEY = 'BGtMy3y_WPEA6czh9uJqrPXIqCKTtb-l7r6Ow9PwgsqhMB60GKgGhAyZfYnCoY9iKZWg6Z4rQavj3wUPn6dxTkk';
+  var PUSH_API = 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/push-subscribe';
+  var SUBMIT_KEY = 'push-b71a7e0847a4a6fdc37a6afa';
+
+  function b64ToBytes(b64){
+    var pad = '='.repeat((4 - b64.length % 4) % 4);
+    var raw = atob((b64 + pad).replace(/-/g,'+').replace(/_/g,'/'));
+    var out = new Uint8Array(raw.length);
+    for(var i=0;i<raw.length;i++) out[i] = raw.charCodeAt(i);
+    return out;
+  }
+  function saveSub(sub){
+    return fetch(PUSH_API, {
+      method:'POST', headers:{'content-type':'application/json'},
+      body: JSON.stringify({ k: SUBMIT_KEY, subscription: sub.toJSON(), ua: navigator.userAgent.slice(0,180) })
+    });
+  }
+  var pushOk = 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
+  var box = document.getElementById('notifyBox');
+  var btn = document.getElementById('notifyBtn');
+  var state = document.getElementById('notifyState');
+
+  function showDone(msg){
+    btn.style.display = 'none';
+    state.textContent = msg;
+    state.style.display = 'block';
+  }
+  if(pushOk && !(isIos && !standalone)){
+    // On iPhone push only works once the page is installed, so the card waits until then.
+    box.style.display = 'block';
+    navigator.serviceWorker.ready.then(function(reg){
+      return reg.pushManager.getSubscription();
+    }).then(function(sub){
+      if(sub){ showDone('Notifications are on for this phone.'); saveSub(sub).catch(function(){}); }
+    }).catch(function(){});
+
+    btn.addEventListener('click', function(){
+      btn.disabled = true; btn.textContent = 'One moment...';
+      Notification.requestPermission().then(function(perm){
+        if(perm !== 'granted'){
+          btn.disabled = false; btn.textContent = 'Turn on notifications';
+          showDone('Notifications are blocked for this site. Allow them in your browser settings, then try again.');
+          return;
+        }
+        navigator.serviceWorker.ready.then(function(reg){
+          return reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64ToBytes(PUSH_KEY) });
+        }).then(function(sub){
+          return saveSub(sub).then(function(r){
+            if(!r.ok) throw new Error('save failed');
+            gtag('event', 'member_home_tap', { tile: 'notify_on' });
+            showDone('Done. This phone now hears from your church.');
+          });
+        }).catch(function(){
+          btn.disabled = false; btn.textContent = 'Turn on notifications';
+          state.textContent = 'That did not work. Check your connection and try again.';
+          state.style.display = 'block';
+        });
+      });
+    });
+  }
 })();
 </script>
 </body>
