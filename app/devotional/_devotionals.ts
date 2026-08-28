@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "does-what-i-do-every-day-actually-matter-to-anyone",
+    "date": "2026-08-28",
+    "dateDisplay": "28 August 2026",
+    "day": 240,
+    "headline": "Does what I do every day actually matter to anyone?",
+    "verseRef": "Proverbs 16:3",
+    "card": "/devotional-cards/w680/does-what-i-do-every-day-actually-matter-to-anyone.webp"
+  },
+  {
     "slug": "does-god-even-notice-the-ordinary-work-i-do-every-day",
     "date": "2026-08-27",
     "dateDisplay": "27 August 2026",
