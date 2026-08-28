@@ -10,6 +10,13 @@
   X-Robots-Tag: noindex
 
 # Utility apps - secret-link tools, not for search results
+# /app/ is the member front door - shared in the church WhatsApp, installable,
+# no search value (it is a menu of links), so noindex keeps it out of Google
+# without blocking the WhatsApp link preview.
+/app/
+  X-Robots-Tag: noindex
+/app/*
+  X-Robots-Tag: noindex
 /WA/
   X-Robots-Tag: noindex
 /WA/*
