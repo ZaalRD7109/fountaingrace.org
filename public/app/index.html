@@ -114,12 +114,6 @@
     <span class="tx"><span class="lb">Talk to us</span><span class="sb" style="display:block">Message the church on WhatsApp, any time</span></span>
   </a>
 
-  <div class="install" id="notifyBox" style="margin-top:20px; display:none;">
-    <b>Hear from your church.</b> Get a message on this phone when the morning devotional and the new sermon land.
-    <button id="notifyBtn" style="display:block; margin-top:10px; background:var(--teal); color:#fff; border:0; border-radius:10px; padding:12px 18px; font-size:14.5px; font-weight:600; width:100%;">Turn on notifications</button>
-    <div id="notifyState" style="display:none; margin-top:8px; font-weight:600; color:var(--ink);"></div>
-  </div>
-
   <div class="install" id="installBox">
     <b>Keep this on your phone.</b> Add this page to your home screen and it opens like an app, one tap from anywhere.
     <button id="installBtn">Add to home screen</button>
@@ -129,7 +123,7 @@
 
 <footer>
   Fountain of Grace International &middot; Pretoria North<br>
-  <a href="/">Visit the full website</a>
+  <a href="/">Visit the full website</a><span id="pushToggleWrap" style="display:none"> &middot; <a href="#" id="pushToggle">Stop notifications</a></span>
 </footer>
 </div>
 
@@ -204,54 +198,94 @@
     return out;
   }
   function saveSub(sub){
+    // keepalive so the save survives the navigation that follows the first tap
     return fetch(PUSH_API, {
-      method:'POST', headers:{'content-type':'application/json'},
+      method:'POST', headers:{'content-type':'application/json'}, keepalive:true,
       body: JSON.stringify({ k: SUBMIT_KEY, subscription: sub.toJSON(), ua: navigator.userAgent.slice(0,180) })
     });
   }
+  // Notifications come WITH the app: no card, no button. The first time a
+  // person taps anything in the installed app, the phone shows its own
+  // one-time Allow question (that question is the phone's own and cannot be
+  // skipped by any app). Allow once, and this phone hears about the morning
+  // devotional and new sermons. A quiet Stop notifications link sits in the
+  // footer, and stopping is remembered so the app never asks again.
   var pushOk = 'serviceWorker' in navigator && 'PushManager' in window && 'Notification' in window;
-  var box = document.getElementById('notifyBox');
-  var btn = document.getElementById('notifyBtn');
-  var state = document.getElementById('notifyState');
+  var haveSub = false;
+  var wrap = document.getElementById('pushToggleWrap');
+  var toggle = document.getElementById('pushToggle');
 
-  function showDone(msg){
-    btn.style.display = 'none';
-    state.textContent = msg;
-    state.style.display = 'block';
+  function optedOut(){ try{ return localStorage.getItem('fgi-push-off') === '1'; }catch(e){ return false; } }
+  function setOptOut(v){ try{ if(v) localStorage.setItem('fgi-push-off','1'); else localStorage.removeItem('fgi-push-off'); }catch(e){} }
+  function updateToggle(){
+    if(!(pushOk && standalone)){ wrap.style.display = 'none'; return; }
+    if(haveSub){ toggle.textContent = 'Stop notifications'; wrap.style.display = 'inline'; }
+    else if(optedOut()){ toggle.textContent = 'Start notifications'; wrap.style.display = 'inline'; }
+    else { wrap.style.display = 'none'; }
   }
-  if(pushOk && !(isIos && !standalone)){
-    // On iPhone push only works once the page is installed, so the card waits until then.
-    box.style.display = 'block';
+  function subscribe(){
+    return navigator.serviceWorker.ready.then(function(reg){
+      return reg.pushManager.subscribe({ userVisibleOnly:true, applicationServerKey: b64ToBytes(PUSH_KEY) });
+    }).then(function(sub){
+      haveSub = true;
+      gtag('event', 'member_home_tap', { tile: 'notify_on' });
+      updateToggle();
+      return saveSub(sub);
+    });
+  }
+
+  if(pushOk && standalone){
     navigator.serviceWorker.ready.then(function(reg){
       return reg.pushManager.getSubscription();
     }).then(function(sub){
-      if(sub){ showDone('Notifications are on for this phone.'); saveSub(sub).catch(function(){}); }
+      if(sub){ haveSub = true; saveSub(sub).catch(function(){}); }
+      updateToggle();
     }).catch(function(){});
 
-    btn.addEventListener('click', function(){
-      btn.disabled = true; btn.textContent = 'One moment...';
+    // The ask-by-itself moment: first tap anywhere (except the footer link and
+    // the install button). If the tap was on a tile, hold the navigation until
+    // the phone's Allow question is answered, then continue to where they were going.
+    var firstTap = function(e){
+      if(e.target.closest && (e.target.closest('#pushToggle') || e.target.closest('#installBtn'))) return;
+      if(haveSub || optedOut() || Notification.permission === 'denied'){
+        document.removeEventListener('click', firstTap, true);
+        return;
+      }
+      document.removeEventListener('click', firstTap, true);
+      var a = e.target.closest ? e.target.closest('a') : null;
+      if(a && a.href) e.preventDefault();
+      var go = function(){ if(a && a.href) location.href = a.href; };
       Notification.requestPermission().then(function(perm){
-        if(perm !== 'granted'){
-          btn.disabled = false; btn.textContent = 'Turn on notifications';
-          showDone('Notifications are blocked for this site. Allow them in your browser settings, then try again.');
-          return;
-        }
-        navigator.serviceWorker.ready.then(function(reg){
-          return reg.pushManager.subscribe({ userVisibleOnly: true, applicationServerKey: b64ToBytes(PUSH_KEY) });
-        }).then(function(sub){
-          return saveSub(sub).then(function(r){
-            if(!r.ok) throw new Error('save failed');
-            gtag('event', 'member_home_tap', { tile: 'notify_on' });
-            showDone('Done. This phone now hears from your church.');
-          });
-        }).catch(function(){
-          btn.disabled = false; btn.textContent = 'Turn on notifications';
-          state.textContent = 'That did not work. Check your connection and try again.';
-          state.style.display = 'block';
-        });
-      });
-    });
+        if(perm === 'granted') return subscribe();
+      }).catch(function(){}).then(go, go);
+    };
+    document.addEventListener('click', firstTap, true);
   }
+
+  toggle.addEventListener('click', function(e){
+    e.preventDefault();
+    if(haveSub){
+      navigator.serviceWorker.ready.then(function(reg){
+        return reg.pushManager.getSubscription();
+      }).then(function(sub){
+        if(!sub) return;
+        var body = sub.toJSON();
+        return sub.unsubscribe().then(function(){
+          return fetch(PUSH_API, { method:'POST', headers:{'content-type':'application/json'}, keepalive:true,
+            body: JSON.stringify({ k: SUBMIT_KEY, action:'unsubscribe', subscription: body }) });
+        });
+      }).catch(function(){}).then(function(){
+        haveSub = false; setOptOut(true);
+        gtag('event', 'member_home_tap', { tile: 'notify_off' });
+        updateToggle();
+      });
+    } else {
+      setOptOut(false);
+      Notification.requestPermission().then(function(perm){
+        if(perm === 'granted') return subscribe();
+      }).catch(function(){}).then(updateToggle, updateToggle);
+    }
+  });
 })();
 </script>
 </body>
