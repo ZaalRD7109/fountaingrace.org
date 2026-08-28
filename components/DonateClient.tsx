@@ -170,7 +170,7 @@ export default function DonateClient() {
       </section>
 
       {/* ── GIVE FORM ────────────────────────────────────────────── */}
-      <section className="bg-[#f0fafa] py-16 px-4 sm:px-6">
+      <section id="give" className="bg-[#f0fafa] py-16 px-4 sm:px-6 scroll-mt-16">
         <div className="max-w-2xl mx-auto">
           <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d6fbf] text-center mb-10">
             Choose How You Want to Give

@@ -72,7 +72,7 @@ export default function VolunteerPage() {
       </section>
 
       {/* FORM - full width */}
-      <section className="bg-white py-6 px-4 sm:px-6">
+      <section id="form" className="bg-white py-6 px-4 sm:px-6 scroll-mt-16">
         <div className="max-w-2xl mx-auto">
           <VolunteerForm />
         </div>
