@@ -155,19 +155,35 @@
   var ua = navigator.userAgent;
   var isIos = /iphone|ipad|ipod/i.test(ua);
   var inAppBrowser = /\bwv\b|WhatsApp|FBAN|FBAV|FB_IAB|Instagram|Telegram|TikTok/i.test(ua);
-  // If the phone offers no install button, say exactly what to tap instead.
+  // If the phone offers no install button, say exactly what to tap instead -
+  // and if the app is ALREADY installed (the reason Chrome offers no button),
+  // say where to find the icon rather than sending them in a circle.
   if(!standalone){
     setTimeout(function(){
       if(gotPrompt || standalone) return;
       var steps = document.getElementById('installSteps');
-      if(inAppBrowser){
-        steps.innerHTML = 'You are inside another app’s browser, and it cannot install. Tap the three dots at the top right, choose <b>Open in Chrome</b> (or Open in browser), then install from there.';
-      } else if(isIos){
-        steps.innerHTML = 'On iPhone: tap the <b>Share</b> button at the bottom of Safari, scroll down, tap <b>Add to Home Screen</b>, then Add.';
-      } else {
-        steps.innerHTML = 'Tap the <b>three dots</b> at the top right of your browser, tap <b>Add to Home screen</b>, then <b>Install</b>. The icon lands on your phone like any other app.';
+      function showSteps(html){ steps.innerHTML = html; steps.style.display = 'block'; }
+      function fallbackSteps(){
+        if(inAppBrowser){
+          showSteps('You are inside another app’s browser, and it cannot install. Tap the three dots at the top right, choose <b>Open in Chrome</b> (or Open in browser), then install from there.');
+        } else if(isIos){
+          showSteps('On iPhone: tap the <b>Share</b> button at the bottom of Safari, scroll down, tap <b>Add to Home Screen</b>, then Add.');
+        } else {
+          showSteps('Tap the <b>three dots</b> at the top right of your browser, tap <b>Add to Home screen</b>, then <b>Install</b>. The icon lands on your phone like any other app.');
+        }
       }
-      steps.style.display = 'block';
+      if('getInstalledRelatedApps' in navigator){
+        navigator.getInstalledRelatedApps().then(function(apps){
+          if(apps && apps.length){
+            document.getElementById('installBtn').style.display = 'none';
+            showSteps('<b>Good news - this app is already on your phone.</b> Swipe up on your home screen to open your list of apps, find the <b>Fountain of Grace</b> icon, hold your finger on it and add it to your home screen. Open it from that icon from now on.');
+          } else {
+            fallbackSteps();
+          }
+        }).catch(fallbackSteps);
+      } else {
+        fallbackSteps();
+      }
     }, 2500);
   }
 
