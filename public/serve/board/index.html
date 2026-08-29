@@ -62,15 +62,16 @@
   .flags p{font-size:14px; line-height:1.5; margin:3px 0;}
   .note{background:var(--card2); border-radius:10px; padding:10px 12px; margin-top:10px;
         font-size:14px; line-height:1.55; color:var(--dim);}
-  /* The conversation guide. Collapsed by default so the card stays short on a
-     phone - it opens with one tap right before the conversation happens. */
-  details.qs{background:var(--card2); border-radius:12px; margin-top:10px;}
-  details.qs summary{list-style:none; cursor:pointer; padding:12px 14px; font-size:14px;
-        font-weight:700; color:var(--gold); display:flex; justify-content:space-between; align-items:center;}
+  /* The conversation guide. Closed it is just a button, same shape as the other
+     buttons on the card, so the card stays short - one press opens the questions. */
+  details.qs{margin-top:10px;}
+  details.qs summary{list-style:none; cursor:pointer; display:block; width:100%; text-align:center;
+        font-size:16px; font-weight:700; padding:14px 12px; border-radius:13px;
+        color:var(--gold); border:1px solid var(--gold); background:transparent;}
   details.qs summary::-webkit-details-marker{display:none;}
-  details.qs summary::after{content:'+'; font-size:19px; color:var(--dim); font-weight:400;}
-  details.qs[open] summary::after{content:'\2212';}
-  details.qs .qb{padding:0 14px 13px;}
+  details.qs[open] summary{border-bottom-left-radius:0; border-bottom-right-radius:0;}
+  details.qs .qb{padding:13px 14px; background:var(--card2);
+        border-radius:0 0 13px 13px; border:1px solid var(--line); border-top:0;}
   details.qs .qi{font-size:13px; color:var(--dim); line-height:1.5; margin-bottom:11px;}
   .q{margin-bottom:12px;}
   .q b{display:block; font-size:14.5px; line-height:1.45;}
@@ -152,7 +153,7 @@ let STAGES = {};
 // - if the pack changes, change this too. It is a guide, not a script: whoever
 // does the conversation asks in their own words. Static text, ours, safe as HTML.
 const CONVO_GUIDE =
-  '<details class="qs"><summary>The questions to ask &middot; tap to open</summary><div class="qb">' +
+  '<details class="qs"><summary>The questions to ask</summary><div class="qb">' +
   '<div class="qi">Coffee, not an interview. Start like a person: &quot;Hi, good to talk to you. How are you doing today?&quot; ' +
   'Then actually listen. Ask these in your own words, never as a list read out loud. ' +
   'Come away knowing all five.</div>' +
