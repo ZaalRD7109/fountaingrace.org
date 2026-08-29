@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "does-god-see-me-when-i-feel-invisible-at-work",
+    "date": "2026-08-29",
+    "dateDisplay": "29 August 2026",
+    "day": 241,
+    "headline": "Does God see me when I feel invisible at work?",
+    "verseRef": "1 Samuel 16:7",
+    "card": "/devotional-cards/w680/does-god-see-me-when-i-feel-invisible-at-work.webp"
+  },
+  {
     "slug": "does-what-i-do-every-day-actually-matter-to-anyone",
     "date": "2026-08-28",
     "dateDisplay": "28 August 2026",
