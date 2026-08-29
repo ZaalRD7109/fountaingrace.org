@@ -62,6 +62,20 @@
   .flags p{font-size:14px; line-height:1.5; margin:3px 0;}
   .note{background:var(--card2); border-radius:10px; padding:10px 12px; margin-top:10px;
         font-size:14px; line-height:1.55; color:var(--dim);}
+  /* The conversation guide. Collapsed by default so the card stays short on a
+     phone - it opens with one tap right before the conversation happens. */
+  details.qs{background:var(--card2); border-radius:12px; margin-top:10px;}
+  details.qs summary{list-style:none; cursor:pointer; padding:12px 14px; font-size:14px;
+        font-weight:700; color:var(--gold); display:flex; justify-content:space-between; align-items:center;}
+  details.qs summary::-webkit-details-marker{display:none;}
+  details.qs summary::after{content:'+'; font-size:19px; color:var(--dim); font-weight:400;}
+  details.qs[open] summary::after{content:'\2212';}
+  details.qs .qb{padding:0 14px 13px;}
+  details.qs .qi{font-size:13px; color:var(--dim); line-height:1.5; margin-bottom:11px;}
+  .q{margin-bottom:12px;}
+  .q b{display:block; font-size:14.5px; line-height:1.45;}
+  .q p{font-size:13.5px; color:var(--dim); line-height:1.5; margin-top:3px;}
+  .q p.ask{color:var(--text); font-style:italic;}
   /* One full-width button per row. Rule 19 - this is read on a phone, standing up. */
   button, a.btn{display:block; width:100%; text-align:center; text-decoration:none; border:0;
       font-family:inherit; font-size:16px; font-weight:700; padding:14px 12px;
@@ -133,6 +147,34 @@ function ago(days) {
 
 let STAGES = {};
 
+// The conversation guide, on the card so nobody has to remember the questions.
+// Same five questions as the recruitment pack (2-Volunteer-Recruitment-Full.pdf)
+// - if the pack changes, change this too. It is a guide, not a script: whoever
+// does the conversation asks in their own words. Static text, ours, safe as HTML.
+const CONVO_GUIDE =
+  '<details class="qs"><summary>The questions to ask &middot; tap to open</summary><div class="qb">' +
+  '<div class="qi">Coffee, not an interview. Start like a person: &quot;Hi, good to talk to you. How are you doing today?&quot; ' +
+  'Then actually listen. Ask these in your own words, never as a list read out loud. ' +
+  'Come away knowing all five.</div>' +
+  '<div class="q"><b>1. What does their life look like?</b>' +
+  '<p class="ask">&quot;Tell me a bit about yourself. Are you married, do you have children? What does a normal week look like for you?&quot;</p>' +
+  '<p>You want the shape of their week, not a list of facts.</p></div>' +
+  '<div class="q"><b>2. Is anything about to change their time?</b>' +
+  '<p class="ask">&quot;Are you working at the moment, or looking? Anything coming up that could change your time - a job, studies, a move?&quot;</p>' +
+  '<p>Say out loud that a change is fine and we plan around it. That is what makes the honest answer safe to give.</p></div>' +
+  '<div class="q"><b>3. Are they already serving somewhere?</b>' +
+  '<p class="ask">&quot;Are you serving anywhere at the moment? Part of a church family already?&quot;</p>' +
+  '<p>If yes: &quot;then stay where you are planted, and if that ever changes my door is open.&quot; We never take another church&#39;s people.</p></div>' +
+  '<div class="q"><b>4. What do they want out of it?</b>' +
+  '<p class="ask">&quot;What would you like to get out of this? Is there something you would like to learn while you are here?&quot;</p>' +
+  '<p>Everybody wants something and that is fine - experience, belonging, a reference. You can only give it if you know it.</p></div>' +
+  '<div class="q"><b>5. Have you told them the ask is small?</b>' +
+  '<p class="ask">&quot;This is a few hours, alongside somebody. If your season changes you tell me and we adjust. Nobody is held to something their life cannot carry.&quot;</p>' +
+  '<p>Say it before they ask. This is the part that keeps people.</p></div>' +
+  '<div class="qi" style="margin-bottom:0">If something feels off, say it kindly while you are still talking - do not file it away for later. ' +
+  'Nothing here is a pass or fail. When you have the five, tap the button below.</div>' +
+  '</div></details>';
+
 function render(data) {
   STAGES = data.stages || {};
   const vols = data.volunteers || [];
@@ -176,6 +218,9 @@ function render(data) {
     if (!isOut) {
       c += '<div class="next"><h4>What happens next</h4><p>' + esc(v.next) + '</p>' +
            '<div class="who">' + esc(v.next_who) + '</div></div>';
+      // Step 3 is the conversation, so the questions sit on the card where the
+      // work happens - nobody has to remember them or go find the pack.
+      if (v.stage === 'fit_done') c += CONVO_GUIDE;
     }
 
     if (v.availability) c += '<div class="row"><b>Available:</b> ' + esc(v.availability) + '</div>';
