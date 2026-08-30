@@ -205,7 +205,7 @@ export default function CommunityImpactPage() {
             </li>
           </ul>
           <p className="text-xs text-[#595959] italic mb-10">
-            Based on our own accounts. We update these figures when we reconcile our books.
+            Based on our 2025 financial year. We update these figures when we reconcile our books.
           </p>
           <div className="bg-white border border-gray-200 rounded-xl p-6">
             <h3 className="font-bold text-gray-900 mb-3">Our promise on your gift</h3>
