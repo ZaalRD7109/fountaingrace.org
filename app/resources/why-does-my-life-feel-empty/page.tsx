@@ -77,6 +77,12 @@ export default function WhyDoesMyLifeFeelEmptyPage() {
             frightening and starts being useful.
           </p>
 
+          <div className="bg-[#f0fafa] border-l-4 border-[#008080] rounded-r-lg px-4 py-3 mb-8 text-sm text-[#595959] leading-relaxed">
+            If the emptiness is heavy, has lasted a long time, or comes with hopelessness, please speak to a
+            doctor or counsellor. You can reach the SADAG helpline on <strong>0800 567 567</strong>. That is
+            not weakness. It is wisdom.
+          </div>
+
           <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4">A full schedule is not the same as a full life</h2>
 
           <p className="text-[#595959] text-base leading-relaxed mb-6">

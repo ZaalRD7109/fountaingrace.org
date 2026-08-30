@@ -81,7 +81,7 @@ export default function PrayerPage() {
             yet - you are not alone in it.
           </p>
           <p>
-            The pastoral team at Fountain of Grace International takes prayer seriously. Your
+            At Fountain of Grace International we take prayer seriously. Your
             request is read, prayed over, and kept confidential. You do not need to attend
             the church to submit a request. Anyone is welcome.
           </p>
@@ -98,6 +98,10 @@ export default function PrayerPage() {
             on WhatsApp and you will receive a personal prayer within seconds - 24 hours a day,
             7 days a week. Just tell us what you need prayer for.
           </p>
+          <div className="bg-[#f0fafa] border-l-4 border-[#008080] rounded-r-lg px-4 py-3 text-sm text-[#595959]">
+            If this is an emergency or you are in danger, please call <strong>10111</strong>, or the
+            SADAG helpline on <strong>0800 567 567</strong>. We will still pray with you.
+          </div>
         </div>
       </section>
 

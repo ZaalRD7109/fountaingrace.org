@@ -77,6 +77,11 @@ export default function WhyDoGoodPeopleSufferPage() {
             academic for you. It is personal. And it deserves a real answer, not a religious deflection.
           </p>
 
+          <div className="bg-[#f0fafa] border-l-4 border-[#008080] rounded-r-lg px-4 py-3 mb-8 text-sm text-[#595959] leading-relaxed">
+            If the weight of this feels unbearable right now, please reach out for real support. The SADAG
+            helpline is <strong>0800 567 567</strong>, day or night. You do not have to carry it alone.
+          </div>
+
           <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4">What the Bible actually says</h2>
 
           <p className="text-[#595959] text-base leading-relaxed mb-6">
