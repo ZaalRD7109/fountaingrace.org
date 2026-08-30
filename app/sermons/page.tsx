@@ -23,6 +23,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "stop-letting-people-treat-you-like-a-doormat",
+    title: "Stop Letting People Treat You Like a Doormat",
+    date: "2026-08-30",
+    dateDisplay: "30 August 2026",
+    intro:
+      "The people draining you are only there because you keep allowing it. Jesus didn't ask permission before clearing the temple, and neither should you.",
+  },
+  {
     slug: "the-one-thing-that-makes-you-actually-powerful",
     title: "The One Thing That Makes You Actually Powerful",
     date: "2026-08-23",
