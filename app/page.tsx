@@ -277,6 +277,30 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* NPO CALLOUT - mission visible high for visitors and the Ad Grant */}
+      <section className="bg-[#008080] text-white py-14 px-4 sm:px-6">
+        <div className="section-container text-center">
+          <p className="text-white font-semibold text-sm uppercase tracking-wider mb-3">
+            Registered NPO · Pretoria North
+          </p>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-5">
+            We Are Also a Registered NPO
+          </h2>
+          <p className="text-white text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
+            Fountain of Grace International is a registered NPO (316-193). As a church we help
+            families in Pretoria North in practical ways - food, help with electricity and rent, and
+            prayer - put directly into the hands of people who need it.
+          </p>
+          <Link
+            prefetch={false}
+            href="/community-impact"
+            className="inline-block bg-white text-[#006b6b] font-bold text-base rounded-lg px-6 py-3 hover:bg-gray-50 transition-colors"
+          >
+            Learn About Our Community Work →
+          </Link>
+        </div>
+      </section>
+
       {/* SERMON PREVIEWS - trust-building before the CTA ask */}
       <section className="bg-gray-50 py-16 px-4 sm:px-6">
         <div className="section-container">
@@ -396,33 +420,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* NPO CALLOUT */}
-      <section className="bg-[#008080] text-white py-14 px-4 sm:px-6">
-        <div className="section-container text-center">
-          <p className="text-white font-semibold text-sm uppercase tracking-wider mb-3">
-            Registered NPO · Pretoria North
-          </p>
-          <h2 className="text-2xl sm:text-3xl font-bold mb-5">
-            We Are Also a Registered NPO
-          </h2>
-          <p className="text-white text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-            Fountain of Grace International holds NPO registration 316-193. As a church we help
-            families in Pretoria North in practical ways - food, help with electricity and rent, and
-            prayer - put directly into the hands of people who need it.
-          </p>
-          {/* White text at 80% opacity over the teal measures 3.6:1, under the
-              4.5:1 minimum, so it failed the accessibility contrast check. Solid
-              white on this teal is 4.77:1 and passes, and a filled pill reads as
-              a real call to action instead of a faded link. */}
-          <Link
-            prefetch={false}
-            href="/community-impact"
-            className="inline-block bg-white text-[#006b6b] font-bold text-base rounded-lg px-6 py-3 hover:bg-gray-50 transition-colors"
-          >
-            Learn About Our Community Work →
-          </Link>
-        </div>
-      </section>
 
       {/* AEO FAQ BLOCK */}
       <section className="bg-white py-16 px-4 sm:px-6">
@@ -437,7 +434,7 @@ export default function HomePage() {
               </dt>
               <dd className="text-[#595959] leading-relaxed">
                 Fountain of Grace International is a church in Pretoria North, South Africa. It
-                holds weekly Sunday services focused on practical teaching connected to everyday
+                hosts weekly Sunday services focused on practical teaching connected to everyday
                 challenges. Anyone is welcome to attend - no prior church experience required.
               </dd>
             </div>
