@@ -91,10 +91,10 @@ export default function HowToForgiveNotSorryPage() {
 
           <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-8 bg-[#fffdf0] rounded-r-xl">
             <p className="text-gray-800 font-semibold italic leading-relaxed">
-              "Bear with each other and forgive one another if any of you has a grievance against someone.
-              Forgive as the Lord forgave you."
+              "Forbearing one another, and forgiving one another, if any man have a quarrel against any:
+              even as Christ forgave you, so also do ye."
             </p>
-            <cite className="text-sm text-[#595959] not-italic mt-2 block">- Colossians 3:13</cite>
+            <cite className="text-sm text-[#595959] not-italic mt-2 block">- Colossians 3:13 (KJV)</cite>
           </blockquote>
 
           <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4">How to actually do it</h2>

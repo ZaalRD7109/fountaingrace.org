@@ -127,10 +127,28 @@ export default function CookiePolicyPage() {
                   <strong>Purpose:</strong> Counts how many people visit our site, which pages
                   are most useful, and where visitors come from. All data is anonymous - no
                   personal information is collected. IP addresses are anonymised before
-                  storage. These cookies only load after you accept the cookie notice.
+                  storage. These cookies load by default and stop if you decline in our cookie notice.
                 </p>
                 <p className="text-sm text-[#595959]">
                   <strong>Expires:</strong> Up to 2 years · <strong>Set by:</strong> Google (google.com)
+                </p>
+              </div>
+
+              <div className="bg-white rounded-xl border border-gray-100 p-5">
+                <div className="flex items-start justify-between gap-4 mb-2">
+                  <h3 className="font-bold text-gray-900">Meta Pixel</h3>
+                  <span className="text-xs font-semibold bg-blue-100 text-blue-700 px-2 py-1 rounded-full flex-shrink-0">Analytics</span>
+                </div>
+                <p className="text-sm text-[#595959] mb-2">
+                  <strong>Name:</strong> _fbp
+                </p>
+                <p className="text-sm text-[#595959] mb-2">
+                  <strong>Purpose:</strong> Anonymous conversion measurement so we can see how well
+                  our page reaches people. No personal information is collected. These cookies load
+                  by default and stop if you decline in our cookie notice.
+                </p>
+                <p className="text-sm text-[#595959]">
+                  <strong>Expires:</strong> Up to 3 months · <strong>Set by:</strong> Meta (facebook.com)
                 </p>
               </div>
 

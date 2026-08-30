@@ -130,7 +130,7 @@ const beliefs = [
   {
     title: 'Serving Others',
     scripture: '"For I was an hungred, and ye gave me meat: I was thirsty, and ye gave me drink: I was a stranger, and ye took me in." - Matthew 25:35',
-    body: 'We believe faith without action is empty. Fountain of Grace International runs community programs in Pretoria North - food support, outreach, and restoration - because what we believe on Sunday must show up in the streets by Monday.',
+    body: 'We believe faith without action is empty. Fountain of Grace International helps families in Pretoria North with food, and stands with people through prayer and practical support, because what we believe on Sunday must show up by Monday.',
   },
 ]
 

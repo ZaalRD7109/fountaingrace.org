@@ -3,12 +3,12 @@ import Link from 'next/link'
 
 export const metadata: Metadata = {
   title: 'Impact Stories',
-  description: 'Real stories of what your giving does in Pretoria North. Fountain of Grace International is a registered NPO (316-193) running food programs, outreach, and community support in Gauteng.',
+  description: 'See where your giving goes in Pretoria North. Fountain of Grace International is a registered NPO (316-193) that helps local families with food, electricity, rent, prayer and pastoral care.',
   robots: 'index, follow',
   alternates: { canonical: 'https://www.fountaingrace.org/stories' },
   openGraph: {
     title: 'Impact Stories | Fountain of Grace International NPO',
-    description: 'Real stories of what your giving does in Pretoria North - food programs, outreach, and community support.',
+    description: 'See where your giving goes in Pretoria North - food, electricity, rent and pastoral care for local families.',
     type: 'website',
     url: 'https://www.fountaingrace.org/stories',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International' }],
@@ -18,8 +18,8 @@ export const metadata: Metadata = {
 const stories = [
   {
     slug: 'what-your-giving-does-in-pretoria-north',
-    title: 'What Your R150 a Month Does in Pretoria North',
-    intro: 'When Fountain of Grace International started, 15 people gathered in a room. Today that gathering funds food programs, community outreach, and support for families who have nowhere else to turn. Here is exactly where every rand goes.',
+    title: 'What Your Monthly Giving Does in Pretoria North',
+    intro: 'When Fountain of Grace International started, a small group met to pray. That same conviction has put food on tables and covered electricity and rent for families who had nowhere else to turn. Here is how your giving is used.',
     category: 'Impact Report',
   },
 ]
@@ -29,7 +29,7 @@ const jsonLd = [
     '@context': 'https://schema.org',
     '@type': 'CollectionPage',
     name: 'Impact Stories - Fountain of Grace International',
-    description: 'Real stories of what your giving does in Pretoria North. Fountain of Grace International is a registered NPO (316-193) running food programs, outreach, and community support in Gauteng.',
+    description: 'See where your giving goes in Pretoria North. Fountain of Grace International is a registered NPO (316-193) that helps local families with food, electricity, rent, prayer and pastoral care.',
     url: 'https://www.fountaingrace.org/stories',
     isPartOf: { '@type': 'WebSite', name: 'Fountain of Grace International', url: 'https://www.fountaingrace.org' },
     publisher: { '@type': 'Organization', name: 'Fountain of Grace International', url: 'https://www.fountaingrace.org' },
@@ -61,10 +61,10 @@ export default function StoriesPage() {
             Impact Stories - NPO 316-193
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
-            Real stories. Real numbers. Real impact.
+            One story. Where your giving goes.
           </h1>
           <p className="text-white text-base leading-relaxed">
-            Fountain of Grace International is a registered NPO in Pretoria North running food programs, community outreach, and support for families in Gauteng. Here is what your giving makes possible.
+            Fountain of Grace International is a registered NPO in Pretoria North that helps local families with food, electricity, rent and pastoral care. Here is what your giving makes possible.
           </p>
         </div>
       </section>
@@ -104,7 +104,7 @@ export default function StoriesPage() {
             Support the work in Pretoria North
           </h2>
           <p className="text-white text-sm mb-6 max-w-md mx-auto">
-            Fountain of Grace International is a registered NPO (316-193). Every rand given goes directly to food programs, community outreach, and support for families who have nowhere else to turn.
+            Fountain of Grace International is a registered NPO (316-193). Your giving helps local families with food and with covering an electricity or rent bill - the full breakdown is on our impact report.
           </p>
           <div className="flex flex-col sm:flex-row gap-3 justify-center">
             <Link href="/donate" className="btn-primary text-sm">

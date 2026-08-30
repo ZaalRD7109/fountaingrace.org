@@ -231,11 +231,15 @@ export default function PrivacyPolicyPage() {
             <ul className="space-y-2 pl-4">
               <li className="flex gap-2">
                 <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
-                <span><strong>Google Analytics 4</strong> - anonymous website usage tracking. IP addresses are anonymised. Only loads after you accept cookies. You can opt out at <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] underline">tools.google.com/dlpage/gaoptout</a>.</span>
+                <span><strong>Google Analytics 4</strong> - anonymous website usage tracking. IP addresses are anonymised. It loads by default and stops if you decline in our cookie banner. You can also opt out at <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] underline">tools.google.com/dlpage/gaoptout</a>.</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
-                <span><strong>Microsoft Clarity</strong> - anonymous session recording and heatmapping to understand how people use our site. Only loads after you accept cookies. See <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] underline">Microsoft's Privacy Policy</a>.</span>
+                <span><strong>Microsoft Clarity</strong> - anonymous session recording and heatmapping to understand how people use our site. It loads by default and stops if you decline in our cookie banner. See <a href="https://privacy.microsoft.com/en-us/privacystatement" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] underline">Microsoft's Privacy Policy</a>.</span>
+              </li>
+              <li className="flex gap-2">
+                <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>
+                <span><strong>Meta Pixel</strong> - anonymous conversion measurement so we can see how well our page reaches people. It loads by default and stops if you decline in our cookie banner. See <a href="https://www.facebook.com/privacy/policy/" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] underline">Meta's Privacy Policy</a>.</span>
               </li>
               <li className="flex gap-2">
                 <span className="text-[#006b6b] mt-1 flex-shrink-0">·</span>

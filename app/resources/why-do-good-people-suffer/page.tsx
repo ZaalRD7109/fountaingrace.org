@@ -122,7 +122,7 @@ export default function WhyDoGoodPeopleSufferPage() {
 
           <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-8 bg-[#fffdf0] rounded-r-xl">
             <p className="text-gray-800 font-semibold italic leading-relaxed">
-              "For our light and momentary troubles are achieving for us an eternal glory that far outweighs them all."
+              "For our light affliction, which is but for a moment, worketh for us a far more exceeding and eternal weight of glory."
             </p>
             <cite className="text-sm text-[#595959] not-italic mt-2 block">- 2 Corinthians 4:17 (KJV)</cite>
           </blockquote>

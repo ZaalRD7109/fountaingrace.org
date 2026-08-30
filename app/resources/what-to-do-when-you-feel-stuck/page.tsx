@@ -86,10 +86,10 @@ export default function WhatToDoWhenStuckPage() {
 
           <blockquote className="border-l-4 border-[#FFD600] pl-5 py-2 my-8 bg-[#fffdf0] rounded-r-xl">
             <p className="text-gray-800 font-semibold italic leading-relaxed">
-              "Those who wait on the Lord shall renew their strength; they shall mount up with wings like eagles,
-              they shall run and not be weary, they shall walk and not faint."
+              "But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles;
+              they shall run, and not be weary; and they shall walk, and not faint."
             </p>
-            <cite className="text-sm text-[#595959] not-italic mt-2 block">- Isaiah 40:31</cite>
+            <cite className="text-sm text-[#595959] not-italic mt-2 block">- Isaiah 40:31 (KJV)</cite>
           </blockquote>
 
           <h2 className="text-xl font-bold text-gray-900 mt-10 mb-4">What actually breaks it</h2>

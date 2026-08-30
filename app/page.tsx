@@ -372,8 +372,8 @@ export default function HomePage() {
                   stays personally involved with the people he leads.
                 </p>
                 <p>
-                  Fountain of Grace International holds NPO registration 316-193, and the
-                  pastoral team is directly involved in the community programs it runs.
+                  Fountain of Grace International holds NPO registration 316-193, and Pastor
+                  Ricardo stays personally involved in the practical help the church gives to families.
                 </p>
               </div>
               <div className="mt-6">
@@ -406,9 +406,9 @@ export default function HomePage() {
             We Are Also a Registered NPO
           </h2>
           <p className="text-white text-lg max-w-2xl mx-auto mb-8 leading-relaxed">
-            Fountain of Grace International holds NPO registration 316-193. We run community
-            programs in Pretoria North that put practical support directly into the hands of people
-            who need it.
+            Fountain of Grace International holds NPO registration 316-193. As a church we help
+            families in Pretoria North in practical ways - food, help with electricity and rent, and
+            prayer - put directly into the hands of people who need it.
           </p>
           {/* White text at 80% opacity over the teal measures 3.6:1, under the
               4.5:1 minimum, so it failed the accessibility contrast check. Solid
@@ -481,8 +481,9 @@ export default function HomePage() {
             <p>
               Fountain of Grace International is a registered Christian church and NPO located in
               Pretoria North, South Africa. The church offers weekly services focused on practical
-              teaching connected to everyday challenges, and operates community outreach programs
-              under its NPO registration. It serves both individuals seeking a local church
+              teaching connected to everyday challenges, and gives hands-on help to local families -
+              food, help with an electricity bill, rent when a family has nowhere else to turn - under
+              its NPO registration. It serves both individuals seeking a local church
               community and organisations looking to partner with a verified non-profit in the
               Pretoria North area.
             </p>

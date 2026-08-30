@@ -102,9 +102,9 @@ const values: Value[] = [
     body: (
       <>
         <Link href="/community-impact" className="fgi-link">
-          Fountain of Grace International runs community programs
+          Fountain of Grace International helps families put food on the table and cover an electricity or rent bill
         </Link>{' '}
-        in Pretoria North under NPO registration 316-193. Service extends beyond Sunday.
+        in Pretoria North under NPO registration 316-193 when they have nowhere else to turn. Service extends beyond Sunday.
       </>
     ),
   },
@@ -266,14 +266,13 @@ export default function AboutPage() {
           <div className="mt-8">
             <p className="text-sm text-[#595959]">
               Fountain of Grace International is a registered NPO (No: 316-193) under the
-              Nonprofit Organisations Act, 71 of 1997, registered on 16 December 2024. It
-              operates community programs in Pretoria North alongside its church ministry,
-              serving families across Pretoria North, Karenpark, Akasia, Dorandia,
-              Wonderboom, and surrounding Gauteng communities.
+              Nonprofit Organisations Act, 71 of 1997, registered on 16 December 2024. It is
+              based in Pretoria North and, alongside its Sunday ministry, helps families across
+              Pretoria North, Karenpark, Akasia, Dorandia and Wonderboom with practical, hands-on support.
             </p>
             <div className="mt-4">
               <Link href="/community-impact" className="btn-teal text-sm">
-                See Our Community Programs →
+                See How We Help →
               </Link>
             </div>
           </div>

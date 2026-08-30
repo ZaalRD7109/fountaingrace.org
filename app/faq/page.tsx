@@ -127,8 +127,8 @@ const faqs: FaqCategory[] = [
       },
       {
         q: 'How are donations used?',
-        a: <>58% goes to food and basic aid programs. 14% covers program materials and logistics. 28% covers operational costs including admin and compliance. See the <Link href="/community-impact" className="fgi-link">Community Impact page</Link> for a full breakdown of every programme your giving supports.</>,
-        aText: '58% goes to food and basic aid programs. 14% covers program materials and logistics. 28% covers operational costs including admin and compliance.',
+        a: <>Based on our 2025 financial year: 58% goes to food and basic aid, 14% covers materials and transport, and 28% covers running costs including admin and compliance. See the <Link href="/community-impact" className="fgi-link">Community Impact page</Link> for the full breakdown.</>,
+        aText: 'Based on our 2025 financial year: 58% goes to food and basic aid, 14% covers materials and transport, and 28% covers running costs including admin and compliance.',
       },
     ],
   },

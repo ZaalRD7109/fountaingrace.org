@@ -219,7 +219,7 @@ export default function PlanYourVisitPage() {
           <div className="geo-block">
             <p>
               Fountain of Grace International holds Sunday services in Pretoria North starting at
-              09:00. First-time visitors are met at the door by name and are never asked to
+              09:00. First-time visitors are welcomed personally at the door and are never asked to
               participate publicly. The Plan Your Visit form connects new attendees directly to the
               pastoral team via WhatsApp before their first Sunday.
             </p>

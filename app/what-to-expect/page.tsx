@@ -21,7 +21,7 @@ export const metadata: Metadata = {
 
 const jsonLd = {
   '@context': 'https://schema.org',
-  '@type': ['Church', 'Organization', 'LocalBusiness'],
+  '@type': ['Church', 'Organization'],
   name: 'Fountain of Grace International',
   description: 'A church and registered NPO in Pretoria North, South Africa.',
   address: {
@@ -75,7 +75,7 @@ const timeline = [
     color: 'bg-[#008080]',
     items: [
       'The service ends. People stay. That is a feature, not an accident.',
-      'Someone from the pastoral team will find you - not to recruit you or sign you up for anything, but to introduce themselves and answer any questions you have.',
+      'Someone from the church will find you - not to recruit you or sign you up for anything, but to introduce themselves and answer any questions you have.',
       'You are welcome to leave immediately if you need to. Nobody will make you feel obligated to stay.',
       'Within a day or two, someone will reach out via WhatsApp. Not an automated message. An actual person checking in and asking if you have any questions.',
     ],
