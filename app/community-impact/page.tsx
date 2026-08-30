@@ -178,28 +178,35 @@ export default function CommunityImpactPage() {
             We keep proper books, and we show them. This is how what comes in is actually used - straight from our
             own records, not a round number we picked to look good.
           </p>
-          <div className="overflow-x-auto mb-10">
-            <table className="w-full text-sm border-collapse">
-              <thead>
-                <tr className="border-b-2 border-gray-200">
-                  <th className="text-left py-3 pr-6 font-semibold text-gray-700">Where it goes</th>
-                  <th className="text-left py-3 font-semibold text-gray-700">Share</th>
-                </tr>
-              </thead>
-              <tbody className="text-[#595959]">
-                {[
-                  { cat: 'Food and basic aid', pct: '58%' },
-                  { cat: 'Materials and getting help to people', pct: '14%' },
-                  { cat: 'Running costs (admin, compliance)', pct: '28%' },
-                ].map((row) => (
-                  <tr key={row.cat} className="border-b border-gray-100">
-                    <td className="py-3 pr-6">{row.cat}</td>
-                    <td className="py-3 font-semibold text-[#006b6b]">{row.pct}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
+          {/* Stacked bar - pure CSS, zero JS, cannot affect LCP */}
+          <div
+            className="mb-5"
+            role="img"
+            aria-label="How funds are used: food and basic aid 58 percent, materials and getting help to people 14 percent, running costs 28 percent"
+          >
+            <div className="flex w-full h-12 rounded-lg overflow-hidden shadow-sm">
+              <div className="flex items-center justify-center text-white text-sm font-bold" style={{ width: '58%', backgroundColor: '#008080' }}>58%</div>
+              <div className="flex items-center justify-center text-[#04302f] text-sm font-bold" style={{ width: '14%', backgroundColor: '#ffd700' }}>14%</div>
+              <div className="flex items-center justify-center text-white text-sm font-bold" style={{ width: '28%', backgroundColor: '#04302f' }}>28%</div>
+            </div>
           </div>
+          <ul className="flex flex-col sm:flex-row sm:flex-wrap gap-x-8 gap-y-3 mb-3 text-sm text-[#595959]">
+            <li className="flex items-center gap-2">
+              <span className="inline-block w-3.5 h-3.5 rounded-sm shrink-0" style={{ backgroundColor: '#008080' }} aria-hidden="true"></span>
+              Food and basic aid - <span className="font-semibold text-[#006b6b]">58%</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="inline-block w-3.5 h-3.5 rounded-sm shrink-0" style={{ backgroundColor: '#ffd700' }} aria-hidden="true"></span>
+              Materials and getting help to people - <span className="font-semibold text-[#006b6b]">14%</span>
+            </li>
+            <li className="flex items-center gap-2">
+              <span className="inline-block w-3.5 h-3.5 rounded-sm shrink-0" style={{ backgroundColor: '#04302f' }} aria-hidden="true"></span>
+              Running costs (admin, compliance) - <span className="font-semibold text-[#006b6b]">28%</span>
+            </li>
+          </ul>
+          <p className="text-xs text-[#595959] italic mb-10">
+            Based on our own accounts. We update these figures when we reconcile our books.
+          </p>
           <div className="bg-white border border-gray-200 rounded-xl p-6">
             <h3 className="font-bold text-gray-900 mb-3">Our promise on your gift</h3>
             <div className="space-y-3 text-sm text-[#595959] leading-relaxed">
