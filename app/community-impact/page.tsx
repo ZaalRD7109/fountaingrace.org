@@ -3,17 +3,17 @@ import Link from 'next/link'
 import VolunteerForm from '@/components/VolunteerForm'
 
 export const metadata: Metadata = {
-  title: 'Community Programs | FGI NPO 316-193 | Pretoria North',
+  title: 'Community Impact | FGI NPO 316-193 | Pretoria North',
   description:
-    'NPO 316-193 in Pretoria North. We run 6 community programs - food relief, emotional support, and family guidance. Donate, volunteer, or partner with us today.',
+    'Fountain of Grace International (NPO 316-193), a church in Pretoria North that helps where it can - food, electricity and rent support, pastoral care and prayer, and skills training. See how every rand is used. Give, volunteer, or plan a visit.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/community-impact',
   },
   openGraph: {
-    title: 'Community Programs | FGI NPO 316-193 | Pretoria North',
+    title: 'Community Impact | FGI NPO 316-193 | Pretoria North',
     description:
-      'NPO 316-193 in Pretoria North. We run 6 community programs - food relief, emotional support, and family guidance. Donate, volunteer, or partner with us today.',
+      'A church in Pretoria North that helps where it can - food, electricity and rent support, pastoral care and prayer, and skills training. See how every rand is used.',
     type: 'website',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/community-impact',
@@ -25,7 +25,6 @@ const jsonLd = {
   '@type': ['NGO', 'Organization'],
   name: 'Fountain of Grace International',
   legalName: 'Fountain of Grace International NPO',
-  nonprofitStatus: 'Nonprofit501c3',
   foundingLocation: 'Pretoria North, South Africa',
   address: {
     '@type': 'PostalAddress',
@@ -57,75 +56,6 @@ const breadcrumbLd = {
   ],
 }
 
-const programs = [
-  {
-    badge: 'Mental health support / psychosocial services',
-    title: 'Community Care and Emotional Support',
-    who: 'Individuals in Pretoria North and surrounding communities facing emotional stress, trauma, or personal crisis.',
-    problem:
-      'Many people carry emotional burdens without any structured support. Without access to counseling or pastoral care, this often leads to long-term instability, family breakdown, and withdrawal from community.',
-    provides:
-      'One-on-one pastoral counseling, structured prayer support, crisis response care, and ongoing emotional check-ins through a trained care team.',
-    outcome:
-      'Individuals experience greater emotional stability, improved decision-making, and restored connection to community.',
-  },
-  {
-    badge: 'Education / youth and adult development',
-    title: 'Education and Personal Development',
-    who: 'Youth and adults in Pretoria North and surrounding areas who lack structured learning environments or life direction.',
-    problem:
-      'Without access to mentorship and practical teaching, many individuals remain stuck in patterns that limit their personal and professional growth.',
-    provides:
-      'Weekly teaching sessions, structured discipleship programs, leadership development, and life skills training.',
-    outcome:
-      'Participants gain practical knowledge, develop leadership capacity, and improve their long-term life direction.',
-  },
-  {
-    badge: 'Community development / social cohesion',
-    title: 'Community Building and Social Support',
-    who: 'Individuals and families across Pretoria North and surrounding communities experiencing isolation or a lack of social connection.',
-    problem:
-      'Social isolation is a driver of mental health decline, substance abuse, and community breakdown. Many people in our area have no consistent community to belong to.',
-    provides:
-      'Weekly community gatherings, small group connections, community events, and structured volunteer engagement.',
-    outcome:
-      'Stronger social bonds, reduced isolation, and increased participation in positive community structures.',
-  },
-  {
-    badge: 'Poverty relief / humanitarian aid',
-    title: 'Poverty Relief and Humanitarian Support',
-    who: 'Individuals and families in Pretoria North, Akasia, Shosanguve, and surrounding communities facing immediate material need.',
-    problem:
-      'Poverty is not only a financial condition. It limits access to food, healthcare, education, and safety. Without direct intervention, families in crisis cannot stabilize.',
-    provides:
-      'Food assistance, basic needs support, emergency relief, and community outreach to identify and assist those in need.',
-    outcome:
-      'Reduced immediate hardship and improved access to basic necessities for vulnerable families.',
-  },
-  {
-    badge: 'Family support services',
-    title: 'Family and Life Guidance Services',
-    who: 'Individuals and families in Pretoria North and surrounding areas navigating relationship breakdown, parenting challenges, or behavioral struggles.',
-    problem:
-      'Without structured guidance, families in crisis often have nowhere to turn. Relationship breakdown, poor parenting support, and untreated behavioral patterns affect entire households and communities.',
-    provides:
-      'Marriage and relationship guidance, parenting support, mentorship programs, and structured behavioral support for addiction and life challenges.',
-    outcome:
-      'Stronger family units, improved decision-making, and healthier patterns of behavior across households.',
-  },
-  {
-    badge: 'Social inclusion / community integration',
-    title: 'Community Integration and Belonging',
-    who: 'New visitors, first-time attendees, and individuals at risk of disengaging from community.',
-    problem:
-      'Many people attend a community once and never return - not because they were unwelcome, but because no one followed up. Without structured integration, people fall through the gaps.',
-    provides:
-      'First-time visitor follow-up, structured integration pathways, volunteer placement, and long-term community engagement tracking.',
-    outcome:
-      'Increased sense of belonging, stronger long-term engagement, and measurable growth in community participation.',
-  },
-]
-
 export default function CommunityImpactPage() {
   return (
     <>
@@ -145,11 +75,12 @@ export default function CommunityImpactPage() {
             Community Impact · Pretoria North
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
-            What We Do and Who We Serve
+            Faith that shows up.
           </h1>
           <p className="text-white text-base leading-relaxed mb-5">
-            Fountain of Grace International is a registered NPO (316-193) in Pretoria North, running structured
-            programs that address real challenges - from emotional distress and family breakdown to poverty and social isolation.
+            Fountain of Grace International is a church in Pretoria North that does not wait for a person
+            to have it all together before we care. We are a registered NPO, number 316-193. We are small
+            on paper. Small has never stopped us from showing up for the person in front of us, and it never will.
           </p>
           <div className="inline-block bg-white text-[#006b6b] rounded-lg px-6 py-4 shadow-sm text-left">
             <p className="font-extrabold">NPO Registration Number: 316-193</p>
@@ -160,91 +91,106 @@ export default function CommunityImpactPage() {
         </div>
       </section>
 
-      {/* WHAT WE DO */}
+      {/* WHAT LOVE HAS LOOKED LIKE */}
       <section className="bg-white py-16 px-4 sm:px-6">
         <div className="section-container max-w-3xl">
-          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">What We Do</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">What love has looked like</h2>
           <div className="space-y-4 text-[#595959] leading-relaxed text-lg">
             <p>
-              We serve individuals and families across Pretoria North, Akasia, Orchards, Shosanguve, Montana,
-              Wonderboom, Suiderberg, Amandasig, Rosslyn, and surrounding areas. Every program is built around a
-              specific problem, a clear support structure, and a measurable outcome.
-            </p>
-            <p>
-              Every rand donated goes toward delivering support directly into the hands of people who need it. As a
-              registered NPO (No: 316-193), we are accountable to the South African Department of Social Development
-              and publish transparent reporting to our donors and partners.
+              We do not run a benefits office, and there is no form to fill in. But when a family near us has
+              had nothing to eat, we have put food on their table. When a home was about to go dark, we have
+              kept the lights on. When someone was days from losing the roof over their head, we have stood in
+              the gap. Not as a programme, and never to sign anyone up. We do it because that is what a church is for.
             </p>
           </div>
         </div>
       </section>
 
-      {/* 6 PROGRAM CARDS */}
+      {/* WE DO NOT SEND AN INVOICE FOR LOVE */}
       <section className="bg-[#f0fafa] py-16 px-4 sm:px-6">
-        <div className="section-container max-w-5xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-2">Our Programs</h2>
-          <p className="text-[#595959] mb-10">
-            Six active programs. Each built around a specific problem and a measurable outcome.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-7">
-            {programs.map((p) => (
-              <article
-                key={p.title}
-                className="bg-white rounded-xl border border-gray-100 border-t-4 border-t-[#008080] p-7 flex flex-col shadow-[0_2px_12px_rgba(42,157,244,0.06)] hover:shadow-[0_6px_24px_rgba(0,121,107,0.1)] transition-shadow duration-200"
-              >
-                <span className="inline-block self-start bg-[#f0f9f7] text-[#006b6b] text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full mb-4">
-                  {p.badge}
-                </span>
-                <h3 className="text-lg font-bold text-gray-900 mb-5 leading-snug">{p.title}</h3>
-                <div className="flex flex-col gap-4 flex-1 mb-6">
-                  <div>
-                    <span className="block text-[11px] font-bold uppercase tracking-wider text-[#006b6b] mb-1">Who we serve</span>
-                    <p className="text-sm text-[#555] leading-relaxed">{p.who}</p>
-                  </div>
-                  <div>
-                    <span className="block text-[11px] font-bold uppercase tracking-wider text-[#006b6b] mb-1">The problem</span>
-                    <p className="text-sm text-[#555] leading-relaxed">{p.problem}</p>
-                  </div>
-                  <div>
-                    <span className="block text-[11px] font-bold uppercase tracking-wider text-[#006b6b] mb-1">What we provide</span>
-                    <p className="text-sm text-[#555] leading-relaxed">{p.provides}</p>
-                  </div>
-                  <div>
-                    <span className="block text-[11px] font-bold uppercase tracking-wider text-[#006b6b] mb-1">Outcome</span>
-                    <p className="text-sm text-gray-800 font-semibold leading-relaxed">{p.outcome}</p>
-                  </div>
-                </div>
-                <hr className="border-gray-100 mb-5" />
-                <Link href="/donate" className="btn-primary block text-center text-sm">
-                  Support this program
-                </Link>
-              </article>
-            ))}
+        <div className="section-container max-w-3xl">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">We do not send an invoice for love</h2>
+          <div className="space-y-4 text-[#595959] leading-relaxed text-lg">
+            <p>
+              Some of the people we walk with would never set foot in a professional&apos;s office. They come to
+              us instead, and we do not turn anyone away. When someone needs prayer, the pastor drives to them on
+              his own petrol. When a family moves into a new home, we come and dedicate it, and we hand them no bill.
+              When a call runs late into the night, it runs late, and nobody is charged for being cared for. It costs
+              us something every time, and it costs the person nothing. For the people we reach, that goes further
+              than anything with a price on it.
+            </p>
           </div>
         </div>
       </section>
 
-      {/* USE OF FUNDS */}
+      {/* TOOLS IN PEOPLE'S HANDS */}
       <section className="bg-white py-16 px-4 sm:px-6">
         <div className="section-container max-w-3xl">
-          <h2 className="text-2xl font-bold text-gray-900 mb-3">How Your Support Reaches People</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Tools in people&apos;s hands</h2>
+          <div className="space-y-4 text-[#595959] leading-relaxed text-lg">
+            <p>
+              We also give people something to build with. Practical training in leadership and church management
+              for those who serve, and real digital and business skills for people who want to stand on their own
+              feet and provide for their families. We give it away. A person who can carry themselves is a person set free.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* WHERE WE ARE GOING */}
+      <section className="bg-[#f0fafa] py-16 px-4 sm:px-6">
+        <div className="section-container max-w-3xl">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Where we are going</h2>
+          <div className="space-y-4 text-[#595959] leading-relaxed text-lg">
+            <p>
+              Everything we have done so far is the start, not the finish. Our founding document sets out a bigger
+              work: standing with people through their hardest seasons, education and skills development, and building
+              families and community that hold. We are building toward it steadily, as the resources and the right
+              people arrive.
+            </p>
+            <p>
+              If you have a skill and a heart to give it to something real, there is a place for you here.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* WHY WE ASK */}
+      <section className="bg-white py-16 px-4 sm:px-6">
+        <div className="section-container max-w-3xl">
+          <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6">Why we ask</h2>
+          <div className="space-y-4 text-[#595959] leading-relaxed text-lg">
+            <p>
+              We have never charged for any of this, and we never will. The petrol, the airtime, the food, the hours
+              on the phone, we have carried the cost ourselves, gladly. A gift to Fountain of Grace does not pay us to
+              do the work. It lets us do more of it, for more people. The love was never for sale, so every rand goes
+              straight into reaching one more person.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* HOW YOUR SUPPORT REACHES PEOPLE - real funds data from our accounting */}
+      <section className="bg-[#f0fafa] py-16 px-4 sm:px-6">
+        <div className="section-container max-w-3xl">
+          <h2 className="text-2xl font-bold text-gray-900 mb-3">How your support reaches people</h2>
           <p className="text-[#595959] mb-8 leading-relaxed">
-            We publish a transparent breakdown of how funds are used. Every donation is a vote of trust - this is how
-            we honour it.
+            We keep proper books, and we show them. This is how what comes in is actually used - straight from our
+            own records, not a round number we picked to look good.
           </p>
           <div className="overflow-x-auto mb-10">
             <table className="w-full text-sm border-collapse">
               <thead>
                 <tr className="border-b-2 border-gray-200">
-                  <th className="text-left py-3 pr-6 font-semibold text-gray-700">Category</th>
-                  <th className="text-left py-3 font-semibold text-gray-700">Allocation (%)</th>
+                  <th className="text-left py-3 pr-6 font-semibold text-gray-700">Where it goes</th>
+                  <th className="text-left py-3 font-semibold text-gray-700">Share</th>
                 </tr>
               </thead>
               <tbody className="text-[#595959]">
                 {[
                   { cat: 'Food and basic aid', pct: '58%' },
-                  { cat: 'Program materials and logistics', pct: '14%' },
-                  { cat: 'Operational costs (admin, compliance)', pct: '28%' },
+                  { cat: 'Materials and getting help to people', pct: '14%' },
+                  { cat: 'Running costs (admin, compliance)', pct: '28%' },
                 ].map((row) => (
                   <tr key={row.cat} className="border-b border-gray-100">
                     <td className="py-3 pr-6">{row.cat}</td>
@@ -254,48 +200,48 @@ export default function CommunityImpactPage() {
               </tbody>
             </table>
           </div>
-          <div className="bg-gray-50 border border-gray-200 rounded-xl p-6">
-            <h3 className="font-bold text-gray-900 mb-3">Donation Transparency Statement</h3>
+          <div className="bg-white border border-gray-200 rounded-xl p-6">
+            <h3 className="font-bold text-gray-900 mb-3">Our promise on your gift</h3>
             <div className="space-y-3 text-sm text-[#595959] leading-relaxed">
               <p>
                 Fountain of Grace International is registered under the Nonprofit Organisations Act, 71 of 1997 (NPO
-                No: 316-193). All donations received are used exclusively for the programs and operational costs of
-                the organisation.
+                No: 316-193). Every gift is used for the work of the church and the people we reach, and for the
+                running costs that keep that work going.
               </p>
               <p>
-                No donation funds are used for personal benefit of the pastoral team or any individual connected to
-                the organisation. Financial records are maintained and available to donors and the Department of
-                Social Development upon request.
+                No gift is ever used for the personal benefit of the pastoral team or anyone connected to the church.
+                Our financial records are kept properly and are available to donors and the Department of Social
+                Development on request.
               </p>
               <p>
-                We will never solicit donations under false or exaggerated premises. If you have any question about
-                how your donation was used, contact us directly and we will answer specifically.
+                We will never ask for a gift under false or exaggerated claims. If you ever want to know how yours was
+                used, contact us and we will tell you plainly.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* THREE CTA PATHS */}
-      <section className="bg-[#f0fafa] py-16 px-4 sm:px-6">
+      {/* THREE WAYS TO HELP */}
+      <section className="bg-white py-16 px-4 sm:px-6">
         <div className="section-container max-w-4xl">
-          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">Get involved - three ways</h2>
+          <h2 className="text-2xl font-bold text-gray-900 text-center mb-10">Three ways to be part of it</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-xl border border-gray-100 p-6 text-center hover:shadow-sm transition-shadow">
               <div className="text-4xl mb-3" aria-hidden="true">💳</div>
-              <h3 className="font-bold text-gray-900 mb-2">Donate</h3>
+              <h3 className="font-bold text-gray-900 mb-2">Give</h3>
               <p className="text-sm text-[#595959] leading-relaxed mb-5">
-                Your donation goes directly into programs that serve people in Pretoria North. Every amount counts.
+                A gift lets us do more of what we already do for free - reach one more family, one more person.
               </p>
               <Link href="/donate" className="btn-teal text-sm w-full block">
-                Donate Now
+                Give
               </Link>
             </div>
             <div className="bg-white rounded-xl border border-gray-100 p-6 text-center hover:shadow-sm transition-shadow">
               <div className="text-4xl mb-3" aria-hidden="true">🙌</div>
-              <h3 className="font-bold text-gray-900 mb-2">Volunteer With Us</h3>
+              <h3 className="font-bold text-gray-900 mb-2">Serve with us</h3>
               <p className="text-sm text-[#595959] leading-relaxed mb-5">
-                No prior experience required. Fill in the form below - we will show you exactly what to do.
+                Bring the skill you have. There is a place here for people who want to give it to something real.
               </p>
               <Link href="/volunteer" className="btn-teal text-sm w-full block">
                 Volunteer With Us
@@ -303,9 +249,9 @@ export default function CommunityImpactPage() {
             </div>
             <div className="bg-white rounded-xl border border-gray-100 p-6 text-center hover:shadow-sm transition-shadow">
               <div className="text-4xl mb-3" aria-hidden="true">🤝</div>
-              <h3 className="font-bold text-gray-900 mb-2">Partner With Us</h3>
+              <h3 className="font-bold text-gray-900 mb-2">Partner with us</h3>
               <p className="text-sm text-[#595959] leading-relaxed mb-5">
-                Organisations looking to partner with a verified NPO in Pretoria North - we welcome the conversation.
+                If your organisation wants to build something good in Pretoria North with us, we welcome the conversation.
               </p>
               <Link href="/contact" className="btn-teal text-sm w-full block">
                 Contact Us to Partner
@@ -316,7 +262,7 @@ export default function CommunityImpactPage() {
       </section>
 
       {/* VOLUNTEER FORM */}
-      <section id="volunteer-form" className="bg-white py-16 px-4 sm:px-6">
+      <section id="volunteer-form" className="bg-[#f0fafa] py-16 px-4 sm:px-6">
         <div className="section-container max-w-xl">
           <h2 className="text-2xl font-bold text-gray-900 mb-3">Volunteer Application</h2>
           <p className="text-[#595959] mb-6 leading-relaxed">
@@ -327,7 +273,7 @@ export default function CommunityImpactPage() {
       </section>
 
       {/* FAQ */}
-      <section className="bg-[#f0fafa] py-16 px-4 sm:px-6">
+      <section className="bg-white py-16 px-4 sm:px-6">
         <div className="section-container max-w-2xl">
           <h2 className="text-2xl font-bold text-gray-900 mb-8">Questions about our NPO work</h2>
           <dl className="space-y-0">
@@ -337,8 +283,8 @@ export default function CommunityImpactPage() {
               </dt>
               <dd className="text-[#595959] leading-relaxed">
                 Yes. Fountain of Grace International is registered under the Nonprofit Organisations Act, 71 of 1997,
-                with NPO Number 316-193. The organisation is based in Pretoria North and runs community programs
-                serving vulnerable individuals and families.
+                with NPO Number 316-193. We are a church in Pretoria North that helps where we can - practical help
+                like food and electricity, pastoral care and prayer, and skills training.
               </dd>
             </div>
             <div className="faq-block">
@@ -361,7 +307,7 @@ export default function CommunityImpactPage() {
           <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">
             You are also welcome on Sunday
           </p>
-          <h2 className="text-2xl font-bold text-white mb-4">Come and see the community behind the work.</h2>
+          <h2 className="text-2xl font-bold text-white mb-4">Come and see the church behind the work.</h2>
           <p className="text-white mb-6 max-w-lg mx-auto">
             Fountain of Grace International is a church in Pretoria North as well as a registered NPO.{' '}
             <Link href="/what-to-expect" className="text-white font-semibold hover:underline">Sunday services</Link>{' '}
@@ -379,11 +325,10 @@ export default function CommunityImpactPage() {
           <div className="geo-block">
             <p>
               Fountain of Grace International is a registered non-profit organisation (NPO No: 316-193) based in
-              Pretoria North, Gauteng, operating under the Nonprofit Organisations Act 71 of 1997. We run six
-              community programs providing direct practical support to individuals and families across Pretoria North,
-              Akasia, Orchards, Shosanguve, Montana, Wonderboom, Suiderberg, Amandasig, and Rosslyn. FGI accepts
-              donations via PayPal and direct EFT, and welcomes volunteers and organisational partnerships.
-              Contact us on{' '}
+              Pretoria North, Gauteng, operating under the Nonprofit Organisations Act 71 of 1997. We are a church
+              that helps where we can with practical support such as food and electricity, pastoral care and prayer,
+              and skills training, and we publish how every rand is used. FGI accepts gifts via PayPal and direct EFT,
+              and welcomes volunteers and organisational partnerships. Contact us on{' '}
               <a href="tel:+27752592555" className="text-[#006b6b] font-semibold">+27 75 259 2555</a>.
             </p>
           </div>
