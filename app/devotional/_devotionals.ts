@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "am-i-holding-back-the-best-of-myself-for-a-better-day",
+    "date": "2026-08-31",
+    "dateDisplay": "31 August 2026",
+    "day": 243,
+    "headline": "Am I holding back the best of myself for a better day?",
+    "verseRef": "Ecclesiastes 9:10",
+    "card": "/devotional-cards/w680/am-i-holding-back-the-best-of-myself-for-a-better-day.webp"
+  },
+  {
     "slug": "how-do-i-make-a-wise-decision-when-i-feel-completely-stuck",
     "date": "2026-08-30",
     "dateDisplay": "30 August 2026",
