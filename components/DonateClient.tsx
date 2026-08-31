@@ -6,56 +6,38 @@ import { trackDonateInitiated, useFormStartOnce } from '@/lib/tracking'
 
 const PRESETS = ['150', '350', '600', '1000']
 
-const IMPACT: Record<string, string> = {
-  '150':  'R150 covers transport for an outreach team',
-  '350':  'R350 feeds a family in Pretoria North for a week',
-  '600':  'R600 supports one month of recovery and prayer',
-  '1000': 'R1 000 equips one person in Impact Seed training',
-}
-
-const PROGRAMS = [
+const HELP = [
   {
-    icon: '🍱',
-    title: 'Food Parcels & Family Relief',
-    desc: 'Emergency food parcels distributed to vulnerable households across Pretoria North and surrounding suburbs.',
-    example: 'R350 = one family\'s food for a week',
+    icon: '🍞',
+    title: 'Food for families',
+    desc: 'When a family near us has had nothing to eat, we put food on their table.',
+  },
+  {
+    icon: '💡',
+    title: 'Keeping the lights on',
+    desc: 'When a home is about to go dark, we help cover the electricity bill.',
+  },
+  {
+    icon: '🏠',
+    title: 'A roof over their head',
+    desc: 'When someone is days from losing their home, we help with the rent.',
   },
   {
     icon: '🙏',
-    title: 'Prayer Line & Recovery Support',
-    desc: 'A dedicated prayer and support line for people dealing with addiction, grief, and personal crisis - connecting people to real help.',
-    example: 'R600 = one month of recovery support',
+    title: 'Prayer and pastoral care',
+    desc: 'The pastor drives out on his own petrol to pray with people and walk with them through hard seasons.',
   },
   {
     icon: '💼',
-    title: 'Impact Seed Training',
-    desc: 'Entrepreneurship and skills training that rebuilds dignity through practical work and economic independence.',
-    example: 'R1 000 = equips one person in the programme',
-  },
-  {
-    icon: '👨‍👩‍👧',
-    title: 'Family Restoration',
-    desc: 'Counselling, support groups, and community care for families under pressure - marriages, parenting, and crisis support.',
-    example: 'R500 = supports a family for one month',
-  },
-  {
-    icon: '⛪',
-    title: 'Sunday Gatherings & Discipleship',
-    desc: 'Maintaining the weekly church service, teaching resources, and discipleship programmes that equip our community.',
-    example: 'R200 = Sunday operations contribution',
-  },
-  {
-    icon: '🌱',
-    title: 'Youth & Next Generation',
-    desc: 'Resources for young people - mentorship, spiritual development, and practical life skills for Pretoria North\'s youth.',
-    example: 'R400 = youth programme resources',
+    title: 'Skills that free people',
+    desc: 'Practical training in leadership, church management, and digital and business skills - given away, so a person can stand on their own feet.',
   },
 ]
 
 const FUND_SLICES = [
-  { pct: 58, start: 0,  color: '#FFD600', label: 'Food & Basic Aid' },
-  { pct: 14, start: 58, color: '#ff8c42', label: 'Programme Materials & Logistics' },
-  { pct: 28, start: 72, color: '#4FC3F7', label: 'Operational Costs' },
+  { pct: 58, start: 0,  color: '#008080', label: 'Food and basic aid' },
+  { pct: 14, start: 58, color: '#ffd700', label: 'Materials and transport' },
+  { pct: 28, start: 72, color: '#04302f', label: 'Running costs (admin, compliance)' },
 ]
 
 const TRUST_CARDS = [
@@ -95,9 +77,6 @@ export default function DonateClient() {
   const [amount, setAmount] = useState('350')
   const handleFormStart = useFormStartOnce('donate')
 
-  const impactText =
-    IMPACT[amount] ?? `R${parseInt(amount) || 0} goes directly to FGI programmes`
-
   return (
     <main>
 
@@ -124,26 +103,26 @@ export default function DonateClient() {
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-10">
             <p className="text-[#006b6b] font-semibold text-xs uppercase tracking-widest mb-2">
-              100% Transparency
+              Full transparency
             </p>
             <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d6fbf] mb-3">
-              Where Your Money Goes - Specifically
+              Where Your Giving Goes in Pretoria North
             </h2>
             <p className="text-[#595959] max-w-xl mx-auto leading-relaxed">
-              No vague promises. Here are the named programmes your donation funds directly.
+              This is the real help your giving makes possible - given free, at our own cost, to
+              families in Pretoria North. Fountain of Grace International is a registered NPO (316-193).
             </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-            {PROGRAMS.map((p) => (
+            {HELP.map((p) => (
               <div
                 key={p.title}
-                className="bg-[#f0fafa] rounded-2xl p-6 border-l-4 border-[#FFD600]"
+                className="bg-[#f0fafa] rounded-2xl p-6 border-l-4 border-[#008080]"
               >
                 <div className="text-3xl mb-2" aria-hidden="true">{p.icon}</div>
                 <h3 className="font-bold text-[#0d6fbf] text-sm mb-1">{p.title}</h3>
-                <p className="text-[#555] text-sm leading-relaxed mb-3">{p.desc}</p>
-                <p className="text-[#006b6b] font-semibold text-xs">{p.example}</p>
+                <p className="text-[#555] text-sm leading-relaxed">{p.desc}</p>
               </div>
             ))}
           </div>
@@ -153,9 +132,12 @@ export default function DonateClient() {
       {/* ── GIVE FORM ────────────────────────────────────────────── */}
       <section id="give" className="bg-[#f0fafa] py-16 px-4 sm:px-6 scroll-mt-16">
         <div className="max-w-2xl mx-auto">
-          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d6fbf] text-center mb-10">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-[#0d6fbf] text-center mb-3">
             Choose How You Want to Give
           </h2>
+          <p className="text-center text-[#595959] text-sm mb-8">
+            Choose an amount or enter your own. There is no set amount - give what is on your heart.
+          </p>
 
           {/* Amount pills */}
           <div className="flex flex-wrap gap-3 justify-center mb-4">
@@ -184,17 +166,16 @@ export default function DonateClient() {
             <input
               id="amount"
               type="number"
-              min="10"
-              step="10"
+              min="1"
               value={amount}
               onFocus={handleFormStart}
               onChange={(e) => setAmount(e.target.value)}
               className="flex-1 border-2 border-[#e0f0ff] rounded-xl px-4 py-3 text-lg font-bold text-[#0d6fbf] text-center focus:outline-none focus:border-[#008080]"
-              aria-label="Custom donation amount in Rand"
+              aria-label="Donation amount in Rand"
             />
           </div>
           <p className="text-center text-[#006b6b] font-semibold text-sm mb-10 min-h-[1.25rem]">
-            {impactText}
+            Every gift goes straight to the work. Thank you.
           </p>
 
           <div className="space-y-5">
@@ -207,14 +188,14 @@ export default function DonateClient() {
               </div>
               <p className="text-sm text-[#595959] mb-5">
                 A monthly gift - even a small one - is the most powerful way to support FGI.
-                It funds our community programmes reliably, month after month.
+                It helps FGI keep showing up for families, month after month.
               </p>
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-5">
                 {[
-                  { amount: '150', label: 'R150 / month', note: 'Outreach transport' },
-                  { amount: '350', label: 'R350 / month', note: 'Family food parcel' },
-                  { amount: '600', label: 'R600 / month', note: 'Recovery support' },
-                  { amount: '1000', label: 'R1 000 / month', note: 'Impact Seed training' },
+                  { amount: '150', label: 'R150 / month' },
+                  { amount: '350', label: 'R350 / month' },
+                  { amount: '600', label: 'R600 / month' },
+                  { amount: '1000', label: 'R1 000 / month' },
                 ].map((opt) => (
                   <form
                     key={opt.amount}
@@ -239,7 +220,6 @@ export default function DonateClient() {
                       className="w-full text-center rounded-xl border-2 border-[#e0f0ff] hover:border-[#FFD600] hover:bg-[#fffbe6] transition-all p-3 group"
                     >
                       <p className="font-bold text-[#0d6fbf] text-sm group-hover:text-[#1a1a1a]">{opt.label}</p>
-                      <p className="text-xs text-[#595959] mt-0.5">{opt.note}</p>
                     </button>
                   </form>
                 ))}
@@ -365,7 +345,7 @@ export default function DonateClient() {
                       ))}
                     </g>
                     <text x="100" y="96" textAnchor="middle" fill="white" fontSize="15" fontWeight="800">FGI</text>
-                    <text x="100" y="112" textAnchor="middle" fill="rgba(255,255,255,0.45)" fontSize="10">2026</text>
+                    <text x="100" y="112" textAnchor="middle" fill="rgba(255,255,255,0.45)" fontSize="10">2025</text>
                   </svg>
                 </div>
                 {/* Legend + bars */}
@@ -384,7 +364,7 @@ export default function DonateClient() {
                       </div>
                     </div>
                   ))}
-                  <p className="text-white text-xs mt-1">Based on 2025 operational figures.</p>
+                  <p className="text-white text-xs mt-1">Based on our 2025 financial year.</p>
                 </div>
               </div>
             </div>
@@ -456,7 +436,7 @@ export default function DonateClient() {
               href="/community-impact"
               className="inline-block bg-[#FFD600] text-[#1a1a1a] font-bold px-7 py-3 rounded-lg hover:bg-[#e6c200] transition-colors text-sm"
             >
-              See Our Programmes
+              See How We Help
             </Link>
             <Link
               href="/plan-your-visit"
