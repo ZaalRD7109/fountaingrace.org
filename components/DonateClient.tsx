@@ -101,25 +101,6 @@ export default function DonateClient() {
   return (
     <main>
 
-      {/* ── HERO ─────────────────────────────────────────────────── */}
-      <section className="bg-[#008080] text-white pt-10 pb-10 px-4 sm:px-6 text-center">
-        <div className="max-w-xl mx-auto">
-          <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
-            Support the work · Pretoria North
-          </p>
-          <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
-            Your giving changes lives in Pretoria North.
-          </h1>
-          <p className="text-white text-base leading-relaxed mb-5">
-            Every rand you give goes directly to real people in our community - food for
-            families, support for recovery, training for those rebuilding their lives.
-          </p>
-          <span className="inline-block bg-black/15 border border-white/40 text-white px-5 py-2 rounded-full text-sm font-semibold tracking-wide">
-            Registered NPO 316-193 · Dept of Social Development, South Africa
-          </span>
-        </div>
-      </section>
-
       {/* ── TRUST BAR ────────────────────────────────────────────── */}
       <div className="bg-[#f0fafa] border-b-2 border-[#e8eef8] py-5 px-4 sm:px-6">
         <div className="max-w-4xl mx-auto flex flex-wrap justify-center gap-x-10 gap-y-3 text-center text-sm">
