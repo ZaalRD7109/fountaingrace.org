@@ -66,7 +66,7 @@ export default function VolunteerPage() {
             Volunteer with Fountain of Grace International
           </h1>
           <p className="text-white text-base leading-relaxed">
-            Every programme we run depends on people who show up. Fill in the form and we will be in touch.
+            Everything we do depends on people who show up. Fill in the form and we will be in touch.
           </p>
         </div>
       </section>
@@ -84,7 +84,7 @@ export default function VolunteerPage() {
           <p className="text-sm font-semibold text-gray-700 mb-4">Ways to get involved</p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
             {[
-              { icon: '🥫', label: 'Food programmes' },
+              { icon: '🥫', label: 'Food support' },
               { icon: '📋', label: 'Administration' },
               { icon: '🎉', label: 'Events' },
               { icon: '🤝', label: 'Other skills' },

@@ -87,7 +87,7 @@ const faqs: FaqCategory[] = [
       },
       {
         q: 'Is Fountain of Grace International a registered organisation?',
-        a: <>Yes. FGI is a registered Non-Profit Organisation (NPO No: 316-193) registered with the South African Department of Social Development on 16 December 2024. You can see how donations are used and what programmes we run on the <Link href="/community-impact" className="fgi-link">Community Impact page</Link>.</>,
+        a: <>Yes. FGI is a registered Non-Profit Organisation (NPO No: 316-193) registered with the South African Department of Social Development on 16 December 2024. You can see how donations are used and how we help on the <Link href="/community-impact" className="fgi-link">Community Impact page</Link>.</>,
         aText: 'Yes. FGI is a registered Non-Profit Organisation (NPO No: 316-193) registered with the South African Department of Social Development on 16 December 2024.',
       },
     ],
@@ -137,13 +137,13 @@ const faqs: FaqCategory[] = [
     items: [
       {
         q: 'Can I volunteer with FGI?',
-        a: <>Yes. No prior experience is needed. <Link href="/volunteer" className="fgi-link">Fill in the volunteer form here</Link> and we will reach out with next steps. You can also read about the <Link href="/community-impact" className="fgi-link">programmes you would be joining</Link>.</>,
+        a: <>Yes. No prior experience is needed. <Link href="/volunteer" className="fgi-link">Fill in the volunteer form here</Link> and we will reach out with next steps. You can also read about <Link href="/community-impact" className="fgi-link">how we help</Link>.</>,
         aText: 'Yes. No prior experience is needed. Fill in the volunteer form at fountaingrace.org/volunteer and we will reach out with next steps.',
       },
       {
         q: 'What volunteer roles are available?',
-        a: <>Food programs, administration, events, outreach, and more. Tell us your availability on the <Link href="/volunteer" className="fgi-link">volunteer page</Link> and we will match you to something practical. See the full list of <Link href="/community-impact" className="fgi-link">community programmes here</Link>.</>,
-        aText: 'Food programs, administration, events, outreach, and more. Tell us your availability and we will match you to something practical.',
+        a: <>Practical ways to help - handing out food to families, admin, welcoming visitors on a Sunday, helping at events, and prayer support. Tell us your availability on the <Link href="/volunteer" className="fgi-link">volunteer page</Link> and we will match you to something that fits. See <Link href="/community-impact" className="fgi-link">how we help here</Link>.</>,
+        aText: 'Practical ways to help - handing out food to families, admin, welcoming visitors on a Sunday, helping at events, and prayer support. Tell us your availability and we will match you to something that fits.',
       },
     ],
   },
