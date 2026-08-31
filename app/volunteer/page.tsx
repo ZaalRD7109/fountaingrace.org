@@ -5,7 +5,7 @@ import VolunteerForm from '@/components/VolunteerForm'
 export const metadata: Metadata = {
   title: 'Volunteer with FGI | NPO in Pretoria North',
   description:
-    'Volunteer with a registered NPO in Pretoria North. No experience needed. Food programs, admin, events and more. Fill in the form - we reach out with next steps.',
+    'Volunteer with a registered NPO in Pretoria North. No experience needed. Help with food, admin, events and more. Fill in the form - we reach out with next steps.',
   robots: 'index, follow',
   alternates: {
     canonical: 'https://www.fountaingrace.org/volunteer',
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Volunteer with FGI | NPO in Pretoria North',
     description:
-      'Volunteer with a registered NPO in Pretoria North. No experience needed. Food programs, admin, events and more. Fill in the form - we reach out with next steps.',
+      'Volunteer with a registered NPO in Pretoria North. No experience needed. Help with food, admin, events and more. Fill in the form - we reach out with next steps.',
     type: 'website',
     images: [{ url: 'https://www.fountaingrace.org/og-image.jpg', width: 1200, height: 630, alt: 'Fountain of Grace International - Church in Pretoria North' }],
     url: 'https://www.fountaingrace.org/volunteer',
