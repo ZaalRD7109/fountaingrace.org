@@ -32,6 +32,16 @@
   .tl-label{font-weight:700;font-size:17px}
   .tl-lock{font-size:12px;color:var(--lock);border:1px solid var(--line);
     border-radius:999px;padding:2px 8px;white-space:nowrap}
+  .tl-test{font-size:11px;font-weight:800;color:#06210f;background:var(--amber);
+    border-radius:999px;padding:2px 8px;letter-spacing:.04em}
+  a.tile.istest{border-color:var(--amber);border-style:dashed}
+  .testnote{background:#241f14;border:1px solid var(--amber);color:#e7d3a6;
+    border-radius:13px;padding:12px 14px;margin:12px 4px;font-size:13.5px;line-height:1.5}
+  .golive{display:block;width:calc(100% - 8px);margin:-4px 4px 12px;appearance:none;
+    border:1px solid var(--amber);background:var(--amber);color:#06210f;font-weight:800;
+    border-radius:11px;padding:11px;font-size:14px}
+  .golive:disabled{opacity:.7}
+  .golive.done{background:var(--good);border-color:var(--good)}
   .tl-blurb{color:var(--dim);font-size:14px;margin-top:4px}
   .tl-go{float:right;color:var(--teal);font-weight:700;font-size:20px;margin-top:-2px}
   .empty{color:var(--dim);text-align:center;padding:44px 20px;font-size:15px}
@@ -117,14 +127,21 @@ function renderMenu(d){
     for (const p of d.pending){ html += reqCard(p); }
     html += '</div>';
   }
+  if (d.groups && d.groups.some(g=>g.tools.some(t=>t.test))){
+    html += '<div class="testnote">Items marked <b>TEST</b> are only visible to you. Try one, and when you are happy, tap <b>Go live</b> to open it to the right people.</div>';
+  }
   for (const g of (d.groups||[])){
     html += '<div class="cat">' + esc(g.category) + '</div>';
     for (const t of g.tools){
-      html += '<a class="tile" href="' + esc(t.url) + '" target="_blank" rel="noopener">' +
+      html += '<a class="tile' + (t.test?' istest':'') + '" href="' + esc(t.url) + '" target="_blank" rel="noopener">' +
         '<span class="tl-go">&rsaquo;</span>' +
         '<div class="tl-top"><span class="tl-label">' + esc(t.label) + '</span>' +
+        (t.test ? '<span class="tl-test">TEST</span>' : '') +
         (t.sensitive ? '<span class="tl-lock">private</span>' : '') + '</div>' +
         (t.blurb ? '<div class="tl-blurb">' + esc(t.blurb) + '</div>' : '') + '</a>';
+      if (t.test){
+        html += '<button class="golive" onclick="goLive(\'' + t.slug.replace(/'/g,"\\'") + '\',this)">Tested and happy? Tap to go live</button>';
+      }
     }
   }
   main.innerHTML = html || '<div class="empty">No tools yet.</div>';
@@ -167,6 +184,17 @@ async function decline(id){
   if (box) box.style.display='none';
 }
 function cp(t, btn){ try{ navigator.clipboard.writeText(t); btn.textContent='Copied'; }catch(e){ btn.textContent='Copy failed'; } }
+
+async function goLive(slug, btn){
+  btn.textContent='Going live...'; btn.disabled=true;
+  try{
+    const r=await fetch(API+'?k='+encodeURIComponent(TOKEN),{method:'POST',
+      headers:{'content-type':'application/json'},body:JSON.stringify({action:'golive',slug})});
+    const d=await r.json();
+    if(d.ok){ btn.textContent='Live now'; btn.classList.add('done'); setTimeout(load,900); }
+    else { btn.textContent='Could not - try again'; btn.disabled=false; }
+  }catch(e){ btn.textContent='No connection - try again'; btn.disabled=false; }
+}
 
 function renderRequest(){
   sub.textContent = 'Ask for your door';
