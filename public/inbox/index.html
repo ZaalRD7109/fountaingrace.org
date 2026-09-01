@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>FGI Inbox</title>
+<link rel="icon" href="/favicon.jpg">
+<style>
+  :root{
+    --bg:#0f1720; --card:#17212b; --card2:#1d2a36; --line:#2a3a48;
+    --ink:#eef4f8; --dim:#9fb3c2; --teal:#1f9e8f; --teal2:#16746a;
+    --urgent:#e2564d; --amber:#e0a83b; --good:#2fae76;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    -webkit-text-size-adjust:100%}
+  header{position:sticky;top:0;z-index:5;background:var(--bg);
+    padding:14px 16px 8px;border-bottom:1px solid var(--line)}
+  h1{font-size:19px;margin:0;font-weight:700}
+  .sub{color:var(--dim);font-size:13px;margin-top:2px}
+  .banner{background:#3a1f1d;border:1px solid var(--urgent);color:#ffd9d5;
+    padding:10px 12px;border-radius:12px;margin:10px 16px;font-size:14px}
+  .chips{display:flex;gap:8px;overflow-x:auto;padding:10px 16px;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .chips::-webkit-scrollbar{display:none}
+  .chip{flex:0 0 auto;background:var(--card);border:1px solid var(--line);
+    color:var(--ink);padding:8px 13px;border-radius:999px;font-size:14px;white-space:nowrap}
+  .chip.on{background:var(--teal);border-color:var(--teal);color:#fff;font-weight:600}
+  .chip b{color:var(--dim);font-weight:600;margin-left:5px}
+  .chip.on b{color:#d9fff8}
+  main{padding:6px 12px 90px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;
+    padding:13px 14px;margin:10px 4px}
+  .card.urgent{border-color:var(--urgent);background:#20191a}
+  .row1{display:flex;justify-content:space-between;gap:8px;align-items:baseline}
+  .kind{font-size:12px;color:var(--dim);text-transform:uppercase;letter-spacing:.03em}
+  .when{font-size:12px;color:var(--dim);white-space:nowrap}
+  .name{font-weight:700;margin:3px 0 1px}
+  .preview{color:#d7e4ee;font-size:15px;margin:4px 0 10px;white-space:pre-wrap;word-break:break-word}
+  .tags{display:flex;flex-wrap:wrap;gap:6px;align-items:center;margin-bottom:4px}
+  .tag{font-size:12.5px;padding:4px 9px;border-radius:999px;border:1px solid var(--line);color:var(--dim)}
+  .tag.sugg{background:#123; border-color:var(--teal2); color:#bfeee6}
+  .tag.dept{background:var(--teal2);border-color:var(--teal2);color:#fff;font-weight:600}
+  .tag.urgent{background:var(--urgent);border-color:var(--urgent);color:#fff;font-weight:700}
+  .tag.st{background:var(--card2)}
+  .why{color:var(--dim);font-size:13px;margin:2px 0 10px}
+  .btn{appearance:none;border:1px solid var(--line);background:var(--card2);color:var(--ink);
+    padding:11px 12px;border-radius:11px;font-size:15px;font-weight:600;width:100%;text-align:center}
+  .btn.primary{background:var(--teal);border-color:var(--teal);color:#fff}
+  .btn.ghost{background:transparent}
+  .cardbtns{display:flex;gap:8px}
+  .cardbtns .btn{flex:1}
+  a.contact{color:#8fd6cc;text-decoration:none;font-size:13px}
+  .empty{color:var(--dim);text-align:center;padding:40px 20px}
+  .depts{margin:26px 6px 10px;border-top:1px solid var(--line);padding-top:16px}
+  .depts h2{font-size:14px;color:var(--dim);text-transform:uppercase;letter-spacing:.04em;margin:0 0 10px}
+  .depts .d{padding:9px 0;border-bottom:1px solid var(--line)}
+  .depts .d b{color:var(--ink)} .depts .d span{color:var(--dim);font-size:13px;display:block}
+  /* sheet */
+  .scrim{position:fixed;inset:0;background:rgba(0,0,0,.55);display:none;z-index:20}
+  .scrim.on{display:block}
+  .sheet{position:fixed;left:0;right:0;bottom:0;z-index:21;background:var(--card);
+    border-radius:18px 18px 0 0;border-top:1px solid var(--line);
+    padding:16px 16px calc(16px + env(safe-area-inset-bottom));transform:translateY(100%);
+    transition:transform .18s ease;max-height:88vh;overflow:auto}
+  .sheet.on{transform:translateY(0)}
+  .sheet h3{margin:2px 0 2px;font-size:16px}
+  .sheet .who{color:var(--dim);font-size:13px;margin-bottom:12px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .opt{padding:12px 10px;border-radius:11px;border:1px solid var(--line);background:var(--card2);
+    font-size:15px;text-align:center;font-weight:600}
+  .opt.on{background:var(--teal);border-color:var(--teal);color:#fff}
+  .lbl{color:var(--dim);font-size:13px;margin:16px 0 7px}
+  input[type=text]{width:100%;padding:11px 12px;border-radius:10px;border:1px solid var(--line);
+    background:var(--bg);color:var(--ink);font-size:15px}
+  .stat{display:flex;gap:8px}
+  .stat .opt{flex:1;padding:11px 6px;font-size:14px}
+  .save{margin-top:16px}
+  .toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:#0a2b26;
+    border:1px solid var(--teal);color:#d9fff8;padding:10px 16px;border-radius:12px;z-index:40;
+    opacity:0;transition:opacity .2s;font-size:14px}
+  .toast.on{opacity:1}
+</style>
+</head>
+<body>
+<header>
+  <h1>FGI Inbox</h1>
+  <div class="sub" id="sub">Loading...</div>
+</header>
+<div id="banner"></div>
+<div class="chips" id="chips"></div>
+<main id="list"></main>
+
+<div class="scrim" id="scrim"></div>
+<div class="sheet" id="sheet">
+  <h3 id="sheetTitle">Route this message</h3>
+  <div class="who" id="sheetWho"></div>
+  <div class="lbl">Send to which department</div>
+  <div class="grid" id="deptGrid"></div>
+  <div class="lbl">Stage</div>
+  <div class="stat" id="statRow"></div>
+  <div class="lbl">Who is handling it (optional)</div>
+  <input type="text" id="assignedTo" placeholder="A name, if someone has taken it">
+  <div class="lbl">Note (optional)</div>
+  <input type="text" id="note" placeholder="Anything worth writing down">
+  <button class="btn primary save" id="saveBtn">Save</button>
+  <button class="btn ghost" id="cancelBtn" style="margin-top:8px">Cancel</button>
+</div>
+<div class="toast" id="toast"></div>
+
+<script>
+const FN = "https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/department-board";
+
+// Key handling: take ?k= from the link, save it, then clean the address bar
+// (same trust model as /WA/ and /attendance/).
+let key = "";
+try {
+  const u = new URL(location.href);
+  const q = u.searchParams.get("k");
+  if (q) { key = q; localStorage.setItem("fgi_inbox_key", q);
+           history.replaceState(null, "", u.pathname); }
+  else { key = localStorage.getItem("fgi_inbox_key") || ""; }
+} catch (e) { key = ""; }
+
+let DEPTS = [], ITEMS = [], filter = "all", active = null, sel = {};
+
+const $ = (id) => document.getElementById(id);
+function toast(t){ const el=$("toast"); el.textContent=t; el.classList.add("on");
+  setTimeout(()=>el.classList.remove("on"),1600); }
+function esc(s){ return String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c])); }
+function labelOf(k){ const d=DEPTS.find(x=>x.key===k); return d?d.label:k; }
+function ago(iso){ if(!iso) return ""; const d=new Date(iso), now=new Date();
+  const m=Math.round((now-d)/60000);
+  if(m<1) return "just now"; if(m<60) return m+"m ago";
+  const h=Math.round(m/60); if(h<24) return h+"h ago";
+  const days=Math.round(h/24); if(days<8) return days+"d ago";
+  return d.toLocaleDateString(undefined,{day:"numeric",month:"short"}); }
+
+async function load(){
+  if(!key){ $("sub").textContent="No access key. Open the link Pastor Ricardo shared."; return; }
+  try{
+    const r = await fetch(FN+"?k="+encodeURIComponent(key));
+    if(r.status===404){ $("sub").textContent="That access key is not valid."; return; }
+    const d = await r.json();
+    if(!d.ok){ $("sub").textContent="Could not load the board."; return; }
+    DEPTS = d.departments; ITEMS = d.items;
+    render();
+  }catch(e){ $("sub").textContent="Could not reach the board. Check the connection and pull to refresh."; }
+}
+
+function render(){
+  const open = ITEMS.filter(i=>i.status!=="done"&&i.status!=="not_relevant");
+  const urgent = open.filter(i=>i.urgency==="urgent").length;
+  $("sub").textContent = open.length+" waiting"+(urgent?"  ·  "+urgent+" urgent":"");
+  $("banner").innerHTML = urgent
+    ? '<div class="banner">'+urgent+' urgent message'+(urgent>1?'s':'')+'. A crisis or a child at risk. Make sure a real person has been told now, not only the board.</div>' : "";
+
+  // chips
+  let chips = '<button class="chip '+(filter==="all"?"on":"")+'" data-f="all">All <b>'+open.length+'</b></button>';
+  DEPTS.forEach(d=>{ chips += '<button class="chip '+(filter===d.key?"on":"")+'" data-f="'+d.key+'">'+esc(d.label.split(" / ")[0])+' <b>'+d.open+'</b></button>'; });
+  $("chips").innerHTML = chips;
+  [...$("chips").children].forEach(b=>b.onclick=()=>{ filter=b.dataset.f; render(); });
+
+  // list
+  const shown = ITEMS.filter(i=>{
+    if(i.status==="done"||i.status==="not_relevant") return false;
+    if(filter==="all") return true;
+    return i.effective_department===filter;
+  });
+  if(!shown.length){ $("list").innerHTML='<div class="empty">Nothing here. A quiet inbox is a good thing.</div>'; return; }
+  $("list").innerHTML = shown.map((i,idx)=>{
+    const gi = ITEMS.indexOf(i);
+    const routed = !!i.department;
+    const deptTag = routed
+      ? '<span class="tag dept">'+esc(labelOf(i.department))+'</span>'
+      : '<span class="tag sugg">Suggest: '+esc(labelOf(i.suggested_department))+'</span>';
+    const urg = i.urgency==="urgent" ? '<span class="tag urgent">URGENT</span>' : '';
+    const st = routed ? '<span class="tag st">'+esc(i.status.replace("_"," "))+'</span>' : '';
+    const who = i.contact ? '<div><a class="contact">'+esc(i.contact)+'</a></div>' : '';
+    return '<div class="card '+(i.urgency==="urgent"?"urgent":"")+'">'
+      + '<div class="row1"><span class="kind">'+esc(i.kind)+'</span><span class="when">'+ago(i.when)+'</span></div>'
+      + '<div class="name">'+esc(i.name)+'</div>'
+      + who
+      + '<div class="preview">'+esc(i.preview)+'</div>'
+      + '<div class="tags">'+urg+deptTag+st+'</div>'
+      + '<div class="why">'+esc(i.suggested_reason)+'</div>'
+      + '<div class="cardbtns">'
+      + '<button class="btn primary" data-open="'+gi+'">'+(routed?"Change":"Route it")+'</button>'
+      + (routed?'<button class="btn ghost" data-done="'+gi+'">Done</button>':'')
+      + '</div></div>';
+  }).join("");
+  $("list").querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>openSheet(+b.dataset.open));
+  $("list").querySelectorAll("[data-done]").forEach(b=>b.onclick=()=>quickDone(+b.dataset.done));
+  renderDepts();
+}
+
+function renderDepts(){
+  if(document.getElementById("deptsBlock")) return;
+  const html = '<div class="depts" id="deptsBlock"><h2>The departments</h2>'
+    + DEPTS.map(d=>'<div class="d"><b>'+esc(d.label)+'</b><span>'+esc(d.handles)+'</span></div>').join("")
+    + '</div>';
+  $("list").insertAdjacentHTML("beforeend", html);
+}
+
+function openSheet(gi){
+  active = ITEMS[gi];
+  sel = { department: active.department || active.suggested_department,
+          status: active.status==="open" ? "assigned" : active.status,
+          assigned_to: active.assigned_to || "", note: active.note || "" };
+  $("sheetTitle").textContent = active.department ? "Change routing" : "Route this message";
+  $("sheetWho").textContent = active.kind+" · "+active.name;
+  $("assignedTo").value = sel.assigned_to;
+  $("note").value = sel.note;
+  $("deptGrid").innerHTML = DEPTS.map(d=>'<div class="opt" data-d="'+d.key+'">'+esc(d.label.split(" / ")[0])+'</div>').join("");
+  $("statRow").innerHTML = [["assigned","Assigned"],["in_progress","In progress"],["done","Done"],["not_relevant","Not relevant"]]
+    .map(s=>'<div class="opt" data-s="'+s[0]+'">'+s[1]+'</div>').join("");
+  syncSel();
+  $("deptGrid").querySelectorAll("[data-d]").forEach(o=>o.onclick=()=>{ sel.department=o.dataset.d; syncSel(); });
+  $("statRow").querySelectorAll("[data-s]").forEach(o=>o.onclick=()=>{ sel.status=o.dataset.s; syncSel(); });
+  $("scrim").classList.add("on"); $("sheet").classList.add("on");
+}
+function syncSel(){
+  $("deptGrid").querySelectorAll("[data-d]").forEach(o=>o.classList.toggle("on",o.dataset.d===sel.department));
+  $("statRow").querySelectorAll("[data-s]").forEach(o=>o.classList.toggle("on",o.dataset.s===sel.status));
+}
+function closeSheet(){ $("scrim").classList.remove("on"); $("sheet").classList.remove("on"); active=null; }
+$("scrim").onclick = closeSheet;
+$("cancelBtn").onclick = closeSheet;
+
+async function post(body){
+  const r = await fetch(FN+"?k="+encodeURIComponent(key),
+    {method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(body)});
+  const d = await r.json().catch(()=>({ok:false}));
+  return d && d.ok;
+}
+
+$("saveBtn").onclick = async ()=>{
+  if(!active) return;
+  const body = { source:active.source, source_id:active.source_id,
+    department:sel.department, status:sel.status,
+    assigned_to:$("assignedTo").value.trim(), note:$("note").value.trim(), by:"pastor" };
+  $("saveBtn").textContent="Saving..."; $("saveBtn").disabled=true;
+  const ok = await post(body);
+  $("saveBtn").textContent="Save"; $("saveBtn").disabled=false;
+  if(!ok){ toast("Could not save. Try again."); return; }
+  // update in place so the board reflects it without a full reload
+  active.department=sel.department; active.effective_department=sel.department;
+  active.status=sel.status; active.assigned_to=body.assigned_to; active.note=body.note;
+  closeSheet(); toast("Sent to "+labelOf(sel.department)); recount(); render();
+};
+
+async function quickDone(gi){
+  const it = ITEMS[gi];
+  const ok = await post({source:it.source, source_id:it.source_id,
+    department:it.department||it.suggested_department, status:"done", by:"pastor"});
+  if(!ok){ toast("Could not save."); return; }
+  it.status="done"; it.department=it.department||it.suggested_department;
+  toast("Marked done"); recount(); render();
+}
+
+// keep the chip counts honest after a change without a round-trip
+function recount(){
+  DEPTS.forEach(d=>d.open=0);
+  ITEMS.forEach(i=>{ if(i.status==="done"||i.status==="not_relevant") return;
+    const d=DEPTS.find(x=>x.key===i.effective_department); if(d) d.open++; });
+}
+
+load();
+</script>
+</body>
+</html>

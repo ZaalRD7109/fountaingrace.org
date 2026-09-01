@@ -37,6 +37,10 @@
   X-Robots-Tag: noindex
 /serve/*
   X-Robots-Tag: noindex
+/inbox/
+  X-Robots-Tag: noindex
+/inbox/*
+  X-Robots-Tag: noindex
 
 /*
   X-Frame-Options: DENY
