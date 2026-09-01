@@ -13,6 +13,7 @@ export default function PrayerForm() {
   const [email, setEmail] = useState('')
   const [prayer, setPrayer] = useState('')
   const [confidential, setConfidential] = useState(false)
+  const [contactOptin, setContactOptin] = useState(false)
   const [turnstileToken, setTurnstileToken] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
@@ -34,10 +35,19 @@ export default function PrayerForm() {
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name, email: email || null, prayer, confidential, turnstileToken }),
+          body: JSON.stringify({ name, email: email || null, prayer, confidential, contactOptin, turnstileToken }),
         }
       )
       if (!res.ok) throw new Error('Submission failed')
+      if (contactOptin && email) {
+        try {
+          await fetch(`${EDGE_BASE}/record-consent`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, source: 'prayer-form' }),
+          })
+        } catch { /* consent is best-effort; never block the submission */ }
+      }
       router.push('/thank-you/prayer')
     } catch {
       setError('Something went wrong. Please try again or WhatsApp us on +27 75 259 2555.')
@@ -109,6 +119,18 @@ export default function PrayerForm() {
       </label>
 
       <TurnstileWidget onVerify={handleVerify} />
+
+      <label className="flex items-start gap-3 cursor-pointer">
+        <input
+          type="checkbox"
+          checked={contactOptin}
+          onChange={(e) => setContactOptin(e.target.checked)}
+          className="mt-0.5 h-4 w-4 rounded border-gray-300 text-[#006b6b] focus:ring-[#008080]"
+        />
+        <span className="text-sm text-gray-700">
+          Fountain of Grace may contact me. I can opt out anytime.
+        </span>
+      </label>
 
       <p className="text-xs text-[#595959] leading-relaxed border border-gray-100 rounded-lg bg-gray-50 px-4 py-3">
         Your prayer request is received by Fountain of Grace International (NPO 316-193) and

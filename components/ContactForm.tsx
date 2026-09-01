@@ -12,6 +12,7 @@ export default function ContactForm() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
+  const [contactOptin, setContactOptin] = useState(false)
   const [turnstileToken, setTurnstileToken] = useState('')
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState('')
@@ -33,10 +34,19 @@ export default function ContactForm() {
         {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ name, email, message, turnstileToken }),
+          body: JSON.stringify({ name, email, message, contactOptin, turnstileToken }),
         }
       )
       if (!res.ok) throw new Error('Submission failed')
+      if (contactOptin && email) {
+        try {
+          await fetch(`${EDGE_BASE}/record-consent`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, source: 'contact-form' }),
+          })
+        } catch { /* consent is best-effort; never block the submission */ }
+      }
       router.push('/thank-you/contact')
     } catch {
       setError('Something went wrong. Please try again or WhatsApp us on +27 75 259 2555.')
@@ -96,6 +106,18 @@ export default function ContactForm() {
       </div>
 
       <TurnstileWidget onVerify={handleVerify} />
+
+      <label className="flex items-start gap-3 cursor-pointer">
+        <input
+          type="checkbox"
+          checked={contactOptin}
+          onChange={(e) => setContactOptin(e.target.checked)}
+          className="mt-0.5 h-4 w-4 rounded border-gray-300 text-[#006b6b] focus:ring-[#008080]"
+        />
+        <span className="text-sm text-gray-700">
+          Fountain of Grace may contact me. I can opt out anytime.
+        </span>
+      </label>
 
       <p className="text-xs text-[#595959] leading-relaxed border border-gray-100 rounded-lg bg-gray-50 px-4 py-3">
         Your information is collected by Fountain of Grace International (NPO 316-193) for the
