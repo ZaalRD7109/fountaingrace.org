@@ -97,7 +97,7 @@
 <div class="sheet" id="sheet">
   <h3 id="sheetTitle">Route this message</h3>
   <div class="who" id="sheetWho"></div>
-  <div class="lbl">Send to which department</div>
+  <div class="lbl" id="deptLbl">Send to which department</div>
   <div class="grid" id="deptGrid"></div>
   <div class="lbl">Stage</div>
   <div class="stat" id="statRow"></div>
@@ -125,6 +125,7 @@ try {
 } catch (e) { key = ""; }
 
 let DEPTS = [], ITEMS = [], filter = "all", active = null, sel = {};
+let ROLE = "triage", MYDEPT = null;
 
 const $ = (id) => document.getElementById(id);
 function toast(t){ const el=$("toast"); el.textContent=t; el.classList.add("on");
@@ -146,6 +147,7 @@ async function load(){
     const d = await r.json();
     if(!d.ok){ $("sub").textContent="Could not load the board."; return; }
     DEPTS = d.departments; ITEMS = d.items;
+    ROLE = d.role || "triage"; MYDEPT = d.department || null;
     render();
   }catch(e){ $("sub").textContent="Could not reach the board. Check the connection and pull to refresh."; }
 }
@@ -153,15 +155,19 @@ async function load(){
 function render(){
   const open = ITEMS.filter(i=>i.status!=="done"&&i.status!=="not_relevant");
   const urgent = open.filter(i=>i.urgency==="urgent").length;
-  $("sub").textContent = open.length+" waiting"+(urgent?"  ·  "+urgent+" urgent":"");
+  const q = ROLE==="department" ? (labelOf(MYDEPT).split(" / ")[0]+" queue - ") : "";
+  $("sub").textContent = q + open.length+" waiting"+(urgent?" - "+urgent+" urgent":"");
   $("banner").innerHTML = urgent
     ? '<div class="banner">'+urgent+' urgent message'+(urgent>1?'s':'')+'. A crisis or a child at risk. Make sure a real person has been told now, not only the board.</div>' : "";
 
-  // chips
-  let chips = '<button class="chip '+(filter==="all"?"on":"")+'" data-f="all">All <b>'+open.length+'</b></button>';
-  DEPTS.forEach(d=>{ chips += '<button class="chip '+(filter===d.key?"on":"")+'" data-f="'+d.key+'">'+esc(d.label.split(" / ")[0])+' <b>'+d.open+'</b></button>'; });
-  $("chips").innerHTML = chips;
-  [...$("chips").children].forEach(b=>b.onclick=()=>{ filter=b.dataset.f; render(); });
+  // chips (only for full-access; a department link sees a single queue)
+  if(ROLE==="department"){ $("chips").innerHTML=""; }
+  else {
+    let chips = '<button class="chip '+(filter==="all"?"on":"")+'" data-f="all">All <b>'+open.length+'</b></button>';
+    DEPTS.forEach(d=>{ chips += '<button class="chip '+(filter===d.key?"on":"")+'" data-f="'+d.key+'">'+esc(d.label.split(" / ")[0])+' <b>'+d.open+'</b></button>'; });
+    $("chips").innerHTML = chips;
+    [...$("chips").children].forEach(b=>b.onclick=()=>{ filter=b.dataset.f; render(); });
+  }
 
   // list
   const shown = ITEMS.filter(i=>{
@@ -187,7 +193,7 @@ function render(){
       + '<div class="tags">'+urg+deptTag+st+'</div>'
       + '<div class="why">'+esc(i.suggested_reason)+'</div>'
       + '<div class="cardbtns">'
-      + '<button class="btn primary" data-open="'+gi+'">'+(routed?"Change":"Route it")+'</button>'
+      + '<button class="btn primary" data-open="'+gi+'">'+(ROLE==="department"?"Update":(routed?"Change":"Route it"))+'</button>'
       + (routed?'<button class="btn ghost" data-done="'+gi+'">Done</button>':'')
       + '</div></div>';
   }).join("");
@@ -197,6 +203,7 @@ function render(){
 }
 
 function renderDepts(){
+  if(ROLE==="department") return;
   if(document.getElementById("deptsBlock")) return;
   const html = '<div class="depts" id="deptsBlock"><h2>The departments</h2>'
     + DEPTS.map(d=>'<div class="d"><b>'+esc(d.label)+'</b><span>'+esc(d.handles)+'</span></div>').join("")
@@ -209,10 +216,14 @@ function openSheet(gi){
   sel = { department: active.department || active.suggested_department,
           status: active.status==="open" ? "assigned" : active.status,
           assigned_to: active.assigned_to || "", note: active.note || "" };
-  $("sheetTitle").textContent = active.department ? "Change routing" : "Route this message";
-  $("sheetWho").textContent = active.kind+" · "+active.name;
+  const deptRole = ROLE==="department";
+  $("sheetTitle").textContent = deptRole ? "Update this message" : (active.department ? "Change routing" : "Route this message");
+  $("sheetWho").textContent = active.kind+" - "+active.name;
   $("assignedTo").value = sel.assigned_to;
   $("note").value = sel.note;
+  // A department link cannot re-route, so it never sees the department picker.
+  $("deptLbl").hidden = deptRole; $("deptGrid").hidden = deptRole;
+  if(deptRole) sel.department = MYDEPT;
   $("deptGrid").innerHTML = DEPTS.map(d=>'<div class="opt" data-d="'+d.key+'">'+esc(d.label.split(" / ")[0])+'</div>').join("");
   $("statRow").innerHTML = [["assigned","Assigned"],["in_progress","In progress"],["done","Done"],["not_relevant","Not relevant"]]
     .map(s=>'<div class="opt" data-s="'+s[0]+'">'+s[1]+'</div>').join("");
