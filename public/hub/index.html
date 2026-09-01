@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>FGI Hub</title>
+<link rel="icon" href="/favicon.jpg">
+<style>
+  :root{
+    --bg:#0f1720; --card:#17212b; --card2:#1d2a36; --line:#2a3a48;
+    --ink:#eef4f8; --dim:#9fb3c2; --teal:#1f9e8f; --teal2:#16746a;
+    --amber:#e0a83b; --good:#2fae76; --lock:#6f8496;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    -webkit-text-size-adjust:100%}
+  header{position:sticky;top:0;z-index:5;background:var(--bg);
+    padding:16px 16px 10px;border-bottom:1px solid var(--line)}
+  h1{font-size:20px;margin:0;font-weight:700}
+  .sub{color:var(--dim);font-size:13px;margin-top:2px}
+  main{padding:8px 12px 90px}
+  .cat{margin:20px 6px 8px;color:var(--dim);font-size:13px;font-weight:700;
+    text-transform:uppercase;letter-spacing:.05em}
+  .cat:first-of-type{margin-top:12px}
+  a.tile{display:block;text-decoration:none;color:var(--ink);
+    background:var(--card);border:1px solid var(--line);border-radius:15px;
+    padding:16px 16px;margin:10px 4px}
+  a.tile:active{background:var(--card2)}
+  .tl-top{display:flex;align-items:center;gap:9px}
+  .tl-label{font-weight:700;font-size:17px}
+  .tl-lock{font-size:12px;color:var(--lock);border:1px solid var(--line);
+    border-radius:999px;padding:2px 8px;white-space:nowrap}
+  .tl-blurb{color:var(--dim);font-size:14px;margin-top:4px}
+  .tl-go{float:right;color:var(--teal);font-weight:700;font-size:20px;margin-top:-2px}
+  .empty{color:var(--dim);text-align:center;padding:44px 20px;font-size:15px}
+  /* request form */
+  .panel{background:var(--card);border:1px solid var(--line);border-radius:15px;
+    padding:18px 16px;margin:14px 4px}
+  .panel h2{font-size:17px;margin:0 0 4px}
+  .panel p{color:var(--dim);font-size:14px;margin:0 0 14px}
+  label{display:block;font-size:13px;color:var(--dim);margin:12px 2px 5px}
+  input,textarea{width:100%;background:var(--card2);border:1px solid var(--line);
+    color:var(--ink);border-radius:11px;padding:13px 13px;font-size:16px;font-family:inherit}
+  textarea{min-height:70px;resize:vertical}
+  .btn{appearance:none;border:1px solid var(--teal);background:var(--teal);color:#fff;
+    padding:14px 14px;border-radius:12px;font-size:16px;font-weight:700;width:100%;
+    text-align:center;margin-top:16px}
+  .btn:active{background:var(--teal2)}
+  .btn.ghost{background:transparent;border-color:var(--line);color:var(--ink)}
+  .msg{padding:12px 14px;border-radius:11px;margin:12px 4px;font-size:15px}
+  .msg.good{background:#13291f;border:1px solid var(--good);color:#c9f4dd}
+  .msg.bad{background:#2a1a1a;border:1px solid #b5514a;color:#ffd9d5}
+  /* admin pending */
+  .waiting{background:#241f14;border:1px solid var(--amber);border-radius:15px;
+    padding:14px 14px;margin:12px 4px}
+  .waiting h2{font-size:15px;margin:0 0 4px;color:#ffe4a6}
+  .waiting .p{color:#e7d3a6;font-size:13px;margin:0 0 12px}
+  .req{background:#1c2330;border:1px solid var(--line);border-radius:12px;
+    padding:12px 12px;margin:10px 0}
+  .req .nm{font-weight:700}
+  .req .meta{color:var(--dim);font-size:13px;margin:2px 0 10px;white-space:pre-wrap}
+  .roles{display:flex;gap:7px}
+  .roles button{flex:1;appearance:none;border:1px solid var(--line);background:var(--card2);
+    color:var(--ink);padding:11px 6px;border-radius:10px;font-size:14px;font-weight:600}
+  .roles button:active{background:var(--teal2)}
+  .req .decline{margin-top:8px;width:100%;appearance:none;background:transparent;
+    border:1px solid var(--line);color:var(--dim);border-radius:10px;padding:9px;font-size:13px}
+  .granted{background:#13291f;border:1px solid var(--good);border-radius:10px;padding:11px;margin-top:8px}
+  .granted .lk{word-break:break-all;color:#c9f4dd;font-size:13px;margin:6px 0 10px}
+  .granted a.wa,.granted button.cp{display:block;text-decoration:none;text-align:center;
+    background:var(--good);color:#06210f;font-weight:700;border:0;border-radius:10px;
+    padding:11px;font-size:15px;margin-top:7px;width:100%}
+  .granted button.cp{background:var(--card2);color:var(--ink)}
+  .loading{color:var(--dim);text-align:center;padding:50px 20px}
+</style>
+</head>
+<body>
+<header>
+  <h1>Fountain of Grace</h1>
+  <div class="sub" id="sub">One door to everything</div>
+</header>
+<main id="main"><div class="loading">Opening your door...</div></main>
+
+<script>
+const API = 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/portal-hub';
+const main = document.getElementById('main');
+const sub = document.getElementById('sub');
+const esc = s => (s==null?'':String(s)).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// Token: from the URL once, then remembered and the URL cleaned (like /WA/, /inbox/).
+function getToken(){
+  const u = new URL(location.href);
+  let k = u.searchParams.get('k');
+  if (k){ try{ localStorage.setItem('fgi_hub_k', k); }catch(e){}
+    history.replaceState(null,'', u.pathname); return k; }
+  try{ return localStorage.getItem('fgi_hub_k') || ''; }catch(e){ return ''; }
+}
+const TOKEN = getToken();
+
+async function load(){
+  let d;
+  try{
+    const r = await fetch(API + (TOKEN?('?k='+encodeURIComponent(TOKEN)):''), {cache:'no-store'});
+    d = await r.json();
+  }catch(e){ main.innerHTML = '<div class="msg bad">No connection. Check your data and pull to refresh.</div>'; return; }
+  if (d && d.ok){ renderMenu(d); } else { renderRequest(); }
+}
+
+function renderMenu(d){
+  sub.textContent = (d.name ? d.name + ' - ' : '') + d.count + ' tool' + (d.count===1?'':'s');
+  let html = '';
+  if (d.role === 'admin' && d.pending && d.pending.length){
+    html += '<div class="waiting" id="waiting"><h2>' + d.pending.length + ' waiting for access</h2>' +
+            '<div class="p">Tap the level to let someone in. They only see tools for that level.</div>';
+    for (const p of d.pending){ html += reqCard(p); }
+    html += '</div>';
+  }
+  for (const g of (d.groups||[])){
+    html += '<div class="cat">' + esc(g.category) + '</div>';
+    for (const t of g.tools){
+      html += '<a class="tile" href="' + esc(t.url) + '" target="_blank" rel="noopener">' +
+        '<span class="tl-go">&rsaquo;</span>' +
+        '<div class="tl-top"><span class="tl-label">' + esc(t.label) + '</span>' +
+        (t.sensitive ? '<span class="tl-lock">private</span>' : '') + '</div>' +
+        (t.blurb ? '<div class="tl-blurb">' + esc(t.blurb) + '</div>' : '') + '</a>';
+    }
+  }
+  main.innerHTML = html || '<div class="empty">No tools yet.</div>';
+}
+
+function reqCard(p){
+  const meta = [p.whatsapp, p.note].filter(Boolean).map(esc).join('\n');
+  return '<div class="req" id="req'+p.id+'"><div class="nm">'+esc(p.name)+'</div>' +
+    (meta?'<div class="meta">'+meta+'</div>':'<div class="meta">&nbsp;</div>') +
+    '<div class="roles">' +
+      '<button onclick="approve('+p.id+',\'everyone\')">Member</button>' +
+      '<button onclick="approve('+p.id+',\'leader\')">Leader</button>' +
+      '<button onclick="approve('+p.id+',\'admin\')">Full</button>' +
+    '</div>' +
+    '<button class="decline" onclick="decline('+p.id+')">Not this person</button></div>';
+}
+
+async function approve(id, role){
+  const box = document.getElementById('req'+id);
+  if (box) box.querySelector('.roles').innerHTML = '<div style="color:#9fb3c2;padding:8px">Giving access...</div>';
+  try{
+    const r = await fetch(API + '?k=' + encodeURIComponent(TOKEN), {method:'POST',
+      headers:{'content-type':'application/json'},
+      body: JSON.stringify({action:'approve', request_id:id, role})});
+    const d = await r.json();
+    if (!d.ok){ if(box) box.innerHTML = '<div class="msg bad">Could not give access. Try again.</div>'; return; }
+    const waText = encodeURIComponent('Hi ' + (d.name||'') + ', here is your Fountain of Grace link. Open it once and add it to your home screen: ' + d.link);
+    const wa = d.whatsapp ? ('https://wa.me/' + d.whatsapp.replace(/[^0-9]/g,'').replace(/^0/,'27') + '?text=' + waText) : '';
+    if (box) box.innerHTML = '<div class="nm">'+esc(d.name)+' &middot; '+esc(role==='everyone'?'Member':role==='leader'?'Leader':'Full access')+'</div>' +
+      '<div class="granted"><div>Send them this link:</div><div class="lk" id="lk'+id+'">'+esc(d.link)+'</div>' +
+      (wa?'<a class="wa" href="'+esc(wa)+'" target="_blank" rel="noopener">Send on WhatsApp</a>':'') +
+      '<button class="cp" onclick="cp(\''+d.link.replace(/'/g,"\\'")+'\',this)">Copy link</button></div>';
+  }catch(e){ if(box) box.innerHTML = '<div class="msg bad">No connection. Try again.</div>'; }
+}
+async function decline(id){
+  const box = document.getElementById('req'+id);
+  try{ await fetch(API + '?k=' + encodeURIComponent(TOKEN), {method:'POST',
+      headers:{'content-type':'application/json'},
+      body: JSON.stringify({action:'decline', request_id:id})}); }catch(e){}
+  if (box) box.style.display='none';
+}
+function cp(t, btn){ try{ navigator.clipboard.writeText(t); btn.textContent='Copied'; }catch(e){ btn.textContent='Copy failed'; } }
+
+function renderRequest(){
+  sub.textContent = 'Ask for your door';
+  main.innerHTML =
+    '<div class="panel"><h2>Ask for access</h2>' +
+    '<p>Tell us who you are. Pastor Ricardo approves you, then you get one link with only your tools.</p>' +
+    '<label>Your name</label><input id="rn" autocomplete="name" placeholder="Name and surname">' +
+    '<label>Your WhatsApp number</label><input id="rw" inputmode="tel" autocomplete="tel" placeholder="e.g. 082 123 4567">' +
+    '<label>What do you help with? (optional)</label><textarea id="ro" placeholder="e.g. youth, welcome, finance"></textarea>' +
+    '<button class="btn" id="rsend">Ask for access</button>' +
+    '<div id="rmsg"></div></div>';
+  document.getElementById('rsend').onclick = sendRequest;
+}
+async function sendRequest(){
+  const name = document.getElementById('rn').value.trim();
+  const whatsapp = document.getElementById('rw').value.trim();
+  const note = document.getElementById('ro').value.trim();
+  const msg = document.getElementById('rmsg');
+  if (name.length < 2){ msg.innerHTML = '<div class="msg bad">Please put your name in.</div>'; return; }
+  const btn = document.getElementById('rsend'); btn.textContent='Sending...'; btn.disabled=true;
+  try{
+    const r = await fetch(API, {method:'POST', headers:{'content-type':'application/json'},
+      body: JSON.stringify({action:'request', name, whatsapp, note})});
+    const d = await r.json();
+    if (d.ok){ main.innerHTML = '<div class="msg good">Thank you, ' + esc(name) + '. Pastor Ricardo will let you in and send your link. You can close this page.</div>'; }
+    else { btn.textContent='Ask for access'; btn.disabled=false; msg.innerHTML='<div class="msg bad">Something went wrong. Try again.</div>'; }
+  }catch(e){ btn.textContent='Ask for access'; btn.disabled=false; msg.innerHTML='<div class="msg bad">No connection. Try again.</div>'; }
+}
+
+load();
+</script>
+</body>
+</html>

@@ -41,6 +41,10 @@
   X-Robots-Tag: noindex
 /inbox/*
   X-Robots-Tag: noindex
+/hub/
+  X-Robots-Tag: noindex
+/hub/*
+  X-Robots-Tag: noindex
 
 /*
   X-Frame-Options: DENY
