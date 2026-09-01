@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "why-is-god-taking-so-long-to-do-something-with-my-life",
+    "date": "2026-09-01",
+    "dateDisplay": "1 September 2026",
+    "day": 244,
+    "headline": "Why is God taking so long to do something with my life?",
+    "verseRef": "Jeremiah 29:11",
+    "card": "/devotional-cards/w680/why-is-god-taking-so-long-to-do-something-with-my-life.webp"
+  },
+  {
     "slug": "am-i-holding-back-the-best-of-myself-for-a-better-day",
     "date": "2026-08-31",
     "dateDisplay": "31 August 2026",
