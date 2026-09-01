@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<title>Serve test - results</title>
+<link rel="icon" href="/favicon.jpg">
+<style>
+  :root{--bg:#043838;--card:#0a4a4a;--card2:#0f5858;--line:#1c6b6b;--text:#f2fbfa;--dim:#a3cccc;--gold:#ffd700;--flag:#e0a83b;--flagbg:#3a2f12}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--text);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  header{padding:16px 16px 10px;border-bottom:1px solid var(--line)}
+  h1{font-size:19px;margin:0}
+  .sub{color:var(--dim);font-size:13px;margin-top:2px}
+  .rule{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:11px 13px;margin:12px;color:var(--dim);font-size:13.5px;line-height:1.5}
+  main{padding:6px 12px 80px}
+  .p{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin:11px 2px}
+  .p.flag{border-color:var(--flag)}
+  .nm{font-weight:700;font-size:17px}
+  .meta{color:var(--dim);font-size:13px;margin:2px 0 9px}
+  .pills{display:flex;flex-wrap:wrap;gap:6px;margin:6px 0}
+  .pill{font-size:12.5px;background:var(--card2);border:1px solid var(--line);border-radius:999px;padding:4px 10px;color:var(--dim)}
+  .pill b{color:var(--text)}
+  .wired{display:inline-block;background:#0d3b3b;border:1px solid var(--line);border-radius:999px;padding:4px 10px;font-size:13px;color:#bfeee6}
+  .flags{background:var(--flagbg);border:1px solid var(--flag);border-radius:11px;padding:10px 12px;margin-top:9px}
+  .flags b{color:#ffe4a6} .flags div{font-size:13.5px;color:#f0dcae;margin-top:5px;line-height:1.45}
+  a{color:var(--gold)} .empty{color:var(--dim);text-align:center;padding:44px 20px}
+</style>
+</head>
+<body>
+<header><h1>Who wants to serve</h1><div class="sub" id="sub">Their answers and any safety flags</div></header>
+<div class="rule">This is private. Use it to place people at their best, never to sort or label them out loud. A safety flag is a gentle conversation, never a pass or fail.</div>
+<main id="list"><div class="empty">Loading...</div></main>
+<script>
+const API='https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/serve-test';
+const list=document.getElementById('list'), sub=document.getElementById('sub');
+const esc=s=>(s==null?'':String(s)).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+function key(){ const u=new URL(location.href); let k=u.searchParams.get('k'); if(k){try{localStorage.setItem('fgi_servetest_k',k)}catch(e){} history.replaceState(null,'',u.pathname); return k;} try{return localStorage.getItem('fgi_servetest_k')||''}catch(e){return ''} }
+const K=key();
+const AREAS=[['reliability','Reliability'],['teachability','Takes a note'],['discretion','Discretion'],['capacity','Time'],['safety','Safety']];
+async function load(){
+  if(!K){ list.innerHTML='<div class="empty">This link is missing its key.</div>'; return; }
+  let d; try{ const r=await fetch(API+'?k='+encodeURIComponent(K),{cache:'no-store'}); d=await r.json(); }
+  catch(e){ list.innerHTML='<div class="empty">Could not load. Try again.</div>'; return; }
+  if(!d.ok){ list.innerHTML='<div class="empty">This link is not valid.</div>'; return; }
+  const rows=d.results||[];
+  sub.textContent=rows.length+' '+(rows.length===1?'person':'people');
+  if(!rows.length){ list.innerHTML='<div class="empty">Nobody has done the serve test yet. Share the link on the Serve page.</div>'; return; }
+  // people with safety flags first
+  rows.sort((a,b)=>((b.safety_flags||[]).length)-((a.safety_flags||[]).length));
+  list.innerHTML=rows.map(r=>{
+    const scores=r.area_scores||{};
+    const pills=AREAS.filter(a=>scores[a[0]]!==undefined).map(a=>'<span class="pill">'+a[1]+' <b>'+scores[a[0]]+'</b></span>').join('');
+    const wired=r.has_wired?'<span class="wired">Wired type '+esc(r.wired_type)+'</span>':'<span class="pill">Wired test not done yet</span>';
+    const contact=[r.whatsapp,r.email].filter(Boolean).map(esc).join(' &middot; ');
+    const flags=(r.safety_flags||[]).length?'<div class="flags"><b>Worth a gentle chat</b>'+r.safety_flags.map(f=>'<div>'+esc(f)+'</div>').join('')+'</div>':'';
+    return '<div class="p'+((r.safety_flags||[]).length?' flag':'')+'"><div class="nm">'+esc(r.name)+'</div>'+
+      '<div class="meta">'+(contact||'&nbsp;')+' &middot; '+esc((r.created_at||'').slice(0,10))+'</div>'+
+      '<div class="pills">'+wired+'</div><div class="pills">'+pills+'</div>'+flags+'</div>';
+  }).join('')+'<div class="rule">For the full wired picture of a person, open the <a href="/wired/team/">How God Wired You team view</a>.</div>';
+}
+load();
+</script>
+</body>
+</html>
