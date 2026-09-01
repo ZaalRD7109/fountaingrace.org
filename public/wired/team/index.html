@@ -120,32 +120,49 @@ async function load(){
 }
 
 function render(rows){
-  // counts per type
+  // One card per person. People retake as they change and roles change, so the
+  // LATEST take is their current picture and earlier takes are kept as history.
+  rows = (rows||[]).slice().sort((a,b)=>String(b.created_at||'').localeCompare(String(a.created_at||'')));
+  const byPerson = {}; const order = [];
+  rows.forEach(r=>{
+    const key = ((r.name||'')+' '+(r.surname||'')).trim().toLowerCase();
+    if(!key) return;
+    if(!byPerson[key]){ byPerson[key] = {current:r, history:[]}; order.push(key); }
+    else { byPerson[key].history.push(r); }
+  });
+  const people = order.map(k=>byPerson[k]);
+
+  // counts per type - one per person, using their current (latest) result
   const counts = {}; for(let i=1;i<=9;i++) counts[i]=0;
-  rows.forEach(r=>{ if(counts[r.top_type]!==undefined) counts[r.top_type]++; });
+  people.forEach(p=>{ if(counts[p.current.top_type]!==undefined) counts[p.current.top_type]++; });
   let g = '';
   for(let i=1;i<=9;i++){
     g += '<div class="cnt"><b>'+counts[i]+'</b><span>'+esc(TYPES[i].name.replace('The ',''))+'</span></div>';
   }
   $('grid').innerHTML = g;
 
-  if(!rows.length){
+  if(!people.length){
     $('list').innerHTML = '<div class="empty">No results yet. Share the test link with your members and results appear here.</div>';
     return;
   }
   let h = '';
-  rows.forEach(r=>{
+  people.forEach(p=>{
+    const r = p.current;
     const t = TYPES[r.top_type] || {name:'Type '+r.top_type, shine:'', care:''};
     const d = (r.created_at||'').slice(0,10);
     const second = (r.second_type && TYPES[r.second_type]) ? ' close second: '+TYPES[r.second_type].name : '';
     const fullname = esc(r.name) + (r.surname ? ' '+esc(r.surname) : '');
     const mail = r.email ? '<p><strong>Email:</strong> '+esc(r.email)+(r.emailed_at ? ' (result emailed to them)' : ' (email not sent)')+'</p>' : '';
+    const retook = p.history.length
+      ? '<p class="dt" style="margin-top:8px;opacity:.85"><strong>Retaken '+p.history.length+'x.</strong> Earlier: '
+        + p.history.map(hr=>{ const ht=TYPES[hr.top_type]; return (ht?ht.name:'Type '+hr.top_type)+' ('+((hr.created_at||'').slice(0,10))+')'; }).join(', ')+'</p>'
+      : '';
     h += '<details class="person-det"><summary style="list-style:none;">'
       +  '<div class="person" style="margin:0; border:none; padding:0; background:none;">'
-      +  '<div><div class="nm">'+fullname+'</div><div class="dt">'+d+second+'</div></div>'
+      +  '<div><div class="nm">'+fullname+(p.history.length?' <span class="dt" style="opacity:.7">(updated)</span>':'')+'</div><div class="dt">'+d+second+'</div></div>'
       +  '<div class="badge">'+esc(t.name)+'</div></div></summary>'
       +  '<p style="margin-top:10px;"><strong>Shines in:</strong> '+t.shine+'</p>'
-      +  '<p><strong>Care for them:</strong> '+t.care+'</p>'+mail+'</details>';
+      +  '<p><strong>Care for them:</strong> '+t.care+'</p>'+mail+retook+'</details>';
   });
   $('list').innerHTML = h;
 }
