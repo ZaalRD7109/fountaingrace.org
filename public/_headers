@@ -25,6 +25,10 @@
   X-Robots-Tag: noindex
 /attendance/*
   X-Robots-Tag: noindex
+/checkins/
+  X-Robots-Tag: noindex
+/checkins/*
+  X-Robots-Tag: noindex
 /tiktok/
   X-Robots-Tag: noindex
 /tiktok/*

@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Pastoral Check-ins | Fountain of Grace</title>
+<link rel="icon" href="/favicon.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { --teal:#0f8a7e; --teal-dk:#0b6b62; --blue:#2a9df4; --gold:#ffd700; --ink:#14233a; --line:#e6ecf3; --green:#1f8a5b; --red:#c0392b; --bg:#f3f7fb; --mut:#5a6b7e; }
+  * { box-sizing:border-box; -webkit-tap-highlight-color:transparent; }
+  body { margin:0; font-family:'Poppins',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; background:var(--bg); color:var(--ink); }
+  header { background:linear-gradient(135deg,var(--teal-dk),var(--teal)); color:#fff; padding:20px 16px 18px; text-align:center; }
+  header img { height:46px; width:auto; border-radius:8px; margin-bottom:10px; }
+  header h1 { margin:0; font-size:18px; font-weight:700; }
+  header p { margin:6px 0 0; font-size:13px; opacity:.92; line-height:1.4; }
+  .wrap { max-width:560px; margin:0 auto; padding:14px 12px 70px; }
+  .hint { font-size:12px; color:#6b7c8f; margin:4px 4px 10px; text-align:center; }
+  .section-label { font-size:13px; font-weight:700; margin:22px 4px 6px; padding-bottom:6px; border-bottom:2px solid var(--line); }
+  .section-label.ask { color:var(--gold); border-bottom-color:var(--gold); color:#b8860b; }
+  .section-label.on { color:var(--teal-dk); border-bottom-color:var(--teal); }
+  .note { font-size:12px; color:#6b7c8f; margin:0 4px 6px; line-height:1.5; }
+  .card { background:#fff; border:1px solid var(--line); border-left:5px solid var(--line); border-radius:14px; padding:15px; margin:12px 0; box-shadow:0 1px 3px rgba(20,35,58,.06); }
+  .card.ask { border-left-color:var(--gold); }
+  .card.on { border-left-color:var(--teal); }
+  .card.eased { border-left-color:#b9c4d0; }
+  .name { font-size:18px; font-weight:700; }
+  .meta { font-size:13px; color:var(--mut); margin-top:3px; }
+  .saw { font-size:13px; color:#3d4d5e; margin-top:8px; background:#f6f9fc; border-radius:8px; padding:8px 10px; line-height:1.45; }
+  .pill { display:inline-block; font-size:11px; font-weight:700; padding:2px 9px; border-radius:10px; margin-left:2px; }
+  .pill.prayer { background:#e7f0ff; color:#1c4e9c; }
+  .pill.homevisit { background:#e9f7ee; color:#1f8a5b; }
+  .pill.conversation { background:#fff2e0; color:#b8600b; }
+  .pill.checkin { background:#eef0f3; color:#42546a; }
+  .btns { display:flex; gap:10px; margin-top:13px; }
+  .btn { flex:1; padding:16px 8px; font-size:16px; font-weight:700; border-radius:12px; border:2px solid var(--line); background:#fff; color:var(--ink); cursor:pointer; }
+  .btn.add { border-color:var(--teal); color:var(--teal-dk); }
+  .btn.add.on { background:var(--teal); border-color:var(--teal); color:#fff; }
+  .btn.leave.on { background:#eef1f4; color:var(--mut); }
+  .btn:active { transform:scale(.98); }
+  .stopbtn { margin-top:12px; width:100%; padding:10px; font-size:13px; font-weight:600; border-radius:10px; border:1px solid var(--line); background:#fff; color:#93a1b0; cursor:pointer; }
+  .status { font-size:12px; color:#7a8a9a; margin-top:9px; text-align:center; }
+  .box { background:#fff; border:1px solid var(--line); border-radius:14px; padding:24px; text-align:center; color:var(--mut); font-size:14px; line-height:1.5; }
+  .spin { color:#6b7c8f; text-align:center; padding:30px; font-size:14px; }
+</style>
+</head>
+<body>
+<header>
+  <img src="/logo.webp" alt="Fountain of Grace" onerror="this.style.display='none'">
+  <h1>Pastoral Check-ins</h1>
+  <p>People to keep checking on, month by month.<br>You decide the ones I am unsure about.</p>
+</header>
+<div class="wrap">
+  <p class="hint">Tap Add or Leave. You can change it later.</p>
+
+  <div class="section-label ask">Waiting on you</div>
+  <p class="note">These came up in a conversation and I am not fully sure they need a monthly check-in. Your call - Add them to the monthly track, or Leave it.</p>
+  <div id="ask-list"><div class="spin">Loading...</div></div>
+
+  <div class="section-label on">On the monthly check-in</div>
+  <p class="note">Everyone currently getting a gentle check-in each month. A reply from them reopens the normal chat. If someone ignores two in a row I ease off on my own.</p>
+  <div id="on-list"></div>
+</div>
+<script>
+  var API = 'https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/pastoral-checkins';
+
+  // The key comes from the LINK, never from this page source. Same pattern as
+  // the attendance page and WhatsApp inbox: save it to this phone, wipe it from
+  // the address bar so it never sits in history or gets shared by accident.
+  var K = '';
+  try {
+    var q = new URLSearchParams(location.search).get('k');
+    if (q) {
+      localStorage.setItem('fgi_checkin_key', q);
+      history.replaceState(null, '', location.pathname);
+    }
+    K = localStorage.getItem('fgi_checkin_key') || '';
+  } catch (e) { K = ''; }
+
+  function esc(s){ return (s==null?'':String(s)).replace(/[&<>"']/g,function(c){
+    return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]; }); }
+
+  var SIT = { prayer:'Prayer request', homevisit:'Home visit',
+              conversation:'Pastoral talk', checkin:'Check-in' };
+
+  function prettyDate(d){
+    if(!d) return '';
+    try { return new Date(d).toLocaleDateString('en-ZA',{day:'numeric',month:'long'}); }
+    catch(e){ return ''; }
+  }
+
+  function pill(sit){
+    return '<span class="pill '+esc(sit)+'">'+esc(SIT[sit]||sit)+'</span>';
+  }
+
+  function renderAsk(rows){
+    var el = document.getElementById('ask-list');
+    if (!rows.length){
+      el.innerHTML = '<div class="box">Nothing waiting on you right now.<br>'
+        + 'When I am unsure about someone, they show up here.</div>';
+      return;
+    }
+    el.innerHTML = rows.map(function(v){
+      return '<div class="card ask" data-id="'+esc(v.id)+'">'
+        + '<div class="name">'+esc(v.name||v.phone||'Someone')+' '+pill(v.situation)+'</div>'
+        + (v.phone?'<div class="meta">'+esc(v.phone)+'</div>':'')
+        + (v.source_note?'<div class="saw">What I saw: '+esc(v.source_note)+'</div>':'')
+        + '<div class="btns">'
+        + '<button class="btn add" onclick="act(\''+esc(v.id)+'\',\'add\',this)">Add</button>'
+        + '<button class="btn leave" onclick="act(\''+esc(v.id)+'\',\'leave\',this)">Leave it</button>'
+        + '</div><div class="status"></div></div>';
+    }).join('');
+  }
+
+  function renderOn(rows){
+    var el = document.getElementById('on-list');
+    if (!rows.length){
+      el.innerHTML = '<div class="box">No one on the monthly check-in yet.</div>';
+      return;
+    }
+    el.innerHTML = rows.map(function(v){
+      var eased = v.status==='eased';
+      var due = v.next_due_at ? 'Next check-in around '+prettyDate(v.next_due_at) : 'Next check-in due';
+      var count = (v.checkin_count||0);
+      var sent = count===0 ? 'Not checked in yet' : count+' check-in'+(count>1?'s':'')+' sent';
+      return '<div class="card '+(eased?'eased':'on')+'" data-id="'+esc(v.id)+'">'
+        + '<div class="name">'+esc(v.name||v.phone||'Someone')+' '+pill(v.situation)+'</div>'
+        + (v.phone?'<div class="meta">'+esc(v.phone)+'</div>':'')
+        + '<div class="meta">'+esc(due)+(eased?' &middot; eased off (quieter)':'')+' &middot; '+esc(sent)+'</div>'
+        + '<button class="stopbtn" onclick="act(\''+esc(v.id)+'\',\'stop\',this)">Take off the list</button>'
+        + '<div class="status"></div></div>';
+    }).join('');
+  }
+
+  async function load(){
+    if (!K){
+      document.getElementById('ask-list').innerHTML =
+        '<div class="box"><b>Open your own link.</b><br>'
+        + 'This page only works from the link sent to you. Open that link once on '
+        + 'this phone and it will remember you after that.</div>';
+      document.getElementById('on-list').innerHTML = '';
+      return;
+    }
+    try {
+      var r = await fetch(API+'?k='+encodeURIComponent(K));
+      var d = await r.json();
+      if (!d.ok){ throw new Error(d.error||'error'); }
+      renderAsk(d.suggested||[]);
+      renderOn(d.active||[]);
+    } catch(e){
+      document.getElementById('ask-list').innerHTML =
+        '<div class="box">Could not load right now. Pull down to refresh, or try again in a moment.</div>';
+    }
+  }
+
+  async function act(id, action, btn){
+    var card = btn.closest('.card');
+    var status = card.querySelector('.status');
+    card.querySelectorAll('button').forEach(function(b){ b.disabled = true; });
+    status.textContent = 'Saving...';
+    try {
+      var r = await fetch(API+'?k='+encodeURIComponent(K), {
+        method:'POST', headers:{'Content-Type':'application/json'},
+        body: JSON.stringify({ id:id, action:action })
+      });
+      var d = await r.json();
+      if (!d.ok){ throw new Error(d.error||'error'); }
+      if (action==='add'){ status.textContent = 'Added to the monthly check-in'; }
+      else if (action==='leave'){ status.textContent = 'Left off the list'; }
+      else { status.textContent = 'Taken off the list'; }
+      setTimeout(load, 700);
+    } catch(e){
+      status.textContent = 'Did not save - tap again';
+      card.querySelectorAll('button').forEach(function(b){ b.disabled = false; });
+    }
+  }
+
+  load();
+</script>
+</body>
+</html>
