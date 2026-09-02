@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "will-my-whole-life-end-up-meaning-something",
+    "date": "2026-09-02",
+    "dateDisplay": "2 September 2026",
+    "day": 245,
+    "headline": "Will my whole life end up meaning something?",
+    "verseRef": "Psalm 37:3-5",
+    "card": "/devotional-cards/w680/will-my-whole-life-end-up-meaning-something.webp"
+  },
+  {
     "slug": "why-is-god-taking-so-long-to-do-something-with-my-life",
     "date": "2026-09-01",
     "dateDisplay": "1 September 2026",
