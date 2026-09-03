@@ -112,6 +112,9 @@
 
 <script>
 const FN = "https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/department-board";
+const SECURE = "https://rmurdihrhcxevtzkrbmx.supabase.co/functions/v1/inbox-secure";
+let SESSION = ""; try{ SESSION = localStorage.getItem("fgi_session")||""; }catch(e){}
+function goSignIn(){ try{localStorage.removeItem("fgi_session");}catch(e){} location.href="/in/?next=/inbox/"; }
 
 // Key handling: take ?k= from the link, save it, then clean the address bar
 // (same trust model as /WA/ and /attendance/).
@@ -140,9 +143,10 @@ function ago(iso){ if(!iso) return ""; const d=new Date(iso), now=new Date();
   return d.toLocaleDateString(undefined,{day:"numeric",month:"short"}); }
 
 async function load(){
-  if(!key){ $("sub").textContent="No access key. Open the link Pastor Ricardo shared."; return; }
+  if(!SESSION && !key){ goSignIn(); return; }
   try{
-    const r = await fetch(FN+"?k="+encodeURIComponent(key));
+    const r = SESSION ? await fetch(SECURE+"?s="+encodeURIComponent(SESSION)) : await fetch(FN+"?k="+encodeURIComponent(key));
+    if(r.status===401){ goSignIn(); return; }
     if(r.status===404){ $("sub").textContent="That access key is not valid."; return; }
     const d = await r.json();
     if(!d.ok){ $("sub").textContent="Could not load the board."; return; }
@@ -241,8 +245,10 @@ $("scrim").onclick = closeSheet;
 $("cancelBtn").onclick = closeSheet;
 
 async function post(body){
-  const r = await fetch(FN+"?k="+encodeURIComponent(key),
+  const u = SESSION ? SECURE+"?s="+encodeURIComponent(SESSION) : FN+"?k="+encodeURIComponent(key);
+  const r = await fetch(u,
     {method:"POST",headers:{"content-type":"application/json"},body:JSON.stringify(body)});
+  if(r.status===401){ goSignIn(); return false; }
   const d = await r.json().catch(()=>({ok:false}));
   return d && d.ok;
 }

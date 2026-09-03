@@ -79,6 +79,8 @@ async function verify(){
   }catch(e){ b.textContent='Sign in'; b.disabled=false; m.innerHTML='<div class="msg bad">No connection. Try again.</div>'; }
 }
 function done(d){
+  const next=new URL(location.href).searchParams.get('next');
+  if(next && next.charAt(0)==='/' && next.charAt(1)!=='/'){ location.href=next; return; }
   wrap.innerHTML='<div class="done"><h1>You are in</h1><p class="sub">Welcome, '+esc(d.name||'')+'. Signed in as <b>'+esc(d.role)+'</b>.</p><p class="sub">This proves the login works. Next it will open your private tools straight from the Hub.</p></div>';
 }
 screenEmail();
