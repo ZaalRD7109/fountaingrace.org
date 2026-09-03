@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "why-do-i-feel-like-i-am-never-quite-enough",
+    "date": "2026-09-03",
+    "dateDisplay": "3 September 2026",
+    "day": 246,
+    "headline": "Why do I feel like I am never quite enough?",
+    "verseRef": "Ephesians 2:10",
+    "card": "/devotional-cards/w680/why-do-i-feel-like-i-am-never-quite-enough.webp"
+  },
+  {
     "slug": "will-my-whole-life-end-up-meaning-something",
     "date": "2026-09-02",
     "dateDisplay": "2 September 2026",
