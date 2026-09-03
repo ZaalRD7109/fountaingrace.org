@@ -50,6 +50,11 @@
 /hub/*
   X-Robots-Tag: noindex
 
+/in/
+  X-Robots-Tag: noindex
+/in/*
+  X-Robots-Tag: noindex
+
 /*
   X-Frame-Options: DENY
   X-Content-Type-Options: nosniff
