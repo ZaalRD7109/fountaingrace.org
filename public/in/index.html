@@ -74,7 +74,7 @@ async function verify(){
   try{
     const r=await fetch(API,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify({action:'verify',email:EMAIL,code})});
     const d=await r.json();
-    if(d.ok&&d.verified){ done(d); }
+    if(d.ok&&d.verified){ try{ if(d.session) localStorage.setItem('fgi_session', d.session); }catch(e){} done(d); }
     else { b.textContent='Sign in'; b.disabled=false; m.innerHTML='<div class="msg bad">That code was wrong or has expired. Try again, or email a new code.</div>'; document.getElementById('code').value=''; }
   }catch(e){ b.textContent='Sign in'; b.disabled=false; m.innerHTML='<div class="msg bad">No connection. Try again.</div>'; }
 }
