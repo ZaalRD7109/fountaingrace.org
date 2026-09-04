@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "does-god-actually-see-me-or-am-i-easy-to-overlook",
+    "date": "2026-09-04",
+    "dateDisplay": "4 September 2026",
+    "day": 247,
+    "headline": "Does God actually see me, or am I easy to overlook?",
+    "verseRef": "Psalm 139:17-18",
+    "card": "/devotional-cards/w680/does-god-actually-see-me-or-am-i-easy-to-overlook.webp"
+  },
+  {
     "slug": "why-do-i-feel-like-i-am-never-quite-enough",
     "date": "2026-09-03",
     "dateDisplay": "3 September 2026",
