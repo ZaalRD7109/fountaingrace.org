@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "does-gods-love-for-me-change-when-i-keep-getting-things-wrong",
+    "date": "2026-09-05",
+    "dateDisplay": "5 September 2026",
+    "day": 248,
+    "headline": "Does God's love for me change when I keep getting things wrong?",
+    "verseRef": "Romans 8:38-39",
+    "card": "/devotional-cards/w680/does-gods-love-for-me-change-when-i-keep-getting-things-wrong.webp"
+  },
+  {
     "slug": "does-god-actually-see-me-or-am-i-easy-to-overlook",
     "date": "2026-09-04",
     "dateDisplay": "4 September 2026",
