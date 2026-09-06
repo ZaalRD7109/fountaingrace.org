@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/what-we-believe`, lastModified: now, changeFrequency: 'monthly', priority: 0.7 },
     // Sermons
     { url: `${base}/sermons`, lastModified: now, changeFrequency: 'weekly', priority: 0.7 },
+    { url: `${base}/sermons/the-conversation-youve-rehearsed-50-times-but-never-had`, lastModified: new Date('2026-09-06'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/stop-letting-people-treat-you-like-a-doormat`, lastModified: new Date('2026-08-30'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/the-one-thing-that-makes-you-actually-powerful`, lastModified: new Date('2026-08-23'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/sermons/you-feel-like-helping-but-never-actually-do-anything`, lastModified: new Date('2026-08-16'), changeFrequency: 'monthly', priority: 0.6 },
@@ -134,6 +135,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - daily library, one page per devotional)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/devotional/how-do-i-stop-measuring-myself-against-everyone-else`, lastModified: new Date('2026-09-06'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/does-gods-love-for-me-change-when-i-keep-getting-things-wrong`, lastModified: new Date('2026-09-05'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/does-god-actually-see-me-or-am-i-easy-to-overlook`, lastModified: new Date('2026-09-04'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/why-do-i-feel-like-i-am-never-quite-enough`, lastModified: new Date('2026-09-03'), changeFrequency: 'monthly', priority: 0.6 },

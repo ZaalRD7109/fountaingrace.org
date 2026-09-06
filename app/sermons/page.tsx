@@ -23,6 +23,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "the-conversation-youve-rehearsed-50-times-but-never-had",
+    title: "The Conversation You've Rehearsed 50 Times But Never Had",
+    date: "2026-09-06",
+    dateDisplay: "6 September 2026",
+    intro:
+      "You've practiced the words a hundred times. You know what needs to happen. But fear keeps your mouth shut. What if the thing you're most afraid to face is actually the only thing that will set you free?",
+  },
+  {
     slug: "stop-letting-people-treat-you-like-a-doormat",
     title: "Stop Letting People Treat You Like a Doormat",
     date: "2026-08-30",
