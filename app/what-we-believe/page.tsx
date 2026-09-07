@@ -211,7 +211,7 @@ export default function WhatWeBelievePage() {
             <div>
               <h3 className="font-bold text-gray-900 mb-1">Where can I hear what FGI teaches?</h3>
               <p className="text-[#595959] leading-relaxed">
-                Every Sunday message is available on this site and on our YouTube channel. The best way to understand what we believe is to listen to the teaching - that is where belief becomes practical.
+                Every Sunday message is available on this site and on our <a href="https://www.youtube.com/@fgipta" target="_blank" rel="noopener noreferrer" className="text-[#006b6b] underline">YouTube channel</a>. The best way to understand what we believe is to listen to the teaching - that is where belief becomes practical.
               </p>
             </div>
           </div>
