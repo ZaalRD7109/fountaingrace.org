@@ -49,7 +49,7 @@ export default function PrayersHub() {
         <header className="pt-14 pb-10 px-4 sm:px-6 text-white" style={{ background: 'linear-gradient(145deg, #04302f 0%, #008080 100%)' }}>
           <div className="max-w-3xl mx-auto">
             <p className="text-white text-sm font-semibold uppercase tracking-wider mb-3">Fountain of Grace International · Pretoria North</p>
-            <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight">Fountain of Prayers</h1>
+            <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight text-white">Fountain of Prayers</h1>
             <p className="text-white text-lg mt-4">A new set of prayers every Monday morning, written in the words you can pray right now. These are the prayers our church prays together every Thursday at 19:00. Pray them at home, pray them on the taxi, pray them at 3am.</p>
           </div>
         </header>
@@ -77,6 +77,7 @@ export default function PrayersHub() {
           </section>
         )}
 
+        {rest.length > 0 && (
         <section className="px-4 sm:px-6 py-10">
           <div className="max-w-3xl mx-auto">
             <h2 className="text-lg font-bold text-[#1a1a1a] mb-6">Earlier weeks</h2>
@@ -91,6 +92,7 @@ export default function PrayersHub() {
             </div>
           </div>
         </section>
+        )}
 
         <section className="bg-[#f7fbfb] py-10 px-4 sm:px-6 border-t border-gray-100">
           <div className="max-w-3xl mx-auto text-center">
