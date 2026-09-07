@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "how-do-i-stop-measuring-myself-against-everyone-else",
+    "date": "2026-09-06",
+    "dateDisplay": "6 September 2026",
+    "day": 249,
+    "headline": "How do I stop measuring myself against everyone else?",
+    "verseRef": "Galatians 6:4",
+    "card": "/devotional-cards/w680/how-do-i-stop-measuring-myself-against-everyone-else.webp"
+  },
+  {
     "slug": "does-gods-love-for-me-change-when-i-keep-getting-things-wrong",
     "date": "2026-09-05",
     "dateDisplay": "5 September 2026",

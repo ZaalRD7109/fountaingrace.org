@@ -113,6 +113,17 @@ export default function PrayerPage() {
         </div>
       </section>
 
+      {/* WEEKLY PRAYERS - FOUNTAIN OF PRAYERS */}
+      <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-xl font-bold text-gray-900 mb-2">Need words to pray right now?</h2>
+          <p className="text-[#595959] mb-5">Every Monday we publish the prayers our church prays together on Thursday, written in the words you can pray at home.</p>
+          <Link href="/fountain-of-prayers" className="inline-flex items-center justify-center bg-[#008080] text-white font-bold text-lg px-7 py-4 rounded-xl hover:bg-[#006b6b] transition-colors w-full sm:w-auto">
+            Read this week&apos;s prayers
+          </Link>
+        </div>
+      </section>
+
       {/* INSTANT PRAYER - WHATSAPP */}
       <section className="bg-white py-10 px-4 sm:px-6">
         <div className="max-w-2xl mx-auto">

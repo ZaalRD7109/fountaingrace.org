@@ -81,6 +81,7 @@ export default function Footer() {
                 { href: '/volunteer', label: 'Volunteer' },
                 { href: '/community-impact', label: 'Programs' },
                 { href: '/prayer', label: 'Prayer Request' },
+                { href: '/fountain-of-prayers', label: 'Fountain of Prayers' },
                 { href: '/donate', label: 'Donate' },
               ].map((link) => (
                 <li key={link.href}>

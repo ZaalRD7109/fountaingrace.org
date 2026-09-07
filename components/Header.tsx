@@ -114,6 +114,7 @@ export default function Header() {
             <div className="border-t border-gray-100 mt-2 pt-3">
               <p className="text-xs font-semibold text-[#595959] uppercase tracking-wider px-2 mb-1">Connect</p>
               <Link prefetch={false} href="/prayer" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Prayer Request</Link>
+              <Link prefetch={false} href="/fountain-of-prayers" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Fountain of Prayers</Link>
               <Link prefetch={false} href="/donate" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Donate</Link>
               <Link prefetch={false} href="/contact" onClick={() => setMenuOpen(false)} className="block text-sm text-[#595959] hover:text-gray-900 font-medium py-2 px-2 rounded-md hover:bg-gray-50 transition-colors">Contact</Link>
             </div>
