@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "am-i-living-for-god-or-just-trying-to-impress-people",
+    "date": "2026-09-07",
+    "dateDisplay": "7 September 2026",
+    "day": 250,
+    "headline": "Am I living for God or just trying to impress people?",
+    "verseRef": "Colossians 3:3",
+    "card": "/devotional-cards/w680/am-i-living-for-god-or-just-trying-to-impress-people.webp"
+  },
+  {
     "slug": "how-do-i-stop-measuring-myself-against-everyone-else",
     "date": "2026-09-06",
     "dateDisplay": "6 September 2026",

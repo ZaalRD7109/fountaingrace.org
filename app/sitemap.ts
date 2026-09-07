@@ -135,6 +135,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - daily library, one page per devotional)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/devotional/am-i-living-for-god-or-just-trying-to-impress-people`, lastModified: new Date('2026-09-07'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/how-do-i-stop-measuring-myself-against-everyone-else`, lastModified: new Date('2026-09-06'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/does-gods-love-for-me-change-when-i-keep-getting-things-wrong`, lastModified: new Date('2026-09-05'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/does-god-actually-see-me-or-am-i-easy-to-overlook`, lastModified: new Date('2026-09-04'), changeFrequency: 'monthly', priority: 0.6 },
