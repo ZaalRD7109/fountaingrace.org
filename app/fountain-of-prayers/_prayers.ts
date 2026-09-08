@@ -13,6 +13,17 @@ export const prayers: WeeklyPrayer[] = [
     "scriptureRef": "Isaiah 40:28-31"
   },
   {
+    "slug": "a-prayer-for-the-courage-to-follow-through",
+    "date": "2026-08-31",
+    "dateDisplay": "31 August 2026",
+    "week": 36,
+    "year": 2026,
+    "weekLabel": "Week 36 of 2026",
+    "title": "A Prayer for the Courage to Follow Through",
+    "theme": "The Power of Obedience",
+    "scriptureRef": "Deuteronomy 28:1-2"
+  },
+  {
     "slug": "a-prayer-when-you-want-to-change-but-keep-slipping",
     "date": "2026-08-24",
     "dateDisplay": "24 August 2026",

@@ -263,6 +263,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Fountain of Prayers (weekly prayer library, one page per week)
     { url: `${base}/fountain-of-prayers`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${base}/fountain-of-prayers/a-prayer-when-you-are-too-tired-to-keep-going`, lastModified: new Date('2026-09-07'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/fountain-of-prayers/a-prayer-for-the-courage-to-follow-through`, lastModified: new Date('2026-08-31'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/fountain-of-prayers/a-prayer-when-you-want-to-change-but-keep-slipping`, lastModified: new Date('2026-08-24'), changeFrequency: 'monthly', priority: 0.6 },
     // Legal
     { url: `${base}/privacy-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
