@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "is-god-actually-doing-something-with-my-life-right-now",
+    "date": "2026-09-08",
+    "dateDisplay": "8 September 2026",
+    "day": 251,
+    "headline": "Is God actually doing something with my life right now?",
+    "verseRef": "Philippians 1:6",
+    "card": "/devotional-cards/w680/is-god-actually-doing-something-with-my-life-right-now.webp"
+  },
+  {
     "slug": "am-i-living-for-god-or-just-trying-to-impress-people",
     "date": "2026-09-07",
     "dateDisplay": "7 September 2026",
