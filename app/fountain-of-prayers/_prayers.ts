@@ -11,5 +11,16 @@ export const prayers: WeeklyPrayer[] = [
     "title": "A Prayer When You Are Too Tired to Keep Going",
     "theme": "Resting in God's Sovereignty",
     "scriptureRef": "Isaiah 40:28-31"
+  },
+  {
+    "slug": "a-prayer-when-you-want-to-change-but-keep-slipping",
+    "date": "2026-08-24",
+    "dateDisplay": "24 August 2026",
+    "week": 35,
+    "year": 2026,
+    "weekLabel": "Week 35 of 2026",
+    "title": "A Prayer When You Want to Change but Keep Slipping",
+    "theme": "Pursuing Holiness in Daily Life",
+    "scriptureRef": "1 Peter 1:15-16"
   }
 ]
