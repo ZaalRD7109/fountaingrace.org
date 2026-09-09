@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "when-i-look-back-did-any-of-it-even-matter",
+    "date": "2026-09-09",
+    "dateDisplay": "9 September 2026",
+    "day": 252,
+    "headline": "When I look back, did any of it even matter?",
+    "verseRef": "Psalm 77:11",
+    "card": "/devotional-cards/w680/when-i-look-back-did-any-of-it-even-matter.webp"
+  },
+  {
     "slug": "is-god-actually-doing-something-with-my-life-right-now",
     "date": "2026-09-08",
     "dateDisplay": "8 September 2026",
