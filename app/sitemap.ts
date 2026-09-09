@@ -266,6 +266,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/fountain-of-prayers/a-prayer-when-you-are-too-tired-to-keep-going`, lastModified: new Date('2026-09-07'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/fountain-of-prayers/a-prayer-for-the-courage-to-follow-through`, lastModified: new Date('2026-08-31'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/fountain-of-prayers/a-prayer-when-you-want-to-change-but-keep-slipping`, lastModified: new Date('2026-08-24'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/fountain-of-prayers/a-prayer-for-when-you-dont-know-what-comes-next`, lastModified: new Date('2026-08-17'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/fountain-of-prayers/a-prayer-when-you-cannot-hear-gods-voice`, lastModified: new Date('2026-08-10'), changeFrequency: 'monthly', priority: 0.6 },
     // Legal
     { url: `${base}/privacy-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${base}/cookie-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },

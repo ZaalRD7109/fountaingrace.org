@@ -33,5 +33,27 @@ export const prayers: WeeklyPrayer[] = [
     "title": "A Prayer When You Want to Change but Keep Slipping",
     "theme": "Pursuing Holiness in Daily Life",
     "scriptureRef": "1 Peter 1:15-16"
+  },
+  {
+    "slug": "a-prayer-for-when-you-dont-know-what-comes-next",
+    "date": "2026-08-17",
+    "dateDisplay": "17 August 2026",
+    "week": 34,
+    "year": 2026,
+    "weekLabel": "Week 34 of 2026",
+    "title": "A Prayer for When You Don't Know What Comes Next",
+    "theme": "Trusting God in Uncertainty",
+    "scriptureRef": "Proverbs 3:5-6"
+  },
+  {
+    "slug": "a-prayer-when-you-cannot-hear-gods-voice",
+    "date": "2026-08-10",
+    "dateDisplay": "10 August 2026",
+    "week": 33,
+    "year": 2026,
+    "weekLabel": "Week 33 of 2026",
+    "title": "A Prayer When You Cannot Hear God's Voice",
+    "theme": "Hearing God's Voice",
+    "scriptureRef": "John 10:27"
   }
 ]
