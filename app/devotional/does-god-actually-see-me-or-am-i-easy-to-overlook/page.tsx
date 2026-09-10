@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 139:17-18 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before you get to lunch today, stop for thirty seconds wherever you are, a parking lot in Pretoria North, a staff room, a kitchen. Say the first line of that verse out loud with your own name in it: 'How precious are thy thoughts unto me.' Let that be the thing you heard from God this morning."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would change about your Friday if you actually believed God was thinking about you right now?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I bring the quiet doubt that I am easy to miss. Speak louder than it today. Help me carry Your words about me into every hour. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/am-i-holding-back-the-best-of-myself-for-a-better-day" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Am I holding back the best of myself for a better day?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/does-god-see-me-when-i-feel-invisible-at-work" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Does God see me when I feel invisible at work?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-do-i-feel-ashamed-that-i-am-struggling-financially" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I feel ashamed that I am struggling financially?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

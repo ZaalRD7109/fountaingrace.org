@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Ecclesiastes 9:10 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Pick one task on your list for today, the one you would normally rush or half-do, and give it your full attention. Not to impress anyone. Do it as if God is the one you are handing it to. See how that changes the feeling of the hour."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would today look like if you decided it was worth your best?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I want to stop waiting for a better day to show up fully. Help me bring my whole self to what is in front of me right now. Let my ordinary work be real worship. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/is-holding-back-money-the-same-as-not-trusting-god" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is holding back money the same as not trusting God?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-am-i-always-pretending-to-be-okay-around-people" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why am I always pretending to be okay around people?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/does-god-actually-see-me-or-am-i-easy-to-overlook" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Does God actually see me, or am I easy to overlook?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

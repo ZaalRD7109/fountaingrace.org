@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Lamentations 3:22-23 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before you do anything else today, say the words out loud: 'Great is thy faithfulness.' Not because everything is fixed. Because it is Wednesday 19 August and you are still here, which means God's mercies have not run out yet. Let that land before your first meeting or your first task."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"When you zoom out across your whole life, where can you spot one moment where God held you even when you did not feel it?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I do not always feel okay. But I choose to trust that your compassions have not failed me, not once. You have brought me this far and that is enough reason to keep going. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/is-it-okay-to-stop-pretending-everything-is-fine" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to stop pretending everything is fine?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-am-i-always-pretending-to-be-okay-around-people" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why am I always pretending to be okay around people?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-okay-to-have-doubts-about-your-faith" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to have doubts about your faith?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

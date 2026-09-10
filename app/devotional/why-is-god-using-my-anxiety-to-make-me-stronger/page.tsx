@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Romans 8:29 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Today, write one sentence on your phone or a piece of paper: 'God is shaping me, not punishing me.' Put it somewhere you will see it when the worry comes back, maybe your lock screen, the bathroom mirror, your wallet. Read it out loud once."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"If anxiety is part of how God is forming you right now, what might He be building in you that could only grow through this?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Father, I did not choose this anxiety but You are not wasting it. Shape me into someone who looks more like Jesus. I trust that what You are building in me is worth it. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/will-this-money-stress-ever-actually-make-me-stronger" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Will this money stress ever actually make me stronger?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-am-i-always-busy-but-still-feel-like-nothing-matters" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why am I always busy but still feel like nothing matters?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/will-my-whole-life-end-up-meaning-something" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Will my whole life end up meaning something?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

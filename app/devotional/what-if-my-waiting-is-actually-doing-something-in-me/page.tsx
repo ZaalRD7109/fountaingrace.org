@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Romans 5:3-4 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before today ends, ask yourself this one question quietly: what has this waiting period actually built in me that I did not have before? Write down one thing, even a small one. Patience. Empathy. A quieter trust. Name it. It is real, and it cost you something."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"Is it possible that the person coming out of this wait is someone you could not have become any other way?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I will be honest, I have only been watching the door. Help me to also see what you are building in me while I stand here. I trust that nothing in this wait is wasted. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/will-my-whole-life-end-up-meaning-something" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Will my whole life end up meaning something?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/does-god-even-notice-how-tired-of-waiting-i-am" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Does God even notice how tired of waiting I am?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/what-if-i-am-not-ready-to-forgive-and-i-know-it" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"What if I am not ready to forgive and I know it?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

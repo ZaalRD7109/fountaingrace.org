@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Romans 8:38-39 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Write this on a piece of paper today: 'Nothing I did this week changed how God feels about me.' Put it somewhere you will see it before tonight. Not as a excuse to stay where you are, but as the ground to stand on while you walk forward."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would change in how you treat yourself today if you actually believed God's love for you was fixed and not earned?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Father, I keep expecting You to pull away. Thank You that Your love is not waiting for me to get it right. Hold me in that love today, even where I am ashamed. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/has-god-actually-been-faithful-to-me-my-whole-life" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Has God actually been faithful to me my whole life?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-okay-to-finally-leave-something-i-stayed-in-too-long" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to finally leave something I stayed in too long?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-do-i-snap-at-the-people-i-love-most" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I snap at the people I love most?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

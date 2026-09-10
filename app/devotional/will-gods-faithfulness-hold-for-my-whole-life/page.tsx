@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 23:6 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before tonight, think of one moment from your past where things looked impossible and God came through anyway. Write it down, even one line on your phone. Let that one memory be your evidence today that His faithfulness did not run out then, and it will not run out now."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"If you zoomed out to your whole life and not just this season, where do you already see the thread of God's goodness running through it?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I have been so close to the hard part that I forgot the whole story. Remind me today of where You have already been faithful to me. I choose to trust that Your goodness is still following me, even now. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/has-god-actually-been-faithful-to-me-my-whole-life" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Has God actually been faithful to me my whole life?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/how-does-gods-faithfulness-look-over-my-whole-life" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How does God's faithfulness look over my whole life?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-okay-to-finally-leave-something-i-stayed-in-too-long" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to finally leave something I stayed in too long?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

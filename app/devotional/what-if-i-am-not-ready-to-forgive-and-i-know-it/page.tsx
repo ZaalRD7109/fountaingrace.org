@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Mark 11:25 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Today, just say this out loud or write it down: 'God, I am not there yet, but I am willing to be made willing.' That is not a small thing. It is an open door. Pray it once, plainly, before you get to work."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What is the one thing you are afraid will be lost if you let this go?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I am honest with you, I am not fully there. But I do not want to stay here either. Make me willing where I am not. I trust you with what it costs me. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/is-it-okay-to-cry-and-grieve-when-you-are-a-christian" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to cry and grieve when you are a Christian?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-am-i-always-pretending-to-be-okay-around-people" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why am I always pretending to be okay around people?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-okay-to-stop-pretending-everything-is-fine" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to stop pretending everything is fine?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

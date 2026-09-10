@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Colossians 3:3 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before tonight, pick one small thing you did today and ask yourself honestly: did I do that for God, or was I hoping someone would notice? Not to feel guilty about it. Just to get honest. That moment of honesty is where real identity starts to shift."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would you do differently this week if nobody would ever know about it?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Father, I want to live from who You say I am, not from what other people see. Teach me to find my security in You alone, not in approval that comes and goes. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/why-am-i-so-exhausted-from-trying-to-keep-everyone-happy" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why am I so exhausted from trying to keep everyone happy?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-do-i-act-like-a-different-person-around-different-people" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I act like a different person around different people?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-am-i-always-pretending-to-be-okay-around-people" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why am I always pretending to be okay around people?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 90:17 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before tonight ends, think of one small thing you did for your family this week, something you almost dismissed as nothing. Name it, and thank God for it. Let him tell you it counted."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"When you zoom out past this one hard week, what does God's faithfulness over your whole family's story look like?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, take the small and imperfect things I have done for my family and make them matter. Let your goodness run through our home long after I am gone. I trust you with all of it. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/when-i-look-back-did-any-of-it-even-matter" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"When I look back, did any of it even matter?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/does-god-even-notice-the-ordinary-work-i-do-every-day" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Does God even notice the ordinary work I do every day?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/will-my-whole-life-end-up-meaning-something" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Will my whole life end up meaning something?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

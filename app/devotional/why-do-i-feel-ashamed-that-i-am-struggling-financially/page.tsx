@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 34:10 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Sometime today, before you sleep, say the need out loud to God. Not a polished prayer, just the real number or the real worry, spoken plainly. Naming it to Him is not weakness. It is the very seeking the verse talks about."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would change if you stopped treating your financial need as something to hide from God?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Father, I bring You the need I have been too ashamed to name out loud. I choose to seek You with it today instead of carrying it alone. You know what I lack, and I trust You. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/is-it-weak-to-ask-for-help-when-you-are-struggling" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it weak to ask for help when you are struggling?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-okay-to-admit-i-am-struggling-and-need-help" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to admit I am struggling and need help?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-okay-to-finally-leave-something-i-stayed-in-too-long" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to finally leave something I stayed in too long?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

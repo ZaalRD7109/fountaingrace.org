@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Matthew 11:28 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Today, before you try to fix anything, just stop for sixty seconds. Put your hand on your chest and say out loud, 'Jesus, I am tired of carrying this. I am coming to you.' That is it. No pressure to have it all sorted. Just show up."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What is one thing you have been quietly carrying that you have never actually handed to Jesus?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I am tired. I have been holding this longer than I should. I am not sure how to let go, but I am coming to you today. Give me rest. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/is-it-okay-to-cry-and-grieve-when-you-are-a-christian" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to cry and grieve when you are a Christian?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/has-god-actually-been-faithful-to-me-my-whole-life" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Has God actually been faithful to me my whole life?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-weak-to-ask-for-help-when-you-are-struggling" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it weak to ask for help when you are struggling?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Colossians 3:23 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Pick one task you will do today, something small and easy to rush through, and before you start it, say out loud or in your head, 'Lord, I am doing this for You.' One task. That is it. See what shifts."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"If you genuinely believed God was watching your work today with the same attention He gives a sunrise, how would that change the way you do it?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I do not want to sleepwalk through today. Remind me that You see what no one else sees, and that ordinary work done for You is never wasted. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/will-the-small-things-i-did-for-my-family-actually-matter-in-the-end" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Will the small things I did for my family actually matter in the end?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/does-what-i-do-every-day-actually-matter-to-anyone" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Does what I do every day actually matter to anyone?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/does-god-see-me-when-i-feel-invisible-at-work" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Does God see me when I feel invisible at work?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

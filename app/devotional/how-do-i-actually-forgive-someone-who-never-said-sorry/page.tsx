@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Ephesians 4:32 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Today, write the person's name on a piece of paper. Say out loud, just once, 'I release this to God. It is His to deal with, not mine to carry.' You do not have to feel it yet. Do the action. Forgiveness often starts as a decision before it becomes a feeling."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would change in your day if you let God be the judge of that person, and let yourself be free?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Father, I cannot fix what they did or make them sorry. But I do not want to carry this anymore. I hand it to You today. Forgive me the way I want to forgive them. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/what-if-i-am-not-ready-to-forgive-and-i-know-it" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"What if I am not ready to forgive and I know it?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-does-holding-a-grudge-hurt-me-more-than-them" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why does holding a grudge hurt me more than them?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-too-late-to-make-up-for-missing-time-with-my-child" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it too late to make up for missing time with my child?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

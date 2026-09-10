@@ -90,6 +90,24 @@ export default function DevotionalPage() {
           </div>
         </section>
 
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/is-god-actually-doing-something-while-nothing-is-happening" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is God actually doing something while nothing is happening?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/how-do-i-stop-being-too-scared-to-start-something-new" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How do I stop being too scared to start something new?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-god-actually-doing-something-with-my-life-right-now" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is God actually doing something with my life right now?"}</Link>
+            </li>
+            </ul>
+          </div>
+        </section>
+
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
           <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>

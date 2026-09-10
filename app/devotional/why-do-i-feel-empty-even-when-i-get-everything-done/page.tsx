@@ -87,6 +87,24 @@ export default function DevotionalPage() {
           </div>
         </section>
 
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/is-it-okay-to-stop-pretending-everything-is-fine" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to stop pretending everything is fine?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-am-i-always-busy-but-still-feel-like-nothing-matters" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why am I always busy but still feel like nothing matters?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-does-spending-time-with-my-family-still-feel-empty" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why does spending time with my family still feel empty?"}</Link>
+            </li>
+            </ul>
+          </div>
+        </section>
+
         <section className="bg-white py-8 px-4 sm:px-6 text-center">
           <Link href="/devotional" className="text-[#0d6fbf] font-semibold underline">Read more daily devotionals</Link>
         </section>

@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 34:4 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before you do anything else this morning, say Psalm 34:4 out loud, slowly, once. Put your own name where 'I' is. Say it like you mean it, even if you do not fully feel it yet. That is not performance. That is your mouth leading your heart somewhere true."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What is the one fear sitting at the back of your mind right now that you have not yet handed to God by name?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I am tired of being afraid of things I cannot see or fix. I am seeking you right now. Hear me. Deliver me from this fear the way you promised. I trust you with today. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/how-do-i-stop-being-too-scared-to-start-something-new" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How do I stop being too scared to start something new?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/what-if-i-start-something-but-cant-keep-it-going" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"What if I start something but can't keep it going?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-do-i-keep-scrolling-my-phone-instead-of-sleeping" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I keep scrolling my phone instead of sleeping?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

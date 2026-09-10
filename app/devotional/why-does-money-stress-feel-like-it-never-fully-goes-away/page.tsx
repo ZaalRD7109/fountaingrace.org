@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Philippians 4:19 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"At some point today, write Philippians 4:19 on a piece of paper or type it on your phone and save it where you will see it again. Read it once slowly, out loud if you can, with your own name in place of \"my.\" Let it be a small act of trust, not a performance."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would change about your day if you genuinely believed your need was already seen and already covered?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I bring the money stress I carry right now and I place it in front of You. You see every number, every need. I choose to trust that You are my provider today. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/will-this-money-stress-ever-actually-make-me-stronger" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Will this money stress ever actually make me stronger?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-holding-back-money-the-same-as-not-trusting-god" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is holding back money the same as not trusting God?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/does-god-actually-have-practical-advice-for-my-money-problems" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Does God actually have practical advice for my money problems?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

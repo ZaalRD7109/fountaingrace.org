@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Proverbs 11:24 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Today, find one small way to give something. Not when it is easy, not when the account is full. A few rands for someone's taxi, a meal shared, something you can do now. Let it be a small, deliberate act of trust that says God is still my source."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would it feel like to give something small today, not because you have enough, but because you trust the One who does?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, fear makes me want to hold on to everything. Loosen my grip today. I choose to trust that You are my source, not my own careful management. Teach me what it looks like to give in faith. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/am-i-holding-back-the-best-of-myself-for-a-better-day" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Am I holding back the best of myself for a better day?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/will-this-money-stress-ever-actually-make-me-stronger" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Will this money stress ever actually make me stronger?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-does-money-stress-feel-like-it-never-fully-goes-away" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why does money stress feel like it never fully goes away?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

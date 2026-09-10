@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Jeremiah 29:11 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Write one sentence today. Literally one. On a scrap of paper or in your phone notes, finish this: 'One thing I am slowly becoming is...' Do not overthink it. What you write is what God is forming in you right now. Keep it."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What small change in you over the past year might actually be part of something God is building?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I confess I have mistaken slow for stopped. Teach me to trust what I cannot yet see. You know the end from here, and that is enough for today. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/can-i-really-trust-that-my-life-is-going-to-be-okay" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Can I really trust that my life is going to be okay?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/how-do-i-stop-performing-and-just-be-myself" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How do I stop performing and just be myself?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-okay-to-finally-leave-something-i-stayed-in-too-long" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to finally leave something I stayed in too long?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 55:22 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Find one quiet minute today, maybe in the car, or the bathroom before the day swallows you whole. Say the name of the person out loud. Then say: 'Lord, I hand this person to you. I cannot fix what happened, but I trust you to carry what I cannot.' That is enough. You do not have to feel it yet for it to count."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would today feel like if you were not also carrying yesterday?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I am tired of carrying this. I cannot put it down on my own, so I am asking you to take it. Sustain me today like you promised. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/is-it-okay-to-stop-pretending-everything-is-fine" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to stop pretending everything is fine?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/am-i-holding-back-the-best-of-myself-for-a-better-day" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Am I holding back the best of myself for a better day?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/how-do-i-actually-forgive-someone-who-never-said-sorry" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How do I actually forgive someone who never said sorry?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

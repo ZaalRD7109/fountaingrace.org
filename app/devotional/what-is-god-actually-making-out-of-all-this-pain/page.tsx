@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Romans 8:28 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Today, write down one thing that hurt you badly and, next to it, one way you are different because of it. Not stronger in a vague way. Specific. More patient with your child. Less afraid of conflict. Quicker to apologise. That difference is what God has been building."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"If the pain you carried this year was shaping something good in you, what would that thing be?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I have not always understood what you were doing. But I choose to trust that nothing has been wasted. Build something good from what I have been through. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/is-it-weak-to-ask-for-help-when-you-are-struggling" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it weak to ask for help when you are struggling?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/what-is-god-actually-doing-while-i-am-this-exhausted" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"What is God actually doing while I am this exhausted?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-do-i-feel-empty-even-when-i-get-everything-done" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I feel empty even when I get everything done?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

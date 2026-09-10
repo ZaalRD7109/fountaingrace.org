@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"James 1:4 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Think of one thing you have today that you did not have before this waiting started, maybe a steadiness, a softer tongue, a faith that does not panic as easily. Name it quietly before God this morning. Tell him you see it. That is not nothing. That is the work."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What is one way you are actually different now compared to when this waiting began?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Father, I believe you are building something in me that could not come any other way. Help me trust your process, even when I cannot see your progress. I am yours in the waiting. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/is-god-doing-something-in-me-even-when-prayer-feels-pointless" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is God doing something in me even when prayer feels pointless?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/how-do-i-stop-being-too-scared-to-start-something-new" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How do I stop being too scared to start something new?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/how-do-i-stop-losing-my-mind-while-i-wait" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How do I stop losing my mind while I wait?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

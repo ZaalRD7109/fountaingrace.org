@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Philippians 4:6 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Today, when you catch the worry starting, stop and say one sentence out loud to God. Not a long prayer. Just name the thing: 'God, I am worried about this bill, this person, this meeting.' Then say one thing you are grateful for, also out loud. That small move breaks the loop."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What is the first worry that usually pulls you under, and have you ever handed that specific thing to God by name?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I bring you the worry I woke up with this morning. I am naming it to you now, not because you do not know, but because I need to let go of it. Hold it for me today. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/how-do-i-know-when-to-push-through-and-when-to-stop" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How do I know when to push through and when to stop?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/am-i-feeding-my-worry-without-even-realising-it" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Am I feeding my worry without even realising it?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/how-do-i-stop-waiting-for-a-sign-and-just-start" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How do I stop waiting for a sign and just start?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

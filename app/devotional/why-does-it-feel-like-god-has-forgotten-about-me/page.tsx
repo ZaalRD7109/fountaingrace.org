@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Isaiah 49:15-16 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Sometime today, write your name on the palm of your hand. Let it stay there. Every time you see it, let it remind you of one thing: God says your name is already written on His. That is not a symbol. That is His word."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"If you truly believed God had not forgotten you, what is one thing you would stop carrying alone today?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, the silence has been hard and I will not pretend otherwise. But I choose to believe Your word over my feelings today. Thank You that my name is written on Your hands. Hold me there. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/does-god-even-notice-how-tired-of-waiting-i-am" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Does God even notice how tired of waiting I am?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-too-late-to-make-up-for-missing-time-with-my-child" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it too late to make up for missing time with my child?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-do-i-feel-so-alone-even-when-everyone-depends-on-me" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I feel so alone even when everyone depends on me?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

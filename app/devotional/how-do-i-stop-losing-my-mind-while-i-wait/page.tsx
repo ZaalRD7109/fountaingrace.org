@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 46:10 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Today, set a timer for three minutes. Sit somewhere quiet, close your eyes, and say nothing. No asking, no listing, no bargaining. Just let yourself be in the room with God. When a worry thought comes, let it pass and return to this: He is God and you are not. Three minutes. Do it before the day gets loud."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would change in you if you trusted that God is actively working in the silence, not absent from it?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, my mind goes to hard places when nothing moves. Teach me to be still without switching off hope. I trust that You are God, even here, even now. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/why-do-i-feel-empty-even-when-i-get-everything-done" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I feel empty even when I get everything done?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-okay-to-stop-pretending-everything-is-fine" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to stop pretending everything is fine?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/how-long-does-god-expect-me-to-keep-waiting" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How long does God expect me to keep waiting?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

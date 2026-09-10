@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Ephesians 2:10 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Sometime today, write your own name on a piece of paper or in your phone notes, and next to it write this: 'God's workmanship.' Not your job title. Not your mistakes. Just that. Let it sit there and tell you something true before you sleep."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would change today if you believed God made you on purpose and got it right?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Father, I am tired of feeling like I fall short. Remind me today that you made me, and you do not make mistakes. Let that be enough to carry me through this Thursday. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/will-my-whole-life-end-up-meaning-something" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Will my whole life end up meaning something?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-okay-to-finally-leave-something-i-stayed-in-too-long" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to finally leave something I stayed in too long?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/does-god-even-notice-the-ordinary-work-i-do-every-day" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Does God even notice the ordinary work I do every day?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

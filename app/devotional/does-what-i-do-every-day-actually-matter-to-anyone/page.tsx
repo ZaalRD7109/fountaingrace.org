@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Proverbs 16:3 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before you start your first task today, say out loud: 'Lord, I give this to you.' One sentence. Do it at your desk, in your car, at your stove. It is a small thing. But it changes whose hands the work is in."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"If God were sitting with you at your workplace today, what would He say about the effort you quietly put in?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I give You my ordinary day. The parts nobody sees. The work that feels small. Let it count in Your hands, even when it does not feel like it counts in mine. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/does-god-even-notice-the-ordinary-work-i-do-every-day" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Does God even notice the ordinary work I do every day?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-do-i-always-stay-quiet-and-hide-who-i-really-am" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I always stay quiet and hide who I really am?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/will-the-small-things-i-did-for-my-family-actually-matter-in-the-end" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Will the small things I did for my family actually matter in the end?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 139:3 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Today, before you sleep, say this one sentence out loud: 'God knows my name, God knows my day.' Not as a performance. Just as a fact you are choosing to hold. Say it once, slowly. Let it be the last thing that settles in you tonight."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"If you truly believed God was watching your ordinary Tuesday with love, not judgment, how would that change how you see yourself tomorrow?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Father, I need to know I am seen. Not just existing, but known. Remind me today that You track my steps and You are not tired of me. I receive that. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/why-do-i-feel-so-alone-even-when-everyone-depends-on-me" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I feel so alone even when everyone depends on me?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/how-do-i-stop-performing-and-just-be-myself" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How do I stop performing and just be myself?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/does-god-even-notice-how-tired-of-waiting-i-am" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Does God even notice how tired of waiting I am?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

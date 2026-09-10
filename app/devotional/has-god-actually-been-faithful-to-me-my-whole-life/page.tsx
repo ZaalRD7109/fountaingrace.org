@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 37:25 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before tonight, write down three specific moments from your own life when things felt finished but God came through anyway. Not feelings. Real moments, with names and years if you can remember them. Put it somewhere you will see it tomorrow morning."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"When you look back honestly at your life so far, what do you find?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Father, my mind runs ahead to tomorrow and forgets what You already did. Help me see my whole life clearly today. You have not failed me yet, and I trust You will not start now. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/will-gods-faithfulness-hold-for-my-whole-life" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Will God's faithfulness hold for my whole life?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/when-i-look-back-at-my-life-has-god-actually-been-faithful" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"When I look back at my life, has God actually been faithful?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-am-i-always-pretending-to-be-okay-around-people" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why am I always pretending to be okay around people?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

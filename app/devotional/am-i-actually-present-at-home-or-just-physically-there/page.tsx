@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Deuteronomy 6:6-7 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Tonight, pick one person in your home and give them ten minutes with no phone, no distraction. Ask them one real question and actually listen to the answer. It does not have to be deep. It just has to be real."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would the people you love most say they miss about you, even when you are right there with them?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, forgive me for being present in body but absent in heart. Help me to turn toward the people You gave me, today, with real attention and real love. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/why-am-i-always-pretending-to-be-okay-around-people" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why am I always pretending to be okay around people?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-does-spending-time-with-my-family-still-feel-empty" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why does spending time with my family still feel empty?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-do-i-feel-empty-even-when-i-get-everything-done" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I feel empty even when I get everything done?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

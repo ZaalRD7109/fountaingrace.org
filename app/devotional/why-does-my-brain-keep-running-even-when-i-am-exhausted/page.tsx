@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Philippians 4:7 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before you put your phone down tonight, say this out loud, even in a whisper: \"God, I give you tomorrow.\" Not a long prayer. Just that one sentence. Then put the phone face-down and let Him hold what you handed over."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What is one worry you have been carrying alone this week that you could actually name to God today?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Father, my mind will not stop and I am tired. I cannot think my way to peace, so I am asking You for the kind that only You can give. Keep my heart and my mind tonight. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/why-am-i-exhausted-even-after-sleeping-enough" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why am I exhausted even after sleeping enough?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-do-i-keep-scrolling-my-phone-instead-of-sleeping" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I keep scrolling my phone instead of sleeping?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-am-i-so-exhausted-from-trying-to-keep-everyone-happy" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why am I so exhausted from trying to keep everyone happy?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

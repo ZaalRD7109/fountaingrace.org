@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Psalm 77:11 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before tonight, write down one thing God brought you through that you almost forgot. It can be small. A door that opened when you expected it to close. A person who showed up. Write it down on your phone or on paper, and say thank you out loud for that one thing."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"If you traced just the last five years honestly, where can you see a hand that was not your own?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, help me see my life the way you see it. I forget so easily. Remind me today of what you have already done, and let that be enough to trust you with what is still ahead. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/will-the-small-things-i-did-for-my-family-actually-matter-in-the-end" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Will the small things I did for my family actually matter in the end?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/when-i-look-back-at-my-life-has-god-actually-been-faithful" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"When I look back at my life, has God actually been faithful?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/will-gods-faithfulness-hold-for-my-whole-life" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Will God's faithfulness hold for my whole life?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

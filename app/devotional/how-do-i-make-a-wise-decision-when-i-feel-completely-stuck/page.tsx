@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Proverbs 3:5-6 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before you open your phone or ask anyone else about the thing weighing on you today, stop for sixty seconds and say it out loud to God. Name it plainly. Then read Proverbs 3:5-6 once, slowly. Let that be the first voice you hear on it today."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would it look like to genuinely hand this decision to God before your next move?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, I have been leaning hard on my own understanding and getting nowhere. I bring this decision to You right now. Direct my path today. I trust You with what I cannot figure out. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/why-am-i-always-busy-but-still-feel-like-nothing-matters" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why am I always busy but still feel like nothing matters?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-okay-to-admit-i-am-struggling-and-need-help" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to admit I am struggling and need help?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-weak-to-ask-for-help-when-you-are-struggling" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it weak to ask for help when you are struggling?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

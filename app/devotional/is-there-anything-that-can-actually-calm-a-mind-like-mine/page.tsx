@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Isaiah 26:3 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Pick one worry that has been loud this week, just one. Write it down on a piece of paper or the notes app on your phone. Then write Isaiah 26:3 underneath it. Pray it back to God before you sleep tonight. That is the action. One worry, one verse, one prayer."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would it feel like to let your mind land on God for even five minutes today instead of the thing that keeps pulling at you?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Lord, my mind is tired. I cannot fix that on my own. I am turning it toward You right now, not because I feel peaceful, but because You promised to keep me. Hold my thoughts today. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/how-do-i-actually-stop-a-worry-spiral-before-it-takes-over" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How do I actually stop a worry spiral before it takes over?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-do-i-keep-scrolling-my-phone-instead-of-sleeping" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I keep scrolling my phone instead of sleeping?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/how-do-i-stop-being-too-scared-to-start-something-new" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How do I stop being too scared to start something new?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Matthew 6:31-32 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Today, before you check your balance or run the numbers again, say out loud: \"Father, you know what I need.\" Just that. Not a long prayer. Let those seven words be your first move this morning, and notice what shifts in you before the day gets going."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would change in how you carry today if you truly believed God already knew your exact need?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Father, you see what I cannot fix and what I cannot afford. I am handing the worry back to you today because you already know what I need. Hold me steady until I see your provision. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/why-do-i-wake-up-at-3am-scared-about-things-i-cannot-control" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I wake up at 3am scared about things I cannot control?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-god-actually-doing-something-while-nothing-is-happening" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is God actually doing something while nothing is happening?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-holding-back-money-the-same-as-not-trusting-god" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is holding back money the same as not trusting God?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

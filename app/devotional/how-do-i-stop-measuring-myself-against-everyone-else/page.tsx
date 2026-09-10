@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"Galatians 6:4 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before tonight, write down one thing you did this week that was genuinely yours, not someone else's win, just yours. It can be small. You got up. You kept going. You showed up for someone. Hold it in your hands for a moment and say thank you to God for it. That is enough."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"What would change today if you judged your life only by what God has actually asked of you?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Father, I confess I have been measuring myself with the wrong ruler. Teach me to look at my own life with honest and grateful eyes. What you have given me is enough to work with. Help me run my own race today. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/how-do-i-stop-performing-and-just-be-myself" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How do I stop performing and just be myself?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/why-do-i-feel-so-alone-even-when-everyone-depends-on-me" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Why do I feel so alone even when everyone depends on me?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/is-it-okay-to-stop-pretending-everything-is-fine" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Is it okay to stop pretending everything is fine?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 

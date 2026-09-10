@@ -62,6 +62,7 @@ export default function DevotionalPage() {
               <cite className="text-[#555] text-sm not-italic mt-2 block">- {"1 Samuel 16:7 (KJV)"}</cite>
             </blockquote>
             <p className="text-[#555] leading-relaxed text-lg">{"Before you start work today, say out loud, one sentence, something like: 'God, I am doing this for You.' That is it. One sentence. It rewires the whole day. What your manager misses, God already saw before you sat down."}</p>
+            <p className="text-[#555] leading-relaxed text-lg">{"If you knew God was watching your work with full attention and real pride, would anything about how you do it change?"}</p>
             <p className="text-[#555] leading-relaxed text-lg italic">{"Father, on the days when no one notices, remind me that You do. I bring my ordinary work to You today and ask You to find it worthy. That is enough for me. Amen."}</p>
           </div>
         </section>
@@ -86,6 +87,24 @@ export default function DevotionalPage() {
             <h2 className="text-2xl font-bold text-white mb-3">Come and worship with us in Pretoria North</h2>
             <p className="text-white mb-7">Every Sunday at 09:00. Fountain of Grace International, 323 B Danie Theron Street, Pretoria North.</p>
             <Link href="/plan-your-visit" className="btn-primary">Plan Your Visit</Link>
+          </div>
+        </section>
+
+
+        <section className="bg-white py-10 px-4 sm:px-6 border-t border-gray-100">
+          <div className="max-w-2xl mx-auto">
+            <h2 className="text-xl font-bold text-[#1a1a1a] mb-4 text-center">Keep reading</h2>
+            <ul className="space-y-1">
+            <li>
+              <Link href="/devotional/does-god-even-notice-the-ordinary-work-i-do-every-day" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Does God even notice the ordinary work I do every day?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/does-god-actually-see-me-or-am-i-easy-to-overlook" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"Does God actually see me, or am I easy to overlook?"}</Link>
+            </li>
+            <li>
+              <Link href="/devotional/how-do-i-stop-performing-and-just-be-myself" className="block py-2 text-[#0d6fbf] font-semibold underline leading-snug">{"How do I stop performing and just be myself?"}</Link>
+            </li>
+            </ul>
           </div>
         </section>
 
