@@ -81,7 +81,7 @@ export default function PrayerWeekPage() {
               <ul className="space-y-3 text-[#1a1a1a] text-lg leading-relaxed">
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"God, we pray your presence goes with us into every shift, every school run and every waiting room this week."}</span></li>
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Lord, you were faithful when our grandparents prayed, and we ask you to steady us with that same faithfulness."}</span></li>
-                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Father, we trust your wisdom when the plan we made for our family falls apart by Wednesday."}</span></li>
+                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Father, we trust your wisdom when the plan we made falls apart by Wednesday."}</span></li>
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"God, your power does not run low when the lights go out, so we lean on you tonight."}</span></li>
               </ul>
               <p className="border-l-4 border-[#FFD600] pl-4 py-2 bg-[#f0fafa] rounded-r-lg text-[#595959] leading-relaxed">
@@ -92,9 +92,9 @@ export default function PrayerWeekPage() {
             <section className="space-y-4">
               <h2 className="text-2xl font-extrabold text-[#1a1a1a] leading-snug">3. {"Trusting God's Infinite Understanding"}</h2>
               <ul className="space-y-3 text-[#1a1a1a] text-lg leading-relaxed">
-                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Lord, you know the diagnosis before the doctor phones, so we bring our fear to you now."}</span></li>
-                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"God, give us peace where we cannot see the next step for our children."}</span></li>
-                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Father, we rest in what you understand about our marriage even when we cannot explain it to anyone."}</span></li>
+                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Lord, you know what we are afraid of before we can say it, so we bring our fear to you now."}</span></li>
+                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"God, give us peace where we cannot see the next step."}</span></li>
+                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Father, we rest in what you understand about our situation even when we cannot explain it to anyone."}</span></li>
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Jesus, we let go of the answers we do not have and ask you to carry them."}</span></li>
               </ul>
               <p className="border-l-4 border-[#FFD600] pl-4 py-2 bg-[#f0fafa] rounded-r-lg text-[#595959] leading-relaxed">
@@ -106,9 +106,9 @@ export default function PrayerWeekPage() {
               <h2 className="text-2xl font-extrabold text-[#1a1a1a] leading-snug">4. {"Receiving Strength from the Almighty"}</h2>
               <ul className="space-y-3 text-[#1a1a1a] text-lg leading-relaxed">
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"God, we pray for everyone in this room whose heart has been worn thin by a hard year."}</span></li>
-                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Lord, renew the energy of parents who have not slept properly since the baby came."}</span></li>
-                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Father, strengthen every person here who feels too weak to face Monday morning."}</span></li>
-                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Jesus, be strong in us where we are weakest, at work, at home, in the quiet hours."}</span></li>
+                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Lord, renew the energy of everyone who has not slept properly in a long time."}</span></li>
+                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Father, strengthen every person here who feels too weak to face what is waiting for them."}</span></li>
+                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Jesus, be strong in us where we are weakest, in the place we do not talk about."}</span></li>
               </ul>
               <p className="border-l-4 border-[#FFD600] pl-4 py-2 bg-[#f0fafa] rounded-r-lg text-[#595959] leading-relaxed">
                 <span className="font-bold text-[#006b6b]">Why we pray this: </span>{"God gives strength to people who have run out of it. Those are the people He offers it to. So we ask honestly instead of pretending we are fine."}
@@ -119,7 +119,7 @@ export default function PrayerWeekPage() {
               <h2 className="text-2xl font-extrabold text-[#1a1a1a] leading-snug">5. {"Embracing Hope in the Lord"}</h2>
               <ul className="space-y-3 text-[#1a1a1a] text-lg leading-relaxed">
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"God, anchor our souls when bad news arrives before we have finished our coffee."}</span></li>
-                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Lord, we wait on what you promised while the job applications go unanswered."}</span></li>
+                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Lord, we wait on what you promised while the answer we need keeps not coming."}</span></li>
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Father, give us joy about a future we cannot see yet."}</span></li>
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"God, hold us secure in your faithfulness when everything around us feels unstable."}</span></li>
               </ul>
@@ -132,7 +132,7 @@ export default function PrayerWeekPage() {
               <h2 className="text-2xl font-extrabold text-[#1a1a1a] leading-snug">6. {"Experiencing Divine Renewal"}</h2>
               <ul className="space-y-3 text-[#1a1a1a] text-lg leading-relaxed">
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"God, renew our minds where worry has worn the same track for months."}</span></li>
-                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Lord, lift us above what is pressing down on our households this week."}</span></li>
+                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Lord, lift us above what is pressing down on us this week."}</span></li>
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Father, give us grace for the tiredness that follows us from Monday to Sunday."}</span></li>
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Jesus, give us endurance for the long road ahead, week after week."}</span></li>
               </ul>
@@ -144,8 +144,8 @@ export default function PrayerWeekPage() {
             <section className="space-y-4">
               <h2 className="text-2xl font-extrabold text-[#1a1a1a] leading-snug">7. {"Living in the Power of God's Might"}</h2>
               <ul className="space-y-3 text-[#1a1a1a] text-lg leading-relaxed">
-                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"God, lift us above the fear that meets us at the gate each morning."}</span></li>
-                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Lord, help us keep going in the work you gave us without giving up halfway."}</span></li>
+                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"God, lift us above the fear that meets us first thing each morning."}</span></li>
+                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Lord, help us keep going in what you have given us to do without giving up halfway."}</span></li>
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Father, hold us upright on the slow days when there is no strength to spare."}</span></li>
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Jesus, give us courage for the conversation we have been dreading all week."}</span></li>
               </ul>
@@ -160,7 +160,7 @@ export default function PrayerWeekPage() {
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"God, we hand you the plans we have been gripping too tightly."}</span></li>
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Lord, give us peace in knowing you hold what we cannot control."}</span></li>
                 <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Father, teach us to wait well when your timing is slower than ours."}</span></li>
-                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Jesus, we trust your authority over our homes, our work and our health."}</span></li>
+                <li className="flex gap-3"><span className="text-[#008080] font-bold shrink-0" aria-hidden="true">&#8226;</span><span>{"Jesus, we trust your authority over the thing we have been trying to fix on our own."}</span></li>
               </ul>
               <p className="border-l-4 border-[#FFD600] pl-4 py-2 bg-[#f0fafa] rounded-r-lg text-[#595959] leading-relaxed">
                 <span className="font-bold text-[#006b6b]">Why we pray this: </span>{"Handing something over is hard work. We are letting God set a timeline we would have written differently. Peace often comes once we have loosened the grip."}
