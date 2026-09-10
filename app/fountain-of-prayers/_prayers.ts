@@ -55,5 +55,27 @@ export const prayers: WeeklyPrayer[] = [
     "title": "A Prayer When You Cannot Hear God's Voice",
     "theme": "Hearing God's Voice",
     "scriptureRef": "John 10:27"
+  },
+  {
+    "slug": "a-prayer-for-when-life-keeps-knocking-you-down",
+    "date": "2026-08-03",
+    "dateDisplay": "3 August 2026",
+    "week": 32,
+    "year": 2026,
+    "weekLabel": "Week 32 of 2026",
+    "title": "A Prayer for When Life Keeps Knocking You Down",
+    "theme": "Persevering Through Trials",
+    "scriptureRef": "James 1:2-4"
+  },
+  {
+    "slug": "a-prayer-when-you-never-feel-like-you-have-enough",
+    "date": "2026-07-27",
+    "dateDisplay": "27 July 2026",
+    "week": 31,
+    "year": 2026,
+    "weekLabel": "Week 31 of 2026",
+    "title": "A Prayer When You Never Feel Like You Have Enough",
+    "theme": "Finding Contentment in Christ",
+    "scriptureRef": "Philippians 4:11-13"
   }
 ]
