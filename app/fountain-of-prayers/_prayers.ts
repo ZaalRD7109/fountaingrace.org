@@ -77,5 +77,27 @@ export const prayers: WeeklyPrayer[] = [
     "title": "A Prayer When You Never Feel Like You Have Enough",
     "theme": "Finding Contentment in Christ",
     "scriptureRef": "Philippians 4:11-13"
+  },
+  {
+    "slug": "a-prayer-when-you-cannot-forgive-someone-who-hurt-you",
+    "date": "2026-07-20",
+    "dateDisplay": "20 July 2026",
+    "week": 30,
+    "year": 2026,
+    "weekLabel": "Week 30 of 2026",
+    "title": "A Prayer When You Cannot Forgive Someone Who Hurt You",
+    "theme": "Embracing Forgiveness",
+    "scriptureRef": "Ephesians 4:31-32"
+  },
+  {
+    "slug": "a-prayer-for-when-you-feel-like-giving-up-on-faith",
+    "date": "2026-07-13",
+    "dateDisplay": "13 July 2026",
+    "week": 29,
+    "year": 2026,
+    "weekLabel": "Week 29 of 2026",
+    "title": "A Prayer for When You Feel Like Giving Up on Faith",
+    "theme": "Standing Firm In Faith",
+    "scriptureRef": "Hebrews 10:35-36"
   }
 ]

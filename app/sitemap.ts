@@ -272,6 +272,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/fountain-of-prayers/a-prayer-when-you-cannot-hear-gods-voice`, lastModified: new Date('2026-08-10'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/fountain-of-prayers/a-prayer-for-when-life-keeps-knocking-you-down`, lastModified: new Date('2026-08-03'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/fountain-of-prayers/a-prayer-when-you-never-feel-like-you-have-enough`, lastModified: new Date('2026-07-27'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/fountain-of-prayers/a-prayer-when-you-cannot-forgive-someone-who-hurt-you`, lastModified: new Date('2026-07-20'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/fountain-of-prayers/a-prayer-for-when-you-feel-like-giving-up-on-faith`, lastModified: new Date('2026-07-13'), changeFrequency: 'monthly', priority: 0.6 },
     // Legal
     { url: `${base}/privacy-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${base}/cookie-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
