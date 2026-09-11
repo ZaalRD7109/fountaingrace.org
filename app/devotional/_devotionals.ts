@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "why-do-i-feel-lonely-even-when-people-are-around-me",
+    "date": "2026-09-11",
+    "dateDisplay": "11 September 2026",
+    "day": 254,
+    "headline": "Why do I feel lonely even when people are around me?",
+    "verseRef": "Psalm 139:7",
+    "card": "/devotional-cards/w680/why-do-i-feel-lonely-even-when-people-are-around-me.webp"
+  },
+  {
     "slug": "does-anyone-actually-notice-i-am-here",
     "date": "2026-09-10",
     "dateDisplay": "10 September 2026",
