@@ -99,5 +99,27 @@ export const prayers: WeeklyPrayer[] = [
     "title": "A Prayer for When You Feel Like Giving Up on Faith",
     "theme": "Standing Firm In Faith",
     "scriptureRef": "Hebrews 10:35-36"
+  },
+  {
+    "slug": "a-prayer-for-when-you-cant-feel-thankful-anymore",
+    "date": "2026-07-06",
+    "dateDisplay": "6 July 2026",
+    "week": 28,
+    "year": 2026,
+    "weekLabel": "Week 28 of 2026",
+    "title": "A Prayer for When You Can't Feel Thankful Anymore",
+    "theme": "Living a Life of Gratitude",
+    "scriptureRef": "1 Thessalonians 5:16-18"
+  },
+  {
+    "slug": "a-prayer-when-you-keep-doing-the-thing-you-hate",
+    "date": "2026-06-29",
+    "dateDisplay": "29 June 2026",
+    "week": 27,
+    "year": 2026,
+    "weekLabel": "Week 27 of 2026",
+    "title": "A Prayer When You Keep Doing the Thing You Hate",
+    "theme": "Walking in Genuine Repentance",
+    "scriptureRef": "2 Corinthians 7:10"
   }
 ]
