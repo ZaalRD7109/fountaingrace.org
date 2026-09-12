@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "does-god-actually-notice-when-i-feel-completely-alone",
+    "date": "2026-09-12",
+    "dateDisplay": "12 September 2026",
+    "day": 255,
+    "headline": "Does God actually notice when I feel completely alone?",
+    "verseRef": "Psalm 34:18",
+    "card": "/devotional-cards/w680/does-god-actually-notice-when-i-feel-completely-alone.webp"
+  },
+  {
     "slug": "why-do-i-feel-lonely-even-when-people-are-around-me",
     "date": "2026-09-11",
     "dateDisplay": "11 September 2026",
