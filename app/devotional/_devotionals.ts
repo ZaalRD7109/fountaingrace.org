@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "how-do-i-stop-loneliness-from-convincing-me-nobody-cares",
+    "date": "2026-09-13",
+    "dateDisplay": "13 September 2026",
+    "day": 256,
+    "headline": "How do I stop loneliness from convincing me nobody cares?",
+    "verseRef": "1 Kings 19:5",
+    "card": "/devotional-cards/w680/how-do-i-stop-loneliness-from-convincing-me-nobody-cares.webp"
+  },
+  {
     "slug": "does-god-actually-notice-when-i-feel-completely-alone",
     "date": "2026-09-12",
     "dateDisplay": "12 September 2026",
