@@ -121,5 +121,27 @@ export const prayers: WeeklyPrayer[] = [
     "title": "A Prayer When You Keep Doing the Thing You Hate",
     "theme": "Walking in Genuine Repentance",
     "scriptureRef": "2 Corinthians 7:10"
+  },
+  {
+    "slug": "a-prayer-when-you-dont-know-what-to-do-next",
+    "date": "2026-06-22",
+    "dateDisplay": "22 June 2026",
+    "week": 26,
+    "year": 2026,
+    "weekLabel": "Week 26 of 2026",
+    "title": "A Prayer When You Don't Know What to Do Next",
+    "theme": "Surrendering to God's Plan",
+    "scriptureRef": "Proverbs 3:5-6"
+  },
+  {
+    "slug": "a-prayer-for-when-you-are-tired-of-waiting",
+    "date": "2026-06-15",
+    "dateDisplay": "15 June 2026",
+    "week": 25,
+    "year": 2026,
+    "weekLabel": "Week 25 of 2026",
+    "title": "A Prayer for When You Are Tired of Waiting",
+    "theme": "Waiting on God Without Losing Heart",
+    "scriptureRef": "Isaiah 40:31"
   }
 ]

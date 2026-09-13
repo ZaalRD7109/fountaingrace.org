@@ -278,6 +278,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/fountain-of-prayers/a-prayer-for-when-you-feel-like-giving-up-on-faith`, lastModified: new Date('2026-07-13'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/fountain-of-prayers/a-prayer-for-when-you-cant-feel-thankful-anymore`, lastModified: new Date('2026-07-06'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/fountain-of-prayers/a-prayer-when-you-keep-doing-the-thing-you-hate`, lastModified: new Date('2026-06-29'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/fountain-of-prayers/a-prayer-when-you-dont-know-what-to-do-next`, lastModified: new Date('2026-06-22'), changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${base}/fountain-of-prayers/a-prayer-for-when-you-are-tired-of-waiting`, lastModified: new Date('2026-06-15'), changeFrequency: 'monthly', priority: 0.6 },
     // Legal
     { url: `${base}/privacy-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
     { url: `${base}/cookie-policy`, lastModified: now, changeFrequency: 'yearly', priority: 0.3 },
