@@ -23,6 +23,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "youre-moments-from-your-breakthrough-but-your-brain-says-quit",
+    title: "You're Moments From Your Breakthrough But Your Brain Says Quit",
+    date: "2026-09-13",
+    dateDisplay: "13 September 2026",
+    intro:
+      "When you feel most tired and want to give up, you may be seconds away from victory. Learn why the greatest achievements belong only to those who refused to quit.",
+  },
+  {
     slug: "the-conversation-youve-rehearsed-50-times-but-never-had",
     title: "The Conversation You've Rehearsed 50 Times But Never Had",
     date: "2026-09-06",
