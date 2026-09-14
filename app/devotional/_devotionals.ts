@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "what-if-loneliness-is-partly-a-door-i-have-not-opened-yet",
+    "date": "2026-09-14",
+    "dateDisplay": "14 September 2026",
+    "day": 257,
+    "headline": "What if loneliness is partly a door I have not opened yet?",
+    "verseRef": "Proverbs 18:24",
+    "card": "/devotional-cards/w680/what-if-loneliness-is-partly-a-door-i-have-not-opened-yet.webp"
+  },
+  {
     "slug": "how-do-i-stop-loneliness-from-convincing-me-nobody-cares",
     "date": "2026-09-13",
     "dateDisplay": "13 September 2026",
