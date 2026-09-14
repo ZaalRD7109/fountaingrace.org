@@ -2,6 +2,17 @@
 export type WeeklyPrayer = { slug: string; date: string; dateDisplay: string; week: number; year: number; weekLabel: string; title: string; theme: string; scriptureRef: string }
 export const prayers: WeeklyPrayer[] = [
   {
+    "slug": "a-prayer-when-everything-feels-dark-right-now",
+    "date": "2026-09-14",
+    "dateDisplay": "14 September 2026",
+    "week": 38,
+    "year": 2026,
+    "weekLabel": "Week 38 of 2026",
+    "title": "A Prayer When Everything Feels Dark Right Now",
+    "theme": "Walking in the Light of Truth",
+    "scriptureRef": "1 John 1:5-7"
+  },
+  {
     "slug": "a-prayer-when-you-are-too-tired-to-keep-going",
     "date": "2026-09-07",
     "dateDisplay": "7 September 2026",
@@ -143,5 +154,16 @@ export const prayers: WeeklyPrayer[] = [
     "title": "A Prayer for When You Are Tired of Waiting",
     "theme": "Waiting on God Without Losing Heart",
     "scriptureRef": "Isaiah 40:31"
+  },
+  {
+    "slug": "a-prayer-when-god-feels-far-and-life-feels-heavy",
+    "date": "2026-06-08",
+    "dateDisplay": "8 June 2026",
+    "week": 24,
+    "year": 2026,
+    "weekLabel": "Week 24 of 2026",
+    "title": "A Prayer When God Feels Far and Life Feels Heavy",
+    "theme": "The Fear of the Lord",
+    "scriptureRef": "Proverbs 9:10"
   }
 ]
