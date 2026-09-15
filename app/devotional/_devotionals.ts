@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "is-something-good-actually-coming-out-of-this-loneliness",
+    "date": "2026-09-15",
+    "dateDisplay": "15 September 2026",
+    "day": 258,
+    "headline": "Is something good actually coming out of this loneliness?",
+    "verseRef": "1 Peter 5:10",
+    "card": "/devotional-cards/w680/is-something-good-actually-coming-out-of-this-loneliness.webp"
+  },
+  {
     "slug": "what-if-loneliness-is-partly-a-door-i-have-not-opened-yet",
     "date": "2026-09-14",
     "dateDisplay": "14 September 2026",

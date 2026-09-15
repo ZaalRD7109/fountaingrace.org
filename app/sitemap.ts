@@ -136,6 +136,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - daily library, one page per devotional)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/devotional/is-something-good-actually-coming-out-of-this-loneliness`, lastModified: new Date('2026-09-15'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/what-if-loneliness-is-partly-a-door-i-have-not-opened-yet`, lastModified: new Date('2026-09-14'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/how-do-i-stop-loneliness-from-convincing-me-nobody-cares`, lastModified: new Date('2026-09-13'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/does-god-actually-notice-when-i-feel-completely-alone`, lastModified: new Date('2026-09-12'), changeFrequency: 'monthly', priority: 0.6 },
