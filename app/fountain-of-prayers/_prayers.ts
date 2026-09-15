@@ -165,5 +165,16 @@ export const prayers: WeeklyPrayer[] = [
     "title": "A Prayer When God Feels Far and Life Feels Heavy",
     "theme": "The Fear of the Lord",
     "scriptureRef": "Proverbs 9:10"
+  },
+  {
+    "slug": "a-prayer-when-you-dont-know-what-happens-next",
+    "date": "2026-06-01",
+    "dateDisplay": "1 June 2026",
+    "week": 23,
+    "year": 2026,
+    "weekLabel": "Week 23 of 2026",
+    "title": "A Prayer When You Don't Know What Happens Next",
+    "theme": "Trusting God in Uncertain Times",
+    "scriptureRef": "Proverbs 3:5-6"
   }
 ]
