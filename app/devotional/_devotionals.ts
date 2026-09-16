@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "when-i-look-back-does-my-life-actually-add-up-to-anything",
+    "date": "2026-09-16",
+    "dateDisplay": "16 September 2026",
+    "day": 259,
+    "headline": "When I look back, does my life actually add up to anything?",
+    "verseRef": "Psalm 23:6",
+    "card": "/devotional-cards/w680/when-i-look-back-does-my-life-actually-add-up-to-anything.webp"
+  },
+  {
     "slug": "is-something-good-actually-coming-out-of-this-loneliness",
     "date": "2026-09-15",
     "dateDisplay": "15 September 2026",
