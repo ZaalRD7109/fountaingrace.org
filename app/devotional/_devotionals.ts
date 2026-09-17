@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "does-god-see-me-when-i-am-grieving-alone",
+    "date": "2026-09-17",
+    "dateDisplay": "17 September 2026",
+    "day": 260,
+    "headline": "Does God see me when I am grieving alone?",
+    "verseRef": "John 11:35",
+    "card": "/devotional-cards/w680/does-god-see-me-when-i-am-grieving-alone.webp"
+  },
+  {
     "slug": "when-i-look-back-does-my-life-actually-add-up-to-anything",
     "date": "2026-09-16",
     "dateDisplay": "16 September 2026",
