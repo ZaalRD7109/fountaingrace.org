@@ -136,6 +136,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - daily library, one page per devotional)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/devotional/why-does-grief-hit-hardest-when-everyone-else-has-moved-on`, lastModified: new Date('2026-09-18'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/does-god-see-me-when-i-am-grieving-alone`, lastModified: new Date('2026-09-17'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/when-i-look-back-does-my-life-actually-add-up-to-anything`, lastModified: new Date('2026-09-16'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/is-something-good-actually-coming-out-of-this-loneliness`, lastModified: new Date('2026-09-15'), changeFrequency: 'monthly', priority: 0.6 },

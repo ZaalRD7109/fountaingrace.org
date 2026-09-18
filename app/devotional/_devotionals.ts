@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "why-does-grief-hit-hardest-when-everyone-else-has-moved-on",
+    "date": "2026-09-18",
+    "dateDisplay": "18 September 2026",
+    "day": 261,
+    "headline": "Why does grief hit hardest when everyone else has moved on?",
+    "verseRef": "2 Corinthians 1:3-4",
+    "card": "/devotional-cards/w680/why-does-grief-hit-hardest-when-everyone-else-has-moved-on.webp"
+  },
+  {
     "slug": "does-god-see-me-when-i-am-grieving-alone",
     "date": "2026-09-17",
     "dateDisplay": "17 September 2026",
