@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "how-do-i-get-through-the-day-when-grief-hits-out-of-nowhere",
+    "date": "2026-09-20",
+    "dateDisplay": "20 September 2026",
+    "day": 263,
+    "headline": "How do I get through the day when grief hits out of nowhere?",
+    "verseRef": "Lamentations 3:22-23",
+    "card": "/devotional-cards/w680/how-do-i-get-through-the-day-when-grief-hits-out-of-nowhere.webp"
+  },
+  {
     "slug": "will-i-ever-stop-missing-them-this-much",
     "date": "2026-09-19",
     "dateDisplay": "19 September 2026",
