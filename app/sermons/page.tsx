@@ -23,6 +23,14 @@ export const metadata: Metadata = {
 
 const sermonPosts = [
   {
+    slug: "your-situation-isnt-over-yet-even-though-it-feels-that-way",
+    title: "Your Situation Isn't Over Yet, Even Though It Feels That Way",
+    date: "2026-09-20",
+    dateDisplay: "20 September 2026",
+    intro:
+      "You've accepted defeat as permanent. But what looks like your grave might be exactly where new beginnings are born.",
+  },
+  {
     slug: "youre-moments-from-your-breakthrough-but-your-brain-says-quit",
     title: "You're Moments From Your Breakthrough But Your Brain Says Quit",
     date: "2026-09-13",
