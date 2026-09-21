@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "am-i-holding-onto-grief-because-letting-go-feels-like-forgetting-them",
+    "date": "2026-09-21",
+    "dateDisplay": "21 September 2026",
+    "day": 264,
+    "headline": "Am I holding onto grief because letting go feels like forgetting them?",
+    "verseRef": "Revelation 21:4",
+    "card": "/devotional-cards/w680/am-i-holding-onto-grief-because-letting-go-feels-like-forgetting-them.webp"
+  },
+  {
     "slug": "how-do-i-get-through-the-day-when-grief-hits-out-of-nowhere",
     "date": "2026-09-20",
     "dateDisplay": "20 September 2026",
