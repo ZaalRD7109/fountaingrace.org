@@ -2,6 +2,17 @@
 export type WeeklyPrayer = { slug: string; date: string; dateDisplay: string; week: number; year: number; weekLabel: string; title: string; theme: string; scriptureRef: string }
 export const prayers: WeeklyPrayer[] = [
   {
+    "slug": "a-prayer-for-when-you-cannot-stop-worrying",
+    "date": "2026-09-21",
+    "dateDisplay": "21 September 2026",
+    "week": 39,
+    "year": 2026,
+    "weekLabel": "Week 39 of 2026",
+    "title": "A Prayer for When You Cannot Stop Worrying",
+    "theme": "The Joy of Surrender",
+    "scriptureRef": "Philippians 4:6-7"
+  },
+  {
     "slug": "a-prayer-when-everything-feels-dark-right-now",
     "date": "2026-09-14",
     "dateDisplay": "14 September 2026",

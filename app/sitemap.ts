@@ -277,6 +277,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/stories/what-your-giving-does-in-pretoria-north`, lastModified: new Date('2026-04-27'), changeFrequency: 'monthly', priority: 0.7 },
     // Fountain of Prayers (weekly prayer library, one page per week)
     { url: `${base}/fountain-of-prayers`, lastModified: now, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${base}/fountain-of-prayers/a-prayer-for-when-you-cannot-stop-worrying`, lastModified: new Date('2026-09-21'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/fountain-of-prayers/a-prayer-when-everything-feels-dark-right-now`, lastModified: new Date('2026-09-14'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/fountain-of-prayers/a-prayer-when-you-are-too-tired-to-keep-going`, lastModified: new Date('2026-09-07'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/fountain-of-prayers/a-prayer-for-the-courage-to-follow-through`, lastModified: new Date('2026-08-31'), changeFrequency: 'monthly', priority: 0.6 },
