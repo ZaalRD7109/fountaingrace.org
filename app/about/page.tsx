@@ -77,7 +77,7 @@ const values: Value[] = [
         <Link href="/plan-your-visit" className="fgi-link">
           first visit
         </Link>
-        , someone contacts you personally - not an email sequence, not a form letter. A real person.
+        , we check in with you on WhatsApp to hear how it went. Reply any time, and a person from our team picks it up.
       </>
     ),
   },
@@ -211,8 +211,8 @@ export default function AboutPage() {
                 </p>
                 <p>
                   He is a husband and father, committed to building strong families, strong faith,
-                  and a lasting legacy. He lives in Pretoria North and stays personally available.
-                  You can reach him via WhatsApp or through the{' '}
+                  and a lasting legacy. He lives in Pretoria North, among the people he serves.
+                  You can reach the church via WhatsApp or through the{' '}
                   <Link href="/contact" className="fgi-link">
                     contact form on this site
                   </Link>.
@@ -230,7 +230,7 @@ export default function AboutPage() {
                   rel="noopener noreferrer"
                   className="inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-5 py-2.5 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
                 >
-                  WhatsApp Pastor Ricardo
+                  WhatsApp the church
                 </a>
                 <Link href="/plan-your-visit" className="btn-outline text-sm text-center">
                   Plan Your Visit

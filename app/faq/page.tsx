@@ -97,7 +97,7 @@ const faqs: FaqCategory[] = [
     items: [
       {
         q: 'Can I submit a prayer request without attending the church?',
-        a: <>Yes. Anyone can submit a prayer request - you do not need to be a member or attendee. <Link href="/prayer" className="fgi-link">Use the prayer request form here</Link> and the pastoral team will pray over your request personally.</>,
+        a: <>Yes. Anyone can submit a prayer request - you do not need to be a member or attendee. <Link href="/prayer" className="fgi-link">Use the prayer request form here</Link> and our prayer team will pray over it.</>,
         aText: 'Yes. Anyone can submit a prayer request - you do not need to be a member or attendee. Use the prayer request form at fountaingrace.org/prayer.',
       },
       {
@@ -107,8 +107,8 @@ const faqs: FaqCategory[] = [
       },
       {
         q: 'What if I need urgent pastoral support?',
-        a: <><a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="fgi-link">WhatsApp Pastor Ricardo directly at +27 75 259 2555</a>. He responds personally. You can also <Link href="/contact" className="fgi-link">reach us through the contact page</Link>.</>,
-        aText: 'WhatsApp Pastor Ricardo directly at +27 75 259 2555. He responds personally.',
+        a: <><a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="fgi-link">WhatsApp us on +27 75 259 2555</a>. It is answered day and night, and a pastor steps in when you need a person. If a life is in danger, call SADAG on 0800 567 567 (free, 24 hours) or 10111 right now. You can also <Link href="/contact" className="fgi-link">reach us through the contact page</Link>.</>,
+        aText: 'WhatsApp us on +27 75 259 2555. It is answered day and night, and a pastor steps in when you need a person. If a life is in danger, call SADAG on 0800 567 567 (free, 24 hours) or 10111 right now.',
       },
     ],
   },

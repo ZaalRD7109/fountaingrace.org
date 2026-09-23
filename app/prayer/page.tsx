@@ -67,7 +67,7 @@ export default function PrayerPage() {
           </h1>
           <p className="text-white text-base leading-relaxed">
             Message us on WhatsApp and receive a prayer back within seconds - any time of day
-            or night. Or submit a written request and the pastoral team will follow up personally.
+            or night. Or send a written request below and a prayer from our team comes back to your email.
           </p>
         </div>
       </section>
@@ -170,7 +170,7 @@ export default function PrayerPage() {
               },
               {
                 step: '03',
-                text: 'If you included an email address, a member of the pastoral team will respond within 48 hours to follow up personally.',
+                text: 'If you left your email, a written prayer from our team comes back to you, usually within the hour. If you asked to talk to someone, a pastor will contact you.',
               },
             ].map((item) => (
               <div key={item.step} className="flex gap-4 items-start bg-white rounded-xl border border-gray-100 p-5">
@@ -212,8 +212,8 @@ export default function PrayerPage() {
             <p>
               Fountain of Grace International accepts prayer requests from anyone in Pretoria
               North and surrounding areas. Requests are received by the pastoral team and
-              kept confidential. For urgent prayer needs, contact Pastor Ricardo Zaal directly
-              on WhatsApp at +27 75 259 2555 or via the form above.
+              kept confidential. For urgent prayer needs, message the church on WhatsApp at
+              +27 75 259 2555, answered day and night, or use the form above.
             </p>
           </div>
         </div>

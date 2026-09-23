@@ -4,7 +4,7 @@ import ThankYouTracker from '@/components/ThankYouTracker'
 
 export const metadata: Metadata = {
   title: 'Message Received | Fountain of Grace International',
-  description: 'Thank you for your message. We will respond within 24 hours.',
+  description: 'Thank you for your message. We will respond within 3 days.',
   robots: 'noindex, nofollow',
 }
 
@@ -21,7 +21,7 @@ export default function ContactThankYouPage() {
             We got your message.
           </h1>
           <p className="text-white text-base leading-relaxed mb-8">
-            Someone from Fountain of Grace International will get back to you within 24 hours.
+            Someone from Fountain of Grace International will get back to you within 3 days.
             If your matter is urgent, WhatsApp us directly.
           </p>
           <a

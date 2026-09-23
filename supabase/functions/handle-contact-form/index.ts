@@ -50,7 +50,7 @@ Deno.serve(async (req) => {
         </div>
         <div style="padding:32px 24px">
           <p style="font-size:16px">Hi ${name},</p>
-          <p>Thank you for reaching out to us. We have received your message and someone will get back to you within 24 hours.</p>
+          <p>Thank you for reaching out to us. We have received your message and someone will get back to you within 3 days.</p>
           <p>If your matter is urgent, you are welcome to WhatsApp us directly at <a href="https://wa.me/27752592555" style="color:#008080">+27 75 259 2555</a>.</p>
           <p style="color:#555;font-size:13px;margin-top:32px;border-top:1px solid #eee;padding-top:16px">
             Fountain of Grace International - NPO 316-193<br>

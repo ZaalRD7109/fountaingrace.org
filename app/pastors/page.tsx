@@ -156,7 +156,7 @@ export default function PastorsPage() {
                   rel="noopener noreferrer"
                   className="inline-block bg-[#25d366] text-[#1a1a1a] font-semibold px-5 py-3 rounded-lg hover:bg-[#1ebe5d] transition-colors text-sm text-center"
                 >
-                  WhatsApp Pastor Ricardo
+                  WhatsApp the church
                 </a>
                 <Link href="/plan-your-visit" className="btn-outline text-sm text-center">
                   Plan Your Visit
@@ -284,7 +284,7 @@ export default function PastorsPage() {
               Plan Your Visit
             </Link>
             <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="inline-block border-2 border-white text-white font-semibold px-7 py-3.5 rounded-lg hover:bg-white hover:text-[#006b6b] transition-colors">
-              Message Pastor Ricardo
+              Message us on WhatsApp
             </a>
           </div>
         </div>

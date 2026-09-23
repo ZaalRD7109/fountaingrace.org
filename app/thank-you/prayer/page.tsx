@@ -4,7 +4,7 @@ import ThankYouTracker from '@/components/ThankYouTracker'
 
 export const metadata: Metadata = {
   title: 'Prayer Request Received | Fountain of Grace International',
-  description: 'Your prayer request has been received. Pastor Ricardo reads and prays over every request.',
+  description: 'Your prayer request has been received. Our prayer team prays over every request.',
   robots: 'noindex, nofollow',
 }
 
@@ -18,10 +18,10 @@ export default function PrayerThankYouPage() {
             Your request is in safe hands
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
-            Pastor Ricardo will pray over this personally.
+            We are praying with you.
           </h1>
           <p className="text-white text-base leading-relaxed">
-            Nothing is shared publicly. Your request has been received by the pastoral team only.
+            Nothing is shared publicly. If you left your email, watch your inbox. A written prayer from us is on its way.
           </p>
         </div>
       </section>
@@ -40,8 +40,8 @@ export default function PrayerThankYouPage() {
           </blockquote>
 
           <p className="text-[#595959] text-sm leading-relaxed mb-8">
-            If you would like to speak with someone, you are welcome to reach out directly.
-            Pastor Ricardo responds personally.
+            Would you rather talk to someone? Send us a WhatsApp. It is answered day and night,
+            and when you need a person, one of our pastors takes it from there.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -51,7 +51,7 @@ export default function PrayerThankYouPage() {
               rel="noopener noreferrer"
               className="inline-block bg-[#25d366] text-[#1a1a1a] font-bold px-6 py-3 rounded-[30px] hover:bg-[#1ebe5d] transition-colors text-sm text-center"
             >
-              WhatsApp the Pastor
+              WhatsApp us
             </a>
             <Link
               href="/"

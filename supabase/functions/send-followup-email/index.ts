@@ -53,7 +53,7 @@ function getEmailForStage(stage: number, name: string, email: string): { subject
             <li>Our sermon archive - watch recent messages from Pastor Ricardo at <a href="https://www.fountaingrace.org/sermons" style="color:#008080">fountaingrace.org/sermons</a></li>
             <li>The FAQ page - <a href="https://www.fountaingrace.org/faq" style="color:#008080">fountaingrace.org/faq</a></li>
           </ul>
-          <p>And if there is something specific you are going through, you can submit a prayer request privately at <a href="https://www.fountaingrace.org/prayer" style="color:#008080">fountaingrace.org/prayer</a> - Pastor Ricardo reads every one personally.</p>
+          <p>And if there is something specific you are going through, you can submit a prayer request privately at <a href="https://www.fountaingrace.org/prayer" style="color:#008080">fountaingrace.org/prayer</a> - our prayer team prays over every one.</p>
           <p>Warmly,<br><strong>Pastor Ricardo Zaal</strong><br>Fountain of Grace International</p>
         </div>
       </div>`,
@@ -86,11 +86,11 @@ function getEmailForStage(stage: number, name: string, email: string): { subject
         </div>
         <div style="padding:32px 24px">
           <p>Hi ${firstName},</p>
-          <p>Two weeks since you filled in our form. I want to check in personally.</p>
+          <p>Two weeks since you filled in our form. We wanted to check in.</p>
           <p>Some people visit and immediately find what they have been looking for. Others take a few Sundays. Others are still deciding. Wherever you are in that process is fine.</p>
-          <p>If there is anything standing between you and coming on a Sunday, I would like to know about it. Parking? Transport? Not sure what to say when you walk in? Unsure if this church is the right fit?</p>
-          <p>None of those are small concerns. They are real, and I want to address them directly.</p>
-          <p>Reply to this email with whatever is on your mind, or WhatsApp me on <a href="https://wa.me/27752592555" style="color:#008080">+27 75 259 2555</a>. I respond personally, not through a team.</p>
+          <p>If there is anything standing between you and coming on a Sunday, we would like to know about it. Parking? Transport? Not sure what to say when you walk in? Unsure if this church is the right fit?</p>
+          <p>None of those are small concerns. They are real, and we want to help with them.</p>
+          <p>Reply to this email with whatever is on your mind, or WhatsApp us on <a href="https://wa.me/27752592555" style="color:#008080">+27 75 259 2555</a>. Our team will pick it up with you.</p>
           <blockquote style="border-left:4px solid #008080;padding-left:16px;color:#555;font-style:italic;margin:24px 0">
             "The LORD is nigh unto them that are of a broken heart; and saveth such as be of a contrite spirit." - Psalm 34:18 (KJV)
           </blockquote>
@@ -158,7 +158,7 @@ function getEmailForStage(stage: number, name: string, email: string): { subject
             "Wait on the LORD: be of good courage, and he shall strengthen thine heart: wait, I say, on the LORD." - Psalm 27:14 (KJV)
           </blockquote>
           <p>Waiting is not failure. Sometimes the right timing is not your timing.</p>
-          <p>If you are in a hard season right now, we have a prayer request form at <a href="https://www.fountaingrace.org/prayer" style="color:#008080">fountaingrace.org/prayer</a>. It goes directly to me. Nothing is posted publicly. I read every one and pray over every one.</p>
+          <p>If you are in a hard season right now, we have a prayer request form at <a href="https://www.fountaingrace.org/prayer" style="color:#008080">fountaingrace.org/prayer</a>. Nothing is posted publicly. Our prayer team prays over every one.</p>
           <p>You are not forgotten.</p>
           <p><strong>Pastor Ricardo Zaal</strong><br>Fountain of Grace International</p>
         </div>

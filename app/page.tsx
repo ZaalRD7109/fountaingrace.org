@@ -101,7 +101,7 @@ const jsonLd = [
         name: 'Is there a welcoming church in Pretoria North for first-timers?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Fountain of Grace International in Pretoria North is designed for people attending church for the first time. Visitors are met at the door by name, never singled out publicly, and followed up with personally after their visit.',
+          text: 'Fountain of Grace International in Pretoria North is designed for people attending church for the first time. Visitors are met at the door by name, never singled out publicly, and followed up on WhatsApp after their visit.',
         },
       },
     ],
@@ -255,8 +255,8 @@ export default function HomePage() {
               },
               {
                 icon: '📞',
-                title: 'We follow up - personally',
-                body: 'After your first visit, someone reaches out. Not an automated email. An actual person who noticed you were there and wants to know if you are coming back.',
+                title: 'We keep in touch',
+                body: 'After your first visit we send you a WhatsApp to ask how it went. Reply any time. Our team reads those conversations and steps in whenever you need a person.',
               },
               {
                 icon: '🗣️',
@@ -445,7 +445,7 @@ export default function HomePage() {
               <dd className="text-[#595959] leading-relaxed">
                 Fountain of Grace International in Pretoria North is designed for people attending
                 church for the first time. Visitors are met at the door by name, never singled out
-                publicly, and followed up with personally after their visit.
+                publicly, and followed up on WhatsApp after their visit.
               </dd>
             </div>
           </dl>
