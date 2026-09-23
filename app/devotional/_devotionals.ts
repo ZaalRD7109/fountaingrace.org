@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "will-the-sadness-i-carry-ever-actually-lift",
+    "date": "2026-09-23",
+    "dateDisplay": "23 September 2026",
+    "day": 266,
+    "headline": "Will the sadness I carry ever actually lift?",
+    "verseRef": "Psalm 126:5",
+    "card": "/devotional-cards/w680/will-the-sadness-i-carry-ever-actually-lift.webp"
+  },
+  {
     "slug": "can-grief-actually-change-me-for-the-better",
     "date": "2026-09-22",
     "dateDisplay": "22 September 2026",
