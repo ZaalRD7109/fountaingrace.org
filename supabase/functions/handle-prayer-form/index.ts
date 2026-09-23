@@ -1,108 +1,122 @@
-import { createClient } from 'https://esm.sh/@supabase/supabase-js@2'
-import { corsHeaders } from '../_shared/cors.ts'
-import { verifyTurnstile } from '../_shared/turnstile.ts'
-import { sendEmail } from '../_shared/resend.ts'
+import "jsr:@supabase/functions-js/edge-runtime.d.ts"
+import { createClient } from "jsr:@supabase/supabase-js@2"
 
-Deno.serve(async (req) => {
+// LIVE version. Until 2026-09-23 this folder held an older draft that was never
+// the deployed code - the file here now matches what Supabase runs.
+//
+// 2026-09-23: a CONFIDENTIAL request's copy goes to pastor@ (an alias on
+// Ricardo's own mailbox) and never to info@. The form promises "keep this
+// between the pastor and me", and info@ is shared with the church office.
+// The written prayer itself is sent 15 minutes later by
+// scripts/fgi-prayer-mail/answer_form_prayers.py through send-form-prayer.
+
+const CORS_HEADERS = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'content-type, authorization',
+  'Access-Control-Allow-Methods': 'POST, OPTIONS',
+  'Content-Type': 'application/json',
+}
+
+Deno.serve(async (req: Request) => {
   if (req.method === 'OPTIONS') {
-    return new Response(null, { status: 200, headers: corsHeaders })
+    return new Response('ok', { headers: CORS_HEADERS })
+  }
+
+  if (req.method !== 'POST') {
+    return new Response(JSON.stringify({ error: 'Method not allowed' }), { status: 405, headers: CORS_HEADERS })
   }
 
   try {
-    const { name, email, prayer, confidential, turnstileToken } = await req.json()
+    const body = await req.json()
+    const { name, email, prayer, confidential, turnstileToken } = body
 
-    if (!name || !prayer || !turnstileToken) {
-      return new Response(JSON.stringify({ error: 'Missing required fields' }), {
-        status: 400,
-        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-      })
+    if (!name?.trim() || !prayer?.trim()) {
+      return new Response(
+        JSON.stringify({ error: 'Name and prayer request are required' }),
+        { status: 400, headers: CORS_HEADERS }
+      )
     }
 
-    const ip = req.headers.get('CF-Connecting-IP') ?? req.headers.get('X-Forwarded-For') ?? ''
-    const valid = await verifyTurnstile(turnstileToken, ip)
-    if (!valid) {
-      return new Response(JSON.stringify({ error: 'Security check failed' }), {
-        status: 403,
-        headers: { ...corsHeaders, 'Content-Type': 'application/json' },
+    if (email && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
+      return new Response(
+        JSON.stringify({ error: 'Invalid email address' }),
+        { status: 400, headers: CORS_HEADERS }
+      )
+    }
+
+    const turnstileSecret = Deno.env.get('TURNSTILE_SECRET_KEY')
+    if (turnstileSecret && turnstileToken) {
+      const formData = new URLSearchParams()
+      formData.append('secret', turnstileSecret)
+      formData.append('response', turnstileToken)
+      const tvRes = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: formData.toString(),
       })
+      const tvData = await tvRes.json()
+      if (!tvData.success) {
+        return new Response(
+          JSON.stringify({ error: 'Security check failed. Please refresh and try again.' }),
+          { status: 400, headers: CORS_HEADERS }
+        )
+      }
     }
 
     const supabase = createClient(
       Deno.env.get('SUPABASE_URL')!,
-      Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!
+      Deno.env.get('SUPABASE_SERVICE_ROLE_KEY')!,
     )
 
     const { error: dbError } = await supabase
       .from('prayer_requests')
-      .insert({ name, email: email || null, prayer, confidential: confidential ?? false, consent: true })
+      .insert({
+        name: name.trim(),
+        email: email?.trim().toLowerCase() || null,
+        prayer: prayer.trim(),
+        confidential: confidential ?? false,
+        consent: true,
+      })
 
-    if (dbError) throw dbError
-
-    const now = new Date().toLocaleString('en-ZA', { timeZone: 'Africa/Johannesburg' })
-
-    if (email) {
-      await sendEmail(
-        email,
-        'Your prayer request has been received - Fountain of Grace International',
-        `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;color:#333">
-          <div style="background:#008080;padding:24px;text-align:center">
-            <h1 style="color:#ffffff;margin:0;font-size:22px">Fountain of Grace International</h1>
-            <p style="color:#ffffff;margin:8px 0 0;font-size:13px">Pretoria North, South Africa</p>
-          </div>
-          <div style="padding:32px 24px">
-            <p style="font-size:16px">Hi ${name},</p>
-            <p>Your prayer request has been received by the pastoral team. Nothing is shared publicly - this is between you and the team.</p>
-            <p>Pastor Ricardo reads every request personally and prays over each one.</p>
-            <blockquote style="border-left:4px solid #008080;padding-left:16px;color:#555;font-style:italic;margin:24px 0">
-              "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God." - Philippians 4:6 (KJV)
-            </blockquote>
-            <p>If you would like to talk further, reply to this email or WhatsApp Pastor Ricardo at <a href="https://wa.me/27752592555" style="color:#008080">+27 75 259 2555</a>.</p>
-            <p style="color:#555;font-size:13px;margin-top:32px;border-top:1px solid #eee;padding-top:16px">
-              Fountain of Grace International - NPO 316-193<br>
-              <a href="https://www.fountaingrace.org" style="color:#008080">www.fountaingrace.org</a>
-            </p>
-          </div>
-        </div>`
-      )
+    if (dbError) {
+      console.error('DB insert error:', dbError)
+      throw dbError
     }
 
-    const confidentialNote = confidential
-      ? '<p style="background:#fff3cd;border:1px solid #ffc107;padding:10px 14px;border-radius:6px;font-weight:bold;color:#856404">CONFIDENTIAL - pastoral team only. Do not share.</p>'
-      : ''
+    const resendKey = Deno.env.get('RESEND_API_KEY')
+    if (resendKey) {
+      try {
+        const emailNote = email ? `\nEmail: ${email}` : '\nEmail: not provided'
+        const subject = confidential
+          ? `Confidential prayer request from ${name}`
+          : `New prayer request from ${name}`
+        const to = confidential ? 'pastor@fountaingrace.org' : 'info@fountaingrace.org'
+        const res = await fetch('https://api.resend.com/emails', {
+          method: 'POST',
+          headers: {
+            Authorization: `Bearer ${resendKey}`,
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            from: 'FGI Website <noreply@fountaingrace.org>',
+            to: [to],
+            subject,
+            text: `New prayer request on fountaingrace.org\n\nName: ${name}${emailNote}\nConfidential: ${confidential ? 'YES - between the pastor and them' : 'No'}\n\nPrayer request:\n${prayer}\n\n${email ? 'A written prayer goes to them automatically 15 minutes after it came in, unless it reads like it needs a person. Then it waits for you.' : 'No email was given, so no written prayer can go out. This one is yours.'}`,
+          }),
+        })
+        if (!res.ok) console.error(`prayer copy email failed status=${res.status} body=${await res.text()}`)
+      } catch (emailErr) {
+        console.error('Email send error:', emailErr)
+      }
+    }
 
-    const adminEmail = confidential ? 'pastor@fountaingrace.org' : 'info@fountaingrace.org'
+    return new Response(JSON.stringify({ ok: true }), { status: 200, headers: CORS_HEADERS })
 
-    await sendEmail(
-      adminEmail,
-      `${confidential ? '[CONFIDENTIAL] ' : ''}New prayer request: ${name}`,
-      `<div style="font-family:Arial,sans-serif;max-width:600px;margin:0 auto;color:#333">
-        <div style="background:#2a9df4;padding:16px 24px">
-          <h2 style="color:#fff;margin:0;font-size:18px">New Prayer Request</h2>
-        </div>
-        <div style="padding:24px">
-          ${confidentialNote}
-          <table style="width:100%;border-collapse:collapse;margin-top:12px">
-            <tr><td style="padding:8px;font-weight:bold;width:120px">Name</td><td style="padding:8px">${name}</td></tr>
-            <tr style="background:#f9f9f9"><td style="padding:8px;font-weight:bold">Email</td><td style="padding:8px">${email ? `<a href="mailto:${email}" style="color:#008080">${email}</a>` : 'Not provided'}</td></tr>
-            <tr><td style="padding:8px;font-weight:bold">Prayer</td><td style="padding:8px">${prayer}</td></tr>
-            <tr style="background:#f9f9f9"><td style="padding:8px;font-weight:bold">Confidential</td><td style="padding:8px">${confidential ? 'Yes' : 'No'}</td></tr>
-            <tr><td style="padding:8px;font-weight:bold">Submitted</td><td style="padding:8px">${now}</td></tr>
-          </table>
-          ${email ? `<div style="margin-top:20px"><a href="mailto:${email}" style="background:#008080;color:#fff;padding:10px 18px;text-decoration:none;border-radius:6px;font-size:14px;display:inline-block">Reply by Email</a></div>` : ''}
-        </div>
-      </div>`,
-      email || undefined
-    )
-
-    return new Response(JSON.stringify({ success: true }), {
-      status: 200,
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-    })
   } catch (err) {
-    console.error(err)
-    return new Response(JSON.stringify({ error: 'Server error' }), {
-      status: 500,
-      headers: { ...corsHeaders, 'Content-Type': 'application/json' },
-    })
+    console.error('handle-prayer-form error:', err)
+    return new Response(
+      JSON.stringify({ error: 'Something went wrong. Please try again.' }),
+      { status: 500, headers: CORS_HEADERS }
+    )
   }
 })
