@@ -77,7 +77,7 @@ const values: Value[] = [
         <Link href="/plan-your-visit" className="fgi-link">
           first visit
         </Link>
-        , we check in with you on WhatsApp to hear how it went. Reply any time, and a person from our team picks it up.
+        , we check in on WhatsApp to hear how it went. Reply whenever you like. A pastor takes over when you need a person.
       </>
     ),
   },

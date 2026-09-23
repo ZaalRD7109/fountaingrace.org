@@ -15,13 +15,13 @@ export default function PrayerThankYouPage() {
       <section className="bg-[#008080] text-white pt-16 pb-16 px-4 sm:px-6">
         <div className="max-w-xl mx-auto text-center">
           <p className="text-white font-semibold text-xs uppercase tracking-wider mb-3">
-            Your request is in safe hands
+            Request received
           </p>
           <h1 className="text-3xl sm:text-4xl font-extrabold leading-tight mb-4">
             We are praying with you.
           </h1>
           <p className="text-white text-base leading-relaxed">
-            Nothing is shared publicly. If you left your email, watch your inbox. A written prayer from us is on its way.
+            If you left your email, watch your inbox. A written prayer from our team usually arrives within the hour. If you asked to talk to someone, a pastor will contact you instead.
           </p>
         </div>
       </section>
@@ -40,8 +40,8 @@ export default function PrayerThankYouPage() {
           </blockquote>
 
           <p className="text-[#595959] text-sm leading-relaxed mb-8">
-            Would you rather talk to someone? Send us a WhatsApp. It is answered day and night,
-            and when you need a person, one of our pastors takes it from there.
+            Need to talk now? Our WhatsApp answers day and night, and a pastor takes over
+            when you need a person.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
@@ -51,7 +51,7 @@ export default function PrayerThankYouPage() {
               rel="noopener noreferrer"
               className="inline-block bg-[#25d366] text-[#1a1a1a] font-bold px-6 py-3 rounded-[30px] hover:bg-[#1ebe5d] transition-colors text-sm text-center"
             >
-              WhatsApp us
+              Chat to us on WhatsApp
             </a>
             <Link
               href="/"

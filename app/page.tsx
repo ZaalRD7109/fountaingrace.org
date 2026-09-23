@@ -255,8 +255,8 @@ export default function HomePage() {
               },
               {
                 icon: '📞',
-                title: 'We keep in touch',
-                body: 'After your first visit we send you a WhatsApp to ask how it went. Reply any time. Our team reads those conversations and steps in whenever you need a person.',
+                title: 'We check in after Sunday',
+                body: 'After your first visit, we WhatsApp you to ask how it went. Reply whenever you like. A pastor takes over when you need a person, so one Sunday is never where it ends.',
               },
               {
                 icon: '🗣️',

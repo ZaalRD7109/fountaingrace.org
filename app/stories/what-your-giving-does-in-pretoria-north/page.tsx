@@ -147,8 +147,8 @@ export default function WhatYourGivingDoesPage() {
             See more about how your giving is used on the{' '}
             <Link href="/community-impact" className="fgi-link">Community Impact page</Link>.
             Or if you have a question about how your giving is used,{' '}
-            <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="fgi-link">WhatsApp us</a>.
-            Someone who knows the answer will get back to you.
+            <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="fgi-link">WhatsApp us</a>{' '}
+            and we will show you where it went.
           </p>
 
         </div>

@@ -67,7 +67,7 @@ export default function PrayerPage() {
           </h1>
           <p className="text-white text-base leading-relaxed">
             Message us on WhatsApp and receive a prayer back within seconds - any time of day
-            or night. Or send a written request below and a prayer from our team comes back to your email.
+            or night. Or send a written request below and a prayer from our team comes back to your email, usually within the hour.
           </p>
         </div>
       </section>
@@ -212,8 +212,8 @@ export default function PrayerPage() {
             <p>
               Fountain of Grace International accepts prayer requests from anyone in Pretoria
               North and surrounding areas. Requests are received by the pastoral team and
-              kept confidential. For urgent prayer needs, message the church on WhatsApp at
-              +27 75 259 2555, answered day and night, or use the form above.
+              kept confidential. For urgent prayer, WhatsApp the church on +27 75 259 2555.
+              Our WhatsApp answers day and night, and a pastor takes over when you need a person.
             </p>
           </div>
         </div>

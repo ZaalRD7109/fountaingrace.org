@@ -97,18 +97,18 @@ const faqs: FaqCategory[] = [
     items: [
       {
         q: 'Can I submit a prayer request without attending the church?',
-        a: <>Yes. Anyone can submit a prayer request - you do not need to be a member or attendee. <Link href="/prayer" className="fgi-link">Use the prayer request form here</Link> and our prayer team will pray over it.</>,
-        aText: 'Yes. Anyone can submit a prayer request - you do not need to be a member or attendee. Use the prayer request form at fountaingrace.org/prayer.',
+        a: <>Yes. Anyone can submit a prayer request - you do not need to be a member or attendee. <Link href="/prayer" className="fgi-link">Use the prayer request form here</Link> and our prayer team will pray over it. If you leave your email, a written prayer comes back to you, usually within the hour.</>,
+        aText: 'Yes. Anyone can submit a prayer request - you do not need to be a member or attendee. Use the prayer request form at fountaingrace.org/prayer and our prayer team will pray over it. If you leave your email, a written prayer comes back to you, usually within the hour.',
       },
       {
         q: 'Is my prayer request kept private?',
-        a: 'Yes. Prayer requests are read by the pastoral team and prayed over. They are never posted publicly or shared without your permission.',
-        aText: 'Yes. Prayer requests are read by the pastoral team and prayed over. They are never posted publicly or shared without your permission.',
+        a: 'Yes. Prayer requests are never posted publicly or shared without your permission. Tick the confidential box on the form and only the pastor sees your request.',
+        aText: 'Yes. Prayer requests are never posted publicly or shared without your permission. Tick the confidential box on the form and only the pastor sees your request.',
       },
       {
         q: 'What if I need urgent pastoral support?',
-        a: <><a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="fgi-link">WhatsApp us on +27 75 259 2555</a>. It is answered day and night, and a pastor steps in when you need a person. If a life is in danger, call SADAG on 0800 567 567 (free, 24 hours) or 10111 right now. You can also <Link href="/contact" className="fgi-link">reach us through the contact page</Link>.</>,
-        aText: 'WhatsApp us on +27 75 259 2555. It is answered day and night, and a pastor steps in when you need a person. If a life is in danger, call SADAG on 0800 567 567 (free, 24 hours) or 10111 right now.',
+        a: <>If a life is in danger, call 10111 or the SADAG helpline on 0800 567 567 now. Both are free and open 24 hours. For urgent prayer or pastoral support, <a href="https://wa.me/27752592555" target="_blank" rel="noopener noreferrer" className="fgi-link">WhatsApp us on +27 75 259 2555</a>. Our WhatsApp answers day and night, and a pastor takes over when you need a person. You can also <Link href="/contact" className="fgi-link">reach us through the contact page</Link>.</>,
+        aText: 'If a life is in danger, call 10111 or the SADAG helpline on 0800 567 567 now. Both are free and open 24 hours. For urgent prayer or pastoral support, WhatsApp us on +27 75 259 2555. Our WhatsApp answers day and night, and a pastor takes over when you need a person.',
       },
     ],
   },
