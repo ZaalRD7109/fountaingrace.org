@@ -137,6 +137,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/resources/how-to-start-over`, lastModified: new Date('2026-05-01'), changeFrequency: 'monthly', priority: 0.7 },
     // Devotional (Tier 2 - daily library, one page per devotional)
     { url: `${base}/devotional`, lastModified: now, changeFrequency: 'daily', priority: 0.8 },
+    { url: `${base}/devotional/why-do-i-keep-falling-into-the-same-thing-over-and-over`, lastModified: new Date('2026-09-24'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/will-the-sadness-i-carry-ever-actually-lift`, lastModified: new Date('2026-09-23'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/can-grief-actually-change-me-for-the-better`, lastModified: new Date('2026-09-22'), changeFrequency: 'monthly', priority: 0.6 },
     { url: `${base}/devotional/am-i-holding-onto-grief-because-letting-go-feels-like-forgetting-them`, lastModified: new Date('2026-09-21'), changeFrequency: 'monthly', priority: 0.6 },

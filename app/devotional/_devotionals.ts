@@ -2,6 +2,15 @@
 export type Devo = { slug: string; date: string; dateDisplay: string; day: number | null; headline: string; verseRef: string | null; card: string | null }
 export const devotionals: Devo[] = [
   {
+    "slug": "why-do-i-keep-falling-into-the-same-thing-over-and-over",
+    "date": "2026-09-24",
+    "dateDisplay": "24 September 2026",
+    "day": 267,
+    "headline": "Why do I keep falling into the same thing over and over?",
+    "verseRef": "1 Corinthians 10:13",
+    "card": "/devotional-cards/w680/why-do-i-keep-falling-into-the-same-thing-over-and-over.webp"
+  },
+  {
     "slug": "will-the-sadness-i-carry-ever-actually-lift",
     "date": "2026-09-23",
     "dateDisplay": "23 September 2026",
